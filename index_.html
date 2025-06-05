@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompTIA A+ 220-1101 Study</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:linear-gradient(135deg,#667eea,#764ba2);min-height:100vh;padding:20px}.container{max-width:900px;margin:0 auto;background:#fff;border-radius:15px;box-shadow:0 20px 40px rgba(0,0,0,.1);overflow:hidden}.header{background:linear-gradient(135deg,#2c3e50,#34495e);color:#fff;padding:30px;text-align:center}.header h1{font-size:2.2em;margin-bottom:10px;font-weight:300}.subtitle{opacity:.9;font-size:1.1em}.start-screen,.quiz-screen{display:none}.start-screen.active,.quiz-screen.active{display:block}.topic-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;padding:30px}.topic-card{border:2px solid #e9ecef;border-radius:10px;padding:20px;cursor:pointer;transition:all .3s ease;text-align:center}.topic-card:hover{border-color:#667eea;transform:translateY(-2px);box-shadow:0 5px 15px rgba(102,126,234,.1)}.topic-card.selected{border-color:#667eea;background:#f8f9fa}.topic-title{font-weight:bold;margin-bottom:10px;color:#2c3e50}.topic-count{color:#6c757d;font-size:.9em}.controls{padding:30px;background:#f8f9fa;border-top:1px solid #e9ecef;text-align:center}.btn{padding:12px 30px;border:none;border-radius:25px;font-size:1em;font-weight:bold;cursor:pointer;transition:all .3s ease;margin:0 10px}.btn-primary{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 20px rgba(102,126,234,.3)}.btn-secondary{background:#95a5a6;color:#fff}.btn:disabled{opacity:.6;cursor:not-allowed}.progress-bar{background:#ecf0f1;height:8px;border-radius:4px;margin:20px 30px;overflow:hidden}.progress-fill{background:linear-gradient(90deg,#00b894,#00cec9);height:100%;width:0;transition:width .3s ease}.stats{display:flex;justify-content:space-around;padding:20px 30px;background:#f8f9fa;border-bottom:1px solid #e9ecef}.stat{text-align:center}.stat-number{font-size:1.8em;font-weight:bold;color:#2c3e50}.stat-label{color:#6c757d;font-size:.9em;margin-top:5px}.question-container{padding:40px}.question-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px}.question-number{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:10px 20px;border-radius:25px;font-weight:bold}.question-type{color:#6c757d;font-size:.9em}.question-text{font-size:1.2em;line-height:1.6;margin-bottom:30px;color:#2c3e50}.options{list-style:none}.option{margin-bottom:15px;border:2px solid #e9ecef;border-radius:10px;transition:all .3s ease;overflow:hidden}.option:hover{border-color:#667eea;transform:translateY(-2px);box-shadow:0 5px 15px rgba(102,126,234,.1)}.option input{display:none}.option label{display:block;padding:20px;cursor:pointer;position:relative;transition:all .3s ease}.option label:before{content:'';display:inline-block;width:20px;height:20px;border:2px solid #bdc3c7;border-radius:3px;margin-right:15px;vertical-align:middle;transition:all .3s ease}.option input[type="radio"]+label:before{border-radius:50%}.option input:checked+label{background:#f8f9fa;color:#2c3e50}.option input:checked+label:before{background:#667eea;border-color:#667eea}.option.correct{border-color:#00b894;background:#d1f2eb}.option.incorrect{border-color:#e17055;background:#fadbd8}.option.correct label:before{background:#00b894;border-color:#00b894}.option.incorrect label:before{background:#e17055;border-color:#e17055}.explanation{margin-top:30px;padding:25px;background:#f8f9fa;border-left:5px solid #667eea;border-radius:10px;display:none}.explanation.show{display:block;animation:slideDown .5s ease}@keyframes slideDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}.explanation h3{color:#2c3e50;margin-bottom:15px}.result-message{padding:20px;margin:20px 0;border-radius:10px;text-align:center;font-weight:bold;display:none}.result-correct{background:#d1f2eb;color:#00b894;border:2px solid #00b894}.result-incorrect{background:#fadbd8;color:#e17055;border:2px solid #e17055}.result-message.show{display:block;animation:fadeIn .5s ease}@keyframes fadeIn{from{opacity:0}to{opacity:1}}.quiz-controls{display:flex;justify-content:space-between;align-items:center;padding:30px 40px;background:#f8f9fa;border-top:1px solid #e9ecef}@media (max-width:768px){.container{margin:10px;border-radius:10px}.question-container{padding:20px}.quiz-controls{padding:20px;flex-direction:column;gap:15px}.stats{flex-direction:column;gap:15px}.topic-grid{grid-template-columns:1fr;padding:20px}}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>CompTIA A+ 220-1101</h1>
+            <div class="subtitle">CORE 1 - Study App</div>
+        </div>
+
+        <div class="start-screen active" id="startScreen">
+            <div class="topic-grid" id="topicGrid"></div>
+            <div class="controls">
+                <button class="btn btn-primary" onclick="startQuiz()">Iniciar Teste</button>
+                <button class="btn btn-secondary" onclick="selectAllTopics()">Todos os Tópicos</button>
+            </div>
+        </div>
+
+        <div class="quiz-screen" id="quizScreen">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="stats">
+                <div class="stat"><div class="stat-number" id="currentQ">1</div><div class="stat-label">Atual</div></div>
+                <div class="stat"><div class="stat-number" id="totalQ">0</div><div class="stat-label">Total</div></div>
+                <div class="stat"><div class="stat-number" id="correctA">0</div><div class="stat-label">Corretas</div></div>
+                <div class="stat"><div class="stat-number" id="accuracy">0%</div><div class="stat-label">Precisão</div></div>
+            </div>
+            <div class="question-container">
+                <div class="question-header">
+                    <div class="question-number" id="qNumber">Pergunta 1</div>
+                    <div class="question-type" id="qType">Escolha Única</div>
+                </div>
+                <div class="question-text" id="qText"></div>
+                <ul class="options" id="optionsList"></ul>
+                <div class="result-message" id="resultMsg"></div>
+                <div class="explanation" id="explanation">
+                    <h3>Explicação:</h3>
+                    <p id="explText"></p>
+                </div>
+            </div>
+            <div class="quiz-controls">
+                <button class="btn btn-secondary" id="prevBtn" onclick="prevQ()">← Anterior</button>
+                <button class="btn btn-secondary" onclick="goToMenu()">🏠 Menu</button>
+                <button class="btn btn-primary" id="submitBtn" onclick="submitA()">Verificar</button>
+                <button class="btn btn-secondary" id="nextBtn" onclick="nextQ()" disabled>Próxima →</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const topics={
+            'Mobile Devices':{count:0,questions:[]},
+            'Networking':{count:0,questions:[]},
+            'Hardware':{count:0,questions:[]},
+            'Virtualization and Cloud Computing':{count:0,questions:[]},
+            'Hardware and Network Troubleshooting':{count:0,questions:[]}
+        };
+        
+        let currentQ=0,userAnswers=[],correctCount=0,answered=false,quizQuestions=[],selectedTopics=[];
+
+        // Sample questions (fallback only)
+        const sampleQuestions={};
+
+        async function init(){
+            // Load JSON files for each topic
+            const topicFiles = {
+                'Mobile Devices': 'mobile-devices.json',
+                'Networking': 'networking.json',
+                'Hardware': 'hardware.json',
+                'Virtualization and Cloud Computing': 'virtualization-cloud.json',
+                'Hardware and Network Troubleshooting': 'troubleshooting.json'
+            };
+
+            try {
+                for (const [topic, filename] of Object.entries(topicFiles)) {
+                    try {
+                        const response = await fetch(filename);
+                        if (response.ok) {
+                            const data = await response.json();
+                            topics[topic].questions = data;
+                            topics[topic].count = data.length;
+                        } else {
+                            // Fallback to sample questions if JSON not found
+                            topics[topic].questions = sampleQuestions[topic] || [];
+                            topics[topic].count = topics[topic].questions.length;
+                        }
+                    } catch (error) {
+                        // Fallback to sample questions if JSON loading fails
+                        topics[topic].questions = sampleQuestions[topic] || [];
+                        topics[topic].count = topics[topic].questions.length;
+                    }
+                }
+            } catch (error) {
+                // If all fails, use sample questions
+                Object.keys(sampleQuestions).forEach(topic => {
+                    topics[topic].questions = sampleQuestions[topic];
+                    topics[topic].count = sampleQuestions[topic].length;
+                });
+            }
+            
+            renderTopics();
+        }
+
+        function renderTopics(){
+            const grid=document.getElementById('topicGrid');
+            grid.innerHTML=Object.keys(topics).map(topic=>`
+                <div class="topic-card" onclick="toggleTopic('${topic}')" id="topic-${topic.replace(/ /g,'-')}">
+                    <div class="topic-title">${topic}</div>
+                    <div class="topic-count">${topics[topic].count} perguntas</div>
+                </div>
+            `).join('');
+        }
+
+        function toggleTopic(topic){
+            const card=document.getElementById(`topic-${topic.replace(/ /g,'-')}`);
+            const idx=selectedTopics.indexOf(topic);
+            if(idx>-1){
+                selectedTopics.splice(idx,1);
+                card.classList.remove('selected');
+            }else{
+                selectedTopics.push(topic);
+                card.classList.add('selected');
+            }
+        }
+
+        function selectAllTopics(){
+            selectedTopics=Object.keys(topics);
+            document.querySelectorAll('.topic-card').forEach(c=>c.classList.add('selected'));
+        }
+
+        function startQuiz(){
+            if(!selectedTopics.length){alert('Selecione pelo menos um tópico!');return;}
+            
+            quizQuestions=[];
+            selectedTopics.forEach(topic=>quizQuestions.push(...topics[topic].questions));
+            quizQuestions=shuffle(quizQuestions);
+            
+            currentQ=0;userAnswers=[];correctCount=0;answered=false;
+            document.getElementById('startScreen').classList.remove('active');
+            document.getElementById('quizScreen').classList.add('active');
+            loadQ();updateStats();
+        }
+
+        function goToMenu(){
+            document.getElementById('quizScreen').classList.remove('active');
+            document.getElementById('startScreen').classList.add('active');
+        }
+
+        function loadQ(){
+            const q=quizQuestions[currentQ];answered=false;
+            document.getElementById('qNumber').textContent=`Pergunta ${currentQ+1}`;
+            document.getElementById('qType').textContent=q.type==='single'?'Escolha Única':'Escolha Múltipla';
+            document.getElementById('qText').textContent=q.question;
+            
+            const list=document.getElementById('optionsList');
+            list.innerHTML=q.options.map((opt,i)=>
+                `<li class="option"><input type="${q.type==='single'?'radio':'checkbox'}" id="opt_${i}" name="answer" value="${i}"><label for="opt_${i}">${opt}</label></li>`
+            ).join('');
+
+            document.getElementById('submitBtn').disabled=false;
+            document.getElementById('nextBtn').disabled=true;
+            document.getElementById('explanation').classList.remove('show');
+            document.getElementById('resultMsg').classList.remove('show');
+            document.querySelectorAll('.option').forEach(o=>o.classList.remove('correct','incorrect'));
+            updateStats();
+        }
+
+        function submitA(){
+            if(answered)return;
+            const q=quizQuestions[currentQ];
+            const selected=Array.from(document.querySelectorAll('input:checked')).map(i=>parseInt(i.value));
+            if(!selected.length){alert('Selecione uma resposta!');return;}
+
+            const isCorrect=arraysEqual(selected.sort(),q.correct.sort());
+            userAnswers[currentQ]={selected,correct:q.correct,isCorrect};
+            if(isCorrect)correctCount++;
+
+            showFeedback(q,selected);
+            document.getElementById('explText').textContent=q.explanation;
+            document.getElementById('explanation').classList.add('show');
+            
+            answered=true;
+            document.getElementById('submitBtn').disabled=true;
+            document.getElementById('nextBtn').disabled=false;
+            updateStats();
+        }
+
+        function showFeedback(q,selected){
+            const options=document.querySelectorAll('.option');
+            q.correct.forEach(i=>options[i].classList.add('correct'));
+            selected.forEach(i=>{if(!q.correct.includes(i))options[i].classList.add('incorrect')});
+            
+            const msg=document.getElementById('resultMsg');
+            const isCorrect=arraysEqual(selected.sort(),q.correct.sort());
+            msg.textContent=isCorrect?'✅ Correto!':'❌ Incorreto';
+            msg.className=`result-message ${isCorrect?'result-correct':'result-incorrect'} show`;
+        }
+
+        function nextQ(){
+            if(currentQ<quizQuestions.length-1){currentQ++;loadQ();}
+            else{alert(`Teste completo!\nCorretas: ${correctCount}/${quizQuestions.length}\nPrecisão: ${Math.round(correctCount/quizQuestions.length*100)}%`);}
+        }
+
+        function prevQ(){
+            if(currentQ>0){currentQ--;loadQ();if(userAnswers[currentQ])showPrevAnswer();}
+        }
+
+        function showPrevAnswer(){
+            const q=quizQuestions[currentQ];
+            const ua=userAnswers[currentQ];
+            ua.selected.forEach(i=>document.querySelector(`input[value="${i}"]`).checked=true);
+            showFeedback(q,ua.selected);
+            document.getElementById('explText').textContent=q.explanation;
+            document.getElementById('explanation').classList.add('show');
+            answered=true;
+            document.getElementById('submitBtn').disabled=true;
+            document.getElementById('nextBtn').disabled=false;
+        }
+
+        function updateStats(){
+            const progress=(currentQ+1)/quizQuestions.length*100;
+            document.getElementById('progressFill').style.width=progress+'%';
+            document.getElementById('currentQ').textContent=currentQ+1;
+            document.getElementById('totalQ').textContent=quizQuestions.length;
+            document.getElementById('correctA').textContent=correctCount;
+            document.getElementById('accuracy').textContent=userAnswers.length?(correctCount/userAnswers.length*100).toFixed(0)+'%':'0%';
+            document.getElementById('prevBtn').disabled=currentQ===0;
+        }
+
+        function shuffle(arr){return arr.sort(()=>Math.random()-.5);}
+        function arraysEqual(a,b){return a.length===b.length&&a.every((v,i)=>v===b[i]);}
+
+        init();
+    </script>
+</body>
+</html>
