@@ -112,7 +112,7 @@
   {
     "id": 8,
     "type": "single",
-    "question": "A user’s phone only charges up to 67% and stops. What component should be replaced?",
+    "question": "A user\u2019s phone only charges up to 67% and stops. What component should be replaced?",
     "options": [
       "Battery",
       "Screen",
@@ -635,7 +635,7 @@
     "explanation": "Background apps running continuously can significantly drain battery life."
   },
   {
-    "id": 41,
+    "id": 43,
     "type": "single",
     "question": "A user's smartphone battery drains very quickly. Which setting can help conserve battery life?",
     "options": [
@@ -650,7 +650,7 @@
     "explanation": "Reducing the screen timeout duration ensures the screen turns off more quickly when not in use, saving battery."
   },
   {
-    "id": 42,
+    "id": 44,
     "type": "single",
     "question": "What does NFC stand for in mobile devices?",
     "options": [

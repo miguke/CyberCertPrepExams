@@ -143,6 +143,34 @@
         opacity: .6;
         cursor: not-allowed;
       }
+      /* Hide native radio/checkbox inputs */
+      .option input[type="radio"],
+      .option input[type="checkbox"] {
+          display: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+      }
+      
+      /* Custom indicator styles */
+      .option label {
+          display: flex;
+          align-items: center;
+          padding: 12px 16px;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: all 0.2s ease;
+      }
+      .option label::before {
+          content: '';
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          border: 2px solid #6c757d;
+          margin-right: 12px;
+          transition: all 0.2s ease;
+      }
+      
       /* Quiz screen styles */
       .quiz-screen {
         background: var(--quiz-bg);

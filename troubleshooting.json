@@ -92,7 +92,7 @@
       0,
       3
     ],
-    "explanation": "One beep indicates that memory (RAM) passed POST but there is a subsequent errorâ€”often due to a boot order issue. A misconfigured boot order can also trigger a one-beep error."
+    "explanation": "One beep indicates that memory (RAM) passed POST but there is a subsequent error\u00e2\u20ac\u201doften due to a boot order issue. A misconfigured boot order can also trigger a one-beep error."
   },
   {
     "id": 7,
@@ -118,10 +118,10 @@
     "type": "multiple",
     "question": "A user reports that printed receipts have black smudges over the entire image. The text is still present but is very dark and sometimes illegible. Which of the following are the MOST likely cause and solution for the printer issue? (Select TWO)",
     "options": [
-      "The ribbon is jammed and is rubbing on the paper â€“ Clear the bad ribbon and feed it through properly.",
-      "The printhead is too hot â€“ Adjust the temperature down and retry printing.",
-      "The printer is loaded with the wrong type of paper â€“ Replace the receipt paper with the correct thermal-receipt paper.",
-      "The blue ink cartridge was loaded with black ink â€“ Put in the correct ink and clean the printhead."
+      "The ribbon is jammed and is rubbing on the paper \u00e2\u20ac\u201c Clear the bad ribbon and feed it through properly.",
+      "The printhead is too hot \u00e2\u20ac\u201c Adjust the temperature down and retry printing.",
+      "The printer is loaded with the wrong type of paper \u00e2\u20ac\u201c Replace the receipt paper with the correct thermal-receipt paper.",
+      "The blue ink cartridge was loaded with black ink \u00e2\u20ac\u201c Put in the correct ink and clean the printhead."
     ],
     "correct": [
       0,
@@ -145,7 +145,7 @@
     "explanation": "Verifying the charger's power rating is the first step, as an underpowered charger can cause extremely slow charging."
   },
   {
-    "id": 19,
+    "id": 10,
     "type": "single",
     "question": "Which of the following is the MOST likely cause of a single beep on startup and no video output on a desktop?",
     "options": [
@@ -157,12 +157,12 @@
     "correct": [
       1
     ],
-    "explanation": "A single beep in many BIOS implementations indicates a memory (RAM) errorâ€”typically meaning the RAM module is bad or not seated properly."
+    "explanation": "A single beep in many BIOS implementations indicates a memory (RAM) error\u00e2\u20ac\u201dtypically meaning the RAM module is bad or not seated properly."
   },
   {
-    "id": 32,
+    "id": 11,
     "type": "single",
-    "question": "A userâ€™s desktop will only boot when two RAM modules are installed in slots 1 and 3, but will not power on if installed in 2 and 4. Which of the following is the MOST likely cause?",
+    "question": "A user\u00e2\u20ac\u2122s desktop will only boot when two RAM modules are installed in slots 1 and 3, but will not power on if installed in 2 and 4. Which of the following is the MOST likely cause?",
     "options": [
       "Incorrect CPU cooler installation",
       "Improper RAM seating",
@@ -172,10 +172,10 @@
     "correct": [
       1
     ],
-    "explanation": "RAM modules must be seated in the correct slot pairs (DIMM1 & DIMM3 or DIMM2 & DIMM4) depending on the motherboardâ€™s channel configuration."
+    "explanation": "RAM modules must be seated in the correct slot pairs (DIMM1 & DIMM3 or DIMM2 & DIMM4) depending on the motherboard\u00e2\u20ac\u2122s channel configuration."
   },
   {
-    "id": 41,
+    "id": 12,
     "type": "single",
     "question": "Which of the following disk types provides the fastest sequential read and write performance?",
     "options": [
@@ -190,7 +190,7 @@
     "explanation": "NVMe SSDs have significantly higher sequential read/write speeds than SATA SSDs or HDDs."
   },
   {
-    "id": 48,
+    "id": 13,
     "type": "single",
     "question": "A desktop system posts with two consecutive beeps, indicating a memory error. Which of the following should the technician perform NEXT?",
     "options": [
@@ -205,7 +205,7 @@
     "explanation": "Two beeps typically indicate a memory problem. Reseating the RAM modules can resolve loose or improperly seated memory."
   },
   {
-    "id": 74,
+    "id": 14,
     "type": "single",
     "question": "A technician is troubleshooting a desktop that powers on but has no display output and no POST beeps. Which of the following components should be checked FIRST?",
     "options": [
@@ -217,10 +217,10 @@
     "correct": [
       3
     ],
-    "explanation": "If there are no POST beeps or display output, verifying the motherboardâ€™s power connectors are fully seated is the first step."
+    "explanation": "If there are no POST beeps or display output, verifying the motherboard\u00e2\u20ac\u2122s power connectors are fully seated is the first step."
   },
   {
-    "id": 83,
+    "id": 15,
     "type": "single",
     "question": "A desktop powers off unexpectedly after running hardware diagnostics. Which of the following is the MOST likely cause?",
     "options": [
@@ -235,7 +235,7 @@
     "explanation": "If a system powers off under load (during diagnostics), the CPU is likely overheating and triggering a shutdown to protect itself."
   },
   {
-    "id": 91,
+    "id": 16,
     "type": "single",
     "question": "A desktop displays a message 'CPU fan error' at boot, and then powers off. Which of the following is the MOST likely cause?",
     "options": [
@@ -250,37 +250,7 @@
     "explanation": "The 'CPU fan error' indicates the BIOS has detected that the CPU fan is not spinning, which causes the system to shut down to prevent overheating."
   },
   {
-    "id": 103,
-    "type": "single",
-    "question": "Which of the following disk types provides the fastest sequential read and write performance?",
-    "options": [
-      "SATA SSD",
-      "NVMe SSD",
-      "7200 RPM HDD",
-      "SATA RAID 1 array"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "NVMe SSDs have significantly higher sequential read/write speeds than SATA SSDs or HDDs."
-  },
-  {
-    "id": 110,
-    "type": "single",
-    "question": "A desktop system posts with two consecutive beeps, indicating a memory error. Which of the following should the technician perform NEXT?",
-    "options": [
-      "Reseat the RAM modules",
-      "Replace the CPU",
-      "Update the BIOS",
-      "Clear the CMOS"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "Two beeps typically indicate a memory problem. Reseating the RAM modules can resolve loose or improperly seated memory."
-  },
-  {
-    "id": 115,
+    "id": 17,
     "type": "single",
     "question": "A technician is troubleshooting a desktop that posts with a single short beep and then powers off. Which of the following is the MOST likely cause?",
     "options": [
@@ -295,157 +265,7 @@
     "explanation": "A single short beep followed by a shutdown often indicates a RAM problem. The system POSTs but then fails due to memory errors."
   },
   {
-    "id": 19,
-    "type": "single",
-    "question": "Which of the following is the MOST likely cause of a single beep on startup and no video output on a desktop?",
-    "options": [
-      "Bad CPU",
-      "Bad RAM module",
-      "Bad GPU",
-      "Missing OS"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "A single beep in many BIOS implementations indicates a memory (RAM) errorâ€”typically meaning the RAM module is bad or not seated properly."
-  },
-  {
-    "id": 32,
-    "type": "single",
-    "question": "A userâ€™s desktop will only boot when two RAM modules are installed in slots 1 and 3, but will not power on if installed in 2 and 4. Which of the following is the MOST likely cause?",
-    "options": [
-      "Incorrect CPU cooler installation",
-      "Improper RAM seating",
-      "Defective motherboard trace",
-      "Bad power supply"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "RAM modules must be seated in the correct slot pairs (DIMM1 & DIMM3 or DIMM2 & DIMM4) depending on the motherboardâ€™s channel configuration."
-  },
-  {
-    "id": 41,
-    "type": "single",
-    "question": "Which of the following disk types provides the fastest sequential read and write performance?",
-    "options": [
-      "SATA SSD",
-      "NVMe SSD",
-      "7200 RPM HDD",
-      "SATA RAID 1 array"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "NVMe SSDs have significantly higher sequential read/write speeds than SATA SSDs or HDDs."
-  },
-  {
-    "id": 48,
-    "type": "single",
-    "question": "A desktop system posts with two consecutive beeps, indicating a memory error. Which of the following should the technician perform NEXT?",
-    "options": [
-      "Reseat the RAM modules",
-      "Replace the CPU",
-      "Update the BIOS",
-      "Clear the CMOS"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "Two beeps typically indicate a memory problem. Reseating the RAM modules can resolve loose or improperly seated memory."
-  },
-  {
-    "id": 74,
-    "type": "single",
-    "question": "A technician is troubleshooting a desktop that powers on but has no display output and no POST beeps. Which of the following components should be checked FIRST?",
-    "options": [
-      "CPU seating",
-      "RAM seating",
-      "GPU seating",
-      "Motherboard power connectors"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "If there are no POST beeps or display output, verifying the motherboardâ€™s power connectors are fully seated is the first step."
-  },
-  {
-    "id": 83,
-    "type": "single",
-    "question": "A desktop powers off unexpectedly after running hardware diagnostics. Which of the following is the MOST likely cause?",
-    "options": [
-      "Overheating CPU",
-      "Corrupted RAM",
-      "Faulty GPU driver",
-      "Malware infection"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "If a system powers off under load (during diagnostics), the CPU is likely overheating and triggering a shutdown to protect itself."
-  },
-  {
-    "id": 91,
-    "type": "single",
-    "question": "A desktop displays a message 'CPU fan error' at boot, and then powers off. Which of the following is the MOST likely cause?",
-    "options": [
-      "Fan not spinning",
-      "Incorrect BIOS version",
-      "Bad RAM",
-      "Corrupted OS"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "The 'CPU fan error' indicates the BIOS has detected that the CPU fan is not spinning, which causes the system to shut down to prevent overheating."
-  },
-  {
-    "id": 103,
-    "type": "single",
-    "question": "Which of the following disk types provides the fastest sequential read and write performance?",
-    "options": [
-      "SATA SSD",
-      "NVMe SSD",
-      "7200 RPM HDD",
-      "SATA RAID 1 array"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "NVMe SSDs have significantly higher sequential read/write speeds than SATA SSDs or HDDs."
-  },
-  {
-    "id": 110,
-    "type": "single",
-    "question": "A desktop system posts with two consecutive beeps, indicating a memory error. Which of the following should the technician perform NEXT?",
-    "options": [
-      "Reseat the RAM modules",
-      "Replace the CPU",
-      "Update the BIOS",
-      "Clear the CMOS"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "Two beeps typically indicate a memory problem. Reseating the RAM modules can resolve loose or improperly seated memory."
-  },
-  {
-    "id": 115,
-    "type": "single",
-    "question": "A technician is troubleshooting a desktop that posts with a single short beep and then powers off. Which of the following is the MOST likely cause?",
-    "options": [
-      "Overheating CPU",
-      "Faulty RAM",
-      "Incorrect BIOS settings",
-      "Shorted motherboard"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "A single short beep followed by a shutdown often indicates a RAM problem. The system POSTs but then fails due to memory errors."
-  },
-  {
-    "id": 92,
+    "id": 18,
     "type": "single",
     "question": "A user reports their printer is not printing. What is the first thing to check?",
     "options": [
@@ -460,7 +280,7 @@
     "explanation": "Always check basic power and cable connections first when a printer is not responding."
   },
   {
-    "id": 93,
+    "id": 19,
     "type": "single",
     "question": "A computer is making a continuous beeping sound on startup. What does this usually indicate?",
     "options": [
@@ -475,7 +295,7 @@
     "explanation": "Continuous beeping or a specific beep code on startup often indicates a problem with RAM modules (e.g., not seated correctly or faulty)."
   },
   {
-    "id": 94,
+    "id": 20,
     "type": "single",
     "question": "What is the typical voltage for a CMOS battery?",
     "options": [
@@ -490,37 +310,7 @@
     "explanation": "CMOS batteries are typically 3-volt lithium coin cells."
   },
   {
-    "id": 95,
-    "type": "single",
-    "question": "Which of the following is a common safety procedure when working inside a computer case?",
-    "options": [
-      "Keeping the power cord plugged in for grounding",
-      "Wearing an anti-static wrist strap",
-      "Using magnetic screwdrivers for all components",
-      "Working on a carpeted floor"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "Wearing an anti-static wrist strap helps prevent electrostatic discharge (ESD) which can damage sensitive components."
-  },
-  {
-    "id": 94,
-    "type": "single",
-    "question": "What is the typical voltage for a CMOS battery?",
-    "options": [
-      "1.5V",
-      "3V",
-      "5V",
-      "12V"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "CMOS batteries are typically 3-volt lithium coin cells."
-  },
-  {
-    "id": 95,
+    "id": 21,
     "type": "single",
     "question": "Which of the following is a common safety procedure when working inside a computer case?",
     "options": [

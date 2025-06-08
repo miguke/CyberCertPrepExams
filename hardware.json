@@ -160,9 +160,9 @@
     "explanation": "A RAID 10 array balances performance (striping) with redundancy (mirroring) and is cost-effective for hosting multiple VMs."
   },
   {
-    "id": 12,
+    "id": 11,
     "type": "single",
-    "question": "An administrator notices that one of the serverâ€™s cooling fans is spinning at a much higher RPM than usual. Which of the following is MOST likely occurring?",
+    "question": "An administrator notices that one of the server\u00e2\u20ac\u2122s cooling fans is spinning at a much higher RPM than usual. Which of the following is MOST likely occurring?",
     "options": [
       "The server is under heavy load",
       "The power supply is failing",
@@ -175,7 +175,7 @@
     "explanation": "When a CPU overheats, the system increases fan speed to provide additional cooling."
   },
   {
-    "id": 15,
+    "id": 12,
     "type": "single",
     "question": "A technician needs to install a RAID controller card into a server motherboard that has an open PCIe x8 slot. The technician only has a PCIe x16 compliant card. Which of the following actions should be taken?",
     "options": [
@@ -190,7 +190,7 @@
     "explanation": "PCIe slots are backward compatible. A PCIe x16 card can be installed into an x8 slot, operating at x8 speeds."
   },
   {
-    "id": 16,
+    "id": 13,
     "type": "single",
     "question": "A workstation uses ECC memory. Which of the following benefits does ECC provide?",
     "options": [
@@ -205,7 +205,7 @@
     "explanation": "ECC (Error Checking and Correction) memory can detect and correct single-bit memory errors."
   },
   {
-    "id": 18,
+    "id": 14,
     "type": "single",
     "question": "A desktop computer is exhibiting graphical artifacts on the screen. The technician suspects the GPU is overheating. Which of the following actions should the technician take FIRST?",
     "options": [
@@ -220,7 +220,7 @@
     "explanation": "Cleaning dust from the heatsink and fans can immediately improve cooling and is the first step in addressing overheating."
   },
   {
-    "id": 20,
+    "id": 15,
     "type": "single",
     "question": "Which of the following power connector types is used to provide power to a modern PCIe graphics card?",
     "options": [
@@ -235,7 +235,7 @@
     "explanation": "Modern PCIe graphics cards require a 6-pin or 8-pin PCIe power connector from the PSU."
   },
   {
-    "id": 21,
+    "id": 16,
     "type": "single",
     "question": "A user installed an optical drive in a desktop, but the drive is not recognized by the operating system. The drive spins but does not appear in BIOS. Which of the following is the MOST likely cause?",
     "options": [
@@ -250,7 +250,7 @@
     "explanation": "If the drive spins but does not appear in BIOS, it is likely a faulty or improperly connected data cable (SATA cable)."
   },
   {
-    "id": 22,
+    "id": 17,
     "type": "single",
     "question": "A technician is installing a new SATA SSD in a desktop. After installing the drive, the system will not boot. Which of the following should the technician do FIRST?",
     "options": [
@@ -265,7 +265,7 @@
     "explanation": "If the SATA controller mode is not set to AHCI, the operating system may not recognize a new SSD. Changing the mode to AHCI often resolves recognition issues."
   },
   {
-    "id": 23,
+    "id": 18,
     "type": "single",
     "question": "A workstation has four DIMM slots, each currently populated with 4 GB modules. The user wants to upgrade to 32 GB of RAM. Which of the following configurations will meet this requirement?",
     "options": [
@@ -277,10 +277,10 @@
     "correct": [
       1
     ],
-    "explanation": "Replacing all four 4 GB modules with 8 GB modules will give a total of 32 GB (4 Ã— 8 GB = 32 GB). Desktop motherboards generally do not support 28 GB or 14 GB modules."
+    "explanation": "Replacing all four 4 GB modules with 8 GB modules will give a total of 32 GB (4 \u00c3\u2014 8 GB = 32 GB). Desktop motherboards generally do not support 28 GB or 14 GB modules."
   },
   {
-    "id": 24,
+    "id": 19,
     "type": "single",
     "question": "Which of the following cooling solutions is BEST suited for an overclocked CPU in a small form factor PC?",
     "options": [
@@ -295,7 +295,7 @@
     "explanation": "A compact 120 mm All-In-One liquid cooler provides efficient cooling for an overclocked CPU in a small form factor PC where space is limited."
   },
   {
-    "id": 25,
+    "id": 20,
     "type": "single",
     "question": "A technician is troubleshooting a desktop that will not power on. The power supply is new, fans spin briefly, and then system shuts off. Which of the following is the MOST likely cause?",
     "options": [
@@ -310,7 +310,7 @@
     "explanation": "If motherboard standoffs are incorrectly placed or missing, the motherboard can short to the case and cause an immediate shutdown."
   },
   {
-    "id": 27,
+    "id": 21,
     "type": "single",
     "question": "A laptop battery is swelling and causing the case to pop open. Which of the following should the technician do FIRST?",
     "options": [
@@ -325,7 +325,7 @@
     "explanation": "A swelling battery poses a safety risk. The user should immediately power down the device and replace the battery with a new one."
   },
   {
-    "id": 28,
+    "id": 22,
     "type": "multiple",
     "question": "Which of the following disk configurations provide fault tolerance? (Select TWO)",
     "options": [
@@ -343,7 +343,7 @@
     "explanation": "RAID 1 (mirroring) and RAID 10 (mirrored stripes) both provide fault tolerance via redundancy."
   },
   {
-    "id": 29,
+    "id": 23,
     "type": "single",
     "question": "Which of the following drives would provide the BEST mix of capacity and performance for a workstation used to edit large video files?",
     "options": [
@@ -356,1151 +356,10 @@
       2
     ],
     "explanation": "A 1 TB NVMe SSD provides high performance for video editing and enough capacity for large files, offering the best balance."
-  },
-  {
-    "id": 31,
-    "type": "single",
-    "question": "Which of the following memory timings refers to the time it takes for the memory controller to open a row and access data?",
-    "options": [
-      "CAS Latency",
-      "RAS to CAS Delay",
-      "Row Precharge Time",
-      "Command Rate"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "RAS to CAS Delay (tRCD) is the time between activating a row and accessing the data column."
-  },
-  {
-    "id": 34,
-    "type": "single",
-    "question": "A user reports that their systemâ€™s front panel USB ports no longer work. The motherboard has rear USB ports that function normally. Which of the following is the MOST likely cause?",
-    "options": [
-      "Faulty front panel USB cable",
-      "Missing front panel drivers",
-      "Disabled USB ports in BIOS",
-      "Corrupted operating system"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "If the rear USB ports work but the front panel ports do not, the front panel USB cable or its connection to the motherboard is likely faulty."
-  },
-  {
-    "id": 35,
-    "type": "single",
-    "question": "A technician notices that the hard drive activity light on a desktop remains lit constantly, even with no user activity. Which of the following is MOST likely occurring?",
-    "options": [
-      "The hard drive is failing",
-      "A large file is being copied",
-      "The OS is performing background updates",
-      "The power supply is insufficient"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "A constantly lit HDD activity light often indicates the operating system is performing background tasks such as updates or indexing."
-  },
-  {
-    "id": 36,
-    "type": "single",
-    "question": "Which of the following best describes the purpose of ECC memory in a workstation?",
-    "options": [
-      "Increase memory speed",
-      "Detect and correct memory errors",
-      "Allow overclocking",
-      "Reduce power consumption"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "ECC (Error-Correcting Code) memory detects and corrects single-bit memory errors, improving system reliability."
-  },
-  {
-    "id": 38,
-    "type": "single",
-    "question": "A technician replaces a desktop computerâ€™s stock air cooler with an aftermarket liquid cooling system. After installation, the system fails to boot. Which of the following is the MOST likely cause?",
-    "options": [
-      "Incorrect mounting bracket",
-      "Faulty water pump",
-      "Insufficient radiator clearance",
-      "Incompatible motherboard"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "If the mounting bracket is incorrect or not properly secured, the CPU may not be making proper contact with the cooler, preventing the system from booting."
-  },
-  {
-    "id": 39,
-    "type": "single",
-    "question": "Which of the following connectors on the motherboard provides power to the CPU?",
-    "options": [
-      "4-pin Molex",
-      "8-pin EPS12V",
-      "24-pin ATX",
-      "6-pin PCIe"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "The 8-pin EPS12V connector supplies additional 12V power directly to the CPU."
-  },
-  {
-    "id": 40,
-    "type": "single",
-    "question": "A desktop PC has two identical graphics cards installed in an SLI configuration. One card fails and is removed, but the system will not boot. Which of the following should the technician do?",
-    "options": [
-      "Move the remaining card to the primary PCIe slot",
-      "Update the GPU driver",
-      "Disable SLI in BIOS",
-      "Replace the power supply"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "When running a single GPU, it must be placed in the primary PCIe slot; leaving it in the secondary slot prevents the system from recognizing it."
-  },
-  {
-    "id": 44,
-    "type": "single",
-    "question": "A technician is installing a heat sink on a CPU that uses the LGA socket. Which of the following should the technician apply before mounting the heat sink?",
-    "options": [
-      "Thermal pads",
-      "Thermal paste",
-      "Thermal adhesive",
-      "Thermal gel"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "Thermal paste is applied between the CPU and the heat sink to improve heat transfer."
-  },
-  {
-    "id": 45,
-    "type": "single",
-    "question": "A new server rack has arrived and needs to be installed. Which of the following tools is BEST for mounting server rails and hardware?",
-    "options": [
-      "Nut driver set",
-      "Hex key set",
-      "Phillips screwdriver",
-      "Flathead screwdriver"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "A Phillips screwdriver is typically used for the majority of screws on server rack rails and hardware."
-  },
-  {
-    "id": 46,
-    "type": "single",
-    "question": "Which of the following components is responsible for stabilizing voltage and providing power to a motherboard?",
-    "options": [
-      "Fuse",
-      "VRM",
-      "Capacitor",
-      "Resistor"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "The Voltage Regulator Module (VRM) on the motherboard stabilizes and regulates CPU power delivery."
-  },
-  {
-    "id": 47,
-    "type": "single",
-    "question": "Which of the following memory types provides both error detection and correction to prevent data corruption on a critical server?",
-    "options": [
-      "DDR3",
-      "DDR3L",
-      "ECC DDR3",
-      "Registered DDR3"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "ECC DDR3 memory modules can detect and correct single-bit memory errors, preventing data corruption."
-  },
-  {
-    "id": 50,
-    "type": "multiple",
-    "question": "Which of the following steps should a technician take when replacing a motherboard in a desktop? (Select TWO)",
-    "options": [
-      "Remove all attached peripherals",
-      "Update the operating system",
-      "Remove all cables and expansion cards",
-      "Update device drivers after replacement",
-      "Format the hard drive"
-    ],
-    "correct": [
-      0,
-      2
-    ],
-    "explanation": "When replacing a motherboard, disconnect all peripherals, cables, and expansion cards. Afterwards, new drivers should be installed for the new hardware."
-  },
-  {
-    "id": 53,
-    "type": "single",
-    "question": "A technician needs to install a RAID controller card in a server motherboard. Which connector type on the motherboard should be used?",
-    "options": [
-      "PCIe x16",
-      "AGP",
-      "PCIe x4",
-      "PCI"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "Most modern RAID controller cards use a PCIe x4 slot for optimal bandwidth."
-  },
-  {
-    "id": 55,
-    "type": "single",
-    "question": "Which of the following cooling methods uses liquid to transfer heat away from a CPU to a radiator?",
-    "options": [
-      "Passive heat sink",
-      "Heat pipe",
-      "Air cooler",
-      "Liquid AIO"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "AIO (All-In-One) liquid coolers uses coolant to carry heat from the CPU to a radiator and fans for dissipation."
-  },
-  {
-    "id": 56,
-    "type": "single",
-    "question": "A userâ€™s desktop computer has a single 500 GB HDD installed. The user wants to add a second drive for backups. Which of the following steps should the technician perform FIRST?",
-    "options": [
-      "Install new SATA drivers",
-      "Partition the new drive",
-      "Initialize the new drive in Disk Management",
-      "Format the new drive"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "After physically installing the new drive, the first step is to initialize it in Disk Management before partitioning or formatting."
-  },
-  {
-    "id": 57,
-    "type": "single",
-    "question": "Which of the following laptop expansion slots provides the highest data throughput for an external GPU solution?",
-    "options": [
-      "ExpressCard",
-      "Mini PCIe",
-      "Thunderbolt 3",
-      "M.2"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "Thunderbolt 3 provides up to 40 Gbps throughput, making it the best choice for external GPU solutions on laptops."
-  },
-  {
-    "id": 58,
-    "type": "multiple",
-    "question": "Which of the following memory modules can be installed in a laptop? (Select TWO)",
-    "options": [
-      "UDIMM",
-      "RDIMM",
-      "SO-DIMM",
-      "Micro-DIMM",
-      "LRDIMM",
-      "DIMM"
-    ],
-    "correct": [
-      2,
-      3
-    ],
-    "explanation": "Laptops use SO-DIMM or Micro-DIMM modules due to their smaller form factor compared to full-size DIMMs."
-  },
-  {
-    "id": 59,
-    "type": "single",
-    "question": "A laptopâ€™s battery life has significantly decreased. Which of the following should the technician check FIRST?",
-    "options": [
-      "Battery age",
-      "Fan speed",
-      "CPU usage in Task Manager",
-      "Screen resolution"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "Battery capacity diminishes over time; checking the batteryâ€™s age and health should be the first step when battery life degrades."
-  },
-  {
-    "id": 61,
-    "type": "single",
-    "question": "Which of the following cooling solutions is LEAST effective for removing heat from a high-end GPU in a compact HTPC case?",
-    "options": [
-      "Blower-style cooler",
-      "Dual-fan air cooler",
-      "120 mm radiator liquid cooler",
-      "Passive heat sink"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "Passive heat sinks rely on passive airflow and are not sufficient to cool high-end GPUs in compact enclosures."
-  },
-  {
-    "id": 62,
-    "type": "single",
-    "question": "A desktop is equipped with a single 24-pin ATX power connector to the motherboard. The technician is installing a high-performance CPU that requires additional power. Which connector should be added next?",
-    "options": [
-      "4-pin Molex",
-      "4-pin ATX12V",
-      "6-pin PCIe",
-      "8-pin EPS12V"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "High-performance CPUs often require additional 12V power provided by an 8-pin EPS12V connector."
-  },
-  {
-    "id": 63,
-    "type": "single",
-    "question": "Which of the following statements best describes the purpose of thermal throttling on a CPU?",
-    "options": [
-      "Increase CPU clock speed under load",
-      "Reduce CPU voltage to prevent spikes",
-      "Lower CPU performance to reduce temperature",
-      "Disable CPU cores no longer in use"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "Thermal throttling reduces the CPUâ€™s clock frequency when temperatures rise too high"
-  },
-  {
-    "id": 64,
-    "type": "single",
-    "question": "Which of the following is the primary difference between RAID 5 and RAID 6?",
-    "options": [
-      "RAID 5 uses striping with no redundancy, RAID 6 uses striping with any single drive redundancy",
-      "RAID 5 provides parity, RAID 6 provides double parity",
-      "RAID 5 requires at least four drives, RAID 6 requires at least three drives",
-      "RAID 5 is only read-optimized, RAID 6 is read and write-optimized"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "RAID 5 uses single parity, which can tolerate one drive failure. RAID 6 uses double parity, which can tolerate two simultaneous drive failures."
-  },
-  {
-    "id": 65,
-    "type": "single",
-    "question": "A userâ€™s optical drive is producing noise and failing to read discs. Which of the following is the MOST likely cause?",
-    "options": [
-      "Dirty lens",
-      "Bad SATA cable",
-      "Outdated firmware",
-      "Corrupted disc"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "A dirty or scratched lens in the optical drive can cause loud noises and read failures when attempting to spin and read a disc."
-  },
-  {
-    "id": 66,
-    "type": "single",
-    "question": "Which of the following best describes the main advantage of using a PCIe RAID controller over a software RAID solution?",
-    "options": [
-      "Lower latency",
-      "Reduced CPU overhead",
-      "Better compatibility",
-      "Lower cost"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "A hardware RAID controller offloads parity calculations and RAID management from the CPU, reducing CPU overhead."
-  },
-  {
-    "id": 67,
-    "type": "single",
-    "question": "A user wants to add a second internal SSD to their desktop but does not have any additional SATA connectors on the motherboard. Which of the following would be the BEST solution?",
-    "options": [
-      "Use a USB 3.0 to SATA adapter",
-      "Install a PCIe SATA controller card",
-      "Replace the existing SSD with a larger capacity one",
-      "Use a SATA power splitter"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "Installing a PCIe SATA controller card adds additional SATA ports to support more internal drives."
-  },
-  {
-    "id": 68,
-    "type": "single",
-    "question": "Which of the following laptop ports would be used to connect an eSATA external storage device?",
-    "options": [
-      "USB-C",
-      "Thunderbolt 3",
-      "HDMI",
-      "eSATA"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "An eSATA port is specifically designed for high-speed connections to external SATA storage devices."
-  },
-  {
-    "id": 70,
-    "type": "multiple",
-    "question": "A technician needs to upgrade the graphics card in a small form factor desktop. Which of the following should the technician consider? (Select TWO)",
-    "options": [
-      "Physical card length",
-      "Power supply wattage",
-      "PCIe slot availability",
-      "M.2 slot availability",
-      "Case airflow",
-      "Number of USB ports"
-    ],
-    "correct": [
-      0,
-      4
-    ],
-    "explanation": "When upgrading a GPU in a small form factor desktop, the card length and case airflow are crucial to ensure it fits and remains adequately cooled."
-  },
-  {
-    "id": 72,
-    "type": "single",
-    "question": "A workstation has four 4 TB SATA HDDs configured in RAID 10. If one drive fails, how many drives can still fail before data is lost?",
-    "options": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "RAID 10 is mirrored and striped. One drive failure per mirrored pair is allowable; a second failure in the same mirrored pair causes data loss."
-  },
-  {
-    "id": 76,
-    "type": "single",
-    "question": "A technician is configuring a RAID array for maximum read performance with redundancy. Which of the following RAID levels should be used?",
-    "options": [
-      "RAID 0",
-      "RAID 1",
-      "RAID 5",
-      "RAID 10"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "RAID 10 provides both striping (for speed) and mirroring (for redundancy), offering maximum read performance with fault tolerance."
-  },
-  {
-    "id": 77,
-    "type": "single",
-    "question": "A user reports that their newly installed GPU is not recognized by the system. The motherboard has both a PCIe x16 slot and a PCIe x4 slot. Which slot should be used?",
-    "options": [
-      "PCIe x4",
-      "PCIe x8",
-      "PCIe x16",
-      "PCIe x1"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "High-end GPUs require a PCIe x16 slot to operate at full bandwidth. PCIe x4 slots do not provide sufficient data lanes for most GPUs."
-  },
-  {
-    "id": 78,
-    "type": "single",
-    "question": "A laptop exhibits rapid battery drain. The user confirms that no background applications are consuming high CPU. Which of the following should be done NEXT?",
-    "options": [
-      "Replace the battery",
-      "Run a battery calibration",
-      "Update the BIOS",
-      "Check battery health using diagnostic software"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "Before replacing the battery, use diagnostic software to check the batteryâ€™s health and capacity to verify if it requires replacement."
-  },
-  {
-    "id": 79,
-    "type": "single",
-    "question": "When installing a multi-GPU configuration in a gaming workstation, which motherboard feature is required for proper GPU communication?",
-    "options": [
-      "SLI Bridge",
-      "CrossFire cable",
-      "NVLink bridge",
-      "M.2 slot"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "NVIDIA SLI configurations require an SLI bridge to link the GPUs for proper communication and rendering."
-  },
-  {
-    "id": 80,
-    "type": "single",
-    "question": "Which of the following best describes the purpose of thermal paste between a CPU and its heat sink?",
-    "options": [
-      "Increase airflow",
-      "Fill microscopic gaps",
-      "Adhere heat sink",
-      "Conduct electricity"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "Thermal paste fills microscopic gaps between the CPU and heat sink to improve heat transfer."
-  },
-  {
-    "id": 81,
-    "type": "single",
-    "question": "A technician is configuring a RAID 5 array with three disks. The capacity of each drive is 2 TB. What is the total usable capacity of the array?",
-    "options": [
-      "2 TB",
-      "4 TB",
-      "6 TB",
-      "1 TB"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "RAID 5 uses one diskâ€™s worth of capacity for parity. Usable capacity = (3 - 1) Ã— 2 TB = 4 TB."
-  },
-  {
-    "id": 82,
-    "type": "single",
-    "question": "Which of the following hard drive types uses a spinning platter to store data magnetically?",
-    "options": [
-      "SSD",
-      "HDD",
-      "NVMe",
-      "USB flash drive"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "A Hard Disk Drive (HDD) uses spinning magnetic platters to store data."
-  },
-  {
-    "id": 85,
-    "type": "single",
-    "question": "A technician is tasked with installing a PCIe NVMe SSD into a Windows workstation. Which of the following must be configured in BIOS prior to installing Windows?",
-    "options": [
-      "Enable RAID mode",
-      "Enable AHCI mode",
-      "Disable secure boot",
-      "Enable CSM (Compatibility Support Module)"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "AHCI mode must be enabled for SATA/NVMe support; RAID mode is only necessary for RAID configurations."
-  },
-  {
-    "id": 87,
-    "type": "multiple",
-    "question": "Which of the following are valid reasons to replace thermal paste on a CPU? (Select TWO)",
-    "options": [
-      "CPU running erratically",
-      "Heat sink removed for service",
-      "Steam condensation visible",
-      "System underclocked",
-      "High CPU temperatures",
-      "Bios update"
-    ],
-    "correct": [
-      1,
-      4
-    ],
-    "explanation": "Whenever the heat sink is removed or if the CPU shows unusually high temperatures, the old thermal paste should be replaced for optimal heat transfer."
-  },
-  {
-    "id": 88,
-    "type": "single",
-    "question": "A technician needs to mount a new 2.5\" SSD into a 3.5\" drive bay in a desktop. Which of the following should the technician use?",
-    "options": [
-      "3.5\" to 2.5\" adapter bracket",
-      "USB 3.0 to SATA adapter",
-      "Molex to SATA power adapter",
-      "PCIe to SATA card"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "A 3.5\" to 2.5\" adapter bracket allows the smaller 2.5\" SSD to be securely mounted in a standard 3.5\" drive bay."
-  },
-  {
-    "id": 89,
-    "type": "single",
-    "question": "Which of the following laptop components can be replaced by a user to extend battery run-time without requiring deep disassembly?",
-    "options": [
-      "Wireless card",
-      "RAM",
-      "Battery",
-      "CPU"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "Laptop batteries are often user-replaceable without extensive disassembly, allowing for easy runtime extension."
-  },
-  {
-    "id": 90,
-    "type": "single",
-    "question": "A workstation has a failing C: drive that contains the OS. Which of the following should the technician do to prepare for a drive replacement?",
-    "options": [
-      "Clone the drive to a backup drive",
-      "Defragment the drive",
-      "Run chkdsk /f",
-      "Update the OS"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "Before replacing the OS drive, cloning it to a backup drive ensures that all data and system files are preserved."
-  },
-  {
-    "id": 92,
-    "type": "single",
-    "question": "Which of the following hard drive interface speeds is the fastest?",
-    "options": [
-      "SATA II (3 Gbps)",
-      "SATA III (6 Gbps)",
-      "SAS (12 Gbps)",
-      "USB 3.0 (5 Gbps)"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "SAS (12 Gbps) offers a higher interface throughput compared to SATA III (6 Gbps) and USB 3.0 (5 Gbps)."
-  },
-  {
-    "id": 93,
-    "type": "single",
-    "question": "A server administrator wants to designate one drive in a RAID array as hot spares. Which of the following RAID levels supports a dedicated hot spare?",
-    "options": [
-      "RAID 0",
-      "RAID 1",
-      "RAID 5",
-      "RAID 10"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "RAID 5 arrays often support the configuration of a dedicated hot spare that will automatically replace a failed drive."
-  },
-  {
-    "id": 94,
-    "type": "single",
-    "question": "Which of the following is the MOST power-efficient memory technology used in SSDs for enterprise storage?",
-    "options": [
-      "SLC NAND",
-      "MLC NAND",
-      "TLC NAND",
-      "DRAM cache"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "SLC (Single Level Cell) NAND uses one cell per bit, making it the most power-efficient but also the most expensive SSD memory type."
-  },
-  {
-    "id": 95,
-    "type": "single",
-    "question": "A technician is troubleshooting a desktop that will not power on. The power supply is new, fans spin briefly, and then system shuts off. Which of the following is the MOST likely cause?",
-    "options": [
-      "Bad motherboard standoffs",
-      "Faulty power button",
-      "Shorted CPU sheath",
-      "Faulty case reset switch"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "If motherboard standoffs are incorrectly placed or missing, the motherboard can short to the case and cause an immediate shutdown."
-  },
-  {
-    "id": 96,
-    "type": "single",
-    "question": "A user reports that their systemâ€™s front panel USB ports no longer work. The motherboard has rear USB ports that function normally. Which of the following is the MOST likely cause?",
-    "options": [
-      "Faulty front panel USB cable",
-      "Missing front panel drivers",
-      "Disabled USB ports in BIOS",
-      "Corrupted operating system"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "If the rear USB ports work but the front panel ports do not, the front panel USB cable or its connection to the motherboard is likely faulty."
-  },
-  {
-    "id": 97,
-    "type": "single",
-    "question": "A technician notices that the hard drive activity light on a desktop remains lit constantly, even with no user activity. Which of the following is MOST likely occurring?",
-    "options": [
-      "The hard drive is failing",
-      "A large file is being copied",
-      "The OS is performing background updates",
-      "The power supply is insufficient"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "A constantly lit HDD activity light often indicates the operating system is performing background tasks such as updates or indexing."
-  },
-  {
-    "id": 98,
-    "type": "single",
-    "question": "Which of the following best describes the purpose of ECC memory in a workstation?",
-    "options": [
-      "Increase memory speed",
-      "Detect and correct memory errors",
-      "Allow overclocking",
-      "Reduce power consumption"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "ECC (Error-Correcting Code) memory detects and corrects single-bit memory errors, improving system reliability."
-  },
-  {
-    "id": 100,
-    "type": "single",
-    "question": "A technician replaces a desktop computerâ€™s stock air cooler with an aftermarket liquid cooling system. After installation, the system fails to boot. Which of the following is the MOST likely cause?",
-    "options": [
-      "Incorrect mounting bracket",
-      "Faulty water pump",
-      "Insufficient radiator clearance",
-      "Incompatible motherboard"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "If the mounting bracket is incorrect or not properly secured, the CPU may not be making proper contact with the cooler, preventing the system from booting."
-  },
-  {
-    "id": 101,
-    "type": "single",
-    "question": "Which of the following connectors on the motherboard provides power to the CPU?",
-    "options": [
-      "4-pin Molex",
-      "8-pin EPS12V",
-      "24-pin ATX",
-      "6-pin PCIe"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "The 8-pin EPS12V connector supplies additional 12V power directly to the CPU."
-  },
-  {
-    "id": 102,
-    "type": "single",
-    "question": "A desktop PC has two identical graphics cards installed in an SLI configuration. One card fails and is removed, but the system will not boot. Which of the following should the technician do?",
-    "options": [
-      "Move the remaining card to the primary PCIe slot",
-      "Update the GPU driver",
-      "Disable SLI in BIOS",
-      "Replace the power supply"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "When running a single GPU, it must be placed in the primary PCIe slot; leaving it in the secondary slot prevents the system from recognizing it."
-  },
-  {
-    "id": 106,
-    "type": "single",
-    "question": "A technician is installing a heat sink on a CPU that uses the LGA socket. Which of the following should the technician apply before mounting the heat sink?",
-    "options": [
-      "Thermal pads",
-      "Thermal paste",
-      "Thermal adhesive",
-      "Thermal gel"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "Thermal paste is applied between the CPU and the heat sink to improve heat transfer."
-  },
-  {
-    "id": 107,
-    "type": "single",
-    "question": "A new server rack has arrived and needs to be installed. Which of the following tools is BEST for mounting server rails and hardware?",
-    "options": [
-      "Nut driver set",
-      "Hex key set",
-      "Phillips screwdriver",
-      "Flathead screwdriver"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "A Phillips screwdriver is typically used for the majority of screws on server rack rails and hardware."
-  },
-  {
-    "id": 108,
-    "type": "single",
-    "question": "Which of the following components is responsible for stabilizing voltage and providing power to a motherboard?",
-    "options": [
-      "Fuse",
-      "VRM",
-      "Capacitor",
-      "Resistor"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "The Voltage Regulator Module (VRM) on the motherboard stabilizes and regulates CPU power delivery."
-  },
-  {
-    "id": 109,
-    "type": "single",
-    "question": "Which of the following memory types provides both error detection and correction to prevent data corruption on a critical server?",
-    "options": [
-      "DDR3",
-      "DDR3L",
-      "ECC DDR3",
-      "Registered DDR3"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "ECC DDR3 memory modules can detect and correct single-bit memory errors, preventing data corruption."
-  },
-  {
-    "id": 112,
-    "type": "multiple",
-    "question": "Which of the following steps should a technician take when replacing a motherboard in a desktop? (Select TWO)",
-    "options": [
-      "Remove all attached peripherals",
-      "Update the operating system",
-      "Remove all cables and expansion cards",
-      "Update device drivers after replacement",
-      "Format the hard drive"
-    ],
-    "correct": [
-      0,
-      2
-    ],
-    "explanation": "When replacing a motherboard, disconnect all peripherals, cables, and expansion cards. Afterwards, new drivers should be installed for the new hardware."
-  },
-  {
-    "id": 117,
-    "type": "single",
-    "question": "A user reports that their systemâ€™s front panel USB ports no longer work. The motherboard has rear USB ports that function normally. Which of the following is the MOST likely cause?",
-    "options": [
-      "Faulty front panel USB cable",
-      "Missing front panel drivers",
-      "Disabled USB ports in BIOS",
-      "Corrupted operating system"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "If the rear USB ports work but the front panel ports do not, the front panel USB cable or its connection to the motherboard is likely faulty."
-  },
-  {
-    "id": 118,
-    "type": "single",
-    "question": "A technician notices that the hard drive activity light on a desktop remains lit constantly, even with no user activity. Which of the following is MOST likely occurring?",
-    "options": [
-      "The hard drive is failing",
-      "A large file is being copied",
-      "The OS is performing background updates",
-      "The power supply is insufficient"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "A constantly lit HDD activity light often indicates the operating system is performing background tasks such as updates or indexing."
-  },
-  {
-    "id": 119,
-    "type": "single",
-    "question": "Which of the following drives would be MOST resistant to shock and vibration in a mobile workstation?",
-    "options": [
-      "7200 RPM HDD",
-      "5400 RPM HDD",
-      "2.5\" SSD",
-      "Hybrid SSHD"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "A 2.5\" SSD has no moving parts and offers the highest resistance to shock and vibration, making it ideal for mobile workstations."
-  },
-  {
-    "id": 120,
-    "type": "single",
-    "question": "A user reports that the systemâ€™s GPU fan is spinning loudly under light load. Which of the following should the technician do FIRST?",
-    "options": [
-      "Reseat the GPU",
-      "Update the GPU driver",
-      "Adjust the video card fan curve",
-      "Disable GPU overclocking"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "Adjusting or configuring the GPU fan curve in software can reduce unnecessary fan speeds under light loads."
-  },
-  {
-    "id": 121,
-    "type": "single",
-    "question": "A technician needs to replace a motherboard that uses proprietary connectors for the CPU fan and case speaker. Which of the following should be done FIRST?",
-    "options": [
-      "Label each connector before removal",
-      "Disconnect all cables and components",
-      "Update the motherboard BIOS",
-      "Back up the userâ€™s data"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "Labeling each proprietary connector before removal prevents confusion and ensures each connector is reattached correctly to the new motherboard."
-  },
-  {
-    "id": 122,
-    "type": "single",
-    "question": "Which of the following best describes the advantage of using registered ECC DDR4 memory in a server?",
-    "options": [
-      "Higher clock speeds",
-      "Better latency",
-      "Reduced CPU load during parity calculations",
-      "Lower cost per GB"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "Registered ECC memory offloads parity calculations from the CPU, reducing CPU load and improving stability in server environments."
-  },
-  {
-    "id": 123,
-    "type": "single",
-    "question": "A user reports that their desktopâ€™s system board battery is failing and the system clock resets on every boot. Which of the following components should be replaced?",
-    "options": [
-      "CMOS battery",
-      "Power supply",
-      "BIOS chip",
-      "CMOS jumper"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "The CMOS battery provides power to the real-time clock and BIOS settings when the system is powered off; replacing it will correct the clock reset issue."
-  },
-  {
-    "id": 12,
-    "type": "single",
-    "question": "An administrator notices that one of the serverâ€™s cooling fans is spinning at a much higher RPM than usual. Which of the following is MOST likely occurring?",
-    "options": [
-      "The server is under heavy load",
-      "The power supply is failing",
-      "The CPU is overheating",
-      "The RAM modules are failing"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "When a CPU overheats, the system increases fan speed to provide additional cooling."
-  },
-  {
-    "id": 15,
-    "type": "single",
-    "question": "A technician needs to install a RAID controller card into a server motherboard that has an open PCIe x8 slot. The technician only has a PCIe x16 compliant card. Which of the following actions should be taken?",
-    "options": [
-      "Use a PCIe x16 to x8 adapter",
-      "Install the card in the x8 slot",
-      "Purchase a new x8-only RAID controller",
-      "Update the server BIOS"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "PCIe slots are backward compatible. A PCIe x16 card can be installed into an x8 slot, operating at x8 speeds."
-  },
-  {
-    "id": 16,
-    "type": "single",
-    "question": "A workstation uses ECC memory. Which of the following benefits does ECC provide?",
-    "options": [
-      "Faster memory access",
-      "Error correction detection",
-      "Lower latency",
-      "Increased capacity"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "ECC (Error Checking and Correction) memory can detect and correct single-bit memory errors."
-  },
-  {
-    "id": 18,
-    "type": "single",
-    "question": "A desktop computer is exhibiting graphical artifacts on the screen. The technician suspects the GPU is overheating. Which of the following actions should the technician take FIRST?",
-    "options": [
-      "Reseat the GPU",
-      "Clean dust from GPU heatsink and fans",
-      "Update the graphics driver",
-      "Replace the thermal paste"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "Cleaning dust from the heatsink and fans can immediately improve cooling and is the first step in addressing overheating."
-  },
-  {
-    "id": 20,
-    "type": "single",
-    "question": "Which of the following power connector types is used to provide power to a modern PCIe graphics card?",
-    "options": [
-      "P4 4-pin",
-      "SATA 15-pin",
-      "Molex 4-pin",
-      "6-pin PCIe"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "Modern PCIe graphics cards require a 6-pin or 8-pin PCIe power connector from the PSU."
-  },
-  {
-    "id": 21,
-    "type": "single",
-    "question": "A user installed an optical drive in a desktop, but the drive is not recognized by the operating system. The drive spins but does not appear in BIOS. Which of the following is the MOST likely cause?",
-    "options": [
-      "Missing SATA power cable",
-      "Incorrect drive letter assignment",
-      "Faulty data cable",
-      "DRM conflict"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "If the drive spins but does not appear in BIOS, it is likely a faulty or improperly connected data cable (SATA cable)."
-  },
-  {
-    "id": 22,
-    "type": "single",
-    "question": "A technician is installing a new SATA SSD in a desktop. After installing the drive, the system will not boot. Which of the following should the technician do FIRST?",
-    "options": [
-      "Format the SSD",
-      "Initialize the SSD in BIOS",
-      "Ensure SATA controller mode is set to AHCI",
-      "Update firmware on the SSD"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "If the SATA controller mode is not set to AHCI, the operating system may not recognize a new SSD. Changing the mode to AHCI often resolves recognition issues."
-  },
-  {
-    "id": 23,
-    "type": "single",
-    "question": "A workstation has four DIMM slots, each currently populated with 4 GB modules. The user wants to upgrade to 32 GB of RAM. Which of the following configurations will meet this requirement?",
-    "options": [
-      "Replace one 4 GB module with a 28 GB module",
-      "Replace all 4 modules with 8 GB modules",
-      "Install an additional 12 GB module in an empty slot",
-      "Replace two 4 GB modules with 14 GB modules"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "Replacing all four 4 GB modules with 8 GB modules will give a total of 32 GB (4 Ã— 8 GB = 32 GB). Desktop motherboards generally do not support 28 GB or 14 GB modules."
   },
   {
     "id": 24,
     "type": "single",
-    "question": "Which of the following cooling solutions is BEST suited for an overclocked CPU in a small form factor PC?",
-    "options": [
-      "Tower air cooler",
-      "250W Heatsink Fan",
-      "120 mm AIO liquid cooler",
-      "External fan on case grill"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "A compact 120 mm All-In-One liquid cooler provides efficient cooling for an overclocked CPU in a small form factor PC where space is limited."
-  },
-  {
-    "id": 25,
-    "type": "single",
-    "question": "A technician is troubleshooting a desktop that will not power on. The power supply is new, fans spin briefly, and then system shuts off. Which of the following is the MOST likely cause?",
-    "options": [
-      "Bad motherboard standoffs",
-      "Faulty power button",
-      "Shorted CPU sheath",
-      "Faulty case reset switch"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "If motherboard standoffs are incorrectly placed or missing, the motherboard can short to the case and cause an immediate shutdown."
-  },
-  {
-    "id": 27,
-    "type": "single",
-    "question": "A laptop battery is swelling and causing the case to pop open. Which of the following should the technician do FIRST?",
-    "options": [
-      "Dispose of the battery at a local electronics recycling center",
-      "Use the laptop sparingly until the swelling subsides",
-      "Puncture the battery to let the air out",
-      "Replace the battery immediately"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "A swelling battery poses a safety risk. The user should immediately power down the device and replace the battery with a new one."
-  },
-  {
-    "id": 28,
-    "type": "multiple",
-    "question": "Which of the following disk configurations provide fault tolerance? (Select TWO)",
-    "options": [
-      "RAID 0",
-      "RAID 1",
-      "RAID 5",
-      "RAID 10",
-      "JBOD",
-      "Spanning"
-    ],
-    "correct": [
-      1,
-      3
-    ],
-    "explanation": "RAID 1 (mirroring) and RAID 10 (mirrored stripes) both provide fault tolerance via redundancy."
-  },
-  {
-    "id": 29,
-    "type": "single",
-    "question": "Which of the following drives would provide the BEST mix of capacity and performance for a workstation used to edit large video files?",
-    "options": [
-      "4 TB 5400 RPM HDD",
-      "512 GB SATA SSD",
-      "1 TB NVMe SSD",
-      "2 TB Hybrid SSHD"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "A 1 TB NVMe SSD provides high performance for video editing and enough capacity for large files, offering the best balance."
-  },
-  {
-    "id": 31,
-    "type": "single",
     "question": "Which of the following memory timings refers to the time it takes for the memory controller to open a row and access data?",
     "options": [
       "CAS Latency",
@@ -1514,9 +373,9 @@
     "explanation": "RAS to CAS Delay (tRCD) is the time between activating a row and accessing the data column."
   },
   {
-    "id": 34,
+    "id": 25,
     "type": "single",
-    "question": "A user reports that their systemâ€™s front panel USB ports no longer work. The motherboard has rear USB ports that function normally. Which of the following is the MOST likely cause?",
+    "question": "A user reports that their system\u00e2\u20ac\u2122s front panel USB ports no longer work. The motherboard has rear USB ports that function normally. Which of the following is the MOST likely cause?",
     "options": [
       "Faulty front panel USB cable",
       "Missing front panel drivers",
@@ -1529,7 +388,7 @@
     "explanation": "If the rear USB ports work but the front panel ports do not, the front panel USB cable or its connection to the motherboard is likely faulty."
   },
   {
-    "id": 35,
+    "id": 26,
     "type": "single",
     "question": "A technician notices that the hard drive activity light on a desktop remains lit constantly, even with no user activity. Which of the following is MOST likely occurring?",
     "options": [
@@ -1544,7 +403,7 @@
     "explanation": "A constantly lit HDD activity light often indicates the operating system is performing background tasks such as updates or indexing."
   },
   {
-    "id": 36,
+    "id": 27,
     "type": "single",
     "question": "Which of the following best describes the purpose of ECC memory in a workstation?",
     "options": [
@@ -1559,9 +418,9 @@
     "explanation": "ECC (Error-Correcting Code) memory detects and corrects single-bit memory errors, improving system reliability."
   },
   {
-    "id": 38,
+    "id": 28,
     "type": "single",
-    "question": "A technician replaces a desktop computerâ€™s stock air cooler with an aftermarket liquid cooling system. After installation, the system fails to boot. Which of the following is the MOST likely cause?",
+    "question": "A technician replaces a desktop computer\u00e2\u20ac\u2122s stock air cooler with an aftermarket liquid cooling system. After installation, the system fails to boot. Which of the following is the MOST likely cause?",
     "options": [
       "Incorrect mounting bracket",
       "Faulty water pump",
@@ -1574,7 +433,7 @@
     "explanation": "If the mounting bracket is incorrect or not properly secured, the CPU may not be making proper contact with the cooler, preventing the system from booting."
   },
   {
-    "id": 39,
+    "id": 29,
     "type": "single",
     "question": "Which of the following connectors on the motherboard provides power to the CPU?",
     "options": [
@@ -1589,7 +448,7 @@
     "explanation": "The 8-pin EPS12V connector supplies additional 12V power directly to the CPU."
   },
   {
-    "id": 40,
+    "id": 30,
     "type": "single",
     "question": "A desktop PC has two identical graphics cards installed in an SLI configuration. One card fails and is removed, but the system will not boot. Which of the following should the technician do?",
     "options": [
@@ -1604,7 +463,7 @@
     "explanation": "When running a single GPU, it must be placed in the primary PCIe slot; leaving it in the secondary slot prevents the system from recognizing it."
   },
   {
-    "id": 44,
+    "id": 31,
     "type": "single",
     "question": "A technician is installing a heat sink on a CPU that uses the LGA socket. Which of the following should the technician apply before mounting the heat sink?",
     "options": [
@@ -1619,7 +478,7 @@
     "explanation": "Thermal paste is applied between the CPU and the heat sink to improve heat transfer."
   },
   {
-    "id": 45,
+    "id": 32,
     "type": "single",
     "question": "A new server rack has arrived and needs to be installed. Which of the following tools is BEST for mounting server rails and hardware?",
     "options": [
@@ -1634,7 +493,7 @@
     "explanation": "A Phillips screwdriver is typically used for the majority of screws on server rack rails and hardware."
   },
   {
-    "id": 46,
+    "id": 33,
     "type": "single",
     "question": "Which of the following components is responsible for stabilizing voltage and providing power to a motherboard?",
     "options": [
@@ -1649,7 +508,7 @@
     "explanation": "The Voltage Regulator Module (VRM) on the motherboard stabilizes and regulates CPU power delivery."
   },
   {
-    "id": 47,
+    "id": 34,
     "type": "single",
     "question": "Which of the following memory types provides both error detection and correction to prevent data corruption on a critical server?",
     "options": [
@@ -1664,7 +523,7 @@
     "explanation": "ECC DDR3 memory modules can detect and correct single-bit memory errors, preventing data corruption."
   },
   {
-    "id": 50,
+    "id": 35,
     "type": "multiple",
     "question": "Which of the following steps should a technician take when replacing a motherboard in a desktop? (Select TWO)",
     "options": [
@@ -1681,7 +540,7 @@
     "explanation": "When replacing a motherboard, disconnect all peripherals, cables, and expansion cards. Afterwards, new drivers should be installed for the new hardware."
   },
   {
-    "id": 53,
+    "id": 36,
     "type": "single",
     "question": "A technician needs to install a RAID controller card in a server motherboard. Which connector type on the motherboard should be used?",
     "options": [
@@ -1696,7 +555,7 @@
     "explanation": "Most modern RAID controller cards use a PCIe x4 slot for optimal bandwidth."
   },
   {
-    "id": 55,
+    "id": 37,
     "type": "single",
     "question": "Which of the following cooling methods uses liquid to transfer heat away from a CPU to a radiator?",
     "options": [
@@ -1711,9 +570,9 @@
     "explanation": "AIO (All-In-One) liquid coolers uses coolant to carry heat from the CPU to a radiator and fans for dissipation."
   },
   {
-    "id": 56,
+    "id": 38,
     "type": "single",
-    "question": "A userâ€™s desktop computer has a single 500 GB HDD installed. The user wants to add a second drive for backups. Which of the following steps should the technician perform FIRST?",
+    "question": "A user\u00e2\u20ac\u2122s desktop computer has a single 500 GB HDD installed. The user wants to add a second drive for backups. Which of the following steps should the technician perform FIRST?",
     "options": [
       "Install new SATA drivers",
       "Partition the new drive",
@@ -1726,7 +585,7 @@
     "explanation": "After physically installing the new drive, the first step is to initialize it in Disk Management before partitioning or formatting."
   },
   {
-    "id": 57,
+    "id": 39,
     "type": "single",
     "question": "Which of the following laptop expansion slots provides the highest data throughput for an external GPU solution?",
     "options": [
@@ -1741,7 +600,7 @@
     "explanation": "Thunderbolt 3 provides up to 40 Gbps throughput, making it the best choice for external GPU solutions on laptops."
   },
   {
-    "id": 58,
+    "id": 40,
     "type": "multiple",
     "question": "Which of the following memory modules can be installed in a laptop? (Select TWO)",
     "options": [
@@ -1759,9 +618,9 @@
     "explanation": "Laptops use SO-DIMM or Micro-DIMM modules due to their smaller form factor compared to full-size DIMMs."
   },
   {
-    "id": 59,
+    "id": 41,
     "type": "single",
-    "question": "A laptopâ€™s battery life has significantly decreased. Which of the following should the technician check FIRST?",
+    "question": "A laptop\u00e2\u20ac\u2122s battery life has significantly decreased. Which of the following should the technician check FIRST?",
     "options": [
       "Battery age",
       "Fan speed",
@@ -1771,10 +630,10 @@
     "correct": [
       0
     ],
-    "explanation": "Battery capacity diminishes over time; checking the batteryâ€™s age and health should be the first step when battery life degrades."
+    "explanation": "Battery capacity diminishes over time; checking the battery\u00e2\u20ac\u2122s age and health should be the first step when battery life degrades."
   },
   {
-    "id": 61,
+    "id": 42,
     "type": "single",
     "question": "Which of the following cooling solutions is LEAST effective for removing heat from a high-end GPU in a compact HTPC case?",
     "options": [
@@ -1789,7 +648,7 @@
     "explanation": "Passive heat sinks rely on passive airflow and are not sufficient to cool high-end GPUs in compact enclosures."
   },
   {
-    "id": 62,
+    "id": 43,
     "type": "single",
     "question": "A desktop is equipped with a single 24-pin ATX power connector to the motherboard. The technician is installing a high-performance CPU that requires additional power. Which connector should be added next?",
     "options": [
@@ -1804,7 +663,7 @@
     "explanation": "High-performance CPUs often require additional 12V power provided by an 8-pin EPS12V connector."
   },
   {
-    "id": 63,
+    "id": 44,
     "type": "single",
     "question": "Which of the following statements best describes the purpose of thermal throttling on a CPU?",
     "options": [
@@ -1816,10 +675,10 @@
     "correct": [
       2
     ],
-    "explanation": "Thermal throttling reduces the CPUâ€™s clock frequency when temperatures rise too high"
+    "explanation": "Thermal throttling reduces the CPU\u00e2\u20ac\u2122s clock frequency when temperatures rise too high"
   },
   {
-    "id": 64,
+    "id": 45,
     "type": "single",
     "question": "Which of the following is the primary difference between RAID 5 and RAID 6?",
     "options": [
@@ -1834,9 +693,9 @@
     "explanation": "RAID 5 uses single parity, which can tolerate one drive failure. RAID 6 uses double parity, which can tolerate two simultaneous drive failures."
   },
   {
-    "id": 65,
+    "id": 46,
     "type": "single",
-    "question": "A userâ€™s optical drive is producing noise and failing to read discs. Which of the following is the MOST likely cause?",
+    "question": "A user\u00e2\u20ac\u2122s optical drive is producing noise and failing to read discs. Which of the following is the MOST likely cause?",
     "options": [
       "Dirty lens",
       "Bad SATA cable",
@@ -1849,7 +708,7 @@
     "explanation": "A dirty or scratched lens in the optical drive can cause loud noises and read failures when attempting to spin and read a disc."
   },
   {
-    "id": 66,
+    "id": 47,
     "type": "single",
     "question": "Which of the following best describes the main advantage of using a PCIe RAID controller over a software RAID solution?",
     "options": [
@@ -1864,7 +723,7 @@
     "explanation": "A hardware RAID controller offloads parity calculations and RAID management from the CPU, reducing CPU overhead."
   },
   {
-    "id": 67,
+    "id": 48,
     "type": "single",
     "question": "A user wants to add a second internal SSD to their desktop but does not have any additional SATA connectors on the motherboard. Which of the following would be the BEST solution?",
     "options": [
@@ -1879,7 +738,7 @@
     "explanation": "Installing a PCIe SATA controller card adds additional SATA ports to support more internal drives."
   },
   {
-    "id": 68,
+    "id": 49,
     "type": "single",
     "question": "Which of the following laptop ports would be used to connect an eSATA external storage device?",
     "options": [
@@ -1894,7 +753,7 @@
     "explanation": "An eSATA port is specifically designed for high-speed connections to external SATA storage devices."
   },
   {
-    "id": 70,
+    "id": 50,
     "type": "multiple",
     "question": "A technician needs to upgrade the graphics card in a small form factor desktop. Which of the following should the technician consider? (Select TWO)",
     "options": [
@@ -1912,7 +771,7 @@
     "explanation": "When upgrading a GPU in a small form factor desktop, the card length and case airflow are crucial to ensure it fits and remains adequately cooled."
   },
   {
-    "id": 72,
+    "id": 51,
     "type": "single",
     "question": "A workstation has four 4 TB SATA HDDs configured in RAID 10. If one drive fails, how many drives can still fail before data is lost?",
     "options": [
@@ -1927,7 +786,7 @@
     "explanation": "RAID 10 is mirrored and striped. One drive failure per mirrored pair is allowable; a second failure in the same mirrored pair causes data loss."
   },
   {
-    "id": 76,
+    "id": 52,
     "type": "single",
     "question": "A technician is configuring a RAID array for maximum read performance with redundancy. Which of the following RAID levels should be used?",
     "options": [
@@ -1942,7 +801,7 @@
     "explanation": "RAID 10 provides both striping (for speed) and mirroring (for redundancy), offering maximum read performance with fault tolerance."
   },
   {
-    "id": 77,
+    "id": 53,
     "type": "single",
     "question": "A user reports that their newly installed GPU is not recognized by the system. The motherboard has both a PCIe x16 slot and a PCIe x4 slot. Which slot should be used?",
     "options": [
@@ -1957,7 +816,7 @@
     "explanation": "High-end GPUs require a PCIe x16 slot to operate at full bandwidth. PCIe x4 slots do not provide sufficient data lanes for most GPUs."
   },
   {
-    "id": 78,
+    "id": 54,
     "type": "single",
     "question": "A laptop exhibits rapid battery drain. The user confirms that no background applications are consuming high CPU. Which of the following should be done NEXT?",
     "options": [
@@ -1969,10 +828,10 @@
     "correct": [
       3
     ],
-    "explanation": "Before replacing the battery, use diagnostic software to check the batteryâ€™s health and capacity to verify if it requires replacement."
+    "explanation": "Before replacing the battery, use diagnostic software to check the battery\u00e2\u20ac\u2122s health and capacity to verify if it requires replacement."
   },
   {
-    "id": 79,
+    "id": 55,
     "type": "single",
     "question": "When installing a multi-GPU configuration in a gaming workstation, which motherboard feature is required for proper GPU communication?",
     "options": [
@@ -1987,7 +846,7 @@
     "explanation": "NVIDIA SLI configurations require an SLI bridge to link the GPUs for proper communication and rendering."
   },
   {
-    "id": 80,
+    "id": 56,
     "type": "single",
     "question": "Which of the following best describes the purpose of thermal paste between a CPU and its heat sink?",
     "options": [
@@ -2002,7 +861,7 @@
     "explanation": "Thermal paste fills microscopic gaps between the CPU and heat sink to improve heat transfer."
   },
   {
-    "id": 81,
+    "id": 57,
     "type": "single",
     "question": "A technician is configuring a RAID 5 array with three disks. The capacity of each drive is 2 TB. What is the total usable capacity of the array?",
     "options": [
@@ -2014,10 +873,10 @@
     "correct": [
       1
     ],
-    "explanation": "RAID 5 uses one diskâ€™s worth of capacity for parity. Usable capacity = (3 - 1) Ã— 2 TB = 4 TB."
+    "explanation": "RAID 5 uses one disk\u00e2\u20ac\u2122s worth of capacity for parity. Usable capacity = (3 - 1) \u00c3\u2014 2 TB = 4 TB."
   },
   {
-    "id": 82,
+    "id": 58,
     "type": "single",
     "question": "Which of the following hard drive types uses a spinning platter to store data magnetically?",
     "options": [
@@ -2032,7 +891,7 @@
     "explanation": "A Hard Disk Drive (HDD) uses spinning magnetic platters to store data."
   },
   {
-    "id": 85,
+    "id": 59,
     "type": "single",
     "question": "A technician is tasked with installing a PCIe NVMe SSD into a Windows workstation. Which of the following must be configured in BIOS prior to installing Windows?",
     "options": [
@@ -2047,7 +906,7 @@
     "explanation": "AHCI mode must be enabled for SATA/NVMe support; RAID mode is only necessary for RAID configurations."
   },
   {
-    "id": 87,
+    "id": 60,
     "type": "multiple",
     "question": "Which of the following are valid reasons to replace thermal paste on a CPU? (Select TWO)",
     "options": [
@@ -2065,7 +924,7 @@
     "explanation": "Whenever the heat sink is removed or if the CPU shows unusually high temperatures, the old thermal paste should be replaced for optimal heat transfer."
   },
   {
-    "id": 88,
+    "id": 61,
     "type": "single",
     "question": "A technician needs to mount a new 2.5\" SSD into a 3.5\" drive bay in a desktop. Which of the following should the technician use?",
     "options": [
@@ -2080,7 +939,7 @@
     "explanation": "A 3.5\" to 2.5\" adapter bracket allows the smaller 2.5\" SSD to be securely mounted in a standard 3.5\" drive bay."
   },
   {
-    "id": 89,
+    "id": 62,
     "type": "single",
     "question": "Which of the following laptop components can be replaced by a user to extend battery run-time without requiring deep disassembly?",
     "options": [
@@ -2095,7 +954,7 @@
     "explanation": "Laptop batteries are often user-replaceable without extensive disassembly, allowing for easy runtime extension."
   },
   {
-    "id": 90,
+    "id": 63,
     "type": "single",
     "question": "A workstation has a failing C: drive that contains the OS. Which of the following should the technician do to prepare for a drive replacement?",
     "options": [
@@ -2110,7 +969,7 @@
     "explanation": "Before replacing the OS drive, cloning it to a backup drive ensures that all data and system files are preserved."
   },
   {
-    "id": 92,
+    "id": 64,
     "type": "single",
     "question": "Which of the following hard drive interface speeds is the fastest?",
     "options": [
@@ -2125,7 +984,7 @@
     "explanation": "SAS (12 Gbps) offers a higher interface throughput compared to SATA III (6 Gbps) and USB 3.0 (5 Gbps)."
   },
   {
-    "id": 93,
+    "id": 65,
     "type": "single",
     "question": "A server administrator wants to designate one drive in a RAID array as hot spares. Which of the following RAID levels supports a dedicated hot spare?",
     "options": [
@@ -2140,7 +999,7 @@
     "explanation": "RAID 5 arrays often support the configuration of a dedicated hot spare that will automatically replace a failed drive."
   },
   {
-    "id": 94,
+    "id": 66,
     "type": "single",
     "question": "Which of the following is the MOST power-efficient memory technology used in SSDs for enterprise storage?",
     "options": [
@@ -2155,219 +1014,7 @@
     "explanation": "SLC (Single Level Cell) NAND uses one cell per bit, making it the most power-efficient but also the most expensive SSD memory type."
   },
   {
-    "id": 95,
-    "type": "single",
-    "question": "A technician is troubleshooting a desktop that will not power on. The power supply is new, fans spin briefly, and then system shuts off. Which of the following is the MOST likely cause?",
-    "options": [
-      "Bad motherboard standoffs",
-      "Faulty power button",
-      "Shorted CPU sheath",
-      "Faulty case reset switch"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "If motherboard standoffs are incorrectly placed or missing, the motherboard can short to the case and cause an immediate shutdown."
-  },
-  {
-    "id": 96,
-    "type": "single",
-    "question": "A user reports that their systemâ€™s front panel USB ports no longer work. The motherboard has rear USB ports that function normally. Which of the following is the MOST likely cause?",
-    "options": [
-      "Faulty front panel USB cable",
-      "Missing front panel drivers",
-      "Disabled USB ports in BIOS",
-      "Corrupted operating system"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "If the rear USB ports work but the front panel ports do not, the front panel USB cable or its connection to the motherboard is likely faulty."
-  },
-  {
-    "id": 97,
-    "type": "single",
-    "question": "A technician notices that the hard drive activity light on a desktop remains lit constantly, even with no user activity. Which of the following is MOST likely occurring?",
-    "options": [
-      "The hard drive is failing",
-      "A large file is being copied",
-      "The OS is performing background updates",
-      "The power supply is insufficient"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "A constantly lit HDD activity light often indicates the operating system is performing background tasks such as updates or indexing."
-  },
-  {
-    "id": 98,
-    "type": "single",
-    "question": "Which of the following best describes the purpose of ECC memory in a workstation?",
-    "options": [
-      "Increase memory speed",
-      "Detect and correct memory errors",
-      "Allow overclocking",
-      "Reduce power consumption"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "ECC (Error-Correcting Code) memory detects and corrects single-bit memory errors, improving system reliability."
-  },
-  {
-    "id": 100,
-    "type": "single",
-    "question": "A technician replaces a desktop computerâ€™s stock air cooler with an aftermarket liquid cooling system. After installation, the system fails to boot. Which of the following is the MOST likely cause?",
-    "options": [
-      "Incorrect mounting bracket",
-      "Faulty water pump",
-      "Insufficient radiator clearance",
-      "Incompatible motherboard"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "If the mounting bracket is incorrect or not properly secured, the CPU may not be making proper contact with the cooler, preventing the system from booting."
-  },
-  {
-    "id": 101,
-    "type": "single",
-    "question": "Which of the following connectors on the motherboard provides power to the CPU?",
-    "options": [
-      "4-pin Molex",
-      "8-pin EPS12V",
-      "24-pin ATX",
-      "6-pin PCIe"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "The 8-pin EPS12V connector supplies additional 12V power directly to the CPU."
-  },
-  {
-    "id": 102,
-    "type": "single",
-    "question": "A desktop PC has two identical graphics cards installed in an SLI configuration. One card fails and is removed, but the system will not boot. Which of the following should the technician do?",
-    "options": [
-      "Move the remaining card to the primary PCIe slot",
-      "Update the GPU driver",
-      "Disable SLI in BIOS",
-      "Replace the power supply"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "When running a single GPU, it must be placed in the primary PCIe slot; leaving it in the secondary slot prevents the system from recognizing it."
-  },
-  {
-    "id": 106,
-    "type": "single",
-    "question": "A technician is installing a heat sink on a CPU that uses the LGA socket. Which of the following should the technician apply before mounting the heat sink?",
-    "options": [
-      "Thermal pads",
-      "Thermal paste",
-      "Thermal adhesive",
-      "Thermal gel"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "Thermal paste is applied between the CPU and the heat sink to improve heat transfer."
-  },
-  {
-    "id": 107,
-    "type": "single",
-    "question": "A new server rack has arrived and needs to be installed. Which of the following tools is BEST for mounting server rails and hardware?",
-    "options": [
-      "Nut driver set",
-      "Hex key set",
-      "Phillips screwdriver",
-      "Flathead screwdriver"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "A Phillips screwdriver is typically used for the majority of screws on server rack rails and hardware."
-  },
-  {
-    "id": 108,
-    "type": "single",
-    "question": "Which of the following components is responsible for stabilizing voltage and providing power to a motherboard?",
-    "options": [
-      "Fuse",
-      "VRM",
-      "Capacitor",
-      "Resistor"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "The Voltage Regulator Module (VRM) on the motherboard stabilizes and regulates CPU power delivery."
-  },
-  {
-    "id": 109,
-    "type": "single",
-    "question": "Which of the following memory types provides both error detection and correction to prevent data corruption on a critical server?",
-    "options": [
-      "DDR3",
-      "DDR3L",
-      "ECC DDR3",
-      "Registered DDR3"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "ECC DDR3 memory modules can detect and correct single-bit memory errors, preventing data corruption."
-  },
-  {
-    "id": 112,
-    "type": "multiple",
-    "question": "Which of the following steps should a technician take when replacing a motherboard in a desktop? (Select TWO)",
-    "options": [
-      "Remove all attached peripherals",
-      "Update the operating system",
-      "Remove all cables and expansion cards",
-      "Update device drivers after replacement",
-      "Format the hard drive"
-    ],
-    "correct": [
-      0,
-      2
-    ],
-    "explanation": "When replacing a motherboard, disconnect all peripherals, cables, and expansion cards. Afterwards, new drivers should be installed for the new hardware."
-  },
-  {
-    "id": 117,
-    "type": "single",
-    "question": "A user reports that their systemâ€™s front panel USB ports no longer work. The motherboard has rear USB ports that function normally. Which of the following is the MOST likely cause?",
-    "options": [
-      "Faulty front panel USB cable",
-      "Missing front panel drivers",
-      "Disabled USB ports in BIOS",
-      "Corrupted operating system"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "If the rear USB ports work but the front panel ports do not, the front panel USB cable or its connection to the motherboard is likely faulty."
-  },
-  {
-    "id": 118,
-    "type": "single",
-    "question": "A technician notices that the hard drive activity light on a desktop remains lit constantly, even with no user activity. Which of the following is MOST likely occurring?",
-    "options": [
-      "The hard drive is failing",
-      "A large file is being copied",
-      "The OS is performing background updates",
-      "The power supply is insufficient"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "A constantly lit HDD activity light often indicates the operating system is performing background tasks such as updates or indexing."
-  },
-  {
-    "id": 119,
+    "id": 67,
     "type": "single",
     "question": "Which of the following drives would be MOST resistant to shock and vibration in a mobile workstation?",
     "options": [
@@ -2382,9 +1029,9 @@
     "explanation": "A 2.5\" SSD has no moving parts and offers the highest resistance to shock and vibration, making it ideal for mobile workstations."
   },
   {
-    "id": 120,
+    "id": 68,
     "type": "single",
-    "question": "A user reports that the systemâ€™s GPU fan is spinning loudly under light load. Which of the following should the technician do FIRST?",
+    "question": "A user reports that the system\u00e2\u20ac\u2122s GPU fan is spinning loudly under light load. Which of the following should the technician do FIRST?",
     "options": [
       "Reseat the GPU",
       "Update the GPU driver",
@@ -2397,14 +1044,14 @@
     "explanation": "Adjusting or configuring the GPU fan curve in software can reduce unnecessary fan speeds under light loads."
   },
   {
-    "id": 121,
+    "id": 69,
     "type": "single",
     "question": "A technician needs to replace a motherboard that uses proprietary connectors for the CPU fan and case speaker. Which of the following should be done FIRST?",
     "options": [
       "Label each connector before removal",
       "Disconnect all cables and components",
       "Update the motherboard BIOS",
-      "Back up the userâ€™s data"
+      "Back up the user\u00e2\u20ac\u2122s data"
     ],
     "correct": [
       0
@@ -2412,7 +1059,7 @@
     "explanation": "Labeling each proprietary connector before removal prevents confusion and ensures each connector is reattached correctly to the new motherboard."
   },
   {
-    "id": 122,
+    "id": 70,
     "type": "single",
     "question": "Which of the following best describes the advantage of using registered ECC DDR4 memory in a server?",
     "options": [
@@ -2427,9 +1074,9 @@
     "explanation": "Registered ECC memory offloads parity calculations from the CPU, reducing CPU load and improving stability in server environments."
   },
   {
-    "id": 123,
+    "id": 71,
     "type": "single",
-    "question": "A user reports that their desktopâ€™s system board battery is failing and the system clock resets on every boot. Which of the following components should be replaced?",
+    "question": "A user reports that their desktop\u00e2\u20ac\u2122s system board battery is failing and the system clock resets on every boot. Which of the following components should be replaced?",
     "options": [
       "CMOS battery",
       "Power supply",
@@ -2442,7 +1089,7 @@
     "explanation": "The CMOS battery provides power to the real-time clock and BIOS settings when the system is powered off; replacing it will correct the clock reset issue."
   },
   {
-    "id": 124,
+    "id": 72,
     "type": "single",
     "question": "Which type of RAM is typically used in modern laptops?",
     "options": [
@@ -2457,7 +1104,7 @@
     "explanation": "DDR4 SODIMM is the standard RAM for modern laptops due to its form factor and performance."
   },
   {
-    "id": 125,
+    "id": 73,
     "type": "single",
     "question": "What is the primary purpose of a heat sink for a CPU?",
     "options": [
@@ -2472,7 +1119,7 @@
     "explanation": "A heat sink's primary purpose is to dissipate heat generated by the CPU, preventing overheating."
   },
   {
-    "id": 126,
+    "id": 74,
     "type": "multiple",
     "question": "Which of the following are common types of CPU sockets? (Select TWO)",
     "options": [

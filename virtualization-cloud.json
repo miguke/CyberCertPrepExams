@@ -182,36 +182,6 @@
     "explanation": "SaaS (Software as a Service) provides on-demand software applications over the internet, typically on a subscription basis."
   },
   {
-    "id": 11,
-    "type": "single",
-    "question": "What is a hypervisor?",
-    "options": [
-      "A type of cloud service model",
-      "Software that creates and runs virtual machines",
-      "A physical server in a data center",
-      "A network monitoring tool"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "A hypervisor is software, firmware, or hardware that creates and runs virtual machines (VMs)."
-  },
-  {
-    "id": 12,
-    "type": "single",
-    "question": "Which cloud computing model provides on-demand software applications over the internet?",
-    "options": [
-      "IaaS",
-      "PaaS",
-      "SaaS",
-      "DaaS"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "SaaS (Software as a Service) provides on-demand software applications over the internet, typically on a subscription basis."
-  },
-  {
     "id": 13,
     "type": "single",
     "question": "What does 'SOHO' stand for in the context of networking environments?",
