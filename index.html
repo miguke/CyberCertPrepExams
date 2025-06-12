@@ -198,6 +198,7 @@
       .stats {
         display: flex;
         justify-content: space-around;
+        align-items: center; /* Added for vertical alignment */
         padding: 12px;
         background: #f8f9fa;
         border-bottom: 1px solid #e9ecef;
@@ -507,6 +508,20 @@
           min-width: 120px;
         }
       }
+
+      #time-remaining {
+        position: fixed;
+        top: 80px; /* Adjusted for header */
+        right: 20px;
+        background-color: rgba(44, 62, 80, 0.85); /* --header-bg like */
+        color: white;
+        padding: 10px 15px;
+        border-radius: 8px;
+        font-size: 1.1em;
+        font-weight: bold;
+        z-index: 1000; /* Ensure it's on top */
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      }
     </style>
 </head>
 <body>
@@ -553,18 +568,22 @@
                 <button class="btn btn-primary" id="submitBtn" onclick="submitA()">Verificar</button>
                 <button class="btn btn-secondary" id="nextBtn" onclick="nextQ()" disabled>Próxima →</button>
             </div>
+            <div id="time-remaining" style="display: none;">Tempo: 90:00</div>
         </div>
     </div>
 
     <script>
-        const topics={
+        let examTimerInterval = null;
+        let examTimeRemaining = 5400; // 90 minutes in seconds
+
+        const topics = {
             'Mobile Devices':{count:0,questions:[]},
             'Networking':{count:0,questions:[]},
             'Hardware':{count:0,questions:[]},
             'Virtualization and Cloud Computing':{count:0,questions:[]},
             'Hardware and Network Troubleshooting':{count:0,questions:[]}
         };
-        
+
         let currentQ=0,userAnswers=[],correctCount=0,answered=false,quizQuestions=[],selectedTopics=[];
 
         // Sample questions (fallback only)
@@ -606,18 +625,52 @@
                     topics[topic].count = sampleQuestions[topic].length;
                 });
             }
-            
+
             renderTopics();
         }
 
         function renderTopics(){
-            const grid=document.getElementById('topicGrid');
-            grid.innerHTML=Object.keys(topics).map(topic=>`
-                <div class="topic-card" onclick="toggleTopic('${topic}')" id="topic-${topic.replace(/ /g,'-')}">
-                    <div class="topic-title">${topic}</div>
-                    <div class="topic-count">${topics[topic].count} perguntas</div>
-                </div>
-            `).join('');
+            const grid = document.getElementById('topicGrid');
+            grid.innerHTML = ''; // Clear previous topics
+
+            // Render standard topic cards
+            Object.keys(topics).forEach(topic => {
+                const topicId = `topic-${topic.replace(/[ &]+/g, '-')}`;
+                const cardHTML = `
+                    <div class="topic-card" 
+                         onclick="toggleTopic('${topic}')" 
+                         id="${topicId}" 
+                         tabindex="0" 
+                         role="button" 
+                         aria-label="Iniciar quiz sobre ${topic}: ${topics[topic].count} perguntas">
+                        <div class="topic-title">${topic}</div>
+                        <div class="topic-count">${topics[topic].count} perguntas</div>
+                    </div>`;
+                grid.innerHTML += cardHTML;
+            });
+
+            // Add "Simular Exame Real" card
+            const realExamCardHTML = `
+                <div class="topic-card" 
+                     onclick="startRealExam()" 
+                     id="topic-Simular-Exame-Real" 
+                     tabindex="0" 
+                     role="button" 
+                     aria-label="Simular Exame Real, 90 perguntas">
+                    <div class="topic-title">Simular Exame Real</div>
+                    <div class="topic-count">90 perguntas</div>
+                </div>`;
+            grid.innerHTML += realExamCardHTML;
+
+            // Add keyboard accessibility to all topic cards
+            document.querySelectorAll('.topic-card').forEach(card => {
+                card.addEventListener('keypress', function(event) {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                        event.preventDefault(); // Prevent scrolling on space
+                        this.click(); // Trigger the onclick event
+                    }
+                });
+            });
         }
 
         function toggleTopic(topic){
@@ -633,24 +686,181 @@
         }
 
         function selectAllTopics(){
-            selectedTopics=Object.keys(topics);
-            document.querySelectorAll('.topic-card').forEach(c=>c.classList.add('selected'));
+            selectedTopics = Object.keys(topics);
+            // Clear all selections first to handle deselection if some were manually picked
+            document.querySelectorAll('.topic-card').forEach(c => c.classList.remove('selected'));
+            // Now select only the actual topic cards
+            selectedTopics.forEach(topic => {
+                const cardId = `topic-${topic.replace(/[ &]+/g, '-')}`;
+                const cardElement = document.getElementById(cardId);
+                if (cardElement) {
+                    cardElement.classList.add('selected');
+                }
+            });
+            // Ensure "Simular Exame Real" card is never selected by this function
+            const simularExameCard = document.getElementById('topic-Simular-Exame-Real');
+            if (simularExameCard) {
+                simularExameCard.classList.remove('selected');
+            }
         }
 
-        function startQuiz(){
+        async function startRealExam() {
+            console.log('[SER_LOG] startRealExam called');
+            console.log('Starting Real Exam Simulation...');
+            const examConfig = {
+                totalQuestions: 90,
+                topics: [
+                    { file: 'mobile-devices.json', name: 'Mobile Devices', percent: 0.15, count: 0 },
+                    { file: 'networking.json', name: 'Networking', percent: 0.20, count: 0 },
+                    { file: 'hardware.json', name: 'Hardware', percent: 0.25, count: 0 },
+                    { file: 'virtualization-cloud.json', name: 'Virtualization & Cloud Computing', percent: 0.11, count: 0 },
+                    { file: 'troubleshooting.json', name: 'Hardware & Network Troubleshooting', percent: 0.29, count: 0 }
+                ]
+            };
+
+            let calculatedSum = 0;
+            examConfig.topics.forEach(topic => {
+                topic.count = Math.round(examConfig.totalQuestions * topic.percent);
+                calculatedSum += topic.count;
+            });
+
+            // Adjust counts if sum is not 90 due to rounding
+            let diff = examConfig.totalQuestions - calculatedSum;
+            // Distribute or remove difference from largest categories to minimize percentage distortion
+            // This is a simple adjustment, might need refinement for perfect distribution
+            const sortedByCount = [...examConfig.topics].sort((a, b) => b.count - a.count);
+            for (let i = 0; i < Math.abs(diff); i++) {
+                if (diff > 0) sortedByCount[i % sortedByCount.length].count++;
+                else sortedByCount[i % sortedByCount.length].count--;
+            }
+
+            // Recalculate sum to ensure it's 90
+            let finalSum = examConfig.topics.reduce((sum, topic) => sum + topic.count, 0);
+            if (finalSum !== examConfig.totalQuestions) {
+                // If still not 90 (e.g. due to all counts becoming too small), adjust the largest category
+                let adjustment = examConfig.totalQuestions - finalSum;
+                examConfig.topics.sort((a,b) => b.count - a.count)[0].count += adjustment;
+            }
+
+            console.log('[SER_LOG] Question distribution calculated:', examConfig.topics.map(t => `${t.name}: ${t.count}`).join(', '));
+            console.log('[SER_LOG] Attempting to load question files...');
+            try {
+                const allQuestionsData = await Promise.all(
+                    examConfig.topics.map(topic =>
+                        fetch(topic.file).then(res => {
+                            if (!res.ok) throw new Error(`Failed to load ${topic.file}: ${res.statusText}`);
+                            return res.json();
+                        })
+                    )
+                );
+
+                console.log('[SER_LOG] All question files loaded and parsed successfully.');
+                quizQuestions = [];
+                for (let i = 0; i < examConfig.topics.length; i++) {
+                    const topic = examConfig.topics[i];
+                    const bank = allQuestionsData[i];
+                    console.log(`[SER_LOG] Processing topic: ${topic.name}, Count needed: ${topic.count}, Bank length: ${bank ? bank.length : 'undefined'}`);
+                    if (!Array.isArray(bank)) {
+                        console.error(`[SER_LOG] ERROR: Bank for topic ${topic.name} is not an array!`, bank);
+                        alert(`Error: Question data for ${topic.name} is not in the correct format.`);
+                        return;
+                    }
+                    if (bank.length < topic.count) {
+                        alert(`Insufficient questions in ${topic.name} to simulate the real exam. Need ${topic.count}, have ${bank.length}.`);
+                        return;
+                    }
+                    const bankCopy = [...bank]; // Ensure we are shuffling a copy
+                    console.log(`[SER_LOG] Bank for ${topic.name} before shuffle (first 3 items):`, bankCopy.slice(0,3));
+                    const shuffledBank = shuffle(bankCopy);
+                    console.log(`[SER_LOG] Bank for ${topic.name} after shuffle (first 3 items):`, shuffledBank ? shuffledBank.slice(0,3) : 'undefined');
+                    if (!Array.isArray(shuffledBank)) {
+                        console.error(`[SER_LOG] ERROR: Shuffled bank for topic ${topic.name} is not an array!`, shuffledBank);
+                        alert(`Error: Shuffling failed for topic ${topic.name}.`);
+                        return;
+                    }
+                    const selectedForTopic = shuffledBank.slice(0, topic.count);
+                    console.log(`[SER_LOG] Selected ${selectedForTopic.length} questions for ${topic.name}`);
+                    quizQuestions.push(...selectedForTopic);
+                }
+
+                console.log('[SER_LOG] Questions selected and added to quizQuestions. Total before final shuffle:', quizQuestions.length);
+                quizQuestions = shuffle(quizQuestions); // Shuffle the combined 90 questions
+                console.log('[SER_LOG] quizQuestions shuffled. Total after final shuffle:', quizQuestions.length);
+
+                currentQ = 0;
+                userAnswers = [];
+                correctCount = 0;
+                console.log('[SER_LOG] Initializing quiz state and attempting screen transition...');
+                document.getElementById('startScreen').classList.remove('active');
+                document.getElementById('quizScreen').classList.add('active');
+                const resultScreenElement = document.getElementById('resultScreen');
+if (resultScreenElement) {
+    resultScreenElement.classList.remove('active');
+}
+                document.getElementById('time-remaining').style.display = 'block';
+
+                loadQ();
+                updateStats();
+                startExamTimer();
+
+            } catch (error) {
+                console.error('Error starting real exam:', error);
+                alert('Error loading question banks: ' + error.message);
+            }
+        }
+
+        function startExamTimer() {
+            examTimeRemaining = 5400; // 90 minutes * 60 seconds
+            updateTimerDisplay();
+            stopExamTimer(); // Clear any existing timer
+            examTimerInterval = setInterval(updateExamTimer, 1000);
+        }
+
+        function updateExamTimer() {
+            console.log('[TIMER_LOG] updateExamTimer. Remaining:', examTimeRemaining);
+            examTimeRemaining--;
+            updateTimerDisplay();
+            if (examTimeRemaining <= 0) {
+                stopExamTimer();
+                alert('Tempo esgotado! O exame será enviado automaticamente.');
+                submitA(true); // Pass a flag if submitA needs to know it was auto-submitted
+            }
+        }
+
+        function stopExamTimer() {
+            clearInterval(examTimerInterval);
+            examTimerInterval = null;
+        }
+
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const secs = seconds % 60;
+            return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
+        }
+
+        function updateTimerDisplay() {
+            document.getElementById('time-remaining').textContent = `Tempo: ${formatTime(examTimeRemaining)}`;
+        }
+
+        async function startQuiz(){
             if(!selectedTopics.length){alert('Selecione pelo menos um tópico!');return;}
-            
+
             quizQuestions=[];
             selectedTopics.forEach(topic=>quizQuestions.push(...topics[topic].questions));
             quizQuestions=shuffle(quizQuestions);
-            
+
             currentQ=0;userAnswers=[];correctCount=0;answered=false;
             document.getElementById('startScreen').classList.remove('active');
             document.getElementById('quizScreen').classList.add('active');
-            loadQ();updateStats();
+            loadQ();
+            updateStats();
+            document.getElementById('time-remaining').style.display = 'none'; // Hide timer for regular quiz
+            stopExamTimer(); // Ensure exam timer is not running for regular quizzes
         }
 
         function goToMenu(){
+            stopExamTimer();
+            document.getElementById('time-remaining').style.display = 'none';
             document.getElementById('quizScreen').classList.remove('active');
             document.getElementById('startScreen').classList.add('active');
         }
@@ -660,7 +870,7 @@
             document.getElementById('qNumber').textContent=`Pergunta ${currentQ+1}`;
             document.getElementById('qType').textContent=q.type==='single'?'Escolha Única':'Escolha Múltipla';
             document.getElementById('qText').textContent=q.question;
-            
+
             const list=document.getElementById('optionsList');
             list.innerHTML=q.options.map((opt,i)=>
                 `<li class="option"><input type="${q.type==='single'?'radio':'checkbox'}" id="opt_${i}" name="answer" value="${i}"><label for="opt_${i}">${opt}</label></li>`
@@ -674,8 +884,12 @@
             updateStats();
         }
 
-        function submitA(){
-            if(answered)return;
+        function submitA(isAutoSubmit = false) {
+            if (answered && !isAutoSubmit) return; // Use 'answered' variable, allow auto-submit to proceed
+            // Only stop the timer on manual submit if not in exam mode
+            if (!isAutoSubmit && document.getElementById('time-remaining').style.display !== 'block') {
+                stopExamTimer();
+            }
             const q=quizQuestions[currentQ];
             const selected=Array.from(document.querySelectorAll('input:checked')).map(i=>parseInt(i.value));
             if(!selected.length){alert('Selecione uma resposta!');return;}
@@ -706,8 +920,13 @@
         }
 
         function nextQ(){
-            if(currentQ<quizQuestions.length-1){currentQ++;loadQ();}
-            else{alert(`Teste completo!\nCorretas: ${correctCount}/${quizQuestions.length}\nPrecisão: ${Math.round(correctCount/quizQuestions.length*100)}%`);}
+            if(currentQ<quizQuestions.length-1){
+                currentQ++;
+                loadQ();
+            } else {
+                stopExamTimer();
+                alert(`Teste completo!\nCorretas: ${correctCount}/${quizQuestions.length}\nPrecisão: ${Math.round(correctCount/quizQuestions.length*100)}%`);
+            }
         }
 
         function prevQ(){
