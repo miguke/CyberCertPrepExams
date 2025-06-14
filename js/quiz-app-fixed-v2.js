@@ -21,7 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const loadCourseConfig = async () => {
         try {
             console.log('Loading course configuration...');
-            const module = await import('./course-1101-fixed.js');
+            // Add cache-busting to ensure we get the latest version
+            const cacheBuster = `?v=${Date.now()}`;
+            const module = await import(`./course-1101-fixed.js${cacheBuster}`);
             console.log('Module loaded:', module);
             
             // Use the default export
@@ -33,26 +35,33 @@ document.addEventListener('DOMContentLoaded', () => {
             
             console.log('Course config loaded:', courseConfig);
             
-            // Initialize topic configuration with real question counts
+            // Wait for topic counts to be updated
+            console.log('Updating topic counts...');
+            const { updateTopicCounts } = module;
+            if (typeof updateTopicCounts === 'function') {
+                await updateTopicCounts();
+            } else {
+                console.warn('updateTopicCounts function not found in module');
+            }
+            
+            // Initialize topic configuration with the updated counts
             topicConfig = {};
             for (const [topic, cfg] of Object.entries(courseConfig.topics)) {
-                try {
-                    const resp = await fetch(cfg.file);
-                    if (resp.ok) {
-                        const data = await resp.json();
-                        topicConfig[topic] = data.length;
-                    } else {
-                        console.warn('Unable to fetch', cfg.file);
-                        topicConfig[topic] = 0;
-                    }
-                } catch (err) {
-                    console.error('Error counting questions for', topic, err);
-                    topicConfig[topic] = 0;
-                }
+                // Use the count from the config if available, otherwise default to 0
+                topicConfig[topic] = cfg.count || 0;
+                console.log(`Topic ${topic} has ${topicConfig[topic]} questions`);
             }
             
             // Set the exam time remaining based on the course config
             examTimeRemaining = courseConfig.examDuration || 5400; // Default to 90 minutes if not specified
+            
+            // After loading the config and updating counts, re-render the topic list
+            if (typeof renderTopics === 'function') {
+                console.log('Re-rendering topic list with updated counts');
+                renderTopics();
+            } else {
+                console.warn('renderTopics function not available yet');
+            }
             
             return true;
         } catch (error) {
@@ -123,17 +132,34 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Render topic checkboxes
     const renderTopics = () => {
+        const topicList = document.getElementById('topicList');
         if (!topicList) {
             console.error('topicList element not found');
             return;
         }
         
-        topicList.innerHTML = '';
-        const entries = Object.entries(topicConfig);
+        console.log('Rendering topics with config:', {
+            topicConfig,
+            courseConfigTopics: courseConfig?.topics,
+            selectedTopics
+        });
         
-        for (const [topic, count] of entries) {
+        topicList.innerHTML = '';
+        
+        // Get topics from courseConfig to ensure we have the latest counts
+        const entries = Object.entries(courseConfig?.topics || {});
+        
+        if (entries.length === 0) {
+            console.error('No topics found in courseConfig');
+            topicList.innerHTML = '<p>Nenhum tópico disponível. Por favor, recarregue a página.</p>';
+            return;
+        }
+        
+        for (const [topic, config] of entries) {
+            const count = config.count || 0;
+            console.log(`Processing topic: ${topic}, count: ${count}`);
+            
             const topicId = topic.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
-            const topicInfo = courseConfig?.topics?.[topic] || {};
             const isSelected = selectedTopics.includes(topic);
             
             const div = document.createElement('div');
@@ -142,9 +168,9 @@ document.addEventListener('DOMContentLoaded', () => {
             div.innerHTML = `
                 <div class="topic-header">
                     <input type="checkbox" id="${topicId}" value="${topic}" ${isSelected ? 'checked' : ''}>
-                    <label for="${topicId}">${topic} (${count} questões)</label>
+                    <label for="${topicId}">${topic} (${count} ${count === 1 ? 'questão' : 'questões'})</label>
                 </div>
-                ${topicInfo.description ? `<p class="topic-description">${topicInfo.description}</p>` : ''}
+                ${config.description ? `<p class="topic-description">${config.description}</p>` : ''}
             `;
             
             const checkbox = div.querySelector('input[type="checkbox"]');
@@ -250,41 +276,138 @@ document.addEventListener('DOMContentLoaded', () => {
     const startExamTimer = () => {
         stopExamTimer();
         updateTimerDisplay();
-        examTimerInterval = setInterval(updateExamTimer, 1000);
-    };
 
-    // Stop the exam timer
-    const stopExamTimer = () => {
-        if (examTimerInterval) {
-            clearInterval(examTimerInterval);
-            examTimerInterval = null;
+let examTimerInterval = null;
+
+// Start the exam timer
+const startExamTimer = () => {
+    stopExamTimer();
+    updateTimerDisplay();
+    examTimerInterval = setInterval(updateExamTimer, 1000);
+};
+
+// Stop the exam timer
+const stopExamTimer = () => {
+    if (examTimerInterval) {
+        clearInterval(examTimerInterval);
+        examTimerInterval = null;
+    }
+};
+
+// Load questions for selected topics
+const loadQuestions = async () => {
+    try {
+        quizQuestions = [];
+        
+        // Ensure we have the latest course config and topic counts
+        if (!courseConfig || !courseConfig.topics) {
+            console.warn('Course config not loaded, reloading...');
+            await loadCourseConfig();
         }
-    };
-
-    // Load questions for selected topics
-    const loadQuestions = async () => {
-        try {
-            quizQuestions = [];
-            
-            for (const topic of selectedTopics) {
-                const filename = getTopicFilename(topic);
-                const response = await fetch(`../data/1101/${filename}.json`);
-                if (!response.ok) {
-                    throw new Error(`Arquivo não encontrado: ${filename}.json`);
-                }
-                const topicQuestions = await response.json();
-                const questionsWithTopic = topicQuestions.map(q => ({ ...q, topic }));
-                quizQuestions.push(...questionsWithTopic);
-            }
-            
-            quizQuestions = shuffle(quizQuestions);
-            userAnswers = new Array(quizQuestions.length).fill(null);
-            return true;
-        } catch (error) {
-            console.error('Error loading questions:', error);
+        
+        // If no topics selected, use all topics
+        const topicsToLoad = selectedTopics.length > 0 ? selectedTopics : Object.keys(courseConfig.topics || {});
+        console.log('Topics to load:', topicsToLoad);
+        
+        if (topicsToLoad.length === 0) {
+            console.error('No topics to load');
             return false;
         }
-    };
+        
+        // Load questions from all selected topics
+        for (const topic of topicsToLoad) {
+            const topicConfig = courseConfig.topics[topic];
+            if (!topicConfig || !topicConfig.file) {
+                console.error(`No file path found for topic: ${topic}`);
+                continue;
+            }
+            
+            console.log(`Loading questions for ${topic} from ${topicConfig.file}...`);
+            
+            try {
+                // Add cache-busting to ensure we get fresh data
+                const cacheBuster = `?v=${Date.now()}`;
+                const response = await fetch(`${topicConfig.file}${cacheBuster}`);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const topicQuestions = await response.json();
+                console.log(`Loaded ${topicQuestions.length} questions from ${topic}`);
+                
+                // Process and validate questions
+                const validQuestions = topicQuestions.filter((q, index) => {
+                    const missingFields = [];
+                    
+                    // Check for required fields
+                    if (!q.question || q.question.trim() === '') {
+                        missingFields.push('question');
+                    }
+                    
+                    if (!q.options || !Array.isArray(q.options) || q.options.length === 0) {
+                        missingFields.push('options');
+                    } else {
+                        // Validate each option
+                        q.options.forEach((opt, i) => {
+                            if (typeof opt !== 'string' || opt.trim() === '') {
+                                console.warn(`Invalid option at index ${i} in question ${index}:`, opt);
+                            }
+                        });
+                    }
+                    
+                    if (!q.correct || !Array.isArray(q.correct) || q.correct.length === 0) {
+                        missingFields.push('correct');
+                    } else if (q.options) {
+                        // Validate correct answer indices
+                        q.correct.forEach((ans, i) => {
+                            if (typeof ans !== 'number' || ans < 0 || ans >= q.options.length) {
+                                console.warn(`Invalid correct answer at index ${i} in question ${index}:`, ans);
+                                missingFields.push('correct[' + i + ']');
+                            }
+                        });
+                    }
+                    
+                    if (missingFields.length > 0) {
+                        console.warn(`Invalid question at index ${index} (ID: ${q.id || 'N/A'}). Missing fields:`, missingFields);
+                        return false;
+                    }
+                    
+                    return true;
+                });
+                
+                // Add topic to each question
+                const questionsWithTopic = validQuestions.map(q => ({
+                    ...q,
+                    topic: topic
+                }));
+                
+                quizQuestions.push(...questionsWithTopic);
+                console.log(`Added ${questionsWithTopic.length} valid questions from ${topic}`);
+                
+            } catch (error) {
+                console.error(`Error loading questions for ${topic}:`, error);
+                continue; // Skip to next topic on error
+            }
+        }
+        
+        console.log(`Total questions loaded: ${quizQuestions.length}`);
+        
+        if (quizQuestions.length === 0) {
+            throw new Error('No valid questions were loaded. Please check the data files.');
+        }
+        
+        // Shuffle the questions
+        quizQuestions = shuffle(quizQuestions);
+        userAnswers = new Array(quizQuestions.length).fill(null);
+        
+        console.log(`Final question count: ${quizQuestions.length}`);
+        return true;
+        
+    } catch (error) {
+        console.error('Error in loadQuestions:', error);
+        return false;
+    }
     
     // Load the current question
     const loadQ = () => {
