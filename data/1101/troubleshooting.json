@@ -15,21 +15,6 @@
     "id": 1
   },
   {
-    "type": "single",
-    "question": "Which tool is commonly used to test network connectivity?",
-    "options": [
-      "ping",
-      "traceroute",
-      "nslookup",
-      "ipconfig"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "The ping command is used to test network connectivity between devices.",
-    "id": 2
-  },
-  {
     "type": "multiple",
     "question": "Which of the following are common hardware troubleshooting steps?",
     "options": [
@@ -46,7 +31,7 @@
       3
     ],
     "explanation": "The first four options are common hardware troubleshooting steps, while reinstalling OS is typically a last resort.",
-    "id": 3
+    "id": 2
   },
   {
     "type": "single",
@@ -61,7 +46,7 @@
       0
     ],
     "explanation": "The first step in any troubleshooting process is to inquire about recent changes. This may reveal if a software update or configuration change caused the scanner failure.",
-    "id": 4
+    "id": 3
   },
   {
     "type": "single",
@@ -76,7 +61,7 @@
       3
     ],
     "explanation": "Thin, vertical lines typically indicate a dirty drum or toner roller. Running the drum-cleaning procedure is the most likely way to eliminate those lines.",
-    "id": 5
+    "id": 4
   },
   {
     "type": "single",
@@ -89,7 +74,7 @@
       0
     ],
     "explanation": "The simulation answer indicates that the manager has 'Mastered' the configured steps, meaning the procedure was performed correctly the first time.",
-    "id": 6
+    "id": 5
   },
   {
     "type": "multiple",
@@ -107,7 +92,7 @@
       3
     ],
     "explanation": "One beep indicates that memory (RAM) passed POST but there is a subsequent error\u00e2\u20ac\u201doften due to a boot order issue. A misconfigured boot order can also trigger a one-beep error.",
-    "id": 7
+    "id": 6
   },
   {
     "type": "multiple",
@@ -126,7 +111,7 @@
       2
     ],
     "explanation": "A RAID failure can leave disks in a degraded state, and a missing or misconfigured bootable device will result in an OS-not-found error.",
-    "id": 8
+    "id": 7
   },
   {
     "type": "multiple",
@@ -142,67 +127,7 @@
       2
     ],
     "explanation": "A jammed or misaligned ribbon can smear toner/ink, and using the wrong paper type (e.g., non-thermal paper in a thermal printer) can cause dark smudges.",
-    "id": 9
-  },
-  {
-    "type": "single",
-    "question": "A user visits the desk to report that a smartphone takes more than a day to fully charge. The user has already tested multiple wall outlets and swapped the charging cable, but the results are the same. Which of the following should the technician do FIRST?",
-    "options": [
-      "Verify the power rating of the charger",
-      "Ensure all unnecessary connectivity features are disabled",
-      "Check that all missing smartphone OS updates are applied",
-      "Complete a factory reset of the phone"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "Verifying the charger's power rating is the first step, as an underpowered charger can cause extremely slow charging.",
-    "id": 10
-  },
-  {
-    "type": "single",
-    "question": "Which of the following is the MOST likely cause of a single beep on startup and no video output on a desktop?",
-    "options": [
-      "Bad CPU",
-      "Bad RAM module",
-      "Bad GPU",
-      "Missing OS"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "A single beep in many BIOS implementations indicates a memory (RAM) error\u00e2\u20ac\u201dtypically meaning the RAM module is bad or not seated properly.",
-    "id": 11
-  },
-  {
-    "type": "single",
-    "question": "A user\u00e2\u20ac\u2122s desktop will only boot when two RAM modules are installed in slots 1 and 3, but will not power on if installed in 2 and 4. Which of the following is the MOST likely cause?",
-    "options": [
-      "Incorrect CPU cooler installation",
-      "Improper RAM seating",
-      "Defective motherboard trace",
-      "Bad power supply"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "RAM modules must be seated in the correct slot pairs (DIMM1 & DIMM3 or DIMM2 & DIMM4) depending on the motherboard\u00e2\u20ac\u2122s channel configuration.",
-    "id": 12
-  },
-  {
-    "type": "single",
-    "question": "Which of the following disk types provides the fastest sequential read and write performance?",
-    "options": [
-      "SATA SSD",
-      "NVMe SSD",
-      "7200 RPM HDD",
-      "SATA RAID 1 array"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "NVMe SSDs have significantly higher sequential read/write speeds than SATA SSDs or HDDs.",
-    "id": 13
+    "id": 8
   },
   {
     "type": "single",
@@ -217,52 +142,7 @@
       0
     ],
     "explanation": "Two beeps typically indicate a memory problem. Reseating the RAM modules can resolve loose or improperly seated memory.",
-    "id": 14
-  },
-  {
-    "type": "single",
-    "question": "A technician is troubleshooting a desktop that powers on but has no display output and no POST beeps. Which of the following components should be checked FIRST?",
-    "options": [
-      "CPU seating",
-      "RAM seating",
-      "GPU seating",
-      "Motherboard power connectors"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "If there are no POST beeps or display output, verifying the motherboard\u00e2\u20ac\u2122s power connectors are fully seated is the first step.",
-    "id": 15
-  },
-  {
-    "type": "single",
-    "question": "A desktop powers off unexpectedly after running hardware diagnostics. Which of the following is the MOST likely cause?",
-    "options": [
-      "Overheating CPU",
-      "Corrupted RAM",
-      "Faulty GPU driver",
-      "Malware infection"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "If a system powers off under load (during diagnostics), the CPU is likely overheating and triggering a shutdown to protect itself.",
-    "id": 16
-  },
-  {
-    "type": "single",
-    "question": "A desktop displays a message 'CPU fan error' at boot, and then powers off. Which of the following is the MOST likely cause?",
-    "options": [
-      "Fan not spinning",
-      "Incorrect BIOS version",
-      "Bad RAM",
-      "Corrupted OS"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "The 'CPU fan error' indicates the BIOS has detected that the CPU fan is not spinning, which causes the system to shut down to prevent overheating.",
-    "id": 17
+    "id": 9
   },
   {
     "type": "single",
@@ -277,67 +157,7 @@
       1
     ],
     "explanation": "A single short beep followed by a shutdown often indicates a RAM problem. The system POSTs but then fails due to memory errors.",
-    "id": 18
-  },
-  {
-    "type": "single",
-    "question": "A user reports their printer is not printing. What is the first thing to check?",
-    "options": [
-      "Paper tray",
-      "Ink/Toner levels",
-      "Power and cable connections",
-      "Print queue"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "Always check basic power and cable connections first when a printer is not responding.",
-    "id": 19
-  },
-  {
-    "type": "single",
-    "question": "A computer is making a continuous beeping sound on startup. What does this usually indicate?",
-    "options": [
-      "Overheating CPU",
-      "RAM issue",
-      "Hard drive failure",
-      "Corrupted OS"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "Continuous beeping or a specific beep code on startup often indicates a problem with RAM modules (e.g., not seated correctly or faulty).",
-    "id": 20
-  },
-  {
-    "type": "single",
-    "question": "What is the typical voltage for a CMOS battery?",
-    "options": [
-      "1.5V",
-      "3V",
-      "5V",
-      "12V"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "CMOS batteries are typically 3-volt lithium coin cells.",
-    "id": 21
-  },
-  {
-    "type": "single",
-    "question": "Which of the following is a common safety procedure when working inside a computer case?",
-    "options": [
-      "Keeping the power cord plugged in for grounding",
-      "Wearing an anti-static wrist strap",
-      "Using magnetic screwdrivers for all components",
-      "Working on a carpeted floor"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "Wearing an anti-static wrist strap helps prevent electrostatic discharge (ESD) which can damage sensitive components.",
-    "id": 22
+    "id": 10
   },
   {
     "type": "single",
@@ -352,7 +172,7 @@
       0
     ],
     "explanation": "A hotspot can confirm if the wireless NIC is functional by testing internet access independently.",
-    "id": 23
+    "id": 11
   },
   {
     "type": "single",
@@ -367,7 +187,7 @@
       2
     ],
     "explanation": "Overheating is likely due to a dirty air filter. Cleaning it resolves the issue.",
-    "id": 24
+    "id": 12
   },
   {
     "type": "single",
@@ -382,22 +202,7 @@
       0
     ],
     "explanation": "A failing CPU fan leads to thermal throttling and erratic fan behavior.",
-    "id": 25
-  },
-  {
-    "type": "single",
-    "question": "A technician is attempting to connect the wired LANs at two nearby buildings by installing a wireless point-to-point connection. Which of the following should the technician consider?",
-    "options": [
-      "NFC protocol data rate",
-      "RFID frequency range",
-      "Bluetooth version compatibility",
-      "Allowable limits for transmit power"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "Legal limits on transmission power are crucial in wireless point-to-point setups.",
-    "id": 26
+    "id": 13
   },
   {
     "type": "single",
@@ -412,84 +217,7 @@
       2
     ],
     "explanation": "A network tap duplicates traffic for external analysis.",
-    "id": 27
-  },
-  {
-    "type": "single",
-    "question": "A technician verifies the slow boot time and slow OS performance of a tower server with a RAID 5 on a PCIe RAID card that does not support hot swapping. Which of the following steps should the technician take NEXT to verify RAID health?",
-    "options": [
-      "Verify S.M.A.R.T. operation on the RAID card",
-      "Replace the failed drive while users are connected",
-      "Physically clean the HDDs and connectors",
-      "Shut down the server and check the RAID controller's status"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "Since hot swapping is not supported, shut down is needed to inspect RAID.",
-    "id": 28
-  },
-  {
-    "type": "single",
-    "question": "Which of the following statements best describes the purpose of thermal throttling on a CPU?",
-    "options": [
-      "Increase CPU clock speed under load",
-      "Reduce CPU voltage to prevent spikes",
-      "Lower CPU performance to reduce temperature",
-      "Disable CPU cores no longer in use"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "Thermal throttling reduces the CPU\u00e2\u20ac\u2122s clock frequency when temperatures rise too high",
-    "id": 29
-  },
-  {
-    "type": "single",
-    "question": "A desktop is equipped with a single 24-pin ATX power connector to the motherboard. The technician is installing a high-performance CPU that requires additional power. Which connector should be added next?",
-    "options": [
-      "4-pin Molex",
-      "4-pin ATX12V",
-      "6-pin PCIe",
-      "8-pin EPS12V"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "High-performance CPUs often require additional 12V power provided by an 8-pin EPS12V connector.",
-    "id": 30
-  },
-  {
-    "type": "single",
-    "question": "Which of the following cooling solutions is LEAST effective for removing heat from a high-end GPU in a compact HTPC case?",
-    "options": [
-      "Blower-style cooler",
-      "Dual-fan air cooler",
-      "120 mm radiator liquid cooler",
-      "Passive heat sink"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "Passive heat sinks rely on passive airflow and are not sufficient to cool high-end GPUs in compact enclosures.",
-    "id": 31
-  },
-  {
-    "type": "multiple",
-    "question": "Which of the following are types of RAM?",
-    "options": [
-      "DDR4",
-      "DDR5",
-      "SATA",
-      "NVMe",
-      "SSD"
-    ],
-    "correct": [
-      0,
-      1
-    ],
-    "explanation": "DDR4 and DDR5 are types of RAM, while SATA, NVMe, and SSD are storage technologies.",
-    "id": 32
+    "id": 14
   },
   {
     "type": "single",
@@ -504,7 +232,7 @@
       3
     ],
     "explanation": "Thin, vertical lines on every printed page are usually caused by a dirty drum or toner cartridge. Performing the drum-cleaning procedure will likely resolve the\nissue. References: CompTIA A+ Certification Exam Guide, Ninth Edition, Chapter 18",
-    "id": 33
+    "id": 15
   },
   {
     "type": "single",
@@ -519,97 +247,7 @@
       1
     ],
     "explanation": "The symptoms suggest that the charging cable falls out of the phone, indicating that the charge port may contain foreign objects such as lint, which can interfere\nwith the connection between the charging cable and the phone.",
-    "id": 34
-  },
-  {
-    "type": "single",
-    "question": "Which of the following network devices is used to separate broadcast domains?",
-    "options": [
-      "Switch",
-      "Wireless access point",
-      "Router",
-      "Hub"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "A router (option C) is a network device that is used to separate broadcast domains. A broadcast domain is a logical division of a computer network in which all\nnodes can reach each other by broadcast at the data link layer. Routers operate at the network layer of the OSI model and use routing tables to determine the best\npath for forwarding packets between different networks.\nBy separating broadcast domains, routers can help to reduce network congestion and improve performance. When a router receives a broadcast packet on one of\nits interfaces, it does not forward the packet to any other interfaces. This means that only devices within the same broadcast domain as the sender will receive the\nbroadcast packet.",
-    "id": 35
-  },
-  {
-    "type": "single",
-    "question": "A technician is tasked with installing a PCIe NVMe SSD into a Windows workstation. Which of the following must be configured in BIOS prior to installing Windows?",
-    "options": [
-      "Enable RAID mode",
-      "Enable AHCI mode",
-      "Disable secure boot",
-      "Enable CSM (Compatibility Support Module)"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "AHCI mode must be enabled for SATA/NVMe support; RAID mode is only necessary for RAID configurations.",
-    "id": 36
-  },
-  {
-    "type": "single",
-    "question": "Which of the following hard drive types uses a spinning platter to store data magnetically?",
-    "options": [
-      "SSD",
-      "HDD",
-      "NVMe",
-      "USB flash drive"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "A Hard Disk Drive (HDD) uses spinning magnetic platters to store data.",
-    "id": 37
-  },
-  {
-    "type": "single",
-    "question": "A technician is configuring a RAID 5 array with three disks. The capacity of each drive is 2 TB. What is the total usable capacity of the array?",
-    "options": [
-      "2 TB",
-      "4 TB",
-      "6 TB",
-      "1 TB"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "RAID 5 uses one disk\u00e2\u20ac\u2122s worth of capacity for parity. Usable capacity = (3 - 1) \u00c3\u2014 2 TB = 4 TB.",
-    "id": 38
-  },
-  {
-    "type": "single",
-    "question": "A desktop computer is exhibiting graphical artifacts on the screen. The technician suspects the GPU is overheating. Which of the following actions should the technician take FIRST?",
-    "options": [
-      "Reseat the GPU",
-      "Clean dust from GPU heatsink and fans",
-      "Update the graphics driver",
-      "Replace the thermal paste"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "Cleaning dust from the heatsink and fans can immediately improve cooling and is the first step in addressing overheating.",
-    "id": 39
-  },
-  {
-    "type": "single",
-    "question": "A technician logs on to a PC and inserts an encrypted USB drive. When opening File Explorer, the technician cannot see the USB drive. Which of the following\ntools should the technician use to see all drives?",
-    "options": [
-      "DiskPart",
-      "Diskmgmt",
-      "Disk Cleanup",
-      "BitLocker"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "The tool that the technician should use to see all drives is Diskmgmt. Diskmgmt is a Windows utility that allows you to manage disk drives and partitions on your\ncomputer. It can be used to view all drives, including USB drives, that are connected to the computer12.",
-    "id": 40
+    "id": 16
   },
   {
     "type": "single",
@@ -624,7 +262,7 @@
       0
     ],
     "explanation": "The flashing green and orange LEDs on the NIC indicate connection issues. The technician should first check for loose connections, pinched bends, and physical\ndamage, which are the most common causes of connection problems. References: CompTIA A+ Certification Exam Guide, Ninth Edition, Chapter 14",
-    "id": 41
+    "id": 17
   },
   {
     "type": "single",
@@ -638,88 +276,8 @@
     "correct": [
       1
     ],
-    "explanation": "Based on the information provided in the question, the MOST likely component that needs to be replaced is A. power adapter. If a laptop has been working as\nexpected for several years but suddenly stops working when it is plugged into a wall outlet, it is possible that the power adapter has failed and is no longer able to\nprovide power to the laptop. In this case, replacing the power adapter would likely resolve the issue.\nThe other components listed in the options (battery, system fan, and hard drive) could also potentially fail and cause issues with a laptop\u2019s performance. However,\nbased on the specific scenario described in the question (the laptop suddenly stops working when plugged into a wall outlet), it seems most likely that the issue is\nrelated to the power adapter.\nPassing Certification Exams Made Easy visit - https://www.2PassEasy.com\nWelcome to download the Newest 2passeasy 220-1101 dumps\nhttps://www.2passeasy.com/dumps/220-1101/ (443 New Questions)\nIf the laptop has been working as expected for several years and suddenly stops working, the power adapter is the most likely component that needs to be\nreplaced. Over time, the power adapter can become worn or damaged, resulting in a loss of power to the laptop. References: CompTIA A+ Certification Exam\nGuide, Ninth Edition, Chapter 3",
-    "id": 42
-  },
-  {
-    "type": "multiple",
-    "question": "Which of the following are common types of CPU sockets? (Select TWO)",
-    "options": [
-      "LGA",
-      "PCIe",
-      "SATA",
-      "PGA",
-      "M.2"
-    ],
-    "correct": [
-      0,
-      3
-    ],
-    "explanation": "LGA (Land Grid Array) and PGA (Pin Grid Array) are common types of CPU sockets on motherboards.",
-    "id": 43
-  },
-  {
-    "type": "single",
-    "question": "What is the primary purpose of a heat sink for a CPU?",
-    "options": [
-      "To increase processing speed",
-      "To dissipate heat",
-      "To provide electrical insulation",
-      "To store temporary data"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "A heat sink's primary purpose is to dissipate heat generated by the CPU, preventing overheating.",
-    "id": 44
-  },
-  {
-    "type": "multiple",
-    "question": "Which of the following disk configurations provide fault tolerance? (Select TWO)",
-    "options": [
-      "RAID 0",
-      "RAID 1",
-      "RAID 5",
-      "RAID 10",
-      "JBOD",
-      "Spanning"
-    ],
-    "correct": [
-      1,
-      3
-    ],
-    "explanation": "RAID 1 (mirroring) and RAID 10 (mirrored stripes) both provide fault tolerance via redundancy.",
-    "id": 45
-  },
-  {
-    "type": "single",
-    "question": "Passing Certification Exams Made Easy visit - https://www.2PassEasy.com\nWelcome to download the Newest 2passeasy 220-1101 dumps\nhttps://www.2passeasy.com/dumps/220-1101/ (443 New Questions)\n\nWhich of the following would be BEST reason to use a virtual machine as a sandbox?",
-    "options": [
-      "To test new software in a safe environment",
-      "To increase the efficient use of computing resources",
-      "To run multiple machines on the same hardware",
-      "To have dedicated hardware for a single system"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "The main reason to use a virtual machine as a sandbox is to test new software in a safe environment without risking the integrity of the host operating system.\nUsing a virtual machine enables the testing of software and allows for the isolation of the software from the host system. References: CompTIA A+ Certification\nStudy Guide, Tenth Edition, pg. 409",
-    "id": 46
-  },
-  {
-    "type": "single",
-    "question": "A user acquired a new workstation and is attempting to open multiple targe Excel files simultaneously. The user is not experiencing the expected performance\nwhen executing such large requests. Which of the following should a technician do FIRST?",
-    "options": [
-      "Increase the swap partition.",
-      "Upgrade the CPU in the workstation.",
-      "Upgrade the power supply in the workstation.",
-      "Upgrade the RAM in the workstation."
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "Opening multiple large Excel files simultaneously requires a large amount of RAM. Upgrading the RAM in the workstation should improve performance.\nReferences: CompTIA A+ Certification Exam Guide, Ninth Edition, Chapter 9",
-    "id": 47
+    "explanation": "Based on the information provided in the question, the MOST likely component that needs to be replaced is A. power adapter. If a laptop has been working as\nexpected for several years but suddenly stops working when it is plugged into a wall outlet, it is possible that the power adapter has failed and is no longer able to\nprovide power to the laptop. In this case, replacing the power adapter would likely resolve the issue.\nThe other components listed in the options (battery, system fan, and hard drive) could also potentially fail and cause issues with a laptop\u2019s performance. However,\nbased on the specific scenario described in the question (the laptop suddenly stops working when plugged into a wall outlet), it seems most likely that the issue is\nrelated to the power adapter.\n \nIf the laptop has been working as expected for several years and suddenly stops working, the power adapter is the most likely component that needs to be\nreplaced. Over time, the power adapter can become worn or damaged, resulting in a loss of power to the laptop. References: CompTIA A+ Certification Exam\nGuide, Ninth Edition, Chapter 3",
+    "id": 18
   },
   {
     "type": "single",
@@ -735,52 +293,7 @@
       1
     ],
     "explanation": "Dot Matrix printers do not use heat, they use a pin striking an inked ribbon (for the first copy, the subsequent copies are handled by the carbon paper)\nThe ribbon is low on ink or missing and must be replaced to get proper output in a dot matrix printer that uses carbon paper. References: CompTIA A+ Certification\nExam Guide, Exam 220-1001, Page 361",
-    "id": 48
-  },
-  {
-    "type": "single",
-    "question": "A desktop PC has two identical graphics cards installed in an SLI configuration. One card fails and is removed, but the system will not boot. Which of the following should the technician do?",
-    "options": [
-      "Move the remaining card to the primary PCIe slot",
-      "Update the GPU driver",
-      "Disable SLI in BIOS",
-      "Replace the power supply"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "When running a single GPU, it must be placed in the primary PCIe slot; leaving it in the secondary slot prevents the system from recognizing it.",
-    "id": 49
-  },
-  {
-    "type": "single",
-    "question": "A user failed to gain access to a building's entrance after security measures at the entrance were upgraded last week. The company implemented the 13.56MHz\nfrequency short band, and users can now utilize their mobile devices to authenticate. Which of the following has to be enabled for the mobile device to\nauthenticate?",
-    "options": [
-      "Bluetooth",
-      "Biometrics",
-      "NFC",
-      "PIN"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "NFC (Near Field Communication) is a technology used for short-range wireless communication between devices, typically used for contactless payments and\nauthentication. In this scenario, the 13.56MHz frequency short band was implemented, and users can authenticate using their mobile devices, which requires NFC\nto be enabled on the device. References: CompTIA A+ Certification Exam Objectives 220-1001 - Mobile device network and device synchronization - 4.4",
-    "id": 50
-  },
-  {
-    "type": "single",
-    "question": "A technician is receiving reports that the entire office sporadically loses network connectivity throughout the day. The technician determines the root cause to be\nEMI. Which of the following cable mediums would be the MOST cost effective without sacrificing system performance?",
-    "options": [
-      "Coaxial",
-      "Shielded Cat 6",
-      "Plenum Cat 5e\nPassing Certification Exams Made Easy visit - https://www.2PassEasy.com\nWelcome to download the Newest 2passeasy 220-1101 dumps\nhttps://www.2passeasy.com/dumps/220-1101/ (443 New Questions)",
-      "Multimode fiber"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "In this situation, the MOST cost-effective cable medium that would not sacrifice system performance would be B. Shielded Cat 6. Electromagnetic interference\n(EMI) can disrupt network connectivity by interfering with the signals transmitted over network cables. Shielded Cat 6 cables are designed to provide protection\nagainst EMI by incorporating a layer of shielding material around the cable\u2019s conductors. This shielding helps to prevent EMI from interfering with the signals\ntransmitted over the cable.",
-    "id": 51
+    "id": 19
   },
   {
     "type": "single",
@@ -795,6 +308,862 @@
       1
     ],
     "explanation": "The MOST efficient next step the technician should complete is to check the printer paper path to locate any obstructions1. The error message \u201cPaper Jam, Jam\nin fuser\u201d indicates that there is a paper jam in the fuser2. The fuser is one of the parts of a laser printer most likely to fail without giving any explicit message2.\nThe printer LCD screen indicates a paper jam in the fuser. The most efficient next step the\ntechnician should complete is to check the printer paper path to locate any obstructions. Applying a maintenance kit or replacing the fuser may not be necessary if\nthe issue is caused by a paper jam.",
+    "id": 20
+  },
+  {
+    "type": "single",
+    "question": "A user in a medical office contacts a technician regarding a printer that is used to print A4-\nsized labels. After the labels are printed, they mistakenly contain white space in the middle of the page. Which of the following would MOST likely be the cause?",
+    "options": [
+      "Contaminated fuser",
+      "Worn rollers",
+      "A misfeed",
+      "Page orientation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The most likely cause of the issue is that the page orientation is incorrect. The printer may be set to print labels in a different orientation than the orientation of the\n \nlabel sheet1.",
+    "id": 21
+  },
+  {
+    "type": "single",
+    "question": "DRAG DROP \nAn office manager reports that a printer is experiencing performance issues. Printouts are smudging when they are handled, and. recently, whenever the manager\ntries to print oversized documents, the paper jams before anything is printed on it.",
+    "options": [
+      "Mastered",
+      "Not Mastered"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "id": 22
+  },
+  {
+    "type": "single",
+    "question": "A laptop PC user is reporting issues with the hard drive. A filesystem check shows that all files are accessible and the filesystem is clean. After the check, the PC\nstill issues a hard drive error message. Which of the following is the MOST likely cause of the error?",
+    "options": [
+      "S.M.A.R.T failure",
+      "IOPS failure",
+      "DIMM failure",
+      "RAID failure"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If the filesystem check shows that all files are accessible and the filesystem is clean, but a hard drive error message persists, it's possible that the hard drive is\nexperiencing S.M.A.R.T. (Self-Monitoring, Analysis, and Reporting Technology) failure. This is a warning system built into hard drives to alert users of potential\nissues before they become critical. References: CompTIA A+ Certification Exam Core 1 Exam Objectives - 3.3 Given a scenario, troubleshoot mobile device\nissues",
+    "id": 23
+  },
+  {
+    "type": "single",
+    "question": "A user submitted a support ticket that states all of the printouts from a laser printer appear to have double images imposed on them. A review of past printer\nsupport tickets shows that maintenance kit has not been installed in more than a year. Which of the following printer consumables is MOST likely causing the\nissue?",
+    "options": [
+      "Separation pad",
+      "Transfer roller",
+      "Ink cartridge",
+      "Fuser"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "https://www.vingle.net/posts/4651722",
+    "id": 24
+  },
+  {
+    "type": "single",
+    "question": "A customer is using a satellite internet connection that is experiencing slowness. A technician notices high latency while pinging, but the download test is\nperforming perfectly with very good download speeds. Which of the following represents the NEXT action the technician should perform?",
+    "options": [
+      "Restart the modem and run an online internet connection and speed diagnostic tool.",
+      "Guide the customer on how to upgrade the internet plan with the provider in order to improve latency.",
+      "Explain to the customer this is not an issue; this situation is normal for this type of internet connection.",
+      "Replace the modem because it is not working correctly based on the test result.\n "
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The technician should restart the modem and run an online internet connection and speed diagnostic tool1. High latency is a common issue with satellite internet\nconnections, and it can cause slow internet speeds2. Restarting the modem can help to resolve the issue1. The technician should also run an online internet\nconnection and speed diagnostic tool to check the connection and speed1. Guiding the customer on how to upgrade the internet plan with the provider in order to\nimprove latency is not likely to be the correct option2.\nHigh latency while pinging can indicate a problem with the modem or the connection between the modem and the satellite. Restarting the modem can often\nresolve connectivity issues. Running an online internet connection and speed diagnostic tool can help identify any other issues with the connection. Upgrading the\ninternet plan may not resolve latency issues and may not be necessary if the download test is performing perfectly with very good download speeds. High latency\nis not normal for satellite internet connections, so replacing the modem based on this one test result is premature. References: CompTIA A+ Certification Exam:\nCore 1 - Page 102",
+    "id": 25
+  },
+  {
+    "type": "single",
+    "question": "A technician goes to a classroom to troubleshoot a projector that occasionally powers off.\nThe technician recreates the issue and notices the projector will not power back on until approximately 15 minutes have passed. After 15 minutes of being\npowered on. the projector shuts off again. Which of the following should the technician perform NEXT to resolve the issue?",
+    "options": [
+      "Clean the filter.",
+      "Adjust the standby timeout.",
+      "Check the power cable connection.",
+      "Replace the bulb."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Based on the given information, it seems that the projector is experiencing issues with overheating or a faulty power supply. The fact that it shuts off and cannot\nbe turned back on until it has cooled down for 15 minutes suggests that the projector is overheating or there is a problem with the power supply. Therefore, the\nnext logical step would be to clean the filter to ensure proper ventilation and airflow, as a dirty filter can cause overheating.",
+    "id": 26
+  },
+  {
+    "type": "single",
+    "question": "A technician unboxed a new computer, plugged it in to a UPS. and connected the requested peripherals. The computer lights and fans turn on, but the technician\nhears three loud, consecutive beeps during boot. Which of the following actions will remediate the issue?",
+    "options": [
+      "Replacing the power supply",
+      "Replacing the UPS",
+      "Changing the CMOS battery",
+      "Reseating the RAM"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Three beeps indicate a \"base memory read/write test error\". Check out \"beep codes\" for more information.\nhttps://en.wikipedia.org/wiki/Power-on_self- test#POST_beep_codes_on_CompTIA_A.2B_certification_exam\nReseating the RAM is the best course of action to remediate the issue of three consecutive beeps during boot, as it may indicate a RAM failure or loose\nconnection. By reseating the RAM, the technician can ensure that the connection is secure and the computer should boot normally. References: CompTIA A+\nCertification Exam Objectives 1001, 1.9",
+    "id": 27
+  },
+  {
+    "type": "single",
+    "question": "A company just bought a printer capable of automatically printing on both sides of the paper After installation, however, the technician can only print on both sides\nof the paper manually. Which of the following should the technician do to fix the issue?",
+    "options": [
+      "Install the most recent firmware upgrade available for the printer.",
+      "Contact the vendor for a hardware replacement.",
+      "Reinstall the printer software and drivers, and then restart the printer.",
+      "Read the installation manual and configure duplex settings."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": " \nThe issue described in the question is most likely due to an incorrect configuration of the printer's duplex settings. To enable automatic duplex printing, the\ntechnician needs to read the printer's installation manual to understand how to configure the printer's duplex settings correctly. Once the settings are configured,\nthe printer should be able to print on both sides of the paper automatically.\nTo fix the issue of a newly installed printer capable of automatically printing on both sides of the paper but only printing on both sides manually, the technician\nshould read the installation manual and configure duplex settings. Duplex printing settings can be configured in the printer driver software, which can be accessed\nthrough the printer settings in the Control Panel. Installing the most recent firmware upgrade available for the printer, contacting the vendor for a hardware\nreplacement, or reinstalling the printer software and drivers and restarting the printer will not resolve the issue.",
+    "id": 28
+  },
+  {
+    "type": "single",
+    "question": "A technician notices ghost touches on a phone screen. What is the likely issue?",
+    "options": [
+      "Overheating",
+      "Digitizer fault",
+      "Loose battery",
+      "Screen protector misalignment"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ghost touches often indicate a damaged or malfunctioning digitizer.",
+    "id": 29
+  },
+  {
+    "type": "single",
+    "question": "A phone is not connecting to a known Wi-Fi network. What should the technician do FIRST?",
+    "options": [
+      "Restart the router",
+      "Update the phone OS",
+      "Forget and reconnect to the network",
+      "Replace the Wi-Fi antenna"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Forgetting and reconnecting clears corrupt credentials and resolves most connectivity issues.",
+    "id": 30
+  },
+  {
+    "type": "single",
+    "question": "A field technician reports a mobile payment device is not detecting contactless payment options. What is the MOST likely cause?",
+    "options": [
+      "NFC",
+      "Bluetooth",
+      "Wi-Fi",
+      "Lightning adapter"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "NFC is the technology behind contactless payments. A failure in NFC functionality can prevent detection.",
+    "id": 31
+  },
+  {
+    "type": "single",
+    "question": "A technician is troubleshooting connectivity issues and needs to promiscuously route a copy of traffic to a separate machine for analysis. Which of the following\nphysical tools v/ould BEST accomplish this task?",
+    "options": [
+      "Toner probe",
+      "Wi-Fi analyzer",
+      "Network tap",
+      "Loopbackplug"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A network tap is a physical device that allows promiscuous monitoring of network traffic by creating a copy of the data packets for analysis. A toner probe is used\nto trace and identify cables. A Wi-Fi analyzer is used to measure wireless signal strength and interference. A loopback plug is used to test network ports or cables\nby sending and receiving signals from the same device.",
+    "id": 32
+  },
+  {
+    "type": "single",
+    "question": "A technician is troubleshooting a classroom projector that shuts down after fifteen minutes of use. Which of the following should the technician do to resolve the\n \nissue?",
+    "options": [
+      "Replace the video input cable.",
+      "Change the bulb.",
+      "Clean the air filter.",
+      "Swap the power cord."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cleaning the air filter is the best action to resolve the issue of a projector that shuts down after fifteen minutes of use. A dirty air filter can cause overheating and\ntrigger the projector\u2019s thermal protection mechanism. Replacing the video input cable, changing the bulb, or swapping the power cord are unlikely to solve the\noverheating issue",
+    "id": 33
+  },
+  {
+    "type": "single",
+    "question": "The motherboard on a user's company laptop was recently replaced Now the user is unable to log in using the fingerprint reader The fingerprint reader is working\nbut it does not recognize the user's fingerprint Which of the following should a technician perform FIRST to fix the issue?",
+    "options": [
+      "Restore the system to a previous recovery point",
+      "Reinstall the fingerprint software",
+      "Access the BIOS and clear the TPM",
+      "Update the drivers and the fingerprint software",
+      "Flash the newest BIOS firmware that is available"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "If a user is unable to log in using the fingerprint reader on a company laptop after the motherboard was replaced, it could be due to an issue with the fingerprint\nsoftware. The first step to fix the issue would be for the technician to reinstall the fingerprint software.",
+    "id": 34
+  },
+  {
+    "type": "single",
+    "question": "A user reports a tablet restarts on its own every five to ten minutes. In addition, the tablet has intermittent issues with charging. The technician gives the user a\nnew power adapter and charging cable, and the technician also tries resetting the OS. but the issue persists. Which of the following is the MOST likely cause of the\nissue?",
+    "options": [
+      "Water damage",
+      "Incorrect OS version",
+      "Faulty battery",
+      "Damaged charging port"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A faulty battery could cause a tablet to restart on its own and have intermittent issues with charging. Water damage could also cause these symptoms, but it is not\nthe most likely cause unless there is evidence of liquid exposure. Incorrect OS version could cause compatibility or performance issues, but not charging problems.\nDamaged charging port could prevent the tablet from charging, but not cause it to restart randomly.",
+    "id": 35
+  },
+  {
+    "type": "single",
+    "question": "A user who is facilitating a videoconference reports that the participants can be heard. However, when the user attempts to speak, none of the participants can\nhear the user. Which of the following is the FIRST step the technician should take?",
+    "options": [
+      "Restart the Videoconference.",
+      "Replace the laptop.",
+      "Check the audio inputs.",
+      "Try another microphone."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The technician should check that the audio inputs are configured correctly for the videoconference software and that they are not muted or disabled.The\ntechnician should also make sure that the microphone is plugged in properly and that it is not faulty or damaged.If possible, the technician should test the\nmicrophone on another device or use another microphone on the same device to isolate the problem. Reference: https://partners.comptia.org/docs/default-\nsource/resources/a-core-1-content-guide (page 11)",
+    "id": 36
+  },
+  {
+    "type": "single",
+    "question": "A technician is troubleshooting an issue involving lines appearing down copied pages, but printed pages sent directly to the copier render as intended. Which of\nthe following is the MOST likely cause of this issue?",
+    "options": [
+      "Empty imager drum",
+      "Overheated system fuser",
+      "Scratched scanner glass",
+      "Third-party toner"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "If lines appear down copied pages but printed pages sent directly to copier render as intended, it could be due to scratched scanner glass which can cause lines\nor streaks on copied pages.\nIf there are lines appearing on copied pages, but not on printed pages sent directly to the copier, the issue is most likely caused by a scratch on the scanner glass.\nReferences: https://www.pacificoffice.com/how-to-fix-lines-on-copier/",
+    "id": 37
+  },
+  {
+    "type": "single",
+    "question": "A user receives the following error when trying to reboot a computer:\nWhich of the following is the MOST likely cause of this error message?",
+    "options": [
+      "Corrupted bootloader",
+      "Faulty RAID controller\n ",
+      "Failed hard drive",
+      "Incorrect storage device driver"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The error message \"Reboot and Select Proper Boot Device\" indicates that the computer cannot find the boot device that contains the operating system12. This can\nhappen if the hard drive that stores the operating system is damaged or failed, and the BIOS cannot detect it or read from it23. A failed hard drive can also cause\nother symptoms such as clicking noises, corrupted files, or slow performance4.",
+    "id": 38
+  },
+  {
+    "type": "single",
+    "question": "An IT manager is evaluating ticket resolution times. While reviewing the data, the manager notices repetitive issues are taking longer than expected to resolve.\nWhich of the following changes should the manager implement to resolve repetitive issues more quickly?",
+    "options": [
+      "Require the technicians to spend more time testing theories to determine the root causes of issues.",
+      "Require the technicians to verify full system functionality when resolving issues.",
+      "Require the technicians to gather more information when speaking with users aboutissues.",
+      "Require the technicians to document the findings, action, and outcomes of issues."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "By documenting the findings, action, and outcomes of issues, the technicians can create a knowledge base that can be used to resolve similar issues in the future\nmore quickly and efficiently. The documentation can also help identify patterns or trends that can lead to preventive measures or root cause analysis. Documenting\nthe issues can also improve communication and collaboration among technicians and users, as well as provide evidence of service quality and performance.\nReference: https://partners.comptia.org/docs/default-source/resources/a-core-1-content-guide (page 4)",
+    "id": 39
+  },
+  {
+    "type": "single",
+    "question": "The GPS on a user's phone has been unreliable. Which of the following will MOST likely resolve the issue?",
+    "options": [
+      "Enabling high-accuracy mode",
+      "Replacing the battery",
+      "Disabling Wi-Fi connections",
+      "Utilizing a third-party map application"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Enabling high-accuracy mode is the most likely action to resolve the issue of unreliable GPS on a user\u2019s phone. High-accuracy mode uses multiple sources of\nlocation data, such as Wi-Fi, cellular networks, and Bluetooth, to improve the accuracy and reliability of GPS. Replacing the battery, disabling Wi-Fi connections, or\nutilizing a third- party map application are unlikely to fix the GPS issue, as they are not directly related to the GPS function",
+    "id": 40
+  },
+  {
+    "type": "single",
+    "question": "A technician receives an alert indicating all VMs are down. After some troubleshooting, the technician discovers the network is out of space. To resolve the issue,\nthe technician decides to add more space. Which of the following network types will the technician be working with?",
+    "options": [
+      "SCSI",
+      "NAC",
+      "SAN",
+      "WISP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A storage area network (SAN) is the type of network that the technician will be working with when adding more space to resolve the issue of all VMs being down\ndue to the network being out of space. A SAN is a network that provides access to consolidated and block-level data storage, which can be used for virtualization\nand backup purposes. SCSI is a type of interface that connects devices such as hard drives and optical drives to a computer. NAC is a type of security solution\nthat controls access to a network based on policies and device compliance. WISP is a type of internet service provider that delivers wireless broadband access\nover long distances.",
+    "id": 41
+  },
+  {
+    "type": "single",
+    "question": "A user reports that all print jobs sent to a laser printer have random and incorrect characters throughout the pages. Which of the fallowing actions should the\ntechnician do to resolve this issue?",
+    "options": [
+      "Replace the fuser.",
+      "Adjust the rollers.",
+      "Update the driver.",
+      "Shake the toner"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "One of the possible causes of random and incorrect characters appearing on print jobs sent to a laser printer is an outdated or corrupted driver. The driver is a\nsoftware component that communicates between the operating system and the printer, and converts data into a format that the printer can understand. If the driver\nis outdated or corrupted, it may send incorrect or garbled data to the printer, resulting in poor print quality or errors. The technician should update the driver to the\nlatest version from the manufacturer\u2019s website, or uninstall and reinstall it if necessary. Reference:\nhttps://www.comptia.org/training/books/a-core-1-220-1101-study-guide (page 47)",
+    "id": 42
+  },
+  {
+    "type": "single",
+    "question": "A technician is preparing laptops for deployment to a medical department. The laptops require SSD-level encryption to be enabled, but BitLocker refuses to turn it\non. An error message states that a BIOS-level setting has not been turned on. Which of the following should the technician check FIRST when troubleshooting this\nissue?",
+    "options": [
+      "Recorder the priority in Widows Boot Manager.",
+      "Check to make sure Secure Boot is turned on.",
+      "Ensure that the Trusted Platform Module enabled.",
+      "Verify that the latest updates are installed."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Trusted Platform Module (TPM) is a hardware component that provides cryptographic functions and secure storage for encryption keys, passwords, and\ncertificates. BitLocker requires a TPM to be enabled and activated in the BIOS or UEFI settings of the laptop in order to use SSD-level encryption. The technician\nshould check that the TPM is enabled and activated before trying to turn on BitLocker. Reference: https://partners.comptia.org/docs/default-source/resources/a-\ncore-series-combined- content-guide (page 34)",
+    "id": 43
+  },
+  {
+    "type": "multiple",
+    "question": "A user\u2019s Windows computer started running slowly after the installation of a CAD program. The computer has intermittent timeouts and often has to be rebooted to\nrestore functionally. The computer seems to work correctly if the application is not running. Which of the following should the technician do NEXT to help\ntroubleshoot the issue? (Select TWO).",
+    "options": [
+      "Replace the video card.",
+      "Research the requirements of the application.",
+      "Install a new case fun.",
+      "Run chkdsk on the HDD.",
+      "Check the Event Viewer logs.",
+      "Reinstall the application."
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "The technician should research the requirements of the CAD program to see if the computer meets them or needs any upgrades or updates to run it properly. The\ntechnician should also check the Event Viewer logs to see if there are any errors or warnings related to the application or system performance that could indicate\nthe cause of the problem or suggest a solution. Reference: https://www.comptia.org/training/books/a- core-1-220-1101-study-guide (pages 43, 47)",
+    "id": 44
+  },
+  {
+    "type": "multiple",
+    "question": "A technician needs to fix a Cat 5 cable issue. The cable, which is connected to a network jack, fails when it is moved around. Which of the following items must the\ntechnician use to fix the issue? (Select TWO).",
+    "options": [
+      "Scissors",
+      "Network tap",
+      "Magnetized screwdriver",
+      "Tone generator",
+      "RJ45 connector",
+      "Crimper"
+    ],
+    "correct": [
+      4,
+      5
+    ],
+    "explanation": "To fix a Cat 5 cable issue where the cable fails when it is moved around, the technician would need to use an RJ45 connector (option E) and a crimper (option F).\nThe technician can use the crimper to attach a new RJ45 connector to the end of the cable, which should resolve the issue.\nAn RJ45 connector (option E) is a type of connector commonly used for Ethernet networking. It is an 8-position, 8-contact (8P8C) modular plug and jack that is\nused to terminate Cat 5 and other types of twisted pair cables. A crimper (option F) is a tool used to attach connectors to the ends of cables. In this case, the\ntechnician would use the crimper to attach a new RJ45 connector to the end of the Cat 5 cable.\nWhen a cable fails when it is moved around, it often indicates that there is a problem with the connector at the end of the cable. By attaching a new RJ45\nconnector using a crimper, the technician can ensure that the cable has a secure and reliable connection.",
+    "id": 45
+  },
+  {
+    "type": "single",
+    "question": "A user\u00e2\u20ac\u2122s optical drive is producing noise and failing to read discs. Which of the following is the MOST likely cause?",
+    "options": [
+      "Dirty lens",
+      "Bad SATA cable",
+      "Outdated firmware",
+      "Corrupted disc"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A dirty or scratched lens in the optical drive can cause loud noises and read failures when attempting to spin and read a disc.",
+    "id": 46
+  },
+  {
+    "type": "single",
+    "question": "A user complains that the system\u00e2\u20ac\u2122s USB ports quit working after the system resumes from sleep. Which of the following BIOS settings should the technician modify to resolve this issue?",
+    "options": [
+      "Wake-on-LAN",
+      "ErP Support",
+      "Power on Standby",
+      "USB Wake Support"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Enabling USB Wake Support ensures that USB ports remain powered and active when the system enters sleep or standby mode.",
+    "id": 47
+  },
+  {
+    "type": "single",
+    "question": "A remote user called the help desk to report a notification indicating there is limited or no connectivity. The user can access local file folders and other local machines but none of the organization's servers or network items. Web pages do not appear to function either. Which of the following is the MOST likely cause of the issue?",
+    "options": [
+      "The user's internet connection is down",
+      "The user's domain account is locked out",
+      "The user's switch has stopped working",
+      "The user's IP address needs to be renewed"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If local resources are available but nothing external is reachable (including websites), the user's Internet connection is most likely down.",
+    "id": 48
+  },
+  {
+    "type": "multiple",
+    "question": "A technician needs to fix a Cat 5 cable issue. The cable, which is connected to a network jack, fails when it is moved around. Which of the following items must the technician use to fix the issue? (Select TWO)",
+    "options": [
+      "Scissors",
+      "Network tap",
+      "Magnetized screwdriver",
+      "Tone generator",
+      "RJ45 connector",
+      "Crimper"
+    ],
+    "correct": [
+      4,
+      5
+    ],
+    "explanation": "To repair a broken Cat 5 cable, you need a new RJ45 connector and a crimper tool to attach it properly.",
+    "id": 49
+  },
+  {
+    "type": "single",
+    "question": "A field technician has been dispatched to a site with an internet outage. Upon arriving, the technician discovers that the POTS lines are not working as well. Which of the following technologies is the site MOST likely using?",
+    "options": [
+      "Fiber",
+      "Cable",
+      "DSL",
+      "Satellite"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "DSL uses POTS (Plain Old Telephone Service) lines for Internet. If POTS lines are down, the DSL connection will also be down.",
+    "id": 50
+  },
+  {
+    "type": "single",
+    "question": "The help desk received a ticket regarding Issues with a laser printer. The printer has had repairs previously for scanning Issues. Currently, the printed text is not\nadhering properly to the paper. Which of the following should be replaced lo resolve this Issue?",
+    "options": [
+      "Fuser",
+      "Waste container",
+      "Roller",
+      "Toner"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If the printed text is not adhering properly to the paper on a laser printer that has had repairs previously for scanning issues, the fuser should be replaced to\nresolve this issue. The fuser is a component of the printer that uses heat and pressure to fuse the toner onto the paper. If the fuser is not functioning properly, the\ntoner may not adhere properly to the paper.",
+    "id": 51
+  },
+  {
+    "type": "single",
+    "question": "A technician is troubleshooting a projector that will not display any Images. The technician has verified the computer output and cable are providing a good video\nsignal. Which of the following should the technician do NEXT?",
+    "options": [
+      "Calibrate the image.",
+      "Replace the bulb.",
+      "Test the output resolution.",
+      "Clean the fans."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The MOST efficient next step the technician should do is to test the output resolution1. The issue of a projector that will not display any images could be related to\nthe output resolution1. If the output resolution is not compatible with the projector, the projector will not display any images1. Calibrating the image, replacing the\nbulb, or cleaning the fans may not be effective1.\nIf a projector is not displaying any images despite verifying that the computer output and cable are providing a good video signal, the technician should test the\noutput resolution. The output resolution of the computer may not be compatible with the projector, which can cause the projector to not display any images.",
     "id": 52
+  },
+  {
+    "type": "single",
+    "question": "A user is trying to play a DVD on a projector. The user can hear the audio; however, the projector is showing an error message that states:\nHDMI Blocked due to Copy Protection\nWhich of the following is the MOST likely cause of the error?",
+    "options": [
+      "The HDMI cannot carry the signal from the DVD to the projector.",
+      "The user needs to switch from HDMI to a cable standard such as DisplayPort.",
+      "The projector does not support the necessary HDCP protocol.",
+      "The user needs to enable cony-protected sources in the projector's settings."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Official CompTIA\u00ae A+\u00ae Core 1 and Core 2 Student Guide (Exams 220-\n1001 and 220-1002) | 193 Protected content. If you encounter an error that indicates unauthorized content or an HDCP error: \u2022 DVI, HDMI, DisplayPort, and\nThunderbolt all provide support for the Digital Rights Management (DRM) mechanism High-bandwidth Digital Content Protection (HDCP). HDCP allows a content\nsource (such as a Blu-ray disc) to disable itself if the display adapter and monitor and/or speaker system do not support HDCP and fail to authenticate themselves\nwith the playback source. There have been various iterations of HDCP (at time of writing the current version is 2.2) and backward- compatibility can be problematic\nas authentication may fail between devices that support different versions of the standard.",
+    "id": 53
+  },
+  {
+    "type": "single",
+    "question": "A technician is replacing a ribbon on a printer that produces faded text and Images when priming. Which of the following types of primers is the technician working\non?",
+    "options": [
+      "Impact",
+      "Inkjet",
+      "Laser",
+      "Thermal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An impact printer is a type of printer that uses a ribbon to produce text and images on paper. If an impact printer is producing faded text and images when printing,\nit could be due to a worn-out ribbon that needs to be replaced. The technician would need to replace the ribbon on the impact printer to resolve the issue.\nA ribbon is a consumable component used in impact printers that uses a cloth or plastic strip coated with ink to produce text and images on paper. Examples of\nimpact printers include dot matrix printers and line printers. References: Study Guide Section 4.6 - Printer technologies",
+    "id": 54
+  },
+  {
+    "type": "single",
+    "question": "A technician recently discovered me root cause of an application error that several users have been experiencing. The technician updated the configurations on\nthe affected\nmachines and verified full functionality was restored for all users, which of the following actions should the technician perform NEXT?",
+    "options": [
+      "Write a knowledge base article in the ticketing software to expedite future Incidents.",
+      "Submit a bug report to the developer of the application, along with the steps taken to resolve the Issue.",
+      "Work with the developer to proactively collect the application logs to identify future errors of this type.",
+      "Send an email communication to the company about the issue and the steps taken to resolve it."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "CompTIA 6-Step Troubleshooting Process:\n* 1. Identify the problem.\n* 2. Establish a theory of probably cause. (Question the obvious)\n* 3. Test the theory to determine cause.\n* 4. Establish a plan of action to resolve the problem and implement the solution.\n* 5. Verify full system functionality and if applicable implement preventative measures.\n* 6. Document findings, actions, and outcomes.\nWriting a knowledge base article in the ticketing software would help document the root cause of the application error and the steps taken to resolve it, which can\nhelp other technicians resolve similar issues in the future. This is an example of knowledge management best practices. References: CompTIA A+ Certification All-\nin-One Exam Guide, Tenth Edition, Chapter 6",
+    "id": 55
+  },
+  {
+    "type": "single",
+    "question": "A help desk technician thinks a desktop PC has failed due to a defective power supply. Which of the following steps should the technician take NEXT?",
+    "options": [
+      "Inquire about environmental or infrastructure changes.",
+      "Conduct external or internal research based on symptoms.",
+      "Establish a plan of action to resolve the problem and implement the solution.",
+      "Document the findings, actions, and outcomes."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Once the technician has determined that the power supply is likely to be defective, they should establish a plan of action to resolve the problem. This may include\nreplacing the power supply or further testing to confirm that it is indeed defective. After establishing a plan of action, the technician should implement the solution\nand verify that it has resolved the issue.\n ",
+    "id": 56
+  },
+  {
+    "type": "single",
+    "question": "A user is unable to access the internet on a PC. A technician examines the PC and runs the following commands:\nWhich of the following steps in the troubleshooting process does this series of commands represent?",
+    "options": [
+      "Establish a theory.",
+      "Verify full system functionality.",
+      "Establish a plan of action.",
+      "Identify the problem."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "id": 57
+  },
+  {
+    "type": "multiple",
+    "question": "The owner of a restaurant reports that wireless network connections are lost intermittently throughout the day. Which of the following steps should a technician\ntake to troubleshoot the issue? (Select TWO).\n ",
+    "options": [
+      "Identify the location of devices that utilize 2.4GHz.",
+      "Check to see if the phones are IJTP or STP lines.",
+      "Test to see if the copper electrical Wires are causing interference.",
+      "Map all of the wireless signals in the restaurant.",
+      "Verify T568B is being used in the wiring closet patch panel.",
+      "Schedule timed router reboots throughout the day."
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "The correct answers are A. Identify the location of devices that utilize 2.4GHz and D. Map all of the wireless signals in the restaurant. In order to troubleshoot the\nissue, the technician should first identify the location of devices that utilize the 2.4GHz frequency, as this can cause interference with the wireless signal.\nAdditionally, the technician should map all of the wireless signals in the restaurant in order to identify any potential sources of interference. Checking to see if the\nphones are IJTP or STP lines, testing to see if the copper electrical wires are causing interference, verifying T568B is being used in the wiring closet patch panel,\nand scheduling timed router reboots throughout the day are not necessary steps for troubleshooting this issue.",
+    "id": 58
+  },
+  {
+    "type": "single",
+    "question": "A technician is investigating the output shown on a monitor. The output is clear, but it has a pink hue. The technician has replaced the video card and updated the\ngraphics drivers. Which of the following would be the MOST likely cause?",
+    "options": [
+      "Physical cabling issues",
+      "Burned-out bulb",
+      "Display burn-in",
+      "Incorrect data source"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The pink hue is most likely caused by physical cabling issues the output on a monitor is clear but has a pink hue, it could be due to an issue with the physical\ncabling connecting the monitor to the computer. The video signal may be degraded or distorted due to a damaged or loose cable. The technician should check and\nreplace the cable if necessary to resolve the issue.",
+    "id": 59
+  },
+  {
+    "type": "single",
+    "question": "An IT manager discovered that hundreds of pages of printed materials are being recycled each day because the materials are left on the printer tray instead of\nbeing picked up by users. Which of the following would BEST prevent this waste?",
+    "options": [
+      "Send friendly reminders to not print unnecessarily.",
+      "Enable duplex printing to reduce paper utilization.",
+      "Bill each department for the excess material cost.",
+      "Require a code or badge before releasing a print job."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "By requiring a code or badge before releasing a print job, it ensures that only authorized personnel can collect the printouts. This method is effective in preventing\nwaste and in keeping sensitive documents confidential. Sending reminders, enabling duplex printing, and billing departments are useful strategies for reducing\npaper utilization but may not necessarily prevent waste caused by uncollected printouts.\nRequiring a code or badge before releasing a print job is the best solution to prevent the waste of printed materials, as it ensures that only the user who initiated\nthe print job is able to pick up the printed materials. This can be achieved by implementing print release software or requiring users to enter a PIN code at the\nprinter. References: CompTIA A+ Certification Exam Objectives 1001, 2.10",
+    "id": 60
+  },
+  {
+    "type": "single",
+    "question": "A user reports their phone's battery drains quickly. What should be checked FIRST?",
+    "options": [
+      "Screen brightness",
+      "Background apps",
+      "Battery age",
+      "Charging cable"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Background apps running continuously can significantly drain battery life.",
+    "id": 61
+  },
+  {
+    "type": "single",
+    "question": "A user complains of very fast battery drain. What setting should be investigated?",
+    "options": [
+      "Brightness",
+      "Location services",
+      "Bluetooth",
+      "Volume level"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Location services can use constant GPS tracking, significantly draining battery life.",
+    "id": 62
+  },
+  {
+    "type": "single",
+    "question": "A mobile phone is overheating while idle. What could be the reason?",
+    "options": [
+      "Faulty screen",
+      "Background app activity",
+      "Low brightness",
+      "Bluetooth is off"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Apps running in the background can cause processor load and lead to overheating.",
+    "id": 63
+  },
+  {
+    "type": "single",
+    "question": "A salesperson uses a weather app that drains battery fast. What action should be taken?",
+    "options": [
+      "Close background apps",
+      "Disable location services for the app",
+      "Restart the phone",
+      "Lower the screen brightness"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Weather apps often use location services continuously. Disabling location access reduces battery consumption.",
+    "id": 64
+  },
+  {
+    "type": "single",
+    "question": "A user\u2019s phone only charges up to 67% and stops. What component should be replaced?",
+    "options": [
+      "Battery",
+      "Screen",
+      "Charging port",
+      "Motherboard"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If the phone stops charging before reaching 100%, the battery is most likely degraded and should be replaced.",
+    "id": 65
+  },
+  {
+    "type": "single",
+    "question": "While on a VoIP call, one user is unable to understand the other because the audio is breaking up. Which of the following BEST describes what is occurring on the\ncall?",
+    "options": [
+      "High latency",
+      "External interference",
+      "No connectivity",
+      "Port flapping"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "High latency is what best describes what is occurring on a VoIP call when one user is unable to understand the other because the audio is breaking up. Latency is\nthe delay between sending and receiving data over a network, and high latency can cause poor quality or interruptions in VoIP calls. External interference, no\nconnectivity, or port flapping are not likely to cause audio breaking up, but rather complete loss of signal or connection.",
+    "id": 66
+  },
+  {
+    "type": "single",
+    "question": "A workstation has a failing C: drive that contains the OS. Which of the following should the technician do to prepare for a drive replacement?",
+    "options": [
+      "Clone the drive to a backup drive",
+      "Defragment the drive",
+      "Run chkdsk /f",
+      "Update the OS"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Before replacing the OS drive, cloning it to a backup drive ensures that all data and system files are preserved.",
+    "id": 67
+  },
+  {
+    "type": "single",
+    "question": "A customer reports that their USB keyboard occasionally stops working until unplugged and re-plugged. Which of the following is the MOST likely cause?",
+    "options": [
+      "Outdated keyboard driver",
+      "Bad USB port",
+      "Faulty keyboard",
+      "Kernel naming confict"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A faulty or failing USB port can cause intermittent connections, requiring the keyboard to be re-plugged.",
+    "id": 68
+  },
+  {
+    "type": "single",
+    "question": "A technician is receiving reports that the entire office sporadically loses network connectivity throughout the day. The technician determines the root cause to be EMI. Which of the following cable mediums would be the MOST cost effective without sacrificing system performance?",
+    "options": [
+      "Coaxial",
+      "Shielded Cat 6",
+      "Plenum Cat 5e",
+      "Multimode fiber"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Shielded Cat 6 cable is cost-effective and provides protection against electromagnetic interference (EMI) while maintaining high network performance.",
+    "id": 69
+  },
+  {
+    "type": "single",
+    "question": "A technician set up a new access point and has noticed significant latency on the selected channel. Which of the following tools can assist with locating the BEST\nchannel to use?",
+    "options": [
+      "Wi-Fi analyzer",
+      "Netstat",
+      "Net use",
+      "Traceroute",
+      "Network tap"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A Wi-Fi analyzer is a tool that can be used to scan the local area for available wireless networks and can provide information such as signal strength, interference,\nand available channels. It can also be used to locate the best channel to use for a given access point, which can help to reduce latency and improve performance.",
+    "id": 70
+  },
+  {
+    "type": "single",
+    "question": "Vertical streaks are appearing on the output of a laser printer. Which of the following items is the MOST likely cause?",
+    "options": [
+      "Roller",
+      "Drum",
+      "Transfer belt",
+      "Ribbon"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Vertical or horizontal lines\u2014Marks that appear in the same place (referred to as repetitive defects) are often due to dirty feed rollers (note that there are rollers in the\ntoner cartridge and fuser unit too) or a damaged or dirty photosensitive drum.\nVertical streaks on a laser printer output are usually caused by a damaged or worn-out drum, which is responsible for transferring toner to the paper. If the drum is\ndamaged, toner may accumulate on certain parts of the drum, leading to streaks on the printed output. References: CompTIA A+ Certification All-in-One Exam\nGuide, Tenth Edition, Chapter 15",
+    "id": 71
+  },
+  {
+    "type": "multiple",
+    "question": "A user reports a cell phone is getting hot. Which of the following are MOST likely to be possible causes? (Select THREE).",
+    "options": [
+      "Using the device as a Wi-Fi hotspot",
+      "A cracked screen",
+      "A failing battery",
+      "Less than 15% free storage space on the phone",
+      "Privileged control",
+      "Recurring prompts to install OS updates\nG. Granting too many application camera permissions\nH. Too many open applications"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Using the device as a Wi-Fi hotspot, a failing battery, and too many open applications are the most likely causes of the cell phone getting hot. These actions\nrequire the phone to use more power and processing, causing it to heat up.",
+    "id": 72
+  },
+  {
+    "type": "single",
+    "question": "A user attempted to install an application on a desktop, and the installation attempt failed. A technician compares these installation files to those on another user's\nmachine and finds the files are different. Which of the following should the technician do NEXT?",
+    "options": [
+      "Attempt to reinstall the application.",
+      "Verify the system functionality.",
+      "Test the functionality of the antivirus.",
+      "Complete the final report.",
+      "Determine the source of the installation file."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "id": 73
+  },
+  {
+    "type": "single",
+    "question": "A technician logs on to a PC and inserts an encrypted USB drive. When opening File Explorer, the technician cannot see the USB drive. Which of the following\ntools should the technician use to see all drives?",
+    "options": [
+      "DiskPart",
+      "Diskmgmt",
+      "Disk Cleanup",
+      "BitLocker"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The tool that the technician should use to see all drives is Diskmgmt. Diskmgmt is a Windows utility that allows you to manage disk drives and partitions on your\ncomputer. It can be used to view all drives, including USB drives, that are connected to the computer12.",
+    "id": 74
+  },
+  {
+    "type": "single",
+    "question": "Which of the following is a common safety procedure when working inside a computer case?",
+    "options": [
+      "Keeping the power cord plugged in for grounding",
+      "Wearing an anti-static wrist strap",
+      "Using magnetic screwdrivers for all components",
+      "Working on a carpeted floor"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Wearing an anti-static wrist strap helps prevent electrostatic discharge (ESD) which can damage sensitive components.",
+    "id": 75
+  },
+  {
+    "type": "single",
+    "question": "A user reports their printer is not printing. What is the first thing to check?",
+    "options": [
+      "Paper tray",
+      "Ink/Toner levels",
+      "Power and cable connections",
+      "Print queue"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Always check basic power and cable connections first when a printer is not responding.",
+    "id": 76
   }
 ]

@@ -187,23 +187,33 @@ def categorize_question(question_text, explanation):
     keywords = {
         'hardware': [
             ('ram', 2), ('cpu', 2), ('motherboard', 3), ('hard drive', 2), ('ssd', 2),
-            ('power supply', 2), ('gpu', 2), ('cooling', 1), ('desktop', 1), ('printer', 1)
+            ('power supply', 2), ('gpu', 2), ('cooling', 1), ('desktop', 1), ('printer', 1),
+            ('hdd', 2), ('sata', 2), ('nvme', 2), ('raid', 2), ('bios', 2), ('uefi', 2),
+            ('peripheral', 1), ('monitor', 1), ('keyboard', 1), ('mouse', 1)
         ],
         'networking': [
             ('router', 2), ('switch', 2), ('firewall', 2), ('wifi', 2), ('ethernet', 2),
-            ('tcp/ip', 2), ('dns', 2), ('vpn', 2), ('lan', 2), ('wan', 2), ('port', 1)
+            ('tcp/ip', 2), ('dns', 2), ('vpn', 2), ('lan', 2), ('wan', 2), ('port', 1),
+            ('ip address', 2), ('subnet', 2), ('gateway', 2), ('dhcp', 2), ('nat', 2),
+            ('osi', 2)
         ],
         'mobile-devices': [
             ('laptop', 2), ('tablet', 2), ('smartphone', 2), ('battery', 1), ('touch screen', 1),
-            ('mobile device', 2), ('usb-c', 1), ('nfc', 1), ('bluetooth', 1), ('tablet', 1)
+            ('mobile device', 2), ('usb-c', 1), ('nfc', 1), ('bluetooth', 1), ('tablet', 1),
+            ('ios', 2), ('android', 2), ('wearable', 2), ('mobile os', 2), ('sync', 1),
+            ('tablet', 1), ('phablet', 1), ('mobile security', 2)
         ],
         'troubleshooting': [
             ('troubleshoot', 3), ('error', 2), ('fix', 2), ('issue', 2), ('problem', 2),
-            ('not working', 2), ('resolve', 2), ('diagnose', 2), ('repair', 2), ('symptom', 2)
+            ('not working', 2), ('resolve', 2), ('diagnose', 2), ('repair', 2), ('symptom', 2), ('thecnhician', 3),
+            ('failure', 2), ('blue screen', 3), ('bsod', 3), ('crash', 2), ('won\'t start', 2),
+            ('slow', 2), ('freeze', 2), ('unresponsive', 2)
         ],
         'virtualization-cloud': [
             ('virtual', 3), ('vm', 3), ('cloud', 3), ('hypervisor', 3), ('iaas', 2),
-            ('paas', 2), ('saas', 2), ('vdi', 2), ('server', 1), ('host', 1)
+            ('paas', 2), ('saas', 2), ('vdi', 2), ('server', 1), ('host', 1),
+            ('vmware', 2), ('hyper-v', 2), ('virtualbox', 2), ('aws', 2), ('azure', 2),
+            ('gcp', 2), ('private cloud', 2), ('public cloud', 2), ('hybrid cloud', 2)
         ]
     }
     

@@ -21,20 +21,7 @@ DELETIONS = []
 
 # Re-categorization list
 # Indices are 0-based and have been verified against current question counts
-REMOVES_AND_MOVES = [
-    # From hardware.json
-    {"original_file_key": "hardware", "original_index": 2, "target_topic_key": "troubleshooting"},
-    {"original_file_key": "hardware", "original_index": 4, "target_topic_key": "troubleshooting"},
-    {"original_file_key": "hardware", "original_index": 5, "target_topic_key": "troubleshooting"},
-    {"original_file_key": "hardware", "original_index": 8, "target_topic_key": "mobile-devices"},
-    {"original_file_key": "hardware", "original_index": 20, "target_topic_key": "mobile-devices"},
-    {"original_file_key": "hardware", "original_index": 31, "target_topic_key": "networking"},
-    {"original_file_key": "hardware", "original_index": 48, "target_topic_key": "troubleshooting"},
-    # Note: Removed operations with indices >= 76 as they're out of bounds for hardware.json
-    
-    # Note: Removed all networking.json operations as they were out of bounds
-    # (networking.json only has 67 questions, but operations referenced indices 246-254)
-]
+REMOVES_AND_MOVES = []
 
 def load_questions(data_dir, topic_files_map):
     """Loads all questions from JSON files."""
