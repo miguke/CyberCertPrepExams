@@ -10,30 +10,6 @@ Um aplicativo de estudo interativo para o exame CompTIA A+ 220-1101 que permite 
 - **Acompanhamento de Progresso**: Acompanhe seu desempenho com estatísticas em tempo real
 - **Interface Responsiva**: Funciona em desktops, tablets e smartphones
 
-## Estrutura do Projeto
-
-```
-A-220-1101/
-├── 1101/                  # Páginas específicas do curso 220-1101
-│   └── quiz.html         # Página principal do quiz
-├── css/                   # Folhas de estilo
-│   ├── quiz.css          # Estilos específicos do quiz
-│   └── styles.css        # Estilos gerais
-├── data/                  # Dados do aplicativo
-│   └── 1101/             # Dados específicos do curso 220-1101
-│       ├── hardware.json  # Perguntas sobre hardware
-│       ├── mobile.json    # Perguntas sobre dispositivos móveis
-│       ├── networking.json # Perguntas sobre redes
-│       ├── troubleshooting.json # Perguntas sobre solução de problemas
-│       └── virtualization-cloud.json # Perguntas sobre virtualização e nuvem
-├── js/                    # Código JavaScript
-│   ├── app.js            # Lógica principal do aplicativo
-│   ├── course-1101.js    # Configuração do curso 220-1101
-│   └── quiz-app.js       # Lógica do quiz
-├── assets/                # Recursos estáticos (imagens, etc.)
-├── index.html            # Página de seleção de curso
-└── server.py             # Servidor Python para desenvolvimento local
-```
 
 ## Como Executar Localmente
 
@@ -86,8 +62,3 @@ Edite os arquivos CSS em `css/` para personalizar as cores, fontes e layout do a
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-## Agradecimentos
-
-- CompTIA pelos objetivos do exame A+ 220-1101
-- Comunidade de TI por compartilhar conhecimento e recursos
-- Contribuidores de código aberto por suas bibliotecas e ferramentas
