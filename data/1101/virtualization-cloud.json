@@ -1,0 +1,395 @@
+[
+  {
+    "type": "single",
+    "question": "A startup company is outgrowing its current office space and is requiring employees to work remotely. The company must comply with government-enforced requirements to safeguard all aspects of data, so the IT department plans to maintain complete control over users' operating systems. Which of the following should the IT department implement?",
+    "options": [
+      "VDI",
+      "IaaS",
+      "VPN",
+      "SaaS"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "VDI (Virtual Desktop Infrastructure) allows the IT department to maintain complete control over users' operating systems while providing secure remote access.",
+    "id": 1
+  },
+  {
+    "type": "single",
+    "question": "A developer is requesting permission to utilize client-side virtualization. The developer would like to write code in a setting isolated from other infrastructure to avoid negative impacts of experimental code. Which of the following provides the BEST solution for the developer?",
+    "options": [
+      "Cross-platform functionality",
+      "Software compatibility",
+      "Test case development",
+      "Sandbox environment"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A sandbox environment provides the developer with an isolated, safe workspace for testing experimental code without impacting production systems.",
+    "id": 2
+  },
+  {
+    "type": "single",
+    "question": "Which of the following cloud service models provides the most control over the operating system and applications?",
+    "options": [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "DaaS"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "IaaS (Infrastructure as a Service) provides the most control as it offers virtualized computing resources over the internet, allowing users to manage operating systems and applications.",
+    "id": 3
+  },
+  {
+    "type": "multiple",
+    "question": "Which of the following are benefits of cloud computing? (Select TWO)",
+    "options": [
+      "Reduced capital expenses",
+      "Increased physical security",
+      "Guaranteed 100% uptime",
+      "Elastic resource allocation",
+      "Elimination of all IT staff"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Cloud computing reduces capital expenses by converting them to operational expenses and provides elastic resource allocation to scale up or down as needed.",
+    "id": 4
+  },
+  {
+    "type": "single",
+    "question": "Which of the following would an administrator use to migrate virtual machines from on premises to the cloud?",
+    "options": [
+      "IaaS",
+      "SaaS",
+      "DBaaS",
+      "DRaaS"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "IaaS (Infrastructure as a Service) allows administrators to spin up virtual servers in the cloud and migrate on-premises VMs.",
+    "id": 5
+  },
+  {
+    "type": "single",
+    "question": "Which of the following is a valid use for PaaS?",
+    "options": [
+      "Off-site backups",
+      "An application development environment",
+      "A virtual server installation and configuration model",
+      "A web application for asset management"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "PaaS (Platform as a Service) provides a complete development and deployment environment in the cloud, making it ideal for application development.",
+    "id": 6
+  },
+  {
+    "type": "single",
+    "question": "What is a hypervisor?",
+    "options": [
+      "A type of cloud service model",
+      "Software that creates and runs virtual machines",
+      "A physical server in a data center",
+      "A network monitoring tool"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A hypervisor is software, firmware, or hardware that creates and runs virtual machines (VMs).",
+    "id": 7
+  },
+  {
+    "type": "single",
+    "question": "Which cloud computing model provides on-demand software applications over the internet?",
+    "options": [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "DaaS"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SaaS (Software as a Service) provides on-demand software applications over the internet, typically on a subscription basis.",
+    "id": 8
+  },
+  {
+    "type": "single",
+    "question": "Which of the following would an administrator use to migrate virtual machines from on premises to the cloud?",
+    "options": [
+      "laaS",
+      "SaaS",
+      "DBaaS",
+      "DRaaS"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An administrator would use Infrastructure as a Service (IaaS) to migrate virtual machines from on-premises to the cloud. IaaS is a cloud computing service that\nprovides virtualized computing resources, such as servers, storage, and networking, that can be used to deploy and run applications in the cloud. By using IaaS,\nan administrator can create a virtual machine in the cloud and migrate the existing virtual machine from on- premises to the cloud. References: CompTIA A+\nCertification Exam: Core 1 - Objective 3.3",
+    "id": 9
+  },
+  {
+    "type": "single",
+    "question": "An organization maintains various record types, including health and criminal justice records. Which of the following cloud environments is the organization MOST\nlikely to use to limit the attack surface?",
+    "options": [
+      "Public",
+      "Hybrid",
+      "Community",
+      "Private"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Private cloud environments are designed for use by a single organization and offer the greatest control over security and access to data. They are typically used\nfor sensitive or confidential data, such as health and criminal justice records. Public cloud environments are shared by multiple organizations and offer less control\nover security and access to data. Hybrid cloud environments combine public and private clouds, while community clouds are shared by multiple organizations with\nsimilar needs. References: CompTIA A+ Certification Exam: Core 1 - Page 234",
+    "id": 10
+  },
+  {
+    "type": "single",
+    "question": "An online retailer wants to save money and is considering migrating to the public cloud so peak is over. Which of the following BEST describes this aspect of cloud\ncomputing?",
+    "options": [
+      "Rapid elasticity",
+      "Metered utilization",
+      "Shared resources",
+      "High availability"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rapid elasticity is only suitable for a domain whose resource requirements suddenly up and down for a specific time interval. Referring to the question the online\nretailer wants to migrate to public cloud services during peak season, then wants it to be removed \"automatically\" when the peak is over.",
+    "id": 11
+  },
+  {
+    "type": "single",
+    "question": "Which of the following BEST describes the main function of a web server?",
+    "options": [
+      "Storing files and controlling user access",
+      "Setting up personal mailboxes and calendars",
+      "Providing IP addresses and printing services",
+      "Hosting home pages and business portals"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A web server is a software application that serves HTTP (Hypertext Transfer Protocol) requests by delivering web pages and other files to users' web browsers.\nThe main function of a web server is to host home pages and business portals, making them accessible to users via the internet. References: CompTIA A+\nCertification Exam Objectives 220-1001 - Networking - 1.6",
+    "id": 12
+  },
+  {
+    "type": "single",
+    "question": "A technician needs to back up photos from a mobile device regularly. What is the BEST method?",
+    "options": [
+      "USB cable",
+      "Manual copy",
+      "Cloud backup",
+      "Email to self"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cloud backup provides regular, automated, and accessible backups of photos and data.",
+    "id": 13
+  },
+  {
+    "type": "single",
+    "question": "A user wants to transfer photos to a PC. What method is BEST?",
+    "options": [
+      "Email",
+      "Cloud sync",
+      "Bluetooth",
+      "NFC"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cloud sync allows seamless and automated transfer of media to connected devices.",
+    "id": 14
+  },
+  {
+    "type": "single",
+    "question": "An administrator chose a shared-tenant model for a cloud deployment. Which of the following is the MOST likely reason the administrator chose this model?",
+    "options": [
+      "Cost savings",
+      "Highly available",
+      "Dedicated hardware",
+      "Increased security\n  "
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The shared-tenant model for a cloud deployment, also known as a multi- tenant model, allows multiple customers to use the same resources and infrastructure of\nthe cloud service provider, with each customer's data and applications isolated from one another. This model is often chosen for cost savings, as resources are\nshared and users only pay for what they use. Therefore, the MOST likely reason that an administrator chose this model is A. Cost savings.",
+    "id": 15
+  },
+  {
+    "type": "single",
+    "question": "A virtual file server in the cloud is configured to automatically add compute resources during times of high load on the server. Which of the following describes this\ncloud feature?",
+    "options": [
+      "File synchronization",
+      "High availability",
+      "Rapid elasticity",
+      "Shared resources"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Rapid elasticity is a cloud feature that allows cloud services to scale up or down automatically according to demand or load on the server, without requiring\nmanual intervention or configuration changes by users or administrators.This enables cloud services to provide optimal performance and efficiency at all times, as\nwell as reducing costs by only using resources when needed. Reference: https://www.comptia.org/training/books/a-core-1-220-1101-study-guide (page 98)\n  ",
+    "id": 16
+  },
+  {
+    "type": "single",
+    "question": "Which of the following cloud-computing concepts describes an application that is hosted on the internet but can be used and configured as needed internally per\norganization?",
+    "options": [
+      "Hybrid cloud",
+      "Public cloud",
+      "laaS",
+      "SaaS",
+      "PaaS"
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "Platform as a service (PaaS) is a cloud-computing concept that describes an application that is hosted on the internet but can be used and configured as needed\ninternally per organization. PaaS provides a platform for developing, testing, deploying, and managing applications without having to maintain the underlying\ninfrastructure or software. Hybrid cloud is a combination of public and private cloud services that share data and resources. Public cloud is a cloud computing\nmodel that provides services and resources to anyone over the internet. Infrastructure as a service (IaaS) is a cloud computing model that provides servers,\nstorage, networking, and software over the internet",
+    "id": 17
+  },
+  {
+    "type": "single",
+    "question": "A technician needs to increase the available RAM on a virtual workstation. Which of the following should the technician do?",
+    "options": [
+      "Increase the ECC memory timings in the BIOS.",
+      "Upgrade to the latest DDR5 modules.",
+      "Clear the temporary files on the workstation\u2019s boot drive.",
+      "Use a hypervisor to adjust the resource allocation."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A hypervisor is a software layer that manages and allocates resources for virtual machines (VMs) on a physical host machine. A technician can use a hypervisor\nto adjust the resource allocation for a virtual workstation, such as increasing the amount of RAM assigned to it from the available pool of memory on the host\nmachine. This can improve the performance and functionality of the virtual workstation without requiring any hardware changes or modifications. Reference:\nhttps://www.comptia.org/training/books/a- core-1-220-1101-study-guide (page 59)",
+    "id": 18
+  },
+  {
+    "type": "single",
+    "question": "A new version of Windows was released and a piece of software vital to the engineering department will not run on the new version. Which of the following is the\nBEST option to enable this department to be able to continue using this software?",
+    "options": [
+      "Do not upgrade any workstations within the organization.",
+      "Upgrade all workstations and provide a virtual environment for the legacy software.",
+      "Upgrade all workstations except those used by the engineering department.",
+      "Purchase new workstations for the engineering department."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Upgrading all workstations and providing a virtual environment for the legacy software is the best option, as it allows the engineering department to continue using\nthe vital software while also upgrading to the latest version of Windows. This also ensures that the rest of the organization can take advantage of the latest\nsoftware and security features.",
+    "id": 19
+  },
+  {
+    "type": "single",
+    "question": "The Chief Executive Officer wants to ensure company data is stored in a manner that provides the company with complete control over how the data is managed.\nWhich of the following is the BEST cloud deployment model for this request?",
+    "options": [
+      "Community",
+      "Hybrid",
+      "Public",
+      "Private"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A private cloud deployment model provides the company with complete control over how the data is managed. This is because a private cloud is managed solely\nby the organization and resides on-premises or in a data center. Therefore, a private cloud deployment model is the best option for this scenario.",
+    "id": 20
+  },
+  {
+    "type": "single",
+    "question": "A technical lead wants to migrate all common business applications, including email and fileshares, to the cloud. Which of the following cloud concepts should be\nused?",
+    "options": [
+      "MaaS",
+      "PaaS",
+      "SaaS",
+      "laaS"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The cloud concept that should be used for migrating all common business applications, including email and fileshares, to the cloud is Software as a Service\n(SaaS).",
+    "id": 21
+  },
+  {
+    "type": "single",
+    "question": "Which of the following allows all VMs in a virtual environment to have RAM allocated for use?",
+    "options": [
+      "Measured service",
+      "Containerization",
+      "Synchronization",
+      "Resource pooling"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The concept described in the question is related to virtualization and resource management in a virtual environment. The approach that allows all virtual machines\n(VMs) to have memory (RAM) allocated for use is known as resource pooling. Therefore, the correct answer is D: \"Resource pooling.\" This approach allows\nresources to be allocated dynamically to VMs based on their current needs, and ensures that resources are used efficiently in the virtual environment.\nResource pooling is a technique used in virtualization to share resources among multiple virtual machines (VMs). With resource pooling, RAM can be allocated\ndynamically to VMs as needed, allowing all VMs in a virtual environment to have RAM allocated for use. References:\nhttps://en.wikipedia.org/wiki/Resource_pooling",
+    "id": 22
+  },
+  {
+    "type": "single",
+    "question": "A startup company is outgrowing its current office space and is requiring employees to work remotely. The company must comply with government-enforced\nrequirements to safeguard all aspects of data, so the IT department plans to maintain complete control over users' operating systems. Which of the following\nshould the IT department implement?",
+    "options": [
+      "VDI",
+      "laaS",
+      "VPN",
+      "SaaS"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The IT department should implement VDI. Virtual Desktop Infrastructure (VDI) is a technology that allows users to access a desktop operating system from a\nremote location. VDI provides complete control over users\u2019 operating systems, which is important for safeguarding data. VDI also provides a secure way to access\ndata from remote locations, which is important for compliance with government-enforced requirements1.",
+    "id": 23
+  },
+  {
+    "type": "single",
+    "question": "A technician needs to install a cost-effective storage device into a rackmount server that will be used as a VM host. This storage will be used for all VMs that run from the server. Which of the following should be used?",
+    "options": [
+      "Optical disk drive",
+      "eMMC storage device",
+      "15,000 rpm drive",
+      "RAID 10 array"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A RAID 10 array balances performance (striping) with redundancy (mirroring) and is cost-effective for hosting multiple VMs.",
+    "id": 24
+  },
+  {
+    "type": "single",
+    "question": "Which of the following should the data center hardware technician implement to ensure maximum uptime for customers' virtual machines?",
+    "options": [
+      "Line conditioner",
+      "AC voltage regulator",
+      "Uninterruptible power supply",
+      "Cloud storage backup"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An uninterruptible power supply (UPS) can help ensure maximum uptime for\ncustomers' virtual machines by providing a backup power source in case of a power outage or other power-related issues. A line conditioner and AC voltage\nregulator are designed to stabilize the power supply, but do not provide backup power. Cloud storage backup is a way to backup data, but does not directly impact\nuptime. References: CompTIA A+ Certification Exam: Core 1 - Page 159",
+    "id": 25
+  },
+  {
+    "type": "single",
+    "question": "  \n\nWhich of the following would be BEST reason to use a virtual machine as a sandbox?",
+    "options": [
+      "To test new software in a safe environment",
+      "To increase the efficient use of computing resources",
+      "To run multiple machines on the same hardware",
+      "To have dedicated hardware for a single system"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The main reason to use a virtual machine as a sandbox is to test new software in a safe environment without risking the integrity of the host operating system.\nUsing a virtual machine enables the testing of software and allows for the isolation of the software from the host system. References: CompTIA A+ Certification\nStudy Guide, Tenth Edition, pg. 409",
+    "id": 26
+  }
+]

@@ -1,0 +1,1555 @@
+[
+  {
+    "type": "single",
+    "question": "A technician is tasked with installing additional RAM in a desktop computer. Which of the following types of RAM is MOST likely to be used?",
+    "options": [
+      "SODIMM",
+      "DDR3\n  ",
+      "ECC",
+      "VRAM"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "DDR3 is the most commonly used RAM type in modern desktop computers. It is faster and more energy efficient than its predecessors, and offers larger capacity\nmodules. References: CompTIA A+ Certification Exam Guide, Ninth Edition, Chapter 5",
+    "id": 1
+  },
+  {
+    "type": "single",
+    "question": "Which of the following cooling solutions is BEST suited for an overclocked CPU in a small form factor PC?",
+    "options": [
+      "Tower air cooler",
+      "250W Heatsink Fan",
+      "120 mm AIO liquid cooler",
+      "External fan on case grill"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A compact 120 mm All-In-One liquid cooler provides efficient cooling for an overclocked CPU in a small form factor PC where space is limited.",
+    "id": 2
+  },
+  {
+    "type": "single",
+    "question": "A technician replaces a desktop computer\u00e2\u20ac\u2122s stock air cooler with an aftermarket liquid cooling system. After installation, the system fails to boot. Which of the following is the MOST likely cause?",
+    "options": [
+      "Incorrect mounting bracket",
+      "Faulty water pump",
+      "Insufficient radiator clearance",
+      "Incompatible motherboard"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If the mounting bracket is incorrect or not properly secured, the CPU may not be making proper contact with the cooler, preventing the system from booting.",
+    "id": 3
+  },
+  {
+    "type": "single",
+    "question": "Which of the following connectors on the motherboard provides power to the CPU?",
+    "options": [
+      "4-pin Molex",
+      "8-pin EPS12V",
+      "24-pin ATX",
+      "6-pin PCIe"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The 8-pin EPS12V connector supplies additional 12V power directly to the CPU.",
+    "id": 4
+  },
+  {
+    "type": "single",
+    "question": "A technician needs to install a RAID controller card in a server motherboard. Which connector type on the motherboard should be used?",
+    "options": [
+      "PCIe x16",
+      "AGP",
+      "PCIe x4",
+      "PCI"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Most modern RAID controller cards use a PCIe x4 slot for optimal bandwidth.",
+    "id": 5
+  },
+  {
+    "type": "single",
+    "question": "Which of the following cooling methods uses liquid to transfer heat away from a CPU to a radiator?",
+    "options": [
+      "Passive heat sink",
+      "Heat pipe",
+      "Air cooler",
+      "Liquid AIO"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "AIO (All-In-One) liquid coolers uses coolant to carry heat from the CPU to a radiator and fans for dissipation.",
+    "id": 6
+  },
+  {
+    "type": "single",
+    "question": "A user\u00e2\u20ac\u2122s desktop computer has a single 500 GB HDD installed. The user wants to add a second drive for backups. Which of the following steps should the technician perform FIRST?",
+    "options": [
+      "Install new SATA drivers",
+      "Partition the new drive",
+      "Initialize the new drive in Disk Management",
+      "Format the new drive"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "After physically installing the new drive, the first step is to initialize it in Disk Management before partitioning or formatting.",
+    "id": 7
+  },
+  {
+    "type": "single",
+    "question": "A workstation has four 4 TB SATA HDDs configured in RAID 10. If one drive fails, how many drives can still fail before data is lost?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "RAID 10 is mirrored and striped. One drive failure per mirrored pair is allowable; a second failure in the same mirrored pair causes data loss.",
+    "id": 8
+  },
+  {
+    "type": "single",
+    "question": "A technician is configuring a RAID array for maximum read performance with redundancy. Which of the following RAID levels should be used?",
+    "options": [
+      "RAID 0",
+      "RAID 1",
+      "RAID 5",
+      "RAID 10"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "RAID 10 provides both striping (for speed) and mirroring (for redundancy), offering maximum read performance with fault tolerance.",
+    "id": 9
+  },
+  {
+    "type": "single",
+    "question": "A user reports that their newly installed GPU is not recognized by the system. The motherboard has both a PCIe x16 slot and a PCIe x4 slot. Which slot should be used?",
+    "options": [
+      "PCIe x4",
+      "PCIe x8",
+      "PCIe x16",
+      "PCIe x1"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "High-end GPUs require a PCIe x16 slot to operate at full bandwidth. PCIe x4 slots do not provide sufficient data lanes for most GPUs.",
+    "id": 10
+  },
+  {
+    "type": "single",
+    "question": "When installing a multi-GPU configuration in a gaming workstation, which motherboard feature is required for proper GPU communication?",
+    "options": [
+      "SLI Bridge",
+      "CrossFire cable",
+      "NVLink bridge",
+      "M.2 slot"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "NVIDIA SLI configurations require an SLI bridge to link the GPUs for proper communication and rendering.",
+    "id": 11
+  },
+  {
+    "type": "single",
+    "question": "Which of the following is the MOST power-efficient memory technology used in SSDs for enterprise storage?",
+    "options": [
+      "SLC NAND",
+      "MLC NAND",
+      "TLC NAND",
+      "DRAM cache"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SLC (Single Level Cell) NAND uses one cell per bit, making it the most power-efficient but also the most expensive SSD memory type.",
+    "id": 12
+  },
+  {
+    "type": "single",
+    "question": "A user reports that the system\u00e2\u20ac\u2122s GPU fan is spinning loudly under light load. Which of the following should the technician do FIRST?",
+    "options": [
+      "Reseat the GPU",
+      "Update the GPU driver",
+      "Adjust the video card fan curve",
+      "Disable GPU overclocking"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Adjusting or configuring the GPU fan curve in software can reduce unnecessary fan speeds under light loads.",
+    "id": 13
+  },
+  {
+    "type": "single",
+    "question": "A technician needs to replace a motherboard that uses proprietary connectors for the CPU fan and case speaker. Which of the following should be done FIRST?",
+    "options": [
+      "Label each connector before removal",
+      "Disconnect all cables and components",
+      "Update the motherboard BIOS",
+      "Back up the user\u00e2\u20ac\u2122s data"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Labeling each proprietary connector before removal prevents confusion and ensures each connector is reattached correctly to the new motherboard.",
+    "id": 14
+  },
+  {
+    "type": "single",
+    "question": "Which of the following best describes the advantage of using registered ECC DDR4 memory in a server?",
+    "options": [
+      "Higher clock speeds",
+      "Better latency",
+      "Reduced CPU load during parity calculations",
+      "Lower cost per GB"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Registered ECC memory offloads parity calculations from the CPU, reducing CPU load and improving stability in server environments.",
+    "id": 15
+  },
+  {
+    "type": "multiple",
+    "question": "Which of the following steps should a technician take when replacing a motherboard in a desktop? (Select TWO)",
+    "options": [
+      "Remove all attached peripherals",
+      "Update the operating system",
+      "Remove all cables and expansion cards",
+      "Update device drivers after replacement",
+      "Format the hard drive"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "When replacing a motherboard, disconnect all peripherals, cables, and expansion cards. Afterwards, new drivers should be installed for the new hardware.",
+    "id": 16
+  },
+  {
+    "type": "single",
+    "question": "A user reports that their system\u00e2\u20ac\u2122s front panel USB ports no longer work. The motherboard has rear USB ports that function normally. Which of the following is the MOST likely cause?",
+    "options": [
+      "Faulty front panel USB cable",
+      "Missing front panel drivers",
+      "Disabled USB ports in BIOS",
+      "Corrupted operating system"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If the rear USB ports work but the front panel ports do not, the front panel USB cable or its connection to the motherboard is likely faulty.",
+    "id": 17
+  },
+  {
+    "type": "single",
+    "question": "Which of the following hard drive interface speeds is the fastest?",
+    "options": [
+      "SATA II (3 Gbps)",
+      "SATA III (6 Gbps)",
+      "SAS (12 Gbps)",
+      "USB 3.0 (5 Gbps)"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SAS (12 Gbps) offers a higher interface throughput compared to SATA III (6 Gbps) and USB 3.0 (5 Gbps).",
+    "id": 18
+  },
+  {
+    "type": "single",
+    "question": "A technician is installing a new SATA SSD in a desktop. After installing the drive, the system will not boot. Which of the following should the technician do FIRST?",
+    "options": [
+      "Format the SSD",
+      "Initialize the SSD in BIOS",
+      "Ensure SATA controller mode is set to AHCI",
+      "Update firmware on the SSD"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "If the SATA controller mode is not set to AHCI, the operating system may not recognize a new SSD. Changing the mode to AHCI often resolves recognition issues.",
+    "id": 19
+  },
+  {
+    "type": "single",
+    "question": "A user wants to add a second internal SSD to their desktop but does not have any additional SATA connectors on the motherboard. Which of the following would be the BEST solution?",
+    "options": [
+      "Use a USB 3.0 to SATA adapter",
+      "Install a PCIe SATA controller card",
+      "Replace the existing SSD with a larger capacity one",
+      "Use a SATA power splitter"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Installing a PCIe SATA controller card adds additional SATA ports to support more internal drives.",
+    "id": 20
+  },
+  {
+    "type": "multiple",
+    "question": "A user is researching hard drives to upgrade a PC and has decided to purchase an NVMe drive. Which of the following should the user confirm are available on the PC before making the purchase? (Select TWO)",
+    "options": [
+      "SATA",
+      "M.2",
+      "PCIe",
+      "SAS",
+      "SCSI",
+      "DRAM"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "An NVMe drive requires an M.2 slot that supports PCIe lanes. SATA is not needed for NVMe, and SAS/SCSI/DRAM are unrelated to NVMe connectivity.",
+    "id": 21
+  },
+  {
+    "type": "single",
+    "question": "A technician is installing a heat sink on a CPU that uses the LGA socket. Which of the following should the technician apply before mounting the heat sink?",
+    "options": [
+      "Thermal pads",
+      "Thermal paste",
+      "Thermal adhesive",
+      "Thermal gel"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Thermal paste is applied between the CPU and the heat sink to improve heat transfer.",
+    "id": 22
+  },
+  {
+    "type": "single",
+    "question": "A technician needs to add storage to a workstation. The workstation does not have room to add any internal storage, so the technician plans to add an external\nstorage device. Which of the following connection types should the technician MOST likely use?",
+    "options": [
+      "SCSI",
+      "eSATA",
+      "PCIe",
+      "NVMe"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "eSATA is the best choice for adding external storage as it offers a fast transfer rate and is specifically designed for external storage devices. SCSI is an older\ninterface that is rarely used today, PCIe is typically used to add expansion cards to a computer, and NVMe is a newer interface for high-speed solid-state storage,\nbut it is typically used for internal storage devices.",
+    "id": 23
+  },
+  {
+    "type": "single",
+    "question": "Which of the following drives would provide the BEST mix of capacity and performance for a workstation used to edit large video files?",
+    "options": [
+      "4 TB 5400 RPM HDD",
+      "512 GB SATA SSD",
+      "1 TB NVMe SSD",
+      "2 TB Hybrid SSHD"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A 1 TB NVMe SSD provides high performance for video editing and enough capacity for large files, offering the best balance.",
+    "id": 24
+  },
+  {
+    "type": "single",
+    "question": "A laptop's external webcam software is running, but it shows no image or video. Which of the following should a technician perform FIRST?",
+    "options": [
+      "Research new webcam firmware.",
+      "Restart the computer and run system diagnostics.",
+      "Reseat the webcam.",
+      "Reinstall the webcam software and drivers."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "https://www.lifewire.com/fix-it-when-webcam-is-not-working-4588517\nIf a laptop's external webcam software is running, but it shows no image or video, the first step the technician should perform is to reseat the webcam. Reseating\nthe webcam involves disconnecting it from the motherboard and then reconnecting it. If this doesn't work, the technician should then check the webcam drivers or\nsoftware. References: CompTIA A+ Certification All-in-One Exam Guide, Tenth Edition by Mike Meyers (Page 502)",
+    "id": 25
+  },
+  {
+    "type": "multiple",
+    "question": "A technician made several upgrades to a computer and then determined the power supplied by the PSU is insufficient. Which of the following would MOST likely cause the insufficiency? (Select TWO)",
+    "options": [
+      "Replacing the HDD with an SSD",
+      "Upgrading the firmware",
+      "Adding an optical drive",
+      "Adding more RAM",
+      "Adding a CMOS battery",
+      "Upgrading the graphics card"
+    ],
+    "correct": [
+      3,
+      5
+    ],
+    "explanation": "Adding more RAM and upgrading to a higher-end graphics card increase overall power consumption, which can cause a previously adequate PSU to become insufficient.",
+    "id": 26
+  },
+  {
+    "type": "multiple",
+    "question": "A user requested upgrades to a company-issued laptop to increase its performance while working with a large database stored on drive C. Which of the following\ntasks should a systems administrator complete to BEST meet this goal? (Select TWO).",
+    "options": [
+      "Configure RAID 1.",
+      "Install a hybrid drive.",
+      "Upgrade to 1GB NIC.",
+      "Increase the RAM.",
+      "Migrate to a SSD.",
+      "Upgrade the power supply."
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "explanation": "To increase the performance of a laptop working with a large database stored on drive C, a systems administrator should increase the RAM and migrate to an\nSSD. Increasing the RAM will help the laptop to better handle the large database, while migrating to an SSD will improve the speed at which the laptop can access\nthe database. Configuring RAID 1, installing a hybrid drive, upgrading to a 1GB NIC, and upgrading the power supply will not directly improve the laptop's\nperformance when working with a large database. References: CompTIA A+ Certification Exam: Core 1 - Objective 3.1",
+    "id": 27
+  },
+  {
+    "type": "single",
+    "question": "A user's laptop is running out of disk space and requires a new hard drive. The user wants to replace the existing hard drive with the fastest possible I TB HDD. A\ntechnician assesses the user's hardware and determines the connections that are available. Which of the following drive types should the technician recommend\nas the BEST choice?",
+    "options": [
+      "1TB NVMe SSD",
+      "1TB flash drive",
+      "1TB SATA SSD",
+      "1TB SAS"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The best choice for the user's laptop is a 1TB NVMe SSD. NVMe (Non- Volatile Memory Express) is a high-performance storage protocol designed specifically for\nsolid-state drives (SSDs). It is significantly faster than SATA SSDs and SAS hard drives, making it ideal for users who need fast storage for their laptop. NVMe\nSSDs also have lower latency and higher bandwidth than traditional hard drives, making them well-suited for data-intensive tasks such as video editing, gaming,\nand running multiple applications simultaneously. Additionally, NVMe offers more reliable data reliability than traditional hard drives, and is less susceptible to\nperformance degradation over time.",
+    "id": 28
+  },
+  {
+    "type": "single",
+    "question": "A technician verifies the slow boot time and slow OS performance of a tower server with a RAID 5 on a PCIe RAID card that does not support hot swapping. Which\nof the following steps should the technician take NEXT to verify RAID health?",
+    "options": [
+      "Verify S.M.A.R.",
+      "operation on the RAID card.",
+      "Replace the failed drive while users are connected",
+      "Physically clean the HDDs and connectors.",
+      "Shut down the server and check the RAID controller's status."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Since the RAID card does not support hot swapping, the technician needs to shut down the server and check the RAID controller\u2019s status to verify RAID health.\nS.M.A.R.T. is a feature of hard drives, not RAID cards. Replacing the failed drive while users are connected could cause data loss or corruption. Physically\ncleaning the HDDs and connectors is unlikely to solve the slow boot time and performance issues.",
+    "id": 29
+  },
+  {
+    "type": "single",
+    "question": "A user's desktop computer slows down after a few minutes of use, and the fans alternate between silent and very loud. Which of the following is MOST likely\nfailing, therefore causing these symptoms?",
+    "options": [
+      "CPU fan",
+      "Memory",
+      "Power supply",
+      "Hard drive"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A CPU fan is a component that cools down the CPU, which is the main processor of the computer. If the CPU fan is failing, it can cause the computer to slow\ndown and the fans to alternate between silent and very loud12. This is because the CPU fan cannot maintain a consistent speed and airflow to keep the CPU at a\nsafe temperature.\nWhen the CPU gets too hot, it throttles its performance to avoid overheating, which results in a slower computer. The other fans in the computer also try to\ncompensate for the lack of cooling from the CPU fan by spinning faster and louder2.",
+    "id": 30
+  },
+  {
+    "type": "single",
+    "question": "A technician is upgrading a computer OS from Windows 7 to Windows 10. During the OS installation, the system is not able to find the hard drive. Which of the\nfollowing can the technician do to MOST likely fix the issue?",
+    "options": [
+      "Change the partition to MBR",
+      "Load the HDD drivers using a flash drive.",
+      "Upgrade the RAM modules.",
+      "Replace the hard drive."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Loading the hard disk drive (HDD) drivers using a flash drive is the most likely action that can fix the issue of a computer not being able to find the hard drive\nduring an OS installation from Windows 7 to Windows 10. The HDD may have a different interface or controller than what Windows 10 supports by default, such as\nSATA or RAID, which would require loading additional drivers during the installation process. The technician can use a flash drive to load the drivers from another\ndevice or source. Changing the partition to MBR, upgrading the RAM modules, or replacing the hard drive are not likely to fix the issue, as they are not related to\nthe HDD drivers",
+    "id": 31
+  },
+  {
+    "type": "single",
+    "question": "A technician is configuring a desktop computer, and the hard drive must be encrypted. Which of the following will the technician need to verify is enabled to\ncomplete this configuration?",
+    "options": [
+      "ATX",
+      "NIC",
+      "TPM",
+      "ARM"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "TPM stands for Trusted Platform Module, which is a hardware component that securely stores encryption keys and other sensitive data12. TPM can be used to\nenable hard drive encryption, which is a technology that encrypts the data stored on a hard drive using sophisticated mathematical functions34. Hard drive\nencryption protects the data from unauthorized access in case the hard drive is lost, stolen, or tampered with.",
+    "id": 32
+  },
+  {
+    "type": "single",
+    "question": "DRAG DROP \nA natural disaster occurred, and the storage system for the development team is unrecoverable. The technician is preparing replacement storage arrays that\ninclude a hypervisor with the capacity to support several virtual machines. Two separate bays are available, and both should be utilized.\nRequirements for the primary array include the following:\n\u2022 No need to be scalable\n\u2022 Very fast on reads\n\u2022 Fault tolerance of one drive\n\u2022 Ability to function with only one drive\n\u2022 Easily recoverable data\n\u2022 High redundancy\n\u2022 Minimum number of drives\nRequirements for the secondary array include the following:\n\u2022 Fault tolerance of one drive\n\u2022 Total space of 600G3\n\u2022 Best write performance\n\u2022 Minimum number of drives Instructions:\nDrag and Drop the appropriate Hard Drives. Then Open each array to complete the configuration.",
+    "options": [
+      "Mastered",
+      "Not Mastered"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Primary Array:\n? Drag and drop two 120 GB SSD hard drives to the primary array bay.\n? Open the primary array and select RAID 1 as the RAID level. RAID 1 provides fault tolerance of one drive, ability to function with only one drive, easily\nrecoverable data, high redundancy, and very fast on reads. It also does not need to be scalable and uses the minimum number of drives (two) for RAID 1.\n? Confirm the configuration and close the primary array. Secondary Array:\n? Drag and drop two 300 GB SSD hard drives to the secondary array bay.\n? Open the secondary array and select RAID 0 as the RAID level. RAID 0 provides the best write performance and uses the minimum number of drives (two) for\nRAID 0. It also provides a total space of 600 GB (300 GB x 2), which meets the requirement.\n? Confirm the configuration and close the secondary array.\nYou have completed the configuration of the storage arrays.",
+    "id": 33
+  },
+  {
+    "type": "single",
+    "question": "A video game developer is requesting a new desktop computer with eight sticks of memory. The developer wants the desktop computer to take advantage of all\navailable memory bandwidth without sacrificing performance. Which of the following would be the BEST solution?",
+    "options": [
+      "Triple-channel with DDR5 ECC RAM",
+      "Quad-channel with DDR4 RAM",
+      "Quad-channel with DDR5 SODIMM",
+      "Dual-channel with DDR4 RAM"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Quad-channel memory architecture allows the CPU to access four memory modules simultaneously, increasing the memory bandwidth and performance. DDR4\nRAM is a type of memory that has higher speed and lower power consumption than DDR3. SODIMM is a smaller form factor of memory that is typically used in\nlaptops, not desktops. ECC RAM is a type of memory that can detect and correct errors, but it is more expensive and slower than non-ECC RAM. Triple-channel\nmemory architecture is less common and less efficient than quad-channel. References: https://www.comptia.org/certifications/a#examdetails\nhttps://www.comptia.org/blog/what-is- ddr4-ram https://www.comptia.org/blog/what-is-quad-channel-memory",
+    "id": 34
+  },
+  {
+    "type": "single",
+    "question": "A user reports a repetitive clicking noise is coming from a personal laptop. A technician notes the laptop's inputs are severely delayed. Which of the following\nshould the technician replace to resolve the issue?",
+    "options": [
+      "The memory",
+      "The storage device",
+      "The integrated keyboard",
+      "The battery"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A repetitive clicking noise coming from a laptop is usually a sign of a failing hard disk drive (HDD), which is a type of storage device that uses spinning platters and\nmoving heads to read and write data. A failing HDD can also cause severe delays in input and output operations, as well as data loss or corruption. The technician\nshould replace the HDD with a new one or upgrade it to a solid state drive (SSD), which is another type of storage device that uses flash memory and has no\nmoving parts. Reference: https://partners.comptia.org/docs/default-source/resources/a-core-series-combined- content-guide (page 24)\n  ",
+    "id": 35
+  },
+  {
+    "type": "single",
+    "question": "A company would like to take advantage of the cost savings of cloud computing by only paying for the resources used. Which of the following will BEST address\nthis need?",
+    "options": [
+      "Shared resources",
+      "Rapid elasticity",
+      "Metered utilization",
+      "High availability"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Metered utilization is a cloud feature that allows cloud providers to charge customers based on their actual consumption of resources, such as CPU time, storage\nspace, bandwidth, or transactions.This enables customers to pay only for the resources they use, rather than a fixed or flat rate, which can reduce costs and\nincrease efficiency. Metered utilization can also provide more transparency and accountability for both cloud providers and customers, as they can track and\nmonitor their resource usage and billing. Reference: https://partners.comptia.org/docs/default-source/resources/a-core-1-content- guide (page 97)",
+    "id": 36
+  },
+  {
+    "type": "single",
+    "question": "A desktop support technician receives an escalated ticket regarding a computer that displays the following message upon booting up: The amount of system\nmemory has changed. Which of the following components is failing?",
+    "options": [
+      "GPU",
+      "HDD",
+      "RAM",
+      "CPU"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The message \u201cThe amount of system memory has changed\u201d indicates that there is a problem with the random access memory (RAM) modules in the computer.\nThe RAM may be loose, faulty, or incompatible with the motherboard or other components. The GPU, HDD, and CPU are not directly related to system memory\nand would not cause this message to appear.",
+    "id": 37
+  },
+  {
+    "type": "single",
+    "question": "A user\u2019s laptop is experiencing severe slowdowns when operating process-intensive tasks. Which of the following memory upgrades is compatible with a laptop?\n  ",
+    "options": [
+      "DIMM",
+      "ECC RAM",
+      "Virtual RAM",
+      "SODIMM"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "SODIMM stands for Small Outline Dual In-line Memory Module and is a type of memory module that is compatible with laptops and other small devices.\nSODIMMs are smaller and thinner than DIMMs (Dual In-line Memory Modules), which are typically used for desktop PCs and servers. Upgrading or adding\nSODIMMs can increase the amount of RAM available for a laptop, which can improve its performance and speed when running process-intensive tasks.\nReference: https://partners.comptia.org/docs/default- source/resources/a-core-series-combined-content-guide (page 24)",
+    "id": 38
+  },
+  {
+    "type": "single",
+    "question": "An end user needs to upgrade the hard drive on a laptop and wants one that is fast and shock resistant. Which of the following is the BEST option for this end\nuser?",
+    "options": [
+      "Hybrid HHD/SSD",
+      "5,400rpm HDD",
+      "7,200rpm HDD",
+      "NVMe SDD"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A non-volatile memory express (NVMe) solid state drive (SSD) is the best option for an end user who wants to upgrade the hard drive on a laptop and wants one\nthat is fast and shock resistant.NVMe SSDs use flash memory and PCIe interface to achieve high performance and low latency.SSDs are also more shock\nresistant than hard disk drives (HDDs) because they have no moving parts.Hybrid HDD/SSD combines both technologies but does not offer the same speed or\ncapacity as pure SSDs.A 5,400rpm HDD or a 7,200rpm HDD are slower and less shock resistant than SSDs\n  ",
+    "id": 39
+  },
+  {
+    "type": "single",
+    "question": "HOTSPOT \nA customer has contacted you about building two new desktops. The first desktop will be a gaming workstation. The customer requirements include:\nPlaying the newest games at a high frame rate Fast game load times\nEnough storage to have several games installed at once High-end audio\nNo concern about cost\nRunning the current Windows OS\nThe second workstation will be a family workstation. The requirements include: Capability for word processing, videoconferencing, and basic web surfing Minimal\ncost, as long as it meets the requirements\nRunning the current Windows OS",
+    "options": [
+      "Mastered",
+      "Not Mastered"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "  ",
+    "id": 40
+  },
+  {
+    "type": "multiple",
+    "question": "A technician needs to upgrade the graphics card in a small form factor desktop. Which of the following should the technician consider? (Select TWO)",
+    "options": [
+      "Physical card length",
+      "Power supply wattage",
+      "PCIe slot availability",
+      "M.2 slot availability",
+      "Case airflow",
+      "Number of USB ports"
+    ],
+    "correct": [
+      0,
+      4
+    ],
+    "explanation": "When upgrading a GPU in a small form factor desktop, the card length and case airflow are crucial to ensure it fits and remains adequately cooled.",
+    "id": 41
+  },
+  {
+    "type": "single",
+    "question": "Which of the following components is responsible for stabilizing voltage and providing power to a motherboard?",
+    "options": [
+      "Fuse",
+      "VRM",
+      "Capacitor",
+      "Resistor"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Voltage Regulator Module (VRM) on the motherboard stabilizes and regulates CPU power delivery.",
+    "id": 42
+  },
+  {
+    "type": "single",
+    "question": "A user installed an optical drive in a desktop, but the drive is not recognized by the operating system. The drive spins but does not appear in BIOS. Which of the following is the MOST likely cause?",
+    "options": [
+      "Missing SATA power cable",
+      "Incorrect drive letter assignment",
+      "Faulty data cable",
+      "DRM conflict"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "If the drive spins but does not appear in BIOS, it is likely a faulty or improperly connected data cable (SATA cable).",
+    "id": 43
+  },
+  {
+    "type": "single",
+    "question": "A technician is configuring a new CAD workstation that has four large hard drives. The workstation will be used to edit large, critical files, so the storage configuration should be both fast and redundant. Which of the following RAID levels BEST meets these requirements?",
+    "options": [
+      "RAID 1",
+      "RAID 5",
+      "RAID 10"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "RAID 10 provides both the speed of striping (RAID 0) and the redundancy of mirroring (RAID 1), making it ideal for high-performance, fault-tolerant storage.",
+    "id": 44
+  },
+  {
+    "type": "single",
+    "question": "Which type of RAM is typically used in modern laptops?",
+    "options": [
+      "DDR4 SODIMM",
+      "DDR4 DIMM",
+      "DDR3 SODIMM",
+      "DDR3 DIMM"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "DDR4 SODIMM is the standard RAM for modern laptops due to its form factor and performance.",
+    "id": 45
+  },
+  {
+    "type": "single",
+    "question": "Which of the following best describes the purpose of thermal paste between a CPU and its heat sink?",
+    "options": [
+      "Increase airflow",
+      "Fill microscopic gaps",
+      "Adhere heat sink",
+      "Conduct electricity"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Thermal paste fills microscopic gaps between the CPU and heat sink to improve heat transfer.",
+    "id": 46
+  },
+  {
+    "type": "single",
+    "question": "A technician needs to mount a new 2.5\" SSD into a 3.5\" drive bay in a desktop. Which of the following should the technician use?",
+    "options": [
+      "3.5\" to 2.5\" adapter bracket",
+      "USB 3.0 to SATA adapter",
+      "Molex to SATA power adapter",
+      "PCIe to SATA card"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A 3.5\" to 2.5\" adapter bracket allows the smaller 2.5\" SSD to be securely mounted in a standard 3.5\" drive bay.",
+    "id": 47
+  },
+  {
+    "type": "single",
+    "question": "Which of the following best describes the main advantage of using a PCIe RAID controller over a software RAID solution?",
+    "options": [
+      "Lower latency",
+      "Reduced CPU overhead",
+      "Better compatibility",
+      "Lower cost"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A hardware RAID controller offloads parity calculations and RAID management from the CPU, reducing CPU overhead.",
+    "id": 48
+  },
+  {
+    "type": "single",
+    "question": "A user reports that their newly built desktop exhibits screen tearing in video playback. Which of the following changes should the technician make to resolve this?",
+    "options": [
+      "Enable V-Sync in the graphics settings",
+      "Disable GPU overclocking",
+      "Update the monitor driver",
+      "Replace the HDMI cable"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Enabling V-Sync synchronizes frame rate with the monitor's refresh rate, preventing screen tearing.",
+    "id": 49
+  },
+  {
+    "type": "single",
+    "question": "Which of the following components commonly fails first in a laptop due to mechanical wear and tear?",
+    "options": [
+      "SSD",
+      "HDD",
+      "RAM",
+      "CPU"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Mechanical hard drives (HDDs) have moving parts that are prone to failure through wear and tear, while SSDs have no moving parts.",
+    "id": 50
+  },
+  {
+    "type": "single",
+    "question": "Which of the following network interface cards (NICs) is most likely to be found in a modern workstation motherboard providing wireless connectivity?",
+    "options": [
+      "Ethernet RJ45",
+      "Thunderbolt NIC",
+      "Wi-Fi 6 AX200 module",
+      "Bluetooth-only adapter"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Modern workstation motherboards commonly integrate a Wi-Fi 6 AX200 module for high-speed wireless connectivity.",
+    "id": 51
+  },
+  {
+    "type": "single",
+    "question": "Which of the following cable types has the highest transmission bandwidth for internal computer purposes?",
+    "options": [
+      "eSATA",
+      "SATA",
+      "PCIe",
+      "USB 3.0"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "PCIe provides the highest internal data bandwidth compared to SATA, eSATA, or USB 3.0.",
+    "id": 52
+  },
+  {
+    "type": "single",
+    "question": "A user reports the desktop\u00e2\u20ac\u2122s front panel audio jack is not working. The headphones work fine on another computer. Which of the following is MOST likely the cause?",
+    "options": [
+      "Faulty headset",
+      "Disabled audio in BIOS",
+      "Corrupted audio driver",
+      "Disconnected front panel audio cable"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "If the headphones work on another machine and rear audio works, the front panel audio cable is likely not connected to the motherboard.",
+    "id": 53
+  },
+  {
+    "type": "single",
+    "question": "A new employee has been issued a company laptop. The employee requests an accessory with a single power source that has wired network connectivity and\nsupports a keyboard, mouse, speakers, and dual monitors. Which of the following accessories should the systems administrator deploy to BEST meet the new\nuser's needs?",
+    "options": [
+      "Poe switch",
+      "USB-C hub with power delivery",
+      "Docking station with DisplayPort",
+      "KVM switch with audio"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A docking station is a hardware accessory that allows laptops to connect to multiple peripherals and devices with a single connection. A docking station with\nDisplayPort would provide the necessary connectivity for the dual monitors, and it can also support the required peripherals such as the keyboard, mouse, and\nspeakers. In addition, it will provide a wired network connectivity for faster and more reliable network access.",
+    "id": 54
+  },
+  {
+    "type": "single",
+    "question": "A user wants a second monitor installed on a laptop. The VGA/DVI or HDMI cables have already been connected. Which of the following should the technician do\nto configure the laptop to show both screens?",
+    "options": [
+      "Power cycle the laptop.",
+      "Plug in the monitor to the USB port.",
+      "Adjust the monitor display settings.",
+      "Power cycle the monitor."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "To configure the laptop to show both screens, the technician should adjust the monitor display settings. On Windows 10 or 11, the technician can select the Start\nmenu, then open Settings, then select Display. The PC should automatically detect the monitors and show the desktop. If the monitors are not detected, the\ntechnician can select Multiple displays, then Detect. The technician can then use the dropdown list next to the image of the desktop to choose how the screen will\nproject across the displays12345.",
+    "id": 55
+  },
+  {
+    "type": "single",
+    "question": "A technician is working on a critical warehouse machine that will not turn on. The technician has determined the power supply for the machine failed. The\nwarehouse manager is looking for a solution that will prevent downtime in the future. Which of the following devices should the technician install to meet this\nrequirement?",
+    "options": [
+      "Grounded power supply",
+      "Modular power supply",
+      "220V power supply",
+      "Redundant power supply"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A redundant power supply is a device that provides two or more power supplies connected in parallel so that when one fails, the other one will take over to ensure\ncontinuous power. This is ideal for critical warehouse machines that require a reliable power source and are at risk of downtime in the event of a power failure.\nInstalling a redundant power supply will help to reduce the chances of an unexpected power outage and keep the machine running.",
+    "id": 56
+  },
+  {
+    "type": "single",
+    "question": "A technician responds to a help desk ticket that indicates a user's workstation is not booting. The technician initially suspects a failed hard drive. The technician\nperforms diagnostics and confirms the hard drive is fully operational.\nWhich of the following steps should the technician complete NEXT?",
+    "options": [
+      "Reinstall the operating system.",
+      "Configure a new RAID array.",
+      "Report the status of the drive and close the ticket.",
+      "Consider another possible cause of the issue.",
+      "Restore the latest backup of the system."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Since the hard drive appears to be functioning normally, the technician should investigate other potential causes of the issue. This could include checking the\nBIOS settings, verifying the connections to the hard drive, and testing the RAM. Once these steps have been completed, the technician can then take the\nnecessary steps to resolve the issue.",
+    "id": 57
+  },
+  {
+    "type": "single",
+    "question": "A desktop support technician is tasked with upgrading a laptop so that it has the fastest data access possible. Which of the following BEST satisfies this\nrequirement?",
+    "options": [
+      "mSATASSD",
+      "M.2NVMeSSD",
+      "2.5SATASSD",
+      "2.5SASHHD"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "M.2 NVMe SSD provides the fastest data access possible for a laptop. It is a high-performance solid-state drive that connects directly to the motherboard through\nan M.2 slot.",
+    "id": 58
+  },
+  {
+    "type": "single",
+    "question": "A user on the marketing team uses various multimedia applications that consume a lot of memory. The user needs to install more RAM to run these applications\neffectively. When the user opens the computer case, the user sees four slots in two sets of colors. Which of\nthe following memory types is MOST likely required?",
+    "options": [
+      "Dual-channel",
+      "Triple-channel",
+      "Single-channel",
+      "Quad-channel",
+      "Error correction code RAM"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The two sets of colors on the motherboard indicate that it supports dual- channel memory, which doubles the bandwidth available to the memory controller. Dual-\nchannel memory requires two identical memory modules to be installed in pairs in the correct slots to work effectively. In this case, the user can install two identical\nRAM modules to enable dual-channel memory, which will provide better performance when using multimedia applications that consume a lot of memory.",
+    "id": 59
+  },
+  {
+    "type": "single",
+    "question": "An administrator notices that one of the server\u00e2\u20ac\u2122s cooling fans is spinning at a much higher RPM than usual. Which of the following is MOST likely occurring?",
+    "options": [
+      "The server is under heavy load",
+      "The power supply is failing",
+      "The CPU is overheating",
+      "The RAM modules are failing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "When a CPU overheats, the system increases fan speed to provide additional cooling.",
+    "id": 60
+  },
+  {
+    "type": "single",
+    "question": "A technician is troubleshooting a desktop that will not power on. The power supply is new, fans spin briefly, and then system shuts off. Which of the following is the MOST likely cause?",
+    "options": [
+      "Bad motherboard standoffs",
+      "Faulty power button",
+      "Shorted CPU sheath",
+      "Faulty case reset switch"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If motherboard standoffs are incorrectly placed or missing, the motherboard can short to the case and cause an immediate shutdown.",
+    "id": 61
+  },
+  {
+    "type": "single",
+    "question": "A technician notices that the hard drive activity light on a desktop remains lit constantly, even with no user activity. Which of the following is MOST likely occurring?",
+    "options": [
+      "The hard drive is failing",
+      "A large file is being copied",
+      "The OS is performing background updates",
+      "The power supply is insufficient"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A constantly lit HDD activity light often indicates the operating system is performing background tasks such as updates or indexing.",
+    "id": 62
+  },
+  {
+    "type": "single",
+    "question": "A technician needs to install a RAID controller card into a server motherboard that has an open PCIe x8 slot. The technician only has a PCIe x16 compliant card. Which of the following actions should be taken?",
+    "options": [
+      "Use a PCIe x16 to x8 adapter",
+      "Install the card in the x8 slot",
+      "Purchase a new x8-only RAID controller",
+      "Update the server BIOS"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "PCIe slots are backward compatible. A PCIe x16 card can be installed into an x8 slot, operating at x8 speeds.",
+    "id": 63
+  },
+  {
+    "type": "single",
+    "question": "A workstation has four DIMM slots, each currently populated with 4 GB modules. The user wants to upgrade to 32 GB of RAM. Which of the following configurations will meet this requirement?",
+    "options": [
+      "Replace one 4 GB module with a 28 GB module",
+      "Replace all 4 modules with 8 GB modules",
+      "Install an additional 12 GB module in an empty slot",
+      "Replace two 4 GB modules with 14 GB modules"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Replacing all four 4 GB modules with 8 GB modules will give a total of 32 GB (4 \u00c3\u2014 8 GB = 32 GB). Desktop motherboards generally do not support 28 GB or 14 GB modules.",
+    "id": 64
+  },
+  {
+    "type": "single",
+    "question": "Which component provides power to a computer's internal components?",
+    "options": [
+      "CPU",
+      "RAM",
+      "Power Supply Unit",
+      "Motherboard"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Power Supply Unit (PSU) converts AC power to DC power for computer components.",
+    "id": 65
+  },
+  {
+    "type": "single",
+    "question": "A technician needs to improve a workstation's overall response time for frequently used applications and data without removing the current hard drive. Which of the\nfollowing storage devices should the technician install to BEST accomplish the objective?",
+    "options": [
+      "M.2",
+      "SAS",
+      "HDD",
+      "SCSI"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Installing an M.2 SSD will improve a workstation's overall response time for frequently used applications and data without removing the current hard drive. M.2\ndrives are faster and more efficient than traditional hard drives, making them a good option for increasing overall performance. References: CompTIA A+\nCertification Exam Core 1 Exam Objectives - 1.5 Given a scenario, configure storage devices and use appropriate media",
+    "id": 66
+  },
+  {
+    "type": "single",
+    "question": "A technician is upgrading a faulty motherboard that was ordered by an end user for an old, high-end desktop computer. However, the technician is unable to install\nthe CPU into the socket. Upon closer inspection, the technician notices the pins on the CPU do not line up with the socket. Which of the following would be the\nbest course of action for the technician to take NEXT?",
+    "options": [
+      "Try to set as many pins as possible.",
+      "Install an adaptor to create a universal socket.",
+      "Verify the socket type and manufacturer.",
+      "Find a compatible motherboard for the CPU."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In this situation, the best course of action for the technician to take NEXT would be C. Verify the socket type and manufacturer. If the pins on the CPU do not line\nup with the socket on the motherboard, it is likely that there is a compatibility issue between the two components. The technician should verify that the socket type\nand manufacturer of the motherboard match those of the CPU to ensure that they are compatible.",
+    "id": 67
+  },
+  {
+    "type": "multiple",
+    "question": "A technician receives several error alerts on a server after an unexpected reboot. A message states that one or more disks are in a degraded state. When the\ntechnician advances to the next error message, it indicates the OS is missing. Which of the following are the MOST likely causes of these errors? (Choose two.)",
+    "options": [
+      "Missing drives in the OS",
+      "RAID failure",
+      "Bootable device not found",
+      "Data loss",
+      "Controller failure",
+      "CMOS corruption\nG. TPM malfunction"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "The message stating that one or more disks are in a degraded state is a clear indication of a RAID failure. RAID stands for Redundant Array of Independent\nDisks, and it is a technology used to provide fault tolerance and improve performance by combining multiple hard drives into a single logical unit.\nThe message indicating that the OS is missing is most likely caused by a bootable device not found. This means that the server is unable to boot from the\ndesignated boot device, which could be the hard drive, a CD/DVD drive, or a USB flash drive. This could be caused by a faulty boot device, a loose cable, or a\nmisconfiguration in the BIOS or UEFI settings.",
+    "id": 68
+  },
+  {
+    "type": "multiple",
+    "question": "Which of the following are valid reasons to replace thermal paste on a CPU? (Select TWO)",
+    "options": [
+      "CPU running erratically",
+      "Heat sink removed for service",
+      "Steam condensation visible",
+      "System underclocked",
+      "High CPU temperatures",
+      "Bios update"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "Whenever the heat sink is removed or if the CPU shows unusually high temperatures, the old thermal paste should be replaced for optimal heat transfer.",
+    "id": 69
+  },
+  {
+    "type": "single",
+    "question": "SIMULATION \nA small ISP has hired a new technician Joe, the new technician, is being trained to configure customers* home networks The trailing instructor gives me technician\na starter kit with cables, cable ends, and other network equipment and asks mm to build a working network.\nThe computer should be connected to have internet connectivity and the phone should be connected to have a dial tone.\nINSTRUCTIONS\nUse the appropriate cables. cable ends, tools and equipment to configure the network ana connect an components accordingly\nThere are 3 steps and the simulation starts on step 1.\n  ",
+    "options": [
+      "Mastered",
+      "Not Mastered"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Answer of both steps below.\nA picture containing text, screenshot, indoor\nDescription automatically generated\n  \nDiagram Description automatically generated with medium confidence",
+    "id": 70
+  },
+  {
+    "type": "single",
+    "question": "Which of the following is the primary difference between RAID 5 and RAID 6?",
+    "options": [
+      "RAID 5 uses striping with no redundancy, RAID 6 uses striping with any single drive redundancy",
+      "RAID 5 provides parity, RAID 6 provides double parity",
+      "RAID 5 requires at least four drives, RAID 6 requires at least three drives",
+      "RAID 5 is only read-optimized, RAID 6 is read and write-optimized"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "RAID 5 uses single parity, which can tolerate one drive failure. RAID 6 uses double parity, which can tolerate two simultaneous drive failures.",
+    "id": 71
+  },
+  {
+    "type": "single",
+    "question": "A desktop PC has two identical graphics cards installed in an SLI configuration. One card fails and is removed, but the system will not boot. Which of the following should the technician do?",
+    "options": [
+      "Move the remaining card to the primary PCIe slot",
+      "Update the GPU driver",
+      "Disable SLI in BIOS",
+      "Replace the power supply"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "When running a single GPU, it must be placed in the primary PCIe slot; leaving it in the secondary slot prevents the system from recognizing it.",
+    "id": 72
+  },
+  {
+    "type": "single",
+    "question": "A user acquired a new workstation and is attempting to open multiple targe Excel files simultaneously. The user is not experiencing the expected performance\nwhen executing such large requests. Which of the following should a technician do FIRST?",
+    "options": [
+      "Increase the swap partition.",
+      "Upgrade the CPU in the workstation.",
+      "Upgrade the power supply in the workstation.",
+      "Upgrade the RAM in the workstation."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Opening multiple large Excel files simultaneously requires a large amount of RAM. Upgrading the RAM in the workstation should improve performance.\nReferences: CompTIA A+ Certification Exam Guide, Ninth Edition, Chapter 9",
+    "id": 73
+  },
+  {
+    "type": "multiple",
+    "question": "Which of the following disk configurations provide fault tolerance? (Select TWO)",
+    "options": [
+      "RAID 0",
+      "RAID 1",
+      "RAID 5",
+      "RAID 10",
+      "JBOD",
+      "Spanning"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "RAID 1 (mirroring) and RAID 10 (mirrored stripes) both provide fault tolerance via redundancy.",
+    "id": 74
+  },
+  {
+    "type": "single",
+    "question": "What is the primary purpose of a heat sink for a CPU?",
+    "options": [
+      "To increase processing speed",
+      "To dissipate heat",
+      "To provide electrical insulation",
+      "To store temporary data"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A heat sink's primary purpose is to dissipate heat generated by the CPU, preventing overheating.",
+    "id": 75
+  },
+  {
+    "type": "multiple",
+    "question": "Which of the following are common types of CPU sockets? (Select TWO)",
+    "options": [
+      "LGA",
+      "PCIe",
+      "SATA",
+      "PGA",
+      "M.2"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "LGA (Land Grid Array) and PGA (Pin Grid Array) are common types of CPU sockets on motherboards.",
+    "id": 76
+  },
+  {
+    "type": "single",
+    "question": "A desktop computer is exhibiting graphical artifacts on the screen. The technician suspects the GPU is overheating. Which of the following actions should the technician take FIRST?",
+    "options": [
+      "Reseat the GPU",
+      "Clean dust from GPU heatsink and fans",
+      "Update the graphics driver",
+      "Replace the thermal paste"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cleaning dust from the heatsink and fans can immediately improve cooling and is the first step in addressing overheating.",
+    "id": 77
+  },
+  {
+    "type": "single",
+    "question": "A technician is configuring a RAID 5 array with three disks. The capacity of each drive is 2 TB. What is the total usable capacity of the array?",
+    "options": [
+      "2 TB",
+      "4 TB",
+      "6 TB",
+      "1 TB"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "RAID 5 uses one disk\u00e2\u20ac\u2122s worth of capacity for parity. Usable capacity = (3 - 1) \u00c3\u2014 2 TB = 4 TB.",
+    "id": 78
+  },
+  {
+    "type": "single",
+    "question": "Which of the following hard drive types uses a spinning platter to store data magnetically?",
+    "options": [
+      "SSD",
+      "HDD",
+      "NVMe",
+      "USB flash drive"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A Hard Disk Drive (HDD) uses spinning magnetic platters to store data.",
+    "id": 79
+  },
+  {
+    "type": "single",
+    "question": "A technician is tasked with installing a PCIe NVMe SSD into a Windows workstation. Which of the following must be configured in BIOS prior to installing Windows?",
+    "options": [
+      "Enable RAID mode",
+      "Enable AHCI mode",
+      "Disable secure boot",
+      "Enable CSM (Compatibility Support Module)"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AHCI mode must be enabled for SATA/NVMe support; RAID mode is only necessary for RAID configurations.",
+    "id": 80
+  },
+  {
+    "type": "multiple",
+    "question": "Which of the following are types of RAM?",
+    "options": [
+      "DDR4",
+      "DDR5",
+      "SATA",
+      "NVMe",
+      "SSD"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "DDR4 and DDR5 are types of RAM, while SATA, NVMe, and SSD are storage technologies.",
+    "id": 81
+  },
+  {
+    "type": "single",
+    "question": "Which of the following cooling solutions is LEAST effective for removing heat from a high-end GPU in a compact HTPC case?",
+    "options": [
+      "Blower-style cooler",
+      "Dual-fan air cooler",
+      "120 mm radiator liquid cooler",
+      "Passive heat sink"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Passive heat sinks rely on passive airflow and are not sufficient to cool high-end GPUs in compact enclosures.",
+    "id": 82
+  },
+  {
+    "type": "single",
+    "question": "A desktop is equipped with a single 24-pin ATX power connector to the motherboard. The technician is installing a high-performance CPU that requires additional power. Which connector should be added next?",
+    "options": [
+      "4-pin Molex",
+      "4-pin ATX12V",
+      "6-pin PCIe",
+      "8-pin EPS12V"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "High-performance CPUs often require additional 12V power provided by an 8-pin EPS12V connector.",
+    "id": 83
+  },
+  {
+    "type": "single",
+    "question": "Which of the following statements best describes the purpose of thermal throttling on a CPU?",
+    "options": [
+      "Increase CPU clock speed under load",
+      "Reduce CPU voltage to prevent spikes",
+      "Lower CPU performance to reduce temperature",
+      "Disable CPU cores no longer in use"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Thermal throttling reduces the CPU\u00e2\u20ac\u2122s clock frequency when temperatures rise too high",
+    "id": 84
+  },
+  {
+    "type": "single",
+    "question": "A technician verifies the slow boot time and slow OS performance of a tower server with a RAID 5 on a PCIe RAID card that does not support hot swapping. Which of the following steps should the technician take NEXT to verify RAID health?",
+    "options": [
+      "Verify S.M.A.R.T. operation on the RAID card",
+      "Replace the failed drive while users are connected",
+      "Physically clean the HDDs and connectors",
+      "Shut down the server and check the RAID controller's status"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Since hot swapping is not supported, shut down is needed to inspect RAID.",
+    "id": 85
+  },
+  {
+    "type": "single",
+    "question": "A computer is making a continuous beeping sound on startup. What does this usually indicate?",
+    "options": [
+      "Overheating CPU",
+      "RAM issue",
+      "Hard drive failure",
+      "Corrupted OS"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Continuous beeping or a specific beep code on startup often indicates a problem with RAM modules (e.g., not seated correctly or faulty).",
+    "id": 86
+  },
+  {
+    "type": "single",
+    "question": "A desktop displays a message 'CPU fan error' at boot, and then powers off. Which of the following is the MOST likely cause?",
+    "options": [
+      "Fan not spinning",
+      "Incorrect BIOS version",
+      "Bad RAM",
+      "Corrupted OS"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The 'CPU fan error' indicates the BIOS has detected that the CPU fan is not spinning, which causes the system to shut down to prevent overheating.",
+    "id": 87
+  },
+  {
+    "type": "single",
+    "question": "A desktop powers off unexpectedly after running hardware diagnostics. Which of the following is the MOST likely cause?",
+    "options": [
+      "Overheating CPU",
+      "Corrupted RAM",
+      "Faulty GPU driver",
+      "Malware infection"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "If a system powers off under load (during diagnostics), the CPU is likely overheating and triggering a shutdown to protect itself.",
+    "id": 88
+  },
+  {
+    "type": "single",
+    "question": "A technician is troubleshooting a desktop that powers on but has no display output and no POST beeps. Which of the following components should be checked FIRST?",
+    "options": [
+      "CPU seating",
+      "RAM seating",
+      "GPU seating",
+      "Motherboard power connectors"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "If there are no POST beeps or display output, verifying the motherboard\u00e2\u20ac\u2122s power connectors are fully seated is the first step.",
+    "id": 89
+  },
+  {
+    "type": "single",
+    "question": "Which of the following disk types provides the fastest sequential read and write performance?",
+    "options": [
+      "SATA SSD",
+      "NVMe SSD",
+      "7200 RPM HDD",
+      "SATA RAID 1 array"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "NVMe SSDs have significantly higher sequential read/write speeds than SATA SSDs or HDDs.",
+    "id": 90
+  },
+  {
+    "type": "single",
+    "question": "A user\u00e2\u20ac\u2122s desktop will only boot when two RAM modules are installed in slots 1 and 3, but will not power on if installed in 2 and 4. Which of the following is the MOST likely cause?",
+    "options": [
+      "Incorrect CPU cooler installation",
+      "Improper RAM seating",
+      "Defective motherboard trace",
+      "Bad power supply"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "RAM modules must be seated in the correct slot pairs (DIMM1 & DIMM3 or DIMM2 & DIMM4) depending on the motherboard\u00e2\u20ac\u2122s channel configuration.",
+    "id": 91
+  },
+  {
+    "type": "single",
+    "question": "Which of the following is the MOST likely cause of a single beep on startup and no video output on a desktop?",
+    "options": [
+      "Bad CPU",
+      "Bad RAM module",
+      "Bad GPU",
+      "Missing OS"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A single beep in many BIOS implementations indicates a memory (RAM) error\u00e2\u20ac\u201dtypically meaning the RAM module is bad or not seated properly.",
+    "id": 92
+  },
+  {
+    "type": "single",
+    "question": "Which of the following power connector types is used to provide power to a modern PCIe graphics card?",
+    "options": [
+      "P4 4-pin",
+      "SATA 15-pin",
+      "Molex 4-pin",
+      "6-pin PCIe"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Modern PCIe graphics cards require a 6-pin or 8-pin PCIe power connector from the PSU.",
+    "id": 93
+  },
+  {
+    "type": "single",
+    "question": "Which of the following would MOST likely be used to obtain electronic images of a large number of printed documents?",
+    "options": [
+      "NFC device",
+      "ADF/flatbed scanner",
+      "Camera/webcam",
+      "QR scanner"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "ADF/flatbed scanner would most likely be used to obtain electronic images of a large number of printed documents. References: CompTIA A+ Certification Exam\nGuide, Exam 220-1001, Page 351",
+    "id": 94
+  },
+  {
+    "type": "single",
+    "question": "A device with a Lithium-Ion battery is bulging. What should the technician do?",
+    "options": [
+      "Discharge and continue using",
+      "Puncture to release pressure",
+      "Replace and dispose properly",
+      "Install new OS"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A bulging battery is hazardous and should be replaced and disposed of following safety guidelines.",
+    "id": 95
+  },
+  {
+    "type": "single",
+    "question": "Which of the following memory timings refers to the time it takes for the memory controller to open a row and access data?",
+    "options": [
+      "CAS Latency",
+      "RAS to CAS Delay",
+      "Row Precharge Time",
+      "Command Rate"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "RAS to CAS Delay (tRCD) is the time between activating a row and accessing the data column.",
+    "id": 96
+  },
+  {
+    "type": "single",
+    "question": "A Microsoft Windows user is preparing to work in another country and needs to comply with corporate policy for data protection when copying files to portable media. Which of the following solutions would MOST likely satisfy this requirement?",
+    "options": [
+      "A USB 3.1 flash drive with BitLocker to Go installed",
+      "An SD memory card with NTFS",
+      "An xD memory card with ext3",
+      "A portable hard drive with FAT32"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Using a USB 3.1 flash drive with BitLocker to Go installed is the best option for complying with corporate policy for data protection when copying files to portable\nmedia. References: CompTIA A+ Certification Exam Guide, Ninth Edition, Chapter 12",
+    "id": 97
+  },
+  {
+    "type": "single",
+    "question": "Which of the following best describes the purpose of a standpipe installed behind a server rack?",
+    "options": [
+      "Improve airflow",
+      "Contain water from a leak",
+      "Provide grounding",
+      "Organize cables"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A standpipe behind a server rack is used to contain and route water in case of a leak to prevent damage to equipment.",
+    "id": 98
+  },
+  {
+    "type": "single",
+    "question": "A technician is installing a new Wi-Fi card in a desktop. Which of the following connectors will most likely be found on the back panel to connect the external antenna?",
+    "options": [
+      "RCA",
+      "SMA",
+      "F-Type",
+      "BNC"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Wi-Fi cards commonly use SMA connectors for external antennas to ensure a secure RF connection.",
+    "id": 99
+  },
+  {
+    "type": "single",
+    "question": "A technician is replacing a computer with a connected point-of-sale system using a 9-pin serial adapter. The new computer does not have a 9-pin serial port.\nWhich of the following ports can an adapter be installed on in order to connect to the point-of-sale system?",
+    "options": [
+      "HDMI",
+      "Bluetooth",
+      "USB",
+      "Lightning"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A USB to 9-pin serial adapter can be used to connect the new computer to the point-of-sale system using a USB port. USB is a common and versatile port type\nfound on most computers.\nIf a technician is replacing a computer with a connected point-of-sale system using a 9-pin serial adapter and the new computer does not have a 9-pin serial port,\nan adapter can be installed on the USB port in order to connect to the point-of-sale system. A USB-to-serial adapter can be used to connect a serial device to a\nUSB port on a computer.",
+    "id": 100
+  },
+  {
+    "type": "single",
+    "question": "A technician is receiving reports that the entire office sporadically loses network connectivity throughout the day. The technician determines the root cause to be\nEMI. Which of the following cable mediums would be the MOST cost effective without sacrificing system performance?",
+    "options": [
+      "Coaxial",
+      "Shielded Cat 6",
+      "Plenum Cat 5e",
+      "Multimode fiber"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In this situation, the MOST cost-effective cable medium that would not sacrifice system performance would be B. Shielded Cat 6. Electromagnetic interference\n(EMI) can disrupt network connectivity by interfering with the signals transmitted over network cables. Shielded Cat 6 cables are designed to provide protection\nagainst EMI by incorporating a layer of shielding material around the cable\u2019s conductors. This shielding helps to prevent EMI from interfering with the signals\ntransmitted over the cable.",
+    "id": 101
+  },
+  {
+    "type": "single",
+    "question": "What is the typical voltage for a CMOS battery?",
+    "options": [
+      "1.5V",
+      "3V",
+      "5V",
+      "12V"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "CMOS batteries are typically 3-volt lithium coin cells.",
+    "id": 102
+  }
+]

@@ -1,0 +1,159 @@
+1. ID: 10 | File: hardware.json | Index: 9 | Current: hardware | Suggested: troubleshooting
+   Q: A user reports that their newly installed GPU is not recognized by the system. T
+
+2. ID: 13 | File: hardware.json | Index: 12 | Current: hardware | Suggested: troubleshooting
+   Q: A user reports that the systemâ€™s GPU fan is spinning loudly under light load. 
+
+3. ID: 15 | File: hardware.json | Index: 14 | Current: hardware | Suggested: virtualization-cloud
+   Q: Which of the following best describes the advantage of using registered ECC DDR4
+
+4. ID: 17 | File: hardware.json | Index: 16 | Current: hardware | Suggested: troubleshooting
+   Q: A user reports that their systemâ€™s front panel USB ports no longer work. The m
+
+5. ID: 29 | File: hardware.json | Index: 28 | Current: hardware | Suggested: troubleshooting
+   Q: A technician verifies the slow boot time and slow OS performance of a tower serv
+
+6. ID: 30 | File: hardware.json | Index: 29 | Current: hardware | Suggested: troubleshooting
+   Q: A user's desktop computer slows down after a few minutes of use, and the fans al
+
+7. ID: 35 | File: hardware.json | Index: 34 | Current: hardware | Suggested: troubleshooting
+   Q: A user reports a repetitive clicking noise is coming from a personal laptop. A t
+
+8. ID: 36 | File: hardware.json | Index: 35 | Current: hardware | Suggested: virtualization-cloud
+   Q: A company would like to take advantage of the cost savings of cloud computing by
+
+9. ID: 38 | File: hardware.json | Index: 37 | Current: hardware | Suggested: troubleshooting
+   Q: A user’s laptop is experiencing severe slowdowns when operating process-intensiv
+
+10. ID: 49 | File: hardware.json | Index: 48 | Current: hardware | Suggested: troubleshooting
+   Q: A user reports that their newly built desktop exhibits screen tearing in video p
+
+11. ID: 53 | File: hardware.json | Index: 52 | Current: hardware | Suggested: troubleshooting
+   Q: A user reports the desktopâ€™s front panel audio jack is not working. The headph
+
+12. ID: 54 | File: hardware.json | Index: 53 | Current: hardware | Suggested: troubleshooting
+   Q: A new employee has been issued a company laptop. The employee requests an access
+
+13. ID: 55 | File: hardware.json | Index: 54 | Current: hardware | Suggested: troubleshooting
+   Q: A user wants a second monitor installed on a laptop. The VGA/DVI or HDMI cables 
+
+14. ID: 56 | File: hardware.json | Index: 55 | Current: hardware | Suggested: troubleshooting
+   Q: A technician is working on a critical warehouse machine that will not turn on. T
+
+15. ID: 57 | File: hardware.json | Index: 56 | Current: hardware | Suggested: troubleshooting
+   Q: A technician responds to a help desk ticket that indicates a user's workstation 
+
+16. ID: 67 | File: hardware.json | Index: 66 | Current: hardware | Suggested: troubleshooting
+   Q: A technician is upgrading a faulty motherboard that was ordered by an end user f
+
+17. ID: 73 | File: hardware.json | Index: 72 | Current: hardware | Suggested: troubleshooting
+   Q: A user acquired a new workstation and is attempting to open multiple targe Excel
+
+18. ID: 75 | File: hardware.json | Index: 74 | Current: hardware | Suggested: troubleshooting
+   Q: What is the primary purpose of a heat sink for a CPU?
+
+19. ID: 85 | File: hardware.json | Index: 84 | Current: hardware | Suggested: networking
+   Q: A technician verifies the slow boot time and slow OS performance of a tower serv
+
+20. ID: 86 | File: hardware.json | Index: 85 | Current: hardware | Suggested: troubleshooting
+   Q: A computer is making a continuous beeping sound on startup. What does this usual
+
+21. ID: 94 | File: hardware.json | Index: 93 | Current: hardware | Suggested: miscellaneous
+   Q: Which of the following would MOST likely be used to obtain electronic images of 
+
+22. ID: 97 | File: hardware.json | Index: 96 | Current: hardware | Suggested: troubleshooting
+   Q: A Microsoft Windows user is preparing to work in another country and needs to co
+
+23. ID: 98 | File: hardware.json | Index: 97 | Current: hardware | Suggested: troubleshooting
+   Q: Which of the following best describes the purpose of a standpipe installed behin
+
+24. ID: 100 | File: hardware.json | Index: 99 | Current: hardware | Suggested: troubleshooting
+   Q: A technician is replacing a computer with a connected point-of-sale system using
+
+25. ID: 101 | File: hardware.json | Index: 100 | Current: hardware | Suggested: troubleshooting
+   Q: A technician is receiving reports that the entire office sporadically loses netw
+
+26. ID: 3 | File: mobile-devices.json | Index: 2 | Current: mobile-devices | Suggested: troubleshooting
+   Q: A laptop does not have any audio output from the built-in speakers. The Windows 
+
+27. ID: 5 | File: mobile-devices.json | Index: 4 | Current: mobile-devices | Suggested: networking
+   Q: A technician is troubleshooting a laptop that is unable to browse the internet w
+
+28. ID: 9 | File: mobile-devices.json | Index: 8 | Current: mobile-devices | Suggested: troubleshooting
+   Q: A user states their smartphone takes more than a day to fully charge. What shoul
+
+29. ID: 13 | File: mobile-devices.json | Index: 12 | Current: mobile-devices | Suggested: troubleshooting
+   Q: A user reports blurry images from a smartphone camera. What's the probable cause
+
+30. ID: 30 | File: mobile-devices.json | Index: 29 | Current: mobile-devices | Suggested: troubleshooting
+   Q: A user creates a support ticket to report a conference room projector that does 
+
+31. ID: 31 | File: mobile-devices.json | Index: 30 | Current: mobile-devices | Suggested: troubleshooting
+   Q: The IT department at an insurance brokerage needs to acquire laptops that have b
+
+32. ID: 34 | File: mobile-devices.json | Index: 33 | Current: mobile-devices | Suggested: troubleshooting
+   Q: An end user discovered that the touch-screen features on a Windows device have s
+
+33. ID: 37 | File: mobile-devices.json | Index: 36 | Current: mobile-devices | Suggested: troubleshooting
+   Q: A user visits the desk to report that a smartphone takes more than a day to full
+
+34. ID: 41 | File: mobile-devices.json | Index: 40 | Current: mobile-devices | Suggested: troubleshooting
+   Q: A user requests location services to be disabled. What setting should be toggled
+
+35. ID: 43 | File: mobile-devices.json | Index: 42 | Current: mobile-devices | Suggested: troubleshooting
+   Q: A user is unable to access the Internet while on mobile data. What should be ver
+
+36. ID: 44 | File: mobile-devices.json | Index: 43 | Current: mobile-devices | Suggested: hardware
+   Q: Which of the following replaced the Apple 30-pin connector and is also reversibl
+
+37. ID: 1 | File: networking.json | Index: 0 | Current: networking | Suggested: troubleshooting
+   Q: A help desk technician has been tasked with installing an IP phone in a small of
+
+38. ID: 3 | File: networking.json | Index: 2 | Current: networking | Suggested: troubleshooting
+   Q: A thermal punier that is used 10 print order buckets m a factory has been experi
+
+39. ID: 5 | File: networking.json | Index: 4 | Current: networking | Suggested: troubleshooting
+   Q: A university student was able to boot from a live Linux CD on a computer in a sh
+
+40. ID: 7 | File: networking.json | Index: 6 | Current: networking | Suggested: troubleshooting
+   Q: A technician is upgrading a legacy wireless router for a home user. After instal
+
+41. ID: 8 | File: networking.json | Index: 7 | Current: networking | Suggested: troubleshooting
+   Q: A userâ€™s laptop display flickers briefly on boot then remains blank. The exter
+
+42. ID: 14 | File: networking.json | Index: 13 | Current: networking | Suggested: troubleshooting
+   Q: A user reports that a PC occasionally falls to boot. The user reboots the PC. bu
+
+43. ID: 15 | File: networking.json | Index: 14 | Current: networking | Suggested: troubleshooting
+   Q: A customer reports that a computer is never able to reach more than a 100Mbps tr
+
+44. ID: 16 | File: networking.json | Index: 15 | Current: networking | Suggested: troubleshooting
+   Q: A remote user called the help desk to report a notification indicating there is 
+
+45. ID: 27 | File: networking.json | Index: 26 | Current: networking | Suggested: virtualization-cloud
+   Q: Which of the following network options would work BEST to ensure a client-side v
+
+46. ID: 30 | File: networking.json | Index: 29 | Current: networking | Suggested: troubleshooting
+   Q: A technician is upgrading a legacy wireless router for a home user. After instal
+
+47. ID: 37 | File: networking.json | Index: 36 | Current: networking | Suggested: troubleshooting
+   Q: A user enables tethering. What network type is MOST commonly shared?
+
+48. ID: 40 | File: networking.json | Index: 39 | Current: networking | Suggested: miscellaneous
+   Q: Which of the following options provides correct information about 2.4GHz and 5GH
+
+49. ID: 45 | File: troubleshooting.json | Index: 44 | Current: troubleshooting | Suggested: networking
+   Q: A technician needs to fix a Cat 5 cable issue. The cable, which is connected to 
+
+50. ID: 74 | File: troubleshooting.json | Index: 73 | Current: troubleshooting | Suggested: miscellaneous
+   Q: A technician logs on to a PC and inserts an encrypted USB drive. When opening Fi
+
+51. ID: 75 | File: troubleshooting.json | Index: 74 | Current: troubleshooting | Suggested: hardware
+   Q: Which of the following is a common safety procedure when working inside a comput
+
+52. ID: 12 | File: virtualization-cloud.json | Index: 11 | Current: virtualization-cloud | Suggested: networking
+   Q: Which of the following BEST describes the main function of a web server?
+
+53. ID: 13 | File: virtualization-cloud.json | Index: 12 | Current: virtualization-cloud | Suggested: mobile-devices
+   Q: A technician needs to back up photos from a mobile device regularly. What is the
+

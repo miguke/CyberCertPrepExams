@@ -1,0 +1,638 @@
+[
+  {
+    "type": "single",
+    "question": "A help desk technician has been tasked with installing an IP phone in a small office with an unmanaged switch. When connected to an RJ45 receptacle, the phone\ndoes not boot. Which of the following is the QUICKEST way to resolve this issue?",
+    "options": [
+      "Upgrade the Ethernet cable to the latest specification.",
+      "Replace the phone.",
+      "Install a PoE injector.",
+      "Change ports on the switch."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "https://intellinetnetwork.eu/pages/what-is-a-poe-injector\nThe quickest way to resolve the issue is to install a Power over Ethernet (PoE) injector to provide power to the IP phone. An unmanaged switch does not provide\nPoE, so an injector is needed to power the phone.",
+    "id": 1
+  },
+  {
+    "type": "single",
+    "question": "To control costs a company provides a limited number or users with company phones One of these users opens a support ticket because the phone no longer\nallows internet Drowsing over a cellular connection The user acknowledges that the phone worked before the user's child streamed several movies using the\ndevice Which of the following describes why the phone cannot browse the Internet?",
+    "options": [
+      "The child accidentally connected to a neighbor's WLAN",
+      "The company's group policy disabled the device",
+      "The device has a data cap and has reached that limit",
+      "The device's plan has been unpaid"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "It is common for companies to place a data cap on the devices they provide to their employees, to control costs. If a user has exceeded the data cap, the phone\nmay no longer allow internet browsing over a cellular connection. This is usually because the cellular data usage has exceeded the allotted amount for the\nparticular plan the device is on, and the service provider has temporarily suspended the data connection.\nIt is unlikely that the child accidentally connected to a neighbor's WLAN because this would not affect the cellular data connection. Similarly, it is unlikely that the\ncompany's group policy has disabled the device, as this would likely affect all devices under the same policy. If the device's plan has been unpaid, the service\nprovider would likely temporarily suspend all services, not just the cellular data connection.\nReference: CompTIA A+ Core 1 Exam Guide, page 329.",
+    "id": 2
+  },
+  {
+    "type": "single",
+    "question": "A thermal punier that is used 10 print order buckets m a factory has been experiencing Issues following the failure of the alt conditioner during the summer. Each\nticket has blank spots or is missing text. Which of the following would MOST likely solve these Issues?",
+    "options": [
+      "Restore function to the air conditioner.",
+      "Clean the heating element.",
+      "Replace the paper rolls.",
+      "Install new toner."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "it appears that option A, restoring function to the air conditioner, would most likely solve the thermal printer issue in the described scenario. The failure of the air\nconditioner during the summer could likely have caused high humidity or heat in the factory, which can affect the printing quality of thermal printers by causing\n  \nblank spots or missing text. By restoring function to the air conditioner, the temperature and humidity in the factory can be controlled, which can help eliminate\nthese printing issues. However, it is still possible that any of the other options listed could also potentially solve the issue, so it is best to assess the situation further\nand try different solutions if necessary.",
+    "id": 3
+  },
+  {
+    "type": "single",
+    "question": "Which of the following network services allows a networked device to always be assigned the same IP address based on the device's MAC address?",
+    "options": [
+      "DHCP",
+      "LDAP",
+      "UTM",
+      "DNS"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Dynamic Host Configuration Protocol (DHCP) allows a networked device to always be assigned the same IP address based on the device's MAC address. DHCP\ncan also assign other network configuration settings to devices automatically.",
+    "id": 4
+  },
+  {
+    "type": "single",
+    "question": "A university student was able to boot from a live Linux CD on a computer in a shared space on campus. Which of the following will BEST prevent this type of\naction from occurring in the future?",
+    "options": [
+      "Require TPM security features.",
+      "Set a boot password.",
+      "Disable all media options.",
+      "Enable secure boot."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Enabling secure boot will verify the digital signature of the bootloader and operating system, ensuring that the system only boots from trusted and authorised\nsources. This can prevent booting from an unauthorised live CD or other external media. The best way to prevent booting from a live Linux CD on a computer in a\nshared space on campus is to enable secure boot. Secure boot is a feature that ensures that the system only runs software that is signed by an authorized party.\nThis means that the system will not boot from any unauthorized media, including live Linux CDs.\nSecure Boot is a feature that ensures that the system only runs software that is signed by an authorized party. This means that the system will not boot from any\nunauthorized media, including live Linux CDs. Secure Boot is an important security feature designed to prevent malicious software from loading when your PC\nstarts up (boots)1.\nBooting from a live Linux CD is a process that allows you to run a Linux operating system from a CD or DVD without installing it on your hard drive. This can be\nuseful for testing or troubleshooting purposes. To boot from a live Linux CD, you need to insert the CD or DVD into your computer\u2019s CD/DVD drive and restart\n  \nyour computer. Most systems are set up to automatically boot from the CD/DVD drive, but if your system is not set up this way, you may need to change a system\nsetting to boot from a Linux CD/DVD23.",
+    "id": 5
+  },
+  {
+    "type": "single",
+    "question": "A system administrator has been tasked with allowing SMTP traffic through the system's host-based firewall. Which of the following ports should the administrator enable?",
+    "options": [
+      "23",
+      "25",
+      "80",
+      "161"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SMTP (Simple Mail Transfer Protocol) uses TCP port 25 for sending email. Enabling port 25 allows SMTP traffic through the firewall.",
+    "id": 6
+  },
+  {
+    "type": "single",
+    "question": "A technician is upgrading a legacy wireless router for a home user. After installing the new router and configuring the SSID to be the same, none of the devices will connect to the network. Which of the following should the technician check NEXT?",
+    "options": [
+      "DHCP pool configuration",
+      "MAC filtering list",
+      "Wireless protocol settings",
+      "DNS servers"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "If MAC filtering is enabled, devices whose MAC addresses are not on the allow list will be unable to connect, even if SSID and password match.",
+    "id": 7
+  },
+  {
+    "type": "single",
+    "question": "A user\u00e2\u20ac\u2122s laptop display flickers briefly on boot then remains blank. The external monitor works fine. Which of the following is MOST likely the cause?",
+    "options": [
+      "Faulty GPU",
+      "Bad backlight",
+      "Broken inverter",
+      "Corrupted display driver"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "If the external monitor works but the laptop screen remains blank after flickering, the display inverter is likely faulty and not powering the backlight.",
+    "id": 8
+  },
+  {
+    "type": "single",
+    "question": "Which of the following best describes how a dual-homed network interface card (NIC) is configured?",
+    "options": [
+      "Two IP addresses on the same subnet",
+      "One IP on each of two different subnets",
+      "One MAC address for two IPs",
+      "Two physical NICs in a single PCI slot"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A dual-homed NIC has one IP address on each of two different subnets, allowing it to connect to two networks simultaneously.",
+    "id": 9
+  },
+  {
+    "type": "single",
+    "question": "What is the purpose of a DHCP server?",
+    "options": [
+      "To assign IP addresses automatically",
+      "To resolve domain names to IP addresses",
+      "To filter network traffic",
+      "To provide secure remote access"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A DHCP (Dynamic Host Configuration Protocol) server automatically assigns IP addresses and other network configuration parameters to devices on a network.",
+    "id": 10
+  },
+  {
+    "type": "single",
+    "question": "Which network topology connects all devices to a central switch or hub?",
+    "options": [
+      "Bus",
+      "Ring",
+      "Star",
+      "Mesh"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In a star topology, all devices are connected to a central device, such as a switch or hub.",
+    "id": 11
+  },
+  {
+    "type": "single",
+    "question": "Which of the following describes the operational difference between hubs and switches when transmitting data to a specific computer inside the network?",
+    "options": [
+      "Switches only send data to the specific computer, while hubs send data to all computersinside the network.",
+      "Switches compress data while hubs send uncompressed data",
+      "Switches receive data and route it to all computers inside the network while hubs receive data and do not route",
+      "Switches scramble data, while hubs send data in the original form.\n  "
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Switches only send data to the specific computer, while hubs send data to all computers inside the network. References: CompTIA A+ Certification Exam Guide,\nExam 220-1001, Page 323",
+    "id": 12
+  },
+  {
+    "type": "single",
+    "question": "A server administrator wants to designate one drive in a RAID array as hot spares. Which of the following RAID levels supports a dedicated hot spare?",
+    "options": [
+      "RAID 0",
+      "RAID 1",
+      "RAID 5",
+      "RAID 10"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "RAID 5 arrays often support the configuration of a dedicated hot spare that will automatically replace a failed drive.",
+    "id": 13
+  },
+  {
+    "type": "single",
+    "question": "A user reports that a PC occasionally falls to boot. The user reboots the PC. but the performance is degrading. The technician hears a strange, repetitive, ticking\nnoise coming from the PC. Which of the following should the technician do FIRST?",
+    "options": [
+      "Try to extract data.",
+      "Reseat the RAM modules.",
+      "Inspect the fan.",
+      "Check the CD tray."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "This is a safe and sensible option if you value your data more than anything else. You don\u2019t want to risk losing your data by trying other methods that may worsen\nthe situation. You can use a software tool or a service provider to recover your data before attempting any repairs.",
+    "id": 14
+  },
+  {
+    "type": "single",
+    "question": "A customer reports that a computer is never able to reach more than a 100Mbps transfer data rate, even when using a Gigabit LAN card. While troubleshooting,\nthe technician notices the network cable needs to be replaced. Which of the following cable categories is limiting the transfer speed?",
+    "options": [
+      "Cat 5",
+      "Cat 5e",
+      "Cat 6",
+      "Cat 6a"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cat 5 cable is limited to a maximum data transfer rate of 100Mbps, while Cat 5e, Cat 6, and Cat 6a cables support Gigabit Ethernet (1000Mbps) and higher\nspeeds. Even though the LAN card is capable of Gigabit speeds, it cannot achieve that speed when using a Cat 5 cable. Upgrading to a Cat 5e or higher cable\nwould allow the computer to achieve Gigabit speeds. References: CompTIA A+ Certification Exam: Core 1 - Page 196",
+    "id": 15
+  },
+  {
+    "type": "single",
+    "question": "A remote user called the help desk to report a notification indicating there is limited or no connectivity. The user can access local file folders and other local\nmachines but none of the organization's servers or network items. Web pages do not appear to function either. Which of the following is the MOST likely cause of\nthe issue?",
+    "options": [
+      "The user's internet connection is down.",
+      "The user's domain account is locked out.",
+      "The user's switch has stopped working.",
+      "The user's IP address needs to be renewed."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Based on the information provided in the scenario, the most likely cause of the issue is that the user\u2019s internet connection is down (option A). This would explain\nwhy the user is unable to access any of the organization\u2019s servers or network items and why web pages are not functioning. However, since the user can still\naccess local file folders and other local machines, it suggests that their local network is still functioning.\nThe user can access local file folders and other local machines but none of the organization's servers or network items, indicating that the issue is with the user's\ninternet connection, not with the user's domain account, switch, or IP address.\nWhen a user receives a notification indicating that there is limited or no connectivity, it means that their device is unable to establish a connection to the network. In\nthis scenario, the user can access local file folders and other local machines but is unable to access any of the organization\u2019s servers or network items and web\npages are not functioning. This suggests that the issue is with the user\u2019s internet connection.\nAn internet connection allows a device to communicate with other devices and servers outside of its local network. If the internet connection is down or not\nfunctioning properly, the device will be unable to access any resources outside of its local network. This would explain why the user in this scenario can still access\nlocal resources but is unable to access any of the organization\u2019s servers or network items.",
+    "id": 16
+  },
+  {
+    "type": "single",
+    "question": "What security measure ensures apps are from trusted sources on Android?",
+    "options": [
+      "Firewall",
+      "App signature verification",
+      "Factory reset",
+      "VPN"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "App signature verification ensures that only trusted apps from verified sources are installed.",
+    "id": 17
+  },
+  {
+    "type": "single",
+    "question": "A phone cannot receive signal in a remote area. What setting or option could help?",
+    "options": [
+      "Enable roaming",
+      "Lower screen brightness",
+      "Disable airplane mode",
+      "Close apps"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Enabling roaming allows a device to connect to partner networks when out of native coverage.",
+    "id": 18
+  },
+  {
+    "type": "single",
+    "question": "A technician must assist with enabling airplane mode. What's the effect of this?",
+    "options": [
+      "Disables Wi-Fi and cellular",
+      "Disables only GPS",
+      "Turns off screen",
+      "Resets settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Airplane mode disables all wireless communications like Wi-Fi, Bluetooth, and cellular.",
+    "id": 19
+  },
+  {
+    "type": "single",
+    "question": "A technician is attempting to connect the wired LANs at two nearby buildings by installing a wireless point-to-point connection. Which of the following should the\ntechnician consider?",
+    "options": [
+      "NFC protocol data rate",
+      "RFID frequency range",
+      "Bluetooth version compatibility",
+      "Allowable limits for transmit power"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "When installing a wireless point-to-point connection between two buildings, the technician should consider the allowable limits for transmit power, which vary\ndepending on the country or region. Exceeding these limits could interfere with other wireless devices or violate regulations. NFC protocol data rate, RFID\nfrequency range, and Bluetooth version compatibility are not relevant for a wireless point-to-point connection.",
+    "id": 20
+  },
+  {
+    "type": "single",
+    "question": "A software developer used client-side virtualization on a server to configure a web application. Although the application is working locally on the software\ndeveloper's PC, other users on the LAN are not able to access the application. Which of the following would allow other users to access the application?",
+    "options": [
+      "Bridge networking",
+      "Application virtualization",
+      "Virtual desktop",
+      "Site-to-site VPN"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Client-side virtualization is used to run an application or process on a separate virtual machine, isolated from the main operating system. To allow other users on\nthe LAN to access the application, the software developer should configure a bridge networking connection between the virtual machine and the LAN. This will\nallow the virtual machine to communicate with other computers on the network. Application virtualization, virtual desktop, and site-to-site VPN are not necessary\nsteps for allowing other users to access the application.",
+    "id": 21
+  },
+  {
+    "type": "single",
+    "question": "A technician is working to connect an RS-232 serial signature pad to a customer's ultralightweight laptop. Which of the following should the technician use to install\nthe device?",
+    "options": [
+      "Port replicator",
+      "Wi-Fi Direct",
+      "Hotspot",
+      "USB-C cable"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A USB-C cable is the best option for installing an RS-232 serial signature pad to an ultralightweight laptop. USB-C is a universal connector that supports various\nprotocols and devices, including serial devices. A port replicator is a device that expands the connectivity options of a laptop by providing additional ports. Wi-Fi\nDirect is a wireless technology that allows devices to connect directly without a router or access point. Hotspot is a feature that allows a device to share its internet\nconnection with other devices via Wi-Fi, Bluetooth, or USB.",
+    "id": 22
+  },
+  {
+    "type": "single",
+    "question": "A user's track pad has stopped working. Which of the following should the user do to resolve the track pad's functionality?",
+    "options": [
+      "Reinstall the mouse drivers",
+      "Use the Function key.",
+      "Calibrate the digitizer",
+      "Configure the mouse settings."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct answer is B. Use the Function key.\nThe explanation is that some laptops have a Function key (Fn) that can be used to toggle the track pad on or off. This can be useful if the user wants to use an\nexternal mouse instead of the track pad, or if the track pad is accidentally activated by palm movements. The user should look for a Fn key on their keyboard and a\ntrack pad icon on one of the other keys, such as F5 or F9, and press them together to enable or disable the track pad.",
+    "id": 23
+  },
+  {
+    "type": "single",
+    "question": "A technician is working on a desktop PC and wants to verify its NIC is functional. Which of the following should the technician use?",
+    "options": [
+      "Cable tester",
+      "Loopback Plug",
+      "Toner probe",
+      "Network tap"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Reference: https://www.comptia.org/training/books/a-core-1-220-1101-study-guide (page 76)",
+    "id": 24
+  },
+  {
+    "type": "single",
+    "question": "An insurance company wants to implement cloud computing and would like a cloud solution in which the infrastructure is shared with businesses in the same\nindustry. Which of the following cloud models BEST addresses the company's need?",
+    "options": [
+      "Community",
+      "Private",
+      "Public",
+      "Hybrid"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The cloud model that BEST addresses the company\u2019s need is the Community cloud model. A community cloud is a cloud infrastructure in which multiple\norganizations share resources and services based on common operational and regulatory requirements. The concept of a community cloud is akin to a community\ngarden, where different individuals grow produce on a single piece of shared land1.",
+    "id": 25
+  },
+  {
+    "type": "single",
+    "question": "A technician connects a new computer to the internet and then opens the wiring closet. Even though all of the wires are terminated, nothing in the wring closet is\nlabeled. Which of the following tools should the technician use to complete the task?",
+    "options": [
+      "Cable tester",
+      "Loopback plug",
+      "Toner probe",
+      "Punchdown tool"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A toner probe is a tool that can be used to trace and identify cables in a wiring closet. The technician can use a toner probe to find the cable that connects the new\ncomputer to the internet. A cable tester is a tool that can be used to check the continuity and quality of a cable. A loopback plug is a tool that can be used to test\nnetwork ports or cables by sending and receiving signals from the same device. A punchdown tool is a tool that can be used to terminate wires into a patch panel\nor jack.",
+    "id": 26
+  },
+  {
+    "type": "single",
+    "question": "Which of the following network options would work BEST to ensure a client-side virtual machine cannot access the rest of the network?",
+    "options": [
+      "NAT mode",
+      "Bridge mode",
+      "Direct mode",
+      "Host-only mode"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Host-only mode is a network option that isolates a client-side virtual machine from the rest of the network. It allows the virtual machine to communicate only with\nthe host machine and other virtual machines on the same host. NAT mode allows the virtual machine to share the host\u2019s IP address and access the network\nthrough it. Bridge mode allows the virtual machine to have its own IP address and connect directly to the network. Direct mode is not a valid network option for\nvirtual machines.",
+    "id": 27
+  },
+  {
+    "type": "single",
+    "question": "A network administrator was notified that laptop users are unable to access or ping any network resources on the corporate network. Which of the following should\nthe network administrator check FIRST?",
+    "options": [
+      "DHCP",
+      "AAA",
+      "DNS",
+      "ARP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Domain Name System (DNS) is an Internet service that translates domain names (e.g., its.umich.edu) into IP addresses. Dynamic Host Configuration Protocol\n(DHCP) is a protocol for automatically assigning IP addresses and other configurations to devices when they connect to a network.",
+    "id": 28
+  },
+  {
+    "type": "single",
+    "question": "A technician needs to recommend an internet connection for a customer who travels around the world and wants to have connectivity while visiting remote\ncamping locations. Some of the locations the customer visits have limited or unreliable cellular service. Which of the following connection types should the\ntechnician recommend?",
+    "options": [
+      "Satellite",
+      "DSL",
+      "Fiber",
+      "Hotspot"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The connection type that the technician should recommend is Satellite. Satellite internet is a good option for people who travel around the world and want to have\nconnectivity while visiting remote camping locations. It works by using terminals which can give you internet access in remote locations as long as they have a line\nof sight to the satellite in orbit above12.\nSince the customer travels to remote camping locations with limited or unreliable cellular service, the best recommendation is satellite internet connection. Satellite\ninternet uses a dish to connect to satellites orbiting the earth, which can provide coverage anywhere in the world as long as there is a clear line of sight to the\nsatellite. This is especially useful in remote areas where traditional terrestrial connections are not available. References: CompTIA A+ Certification Exam\nObjectives - 220-1001: 1.6 Given a scenario, evaluate connection type and bandwidth.",
+    "id": 29
+  },
+  {
+    "type": "single",
+    "question": "A technician is upgrading a legacy wireless router for a home user. After installing the new router and configuring the SSID to be the same, none of the devices will\nconnect to the network. Which of the following should the technician check NEXT?",
+    "options": [
+      "OHCP pool configuration",
+      "MAC filtering list",
+      "Wireless protocol settings",
+      "ONS servers\n  "
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The technician should check the MAC filtering list next as the new router may have a different MAC address than the old router. References: CompTIA A+\nCertification Exam Guide, Exam 220-1001, Page 332",
+    "id": 30
+  },
+  {
+    "type": "single",
+    "question": "SIMULATION \nLaura, a customer, has instructed you to configure her home office wireless access point.\nShe plans to use the wireless network for finances and has requested that the network be setup with the highest encryption possible.\nAdditionally, Laura knows that her neighbors have wireless networks and wants to ensure that her network is not being interfered with by the other networks.\nShe requests that the default settings be changed to the following.\nWireless Name: HomeWiFi Shared Key: CompTIA Router Password: Secure$1\nFinally, Laura wants to ensure that only her laptop and Smartphone can connect to the network.\nLaptop: IP Address 192.168.1.100 Hardware Address: 00:0A:BF:03:C4:54 Smartphone: IP Address 192.168.1.101 Hardware Address: 09:2C:D0:22:3F:11\nINSTRUCTIONS\nConfigure Laura\u2019s wireless network using the network adapter window.\nIf at any time you would like to bring back the initial state of the situation, please click the Reset All button.\n  \n  ",
+    "options": [
+      "Mastered",
+      "Not Mastered"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "solution as\n  \n  ",
+    "id": 31
+  },
+  {
+    "type": "single",
+    "question": "Which of the following network devices is used to separate broadcast domains?",
+    "options": [
+      "Switch",
+      "Wireless access point",
+      "Router",
+      "Hub"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A router (option C) is a network device that is used to separate broadcast domains. A broadcast domain is a logical division of a computer network in which all\nnodes can reach each other by broadcast at the data link layer. Routers operate at the network layer of the OSI model and use routing tables to determine the best\npath for forwarding packets between different networks.\nBy separating broadcast domains, routers can help to reduce network congestion and improve performance. When a router receives a broadcast packet on one of\nits interfaces, it does not forward the packet to any other interfaces. This means that only devices within the same broadcast domain as the sender will receive the\nbroadcast packet.",
+    "id": 32
+  },
+  {
+    "type": "single",
+    "question": "A technician is attempting to connect the wired LANs at two nearby buildings by installing a wireless point-to-point connection. Which of the following should the technician consider?",
+    "options": [
+      "NFC protocol data rate",
+      "RFID frequency range",
+      "Bluetooth version compatibility",
+      "Allowable limits for transmit power"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Legal limits on transmission power are crucial in wireless point-to-point setups.",
+    "id": 33
+  },
+  {
+    "type": "single",
+    "question": "A company wants to use client-side visualization for application testing. Which of the following configurations would BEST support this goal?",
+    "options": [
+      "Option A",
+      "Option B",
+      "Option C",
+      "Option D"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The diagram in Option A shows a client-side sandboxed VM environment, which is ideal for isolated application testing.",
+    "id": 34
+  },
+  {
+    "type": "single",
+    "question": "An online retailer would like to add capacity to support increased sales. Additional servers have been installed. Which of the following should be used to ensure each new server is being properly utilized?",
+    "options": [
+      "Virtualization",
+      "Clustering",
+      "Load balancer",
+      "Round-robin DNS"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A load balancer distributes incoming traffic evenly among servers, ensuring each server is properly utilized and preventing any single server from being overloaded.",
+    "id": 35
+  },
+  {
+    "type": "single",
+    "question": "A technician is monitoring all outbound traffic in a SOHO. Which of the following is the MOST cost-effective solution to monitor the traffic?",
+    "options": [
+      "Spectrum analyzer",
+      "Network tap",
+      "Lookback plug",
+      "Toner probe"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A network tap is used to intercept the signals passing over a cable and send them to a packet or protocol analyzer. Taps are either powered or unpowered:",
+    "id": 36
+  },
+  {
+    "type": "single",
+    "question": "A user enables tethering. What network type is MOST commonly shared?",
+    "options": [
+      "Wi-Fi",
+      "NFC",
+      "Bluetooth",
+      "Infrared"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Wi-Fi is the most common interface used in mobile hotspot tethering.",
+    "id": 37
+  },
+  {
+    "type": "multiple",
+    "question": "Which of the following are common network protocols?",
+    "options": [
+      "TCP",
+      "IP",
+      "UDP",
+      "HTTP",
+      "SSH"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "explanation": "All of these are common network protocols used in various aspects of networking.",
+    "id": 38
+  },
+  {
+    "type": "single",
+    "question": "Which protocol is used for secure web communication?",
+    "options": [
+      "HTTP",
+      "HTTPS",
+      "FTP",
+      "SMTP"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "HTTPS (Hypertext Transfer Protocol Secure) is used for secure web communication.",
+    "id": 39
+  },
+  {
+    "type": "multiple",
+    "question": "Which of the following options provides correct information about 2.4GHz and 5GHz wireless frequencies? (Select TWO)",
+    "options": [
+      "2.4GHz has less interferenc",
+      "5GHz transmits inlower speed.",
+      "2.4GHz penetrates solid objects more effectivel",
+      "5GHz provides faster data connections.",
+      "2.4GHz has a higher data rat",
+      "5GHz has 23 channels.\nG. 2.4GHz has Il channel\nH. 5GHz has no data interference.\nI. 2.4GHz has a higher coverage are\nJ. 5GHz has higher bandwidth.\nK. 2.4GHz has a higher bandwidt\nL. 5GHz has lower transmit power."
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "explanation": "2.4GHz penetrates solid objects more effectively. 5GHz provides faster data connections. 2.4GHz has a higher coverage area.\n5GHz has higher bandwidth. The 2.4GHz frequency has a lower data rate compared to 5GHz, but it can penetrate solid objects more effectively and has a higher\ncoverage area. The 5GHz frequency, on the other hand, provides faster data connections and has higher bandwidth,\nbut it has fewer channels and lower transmit power.",
+    "id": 40
+  },
+  {
+    "type": "single",
+    "question": "Which tool is commonly used to test network connectivity?",
+    "options": [
+      "ping",
+      "traceroute",
+      "nslookup",
+      "ipconfig"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The ping command is used to test network connectivity between devices.",
+    "id": 41
+  },
+  {
+    "type": "single",
+    "question": "What does 'SOHO' stand for in the context of networking environments?",
+    "options": [
+      "System Office Home Office",
+      "Small Office Home Office",
+      "Secure Office Hosted Office",
+      "Server Optimized Home Office"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SOHO stands for Small Office/Home Office, referring to a small-scale business or home network environment.",
+    "id": 42
+  }
+]

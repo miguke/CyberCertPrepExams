@@ -1,0 +1,669 @@
+[
+  {
+    "type": "single",
+    "question": "Which of the following handles touch-screen operation on a mobile device?",
+    "options": [
+      "Stylus",
+      "Liquid crystal display",
+      "Processor",
+      "Digitizer"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A digitizer is a component that handles touch-screen operation on a mobile device. It is a layer of material that detects and converts the touch of a finger or a\nstylus into an electrical signal that can be processed by the device12. A digitizer works with a display screen to create a touch-screen interface that allows a user\nto interact with the device by touching pictures or words on the screen.",
+    "id": 1
+  },
+  {
+    "type": "single",
+    "question": "A user is unable to connect a mobile phone while in a car. However, a second mobile Device is able To connect in The same car, WHICH of the Following settings\nshould the user check on the first phone?",
+    "options": [
+      "Wi-Fi",
+      "Hotspot",
+      "Bluetooth",
+      "Location\n  "
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "To connect a mobile phone to a car, you need to pair them using Bluetooth, which is a wireless technology that allows secure local networks between devices1. If\none phone can connect to the car but another cannot, it means that the first phone has Bluetooth enabled and paired with the car, while the second phone does\nnot. Therefore, the user should check the Bluetooth settings on the second phone and make sure it is turned on and discoverable21.",
+    "id": 2
+  },
+  {
+    "type": "single",
+    "question": "A laptop does not have any audio output from the built-in speakers. The Windows Device Manager shows a down arrow for the audio device. Which of the\nfollowing will correct this audio issue?",
+    "options": [
+      "Replacing the speakers",
+      "Increasing the volume",
+      "Enabling the audio device",
+      "Updating the driver"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Enabling the audio device is the correct action to correct an audio issue where a laptop does not have any audio output from the built-in speakers and Windows\nDevice Manager shows a down arrow for the audio device. A down arrow indicates that the audio device is disabled and needs to be enabled by right-clicking on it\nand selecting Enable device. Replacing the speakers, increasing the volume, or updating the driver are unlikely to solve the issue if the audio device is disabled.",
+    "id": 3
+  },
+  {
+    "type": "single",
+    "question": "A salesperson is using a weather application on a mobile device. The application appears to be draining the device's battery very quickly. Which of the following is\nthe BEST action for the salesperson to take in order to view weather forecasts while traveling?",
+    "options": [
+      "Enable the GPS service to ensure accurate location detection.",
+      "Update the PRL when getting to a new location.",
+      "Configure less location checks using cellular location services,",
+      "use the offices' Wi-Fi IP addresses as the geolocation mechanism."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The best action for the salesperson to take in order to view weather forecasts while traveling and minimize the battery drain on their mobile device is to configure\nfewer location checks using cellular location services. This can be done by adjusting the settings for the weather application to limit how often it checks for updates\nand uses location services. This will help to conserve the battery on the device and keep the application from consuming too much power.\n  ",
+    "id": 4
+  },
+  {
+    "type": "single",
+    "question": "A technician is troubleshooting a laptop that is unable to browse the internet when connected to the company\u2019s wireless network. The technician has verified\nnetwork connectivity is functional when using an Ethernet cable. Which of the following should the technician use to check if the laptop's wireless NIC is functional?",
+    "options": [
+      "Hotspot",
+      "Near-field communication",
+      "Ethernet tap",
+      "Spectrum analyzer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A hotspot is a wireless access point that provides internet access to devices that are connected to it. The technician can use a hotspot to check if the laptop's\nwireless NIC is functional by connecting the laptop to the hotspot and then trying to browse the internet. If the laptop is able to browse the internet, then the\nwireless NIC is functional. Near-field communication (NFC) is a wireless technology that allows two devices to communicate with each other when they are in close\nproximity. NFC is not typically used to check if a wireless NIC is functional.\nAn Ethernet tap is a device that is used to monitor network traffic. An Ethernet tap is not typically used to check if a wireless NIC is functional.\nA spectrum analyzer is a device that is used to measure the frequency spectrum of a signal. A spectrum analyzer is not typically used to check if a wireless NIC is\nfunctional. Therefore, the correct answer is A. Hotspot.",
+    "id": 5
+  },
+  {
+    "type": "single",
+    "question": "Which connector is used for high-speed data transfer on modern mobile devices?",
+    "options": [
+      "Micro-USB",
+      "USB-C",
+      "Lightning",
+      "Mini-USB"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "USB-C supports high-speed data transfer, power delivery, and video output.",
+    "id": 6
+  },
+  {
+    "type": "single",
+    "question": "Which of the following types of devices MOST often uses a Thunderbolt cable?",
+    "options": [
+      "Linux PC",
+      "Android mobile",
+      "Apple laptop",
+      "Chromebook"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Thunderbolt cables are most commonly associated with Apple products, especially laptops.",
+    "id": 7
+  },
+  {
+    "type": "multiple",
+    "question": "A user is unable to connect an Android phone to an NFC speaker. Which of the following steps should be followed?",
+    "options": [
+      "Enable NFC and Bluetooth on the Android phone",
+      "Tap and hold the phone to the speaker's NFC logo",
+      "Accept the connection prompt on the phone",
+      "Ensure the speaker is connected via USB"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "To pair with an NFC-enabled speaker, NFC and Bluetooth must be on, the devices should be tapped together, and the user must accept the prompt.",
+    "id": 8
+  },
+  {
+    "type": "single",
+    "question": "A user states their smartphone takes more than a day to fully charge. What should be checked FIRST?",
+    "options": [
+      "Perform a factory reset",
+      "Replace the battery",
+      "Verify the power rating of the charger",
+      "Close background apps"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The issue is likely related to an underpowered charger. Check that the charger meets the device's specifications.",
+    "id": 9
+  },
+  {
+    "type": "multiple",
+    "question": "Which of the following connection types can be used to connect an external keyboard to an Android tablet?",
+    "options": [
+      "DVI",
+      "Infrared",
+      "Lightning",
+      "USB-C",
+      "PS/2",
+      "Bluetooth"
+    ],
+    "correct": [
+      3,
+      5
+    ],
+    "explanation": "USB-C and Bluetooth are both common and supported interfaces for connecting external keyboards to Android devices.",
+    "id": 10
+  },
+  {
+    "type": "single",
+    "question": "A user wants a mobile device to last longer throughout the day. What should be enabled?",
+    "options": [
+      "Battery saver mode",
+      "Bluetooth",
+      "Background app refresh",
+      "High performance mode"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Enabling battery saver mode reduces power consumption and extends device usage time.",
+    "id": 11
+  },
+  {
+    "type": "single",
+    "question": "Which mobile OS allows apps to be installed from non-official sources?",
+    "options": [
+      "iOS",
+      "Android",
+      "Windows Mobile",
+      "BlackBerry OS"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Android allows installation of APKs from third-party sources when enabled in settings.",
+    "id": 12
+  },
+  {
+    "type": "single",
+    "question": "A user reports blurry images from a smartphone camera. What's the probable cause?",
+    "options": [
+      "Camera app not updated",
+      "Dirty lens",
+      "Low battery",
+      "Screen protector misalignment"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Blurry images are often caused by a dirty or smudged camera lens.",
+    "id": 13
+  },
+  {
+    "type": "single",
+    "question": "A mobile device cannot be discovered by Bluetooth. What should be checked FIRST?",
+    "options": [
+      "Wi-Fi is active",
+      "Battery is charged",
+      "Bluetooth is enabled",
+      "SIM card is valid"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Bluetooth must be enabled and visible for the device to be discovered.",
+    "id": 14
+  },
+  {
+    "type": "single",
+    "question": "A technician is adding a work email on a mobile device. What protocol is typically used?",
+    "options": [
+      "POP3",
+      "SMTP",
+      "IMAP",
+      "Exchange ActiveSync"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Exchange ActiveSync is commonly used to sync work email, calendar, and contacts.",
+    "id": 15
+  },
+  {
+    "type": "single",
+    "question": "A smartphone has a cracked screen. Which tool is MOST appropriate to use for replacement?",
+    "options": [
+      "Multimeter",
+      "Plastic spudger",
+      "RJ45 crimper",
+      "Torque wrench"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A plastic spudger helps in opening mobile devices without damaging internal components.",
+    "id": 16
+  },
+  {
+    "type": "single",
+    "question": "A technician must verify if a smartphone supports wireless charging. What component should they look for?",
+    "options": [
+      "Qi coil",
+      "USB-C port",
+      "IR sensor",
+      "Heat sink"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Qi coils indicate that the device supports wireless charging.",
+    "id": 17
+  },
+  {
+    "type": "single",
+    "question": "A technician is helping a user connect a smartphone to a vehicle. A second phone works. What setting should be checked?",
+    "options": [
+      "Display timeout",
+      "Auto-lock",
+      "Bluetooth visibility",
+      "Background data"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "For pairing to succeed, the phone must be discoverable via Bluetooth.",
+    "id": 18
+  },
+  {
+    "type": "single",
+    "question": "Which component is responsible for GPS on a smartphone?",
+    "options": [
+      "Gyroscope",
+      "Accelerometer",
+      "GNSS module",
+      "Proximity sensor"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The GNSS (Global Navigation Satellite System) module is responsible for GPS functionality.",
+    "id": 19
+  },
+  {
+    "type": "single",
+    "question": "A smartphone's screen is unresponsive. Which component may be faulty?",
+    "options": [
+      "LCD",
+      "Digitizer",
+      "Battery",
+      "RAM"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The digitizer is responsible for touch input. A faulty digitizer causes unresponsive touch.",
+    "id": 20
+  },
+  {
+    "type": "single",
+    "question": "A technician is cleaning a smartphone camera that shows dark spots. What tool should be used?",
+    "options": [
+      "Alcohol wipe",
+      "Steel wool",
+      "Compressed air",
+      "Paper towel"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Use compressed air to safely clean lenses and avoid damaging sensitive components.",
+    "id": 21
+  },
+  {
+    "type": "single",
+    "question": "What is the MOST secure method to protect data on a lost smartphone?",
+    "options": [
+      "SIM lock",
+      "Screen lock",
+      "Remote wipe",
+      "Airplane mode"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Remote wipe allows complete data erasure to prevent unauthorized access.",
+    "id": 22
+  },
+  {
+    "type": "single",
+    "question": "What does airplane mode disable on mobile devices?",
+    "options": [
+      "Cellular only",
+      "Bluetooth and Wi-Fi",
+      "All wireless radios",
+      "Microphone"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Airplane mode disables all wireless transmissions including cellular, Wi-Fi, and Bluetooth.",
+    "id": 23
+  },
+  {
+    "type": "single",
+    "question": "Which of the following features tracks physical activity on a mobile device?",
+    "options": [
+      "Accelerometer",
+      "Compass",
+      "Gyroscope",
+      "Ambient sensor"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Accelerometers are used to track motion and step count in mobile fitness tracking.",
+    "id": 24
+  },
+  {
+    "type": "single",
+    "question": "What is the function of the proximity sensor on a smartphone?",
+    "options": [
+      "Detects ambient light",
+      "Disables screen during calls",
+      "Measures signal strength",
+      "Tracks location"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The proximity sensor disables the screen when the phone is near the user's face during calls to prevent accidental touches.",
+    "id": 25
+  },
+  {
+    "type": "single",
+    "question": "A user's smartphone battery drains very quickly. Which setting can help conserve battery life?",
+    "options": [
+      "Increasing screen brightness",
+      "Enabling Bluetooth",
+      "Reducing screen timeout duration",
+      "Setting email to push notifications"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Reducing the screen timeout duration ensures the screen turns off more quickly when not in use, saving battery.",
+    "id": 26
+  },
+  {
+    "type": "single",
+    "question": "What does NFC stand for in mobile devices?",
+    "options": [
+      "Near Field Communication",
+      "Network File Connection",
+      "New Fast Charger",
+      "National Frequency Control"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "NFC stands for Near Field Communication, used for short-range wireless data transfer like contactless payments.",
+    "id": 27
+  },
+  {
+    "type": "single",
+    "question": "A user calls the help desk lot assistance configuring an Android phone with a new NFC-enabled speaker that will be used for an upcoming conference call. The\nuser was unable to direct the phone's audio to the NFC speaker. Which of the following sequences should the help desk technician walk the customer through to\naccomplish this task?\n  ",
+    "options": [
+      "Enable NFC on the speake",
+      "Ensure the speaker is less than 33ft (10m) from the Android phon",
+      "On the phone's Bluetooth settings menu for Connected Devices, select Pair New Devic",
+      "Tap to accept the connection to the speaker when the prompt is displayed on the phone's screen.",
+      "Enable NFC and Bluetooth on the Android phon",
+      "From the Android phone's Bluetooth settings menu for Connected Devices, select the Previously Connected Devices optio\nG. Select a listed device that most closely matches the speake\nH. Tap lo accept the connection lo the speaker when the prompt is displayed on the phone's screen.\nI. Enable NFC and Bluetooth on the Android phon\nJ. Tap and hold the Android phone to the spot on the speaker where the NFC logo is displaye\nK. Accept the connection to the speaker when the prompt is displayed on the phone's screen.\nL. Enable Wi-Fi on the speake\nM. Enable Wi-Fi on the Android phon\nN. Tap and hold the Android phone to the spot on the speaker where the NFC logo is displaye\nO. Accept the connection to the speaker when the prompt is displayed on the phone's screen."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "id": 28
+  },
+  {
+    "type": "single",
+    "question": "A laptop\u00e2\u20ac\u2122s battery life has significantly decreased. Which of the following should the technician check FIRST?",
+    "options": [
+      "Battery age",
+      "Fan speed",
+      "CPU usage in Task Manager",
+      "Screen resolution"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Battery capacity diminishes over time; checking the battery\u00e2\u20ac\u2122s age and health should be the first step when battery life degrades.",
+    "id": 29
+  },
+  {
+    "type": "single",
+    "question": "A user creates a support ticket to report a conference room projector that does not work. The user says that even though the provided cables are being used, the\nprojector screen shows the following error message:\nNo signal input\nWhich of the following describes the FIRST action that should be taken?",
+    "options": [
+      "Verify that the projector is turned on.",
+      "Verify that the user is using an approved OS.",
+      "Replace the projector bulb.",
+      "Check the video cable and replace it if necessary."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The most common reasons you may be seeing the \"No Signal\" message: The projector and the source device are not connected correctly.\nThe first action should be to check the video cable and replace it if necessary, as the error message suggests that the projector is not receiving a signal from the\nlaptop. Verifying that the projector is turned on and checking the bulb would come after verifying the video cable.",
+    "id": 30
+  },
+  {
+    "type": "single",
+    "question": "The IT department at an insurance brokerage needs to acquire laptops that have built-in fingerprint readers in order to create a more secure environment. Which of\nthe following would be the MOST secure way to implement the fingerprint readers?",
+    "options": [
+      "Grant all registered employees access to each machine.",
+      "Restrict device access to only the user to whom the laptop is assigned.",
+      "Limit device access to departments and guest users.",
+      "Give each team member a USB drive that bypasses the reader to allow guest users lo log in."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The most secure way to implement fingerprint readers would be to restrict device access to only the user to whom the laptop is assigned. This ensures that only\nauthorized personnel have access to the device, reducing the risk of unauthorized access and data breaches.",
+    "id": 31
+  },
+  {
+    "type": "single",
+    "question": "A salesperson is using a weather application on a mobile device. The application appears to be draining the device's battery very quickly. Which of the following is\nthe BEST action for the salesperson to take in order to view weather forecasts while travelling?",
+    "options": [
+      "Enable the GPS service to ensure accurate location detection.",
+      "Manually enter office locations in the weather application.",
+      "Configure less frequent location checks using cellular location services.",
+      "Use the offices' Wi-Fi IP addresses as the geolocation mechanism."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Reducing the frequency of location checks using cellular location services will consume less battery power while still allowing the user to view weather forecasts\nwhile travelling. The other options may not solve the battery drain issue while using the weather application.\nConfiguring less frequent location checks using cellular location services is the best option for the salesperson to view weather forecasts while traveling without\ndraining the battery too quickly. References: https://www.makeuseof.com/tag/5-ways-improve-battery-life- android-phone/",
+    "id": 32
+  },
+  {
+    "type": "single",
+    "question": "A user entered a help desk ticket stating the latest calendar updates have not appeared on the user's corporate mobile device for several days, even though\nupdates do appear on the user's laptop. Which of the following actions will MOST likely enable calendar alerts?",
+    "options": [
+      "Checking that the ringer volume on the device is high enough to be audible",
+      "Ensuring the corporate password is saved correctly in the calendar application",
+      "Installing a third-party calendar application and synchronizing it with the corporate calendar",
+      "Remotely wiping the mobile device and reinstalling all applications"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "id": 33
+  },
+  {
+    "type": "single",
+    "question": "An end user discovered that the touch-screen features on a Windows device have stopped working. Which of the following should a technician check?",
+    "options": [
+      "Performance monitor",
+      "Tablet/PC settings",
+      "System configuration",
+      "Display settings"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "If the touch-screen features on a Windows device have stopped working, a technician should check the Tablet/PC settings. The Tablet/PC settings contain options\nfor configuring the touch-screen features on a Windows device. By checking the Tablet/PC settings, the technician can ensure that the touch-screen features are\nenabled and configured correctly.\nIf the touch-screen features on a Windows device have stopped working, a technician should check the Tablet/PC settings. The touch-screen settings may have\nbeen disabled or there may be a driver issue that needs to be resolved. References: CompTIA A+ Certification Exam Guide, pg. 536",
+    "id": 34
+  },
+  {
+    "type": "single",
+    "question": "A laptop has been returned for a screen repair. The owner insists the screen is broken, but occasionally a faded image is able to be seen in very bright settings on\nthe desktop. Which of the following steps should the repair technician take FIRST?",
+    "options": [
+      "Replace the graphics card.",
+      "Replace the screen, as the customer insists.",
+      "Recommend the usage of an external display instead.",
+      "Ensure the backlight is functioning as expected."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "If a laptop has been returned for a screen repair and the owner insists the screen is broken, but occasionally a faded image is able to be seen in very bright\nsettings on the desktop, the first step the repair technician should take is to ensure the backlight is functioning as expected. If the backlight is faulty, the screen\nmay appear to be broken, but it may only be dim or too dark to be visible",
+    "id": 35
+  },
+  {
+    "type": "single",
+    "question": "A user failed to gain access to a building's entrance after security measures at the entrance were upgraded last week. The company implemented the 13.56MHz\nfrequency short band, and users can now utilize their mobile devices to authenticate. Which of the following has to be enabled for the mobile device to\nauthenticate?",
+    "options": [
+      "Bluetooth",
+      "Biometrics",
+      "NFC",
+      "PIN"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "NFC (Near Field Communication) is a technology used for short-range wireless communication between devices, typically used for contactless payments and\nauthentication. In this scenario, the 13.56MHz frequency short band was implemented, and users can authenticate using their mobile devices, which requires NFC\nto be enabled on the device. References: CompTIA A+ Certification Exam Objectives 220-1001 - Mobile device network and device synchronization - 4.4",
+    "id": 36
+  },
+  {
+    "type": "single",
+    "question": "A user visits the desk to report that a smartphone takes more than a day to fully charge. The user has already tested multiple wall outlets and swapped the charging cable, but the results are the same. Which of the following should the technician do FIRST?",
+    "options": [
+      "Verify the power rating of the charger",
+      "Ensure all unnecessary connectivity features are disabled",
+      "Check that all missing smartphone OS updates are applied",
+      "Complete a factory reset of the phone"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Verifying the charger's power rating is the first step, as an underpowered charger can cause extremely slow charging.",
+    "id": 37
+  },
+  {
+    "type": "single",
+    "question": "Which method is used to unlock modern phones with facial recognition?",
+    "options": [
+      "IR sensor",
+      "Front camera",
+      "Fingerprint sensor",
+      "Voice pattern"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Facial recognition uses the front-facing camera with depth sensors.",
+    "id": 38
+  },
+  {
+    "type": "single",
+    "question": "What setting disables all incoming calls, alerts, and notifications?",
+    "options": [
+      "Silent mode",
+      "Airplane mode",
+      "Do Not Disturb",
+      "Night mode"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Do Not Disturb suppresses all alerts and can be scheduled.",
+    "id": 39
+  },
+  {
+    "type": "single",
+    "question": "What feature allows mobile phones to make payments without contact?",
+    "options": [
+      "NFC",
+      "Bluetooth",
+      "Wi-Fi",
+      "IR"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "NFC (Near Field Communication) is used for contactless payments.",
+    "id": 40
+  },
+  {
+    "type": "single",
+    "question": "A user requests location services to be disabled. What setting should be toggled?",
+    "options": [
+      "GPS",
+      "Wi-Fi",
+      "Airplane mode",
+      "Battery saver"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Location services are generally linked to GPS, which should be disabled to stop tracking.",
+    "id": 41
+  },
+  {
+    "type": "single",
+    "question": "A phone isn't ringing for incoming calls. What setting is MOST likely responsible?",
+    "options": [
+      "Volume muted",
+      "Airplane mode",
+      "Low storage",
+      "Mobile data off"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Muted volume will prevent ringing even though the phone receives calls.",
+    "id": 42
+  },
+  {
+    "type": "single",
+    "question": "A user is unable to access the Internet while on mobile data. What should be verified?",
+    "options": [
+      "Wi-Fi toggle",
+      "Battery level",
+      "Mobile data enabled",
+      "SIM contacts"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Ensure that mobile data is enabled in the network settings for Internet access.",
+    "id": 43
+  },
+  {
+    "type": "single",
+    "question": "Which of the following replaced the Apple 30-pin connector and is also reversible?",
+    "options": [
+      "USB-C",
+      "Lightning",
+      "miniUSB",
+      "DisplayPort"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Apple's Lightning connector replaced the 30-pin connector and features a reversible design.",
+    "id": 44
+  }
+]
