@@ -188,32 +188,37 @@ def categorize_question(question_text, explanation):
         'hardware': [
             ('ram', 2), ('cpu', 2), ('motherboard', 3), ('hard drive', 2), ('ssd', 2),
             ('power supply', 2), ('gpu', 2), ('cooling', 1), ('desktop', 1), ('printer', 1),
-            ('hdd', 2), ('sata', 2), ('nvme', 2), ('raid', 2), ('bios', 2), ('uefi', 2),
-            ('peripheral', 1), ('monitor', 1), ('keyboard', 1), ('mouse', 1)
+            ('hdd', 3), ('sata', 3), ('nvme', 3), ('raid', 2), ('bios', 2), ('uefi', 2),
+            ('peripheral', 1), ('monitor', 1), ('keyboard', 1), ('mouse', 1), ('connector', 3), ('fan', 3), ('battery', 1),
+            ('timings',2), ('voltage',2 ), ('safety', 3), ('thermal', 2)
         ],
         'networking': [
             ('router', 2), ('switch', 2), ('firewall', 2), ('wifi', 2), ('ethernet', 2),
             ('tcp/ip', 2), ('dns', 2), ('vpn', 2), ('lan', 2), ('wan', 2), ('port', 1),
             ('ip address', 2), ('subnet', 2), ('gateway', 2), ('dhcp', 2), ('nat', 2),
-            ('osi', 2)
+            ('osi', 2), ('SOHO', 5), ('ping',2 ), ('traffic', 2), ('protocol', 2), ('protocols', 2),
+            ('2.4GHz', 6), ('5GHz', 6), ('networking', 5)
+            
         ],
         'mobile-devices': [
-            ('laptop', 2), ('tablet', 2), ('smartphone', 2), ('battery', 1), ('touch screen', 1),
-            ('mobile device', 2), ('usb-c', 1), ('nfc', 1), ('bluetooth', 1), ('tablet', 1),
+            ('laptop', 2), ('tablet', 2), ('smartphone', 5), ('battery', 1), ('touch screen', 1),
+            ('mobile device', 5), ('usb-c', 1), ('nfc', 2), ('bluetooth', 1), ('tablet', 1),
             ('ios', 2), ('android', 2), ('wearable', 2), ('mobile os', 2), ('sync', 1),
-            ('tablet', 1), ('phablet', 1), ('mobile security', 2)
+            ('mobile security', 2), ('face recognition', 2), ('camera', 2), ('calls', 3), 
         ],
         'troubleshooting': [
-            ('troubleshoot', 3), ('error', 2), ('fix', 2), ('issue', 2), ('problem', 2),
+            ('troubleshoot', 4), ('error', 3), ('fix', 2), ('issue', 4), ('problem', 3),
             ('not working', 2), ('resolve', 2), ('diagnose', 2), ('repair', 2), ('symptom', 2), ('thecnhician', 3),
             ('failure', 2), ('blue screen', 3), ('bsod', 3), ('crash', 2), ('won\'t start', 2),
-            ('slow', 2), ('freeze', 2), ('unresponsive', 2)
+            ('slow', 2), ('freeze', 2), ('unresponsive', 2), ('bulging', 2), ('report', 2), ('reporting', 2),
+            ('discovered', 3), ('standpipe', 3), ('user', 3), ('reports', 3), ('overheating', 3), ('drains', 2),
+            ('failing', 2), ('failed', 2), ('replacing', 2), ('latency', 2)
         ],
         'virtualization-cloud': [
-            ('virtual', 3), ('vm', 3), ('cloud', 3), ('hypervisor', 3), ('iaas', 2),
-            ('paas', 2), ('saas', 2), ('vdi', 2), ('server', 1), ('host', 1),
+            ('virtual', 3), ('vm', 3), ('cloud', 4), ('hypervisor', 3), ('iaas', 2),
+            ('paas', 3), ('saas', 3), ('vdi', 2), ('server', 3), ('host', 2),
             ('vmware', 2), ('hyper-v', 2), ('virtualbox', 2), ('aws', 2), ('azure', 2),
-            ('gcp', 2), ('private cloud', 2), ('public cloud', 2), ('hybrid cloud', 2)
+            ('gcp', 2), ('private cloud', 2), ('public cloud', 2), ('hybrid cloud', 2), ('web', 2)
         ]
     }
     

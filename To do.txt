@@ -1,2 +1,16 @@
-fix text like userâ€™s.
-Exam simulated do not apear if is multiple choice.
+fix text issues like:
+    - userâ€™s
+    - desktopâ€™s
+Questions that need to be deleted.
+    - HARDWARE
+        - SIMULATION A small ISP has hired a new technician Joe, the new technician, is being trained to configure customers*
+        - 
+    - MOBILE DEVICES
+    - NETWORKING
+    - TRoubleshooting
+    - VIRTUALIZATION & CLOUD
+    
+Questions with wrong categorization:
+    - HARDWARE
+        - SA user reports a repetitive clicking noise is coming from a personal laptop. A technician notes the laptop's inputs are severely delayed. Which of the following should the technician replace to resolve the issue?IMULATION A small ISP has hired a new technician Joe, the new technician, is being trained to configure customers*
+        - 
