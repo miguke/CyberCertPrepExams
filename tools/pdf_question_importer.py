@@ -10,11 +10,11 @@ import pdfplumber
 SELECTED_CONFIG = '1101_CORE_1'
 
 # 2. Specify the input PDF file.
-INPUT_PDF_PATH = os.path.join(os.path.dirname(__file__), '..', "PDF's", '220-1101_3.pdf')
+INPUT_PDF_PATH = os.path.join(os.path.dirname(__file__), '..', "PDF's", '220-1101_5.pdf')
 
 # 3. Specify the output file for newly extracted, unique questions.
 #    The script will not modify your main topic files directly.
-STAGING_OUTPUT_FILE = os.path.join(os.path.dirname(__file__), '..', 'new_questions_staging.json')
+STAGING_OUTPUT_FILE = os.path.join(os.path.dirname(__file__), '..', 'data', '1101', 'new_questions_staging.json')
 
 # --- EXAM-SPECIFIC MAPPINGS ---
 
@@ -100,7 +100,7 @@ def extract_text_from_pdf(pdf_path):
     return full_text
 
 def parse_questions_from_text(text, pdf_filename):
-    """Parses raw text from a PDF to extract structured question objects."""
+    """Parses raw text from a PDF to extract structured question objects and stats."""
     print("Parsing text to find question blocks...")
 
     # Use a robust split based on "NEW QUESTION" which acts as a reliable delimiter.
@@ -108,14 +108,23 @@ def parse_questions_from_text(text, pdf_filename):
     question_blocks = re.split(r'\nNEW QUESTION \d+', text)[1:]
     
     parsed_questions = []
+    stats = {
+        'total_blocks': len(question_blocks),
+        'skipped_missing_answer': 0,
+        'skipped_missing_options': 0,
+        'skipped_dragdrop_sim_hotspot': 0,
+        'skipped_parsing_error': 0
+    }
     for i, block in enumerate(question_blocks, 1):
         try:
             # --- Extract individual fields using regex ---
             answer_match = re.search(r'Answer:\s*([A-Z]+)', block, re.IGNORECASE)
             explanation_match = re.search(r'Explanation:(.*)', block, re.DOTALL | re.IGNORECASE)
+            explanation = explanation_match.group(1).strip() if explanation_match else ""
 
             if not answer_match:
                 print(f"Warning: Skipping block {i} due to missing answer.")
+                stats['skipped_missing_answer'] += 1
                 continue
 
             # --- Isolate the main content (question + options) ---
@@ -129,6 +138,7 @@ def parse_questions_from_text(text, pdf_filename):
             options_start_match = re.search(r'\nA\.', content_block)
             if not options_start_match:
                 print(f"Warning: Skipping block {i} due to missing options start (A.).")
+                stats['skipped_missing_options'] += 1
                 continue
             
             # Extract the question text (remove the 'NEW QUESTION #' line)
@@ -142,6 +152,7 @@ def parse_questions_from_text(text, pdf_filename):
             # Skip DRAG DROP, SIMULATION, and HOTSPOT questions
             if "DRAG DROP" in question_text or "SIMULATION" in question_text or "HOTSPOT" in question_text:
                 print(f"Skipping block {i} because it is a DRAG DROP, SIMULATION, or HOTSPOT question")
+                stats['skipped_dragdrop_sim_hotspot'] += 1
                 continue
             
             # --- Process Options ---
@@ -152,30 +163,43 @@ def parse_questions_from_text(text, pdf_filename):
                 for opt in option_splits
             ]
 
-            # Clean spam from options
-            spam_pattern = re.compile(r'Passing Certification Exams Made Easy visit - https://www\.2PassEasy\.com Welcome to download the Newest 2passeasy 220-1101 dumps https://www\.2passeasy\.com/dumps/220-1101/ \(443 New Questions\)')
-            cleaned_options = [spam_pattern.sub('', opt).strip() for opt in cleaned_options]
+            # Clean spam from options, question, and explanation
+            spam_patterns = [
+                re.compile(r'Passing Certification Exams Made Easy visit - https://www\.2PassEasy\.com Welcome to download the Newest 2passeasy 220-1101 dumps https://www\.2passeasy\.com/dumps/220-1101/ \(443 New Questions\)'),
+                re.compile(r'Passing Certification Exams Made Easy visit - https://www\.surepassexam\.com Recommend!! Get the Full 220-1101 dumps in VCE and PDF From SurePassExam https://www\.surepassexam\.com/220-1101-exam-dumps\.html \(443 New Questions\)')
+            ]
+            for pattern in spam_patterns:
+                cleaned_options = [pattern.sub('', opt).strip() for opt in cleaned_options]
+                question_text = pattern.sub('', question_text).strip()
+                explanation = pattern.sub('', explanation).strip()
 
             # --- Format final object ---
             answer_str = answer_match.group(1)
-            explanation = explanation_match.group(1).strip() if explanation_match else ""
             correct_indices = [ord(char.upper()) - ord('A') for char in answer_str]
 
+            # Add 'type' field and validate 'correct' indices
+            valid_correct = [idx for idx in correct_indices if 0 <= idx < len(cleaned_options)]
+            if len(valid_correct) != len(correct_indices):
+                print(f"Warning: Adjusted correct indices for question {i} due to out-of-range values.")
+            q_type = "single" if len(valid_correct) == 1 else "multiple"
             question_obj = {
                 "id": -1, # Will be reassigned later if merged
                 "question": question_text,
                 "options": cleaned_options,
-                "correct": correct_indices,
+                "correct": valid_correct,
                 "explanation": explanation,
-                "source_pdf": os.path.basename(pdf_filename)
+                "source_pdf": os.path.basename(pdf_filename),
+                "type": q_type
                 # We remove 'source_topic_id' because we'll categorize by content
             }
             parsed_questions.append(question_obj)
 
         except Exception as e:
-            print(f"Error parsing question block {i}. Error: {e}\nBlock content: {block[:150]}...\n")
+            print(f"Error parsing question block {i}. Error: {e}\nBlock content:\n{block[:300]}...")
+            stats['skipped_parsing_error'] += 1
+            continue
 
-    return parsed_questions
+    return parsed_questions, stats
 
 def categorize_question(question_text, explanation):
     """Categorize a question into a domain based on its content."""
@@ -268,23 +292,31 @@ def main():
         return
 
     # 3. Parse the text to get question objects
-    extracted_questions = parse_questions_from_text(raw_text, INPUT_PDF_PATH)
+    extracted_questions, stats = parse_questions_from_text(raw_text, INPUT_PDF_PATH)
 
     # 4. Filter out duplicates and assign topics by content
     new_unique_questions = []
     misc_topic_name = 'miscellaneous'
-
+    skipped_due_to_duplication = 0
     for q in extracted_questions:
         signature = get_question_signature(q)
         if signature not in existing_signatures:
             # Categorize the question based on its content
             topic = categorize_question(q['question'], q.get('explanation', ''))
             q['topic'] = topic
-            
             new_unique_questions.append(q)
             existing_signatures.add(signature) # Add to set to dedupe within the same PDF
-    
-    print(f"Found {len(extracted_questions)} questions in PDF, {len(new_unique_questions)} are new.")
+        else:
+            skipped_due_to_duplication += 1
+
+    print(f"\n--- Import Summary ---")
+    print(f"Total question blocks found: {stats['total_blocks']}")
+    print(f" - Skipped due to missing answer: {stats['skipped_missing_answer']}")
+    print(f" - Skipped due to missing options: {stats['skipped_missing_options']}")
+    print(f" - Skipped DRAG DROP/SIM/HOTSPOT: {stats['skipped_dragdrop_sim_hotspot']}")
+    print(f" - Skipped due to parsing error: {stats['skipped_parsing_error']}")
+    print(f" - Skipped due to duplication: {skipped_due_to_duplication}")
+    print(f" - New questions saved: {len(new_unique_questions)}")
 
     # 5. Save the new, unique questions to the staging file
     if new_unique_questions:

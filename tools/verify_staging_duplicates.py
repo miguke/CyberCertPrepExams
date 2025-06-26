@@ -35,7 +35,7 @@ def main():
                     existing_signatures.add(get_question_signature(q))
 
     # Load the staging file
-    staging_file = os.path.join('..', 'new_questions_staging.json')
+    staging_file = os.path.join('..', 'data', '1101', 'new_questions_staging.json')
     if not os.path.exists(staging_file):
         print(f"Staging file not found: {staging_file}")
         return

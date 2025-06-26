@@ -11,7 +11,19 @@ def validate_questions(filepath):
     valid_count = 0
     invalid_questions = []
     
+    spam_phrases = [
+        'Passing Certification Exams Made Easy visit - https://www.surepassexam.com Recommend!! Get the Full 220-1101 dumps in VCE and PDF From SurePassExam https://www.surepassexam.com/220-1101-exam-dumps.html (443 New Questions)',
+        'Passing Certification Exams Made Easy visit - https://www.2PassEasy.com Welcome to download the Newest 2passeasy 220-1101 dumps https://www.2passeasy.com/dumps/220-1101/ (443 New Questions)'
+    ]
     for i, q in enumerate(questions, 1):
+        # Remove spam from question, options, and explanation
+        for spam in spam_phrases:
+            if 'question' in q and isinstance(q['question'], str):
+                q['question'] = q['question'].replace(spam, '').strip()
+            if 'explanation' in q and isinstance(q['explanation'], str):
+                q['explanation'] = q['explanation'].replace(spam, '').strip()
+            if 'options' in q and isinstance(q['options'], list):
+                q['options'] = [opt.replace(spam, '').strip() if isinstance(opt, str) else opt for opt in q['options']]
         errors = []
         
         if not q.get('question', '').strip():
@@ -80,7 +92,8 @@ if __name__ == "__main__":
         'networking.json',
         'troubleshooting.json',
         'virtualization-cloud.json',
-        'miscellaneous.json'
+        'miscellaneous.json',
+        'new_questions_staging.json'
     ]
     
     for q_file in question_files:

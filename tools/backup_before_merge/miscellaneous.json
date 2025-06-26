@@ -94,53 +94,5 @@
     "explanation": "Adjusting the lens is the best solution to improve image quality in a projector. The lens can become misaligned over time or during transportation, causing the\nimage to appear fuzzy.",
     "type": "single",
     "topic": "miscellaneous"
-  },
-  {
-    "id": 7,
-    "question": "Passing Certification Exams Made Easy visit - https://www.surepassexam.com\nRecommend!! Get the Full 220-1101 dumps in VCE and PDF From SurePassExam\nhttps://www.surepassexam.com/220-1101-exam-dumps.html (443 New Questions)\nA technician logs on to a PC and inserts an encrypted USB drive. When opening File Explorer, the technician cannot see the USB drive. Which of the following\ntools should the technician use to see all drives?",
-    "options": [
-      "DiskPart",
-      "Diskmgmt",
-      "Disk Cleanup",
-      "BitLocker"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "The tool that the technician should use to see all drives is Diskmgmt. Diskmgmt is a Windows utility that allows you to manage disk drives and partitions on your\ncomputer. It can be used to view all drives, including USB drives, that are connected to the computer12.",
-    "type": "single",
-    "topic": "miscellaneous"
-  },
-  {
-    "id": 8,
-    "question": "Which of the following video cables can carry an audio signal?",
-    "options": [
-      "HDMI",
-      "S-Video",
-      "VGA",
-      "DVI"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "This is because HDMI (High-Definition Multimedia Interface) is a digital video cable that can also carry audio signals1. HDMI cables are commonly used to\nconnect devices like Blu-ray players, game consoles, and streaming boxes to HDTVs and monitors. The other options are not capable of carrying audio signals.\nVGA (Video Graphics Array) is an analog video cable that only carries RGBHV signals12. S-Video (Super Video) is another analog video cable that carries\nseparate luminance and chrominance signals1. DVI (Digital Visual Interface) is a digital video cable that can carry either analog or digital signals, but not audio1.",
-    "type": "single",
-    "topic": "miscellaneous"
-  },
-  {
-    "id": 9,
-    "question": "A technician is installing a storage solution for a computer that requires data redundancy with the fewest drives possible. Which of the following would best meet\nthis requirement?",
-    "options": [
-      "RAID O",
-      "RAID 1",
-      "RAID 5",
-      "RAID 10"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "",
-    "type": "single",
-    "topic": "miscellaneous"
   }
 ]

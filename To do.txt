@@ -2,6 +2,7 @@ fix text issues like:
     - userâ€™s
     - desktopâ€™s
 Questions that need to be deleted.
+        anything with Mastered and not mastered in answers
     - HARDWARE
         - SIMULATION A small ISP has hired a new technician Joe, the new technician, is being trained to configure customers*
         - 

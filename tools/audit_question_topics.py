@@ -11,6 +11,7 @@ TOPIC_FILES = [
     "troubleshooting.json",
     "virtualization-cloud.json",
     "miscellaneous.json",
+    "new_questions_staging.json"
 ]
 
 def main():
