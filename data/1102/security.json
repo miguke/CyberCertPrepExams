@@ -1,0 +1,520 @@
+[
+    {
+        "id": -1,
+        "question": "An employee has repeatedly contacted a technician about malware infecting a work computer. The technician has removed the malware several times, but the\nuser's PC keeps getting infected. Which of the following should the technician do to reduce the risk of future infections?",
+        "options": [
+            "Configure the firewall.",
+            "Restore the system from backups.",
+            "Educate the end user",
+            "Update the antivirus program."
+        ],
+        "correct": [
+            2
+        ],
+        "explanation": "Malware is software that infects computer systems to damage, disable or exploit the computer or network for various malicious purposes5. Malware is typically\ndistributed via email attachments, fake internet ads, infected applications or websites, and often relies on user interaction to execute6. Therefore, one of the most\neffective ways to prevent malware infections is to educate the end user about the common signs and sources of malware, and how to avoid them7. Configuring the\nfirewall, restoring the system from backups, and updating the antivirus program are also important security measures, but they do not address the root cause of the\nuser\u2019s repeated infections, which is likely due to a lack of awareness or caution.\nReferences5: Malware: what it is, how it works, and how to stop it - Norton6: How to Prevent Malware: 15 Best Practices for Malware Prevention7: 10 Security Tips\nfor How to Prevent Malware Infections - Netwrix",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "single",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "Which of the following is the MOST basic version of Windows that includes BitLocker?",
+        "options": [
+            "Home",
+            "pro",
+            "Enterprise",
+            "Pro for Workstations"
+        ],
+        "correct": [
+            3
+        ],
+        "explanation": "The most basic version of Windows that includes BitLocker is Windows Pro. BitLocker is a feature of Windows Pro that provides full disk encryption for all data on\na storage drive [1]. It helps protect data from unauthorized access or theft and can help\nsecure data from malicious attacks. Pro for Workstations includes this feature, as well as other features such as support for up to 6 TB\nof RAM and ReFS.",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "single",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "A hotel's Wi-Fi was used to steal information on a corporate laptop. A technician notes the following security log:\nSRC: 192.168.1.1/secrets.zip Protocol SMB >> DST: 192.168.1.50/capture The technician analyses the following Windows firewall\ninformation:\nWhich of the following protocols most likely allowed the data theft to occur?",
+        "options": [
+            "1",
+            "53",
+            "110",
+            "445"
+        ],
+        "correct": [
+            3
+        ],
+        "explanation": "The protocol that most likely allowed the data theft to occur is SMB over TCP port 445. SMB is a network file sharing protocol that enables access to files, printers,\nand other resources on a network. Port 445 is used by SMB to communicate directly over TCP without the need for NetBIOS, which is an older and less secure\nprotocol. The security log shows that the source IP address 192.168.1.1 sent a file named secrets.zip using SMB protocol to the destination IP address\n192.168.1.50, which captured the file. The Windows firewall information shows that port 445 is enabled for inbound and outbound traffic, which means that it is not\nblocked by the firewall. Therefore, port 445 is the most likely port that was exploited by the attacker to steal the data from the corporate laptop.\nReferences:\n? SMB port number: Ports 445, 139, 138, and 137 explained1\n? What is an SMB Port + Ports 445 and 139 Explained2\n? CompTIA A+ Certification Exam Core 2 Objectives3",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "single",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "A Windows user recently replaced a computer The user can access the public internet on the computer; however, an internal site at\nhttps7/companyintranet.com:8888 is no longer loading. Which of the following should a technician adjust to resolve the issue?",
+        "options": [
+            "Default gateway settings",
+            "DHCP settings",
+            "IP address settings",
+            "Firewall settings",
+            "Antivirus settings"
+        ],
+        "correct": [
+            3
+        ],
+        "explanation": "The technician should adjust the firewall settings to resolve the issue of not being able to access an internal site at https://companyintranet.com:8888. The firewall\nsettings control how the firewall filters and allows network traffic based on rules and policies. The firewall settings may be blocking or preventing the access to the\ninternal site by mistake or by default, especially if the site uses a non-standard port number such as 8888. The technician should check and modify the firewall\nsettings to allow the access to the internal site or its port number. Default gateway settings determine how a computer connects to other networks or the internet.\nDefault gateway settings are not likely to cause the issue of not being able to access an internal site if the user can access the public internet. DHCP settings\ndetermine how a computer obtains its IP address and other network configuration parameters automatically from a DHCP server. DHCP settings are not likely to\ncause the issue of not being able to access an internal site if the user can access other network resources. IP address settings determine how a computer\nidentifies itself and communicates with other devices on a network. IP address settings are not likely to cause the issue of not being able to access an internal site\nif the user can access other network resources. Antivirus settings control how the antivirus software scans and protects the computer from malware and threats.\nAntivirus settings are less likely to cause the issue of not being able to access an internal site than firewall settings, unless the antivirus software has its own\nfirewall feature that may interfere with the network traffic. References: CompTIA A+ Core 2 (220-1002) Certification Exam Objectives Version 4.0, Domain 1.6",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "single",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "A small-office customer needs three PCs to be configured in a network with no server. Which of the following network types is the customer's BEST choice for this\nenvironment?",
+        "options": [
+            "Mastered",
+            "Not Mastered"
+        ],
+        "correct": [
+            0
+        ],
+        "explanation": "A workgroup network is a peer-to-peer network where each PC can share files and resources with other PCs without a central server. A public network is a\nnetwork that is accessible to anyone on the internet. A wide area network is a network that spans a large geographic area, such as a country or a continent. A\ndomain network is a network where a server controls the access and security of the PCs. Verified References: https://www.comptia.org/blog/network-types\nhttps://www.comptia.org/certifications/a",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "single",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "A technician is creating a tunnel that hides IP addresses and secures all network traffic. Which of the following protocols is capable of enduring enhanced security?",
+        "options": [
+            "DNS",
+            "IPS",
+            "VPN",
+            "SSH"
+        ],
+        "correct": [
+            2
+        ],
+        "explanation": "A VPN (virtual private network) is a protocol that creates a secure tunnel between two devices over the internet, hiding their IP addresses and encrypting their\ntraffic. DNS (domain name system) is a protocol that translates domain names to IP addresses. IPS (intrusion prevention system) is a device that monitors and\nblocks malicious network traffic. SSH (secure shell) is a protocol that allows remote access and command execution on another device. Verified References:\nhttps://www.comptia.org/blog/what-is-a-vpn\nhttps://www.comptia.org/certifications/a",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "single",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "Which of the following would MOST likely be deployed to enhance physical security for a building?",
+        "options": [
+            "Multifactor authentication",
+            "Badge reader",
+            "Personal identification number",
+            "Firewall",
+            "Motion sensor",
+            "Soft token"
+        ],
+        "correct": [
+            1,
+            4
+        ],
+        "explanation": "Badge reader and motion sensor are devices that can be deployed to enhance physical security for a building. A badge reader is a device that scans and verifies\nreader can help prevent unauthorized entry or\nan identification card or tag that grants access to authorized personnel only. A badge\nintrusion into a building or a restricted area. A motion sensor is a device that detects movement and triggers an alarm or an action when motion is detected. A\nmotion sensor can help deter or alert potential intruders or trespassers in a building or an area. Multifactor authentication is a method of verifying identity using two\nor more factors, such as something you know, something you have or something you are. Multifactor authentication is not a device that can be deployed to\nenhance physical security for a building but a technique that can be used to enhance logical security for systems or services. Personal identification number is a\nnumeric code that can be used as part of authentication or access control. Personal identification number is not a device that can be deployed to enhance physical\nsecurity for a building but an example of something you know factor in multifactor authentication. Firewall is a device or software that filters network traffic based on\nrules and policies. Firewall is not a device that can be deployed to enhance physical security for a building but a device that can be used to enhance network\nsecurity for systems or services. Soft token is an application or software that generates one-time passwords or codes for authentication purposes. Soft token is not\na device that can be deployed to enhance physical security for a building but an example of something you have factor in multifactor authentication. References:\nCompTIA A+ Core 2 (220-1002) Certification Exam Objectives Version 4.0, Domain 3.3",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "multiple",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "A user has requested help setting up the fingerprint reader on a Windows 10 laptop. The laptop is equipped with a fingerprint reader\nand is joined to a domain Group Policy enables Windows Hello on all computers in the environment. Which of the following options describes how to set up\nWindows Hello Fingerprint for the user?",
+        "options": [
+            "Navigate to the Control Panel utility, select the Security and Maintenance submenu, select Change Security and Maintenance settings, select Windows Hello Fingerprint, and have the user place a fingerprint on the fingerprint reader repeatedly until Windows indicates setup is complete",
+            "Navigate to the Windows 10 Settings menu, select the Accounts submenu, select Sign in options, select Windows Hello Fingerprint, and have the user place a fingerprint on the fingerprint reader repeatedly until Windows indicates setup is complete. The Leader of IT Certification visit - https://www.certleader.com 100% Valid and Newest Version 220-1102 Questions & Answers shared by Certleader https://www.certleader.com/220-1102-dumps.html (402 Q&As)",
+            "Navigate to the Windows 10 Settings menu, select the Update & Security submenu select Windows Security, select Windows Hello Fingerprint and have the user place a fingerprint on the fingerprint reader repeatedly until Windows indicates setup is complete",
+            "Navigate to the Control Panel utility, select the Administrative Tools submenu, select the user account in the list, select Windows Hello Fingerprint, and have the user place a fingerprint on the fingerprint reader repeatedly until Windows indicates setup is complete."
+        ],
+        "correct": [
+            1
+        ],
+        "explanation": "Navigate to the Windows 10 Settings menu, select the Accounts submenu, select Sign in options, select Windows Hello Fingerprint, and have the user place a\nfingerprint on the fingerprint reader repeatedly until Windows indicates setup is complete. Windows Hello Fingerprint can be set up by navigating to the Windows\n10 Settings menu, selecting the Accounts submenu, selecting Sign in options, and then selecting Windows Hello Fingerprint. The user will then be asked to place a\nfingerprint on the fingerprint reader repeatedly until Windows indicates that setup is complete. Windows Hello Fingerprint allows the user to log into the laptop\nusing just their fingerprint, providing an additional layer of security.",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "single",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "A computer on a corporate network has a malware infection. Which of the following would be the BEST method for returning the computer to service?",
+        "options": [
+            "Scanning the system with a Linux live disc, flashing the BIOS, and then returning the computer to service",
+            "Flashing the BIOS, reformatting the drive, and then reinstalling the OS",
+            "Degaussing the hard drive, flashing the BIOS, and then reinstalling the OS",
+            "Reinstalling the O",
+            "flashing the BIOS, and then scanning with on-premises antivirus"
+        ],
+        "correct": [
+            1
+        ],
+        "explanation": "Flashing the BIOS, reformatting the drive, and then reinstalling the OS is the best method\nfor returning a computer with a malware infection to service. Flashing the BIOS updates the firmware of the motherboard and can\nremove any malware that may have infected it. Reformatting the drive erases all data on it and can remove any malware that may have infected it. Reinstalling the\nOS restores the system files and settings to their original state and can remove any malware that may have modified them. Scanning the system with a Linux live\ndisc may not detect or remove all malware infections. Degaussing the hard drive is an extreme method of destroying data that may damage the drive beyond\nrepair. Reinstalling the OS before flashing the BIOS or scanning with antivirus may not remove malware infections that persist in the BIOS or other files.",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "single",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "Which of the following is also known as something you know, something you have, and something you are?",
+        "options": [
+            "ACL",
+            "MFA",
+            "SMS",
+            "NFC"
+        ],
+        "correct": [
+            1
+        ],
+        "explanation": "MFA stands for Multi-Factor Authentication, which is a method of verifying a user\u2019s identity using two or more different factors of authentication. The three factors\nof authentication are something you know, something you have, and something you are. These factors correspond to different types of information or evidence that\nonly the legitimate user should possess or provide. For example:\n? Something you know: a password, a PIN, a security question, etc.\n? Something you have: a smart card, a token, a mobile device, etc.\n? Something you are: a fingerprint, a face, an iris, etc.\nMFA provides a higher level of security than single-factor authentication, which only uses one factor, such as a password. MFA reduces the risk of unauthorized\naccess, identity theft, and data breaches, as an attacker would need to compromise more than one factor to impersonate a user. MFA is commonly used for online\nbanking, email accounts, cloud services, and other sensitive applications",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "single",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "A company-owned mobile device is displaying a high number of ads, receiving data-usage limit notifications, and experiencing slow response. After checking the\ndevice, a technician notices the device has been jailbroken. Which of the following should the technician do next?",
+        "options": [
+            "Run an antivirus and enable encryption.",
+            "Restore the defaults and reimage the corporate OS.",
+            "Back up the files and do a system restore.",
+            "Undo the jailbreak and enable an antivirus."
+        ],
+        "correct": [
+            1
+        ],
+        "explanation": "The best course of action for the technician is to restore the defaults and reimage the corporate OS on the device. This will remove the jailbreak and any\nunauthorized or malicious apps that may have been installed on the device, as well as restore the security features and policies that the company has set for its\ndevices. This will also ensure that the device can receive the latest updates and patches from the manufacturer and the company, and prevent any data leakage or\ncompromise from the device.\nJailbreaking is a process of bypassing the built-in security features of a device to install software other than what the manufacturer has made available for that\ndevice1. Jailbreaking allows the device owner to gain full access to the root of the operating system and access all the features1. However, jailbreaking also\nexposes the device to various risks, such as:\n? The loss of warranty from the device manufacturers2.\n? Inability to update software until a jailbroken version becomes available2.\n? Increased security vulnerabilities32.\n? Decreased battery life2.\n? Increased volatility of the device2.\nSome of the signs of a jailbroken device are:\n? A high number of ads, which may indicate the presence of adware or spyware on the device3.\n? Receiving data-usage limit notifications, which may indicate the device is sending or receiving data in the background without the user\u2019s knowledge or consent3.\n? Experiencing slow response, which may indicate the device is running unauthorized or malicious apps that consume resources or interfere with the normal\nfunctioning of the device3.\n? Finding apps or icons that the user did not install or recognize, such as Cydia, which is a storefront for jailbroken iOS devices1.\nThe other options are not sufficient or appropriate for dealing with a jailbroken device. Running an antivirus and enabling encryption may not detect or remove all\nthe threats or vulnerabilities that the jailbreak has introduced, and may not restore the device to its original state or functionality. Backing up the files and doing a\nsystem restore may not erase the jailbreak or the unauthorized apps, and may also backup the infected or compromised files. Undoing the jailbreak and enabling\nan antivirus may not be possible or effective, as the jailbreak may prevent the device from updating or installing security software, and may also leave traces of the\njailbreak or the unauthorized apps on the device.\nReferences:\n? CompTIA A+ Certification Exam Core 2 Objectives4\n? CompTIA A+ Core 2 (220-1102) Certification Study Guide5\n? What is Jailbreaking & Is it safe? - Kaspersky1\n? Is Jailbreaking Safe? The ethics, risks and rewards involved - Comparitech3\n? Jailbreaking : Security risks and moving past them2",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "single",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "While trying to repair a Windows 10 OS, a technician receives a prompt asking for a key. The technician tries the administrator password, but it is rejected. Which\nof the following does the technician need in order to continue the OS repair?",
+        "options": [
+            "SSL key",
+            "Preshared key",
+            "WPA2 key",
+            "Recovery key"
+        ],
+        "correct": [
+            3
+        ],
+        "explanation": "The Leader of IT Certification visit - https://www.certleader.com\n100% Valid and Newest Version 220-1102 Questions & Answers shared by Certleader\nhttps://www.certleader.com/220-1102-dumps.html (402 Q&As)\nA recovery key is a code that can be used to unlock a BitLocker-encrypted drive when the normal authentication methods (such as password or PIN) are not\navailable or have been forgotten. BitLocker is a feature of Windows that encrypts the entire drive to protect data from unauthorized access. If a technician is trying\nto repair a Windows 10 OS that has BitLocker enabled, they will need the recovery key to access the drive and continue the OS repair. SSL key, preshared key,\nand WPA2 key are not keys that are related to BitLocker or OS repair.",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "single",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "A company is experiencing a DDoS attack. Several internal workstations are the source of the traffic. Which of the following types of infections are the workstations\nmost likely experiencing?",
+        "options": [
+            "Zombies",
+            "Keylogger",
+            "Adware",
+            "Botnet",
+            "Ransomware The Leader of IT Certification visit - https://www.certleader.com 100% Valid and Newest Version 220-1102 Questions & Answers shared by Certleader https://www.certleader.com/220-1102-dumps.html (402 Q&As)",
+            "Spyware"
+        ],
+        "correct": [
+            0,
+            3
+        ],
+        "explanation": "Zombies and botnets are terms that describe the types of infections that can cause internal workstations to participate in a DDoS (distributed denial-of-service)\nattack. A DDoS attack is a malicious attempt to disrupt the normal functioning of a website or a network by overwhelming it with a large amount of traffic from\nmultiple sources. Zombies are infected computers that are remotely controlled by hackers without the owners\u2019 knowledge or consent. Botnets are networks of\nzombies that are coordinated by hackers to launch DDoS attacks or other malicious activities. Keylogger, adware, ransomware, and spyware are not types of\ninfections that can cause internal workstations to participate in a DDoS attack.",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "multiple",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "A technician has verified that a user's computer has a virus and the antivirus software is out of date. Which of the following steps should the technician take next?",
+        "options": [
+            "Quarantine the computer.",
+            "Use a previous restore point.",
+            "Educate the end user about viruses.",
+            "Download the latest virus definitions."
+        ],
+        "correct": [
+            3
+        ],
+        "explanation": "The first step in removing a virus from a computer is to update the antivirus software with the latest virus definitions. Virus definitions are files that contain\ninformation about the characteristics and behavior of known viruses and malware. They help the antivirus software to identify and remove the malicious threats\nfrom the computer. Without the latest virus definitions, the antivirus software may not be able to detect or remove the virus that infected the user\u2019s computer.\nTherefore, the technician should download the latest virus definitions from the antivirus vendor\u2019s website or use the update feature in the antivirus program before\nscanning the computer for viruses.\nReferences:\n? How to remove malware or viruses from my Windows 10 PC, section 21\n? How to Remove a Virus From a Computer in 2023, section 32\n? The Official CompTIA A+ Core 2 Study Guide (220-1102), page 2193\nThe Leader of IT Certification visit - https://www.certleader.com\n100% Valid and Newest Version 220-1102 Questions & Answers shared by Certleader\nhttps://www.certleader.com/220-1102-dumps.html (402 Q&As)",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "single",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "The findings from a security audit indicate the risk of data loss from lost or stolen laptops is high. The company wants to reduce this risk with minimal impact to\nusers who want to use their laptops when not on the network. Which of the following would BEST reduce this risk for Windows laptop users?",
+        "options": [
+            "Requiring strong passwords",
+            "Disabling cached credentials",
+            "Requiring MFA to sign on",
+            "Enabling BitLocker on all hard drives"
+        ],
+        "correct": [
+            3
+        ],
+        "explanation": "BitLocker is a disk encryption tool that can be used to encrypt the hard drive of a Windows laptop. This will protect the data stored on the drive in the event that the\nlaptop is lost or stolen, and will help to reduce the risk of data loss. Additionally, BitLocker can be configured to require a PIN or other authentication in order to\nunlock the drive, providing an additional layer of security.",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "single",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "A user's corporate phone was stolen, and the device contains company trade secrets. Which of the following technologies should be implemented to mitigate this\nrisk?",
+        "options": [
+            "Remote wipe",
+            "Firewall",
+            "Device encryption",
+            "Remote backup",
+            "Antivirus",
+            "Global Positioning System"
+        ],
+        "correct": [
+            0,
+            2
+        ],
+        "explanation": "Remote wipe is a feature that allows data to be deleted from a device or system remotely by an administrator or owner1. It is used to protect data from being\ncompromised if the device is lost, stolen, or changed hands1. Device encryption is a feature that helps protect the data on a device by making it unreadable to\nunauthorized users2. It requires a key or a password to access the data2. Both features can help mitigate the risk of losing company trade secrets if a corporate\nphone is stolen.\nReferences: 1: How to remote wipe Windows laptop (https://www.thewindowsclub.com/remote-wipe-windows-10) 2: Device encryption in Windows\n(https://support.microsoft.com/en-us/windows/device-encryption-in-windows-ad5dcf4b-dbe0-2331-228f-7925c2a3012d)",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "multiple",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "A hard drive that previously contained PI I needs to be repurposed for a public access workstation. Which of the following data destruction methods should a\ntechnician use to ensure data is completely removed from the hard drive?",
+        "options": [
+            "Shredding",
+            "Degaussing The Leader of IT Certification visit - https://www.certleader.com 100% Valid and Newest Version 220-1102 Questions & Answers shared by Certleader https://www.certleader.com/220-1102-dumps.html (402 Q&As)",
+            "Low-level formatting",
+            "Recycling"
+        ],
+        "correct": [
+            0
+        ],
+        "explanation": "Shredding is a data destruction method that physically destroys the hard drive by cutting it into small pieces using a machine. Shredding ensures that data is\ncompletely removed from the hard drive and cannot be recovered by any means. Shredding is suitable for hard drives that contain PII (personally identifiable\nwhich is any information that can be used to identify, contact, or locate an individual. Degaussing, low-level formatting, and\ninformation),\nrecycling are not data destruction methods that can guarantee complete data removal from a hard drive.",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "single",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "A user contacts a technician about an issue with a laptop. The user states applications open without being launched and the browser redirects when trying to go to\ncertain websites. Which of the following is MOST likely the cause of the user's issue?",
+        "options": [
+            "Keylogger",
+            "Cryptominers",
+            "Virus",
+            "Malware"
+        ],
+        "correct": [
+            3
+        ],
+        "explanation": "The most likely cause of the user\u2019s issue of applications opening without being launched and browser redirects when trying to go to certain websites is malware.\nMalware is a general term that refers to any software or code that is malicious or harmful to a computer or system. Malware can perform various unwanted or\nunauthorized actions on a computer or system, such as opening applications, redirecting browsers, displaying ads, stealing data, encrypting files or damaging\nhardware. Malware can infect a computer or system through various means, such as email attachments, web downloads, removable media or network\nconnections. Keylogger is a type of malware that records and transmits the keystrokes made by a user on a keyboard. Keylogger can be used to steal personal or\nsensitive information, such as passwords, credit card numbers or chat messages. Keylogger does not typically open applications or redirect browsers but only\nThe Leader of IT Certification visit - https://www.certleader.com\n100% Valid and Newest Version 220-1102 Questions & Answers shared by Certleader\nhttps://www.certleader.com/220-1102-dumps.html (402 Q&As)\ncaptures user inputs. Cryptominers are a type of malware that use the computing resources of a computer or system to mine cryptocurrency, such as Bitcoin or\nEthereum. Cryptominers can degrade the performance and increase the power consumption of a computer or system. Cryptominers do not typically open\non\napplications or redirect browsers but only consume CPU or GPU cycles. Virus is a type of malware that infects and replicates itself\nother files or programs on a computer or system.",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "single",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "A user reports a workstation has been performing strangely after a suspicious email was opened on it earlier in the week. Which of the following should the\ntechnician perform FIRST?",
+        "options": [
+            "Mastered",
+            "Not Mastered"
+        ],
+        "correct": [
+            0
+        ],
+        "explanation": "https://partners.comptia.org/docs/default-source/resources/comptia-a-220-1102-exam-objectives-(3-0)\nWhen a user reports that their workstation is behaving strangely after opening a suspicious email, the first step a technician should take is to run a virus scan on\nthe computer. This is because opening a suspicious email is a common way for viruses and malware to infect a computer. Running a virus scan can help identify\nand remove any infections that may be causing the computer to behave strangely.",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "single",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "A Windows workstation that was recently updated with approved system patches shut down instead of restarting. Upon reboot, the technician notices an alert\nstating the workstation has malware in the root OS folder. The technician promptly performs a System Restore and reboots the workstation, but the malware is still\ndetected. Which of the following BEST describes why the system still has malware?",
+        "options": [
+            "A system patch disabled the antivirus protection and host firewall.",
+            "The system updates did not include the latest anti-malware definitions.",
+            "The system restore process was compromised by the malware.",
+            "The malware was installed before the system restore point was created."
+        ],
+        "correct": [
+            3
+        ],
+        "explanation": "The best explanation for why the system still has malware after performing a System Restore is that the malware was installed before the system restore point was\ncreated. A system restore point is a snapshot of the system settings and configuration at a certain point in time. A System Restore is a feature that allows users to\nrestore their system to a previous state in case of problems or errors. However, a System Restore does not affect personal files or folders, and it may not remove\nmalware that was already present on the system before the restore point was created. A system patch disabling the antivirus protection and host firewall may\nexplain why the malware persists after a System Restore. The system updates not\nincrease the risk of malware infection, but it does not\nincluding the latest anti-malware definitions may reduce the effectiveness of malware detection and removal, but it does not explain why the malware persists after\na System Restore. The system restore process being compromised by the malware may prevent a successful System Restore, but it does not explain why the\nmalware persists after a System Restore. References: CompTIA A+ Core 2 (220-1002) Certification Exam Objectives Version 4.0, Domain 1.3",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "single",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "Which of the following operating systems is most commonly used in embedded systems?",
+        "options": [
+            "Chrome OS",
+            "macOS",
+            "Windows",
+            "Linux"
+        ],
+        "correct": [
+            3
+        ],
+        "explanation": "Linux is the most commonly used operating system in embedded systems because it is open source, free, customizable, and supports a wide range of\narchitectures and devices. Linux also offers many advantages for embedded development, such as real- time capabilities, modularity, security, scalability, and\nreliability. Linux can run on embedded systems with limited resources, such as memory, storage, or power, and can be tailored to the specific needs of the\napplication. Linux also has a large and active community of developers and users who contribute to its improvement and\ninnovation. Some examples of embedded systems that use Linux are smart TVs, routers,\ndrones, robots, smart watches, and IoT devices",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "single",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "A user's smartphone data usage is well above average. The user suspects an installed application is transmitting data in the background. The user would like to be\nalerted when an application attempts to communicate with the internet. Which of the following BEST addresses the user's concern?",
+        "options": [
+            "Operating system updates",
+            "Remote wipe",
+            "Antivirus",
+            "Firewall"
+        ],
+        "correct": [
+            3
+        ],
+        "explanation": "A firewall is a security system that monitors and controls incoming and outgoing network traffic based on predetermined security rules. In this scenario, the user is\nconcerned about an installed application transmitting data in the background, so a firewall would be the best solution to address their concern. By installing and\nconfiguring a firewall, the user can block unauthorized connections to and from the device, and receive alerts whenever an application tries to access the internet.",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "single",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "A technician is concerned about a large increase in the number of whaling attacks happening in the industry. The technician wants to limit the company's risk to\navoid any issues. Which of the following items should the technician implement?",
+        "options": [
+            "Screened subnet",
+            "Firewall",
+            "Anti-phishing training",
+            "Antivirus"
+        ],
+        "correct": [
+            2
+        ],
+        "explanation": "Anti-phishing training is a method of educating users on how to identify and avoid phishing attacks, which are attempts to trick users into revealing sensitive\ninformation or performing malicious actions by impersonating legitimate entities or persons. Whaling attacks are a specific type of phishing attack that target high-\nlevel executives or influential individuals within an organization. Anti-phishing training can help users recognize the signs of whaling attacks and prevent them from\nfalling victim to them. Screened subnet, firewall, and antivirus are not items that can directly address the issue of whaling attacks.",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "single",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "A company is recycling old hard drives and wants to quickly reprovision the drives for reuse. Which of the following data destruction methods should the company\nuse?",
+        "options": [
+            "Degaussing",
+            "Standard formatting",
+            "Low-level wiping",
+            "Deleting"
+        ],
+        "correct": [
+            2
+        ],
+        "explanation": "Low-level wiping is the best data destruction method for recycling old hard drives for reuse. Low-level wiping is a process that overwrites every bit of data on a\ndrive with zeros or random patterns, making it impossible to recover any data from the drive. Low-level wiping also restores the\nhard\ndrive to its factory state, removing any bad sectors or errors that may have accumulated over time. Low-level wiping can be done using specialized software tools\nor hardware devices that connect to the drive. Degaussing, standard formatting, and deleting are not suitable data destruction methods for recycling old hard\ndrives for reuse. Degaussing is a process that exposes a hard drive to a strong magnetic field, destroying both the data and the drive itself. Degaussing renders\nthe drive unusable for reuse. Standard formatting is a process that erases the data on a hard drive by removing the file system structure, but it does not overwrite\nthe data itself. Standard formatting leaves some data recoverable using forensic tools or software utilities. Deleting is a process that removes the data from a hard\ndrive by marking it as free space, but it does not erase or overwrite the data itself. Deleting leaves most data recoverable using undelete tools or software utilities.\nReferences:\n? Official CompTIA learning resources CompTIA A+ Core 1 and Core 2, page 15\n? CompTIA A+ Complete Study Guide: Core 1 Exam 220-1101 and Core 2 Exam \u2026, page 105",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "single",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "A manager called the help desk to ask for assistance with creating a more secure environment for the finance department- which resides in a non-domain\nenvironment. Which of the following would be the BEST method to protect against unauthorized use?",
+        "options": [
+            "Implementing password expiration",
+            "Restricting user permissions",
+            "Using screen locks",
+            "Disabling unnecessary services"
+        ],
+        "correct": [
+            1
+        ],
+        "explanation": "Restricting user permissions is a method of creating a more secure environment for the finance department in a non-domain environment. This means that users\nwill only have access to the files and resources that they need to perform their tasks and will not be able to modify or delete other files or settings that could\ncompromise security or functionality.",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "single",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "A technician has just used an anti-malware removal tool to resolve a user's malware issue on a corporate laptop. Which of the following BEST describes what the\ntechnician should\ndo before returning the laptop to the user?",
+        "options": [
+            "Educate the user on malware removal.",
+            "Educate the user on how to reinstall the laptop OS.",
+            "Educate the user on how to access recovery mode.",
+            "Educate the user on common threats and how to avoid them."
+        ],
+        "correct": [
+            3
+        ],
+        "explanation": "educating the user on common threats and how to avoid them (D) would be a good step before returning the laptop to the user. This can help prevent similar\nissues from happening again.\nThe Leader of IT Certification visit - https://www.certleader.com\n100% Valid and Newest Version 220-1102 Questions & Answers shared by Certleader\nhttps://www.certleader.com/220-1102-dumps.html (402 Q&As)",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "single",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "A technician is troubleshooting a PC that has been performing poorly. Looking at the Task Manager, the technician sees that CPU and\nmemory resources seem fine, but disk throughput is at 100%.\nWhich of the following types of malware is the system MOST likely infected with?",
+        "options": [
+            "Keylogger",
+            "Rootkit",
+            "Ransomware",
+            "Trojan"
+        ],
+        "correct": [
+            2
+        ],
+        "explanation": "Ransomware is a type of malware that encrypts the files on the victim\u2019s computer and demands a ransom for their decryption. Ransomware can cause high disk\nthroughput by encrypting large amounts of data in a short time.",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "single",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "Which of the following protocols supports fast roaming between networks?",
+        "options": [
+            "WEP",
+            "WPA",
+            "WPA2",
+            "LEAP",
+            "PEAP"
+        ],
+        "correct": [
+            1
+        ],
+        "explanation": "WPA2 is the only protocol among the options that supports fast roaming between\nnetworks. Fast roaming, also known as IEEE 802.11r or Fast BSS Transition (FT), enables a client device to roam quickly in environments implementing WPA2\nEnterprise security, by ensuring that the client device does not need to re-authenticate to the RADIUS server\nevery time it roams from one access point to another1. WEP, WPA, LEAP, and PEAP do not support fast roaming and require the client device to perform the full\nauthentication process every time it roams, which can cause delays and interruptions in the network service.\nReferences:\n? The Official CompTIA A+ Core 2 Study Guide2, page 263.\n? WiFi Fast Roaming, Simplified3",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "single",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "Which of the following protects a mobile device against unwanted access when it is left unattended?",
+        "options": [
+            "PIN code",
+            "OS updates",
+            "Antivirus software",
+            "BYOD policy"
+        ],
+        "correct": [
+            0
+        ],
+        "explanation": "A PIN code is a numeric password that protects a mobile device against unwanted access when it is left unattended. It requires the user to enter the correct code\nbefore unlocking the device. OS updates, antivirus software and BYOD policy are other security measures for mobile devices, but they do not prevent\nunauthorized access when the device is left unattended. Verified References: https://www.comptia.org/blog/mobile- device-security\nhttps://www.comptia.org/certifications/a",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "single",
+        "topic": "security"
+    },
+    {
+        "id": -1,
+        "question": "A user's antivirus software reports an infection that it is unable to remove. Which of the following is the most appropriate way to remediate the issue?",
+        "options": [
+            "Disable System Restore.",
+            "Utilize a Linux live disc.",
+            "Quarantine the infected system.",
+            "Update the anti-malware."
+        ],
+        "correct": [
+            2
+        ],
+        "explanation": "Quarantining the infected system is the most appropriate way to remediate the issue of an infection that the antivirus software cannot remove. Quarantining means\nisolating the system from the network and other devices to prevent the infection from spreading or causing further damage. Quarantining also allows the technician\nto perform further analysis and removal of the infection without risking the security of other systems or data.\nSome of the steps involved in quarantining an infected system are:\n? Disconnect the system from the internet and any local network connections, such as Wi-Fi, Ethernet, Bluetooth, or USB.\n? Disable any file-sharing or remote access services on the system, such as Windows File Sharing, Remote Desktop, or TeamViewer.\n? Use a separate device to download and update the antivirus software and any other tools that may be needed to remove the infection, such as malware\nscanners, rootkit removers, or bootable rescue disks.\n? Transfer the updated antivirus software and tools to the infected system using a removable media, such as a CD, DVD, or USB flash drive. Scan the removable\nmedia for any infections before and after using it on the infected system.\n? Run the antivirus software and tools on the infected system and follow the instructions to delete or quarantine the infection. If the infection is persistent or\ncomplex, it may require booting the system from a rescue disk or using a Linux live disc to access and clean the system files.\n? After the infection is removed, restore the system to a previous clean state using\nSystem Restore, backup, or recovery partition. Scan the system again to ensure that it is clean and secure. Reconnect the system to the network and update the\nsystem and the antivirus software.\nReferences:\n? How to Identify and Repair Malware or Virus Infected Computers, section 31\n? Uninstalling Antivirus Software, the Clean Way: 40 Removal Tools & Instructions, section 22\n? How to manually remove an infected file from a Windows computer3\n? The Official CompTIA A+ Core 2 Study Guide (220-1102), page 2194",
+        "source_pdf": "220-1102_1.pdf",
+        "type": "single",
+        "topic": "security"
+    }
+]

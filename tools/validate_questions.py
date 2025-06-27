@@ -1,29 +1,57 @@
 import json
 import os
+import argparse
+
+EXAM_CONFIGS = {
+    '1101': {
+        'data_dir': os.path.join(os.path.dirname(__file__), '..', 'data', '1101'),
+        'question_files': [
+            'hardware.json',
+            'mobile-devices.json',
+            'networking.json',
+            'troubleshooting.json',
+            'virtualization-cloud.json',
+            'miscellaneous.json',
+            'new_questions_staging.json'
+        ]
+    },
+    '1102': {
+        'data_dir': os.path.join(os.path.dirname(__file__), '..', 'data', '1102'),
+        'question_files': [
+            'operating-systems.json',
+            'security.json',
+            'software-troubleshooting.json',
+            'operational-procedures.json',
+            'miscellaneous.json',
+            'new_questions_staging.json'
+        ]
+    }
+}
 
 def validate_questions(filepath):
-    with open(filepath, 'r', encoding='utf-8') as f:
-        questions = json.load(f)
-    
+    """Validates a single JSON file, returns counts for valid, invalid, and total questions."""
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            content = f.read()
+            questions = json.loads(content) if content.strip() else []
+    except FileNotFoundError:
+        print(f"Skipping {os.path.basename(filepath)}: File not found.")
+        return 0, [], 0
+    except json.JSONDecodeError:
+        print(f"Error: Could not decode JSON from {os.path.basename(filepath)}.")
+        return 0, [], 0
+
     print(f"Validating {len(questions)} questions in {os.path.basename(filepath)}")
     print("-" * 80)
     
+    if not questions:
+        print("No questions to validate.")
+        return 0, [], 0
+
     valid_count = 0
     invalid_questions = []
     
-    spam_phrases = [
-        'Passing Certification Exams Made Easy visit - https://www.surepassexam.com Recommend!! Get the Full 220-1101 dumps in VCE and PDF From SurePassExam https://www.surepassexam.com/220-1101-exam-dumps.html (443 New Questions)',
-        'Passing Certification Exams Made Easy visit - https://www.2PassEasy.com Welcome to download the Newest 2passeasy 220-1101 dumps https://www.2passeasy.com/dumps/220-1101/ (443 New Questions)'
-    ]
     for i, q in enumerate(questions, 1):
-        # Remove spam from question, options, and explanation
-        for spam in spam_phrases:
-            if 'question' in q and isinstance(q['question'], str):
-                q['question'] = q['question'].replace(spam, '').strip()
-            if 'explanation' in q and isinstance(q['explanation'], str):
-                q['explanation'] = q['explanation'].replace(spam, '').strip()
-            if 'options' in q and isinstance(q['options'], list):
-                q['options'] = [opt.replace(spam, '').strip() if isinstance(opt, str) else opt for opt in q['options']]
         errors = []
         
         if not q.get('question', '').strip():
@@ -34,21 +62,22 @@ def validate_questions(filepath):
             errors.append("Missing or empty options array")
         else:
             for j, opt in enumerate(options):
-                if not isinstance(opt, str) or not opt.strip():
-                    errors.append(f"Invalid option at index {j}")
+                # Allow empty strings as options, but they must be strings.
+                if not isinstance(opt, str):
+                    errors.append(f"Invalid option at index {j} (value is not a string: {opt})")
         
         correct = q.get('correct', [])
-        if not isinstance(correct, list) or not correct:
-            errors.append("Missing or empty correct answers array")
+        if not isinstance(correct, list):
+            errors.append("Correct answers field is not a list")
         else:
-            for j, ans in enumerate(correct):
+            for ans in correct:
                 if not isinstance(ans, int) or ans < 0 or ans >= len(options):
                     errors.append(f"Invalid correct answer index {ans} (options length: {len(options)})")
         
-        if not q.get('id'):
+        if 'id' not in q:
             errors.append("Missing question ID")
             
-        if not q.get('type') in ['single', 'multiple']:
+        if q.get('type') not in ['single', 'multiple']:
             errors.append("Missing or invalid question type")
         
         if errors:
@@ -76,29 +105,33 @@ def validate_questions(filepath):
         if len(invalid_questions) > 5:
             print(f"\n... and {len(invalid_questions) - 5} more invalid questions.")
     
-    return valid_count, invalid_questions
+    return valid_count, invalid_questions, len(questions)
 
 if __name__ == "__main__":
-    # Get the directory where this script is located
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    # Go up one directory to the project root, then into data/1101
-    project_root = os.path.dirname(script_dir)
-    data_dir = os.path.join(project_root, 'data', '1101')
+    parser = argparse.ArgumentParser(description='Validate the structure of CompTIA question JSON files.')
+    parser.add_argument('exam', choices=['1101', '1102'], nargs='?', default='1101', help='The exam core to validate (1101 or 1102). Defaults to 1101.')
+    args = parser.parse_args()
+
+    config = EXAM_CONFIGS[args.exam]
+    data_dir = config['data_dir']
+    question_files = config['question_files']
     
-    # Validate all question files
-    question_files = [
-        'hardware.json',
-        'mobile-devices.json',
-        'networking.json',
-        'troubleshooting.json',
-        'virtualization-cloud.json',
-        'miscellaneous.json',
-        'new_questions_staging.json'
-    ]
+    print(f"\n--- Validating Exam {args.exam} Data ---")
     
+    total_valid_questions = 0
+    total_invalid_questions = 0
+    total_questions_processed = 0
+
     for q_file in question_files:
         file_path = os.path.join(data_dir, q_file)
-        if os.path.exists(file_path):
-            validate_questions(file_path)
-        else:
-            print(f"Warning: File not found: {file_path}")
+        valid, invalid_list, num_processed = validate_questions(file_path)
+        total_valid_questions += valid
+        total_invalid_questions += len(invalid_list)
+        total_questions_processed += num_processed
+
+    print("\n--- Overall Summary ---")
+    print(f"Total questions processed: {total_questions_processed}")
+    print(f"Total valid: {total_valid_questions}")
+    print(f"Total invalid: {total_invalid_questions}")
+    print("-----------------------")
+

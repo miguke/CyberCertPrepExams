@@ -7,14 +7,14 @@ import pdfplumber
 
 # 1. Define the exam configuration you want to use.
 #    Options: '1101_CORE_1', '1102_CORE_2'
-SELECTED_CONFIG = '1101_CORE_1'
+SELECTED_CONFIG = '1102_CORE_2'
 
 # 2. Specify the input PDF file.
-INPUT_PDF_PATH = os.path.join(os.path.dirname(__file__), '..', "PDF's", '220-1101_5.pdf')
+INPUT_PDF_PATH = os.path.join(os.path.dirname(__file__), '..', "PDF's", '220-1102_1.pdf')
 
 # 3. Specify the output file for newly extracted, unique questions.
 #    The script will not modify your main topic files directly.
-STAGING_OUTPUT_FILE = os.path.join(os.path.dirname(__file__), '..', 'data', '1101', 'new_questions_staging.json')
+STAGING_OUTPUT_FILE = os.path.join(os.path.dirname(__file__), '..', 'data', '1102', 'new_questions_staging.json')
 
 # --- EXAM-SPECIFIC MAPPINGS ---
 
@@ -40,15 +40,17 @@ CONFIGURATIONS = {
     '1102_CORE_2': {
         'data_dir': os.path.join(os.path.dirname(__file__), '..', 'data', '1102'),
         'topic_map': {
-            # TODO: Define the topic number to topic key mapping for 220-1102
-            # Example:
-            # 1: 'operating-systems',
-            # 2: 'security',
-            # 3: 'software-troubleshooting',
-            # 4: 'operational-procedures',
+            1: 'operating-systems',
+            2: 'security',
+            3: 'software-troubleshooting',
+            4: 'operational-procedures',
         },
         'topic_files': [
-            # TODO: Add the filenames for 220-1102 topics
+            'operating-systems.json',
+            'security.json',
+            'software-troubleshooting.json',
+            'operational-procedures.json',
+            'miscellaneous.json'
         ]
     }
 }
@@ -264,6 +266,73 @@ def categorize_question(question_text, explanation):
     else:
         return 'miscellaneous'
 
+def categorize_question_core2(question_text, explanation):
+    """Categorize a Core 2 question into a domain based on its content."""
+    content = (question_text + " " + explanation).lower()
+    keywords = {
+        'operating-systems': [
+            ('windows', 3), ('macos', 3), ('linux', 3), ('chrome os', 2), ('android', 2), ('ios', 2),
+            ('install', 3), ('configure', 2), ('upgrade', 2), ('reimage', 3), ('boot', 2), ('partition', 2),
+            ('file system', 2), ('ntfs', 3), ('fat32', 2), ('ext4', 2), ('apfs', 2), ('hfs', 2),
+            ('command line', 2), ('cmd', 2), ('powershell', 2), ('terminal', 2), ('command prompt', 2),
+            ('msconfig', 2), ('regedit', 3), ('services.msc', 2), ('mmc', 2), ('task manager', 2), 
+            ('device manager', 2), ('disk management', 2), ('system restore', 3), ('control panel', 2), 
+            ('gpedit', 2), ('gpedit.msc', 3), ('gpmc.msc', 3), ('gpupdate', 2), ('uac', 2),
+            ('chkdsk', 3), ('sfc', 3), ('diskpart', 2), ('copy', 1), ('robocopy', 2), ('net use', 2),
+            ('virtualization', 3), ('vm', 3), ('hypervisor', 3)
+        ],
+        'security': [
+            ('security', 5), ('malware', 4), ('virus', 4), ('trojan', 3), ('spyware', 3), ('adware', 3),
+            ('ransomware', 4), ('rootkit', 4), ('keylogger', 3), ('botnet', 3),
+            ('phishing', 3), ('whaling', 3), ('social engineering', 3), ('impersonation', 2),
+            ('tailgating', 2), ('dumpster diving', 2), ('shoulder surfing', 2), 
+            ('evil twin', 3), ('rogue ap', 3),
+            ('firewall', 3), ('antivirus', 3), ('anti-malware', 3), ('ids', 2), ('ips', 2),
+            ('authentication', 3), ('mfa', 4), ('biometrics', 2), ('password', 2), ('pin', 2), ('smart card', 2),
+            ('access control', 3), ('acl', 2), ('permissions', 2), ('least privilege', 3), ('user accounts', 2),
+            ('encryption', 4), ('bitlocker', 3), ('filevault', 2), ('efs', 2), ('full disk encryption', 3), ('vpn', 3),
+            ('network security', 2), ('wifi security', 2), ('wpa2', 2), ('wpa3', 2),
+            ('physical security', 2), ('badge reader', 2), ('locking', 2),
+            ('pki', 2), ('certificate', 2), ('chain of custody', 4), ('data destruction', 3),
+            ('shredding', 2), ('degaussing', 2)
+        ],
+        'software-troubleshooting': [
+            ('troubleshoot', 5), ('resolve', 4), ('issue', 3), ('problem', 3), ('error', 3),
+            ('application', 3), ('software', 3), ('not working', 2), ('crashes', 3), ('unresponsive', 3),
+            ('freeze', 3), ('slow performance', 3), ('low memory', 2),
+            ('bsod', 4), ('stop code', 3), ('pop-up', 2), ('browser', 2), ('redirect', 2), ('hijack', 2),
+            ('reinstall', 2), ('uninstall', 2), ('update', 2), ('roll back', 2), ('repair', 2),
+            ('rebuild profile', 3), ('safe mode', 3), ('compatibility', 2), ('driver', 2),
+            ('event viewer', 3), ('log files', 2), ('resource monitor', 2), ('performance monitor', 2),
+            ('task manager', 3), ('sfc', 2), ('chkdsk', 2), ('system restore', 2)
+        ],
+        'operational-procedures': [
+            ('professionalism', 3), ('communication', 3), ('customer service', 3),
+            ('documentation', 4), ('change management', 4), ('ticketing system', 2),
+            ('scope', 2), ('risk', 2), ('rollback', 2),
+            ('incident response', 4), ('first responder', 3), ('chain of custody', 4),
+            ('licensing', 3), ('eula', 2), ('aup', 2), ('pii', 3), ('gdpr', 2), ('privacy', 3),
+            ('safety', 4), ('esd', 3), ('msds', 2), ('grounding', 2), ('disposal', 3), ('recycling', 2),
+            ('backup', 3), ('recovery', 3), ('scripting', 2), ('bash', 2),
+            ('powershell', 2), ('python', 2),
+            ('remote access', 2), ('rdp', 2), ('ssh', 2), ('vnc', 2)
+        ]
+    }
+    scores = {topic: 0 for topic in keywords}
+    for topic, phrases in keywords.items():
+        for phrase, weight in phrases:
+            if phrase in content:
+                scores[topic] += weight
+    
+    if not any(scores.values()):
+        return 'miscellaneous'
+
+    best_domain = max(scores, key=scores.get)
+    if scores[best_domain] >= 2:
+        return best_domain
+    else:
+        return 'miscellaneous'
+
 def save_new_questions(questions, output_path):
     """Saves the list of new questions to the staging file."""
     try:
@@ -281,6 +350,15 @@ def main():
     config = CONFIGURATIONS.get(SELECTED_CONFIG)
     if not config:
         print(f"Error: Configuration '{SELECTED_CONFIG}' not found.")
+        return
+
+    # Determine which categorization function to use based on the selected exam core
+    if SELECTED_CONFIG == '1101_CORE_1':
+        categorize_func = categorize_question
+    elif SELECTED_CONFIG == '1102_CORE_2':
+        categorize_func = categorize_question_core2
+    else:
+        print(f"Error: No categorization function is defined for the configuration '{SELECTED_CONFIG}'.")
         return
 
     # 1. Load signatures of existing questions for deduplication
@@ -301,8 +379,8 @@ def main():
     for q in extracted_questions:
         signature = get_question_signature(q)
         if signature not in existing_signatures:
-            # Categorize the question based on its content
-            topic = categorize_question(q['question'], q.get('explanation', ''))
+            # Categorize the question based on its content using the selected function
+            topic = categorize_func(q['question'], q.get('explanation', ''))
             q['topic'] = topic
             new_unique_questions.append(q)
             existing_signatures.add(signature) # Add to set to dedupe within the same PDF
