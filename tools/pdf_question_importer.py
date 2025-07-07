@@ -227,7 +227,7 @@ def categorize_question(question_text, explanation):
             
         ],
         'mobile-devices': [
-            ('laptop', 2), ('tablet', 2), ('smartphone', 5), ('battery', 1), ('touch screen', 1),
+                        ('laptop', 5), ('tablet', 2), ('smartphone', 5), ('battery', 1), ('touch screen', 1),
             ('mobile device', 5), ('usb-c', 1), ('nfc', 2), ('bluetooth', 1), ('tablet', 1),
             ('ios', 2), ('android', 2), ('wearable', 2), ('mobile os', 2), ('sync', 1),
             ('mobile security', 2), ('face recognition', 2), ('camera', 2), ('calls', 3), 

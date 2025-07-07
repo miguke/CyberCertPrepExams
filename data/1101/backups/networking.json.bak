@@ -312,7 +312,7 @@
       2
     ],
     "explanation": "A router (option C) is a network device that is used to separate broadcast domains. A broadcast domain is a logical division of a computer network in which all\nnodes can reach each other by broadcast at the data link layer. Routers operate at the network layer of the OSI model and use routing tables to determine the best\npath for forwarding packets between different networks.\nBy separating broadcast domains, routers can help to reduce network congestion and improve performance. When a router receives a broadcast packet on one of\nits interfaces, it does not forward the packet to any other interfaces. This means that only devices within the same broadcast domain as the sender will receive the\nbroadcast packet.",
-    "id": 21
+    "id": 22
   },
   {
     "type": "single",
@@ -327,7 +327,7 @@
       3
     ],
     "explanation": "Legal limits on transmission power are crucial in wireless point-to-point setups.",
-    "id": 22
+    "id": 23
   },
   {
     "type": "single",
@@ -342,7 +342,7 @@
       0
     ],
     "explanation": "The diagram in Option A shows a client-side sandboxed VM environment, which is ideal for isolated application testing.",
-    "id": 23
+    "id": 24
   },
   {
     "type": "single",
@@ -357,7 +357,7 @@
       2
     ],
     "explanation": "A load balancer distributes incoming traffic evenly among servers, ensuring each server is properly utilized and preventing any single server from being overloaded.",
-    "id": 24
+    "id": 25
   },
   {
     "type": "single",
@@ -372,7 +372,7 @@
       1
     ],
     "explanation": "A network tap is used to intercept the signals passing over a cable and send them to a packet or protocol analyzer. Taps are either powered or unpowered:",
-    "id": 25
+    "id": 26
   },
   {
     "type": "multiple",
@@ -392,7 +392,7 @@
       4
     ],
     "explanation": "All of these are common network protocols used in various aspects of networking.",
-    "id": 26
+    "id": 27
   },
   {
     "type": "single",
@@ -407,7 +407,7 @@
       1
     ],
     "explanation": "HTTPS (Hypertext Transfer Protocol Secure) is used for secure web communication.",
-    "id": 27
+    "id": 28
   },
   {
     "type": "single",
@@ -422,7 +422,7 @@
       0
     ],
     "explanation": "The ping command is used to test network connectivity between devices.",
-    "id": 28
+    "id": 29
   },
   {
     "type": "single",
@@ -437,7 +437,7 @@
       1
     ],
     "explanation": "SOHO stands for Small Office/Home Office, referring to a small-scale business or home network environment.",
-    "id": 29
+    "id": 30
   },
   {
     "type": "single",
@@ -452,7 +452,7 @@
       3
     ],
     "explanation": "Since hot swapping is not supported, shut down is needed to inspect RAID.",
-    "id": 30
+    "id": 31
   },
   {
     "type": "single",
@@ -467,7 +467,7 @@
       0
     ],
     "explanation": "A hotspot is a wireless access point that provides internet access to devices that are connected to it. The technician can use a hotspot to check if the laptop's\nwireless NIC is functional by connecting the laptop to the hotspot and then trying to browse the internet. If the laptop is able to browse the internet, then the\nwireless NIC is functional. Near-field communication (NFC) is a wireless technology that allows two devices to communicate with each other when they are in close\nproximity. NFC is not typically used to check if a wireless NIC is functional.\nAn Ethernet tap is a device that is used to monitor network traffic. An Ethernet tap is not typically used to check if a wireless NIC is functional.\nA spectrum analyzer is a device that is used to measure the frequency spectrum of a signal. A spectrum analyzer is not typically used to check if a wireless NIC is\nfunctional. Therefore, the correct answer is A. Hotspot.",
-    "id": 31
+    "id": 32
   },
   {
     "type": "multiple",
@@ -485,7 +485,7 @@
       5
     ],
     "explanation": "To fix a Cat 5 cable issue where the cable fails when it is moved around, the technician would need to use an RJ45 connector (option E) and a crimper (option F).\nThe technician can use the crimper to attach a new RJ45 connector to the end of the cable, which should resolve the issue.\nAn RJ45 connector (option E) is a type of connector commonly used for Ethernet networking. It is an 8-position, 8-contact (8P8C) modular plug and jack that is\nused to terminate Cat 5 and other types of twisted pair cables. A crimper (option F) is a tool used to attach connectors to the ends of cables. In this case, the\ntechnician would use the crimper to attach a new RJ45 connector to the end of the Cat 5 cable.\nWhen a cable fails when it is moved around, it often indicates that there is a problem with the connector at the end of the cable. By attaching a new RJ45\nconnector using a crimper, the technician can ensure that the cable has a secure and reliable connection.",
-    "id": 32
+    "id": 33
   },
   {
     "type": "single",
@@ -500,10 +500,10 @@
       3
     ],
     "explanation": "A web server is a software application that serves HTTP (Hypertext Transfer Protocol) requests by delivering web pages and other files to users' web browsers.\nThe main function of a web server is to host home pages and business portals, making them accessible to users via the internet. References: CompTIA A+\nCertification Exam Objectives 220-1001 - Networking - 1.6",
-    "id": 33
+    "id": 34
   },
   {
-    "id": 34,
+    "id": 35,
     "question": "Which of the following utilizes TCP ports 20/21 and transfers data in cleartext?",
     "options": [
       "SNMP",
@@ -519,7 +519,7 @@
     "topic": "networking"
   },
   {
-    "id": 35,
+    "id": 36,
     "question": "A technician is implementing a SOHO wireless solution with three access points. Which of the following actions would avoid high latency?",
     "options": [
       "Enabling and configuring a 5GHz antenna",
@@ -535,7 +535,7 @@
     "topic": "networking"
   },
   {
-    "id": 36,
+    "id": 37,
     "question": "Following a scheduled power outage, users report they cannot access the local intranet. A technician is able to ping the IP address of the server that is hosting the\nwebsite. Which of the following serves is MOST likely offline?",
     "options": [
       "Web",
@@ -551,7 +551,7 @@
     "topic": "networking"
   },
   {
-    "id": 37,
+    "id": 38,
     "question": "Which of the following does a DHCP reservation MOST likely apply to?",
     "options": [
       "Smart TV",
@@ -567,7 +567,7 @@
     "topic": "networking"
   },
   {
-    "id": 38,
+    "id": 39,
     "question": "A business purchased a new multifunction printer that will be used to photocopy documents with hundreds of pages. A technician is configuring the printer. Which\nof the following features should the technician ensure is set up?",
     "options": [
       "SMB",
@@ -583,7 +583,7 @@
     "topic": "networking"
   },
   {
-    "id": 39,
+    "id": 40,
     "question": "An insurance company wants to implement cloud computing and would like a cloud solution in which the infrastructure is shared with businesses in the same\nindustry. Which of the following cloud models BEST addresses the company's need?",
     "options": [
       "Community",
@@ -599,7 +599,7 @@
     "topic": "networking"
   },
   {
-    "id": 40,
+    "id": 41,
     "question": "Which of the following protocols is the most appropriate to use for inventory tracking in a small warehouse?",
     "options": [
       "Near-field communication",
@@ -615,7 +615,7 @@
     "topic": "networking"
   },
   {
-    "id": 41,
+    "id": 42,
     "question": "An administrator is using an RJ45 connector to terminate a network cable. Which of the following cables is the administrator terminating?",
     "options": [
       "Optical",
@@ -631,7 +631,7 @@
     "topic": "networking"
   },
   {
-    "id": 42,
+    "id": 43,
     "question": "A technician configured a new SOHO router for a small business. The ISP gave the technician an IP address on the router's WAN port. Which of the following\naddresses did the technician most likely configure on the router?",
     "options": [
       "10.1.50.30",
@@ -647,7 +647,7 @@
     "topic": "networking"
   },
   {
-    "id": 43,
+    "id": 44,
     "question": "A network technician needs to provide better wireless connectivity throughout a SOHO location. Which of the following should the technician deploy to best\nimprove connectivity?",
     "options": [
       "Access point",
@@ -663,7 +663,7 @@
     "topic": "networking"
   },
   {
-    "id": 44,
+    "id": 45,
     "question": "Which of the following is the primary function of a DNS service?",
     "options": [
       "To dynamically assign network addresses to hosts",
@@ -679,7 +679,7 @@
     "topic": "networking"
   },
   {
-    "id": 45,
+    "id": 46,
     "question": "Which of the following wireless networking protocols will support both 2.4GHz and 5GHz devices?",
     "options": [
       "802.11ac",
@@ -695,7 +695,7 @@
     "topic": "networking"
   },
   {
-    "id": 46,
+    "id": 47,
     "question": "Which of the following display types is available for laptops?",
     "options": [
       "OLED",
@@ -711,7 +711,7 @@
     "topic": "networking"
   },
   {
-    "id": 47,
+    "id": 48,
     "question": "A technician is replacing the RAM on an entry-level server with hot-swappabte components. Which of the following should the technician do NEXT?",
     "options": [
       "Replace the RAM while the server is at a cool temperature",
@@ -727,7 +727,7 @@
     "topic": "networking"
   },
   {
-    "id": 48,
+    "id": 49,
     "question": "Which of the following is used to implement network security polices for an environment?",
     "options": [
       "Managed switch",
@@ -743,7 +743,7 @@
     "topic": "networking"
   },
   {
-    "id": 49,
+    "id": 50,
     "question": "A hardware technician is configuring a laptop, and the network administrator requires the network settings to be static. The technician successfully pings the\nservers by IP address but cannot ping the UNC path. Which of the following is the cause of this issue?",
     "options": [
       "Domain Name System",
@@ -759,7 +759,7 @@
     "topic": "networking"
   },
   {
-    "id": 50,
+    "id": 51,
     "question": "In which of the following places is a laptop's wireless antenna MOST likely located?",
     "options": [
       "Near the network interface card",
@@ -775,7 +775,7 @@
     "topic": "networking"
   },
   {
-    "id": 51,
+    "id": 52,
     "question": "A technician needs to fix a Cat 5 cable issue. The cable, which is connected to a network jack, fails when it is moved around. Which of the following items must the\ntechnician use to fix the issue?",
     "options": [
       "Scissors",
@@ -794,7 +794,7 @@
     "topic": "networking"
   },
   {
-    "id": 52,
+    "id": 53,
     "question": "A user is installing a new display on a desktop computer that only has a single DVI port for video input and a single HDMI port tot video output Which of me\nfollowing does the technician need to complete the setup?",
     "options": [
       "DigitaMo-analog converter",
@@ -810,7 +810,7 @@
     "topic": "networking"
   },
   {
-    "id": 53,
+    "id": 54,
     "question": "Which of the following allows a switch to be divided into separate logical networks?",
     "options": [
       "VLAN",
@@ -826,7 +826,7 @@
     "topic": "networking"
   },
   {
-    "id": 54,
+    "id": 55,
     "question": "Which of the following would MOST likely be used to connect one or more devices to the internet in a SOHO?",
     "options": [
       "Hub",
@@ -842,7 +842,7 @@
     "topic": "networking"
   },
   {
-    "id": 55,
+    "id": 56,
     "question": "A technician installed a new router at a small office. After the Installation, the technician notices that all devices have a I69.254.x.x IP address. Printers and\nfileshares are still working, but PCs cannot access the Internet. Which of the following should the technician configure on the router to enable devices to connect to\nthe internet?",
     "options": [
       "APIPA",
@@ -858,7 +858,7 @@
     "topic": "networking"
   },
   {
-    "id": 56,
+    "id": 57,
     "question": "Which of the following components houses the MX record?",
     "options": [
       "DNSO",
@@ -874,7 +874,7 @@
     "topic": "networking"
   },
   {
-    "id": 57,
+    "id": 58,
     "question": "Using the output below:\nWhich of the following is the default gateway?",
     "options": [
       "172.25.1.252",
@@ -890,7 +890,7 @@
     "topic": "networking"
   },
   {
-    "id": 58,
+    "id": 59,
     "question": "Which of the following services allows a remote user to access network resources?",
     "options": [
       "WLAN",
@@ -906,7 +906,7 @@
     "topic": "networking"
   },
   {
-    "id": 59,
+    "id": 60,
     "question": "A user's Windows PC is unable to connect to the network at a new branch office that the user is visiting. A technician discovers the PC is unable to ping the local\ngateway. Which of the following commands should the technician use next?",
     "options": [
       "ipconfig",
@@ -922,7 +922,7 @@
     "topic": "networking"
   },
   {
-    "id": 60,
+    "id": 61,
     "question": "Which of the following twisted pair cables supports 10GBASE-T data transmission speed?",
     "options": [
       "Cat 3",
@@ -938,7 +938,7 @@
     "topic": "networking"
   },
   {
-    "id": 61,
+    "id": 62,
     "question": "A technician configured a new SOHO router for a small business. The ISP gave the technician an IP address on the router's WAN port. Which of the following\naddresses did the technician most likely configure on the router?",
     "options": [
       "10.1.50.30",
@@ -954,7 +954,7 @@
     "topic": "networking"
   },
   {
-    "id": 62,
+    "id": 63,
     "question": "A technician is unable to connect to a network device via SSH_ Which of the following cables should the technician use as an alternative connection method with a\nlaptop?",
     "options": [
       "Serial",
@@ -970,7 +970,7 @@
     "topic": "networking"
   },
   {
-    "id": 63,
+    "id": 64,
     "question": "Which of the following is most likely used to control door access?",
     "options": [
       "DMCA",
@@ -986,7 +986,7 @@
     "topic": "networking"
   },
   {
-    "id": 64,
+    "id": 65,
     "question": "A technician is installing a WAP in the company break room. The new access point should have a rating of higher than 50Mbps and minimal range to avoid\ninterference with other access points. Which of the following 802.11 standards should the technician select?",
     "options": [
       "Ac",
@@ -1000,1313 +1000,5 @@
     "explanation": "Ac stands for 802.11ac, which is a wireless networking standard that operates in the 5 GHz frequency band and offers a maximum data rate of 1.3 Gbps.\n802.11ac is also backward compatible with 802.11a, 802.11b, 802.11g, and 802.11n standards. If a technician wants to install a WAP (wireless access point) in the\ncompany break room that has a rating of higher than 50 Mbps and minimal range to avoid interference with other access points, they should select the 802.11ac\nstandard.",
     "type": "single",
     "topic": "networking"
-  },
-  {
-    "id": 65,
-    "question": "A systems administrator needs to use a protocol for secure remote access to network devices. Which of the following should they use?",
-    "options": [
-      "Telnet TCP port 23",
-      "SSH TCP port 22",
-      "RDP TCP port 3389",
-      "SNMP UDP port 161"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "Secure Shell (SSH) is used for secure remote access. All other answers are incorrect. Telnet provides unsecure remote access, RDP uses port 3389 and is a secure remote access protocol that can only be used to connect to Microsoft desktops/servers, and SNMP 161 is unsecure and provides status and reports on network devices.",
-    "type": "single"
-  },
-  {
-    "id": 66,
-    "question": "When an online store alerts you that you are being redirected to a secure server, what protocol should be seen in the URL?",
-    "options": [
-      "TFTP",
-      "HTTPS",
-      "HTTP",
-      "SSH"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "Hypertext Protocol Secure (HTTPS) is used when establishing a secure session on a web server. All other answers are incorrect. TFTP is unsecure and is used to transfer configuration files. HTTP is used to make an unsecure session on a web server. SSH is used for secure remote access.",
-    "type": "single"
-  },
-  {
-    "id": 67,
-    "question": "Which of the following mail clients downloads the email, stores it on the local computer, and does not retain a copy on the mail server?",
-    "options": [
-      "POP",
-      "IMAP",
-      "SMTP",
-      "SSH"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "Post Office Protocol (POP) is a legacy mail client that stores emails locally and uses port 110. All other answers are incorrect. IMAP is a mail client that provides diaries and calendars, allows you to create multiple folders, has a permanent connection to the mail server, and uses TCP port 143; SMTP is used to transfer email between mail servers and uses TCP port 25.",
-    "type": "single"
-  },
-  {
-    "id": 68,
-    "question": "Which application protocol is used in Windows operating systems for file and print sharing?",
-    "options": [
-      "137-139",
-      "67/68",
-      "445",
-      "389"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "Server Message Block (SMB) uses port 445 for file and print sharing in a Windows environment. However, it is internal only and cannot be used on the internet. All other answers are incorrect. NETBIOS (ports 137-139) is used for legacy name registration and resolution by Microsoft. 67/68 are used by DHCP to automatically assign IP addresses. 389 is used by LDAP that is used to manage directory services by querying and updating X500 directory objects.",
-    "type": "single"
-  },
-  {
-    "id": 69,
-    "question": "Which of the following standard ports is used by secure Post Office Protocol (POP)?",
-    "options": [
-      "110",
-      "995",
-      "993",
-      "143"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "Port 995 is the standard port used by Secure Post Office Protocol (SPOP). All other answers are incorrect. Unsecure POP uses 110. Secure IMAP uses 993. Unsecure IMAP uses 143.",
-    "type": "single"
-  },
-  {
-    "id": 70,
-    "question": "Which of the following protocols is connectionless and used for streaming video or audio?",
-    "options": [
-      "TCP",
-      "RDP",
-      "UDP",
-      "TFTP"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "User Datagram Protocol (UDP) is connectionless and can be used to stream video and audio. All other answers are incorrect. TCP is connection-orientated and far too slow for audio or streaming video. RDP is used for secure remote access to Windows servers/desktops. TFTP is a connectionless fast transfer of data. Normally, it is used by network devices to obtain configuration files.",
-    "type": "single"
-  },
-  {
-    "id": 71,
-    "question": "Which of the following ports is used by the secure version of the protocol that can provide statuses and reports of all network devices?",
-    "options": [
-      "161",
-      "389",
-      "110",
-      "162"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "Simple Network Management Protocol (SNMP) v3 is secure and uses UDP port 162. All other answers are incorrect. SNMP uses UDP port 161 but is insecure. Port 389 is used by LDAP to create, manage, and search directory services. POP (the unsecure mail client) uses TCP port 110. 122 Solutions",
-    "type": "single"
-  },
-  {
-    "id": 72,
-    "question": "Which of the following protocols uses TCP ports 20/21 and transfers data in cleartext?",
-    "options": [
-      "TFTP",
-      "FTP",
-      "SSH",
-      "FTPS"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "File Transfer Protocol (FTP) port 21 is unsecure and transfers data in clear text. All other answers are incorrect. TFTP is a UDP version of FTP. SSH is a secure method of remote administration. FTPS is a secure version of FTP.",
-    "type": "single"
-  },
-  {
-    "id": 73,
-    "question": "TCP is connection-orientated and uses a three-way handshake. What is the correct sequence of the handshake?",
-    "options": [
-      "SYN, ACK, and SYN-ACK",
-      "SIGNAL, CONNECT, ACKNOWLEDGE",
-      "SYN-ACK, ACK, and SYN",
-      "SYN, SYN-ACK, and ACK"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "The correct sequence for the Transmission Control Protocol (TCP) three-way handshake is SYN, then SYN-ACK, and, finally, ACK. The sequences in all the other answers are incorrect.",
-    "type": "single"
-  },
-  {
-    "id": 74,
-    "question": "A system administrator is setting up a new firewall and needs to allow SMTP traffic to flow through. Which of the following TCP ports must be enabled for inbound traffic?",
-    "options": [
-      "21",
-      "22",
-      "23",
-      "25"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "Simple Mail Transfer Protocol (SMTP) uses port 25. All other answers are incorrect. FTP uses port 21. SFTP, SSH, and SCP all use port 22. Telnet uses port 23.",
-    "type": "single"
-  },
-  {
-    "id": 75,
-    "question": "Which of the following standard ports is used by secure IMAP?",
-    "options": [
-      "993",
-      "110",
-      "995",
-      "143"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "Port 993 is the standard port used by secure Internet Mail Access Protocol (IMAP). All other answers are incorrect. Unsecure POP uses 110. Secure POP uses",
-    "type": "single"
-  },
-  {
-    "id": 76,
-    "question": "Which of the following is an unsecure remote access protocol that can have its password stolen by a protocol analyzer?",
-    "options": [
-      "SSL",
-      "SSH",
-      "Telnet",
-      "RDP"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "Telnet is an insecure remote access protocol. All other answers are incorrect. SSL is an encryption-based protocol designed for securing connections between web clients and servers. SSH is a secure remote access protocol than can replace Telnet. RDP is a secure access protocol for Windows operating systems.",
-    "type": "single"
-  },
-  {
-    "id": 77,
-    "question": "The financial director of an enterprise raised a ticket as they were unable to connect to any network resources. What should the system administrator check first?",
-    "options": [
-      "DHCP server",
-      "SNMP",
-      "RADIUS server",
-      "DNS server"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "It is most likely that the financial director has an APIPA, and that is why they cannot connect to anyone else. Check to see whether the DHCP server has allocated an IP address. All other answers are incorrect. Simple Network Management Protocol (SNMP) monitors the status of and creates reports on network devices. RADIUS is an AAA server that controls access to the network, but the administrator is already on the network. A DNS server translates host names to IP addresses.",
-    "type": "single"
-  },
-  {
-    "id": 78,
-    "question": "What DNS record needs to be allocated to a host with an IP address of 2001:0436:2CA1:005 7:0023:0567:5673:0005?",
-    "options": [
-      "A",
-      "AAA",
-      "MX",
-      "TXT"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "The address above is an IPv6 address and needs an AAA record. All other answers are incorrect. An A record is used for an IPv4 host. An MX record is used by a mail server. A TXT record is used for any free-form record such as an SPF record.",
-    "type": "single"
-  },
-  {
-    "id": 79,
-    "question": "What is the default lease duration of a Microsoft DHCP server?",
-    "options": [
-      "12 days",
-      "14 days",
-      "8 days",
-      "2 days"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "A Microsoft Dynamic Host Configuration Protocol (DHCP) server has a default lease duration of 8 days. All other answers are incorrect.",
-    "type": "single"
-  },
-  {
-    "id": 80,
-    "question": "Users in a small company cannot access the mail server on Monday morning. The system administrator had migrated the old mail server to a new version but did not update the DNS record for the mail server. What DNS records do they need to update?",
-    "options": [
-      "MX",
-      "A",
-      "AAA",
-      "SRV"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "An MX record is used for mail servers. All other answers are incorrect. An A record is used for an IPv4 host. An AAA record is used for an IPv6 host. SRV records are used to find services such as domain controllers.",
-    "type": "single"
-  },
-  {
-    "id": 81,
-    "question": "What type of network would be a single site with all users in close proximity, secure, and connected by one or more switches?",
-    "options": [
-      "WAN",
-      "MAN",
-      "LAN",
-      "CAN"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "A Local Area Network (LAN) is an internal secure network. All other answers are incorrect. A Wide Area Network (WAN) spans multiple geographical locations. A Metropolitan Area Network (MAN) is used by the police, ambulance, and fire services in a city. CAN refers to a campus area network used in academic institutions.",
-    "type": "single"
-  },
-  {
-    "id": 82,
-    "question": "Which of the following uses cryptography to confirm that the source server that an email came from was legitimate?",
-    "options": [
-      "SPF",
-      "DMARC",
-      "Syslog",
-      "DKIM"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "With DomainKeys Identified Mail (DKIM), an organization uploads a public key as a TXT record. The authenticity of the originating servers of incoming messages can be verified using this key. All other answers are incorrect. SPF uses a TXT record to indicate that a host from a particular domain is allowed to send mail. A syslog centralizes the log files from many servers.",
-    "type": "single"
-  },
-  {
-    "id": 83,
-    "question": "One of the users in a company keeps raising support tickets for very minor issues. The IT team wants to be able to track him by his IP address. The company is using a DHCP server to dynamically allocate IP addresses. How can the IT team set this user up so that he gets the same IP address from the DHCP server?",
-    "options": [
-      "Create a new scope for him",
-      "Create a customized lease duration for him",
-      "Create a static IP address for him",
-      "Create a reservation for him"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "With a DHCP reservation, an IP address is reserved for a host as identified by their MAC address. All other answers are incorrect. A DHCP scope refers to the addresses that a DHCP server can allocate for a particular subnet. IP address lease durations cannot be customized; everyone gets the same lease duration. If a client has a static address that is manually configured, the host will not send out a DHCPDISCOVER packet to try and obtain an address from DHCP.",
-    "type": "single"
-  },
-  {
-    "id": 84,
-    "question": "Which of the following technologies allows multiple networks to be created within a switch?",
-    "options": [
-      "VLAN",
-      "Proxy Server",
-      "Firewall",
-      "Router"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "A Virtual Local Area Network (VLAN) is normally used for departmental isolation or isolation within a LAN. All other answers are incorrect. A proxy server controls access from the internal network to an external network. A firewall is used to control access between the internal and external networks. A router joins multiple external networks together. 130 Solutions",
-    "type": "single"
-  },
-  {
-    "id": 85,
-    "question": "The spam gateway was fooled by spam coming from many different fake domains. Which of the following can be implemented to prevent these emails from accessing the company network?",
-    "options": [
-      "Firewall",
-      "Content filter",
-      "DMARC",
-      "Proxy server"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "DMARC can validate incoming email messages and has the ability to detect and prevent email spoofing. Therefore, any emails arriving from an illegitimate source can be blocked. All other answers are incorrect. A content filter is used by a proxy server or UTM firewall to prevent anyone from accessing a website (such as a gambling site) that has inappropriate content. A proxy server controls outgoing requests and has the ability to cache website content. It can also carry out URL or content filtering by blocking access to websites hosting inappropriate content.",
-    "type": "single"
-  },
-  {
-    "id": 86,
-    "question": "A network administrator is planning to divide the company’s network into three subnets. What do they need to configure in the DHCP server so that each subnet gets a certain range of IP addresses that are unique to that subnet?",
-    "options": [
-      "Scope",
-      "Reservation",
-      "Lease",
-      "Superscope"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "A Dynamic Host Configuration Protocol (DHCP) scope is a range of IP addresses that can be allocated to a subnet. All other answers are incorrect. In a DHCP reservation, the same IP address can be allocated to the same host as identified by their MAC address. A DHCP lease refers to the limited time that a host is allocated an IP address. A DHCP superscope allows two or more scopes to be used as if they were a single scope to increase the number of IP addresses in a subnet.",
-    "type": "single"
-  },
-  {
-    "id": 87,
-    "question": "What is the DNS record used by a host with an IP address of 131.122.14.12?",
-    "options": [
-      "A",
-      "AAA",
-      "MX",
-      "SPF"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "131.122.14.12 is an IPv4 address and therefore uses an A record. All other answers are incorrect. An AAA record is used for an IPv6 host. An MX record is used for mail servers. A Sender Policy Framework (SPF) record is used to prove the authenticity of mail servers to prevent spam.",
-    "type": "single"
-  },
-  {
-    "id": 88,
-    "question": "What is the sequence of the DHCP handshake?",
-    "options": [
-      "ACK, OFFER, REQUEST, DISCOVER",
-      "DISCOVER, OFFER, REQUEST, ACK",
-      "DISCOVER, REQUEST, OFFER, ACK",
-      "REQUEST, OFFER, DISCOVER, ACK"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "The DHCP handshake sequence is DISCOVER, OFFER, REQUEST, ACK (normally known as DORA). The host sends a DHCPDISCOVER broadcast packet to find a DHCP server. The DHCP server replies with DHCPOFFER containing an IP address along with other configuration, such as the DNS server and the default gateway. The client then replies with DHCPREQUEST to accept the offer. The DHCP server then sends a DHCPACK packet confirming the allocation of the IP address with a lease time of 8 days, normally. All other answers are incorrect.",
-    "type": "single"
-  },
-  {
-    "id": 89,
-    "question": "Which of the following is a method that can be used to securely connect a remote user’s laptop to a corporate server from overseas?",
-    "options": [
-      "WAN",
-      "SSL",
-      "DHCP",
-      "VPN"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "A Virtual Private Network (VPN) creates a secure tunnel between an external location and the corporate network. All other answers are incorrect. A WAN is an external network (e.g., the internet). SSL is a method of encrypting data in transit, normally via a web browser. DHCP dynamically allocates IP addresses to hosts.",
-    "type": "single"
-  },
-  {
-    "id": 90,
-    "question": "Cloud Service Providers (CSP) need to be able to rapidly provision servers and networks using scripting. What type of networking provides this?",
-    "options": [
-      "Wide area network (WAN)",
-      "Local area network (LAN)",
-      "Software-defined networking (SDN)",
-      "Storage area network (SAN)"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "An SDN allows the rapid provisioning and deprovisioning of networks in a virtual environment. All other answers are incorrect. A WAN is a network over a large geographical area. A LAN is a network that is secure and doesn’t extend beyond close proximity, for example, a building or even just a single floor of the building. A SAN comprises fast redundant disks.",
-    "type": "single"
-  },
-  {
-    "id": 91,
-    "question": "What type of firewall can perform URL filtering, content filtering, and malware inspection?",
-    "options": [
-      "Stateless firewall",
-      "Host-based firewall",
-      "Stateful firewall",
-      "Unified Threat Management (UTM)"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "A UTM solution can perform multiple security functions. All other answers are incorrect. A stateless firewall can only perform basic packet filtering. A host-based firewall can only protect a desktop or laptop, blocking and allowing certain types of traffic. A stateful firewall can provide deep inspection of traffic to assess the verbs in use. For example, in HTTP traffic, the GET verb can be allowed while the PUT or POST verbs can be blocked.",
-    "type": "single"
-  },
-  {
-    "id": 92,
-    "question": "What is the purpose of an Optical Network Terminal (ONT) installed at a customer’s home?",
-    "options": [
-      "It provides fiber to the curb (FTTC)",
-      "The ONT converts optical signals to electrical signals",
-      "The ONT converts electrical signals and converts them to optical signals",
-      "The ONT is located in a street cabinet"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "The ONT converts optical signals to electrical signals. All other answers are incorrect. FTTC is where a telecom provider runs fiber cables to multiple customers. ONT does not convert electrical signals to optical signals. The reverse is true. An optical line terminal (OLT) is located in a street cabinet, and the ONT is on the customer’s premises. Chapter 2: Networking 123",
-    "type": "single"
-  },
-  {
-    "id": 93,
-    "question": "Which of the following allows a host to pull power for a device through an ethernet cable plugged into a switch?",
-    "options": [
-      "POE",
-      "Thunderbolt",
-      "Managed switch",
-      "Shielded twisted pair"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "Power over Ethernet (POE) allows a device to pull its power from the switch. All other answers are incorrect. Thunderbolt can be used as a display interface, similar to HDMI or a display port. A managed switch is an enterprise switch that has 28 or 48 ports and can be configured by a web or command-line interface. A shielded twisted pair cable has the wires wrapped in foil for more protection and to limit EMI.",
-    "type": "single"
-  },
-  {
-    "id": 94,
-    "question": "Which of the following network devices is used to reduce the size of broadcast domains in a LAN?",
-    "options": [
-      "Load balancer",
-      "Managed switch",
-      "Router",
-      "Hub"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "A broadcast domain refers to the number of people that you can broadcast to. If you create a Virtual Local Area Network (VLAN) on a managed switch, you can reduce its size. All other answers are incorrect. A load balancer sends an incoming client request to the least utilized of a number of web servers performing the same function. A router joins multiple networks together. A hub is a slow device that connects multiple hosts together.",
-    "type": "single"
-  },
-  {
-    "id": 95,
-    "question": "Which of the following technologies allows virtual servers to connect to high-speed storage?",
-    "options": [
-      "SAN",
-      "PAN",
-      "Cluster",
-      "RAID 0"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "A Storage Area Network (SAN) is a set of fast redundant disks used by virtual servers for storage to host the server’s virtual machines. All other answers are incorrect. A PAN is a personal area network normally used by Bluetooth devices and smartphones. A cluster uses a quorum disk that is shared by two servers, one of which is active and the other passive and waiting for the active server to fail. RAID 0 is a setup involving an array of disks as a stripe set for faster reads. However, if one disk fails, then it takes down the whole RAID 0 configuration. It does not provide fault tolerance or redundancy.",
-    "type": "single"
-  },
-  {
-    "id": 96,
-    "question": "A company wants to use POE as powering switches is more efficient than using an AC adapter and will help reduce the electricity bill. However, two of the switches do not support PO",
-    "options": [
-      "Bearing in mind that cost is a concern, what can the network engineer do to solve this issue?",
-      "Purchase an uninterruptible power supply (UPS)",
-      "Purchase a generator",
-      "Install power injectors",
-      "Purchase two POE capable switches"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "Installing power injectors allows you to connect your POE device to a non-POE switch. All other answers are incorrect. A UPS is used to allow a server to shut down gracefully following a complete loss of power. A generator is an alternative power source following a complete loss of power. The purchase of two POE-capable switches is not cost effective.",
-    "type": "single"
-  },
-  {
-    "id": 97,
-    "question": "What type of switch is unpacked from the box, turned on, has either 4 or 8 ports, and is used in very small networks?",
-    "options": [
-      "Managed switch",
-      "Aggregate switch",
-      "Power diode switch",
-      "Unmanaged switch"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "An unmanaged switch is taken out of the box and plugged in. All other answers are incorrect. A managed switch is an enterprise switch that has 28 or 48 ports and can be configured by a web or command-line interface. An aggregate switch is used to aggregate data from multiple switches and forward it to a core switch. A power diode switch is used for lights.",
-    "type": "single"
-  },
-  {
-    "id": 98,
-    "question": "Which of the following legacy network hardware devices sends any incoming packets it receives to all ports connected to the device?",
-    "options": [
-      "Load balancer",
-      "Switch",
-      "Router",
-      "Hub"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "A hub is an internal legacy device that was implemented to connect hosts using 10BASE-T Ethernet cabling. All other answers are incorrect. A load balancer receives client requests and sends them to the least utilized host. These servers all perform the same job function. A switch is a more modern device that connects hosts but, unlike the hub, can send the traffic to one particular host and is therefore a faster replacement for the hub. A router is a device that connects networks together.",
-    "type": "single"
-  },
-  {
-    "id": 99,
-    "question": "If a network-based firewall is set up to allow HTTP and HTTPS traffic, what happens when a user tries to download a document using FTP?",
-    "options": [
-      "Document will be downloaded",
-      "Document will be blocked by its host-based firewall",
-      "Implicit deny",
-      "Explicit deny"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "A firewall and router control access by an access control rule (ACL). When installed, only one rule is set up: the last rule, deny. When traffic arrives at the firewall and there is no allow rule, the last rule of deny will be applied. This is known as implicit deny. All other answers are incorrect. No allow rule means the document will be blocked. The document will be blocked at the network level and therefore will never get as far as the host. Explicit deny occurs when a deny rule has been set up on the firewall.",
-    "type": "single"
-  },
-  {
-    "id": 100,
-    "question": "Which of the following is true concerning a network interface card used with a Cat 5 cable?",
-    "options": [
-      "The NIC card will use a BNC connector",
-      "The NIC card will use an RJ45 connector",
-      "The NIC card will use an RJ11 connector",
-      "The NIC card will run at a speed of 10Mbps"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "Cat 5 cable is a type of Ethernet cable that uses an RJ45 connector. All other answers are incorrect. A BNC connector uses a coax cable. An RJ11 connector is used to connect a modem to a telephone line. A Cat 3 cable runs at 10Mbps while Cat 5 runs at 100Mbps.",
-    "type": "single"
-  },
-  {
-    "id": 101,
-    "question": "What version of Power over Ethernet (POE) can draw power up to 25W?",
-    "options": [
-      "802.11",
-      "802.3at",
-      "802.3bt",
-      "802.3af"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "802.3at (POE+) allows powered devices to draw up to about 25W. All other answers are incorrect. 802.11 is a wireless standard. 802.3af allows powered devices to draw up to about 13W. 802.3bt (POE++ or 4PPOE) allows powered devices to draw up to 51W (type 3) or 71W (type 4).",
-    "type": "single"
-  },
-  {
-    "id": 102,
-    "question": "What type of network is the internet an example of?",
-    "options": [
-      "MAN",
-      "PAN",
-      "WAN",
-      "LAN"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "The internet is a Wide Area Network (WAN), due to the large geographical area it covers. All other answers are incorrect. A Metropolitan Area Network (MAN) (such as one used by police) is a network that covers a city. A Personal Area Network (PAN) is used by a single person, for example, Bluetooth. A Local Area Network (LAN) LAN is a network confined to a single location (this could be an entire building or even a single room) connected by one or more switches.",
-    "type": "single"
-  },
-  {
-    "id": 103,
-    "question": "A mountaineering team is going to climb Mount Everest for charity. However, once they are 1,000 meters above the base camp, they find that they cannot use their cellular phones to communicate with the admin team back in the base camp. How can they climb the mountain and still communicate with the base camp?",
-    "options": [
-      "Cable modem",
-      "Satellite",
-      "GPS",
-      "Wireless"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "Satellite phones are the only method that are able to communicate in remote areas. All other answers are incorrect. A cable modem would not work as there are no cables to connect to. GPS is used for navigation, and only works via satellite. There would not be any wireless access point up a mountain in a remote location.",
-    "type": "single"
-  },
-  {
-    "id": 104,
-    "question": "An organization using unshielded twisted pair cabling has been suffering from Electromagnetic Interference (EMI). What can the organization implement to protect from EMI and also provide high-speed communication at the same time?",
-    "options": [
-      "Fiber",
-      "Coax",
-      "STP",
-      "10-BASE T"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "Fiber-optic cabling works on light pulses, is immune to EMI, and is very secure. All other answers are incorrect. Coax has many layers that protect against emitting EMI, but, as a hacker could attach a vampire tap and connect to the cable, it is not secure. It is also very slow. Because of the foil layers, STP can reduce EMI but is not as fast as fiber. 10-BASE-T is a legacy Ethernet-cable version and can be UTP or STP. However, it is quite slow (10Mbps).",
-    "type": "single"
-  },
-  {
-    "id": 105,
-    "question": "What is the main type of connection used by an iPhone 11?",
-    "options": [
-      "DSL",
-      "Wireless",
-      "Cellular",
-      "Satellite"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "An iPhone 11 is a smartphone that uses cellular communication (hence the term “cellphone”). All other answers are incorrect. DSL is used to provide internet in a SOHO. An iPhone 11 can use a wireless connection, but this is not the main connection type. An iPhone is not a satellite communication device.",
-    "type": "single"
-  },
-  {
-    "id": 106,
-    "question": "Which of the following best describes a WAN?",
-    "options": [
-      "An unsecure network over a very large geographical area",
-      "A secure fast network with all users in close proximity",
-      "A boundary network that protects the LAN",
-      "All of the above"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "A Wide Area Network (WAN) is an unsecure network over a large geographical area. All other answers are incorrect. A LAN is a secure fast network with its users all in close proximity, such as a single floor in a building. A DMZ is a boundary network that sits between the LAN and the WAN. As two of these statements are false, “All of the above” is also incorrect.",
-    "type": "single"
-  },
-  {
-    "id": 107,
-    "question": "Which of the following technologies would allow a network host to be allocated an IP address based on its MAC address?",
-    "options": [
-      "SMTP",
-      "DHCP",
-      "SSL",
-      "DNS"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "A Dynamic Host Configuration Protocol (DHCP) server automatically assigns IP addresses on machine startup. It allows an administrator to create a reservation based on the user’s MAC address, ensuring that this particular host gets the IP address to be monitored. All other answers are incorrect. SMTP is used for email and not IP addresses. SSL refers to secure data in transit via a web browser. A DNS server is used to perform hostname- to-IP-address name resolution.",
-    "type": "single"
-  },
-  {
-    "id": 108,
-    "question": "A small solicitor’s firm has just moved into a listed building. They are not allowed to drill into the walls and have paid a contractor to install a wireless router that connects all of the devices to the wireless network, meaning they do not need physical cables. What type of network has the contractor implemented?",
-    "options": [
-      "LAN",
-      "PAN",
-      "WLAN",
-      "WAN"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "A Wireless Local Area Network (WLAN) is used to connect multiple devices wirelessly. All other answers are incorrect. A PAN is one individual network connecting two devices together, such as the Bluetooth connection between a user’s earbuds and a smartphone. A WAN is a network over a large geographical area. 132 Solutions",
-    "type": "single"
-  },
-  {
-    "id": 109,
-    "question": "A company’s telephone line has failed due to adverse weather, and their internet connection has been subsequently lost. What type of internet access must they be using for this to occur?",
-    "options": [
-      "DSL",
-      "Satellite",
-      "Fiber",
-      "Cable modem"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "A Digital Subscriber Line (DSL) uses telephone lines as a communication channel. All other answers are incorrect. Satellite communication is not reliant on telephones. Neither fiber nor cable modems use telephone lines either.",
-    "type": "single"
-  },
-  {
-    "id": 110,
-    "question": "Which of the following wireless frequencies supports both 5GHz and 2.4GHz?",
-    "options": [
-      "802.11b",
-      "802.11g",
-      "802.11a",
-      "802.11ax"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "Wi-Fi 6 (802.11ax) operates in both the 2.4GHz and 5GHz ranges, thus creating more available channels. Wi-Fi 6 chipsets support a total of 12 channels, eight in the 5GHz and four in the 2.4GHz range. All other answers are incorrect. 802.11b supports 2.4GHz. 802.11g supports 2.4GHz, and 802.11a supports 5GHz.",
-    "type": "single"
-  },
-  {
-    "id": 111,
-    "question": "A user is trying and failing to get their Bluetooth earbuds to connect to their smartphone to listen to music. Which of the following actions should the user carry out? Select TW",
-    "options": [
-      "A. Pair the device",
-      "Go to Settings | Wi-Fi, then enable Bluetooth",
-      "Go to Settings | Mobile Data, then enable Bluetooth",
-      "Go to Settings, then enable Bluetooth"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "The user should go to Settings on the smartphone, enable Bluetooth, then pair the device. All other answers are incorrect.",
-    "type": "single"
-  },
-  {
-    "id": 112,
-    "question": "Which of the following can be used as a bridge to connect two wireless networks over a distance of 25 miles?",
-    "options": [
-      "GPS",
-      "Long-range fixed wireless",
-      "Unlicensed wireless",
-      "Licensed wireless"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "Long-range fixed wireless can be used as a bridge to connect two wireless networks and can be either licensed or unlicensed. All other answers are incorrect. GPS is used to determine your latitude and longitude using orbital satellites. Unlicensed wireless networks use a public frequency and interference is a risk. Licensed wireless networks are those for which exclusive rights are purchased to a given frequency band within a given geographical area from the relevant regulator.",
-    "type": "single"
-  },
-  {
-    "id": 113,
-    "question": "Which of the following wireless protocols can be used for contactless payments?",
-    "options": [
-      "Bluetooth",
-      "RFID",
-      "NFC",
-      "Tethering"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "Near-Field Communication (NFC) is used for short-range contactless payments. All other answers are incorrect. Bluetooth is used to connect devices wirelessly and share data. RFID is used to tag high-value items to prevent them from being stolen. Tethering is the protocol whereby your phone is used to create an internet connection for a laptop or desktop using a data cable. Chapter 2: Networking 125",
-    "type": "single"
-  },
-  {
-    "id": 114,
-    "question": "Which of the following standards supports only the 5GHz frequency band?",
-    "options": [
-      "802.11a",
-      "802.11b",
-      "802.11g",
-      "802.11n"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "802.11a is 5GHz only. All other answers are incorrect. 802.11b and 802.11g are 2.4GHz only. 802.11n uses both 2.4 and 5GHz, known as Multiple Input Multiple Output (MIMO). It can multiplex signal streams from 2-3 separate antennas.",
-    "type": "single"
-  },
-  {
-    "id": 115,
-    "question": "Which of the following wireless technologies has the fastest throughput?",
-    "options": [
-      "802.11ac",
-      "802.11ax",
-      "802.11a",
-      "802.11b"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "802.11ax goes up to 3.5GBps. All other answers are incorrect. 802.11c goes up to 866 Mbps. 802.11a runs at 54 Mbps. 802.11b runs at 11Mbps.",
-    "type": "single"
-  },
-  {
-    "id": 116,
-    "question": "Which of the following wireless standards are backward-compatible with 802.11g?",
-    "options": [
-      "802.11b",
-      "802.11a",
-      "802.11n",
-      "801.11ac"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "Both 802.11b and 802.11g work on a frequency of 2.4GHz. All other answers are more modern than 802.11g and are therefore not backward compatible.",
-    "type": "single"
-  },
-  {
-    "id": 117,
-    "question": "Which of the following standards supports MIMO technology?",
-    "options": [
-      "802.11a",
-      "802.11b",
-      "802.11g",
-      "802.11n"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "802.11n uses both 2.4 and 5GHz, which is known as Multiple Input Multiple Output (MIMO). It can multiplex signal streams from 2-3 separate antennas. All other answers are incorrect. 802.11a is 5GHz only. 802.11b and 802.11g are 2.4GHz only.",
-    "type": "single"
-  },
-  {
-    "id": 118,
-    "question": "Which of the following tools can be used to test a network card or switch port?",
-    "options": [
-      "Crimping tool",
-      "Cable stripper",
-      "Punch-down tool",
-      "Loopback plug"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "A loopback plug is used to test a network card or switch port. If you get a solid LED, this then tells you that the port or network card can send and receive data. All other answers are incorrect. Pliers would cut through the cable and are better used to firmly grip objects. A cable stripper scores the jacket of a cable and makes it easy to remove. A punch- down tool is used to terminate wires in the back of the patch panel to the IDC.",
-    "type": "single"
-  },
-  {
-    "id": 119,
-    "question": "Which of the following tools will be used by a network administrator to score the cable jacket and remove it from the cable so that it can be attached to an RJ45 plug?",
-    "options": [
-      "Crimper",
-      "Pliers",
-      "Cable stripper",
-      "Loopback plug"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "A cable stripper scores the jacket of a cable and makes it easy to remove. All other answers are incorrect. A crimping tool is used to connect an RJ45 plug to a cable. Pliers would cut through the cable and are better used to firmly grip objects. A loopback plug is used to test network cards and switch ports to confirm whether they can send and receive data.",
-    "type": "single"
-  },
-  {
-    "id": 120,
-    "question": "What type of tool would be used to terminate wires into an IDC block?",
-    "options": [
-      "Punch-down tool",
-      "Crimping tool",
-      "Cable stripper",
-      "Cable tester"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "A punch-down tool is used to push wires into the IDC. All other answers are incorrect. A crimping tool is used to connect an RJ45 plug to a cable. A cable stripper is used to score the jacket so that it can easily be removed. A cable tester can be attached to both ends of a cable to test the permanent link.",
-    "type": "single"
-  },
-  {
-    "id": 121,
-    "question": "The CEO of a company is unable to obtain a network connection. The ports on the patch panel are not labeled. Which network tool will the system administrator use to identify the port that the CEO is using?",
-    "options": [
-      "Crimping tool",
-      "Punch-down tool",
-      "Optical Time Domain Reflectometer (OTDR)",
-      "Toner probe"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "A toner probe can trace an RJ45 cable to the patch panel. All other answers are incorrect. A crimping tool is used to connect the RJ45 connector to an Ethernet cable. A punch-down tool is used to fix each conductor into an IDC. An OTDR is used to analyze faults in a fiber cable.",
-    "type": "single"
-  },
-  {
-    "id": 122,
-    "question": "Which of the following is the cheapest solution to monitor outbound traffic in an Ethernet network?",
-    "options": [
-      "Network tap",
-      "Loopback plug",
-      "Spectrum analyzer",
-      "Toner probe"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "A network tap allows you to divert network traffic to a secondary device for analysis. All other answers are incorrect. A loopback plug is used to test a network card or switch port. A spectrum analyzer analyzes the input signal against a frequency range within a wireless network. A toner probe can trace an RJ45 cable to the patch panel.",
-    "type": "single"
-  },
-  {
-    "id": 123,
-    "question": "A network engineer found that the RJ45 connection on an Ethernet cable had come loose and wanted to replace the RJ45 plug. Which of the following tools would they use to carry out this task?",
-    "options": [
-      "Punch-down tool",
-      "Cable stripper",
-      "Crimping tool",
-      "Pliers"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "A crimping tool is used to seal the RJ45 into either a T568A or B layout. All other answers are incorrect. A punch-down tool is used to terminate wire pairs into the IDC blocks. A cable stripper is used to score the outer jacket from a cable just enough to allow it to be removed to expose the cable. Pliers are used to firmly grip an object.",
-    "type": "single"
-  },
-  {
-    "id": 124,
-    "question": "A system administrator has a problem with their wireless access point. To troubleshoot the problem and measure the signal strength, what tool should they use?",
-    "options": [
-      "Wi-Fi analyzer",
-      "Protocol analyzer",
-      "Bandwidth monitor",
-      "Radio frequency interference"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "A Wi-Fi analyzer is a piece of software that can be installed on a laptop. It will detect any other wireless access points in the vicinity and record the signal strength of the different networks using each channel. All other answers are incorrect. A protocol analyzer will collect packets traveling across the network. A bandwidth monitor measures the available bandwidth on a network. RFID detects objects by using tags, commonly used on high-value items in shops.",
-    "type": "single"
-  },
-  {
-    "id": 125,
-    "question": "What tool should a network administrator use to measure whether a cable in a wall socket has a permanent connection to a patch panel?",
-    "options": [
-      "Loopback plug",
-      "Cable tester",
-      "A bandwidth monitor",
-      "OTDR"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "A cable tester is connected to each end of a cable and tests each wire in turn and a successful connection will show an LED light. All other answers are incorrect. A loopback plug is used to test a network card or switch port. A bandwidth monitor measures the available bandwidth on a network. An OTDR is used to test fiber-optic cables for faults. Chapter 3: Hardware 133 Chapter 3: Hardware",
-    "type": "single"
-  },
-  {
-    "id": 126,
-    "question": "The helpdesk has been overwhelmed by network users saying that they cannot access any network resources. What server should the helpdesk ensure is up and running?",
-    "options": [
-      "Domain controller",
-      "DNS server",
-      "DHCP server",
-      "Mail server"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "The Dynamic Host Configuration Protocol (DHCP) server allocates an IP address to each host, and this should be checked first. All other answers are incorrect. A domain controller authenticates hosts. A DNS server provides name resolution and would be an issue if you could not access websites. A mail server provides users with access to email.",
-    "type": "single"
-  },
-  {
-    "id": 127,
-    "question": "If a home user has an internet connection but cannot connect to any websites and reports this to their ISP, what should the system administrator of the ISP check first?",
-    "options": [
-      "The user’s login credentials",
-      "The IP address of the user’s device",
-      "The destination web servers",
-      "The DNS server settings"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "When you have network connectivity but cannot access any websites, it means that you cannot access a DNS server. All other answers are incorrect. If you have an internet connection, then your log-on has been successful. If you have an internet connection, then your IP address is valid. There is no need to check the web server location as it will not change.",
-    "type": "single"
-  },
-  {
-    "id": 128,
-    "question": "What type of server can provide webpage caching?",
-    "options": [
-      "File server",
-      "Proxy server",
-      "UTM firewall",
-      "Web server"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "A proxy server can do webpage caching. All other answers are incorrect. File servers store documents. UTM firewalls can provide content filtering, URL filtering, and malware inspection. Web servers host websites but cannot cache the pages.",
-    "type": "single"
-  },
-  {
-    "id": 129,
-    "question": "What type of network is used in oil or gas refineries?",
-    "options": [
-      "Production network",
-      "Local area network",
-      "SCADA network",
-      "MAN"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "A SCADA network is an industrial control system that can be used in the production of oil or gas. All other answers are incorrect. There is no such network as a production network. A local area network is not used in the production of oil or gas but rather hosts many users and devices. A Metropolitan Area Network (MAN) is a network within a city used by either the police, ambulance, or fire services. 126 Solutions",
-    "type": "single"
-  },
-  {
-    "id": 130,
-    "question": "An organization has installed 20 web servers into an existing web array of 30 web servers. How can this array of web servers be optimized for faster response times?",
-    "options": [
-      "Set up a cluster",
-      "Install a load balancer",
-      "Install a proxy server",
-      "Install a DNS server"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "A load balancer can deal with a high volume of web traffic and route it to the least-utilized host. Installing one ensures that all web servers are utilized efficiently. All other answers are incorrect. A cluster is two servers sharing a quorum disk to provide high availability. A proxy server filters outgoing traffic and caches webpages. A DNS server provides hostname-to-IP-address name resolution.",
-    "type": "single"
-  },
-  {
-    "id": 131,
-    "question": "What type of server uses port 25?",
-    "options": [
-      "DNS server",
-      "DHCP server",
-      "Proxy server",
-      "Mail server"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "A mail server uses Simple Mail Transfer Protocol (SMTP) to transfer email using port 25. All other answers are incorrect. DNS servers use port 53. DHCP servers use ports 67/68. Proxy servers use port 8080.",
-    "type": "single"
-  },
-  {
-    "id": 132,
-    "question": "What type of content is hosted on a web server?",
-    "options": [
-      "Stored files",
-      "Websites that contain home folders",
-      "Mailboxes",
-      "Authentication, authorization, and accounting information"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "A web server hosts websites, each of which has a home page through which customers can access applications and information about a product or service. All other answers are incorrect. A file server is an internal service that hosts data. A mail server contains mailboxes. A RADIUS server, also known as an AAA server, provides authentication from supplicants.",
-    "type": "single"
-  },
-  {
-    "id": 133,
-    "question": "A user has a mapped drive that shows a UNC path of \\\\server1\\data. Which of the following network services are they accessing?",
-    "options": [
-      "Print server",
-      "File share",
-      "Syslog",
-      "Proxy server"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "\\\\server1\\data is a UNC path used to connect either to a file or print service. Since the name of the share is data, it will be a file share. All other answers are incorrect. A print server allows someone to send documents to a printer. A syslog server centralized log files from multiple servers. A proxy server caches website pages and controls outbound traffic via URL and content filters.",
-    "type": "single"
-  },
-  {
-    "id": 134,
-    "question": "Which of the following can authenticate a supplicant without holding a copy of the relevant directory services?",
-    "options": [
-      "Syslog server",
-      "DNS server",
-      "Proxy server",
-      "RADIUS server"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "A RADIUS server is an AAA server that provides authentication, authorization, and accounting without needing to hold a copy of the directory services. Supplicant is another name for devices such as VPN servers, switches, and access points. All other answers are incorrect. A syslog server centralizes log files from multiple sources. A DNS server provides hostname-to-IP-address resolution. A proxy server caches webpages and handles URL and content filtering.",
-    "type": "single"
-  },
-  {
-    "id": 135,
-    "question": "A system administrator has installed a new laser printer for the customer service team. After installation, they attempt to print a test page, but it fails to print. What should they do first?",
-    "options": [
-      "Calibrate the printer",
-      "Reboot the printer",
-      "Download the driver from the manufacturer’s website",
-      "Change the toner cartridge"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "It is likely that the driver for the operating system is not on the installation media. Therefore, we need to download the up-to-date driver from the manufacturer’s website. All other answers are incorrect. Chapter 2: Networking 127",
-    "type": "single"
-  },
-  {
-    "id": 136,
-    "question": "Which of the following servers centralizes log files from multiple servers?",
-    "options": [
-      "Syslog",
-      "DHCP",
-      "File server",
-      "Domain controller"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "A syslog server is also known as a log collector and centralizes log files from multiple servers. All other answers are incorrect. A file server hosts documents that are to be accessed by members of the domain. A domain controller authenticates users within a domain.",
-    "type": "single"
-  },
-  {
-    "id": 137,
-    "question": "What is the first thing a home user should do when they purchase an IoT device such as a baby monitor?",
-    "options": [
-      "Update the device",
-      "Disconnect the internet",
-      "Read the user manual",
-      "Reset the default password"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "IoT devices have default passwords that can be found on search engines. Because the device is connected to the internet, a hacker could use these publicly available passwords and gain access to your home network. Therefore, the first thing the user should do is reset the default password to something more secure. All other answers are incorrect. Some IoT devices have no means of updating and this is not the main priority. If you disconnect an IoT device from the internet, it will not function as it is an internet-connected device. Reading the user manual is important but not as important as your home security.",
-    "type": "single"
-  },
-  {
-    "id": 138,
-    "question": "What type of IP address should a server be given?",
-    "options": [
-      "Dynamic",
-      "Static",
-      "Automatic Private Internet Protocol Addressing (APIPA)",
-      "Public"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "A static address is set up manually, and a server or printer IP address should never change. All other answers are incorrect. Dynamic addresses are allocated by DHCP. These addresses could continually change, and users will have difficulty connecting to it. APIPA cannot be set up as they are allocated when a fault has been detected. Servers can be allocated either a public or private IP address, but static is more relevant.",
-    "type": "single"
-  },
-  {
-    "id": 139,
-    "question": "What is the limitation of using a private IPv4 address?",
-    "options": [
-      "It can only be used internally",
-      "It can only be used for networks of up to 1,000 hosts",
-      "It does not have a network ID",
-      "It does not have a host ID"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "Private IP addresses can only be used in an internal network. All other answers are incorrect. Private IP addresses can be used in networks with up to 16,777,214 hosts. Every IPv4 address has a network ID and a host ID.",
-    "type": "single"
-  },
-  {
-    "id": 140,
-    "question": "A systems administrator is configuring an IP address on the external port of the firewall that connects to the WA",
-    "options": [
-      "Which of the following IP addresses will they use?",
-      "131.107.1.1",
-      "192.168.1.1",
-      "169.254.1.223",
-      "172.16.5.13",
-      "10.10.15.6"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "131.107.1.1 is a Class B public IP address. All other answers are incorrect. 192.168.1.1 is a private IP address. 169.254.1.223 is an APIPA that is allocated. You cannot get an IP address from DHCP. 172.16.5.14 and 10.10.15.6 are private IP addresses. IP addresses starting 10.172 and 192 are private IP addresses and can only be used internally. 169.254.x.x is an APIPA and cannot be used externally. Any other IP address ranges than these are public and can be used on the internet.",
-    "type": "single"
-  },
-  {
-    "id": 141,
-    "question": "Which of the following is the default subnet mask for a Class B IPv4 address?",
-    "options": [
-      "255.0.0.0",
-      "255.255.0.0",
-      "255.255.255.0",
-      "169.254.1.1"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "Class B addresses use the first two octets for the network ID. Therefore, the subnet mask is 255.255.0.0. All other answers are incorrect. 255.0.0.0 is the default subnet mask for a Class A address. 255.255.255.0 is the default subnet mask for a Class C address. 169.254.1.1 is an APIPA address, and you cannot access valid addresses from DHCP servers. With this address, you cannot communicate with others on the network.",
-    "type": "single"
-  },
-  {
-    "id": 142,
-    "question": "If you work from home and need to connect to the internet, which of the following devices are you most likely to use?",
-    "options": [
-      "Hub",
-      "Router",
-      "Switch",
-      "WAP"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "A home network is more likely to have a Wireless Access Point (WAP) as a home router. All other answers are incorrect. Hubs join multiple hosts together but very slowly. A router is an enterprise product that joins networks together and is normally used in enterprise settings. Switches join multiple internal hosts together more quickly than a hub. 128 Solutions",
-    "type": "single"
-  },
-  {
-    "id": 143,
-    "question": "Which of the following is a valid IPv4 address?",
-    "options": [
-      "10.1.1.0",
-      "255.255.255.128",
-      "212.15.1.2",
-      "12.1.1.255"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "212.15.1.2 is a valid IPv4 address. All other answers are incorrect. 10.1.1.0 cannot be used for a host as it ends in 0, indicating that it is a network address. Any address starting with 255 is a subnet mask and cannot be used for a host. 12.1.1.255 cannot be used as a host as it ends in 255, indicating that it is the broadcast address.",
-    "type": "single"
-  },
-  {
-    "id": 144,
-    "question": "A Windows server has been configured with both IPv4 and IPv6 addresses. What is this known as?",
-    "options": [
-      "Double stack",
-      "Double IP addressing",
-      "Dual IP addressing",
-      "Dual stack"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "A Windows server that uses both IPv4 and IPv6 addresses is known as dual stack. All other answers are incorrect.",
-    "type": "single"
-  },
-  {
-    "id": 145,
-    "question": "A user is unable to access the internet, and when the system administrator runs the ipconfig/ all command, they get the following output: IPv4 Address. . . . . . . . . . . : 132.24.0.1 Subnet Mask . . . . . . . . . . . : 255.255.0.0 Default Gateway . . . . . . . . . : Which of the following is the source of this problem?",
-    "options": [
-      "DNS",
-      "Gateway",
-      "Private IPv4 address",
-      "Dynamic IP address"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "The default gateway is missing, and this prevents the user from leaving the internal network. A default gateway is required to access the internet. All other answers are incorrect. If the gateway was present, then DNS might be an issue with the same scenario, but this is not the case. 132.24.0.1 is a public Class B address and therefore can get onto the internet. You would need to run ipconfig /all to determine whether the IP address is dynamic or static.",
-    "type": "single"
-  },
-  {
-    "id": 146,
-    "question": "How many bits does an IPv4 address use?",
-    "options": [
-      "32",
-      "8",
-      "16",
-      "64"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "An IPv4 address has 4 octets of 8, making it a 32-bit addressing schema. All other answers are incorrect.",
-    "type": "single"
-  },
-  {
-    "id": 147,
-    "question": "Which of the following is an IPv6 address?",
-    "options": [
-      "10.1.1.1",
-      "B4-2E-99-C0-75-45",
-      "169.254.1.5",
-      "2001:0dC8:0000:0000:0abc:0000:def0:2311"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "2001:0dC8:0000:0000:0abc:0000:def0:2311 is an IPv6 address. All other answers are incorrect. 10.1.1.1 is a private IPv4 address. B4-2E-99-C0-75-45 is a MAC address. 169.254.1.5 is an APIPA address used to contact the DHCP server or results from a duplicate IP address being allocated.",
-    "type": "single"
-  },
-  {
-    "id": 148,
-    "question": "An installation engineer has installed a new router in a SOHO network that consists of five users. During testing, they noticed that all devices have APIPAs. Printers and file shares are still working, but the hosts cannot access the internet. Which of the following has the installation engineer MOST LIKELY forgotten to configure on the router?",
-    "options": [
-      "NETBIOS",
-      "SMTP",
-      "DNS",
-      "SMB"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "If you cannot access the internet, it is most likely to be the router’s gateway or a DNS problem. All other answers are incorrect. NETBIOS is a legacy naming convention. Server Message Block (SMB) traffic is a communication protocol that allows access to file shares and printers. SMTP is used to transfer mail between mail servers.",
-    "type": "single"
-  },
-  {
-    "id": 149,
-    "question": "How can you shorten the following IPv6 address: 2001:0dC8:0000:0000:0abc:0000:def0:2311?",
-    "options": [
-      "2001:0dC8::0abc::def0:2311",
-      "2001:0dC8::0000:0abc:0000:def0:2311",
-      "2001:dC8::abc::def:2311",
-      "2001:dC8::abc:0:def0:2311"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "When you shorten an IPv6 address, you remove the leading zeros. Therefore, Odc8 becomes dc8. Then you look at the third and fourth octets, which are 0000:0000. This can be replaced by ::. You know there are 8 octets, so when you count six remaining, you know 0000:0000 is missing. You then take 0abc and remove the leading zero, leaving abc. The sixth octet is 0000, but you cannot use :: again, so you reduce it to :0:. Thus, the shortened IPv6 address becomes 2001:dC8::abc:0:def0:2311. All other answers are incorrect.",
-    "type": "single"
-  },
-  {
-    "id": 150,
-    "question": "Which of the following is a public IPv4 address?",
-    "options": [
-      "10.10.10.1",
-      "172.16.1.3",
-      "126.1.1.1",
-      "192.168.5.6"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "126.1.1.1 is a public IPv4 address. All other answers are incorrect. The IPv4 addresses 10.10.10.1, 172.16.1.3, and 192.168 are all private. Any addresses starting with 10, 172.16-172.31, or 192.168 are private and cannot be used externally.",
-    "type": "single"
-  },
-  {
-    "id": 151,
-    "question": "How many bits does an IPv6 address use?",
-    "options": [
-      "16",
-      "32",
-      "64",
-      "128"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "An IPv6 address has 64 bits for the network ID and 64 bits for the interface ID, making it a 128-bit addressing schema. All other answers are incorrect. IPv4 uses 32-bit addressing. Chapter 2: Networking 129",
-    "type": "single"
   }
 ]

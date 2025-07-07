@@ -1,3 +1,1191 @@
 --- Topic Audit Report for Exam 1101 ---
-Found 0 mismatches out of 441 questions.
+Found 297 mismatches out of 870 questions.
+
+1. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 0
+   Current: mobile-devices | Suggested: hardware
+   Q: Which of the following is the most secure method to set up a laptop or desktop t...
+
+2. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 1
+   Current: mobile-devices | Suggested: hardware
+   Q: A hardware engineer is going to upgrade the RAM in a laptop. Before installing t...
+
+3. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 2
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: A user’s laptop is working perfectly fine, but for some reason, when they attemp...
+
+4. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 3
+   Current: mobile-devices | Suggested: hardware
+   Q: What type of RAM would you purchase for a laptop computer?...
+
+5. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 4
+   Current: mobile-devices | Suggested: hardware
+   Q: Which of the following safety precautions do you need to take prior to installin...
+
+6. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 5
+   Current: mobile-devices | Suggested: hardware
+   Q: What types of biometric authentication do the iPhone 10 and iPhone 11 use? (Choo...
+
+7. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 6
+   Current: mobile-devices | Suggested: hardware
+   Q: A user has put their phone on charging, but the battery is draining quickly and ...
+
+8. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 7
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: A laptop user tries to surf the internet but finds they have no connectivity. Ru...
+
+9. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 8
+   Current: mobile-devices | Suggested: hardware
+   Q: Which of the following stages do you need to take when migrating a Hard Drive (H...
+
+10. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 9
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: A new door access system uses a 13.56-MHz short-band frequency. Which of the fol...
+
+11. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 10
+   Current: mobile-devices | Suggested: hardware
+   Q: A computer technician is going to install a Solid-State Drive (SSD) in a laptop....
+
+12. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 11
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: John Smith plugged his iPhone into his bedside power socket prior to going to be...
+
+13. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 12
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: A client wants to connect an external keyboard to an Android tablet. Which of th...
+
+14. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 13
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: What is the most common use of NFC?...
+
+15. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 14
+   Current: mobile-devices | Suggested: hardware
+   Q: Which of the following describes the function of a digitizer?...
+
+16. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 16
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: The external webcam attached to a laptop is switched on, but it is not producing...
+
+17. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 17
+   Current: mobile-devices | Suggested: hardware
+   Q: What is the purpose of an inverter?...
+
+18. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 18
+   Current: mobile-devices | Suggested: hardware
+   Q: When using a high frame rate, the crystals twist or untwist giving the screen a ...
+
+19. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 19
+   Current: mobile-devices | Suggested: hardware
+   Q: You are having trouble with your voice recognition technology on your Windows 10...
+
+20. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 20
+   Current: mobile-devices | Suggested: hardware
+   Q: A user is having trouble reading the screen on their legacy LCD monitor. The scr...
+
+21. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 21
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: A user has a large dark area on their iPhone screen and has taken it to a mobile...
+
+22. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 22
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: Which of the following displays is best for both gaming and graphic design?...
+
+23. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 23
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: Which of the following displays is prone to ghosting and can support a contrast ...
+
+24. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 25
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: A user has plugged in two monitors (via a VGA cable and an HDMI cable) and wants...
+
+25. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 26
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: The sales team wants to play a promotional video from an iPhone 10 for the chief...
+
+26. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 27
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: A computer technician is troubleshooting wireless connectivity on a laptop. Wher...
+
+27. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 28
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: A lawyer left court carrying a large number of case files. They tripped and acci...
+
+28. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 29
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: The touchpad on your laptop is unresponsive. What should you do? (Choose two)...
+
+29. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 30
+   Current: mobile-devices | Suggested: hardware
+   Q: What type of connection does an iPhone 10 charger use?...
+
+30. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 31
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: A user is trying to plug a USB 3.0 memory stick into their old Windows 7 laptop ...
+
+31. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 33
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: A user is finding it difficult to plug their phone charger into their cell phone...
+
+32. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 34
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: A user goes into a shop and purchases Bluetooth-capable earbuds so that they can...
+
+33. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 35
+   Current: mobile-devices | Suggested: hardware
+   Q: Which of the following types of functionality would a docking station with Displ...
+
+34. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 36
+   Current: mobile-devices | Suggested: hardware
+   Q: A user is working remotely from home and is due to participate in a Zoom confere...
+
+35. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 37
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: A laptop user has been complaining to the help desk that their laptop does not h...
+
+36. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 38
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: When using a tablet with a touch pen, you get erroneous behavior such as an erra...
+
+37. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 39
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: What type of connection was micro USB replaced by?...
+
+38. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 40
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: What type of connection does an iPhone 14 charger use?...
+
+39. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 41
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: What type of interface uses a nine-pin RS-232 hardware port?...
+
+40. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 42
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: A user is trying to connect to a Zoom session, but when they select the video op...
+
+41. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 43
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: The touchscreen feature on a Windows 10 computer has stopped working. Which of t...
+
+42. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 44
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: Following an update to the operating system of their desktop computer, the user’...
+
+43. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 45
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: A Cornish pasty vendor in Waterloo railway station is having difficulty taking c...
+
+44. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 46
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: A member of the sales team contacts the support desk to say that their cell phon...
+
+45. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 47
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: Which of the following cable types did the Lightning cable replace?...
+
+46. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 48
+   Current: mobile-devices | Suggested: hardware
+   Q: A company issues their sales team smartphones under a CYOD policy. A salesperson...
+
+47. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 49
+   Current: mobile-devices | Suggested: hardware
+   Q: Which of the following types of authentication is two-factor?...
+
+48. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 51
+   Current: mobile-devices | Suggested: hardware
+   Q: A regular gym user has just bought an Apple Watch so that they can monitor their...
+
+49. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 52
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: A mobile salesperson has complained to the service desk that the latest changes ...
+
+50. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 53
+   Current: mobile-devices | Suggested: hardware
+   Q: What is the benefit of using a Global System for Mobile Communication-based phon...
+
+51. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 54
+   Current: mobile-devices | Suggested: hardware
+   Q: In the past year, the sales team from a company has lost eight smartphones conta...
+
+52. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 55
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: What is the purpose of a Mobile Application Management (MAM) solution? (Choose t...
+
+53. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 56
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: Where does your Samsung Galaxy back up your data?...
+
+54. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 57
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: A user tries to download an app from the Apple App Store onto their iPhone, but ...
+
+55. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 58
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: On the 70th anniversary of Edmond Hillary’s climb to the summit of Mount Everest...
+
+56. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 59
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: A pop star on a worldwide tour has complained to you, their cell phone provider,...
+
+57. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 60
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: A traveling salesperson was trying to use the GPS on their phone, but it stopped...
+
+58. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 61
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: A foreign government intends to track an intelligence agent’s phone at all times...
+
+59. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 62
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: Where does your iPhone back your files up to?...
+
+60. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 63
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: How can you verify that Bluetooth is enabled on a Windows 10 phone?...
+
+61. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 64
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: What can you use to prevent PII and sensitive data from being shared outside the...
+
+62. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 65
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: Comparing Global System for Mobile Communication (GSM)-based phones and Code Div...
+
+63. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 67
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: A user’s smartphone is unable to make a 4G connection. What should they do to re...
+
+64. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 68
+   Current: mobile-devices | Suggested: troubleshooting
+   Q: Which of the following are true about Google Workspace? (Select all that apply)...
+
+65. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 69
+   Current: mobile-devices | Suggested: virtualization-cloud
+   Q: The FBI informs a business that one of their employees might be carrying out som...
+
+66. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 70
+   Current: mobile-devices | Suggested: virtualization-cloud
+   Q: Which of the following are valid ways to test a Bluetooth connection? (Choose th...
+
+67. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 71
+   Current: networking | Suggested: hardware
+   Q: A systems administrator needs to use a protocol for secure remote access to netw...
+
+68. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 73
+   Current: networking | Suggested: virtualization-cloud
+   Q: Which of the following mail clients downloads the email, stores it on the local ...
+
+69. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 74
+   Current: networking | Suggested: hardware
+   Q: Which application protocol is used in Windows operating systems for file and pri...
+
+70. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 76
+   Current: networking | Suggested: hardware
+   Q: Which of the following protocols is connectionless and used for streaming video ...
+
+71. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 77
+   Current: networking | Suggested: hardware
+   Q: Which of the following ports is used by the secure version of the protocol that ...
+
+72. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 78
+   Current: networking | Suggested: troubleshooting
+   Q: Which of the following protocols uses TCP ports 20/21 and transfers data in clea...
+
+73. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 79
+   Current: networking | Suggested: troubleshooting
+   Q: Which of the following are default ports for HTTP and HTTPS traffic? (Choose two...
+
+74. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 80
+   Current: networking | Suggested: troubleshooting
+   Q: TCP is connection-orientated and uses a three-way handshake. What is the correct...
+
+75. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 82
+   Current: networking | Suggested: troubleshooting
+   Q: Which of the following standard ports is used by secure IMAP?...
+
+76. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 83
+   Current: networking | Suggested: troubleshooting
+   Q: Which of the following is an unsecure remote access protocol that can have its p...
+
+77. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 84
+   Current: networking | Suggested: hardware
+   Q: A junior network administrator has been asked to identify the front and back of ...
+
+78. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 87
+   Current: networking | Suggested: hardware
+   Q: What is the purpose of an Optical Network Terminal (ONT) installed at a customer...
+
+79. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 89
+   Current: networking | Suggested: hardware
+   Q: Which of the following network devices is used to reduce the size of broadcast d...
+
+80. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 90
+   Current: networking | Suggested: hardware
+   Q: Which of the following technologies allows virtual servers to connect to high-sp...
+
+81. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 91
+   Current: networking | Suggested: troubleshooting
+   Q: A company wants to use POE as powering switches is more efficient than using an ...
+
+82. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 92
+   Current: networking | Suggested: troubleshooting
+   Q: What type of switch is unpacked from the box, turned on, has either 4 or 8 ports...
+
+83. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 93
+   Current: networking | Suggested: troubleshooting
+   Q: Which of the following legacy network hardware devices sends any incoming packet...
+
+84. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 94
+   Current: networking | Suggested: troubleshooting
+   Q: If a network-based firewall is set up to allow HTTP and HTTPS traffic, what happ...
+
+85. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 95
+   Current: networking | Suggested: troubleshooting
+   Q: Which of the following statements about cable modems are true? (Select all that ...
+
+86. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 96
+   Current: networking | Suggested: troubleshooting
+   Q: What are the THREE layers of an SDN?...
+
+87. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 97
+   Current: networking | Suggested: troubleshooting
+   Q: Which of the following is true concerning a network interface card used with a C...
+
+88. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 98
+   Current: networking | Suggested: troubleshooting
+   Q: What version of Power over Ethernet (POE) can draw power up to 25W?...
+
+89. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 99
+   Current: networking | Suggested: troubleshooting
+   Q: Which of the following are true about different types of DSL? Select TW...
+
+90. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 100
+   Current: networking | Suggested: hardware
+   Q: Which of the following bands work with radios that are single-band 2.4GHz? (Sele...
+
+91. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 102
+   Current: networking | Suggested: mobile-devices
+   Q: A user is trying and failing to get their Bluetooth earbuds to connect to their ...
+
+92. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 103
+   Current: networking | Suggested: hardware
+   Q: Which of the following can be used as a bridge to connect two wireless networks ...
+
+93. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 105
+   Current: networking | Suggested: hardware
+   Q: Which of the following standards supports only the 5GHz frequency band?...
+
+94. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 106
+   Current: networking | Suggested: hardware
+   Q: Which of the following statements about 2.4GHz wireless frequency is true? (Choo...
+
+95. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 107
+   Current: networking | Suggested: troubleshooting
+   Q: Which of the following wireless technologies has the fastest throughput?...
+
+96. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 108
+   Current: networking | Suggested: troubleshooting
+   Q: Which of the following wireless standards are backward-compatible with 802.11g?...
+
+97. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 109
+   Current: networking | Suggested: troubleshooting
+   Q: Which of the following statements about the 5GHz wireless frequency are true? (C...
+
+98. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 110
+   Current: networking | Suggested: troubleshooting
+   Q: Which of the following standards supports MIMO technology?...
+
+99. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 111
+   Current: networking | Suggested: hardware
+   Q: The helpdesk has been overwhelmed by network users saying that they cannot acces...
+
+100. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 112
+   Current: networking | Suggested: troubleshooting
+   Q: If a home user has an internet connection but cannot connect to any websites and...
+
+101. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 113
+   Current: networking | Suggested: virtualization-cloud
+   Q: What type of server can provide webpage caching?...
+
+102. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 114
+   Current: networking | Suggested: hardware
+   Q: What type of network is used in oil or gas refineries?...
+
+103. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 115
+   Current: networking | Suggested: hardware
+   Q: Which of the following could be considered Internet of Things? (Choose two)...
+
+104. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 116
+   Current: networking | Suggested: hardware
+   Q: Which of the following is true about spam gateways? (Select all that apply)...
+
+105. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 117
+   Current: networking | Suggested: hardware
+   Q: An organization has installed 20 web servers into an existing web array of 30 we...
+
+106. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 118
+   Current: networking | Suggested: troubleshooting
+   Q: What type of server uses port 25?...
+
+107. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 119
+   Current: networking | Suggested: virtualization-cloud
+   Q: What type of content is hosted on a web server?...
+
+108. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 120
+   Current: networking | Suggested: troubleshooting
+   Q: A user has a mapped drive that shows a UNC path of \\server1\data. Which of the ...
+
+109. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 121
+   Current: networking | Suggested: troubleshooting
+   Q: Which of the following can authenticate a supplicant without holding a copy of t...
+
+110. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 122
+   Current: networking | Suggested: troubleshooting
+   Q: A system administrator has installed a new laser printer for the customer servic...
+
+111. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 123
+   Current: networking | Suggested: troubleshooting
+   Q: Which of the following servers centralizes log files from multiple servers?...
+
+112. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 124
+   Current: networking | Suggested: troubleshooting
+   Q: What is the first thing a home user should do when they purchase an IoT device s...
+
+113. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 125
+   Current: networking | Suggested: hardware
+   Q: What type of IP address should a server be given?...
+
+114. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 126
+   Current: networking | Suggested: hardware
+   Q: What is the limitation of using a private IPv4 address?...
+
+115. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 128
+   Current: networking | Suggested: hardware
+   Q: Which of the following is the default subnet mask for a Class B IPv4 address?...
+
+116. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 129
+   Current: networking | Suggested: hardware
+   Q: If you work from home and need to connect to the internet, which of the followin...
+
+117. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 130
+   Current: networking | Suggested: hardware
+   Q: Which of the following is a valid IPv4 address?...
+
+118. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 131
+   Current: networking | Suggested: hardware
+   Q: A Windows server has been configured with both IPv4 and IPv6 addresses. What is ...
+
+119. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 132
+   Current: networking | Suggested: troubleshooting
+   Q: Which of the following is the reason why a desktop might be allocated an IP addr...
+
+120. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 133
+   Current: networking | Suggested: troubleshooting
+   Q: A user is unable to access the internet, and when the system administrator runs ...
+
+121. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 134
+   Current: networking | Suggested: troubleshooting
+   Q: How many bits does an IPv4 address use?...
+
+122. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 135
+   Current: networking | Suggested: troubleshooting
+   Q: Which of the following is an IPv6 address?...
+
+123. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 136
+   Current: networking | Suggested: troubleshooting
+   Q: An installation engineer has installed a new router in a SOHO network that consi...
+
+124. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 137
+   Current: networking | Suggested: troubleshooting
+   Q: How can you shorten the following IPv6 address: 2001:0dC8:0000:0000:0abc:0000:de...
+
+125. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 138
+   Current: networking | Suggested: troubleshooting
+   Q: Which of the following is a public IPv4 address?...
+
+126. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 139
+   Current: networking | Suggested: troubleshooting
+   Q: How many bits does an IPv6 address use?...
+
+127. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 140
+   Current: networking | Suggested: hardware
+   Q: The financial director of an enterprise raised a ticket as they were unable to c...
+
+128. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 142
+   Current: networking | Suggested: virtualization-cloud
+   Q: What is the default lease duration of a Microsoft DHCP server?...
+
+129. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 143
+   Current: networking | Suggested: hardware
+   Q: Users in a small company cannot access the mail server on Monday morning. The sy...
+
+130. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 144
+   Current: networking | Suggested: hardware
+   Q: What type of network would be a single site with all users in close proximity, s...
+
+131. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 145
+   Current: networking | Suggested: hardware
+   Q: Which of the following uses cryptography to confirm that the source server that ...
+
+132. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 146
+   Current: networking | Suggested: hardware
+   Q: One of the users in a company keeps raising support tickets for very minor issue...
+
+133. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 147
+   Current: networking | Suggested: troubleshooting
+   Q: Which of the following technologies allows multiple networks to be created withi...
+
+134. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 148
+   Current: networking | Suggested: troubleshooting
+   Q: The spam gateway was fooled by spam coming from many different fake domains. Whi...
+
+135. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 151
+   Current: networking | Suggested: troubleshooting
+   Q: What is the sequence of the DHCP handshake?...
+
+136. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 152
+   Current: networking | Suggested: troubleshooting
+   Q: Which of the following is a method that can be used to securely connect a remote...
+
+137. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 153
+   Current: networking | Suggested: troubleshooting
+   Q: Which of the following tools can be used to prevent spear phishing or spam attac...
+
+138. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 154
+   Current: networking | Suggested: hardware
+   Q: What type of network is the internet an example of?...
+
+139. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 155
+   Current: networking | Suggested: hardware
+   Q: A mountaineering team is going to climb Mount Everest for charity. However, once...
+
+140. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 156
+   Current: networking | Suggested: mobile-devices
+   Q: An organization using unshielded twisted pair cabling has been suffering from El...
+
+141. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 157
+   Current: networking | Suggested: hardware
+   Q: What is the main type of connection used by an iPhone 11?...
+
+142. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 158
+   Current: networking | Suggested: hardware
+   Q: Which of the following statements are true about a Wireless Internet Service Pro...
+
+143. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 159
+   Current: networking | Suggested: hardware
+   Q: Which of the following best describes a WAN?...
+
+144. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 160
+   Current: networking | Suggested: hardware
+   Q: Which of the following technologies would allow a network host to be allocated a...
+
+145. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 161
+   Current: networking | Suggested: troubleshooting
+   Q: A small solicitor’s firm has just moved into a listed building. They are not all...
+
+146. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 162
+   Current: networking | Suggested: troubleshooting
+   Q: A company’s telephone line has failed due to adverse weather, and their internet...
+
+147. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 163
+   Current: networking | Suggested: hardware
+   Q: Which of the following tools can be used to test a network card or switch port?...
+
+148. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 164
+   Current: networking | Suggested: hardware
+   Q: Which of the following tools will be used by a network administrator to score th...
+
+149. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 166
+   Current: networking | Suggested: hardware
+   Q: The CEO of a company is unable to obtain a network connection. The ports on the ...
+
+150. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 168
+   Current: networking | Suggested: hardware
+   Q: A network engineer found that the RJ45 connection on an Ethernet cable had come ...
+
+151. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 169
+   Current: networking | Suggested: hardware
+   Q: A system administrator has a problem with their wireless access point. To troubl...
+
+152. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 170
+   Current: networking | Suggested: troubleshooting
+   Q: What tool should a network administrator use to measure whether a cable in a wal...
+
+153. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 172
+   Current: hardware | Suggested: troubleshooting
+   Q: Which tool is commonly used to troubleshoot a fiber optic cable?...
+
+154. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 173
+   Current: hardware | Suggested: networking
+   Q: When would you use an ST connector in networking and what is a key benefit?...
+
+155. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 174
+   Current: hardware | Suggested: networking
+   Q: What is the maximum distance limitation of Cat 5 cables for Ethernet networking?...
+
+156. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 178
+   Current: hardware | Suggested: troubleshooting
+   Q: Which operating system commonly utilizes Thunderbolt cables for high-speed data ...
+
+157. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 179
+   Current: hardware | Suggested: troubleshooting
+   Q: What tool is commonly used to create an RJ45 cable?...
+
+158. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 180
+   Current: hardware | Suggested: troubleshooting
+   Q: In which scenario would you commonly use a Lightning to USB cable?...
+
+159. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 181
+   Current: hardware | Suggested: troubleshooting
+   Q: What type of cable has a T568B connection on one end and a T568A connection on t...
+
+160. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 182
+   Current: hardware | Suggested: troubleshooting
+   Q: What is the actual speed difference between USB and USB 2?...
+
+161. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 183
+   Current: hardware | Suggested: troubleshooting
+   Q: When should plenum-grade cables be used in networking installations?...
+
+162. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 184
+   Current: hardware | Suggested: networking
+   Q: When would you use Shielded Twisted Pair (STP) cables in networking installation...
+
+163. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 185
+   Current: hardware | Suggested: troubleshooting
+   Q: When are F-type connectors commonly used in networking?...
+
+164. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 186
+   Current: hardware | Suggested: troubleshooting
+   Q: A junior IT technician has inadvertently cut the end of an Ethernet cable with a...
+
+165. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 188
+   Current: hardware | Suggested: troubleshooting
+   Q: Which of the following interfaces is commonly used to connect external storage d...
+
+166. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 189
+   Current: hardware | Suggested: mobile-devices
+   Q: Which of the following is a primary advantage of using DisplayPort as a video in...
+
+167. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 192
+   Current: hardware | Suggested: mobile-devices
+   Q: Which type of memory module is commonly used in laptops and small form factor co...
+
+168. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 197
+   Current: hardware | Suggested: troubleshooting
+   Q: Which of the following options would be the best choice for a gaming PC in terms...
+
+169. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 205
+   Current: hardware | Suggested: troubleshooting
+   Q: Which of the following rpm options is commonly associated with faster rotational...
+
+170. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 206
+   Current: hardware | Suggested: troubleshooting
+   Q: You have three hard drives, sized 500 GB, 1 TB, and 2 T...
+
+171. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 207
+   Current: hardware | Suggested: troubleshooting
+   Q: When would you typically use the Peripheral Component Interconnect Express (PCIe...
+
+172. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 209
+   Current: hardware | Suggested: troubleshooting
+   Q: You have two hard drives of different sizes, a 1 TB drive and a 500 GB drive. Wh...
+
+173. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 210
+   Current: hardware | Suggested: troubleshooting
+   Q: Which storage device is commonly used in digital cameras and smartphones for exp...
+
+174. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 212
+   Current: hardware | Suggested: troubleshooting
+   Q: What is a key difference between installing a 2.5” SSD and a 3.5” SSD on a deskt...
+
+175. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 215
+   Current: hardware | Suggested: troubleshooting
+   Q: A user is experiencing an issue where a dual-boot computer does not boot to the ...
+
+176. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 220
+   Current: hardware | Suggested: troubleshooting
+   Q: What is a potential cause of a clicking noise when booting up a computer?...
+
+177. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 222
+   Current: hardware | Suggested: troubleshooting
+   Q: What is a potential consequence of operating a disk infrastructure in a degraded...
+
+178. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 224
+   Current: hardware | Suggested: troubleshooting
+   Q: When booting up a computer, which component can cause a continuous beeping noise...
+
+179. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 225
+   Current: hardware | Suggested: troubleshooting
+   Q: What is the main difference between AT and ATX motherboards, and which one is co...
+
+180. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 226
+   Current: hardware | Suggested: troubleshooting
+   Q: If a heat sink is not effectively dissipating heat from the CPU, what can be don...
+
+181. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 227
+   Current: hardware | Suggested: troubleshooting
+   Q: A technician inserts an encrypted USB drive protected with BitLocker. When attem...
+
+182. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 228
+   Current: hardware | Suggested: troubleshooting
+   Q: A student was able to successfully boot from a live Linux CD on a computer in th...
+
+183. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 229
+   Current: hardware | Suggested: troubleshooting
+   Q: When you plug a device into your PC, the power to the PC goes down, and when you...
+
+184. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 230
+   Current: hardware | Suggested: troubleshooting
+   Q: Which of the following are potential consequences of a CPU running at high tempe...
+
+185. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 231
+   Current: hardware | Suggested: mobile-devices
+   Q: Which of the following methods can improve system performance when multiple appl...
+
+186. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 232
+   Current: hardware | Suggested: troubleshooting
+   Q: Which of the following options correctly describes a Molex connector?...
+
+187. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 233
+   Current: hardware | Suggested: troubleshooting
+   Q: What type of disk infrastructure is typically used in a degraded state?...
+
+188. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 234
+   Current: hardware | Suggested: virtualization-cloud
+   Q: What is a potential cause when some keys on the keyboard do not work and there i...
+
+189. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 235
+   Current: hardware | Suggested: virtualization-cloud
+   Q: What is the primary purpose of setting a boot password in a computer’s BIOS sett...
+
+190. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 236
+   Current: hardware | Suggested: networking
+   Q: What is the primary purpose of a Hardware Security Module (HSM)?...
+
+191. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 238
+   Current: hardware | Suggested: troubleshooting
+   Q: What should you do if virtual machines are not working on your computer, and you...
+
+192. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 239
+   Current: hardware | Suggested: miscellaneous
+   Q: What is the primary advantage of advanced risk computing?...
+
+193. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 240
+   Current: hardware | Suggested: miscellaneous
+   Q: Which of the following best describes the purpose of Intel architecture in advan...
+
+194. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 242
+   Current: hardware | Suggested: mobile-devices
+   Q: For which type of devices are Intel Core M processors specifically designed?...
+
+195. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 250
+   Current: hardware | Suggested: troubleshooting
+   Q: What wattage is the recommended power supply for a typical desktop computer?...
+
+196. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 251
+   Current: hardware | Suggested: troubleshooting
+   Q: A company is experiencing an issue with its dot matrix printer that uses carbon ...
+
+197. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 253
+   Current: hardware | Suggested: mobile-devices
+   Q: Which type of printer typically uses a laser beam or LED light source for image ...
+
+198. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 258
+   Current: hardware | Suggested: troubleshooting
+   Q: Which of the following is the correct sequence of a laser printer?...
+
+199. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 259
+   Current: hardware | Suggested: troubleshooting
+   Q: Which type of printer generates images by applying heat to special heat-sensitiv...
+
+200. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 260
+   Current: hardware | Suggested: troubleshooting
+   Q: What could be the issue if printed documents have poor print quality? (Choose tw...
+
+201. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 261
+   Current: hardware | Suggested: troubleshooting
+   Q: What happens during the fusing stage of a laser printer?...
+
+202. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 262
+   Current: hardware | Suggested: troubleshooting
+   Q: You have a printer with two paper trays – the top tray contains paper, and the b...
+
+203. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 263
+   Current: hardware | Suggested: troubleshooting
+   Q: How can a printer in a SOHO obtain the same IP from a wireless router running DH...
+
+204. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 264
+   Current: hardware | Suggested: troubleshooting
+   Q: When using the scan-to-folder feature on a multifunction device (MFD), what conf...
+
+205. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 265
+   Current: hardware | Suggested: troubleshooting
+   Q: When using the scan-to-cloud feature on a multifunction device (MFD), what does ...
+
+206. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 266
+   Current: hardware | Suggested: troubleshooting
+   Q: You are experiencing issues where many print jobs are not getting picked up from...
+
+207. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 269
+   Current: hardware | Suggested: troubleshooting
+   Q: What could be the issue if a printed document is coming out landscape instead of...
+
+208. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 274
+   Current: hardware | Suggested: troubleshooting
+   Q: When would you typically use Printer Control Language (PCL) in printing?...
+
+209. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 275
+   Current: hardware | Suggested: troubleshooting
+   Q: When unboxing a new print device, which of the following actions should you perf...
+
+210. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 276
+   Current: hardware | Suggested: troubleshooting
+   Q: To replace the filament in a 3D printer, which of the following actions should t...
+
+211. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 277
+   Current: hardware | Suggested: troubleshooting
+   Q: Which type of 3D printing technology uses filament materials such as ABS or PLA?...
+
+212. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 278
+   Current: hardware | Suggested: troubleshooting
+   Q: How does Wi-Fi direct printing work?...
+
+213. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 279
+   Current: hardware | Suggested: troubleshooting
+   Q: What components are typically included in a printer maintenance kit?...
+
+214. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 280
+   Current: hardware | Suggested: troubleshooting
+   Q: When would you typically use PostScript in printing?...
+
+215. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 281
+   Current: virtualization-cloud | Suggested: hardware
+   Q: What type of cloud service would you use if you wanted to move 100 desktops to t...
+
+216. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 284
+   Current: virtualization-cloud | Suggested: hardware
+   Q: A company wants to migrate its email and business applications to the cloud. Whi...
+
+217. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 285
+   Current: virtualization-cloud | Suggested: hardware
+   Q: The Chief Executive Officer wants to ensure that when the company moves to the c...
+
+218. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 286
+   Current: virtualization-cloud | Suggested: hardware
+   Q: A salesperson from a Cloud Service Provider (CSP) is trying to sell a company me...
+
+219. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 287
+   Current: virtualization-cloud | Suggested: hardware
+   Q: Which of the following cloud models would allow three universities to share reso...
+
+220. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 288
+   Current: virtualization-cloud | Suggested: troubleshooting
+   Q: A company is going to employ two consultants to help with data migration. The co...
+
+221. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 289
+   Current: virtualization-cloud | Suggested: troubleshooting
+   Q: A company would like to enable its developers to create bespoke applications. Th...
+
+222. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 290
+   Current: virtualization-cloud | Suggested: troubleshooting
+   Q: What type of cloud model is known as multi-tenant?...
+
+223. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 291
+   Current: virtualization-cloud | Suggested: troubleshooting
+   Q: A law firm is going to migrate its currently on-premises infrastructure to the c...
+
+224. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 292
+   Current: virtualization-cloud | Suggested: troubleshooting
+   Q: Which of the following describes why a cloud provider would store hardware in it...
+
+225. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 293
+   Current: virtualization-cloud | Suggested: troubleshooting
+   Q: Which of the following means that the server experiences very little downtime (a...
+
+226. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 295
+   Current: virtualization-cloud | Suggested: troubleshooting
+   Q: What type of cloud allows access to data even if the internet fails?...
+
+227. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 296
+   Current: virtualization-cloud | Suggested: troubleshooting
+   Q: What type of cloud service is VDI?...
+
+228. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 298
+   Current: virtualization-cloud | Suggested: troubleshooting
+   Q: Which of the following are only SaaS products? (Choose two)...
+
+229. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 299
+   Current: virtualization-cloud | Suggested: mobile-devices
+   Q: Due to COVID, a financial company is moving all its workers to a work-from-home ...
+
+230. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 300
+   Current: virtualization-cloud | Suggested: troubleshooting
+   Q: Which of the following is an automated advantage of cloud storage?...
+
+231. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 301
+   Current: virtualization-cloud | Suggested: troubleshooting
+   Q: What is one of the disadvantages of using VDI on-premises?...
+
+232. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 304
+   Current: virtualization-cloud | Suggested: hardware
+   Q: What type of hypervisor runs on a bare-metal virtual platform?...
+
+233. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 308
+   Current: virtualization-cloud | Suggested: hardware
+   Q: What are the THREE main reasons that an IT team would create a sandbox?...
+
+234. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 309
+   Current: virtualization-cloud | Suggested: hardware
+   Q: A manufacturer of pressure-relieving mattresses has a legacy application that te...
+
+235. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 310
+   Current: virtualization-cloud | Suggested: hardware
+   Q: What is the purpose of using Second Level Address Translation (SLAT)?...
+
+236. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 311
+   Current: virtualization-cloud | Suggested: troubleshooting
+   Q: Which of the following describes cross-platform virtualization?...
+
+237. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 313
+   Current: virtualization-cloud | Suggested: troubleshooting
+   Q: A university professor teaches a computer class 10 times a week. The professor w...
+
+238. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 314
+   Current: virtualization-cloud | Suggested: troubleshooting
+   Q: Which of the following BEST describes virtual machine sprawl?...
+
+239. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 315
+   Current: virtualization-cloud | Suggested: troubleshooting
+   Q: A system administrator plans to implement VDI and wants to ensure that the stora...
+
+240. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 316
+   Current: virtualization-cloud | Suggested: troubleshooting
+   Q: If you wanted to separate a guest machine from the host or another virtual machi...
+
+241. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 317
+   Current: virtualization-cloud | Suggested: troubleshooting
+   Q: A company’s virtual network has been flooded with rogue virtual machines, which ...
+
+242. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 319
+   Current: virtualization-cloud | Suggested: troubleshooting
+   Q: Why would a network administrator ensure they use an Uninterruptible Power Suppl...
+
+243. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 320
+   Current: virtualization-cloud | Suggested: troubleshooting
+   Q: What is the benefit of using container virtualization?...
+
+244. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 321
+   Current: virtualization-cloud | Suggested: troubleshooting
+   Q: What is application virtualization?...
+
+245. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 322
+   Current: troubleshooting | Suggested: hardware
+   Q: A systems administrator is given a ticket by the help desk to deal with the chie...
+
+246. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 325
+   Current: troubleshooting | Suggested: hardware
+   Q: A systems administrator took 4 hours to identify and then implement a solution. ...
+
+247. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 327
+   Current: troubleshooting | Suggested: hardware
+   Q: What safety precautions should I take when replacing Random Access Memory (RAM) ...
+
+248. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 329
+   Current: troubleshooting | Suggested: hardware
+   Q: A computer technician needs to upgrade the Central Processing Unit (CPU) in an A...
+
+249. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 330
+   Current: troubleshooting | Suggested: hardware
+   Q: A computer technician has just installed additional RAM in a desktop computer an...
+
+250. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 331
+   Current: troubleshooting | Suggested: hardware
+   Q: A computer technician has received a desktop computer from the customer services...
+
+251. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 332
+   Current: troubleshooting | Suggested: hardware
+   Q: A user has complained to the help desk that the time on her computer is inaccura...
+
+252. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 333
+   Current: troubleshooting | Suggested: hardware
+   Q: A computer technician is carrying out annual maintenance on a desktop computer. ...
+
+253. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 342
+   Current: troubleshooting | Suggested: hardware
+   Q: A customer has called an IT support company to provide a storage solution to a c...
+
+254. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 345
+   Current: troubleshooting | Suggested: hardware
+   Q: A computer technician is trying to find out why a computer cannot boot. They tak...
+
+255. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 347
+   Current: troubleshooting | Suggested: hardware
+   Q: A computer technician is receiving disk errors from SMART monitoring. The comput...
+
+256. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 348
+   Current: troubleshooting | Suggested: hardware
+   Q: A user’s computer fails to boot up and they notice the hard drive LED is a solid...
+
+257. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 353
+   Current: troubleshooting | Suggested: hardware
+   Q: A technician has been called to a classroom as the projector is very dim. Which ...
+
+258. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 355
+   Current: troubleshooting | Suggested: mobile-devices
+   Q: A professor at a university connects their laptop to the projector in a theatre....
+
+259. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 357
+   Current: troubleshooting | Suggested: hardware
+   Q: A computer technician has connected a laptop to a projector in a lecture hall bu...
+
+260. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 358
+   Current: troubleshooting | Suggested: hardware
+   Q: A computer technician has been called out to a conference room where a presentat...
+
+261. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 359
+   Current: troubleshooting | Suggested: hardware
+   Q: A new TV and video soundbar system has just been set up in a boardroom. The TV i...
+
+262. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 366
+   Current: troubleshooting | Suggested: hardware
+   Q: A computer is experiencing issues during the POST process. What component should...
+
+263. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 368
+   Current: troubleshooting | Suggested: mobile-devices
+   Q: What could be the cause of a phone becoming excessively hot?...
+
+264. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 369
+   Current: troubleshooting | Suggested: hardware
+   Q: What is the most appropriate action to take if a phone has been exposed to liqui...
+
+265. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 370
+   Current: troubleshooting | Suggested: hardware
+   Q: How can a duplex printer help reduce excessive paper usage?...
+
+266. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 371
+   Current: troubleshooting | Suggested: hardware
+   Q: What could be the potential cause of printed text not sticking to the paper?...
+
+267. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 372
+   Current: troubleshooting | Suggested: mobile-devices
+   Q: What could be the potential cause of a new printer with a duplex unit only being...
+
+268. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 373
+   Current: troubleshooting | Suggested: hardware
+   Q: What could be the potential cause of print quality issues, including marks on th...
+
+269. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 374
+   Current: troubleshooting | Suggested: hardware
+   Q: When paper fails to feed properly in a printer, what is the most likely cause?...
+
+270. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 375
+   Current: troubleshooting | Suggested: hardware
+   Q: What is the most likely cause of a paper jam in a printer?...
+
+271. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 376
+   Current: troubleshooting | Suggested: hardware
+   Q: To minimize paper waste and enhance print job control, what measures can be impl...
+
+272. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 388
+   Current: troubleshooting | Suggested: mobile-devices
+   Q: In a digitization project, which of the following devices would be MOST suitable...
+
+273. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 391
+   Current: troubleshooting | Suggested: hardware
+   Q: You are experiencing issues with your wireless network, and you are unable to se...
+
+274. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 394
+   Current: troubleshooting | Suggested: hardware
+   Q: Which of the following best describes the use of the licensed band in wireless c...
+
+275. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 396
+   Current: troubleshooting | Suggested: hardware
+   Q: When remotely accessing the company network, which option provides a secure conn...
+
+276. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 397
+   Current: troubleshooting | Suggested: hardware
+   Q: What is a possible solution to address a wireless connection that keeps dropping...
+
+277. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 400
+   Current: troubleshooting | Suggested: hardware
+   Q: Which of the following is true about the M.2 form factor?...
+
+278. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 401
+   Current: troubleshooting | Suggested: hardware
+   Q: What is a characteristic of RAID 5?...
+
+279. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 402
+   Current: troubleshooting | Suggested: mobile-devices
+   Q: Which of the following flash memory card formats is commonly used in digital cam...
+
+280. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 403
+   Current: troubleshooting | Suggested: hardware
+   Q: Which of the following statements about ATX motherboards is true?...
+
+281. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 404
+   Current: troubleshooting | Suggested: hardware
+   Q: Which of the following is a security feature provided by the UEFI (Unified Exten...
+
+282. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 405
+   Current: troubleshooting | Suggested: hardware
+   Q: Which of the following is a primary benefit of using an expansion sound card in ...
+
+283. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 406
+   Current: troubleshooting | Suggested: hardware
+   Q: What is the purpose of cooling fans in a computer system?...
+
+284. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 408
+   Current: troubleshooting | Suggested: hardware
+   Q: What are motherboard connector headers used for?...
+
+285. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 418
+   Current: troubleshooting | Suggested: mobile-devices
+   Q: What is the main purpose of overclocking a computer component?...
+
+286. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 421
+   Current: troubleshooting | Suggested: virtualization-cloud
+   Q: Which port is commonly used for transferring files between a client and a server...
+
+287. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 422
+   Current: troubleshooting | Suggested: virtualization-cloud
+   Q: Which network protocol is used for secure remote access and secure file transfer...
+
+288. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 423
+   Current: troubleshooting | Suggested: networking
+   Q: Which network protocol is commonly used for insecure remote command-line access ...
+
+289. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 424
+   Current: troubleshooting | Suggested: hardware
+   Q: Which network protocol is primarily used for sending and receiving email message...
+
+290. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 425
+   Current: troubleshooting | Suggested: networking
+   Q: Which network protocol is responsible for translating domain names into IP addre...
+
+291. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 426
+   Current: troubleshooting | Suggested: networking
+   Q: Which network protocol is responsible for automatically assigning IP addresses t...
+
+292. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 427
+   Current: troubleshooting | Suggested: mobile-devices
+   Q: Which feature allows mobile devices to determine their geographic location?...
+
+293. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 428
+   Current: troubleshooting | Suggested: mobile-devices
+   Q: Which technology allows cellular networks to estimate the location of a mobile d...
+
+294. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 429
+   Current: troubleshooting | Suggested: mobile-devices
+   Q: What is the primary purpose of Mobile Device Management (MDM) and Mobile Applica...
+
+295. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 430
+   Current: mobile-devices | Suggested: hardware
+   Q: The correct answer is...
+
+296. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 431
+   Current: mobile-devices | Suggested: hardware
+   Q: The correct answer is...
+
+297. ID: -1 | File: new_questions_staging_v3_mapped.json | Index: 433
+   Current: mobile-devices | Suggested: hardware
+   Q: The correct answer is...
 

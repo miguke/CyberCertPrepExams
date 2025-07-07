@@ -14,7 +14,7 @@ EXAM_CONFIGS = {
             "troubleshooting.json",
             "virtualization-cloud.json",
             "miscellaneous.json",
-            "new_questions_staging.json"
+            "new_questions_staging_v3_mapped.json"
         ],
         'categorize_func': categorize_question
     },

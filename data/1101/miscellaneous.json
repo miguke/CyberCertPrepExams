@@ -12,7 +12,7 @@
       1
     ],
     "explanation": "ADF/flatbed scanner would most likely be used to obtain electronic images of a large number of printed documents. References: CompTIA A+ Certification Exam\nGuide, Exam 220-1001, Page 351",
-    "id": 1
+    "id": 212
   },
   {
     "type": "multiple",
@@ -30,7 +30,7 @@
       4
     ],
     "explanation": "2.4GHz penetrates solid objects more effectively. 5GHz provides faster data connections. 2.4GHz has a higher coverage area.\n5GHz has higher bandwidth. The 2.4GHz frequency has a lower data rate compared to 5GHz, but it can penetrate solid objects more effectively and has a higher\ncoverage area. The 5GHz frequency, on the other hand, provides faster data connections and has higher bandwidth,\nbut it has fewer channels and lower transmit power.",
-    "id": 2
+    "id": 213
   },
   {
     "type": "single",
@@ -45,10 +45,10 @@
       1
     ],
     "explanation": "The tool that the technician should use to see all drives is Diskmgmt. Diskmgmt is a Windows utility that allows you to manage disk drives and partitions on your\ncomputer. It can be used to view all drives, including USB drives, that are connected to the computer12.",
-    "id": 3
+    "id": 214
   },
   {
-    "id": 4,
+    "id": 215,
     "question": "A developer is requesting permission to utilize client-side visualization. The developer would like to write code in a setting isolated from other infrastructure to avoid\nnegative impacts of experimental code. Which of the following provides the BEST solution for the developer?",
     "options": [
       "Cross-platform functionality",
@@ -64,7 +64,7 @@
     "topic": "miscellaneous"
   },
   {
-    "id": 5,
+    "id": 216,
     "question": "Which of the following wireless technologies has the MOST range and wireless throughput?",
     "options": [
       "802.11ac",
@@ -80,7 +80,7 @@
     "topic": "miscellaneous"
   },
   {
-    "id": 6,
+    "id": 217,
     "question": "A technician is inspecting a projector that is displaying fuzzy images. Which of the following actions would provide the BEST solution?",
     "options": [
       "Adjusting the lens",
@@ -96,7 +96,7 @@
     "topic": "miscellaneous"
   },
   {
-    "id": 7,
+    "id": 218,
     "question": "Recommend!! \nA technician logs on to a PC and inserts an encrypted USB drive. When opening File Explorer, the technician cannot see the USB drive. Which of the following\ntools should the technician use to see all drives?",
     "options": [
       "DiskPart",
@@ -112,7 +112,7 @@
     "topic": "miscellaneous"
   },
   {
-    "id": 8,
+    "id": 219,
     "question": "Which of the following video cables can carry an audio signal?",
     "options": [
       "HDMI",
@@ -128,7 +128,7 @@
     "topic": "miscellaneous"
   },
   {
-    "id": 9,
+    "id": 220,
     "question": "A technician is installing a storage solution for a computer that requires data redundancy with the fewest drives possible. Which of the following would best meet\nthis requirement?",
     "options": [
       "RAID O",
