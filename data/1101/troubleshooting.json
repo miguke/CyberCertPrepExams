@@ -276,7 +276,7 @@
     "correct": [
       1
     ],
-    "explanation": "Based on the information provided in the question, the MOST likely component that needs to be replaced is A. power adapter. If a laptop has been working as\nexpected for several years but suddenly stops working when it is plugged into a wall outlet, it is possible that the power adapter has failed and is no longer able to\nprovide power to the laptop. In this case, replacing the power adapter would likely resolve the issue.\nThe other components listed in the options (battery, system fan, and hard drive) could also potentially fail and cause issues with a laptop’s performance. However,\nbased on the specific scenario described in the question (the laptop suddenly stops working when plugged into a wall outlet), it seems most likely that the issue is\nrelated to the power adapter.\n \nIf the laptop has been working as expected for several years and suddenly stops working, the power adapter is the most likely component that needs to be\nreplaced. Over time, the power adapter can become worn or damaged, resulting in a loss of power to the laptop. References: CompTIA A+ Certification Exam\nGuide, Ninth Edition, Chapter 3",
+    "explanation": "Based on the information provided in the question, the MOST likely component that needs to be replaced is A. power adapter. If a laptop has been working as\nexpected for several years but suddenly stops working when it is plugged into a wall outlet, it is possible that the power adapter has failed and is no longer able to\nprovide power to the laptop. In this case, replacing the power adapter would likely resolve the issue.\nThe other components listed in the options (battery, system fan, and hard drive) could also potentially fail and cause issues with a laptop’s performance. However,\nbased on the specific scenario described in the question (the laptop suddenly stops working when plugged into a wall outlet), it seems most likely that the issue is\nrelated to the power adapter.\nIf the laptop has been working as expected for several years and suddenly stops working, the power adapter is the most likely component that needs to be\nreplaced. Over time, the power adapter can become worn or damaged, resulting in a loss of power to the laptop. References: CompTIA A+ Certification Exam\nGuide, Ninth Edition, Chapter 3",
     "id": 18
   },
   {
@@ -322,7 +322,7 @@
     "correct": [
       3
     ],
-    "explanation": "The most likely cause of the issue is that the page orientation is incorrect. The printer may be set to print labels in a different orientation than the orientation of the\n \nlabel sheet1.",
+    "explanation": "The most likely cause of the issue is that the page orientation is incorrect. The printer may be set to print labels in a different orientation than the orientation of the\nlabel sheet1.",
     "id": 21
   },
   {
@@ -375,7 +375,7 @@
       "Restart the modem and run an online internet connection and speed diagnostic tool.",
       "Guide the customer on how to upgrade the internet plan with the provider in order to improve latency.",
       "Explain to the customer this is not an issue; this situation is normal for this type of internet connection.",
-      "Replace the modem because it is not working correctly based on the test result.\n "
+      "Replace the modem because it is not working correctly based on the test result."
     ],
     "correct": [
       0
@@ -425,7 +425,7 @@
     "correct": [
       3
     ],
-    "explanation": " \nThe issue described in the question is most likely due to an incorrect configuration of the printer's duplex settings. To enable automatic duplex printing, the\ntechnician needs to read the printer's installation manual to understand how to configure the printer's duplex settings correctly. Once the settings are configured,\nthe printer should be able to print on both sides of the paper automatically.\nTo fix the issue of a newly installed printer capable of automatically printing on both sides of the paper but only printing on both sides manually, the technician\nshould read the installation manual and configure duplex settings. Duplex printing settings can be configured in the printer driver software, which can be accessed\nthrough the printer settings in the Control Panel. Installing the most recent firmware upgrade available for the printer, contacting the vendor for a hardware\nreplacement, or reinstalling the printer software and drivers and restarting the printer will not resolve the issue.",
+    "explanation": "The issue described in the question is most likely due to an incorrect configuration of the printer's duplex settings. To enable automatic duplex printing, the\ntechnician needs to read the printer's installation manual to understand how to configure the printer's duplex settings correctly. Once the settings are configured,\nthe printer should be able to print on both sides of the paper automatically.\nTo fix the issue of a newly installed printer capable of automatically printing on both sides of the paper but only printing on both sides manually, the technician\nshould read the installation manual and configure duplex settings. Duplex printing settings can be configured in the printer driver software, which can be accessed\nthrough the printer settings in the Control Panel. Installing the most recent firmware upgrade available for the printer, contacting the vendor for a hardware\nreplacement, or reinstalling the printer software and drivers and restarting the printer will not resolve the issue.",
     "id": 28
   },
   {
@@ -490,7 +490,7 @@
   },
   {
     "type": "single",
-    "question": "A technician is troubleshooting a classroom projector that shuts down after fifteen minutes of use. Which of the following should the technician do to resolve the\n \nissue?",
+    "question": "A technician is troubleshooting a classroom projector that shuts down after fifteen minutes of use. Which of the following should the technician do to resolve the\nissue?",
     "options": [
       "Replace the video input cable.",
       "Change the bulb.",
@@ -563,21 +563,6 @@
     ],
     "explanation": "If lines appear down copied pages but printed pages sent directly to copier render as intended, it could be due to scratched scanner glass which can cause lines\nor streaks on copied pages.\nIf there are lines appearing on copied pages, but not on printed pages sent directly to the copier, the issue is most likely caused by a scratch on the scanner glass.\nReferences: https://www.pacificoffice.com/how-to-fix-lines-on-copier/",
     "id": 37
-  },
-  {
-    "type": "single",
-    "question": "A user receives the following error when trying to reboot a computer:\nWhich of the following is the MOST likely cause of this error message?",
-    "options": [
-      "Corrupted bootloader",
-      "Faulty RAID controller\n ",
-      "Failed hard drive",
-      "Incorrect storage device driver"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "The error message \"Reboot and Select Proper Boot Device\" indicates that the computer cannot find the boot device that contains the operating system12. This can\nhappen if the hard drive that stores the operating system is damaged or failed, and the BIOS cannot detect it or read from it23. A failed hard drive can also cause\nother symptoms such as clicking noises, corrupted files, or slow performance4.",
-    "id": 38
   },
   {
     "type": "single",
@@ -837,27 +822,12 @@
     "correct": [
       2
     ],
-    "explanation": "Once the technician has determined that the power supply is likely to be defective, they should establish a plan of action to resolve the problem. This may include\nreplacing the power supply or further testing to confirm that it is indeed defective. After establishing a plan of action, the technician should implement the solution\nand verify that it has resolved the issue.\n ",
+    "explanation": "Once the technician has determined that the power supply is likely to be defective, they should establish a plan of action to resolve the problem. This may include\nreplacing the power supply or further testing to confirm that it is indeed defective. After establishing a plan of action, the technician should implement the solution\nand verify that it has resolved the issue.",
     "id": 55
   },
   {
-    "type": "single",
-    "question": "A user is unable to access the internet on a PC. A technician examines the PC and runs the following commands:\nWhich of the following steps in the troubleshooting process does this series of commands represent?",
-    "options": [
-      "Establish a theory.",
-      "Verify full system functionality.",
-      "Establish a plan of action.",
-      "Identify the problem."
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "",
-    "id": 56
-  },
-  {
     "type": "multiple",
-    "question": "The owner of a restaurant reports that wireless network connections are lost intermittently throughout the day. Which of the following steps should a technician\ntake to troubleshoot the issue? (Select TWO).\n ",
+    "question": "The owner of a restaurant reports that wireless network connections are lost intermittently throughout the day. Which of the following steps should a technician\ntake to troubleshoot the issue? (Select TWO).",
     "options": [
       "Identify the location of devices that utilize 2.4GHz.",
       "Check to see if the phones are IJTP or STP lines.",
@@ -1331,7 +1301,7 @@
   },
   {
     "type": "single",
-    "question": "A user’s laptop is experiencing severe slowdowns when operating process-intensive tasks. Which of the following memory upgrades is compatible with a laptop?\n  ",
+    "question": "A user’s laptop is experiencing severe slowdowns when operating process-intensive tasks. Which of the following memory upgrades is compatible with a laptop?",
     "options": [
       "DIMM",
       "ECC RAM",
@@ -1356,7 +1326,7 @@
     "correct": [
       1
     ],
-    "explanation": "A repetitive clicking noise coming from a laptop is usually a sign of a failing hard disk drive (HDD), which is a type of storage device that uses spinning platters and\nmoving heads to read and write data. A failing HDD can also cause severe delays in input and output operations, as well as data loss or corruption. The technician\nshould replace the HDD with a new one or upgrade it to a solid state drive (SSD), which is another type of storage device that uses flash memory and has no\nmoving parts. Reference: https://partners.comptia.org/docs/default-source/resources/a-core-series-combined- content-guide (page 24)\n  ",
+    "explanation": "A repetitive clicking noise coming from a laptop is usually a sign of a failing hard disk drive (HDD), which is a type of storage device that uses spinning platters and\nmoving heads to read and write data. A failing HDD can also cause severe delays in input and output operations, as well as data loss or corruption. The technician\nshould replace the HDD with a new one or upgrade it to a solid state drive (SSD), which is another type of storage device that uses flash memory and has no\nmoving parts. Reference: https://partners.comptia.org/docs/default-source/resources/a-core-series-combined- content-guide (page 24)",
     "id": 89
   },
   {
@@ -1592,7 +1562,7 @@
       "OHCP pool configuration",
       "MAC filtering list",
       "Wireless protocol settings",
-      "ONS servers\n  "
+      "ONS servers"
     ],
     "correct": [
       1
@@ -1687,7 +1657,7 @@
     "correct": [
       3
     ],
-    "explanation": "Enabling secure boot will verify the digital signature of the bootloader and operating system, ensuring that the system only boots from trusted and authorised\nsources. This can prevent booting from an unauthorised live CD or other external media. The best way to prevent booting from a live Linux CD on a computer in a\nshared space on campus is to enable secure boot. Secure boot is a feature that ensures that the system only runs software that is signed by an authorized party.\nThis means that the system will not boot from any unauthorized media, including live Linux CDs.\nSecure Boot is a feature that ensures that the system only runs software that is signed by an authorized party. This means that the system will not boot from any\nunauthorized media, including live Linux CDs. Secure Boot is an important security feature designed to prevent malicious software from loading when your PC\nstarts up (boots)1.\nBooting from a live Linux CD is a process that allows you to run a Linux operating system from a CD or DVD without installing it on your hard drive. This can be\nuseful for testing or troubleshooting purposes. To boot from a live Linux CD, you need to insert the CD or DVD into your computer’s CD/DVD drive and restart\n  \nyour computer. Most systems are set up to automatically boot from the CD/DVD drive, but if your system is not set up this way, you may need to change a system\nsetting to boot from a Linux CD/DVD23.",
+    "explanation": "Enabling secure boot will verify the digital signature of the bootloader and operating system, ensuring that the system only boots from trusted and authorised\nsources. This can prevent booting from an unauthorised live CD or other external media. The best way to prevent booting from a live Linux CD on a computer in a\nshared space on campus is to enable secure boot. Secure boot is a feature that ensures that the system only runs software that is signed by an authorized party.\nThis means that the system will not boot from any unauthorized media, including live Linux CDs.\nSecure Boot is a feature that ensures that the system only runs software that is signed by an authorized party. This means that the system will not boot from any\nunauthorized media, including live Linux CDs. Secure Boot is an important security feature designed to prevent malicious software from loading when your PC\nstarts up (boots)1.\nBooting from a live Linux CD is a process that allows you to run a Linux operating system from a CD or DVD without installing it on your hard drive. This can be\nuseful for testing or troubleshooting purposes. To boot from a live Linux CD, you need to insert the CD or DVD into your computer’s CD/DVD drive and restart\nyour computer. Most systems are set up to automatically boot from the CD/DVD drive, but if your system is not set up this way, you may need to change a system\nsetting to boot from a Linux CD/DVD23.",
     "id": 111
   },
   {
@@ -1702,7 +1672,7 @@
     "correct": [
       0
     ],
-    "explanation": "it appears that option A, restoring function to the air conditioner, would most likely solve the thermal printer issue in the described scenario. The failure of the air\nconditioner during the summer could likely have caused high humidity or heat in the factory, which can affect the printing quality of thermal printers by causing\n  \nblank spots or missing text. By restoring function to the air conditioner, the temperature and humidity in the factory can be controlled, which can help eliminate\nthese printing issues. However, it is still possible that any of the other options listed could also potentially solve the issue, so it is best to assess the situation further\nand try different solutions if necessary.",
+    "explanation": "it appears that option A, restoring function to the air conditioner, would most likely solve the thermal printer issue in the described scenario. The failure of the air\nconditioner during the summer could likely have caused high humidity or heat in the factory, which can affect the printing quality of thermal printers by causing\nblank spots or missing text. By restoring function to the air conditioner, the temperature and humidity in the factory can be controlled, which can help eliminate\nthese printing issues. However, it is still possible that any of the other options listed could also potentially solve the issue, so it is best to assess the situation further\nand try different solutions if necessary.",
     "id": 112
   },
   {
@@ -1895,7 +1865,7 @@
     "correct": [
       3
     ],
-    "explanation": "If a laser printer is producing output with duplicate images (also known as ghost images), it could be due to an issue with the toner drums and rollers. The first\nPassing Certification Exams Made Easy visit - https://www.2PassEasy.com\nWelcome to download the Newest 2passeasy 220-1101 dumps\nhttps://www.2passeasy.com/dumps/220-1101/ (443 New Questions)\nstep to eliminate the ghost images would be to clean the toner drums and rollers to remove any excess toner that may be causing the issue.\nGhost images are a common issue in laser printers where an image or text from a previous page appears faintly on subsequent pages. The cause of this issue is\nusually due to toner residue on the drum or rollers, which can be removed by cleaning the toner drums and rollers. References: Study Guide Section 4.6 - Printer\ntechnologies",
+    "explanation": "If a laser printer is producing output with duplicate images (also known as ghost images), it could be due to an issue with the toner drums and rollers. The first\nstep to eliminate the ghost images would be to clean the toner drums and rollers to remove any excess toner that may be causing the issue.\nGhost images are a common issue in laser printers where an image or text from a previous page appears faintly on subsequent pages. The cause of this issue is\nusually due to toner residue on the drum or rollers, which can be removed by cleaning the toner drums and rollers. References: Study Guide Section 4.6 - Printer\ntechnologies",
     "type": "single",
     "topic": "troubleshooting"
   },
@@ -2055,7 +2025,7 @@
     "correct": [
       2
     ],
-    "explanation": "A swollen battery is the most likely cause of the issue that the customer is reporting. A swollen battery is a battery that has expanded in size due to a chemical\nreaction, gas buildup, or overheating. A swollen battery can cause pressure on the laptop’s chassis, keyboard, track pad, and other components, making them\nhard to press or click. A swollen battery can also pose a fire hazard and damage the laptop’s performance and lifespan. The other options are not as likely or\nrelevant to the issue. Dropping the laptop may cause cracks or other visible damage to the chassis or screen, but the technician did not notice any. The digitizer is\nthe part of the laptop that converts touch input into digital signals, and it has nothing to do with the keyboard or the track pad buttons. An open bottle of rubbing\nalcohol falling onto the keyboard may cause liquid damage, corrosion, or short circuits, but it would not affect the track pad buttons or the bottom edge of the\nkeyboard.\nTo troubleshoot and resolve the issue, the technician should remove the battery from the laptop and inspect it for signs of swelling, such as bulging, deformation,\nor leakage. The technician should also check the laptop’s chassis, keyboard, and track pad for any signs of damage or warping caused by the battery. The\ntechnician should then replace the swollen battery with a new one that is compatible with the laptop’s model and specifications. The technician should also\ndispose of the swollen battery properly and safely, following the local regulations and guidelines.\nReferences:\n? CompTIA A+ Certification Exam Core 1 Objectives1\n? The Official CompTIA A+ Core 1 Student Guide (Exam 220-1101) eBook2\n? How to Fix a Swollen Laptop Battery - Lifewire3\n? How to Tell If Your Laptop Battery Is Swollen - Techwalla4\nPassing Certification Exams Made Easy visit - https://www.2PassEasy.com\nWelcome to download the Newest 2passeasy 220-1101 dumps\nhttps://www.2passeasy.com/dumps/220-1101/ (443 New Questions)",
+    "explanation": "A swollen battery is the most likely cause of the issue that the customer is reporting. A swollen battery is a battery that has expanded in size due to a chemical\nreaction, gas buildup, or overheating. A swollen battery can cause pressure on the laptop’s chassis, keyboard, track pad, and other components, making them\nhard to press or click. A swollen battery can also pose a fire hazard and damage the laptop’s performance and lifespan. The other options are not as likely or\nrelevant to the issue. Dropping the laptop may cause cracks or other visible damage to the chassis or screen, but the technician did not notice any. The digitizer is\nthe part of the laptop that converts touch input into digital signals, and it has nothing to do with the keyboard or the track pad buttons. An open bottle of rubbing\nalcohol falling onto the keyboard may cause liquid damage, corrosion, or short circuits, but it would not affect the track pad buttons or the bottom edge of the\nkeyboard.\nTo troubleshoot and resolve the issue, the technician should remove the battery from the laptop and inspect it for signs of swelling, such as bulging, deformation,\nor leakage. The technician should also check the laptop’s chassis, keyboard, and track pad for any signs of damage or warping caused by the battery. The\ntechnician should then replace the swollen battery with a new one that is compatible with the laptop’s model and specifications. The technician should also\ndispose of the swollen battery properly and safely, following the local regulations and guidelines.\nReferences:\n? CompTIA A+ Certification Exam Core 1 Objectives1\n? The Official CompTIA A+ Core 1 Student Guide (Exam 220-1101) eBook2\n? How to Fix a Swollen Laptop Battery - Lifewire3\n? How to Tell If Your Laptop Battery Is Swollen - Techwalla4",
     "type": "single",
     "topic": "troubleshooting"
   },
@@ -2166,7 +2136,7 @@
     "correct": [
       0
     ],
-    "explanation": "The correct answer is A. Bluetooth.\nBluetooth is a wireless technology that allows devices to communicate with each other over short distances. It is commonly used for connecting wireless headsets,\nspeakers, keyboards, mice, and other peripherals to mobile phones, laptops, and other devices.\nPassing Certification Exams Made Easy visit - https://www.2PassEasy.com\nWelcome to download the Newest 2passeasy 220-1101 dumps\nhttps://www.2passeasy.com/dumps/220-1101/ (443 New Questions)\nTo use a Bluetooth device with a mobile phone, the user needs to enable Bluetooth on both devices and pair them together. Pairing is a process of exchanging\nsecurity codes and creating a trusted connection between the devices. Once paired, the devices can automatically connect when they are in range and turned on.\nIf the user is experiencing an issue when trying to use a wireless headset with a mobile phone, the first thing to check is whether Bluetooth is enabled on both\ndevices. If Bluetooth is turned off, the devices will not be able to connect or communicate with each other.\nTo enable Bluetooth on a mobile phone, the user can follow these steps:\n•Check in quick settings: Select the Network, Sound, or Battery icons ( ) on the right side of the taskbar, look for the Bluetooth quick setting, then select Bluetooth\nto turn it on. You’ll see “Not connected” if your Windows 11 device isn’t connected to any Bluetooth accessories.\n•Check in Settings: Select Start > Settings > Bluetooth & devices . Make sure Bluetooth is turned on.\nThese steps are based on Windows 11 operating system1. The exact steps may vary depending on the type and model of the mobile phone and its operating\nsystem.\nIf Bluetooth is enabled on both devices but they still cannot connect, the user can try some other troubleshooting steps, such as:\n•Turn off your Bluetooth device, wait a few seconds, then turn it back on.\n•Make sure your Bluetooth device is in range of your mobile phone.\n•Remove the Bluetooth device from your mobile phone’s list of paired devices, then add it again.\n•Update the Bluetooth driver on your mobile phone or the firmware on your Bluetooth device.\n•Restart your mobile phone or reset your Bluetooth device.\nFor more details and tips on how to fix Bluetooth problems in Windows 112 or other operating systems1, you can visit the links provided.",
+    "explanation": "The correct answer is A. Bluetooth.\nBluetooth is a wireless technology that allows devices to communicate with each other over short distances. It is commonly used for connecting wireless headsets,\nspeakers, keyboards, mice, and other peripherals to mobile phones, laptops, and other devices.\nTo use a Bluetooth device with a mobile phone, the user needs to enable Bluetooth on both devices and pair them together. Pairing is a process of exchanging\nsecurity codes and creating a trusted connection between the devices. Once paired, the devices can automatically connect when they are in range and turned on.\nIf the user is experiencing an issue when trying to use a wireless headset with a mobile phone, the first thing to check is whether Bluetooth is enabled on both\ndevices. If Bluetooth is turned off, the devices will not be able to connect or communicate with each other.\nTo enable Bluetooth on a mobile phone, the user can follow these steps:\n•Check in quick settings: Select the Network, Sound, or Battery icons ( ) on the right side of the taskbar, look for the Bluetooth quick setting, then select Bluetooth\nto turn it on. You’ll see “Not connected” if your Windows 11 device isn’t connected to any Bluetooth accessories.\n•Check in Settings: Select Start > Settings > Bluetooth & devices . Make sure Bluetooth is turned on.\nThese steps are based on Windows 11 operating system1. The exact steps may vary depending on the type and model of the mobile phone and its operating\nsystem.\nIf Bluetooth is enabled on both devices but they still cannot connect, the user can try some other troubleshooting steps, such as:\n•Turn off your Bluetooth device, wait a few seconds, then turn it back on.\n•Make sure your Bluetooth device is in range of your mobile phone.\n•Remove the Bluetooth device from your mobile phone’s list of paired devices, then add it again.\n•Update the Bluetooth driver on your mobile phone or the firmware on your Bluetooth device.\n•Restart your mobile phone or reset your Bluetooth device.\nFor more details and tips on how to fix Bluetooth problems in Windows 112 or other operating systems1, you can visit the links provided.",
     "type": "single",
     "topic": "troubleshooting"
   },
@@ -2200,22 +2170,6 @@
       2
     ],
     "explanation": "The correct answer is C. Check the RAID drive status LEDs.\nRAID stands for Redundant Array of Independent Disks, which is a technology that combines multiple physical disks into a logical unit that provides improved\nperformance, reliability, or both1. RAID can be implemented using hardware or software, and there are different levels of RAID that use different methods of data\ndistribution and redundancy1. One of the common issues with RAID is disk failure, which means that one or more of the disks in the array stop working properly.\nDisk failure can affect the performance and availability of the network fileshares, depending on the RAID level and the number of failed disks2. For example, RAID\n0, which uses striping to split data across multiple disks, has no redundancy and will lose all data if any disk fails. RAID 1, which uses mirroring to duplicate data on\ntwo disks, can tolerate one disk failure and still function. RAID 5, which uses striping with parity to distribute data and error correction information across three or\nmore disks, can also tolerate one disk failure and still function1.\nOne of the ways to detect disk failure is to check the RAID drive status LEDs, which are lights that indicate the health and activity of each disk in the array.\nDifferent RAID controllers may have different LED patterns and colors, but generally, a green LED means that the disk is working normally, a red LED means that\nthe disk has failed or is offline, an amber LED means that the disk is degraded or rebuilding, and a blinking LED means that the disk is active or busy34.\nThe first step that a technician should perform when troubleshooting network fileshare issues is to check the RAID drive status LEDs to see if any disk has failed or\nis degraded. This can help identify the cause of the problem and determine the appropriate solution. For example, if a disk has failed in a RAID 1 or RAID 5 array,\nthe technician can replace the failed disk and rebuild the array to restore performance and redundancy. If a disk has failed in a RAID 0 array, the technician will\nneed to restore the data from a backup2.\nThe other options are not the best steps to perform first. Defragmenting the files on the network share may improve performance by reducing fragmentation, but it\nwill not solve the problem if there is a disk failure in the RAID array. Asking the users to perform a network speed test may help diagnose network issues, but it will\nnot help identify disk issues in the RAID array. Starting the process of rebuilding the array may be necessary after replacing a failed disk, but it should not be done\nbefore checking the RAID drive status LEDs.",
-    "type": "single",
-    "topic": "troubleshooting"
-  },
-  {
-    "id": 144,
-    "question": "A user added a heater underneath a desk, row an external monitor not working. A technician wanted the monitor gets power. Which of the following should the\ntechnician do next?",
-    "options": [
-      "Have the user unplug me heater",
-      "Replace the monitor.",
-      "Open the display settings on me computer",
-      "Ensure a VGA cable is connected property"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "The technician should ensure that a VGA cable is connected properly between the monitor and the computer. A VGA cable is a type of video cable that carries\nanalog signals. If the cable is loose, damaged, or not plugged in correctly, it can cause the monitor to not display any image or show distorted colors. According to\nthe CompTIA Core1 objectives, one of the common display issues is no image on screen. A troubleshooting guide for monitors also recommends checking the\nVGA cable connection as a possible solution for no signal or blank screen problems.",
     "type": "single",
     "topic": "troubleshooting"
   },
@@ -2327,7 +2281,7 @@
     "correct": [
       2
     ],
-    "explanation": "The CMOS (complementary metal-oxide-semiconductor) is a small chip on the motherboard that stores the BIOS settings, including the date and time. The CMOS\nbattery is a coin cell battery that provides power to the CMOS chip when the computer is turned off, so that the BIOS settings are not lost. If the CMOS battery is\ndischarged, the CMOS chip will lose its data, and the date and time will be reset to the default values. This will cause a message to display indicating that the date\nand time are incorrect when the computer is turned on. The other computers on the network do not display this message because they have functional CMOS\nbatteries. The most likely cause of this issue is the CMOS battery is discharged, and it needs to be replaced with a new one12.\nPassing Certification Exams Made Easy visit - https://www.2PassEasy.com\nWelcome to download the Newest 2passeasy 220-1101 dumps\nhttps://www.2passeasy.com/dumps/220-1101/ (443 New Questions)",
+    "explanation": "The CMOS (complementary metal-oxide-semiconductor) is a small chip on the motherboard that stores the BIOS settings, including the date and time. The CMOS\nbattery is a coin cell battery that provides power to the CMOS chip when the computer is turned off, so that the BIOS settings are not lost. If the CMOS battery is\ndischarged, the CMOS chip will lose its data, and the date and time will be reset to the default values. This will cause a message to display indicating that the date\nand time are incorrect when the computer is turned on. The other computers on the network do not display this message because they have functional CMOS\nbatteries. The most likely cause of this issue is the CMOS battery is discharged, and it needs to be replaced with a new one12.",
     "type": "single",
     "topic": "troubleshooting"
   },
@@ -2474,7 +2428,7 @@
     "correct": [
       0
     ],
-    "explanation": "Passing Certification Exams Made Easy visit - https://www.surepassexam.com\nRecommend!! Get the Full 220-1101 dumps in VCE and PDF From SurePassExam\nhttps://www.surepassexam.com/220-1101-exam-dumps.html (443 New Questions)\nNFC (Near Field Communication) is the technology used for contactless payment features on mobile payment devices. If a mobile payment device is having\nissues with its contactless payment feature and is not detecting payment options, it is most likely due to an issue with the NFC functionality of the device.\nThe contactless payment feature on a mobile payment device uses NFC (Near Field Communication) to detect payment options. If the device is not detecting\npayment options, the issue may be related to a problem with the NFC feature. References: https://www.techopedia.com/definition/31790/near-field-communication-\nnfc",
+    "explanation": "Recommend!! \nNFC (Near Field Communication) is the technology used for contactless payment features on mobile payment devices. If a mobile payment device is having\nissues with its contactless payment feature and is not detecting payment options, it is most likely due to an issue with the NFC functionality of the device.\nThe contactless payment feature on a mobile payment device uses NFC (Near Field Communication) to detect payment options. If the device is not detecting\npayment options, the issue may be related to a problem with the NFC feature. References: https://www.techopedia.com/definition/31790/near-field-communication-\nnfc",
     "type": "single",
     "topic": "troubleshooting"
   },
@@ -2496,7 +2450,7 @@
   },
   {
     "id": 162,
-    "question": "Passing Certification Exams Made Easy visit - https://www.surepassexam.com\nRecommend!! Get the Full 220-1101 dumps in VCE and PDF From SurePassExam\nhttps://www.surepassexam.com/220-1101-exam-dumps.html (443 New Questions)\n\nA technician is on site troubleshooting a customer's laptop. The technician needs to download a software update but the company's proxy is blocking updates.\nWhich of the following would be the MOST appropriate action for the technician to take to get the update?",
+    "question": "Recommend!! \nA technician is on site troubleshooting a customer's laptop. The technician needs to download a software update but the company's proxy is blocking updates.\nWhich of the following would be the MOST appropriate action for the technician to take to get the update?",
     "options": [
       "Connect to a hotspot",
       "Request a traffic exemption.",
@@ -2573,7 +2527,7 @@
       2,
       3
     ],
-    "explanation": "The correct answers are C. Pickup roller and D. Separation pad.\nA pickup roller is a rubber wheel that grabs the paper from the paper tray and feeds it into the printer. A separation pad is a small piece of cork or rubber that\nPassing Certification Exams Made Easy visit - https://www.surepassexam.com\nRecommend!! Get the Full 220-1101 dumps in VCE and PDF From SurePassExam\nhttps://www.surepassexam.com/220-1101-exam-dumps.html (443 New Questions)\nprevents more than one sheet of paper from being fed at a time. If the pickup roller or the separation pad is worn out, dirty, or damaged, it can cause the printer to\npull multiple sheets of paper instead of a single sheet. This can lead to paper jams, misprints, or wasted paper.\nTo resolve this issue, a technician should investigate the condition of the pickup roller and the separation pad and replace them if necessary. The technician\nshould also clean the paper tray and make sure the paper is loaded correctly and not stuck together.\nA toner cartridge is a component that contains the toner powder used to create the printout on a laser printer. A tractor feed is a mechanism that uses sprockets to\nmove continuous paper through a dot matrix printer. A duplexer is a device that allows a printer to print on both sides of the paper automatically. A fuser is a part of\na laser printer that melts the toner onto the paper using heat and pressure. None of these components are related to the issue of pulling multiple sheets of paper\nfrom the paper tray.\nReference: Types of Printers—What You Need to Know for the CompTIA A+ Exams",
+    "explanation": "The correct answers are C. Pickup roller and D. Separation pad.\nA pickup roller is a rubber wheel that grabs the paper from the paper tray and feeds it into the printer. A separation pad is a small piece of cork or rubber that\nRecommend!! \nprevents more than one sheet of paper from being fed at a time. If the pickup roller or the separation pad is worn out, dirty, or damaged, it can cause the printer to\npull multiple sheets of paper instead of a single sheet. This can lead to paper jams, misprints, or wasted paper.\nTo resolve this issue, a technician should investigate the condition of the pickup roller and the separation pad and replace them if necessary. The technician\nshould also clean the paper tray and make sure the paper is loaded correctly and not stuck together.\nA toner cartridge is a component that contains the toner powder used to create the printout on a laser printer. A tractor feed is a mechanism that uses sprockets to\nmove continuous paper through a dot matrix printer. A duplexer is a device that allows a printer to print on both sides of the paper automatically. A fuser is a part of\na laser printer that melts the toner onto the paper using heat and pressure. None of these components are related to the issue of pulling multiple sheets of paper\nfrom the paper tray.\nReference: Types of Printers—What You Need to Know for the CompTIA A+ Exams",
     "type": "multiple",
     "topic": "troubleshooting"
   },
@@ -2708,7 +2662,7 @@
     "correct": [
       1
     ],
-    "explanation": "Passing Certification Exams Made Easy visit - https://www.surepassexam.com\nRecommend!! Get the Full 220-1101 dumps in VCE and PDF From SurePassExam\nhttps://www.surepassexam.com/220-1101-exam-dumps.html (443 New Questions)\nDNS servers are responsible for translating domain names into IP addresses, which are used to access websites. If the phone has limited internet connectivity, it\nmight be because the DNS servers are not working properly or are blocked by the network. The technician should check the DNS settings on the phone and try to\nuse a different DNS server, such as Google DNS (8.8.8.8 or 8.8.4.4) or Cloudflare DNS (1.1.1.1 or 1.0.0.1).\nReferences\n•9 Best Ways to Fix Wi-Fi Showing Limited Connectivity in Android\n•7 Easy Ways to Fix Limited Wi-Fi Connectivity on Android\n•How to Fix Limited Connectivity Issue in Android Wi-Fi",
+    "explanation": "Recommend!! \nDNS servers are responsible for translating domain names into IP addresses, which are used to access websites. If the phone has limited internet connectivity, it\nmight be because the DNS servers are not working properly or are blocked by the network. The technician should check the DNS settings on the phone and try to\nuse a different DNS server, such as Google DNS (8.8.8.8 or 8.8.4.4) or Cloudflare DNS (1.1.1.1 or 1.0.0.1).\nReferences\n•9 Best Ways to Fix Wi-Fi Showing Limited Connectivity in Android\n•7 Easy Ways to Fix Limited Wi-Fi Connectivity on Android\n•How to Fix Limited Connectivity Issue in Android Wi-Fi",
     "type": "single",
     "topic": "troubleshooting"
   }

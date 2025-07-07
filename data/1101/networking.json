@@ -96,7 +96,7 @@
       "Switches only send data to the specific computer, while hubs send data to all computersinside the network.",
       "Switches compress data while hubs send uncompressed data",
       "Switches receive data and route it to all computers inside the network while hubs receive data and do not route",
-      "Switches scramble data, while hubs send data in the original form.\n  "
+      "Switches scramble data, while hubs send data in the original form."
     ],
     "correct": [
       0
@@ -298,19 +298,6 @@
     ],
     "explanation": "The connection type that the technician should recommend is Satellite. Satellite internet is a good option for people who travel around the world and want to have\nconnectivity while visiting remote camping locations. It works by using terminals which can give you internet access in remote locations as long as they have a line\nof sight to the satellite in orbit above12.\nSince the customer travels to remote camping locations with limited or unreliable cellular service, the best recommendation is satellite internet connection. Satellite\ninternet uses a dish to connect to satellites orbiting the earth, which can provide coverage anywhere in the world as long as there is a clear line of sight to the\nsatellite. This is especially useful in remote areas where traditional terrestrial connections are not available. References: CompTIA A+ Certification Exam\nObjectives - 220-1001: 1.6 Given a scenario, evaluate connection type and bandwidth.",
     "id": 20
-  },
-  {
-    "type": "single",
-    "question": "SIMULATION \nLaura, a customer, has instructed you to configure her home office wireless access point.\nShe plans to use the wireless network for finances and has requested that the network be setup with the highest encryption possible.\nAdditionally, Laura knows that her neighbors have wireless networks and wants to ensure that her network is not being interfered with by the other networks.\nShe requests that the default settings be changed to the following.\nWireless Name: HomeWiFi Shared Key: CompTIA Router Password: Secure$1\nFinally, Laura wants to ensure that only her laptop and Smartphone can connect to the network.\nLaptop: IP Address 192.168.1.100 Hardware Address: 00:0A:BF:03:C4:54 Smartphone: IP Address 192.168.1.101 Hardware Address: 09:2C:D0:22:3F:11\nINSTRUCTIONS\nConfigure Laura’s wireless network using the network adapter window.\nIf at any time you would like to bring back the initial state of the situation, please click the Reset All button.\n  \n  ",
-    "options": [
-      "Mastered",
-      "Not Mastered"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "solution as\n  \n  ",
-    "id": 21
   },
   {
     "type": "single",
@@ -559,7 +546,7 @@
     "correct": [
       1
     ],
-    "explanation": "DNS stands for Domain Name System and is a service that translates domain names (such as www.example.com) into IP addresses (such as 192.168.1.100) that\ncomputers can use to communicate over a network. If the DNS server is offline, users may not be able to access websites or other network resources by using\ntheir domain names, even if they are online and reachable by their IP addresses. The technician should check if the DNS server is running and configured\ncorrectly, or use an alternative DNS\nserver if possible. Reference: https://www.comptia.org/training/books/a-core-1-220-1101- study-guide (page 81)\nPassing Certification Exams Made Easy visit - https://www.2PassEasy.com\nWelcome to download the Newest 2passeasy 220-1101 dumps\nhttps://www.2passeasy.com/dumps/220-1101/ (443 New Questions)",
+    "explanation": "DNS stands for Domain Name System and is a service that translates domain names (such as www.example.com) into IP addresses (such as 192.168.1.100) that\ncomputers can use to communicate over a network. If the DNS server is offline, users may not be able to access websites or other network resources by using\ntheir domain names, even if they are online and reachable by their IP addresses. The technician should check if the DNS server is running and configured\ncorrectly, or use an alternative DNS\nserver if possible. Reference: https://www.comptia.org/training/books/a-core-1-220-1101- study-guide (page 81)",
     "type": "single",
     "topic": "networking"
   },
@@ -597,7 +584,7 @@
   },
   {
     "id": 40,
-    "question": "Passing Certification Exams Made Easy visit - https://www.2PassEasy.com\nWelcome to download the Newest 2passeasy 220-1101 dumps\nhttps://www.2passeasy.com/dumps/220-1101/ (443 New Questions)\n\nAn insurance company wants to implement cloud computing and would like a cloud solution in which the infrastructure is shared with businesses in the same\nindustry. Which of the following cloud models BEST addresses the company's need?",
+    "question": "An insurance company wants to implement cloud computing and would like a cloud solution in which the infrastructure is shared with businesses in the same\nindustry. Which of the following cloud models BEST addresses the company's need?",
     "options": [
       "Community",
       "Private",
@@ -639,13 +626,13 @@
     "correct": [
       2
     ],
-    "explanation": "The correct answer is C. Cat 6.\nAn RJ45 connector is a standard type of physical connector for network cables. RJ45 connectors are used almost exclusively with Ethernet cables and\nnetworking1. Ethernet cables are twisted pair cables that carry data signals between devices on a network, such as computers, routers, switches, and servers2.\nThere are different categories of Ethernet cables, such as Cat 5, Cat 5e, Cat 6, and Cat 7, that have different specifications and performance levels. Cat 6 is one of\nthe most common types of Ethernet cables, which supports data transfer speeds up to 10 Gbps and bandwidth up to 250 MHz3. Cat 6 cables have four pairs of\ncopper wires, each with a plastic insulation and a foil or braided shield. The wires are twisted together to reduce crosstalk and interference4.\nTo terminate a Cat 6 cable, an administrator needs to use an RJ45 connector that matches the wiring scheme of the cable. There are two common wiring schemes\nfor Ethernet cables: T568A and T568B. The administrator needs to strip the cable jacket, untwist the wires, arrange them in the correct order according to the\nchosen scheme, trim the excess wire, and insert them into the RJ45 connector. Then, the administrator needs to use a crimping tool to secure the wires and the\nPassing Certification Exams Made Easy visit - https://www.2PassEasy.com\nWelcome to download the Newest 2passeasy 220-1101 dumps\nhttps://www.2passeasy.com/dumps/220-1101/ (443 New Questions)\nconnector4.\nOptical cables are not terminated with RJ45 connectors, but with different types of connectors that can transmit light signals, such as SC, ST, LC, or MTRJ\nconnectors. Optical cables are used for fiber-optic networks that can carry data over long distances at high speeds.\nSerial cables are not terminated with RJ45 connectors, but with different types of connectors that can transmit serial data signals, such as DB9, DB25, or DE9\nconnectors. Serial cables are used for connecting devices that use serial communication protocols, such as modems, printers, scanners, or keyboards.\nUSB cables are not terminated with RJ45 connectors, but with different types of connectors that can transmit universal serial bus data signals, such as USB-A,\nUSB-B, USB-C, or Micro-USB connectors. USB cables are used for connecting devices that use USB communication protocols, such as flash drives, cameras,\nmice, or chargers.",
+    "explanation": "The correct answer is C. Cat 6.\nAn RJ45 connector is a standard type of physical connector for network cables. RJ45 connectors are used almost exclusively with Ethernet cables and\nnetworking1. Ethernet cables are twisted pair cables that carry data signals between devices on a network, such as computers, routers, switches, and servers2.\nThere are different categories of Ethernet cables, such as Cat 5, Cat 5e, Cat 6, and Cat 7, that have different specifications and performance levels. Cat 6 is one of\nthe most common types of Ethernet cables, which supports data transfer speeds up to 10 Gbps and bandwidth up to 250 MHz3. Cat 6 cables have four pairs of\ncopper wires, each with a plastic insulation and a foil or braided shield. The wires are twisted together to reduce crosstalk and interference4.\nTo terminate a Cat 6 cable, an administrator needs to use an RJ45 connector that matches the wiring scheme of the cable. There are two common wiring schemes\nfor Ethernet cables: T568A and T568B. The administrator needs to strip the cable jacket, untwist the wires, arrange them in the correct order according to the\nchosen scheme, trim the excess wire, and insert them into the RJ45 connector. Then, the administrator needs to use a crimping tool to secure the wires and the\nconnector4.\nOptical cables are not terminated with RJ45 connectors, but with different types of connectors that can transmit light signals, such as SC, ST, LC, or MTRJ\nconnectors. Optical cables are used for fiber-optic networks that can carry data over long distances at high speeds.\nSerial cables are not terminated with RJ45 connectors, but with different types of connectors that can transmit serial data signals, such as DB9, DB25, or DE9\nconnectors. Serial cables are used for connecting devices that use serial communication protocols, such as modems, printers, scanners, or keyboards.\nUSB cables are not terminated with RJ45 connectors, but with different types of connectors that can transmit universal serial bus data signals, such as USB-A,\nUSB-B, USB-C, or Micro-USB connectors. USB cables are used for connecting devices that use USB communication protocols, such as flash drives, cameras,\nmice, or chargers.",
     "type": "single",
     "topic": "networking"
   },
   {
     "id": 43,
-    "question": "A technician configured a new SOHO router for a small business. The ISP gave the technician an IP address on the router's WAN port. Which of the following\nPassing Certification Exams Made Easy visit - https://www.2PassEasy.com\nWelcome to download the Newest 2passeasy 220-1101 dumps\nhttps://www.2passeasy.com/dumps/220-1101/ (443 New Questions)\naddresses did the technician most likely configure on the router?",
+    "question": "A technician configured a new SOHO router for a small business. The ISP gave the technician an IP address on the router's WAN port. Which of the following\naddresses did the technician most likely configure on the router?",
     "options": [
       "10.1.50.30",
       "19.45.7.28",
@@ -677,7 +664,7 @@
   },
   {
     "id": 45,
-    "question": "Passing Certification Exams Made Easy visit - https://www.2PassEasy.com\nWelcome to download the Newest 2passeasy 220-1101 dumps\nhttps://www.2passeasy.com/dumps/220-1101/ (443 New Questions)\nWhich of the following is the primary function of a DNS service?",
+    "question": "Which of the following is the primary function of a DNS service?",
     "options": [
       "To dynamically assign network addresses to hosts",
       "To translate domain names to IP addresses",
@@ -840,7 +827,7 @@
   },
   {
     "id": 55,
-    "question": "Which of the following would MOST likely be used to connect one or more devices lo the internet in a SOHO?",
+    "question": "Which of the following would MOST likely be used to connect one or more devices to the internet in a SOHO?",
     "options": [
       "Hub",
       "Ethernet gateway",

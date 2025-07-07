@@ -188,7 +188,7 @@
       "Cost savings",
       "Highly available",
       "Dedicated hardware",
-      "Increased security\n  "
+      "Increased security"
     ],
     "correct": [
       0
@@ -208,7 +208,7 @@
     "correct": [
       2
     ],
-    "explanation": "Rapid elasticity is a cloud feature that allows cloud services to scale up or down automatically according to demand or load on the server, without requiring\nmanual intervention or configuration changes by users or administrators.This enables cloud services to provide optimal performance and efficiency at all times, as\nwell as reducing costs by only using resources when needed. Reference: https://www.comptia.org/training/books/a-core-1-220-1101-study-guide (page 98)\n  ",
+    "explanation": "Rapid elasticity is a cloud feature that allows cloud services to scale up or down automatically according to demand or load on the server, without requiring\nmanual intervention or configuration changes by users or administrators.This enables cloud services to provide optimal performance and efficiency at all times, as\nwell as reducing costs by only using resources when needed. Reference: https://www.comptia.org/training/books/a-core-1-220-1101-study-guide (page 98)",
     "id": 14
   },
   {
@@ -349,7 +349,7 @@
   },
   {
     "type": "single",
-    "question": "  \n\nWhich of the following would be BEST reason to use a virtual machine as a sandbox?",
+    "question": "Which of the following would be BEST reason to use a virtual machine as a sandbox?",
     "options": [
       "To test new software in a safe environment",
       "To increase the efficient use of computing resources",
@@ -569,7 +569,7 @@
   },
   {
     "id": 38,
-    "question": "Passing Certification Exams Made Easy visit - https://www.2PassEasy.com\nWelcome to download the Newest 2passeasy 220-1101 dumps\nhttps://www.2passeasy.com/dumps/220-1101/ (443 New Questions)\nWhich of the following translates a hostname to IP addresses?",
+    "question": "Which of the following translates a hostname to IP addresses?",
     "options": [
       "AAA",
       "DHCP",

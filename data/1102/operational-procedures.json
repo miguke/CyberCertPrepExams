@@ -1,104 +1,104 @@
 [
-    {
-        "id": -1,
-        "question": "The courts determined that a cybercrimes case could no longer be prosecuted due to the agency's handling of evidence. Which of the following was MOST likely\nviolated during the investigation?",
-        "options": [
-            "Open-source software",
-            "EULA",
-            "Chain of custody AUP",
-            ""
-        ],
-        "correct": [
-            2
-        ],
-        "explanation": "Chain of custody is a process that documents how evidence is collected, handled, stored and transferred during a cybercrime investigation. It ensures that the\nevidence is authentic, reliable and admissible in court. If the chain of custody is violated during an investigation, it can compromise the integrity of the evidence and\nlead to the case being dismissed. Open-source software, EULA (end-user license agreement) and AUP (acceptable use policy) are not related to cybercrime\ninvestigations or evidence handling. Verified References: https://www.comptia.org/blog/what-is-chain-of-custody https://www.comptia.org/certifications/a",
-        "source_pdf": "220-1102_1.pdf",
-        "type": "single",
-        "topic": "operational-procedures"
-    },
-    {
-        "id": -1,
-        "question": "A company is looking lot a solution that provides a backup for all data on the system while providing the lowest impact to the network. Which of the following\nbackup types will the company MOST likely select?",
-        "options": [
-            "Off-site",
-            "Synthetic",
-            "Full",
-            "Differential"
-        ],
-        "correct": [
-            1
-        ],
-        "explanation": "A synthetic backup is a backup type that provides a backup for all data on the system while providing the lowest impact to the network. It combines a full backup\nwith one or more incremental backups to create a single backup set, without requiring access to the original data source. Off-site is a backup location, not a\nbackup type. Full and differential are backup types, but they have a higher impact on the network than synthetic. Verified References:\nhttps://www.comptia.org/blog/what-is-a-synthetic-backup https://www.comptia.org/certifications/a",
-        "source_pdf": "220-1102_1.pdf",
-        "type": "single",
-        "topic": "operational-procedures"
-    },
-    {
-        "id": -1,
-        "question": "Which of the following should be documented to ensure that the change management plan is followed?",
-        "options": [
-            "Scope of the change",
-            "Purpose of the change",
-            "Change rollback plan",
-            "Change risk analysis"
-        ],
-        "correct": [
-            0
-        ],
-        "explanation": "The scope of the change is one of the elements that should be documented to ensure that the change management plan is followed. The scope of the change\ndefines the boundaries and limitations of the change, such as what is included and excluded, what are the deliverables and outcomes, what are the assumptions\nand constraints, and what are the dependencies and risks. The scope of the change helps to clarify the expectations and objectives of the change, as well as to\nprevent scope creep or deviation from the original plan. The scope of the change also helps to measure the progress and success of the change, as well as to\ncommunicate the change to the stakeholders and the team",
-        "source_pdf": "220-1102_1.pdf",
-        "type": "single",
-        "topic": "operational-procedures"
-    },
-    {
-        "id": -1,
-        "question": "A technician is installing RAM in a new workstation and needs to protect against electrostatic discharge. Which of the following will best\nresolve this concern?",
-        "options": [
-            "Battery backup",
-            "Thermal paste",
-            "ESD strap",
-            "Consistent power The Leader of IT Certification visit - https://www.certleader.com 100% Valid and Newest Version 220-1102 Questions & Answers shared by Certleader https://www.certleader.com/220-1102-dumps.html (402 Q&As)"
-        ],
-        "correct": [
-            2
-        ],
-        "explanation": "An ESD strap, also known as an antistatic wrist strap, is a device that prevents electrostatic discharge (ESD) from damaging sensitive electronic components such\nas RAM. ESD is the sudden flow of electricity between two objects with different electrical charges, which can cause permanent damage or malfunction to\nelectronic devices. An ESD strap connects the technician\u2019s wrist to a grounded surface, such as a metal case or a mat, and equalizes the electrical potential\nbetween the technician and the device. Battery backup, thermal paste, and consistent power are not devices that can protect against ESD.",
-        "source_pdf": "220-1102_1.pdf",
-        "type": "single",
-        "topic": "operational-procedures"
-    },
-    {
-        "id": -1,
-        "question": "Which of the following must be maintained throughout the forensic evidence life cycle when dealing with a piece of evidence?",
-        "options": [
-            "Acceptable use",
-            "Chain of custody",
-            "Security policy",
-            "Information management"
-        ],
-        "correct": [
-            1
-        ],
-        "explanation": "The aspect of forensic evidence life cycle that must be maintained when dealing with a piece of evidence is chain of custody. This is because chain of custody is\nthe documentation of the movement of evidence from the time it is collected to the time it is presented in court, and it is important to maintain the integrity of the\nevidence",
-        "source_pdf": "220-1102_1.pdf",
-        "type": "single",
-        "topic": "operational-procedures"
-    },
-    {
-        "id": -1,
-        "question": "Which of the following helps ensure that a piece of evidence extracted from a PC is admissible in a court of law?",
-        "options": [
-            "Data integrity form",
-            "Valid operating system license",
-            "Documentation of an incident",
-            "Chain of custody"
-        ],
-        "correct": [
-            3
-        ],
-        "explanation": "Chain of custody is a process that helps ensure that a piece of evidence extracted from a PC is admissible in a court of law. Chain of custody refers to the\ndocumentation and tracking of who handled, accessed, modified, or transferred the evidence, when, where, why, and how. Chain of custody can help establish the\nauthenticity, integrity, and reliability of the evidence, as well as prevent tampering, alteration, or loss of the evidence. Data integrity form, valid operating system\nlicense, and documentation of an incident are not processes that can ensure that a piece of evidence extracted from a PC is admissible in a court of law.",
-        "source_pdf": "220-1102_1.pdf",
-        "type": "single",
-        "topic": "operational-procedures"
-    }
+  {
+    "id": 27,
+    "question": "The courts determined that a cybercrimes case could no longer be prosecuted due to the agency's handling of evidence. Which of the following was MOST likely\nviolated during the investigation?",
+    "options": [
+      "Open-source software",
+      "EULA",
+      "Chain of custody AUP",
+      ""
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Chain of custody is a process that documents how evidence is collected, handled, stored and transferred during a cybercrime investigation. It ensures that the\nevidence is authentic, reliable and admissible in court. If the chain of custody is violated during an investigation, it can compromise the integrity of the evidence and\nlead to the case being dismissed. Open-source software, EULA (end-user license agreement) and AUP (acceptable use policy) are not related to cybercrime\ninvestigations or evidence handling. Verified References: https://www.comptia.org/blog/what-is-chain-of-custody https://www.comptia.org/certifications/a",
+    "source_pdf": "220-1102_1.pdf",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 28,
+    "question": "A company is looking lot a solution that provides a backup for all data on the system while providing the lowest impact to the network. Which of the following\nbackup types will the company MOST likely select?",
+    "options": [
+      "Off-site",
+      "Synthetic",
+      "Full",
+      "Differential"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A synthetic backup is a backup type that provides a backup for all data on the system while providing the lowest impact to the network. It combines a full backup\nwith one or more incremental backups to create a single backup set, without requiring access to the original data source. Off-site is a backup location, not a\nbackup type. Full and differential are backup types, but they have a higher impact on the network than synthetic. Verified References:\nhttps://www.comptia.org/blog/what-is-a-synthetic-backup https://www.comptia.org/certifications/a",
+    "source_pdf": "220-1102_1.pdf",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 29,
+    "question": "Which of the following should be documented to ensure that the change management plan is followed?",
+    "options": [
+      "Scope of the change",
+      "Purpose of the change",
+      "Change rollback plan",
+      "Change risk analysis"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The scope of the change is one of the elements that should be documented to ensure that the change management plan is followed. The scope of the change\ndefines the boundaries and limitations of the change, such as what is included and excluded, what are the deliverables and outcomes, what are the assumptions\nand constraints, and what are the dependencies and risks. The scope of the change helps to clarify the expectations and objectives of the change, as well as to\nprevent scope creep or deviation from the original plan. The scope of the change also helps to measure the progress and success of the change, as well as to\ncommunicate the change to the stakeholders and the team",
+    "source_pdf": "220-1102_1.pdf",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 30,
+    "question": "A technician is installing RAM in a new workstation and needs to protect against electrostatic discharge. Which of the following will best\nresolve this concern?",
+    "options": [
+      "Battery backup",
+      "Thermal paste",
+      "ESD strap",
+      ""
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An ESD strap, also known as an antistatic wrist strap, is a device that prevents electrostatic discharge (ESD) from damaging sensitive electronic components such\nas RAM. ESD is the sudden flow of electricity between two objects with different electrical charges, which can cause permanent damage or malfunction to\nelectronic devices. An ESD strap connects the technician’s wrist to a grounded surface, such as a metal case or a mat, and equalizes the electrical potential\nbetween the technician and the device. Battery backup, thermal paste, and consistent power are not devices that can protect against ESD.",
+    "source_pdf": "220-1102_1.pdf",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 31,
+    "question": "Which of the following must be maintained throughout the forensic evidence life cycle when dealing with a piece of evidence?",
+    "options": [
+      "Acceptable use",
+      "Chain of custody",
+      "Security policy",
+      "Information management"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The aspect of forensic evidence life cycle that must be maintained when dealing with a piece of evidence is chain of custody. This is because chain of custody is\nthe documentation of the movement of evidence from the time it is collected to the time it is presented in court, and it is important to maintain the integrity of the\nevidence",
+    "source_pdf": "220-1102_1.pdf",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 32,
+    "question": "Which of the following helps ensure that a piece of evidence extracted from a PC is admissible in a court of law?",
+    "options": [
+      "Data integrity form",
+      "Valid operating system license",
+      "Documentation of an incident",
+      "Chain of custody"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Chain of custody is a process that helps ensure that a piece of evidence extracted from a PC is admissible in a court of law. Chain of custody refers to the\ndocumentation and tracking of who handled, accessed, modified, or transferred the evidence, when, where, why, and how. Chain of custody can help establish the\nauthenticity, integrity, and reliability of the evidence, as well as prevent tampering, alteration, or loss of the evidence. Data integrity form, valid operating system\nlicense, and documentation of an incident are not processes that can ensure that a piece of evidence extracted from a PC is admissible in a court of law.",
+    "source_pdf": "220-1102_1.pdf",
+    "type": "single",
+    "topic": "operational-procedures"
+  }
 ]

@@ -4,7 +4,7 @@
     "question": "A technician is tasked with installing additional RAM in a desktop computer. Which of the following types of RAM is MOST likely to be used?",
     "options": [
       "SODIMM",
-      "DDR3\n  ",
+      "DDR3",
       "ECC",
       "VRAM"
     ],
@@ -455,7 +455,7 @@
     "correct": [
       3
     ],
-    "explanation": "A non-volatile memory express (NVMe) solid state drive (SSD) is the best option for an end user who wants to upgrade the hard drive on a laptop and wants one\nthat is fast and shock resistant.NVMe SSDs use flash memory and PCIe interface to achieve high performance and low latency.SSDs are also more shock\nresistant than hard disk drives (HDDs) because they have no moving parts.Hybrid HDD/SSD combines both technologies but does not offer the same speed or\ncapacity as pure SSDs.A 5,400rpm HDD or a 7,200rpm HDD are slower and less shock resistant than SSDs\n  ",
+    "explanation": "A non-volatile memory express (NVMe) solid state drive (SSD) is the best option for an end user who wants to upgrade the hard drive on a laptop and wants one\nthat is fast and shock resistant.NVMe SSDs use flash memory and PCIe interface to achieve high performance and low latency.SSDs are also more shock\nresistant than hard disk drives (HDDs) because they have no moving parts.Hybrid HDD/SSD combines both technologies but does not offer the same speed or\ncapacity as pure SSDs.A 5,400rpm HDD or a 7,200rpm HDD are slower and less shock resistant than SSDs",
     "id": 30
   },
   {
@@ -468,7 +468,7 @@
     "correct": [
       0
     ],
-    "explanation": "  ",
+    "explanation": "",
     "id": 31
   },
   {
@@ -812,7 +812,7 @@
   },
   {
     "type": "single",
-    "question": "SIMULATION \nA small ISP has hired a new technician Joe, the new technician, is being trained to configure customers* home networks The trailing instructor gives me technician\na starter kit with cables, cable ends, and other network equipment and asks mm to build a working network.\nThe computer should be connected to have internet connectivity and the phone should be connected to have a dial tone.\nINSTRUCTIONS\nUse the appropriate cables. cable ends, tools and equipment to configure the network ana connect an components accordingly\nThere are 3 steps and the simulation starts on step 1.\n  ",
+    "question": "SIMULATION \nA small ISP has hired a new technician Joe, the new technician, is being trained to configure customers* home networks The trailing instructor gives me technician\na starter kit with cables, cable ends, and other network equipment and asks mm to build a working network.\nThe computer should be connected to have internet connectivity and the phone should be connected to have a dial tone.\nINSTRUCTIONS\nUse the appropriate cables. cable ends, tools and equipment to configure the network ana connect an components accordingly\nThere are 3 steps and the simulation starts on step 1.",
     "options": [
       "Mastered",
       "Not Mastered"
@@ -820,7 +820,7 @@
     "correct": [
       0
     ],
-    "explanation": "Answer of both steps below.\nA picture containing text, screenshot, indoor\nDescription automatically generated\n  \nDiagram Description automatically generated with medium confidence",
+    "explanation": "Answer of both steps below.\nA picture containing text, screenshot, indoor\nDescription automatically generated\nDiagram Description automatically generated with medium confidence",
     "id": 54
   },
   {
@@ -1448,7 +1448,9 @@
       "5",
       "10"
     ],
-    "correct": [2],
+    "correct": [
+      2
+    ],
     "explanation": "RAID 10 combines the benefits of RAID 0 and RAID 1. It uses a striped configuration across multiple disks (similar to RAID 0) to provide high-speed read and\nwrite access. Additionally, it also mirrors the striped array onto a second set of drives (similar to RAID 1), providing redundancy in case of a drive failure.",
     "type": "multiple",
     "topic": "hardware"

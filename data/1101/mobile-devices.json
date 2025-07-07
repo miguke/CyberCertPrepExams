@@ -21,7 +21,7 @@
       "Wi-Fi",
       "Hotspot",
       "Bluetooth",
-      "Location\n  "
+      "Location"
     ],
     "correct": [
       2
@@ -41,7 +41,7 @@
     "correct": [
       2
     ],
-    "explanation": "The best action for the salesperson to take in order to view weather forecasts while traveling and minimize the battery drain on their mobile device is to configure\nfewer location checks using cellular location services. This can be done by adjusting the settings for the weather application to limit how often it checks for updates\nand uses location services. This will help to conserve the battery on the device and keep the application from consuming too much power.\n  ",
+    "explanation": "The best action for the salesperson to take in order to view weather forecasts while traveling and minimize the battery drain on their mobile device is to configure\nfewer location checks using cellular location services. This can be done by adjusting the settings for the weather application to limit how often it checks for updates\nand uses location services. This will help to conserve the battery on the device and keep the application from consuming too much power.",
     "id": 3
   },
   {
@@ -351,23 +351,6 @@
   },
   {
     "type": "single",
-    "question": "A user calls the help desk lot assistance configuring an Android phone with a new NFC-enabled speaker that will be used for an upcoming conference call. The\nuser was unable to direct the phone's audio to the NFC speaker. Which of the following sequences should the help desk technician walk the customer through to\naccomplish this task?\n  ",
-    "options": [
-      "Enable NFC on the speake",
-      "Ensure the speaker is less than 33ft (10m) from the Android phon",
-      "On the phone's Bluetooth settings menu for Connected Devices, select Pair New Devic",
-      "Tap to accept the connection to the speaker when the prompt is displayed on the phone's screen.",
-      "Enable NFC and Bluetooth on the Android phon",
-      "From the Android phone's Bluetooth settings menu for Connected Devices, select the Previously Connected Devices optio\nG. Select a listed device that most closely matches the speake\nH. Tap lo accept the connection lo the speaker when the prompt is displayed on the phone's screen.\nI. Enable NFC and Bluetooth on the Android phon\nJ. Tap and hold the Android phone to the spot on the speaker where the NFC logo is displaye\nK. Accept the connection to the speaker when the prompt is displayed on the phone's screen.\nL. Enable Wi-Fi on the speake\nM. Enable Wi-Fi on the Android phon\nN. Tap and hold the Android phone to the spot on the speaker where the NFC logo is displaye\nO. Accept the connection to the speaker when the prompt is displayed on the phone's screen."
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "",
-    "id": 24
-  },
-  {
-    "type": "single",
     "question": "A laptopâ€™s battery life has significantly decreased. Which of the following should the technician check FIRST?",
     "options": [
       "Battery age",
@@ -534,7 +517,7 @@
   },
   {
     "id": 36,
-    "question": "Passing Certification Exams Made Easy visit - https://www.2PassEasy.com\nWelcome to download the Newest 2passeasy 220-1101 dumps\nhttps://www.2passeasy.com/dumps/220-1101/ (443 New Questions)\n\nA user connects a smartphone to a laptop. Which of the following types of networks has the user created?",
+    "question": "A user connects a smartphone to a laptop. Which of the following types of networks has the user created?",
     "options": [
       "PAN",
       "MAN",
