@@ -2097,6 +2097,7 @@
     "id": 137,
     "question": "An administrator needs to configure RAID for a video-rendering workstation at minimal cost. The solution should have high read/write performance and maximum\ndrive storage utilization. Redundancy is not a concern. Which of the following RAID configurations should the administrator use?",
     "options": [
+      "0",
       "1",
       "5",
       "10"

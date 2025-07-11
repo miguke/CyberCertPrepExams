@@ -1,6 +1,6 @@
 [
   {
-    "id": 27,
+    "id": 1,
     "question": "The courts determined that a cybercrimes case could no longer be prosecuted due to the agency's handling of evidence. Which of the following was MOST likely\nviolated during the investigation?",
     "options": [
       "Open-source software",
@@ -17,7 +17,7 @@
     "topic": "operational-procedures"
   },
   {
-    "id": 28,
+    "id": 2,
     "question": "A company is looking lot a solution that provides a backup for all data on the system while providing the lowest impact to the network. Which of the following\nbackup types will the company MOST likely select?",
     "options": [
       "Off-site",
@@ -34,7 +34,7 @@
     "topic": "operational-procedures"
   },
   {
-    "id": 29,
+    "id": 3,
     "question": "Which of the following should be documented to ensure that the change management plan is followed?",
     "options": [
       "Scope of the change",
@@ -51,7 +51,7 @@
     "topic": "operational-procedures"
   },
   {
-    "id": 30,
+    "id": 4,
     "question": "A technician is installing RAM in a new workstation and needs to protect against electrostatic discharge. Which of the following will best\nresolve this concern?",
     "options": [
       "Battery backup",
@@ -68,7 +68,7 @@
     "topic": "operational-procedures"
   },
   {
-    "id": 31,
+    "id": 5,
     "question": "Which of the following must be maintained throughout the forensic evidence life cycle when dealing with a piece of evidence?",
     "options": [
       "Acceptable use",
@@ -85,7 +85,7 @@
     "topic": "operational-procedures"
   },
   {
-    "id": 32,
+    "id": 6,
     "question": "Which of the following helps ensure that a piece of evidence extracted from a PC is admissible in a court of law?",
     "options": [
       "Data integrity form",
@@ -100,5 +100,1093 @@
     "source_pdf": "220-1102_1.pdf",
     "type": "single",
     "topic": "operational-procedures"
+  },
+  {
+    "id": 7,
+    "question": "A system administrator is installing a new server into the metal racks in a data center. During the installation process, the administrator can feel a faint tingling sensation when mounting the server. Which of the following safety systems should be tested and verified FIRST?",
+    "options": [
+      "Equipment grounding",
+      "Air filtration",
+      "Cable management",
+      "Waste disposal regulations"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Equipment grounding Electrical safety is one of the highest priorities because of its association with personal safety. Before a single computer can be turned on, the facility has to be properly grounded and the power systems must be installed properly. The incorrect answers: B. Air filtration Cleaning the inside of a system or printer can cause dust and particles to become airborne. Using a mask or air filtration system can keep those particles out of your mouth, nose, and lungs. C. Cable management Proper cable management will help prevent any trip hazards. Before addressing the cable management system, it will be more important to resolve any electrical problems in the facility. D. Waste disposal systems The waste disposal system would not be a cause of the electrical issues described this in question. More information: 220-1102, Objective 4.4 - Safety Procedures https://professormesser.link/1102040402 Practice Exam A - Answers 41",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A6"
+  },
+  {
+    "id": 8,
+    "question": "Rodney, a desktop technician, is cleaning the outside of computers used on a manufacturing assembly line. The assembly line creates sawdust and wood chips, so most of the computers are protected with enclosed computer cases. Which of the following would be the MOST important item for Rodney to include during this cleaning process?",
+    "options": [
+      "Surge suppressor",
+      "Temperature sensor",
+      "Face mask",
+      "ESD mat"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Face mask A technician working in an area of dust or debris in the air should use a face mask to prevent any particles in the air from entering their lungs. The incorrect answers: A. Surge suppressor Surge suppressors would protect systems from power surges, but it wouldn't help with the cleaning process on an assembly line. B. Temperature sensor There's no mention of any temperature issues, so monitoring the temperature during the cleaning process would not be the most important item to include. D. ESD mat If the technicians were working inside of a computer, an ESD (Electrostatic Discharge) mat may be important to include. However, this question only mentioned cleaning the outside of the computers. More information: 220-1102, Objective 4.5 - Environmental Impacts https://professormesser.link/1102040501 46 Practice Exam A - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A10"
+  },
+  {
+    "id": 9,
+    "question": "The motherboard of a server in the corporate data center has started smoking, and flames can be seen inside the computer case. Which of the following would be the BEST way to extinguish this fire?",
+    "options": [
+      "Water-based extinguisher",
+      "Foam-based extinguisher",
+      "Disconnect the power",
+      "Carbon dioxide extinguisher"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Carbon dioxide extinguisher For an electrical fire, it's best to use carbon dioxide, FM-200, or other dry chemicals to extinguish any flames. The incorrect answers: A. Water-based extinguisher Water and electricity don't go well together, and that applies just as strongly if a fire is involved. B. Foam-based extinguisher Foam-based extinguishers have a similar effect as a water extinguisher, and you shouldn't use them with electrical equipment. C. Disconnect the power Although it's important to disconnect the power source, the more important task will be to put out the fire. Removing the power source would not extinguish an electrical fire once it has started. More information: 220-1102, Objective 4.4 - Safety Procedures https://professormesser.link/1102040402 48 Practice Exam A - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A12"
+  },
+  {
+    "id": 10,
+    "question": "A company maintains data retention requirements of five years for all customer names, addresses, and phone numbers. Which of the following would BEST describe this data?",
+    "options": [
+      "Credit card transactions",
+      "Government-issued information",
+      "PII",
+      "Healthcare data"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "PII PII (Personally Identifiable Information) is any data which could be used to identify an individual. A name, address, and phone number would be common examples of PII. The incorrect answers: A. Credit card transactions Financial information is considered to be sensitive information, and the credit card number and transaction details are important data security concerns. B. Government-issued information Governments commonly issue documents and identification cards to support government services and documentation for the citizens. A person's name, address, and phone numbers are not commonly issued by a governmental entity. D. Healthcare data Healthcare data often contains health status information, health care records, and more. A persons name, address, and phone number are not considered to be related to healthcare data. More information: 220-1102, Objective 4.6 - Privacy, Licensing, and Policies https://professormesser.link/1102040601 50 Practice Exam A - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A14"
+  },
+  {
+    "id": 11,
+    "question": "Each time a user starts a specific corporate application, a page of disclaimers and usage requirements is shown before the login prompt. Which of the following would BEST describe this page?",
+    "options": [
+      "Splash screen",
+      "Acceptable use policy",
+      "Standard operating procedures",
+      "Topology diagram"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Splash screen A splash screen displays a message, logo, or graphic during the startup process. This screen often contains a legal disclaimer regarding access to the system and information about the data contained in the application. The incorrect answers: B. Acceptable use policy An acceptable use policy (AUP) is a formal set of rules and regulations, and it's usually maintained in a central repository such as the employee handbook. C. Standard operating procedures Standard operating procedures (SOP) are a set of procedures for handling operations, software upgrades, and other normal and expected business functions. A list of standard operating procedures would not be shown when an application is started. D. Topology diagram Topology diagrams are useful for identifying the configuration of switches, routers, and other infrastructure devices. A topology diagram is not shown during the startup process for an application. More information: 220-1102, Objective 4.1 - Document Types https://professormesser.link/1102040103 52 Practice Exam A - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A16"
+  },
+  {
+    "id": 12,
+    "question": "An office power system occasionally experiences minor voltage spikes during the business day. Which of the following would be the BEST way to address this power issue?",
+    "options": [
+      "Power down when not actively working",
+      "Confirm that the building has an electrical ground",
+      "Connect a surge suppressor to each system",
+      "Maintain an inventory of replacement power supplies"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Connect a surge suppressor to each system A surge suppressor can help to even out voltage spikes in an electrical system. It's common to use a surge suppressor at each workstation to limit the effect of these voltage spikes. The incorrect answers: A. Power down when not actively working Although powering down a system would certainly protect it from voltage issues, it would not be a very efficient way of working. B. Confirm that the building has an electrical ground A good ground is an important part of any building's electrical system, but the ground won't help filter out the occasional voltage spike. D. Maintain an inventory of replacement power supplies If you don't use surge suppressors and you have constant power spikes, you might need replacement power supplies. However, it would be more effective to use surge suppressors instead of replacing power supplies. More information: 220-1102, Objective 4.5 - Environmental Impacts https://professormesser.link/1102040501 54 Practice Exam A - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A18"
+  },
+  {
+    "id": 13,
+    "question": "A system administrator is upgrading an email service in the corporate data center. During the upgrade, an error message appears and the upgrade fails. Subsequent attempts to perform the upgrade also fail. Which of the following processes should the system administrator follow to return the email server to its previous state?",
+    "options": [
+      "Rollback plan",
+      "Disaster recovery plan",
+      "Incident response plan",
+      "Power plan"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rollback plan Even with the best planning, there can always be unexpected events. Every planned change needs to have a rollback plan to return the environment to its original state. The incorrect answers: B. Disaster recovery plan A disaster recovery plan is written for major events that impact a large portion of an organization. An email upgrade that goes badly does not meet the scope of needing a disaster recovery plan. C. Incident response plan An incident response plan is commonly used to address a security event. Issues discovered during the planned upgrade of an email server would not be associated with an incident response plan. D. Power plan The Windows operating system allows users to modify the power use on their systems using built in power plans. These environmental controls are not associated with the change control process. More information: 220-1102, Objective 4.2 - Change Management https://professormesser.link/1102040201 58 Practice Exam A - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A22"
+  },
+  {
+    "id": 14,
+    "question": "A user has delivered a broken laptop to the help desk, and they are visibly upset and quite vocal about the problem they're having. The user is also asking for a very specific repair that doesn't appear to have any relationship to his issue. What's the best way to handle this situation?",
+    "options": [
+      "Repeat your understanding of the issue to the customer and provide an estimate and follow-up time",
+      "Refuse the repair until the customer calms down",
+      "Inform the customer of his mistake with the proposed repair",
+      "Refuse to make any commitments until the computer is examined"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Repeat your understanding of the issue to the customer and provide an estimate and follow-up time The best response in a stressful situation is to listen, ask questions, and refrain from arguing or acting defensive. In this situation, the technician should gather as much information about the problem and keep all responses focused on resolving the problem. The incorrect answers: B. Refuse the repair until the customer calms down It's always preferable to avoid any comments that would be associated with emotion. Technical problems can be stressful enough on their own, and adding additional stress is not going to help repair the system. C. Inform the customer of his mistake with the proposed repair This isn't a game, and there are no winners or losers. The technician will be left to resolve the issue, regardless of the root cause. It's not necessary to comment or speculate on any proposed repair process. D. Refuse to make any commitments until the computer is examined The technician is ultimately responsible for resolving the issue, and it would help everyone involved to maintain a constant line of communication. More information: 220-1102, Objective 4.7 - Professionalism https://professormesser.link/1102040702 Practice Exam A - Answers 69",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A33"
+  },
+  {
+    "id": 15,
+    "question": "A server administrator is replacing the memory in a database server. Which of the following steps should be followed FIRST?",
+    "options": [
+      "Remove the existing memory modules",
+      "Wear an air filter mask",
+      "Disconnect all power sources",
+      "Connect an ESD strap"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Disconnect all power sources The first step when working inside of a computer or printer is to remove all power sources. The incorrect answers: A. Remove the existing memory modules Prior to removing the existing modules, the power source would need to be disconnected and an ESD (Electrostatic Discharge) strap attached to the computer case. B. Wear an air filter mask A filtered mask would not commonly be required for replacing memory modules. If the environment is very dusty or dirty, then a filtered mask may be necessary. D. Connect an ESD strap An ESD strap would allow the technician to minimize the potential of an electrostatic discharge. However, disconnecting the power source takes a higher priority. More information: 220-1102, Objective 4.4 - Safety Procedures https://professormesser.link/1102040402 74 Practice Exam A - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A38"
+  },
+  {
+    "id": 16,
+    "question": "A user purchased a copy of home tax software and has installed it on their company computer. This morning, the user logs in and finds that the tax software has been automatically removed from the system. Which of the following would be the MOST likely reason for this result?",
+    "options": [
+      "The company per-seat licenses are all in use",
+      "The software uses an open-source license",
+      "The user has installed a personal license",
+      "The software requires a USB key for DRM"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The user has installed a personal license Personally licensed software can be difficult to audit on computers owned by a company, and many organizations will not allow software to be installed on company-owned systems if the company has not purchased the license. The incorrect answers: A. The company per-seat licenses are all in use This home tax software is not owned by the company, so the company would not have per-seat licenses to distribute. B. The software uses an open-source license An open-source license would not cause any licensing issues, and many companies will install open-source software on their systems. D. The software requires a USB key for DRM Some software requires a USB (Universal Serial Bus) drive to be installed as part of the software's DRM (Digital Rights Management). Although the USB drive might be required to operate the software, it would not cause software to be removed from the system. More information: 220-1102, Objective 4.6 - Privacy, Licensing, and Policies https://professormesser.link/1102040601 82 Practice Exam A - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A46"
+  },
+  {
+    "id": 17,
+    "question": "A technician has been called to resolve an issue with a networked laser printer not printing. When the technician arrives on-site, they find the printer will require a hardware replacement. All hardware is managed by a third-party and will take a week before the printer is operational again. Which of the following would be the technician’s best NEXT step?",
+    "options": [
+      "Work on the next ticket in the queue",
+      "Add a follow-up event for one week later",
+      "Inform the user of the repair status",
+      "Order a printer maintenance kit"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Inform the user of the repair status One of the most important skills for any technician is communication. Information about the delays should be shared with the customer, and the customer can then decide how they might want to proceed. The incorrect answers: A. Work on the next ticket in the queue Before moving on, it's important to inform everyone involved of the current status and recommend any workarounds while waiting on the replacement hardware. B. Add a follow-up event for one week later It's certainly important to follow-up on this hardware replacement, but it's more important that the customer is informed of the plans going forward. D. Order a printer maintenance kit There's no mention that the printer needs maintenance, although this would certainly be a good time to perform maintenance if needed. However, it's more important to keep the customer informed of the status of their printer repair. More information: 220-1102, Objective 4.7 - Communication https://professormesser.link/1102040701 Practice Exam A - Answers 85",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A49"
+  },
+  {
+    "id": 18,
+    "question": "A technician has been assigned a support ticket that urgently requests a laptop repair, but there are already many open support tickets ahead of this request. The technician doesn’t recognize the name associated with the ticket. Which of these choices would be the best path to take?",
+    "options": [
+      "Place the ticket into the queue as first-come, first-served",
+      "Prioritize the support tickets by device type",
+      "Triage the queue and prioritize the tickets in order of repair complexity",
+      "Contact the end-user and determine the urgency of the repair"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Contact the end-user and determine the urgency of the repair A support ticket marked as \"urgent\" should be evaluated to determine the timeframe for resolving the issue and the complexity of the task. If the end user feels that the issue is time-sensitive, then it's important to contact them and see what options might be available to get them up and running as quickly as possible. The incorrect answers: A. Place the ticket into the queue as first-come, first-served Not all support tickets have the same priority, and it's the responsibility of the technician to properly triage the cases with the most critical first. It will usually involve some communication with the client to determine the scope of the issue. B. Prioritize the support tickets by device type The urgency of a technical issue isn't determined by the type of the device. Instead, the priority of issues should be based on the needs of the end user and the importance of their task. C. Triage the queue and prioritize the tickets in order of repair complexity The complexity of a repair doesn't consider the importance of the repair to the organization's goals and objectives. An executive going into an important presentation may have a simple problem, but their issue has greater importance to the organization. More information: 220-1102, Objective 4.7 - Communication https://professormesser.link/1102040701 Practice Exam A - Answers 93",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A57"
+  },
+  {
+    "id": 19,
+    "question": "A network administrator needs to manage a switch and firewall in the local data center. Which of the following would be the BEST choice for this requirement?",
+    "options": [
+      "RDP",
+      "VPN",
+      "SSH",
+      "VNC"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SSH SSH (Secure Shell) provides encrypted console communication, and it's commonly used to manage devices across the network. If an administrator is managing a server, switch, router, or firewall, they're probably using SSH. The incorrect answers: A. RDP Microsoft RDP (Remote Desktop Protocol) is commonly used to share the desktop of a Windows computer. Most switches and firewalls are not Windows devices, so RDP would not be the best choice for this connection. B. VPN A VPN (Virtual Private Network) is required when connecting to a remote site over an encrypted tunnel. In this example, the technician is connecting to devices in a local data center. D. VNC VNC (Virtual Network Computing) is a screen sharing technology common to many non-Windows operating systems. If a technician is sharing the screen of a macOS or Linux desktop, they may be using VNC. More information: 220-1102, Objective 4.9 - Remote Access https://professormesser.link/1102040901 Practice Exam A - Answers 95",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A59"
+  },
+  {
+    "id": 20,
+    "question": "In which of the following file types would a system administrator expect to see the command, “cd c:\\source”?",
+    "options": [
+      ".sh",
+      ".vbs",
+      ".py",
+      ".bat"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": ".bat The .bat file extension refers to Windows batch files. The \"cd\" command can refer to many different operating systems, but the reference to the drive letter \"c:\" is common to the Windows operating system. The incorrect answers: A. .sh The .sh extension is a shell script. Scripts that run in Linux, Unix, or macOS often use the .sh extension to designate a file as a shell script. B. .vbs Microsoft Visual Basic Scripting Edition scripts are commonly called VBScript and use the extension .vbs. A VBScript would not use the cd command and drive letters. C. .py Python scripts often use the .py extension. Python has its own method of managing files and would not use the Windows \"cd\" command. More information: 220-1102, Objective 4.8 - Scripting Languages https://professormesser.link/1102040801 Practice Exam A - Answers 99",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A63"
+  },
+  {
+    "id": 21,
+    "question": "A desktop administrator has determined that an employee in the corporate office has been using their computer to share copyrighted materials on the Internet. Which of the following should be the best NEXT step?",
+    "options": [
+      "Create a firewall rule to block Internet access to this computer",
+      "Create a hash for each file that was shared",
+      "Compile a list of licenses for each set of copyrighted materials",
+      "Retrieve and securely store the computer"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Retrieve and securely store the computer When a security incident has occurred, it's important to securely collect and store any evidence to create a chain of custody. The computer used to share copyrighted materials should be collected and stored until the proper authorities can take control of this evidence. The incorrect answers: A. Create a firewall rule to block Internet access to this computer Creating a firewall rule would stop anyone from accessing the computer, but it wouldn't stop the user from modifying or deleting files and evidence from the PC. B. Create a hash for each file that was shared Although creating hashes of the files may be part of the evidence gathering process, the immediate need is to impound and protect the data on the system used in this event. C. Compile a list of licenses for each set of copyrighted materials The determination of copyright is part of the process that will occur later. The more important task will be to collect the evidence and protect its integrity. More information: 220-1102, Objective 4.6 - Privacy, Licensing, and Policies https://professormesser.link/1102040601 Practice Exam A - Answers 101",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A65"
+  },
+  {
+    "id": 22,
+    "question": "A desktop administrator is upgrading the video adapter in a workstation. Which of the following should the administrator use during this process?",
+    "options": [
+      "Tone generator",
+      "Anti-static strap",
+      "Safety goggles",
+      "Toner vacuum"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Anti-static strap Electrostatic discharge (ESD) is always a concern when working with the components inside of a computer. To minimize the potential for static discharge, it's always a good idea to use a static strap and other anti-static mats and bags. The incorrect answers: A. Tone generator A tone generator is used to locate the two ends of a copper cable. A tone generator would not be used during a video adapter upgrade. C. Safety goggles Safety goggles may be necessary when toner or excessive dust particles are in the air, but it's not common to need safety goggles when replacing adapter cards. D. Toner vacuum A toner vacuum would only be necessary if there was a toner spill that needed to be cleaned. A toner vacuum would not be used during an adapter card upgrade. More information: 220-1102, Objective 4.4 - Managing Electrostatic Discharge https://professormesser.link/1102040401 Practice Exam A - Answers 105",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A69"
+  },
+  {
+    "id": 23,
+    "question": "A help desk director would like to identify and track computer systems that have been returned for service or moved from one location to another. Which of the following would be the BEST solution for these requirements?",
+    "options": [
+      "Cable labels",
+      "Asset tags",
+      "Topology diagrams",
+      "Login names"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Asset tags It's common for equipment to move between users, buildings, or departments. To keep track of this equipment, it's common to attach an internal asset tag to clearly show the equipment is owned by the company and to track the equipment using the internal reference number. The incorrect answers: A. Cable labels A cable label is commonly used to mark the two ends of a cable. This allows the user to confirm the correct connectors without using a tone generator or cable tester. Cable labels would not be used to track equipment. C. Topology diagrams One common use of a topology diagram is for the network team to document the traffic flow through the organization's switches, routers, and other infrastructure equipment. A topology diagram would not be used to track other company assets. D. Login names Login names are not associated with any particular piece of hardware. It would not be useful to track laptops, desktops, and other equipment using login names. More information: 220-1102, Objective 4.1 - Asset Management https://professormesser.link/1102040102 106 Practice Exam A - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A70"
+  },
+  {
+    "id": 24,
+    "question": "A network consulting firm is upgrading the Internet firewalls for a large corporation. The proposal includes a description of the project and the network topology changes required to support the upgrade. The proposal also describes the risks involved in the process of making this upgrade. Which of the following would be the LAST step in this upgrade?",
+    "options": [
+      "Detailed upgrade plan",
+      "Backout plan",
+      "Change control application",
+      "End-user acceptance"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "End-user acceptance The last step of any change control process is to get sign-off from the end users associated with the change. The incorrect answers: A. Detailed upgrade plan Before working through all of the change control steps, it's important to have a detailed explanation of what steps are required to complete the change. This detailed plan will provide decision-making information to the change control board and provide the information needed to create a backout plan. B. Backout plan A backout plan is used to recover from any unexpected or non-working changes. A backout plan would not be the last step in the change control process. C. Change control application The change control committee will need specific details about the proposed changes so they can understand the scope of what they are approving. This application is not the last step in the change control process. More information: 220-1102, Objective 4.2 - Change Management https://professormesser.link/1102040201 110 Practice Exam A - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A73"
+  },
+  {
+    "id": 25,
+    "question": "A data center manager requires each server to maintain at least fifteen minutes of uptime during a power failure. Which of these would be the BEST choice for this requirement?",
+    "options": [
+      "Cloud-based storage",
+      "UPS",
+      "Redundant power supplies",
+      "Surge suppressor"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "UPS A UPS (Uninterruptible Power Supply) provides short-term battery backup if a power outage or low-voltage situation was to occur. The incorrect answers: A. Cloud-based storage The use of cloud-based storage does not provide any server uptime if a power outage occurs. C. Redundant power supplies Some servers might use redundant power supplies to maintain uptime if one of the power supplies was to fail. If there's a power outage, then none of the power supplies will be working properly. D. Surge suppressor A surge suppressor will protect a computer from spikes and noise, but it won't provide any uptime if the primary power source was to fail. More information: 220-1102, Objective 4.5 - Environmental Impacts https://professormesser.link/1102040501 Practice Exam A - Answers 113",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A76"
+  },
+  {
+    "id": 26,
+    "question": "A technician is cleaning out a laser printer with a toner spill. Which of the following would be the MOST important for this cleaning process?",
+    "options": [
+      "ESD mat",
+      "UPS",
+      "Anti-static bag",
+      "Air filter mask"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Air filter mask When working with particles in the air, it's important to protect your face and lungs by using a mask that will filter out the contaminants. The incorrect answers: A. ESD mat An ESD (Electrostatic Discharge) mat is used to protect individual computer components from damage. This question references the cleaning of a toner spill, and there's no mention of working with individual electronic components. B. UPS A UPS (Uninterruptible Power Supply) is used to maintain a backup power source when primary power is unavailable. There's no requirement in this question that would need a UPS during the printer cleaning process. C. Anti-static bag An anti-static bag is used to protect computer components when they are outside of the computer or during transportation. An anti-static bag is not needed during the printer cleaning process. More information: 220-1102, Objective 4.4 - Safety Procedures https://professormesser.link/1102040402 Practice Exam A - Answers 119",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A82"
+  },
+  {
+    "id": 27,
+    "question": "A company has just performed annual laser printer maintenance, and has accumulated hundreds of used toner cartridges. Which of the following would be the BEST way to dispose of the old cartridges?",
+    "options": [
+      "Take to a hazardous waste facility",
+      "Return to the manufacturer",
+      "Separate the parts and dispose of normally",
+      "Contract with an incineration company"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Take to a hazardous waste facility The toner in a laser printer cartridge can be harmful, so it's important to dispose of the cartridges at a local hazardous waste facility. The incorrect answers: B. Return to the manufacturer The manufacturer of the equipment does not have a responsibility to accept old product returns. Once the equipment is purchased, it's the owner's responsibility to properly dispose of the equipment. C. Separate the parts and dispose of normally There's no need to separate the parts of a toner cartridge, and it would probably create a large mess and put toner particles into the air. Even if the cartridges were dismantled, they would not be thrown out with the normal trash. D. Contract with an incineration company Toner cartridges should not be incinerated, and instead should be properly disposed of at a local hazardous waste utility. More information: 220-1102, Objective 4.5 - Environmental Impacts https://professormesser.link/1102040501 172 Practice Exam B - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B7"
+  },
+  {
+    "id": 28,
+    "question": "Why would a technician use an ESD strap?",
+    "options": [
+      "Protect electronic parts from extreme heat",
+      "Keep electronic parts dry and free from moisture",
+      "Prevent damage from static electricity",
+      "Protect computer parts from dust"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Prevent damage from static electricity An ESD (Electrostatic Discharge) strap, or anti-static strap, connects a person to the equipment that they are working on. This commonly connects a wire from a user's wrist to a metal part on the computer or device. The incorrect answers: A. Protect electronic parts from extreme heat An ESD strap does not provide any protection for extreme heat or temperature. B. Keep electronic parts dry and free from moisture An anti-static strap does not provide any protection from the elements, so it would not be used to protect against moisture or water. D. Protect computer parts from dust Anti-static straps do not cover or protect computer components, so it would not protect a system from dust or debris. More information: 220-1102, Objective 4.4 - Managing Electrostatic Discharge https://professormesser.link/1102040401 Practice Exam B - Answers 175",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B10"
+  },
+  {
+    "id": 29,
+    "question": "Jack, a technician, is scheduled to replace a faulty motherboard today, but the motherboard delivery has been delayed and will not arrive until tomorrow. The new motherboard will repair a laptop used by a company executive. Which of the following would be the BEST way to handle these events?",
+    "options": [
+      "Move the installation to the next business day",
+      "Schedule another repair into today's newly opened time slot",
+      "Ask the delivery company for a refund on the shipping charges",
+      "Contact the end user and inform them of the shipping issue"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Contact the end user and inform them of the shipping issue It's important to always maintain an open line of communication with everyone involved with a project. When the situation is running as expected, a simple update may be all that's necessary. However, if problems occur the other participants may want to make alternative plans. It's up to the technician to manage this open line of communication. The incorrect answers: A. Move the installation to the next business day Moving the scheduled installation to the next business day without any other input would not be the best way to manage this repair. If the repair was time-sensitive, moving the installation may be the worst way to proceed. B. Schedule another repair into today's newly opened time slot Before prioritizing another repair into the existing time, it would be useful to know if there might be another option for the customer rather than to wait a day for the delivery to arrive. C. Ask the delivery company for a refund on the shipping charges Although there may be a case for refunding the shipping information, the current problem that needs resolution is the motherboard repair. There will be time after the repair is completed to determine if the shipping process was properly managed. More information: 220-1102, Objective 4.7 - Communication https://professormesser.link/1102040701 Practice Exam B - Answers 177",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B12"
+  },
+  {
+    "id": 30,
+    "question": "A technician has been asked to power down and store a server that has been exploited by an external attacker. The legal department will be performing tests and gathering information from this server. Which of the following would be MOST important to ensure the integrity of the server data?",
+    "options": [
+      "Report the server location to the proper channels",
+      "Compile all support tickets associated with the server",
+      "Maintain a chain of custody",
+      "Take photos of the server in the storage room"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Maintain a chain of custody It will be important to ensure the data on the server is not modified. All access to the data should be tracked, so a chain of custody should be maintained at all times. The incorrect answers: A. Report the server location to the proper channels It's useful for everyone to know where the server is located, but providing that information to the proper channels doesn't ensure that the data on the server is not modified. B. Compile all support tickets associated with the server A list of server support tickets may be useful for the incident investigation, but it won't help to ensure the integrity of the existing data on the server. D. Take photos of the server in the storage room A photographic image of the server, regardless of its location, will not help maintain the integrity of the data on the server. More information: 220-1102, Objective 4.6 - Privacy, Licensing, and Policies https://professormesser.link/1102040601 182 Practice Exam B - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B17"
+  },
+  {
+    "id": 31,
+    "question": "A desktop administrator is moving an SSD from one laptop to another. Which of the following should be used to protect the SSD during the move?",
+    "options": [
+      "Padded envelope",
+      "Anti-static bag",
+      "Box with foam filler",
+      "Cloth wrap"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Anti-static bag An anti-static bag would protect the SSD (Solid State Drive) from inadvertent ESD (Electrostatic Discharge) while the component was moved between locations. The incorrect answers: A. Padded envelope A padded envelope would protect against physical damage, but it wouldn't provide any protection for inadvertent static discharge. Since the SSD doesn't include any moving parts, the padded envelope would provide limited protection. C. Box with foam filler The SSD does not have any moving parts, so extensive protection against bumps and movement isn't necessary. It would be more important to protect the delicate electronics on the drive, and the foam filler does not generally provide any anti-static protection. D. Cloth wrap Cloth can create static electricity, making this option one of the worst for transporting electronic equipment and components. More information: 220-1102, Objective 4.4 - Managing Electrostatic Discharge https://professormesser.link/1102040401 188 Practice Exam B - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B23"
+  },
+  {
+    "id": 32,
+    "question": "A user's video editing workstation often performs an overnight rendering process. On some mornings, the user is presented with a login screen instead of the rendering completion page. A technician finds the building occasionally loses power overnight. Which of the following should be used to avoid these issues with the video editing workstation?",
+    "options": [
+      "Use a surge suppressor",
+      "Save the rendered file to an external storage drive",
+      "Create a separate partition for user documents",
+      "Install a UPS"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Install a UPS A UPS (Uninterruptible Power Supply) can protect against brownouts, surges, and complete power blackouts. With a UPS, the video editing workstation would be protected against short-term overnight power problems. The incorrect answers: A. Use a surge suppressor A surge suppressor protects against voltage spikes and line noise, but it doesn't provide any protection for a complete power outage. B. Save the rendered file to an external storage drive Saving the rendered file to a different drive doesn't provide any protection against a power outage, and the rendering would have to be restarted regardless of where the file was stored. C. Create a separate partition for user documents A separate partition would allow files to be organized differently, but it wouldn't provide any protection if primary power is lost. More information: 220-1102, Objective 4.5 - Environmental Impacts https://professormesser.link/1002040501 Practice Exam B - Answers 197",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B32"
+  },
+  {
+    "id": 33,
+    "question": "A data center manager would like to ensure that a power fault on a server would not be harmful to employees. Which of the following would be the BEST choice for this requirement?",
+    "options": [
+      "Electrical ground",
+      "Battery backup",
+      "Air filter mask",
+      "ESD mat"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Electrical ground An electrical ground will divert any electrical faults away from people and into a copper grounding rod. An electrical ground is a critical part of any power system and equipment installation. The incorrect answers: B. Battery backup A battery backup such as a UPS (Uninterruptible Power Supply) provides a system with power if the main power source were to become unavailable. A UPS is not designed to protect people from an electrical shock. C. Air filter mask An air filter mask may be important for areas with dust or debris in the air, but it won't help protect people from inadvertent power faults or shorts. D. ESD mat An ESD (Electrostatic Discharge) mat is commonly used when working with the components inside of a computer, and its primary use is to prevent the discharge of static electricity. An ESD mat will not protect people from a main power fault on an electrical device. More information: 220-1102, Objective 4.4 - Safety Procedures https://professormesser.link/1102040402 204 Practice Exam B - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B38"
+  },
+  {
+    "id": 34,
+    "question": "A system administrator has just updated fifty servers to the latest version of an application, and the updated software has been working as expected for the last three days. Which of the following change management steps should be followed NEXT?",
+    "options": [
+      "Create a backout plan",
+      "Determine the scope of the changes",
+      "Document the changes",
+      "Determine the risk for the upgrade process"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Document the changes After the final changes are complete, it's useful to document the process and the changes for future reference. The next technician performing a similar change can use this documentation as a point of reference and can use the documentation to avoid any issues that may have occurred during this update. The incorrect answers: A. Create a backout plan A backout plan should be created prior to making any changes. If there are unexpected issues during the update process, the backout process can be followed to return the system to a functioning state. B. Determine the scope of the changes Determining the effect of the change is one of the first steps of the change control process. Understanding the scope of the proposed changes would not be very useful after the changes have been made. D. Determine the risk for the upgrade process Before making any changes, it's important to know what risks might exist for this update. The risk analysis is created well before the update process begins. More information: 220-1102, Objective 4.2 - Change Management https://professormesser.link/1102040201 Practice Exam B - Answers 209",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B43"
+  },
+  {
+    "id": 35,
+    "question": "A help desk technician has been tasked with rebuilding an email server that recently crashed. Which of the following would be the BEST source for this information?",
+    "options": [
+      "Compliance report",
+      "Acceptable use policies",
+      "Network topology map",
+      "Knowledge base"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Knowledge base A knowledge base commonly contains information about processes, procedures, and documentation for resolving technical issues. An internal knowledgebase would contain important historical information about the email server and would potentially document the hardware and software specifications for the server. The incorrect answers: A. Compliance report A compliance report would document how closely the email server complied with a set of rules or regulations associated with the company or service. A compliance report might document how long email messages were stored and how they were protected, but it would not commonly contain the information required to rebuild the server. B. Acceptable use policies An acceptable use policy (AUP) describes the rules of behavior for users of the organization's services and equipment. An AUP does not contain any information that would assist with the rebuilding of an email server. C. Network topology map A network topology map would display the location of the email server in the organization's network, but it would not contain the information required to rebuild the hardware and software of the server. More information: 220-1102, Objective 4.1 - Document Types https://professormesser.link/1102040103 210 Practice Exam B - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B44"
+  },
+  {
+    "id": 36,
+    "question": "A help desk technician needs to view and control the desktop of a Windows computer at a remote location. Which of the following would be the BEST choice for this task?",
+    "options": [
+      "VPN",
+      "VNC",
+      "SSH",
+      "RDP"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "RDP The integrated Windows RDP (Remote Desktop Protocol) is used to view and control the screen of a remote computer. The incorrect answers: A. VPN A VPN (Virtual Private Network) is an encrypted tunnel between devices, but the VPN by itself does not provide remote access to the Windows operating system. B. VNC VNC (Virtual Network Computing) is a remote desktop application that is commonly associated with Linux and macOS desktop sharing. The best choice for a Windows computer is to use the built-in RDP services. C. SSH SSH (Secure Shell) is a secure terminal utility that can manage the command line of a remote device over an encrypted connection. More information: 220-1102, Objective 4.9 - Remote Access https://professormesser.link/1102040901 218 Practice Exam B - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B52"
+  },
+  {
+    "id": 37,
+    "question": "A server administrator has been planning an operating system upgrade for a group of important services. The administrator has provided a detailed scope and risk assessment of the change, and the plan has been documented. However, the end-user acceptance approvals weren’t completed until Friday afternoon, so the change cannot occur over the weekend. Which of the following is preventing the upgrade from occurring?",
+    "options": [
+      "Upgrade file availability",
+      "Change board approval",
+      "Not enough time to complete the upgrade",
+      "Need more people for the upgrade process"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Change board approval Before a change can proceed, the change board must evaluate and approve the proposal. Most of these boards meet well before the scheduled change to make sure that all affected parties have a chance to evaluate the risk and understand the scope of the change. The users approved the plan on a Friday afternoon, but the change board did not have time to properly evaluate and approve the change process for the weekend schedule. The incorrect answers: A. Upgrade file availability Since the upgrade plan was already written, it's most likely that all of the upgrade files were in place and ready. C. Not enough time to complete the upgrade This question didn't define a specific timeframe for completion, although it's common to complete changes during a weekend. D. Need more people for the upgrade process The question didn't define any personnel requirements, so there did not appear to be any constraints on the availability of personnel. More information: 220-1102, Objective 4.2 - Change Management https://professormesser.link/1102040201 Practice Exam B - Answers 221",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B55"
+  },
+  {
+    "id": 38,
+    "question": "A user has dropped off their laptop at the repair desk. A message taped to the laptop states: \"Doesn't work.\" Which of the following would be the BEST next step?",
+    "options": [
+      "Start the laptop and look for any issues",
+      "Call the customer and ask for more information",
+      "Replace the power adapter and try booting the laptop",
+      "Use a diagnostics boot CD to run hardware tests"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Call the customer and ask for more information A problem report of \"Doesn't work\" does not provide enough information to begin troubleshooting. A quick call to the customer will allow the technician to ask more specific questions and ultimately will resolve the laptop problem faster. The incorrect answers: A. Start the laptop and look for any issues There's no way to know what part of the laptop is having problems, so blindly stumbling through possible issues would not be the most efficient way to troubleshoot this issue. C. Replace the power adapter and try booting the laptop There's no evidence that the laptop's power adapter is faulty. Replacing hardware without knowing more about the problem would not be the best next troubleshooting step. D. Use a diagnostics boot CD to run hardware tests. Many hardware diagnostics disks use bootable media, but there's no way to know if the reported issue was hardware-related. Taking time to run a hardware diagnostics test would not be the most efficient troubleshooting step. More information: 220-1102, Objective 4.7 - Communication https://professormesser.link/1102040701 234 Practice Exam B - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B68"
+  },
+  {
+    "id": 39,
+    "question": "An IT manager would like to provide users with the option to recover daily versions of documents and spreadsheets. A user will have the option to roll back to any daily version in the last month. Which of the following would be the BEST way to implement this feature?",
+    "options": [
+      "Create a file-level backup each day",
+      "Maintain a monthly image level backup",
+      "Store full backup tapes at an off-site facility",
+      "Assign each user a USB flash drive"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Create a file-level backup each day Given the available options, the best way to create a separate version of every file each day will be to perform a file-level backup every 24 hours. The incorrect answers: B. Maintain a monthly image level backup A monthly backup that images the entire computer does not provide a method to restore daily versions of a document. C. Store full backup tapes at an off-site facility Although full backups would provide a method of restoring document versions, maintaining those backups at an off-site facility would cause delays in the restoration of those documents. D. Assign each user a USB flash drive Requiring the users to maintain their own backup media would not be the best way to implement this requirement. A backup system requires centralized management and control of the backup media for both recovery and security purposes. More information: 220-1102, Objective 4.3 - Managing Backups https://professormesser.link/1102040301 236 Practice Exam B - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B70"
+  },
+  {
+    "id": 40,
+    "question": "A network administrator has a report showing a single user with numerous visits to a website. This website is known to violate the company’s AUP. Which of the following should the administrator do NEXT?",
+    "options": [
+      "Create a firewall filter to block the website",
+      "Scan all computers with the latest anti-malware signatures",
+      "Contact the company’s security officer",
+      "Change the user’s password"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Contact the company's security officer A company's AUP (Acceptable Use Policy) is in place to limit the legal liability of an organization. If a person in the organization is not following the terms of the AUP, then the security officer's team should manage the results of that action. The incorrect answers: A. Create a firewall filter to block the website A firewall filter may successfully prevent the user from visiting the site, but the original problem of the user browsing to the site still exists. Creating a firewall filter might be an eventual result of this situation, but it would not be the best next step. B. Scan all computers with the latest anti-malware signatures There's nothing in this example that would indicate that the inappropriate website was a security risk or that the end user's computer was infected with malware. D. Change the user’s password Locking out the user by changing their password might cause other issues that are outside the scope of the AUP violation. This also does not resolve the issue associated with the original website visits. More information: 220-1102, Objective 4.1 - Document Types https://professormesser.link/1102040103 Practice Exam B - Answers 237",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B71"
+  },
+  {
+    "id": 41,
+    "question": "Which of the following script extensions would commonly be used inside of a Microsoft Office application?",
+    "options": [
+      ".vbs",
+      ".py",
+      ".bat",
+      ".js"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": ".vbs The .vbs extension is used for Microsoft Visual Basic Scripting Edition scripts. These scripts provide general purpose scripting in Windows, and are common inside of Microsoft Office applications. The incorrect answers: B. .py The .py extension is commonly used for the general-purpose scripting language of Python. Python is used on many operating systems, but it is not a common scripting language inside of Microsoft Office applications. C. .bat Scripts that run at the Windows command line are batch files that use the .bat extension. These batch files are not commonly used in Microsoft Office applications. D. .js Scripts that run inside of a browser commonly use JavaScript files with the .js extension. JavaScript is not the most common scripting language for Microsoft Office applications. More information: 220-1102, Objective 4.8 - Scripting Languages https://professormesser.link/1102040801 238 Practice Exam B - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B72"
+  },
+  {
+    "id": 42,
+    "question": "A manufacturing company in the United States sells monthly subscriptions from their website. Which of the following regulated data types would be the MOST important to manage?",
+    "options": [
+      "Personal government-issued information",
+      "Credit card transactions",
+      "Healthcare data",
+      "Software license terms"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Credit card transactions The payment card industry has created extensive standards and requirements for accepting and storing credit card transactions. The incorrect answers: A. Personal government-issued information The manufacturing company does not appear to be a governmental organization, so managing government-issued data would not be a concern. C. Healthcare data This example doesn't mention any association with healthcare data, so any regulations around the storage and transmission of healthcare data would not apply. D. Software license terms An EULA (End User License Agreement) is commonly associated with software licensing. This example does not mention any license terms, and those terms would usually be publicly available on the website. More information: 220-1102, Objective 4.6 - Privacy, Licensing, and Policies https://professormesser.link/1102040601 Practice Exam B - Answers 241",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B75"
+  },
+  {
+    "id": 43,
+    "question": "A user is traveling to a conference, and they would like to be sure that any messages sent from their phone during the event remain private while using the event’s wireless network. Which of the following should be configured on this user’s phone?",
+    "options": [
+      "VPN",
+      "Strong password",
+      "Network-based firewall",
+      "Multi-factor authentication"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "VPN A VPN (Virtual Private Network) would allow a remote user to connect to the corporate office over a secure encrypted tunnel. The incorrect answers: B. Strong password A strong password would prevent someone from accessing or authenticating to the user's phone, but it would not protect the privacy of messages sent from the phone. C. Network-based firewall A network-based firewall must be connected to the network to be effective. Network-based firewalls are not configured on a phone. D. Multi-factor authentication Multi-factor authentication adds additional login parameters, but it doesn't change the type of traffic sent over the network. More information: 220-1102, Objective 4.9 - Remote Access https://professormesser.link/1102040901 242 Practice Exam B - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B76"
+  },
+  {
+    "id": 44,
+    "question": "A server administrator has configured an automated process to backup VM snapshots each evening during non-working hours. The backups will be stored on a series of high-density tape drives. How can the administrator confirm that these backups will be useful when a server recovery is needed?",
+    "options": [
+      "Send the backups to an off-site facility",
+      "Connect the tape drives to a battery backup",
+      "Create separate file-level backups",
+      "Perform occasional recovery tests"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Perform occasional recovery tests The best way to confirm a backup will be useful when needed is to perform occasional audits of the existing backup media. This important step should be followed for all backup processes. The incorrect answers: A. Send the backups to an off-site facility Sending the backups to an off-site location may help protect the data and preserve the information over a longer timeframe, but it doesn't improve the quality of data stored on the tapes. B. Connect the tape drives to a battery backup Most of the infrastructure equipment in a data center should be connected to battery backup such as a UPS (Uninterruptible Power Supply), but having that reliable power connection doesn't guarantee that the data stored on the tapes will be valid during the restore process. C. Create separate file-level backups Creating additional backups is a good best practice, but having separate backup files doesn't change the quality of the data stored on the original backup tapes. More information: 220-1102, Objective 4.3 - Managing Backups https://professormesser.link/1102040301 244 Practice Exam B - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B78"
+  },
+  {
+    "id": 45,
+    "question": "A user has dropped off a laptop to the help desk and states the laptop is experiencing a problem during the boot process. Which of these options would be the best path to resolve this issue?",
+    "options": [
+      "When the customer provides enough information, stop them and let them know when they can pick up the laptop",
+      "Take the laptop and tell the customer to return tomorrow",
+      "Repeat an understanding of the issue back to the customer for verification",
+      "Provide recommendations to the customer with proper technical IT explanations"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Repeat an understanding of the issue back to the customer for verification It's important to communicate with the client to clarify the issue and to verify with the customer that the technician has properly documented the problem. The incorrect answers: A. When the customer provides enough information, stop them and let them know when they can pick up the laptop It would be inappropriate to interrupt the customer before the complete issue is communicated to the technician. It's very possible that some important information will be missed without getting a full report from the customer. B. Take the laptop and tell the customer to return tomorrow Without understanding the issue, it's impossible to know if the problem can be resolved in 24 hours. D. Provide recommendations to the customer with proper technical IT explanations The customer may not be an information technology professional, so using technical jargon is not going to be an effective way to communicate with the customer. More information: 220-1102, Objective 4.7 - Communication https://professormesser.link/1102040701 246 Practice Exam B - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B80"
+  },
+  {
+    "id": 46,
+    "question": "A technician is upgrading the motherboard in a server. Which of the following should be the FIRST task when beginning this upgrade?",
+    "options": [
+      "Wear safety goggles",
+      "Connect an ESD strap",
+      "Remove any motherboard batteries",
+      "Disconnect from all power sources"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Disconnect from all power sources When working inside of a computer, it's always important to disconnect the system from the main power source. This should always be the first and most important step when working inside of a device. The incorrect answers: A. Wear safety goggles Safety goggles aren't commonly required when working inside a computer case. Goggles would only be required if extensive dust or debris was a concern, and it would not be needed until the power source was disconnected. B. Connect an ESD strap An ESD (Electrostatic Discharge) strap should be used to minimize the chance of damage from static electricity. This strap should not be attached until the main power source was disconnected. C. Remove any motherboard batteries It's not necessary to remove the batteries on a motherboard during a replacement. If the new motherboard does not have a battery, then the battery can be moved between systems. More information: 220-1102, Objective 4.4 - Safety Procedures https://professormesser.link/1102040402 Practice Exam B - Answers 247",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B81"
+  },
+  {
+    "id": 47,
+    "question": "A user would like to install an image and photo editing program on their home computer, but they would prefer an application without a monthly subscription. Which of the following would be the BEST licensing option for this requirement?",
+    "options": [
+      "Open-source",
+      "Corporate",
+      "Personal",
+      "DRM"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Open-source Open-source software is distributed without charge and includes a copy of the source code. The incorrect answers: B. Corporate Software using a corporate license is designed for large-scale deployments and commonly requires a per-seat or per-use cost. C. Personal A personal license is often purchased individually, but there is still a cost for the license. D. DRM DRM (Digital Rights Management) is a method for managing the licenses used by an organization. More information: 220-1102, Objective 4.6 - Privacy, Licensing, and Policies https://professormesser.link/1102040601 Practice Exam B - Answers 249",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B83"
+  },
+  {
+    "id": 48,
+    "question": "An organization has distributed new laptops to all of their home-office employees. Although the users at home can successfully connect through the Internet to resources at the corporate office, there have been complaints that printers and shared drives at home are not accessible. Which of the following would explain this issue?",
+    "options": [
+      "Incorrect login credentials",
+      "Port security is turned on",
+      "The corporate VPN is enabled",
+      "Blocked by DLP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The corporate VPN is enabled A VPN (Virtual Private Network) connection that sends all traffic back to the corporate office by default would effectively disconnect the user from any other local resources, such as printers, other computers, and local file shares. The incorrect answers: A. Incorrect login credentials Incorrect login credentials would prevent access to all resources, including those at the corporate office over the VPN. B. Port security is turned on Port security is a switch feature to prevent an unauthorized user from physically connecting to the network. Port security would limit all traffic through the network, including the traffic intended for the corporate office. D. Blocked by DLP DLP (Data Loss Prevention) is a security technology to identify and block the transfer of unauthorized materials through the network. DLP solutions are often used to block private customer information, credit card details, and other sensitive data. A DLP solution would not be the reason that communication to home resources would be blocked. More information: 220-1102, Objective 4.9 - Remote Access https://professormesser.link/1102040901 Practice Exam B - Answers 253",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B87"
+  },
+  {
+    "id": 49,
+    "question": "A user has brought their laptop to the help desk because of an issue during startup. The laptop screen remains black when powering on, and no status lights appear on the system. The user is traveling tomorrow to a remote site in another country and needs the laptop while they are on the road. Which of the following would be the best NEXT choice?",
+    "options": [
+      "Provide the user with the option to repair, replace, or rent a new system",
+      "Assign the user to the standard seven-day repair agreement",
+      "Replace the external power cable and close the repair ticket",
+      "Recommend the user cancel their travel plans"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Provide the user with the option to repair, replace, or rent a new system Given the short timeframe available for repair, it would be useful to provide the customer with some options to allow them to travel internationally with a working laptop. The user can then decide the best way to proceed. The incorrect answers: B. Assign the user to the standard seven-day repair agreement The user is traveling the following day, so assigning a seven-day repair priority would not provide them with a laptop during their trip. C. Replace the external power cable and close the repair ticket There's no evidence that the power cable is the issue, so replacing the cable and closing the ticket would not provide the user with the best possible outcome. D. Recommend the user cancel their travel plans Asking the user to cancel an international trip without any knowledge of the trip would be an uninformed decision and an unprofessional suggestion. The primary goal should be to find a way to provide the user with a laptop given the travel requirement. More information: 220-1102, Objective 4.7 - Communication https://professormesser.link/1102040701 Practice Exam C - Answers 305",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C12"
+  },
+  {
+    "id": 50,
+    "question": "A home user provides numerous online presentations during the day, but the power in their area is not stable and there will often be short power outages. Which of the following would help with this issue?",
+    "options": [
+      "Cloud backups",
+      "External storage device",
+      "Battery backup",
+      "Surge suppressor"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Battery backup A battery backup can provide ongoing backup power with the main power source is unavailable. This is especially useful for areas where power outages may be numerous and ongoing. The incorrect answers: A. Cloud backups Copying files to the cloud is a useful backup strategy, but it doesn't provide any protection or recovery if the main power is not available. B. External storage device An external storage device can be used to store files separately from the main computer, but it doesn't prevent downtime or data loss if the primary power source fails. D. Surge suppressor A surge suppressor will remove any voltage spikes or noise from the electrical line, but it won't be useful if the primary power source is not available. More information: 220-1102, Objective 4.5 - Environmental Impacts https://professormesser.link/1102040501 306 Practice Exam C - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C13"
+  },
+  {
+    "id": 51,
+    "question": "A system administrator is planning to upgrade two physical servers in the corporate data center to external cloud-based platforms. Which of the following would provide information on connectivity and the plans for remote site access?",
+    "options": [
+      "Change scope",
+      "End-user acceptance",
+      "Backout plan",
+      "Risk analysis"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Change scope When making a change, the details of the modifications must be well documented as part of the change scope. The change scope would include all of the systems affected by the change, the timeframe for completing the change, and any other important details about the modification. The incorrect answers: B. End-user acceptance Prior to making any changes, the end-users must provide approvals for the update. This ensures the users are involved in the change control process and they understand the scope of the change. C. Backout plan Every proposed change needs a documented method of reverting back to the original state. Unexpected problems often occur, so it's important to have a way to return everything back to their original forms. D. Risk analysis Every change (or lack of change) involves some level of risk. The change control process should also include an analysis of this risk. More information: 220-1102, Objective 4.2 - Change Management https://professormesser.link/1102040201 Practice Exam C - Answers 307",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C14"
+  },
+  {
+    "id": 52,
+    "question": "A technician has been asked to replace a faulty adapter card in a server. The technician doesn't have an anti-static strap, but they have removed the server from a power source. Which of the following would be the BEST way to safely complete this repair?",
+    "options": [
+      "Store the faulty card in an anti-static bag",
+      "Periodically touch the server's metal chassis",
+      "Wear safety goggles",
+      "Have a carbon dioxide extinguisher nearby"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Periodically touch the server's metal chassis If a an anti-static strap isn't available to maintain a constant connection between a person and the equipment they're working on, the next-best option would be to occasionally touch some metal on the device to equalize the electrical potential and prevent ESD (electrostatic discharge). The incorrect answers: A. Store the faulty card in an anti-static bag It's important to protect all components, but a known-bad component doesn't have the same priority as the new, working component. C. Wear safety goggles There isn't a danger from debris or eye damage when replacing an adapter card, so wearing safety goggles would not be necessary. D. Have a carbon dioxide extinguisher nearby The server has been disconnected from power, so there would not be a fire concern when replacing the adapter card. Of course, it's a good idea to always know where the nearest extinguisher might be. More information: 220-1102, Objective 4.4 - Managing Electrostatic Discharge https://professormesser.link/1102040401 318 Practice Exam C - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C25"
+  },
+  {
+    "id": 53,
+    "question": "Which of the following would be the BEST choice for a system administrator to manage an Active Directory database?",
+    "options": [
+      "Batch file",
+      "PowerShell",
+      "JavaScript",
+      "Visual Basic Scripting"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "PowerShell PowerShell is Microsoft's command line scripting environment for the Windows operating system and provides integrations to automate almost every aspect of Windows. The incorrect answers: A. Batch file A batch file provides access to the Windows file system, but it does not directly integrate with a Microsoft Active Directory database. C. JavaScript JavaScript is commonly used in a browser to customize aspects of the user interface or a website. JavaScript would not be the first choice to manage an Active Directory database. D. Visual Basic Scripting Visual Basic Scripting provides general purpose scripting in Windows, and very commonly in Microsoft Office applications. Visual Basic Scripting would not be the best choice for Active Directory automation. More information: 220-1102, Objective 4.8 - Scripting Languages https://professormesser.link/1102040801 Practice Exam C - Answers 319",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C26"
+  },
+  {
+    "id": 54,
+    "question": "A server technician is removing the memory from a web server and adding new memory modules to the motherboard. The old memory modules will be used to upgrade a server in a different data center. Which of the following would be the BEST way to protect the old memory modules?",
+    "options": [
+      "Padded envelope",
+      "Cotton fabric",
+      "Molded foam packing material",
+      "Anti-static bag"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Anti-static bag An anti-static bag will protect sensitive electronic components from ESD (Electrostatic Discharge). This is important when moving components from one location to another, especially when an anti-static strap or anti- static pad cannot be used. The incorrect answers: A. Padded envelope A padded envelope would provide some physical protection for the memory modules, but it would not protect the modules from the damaging results of an electrostatic discharge. B. Cotton fabric Cotton is a good way to provide physical protection, but it does not minimize the damage from a potential electrostatic discharge. C. Molded foam packing material Molded foam would provide physical protection for the components, but it would not protect against electrostatic discharge. The best of the available options would include an anti-static bag. More information: 220-1102, Objective 4.4 - Managing Electrostatic Discharge https://professormesser.link/1102040401 Practice Exam C - Answers 323",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C30"
+  },
+  {
+    "id": 55,
+    "question": "Which of the following fire extinguishers would be most appropriate to use in a data center?",
+    "options": [
+      "Foam",
+      "Carbon Dioxide",
+      "Saline",
+      "Water"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Carbon dioxide A fire extinguisher with carbon dioxide, FM-200, or other dry chemicals would be the best choice for electronic equipment. The incorrect answers: A. Foam A water-based foam extinguisher would not be a good choice for electrical equipment. C. Saline Any water-based extinguisher, especially one with salt, would be a very bad choice for a data center. D. Water Water is commonly used in fire extinguishers, but a data center and the large amount of powered electronics in a single room requires an extinguisher that can be used safely while putting out the fire. More information: 220-1102, Objective 4.4 - Safety Procedures https://professormesser.link/1102040402 Practice Exam C - Answers 333",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C40"
+  },
+  {
+    "id": 56,
+    "question": "While working at a customer's desk, a technician’s mobile phone begins to ring. Which of the following would be the MOST appropriate response?",
+    "options": [
+      "Take the call and address the caller's requests before continuing",
+      "Take the call and ask the caller if you can return their call later",
+      "Send the call to voicemail and apologize for the interruption",
+      "Politely excuse yourself and step out to take the call"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Send the call to voicemail and apologize for the interruption When actively working on a problem with a customer, it's important to avoid interruptions, distractions, and anything else that would change focus from the current task. The incorrect answers: A. Take the call and address the caller's requests before continuing It would be unprofessional to allow a phone call to interrupt the current troubleshooting tasks. All calls should be sent to voice mail and can be returned after the customer interaction is complete. B. Take the call and ask the caller if you can return their call later It's not necessary to take a phone call to simply tell the caller they will receive a return call. Instead of interrupting the current customer interaction, it's more professional to send the calls to voice mail. D. Politely excuse yourself and step out to take the call The primary focus of a customer visit is to solve the customer's problems and not to take calls from others. It would be more professional to send the call to voice mail and continue working on the current task. More information: 220-1102, Objective 4.7 - Professionalism https://professormesser.link/1102040702 Practice Exam C - Answers 343",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C50"
+  },
+  {
+    "id": 57,
+    "question": "A user’s workstation has been identified as participating in a DDoS to a large Internet service provider. The computer has been powered down and stored in a locked area until investigators arrive. Which of these procedures would be the MOST important to follow in the meantime?",
+    "options": [
+      "Create documentation of the storage area",
+      "Retrieve logs from the workstation Event Viewer",
+      "Obtain the purchase records of the workstation",
+      "Maintain integrity of the workstation data"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Maintain integrity of the workstation data When a security event occurs, it's important to maintain the integrity of the evidence and create a chain of custody. The data currently stored on the workstation should not be modified in any way. The incorrect answers: A. Create documentation of the storage area Documenting the storage area would not be the most important part of the incident response process. If documentation is needed later, it can be created at that time. B. Retrieve logs from the workstation Event Viewer The workstation has been powered off and locked away to avoid changing any data on the storage drives. Starting the system to retrieve the logs would modify information on the storage drives. C. Obtain the purchase records of the workstation The purchase records of the workstation are not the most important piece of information for this security event. If the records are required later, they can be retrieved at that time. More information: 220-1102, Objective 4.6 - Privacy, Licensing, and Policies https://professormesser.link/1102040601 344 Practice Exam C - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C51"
+  },
+  {
+    "id": 58,
+    "question": "A technician has been asked to work on an urgent computer repair while the user is at lunch. When the technician arrives, they notice paperwork on the desk that may contain private customer information. Which of the following would be the BEST next step?",
+    "options": [
+      "Complete the repair as quickly as possible",
+      "Ask an associate in the department for assistance",
+      "Move the papers somewhere out of sight",
+      "Leave without repairing the computer"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ask an associate in the department for assistance The technician has a job to complete, but privacy and access to sensitive information is an important consideration. In these situations, it's best to work with others to remove any of these concerns from the work area. The incorrect answers: A. Complete the repair as quickly as possible The issue with this repair isn't about how quickly the job can be completed, but instead is about the type of data the technician can see. To avoid any issues, it would be best to have a trusted third-party remove the sensitive information from the area. C. Move the papers somewhere out of sight Moving any papers, especially papers containing sensitive information, would not be a good idea. If the technician touches the papers, then they effectively have access to all of the information on the documents. A third-party in the department can move things to create a proper work environment for the repair. D. Leave without repairing the computer The user would prefer that their computer repair was completed, and the technician is already on-site and at their desk. Asking someone else in the department to clean the work area would only take a moment and would allow the repair process to continue. More information: 220-1102, Objective 4.7 - Professionalism https://professormesser.link/1102040702 Practice Exam C - Answers 347",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C54"
+  },
+  {
+    "id": 59,
+    "question": "A company has recently been the victim of a storm with large-scale flooding, and all systems and backups at the corporate data center were completely destroyed. Which of the following would be the BEST way to avoid this loss of data in the future?",
+    "options": [
+      "Battery backup",
+      "Cloud storage",
+      "RADIUS administration servers",
+      "Image-level backups"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cloud storage Cloud storage would provide a separate, off-site storage of backups, files, and other important documents. One significant advantage of any off-site backup or storage is to have access to the data if the primary site was to have any type of disaster. The incorrect answers: A. Battery backup Battery backup such as an uninterruptible power supply (UPS) would provide a backup power source if the primary power was to become unavailable. A UPS would not provide any method of data backup or data recovery. C. RADIUS administration servers RADIUS (Remote Authentication Dial-In User Service) servers authenticate login processes to a centralized user database. In the case of a disaster, users would still be able to login to their important services using these authentication technologies. RADIUS does not provide any data backup or data recovery features, however. D. Image-level backups An image-level backup can be an important part of a backup strategy, but simply performing the image-level backup won't be helpful if the backup services are destroyed during a natural disaster. In this example, having an off-site backup data source would have prevented the data loss. More information: 220-1102, Objective 4.3 - Managing Backups https://professormesser.link/1102040301 348 Practice Exam C - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C55"
+  },
+  {
+    "id": 60,
+    "question": "A company deploys a suite of commercial software onto every workstation in the organization. Which of the following would BEST describe this licensing?",
+    "options": [
+      "Personal licenses",
+      "Corporate license",
+      "Open-source license",
+      "End user licensing agreement"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Corporate license An enterprise software license is commonly used for large-scale licensing of software, and often covers every device on the organization's network. The incorrect answers: A. Personal licenses A personal license is usually associated with an individual or home-based use of software. Individual personal licenses might be appropriate for smaller groups of users, but larger licensing agreements are required when purchasing for an entire organization. C. Open-source license An open-source license does not commonly require any payment, so there isn't usually a commercial component or financial arrangement associated with the use of open-source licensing. D. End user licensing agreement An end user licensing agreement (EULA) is a list of the licensing terms associated with the use of software. A EULA can be associated with enterprise licenses, personal licenses, and FOSS licenses. More information: 220-1102, Objective 4.6 - Privacy, Licensing, and Policies https://professormesser.link/1102040601 350 Practice Exam C - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C57"
+  },
+  {
+    "id": 61,
+    "question": "A company has created an internal process to ensure that all PII is encrypted. Which of the following would be the MOST likely reason for adding this additional security?",
+    "options": [
+      "Helps prevent identity theft",
+      "Improves application performance",
+      "Allows customer data to be easily deleted",
+      "Uses less storage space"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Helps prevent identity theft PII (Personally Identifiable Information) is any information that can identify an individual. This information can be an address, phone number, or date of birth. Encrypting PII will help prevent the unintended release of personal data and would assist with preventing identity theft. The incorrect answers: B. Improves application performance The process of encrypting and decrypting data adds more overhead to the data storage process. Although application performance may not become any worse, the encryption process would not commonly improve performance. C. Allows customer data to be easily deleted The removal of customer data is not made easier through the use of encryption. Although it's useful to have processes to remove user information, that process is managed in conjunction with the encryption and decryption process. D. Uses less storage space The encryption process would not commonly be used as a way to decrease the use of storage space. If encryption and decryption is being used, there is most likely a security focus for implementing such a process. More information: 220-1102, Objective 4.6 - Privacy, Licensing, and Policies https://professormesser.link/1102040601 Practice Exam C - Answers 367",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C73"
+  },
+  {
+    "id": 62,
+    "question": "A company is updating all of their UPS systems with new batteries. Which of the following would be the best way to dispose of the old batteries?",
+    "options": [
+      "Take to a local hazardous waste facility",
+      "Throw out with the paper trash",
+      "Ship to a battery wholesaler",
+      "Bury in a landfill"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Take to a local hazardous waste facility Batteries contain chemicals that are dangerous to humans and the environment. The best disposal method is to deliver the batteries to professionals at a local hazardous waste facility. The incorrect answers: B. Throw out with the paper trash The batteries in a UPS are not designed to be thrown away with the normal garbage. Rechargeable batteries are fire hazards and can leak chemicals, so it's important to handle them properly. C. Ship them to a battery wholesaler A company selling batteries does not necessarily handle the disposal of batteries. The batteries should be delivered to the local hazardous waste facility. D. Bury them in a landfill Old batteries should not be buried in a traditional landfill, and should instead be delivered to the local hazardous waste facility. More information: 220-1102, Objective 4.5 - Environmental Impacts https://professormesser.link/1102040501 Practice Exam C - Answers 371",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C77"
+  },
+  {
+    "id": 63,
+    "question": "Which of the following should a company use to reduce their legal liability if an employee is dismissed?",
+    "options": [
+      "End user licensing agreement",
+      "Acceptable use policy",
+      "Standard operating procedures",
+      "Regulatory compliance documentation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Acceptable use policy An Acceptable Use Policy (AUP) provides detailed documentation on the correct and expected use of company assets. If someone is dismissed, this document will provide a well-documented set of reasons to legally justify the dismissal. The incorrect answers: A. End user licensing agreement An end user licensing agreement (EULA) is a document with the terms of use for software. Most software installations include an EULA that must be accepted before the software will install. C. Standard operating procedures Standard operating procedures are used by an organization to standardize the process used during the normal course of business. Situations involving downtime or facilities issues are handled using the company's documented set of standard operating procedures. D. Regulatory compliance documentation Many companies must comply with local, state, or federal regulations. This compliance is specific to an industry or situation, and may not apply to all companies or individuals. More information: 220-1102, Objective 4.1 - Document Types https://professormesser.link/1102040103 372 Practice Exam C - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C78"
+  },
+  {
+    "id": 64,
+    "question": "A technician has received a help desk ticket asking for help with a broken laptop keyboard. After calling the user, the technician learns the laptop is scheduled to be used for a press event the following day. Which of the following would be the best NEXT step with the ticket?",
+    "options": [
+      "Refer the ticket to the laptop group",
+      "Escalate the issue with management",
+      "Add the event information to the problem description",
+      "Assign the ticket to the \"laptop\" category"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Escalate the issue with management The time constraint associated with this issue needs to get the visibility of someone higher in the organization. Escalating the ticket to management will provide additional options for resolution. The incorrect answers: A. Refer the ticket to the laptop group Because of the timeframe associated with this issue, a referral to another group would not provide the urgency required to resolve the problem. C. Add the event information to the problem description The event information should certainly be documented, but it would not be the next step given the short timeframe for resolution. D. Assign the ticket to the \"laptop\" category Assigning the ticket to an appropriate category is important for the ticketing process, but it doesn't move the resolution process forward. More information: 220-1102, Objective 4.1 - Ticketing Systems https://professormesser.link/1102040101 374 Practice Exam C - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C80"
+  },
+  {
+    "id": 65,
+    "question": "A network administrator has been asked to manage the router configurations at all company locations. Which of the following would be the BEST choice for this task?",
+    "options": [
+      "SSH",
+      "VNC",
+      "NFC",
+      "RDP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SSH SSH (Secure Shell) is a secure protocol for encrypted console communication to a remote device. SSH is commonly used to manage remote devices using their command line interfaces. The incorrect answers: B. VNC VNC (Virtual Network Computing) provides screen sharing and remote control capabilities for Windows, macOS, Linux, and other operating systems. The desktop sharing capabilities of VNC are not necessary for managing router configurations at the command line. C. NFC NFC (Near Field Communication) is a wireless networking technology associated with short-range data transfers. NFC would not be used to manage routers across the network. D. RDP RDP (Remote Desktop Protocol) allows others to view or control the screen of a Windows device. RDP would not be a common solution for configuring a router at the command line. More information: 220-1102, Objective 4.9 - Remote Access https://professormesser.link/1102040901 Practice Exam C - Answers 375",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C81"
+  },
+  {
+    "id": 66,
+    "question": "A technician has just received fifty boxes of used laser printer toner cartridges removed during an annual preventive maintenance project. Which of the following would be the best NEXT step for managing these used cartridges?",
+    "options": [
+      "Refer to the MSDS",
+      "Ship the cartridges to the original manufacturer",
+      "Incinerate the cartridges",
+      "Drill a hole in each cartridge"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Refer to the MSDS The MSDS (Material Safety Data Sheets) provide information about the safety and health associated with products in the workplace. The MSDS will document hazard information, first aid measures, handling and storage, and more. The incorrect answers: B. Ship the cartridges to the original manufacturer The original manufacturer will most likely not be a method of disposal. Hazardous waste and recycling centers can properly dispose of used toner cartridges, and those would be a much better destination than the original manufacturer. C. Incinerate the cartridges Toner cartridges can contain residual toner and chemicals, so they should not be incinerated or subjected to fire. D. Drill a hole in each cartridge The toner cartridge almost certainly contains residual toner. Drilling a hole in a cartridge would not only be unnecessary, but it would most likely cause a tremendous mess. More information: 220-1102, Objective 4.5 - Environmental Impacts https://professormesser.link/1102040501 Practice Exam C - Answers 377",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C83"
+  },
+  {
+    "id": 67,
+    "question": "A system administrator has been notified that a serious security vulnerability has been identified in software used by the company. In order to quickly patch this vulnerability, the administrator has created change management documentation for the change control board. Which part of the documentation would explain the disadvantages of not quickly patching this software?",
+    "options": [
+      "Backout plan",
+      "End-user acceptance",
+      "Detailed change plan",
+      "Risk analysis"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Risk analysis The risk analysis provides documentation for the change control board to understand the risk with making the change, and the risk if the change is not made. The board can then decide if the change is worth those risks. The incorrect answers: A. Backout plan A backout plan provides a way to recover if a change did not go as planned. The backout plan does not document the disadvantages of not performing the change. B. End-user acceptance End-user acceptance is important to have before presenting to the change control board, but it does not provide any information about the risk of making (or not making) the proposed change. C. Detailed change plan The change control board will need a detailed plan describing each step of the change. This plan will be used to make everyone aware of the scope and detail of the proposed change. The change plan does not include information about the risk associated with the proposed change. More information: 220-1102, Objective 4.2 - Change Management https://professormesser.link/1102040201 378 Practice Exam C - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C84"
+  },
+  {
+    "id": 68,
+    "question": "A company is donating ten laptop computers to a local community center. Which of the following processes should be followed before making this donation?",
+    "options": [
+      "Inventory management",
+      "Acceptable use policy",
+      "Password policy",
+      "Knowledge base article"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Inventory management The donated systems must be removed from the inventory system and documentation needs to detail the donation process. The incorrect answers: B. Acceptable use policy An acceptable use policy is documentation used to understand how company assets should be used by employees and representatives of the company. C. Password policy A password policy is created by the organization's security team to document the complexities required for passwords, the aging of passwords, and the password change and reset process. The password policy would not be associated with a donation of equipment. D. Knowledge base article Many organizations maintain a knowledge base of information about their internal systems and technical changes. A knowledge base is not commonly referenced when making an equipment donation. More information: 220-1102, Objective 4.1 - Document Types https://professormesser.link/1102040103 Practice Exam C - Answers 379",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C85"
+  },
+  {
+    "id": 69,
+    "question": "A company is moving three computer racks of equipment from an old data center to a new facility. Which of these safety features should be the MOST important requirement at the new location?",
+    "options": [
+      "Air filter masks",
+      "Anti-static mat",
+      "Equipment grounding",
+      "Surge protectors"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Equipment grounding Electrical safety is one of the most important considerations in a data center, and the equipment racks used in the data center should always be connected to an electrical ground. If an electrical fault occurs, the power will be sent to the electrical ground instead of a person. The incorrect answers: A. Air filter masks Most data centers are very clean environments with very little contaminants in the air. There would not commonly be a reason to wear a filtering mask inside of a data center environment. B. Anti-static mat Anti-static mats can be useful when working inside of a computer, but they're not a significant requirement when working with equipment already in a computer rack. D. Surge protectors Surge protectors should certainly be part of a data center, although they're usually included with the data center's UPS (Uninterruptible Power Supply). However, the concern of electrical shock takes priority over keeping the power source as clean as possible. More information: 220-1102, Objective 4.4 - Safety Procedures https://professormesser.link/1102040402 382 Practice Exam C - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C88"
+  },
+  {
+    "id": 70,
+    "question": "A company has configured a server for daily backups, and a full backup is created each Sunday based on the previous incremental backups. Which of the following would BEST describe this backup strategy?",
+    "options": [
+      "Differential",
+      "GFS",
+      "Synthetic",
+      "3-2-1"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Synthetic A synthetic backup combined a previously taken full backup with a series of updates to build a completely new full backup based on the most recent changes. The incorrect answers: A. Differential A differential backup takes a full backup and subsequent backups contain all changes since the full backup. B. GFS GFS is an abbreviation for \"Granfather-Father-Son.\" This backup strategy describes three different backup rotations for each month (grandfather), each week (father), and each day (son). D. 3-2-1 The 3-2-1 backup rule states three copies of data should always be available, two different types of media should be used, and one copy of the backup should be stored offsite. More information: 220-1102, Objective 4.3 - Managing Backups https://professormesser.link/1102040301 Practice Exam C - Answers 383",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C89"
   }
 ]

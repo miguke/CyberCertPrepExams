@@ -1,6 +1,6 @@
 [
   {
-    "id": 63,
+    "id": 1,
     "question": "A user is no longer able to start the OS on a computer and receives an error message indicating there is no OS found. A technician reviews the audit logs and\nnotes that the user's system posted a S.M.A.R.T. error just days before this issue. Which of the following is the MOST likely cause of this issue?",
     "options": [
       "Boot order",
@@ -17,11 +17,11 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 64,
+    "id": 2,
     "question": "An executive has contacted you through the help-desk chat support about an issue with a mobile device.\nAssist the executive to help resolve the issue.\n100% Valid and Newest Version 220-1102 Questions & Answers shared by Certleader\nWhich of the following should be done NEXT?",
     "options": [
-      "Educate the user on the solution that was performed. Tell the user to take time to fix it themselves next time.",
-      "",
+      "Educate the user on the solution that was performed.",
+      "Tell the user to take time to fix it themselves next time.",
       "Close the ticket out.",
       "Send an email to Telecom to inform them of the Issue and prevent reoccurrence."
     ],
@@ -34,7 +34,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 65,
+    "id": 3,
     "question": "When trying to access a secure internal network, the user receives an error messaging stating, \"There is a problem with this website's security certificate.\" The\nuser reboots the desktop and tries to access the website again, but the issue persists. Which of the following should the user do to prevent this error from\nreoccurring?",
     "options": [
       "Reimage the system and install SSL.",
@@ -51,7 +51,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 66,
+    "id": 4,
     "question": "A developer receives the following error while trying to install virtualization software on a workstation:\nVTx not supported by system\nWhich of the following upgrades will MOST likely fix the issue?",
     "options": [
       "Processor",
@@ -68,7 +68,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 67,
+    "id": 5,
     "question": "A user reports that the pages flash on the screen two or three times before finally staying open when attempting to access banking web pages. Which of the\nfollowing troubleshooting steps should the technician perform NEXT to resolve the issue?",
     "options": [
       "Examine the antivirus logs.",
@@ -85,7 +85,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 68,
+    "id": 6,
     "question": "A technician at a customer site is troubleshooting a laptop A software update needs to be downloaded but the company's proxy is blocking traffic to the update site.\nWhich of the following should the technician perform?",
     "options": [
       "Change the DNS address to 1.1.1.1",
@@ -102,7 +102,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 69,
+    "id": 7,
     "question": "A BSOD appears on a user's workstation monitor. The user immediately presses the power button to shut down the PC, hoping to repair the issue. The user then\nthe BSOD reappears, so the user contacts the help desk. Which of the following should the technician use to\nrestarts the PC, and\ndetermine the cause?",
     "options": [
       "Stop code",
@@ -119,7 +119,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 70,
+    "id": 8,
     "question": "A user calls the help desk to report that Windows installed updates on a laptop and rebooted overnight. When the laptop started up again, the touchpad was no\nlonger working. The technician thinks the software that controls the touchpad might be the issue. Which of the following tools should the technician use to make\nadjustments?",
     "options": [
       "eventvwr.msc",
@@ -136,7 +136,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 71,
+    "id": 9,
     "question": "A remote user is experiencing issues connecting to a corporate email account on a laptop. The user clicks the internet connection icon and does not recognize the\nconnected Wi-Fi. The help desk technician, who is troubleshooting the issue, assumes this is a rogue access point. Which of the following is the first action the\ntechnician should take?",
     "options": [
       "Restart the wireless adapter.",
@@ -153,7 +153,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 72,
+    "id": 10,
     "question": "A user is having phone issues after installing a new application that claims to optimize performance. The user downloaded the application directly from the\nvendor's website and is now experiencing high network utilization and is receiving repeated security warnings. Which of the following should the technician perform\nFIRST to mitigate the issue?",
     "options": [
       "Reset the phone to factory settings",
@@ -170,7 +170,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 73,
+    "id": 11,
     "question": "A technician is troubleshooting a mobile device that was dropped. The technician finds that the screen (ails to rotate, even though the settings are correctly\napplied. Which of the following pieces of hardware should the technician replace to resolve the issue?",
     "options": [
       "LCD",
@@ -187,7 +187,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 74,
+    "id": 12,
     "question": "An Android user contacts the help desk because a company smartphone failed to complete a tethered OS update A technician determines there are no error\nmessages on the device Which of the following should the technician do NEXT?",
     "options": [
       "Verify all third-party applications are disabled",
@@ -204,7 +204,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 75,
+    "id": 13,
     "question": "A user attempts to open some files, but a message appears stating that the files are encrypted. The user was able to access these files before without receiving\nthis message and no changes have been made within the company. Which of the following has infected the computer?",
     "options": [
       "Cryptominer",
@@ -221,7 +221,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 76,
+    "id": 14,
     "question": "A user reports a virus is on a PC. The user installs additional real-lime protection antivirus software, and the PC begins performing extremely slow. Which of the\nfollowing steps should the technician take to resolve the issue?",
     "options": [
       "Uninstall one antivirus software program and install a different one.",
@@ -239,7 +239,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 77,
+    "id": 15,
     "question": "A salesperson's computer is unable to print any orders on a local printer that is connected to the computer Which of the following tools should the salesperson use\nto restart the print spooler?",
     "options": [
       "Control Panel",
@@ -256,7 +256,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 78,
+    "id": 16,
     "question": "A systems administrator is experiencing Issues connecting from a laptop to the corporate network using PKI. Which to the following tools can the systems\nadministrator use to help remediate the issue?",
     "options": [
       "certmgr.msc",
@@ -273,7 +273,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 79,
+    "id": 17,
     "question": "A technician has verified a computer is infected with malware. The technician isolates the system and updates the anti-malware software. Which of the following\nshould the technician do next?",
     "options": [
       "Mastered",
@@ -288,7 +288,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 80,
+    "id": 18,
     "question": "A user's mobile phone has become sluggish A systems administrator discovered several malicious applications on the device and reset the phone. The\nadministrator installed MDM software. Which of the following should the administrator do to help secure the device against this threat in the future?",
     "options": [
       "Prevent a device root",
@@ -308,7 +308,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 81,
+    "id": 19,
     "question": "A user visits a game vendor's website to view the latest patch notes, but this information is not available on the page. Which of the following should the user\nperform before reloading the page?",
     "options": [
       "Synchronize the browser data.",
@@ -325,7 +325,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 82,
+    "id": 20,
     "question": "A technician is troubleshooting a customer's PC and receives a phone call. The technician does not take the call and sets the phone to silent. Which of the\nfollowing BEST describes the technician's actions?",
     "options": [
       "Avoid distractions",
@@ -342,7 +342,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 83,
+    "id": 21,
     "question": "A user's computer unexpectedly shut down immediately after the user plugged in a USB headset. Once the user turned the computer back on, everything was\nfunctioning properly, including the headset. Which of the following Microsoft tools would most likely be used to determine the root cause?",
     "options": [
       "Event Viewer",
@@ -359,7 +359,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 84,
+    "id": 22,
     "question": "A technician is unable to access the internet or named network resources. The technician receives a valid IP address from the DHCP server and can ping the\ndefault gateway. Which of the following should the technician check next to resolve the issue?",
     "options": [
       "Verify the DNS server settings.",
@@ -376,7 +376,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 85,
+    "id": 23,
     "question": "The screen on a user's mobile device is not autorotating even after the feature has been enabled and the device has been restarted. Which of the following should\nthe technician do next to troubleshoot the issue?",
     "options": [
       "Calibrate the phone sensors.",
@@ -393,7 +393,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 86,
+    "id": 24,
     "question": "Which of the following defines the extent of a change?",
     "options": [
       "Scope",
@@ -410,7 +410,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 87,
+    "id": 25,
     "question": "An Android user reports that when attempting to open the company's proprietary mobile application it immediately doses. The user states that the issue persists,\neven after rebooting the phone. The application contains critical information that cannot be lost. Which of the following steps should a systems administrator\nattempt FIRST?",
     "options": [
       "Mastered",
@@ -425,7 +425,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 88,
+    "id": 26,
     "question": "An architecture firm is considering upgrading its computer-aided design (CAD) software to the newest version that forces storage of backups of all CAD files on the\nsoftware's cloud server. Which of the following is MOST likely to be of concern to the IT manager?",
     "options": [
       "All updated software must be tested with alt system types and accessories",
@@ -442,7 +442,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 89,
+    "id": 27,
     "question": "A user reports that a workstation is operating sluggishly Several other users operate on the same workstation and have reported that the workstation is operating\nnormally. The systems administrator has validated that the workstation functions normally. Which of the following steps should the systems administrator most\nlikely attempt NEXT?",
     "options": [
       "Increase the paging file size",
@@ -460,7 +460,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 90,
+    "id": 28,
     "question": "After clicking on a link in an email a Chief Financial Officer (CFO) received the following error:\nThe CFO then reported the incident to a technician. The link is purportedly to the organization's bank. Which of the following should the technician perform FIRST?",
     "options": [
       "Update the browser's CRLs",
@@ -477,7 +477,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 91,
+    "id": 29,
     "question": "A technician is editing the hosts file on a few PCs in order to block certain domains. Which of the following would the technician need to execute after editing the\nhosts file?",
     "options": [
       "Enable promiscuous mode.",
@@ -494,7 +494,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 92,
+    "id": 30,
     "question": "A user contacted the help desk to report pop-ups on a company workstation indicating the computer has been infected with 137 viruses and payment is needed to\nremove them. The user thought the company-provided antivirus software would prevent this issue. The help desk ticket states that the user only receives these\nmessages when first opening the web browser. Which of the following steps would MOST likely resolve the issue?",
     "options": [
       "Mastered",
@@ -509,7 +509,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 93,
+    "id": 31,
     "question": "Which of the following file types allows a user to easily uninstall software from macOS by simply placing it in the trash bin?",
     "options": [
       ".exe",
@@ -527,7 +527,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 94,
+    "id": 32,
     "question": "A customer calls a service support center and begins yelling at a technician about a feature for a product that is not working to the customer's satisfaction. This\nfeature is not supported by the service support center and requires a field technician to troubleshoot. The customer continues to demand service. Which of the\nfollowing is the BEST course of action for the support center representative to take?",
     "options": [
       "Inform the customer that the issue is not within the scope of this department.",
@@ -542,5 +542,1030 @@
     "source_pdf": "220-1102_1.pdf",
     "type": "single",
     "topic": "software-troubleshooting"
+  },
+  {
+    "id": 33,
+    "question": "A user has opened a help desk ticket regarding the battery life on their mobile phone. The battery in the phone held a charge for most of the day prior to connecting to the corporate network. The battery now only lasts about half a day and the back of the phone is warmer than usual. The phone is configured as follows: Storage: 216.2 GB of 512 GB used Display and Brightness: Automatic Wi-Fi: Enabled Auto-lock: Disabled VPN: Not connected Low Power Mode: Disabled Battery Maximum Capacity: 100% Which of the following changes would have the BEST impact on battery performance?",
+    "options": [
+      "Enable auto-lock",
+      "Connect to the VPN",
+      "Increase available storage space",
+      "Disable Wi-Fi"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Enable auto-lock The backlight of a mobile phone requires constant battery use, and the phone in an active state will use more battery than one that is locked or in a standby state. The incorrect answers: B. Connect to the VPN Connecting to a VPN would most likely increase the amount of battery used due to the encryption and decryption that would need to occur. 42 Practice Exam A - Answers C. Increase available storage space The battery life on a phone is not based on the amount of storage space in use. Increasing storage space would not extend the life of the battery. D. Disable Wi-Fi Wi-Fi does not have a significant impact on battery performance when compared to the screen backlight and active phone services. More information: 220-1102, Objective 3.4 - Troubleshooting Mobile Devices https://professormesser.link/1102030401 Practice Exam A - Answers 43",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A7"
+  },
+  {
+    "id": 34,
+    "question": "A user in the accounting department has received this error message: “The print spooler service is not running.” The user contacts the help desk and opens a ticket for assistance. The help desk technician performs some testing and identifies the issue. Which of these would be the best NEXT step?",
+    "options": [
+      "Reinstall all printer drivers",
+      "Restart the spooler service",
+      "Reboot the computer",
+      "Power cycle the printer"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Restart the spooler service The spooler operates as a background service in Windows. Once the problem is identified and corrected, the spooler service would need to be restarted. The incorrect answers: A. Reinstall all printer drivers The print spooler service is not dependent on the print drivers. Reinstalling print drivers would not commonly resolve a problem with the print spooler not running. C. Reboot the computer Although rebooting the computer may cause the services to restart, it's an unnecessary step that takes time away from problem resolution. It's much easier and faster to simply restart the service. D. Power cycle the printer If the print spooler service isn't running, then the printer won't receive a print job. Power cycling the printer won't cause the print spooler to restart. More information: 220-1102, Objective 3.1 - Troubleshooting Solutions https://professormesser.link/1102030102 44 Practice Exam A - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A8"
+  },
+  {
+    "id": 35,
+    "question": "A user is attempting to AirDrop a document to an associate, but they do not see any destination devices in their list of available AirDrop locations. Which of the following would be the MOST likely reason for this issue?",
+    "options": [
+      "Low battery",
+      "Rotation lock is enabled",
+      "Low storage space",
+      "Wi-Fi and Bluetooth are disabled"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Wi-Fi and Bluetooth are disabled An Apple iOS and iPadOS devices uses both Wi-Fi and Bluetooth to provide location and transfer functionality for AirDrop. Both wireless options should be enabled to use the AirDrop feature. The incorrect answers: A. Low battery A low battery is always a concern, but it doesn't have any direct effect on transferring files using AirDrop. B. Rotation lock is enabled The rotation lock will prevent a device from alternating between portrait and landscape views. Rotation lock does not prevent AirDrop from working properly. C. Low storage space Low storage space would not prevent a device from sending a document using AirDrop. More information: 220-1102, Objective 3.4 - Troubleshooting Mobile Devices https://professormesser.link/1102030401 Practice Exam A - Answers 47",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A11"
+  },
+  {
+    "id": 36,
+    "question": "When connecting a new USB webcam to Windows 10, a message appears stating \"The controller does not have enough resources for this device.\" Which of the following would be the BEST next troubleshooting step?",
+    "options": [
+      "Close all large-memory processes",
+      "Modify the BCD",
+      "Move the webcam to a different USB interface",
+      "Use System Restore to rollback to a previous configuration"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Move the webcam to a different USB interface The resources associated with a USB (Universal Serial Bus) interface can vary based on the interface type and USB controller version. If these resources are exceeded on a USB controller, the system will display a message explaining the lack of resources. The incorrect answers: A. Close all large-memory processes The resources associated with the USB interface are not related to the available RAM in the operating system. B. Modify the BCD The Windows BCD (Boot Configuration Data) is used during startup to identify the location of the Windows installation. Updating the BCD will not resolve USB-related resource contention. D. Use System Restore to rollback to a previous configuration This issue is related to the hardware connected to a USB controller. Changing the configuration of the operating system will not resolve this issue. More information: 220-1102, Objective 3.1 - Troubleshooting Windows https://professormesser.link/1102030101 Practice Exam A - Answers 59",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A23"
+  },
+  {
+    "id": 37,
+    "question": "A help desk technician has been called to a training room that uses Android tablets as presentation devices. An application used for the training program will not start on any of the tablets. When the application is selected, the splash screen appears for a moment and then completely disappears with no error message. Which of the following would be the best NEXT troubleshooting step?",
+    "options": [
+      "Install all operating system updates",
+      "Uninstall the application",
+      "Power cycle the tablets",
+      "Roll back to the previous application version"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Power cycle the tablets Before making any changes to the operating system or application software, it would be useful to know if power cycling the tablets would have an effect. If the symptom was to disappear after the restart, then no immediate changes would be required. The incorrect answers: A. Install all operating system updates Making a change to the system without understanding the issue could cause additional problems. It would be a better practice to gather more information about the problem before making changes. B. Uninstall the application Uninstalling the application would make it very difficult to troubleshoot the application, and it's not the best possible option before gathering more information about the problem. D. Roll back to the previous application version A technician wouldn't want to make significant changes to the application or the operating system until they knew more about the problem and tried to resolve the issue without installing or uninstalling any software. More information: 220-1102, Objective 3.4 - Troubleshooting Mobile Devices https://professormesser.link/1102030401 Practice Exam A - Answers 63",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A27"
+  },
+  {
+    "id": 38,
+    "question": "A user on the headquarters network has opened a help desk ticket about their Windows desktop. When starting their computer, the login process proceeds normally but the Windows desktop takes fifteen minutes to appear. Yesterday, the desktop would appear in just a few seconds. Which of the following would be the MOST likely reason for this issue?",
+    "options": [
+      "Slow profile load",
+      "Incorrect boot device order",
+      "Faulty RAM",
+      "Incorrect username and password"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Slow profile load A roaming user profile is commonly used on enterprise Windows networks to allow a user's desktop to follow them to any computer. When a user logs in, their profile is downloaded to the local computer. If there is any network latency to the domain controller, the login process could be significantly slower. The incorrect answers: B. Incorrect boot device order A BIOS setting of an incorrect boot device order would cause the computer to boot a completely different operating system or no operating system at all. This would not be associated with a slow login process. C. Faulty RAM Faulty RAM would cause the system to fail or crash. Bad RAM would not commonly cause a login process to perform slowly. D. Incorrect username and password Incorrect login credentials would present an error message instead of slowing down the login process. More information: 220-1102, Objective 3.1 - Troubleshooting Windows https://professormesser.link/1102030101 64 Practice Exam A - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A28"
+  },
+  {
+    "id": 39,
+    "question": "Daniel, a user in the finance department, has purchased a new Android smartphone and has installed a number of productivity apps. After a day of use, Daniel finds the phone displaying a large number of advertisements when browsing the Internet. Which of the following tasks should Daniel perform after completing a factory reset?",
+    "options": [
+      "Disable Bluetooth",
+      "Check app sharing permissions",
+      "Run a speed test on the cellular connection",
+      "Verify the source of each app before installation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Verify the source of each app before installation It's always a good best practice to check the legitimacy of each app installed onto a smartphone. In this example, it's likely that one of the apps installed onto the phone is infected with malware. The incorrect answers: A. Disable Bluetooth Given the limited information in the question, there's no evidence that Bluetooth was related to any of the advertising issues on this smartphone. B. Check app sharing permissions Sharing permissions can limit an app's access to personal data, but it would not cause system to display advertisements. C. Run a speed test on the cellular connection The speed of a cellular network connection would not cause a smartphone to display unwanted and excessive advertisements. More information: 220-1102, Objective 3.5 Troubleshooting Mobile Device Security https://professormesser.link/1102030501 70 Practice Exam A - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A34"
+  },
+  {
+    "id": 40,
+    "question": "A user has noticed their system has been running very slowly over the last few days. They have also noticed files stored on their computer randomly disappear after the files are saved. The user has rebooted the computer, but the same problems continue to occur. Which of the following should the user perform to resolve these issues?",
+    "options": [
+      "Boot to Safe Mode",
+      "Release and renew the network connection",
+      "Install anti-malware software",
+      "Upgrade the system RAM"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Install anti-malware software A system running slowly and has files randomly disappearing are clear indications of malware. The best step to follow would be the installation of anti-malware software to identify and remove any existing malware from the system. The incorrect answers: A. Boot to Safe Mode Booting to Safe Mode might be a troubleshooting step during the malware removal phase, but it won't commonly stop malware from exhibiting the symptoms identified in the question. B. Release and renew the network connection Releasing and renewing the network connection will cause the DHCP (Dynamic Host Configuration Protocol) assignment process to complete, but that won't resolve any issues with slowdowns and files disappearing. D. Upgrade the system RAM Upgrading the RAM might address slowdown issues, but it wouldn't resolve any problems related to files randomly disappearing from the storage drive. More information: 220-1102, Objective 3.2 - Troubleshooting Security Issues https://professormesser.link/1102030201 Practice Exam A - Answers 79",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A43"
+  },
+  {
+    "id": 41,
+    "question": "A user in the sales department is attempting to upgrade the operating system of their smartphone, but the smartphone will not start the installation when selected. Which of the following is the MOST likely reason for this issue?",
+    "options": [
+      "Bluetooth is enabled",
+      "The smartphone storage is nearly full",
+      "Rotation lock is disabled",
+      "The phone is connected to a power source"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The smartphone storage is nearly full To upgrade, a smartphone needs enough storage available to download and process the upgrade files. If the storage space is limited, the upgrade will not be processed. The incorrect answers: A. Bluetooth is enabled Bluetooth provides connectivity from a smartphone to other devices, but enabling or disabling Bluetooth does not generally impact the upgrade process of the operating system. C. Rotation lock is disabled Disabling rotation lock allows the phone to be easily switched between portrait and landscape modes. The rotation lock is not associated with the upgrade process. D. The phone is connected to a power source For an upgrade, it's generally recommended to connect to a power source. Using power on the smartphone would not prevent the operating system upgrade. More information: 220-1102, Objective 3.4 - Troubleshooting Mobile Devices https://professormesser.link/1102030401 80 Practice Exam A - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A44"
+  },
+  {
+    "id": 42,
+    "question": "A computer on a manufacturing floor has been identified as a malware- infected system. Which of the following should be the best NEXT step to resolve this issue?",
+    "options": [
+      "Disconnect the network cable",
+      "Perform a malware scan",
+      "Disable System Restore",
+      "Download the latest anti-malware signatures"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Disconnect the network cable After identifying a system infected with malware, it's important to quarantine that system and restrict any access to the local network or devices. Disconnecting the network cable would be an important step during the quarantine process. The incorrect answers: B. Perform a malware scan Although a malware scan should eventually be performed, it's more important to limit the scope of the malware by quarantining the system. C. Disable System Restore The System Restore feature makes it easy to restore from a previous configuration, but it also makes it easy for malware to reinfect a system. Although it's important to disable System Restore to remove the restore points, it's more important to quarantine the system to prevent the spread of any malware. D. Download the latest anti-malware signatures Before scanning for malware, it's important to use the latest signatures. However, it's more important that the computer is quarantined to prevent the spread of any potential malware. More information: 220-1102, Objective 3.3 - Removing Malware https://professormesser.link/1102030301 84 Practice Exam A - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A48"
+  },
+  {
+    "id": 43,
+    "question": "A workstation on a manufacturing floor is taking much longer than normal to boot. Which of the following would be the BEST way to troubleshoot this issue?",
+    "options": [
+      "Replace the CPU",
+      "Disable the startup applications",
+      "Upgrade the RAM",
+      "Install the latest OS patches"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Disable the startup applications Delays during the boot process can be caused by many issues, but a device that was previously working properly most likely has been changed. A single application install can create issues, so disabling startup applications would be an easy way to remove those from the troubleshooting process. The incorrect answers: A. Replace the CPU If the CPU was faulty, the computer would most likely not be operational. C. Upgrade the RAM Upgrading RAM can often resolve application performance issues, but this computer was previously working with the existing amount of memory. D. Install the latest OS patches It's possible that problems might occur after an OS patch update, but it would unusual for these issues to occur prior to patching. Without knowing more about the issue, it would not be a best practice to make such a significant change to the system. More information: 220-1102, Objective 3.1 - Troubleshooting Windows https://professormesser.link/1102030101 88 Practice Exam A - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A52"
+  },
+  {
+    "id": 44,
+    "question": "A user has received a pop up message on their computer that states applications on their computer are infected with a virus. A technician has determined that the pop up message is a hoax that needs to be removed from the computer. The technician has disabled System Restore to remove all previous restore points. Which of the following tasks would be the best NEXT step?",
+    "options": [
+      "Update the anti-virus signatures",
+      "Educate the end-user",
+      "Schedule anti-virus scans for midnight each day",
+      "Boot the system with the original installation media"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Update the anti-virus signatures After disabling system restore, the next step in virus removal is to remediate the system. To remove the malware, it's important the technician is using the latest set of signatures. The incorrect answers: B. Educate the end-user This is one of the most important tasks for malware removal, but it's usually reserved for the final step when there's no longer any urgency to remove the malware. C. Schedule anti-virus scans for midnight each day Once the virus is removed, the system should be configured for on-demand scanning and additional scans each day. However, this would not immediately follow the disabling of System Restore. D. Boot the system with the original installation media Booting into a command line from the original Windows installation media may be required for more difficult virus removal tasks, but this would only occur after the latest anti-virus signatures were downloaded and installed. More information: 220-1102, Objective 3.3 - Removing Malware https://professormesser.link/1102030301 94 Practice Exam A - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A58"
+  },
+  {
+    "id": 45,
+    "question": "A user is using a smartphone at their desk, and they occasionally receive a security warning in the browser. After some additional troubleshooting, the technician determines the security warnings are fake. Which of the following should a technician follow to BEST resolve this issue?",
+    "options": [
+      "Put the phone into airplane mode",
+      "Connect to the corporate network using a VPN connection",
+      "Run an anti-malware scan on the smartphone",
+      "Remove any paired Bluetooth devices"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Run an anti-malware scan on the smartphone Fake security warnings would be considered a strong indication of malware. This suspicious activity should be researched further and an anti- malware scan should be used to start testing for any security issues. The incorrect answers: A. Put the phone into airplane mode Disconnecting all network connections may be part of the troubleshooting process, but simply using airplane mode would not resolve the issue of fake security warnings. B. Connect to the corporate network using a VPN connection Any connection to the corporate office from a remote location should use a VPN (Virtual Private Network) connection, but using this encrypted tunnel would not resolve a smartphone with fake security warnings. D. Remove any paired Bluetooth devices Bluetooth connections do not generally cause messages to appear on the screen. This almost certainly indicates malware or some other unauthorized process is running on the smartphone. More information: 220-1102, Objective 3.5 Troubleshooting Mobile Device Security https://professormesser.link/1102030501 96 Practice Exam A - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A60"
+  },
+  {
+    "id": 46,
+    "question": "Sam, a user on the research and development team, reports that her computer displays the message “Missing operating system” during boot. A technician runs hardware diagnostics and finds that the RAM, CPU, storage drive, and power supply all pass the tests. The technician then finds that a connected USB flash drive was causing the issue. Which of the following would prevent this issue from occurring in the future?",
+    "options": [
+      "Create a login script",
+      "Install the latest OS patches",
+      "Run SFC",
+      "Modify the BIOS boot order"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Modify the BIOS boot order If the BIOS is configured to boot from a USB interface prior to the internal storage drive, then any bootable flash drive would be used as a boot device. In this case, modifying the BIOS boot order would cause the system to boot from an internal drive first before attempting to boot from another device. The incorrect answers: A. Create a login script A login script is often configured in Active Directory to customize the work environment after authentication. In this example, the system isn't booting so there would be no opportunity to run a login script. B. Install the latest OS patches Patching the operating system would not prevent the USB interface from booting before the internal storage drive. C. Run SFC System File Checker is a Windows utility used to verify the integrity of the core operating system files. Running the SFC utility will not prevent the system from attempting to boot from a USB-connected drive. More information: 220-1102, Objective 3.1 - Troubleshooting Windows https://professormesser.link/1102030101 Practice Exam A - Answers 97",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A61"
+  },
+  {
+    "id": 47,
+    "question": "Jack, a user, has opened a help desk ticket relating to desktop alerts randomly appearing throughout the day. Most of the alerts contain information about third-party products and services. Which of the following is the MOST likely cause of these messages?",
+    "options": [
+      "On-path attack",
+      "Corrupted email database",
+      "OS update failure",
+      "Adware"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Adware Attackers can make money by forcing advertisements to appear on a user's desktop. This system would need to be recovered from a known good backup to remove the malware. The incorrect answers: A. On-path attack An on-path attack would include a third-party intercepting and potentially modifying network data. In this situation, there's no evidence that a third-party is intercepting any network communication. B. Corrupted email database A corrupted email database would cause the user's emails to be unreadable or would cause messages to be missing. Most email platforms will recognize a corrupted database and would not allow the user to access their mailbox. C. OS update failure Although an OS update is certainly important to resolve, missing an update would not cause random advertisements to appear on a user's desktop. More information: 220-1102, Objective 3.2 - Troubleshooting Security Issues https://professormesser.link/1102030201 98 Practice Exam A - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A62"
+  },
+  {
+    "id": 48,
+    "question": "Jack, a user, is having problems with the 802.11 wireless connection on his iOS phone. Although there are names appearing in the network list, his phone does not show any connectivity to a wireless network. Jack has confirmed that airplane mode is not enabled, Bluetooth is on, and VPN is not enabled. Which of the following is the MOST likely reason for this lack of wireless connectivity?",
+    "options": [
+      "The phone does not include a data plan",
+      "The wireless network is disabled",
+      "The Bluetooth connection is conflicting with the Wi-Fi",
+      "The Wi-Fi password is incorrect",
+      "The wireless radio is disabled"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Wi-Fi password is incorrect Since wireless network names are visible and Jack is not connected to one of the available networks, it's most likely that the authentication process has failed. The incorrect answers: A. The phone does not include a data plan The status of a cellular data plan does not have any effect on the connectivity to Wi-Fi networks. B. The wireless network is disabled Wireless network names are appearing in the network list, so the wireless network is clearly active with multiple networks. C. The Bluetooth connection is conflicting with the Wi-Fi Bluetooth frequencies are commonly active on unused portions of the 2.4 GHz spectrum. Bluetooth will not conflict with Wi-Fi communication. E. The wireless radio is disabled Since network names appear in the phone's list of available Wi-Fi networks, we can assume that the wireless radio is active. More information: 220-1102, Objective 3.4 - Troubleshooting Mobile Devices https://professormesser.link/1102030401 104 Practice Exam A - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A68"
+  },
+  {
+    "id": 49,
+    "question": "A technician has been tasked with removing malware on a training room laptop. After updating the anti-virus software and removing the malware, the technician creates a backup of the system. After the training class ends, the technician is notified that the malware has returned. Which of the following steps was missed and caused the system to be infected again?",
+    "options": [
+      "Boot to a pre-installation environment",
+      "Identify malware symptoms",
+      "Disable System Restore before removal",
+      "Update to the latest BIOS version"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Disable System Restore before removal Malware does not like to be removed from a system, so it does everything it can to remain in the operating system. When the malware infects the running operating system, it also infects all of the previous restore points as well. If the restore points aren't removed with the malware, then going back in time to a previous restore point will reinfect the system. The incorrect answers: A. Boot to a pre-installation environment A pre-installation environment is often required during the remediation phase to assist with the malware removal. The use of a pre-installation environment does not commonly have any effect on future reinfections. B. Identify malware symptoms Since malware was previously removed from this system, we can assume that the malware was originally identified. D. Update to the latest BIOS version Updating the BIOS isn't commonly considered part of the malware removal process, and using an older BIOS version doesn't generally cause a device to be more susceptible to malware infections. More information: 220-1102, Objective 3.3 - Removing Malware https://professormesser.link/1102030301 112 Practice Exam A - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A75"
+  },
+  {
+    "id": 50,
+    "question": "While using a laptop during presentations, a company vice president has found her system randomly locks up. While the problem is occurring, the screen continues to display the last presentation slide but none of the mouse or keyboard buttons will work. To regain control, the vice president must power down and reboot her computer. Which of the following would be the BEST option for troubleshooting this issue?",
+    "options": [
+      "Examine the Task Manager",
+      "Install an anti-malware utility",
+      "Run the presentation software in Safe Mode",
+      "Check the Event Viewer"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Check the Event Viewer Random lock-ups are always a mystery. The Windows Event viewer can provide important information about events that may have occurred just prior to the issue and afterwards. The incorrect answers: A. Examine the Task Manager The Windows Task Manager will display a list of the currently running processes, but it won't provide any troubleshooting information about application crashes or problems. B. Install an anti-malware utility Although the issue could be related to almost anything, it's a bit too early in the troubleshooting process to start making changes and installing additional software. C. Run the presentation software in Safe Mode Without knowing more about the issue, running the system in Safe Mode would not guarantee any particular benefit. More information: 220-1102, Objective 3.2 - Troubleshooting Security Issues https://professormesser.link/1102030201 116 Practice Exam A - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A79"
+  },
+  {
+    "id": 51,
+    "question": "A user has opened a help desk ticket for application slowdowns and unwanted pop-up windows. A technician updates the anti-virus software, scans the computer, and removes the malware. The technician then schedules future scans and creates a new restore point. Which of the following should be the NEXT step in the removal process?",
+    "options": [
+      "Disable System Restore",
+      "Update the anti-virus signatures",
+      "Quarantine the system",
+      "Educate the end user"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Educate the end user After the malware has been removed and the system is protected from future infections, it's important to educate the end user on how they could prevent additional problems and when they should contact their support team for additional help. The incorrect answers: A. Disable System Restore The process of disabling System Restore to remove all of the existing restore points is one of the first steps in the malware removal process and should occur prior to the remediation phase. B. Update the anti-virus signatures The time to update the anti-virus signatures would be in the initial remediation phase prior to scanning and removing the malware. C. Quarantine the system A system should be separated from the rest of the network as soon as malware is suspected. The system would not need to be quarantined after the malware has been successfully removed. More information: 220-1102, Objective 3.3 - Removing Malware https://professormesser.link/1102030301 118 Practice Exam A - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A81"
+  },
+  {
+    "id": 52,
+    "question": "Sam, a user in the accounting department, has opened a help desk ticket due to problems accessing the website of the company’s payroll service provider. While testing other website connections on Sam’s computer, the technician finds that many pop-up windows are displayed. Which of the following would be the BEST way for the technician to resolve this issue?",
+    "options": [
+      "Uninstall the browser and reinstall with a different version",
+      "Restore the workstation from a known good backup",
+      "Start in Safe Mode and connect to the payroll website",
+      "Modify the browser’s proxy settings"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Restore the workstation from a known good backup The help desk technician found the pop-up windows appeared to indicate a malware infection. Given the available answers, the only one that would provide a resolution is to restore the system from a known good backup. The incorrect answers: A. Uninstall the browser and reinstall with a different version If a system is infected with malware, uninstalling the browser and reinstalling another version will not resolve the issue. To guarantee removal of the malware, the entire system must be deleted and reinstalled. C. Start in Safe Mode and connect to the payroll website Safe Mode does not prevent malware from running, and it's unlikely that Safe Mode would provide access to the third-party website. D. Modify the browser’s proxy settings There's no evidence from the testing that the connectivity issue is related to an incorrect proxy setting. In this example, the large number of pop-up windows appears to indicate a malware infection. More information: 220-1102, Objective 3.2 - Troubleshooting Security Issues https://professormesser.link/1102030201 120 Practice Exam A - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A83"
+  },
+  {
+    "id": 53,
+    "question": "After booting, a laptop computer is showing a black screen instead of the normal Windows login prompt. The logs from the update server show drivers on the laptop were automatically updated overnight. Which of the following would be the BEST way to resolve this issue?",
+    "options": [
+      "Reinstall the operating system",
+      "Rebuild the User Profile",
+      "Start in VGA mode and roll back the driver",
+      "Upgrade the BIOS"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Start in VGA mode and roll back the driver If a video driver has problems, it becomes difficult to troubleshoot without any video output. In these cases, it's useful to start in the generic VGA mode to regain some use of the operating system. Using System Restore to roll back the driver will restore the previous video driver and configuration. The incorrect answers: A. Reinstall the operating system Reinstalling the operating system might also install a new video driver and resolve the issue, but it would certainly modify many operating system files and potentially remove user data and configurations from the system. B. Rebuild the User Profile A user's Active Directory profile can sometimes become corrupted and cause problems during the login process. A Domain Administrator can remove and reconstruct the User Profile, but this wouldn't resolve any issues with the system video. D. Upgrade the BIOS The BIOS does not contain any video drivers for the operating system, and upgrading the BIOS would not resolve this issue. More information: 220-1102, Objective 3.1 - Troubleshooting Solutions https://professormesser.link/1102030102 126 Practice Exam A - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "A88"
+  },
+  {
+    "id": 54,
+    "question": "A user is reporting some apps launched on their mobile phone will show an error message and then disappear without starting. This problem occurs with a group of apps normally used during the work day. Which of the following tasks would be the FIRST step for troubleshooting this issue?",
+    "options": [
+      "Install the previous version of the apps",
+      "Connect the phone to a power source",
+      "Power cycle the phone",
+      "Disable the GPS radio"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Power cycle the phone Before making any application or configuration changes, it's useful to power cycle a smartphone to reset the operating system. If the problem continues, then additional changes might be considered. The incorrect answers: A. Install the previous version of the apps There's no evidence the current version of the apps is the root cause of the issue. Before making changes to the software, it would be useful to perform some non-invasive troubleshooting and information-gathering tasks. B. Connect the phone to a power source Lack of a power source would not commonly cause applications to fail. This would therefore not be the best first step for troubleshooting these application issues. D. Disable the GPS radio The GPS radio would not commonly cause an app to fail, so disabling the GPS would not commonly be the first troubleshooting step. More information: 220-1102, Objective 3.4 - Troubleshooting Mobile Devices https://professormesser.link/1102030401 Practice Exam B - Answers 181",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B16"
+  },
+  {
+    "id": 55,
+    "question": "Jack, a user, has opened a help desk ticket to remove malware from his laptop. A previous removal occurred two weeks earlier with a similar malware infection. Which of the following was missed during the first malware removal?",
+    "options": [
+      "Restart the computer",
+      "Educate the end-user",
+      "Enable System Protection",
+      "Quarantine infected systems"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Educate the end-user Of the available possible answers, this is the only option that would have resulted in a reinfection if not properly followed. Users aren't malware experts, and they may not realize their actions can have a negative effect on their system. Spending some quality time explaining anti-malware best practices can help prevent future infections. The incorrect answers: A. Restart the computer Restarting the computer is not a necessary step in the malware removal process, and it wouldn't cause the computer to be more susceptible to another malware infection. C. Enable System Protection Enabling System Protection after malware has been removed does not make it more likely to receive another infection. D. Quarantine infected systems The quarantine process would prevent other devices from infection. Missing the quarantine process would not necessarily cause the original system to become infected again. More information: 220-1102, Objective 3.3 - Removing Malware https://professormesser.link/1102030301 Practice Exam B - Answers 183",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B18"
+  },
+  {
+    "id": 56,
+    "question": "A user is performing a series of Google searches, but the results pages are displaying links and advertisements from a different website. This issue occurs each time a Google search is performed. The same Google search on a different computer results in a normal Google results page. Which of the following would resolve this issue?",
+    "options": [
+      "Run the search from Safe Mode",
+      "Install the latest operating system patches",
+      "Run a malware removal utility",
+      "Login as a different user"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Run a malware removal utility If the results page of one website is unexpectedly directing to a different site, the browser has most likely been hijacked by malware. Running a malware removal tool would be the best option of the available choices. The incorrect answers: A. Run the search from Safe Mode If malware has infected the system and hijacked the browser, then operating the same browser from Safe Mode would result in the same hijacked page result. B. Install the latest operating system patches Operating system patches would not commonly remove a malware infection, so the redirection would continue to occur after the OS update. D. Login as a different user The malware in the current user's browser is most likely associated with all users on that system. Authenticating as a different user would not provide any resolution to this browser hijack. More information: 220-1102, Objective 3.2 - Troubleshooting Security Issues https://professormesser.link/1102030201 Practice Exam B - Answers 189",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B24"
+  },
+  {
+    "id": 57,
+    "question": "Jack, a user in the accounting department, is having an issue with his smartphone reaching websites and retrieving mail when working from home. Inside the office, the phone appears to work normally. Which of the following would be the best NEXT step for troubleshooting this issue?",
+    "options": [
+      "Verify the network configuration at home",
+      "Install the latest operating system updates",
+      "Connect the phone to power when working at home",
+      "Restart the smartphone after arriving at home"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Verify the network configuration at home If the smartphone is working properly in the office, then the overall functionality of the smartphone is working as expected. Since the issue is related to both websites and email, the focus should move to the network and the configuration of the user's home network. The incorrect answers: B. Install the latest operating system updates Since the smartphone works properly in the office, it would be unlikely that an operating system upgrade would resolve any problems at the user's home. C. Connect the phone to power when working at home Connecting to a power source doesn't provide any additional enhancements or connectivity options to websites or email servers. D. Restart the smartphone after arriving at home If the issue is not occurring in the office, then the smartphone is working as expected. Restarting the smartphone would not provide the most likely resolution to this issue. More information: 220-1102, Objective 3.4 - Troubleshooting Mobile Devices https://professormesser.link/1102030401 190 Practice Exam B - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B25"
+  },
+  {
+    "id": 58,
+    "question": "A user in the shipping department has logged into the Windows domain. However, the desktop does not show the user’s normal wallpaper and all of the user’s spreadsheets and documents in the “My Documents” folder are missing. Which of these would be the BEST way to restore the user’s normal work environment?",
+    "options": [
+      "Rename the user’s folder and delete their profile in the registry",
+      "Boot into Safe Mode and disable all startup applications",
+      "Add the user to the Administrator group",
+      "Update to the latest operating system version"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rename the user’s folder and delete their profile in the registry Problems with a user profile causes display problems on the desktop and user documents to disappear. To recreate the profile, the user's folder is deleted and the profile setting in the registry is deleted. Once the computer is restarted and the user logs in, a new profile will be created. The incorrect answers: B. Boot into Safe Mode and disable all startup applications There's nothing associated with this issue that indicates a problem with a startup application, and it would not be necessary to boot into Safe Mode if there was an issue with a startup application. C. Add the user to the Administrator group The user doesn't need administrator rights and permissions to load their own desktop and files. Adding the user to the Administrator group would not resolve the issue and would create a larger security concern. D. Update to the latest operating system version The current version of the operating system should properly load a user's profile and their documents. Updating the operating system would be a significant and unnecessary change. More information: 220-1102, Objective 3.1 - Troubleshooting Solutions https://professormesser.link/1102030102 Practice Exam B - Answers 193",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B28"
+  },
+  {
+    "id": 59,
+    "question": "A company’s shipping department maintains ten different computers to print shipping labels and track outgoing shipments. All of the systems are displaying an error when they access a third-party shipping management website over a secure connection. Which of the following would be the MOST likely reason for this issue?",
+    "options": [
+      "The computers have not been updated with the latest OS patches",
+      "The website certificate has expired",
+      "The local computer storage drives are not encrypted",
+      "The systems are infected with malware"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The website certificate has expired All of the computers in the department are not able to connect to the third-party web site, so the problem does not appear to be associated with any single device. This points to the website as an issue, and the only available answer not associated with the local computers is a problem with the website encryption certificate. The incorrect answers: A. The computers have not been updated with the latest OS patches Since the website operated normally before any operating system patches, it would not be necessary to install additional patches. C. The local computer storage drives are not encrypted The security of the local storage drives would not impact the computer's ability to properly browse to the third-party website. D. The systems are infected with malware A malware infection across all devices that causes them to fail in exactly the same way would be unusual, so this would not categorized as the most likely cause of this connectivity issue. More information: 220-1102, Objective 3.2 - Troubleshooting Security Issues https://professormesser.link/1102030201 194 Practice Exam B - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B29"
+  },
+  {
+    "id": 60,
+    "question": "A user is receiving alerts on their desktop computer stating, \"Access to this PC has been blocked for security reasons.\" A technician has determined this message was not created by the company's security software. Which of the following would be the best NEXT step in this troubleshooting process?",
+    "options": [
+      "Update the desktop computer operating system",
+      "Check the certificate of the corporate web server",
+      "Restart the desktop computer",
+      "Run an anti-malware utility"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Run an anti-malware utility A false virus alert could be a static page from a third-party website, but it could also be a result of malware. Performing a malware scan should be the first step in determining the root cause of this issue. The incorrect answers: A. Update the desktop computer operating system Updating the operating system would be a good best practice during this process, but making a change to the OS would not be the best next step. B. Check the certificate of the corporate web server There's no error message or notification in this question to indicate an issue with the company's web server. C. Restart the desktop computer The troubleshooting process may eventually require the system to be restarted, but it would most likely not be the best next step for this issue. Before restarting, it would be useful to gather as much information as possible. More information: 220-1102, Objective 3.2 - Troubleshooting Security Issues https://professormesser.link/1102030201 Practice Exam B - Answers 199",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B34"
+  },
+  {
+    "id": 61,
+    "question": "A desktop administrator has just removed malware from a user’s desktop computer and has configured the system to automatically update anti- virus signatures and perform a scan each night. Which of the following should be the NEXT step in the removal process?",
+    "options": [
+      "Enable System Protection",
+      "Educate the end-user",
+      "Quarantine the computer",
+      "Boot to Safe Mode"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Enable System Protection Before the malware was removed, System Protection was disabled to delete all potentially-infected restore points. Once the malware is removed and the anti-malware process is working again, System Protection can be re-enabled. The incorrect answers: B. Educate the end-user Once the malware is removed and all of the technical configurations are complete, the end-user can be educated on ways to identify and avoid a malware infection in the future. C. Quarantine the computer The quarantine process occurs immediately after malware has been identified. A technician would not wait until anti-malware configurations are complete before quarantining a system. D. Boot to Safe Mode Safe mode may be required during the malware removal process, but it's not necessary once the malware is removed and the anti-virus signatures are updated. More information: 220-1102, Objective 3.3 - Removing Malware https://professormesser.link/1102030301 206 Practice Exam B - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B40"
+  },
+  {
+    "id": 62,
+    "question": "A user has called the help desk to get assistance with random blue screens on their Windows 10 laptop. The technician finds CPU utilization is constantly high, and many network sites are unavailable or only load half of the site content. The user mentions some random pop-up messages have appeared on the desktop during the workday. Which of the following would be the MOST likely reason for these issues?",
+    "options": [
+      "Storage drive is failing",
+      "Network proxy settings are incorrect",
+      "Operating system needs to be updated",
+      "Laptop has a malware infection",
+      "Video subsystem is faulty"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Laptop has a malware infection Slow system performance, intermittent connectivity, and random pop-up messages are clear indications of a malware infection. The incorrect answers: A. Storage drive is failing A failing storage drive may cause slowness and error messages, but it would not commonly cause network connectivity issues and random pop- up messages. B. Network proxy settings are incorrect Incorrect network proxy settings would usually cause all of the network communication to fail. An invalid proxy configuration would not commonly result in random pop-up messages. C. Operating system needs to be updated It's always a good idea to keep the operating system up to date, but an outdated OS would not have connectivity issues or display random pop-up messages. E. Video subsystem is faulty A bad video subsystem might cause a blue screen stop error, but there would also commonly be some type of visual issue with the video. A bad video subsystem would not cause network issues or pop-ups. More information: 220-1102, Objective 3.1 - Troubleshooting Windows https://professormesser.link/1102030101 212 Practice Exam B - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B46"
+  },
+  {
+    "id": 63,
+    "question": "A technician is troubleshooting an issue with an iOS tablet randomly restarting during normal use. A check of the device shows no significant application updates and the operating system was upgraded to a new version three days ago. The user states the tablet was working normally last week. Which of the following would be the MOST likely reason for these random reboots?",
+    "options": [
+      "Faulty OS upgrade",
+      "Invalid device certificate",
+      "Malware infection",
+      "Faulty battery",
+      "Incorrect network settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Faulty OS upgrade The last change to the tablet was an upgrade just three days ago, and the tablet worked normally before that event. This documented change would be the most likely reason for this issue. The incorrect answers: B. Invalid device certificate An invalid device certificate may cause authentication issues, but it would not cause the tablet to randomly restart. C. Malware infection Random reboots could possibly be caused by malware infections, but the documented OS upgrade is a more obvious change to the system. D. Faulty battery A faulty battery could be considered an issue if no other changes were made to the tablet and the tablet didn't restart after powering down. E. Incorrect network settings Incorrect network settings might cause connectivity issues to remote devices, but it wouldn't cause the tablet to randomly restart. More information: 220-1102, Objective 3.4 - Troubleshooting Mobile Devices https://professormesser.link/1102030401 Practice Exam B - Answers 213",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B47"
+  },
+  {
+    "id": 64,
+    "question": "A desktop administrator is troubleshooting poor performance on a user’s laptop computer. The system takes an excessive amount of time during the boot process, and pop up messages appear while using the word processor and spreadsheet applications. Which of the following steps should the technician do NEXT?",
+    "options": [
+      "Educate the end-user",
+      "Schedule periodic anti-virus scans",
+      "Enable System Protection",
+      "Disconnect the laptop from the network"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Disconnect the laptop from the network Once malware has been suspected or identified, the first step is to quarantine the system from all other computers. The laptop should be disconnected from the network to prevent communication with other devices. The incorrect answers: A. Educate the end-user The priority is to limit the scope of the malware and remove it from the system. Once the malware has been removed, it's important to discuss malware prevention and best practices with the user. B. Schedule periodic anti-virus scans After the malware has been removed, it's important to make sure the system is able to scan for any potential future infections. C. Enable System Protection System Protection is disabled before the malware is removed to erase any restore points that might also be infected. Once the malware is removed, this feature can be re-enabled. More information: 220-1102, Objective 3.3 - Removing Malware https://professormesser.link/1102030301 216 Practice Exam B - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B50"
+  },
+  {
+    "id": 65,
+    "question": "Jack, an executive, has a laptop that runs very slowly after login and continues running slowly throughout the day. Jack has complained that certain applications cannot be started and others will randomly crash. A check of the laptop shows that the memory utilization is very close to 100%. Which of the following would provide a short-term fix for this issue?",
+    "options": [
+      "Disable startup items",
+      "Update to the latest OS patches",
+      "Defragment the hard drive",
+      "Reboot the computer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Disable startup items The memory utilization issue appears immediately after the login process, so disabling some startup items may help resolve the issue until a memory upgrade or better laptop is located. The incorrect answers: B. Update to the latest OS patches The over-utilization of RAM cannot be commonly resolved with an OS patch. The two best options are to add more RAM or to limit what runs in the current memory space. C. Defragment the hard drive There's no evidence that a fragmented hard drive would be causing these slowdowns, and the high utilization of RAM appears to indicate an issue with the memory resources available for the active applications. D. Reboot the computer Because this issue appears immediately after login, rebooting the system would not be the most likely short-term resolution for this memory issue. More information: 220-1102, Objective 3.1 - Troubleshooting Windows https://professormesser.link/1102030101 Practice Exam B - Answers 217",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B51"
+  },
+  {
+    "id": 66,
+    "question": "A user has opened a help desk ticket regarding the battery life in her three-year old smartphone. If a power source is not available, the phone battery is usually depleted by the middle of the work day. She uses the smartphone to access resources across the VPN, send and receive email, and run company-related apps. Her average screen time during the day usually exceeds six hours. Which of the following would be the MOST likely reason for this battery issue?",
+    "options": [
+      "The phone is consuming more power than usual",
+      "The battery capacity is decreased",
+      "The company apps need to be updated",
+      "The LCD screen is faulty"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The battery capacity is decreased Smartphone batteries have a lifespan of about 300 to 500 charge cycles, so a three-year old smartphone will not have the same capacity as the battery in a new smartphone. The incorrect answers: A. The phone is consuming more power than usual This user does not appear to be doing anything differently than normal, and none of the apps on the phone appear to be using more power than usual. C. The company apps need to be updated None of the apps on the phone are experiencing any issues, and the overall battery usage appears to match the normal use. Upgrading the apps would most likely not resolve this power issue. D. The LCD screen is faulty There's no evidence that the LCD screen is having problems, and the battery usage of the smartphone does not appear to be related to any LCD issues. More information: 220-1102, Objective 3.4 - Troubleshooting Mobile Devices https://professormesser.link/1102030401 228 Practice Exam B - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B62"
+  },
+  {
+    "id": 67,
+    "question": "An administrator has identified and removed malware on a corporate desktop computer. Which of the following malware removal steps should be performed NEXT?",
+    "options": [
+      "Disconnect the computer from the corporate network",
+      "Educate the end-user",
+      "Schedule periodic anti-virus scans",
+      "Disable System Restore"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Schedule periodic anti-virus scans After removing malware and before educating the end-user, it's important to configure the system to find and prevent any future infections. The incorrect answers: A. Disconnect the computer from the corporate network Quarantining the system should be the first step after suspecting a malware infection. This process would not occur after malware was already removed. B. Educate the end-user After the system is repaired and set for automated protection, the end-user should be educated to help prevent this situation in the future. D. Disable System Restore The System Restore process is disabled before removing the malware to delete all potentially infected restore points on the computer. More information: 220-1102, Objective 3.3 - Removing Malware https://professormesser.link/1102030301 Practice Exam B - Answers 229",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B63"
+  },
+  {
+    "id": 68,
+    "question": "A graphics designer has been editing image files that have become increasingly large over the last few months. The designer is now receiving error messages from their graphics application complaining of low temporary file cache space. Which of the following would be the best NEXT step?",
+    "options": [
+      "Replace all system RAM",
+      "Increase available storage space",
+      "Roll back to a previous restore point",
+      "Rebuild the user's profile"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Increase available storage space Graphics files can become very large to store, and the error messages from the application point to a lack of available storage space. Upgrading the available drive space would be the best next troubleshooting step. The incorrect answers: A. Replace all system RAM Faulty memory will cause a computer to halt or fail with no warning. In this case, there have been no issues related with the overall stability of the system. C. Roll back to a previous restore point Before making any significant changes to the system, it would be useful to complete some initial troubleshooting tasks to avoid changes to the system configuration. There's also no evidence that the current configuration is the root cause of this issue. D. Rebuild the user's profile A damaged or corrupted Active Directory profile can certainly create issues on the local computer, but none of the identified symptoms appear to be related to a profile issue. More information: 220-1102, Objective 3.1 - Troubleshooting Solutions https://professormesser.link/1102030102 230 Practice Exam B - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B64"
+  },
+  {
+    "id": 69,
+    "question": "An employee used their tablet to take pictures of the company's newest product. Those pictures were posted on an industry rumor website the following week. Which of the following should be evaluated as the MOST likely security concern?",
+    "options": [
+      "Cloud storage",
+      "USB flash drive use",
+      "Application updates",
+      "Deleted email messages"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cloud storage Many mobile devices use cloud storage to backup documents, videos, and photos. Anyone with access to the cloud storage would also have access to all of the photos. The incorrect answers: B. USB flash drive use Using a USB flash drive for storage isn't the most significant security concern, and an attacker would still need to gain physical access to the USB flash drive. C. Application updates Applications should always be updated when available, but running older application's wouldn't necessarily provide an attacker with access to the photos. D. Deleted email messages There's no mention in this example of any email messages, and deleting messages would not be a security concern. More information: 220-1102, Objective 3.5 Troubleshooting Mobile Device Security https://professormesser.link/1102030501 240 Practice Exam B - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B74"
+  },
+  {
+    "id": 70,
+    "question": "An administrator is troubleshooting a desktop computer experiencing a reboot issue. Before the Windows login screen appears, the system reboots in a continuous loop. Which of the following would be the BEST way to address this issue?",
+    "options": [
+      "Start Safe Mode and perform a defragmentation",
+      "Reinstall the operating system from the original media",
+      "Update the boot order from the system BIOS",
+      "Run Startup Repair from the Advanced Boot Options"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Run Startup Repair from the Advanced Boot Options The Windows Startup Repair can resolve many problems with the startup process, including problems with drivers failing and resetting during boot. The incorrect answers: A. Start Safe Mode and perform a defragmentation There's no guarantee that Safe Mode would start normally on this system. If it did provide access to the Windows desktop, running a defragmentation would not solve the rebooting loop. B. Reinstall the operating system from the original media Before making a significant change to the operating system and configuration of the computer, it's worthwhile to run through some repair options. C. Update the boot order from the system BIOS The rebooting loop is not related to the boot order, and making changes to the boot order would not resolve any issues that are causing the looping to occur. More information: 220-1102, Objective 3.1 - Troubleshooting Solutions https://professormesser.link/1102030102 Practice Exam B - Answers 251",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B85"
+  },
+  {
+    "id": 71,
+    "question": "A user on the marketing team is experiencing slower load times and ongoing sluggishness with applications on their laptop. A technician examines the Windows Update logs and finds the monthly updates are failing. Which of the following should be the best NEXT step for resolving this issue?",
+    "options": [
+      "Perform an anti-malware scan",
+      "Install the Windows Updates manually",
+      "Increase the amount of RAM in the laptop",
+      "Re-install the applications"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Perform an anti-malware scan The combination of slower applications, poor load times, and the failure of Windows updates, indicates that the system may be infected with malware. Given the available options, an anti-malware scan would be the best next troubleshooting step. The incorrect answers: B. Install the Windows Updates manually There's no evidence that a lack of Windows Updates is causing application sluggishness and slow load times. Before making any significant operating system changes, it would be useful to run some initial scans and tests. C. Increase the amount of RAM in the laptop The laptop used to perform well, which indicates that the amount of RAM in the system was sufficient. Before going through the time and expense of an upgrade, it would be worthwhile to know the root cause of the slowdowns. D. Re-install the applications It would be unusual for all applications to have problems at the same time, so reinstalling the application would most likely not resolve any issues. Before making changes, a bit more research would be called for. More information: 220-1102, Objective 3.2 - Troubleshooting Security Issues https://professormesser.link/1102030201 254 Practice Exam B - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "B88"
+  },
+  {
+    "id": 72,
+    "question": "A technician has been called to resolve an issue with a desktop computer in a training facility. The computer appears to boot properly to the desktop, but applications take five minutes to load. While using the application, pop-up messages and other windows appear on the desktop. Which of the following should be the best NEXT troubleshooting step?",
+    "options": [
+      "View running processes in Task Manager",
+      "Disable System Restore",
+      "Remove the computer from the network",
+      "Educate the end user"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Remove the computer from the network The first step after identifying a potential malware infection is to quarantine the system to prevent the unintended spread of the malware. The incorrect answers: A. View running processes in Task Manager The analysis and removal of the malware can begin once the system has been removed from the network and completely quarantined. B. Disable System Restore Before attempting to remove the malware, it's important to disable the System Protection feature to remove any infected restore points. This step should be completed after the system has been quarantined. D. Educate the end user Once the malware removal process is complete, the last step is to educate the end user to help prevent this type of infection in the future. More information: 220-1102, Objective 3.3 - Removing Malware https://professormesser.link/1102030301 Practice Exam C - Answers 299",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C6"
+  },
+  {
+    "id": 73,
+    "question": "A user has noticed a Bluetooth device is currently connected to their tablet, but they don’t recognize the make or model of the connected device. Which of the following would be the FIRST step for troubleshooting this issue?",
+    "options": [
+      "Perform an anti-malware scan",
+      "Research installed apps with an app scanner",
+      "Disable the Wi-Fi network",
+      "Remove the Bluetooth device"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Remove the Bluetooth device Before continuing, the most important step is to ensure that the connected device no longer has access to the system. Removing the Bluetooth device from the list of paired devices would be the safest first option. The incorrect answers: A. Perform an anti-malware scan An anti-malware scan might be needed, but it would not be the best first step for troubleshooting this issue. Before doing anything else, the device should be removed. B. Research installed apps with an app scanner There's no evidence that an installed app is associated with this paired Bluetooth device, so researching apps would not be the best first step. C. Disable the Wi-Fi network This issue is related to the Bluetooth network, so disabling the Wi-Fi network configuration would have no effect. More information: 220-1102, Objective 3.4 - Troubleshooting Mobile Devices https://professormesser.link/1102030401 Practice Exam C - Answers 301",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C8"
+  },
+  {
+    "id": 74,
+    "question": "A user has recently been assigned a new tablet, but each time she tries to read emails the tablet reboots. The user has reinstalled the email client, but the problem continues to occur. Which of the following would be the best NEXT troubleshooting step?",
+    "options": [
+      "Replace the battery",
+      "Perform a factory reset",
+      "Run a hardware diagnostic",
+      "Disable Wi-Fi"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Run a hardware diagnostic A new tablet would not commonly exhibit random reboots, so checking the hardware would be a good first step. The incorrect answers: A. Replace the battery The tablet battery did not appear to be an issue, and it would be unusual for a new tablet to have a faulty battery. The system is also rebooting, so the tablet would restart back to the initial screen. This would not indicate an issue with the battery. B. Perform a factory reset A factory reset would delete everything on the tablet, so we might not want to start our troubleshooting process with a factory reset. D. Disable Wi-Fi An active Wi-Fi adapter would not generally cause a tablet to reset, so disabling the Wi-Fi connection would most likely not have any use during the troubleshooting process. More information: 220-1102, Objective 3.4 - Troubleshooting Mobile Devices https://professormesser.link/1102030401 302 Practice Exam C - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C9"
+  },
+  {
+    "id": 75,
+    "question": "A user has just installed a driver update from a laptop manufacturer. After restarting, their system shows a Windows Stop Error before the login prompt is displayed. Each subsequent reboot causes the same error to be displayed. Which of the following should the system administrator follow to BEST resolve this issue?",
+    "options": [
+      "Modify the BIOS boot order",
+      "Boot to Safe Mode and perform a Windows Reset",
+      "Perform a System Restore",
+      "Reinstall the patch files"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Perform a System Restore A System Restore can be launched from the Advanced Boot Options under Repair Your Computer. From there, you can select an existing restore point that will restore the computer to a previous configuration. The incorrect answers: A. Modify the BIOS boot order The BIOS boot order will change the priority for storage drives during the startup process. This issue appears to be related to a device driver and not to a specific startup drive. B. Boot to Safe Mode and perform a Windows Reset Although Safe Mode may allow a user to login and avoid the reboot problem, performing a Windows Reset would be a significant change to the operating system. A Reset will reinstall Windows and can delete files, settings, and apps not included with the computer. D. Reinstall the patch files Since the problem occurred when the patch files were installed, installing them again wouldn't be advisable. It's also difficult to reinstall the patch files if the user can't login to the computer. More information: 220-1102, Objective 3.1 - Troubleshooting Solutions https://professormesser.link/1102030102 Practice Exam C - Answers 309",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C16"
+  },
+  {
+    "id": 76,
+    "question": "A desktop administrator is troubleshooting a laptop computer experiencing slowdowns and delays during normal operation. There are many icons displayed in the Windows taskbar, and an error message on the screen shows “Out of memory or system resources.” Which of the following troubleshooting steps would be the BEST way to address this issue?",
+    "options": [
+      "Use Task Manager to close applications",
+      "Reboot the computer",
+      "Release and renew the network connection",
+      "Roll back to a previous restore point"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Use Task Manager to close applications A large number of icons in the taskbar indicates many applications are running, and the message complaining of available resources is most likely a result of this increased system load. Closing some of the applications should provide additional resources and help regain control of the operating system. The incorrect answers: B. Reboot the computer Rebooting the computer would be an extreme solution with the potential for losing data in the current system state. Regaining control of the system prior to rebooting would be ideal. C. Release and renew the network connection This issue doesn't appear to be related to the network, so resetting the network address assignments would not provide a resolution. D. Roll back to a previous restore point This issue appears to be related to the number of applications in use and not to a configuration or device driver error. Restoring an older configuration would most likely not be a long-term solution for this problem. More information: 220-1102, Objective 3.1 - Troubleshooting Solutions https://professormesser.link/1102030102 314 Practice Exam C - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C21"
+  },
+  {
+    "id": 77,
+    "question": "A desktop administrator is removing a virus from a laptop computer in a shared lab. The computer has been removed from the network and the System Restore feature has been disabled. When the administrator attempts to update to the latest anti-virus signatures, the anti-virus utility disables itself. Which of the following would be the best NEXT step?",
+    "options": [
+      "Boot to Safe Mode and use signatures downloaded from a separate computer",
+      "Roll back to a previous configuration",
+      "Schedule periodic updates and reconnect to the network",
+      "Discuss anti-virus strategies with the end user"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Boot to Safe Mode and use signatures downloaded from a separate computer It's not uncommon for viruses to disable access to recovery software. To work around this issue, a technician may often need to restart in Safe Mode and copy utilities and recovery files from a different computer. The incorrect answers: B. Roll back to a previous configuration Viruses often infect both the current configuration and those contained in restore points. In this case, the System Restore feature has already been disabled, so no restore points would be available on this system. C. Schedule periodic updates and reconnect to the network Since the manual update process is failing, it's most likely an automated update would also fail. D. Discuss anti-virus strategies with the end user Once the virus has been removed and the system is set to automatically update and scan for viruses, the technician can educate the end user about ways to avoid this problem in the future. More information: 220-1102, Objective 3.3 - Removing Malware https://professormesser.link/1102030301 Practice Exam C - Answers 315",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C22"
+  },
+  {
+    "id": 78,
+    "question": "An app on a user’s corporate smartphone has stopped updating. Which of the following would be the BEST way to resolve this issue?",
+    "options": [
+      "Connect the smartphone to a power source",
+      "Restart the smartphone",
+      "Disable rotation lock",
+      "Disable Bluetooth"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Restart the smartphone The update process for the app may need to be restarted, and the easiest way to reinitialize the process is to restart the smartphone. The incorrect answers: A. Connect the smartphone to a power source Providing a power source would not commonly initialize any download services. C. Disable rotation lock The rotation lock on a smartphone prevents it from automatically transitioning between portrait and landscape orientations. Modifying the lock status would not provide any assistance with app updates. D. Power off all Bluetooth devices It would be unusual for Bluetooth devices to cause problems with the app update process. Powering off Bluetooth devices would not enable the app update process. More information: 220-1102, Objective 3.4 - Troubleshooting Mobile Devices https://professormesser.link/1102030401 Practice Exam C - Answers 317",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C24"
+  },
+  {
+    "id": 79,
+    "question": "George, a user, has a smartphone to assist with maps and directions when traveling to other company locations. At a remote site, George finds his phone is attempting to contact a third-party website to share location information. Which of the following would be the BEST way to address this issue?",
+    "options": [
+      "Disable the GPS",
+      "Perform a soft reset",
+      "Run an anti-malware scan",
+      "Use the cellular network instead of Wi-Fi"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Run an anti-malware scan The symptom of the phone contacting a third-party website would commonly be associated with malware. None of the other options would provide any mitigation of the potential issue. The incorrect answers: A. Disable the GPS Disabling the GPS (Global Positioning System) might limit the scope of a potential malware infection because the malware would not have location information to share. However, this only addresses the symptom caused by the malware and not the problem of the malware itself. B. Perform a soft reset If this issue was related to malware, then a soft reset would not resolve the issue. Private information sent to a third-party is a significant security concern, so addressing the issue with an anti-malware scan is the best of the available options. D. Use the cellular network instead of Wi-Fi Changing the type of network used for the third-party communication would not limit or stop the sharing of location information. More information: 220-1102, Objective 3.5 Troubleshooting Mobile Device Security https://professormesser.link/1102030501 Practice Exam C - Answers 327",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C34"
+  },
+  {
+    "id": 80,
+    "question": "A desktop administrator has been tasked with removing malware from an executive’s laptop computer. The system has been removed from the network, but the Windows startup process shows a Stop Error before rebooting into a repeating cycle. Which of the following would be the best NEXT step in the malware removal process?",
+    "options": [
+      "Perform a Windows Repair installation",
+      "Boot with a pre-installation environment",
+      "Schedule periodic scans",
+      "Create a restore point"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Boot with a pre-installation environment A Windows PE (Pre-installation Environment) can be used to boot into the Windows Recovery Console to resolve problems with the primary operating system. This is a common task when the primary operating system has been corrupted or will not boot properly. The incorrect answers: A. Perform a Windows Repair installation A Windows Repair installation may resolve the rebooting issue, but it may also make unintended changes to the operating system. Before making significant changes, it would be worthwhile to try fixing the issue manually. C. Schedule periodic scans Because the system is constantly rebooting, it's not possible to make configuration changes to the anti-virus scanner or the Task Scheduler. D. Create a restore point If a restore point already existed, it may be possible to reboot to a previous configuration. However, it would be too late to create a restore point with the existing faulty configuration. More information: 220-1102, Objective 3.3 - Removing Malware https://professormesser.link/1102030301 Practice Exam C - Answers 329",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C36"
+  },
+  {
+    "id": 81,
+    "question": "A user in the shipping department is using a tracking app on a tablet. The app normally takes 10 seconds to load, but is now taking over a minute before it can be used. Tracking searches that normally take seconds are taking almost a minute to show the tracking details. Other tablets are not experiencing this slowdown. Which of the following would be the best NEXT troubleshooting step?",
+    "options": [
+      "Reinstall the tracking app",
+      "Check the app battery usage",
+      "Roll back to the previous tablet OS version",
+      "Perform a reboot"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Perform a reboot Before making any significant changes, a reboot can be used to clear memory space and reset any potential conflicts. The incorrect answers: A. Reinstall the tracking app Reinstalling the tracking app would make a change to the system. It would be much more efficient to reset the system and test before making any changes to the existing software. B. Check the app battery usage The performance of the app appeared to be related to performance on the network, and it did not appear that the battery usage was related to the issue. C. Roll back to the previous tablet OS version It would be useful to gather more troubleshooting information before making any significant system changes. More information: 220-1102, Objective 3.4 - Troubleshooting Mobile Devices https://professormesser.link/1102030401 332 Practice Exam C - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C39"
+  },
+  {
+    "id": 82,
+    "question": "A user is receiving this message on their Windows desktop: \"The controller does not have enough resources for this device.\" Which of the following would be the MOST likely reason for this issue?",
+    "options": [
+      "Remote printer has been disabled",
+      "Wireless network bandwidth exceeded",
+      "USB endpoints are exceeded",
+      "The system clock is incorrect"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "USB endpoints are exceeded USB devices contain buffers called \"endpoints,\" and if those endpoints exceed the capacity of the USB controllers, this \"resources exceeded\" message will appear. To resolve this issue, move a USB device to a different interface. The incorrect answers: A. Remote printer has been disabled Disabling a remote printer will not commonly show any messages on the Windows desktop. B. Wireless network bandwidth exceeded When a wireless network bandwidth is exceeded, the performance of the applications will slow down. Error messages are not commonly displayed on the desktop when a wireless network is busy. D. The system clock is incorrect An incorrect system clock will not display a resource error on the Windows desktop. More information: 220-1102, Objective 3.1 - Troubleshooting Windows https://professormesser.link/1102030101 Practice Exam C - Answers 337",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C44"
+  },
+  {
+    "id": 83,
+    "question": "An application update has been installed to all computers in the accounting department. A user starts the updated application for the first time but nothing appears on the screen. Which of the following would be the best NEXT troubleshooting step?",
+    "options": [
+      "Reinstall the application",
+      "Add the user to the Administrator’s group",
+      "Install the latest Windows updates",
+      "Check the Event Viewer"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Check the Event Viewer The Windows Event Viewer maintains a log of all system and applications processes. If an error occurs in an application, it's very likely detailed information can be found in the Event Viewer logs. The incorrect answers: A. Reinstall the application There's no evidence the problem is associated with a bad application installation. Before making any changes to the application files, it would be useful to learn more about the root cause of the problem. B. Add the user to the Administrator’s group As a best practice, there is never a case where a user should be added to the Administrator group. User applications do not need Administrator access, and assigning this access can introduce significant security issues. C. Install the latest Windows updates Since the root cause of the issue has not been determined, making changes to the application or the operating system would not be the best next step. Once more information is known about the problem, a Windows update may be necessary. Until then, it's best to gather as much information as possible about the problem. More information: 220-1102, Objective 3.2 - Troubleshooting Security Issues https://professormesser.link/1102030201 346 Practice Exam C - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C53"
+  },
+  {
+    "id": 84,
+    "question": "A client’s desktop computer is randomly rebooting throughout the workday without any warnings or error messages. Which of the following would be the BEST next troubleshooting step?",
+    "options": [
+      "Update the system BIOS",
+      "Reinstall the Windows operating system",
+      "Boot to Safe Mode and disable all startup applications",
+      "Perform a full system diagnostic"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Perform a full system diagnostic A reboot issue occurring randomly and without any type of repeatable process is difficult to troubleshoot, so it would be useful to know if the hardware in the system is working as expected. The incorrect answers: A. Update the system BIOS There's nothing about this issue that immediately points to a BIOS problem, so updating the BIOS would not be necessary. B. Reinstall the Windows operating system The user's data is on the drive, and it's not yet known if this issue is related to the hardware or the operating system. Reinstalling Windows would not be the best way to address this reboot issue. C. Boot to Safe Mode and disable all startup applications This reboot issue is still a mystery, so making changes to the startup process are not yet warranted. More information: 220-1102, Objective 3.1 - Troubleshooting Windows https://professormesser.link/1102030101 Practice Exam C - Answers 351",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C58"
+  },
+  {
+    "id": 85,
+    "question": "A member of the accounting department has been infected with malware, and the technician has just completed the removal process. Which of the following would be the BEST way to verify the integrity of the core operating system files?",
+    "options": [
+      "Perform a clean Windows install",
+      "Run the system file check utility",
+      "Rebuild the Windows profile",
+      "Roll back the last Windows update"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Run the system file check utility Running SFC (System File Check) will scan all of the core operating system files and will verify no changes have been made since the installation. This would be a common check after malware has been removed. The incorrect answers: A. Perform a clean Windows install Replacing everything on the system would provide a trusted operating system, but it would also replace all of the personal files and configurations on the user's computer. C. Rebuild the Windows profile A corrupted profile can cause issues during login, but the rebuilding process would not provide any information about the integrity of the operating system. D. Roll back the last Windows update Reverting to a previous Windows version or configuration would not provide any information about the operating system or the status of core system files. More information: 220-1102, Objective 3.1 - Troubleshooting Windows https://professormesser.link/1102030101 Practice Exam C - Answers 353",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C60"
+  },
+  {
+    "id": 86,
+    "question": "A user has noticed his computer begins to slow down during daily use and eventually locks up completely. During the lock up, the keyboard and mouse do not respond and the screen does not show any error messages. Which of the following tasks should a technician follow to BEST troubleshoot this issue? (Choose TWO)",
+    "options": [
+      "Start the computer in Safe Mode",
+      "Perform a hardware diagnostic",
+      "Connect the computer to a different VLAN",
+      "Update the OS to the latest patches",
+      "Roll back to a previous configuration",
+      "Scan for viruses and malware"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Perform a hardware diagnostic, and F. Scan for viruses and malware Without knowing the root cause of the issue, it will be important to gather as much information about the issue without making any changes to the operating system or applications. A diagnostic would provide information about the health of the hardware, and scanning for viruses would check for any malicious software. Neither of those options would make any changes to the configuration of the system. The incorrect answers: A. Start the computer in Safe Mode Since this issue occurs over time, simply staring the computer in Safe Mode would not provide much information about the issue. C. Connect the computer to a different VLAN The issue does not appear to be related to network connectivity, so choosing a different VLAN for this computer would most likely not result in any change. VLAN assignments don't tend to slow computers down over time, so this would also not be a common solution to the issue. 354 Practice Exam C - Answers D. Update the OS to the latest patches Before making any changes to the operating system, it would be more important to gather information and test components without changing application or operating system files. E. Roll back to a previous configuration There's no evidence that the current issue is related to a specific changes, so rolling back to a previous configuration would not be the best of the available options. This option would also make changes to the existing configuration before understanding what the root cause might be. More information: 220-1102, Objective 3.1 - Troubleshooting Windows https://professormesser.link/1102030101 Practice Exam C - Answers 355",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C61"
+  },
+  {
+    "id": 87,
+    "question": "A user receives this message each time they visit a secure website: “The site’s security certificate is not trusted.” A technician investigates the issue and finds the problem only occurs on this user’s computer and not with other computers in the same office. Which of the following would be the best NEXT troubleshooting task?",
+    "options": [
+      "Disable Windows Firewall for all HTTPS traffic",
+      "Create a new certificate for the user's computer",
+      "Check the date and time on the user's computer",
+      "Release and refresh the IP address configuration"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Check the date and time on the user's computer The message regarding the site's security certificate is shown because the local computer can't validate the certificate on the web server. The server's certificate has a specific issuing and expiration date and time, so time drift on the workstation could cause the validation to fail on the workstation. The incorrect answers: A. Disable Windows Firewall for all HTTPS traffic HTTPS (Hypertext Transfer Protocol Secure) is a secure protocol used for encrypted communication to a website. Disabling the firewall for HTTPS traffic will not change the validation process of a web site certificate. B. Create a new certificate for the user's computer The certificate failing the validation is located on the web server. Creating or changing a certificate on the user's computer will have no effect on the web site certificate validation. D. Release and refresh the IP address configuration The issue with trusting a website certificate is not related to the IP address of the workstation. Changing or refreshing the dynamic IP address assignment will not change the certificate validation process. More information: 220-1102, Objective 3.2 - Troubleshooting Security Issues https://professormesser.link/1102030201 356 Practice Exam C - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C62"
+  },
+  {
+    "id": 88,
+    "question": "A computer on a manufacturing floor has a virus, and the system administrator has removed the system from the company network. Which of the following virus removal tasks should occur NEXT?",
+    "options": [
+      "Discuss virus prevention with the end user",
+      "Install the latest anti-virus signatures",
+      "Schedule a virus scan to run each morning",
+      "Disable System Restore"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Disable System Restore Before making any updates or changes to the system, it's important to remove any potentially infected restore points by disabling the System Restore feature. The incorrect answers: A. Discuss virus prevention with the end user Talking to the end user about ways to prevent malware infections in the future should be the last step in the malware removal phase. The steps prior to end user education should focus on identification and removal of the malware. B. Install the latest anti-virus signatures Before installing updated signatures and beginning the mitigation phase, it's important to disable System Restore so the restore points won't be used to accidentally reinfect the system. C. Schedule a virus scan to run each morning After the malware is removed, the system administrator should verify real-time malware detection is enabled and a schedule is in place to download the latest signatures and perform a full system scan. More information: 220-1102, Objective 3.3 - Removing Malware https://professormesser.link/1102030301 Practice Exam C - Answers 359",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C65"
+  },
+  {
+    "id": 89,
+    "question": "When a user starts their desktop computer, the Windows splash screen is shown with a rotating circle, but the login screen is never displayed. A technician researches the issue and finds the computer was just updated to the latest set of Windows patches. Which of the following would be the NEXT step the technician should follow to help solve this issue?",
+    "options": [
+      "Restart the computer",
+      "Perform a Startup Repair",
+      "Start in VGA mode",
+      "Rebuild the user's profile"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Perform a Startup Repair The Windows Startup Repair is an automated feature that will examine each phase of the startup process and reconfigure any invalid or incorrect settings. This is a common repair to use when the startup process is not working properly after an application or operating system update. The incorrect answers: A. Restart the computer It's most likely the Windows patches caused this login problem, so restarting the system would still cause the system to exhibit the same issue. C. Start in VGA mode If Windows was displaying a completely black screen instead of the login prompt, then starting in VGA mode may be useful. In this example, the Windows splash screen and rotating circle are visible on the screen. D. Rebuild the user's profile A bad user profile might cause the desktop to appear differently than normal and user files may not be visible from the File Explorer. In this example, the desktop and other user files were not accessible because the login prompt did not appear. More information: 220-1102, Objective 3.1 - Troubleshooting Solutions https://professormesser.link/1102030102 Practice Exam C - Answers 361",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C67"
+  },
+  {
+    "id": 90,
+    "question": "A user would like to use their smartphone for a payment during checkout at the grocery store, but the smartphone is not seen by the payment system. Which of the following would be the BEST next troubleshooting step?",
+    "options": [
+      "Restart the smartphone",
+      "Replace the battery",
+      "Perform a factory reset",
+      "Enable Wi-Fi"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Restart the smartphone There are limited troubleshooting options available for NFC (Near Field Communication) connections, and most smartphones enable the NFC feature by default. If the NFC feature is not seen at all, a restart of the smartphone may enable the functionality. The incorrect answers: B. Replace the battery The NFC features are not directly associated with the battery, and replacing the battery will not resolve this issue. C. Perform a factory reset A factory reset would delete all user information from the phone. Although this may be an option for future troubleshooting, it would not be the best next step for this issue. D. Enable Wi-Fi NFC features are not part of the 802.11 Wi-Fi network. Modifying the Wi-Fi configuration and settings will not resolve issues with NFC. More information: 220-1102, Objective 3.4 - Troubleshooting Mobile Devices https://professormesser.link/1102030401 364 Practice Exam C - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C70"
+  },
+  {
+    "id": 91,
+    "question": "A user's smartphone app shows a splash screen but disappears after a few seconds. Which of the following would be the BEST way for the a technician use to view logs and memory statistics for the app?",
+    "options": [
+      "Developer mode",
+      "Cloud storage",
+      "Jailbreaking",
+      "Application spoofing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Developer mode Developer mode enables features commonly used by developers but can be used by anyone to help with troubleshooting and information gathering. The incorrect answers: B. Cloud storage Cloud storage is useful for backing up a mobile device, but it doesn't provide any additional statistics or troubleshooting information. C. Jailbreaking Jailbreaking is an unsupported method to gain direct access to the smartphone operating system, and it's a direct violation of the software's end user license agreement. Jailbreaking should never be used on a corporate smartphone. D. Application spoofing An application that looks legitimate but is instead malicious is an application spoofing attack. Application spoofing does not provide any additional troubleshooting tools. More information: 220-1102, Objective 3.5 Troubleshooting Mobile Device Security https://professormesser.link/1102030501 366 Practice Exam C - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C72"
+  },
+  {
+    "id": 92,
+    "question": "A user is browsing to their corporate home page, but a different website appears instead. The user tries to connect with other browsers on the same computer, but the result is identical. Which of the following would be the best NEXT troubleshooting step?",
+    "options": [
+      "Try connecting to the site in Safe Mode",
+      "Perform an anti-malware scan",
+      "View all browsing results in the Event Viewer",
+      "Roll back to a previous configuration"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Perform an anti-malware scan If the browsers on a computer are redirected to a different website, then malware would be a likely suspect. Given that all of the browsers are being redirected, there's most likely something malicious on the computer. The incorrect answers: A. Try connecting to the site in Safe Mode Safe Mode would most likely not provide much difference with the web browsing. Some services would be disabled in Safe Mode, but it's unlikely those services would have caused this issue. C. View all browsing results in the Event Viewer Event Viewer may be able to provide some additional details, but there is a lot of information to parse in the logs and it appears that something malicious is occurring on the system. The logs will still be available afterwards if more detail is required. D. Roll back to a previous configuration There's no evidence the current configuration is the issue. Before making any changes to the system, it would be important to determine the root cause of the issue. More information: 220-1102, Objective 3.2 - Troubleshooting Security Issues https://professormesser.link/1102030201 376 Practice Exam C - Answers",
+    "type": "single",
+    "source_pdf": "comptia-220-1102-a-core-2-practice-exams-james-messer.pdf",
+    "source_id": "C82"
   }
 ]

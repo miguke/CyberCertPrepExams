@@ -1452,7 +1452,7 @@
       2
     ],
     "explanation": "RAID 10 combines the benefits of RAID 0 and RAID 1. It uses a striped configuration across multiple disks (similar to RAID 0) to provide high-speed read and\nwrite access. Additionally, it also mirrors the striped array onto a second set of drives (similar to RAID 1), providing redundancy in case of a drive failure.",
-    "type": "multiple",
+    "type": "single",
     "topic": "hardware"
   },
   {
