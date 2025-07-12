@@ -402,19 +402,6 @@
   },
   {
     "type": "single",
-    "question": "DRAG DROP \nA natural disaster occurred, and the storage system for the development team is unrecoverable. The technician is preparing replacement storage arrays that\ninclude a hypervisor with the capacity to support several virtual machines. Two separate bays are available, and both should be utilized.\nRequirements for the primary array include the following:\n• No need to be scalable\n• Very fast on reads\n• Fault tolerance of one drive\n• Ability to function with only one drive\n• Easily recoverable data\n• High redundancy\n• Minimum number of drives\nRequirements for the secondary array include the following:\n• Fault tolerance of one drive\n• Total space of 600G3\n• Best write performance\n• Minimum number of drives Instructions:\nDrag and Drop the appropriate Hard Drives. Then Open each array to complete the configuration.",
-    "options": [
-      "Mastered",
-      "Not Mastered"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "Primary Array:\n? Drag and drop two 120 GB SSD hard drives to the primary array bay.\n? Open the primary array and select RAID 1 as the RAID level. RAID 1 provides fault tolerance of one drive, ability to function with only one drive, easily\nrecoverable data, high redundancy, and very fast on reads. It also does not need to be scalable and uses the minimum number of drives (two) for RAID 1.\n? Confirm the configuration and close the primary array. Secondary Array:\n? Drag and drop two 300 GB SSD hard drives to the secondary array bay.\n? Open the secondary array and select RAID 0 as the RAID level. RAID 0 provides the best write performance and uses the minimum number of drives (two) for\nRAID 0. It also provides a total space of 600 GB (300 GB x 2), which meets the requirement.\n? Confirm the configuration and close the secondary array.\nYou have completed the configuration of the storage arrays.",
-    "id": 27
-  },
-  {
-    "type": "single",
     "question": "A video game developer is requesting a new desktop computer with eight sticks of memory. The developer wants the desktop computer to take advantage of all\navailable memory bandwidth without sacrificing performance. Which of the following would be the BEST solution?",
     "options": [
       "Triple-channel with DDR5 ECC RAM",
@@ -426,7 +413,7 @@
       1
     ],
     "explanation": "Quad-channel memory architecture allows the CPU to access four memory modules simultaneously, increasing the memory bandwidth and performance. DDR4\nRAM is a type of memory that has higher speed and lower power consumption than DDR3. SODIMM is a smaller form factor of memory that is typically used in\nlaptops, not desktops. ECC RAM is a type of memory that can detect and correct errors, but it is more expensive and slower than non-ECC RAM. Triple-channel\nmemory architecture is less common and less efficient than quad-channel. References: https://www.comptia.org/certifications/a#examdetails\nhttps://www.comptia.org/blog/what-is- ddr4-ram https://www.comptia.org/blog/what-is-quad-channel-memory",
-    "id": 28
+    "id": 27
   },
   {
     "type": "single",
@@ -441,7 +428,7 @@
       2
     ],
     "explanation": "The message “The amount of system memory has changed” indicates that there is a problem with the random access memory (RAM) modules in the computer.\nThe RAM may be loose, faulty, or incompatible with the motherboard or other components. The GPU, HDD, and CPU are not directly related to system memory\nand would not cause this message to appear.",
-    "id": 29
+    "id": 28
   },
   {
     "type": "single",
@@ -456,20 +443,7 @@
       3
     ],
     "explanation": "A non-volatile memory express (NVMe) solid state drive (SSD) is the best option for an end user who wants to upgrade the hard drive on a laptop and wants one\nthat is fast and shock resistant.NVMe SSDs use flash memory and PCIe interface to achieve high performance and low latency.SSDs are also more shock\nresistant than hard disk drives (HDDs) because they have no moving parts.Hybrid HDD/SSD combines both technologies but does not offer the same speed or\ncapacity as pure SSDs.A 5,400rpm HDD or a 7,200rpm HDD are slower and less shock resistant than SSDs",
-    "id": 30
-  },
-  {
-    "type": "single",
-    "question": "HOTSPOT \nA customer has contacted you about building two new desktops. The first desktop will be a gaming workstation. The customer requirements include:\nPlaying the newest games at a high frame rate Fast game load times\nEnough storage to have several games installed at once High-end audio\nNo concern about cost\nRunning the current Windows OS\nThe second workstation will be a family workstation. The requirements include: Capability for word processing, videoconferencing, and basic web surfing Minimal\ncost, as long as it meets the requirements\nRunning the current Windows OS",
-    "options": [
-      "Mastered",
-      "Not Mastered"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "",
-    "id": 31
+    "id": 29
   },
   {
     "type": "multiple",
@@ -487,7 +461,7 @@
       4
     ],
     "explanation": "When upgrading a GPU in a small form factor desktop, the card length and case airflow are crucial to ensure it fits and remains adequately cooled.",
-    "id": 32
+    "id": 30
   },
   {
     "type": "single",
@@ -502,7 +476,7 @@
       1
     ],
     "explanation": "The Voltage Regulator Module (VRM) on the motherboard stabilizes and regulates CPU power delivery.",
-    "id": 33
+    "id": 31
   },
   {
     "type": "single",
@@ -517,7 +491,7 @@
       2
     ],
     "explanation": "If the drive spins but does not appear in BIOS, it is likely a faulty or improperly connected data cable (SATA cable).",
-    "id": 34
+    "id": 32
   },
   {
     "type": "single",
@@ -531,7 +505,7 @@
       2
     ],
     "explanation": "RAID 10 provides both the speed of striping (RAID 0) and the redundancy of mirroring (RAID 1), making it ideal for high-performance, fault-tolerant storage.",
-    "id": 35
+    "id": 33
   },
   {
     "type": "single",
@@ -546,7 +520,7 @@
       0
     ],
     "explanation": "DDR4 SODIMM is the standard RAM for modern laptops due to its form factor and performance.",
-    "id": 36
+    "id": 34
   },
   {
     "type": "single",
@@ -561,7 +535,7 @@
       1
     ],
     "explanation": "Thermal paste fills microscopic gaps between the CPU and heat sink to improve heat transfer.",
-    "id": 37
+    "id": 35
   },
   {
     "type": "single",
@@ -576,7 +550,7 @@
       0
     ],
     "explanation": "A 3.5\" to 2.5\" adapter bracket allows the smaller 2.5\" SSD to be securely mounted in a standard 3.5\" drive bay.",
-    "id": 38
+    "id": 36
   },
   {
     "type": "single",
@@ -591,7 +565,7 @@
       1
     ],
     "explanation": "A hardware RAID controller offloads parity calculations and RAID management from the CPU, reducing CPU overhead.",
-    "id": 39
+    "id": 37
   },
   {
     "type": "single",
@@ -606,7 +580,7 @@
       1
     ],
     "explanation": "Mechanical hard drives (HDDs) have moving parts that are prone to failure through wear and tear, while SSDs have no moving parts.",
-    "id": 40
+    "id": 38
   },
   {
     "type": "single",
@@ -621,7 +595,7 @@
       2
     ],
     "explanation": "Modern workstation motherboards commonly integrate a Wi-Fi 6 AX200 module for high-speed wireless connectivity.",
-    "id": 41
+    "id": 39
   },
   {
     "type": "single",
@@ -636,7 +610,7 @@
       2
     ],
     "explanation": "PCIe provides the highest internal data bandwidth compared to SATA, eSATA, or USB 3.0.",
-    "id": 42
+    "id": 40
   },
   {
     "type": "single",
@@ -651,7 +625,7 @@
       1
     ],
     "explanation": "M.2 NVMe SSD provides the fastest data access possible for a laptop. It is a high-performance solid-state drive that connects directly to the motherboard through\nan M.2 slot.",
-    "id": 43
+    "id": 41
   },
   {
     "type": "single",
@@ -667,7 +641,7 @@
       0
     ],
     "explanation": "The two sets of colors on the motherboard indicate that it supports dual- channel memory, which doubles the bandwidth available to the memory controller. Dual-\nchannel memory requires two identical memory modules to be installed in pairs in the correct slots to work effectively. In this case, the user can install two identical\nRAM modules to enable dual-channel memory, which will provide better performance when using multimedia applications that consume a lot of memory.",
-    "id": 44
+    "id": 42
   },
   {
     "type": "single",
@@ -682,7 +656,7 @@
       2
     ],
     "explanation": "When a CPU overheats, the system increases fan speed to provide additional cooling.",
-    "id": 45
+    "id": 43
   },
   {
     "type": "single",
@@ -697,7 +671,7 @@
       0
     ],
     "explanation": "If motherboard standoffs are incorrectly placed or missing, the motherboard can short to the case and cause an immediate shutdown.",
-    "id": 46
+    "id": 44
   },
   {
     "type": "single",
@@ -712,7 +686,7 @@
       2
     ],
     "explanation": "A constantly lit HDD activity light often indicates the operating system is performing background tasks such as updates or indexing.",
-    "id": 47
+    "id": 45
   },
   {
     "type": "single",
@@ -727,7 +701,7 @@
       1
     ],
     "explanation": "PCIe slots are backward compatible. A PCIe x16 card can be installed into an x8 slot, operating at x8 speeds.",
-    "id": 48
+    "id": 46
   },
   {
     "type": "single",
@@ -742,7 +716,7 @@
       1
     ],
     "explanation": "Replacing all four 4 GB modules with 8 GB modules will give a total of 32 GB (4 Ã— 8 GB = 32 GB). Desktop motherboards generally do not support 28 GB or 14 GB modules.",
-    "id": 49
+    "id": 47
   },
   {
     "type": "single",
@@ -757,7 +731,7 @@
       2
     ],
     "explanation": "The Power Supply Unit (PSU) converts AC power to DC power for computer components.",
-    "id": 50
+    "id": 48
   },
   {
     "type": "single",
@@ -772,7 +746,7 @@
       0
     ],
     "explanation": "Installing an M.2 SSD will improve a workstation's overall response time for frequently used applications and data without removing the current hard drive. M.2\ndrives are faster and more efficient than traditional hard drives, making them a good option for increasing overall performance. References: CompTIA A+\nCertification Exam Core 1 Exam Objectives - 1.5 Given a scenario, configure storage devices and use appropriate media",
-    "id": 51
+    "id": 49
   },
   {
     "type": "multiple",
@@ -790,7 +764,7 @@
       2
     ],
     "explanation": "The message stating that one or more disks are in a degraded state is a clear indication of a RAID failure. RAID stands for Redundant Array of Independent\nDisks, and it is a technology used to provide fault tolerance and improve performance by combining multiple hard drives into a single logical unit.\nThe message indicating that the OS is missing is most likely caused by a bootable device not found. This means that the server is unable to boot from the\ndesignated boot device, which could be the hard drive, a CD/DVD drive, or a USB flash drive. This could be caused by a faulty boot device, a loose cable, or a\nmisconfiguration in the BIOS or UEFI settings.",
-    "id": 52
+    "id": 50
   },
   {
     "type": "multiple",
@@ -808,20 +782,7 @@
       4
     ],
     "explanation": "Whenever the heat sink is removed or if the CPU shows unusually high temperatures, the old thermal paste should be replaced for optimal heat transfer.",
-    "id": 53
-  },
-  {
-    "type": "single",
-    "question": "SIMULATION \nA small ISP has hired a new technician Joe, the new technician, is being trained to configure customers* home networks The trailing instructor gives me technician\na starter kit with cables, cable ends, and other network equipment and asks mm to build a working network.\nThe computer should be connected to have internet connectivity and the phone should be connected to have a dial tone.\nINSTRUCTIONS\nUse the appropriate cables. cable ends, tools and equipment to configure the network ana connect an components accordingly\nThere are 3 steps and the simulation starts on step 1.",
-    "options": [
-      "Mastered",
-      "Not Mastered"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "Answer of both steps below.\nA picture containing text, screenshot, indoor\nDescription automatically generated\nDiagram Description automatically generated with medium confidence",
-    "id": 54
+    "id": 51
   },
   {
     "type": "single",
@@ -836,7 +797,7 @@
       1
     ],
     "explanation": "RAID 5 uses single parity, which can tolerate one drive failure. RAID 6 uses double parity, which can tolerate two simultaneous drive failures.",
-    "id": 55
+    "id": 52
   },
   {
     "type": "single",
@@ -851,7 +812,7 @@
       0
     ],
     "explanation": "When running a single GPU, it must be placed in the primary PCIe slot; leaving it in the secondary slot prevents the system from recognizing it.",
-    "id": 56
+    "id": 53
   },
   {
     "type": "multiple",
@@ -869,7 +830,7 @@
       3
     ],
     "explanation": "RAID 1 (mirroring) and RAID 10 (mirrored stripes) both provide fault tolerance via redundancy.",
-    "id": 57
+    "id": 54
   },
   {
     "type": "multiple",
@@ -886,7 +847,7 @@
       3
     ],
     "explanation": "LGA (Land Grid Array) and PGA (Pin Grid Array) are common types of CPU sockets on motherboards.",
-    "id": 58
+    "id": 55
   },
   {
     "type": "single",
@@ -901,7 +862,7 @@
       1
     ],
     "explanation": "Cleaning dust from the heatsink and fans can immediately improve cooling and is the first step in addressing overheating.",
-    "id": 59
+    "id": 56
   },
   {
     "type": "single",
@@ -916,7 +877,7 @@
       1
     ],
     "explanation": "RAID 5 uses one diskâ€™s worth of capacity for parity. Usable capacity = (3 - 1) Ã— 2 TB = 4 TB.",
-    "id": 60
+    "id": 57
   },
   {
     "type": "single",
@@ -931,7 +892,7 @@
       1
     ],
     "explanation": "A Hard Disk Drive (HDD) uses spinning magnetic platters to store data.",
-    "id": 61
+    "id": 58
   },
   {
     "type": "single",
@@ -946,7 +907,7 @@
       1
     ],
     "explanation": "AHCI mode must be enabled for SATA/NVMe support; RAID mode is only necessary for RAID configurations.",
-    "id": 62
+    "id": 59
   },
   {
     "type": "multiple",
@@ -963,7 +924,7 @@
       1
     ],
     "explanation": "DDR4 and DDR5 are types of RAM, while SATA, NVMe, and SSD are storage technologies.",
-    "id": 63
+    "id": 60
   },
   {
     "type": "single",
@@ -978,7 +939,7 @@
       3
     ],
     "explanation": "Passive heat sinks rely on passive airflow and are not sufficient to cool high-end GPUs in compact enclosures.",
-    "id": 64
+    "id": 61
   },
   {
     "type": "single",
@@ -993,7 +954,7 @@
       3
     ],
     "explanation": "High-performance CPUs often require additional 12V power provided by an 8-pin EPS12V connector.",
-    "id": 65
+    "id": 62
   },
   {
     "type": "single",
@@ -1008,7 +969,7 @@
       2
     ],
     "explanation": "Thermal throttling reduces the CPUâ€™s clock frequency when temperatures rise too high",
-    "id": 66
+    "id": 63
   },
   {
     "type": "single",
@@ -1023,7 +984,7 @@
       0
     ],
     "explanation": "The 'CPU fan error' indicates the BIOS has detected that the CPU fan is not spinning, which causes the system to shut down to prevent overheating.",
-    "id": 67
+    "id": 64
   },
   {
     "type": "single",
@@ -1038,7 +999,7 @@
       0
     ],
     "explanation": "If a system powers off under load (during diagnostics), the CPU is likely overheating and triggering a shutdown to protect itself.",
-    "id": 68
+    "id": 65
   },
   {
     "type": "single",
@@ -1053,7 +1014,7 @@
       3
     ],
     "explanation": "If there are no POST beeps or display output, verifying the motherboardâ€™s power connectors are fully seated is the first step.",
-    "id": 69
+    "id": 66
   },
   {
     "type": "single",
@@ -1068,7 +1029,7 @@
       1
     ],
     "explanation": "NVMe SSDs have significantly higher sequential read/write speeds than SATA SSDs or HDDs.",
-    "id": 70
+    "id": 67
   },
   {
     "type": "single",
@@ -1083,7 +1044,7 @@
       1
     ],
     "explanation": "RAM modules must be seated in the correct slot pairs (DIMM1 & DIMM3 or DIMM2 & DIMM4) depending on the motherboardâ€™s channel configuration.",
-    "id": 71
+    "id": 68
   },
   {
     "type": "single",
@@ -1095,10 +1056,10 @@
       "Missing OS"
     ],
     "correct": [
-      1
+      2
     ],
-    "explanation": "A single beep in many BIOS implementations indicates a memory (RAM) errorâ€”typically meaning the RAM module is bad or not seated properly.",
-    "id": 72
+    "explanation": "A single beep during POST typically indicates a successful memory and CPU check and that the POST process has passed basic diagnostics. No video output despite a successful POST most commonly points to a failure in the graphics card (GPU) or its connection. A bad CPU or bad RAM module would ordinarily produce a series of error beeps (or different beep patterns) and prevent a single-beep all-pass signal. A missing OS would still allow you to see BIOS‑level output on the display; you’d get video up to the point where the BIOS hands off to the boot loader.",
+    "id": 69
   },
   {
     "type": "single",
@@ -1113,7 +1074,7 @@
       3
     ],
     "explanation": "Modern PCIe graphics cards require a 6-pin or 8-pin PCIe power connector from the PSU.",
-    "id": 73
+    "id": 70
   },
   {
     "type": "single",
@@ -1128,7 +1089,7 @@
       2
     ],
     "explanation": "A bulging battery is hazardous and should be replaced and disposed of following safety guidelines.",
-    "id": 74
+    "id": 71
   },
   {
     "type": "single",
@@ -1143,7 +1104,7 @@
       1
     ],
     "explanation": "RAS to CAS Delay (tRCD) is the time between activating a row and accessing the data column.",
-    "id": 75
+    "id": 72
   },
   {
     "type": "single",
@@ -1158,7 +1119,7 @@
       1
     ],
     "explanation": "Wi-Fi cards commonly use SMA connectors for external antennas to ensure a secure RF connection.",
-    "id": 76
+    "id": 73
   },
   {
     "type": "single",
@@ -1173,7 +1134,7 @@
       1
     ],
     "explanation": "CMOS batteries are typically 3-volt lithium coin cells.",
-    "id": 77
+    "id": 74
   },
   {
     "type": "single",
@@ -1188,7 +1149,7 @@
       1
     ],
     "explanation": "Apple's Lightning connector replaced the 30-pin connector and features a reversible design.",
-    "id": 78
+    "id": 75
   },
   {
     "type": "single",
@@ -1203,10 +1164,10 @@
       1
     ],
     "explanation": "Wearing an anti-static wrist strap helps prevent electrostatic discharge (ESD) which can damage sensitive components.",
-    "id": 79
+    "id": 76
   },
   {
-    "id": 80,
+    "id": 77,
     "question": "A technician is troubleshooting a computer that is not completing POST and gets stuck at the manufacturer logo screen. All internal, removable parts have been\ndisconnected and only the minimum parts necessary to POST were reconnected. However, the symptoms remain the same. Which of the following should the\ntechnician try NEXT?",
     "options": [
       "Test the RAM in different slots, one at a time.",
@@ -1222,7 +1183,7 @@
     "topic": "hardware"
   },
   {
-    "id": 81,
+    "id": 78,
     "question": "A user requested upgrades to a company-issued laptop to increase its performance while working with a large database stored on drive C. Which of the following\ntasks should a systems administrator complete to BEST meet this goal?",
     "options": [
       "Configure RAID 1.",
@@ -1241,7 +1202,7 @@
     "topic": "hardware"
   },
   {
-    "id": 82,
+    "id": 79,
     "question": "A technician is setting up a new desktop computer and will be installing the hard drive directly on the motherboard without using cables to connect it. Which of the\nfollowing will the technician be installing?",
     "options": [
       "Thunderbolt",
@@ -1257,7 +1218,7 @@
     "topic": "hardware"
   },
   {
-    "id": 83,
+    "id": 80,
     "question": "A technician receives several error alerts on a server after an unexpected reboot. A message states that one or more disks are in a degraded state. When the\ntechnician advances to the next error message, it indicates the OS is missing. Which of the following are the MOST likely causes of these errors?",
     "options": [
       "Missing drives in the OS",
@@ -1277,7 +1238,7 @@
     "topic": "hardware"
   },
   {
-    "id": 84,
+    "id": 81,
     "question": "Which of the following is the SAFEST way to replace RAM on a server that has a redundant power supply?",
     "options": [
       "Unplug one power cable.",
@@ -1293,7 +1254,7 @@
     "topic": "hardware"
   },
   {
-    "id": 85,
+    "id": 82,
     "question": "A technician is setting up a laptop with an encrypted hard drive. The laptop will securely store a PIN that the user will input at log-on. Which of the following must\nbe installed to set up this configuration?",
     "options": [
       "TPM",
@@ -1309,7 +1270,7 @@
     "topic": "hardware"
   },
   {
-    "id": 86,
+    "id": 83,
     "question": "Which of the following connectors can be plugged into a Thunderbolt 3 port on a laptop?",
     "options": [
       "miniUSB",
@@ -1325,7 +1286,7 @@
     "topic": "hardware"
   },
   {
-    "id": 87,
+    "id": 84,
     "question": "Which of the following cables should be used to terminate ST connectors on each end?",
     "options": [
       "Optical fiber",
@@ -1341,12 +1302,11 @@
     "topic": "hardware"
   },
   {
-    "id": 88,
+    "id": 85,
     "question": "A technician is preparing to set up a gaming computer with the following components:\n• Discrete, high-end graphics card\n• Video capture card\n• High-end processor\n• Multiple hard drives\n• USB 3.0 hub\n• Sound card\nWhich of the following options is the most important for the technician to consider before building the gaming computer?",
     "options": [
       "Redundant power supply",
       "Modular power supply",
-      "20-pin v",
       "24-pin power adapter",
       "Power supply wattage rating"
     ],
@@ -1358,7 +1318,7 @@
     "topic": "hardware"
   },
   {
-    "id": 89,
+    "id": 86,
     "question": "A laptop is experiencing slow performance writing data. Which of the following is the best component for a technician to upgrade to fix the issue?",
     "options": [
       "RAM",
@@ -1374,7 +1334,7 @@
     "topic": "hardware"
   },
   {
-    "id": 90,
+    "id": 87,
     "question": "A technician plans to upgrade a laptop's RAM from 4GB to 16GB. Which of the following should the technician do?",
     "options": [
       "Purchase the same architecture of RAM.",
@@ -1390,13 +1350,13 @@
     "topic": "hardware"
   },
   {
-    "id": 91,
+    "id": 88,
     "question": "A customer wants to archive a large number of photos and does not plan to retrieve them often. The customer wants a storage option that is the least expensive\nper gigabyte. Which of the following should the technician suggest?",
     "options": [
       "NVMe SSD",
       "SCSI RAID",
       "15,000rpm SAS",
-      "5,400rpm HOD"
+      "5,400rpm HDD"
     ],
     "correct": [
       3
@@ -1406,7 +1366,7 @@
     "topic": "hardware"
   },
   {
-    "id": 92,
+    "id": 89,
     "question": "A user frequently edits large files and saves them locally on a laptop_ The user has recently begun experiencing performance issues and needs a cost-effective\nhardware upgrade.\nWhich of the following is the best way to meet the user's requirements?",
     "options": [
       "Upgrade the memory",
@@ -1422,7 +1382,7 @@
     "topic": "hardware"
   },
   {
-    "id": 93,
+    "id": 90,
     "question": "A technician made several upgrades to a computer and then determined the power supplied by the PSU is insufficient. Which of the following would MOST likely\ncause the insufficiency?",
     "options": [
       "Replacing the HDD with an SSD",
@@ -1441,7 +1401,7 @@
     "topic": "hardware"
   },
   {
-    "id": 94,
+    "id": 91,
     "question": "A technician is configuring a new CAD workstation that has four large hard drives. The workstation will be used to edit large, critical files, so the storage\nconfiguration should be both fast and redundant. Which of the following RAID levels BEST meets these requirements?",
     "options": [
       "1",
@@ -1456,7 +1416,7 @@
     "topic": "hardware"
   },
   {
-    "id": 95,
+    "id": 92,
     "question": "A user who works with sensitive data has a computer configured with hard drive encryption The TPM is active and hosting the encrypted key. After an upgrade to\nthe motherboard. RAM and video card the hard drive is not booting and data cannot be accessed from the hard drive. Which of the following should the technician\ndo to enable the system to boot again and get access to the stored data?",
     "options": [
       "Use data recovery software to find and recover the hard drive information",
@@ -1472,7 +1432,7 @@
     "topic": "hardware"
   },
   {
-    "id": 96,
+    "id": 93,
     "question": "Atechnician is replacing all RJ45 cables in a customer environment. Which of the following are the BEST tools to execute the task?",
     "options": [
       "Optical fiber tester",
@@ -1491,7 +1451,7 @@
     "topic": "hardware"
   },
   {
-    "id": 97,
+    "id": 94,
     "question": "A user has noticed high CPU temperatures when gaming. The user would like to lower the CPU temperature, and cost is not an issue. Which of the following\nshould the user do to BEST cool the CPU while keeping noise to a minimum?",
     "options": [
       "Upgrade the thermal paste.",
@@ -1507,7 +1467,7 @@
     "topic": "hardware"
   },
   {
-    "id": 98,
+    "id": 95,
     "question": "A technician installed a high-end graphics card in a desktop, and now, the desktop randomly shuts down during operations. Which of the following should the\ntechnician do next?",
     "options": [
       "Confirm the power supply is grounded.",
@@ -1523,7 +1483,7 @@
     "topic": "hardware"
   },
   {
-    "id": 99,
+    "id": 96,
     "question": "A technician is installing the RAM for a graphs workstation. Which of the following is special purpose memory used by graphic controllers?",
     "options": [
       "SRAM",
@@ -1539,7 +1499,7 @@
     "topic": "hardware"
   },
   {
-    "id": 100,
+    "id": 97,
     "question": "A technician needs to determine where a printer is connected on a patch panel. Which of the following is the best tool for the technician to use tolocate the port?",
     "options": [
       "Toner probe",
@@ -1555,7 +1515,7 @@
     "topic": "hardware"
   },
   {
-    "id": 101,
+    "id": 98,
     "question": "An administrator is replacing 15,000rpm hard drives in a server. Which of the following is the interface type the drives most likely use?",
     "options": [
       "IDE",
@@ -1571,7 +1531,7 @@
     "topic": "hardware"
   },
   {
-    "id": 102,
+    "id": 99,
     "question": "What is the main limitation of using copper cables for high-speed data transmission?",
     "options": [
       "Signal attenuation",
@@ -1586,7 +1546,7 @@
     "type": "single"
   },
   {
-    "id": 103,
+    "id": 100,
     "question": "Which tool is commonly used to troubleshoot a fiber optic cable?",
     "options": [
       "Optical Time Domain Reflectometer (OTDR)",
@@ -1601,7 +1561,7 @@
     "type": "single"
   },
   {
-    "id": 104,
+    "id": 101,
     "question": "When would you use an ST connector in networking and what is a key benefit?",
     "options": [
       "Single-mode fiber",
@@ -1616,7 +1576,7 @@
     "type": "single"
   },
   {
-    "id": 105,
+    "id": 102,
     "question": "What is the maximum distance limitation of Cat 5 cables for Ethernet networking?",
     "options": [
       "100 meters",
@@ -1631,7 +1591,7 @@
     "type": "single"
   },
   {
-    "id": 106,
+    "id": 103,
     "question": "Which of the following tools is commonly used to add lines to the demarcation point (demarc)?",
     "options": [
       "Punch-down tool",
@@ -1646,7 +1606,7 @@
     "type": "single"
   },
   {
-    "id": 107,
+    "id": 104,
     "question": "In which of the following scenarios would you use an RJ11 connector?",
     "options": [
       "Connecting a telephone handset to a wall jack",
@@ -1661,7 +1621,7 @@
     "type": "single"
   },
   {
-    "id": 108,
+    "id": 105,
     "question": "When using a Gigabit network card, what is the maximum data transmission speed limitation of Cat 5 cables?",
     "options": [
       "100 Mbps",
@@ -1676,7 +1636,7 @@
     "type": "single"
   },
   {
-    "id": 109,
+    "id": 106,
     "question": "Which operating system commonly utilizes Thunderbolt cables for high-speed data transfer and device connectivity?",
     "options": [
       "macOS",
@@ -1691,7 +1651,7 @@
     "type": "single"
   },
   {
-    "id": 110,
+    "id": 107,
     "question": "What tool is commonly used to create an RJ45 cable?",
     "options": [
       "Crimping tool",
@@ -1706,7 +1666,7 @@
     "type": "single"
   },
   {
-    "id": 111,
+    "id": 108,
     "question": "In which scenario would you commonly use a Lightning to USB cable?",
     "options": [
       "Charging an iPhone",
@@ -1721,7 +1681,7 @@
     "type": "single"
   },
   {
-    "id": 112,
+    "id": 109,
     "question": "What type of cable has a T568B connection on one end and a T568A connection on the other end?",
     "options": [
       "Crossover cable",
@@ -1736,7 +1696,7 @@
     "type": "single"
   },
   {
-    "id": 113,
+    "id": 110,
     "question": "What is the actual speed difference between USB and USB 2?",
     "options": [
       "USB offers a speed of 12 Mbps, while USB 2 offers a speed of 480 Mbps",
@@ -1751,7 +1711,7 @@
     "type": "single"
   },
   {
-    "id": 114,
+    "id": 111,
     "question": "When should plenum-grade cables be used in networking installations?",
     "options": [
       "Air-handling spaces",
@@ -1766,7 +1726,7 @@
     "type": "single"
   },
   {
-    "id": 115,
+    "id": 112,
     "question": "When would you use Shielded Twisted Pair (STP) cables in networking installations?",
     "options": [
       "High electromagnetic interference (EMI) environments",
@@ -1781,7 +1741,7 @@
     "type": "single"
   },
   {
-    "id": 116,
+    "id": 113,
     "question": "When are F-type connectors commonly used in networking?",
     "options": [
       "Ethernet network connections",
@@ -1796,7 +1756,7 @@
     "type": "single"
   },
   {
-    "id": 117,
+    "id": 114,
     "question": "A junior IT technician has inadvertently cut the end of an Ethernet cable with a sharp knife. What three tools do you need to repair it?",
     "options": [
       "Wire cutters, a crimping tool, and an RJ45 connector",
@@ -1811,7 +1771,7 @@
     "type": "single"
   },
   {
-    "id": 118,
+    "id": 115,
     "question": "You are setting up a fiber optic network and need to choose between SC and LC connectors. Which connector type provides a higher density and is commonly used in data centers?",
     "options": [
       "SC connector",
@@ -1826,7 +1786,7 @@
     "type": "single"
   },
   {
-    "id": 119,
+    "id": 116,
     "question": "Which of the following interfaces is commonly used to connect external storage devices to a computer at high speeds?",
     "options": [
       "USB 2.0",
@@ -1841,7 +1801,7 @@
     "type": "single"
   },
   {
-    "id": 120,
+    "id": 117,
     "question": "Which of the following is a primary advantage of using DisplayPort as a video interface?",
     "options": [
       "Simultaneous video and audio transmission",
@@ -1856,7 +1816,7 @@
     "type": "single"
   },
   {
-    "id": 121,
+    "id": 118,
     "question": "When should you consider using a modular power supply in a desktop computer?",
     "options": [
       "When you want to improve cable management and reduce clutter",
@@ -1871,7 +1831,7 @@
     "type": "single"
   },
   {
-    "id": 122,
+    "id": 119,
     "question": "In the event of a power failure, what is the purpose of replacing a redundant power supply in a computer system?",
     "options": [
       "Ensures an uninterrupted power supply",
@@ -1886,7 +1846,7 @@
     "type": "single"
   },
   {
-    "id": 123,
+    "id": 120,
     "question": "When considering voltage levels for input and output connections, which of the following options correctly represents the typical voltage ranges for 3.3V, 5V, and 12V, along with their associated wire color?",
     "options": [
       "3.3V: Orange or yellow; 5V: Red; 12V: Yellow or blue",
@@ -1901,7 +1861,7 @@
     "type": "single"
   },
   {
-    "id": 124,
+    "id": 121,
     "question": "Which type of standard motherboard typically uses a 20-pin or 24-pin power connector?",
     "options": [
       "ATX (Advanced Technology eXtended)",
@@ -1916,7 +1876,7 @@
     "type": "single"
   },
   {
-    "id": 125,
+    "id": 122,
     "question": "What is the primary advantage of a modular power supply?",
     "options": [
       "Customizable cable management",
@@ -1931,7 +1891,7 @@
     "type": "single"
   },
   {
-    "id": 126,
+    "id": 123,
     "question": "When selecting the appropriate voltage input for electrical devices, which of the following options represents the correct voltage ranges for 110-120 VAC and 220-240 VAC?",
     "options": [
       "110-120 VAC: Standard voltage in North America; 220-240 VAC: Standard voltage in Europe",
@@ -1946,7 +1906,7 @@
     "type": "single"
   },
   {
-    "id": 127,
+    "id": 124,
     "question": "In an office environment where power failures can disrupt operations, what is the recommended solution to ensure a continuous power supply?",
     "options": [
       "Implement a redundant power supply system",
@@ -1961,7 +1921,7 @@
     "type": "single"
   },
   {
-    "id": 128,
+    "id": 125,
     "question": "What wattage is the recommended power supply for a typical desktop computer?",
     "options": [
       "300 W",
@@ -1976,7 +1936,7 @@
     "type": "single"
   },
   {
-    "id": 129,
+    "id": 126,
     "question": "What is the primary purpose of virtual RAM (or virtual memory) in a computer system?",
     "options": [
       "To provide additional storage space for files and documents",
@@ -1991,7 +1951,7 @@
     "type": "single"
   },
   {
-    "id": 130,
+    "id": 127,
     "question": "What is the primary reason for using DDR (Double Data Rate) RAM in computer systems?",
     "options": [
       "Improved data transfer rates",
@@ -2006,7 +1966,7 @@
     "type": "single"
   },
   {
-    "id": 131,
+    "id": 128,
     "question": "Which type of memory module is commonly used in laptops and small form factor computers?",
     "options": [
       "DIMM RAM",
@@ -2021,7 +1981,7 @@
     "type": "single"
   },
   {
-    "id": 132,
+    "id": 129,
     "question": "What is the primary purpose of ECC (Error-Correcting Code) RAM in a computer system?",
     "options": [
       "To provide faster data transfer between the CPU and RAM",
@@ -2036,7 +1996,7 @@
     "type": "single"
   },
   {
-    "id": 133,
+    "id": 130,
     "question": "What is the primary benefit of using a dual-channel RAM configuration, which utilizes two differently colored memory slots, in a computer system?",
     "options": [
       "Increased storage capacity",
@@ -2051,7 +2011,7 @@
     "type": "single"
   },
   {
-    "id": 134,
+    "id": 131,
     "question": "What is the primary advantage of using a quad-channel RAM configuration in a computer system?",
     "options": [
       "Increased storage capacity",
@@ -2066,7 +2026,7 @@
     "type": "single"
   },
   {
-    "id": 135,
+    "id": 132,
     "question": "DDR RAM is a type of computer memory that offers improved data transfer rates compared to earlier memory technologies. Which of the following options correctly matches the lowest speed for each version of DDR RAM?",
     "options": [
       "DDR2 – 400 MHz, DDR3 – 800 MHz, DDR4 – 2,133 MHz",
@@ -2081,7 +2041,7 @@
     "type": "single"
   },
   {
-    "id": 136,
+    "id": 133,
     "question": "Which of the following options would be the best choice for a gaming PC in terms of disk, CPU, and RAM?",
     "options": [
       "HDD, AMD Ryzen 3, 8 GB DDR3",
@@ -2096,7 +2056,7 @@
     "type": "single"
   },
   {
-    "id": 137,
+    "id": 134,
     "question": "A company is experiencing an issue with its dot matrix printer that uses carbon paper. They report that the print on the first page is too light, while the subsequent pages are still legible. What is the most likely cause of this problem?",
     "options": [
       "The print head pins are worn out, resulting in inconsistent printing",
@@ -2111,7 +2071,7 @@
     "type": "single"
   },
   {
-    "id": 138,
+    "id": 135,
     "question": "What happens during the charging stage of a laser printer?",
     "options": [
       "Toner particles are attracted to the charged areas on the drum",
@@ -2126,7 +2086,7 @@
     "type": "single"
   },
   {
-    "id": 139,
+    "id": 136,
     "question": "Which type of printer typically uses a laser beam or LED light source for image formation?",
     "options": [
       "Laser printer",
@@ -2141,7 +2101,7 @@
     "type": "single"
   },
   {
-    "id": 140,
+    "id": 137,
     "question": "When using the scan-to-email feature on a multifunction device (MFD), what configuration is required to send the scanned document as an email attachment?",
     "options": [
       "Configuring the MFD with the IP address of an SMTP server",
@@ -2156,7 +2116,7 @@
     "type": "single"
   },
   {
-    "id": 141,
+    "id": 138,
     "question": "What is the purpose of a print server?",
     "options": [
       "To manage the printing process and control print jobs",
@@ -2171,7 +2131,7 @@
     "type": "single"
   },
   {
-    "id": 142,
+    "id": 139,
     "question": "You notice that unauthorized individuals are using the printer without permission. This has resulted in the printer paper budget doubling in size. What should be implemented to address this security concern and reduce the paper budget?",
     "options": [
       "User authentication and access control",
@@ -2186,7 +2146,7 @@
     "type": "single"
   },
   {
-    "id": 143,
+    "id": 140,
     "question": "Which type of printer uses a series of pins striking an inked ribbon to create images?",
     "options": [
       "Laser printer",
@@ -2201,7 +2161,7 @@
     "type": "single"
   },
   {
-    "id": 144,
+    "id": 141,
     "question": "Which of the following is the correct sequence of a laser printer?",
     "options": [
       "Charging, exposing, developing, transferring, fusing, and cleaning",
@@ -2216,7 +2176,7 @@
     "type": "single"
   },
   {
-    "id": 145,
+    "id": 142,
     "question": "Which type of printer generates images by applying heat to special heat-sensitive paper that needs to be kept out of direct sunlight?",
     "options": [
       "Laser printer",
@@ -2231,7 +2191,7 @@
     "type": "single"
   },
   {
-    "id": 146,
+    "id": 143,
     "question": "What happens during the fusing stage of a laser printer?",
     "options": [
       "The toner on the paper is fused and melted into the fibers",
@@ -2246,7 +2206,7 @@
     "type": "single"
   },
   {
-    "id": 147,
+    "id": 144,
     "question": "How can a printer in a SOHO obtain the same IP from a wireless router running DHCP?",
     "options": [
       "Enable DHCP reservation",
@@ -2261,7 +2221,7 @@
     "type": "single"
   },
   {
-    "id": 148,
+    "id": 145,
     "question": "When using the scan-to-folder feature on a multifunction device (MFD), what configuration is required to save the scanned document as a file on a shared network folder?",
     "options": [
       "Configuring the MFD with the path to a suitably configured file server and shared folder",
@@ -2276,7 +2236,7 @@
     "type": "single"
   },
   {
-    "id": 149,
+    "id": 146,
     "question": "When using the scan-to-cloud feature on a multifunction device (MFD), what does it mean to scan to the cloud?",
     "options": [
       "Uploading the scan as a file to a document storage and sharing account in the cloud",
@@ -2291,7 +2251,7 @@
     "type": "single"
   },
   {
-    "id": 150,
+    "id": 147,
     "question": "You are experiencing issues where many print jobs are not getting picked up from the printer’s paper trays. What can be implemented to prevent this issue?",
     "options": [
       "Enable printing only when authorized users insert a PIN",
@@ -2306,7 +2266,7 @@
     "type": "single"
   },
   {
-    "id": 151,
+    "id": 148,
     "question": "What is the primary advantage of installing an M.2 hard drive directly on the motherboard without using cables?",
     "options": [
       "Faster data transfer rates through the SATA interface",
@@ -2321,7 +2281,7 @@
     "type": "single"
   },
   {
-    "id": 152,
+    "id": 149,
     "question": "A user wants to replace the existing hard drive with the fastest possible 1 TB HD",
     "options": [
       "Which of",
@@ -2337,7 +2297,7 @@
     "type": "single"
   },
   {
-    "id": 153,
+    "id": 150,
     "question": "Which of the following RPM options is commonly associated with slower rotational speeds for mechanical hard disk drives (HDDs)?",
     "options": [
       "5,400 rpm",
@@ -2352,7 +2312,7 @@
     "type": "single"
   },
   {
-    "id": 154,
+    "id": 151,
     "question": "Which type of storage device is commonly used for portable data storage and transfer?",
     "options": [
       "Flash drive",
@@ -2367,7 +2327,7 @@
     "type": "single"
   },
   {
-    "id": 155,
+    "id": 152,
     "question": "When selecting a motherboard for a specific CPU, what is a critical consideration?",
     "options": [
       "Socket compatibility",
@@ -2382,7 +2342,7 @@
     "type": "single"
   },
   {
-    "id": 156,
+    "id": 153,
     "question": "Which storage device uses laser technology to read and write data on optical disks?",
     "options": [
       "Flash drive",
@@ -2397,7 +2357,7 @@
     "type": "single"
   },
   {
-    "id": 157,
+    "id": 154,
     "question": "How can you identify a SATA cable used in computer hardware?",
     "options": [
       "It has a small, L-shaped connector at one end and a flat connector at the other end",
@@ -2412,7 +2372,7 @@
     "type": "single"
   },
   {
-    "id": 158,
+    "id": 155,
     "question": "Which of the following rpm options is commonly associated with faster rotational speeds for mechanical hard disk drives (HDDs)?",
     "options": [
       "5,400 rpm",
@@ -2427,23 +2387,7 @@
     "type": "single"
   },
   {
-    "id": 159,
-    "question": "You have three hard drives, sized 500 GB, 1 TB, and 2 T",
-    "options": [
-      "Which RAID configuration would",
-      "RAID 0",
-      "RAID 1",
-      "RAID 5",
-      "RAID 10"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "RAID 5 uses a minimum of three drives, which distributes data and parity across the drives, providing both data redundancy and increased storage capacity. RAID 0 does not provide data redundancy and would not be suitable for ensuring data protection in this case. RAID 1, which mirrors the data across the drives only uses two drives. RAID 10, which combines striping and mirroring, would require a minimum of four drives to implement.",
-    "type": "single"
-  },
-  {
-    "id": 160,
+    "id": 157,
     "question": "When would you typically use the Peripheral Component Interconnect Express (PCIe) interface in computer hardware?",
     "options": [
       "Connecting high-speed graphics cards",
@@ -2458,7 +2402,7 @@
     "type": "single"
   },
   {
-    "id": 161,
+    "id": 158,
     "question": "You have two hard drives of different sizes, a 1 TB drive and a 500 GB drive. Which RAID configuration would be most suitable for mirroring the data between the drives?",
     "options": [
       "RAID 0",
@@ -2473,7 +2417,7 @@
     "type": "single"
   },
   {
-    "id": 162,
+    "id": 159,
     "question": "Which storage device is commonly used in digital cameras and smartphones for expanding storage capacity?",
     "options": [
       "Flash drive",
@@ -2488,7 +2432,7 @@
     "type": "single"
   },
   {
-    "id": 163,
+    "id": 160,
     "question": "An IT support technician is upgrading their laptop to provide remote administration and run several programs at one time. The read-write speed needs to be the fastest possible. Which of the following options would fulfill their criteria?",
     "options": [
       "2.5” SAS HDD",
@@ -2503,7 +2447,7 @@
     "type": "single"
   },
   {
-    "id": 164,
+    "id": 161,
     "question": "What is a key difference between installing a 2.5” SSD and a 3.5” SSD on a desktop computer?",
     "options": [
       "Form factor and size",
@@ -2518,7 +2462,7 @@
     "type": "single"
   },
   {
-    "id": 165,
+    "id": 162,
     "question": "Which component is responsible for the charging stage in a laser printer?",
     "options": [
       "Toner cartridge",
@@ -2533,7 +2477,7 @@
     "type": "single"
   },
   {
-    "id": 166,
+    "id": 163,
     "question": "Which type of USB connector is commonly used for connecting printers to a computer?",
     "options": [
       "Type A",
@@ -2548,7 +2492,7 @@
     "type": "single"
   },
   {
-    "id": 167,
+    "id": 164,
     "question": "What could be the issue if a printed document is coming out landscape instead of portrait? How can we resolve this issue?",
     "options": [
       "The printer driver is outdated",
@@ -2563,7 +2507,7 @@
     "type": "single"
   },
   {
-    "id": 168,
+    "id": 165,
     "question": "When connecting a USB printer to a computer running Windows 10, what is the most important step to ensure proper functionality?",
     "options": [
       "Selecting the appropriate printer model",
@@ -2578,7 +2522,7 @@
     "type": "single"
   },
   {
-    "id": 169,
+    "id": 166,
     "question": "How does wireless printing work in a network with multiple printers?",
     "options": [
       "Each printer has its own dedicated Wi-Fi network for wireless printing",
@@ -2593,7 +2537,7 @@
     "type": "single"
   },
   {
-    "id": 170,
+    "id": 167,
     "question": "Which type of 3D printing technology is commonly used with liquid resin materials?",
     "options": [
       "Fused Deposition Modeling (FDM)",
@@ -2608,7 +2552,7 @@
     "type": "single"
   },
   {
-    "id": 171,
+    "id": 168,
     "question": "When would you typically use Printer Control Language (PCL) in printing?",
     "options": [
       "Printing documents with complex graphics and images",
@@ -2623,7 +2567,7 @@
     "type": "single"
   },
   {
-    "id": 172,
+    "id": 169,
     "question": "Which type of 3D printing technology uses filament materials such as ABS or PLA?",
     "options": [
       "Fused Deposition Modeling (FDM)",
@@ -2638,7 +2582,7 @@
     "type": "single"
   },
   {
-    "id": 173,
+    "id": 170,
     "question": "How does Wi-Fi direct printing work?",
     "options": [
       "The printer connects directly to a Wi-Fi network for wireless printing",
@@ -2653,7 +2597,7 @@
     "type": "single"
   },
   {
-    "id": 174,
+    "id": 171,
     "question": "What components are typically included in a printer maintenance kit?",
     "options": [
       "New fuser assembly, transfer/secondary charge roller, and paper transport rollers",
@@ -2668,7 +2612,7 @@
     "type": "single"
   },
   {
-    "id": 175,
+    "id": 172,
     "question": "When would you typically use PostScript in printing?",
     "options": [
       "Printing documents with complex graphics and images",
@@ -2683,7 +2627,7 @@
     "type": "single"
   },
   {
-    "id": 176,
+    "id": 173,
     "question": "Which of the following statements best describes NVMe compatibility with a motherboard?",
     "options": [
       "NVMe SSDs are compatible with any motherboard that has an M.2 slot",
@@ -2698,7 +2642,7 @@
     "type": "single"
   },
   {
-    "id": 177,
+    "id": 174,
     "question": "What is the maximum amount of RAM that x86 architecture can support?",
     "options": [
       "2 GB",
@@ -2713,7 +2657,7 @@
     "type": "single"
   },
   {
-    "id": 178,
+    "id": 175,
     "question": "A user is experiencing an issue where a dual-boot computer does not boot to the desired operating system. Which of the following troubleshooting steps can help resolve this problem?",
     "options": [
       "Check and adjust the boot order in the BIOS settings",
@@ -2728,7 +2672,7 @@
     "type": "single"
   },
   {
-    "id": 179,
+    "id": 176,
     "question": "In a desktop computer, why are heat sinks and fans commonly used?",
     "options": [
       "To minimize the power consumption of the CPU",
@@ -2743,7 +2687,7 @@
     "type": "single"
   },
   {
-    "id": 180,
+    "id": 177,
     "question": "In which scenario would you choose to use an ITX form factor for a computer?",
     "options": [
       "Building a compact and portable gaming PC",
@@ -2758,7 +2702,7 @@
     "type": "single"
   },
   {
-    "id": 181,
+    "id": 178,
     "question": "What is the primary advantage of liquid cooling over air cooling in a computer system?",
     "options": [
       "Improved thermal efficiency",
@@ -2773,7 +2717,7 @@
     "type": "single"
   },
   {
-    "id": 182,
+    "id": 179,
     "question": "After upgrading the motherboard, RAM, and video card, the hard drive is not booting, and the stored data cannot be accessed. The TPM (Trusted Platform Module) is active and hosting the encrypted key. What should the technician do to enable the system to boot again and gain access to the stored data?",
     "options": [
       "Enter the BIOS settings and disable the TPM functionality",
@@ -2788,7 +2732,7 @@
     "type": "single"
   },
   {
-    "id": 183,
+    "id": 180,
     "question": "What is a potential cause of a clicking noise when booting up a computer?",
     "options": [
       "Failing hard drive",
@@ -2803,7 +2747,7 @@
     "type": "single"
   },
   {
-    "id": 184,
+    "id": 181,
     "question": "Which of the following power connectors is commonly used to provide power to the CPU on a desktop motherboard?",
     "options": [
       "8-pin EPS connector",
@@ -2818,7 +2762,7 @@
     "type": "single"
   },
   {
-    "id": 185,
+    "id": 182,
     "question": "What is a potential consequence of operating a disk infrastructure in a degraded state?",
     "options": [
       "Increased risk of data loss",
@@ -2833,7 +2777,7 @@
     "type": "single"
   },
   {
-    "id": 186,
+    "id": 183,
     "question": "What can happen if the CPU fan fails to function properly?",
     "options": [
       "The CPU may overheat and lead to system instability or shutdown",
@@ -2848,7 +2792,7 @@
     "type": "single"
   },
   {
-    "id": 187,
+    "id": 184,
     "question": "When booting up a computer, which component can cause a continuous beeping noise if it is not properly seated?",
     "options": [
       "RAM module",
@@ -2863,7 +2807,7 @@
     "type": "single"
   },
   {
-    "id": 188,
+    "id": 185,
     "question": "What is the main difference between AT and ATX motherboards, and which one is considered legacy?",
     "options": [
       "Size and form factor",
@@ -2878,7 +2822,7 @@
     "type": "single"
   },
   {
-    "id": 189,
+    "id": 186,
     "question": "If a heat sink is not effectively dissipating heat from the CPU, what can be done to address the issue?",
     "options": [
       "Check for dust accumulation and clean the heat sink",
@@ -2893,7 +2837,7 @@
     "type": "single"
   },
   {
-    "id": 190,
+    "id": 187,
     "question": "A technician inserts an encrypted USB drive protected with BitLocker. When attempting to access the files on the USB drive through File Explorer, the technician encounters an error message stating that the drive is locked. Which of the following tools should the technician use to unlock and gain access to the encrypted drive?",
     "options": [
       "BitLocker Drive Encryption",
@@ -2908,7 +2852,7 @@
     "type": "single"
   },
   {
-    "id": 191,
+    "id": 188,
     "question": "A student was able to successfully boot from a live Linux CD on a computer in the university library. This resulted in a data breach. Which of the following measures will be the most effective in thwarting this type of attack from occurring in the future?",
     "options": [
       "Implement secure boot and enable BIOS/UEFI password protection",
@@ -2923,7 +2867,7 @@
     "type": "single"
   },
   {
-    "id": 192,
+    "id": 189,
     "question": "When you plug a device into your PC, the power to the PC goes down, and when you detach the device, the power is restored. What is the recommended solution for this situation?",
     "options": [
       "Use a power supply with a higher wattage",
@@ -2938,7 +2882,7 @@
     "type": "single"
   },
   {
-    "id": 193,
+    "id": 190,
     "question": "Which of the following are potential consequences of a CPU running at high temperatures due to worn thermal paste? (Choose two)",
     "options": [
       "System instability and frequent crashes",
@@ -2953,7 +2897,7 @@
     "type": "single"
   },
   {
-    "id": 194,
+    "id": 191,
     "question": "Which of the following methods can improve system performance when multiple applications are being used simultaneously?",
     "options": [
       "Upgrade the RAM to a higher capacity",
@@ -2968,7 +2912,7 @@
     "type": "single"
   },
   {
-    "id": 195,
+    "id": 192,
     "question": "Which of the following options correctly describes a Molex connector?",
     "options": [
       "The Molex connector is used to provide power to SATA drives",
@@ -2983,7 +2927,7 @@
     "type": "single"
   },
   {
-    "id": 196,
+    "id": 193,
     "question": "What type of disk infrastructure is typically used in a degraded state?",
     "options": [
       "RAID (Redundant Array of Independent Disks)",
@@ -2998,7 +2942,7 @@
     "type": "single"
   },
   {
-    "id": 197,
+    "id": 194,
     "question": "What is a potential cause when some keys on the keyboard do not work and there is no sign of physical damage?",
     "options": [
       "Software compatibility issues",
@@ -3013,7 +2957,7 @@
     "type": "single"
   },
   {
-    "id": 198,
+    "id": 195,
     "question": "What is the primary purpose of setting a boot password in a computer’s BIOS settings?",
     "options": [
       "To prevent unauthorized access to the computer’s BIOS settings",
@@ -3028,7 +2972,7 @@
     "type": "single"
   },
   {
-    "id": 199,
+    "id": 196,
     "question": "What is the primary purpose of a Hardware Security Module (HSM)?",
     "options": [
       "Securely store and manage cryptographic keys",
@@ -3043,7 +2987,7 @@
     "type": "single"
   },
   {
-    "id": 200,
+    "id": 197,
     "question": "What is the purpose of multithreading in computer systems?",
     "options": [
       "Increase parallel processing and improve performance",
@@ -3058,7 +3002,7 @@
     "type": "single"
   },
   {
-    "id": 201,
+    "id": 198,
     "question": "What should you do if virtual machines are not working on your computer, and you need to troubleshoot the issue?",
     "options": [
       "Update the BIOS firmware to the latest version",
@@ -3073,7 +3017,7 @@
     "type": "single"
   },
   {
-    "id": 202,
+    "id": 199,
     "question": "What is the primary advantage of advanced risk computing?",
     "options": [
       "Improved performance and efficiency",
@@ -3088,7 +3032,7 @@
     "type": "single"
   },
   {
-    "id": 203,
+    "id": 200,
     "question": "Which of the following best describes the purpose of Intel architecture in advanced computing?",
     "options": [
       "Enabling high-performance computing applications",
@@ -3103,7 +3047,7 @@
     "type": "single"
   },
   {
-    "id": 204,
+    "id": 201,
     "question": "What is a key benefit of multicore processors in advanced computing?",
     "options": [
       "Increased parallel processing capabilities",
@@ -3118,7 +3062,7 @@
     "type": "single"
   },
   {
-    "id": 205,
+    "id": 202,
     "question": "For which type of devices are Intel Core M processors specifically designed?",
     "options": [
       "High-performance desktop computers",

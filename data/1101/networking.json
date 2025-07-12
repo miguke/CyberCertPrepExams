@@ -279,7 +279,7 @@
       "ARP"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "Domain Name System (DNS) is an Internet service that translates domain names (e.g., its.umich.edu) into IP addresses. Dynamic Host Configuration Protocol\n(DHCP) is a protocol for automatically assigning IP addresses and other configurations to devices when they connect to a network.",
     "id": 19
