@@ -632,6 +632,24 @@
     "id": 44
   },
   {
+    "type": "multiple",
+    "question": "A technician needs to fix a Cat 5 cable issue. The cable, which is connected to a network jack, fails when it is moved around. Which of the following items must the technician use to fix the issue? (Select TWO)",
+    "options": [
+      "Scissors",
+      "Network tap",
+      "Magnetized screwdriver",
+      "Tone generator",
+      "RJ45 connector",
+      "Crimper"
+    ],
+    "correct": [
+      4,
+      5
+    ],
+    "explanation": "To repair a broken Cat 5 cable, you need a new RJ45 connector and a crimper tool to attach it properly.",
+    "id": 45
+  },
+  {
     "type": "single",
     "question": "A field technician has been dispatched to a site with an internet outage. Upon arriving, the technician discovers that the POTS lines are not working as well. Which of the following technologies is the site MOST likely using?",
     "options": [

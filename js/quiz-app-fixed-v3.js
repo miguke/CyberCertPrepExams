@@ -9,11 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
     let examTimerInterval = null;
     let courseConfig = null;
     let isRealExamMode = false;
+    let isReviewMode = false;
+    let originalQuestions = [];
+    let originalAnswers = [];
+    let originalCorrectCount = 0;
 
     // --- DOM Elements ---
     const startScreen = document.getElementById('startScreen');
     const quizScreen = document.getElementById('quizScreen');
-    const resultsScreen = document.getElementById('resultsScreen');
+    const resultScreen = document.getElementById('resultScreen');
     const loadingScreen = document.getElementById('loadingScreen');
     const topicList = document.getElementById('topicList');
     const qText = document.getElementById('qText');
@@ -39,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Helper Functions ---
     const showScreen = (screenId) => {
-        [startScreen, quizScreen, resultsScreen, loadingScreen].forEach(screen => {
+        [startScreen, quizScreen, resultScreen, loadingScreen].forEach(screen => {
             if (screen) screen.classList.remove('active');
         });
         const screenToShow = document.getElementById(screenId);
@@ -358,13 +362,19 @@ document.addEventListener('DOMContentLoaded', () => {
         updateButtonStates();
         updateQuizProgress();
     };
-
+    
     const nextQ = () => {
         if (currentQ < quizQuestions.length - 1) {
             currentQ++;
             loadQ();
         } else {
-            showResults();
+            if (isReviewMode) {
+                // Return to the original results without recalculating
+                restoreOriginalQuiz();
+                showResults(false); // Don't recalculate, just show saved results
+            } else {
+                showResults(true); // Normal calculation for regular quiz mode
+            }
         }
     };
 
@@ -375,34 +385,170 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    const showResults = () => {
+    const restoreOriginalQuiz = () => {
+        // Restore original quiz state when exiting review mode
+        if (isReviewMode) {
+            quizQuestions = originalQuestions;
+            userAnswers = originalAnswers;
+            correctCount = originalCorrectCount;
+            isReviewMode = false;
+        }
+    };
+
+    const showResults = (recalculate = true) => {
+        console.log('[showResults] Function called - displaying results screen');
         stopExamTimer();
         const answeredCount = userAnswers.filter(a => a !== null).length;
         const accuracy = answeredCount > 0 ? Math.round((correctCount / answeredCount) * 100) : 0;
 
-        document.getElementById('finalScore').textContent = `${accuracy}%`;
+        // Using correct element IDs that match the HTML
+        document.getElementById('score').textContent = accuracy;
         document.getElementById('totalQuestions').textContent = quizQuestions.length;
         document.getElementById('correctAnswers').textContent = correctCount;
-        document.getElementById('incorrectAnswers').textContent = answeredCount - correctCount;
-        document.getElementById('accuracyResult').textContent = `${accuracy}%`;
+        document.getElementById('percentage').textContent = accuracy;
         
+        // Update the circular progress indicator to show the exact percentage
+        const scoreProgress = document.getElementById('scoreProgress');
+        if (scoreProgress) {
+            scoreProgress.style.background = `conic-gradient(var(--primary) ${accuracy}%, #e0e0e0 ${accuracy}%)`;            
+        }
+        
+        // Calculate pass/fail status based on CompTIA standards
+        const passFail = document.getElementById('passFail');
+        if (passFail) {
+            // CompTIA passing score is typically 675 out of 900 (75%)
+            const isPassed = accuracy >= 75;
+            passFail.textContent = isPassed ? 'APROVADO' : 'REPROVADO';
+            passFail.className = isPassed ? 'pass-status' : 'fail-status';
+        }
+
+        // Generate topic performance breakdown
+        const topicBreakdownEl = document.getElementById('topicBreakdown');
+        if (topicBreakdownEl) {
+            // Track performance by topic
+            const topicStats = {};
+            // Initialize topics
+            Object.keys(courseConfig.topics).forEach(topic => {
+                topicStats[topic] = {
+                    total: 0,
+                    correct: 0,
+                    incorrect: 0,
+                    skipped: 0
+                };
+            });
+            
+            // Calculate stats for each question
+            quizQuestions.forEach((q, index) => {
+                const topic = q.topic;
+                if (topic && topicStats[topic]) {
+                    topicStats[topic].total++;
+                    
+                    if (userAnswers[index] === null) {
+                        topicStats[topic].skipped++;
+                    } else if (arraysEqual(userAnswers[index], q.correct)) {
+                        topicStats[topic].correct++;
+                        console.log(`Question ${index+1} from topic ${topic} was answered correctly`);
+                    } else {
+                        topicStats[topic].incorrect++;
+                        console.log(`Question ${index+1} from topic ${topic} was answered incorrectly`);
+                    }
+                }
+            });
+            
+            // Create HTML for topic breakdown
+            let breakdownHTML = '<div class="topic-performance">'
+            breakdownHTML += '<h3>Desempenho por Tópico</h3>'
+            breakdownHTML += '<table class="topic-table">'
+            breakdownHTML += '<tr><th>Tópico</th><th>Corretas</th><th>Incorretas</th><th>Taxa</th></tr>';
+            
+            Object.keys(topicStats).forEach(topic => {
+                const stats = topicStats[topic];
+                const accuracy = stats.total > 0 ? Math.round((stats.correct / stats.total) * 100) : 0;
+                const rowClass = stats.incorrect > 0 ? 'topic-needs-review' : 'topic-mastered';
+                
+                breakdownHTML += `<tr class="${rowClass}">`;
+                breakdownHTML += `<td>${topic}</td>`;
+                breakdownHTML += `<td>${stats.correct}/${stats.total}</td>`;
+                breakdownHTML += `<td>${stats.incorrect}</td>`;
+                breakdownHTML += `<td>${accuracy}%</td>`;
+                breakdownHTML += '</tr>';
+            });
+            
+            breakdownHTML += '</table></div>';
+            topicBreakdownEl.innerHTML = breakdownHTML;
+        }
+        
+        // Add null checks for optional elements
         const timeTakenEl = document.getElementById('timeTaken');
-        if (isRealExamMode) {
+        if (isRealExamMode && timeTakenEl) {
             const totalDuration = courseConfig.examDuration || 5400;
             const timeElapsed = totalDuration - examTimeRemaining;
             timeTakenEl.textContent = formatTime(timeElapsed);
-            timeTakenEl.parentElement.style.display = 'block';
-        } else {
+            if (timeTakenEl.parentElement) {
+                timeTakenEl.parentElement.style.display = 'block';
+            }
+        } else if (timeTakenEl && timeTakenEl.parentElement) {
             timeTakenEl.parentElement.style.display = 'none';
         }
 
-        showScreen('resultsScreen');
+        // Show the results screen using the correct ID
+        showScreen('resultScreen');
+        console.log(`[showResults] Results displayed - Score: ${accuracy}%, Correct: ${correctCount}/${quizQuestions.length}`);
     };
 
     const reviewAnswers = () => {
+        // Filter out only incorrect questions and create a new review set
+        const incorrectQuestions = [];
+        const incorrectUserAnswers = [];
+        
+        quizQuestions.forEach((q, index) => {
+            // If user answered and got it wrong, add to review list
+            if (userAnswers[index] !== null && !arraysEqual(userAnswers[index], q.correct)) {
+                incorrectQuestions.push(q);
+                incorrectUserAnswers.push(userAnswers[index]);
+            }
+        });
+        
+        // If there are no incorrect questions, show a message and return
+        if (incorrectQuestions.length === 0) {
+            alert('Parabéns! Você não tem questões incorretas para revisar.');
+            return;
+        }
+        
+        // Save the original quiz state before switching to review mode
+        originalQuestions = [...quizQuestions];
+        originalAnswers = [...userAnswers];
+        originalCorrectCount = correctCount;
+        isReviewMode = true;
+        
+        // Replace with only incorrect questions for review
+        quizQuestions = incorrectQuestions;
+        userAnswers = incorrectUserAnswers;
+        
+        // Update UI
         showScreen('quizScreen');
         currentQ = 0;
         loadQ();
+        
+        // Add a back button to return to results
+        const backToResultsBtn = document.createElement('button');
+        backToResultsBtn.id = 'backToResultsBtn';
+        backToResultsBtn.className = 'btn btn-secondary';
+        backToResultsBtn.textContent = 'Voltar aos Resultados';
+        backToResultsBtn.style.marginLeft = '10px';
+        
+        const quizActions = document.querySelector('.quiz-actions');
+        if (quizActions && !document.getElementById('backToResultsBtn')) {
+            quizActions.appendChild(backToResultsBtn);
+            backToResultsBtn.addEventListener('click', () => {
+                // Restore original quiz state
+                restoreOriginalQuiz();
+                showResults(false); // Don't recalculate
+                
+                // Remove the back button
+                backToResultsBtn.remove();
+            });
+        }
     };
 
     // --- Timer Logic ---

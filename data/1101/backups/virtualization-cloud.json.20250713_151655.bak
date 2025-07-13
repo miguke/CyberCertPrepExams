@@ -123,6 +123,21 @@
   },
   {
     "type": "single",
+    "question": "Which of the following would an administrator use to migrate virtual machines from on premises to the cloud?",
+    "options": [
+      "laaS",
+      "SaaS",
+      "DBaaS",
+      "DRaaS"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An administrator would use Infrastructure as a Service (IaaS) to migrate virtual machines from on-premises to the cloud. IaaS is a cloud computing service that\nprovides virtualized computing resources, such as servers, storage, and networking, that can be used to deploy and run applications in the cloud. By using IaaS,\nan administrator can create a virtual machine in the cloud and migrate the existing virtual machine from on- premises to the cloud. References: CompTIA A+\nCertification Exam: Core 1 - Objective 3.3",
+    "id": 9
+  },
+  {
+    "type": "single",
     "question": "An organization maintains various record types, including health and criminal justice records. Which of the following cloud environments is the organization MOST\nlikely to use to limit the attack surface?",
     "options": [
       "Public",
@@ -218,7 +233,7 @@
     "options": [
       "Increase the ECC memory timings in the BIOS.",
       "Upgrade to the latest DDR5 modules.",
-      "Clear the temporary files on the workstation\u2019s boot drive.",
+      "Clear the temporary files on the workstation’s boot drive.",
       "Use a hypervisor to adjust the resource allocation."
     ],
     "correct": [
@@ -286,6 +301,21 @@
     ],
     "explanation": "The concept described in the question is related to virtualization and resource management in a virtual environment. The approach that allows all virtual machines\n(VMs) to have memory (RAM) allocated for use is known as resource pooling. Therefore, the correct answer is D: \"Resource pooling.\" This approach allows\nresources to be allocated dynamically to VMs based on their current needs, and ensures that resources are used efficiently in the virtual environment.\nResource pooling is a technique used in virtualization to share resources among multiple virtual machines (VMs). With resource pooling, RAM can be allocated\ndynamically to VMs as needed, allowing all VMs in a virtual environment to have RAM allocated for use. References:\nhttps://en.wikipedia.org/wiki/Resource_pooling",
     "id": 20
+  },
+  {
+    "type": "single",
+    "question": "A startup company is outgrowing its current office space and is requiring employees to work remotely. The company must comply with government-enforced\nrequirements to safeguard all aspects of data, so the IT department plans to maintain complete control over users' operating systems. Which of the following\nshould the IT department implement?",
+    "options": [
+      "VDI",
+      "laaS",
+      "VPN",
+      "SaaS"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The IT department should implement VDI. Virtual Desktop Infrastructure (VDI) is a technology that allows users to access a desktop operating system from a\nremote location. VDI provides complete control over users’ operating systems, which is important for safeguarding data. VDI also provides a secure way to access\ndata from remote locations, which is important for compliance with government-enforced requirements1.",
+    "id": 21
   },
   {
     "type": "single",
@@ -374,7 +404,7 @@
     "correct": [
       3
     ],
-    "explanation": "Host-only mode is a network option that isolates a client-side virtual machine from the rest of the network. It allows the virtual machine to communicate only with\nthe host machine and other virtual machines on the same host. NAT mode allows the virtual machine to share the host\u2019s IP address and access the network\nthrough it. Bridge mode allows the virtual machine to have its own IP address and connect directly to the network. Direct mode is not a valid network option for\nvirtual machines.",
+    "explanation": "Host-only mode is a network option that isolates a client-side virtual machine from the rest of the network. It allows the virtual machine to communicate only with\nthe host machine and other virtual machines on the same host. NAT mode allows the virtual machine to share the host’s IP address and access the network\nthrough it. Bridge mode allows the virtual machine to have its own IP address and connect directly to the network. Direct mode is not a valid network option for\nvirtual machines.",
     "id": 27
   },
   {
@@ -453,7 +483,7 @@
     "correct": [
       0
     ],
-    "explanation": "Metered utilization for cloud computing is a pricing model where cloud service providers charge clients based on the amount of resources they consume, such as\nnetwork bandwidth, storage space, CPU cycles, or memory. This allows clients to pay only for what they use, rather than a fixed amount or a subscription fee.\nMetered utilization can also enable clients to scale their cloud resources up or down according to their needs and demand.\nReferences: The following web search results provide more information about metered utilization for cloud computing:\n? Understanding Metered Billing For Cloud Infrastructure - Togai: This article explains the concept of metered billing, its advantages, and how it works for cloud\ninfrastructure services.\n? Usage Metering and Throttling in Cloud Computing: This article discusses the importance of metering and throttling in cloud computing, and how they are\nimplemented in WSO2 Stratos, a cloud platform as a service (PaaS) solution.\n? Cloud Volumes Service Metered Billing: Control Your Cloud \u2026 - NetApp: This article describes how NetApp\u2019s Cloud Volumes Service offers metered billing for\ncloud storage, and how it can help clients reduce their cloud costs and optimize their performance.",
+    "explanation": "Metered utilization for cloud computing is a pricing model where cloud service providers charge clients based on the amount of resources they consume, such as\nnetwork bandwidth, storage space, CPU cycles, or memory. This allows clients to pay only for what they use, rather than a fixed amount or a subscription fee.\nMetered utilization can also enable clients to scale their cloud resources up or down according to their needs and demand.\nReferences: The following web search results provide more information about metered utilization for cloud computing:\n? Understanding Metered Billing For Cloud Infrastructure - Togai: This article explains the concept of metered billing, its advantages, and how it works for cloud\ninfrastructure services.\n? Usage Metering and Throttling in Cloud Computing: This article discusses the importance of metering and throttling in cloud computing, and how they are\nimplemented in WSO2 Stratos, a cloud platform as a service (PaaS) solution.\n? Cloud Volumes Service Metered Billing: Control Your Cloud … - NetApp: This article describes how NetApp’s Cloud Volumes Service offers metered billing for\ncloud storage, and how it can help clients reduce their cloud costs and optimize their performance.",
     "type": "single",
     "topic": "virtualization-cloud"
   },
@@ -517,7 +547,7 @@
     "correct": [
       2
     ],
-    "explanation": "One of the benefits of virtualization is that it allows you to create and manage multiple virtual machines (VMs) on a single physical computer. This can be used to\nenhance security by centralizing all user desktops on a server, rather than storing them on individual user machines. This way, the user desktops can be isolated\nfrom each other and from the host machine, preventing malware infections, data breaches, and unauthorized access. Additionally, the user desktops can be easily\nbacked up, restored, updated, and monitored by the administrator, reducing the risk of data loss and downtime.\nThis type of virtualization is called desktop virtualization, and it separates the desktop environment from the physical hardware the user interacts with1. The user\ncan access their virtual desktop from any device, such as a laptop, tablet, or smartphone, using a remote display protocol. The user experience is similar to using a\nlocal desktop, but with improved security and manageability.\nReferences:\n\u2022What Is Virtualization, and Why Should You Use it?, section \u201cDesktop Virtualization\u201d.",
+    "explanation": "One of the benefits of virtualization is that it allows you to create and manage multiple virtual machines (VMs) on a single physical computer. This can be used to\nenhance security by centralizing all user desktops on a server, rather than storing them on individual user machines. This way, the user desktops can be isolated\nfrom each other and from the host machine, preventing malware infections, data breaches, and unauthorized access. Additionally, the user desktops can be easily\nbacked up, restored, updated, and monitored by the administrator, reducing the risk of data loss and downtime.\nThis type of virtualization is called desktop virtualization, and it separates the desktop environment from the physical hardware the user interacts with1. The user\ncan access their virtual desktop from any device, such as a laptop, tablet, or smartphone, using a remote display protocol. The user experience is similar to using a\nlocal desktop, but with improved security and manageability.\nReferences:\n•What Is Virtualization, and Why Should You Use it?, section “Desktop Virtualization”.",
     "type": "single",
     "topic": "virtualization-cloud"
   },
@@ -565,7 +595,7 @@
     "correct": [
       2
     ],
-    "explanation": "Shared resources is the concept that allows several websites from different companies to be housed on the same virtual server. A virtual server is a software-\nbased server that runs on a physical server and can host multiple virtual machines (VMs). Each VM can run a different operating system and application, such as a\nwebsite, and have its own allocated resources, such as CPU, memory, disk space, and network bandwidth. However, the VMs share the underlying hardware\nresources of the physical server, which reduces the cost and complexity of maintaining separate servers for each website. This also enables rapid scalability, as\nnew VMs can be created or deleted as needed.\nOne of the methods to host multiple websites on the same virtual server is to use virtual hosts. Virtual hosts are a feature of web servers, such as Apache, that\nallow the web server to serve different websites based on the domain name or IP address requested by the client. For example, a web server can host two\nwebsites, a.example.com and b.example.com, on the same virtual server and the same port (such as 80 or 443), by using virtual hosts to map each domain name\nto a different document root directory. The web server will then deliver the content of the corresponding website to the client based on the domain name in the\nHTTP request header.\nReferences:\n? How to Host Multiple Websites With One Apache Server1\n? How to run multiple sites on one apache instance2\n? Multiple different website hosting on same port 443 and same server or \u20263\n? When several name-based virtual hosts on the same web server share the \u20264\n? How to Host Multiple Sites on One Server - Server Mania5",
+    "explanation": "Shared resources is the concept that allows several websites from different companies to be housed on the same virtual server. A virtual server is a software-\nbased server that runs on a physical server and can host multiple virtual machines (VMs). Each VM can run a different operating system and application, such as a\nwebsite, and have its own allocated resources, such as CPU, memory, disk space, and network bandwidth. However, the VMs share the underlying hardware\nresources of the physical server, which reduces the cost and complexity of maintaining separate servers for each website. This also enables rapid scalability, as\nnew VMs can be created or deleted as needed.\nOne of the methods to host multiple websites on the same virtual server is to use virtual hosts. Virtual hosts are a feature of web servers, such as Apache, that\nallow the web server to serve different websites based on the domain name or IP address requested by the client. For example, a web server can host two\nwebsites, a.example.com and b.example.com, on the same virtual server and the same port (such as 80 or 443), by using virtual hosts to map each domain name\nto a different document root directory. The web server will then deliver the content of the corresponding website to the client based on the domain name in the\nHTTP request header.\nReferences:\n? How to Host Multiple Websites With One Apache Server1\n? How to run multiple sites on one apache instance2\n? Multiple different website hosting on same port 443 and same server or …3\n? When several name-based virtual hosts on the same web server share the …4\n? How to Host Multiple Sites on One Server - Server Mania5",
     "type": "single",
     "topic": "virtualization-cloud"
   },
@@ -645,7 +675,7 @@
     "correct": [
       2
     ],
-    "explanation": "A private cloud is a cloud computing model that provides services and resources to a specific organization or group over a private network. A private cloud can\noffer more security and control than other cloud models, as well as customized infrastructure that suits the organization\u2019s needs. A bank would most likely choose\na private cloud model to leverage cloud computing while maintaining isolation from other businesses. A public cloud is a cloud computing model that provides\nservices and resources to anyone over the internet. A hybrid cloud is a combination of public and private cloud services that share data and resources.",
+    "explanation": "A private cloud is a cloud computing model that provides services and resources to a specific organization or group over a private network. A private cloud can\noffer more security and control than other cloud models, as well as customized infrastructure that suits the organization’s needs. A bank would most likely choose\na private cloud model to leverage cloud computing while maintaining isolation from other businesses. A public cloud is a cloud computing model that provides\nservices and resources to anyone over the internet. A hybrid cloud is a combination of public and private cloud services that share data and resources.",
     "type": "single",
     "topic": "virtualization-cloud"
   },
@@ -678,7 +708,7 @@
     "correct": [
       1
     ],
-    "explanation": "Server message block (SMB) is the setting on the multifunction printer (MFP) that the technician should edit to best address the user\u2019s request of making the\nscans viewable on the network for the entire department. SMB is a network protocol that allows file sharing and printer access among different devices on a\nnetwork. The technician can configure the MFP to scan to a shared folder on the network using SMB. Scan to email is a feature that allows the MFP to send\nscanned documents as email attachments, which may not be viewable by everyone in the department. Secured prints is a feature that allows the MFP to print\ndocuments only after entering a PIN or password, which does not address the user\u2019s request. Web services is a feature that allows the MFP to access online\nservices such as cloud storage or email, which may not be viewable by everyone in the department either. Printer share is not a setting on the MFP, but a feature\nthat allows a device to share its printer with other devices on a network",
+    "explanation": "Server message block (SMB) is the setting on the multifunction printer (MFP) that the technician should edit to best address the user’s request of making the\nscans viewable on the network for the entire department. SMB is a network protocol that allows file sharing and printer access among different devices on a\nnetwork. The technician can configure the MFP to scan to a shared folder on the network using SMB. Scan to email is a feature that allows the MFP to send\nscanned documents as email attachments, which may not be viewable by everyone in the department. Secured prints is a feature that allows the MFP to print\ndocuments only after entering a PIN or password, which does not address the user’s request. Web services is a feature that allows the MFP to access online\nservices such as cloud storage or email, which may not be viewable by everyone in the department either. Printer share is not a setting on the MFP, but a feature\nthat allows a device to share its printer with other devices on a network",
     "type": "single",
     "topic": "virtualization-cloud"
   },
@@ -713,7 +743,7 @@
       3,
       5
     ],
-    "explanation": "The correct answers are D. The overall IT cost goes down and F. Upgrading applications is easier.\nApplication virtualization is a technology that allows users to run applications without installing them on their devices. The applications are stored and executed on\na remote server, and the users can access them through a network connection. Application virtualization has several benefits, such as12:\n\u2022The overall IT cost goes down: Application virtualization reduces the need for hardware, software, and maintenance costs, as the applications are centralized and\nmanaged on the server side. This also saves energy and space, as fewer physical machines are required to run the applications. Additionally, application\nvirtualization can reduce licensing costs, as the applications can be delivered on-demand and based on usage.\n\u2022Upgrading applications is easier: Application virtualization simplifies the process of updating and patching applications, as the changes can be made on the\nserver side and pushed to the users instantly. This eliminates the need for manual installation and configuration on each device, and ensures that all users have\nthe latest version of the applications.\nOther benefits of application virtualization include123:\n\u2022Allows the running of legacy apps: Application virtualization can enable users to run\napplications that are developed for older or incompatible operating systems, such as Windows 7 or XP. This can extend the lifespan of legacy applications and\navoid compatibility issues.\n\u2022Enables cross-platform operations: Application virtualization can allow users to run applications that are designed for different platforms, such as Windows apps\non iOS, Android, macOS, or Chrome OS. This can increase the accessibility and mobility of the applications and enhance the user experience.\n\u2022Improves security and compliance: Application virtualization can isolate the applications from the underlying operating system and hardware, preventing malware\nor unauthorized access from affecting them. This can also protect the data and settings of the applications from being tampered with or lost. Furthermore,\napplication virtualization can help enforce compliance policies and regulations, as the applications can be controlled and monitored by the server.\nReferences:\n1: 5 Benefits of Virtualization - IBM Blog\n2: Benefits of Application Virtualization - AppsAnywhere 3: What is Application Virtualization? | VMware Glossary",
+    "explanation": "The correct answers are D. The overall IT cost goes down and F. Upgrading applications is easier.\nApplication virtualization is a technology that allows users to run applications without installing them on their devices. The applications are stored and executed on\na remote server, and the users can access them through a network connection. Application virtualization has several benefits, such as12:\n•The overall IT cost goes down: Application virtualization reduces the need for hardware, software, and maintenance costs, as the applications are centralized and\nmanaged on the server side. This also saves energy and space, as fewer physical machines are required to run the applications. Additionally, application\nvirtualization can reduce licensing costs, as the applications can be delivered on-demand and based on usage.\n•Upgrading applications is easier: Application virtualization simplifies the process of updating and patching applications, as the changes can be made on the\nserver side and pushed to the users instantly. This eliminates the need for manual installation and configuration on each device, and ensures that all users have\nthe latest version of the applications.\nOther benefits of application virtualization include123:\n•Allows the running of legacy apps: Application virtualization can enable users to run\napplications that are developed for older or incompatible operating systems, such as Windows 7 or XP. This can extend the lifespan of legacy applications and\navoid compatibility issues.\n•Enables cross-platform operations: Application virtualization can allow users to run applications that are designed for different platforms, such as Windows apps\non iOS, Android, macOS, or Chrome OS. This can increase the accessibility and mobility of the applications and enhance the user experience.\n•Improves security and compliance: Application virtualization can isolate the applications from the underlying operating system and hardware, preventing malware\nor unauthorized access from affecting them. This can also protect the data and settings of the applications from being tampered with or lost. Furthermore,\napplication virtualization can help enforce compliance policies and regulations, as the applications can be controlled and monitored by the server.\nReferences:\n1: 5 Benefits of Virtualization - IBM Blog\n2: Benefits of Application Virtualization - AppsAnywhere 3: What is Application Virtualization? | VMware Glossary",
     "type": "multiple",
     "topic": "virtualization-cloud"
   },
@@ -760,7 +790,7 @@
     "correct": [
       0
     ],
-    "explanation": "With a hybrid cloud, a company has employees working in both on-premises and cloud infrastructures. It is the only cloud model that retains on-premises data centers. All other answers are incorrect. A private cloud is a single-tenant model as it is the only entity hosted in that cloud. It can also be hosted on the company\u2019s infrastructure. A community cloud is a type of model in which companies from the same industry share resources. Public cloud models use a multi-tenant infrastructure as the CSP hosts many different companies on the same servers.",
+    "explanation": "With a hybrid cloud, a company has employees working in both on-premises and cloud infrastructures. It is the only cloud model that retains on-premises data centers. All other answers are incorrect. A private cloud is a single-tenant model as it is the only entity hosted in that cloud. It can also be hosted on the company’s infrastructure. A community cloud is a type of model in which companies from the same industry share resources. Public cloud models use a multi-tenant infrastructure as the CSP hosts many different companies on the same servers.",
     "type": "single"
   },
   {
@@ -866,7 +896,7 @@
     "correct": [
       2
     ],
-    "explanation": "With Platform as a Service (PaaS), the Cloud Service Provider (CSP) provides the application so that companies can offer their own bespoke (that is, customized) applications, such as MySQL, PHP, Azure, Oracle Database, and Google App Engine, to name a few. All other answers are incorrect. For Software as a Service (SaaS), the vendor has already created an application, for example, Office 365, Salesforce, or GoldMine. Infrastructure as a Service (IaaS) is a cloud service in which the CSP provides the hardware, such as servers, computers, switches, and firewalls. The customer then installs the software, configures it, and patches it. The private cloud is a single-tenant cloud model and would not meet this company\u2019s requirements.",
+    "explanation": "With Platform as a Service (PaaS), the Cloud Service Provider (CSP) provides the application so that companies can offer their own bespoke (that is, customized) applications, such as MySQL, PHP, Azure, Oracle Database, and Google App Engine, to name a few. All other answers are incorrect. For Software as a Service (SaaS), the vendor has already created an application, for example, Office 365, Salesforce, or GoldMine. Infrastructure as a Service (IaaS) is a cloud service in which the CSP provides the hardware, such as servers, computers, switches, and firewalls. The customer then installs the software, configures it, and patches it. The private cloud is a single-tenant cloud model and would not meet this company’s requirements.",
     "type": "single"
   },
   {
@@ -886,7 +916,7 @@
   },
   {
     "id": 60,
-    "question": "A law firm is going to migrate its currently on-premises infrastructure to the cloud. The firm stores a large number of wills and probates, property, and trust deeds. This data must be retained for a minimum of six years. What type of cloud model best fits this law firm\u2019s needs?",
+    "question": "A law firm is going to migrate its currently on-premises infrastructure to the cloud. The firm stores a large number of wills and probates, property, and trust deeds. This data must be retained for a minimum of six years. What type of cloud model best fits this law firm’s needs?",
     "options": [
       "Public cloud",
       "Private cloud",
@@ -911,12 +941,12 @@
     "correct": [
       2
     ],
-    "explanation": "Shared resources means that the cloud provider has a pool of hardware that can be allocated to any of their customers. All other answers are incorrect. Dynamic resource allocation means that a computer or server can adjust the allocation of resources, such as CPU or RAM, according to business demands. There is no such thing as a backup pool. System sprawl means that the consumption of resources by servers exceeds the available resources in a host\u2019s virtual environment.",
+    "explanation": "Shared resources means that the cloud provider has a pool of hardware that can be allocated to any of their customers. All other answers are incorrect. Dynamic resource allocation means that a computer or server can adjust the allocation of resources, such as CPU or RAM, according to business demands. There is no such thing as a backup pool. System sprawl means that the consumption of resources by servers exceeds the available resources in a host’s virtual environment.",
     "type": "single"
   },
   {
     "id": 62,
-    "question": "Which of the following means that the server experiences very little downtime (also known as the \u201cfive nines\u201d)?",
+    "question": "Which of the following means that the server experiences very little downtime (also known as the “five nines”)?",
     "options": [
       "VDI",
       "High Availability (HA)",
@@ -926,7 +956,7 @@
     "correct": [
       1
     ],
-    "explanation": "High availability means that a server experiences very little downtime (the five nines), and in fact, observes 99.999% uptime. All other answers are incorrect. VDI is a pool of virtual desktops. Clustering means that two servers share the same quorum disk, in which one is normally active and the other passive; that is, it is on standby waiting for the active server to fail so that it can take over. Shared resources are a pool of hardware resources in a cloud provider\u2019s data center that are allocated to any customer that requests additional resources.",
+    "explanation": "High availability means that a server experiences very little downtime (the five nines), and in fact, observes 99.999% uptime. All other answers are incorrect. VDI is a pool of virtual desktops. Clustering means that two servers share the same quorum disk, in which one is normally active and the other passive; that is, it is on standby waiting for the active server to fail so that it can take over. Shared resources are a pool of hardware resources in a cloud provider’s data center that are allocated to any customer that requests additional resources.",
     "type": "single"
   },
   {
@@ -986,12 +1016,12 @@
     "correct": [
       1
     ],
-    "explanation": "The private cloud model is known as single-tenant as only one entity is hosted in that cloud. It can also be hosted on the company\u2019s infrastructure. All other answers are incorrect. In a hybrid cloud, a company has an on-premises environment as well as in the cloud. A community cloud hosts multiple companies from the same industry that share resources. Public cloud models are known as multi-tenant as the CSP hosts many different companies on the same servers.",
+    "explanation": "The private cloud model is known as single-tenant as only one entity is hosted in that cloud. It can also be hosted on the company’s infrastructure. All other answers are incorrect. In a hybrid cloud, a company has an on-premises environment as well as in the cloud. A community cloud hosts multiple companies from the same industry that share resources. Public cloud models are known as multi-tenant as the CSP hosts many different companies on the same servers.",
     "type": "single"
   },
   {
     "id": 67,
-    "question": "Due to COVID, a financial company is moving all its workers to a work-from-home model. The company must ensure that stringent financial regulations are enforced at all times and that they can control users\u2019 desktops and prevent the exfiltration of data. Which of the following solutions will the company implement?",
+    "question": "Due to COVID, a financial company is moving all its workers to a work-from-home model. The company must ensure that stringent financial regulations are enforced at all times and that they can control users’ desktops and prevent the exfiltration of data. Which of the following solutions will the company implement?",
     "options": [
       "VDI",
       "SaaS",
@@ -1031,7 +1061,7 @@
     "correct": [
       1
     ],
-    "explanation": "The virtual desktop is on a virtual host, and if there is no network connection, then the desktop cannot be accessed. All other answers are incorrect. In a VDI environment, nothing is copied to the local desktop. Snapshots are a much faster way to recover a guest\u2019s machine. A Citrix connection is very fast as it is a thin client, meaning it uses only mouse clicks and keyboard strokes; this makes it an advantage. Disaster recovery being provided by the cloud provider is also an advantage.",
+    "explanation": "The virtual desktop is on a virtual host, and if there is no network connection, then the desktop cannot be accessed. All other answers are incorrect. In a VDI environment, nothing is copied to the local desktop. Snapshots are a much faster way to recover a guest’s machine. A Citrix connection is very fast as it is a thin client, meaning it uses only mouse clicks and keyboard strokes; this makes it an advantage. Disaster recovery being provided by the cloud provider is also an advantage.",
     "type": "single"
   },
   {
@@ -1076,12 +1106,12 @@
     "correct": [
       0
     ],
-    "explanation": "A Type 1 hypervisor runs on a bare-metal virtual platform. This means that there is no operating system. Examples of this are Microsoft\u2019s Hyper V, VMware\u2019s ESX Server, and Citrix\u2019s XenServer. All other answers are incorrect. Type 2 hypervisors run on software (Windows 10, for example). There are no Type 3 or 4 hypervisors.",
+    "explanation": "A Type 1 hypervisor runs on a bare-metal virtual platform. This means that there is no operating system. Examples of this are Microsoft’s Hyper V, VMware’s ESX Server, and Citrix’s XenServer. All other answers are incorrect. Type 2 hypervisors run on software (Windows 10, for example). There are no Type 3 or 4 hypervisors.",
     "type": "single"
   },
   {
     "id": 73,
-    "question": "A company is using VMware\u2019s ESX Server to provide its virtual network. It will be running five database servers, each of which will require an increase in CPU and RA",
+    "question": "A company is using VMware’s ESX Server to provide its virtual network. It will be running five database servers, each of which will require an increase in CPU and RA",
     "options": [
       "How can this",
       "Resource pooling",
@@ -1122,7 +1152,7 @@
     "correct": [
       1
     ],
-    "explanation": "Oracle VirtualBox runs on a type 2 hypervisor, meaning that it must sit on top of an operating system such as Windows 10. All other answers are incorrect. A type 1 hypervisor runs on a bare-metal virtual platform, meaning that there is no operating system. Examples of this include Microsoft\u2019s Hyper-V, VMware\u2019s ESX Server, and Citrix\u2019s XenServer. There are no type 3 or type 5 hypervisors.",
+    "explanation": "Oracle VirtualBox runs on a type 2 hypervisor, meaning that it must sit on top of an operating system such as Windows 10. All other answers are incorrect. A type 1 hypervisor runs on a bare-metal virtual platform, meaning that there is no operating system. Examples of this include Microsoft’s Hyper-V, VMware’s ESX Server, and Citrix’s XenServer. There are no type 3 or type 5 hypervisors.",
     "type": "single"
   },
   {
@@ -1157,7 +1187,7 @@
   },
   {
     "id": 78,
-    "question": "A company has a virtual network running 10 host machines, each with 50 guest machines. Yesterday, an attacker successfully connected to the host\u2019s physical network card and exchanged packets directly with a guest operating system, bypassing the host operating system. Which of the following BEST describes how the attacker gained access?",
+    "question": "A company has a virtual network running 10 host machines, each with 50 guest machines. Yesterday, an attacker successfully connected to the host’s physical network card and exchanged packets directly with a guest operating system, bypassing the host operating system. Which of the following BEST describes how the attacker gained access?",
     "options": [
       "The attacker used a NAT",
       "The attacker joined the local area network of the host",
@@ -1167,7 +1197,7 @@
     "correct": [
       3
     ],
-    "explanation": "Bridged networking is a method by which a virtual client using a type 2 hypervisor is connected to a host virtual machine\u2019s physical network card, allowing it to join the virtual network. Here\u2019s a reference you can go through: https://packt.link/UosZ9. All other answers are incorrect. A Network Address Translator (NAT) hides the internal network when internal users browse the internet. An attacker would join the LAN that the host resides on, not the host itself. A virtual private network is a network that allows guest virtual machines to have their own isolated network. Chapter 4: Virtualization and Cloud Computing 155",
+    "explanation": "Bridged networking is a method by which a virtual client using a type 2 hypervisor is connected to a host virtual machine’s physical network card, allowing it to join the virtual network. Here’s a reference you can go through: https://packt.link/UosZ9. All other answers are incorrect. A Network Address Translator (NAT) hides the internal network when internal users browse the internet. An attacker would join the LAN that the host resides on, not the host itself. A virtual private network is a network that allows guest virtual machines to have their own isolated network. Chapter 4: Virtualization and Cloud Computing 155",
     "type": "single"
   },
   {
@@ -1197,7 +1227,7 @@
     "correct": [
       2
     ],
-    "explanation": "Fiber Channel provides a very fast connection to a Storage Area Network (SAN) and is the best choice in this scenario. A SAN uses extremely fast disks that are already configured with built-in redundancy. All other answers are incorrect. RAID 0 is neither fault tolerant nor suitable for a virtual network, though it could be used for a proxy server\u2019s cache. A Local Area Network (LAN) is not a storage solution. RAID 5 is redundant, but Hard Disk Drives (HDDs) are too slow.",
+    "explanation": "Fiber Channel provides a very fast connection to a Storage Area Network (SAN) and is the best choice in this scenario. A SAN uses extremely fast disks that are already configured with built-in redundancy. All other answers are incorrect. RAID 0 is neither fault tolerant nor suitable for a virtual network, though it could be used for a proxy server’s cache. A Local Area Network (LAN) is not a storage solution. RAID 5 is redundant, but Hard Disk Drives (HDDs) are too slow.",
     "type": "single"
   },
   {
@@ -1212,7 +1242,7 @@
     "correct": [
       1
     ],
-    "explanation": "Isolation means that you separate a virtual machine from the guest or another virtual machine. Here\u2019s a reference you can go through: https://packt.link/ URHYE. All other answers are incorrect. A DMZ is a physical network that sits between the Local Area Network (LAN) and the Wide Area Network (WAN). Docker is used to separate applications from your infrastructure and is particularly useful for developers creating software. A snapshot is a backup of a virtual machine that will allow you to revert to previous settings.",
+    "explanation": "Isolation means that you separate a virtual machine from the guest or another virtual machine. Here’s a reference you can go through: https://packt.link/ URHYE. All other answers are incorrect. A DMZ is a physical network that sits between the Local Area Network (LAN) and the Wide Area Network (WAN). Docker is used to separate applications from your infrastructure and is particularly useful for developers creating software. A snapshot is a backup of a virtual machine that will allow you to revert to previous settings.",
     "type": "single"
   },
   {
@@ -1227,7 +1257,7 @@
     "correct": [
       2
     ],
-    "explanation": "Virtual Technology for Directed Inputs/Output (VT-d) allows the virtual machine to access the underlying hardware that resides on the host. All other answers are incorrect. When you are preparing to run a hypervisor, you will see an option to turn on Intel VT-d in your BIOS. Here\u2019s a reference you can go through: https://packt.link/ POvT5. Virtual Technology Extensions (VT-x) are used in x86 platforms to allow the virtual machine to access the hardware. A host machine using more than 4 GB of RAM (such as that described) is 64-bit and needs VT-d. Multi-cores allow better performance from the processors. Intel Graphics Virtual Technology (Intel GVT) provides near-native graphic performance on a virtual machine. Neither of these will resolve the current issue.",
+    "explanation": "Virtual Technology for Directed Inputs/Output (VT-d) allows the virtual machine to access the underlying hardware that resides on the host. All other answers are incorrect. When you are preparing to run a hypervisor, you will see an option to turn on Intel VT-d in your BIOS. Here’s a reference you can go through: https://packt.link/ POvT5. Virtual Technology Extensions (VT-x) are used in x86 platforms to allow the virtual machine to access the hardware. A host machine using more than 4 GB of RAM (such as that described) is 64-bit and needs VT-d. Multi-cores allow better performance from the processors. Intel Graphics Virtual Technology (Intel GVT) provides near-native graphic performance on a virtual machine. Neither of these will resolve the current issue.",
     "type": "single"
   },
   {

@@ -251,7 +251,7 @@
     "correct": [
       0
     ],
-    "explanation": "The cloud model that BEST addresses the company\u2019s need is the Community cloud model. A community cloud is a cloud infrastructure in which multiple\norganizations share resources and services based on common operational and regulatory requirements. The concept of a community cloud is akin to a community\ngarden, where different individuals grow produce on a single piece of shared land1.",
+    "explanation": "The cloud model that BEST addresses the company’s need is the Community cloud model. A community cloud is a cloud infrastructure in which multiple\norganizations share resources and services based on common operational and regulatory requirements. The concept of a community cloud is akin to a community\ngarden, where different individuals grow produce on a single piece of shared land1.",
     "id": 17
   },
   {
@@ -313,6 +313,21 @@
     ],
     "explanation": "A router (option C) is a network device that is used to separate broadcast domains. A broadcast domain is a logical division of a computer network in which all\nnodes can reach each other by broadcast at the data link layer. Routers operate at the network layer of the OSI model and use routing tables to determine the best\npath for forwarding packets between different networks.\nBy separating broadcast domains, routers can help to reduce network congestion and improve performance. When a router receives a broadcast packet on one of\nits interfaces, it does not forward the packet to any other interfaces. This means that only devices within the same broadcast domain as the sender will receive the\nbroadcast packet.",
     "id": 21
+  },
+  {
+    "type": "single",
+    "question": "A technician is attempting to connect the wired LANs at two nearby buildings by installing a wireless point-to-point connection. Which of the following should the technician consider?",
+    "options": [
+      "NFC protocol data rate",
+      "RFID frequency range",
+      "Bluetooth version compatibility",
+      "Allowable limits for transmit power"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Legal limits on transmission power are crucial in wireless point-to-point setups.",
+    "id": 22
   },
   {
     "type": "single",
@@ -440,6 +455,21 @@
     "id": 30
   },
   {
+    "type": "single",
+    "question": "A technician is troubleshooting a laptop that is unable to browse the internet when connected to the company’s wireless network. The technician has verified\nnetwork connectivity is functional when using an Ethernet cable. Which of the following should the technician use to check if the laptop's wireless NIC is functional?",
+    "options": [
+      "Hotspot",
+      "Near-field communication",
+      "Ethernet tap",
+      "Spectrum analyzer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A hotspot is a wireless access point that provides internet access to devices that are connected to it. The technician can use a hotspot to check if the laptop's\nwireless NIC is functional by connecting the laptop to the hotspot and then trying to browse the internet. If the laptop is able to browse the internet, then the\nwireless NIC is functional. Near-field communication (NFC) is a wireless technology that allows two devices to communicate with each other when they are in close\nproximity. NFC is not typically used to check if a wireless NIC is functional.\nAn Ethernet tap is a device that is used to monitor network traffic. An Ethernet tap is not typically used to check if a wireless NIC is functional.\nA spectrum analyzer is a device that is used to measure the frequency spectrum of a signal. A spectrum analyzer is not typically used to check if a wireless NIC is\nfunctional. Therefore, the correct answer is A. Hotspot.",
+    "id": 31
+  },
+  {
     "type": "multiple",
     "question": "A technician needs to fix a Cat 5 cable issue. The cable, which is connected to a network jack, fails when it is moved around. Which of the following items must the\ntechnician use to fix the issue? (Select TWO).",
     "options": [
@@ -553,6 +583,22 @@
     "topic": "networking"
   },
   {
+    "id": 39,
+    "question": "An insurance company wants to implement cloud computing and would like a cloud solution in which the infrastructure is shared with businesses in the same\nindustry. Which of the following cloud models BEST addresses the company's need?",
+    "options": [
+      "Community",
+      "Private",
+      "Public",
+      "Hybrid"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The cloud model that BEST addresses the company’s need is the Community cloud model. A community cloud is a cloud infrastructure in which multiple\norganizations share resources and services based on common operational and regulatory requirements. The concept of a community cloud is akin to a community\ngarden, where different individuals grow produce on a single piece of shared land1.",
+    "type": "single",
+    "topic": "networking"
+  },
+  {
     "id": 40,
     "question": "Which of the following protocols is the most appropriate to use for inventory tracking in a small warehouse?",
     "options": [
@@ -564,7 +610,7 @@
     "correct": [
       1
     ],
-    "explanation": "Radio-frequency identification (RFID) is the most appropriate protocol to use for inventory tracking in a small warehouse. RFID is a technology that uses radio\nwaves to identify and track objects that have RFID tags attached to them. RFID tags are small devices that store information about the object, such as its name,\nserial number, location, or status. RFID tags can be passive, which means they do not have a battery and rely on the radio signal from the reader to power them,\nor active, which means they have a battery and can transmit their own signal. RFID readers are devices that can scan the RFID tags and read the information\nstored on them.\nRFID is suitable for inventory tracking in a small warehouse because it can provide several benefits, such as:\n? Faster and more accurate scanning: RFID tags can be scanned without direct line\nof sight, unlike barcodes, and can be scanned in bulk, unlike QR codes. This means that RFID readers can scan multiple items at once, even if they are inside\nboxes or containers, and reduce the time and errors involved in manual scanning.\n? Real-time visibility and control: RFID tags can be updated with the latest\ninformation about the inventory, such as its location, quantity, or condition. This means that RFID readers can provide real-time data and feedback on the inventory\nstatus, such as its availability, movement, or expiration. This can help improve inventory management, optimize warehouse space, and prevent stockouts or\noverstocking.\n? Enhanced security and quality: RFID tags can be encrypted and authenticated,\nunlike barcodes or QR codes, which can be easily copied or tampered with. This means that RFID tags can prevent unauthorized access or theft of the inventory,\nand ensure its authenticity and quality. This can help protect the inventory from damage, loss, or fraud, and increase customer satisfaction and trust.\nReferences:\n? Inventory Tracking Simplified: Steps, Methods and Efficiency Tips1\n? 17 Essential Inventory Management Techniques \u2013 Forbes Advisor2\n? Inventory Tracking vs Inventory Traceability - Kardex3",
+    "explanation": "Radio-frequency identification (RFID) is the most appropriate protocol to use for inventory tracking in a small warehouse. RFID is a technology that uses radio\nwaves to identify and track objects that have RFID tags attached to them. RFID tags are small devices that store information about the object, such as its name,\nserial number, location, or status. RFID tags can be passive, which means they do not have a battery and rely on the radio signal from the reader to power them,\nor active, which means they have a battery and can transmit their own signal. RFID readers are devices that can scan the RFID tags and read the information\nstored on them.\nRFID is suitable for inventory tracking in a small warehouse because it can provide several benefits, such as:\n? Faster and more accurate scanning: RFID tags can be scanned without direct line\nof sight, unlike barcodes, and can be scanned in bulk, unlike QR codes. This means that RFID readers can scan multiple items at once, even if they are inside\nboxes or containers, and reduce the time and errors involved in manual scanning.\n? Real-time visibility and control: RFID tags can be updated with the latest\ninformation about the inventory, such as its location, quantity, or condition. This means that RFID readers can provide real-time data and feedback on the inventory\nstatus, such as its availability, movement, or expiration. This can help improve inventory management, optimize warehouse space, and prevent stockouts or\noverstocking.\n? Enhanced security and quality: RFID tags can be encrypted and authenticated,\nunlike barcodes or QR codes, which can be easily copied or tampered with. This means that RFID tags can prevent unauthorized access or theft of the inventory,\nand ensure its authenticity and quality. This can help protect the inventory from damage, loss, or fraud, and increase customer satisfaction and trust.\nReferences:\n? Inventory Tracking Simplified: Steps, Methods and Efficiency Tips1\n? 17 Essential Inventory Management Techniques – Forbes Advisor2\n? Inventory Tracking vs Inventory Traceability - Kardex3",
     "type": "single",
     "topic": "networking"
   },
@@ -596,7 +642,7 @@
     "correct": [
       1
     ],
-    "explanation": "This is an example of a public IP address that can be assigned by an ISP to a router\u2019s WAN (Wide Area Network) port. A public IP address is a globally unique\nand routable address that allows a device to communicate with other devices on the internet. A private IP address, such as 10.1.50.30 or 172.22.40.6, is a non-\nroutable address that is used within a local network and cannot be directly accessed from the internet. A link-local IP address, such as 169.254.168.10, is a self-\nassigned address that is used when a device cannot obtain a valid IP address from a DHCP server.\nReference: [CompTIA A+ Core 1 (220-1101) Certification Study Guide], page 27.",
+    "explanation": "This is an example of a public IP address that can be assigned by an ISP to a router’s WAN (Wide Area Network) port. A public IP address is a globally unique\nand routable address that allows a device to communicate with other devices on the internet. A private IP address, such as 10.1.50.30 or 172.22.40.6, is a non-\nroutable address that is used within a local network and cannot be directly accessed from the internet. A link-local IP address, such as 169.254.168.10, is a self-\nassigned address that is used when a device cannot obtain a valid IP address from a DHCP server.\nReference: [CompTIA A+ Core 1 (220-1101) Certification Study Guide], page 27.",
     "type": "single",
     "topic": "networking"
   },
@@ -729,6 +775,25 @@
     "topic": "networking"
   },
   {
+    "id": 51,
+    "question": "A technician needs to fix a Cat 5 cable issue. The cable, which is connected to a network jack, fails when it is moved around. Which of the following items must the\ntechnician use to fix the issue?",
+    "options": [
+      "Scissors",
+      "Network tap",
+      "Magnetized screwdriver",
+      "Tone generator",
+      "RJ45 connector",
+      "Crimper"
+    ],
+    "correct": [
+      4,
+      5
+    ],
+    "explanation": "To fix a Cat 5 cable issue where the cable fails when it is moved around, the technician would need to use an RJ45 connector (option E) and a crimper (option F).\nThe technician can use the crimper to attach a new RJ45 connector to the end of the cable, which should resolve the issue.\nAn RJ45 connector (option E) is a type of connector commonly used for Ethernet networking. It is an 8-position, 8-contact (8P8C) modular plug and jack that is\nused to terminate Cat 5 and other types of twisted pair cables. A crimper (option F) is a tool used to attach connectors to the ends of cables. In this case, the\ntechnician would use the crimper to attach a new RJ45 connector to the end of the Cat 5 cable.\nWhen a cable fails when it is moved around, it often indicates that there is a problem with the connector at the end of the cable. By attaching a new RJ45\nconnector using a crimper, the technician can ensure that the cable has a secure and reliable connection.",
+    "type": "multiple",
+    "topic": "networking"
+  },
+  {
     "id": 52,
     "question": "A user is installing a new display on a desktop computer that only has a single DVI port for video input and a single HDMI port tot video output Which of me\nfollowing does the technician need to complete the setup?",
     "options": [
@@ -820,7 +885,7 @@
     "correct": [
       0
     ],
-    "explanation": "The default gateway is the IP address of the router or device that connects a network to another network or the internet. In the output below, the default gateway\nis 172.25.1.252, as shown in the line \u201cDefault Gateway . . . . . . . . . : 172.25.1.252\u201d. The other IP addresses are not default gateways, but either local IP addresses\n(172.25.1.39 and 172.25.1.4) or subnet masks (255.255.255.0).",
+    "explanation": "The default gateway is the IP address of the router or device that connects a network to another network or the internet. In the output below, the default gateway\nis 172.25.1.252, as shown in the line “Default Gateway . . . . . . . . . : 172.25.1.252”. The other IP addresses are not default gateways, but either local IP addresses\n(172.25.1.39 and 172.25.1.4) or subnet masks (255.255.255.0).",
     "type": "single",
     "topic": "networking"
   },
@@ -836,7 +901,7 @@
     "correct": [
       3
     ],
-    "explanation": "The correct answer is D. VPN.\nA VPN (Virtual Private Network) is a service that allows a remote user to access network resources securely over the internet. A VPN creates an encrypted tunnel\nbetween the user\u2019s device and the VPN server, which acts as a gateway to the network. The user can then access the network resources as if they were directly\nconnected to the network, without exposing their traffic to eavesdropping, interception, or censorship.\nA VPN can provide remote users with access to various services on a company network, such as file and print services, client/server applications, and remote\nnetwork administration1. A VPN can also protect the user\u2019s privacy and identity online by masking their IP address and location.\nReferences:\n\u2022Remote Access to a Network - NETWORK ENCYCLOPEDIA, section \u201cRemote access typically gives remote users access to the following services on a\ncompany network\u201d.",
+    "explanation": "The correct answer is D. VPN.\nA VPN (Virtual Private Network) is a service that allows a remote user to access network resources securely over the internet. A VPN creates an encrypted tunnel\nbetween the user’s device and the VPN server, which acts as a gateway to the network. The user can then access the network resources as if they were directly\nconnected to the network, without exposing their traffic to eavesdropping, interception, or censorship.\nA VPN can provide remote users with access to various services on a company network, such as file and print services, client/server applications, and remote\nnetwork administration1. A VPN can also protect the user’s privacy and identity online by masking their IP address and location.\nReferences:\n•Remote Access to a Network - NETWORK ENCYCLOPEDIA, section “Remote access typically gives remote users access to the following services on a\ncompany network”.",
     "type": "single",
     "topic": "networking"
   },
@@ -852,7 +917,7 @@
     "correct": [
       0
     ],
-    "explanation": "ipconfig is a command-line tool that displays the current configuration of the network interfaces on a Windows PC. It can also be used to release and renew the IP\naddress, flush the DNS cache, and display the routing table. If the PC is unable to ping the local gateway, the technician should use ipconfig to check the IP\naddress, subnet mask, default gateway, and DNS servers of the PC. The technician can also use ipconfig /renew to request a new IP address from the DHCP\nserver, or ipconfig /flushdns to clear the DNS cache.\nReferences\n\u2022[CompTIA A+ Core 1 (220-1001) Certification Study Guide], page 78\n\u2022How to use the ipconfig command on Windows 10\n\u2022How to Ping the Windows Network Router",
+    "explanation": "ipconfig is a command-line tool that displays the current configuration of the network interfaces on a Windows PC. It can also be used to release and renew the IP\naddress, flush the DNS cache, and display the routing table. If the PC is unable to ping the local gateway, the technician should use ipconfig to check the IP\naddress, subnet mask, default gateway, and DNS servers of the PC. The technician can also use ipconfig /renew to request a new IP address from the DHCP\nserver, or ipconfig /flushdns to clear the DNS cache.\nReferences\n•[CompTIA A+ Core 1 (220-1001) Certification Study Guide], page 78\n•How to use the ipconfig command on Windows 10\n•How to Ping the Windows Network Router",
     "type": "single",
     "topic": "networking"
   },
@@ -869,6 +934,22 @@
       3
     ],
     "explanation": "The correct answer is D. Cat 6a.\nCat 6a (augmented) is a type of twisted pair cable that supports 10GBASE-T data transmission speed. 10GBASE-T is an Ethernet standard that can deliver 10\ngigabits per second (Gbps) over copper cables. Cat 6a can support this speed up to a distance of 100 meters, which is the same as Cat 5e and Cat 6 for lower\nspeeds. Cat 6a has better shielding and crosstalk prevention than Cat 6, which makes it more suitable for high- frequency signals.\nCat 3, Cat 5, and Cat 5e are not capable of supporting 10GBASE-T data transmission speed. Cat 3 can only support up to 10 Mbps, Cat 5 can only support up to\n100 Mbps, and Cat 5e can only support up to 1 Gbps. These cables have lower bandwidth, higher attenuation, and more interference than Cat 6a.\nReference: Network Cables - CompTIA A+ 220-1101 - 3.1 - Professor Messer IT Certification Training Courses",
+    "type": "single",
+    "topic": "networking"
+  },
+  {
+    "id": 61,
+    "question": "A technician configured a new SOHO router for a small business. The ISP gave the technician an IP address on the router's WAN port. Which of the following\naddresses did the technician most likely configure on the router?",
+    "options": [
+      "10.1.50.30",
+      "19.45.7.28",
+      "169.254.168.10",
+      "172.22.40.6"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "This is an example of a public IP address that can be assigned by an ISP to a router’s WAN (Wide Area Network) port. A public IP address is a globally unique\nand routable address that allows a device to communicate with other devices on the internet. A private IP address, such as 10.1.50.30 or 172.22.40.6, is a non-\nroutable address that is used within a local network and cannot be directly accessed from the internet. A link-local IP address, such as 169.254.168.10, is a self-\nassigned address that is used when a device cannot obtain a valid IP address from a DHCP server.\nReference: [CompTIA A+ Core 1 (220-1101) Certification Study Guide], page 27.",
     "type": "single",
     "topic": "networking"
   },
@@ -1237,7 +1318,7 @@
   },
   {
     "id": 86,
-    "question": "A network administrator is planning to divide the company\u2019s network into three subnets. What do they need to configure in the DHCP server so that each subnet gets a certain range of IP addresses that are unique to that subnet?",
+    "question": "A network administrator is planning to divide the company’s network into three subnets. What do they need to configure in the DHCP server so that each subnet gets a certain range of IP addresses that are unique to that subnet?",
     "options": [
       "Scope",
       "Reservation",
@@ -1282,7 +1363,7 @@
   },
   {
     "id": 89,
-    "question": "Which of the following is a method that can be used to securely connect a remote user\u2019s laptop to a corporate server from overseas?",
+    "question": "Which of the following is a method that can be used to securely connect a remote user’s laptop to a corporate server from overseas?",
     "options": [
       "WAN",
       "SSL",
@@ -1307,7 +1388,7 @@
     "correct": [
       2
     ],
-    "explanation": "An SDN allows the rapid provisioning and deprovisioning of networks in a virtual environment. All other answers are incorrect. A WAN is a network over a large geographical area. A LAN is a network that is secure and doesn\u2019t extend beyond close proximity, for example, a building or even just a single floor of the building. A SAN comprises fast redundant disks.",
+    "explanation": "An SDN allows the rapid provisioning and deprovisioning of networks in a virtual environment. All other answers are incorrect. A WAN is a network over a large geographical area. A LAN is a network that is secure and doesn’t extend beyond close proximity, for example, a building or even just a single floor of the building. A SAN comprises fast redundant disks.",
     "type": "single"
   },
   {
@@ -1327,7 +1408,7 @@
   },
   {
     "id": 92,
-    "question": "What is the purpose of an Optical Network Terminal (ONT) installed at a customer\u2019s home?",
+    "question": "What is the purpose of an Optical Network Terminal (ONT) installed at a customer’s home?",
     "options": [
       "It provides fiber to the curb (FTTC)",
       "The ONT converts optical signals to electrical signals",
@@ -1337,7 +1418,7 @@
     "correct": [
       1
     ],
-    "explanation": "The ONT converts optical signals to electrical signals. All other answers are incorrect. FTTC is where a telecom provider runs fiber cables to multiple customers. ONT does not convert electrical signals to optical signals. The reverse is true. An optical line terminal (OLT) is located in a street cabinet, and the ONT is on the customer\u2019s premises. Chapter 2: Networking 123",
+    "explanation": "The ONT converts optical signals to electrical signals. All other answers are incorrect. FTTC is where a telecom provider runs fiber cables to multiple customers. ONT does not convert electrical signals to optical signals. The reverse is true. An optical line terminal (OLT) is located in a street cabinet, and the ONT is on the customer’s premises. Chapter 2: Networking 123",
     "type": "single"
   },
   {
@@ -1382,7 +1463,7 @@
     "correct": [
       0
     ],
-    "explanation": "A Storage Area Network (SAN) is a set of fast redundant disks used by virtual servers for storage to host the server\u2019s virtual machines. All other answers are incorrect. A PAN is a personal area network normally used by Bluetooth devices and smartphones. A cluster uses a quorum disk that is shared by two servers, one of which is active and the other passive and waiting for the active server to fail. RAID 0 is a setup involving an array of disks as a stripe set for faster reads. However, if one disk fails, then it takes down the whole RAID 0 configuration. It does not provide fault tolerance or redundancy.",
+    "explanation": "A Storage Area Network (SAN) is a set of fast redundant disks used by virtual servers for storage to host the server’s virtual machines. All other answers are incorrect. A PAN is a personal area network normally used by Bluetooth devices and smartphones. A cluster uses a quorum disk that is shared by two servers, one of which is active and the other passive and waiting for the active server to fail. RAID 0 is a setup involving an array of disks as a stripe set for faster reads. However, if one disk fails, then it takes down the whole RAID 0 configuration. It does not provide fault tolerance or redundancy.",
     "type": "single"
   },
   {
@@ -1533,7 +1614,7 @@
     "correct": [
       2
     ],
-    "explanation": "An iPhone 11 is a smartphone that uses cellular communication (hence the term \u201ccellphone\u201d). All other answers are incorrect. DSL is used to provide internet in a SOHO. An iPhone 11 can use a wireless connection, but this is not the main connection type. An iPhone is not a satellite communication device.",
+    "explanation": "An iPhone 11 is a smartphone that uses cellular communication (hence the term “cellphone”). All other answers are incorrect. DSL is used to provide internet in a SOHO. An iPhone 11 can use a wireless connection, but this is not the main connection type. An iPhone is not a satellite communication device.",
     "type": "single"
   },
   {
@@ -1548,7 +1629,7 @@
     "correct": [
       0
     ],
-    "explanation": "A Wide Area Network (WAN) is an unsecure network over a large geographical area. All other answers are incorrect. A LAN is a secure fast network with its users all in close proximity, such as a single floor in a building. A DMZ is a boundary network that sits between the LAN and the WAN. As two of these statements are false, \u201cAll of the above\u201d is also incorrect.",
+    "explanation": "A Wide Area Network (WAN) is an unsecure network over a large geographical area. All other answers are incorrect. A LAN is a secure fast network with its users all in close proximity, such as a single floor in a building. A DMZ is a boundary network that sits between the LAN and the WAN. As two of these statements are false, “All of the above” is also incorrect.",
     "type": "single"
   },
   {
@@ -1563,12 +1644,12 @@
     "correct": [
       1
     ],
-    "explanation": "A Dynamic Host Configuration Protocol (DHCP) server automatically assigns IP addresses on machine startup. It allows an administrator to create a reservation based on the user\u2019s MAC address, ensuring that this particular host gets the IP address to be monitored. All other answers are incorrect. SMTP is used for email and not IP addresses. SSL refers to secure data in transit via a web browser. A DNS server is used to perform hostname- to-IP-address name resolution.",
+    "explanation": "A Dynamic Host Configuration Protocol (DHCP) server automatically assigns IP addresses on machine startup. It allows an administrator to create a reservation based on the user’s MAC address, ensuring that this particular host gets the IP address to be monitored. All other answers are incorrect. SMTP is used for email and not IP addresses. SSL refers to secure data in transit via a web browser. A DNS server is used to perform hostname- to-IP-address name resolution.",
     "type": "single"
   },
   {
     "id": 108,
-    "question": "A small solicitor\u2019s firm has just moved into a listed building. They are not allowed to drill into the walls and have paid a contractor to install a wireless router that connects all of the devices to the wireless network, meaning they do not need physical cables. What type of network has the contractor implemented?",
+    "question": "A small solicitor’s firm has just moved into a listed building. They are not allowed to drill into the walls and have paid a contractor to install a wireless router that connects all of the devices to the wireless network, meaning they do not need physical cables. What type of network has the contractor implemented?",
     "options": [
       "LAN",
       "PAN",
@@ -1578,12 +1659,12 @@
     "correct": [
       2
     ],
-    "explanation": "A Wireless Local Area Network (WLAN) is used to connect multiple devices wirelessly. All other answers are incorrect. A PAN is one individual network connecting two devices together, such as the Bluetooth connection between a user\u2019s earbuds and a smartphone. A WAN is a network over a large geographical area. 132 Solutions",
+    "explanation": "A Wireless Local Area Network (WLAN) is used to connect multiple devices wirelessly. All other answers are incorrect. A PAN is one individual network connecting two devices together, such as the Bluetooth connection between a user’s earbuds and a smartphone. A WAN is a network over a large geographical area. 132 Solutions",
     "type": "single"
   },
   {
     "id": 109,
-    "question": "A company\u2019s telephone line has failed due to adverse weather, and their internet connection has been subsequently lost. What type of internet access must they be using for this to occur?",
+    "question": "A company’s telephone line has failed due to adverse weather, and their internet connection has been subsequently lost. What type of internet access must they be using for this to occur?",
     "options": [
       "DSL",
       "Satellite",
@@ -1855,8 +1936,8 @@
     "id": 127,
     "question": "If a home user has an internet connection but cannot connect to any websites and reports this to their ISP, what should the system administrator of the ISP check first?",
     "options": [
-      "The user\u2019s login credentials",
-      "The IP address of the user\u2019s device",
+      "The user’s login credentials",
+      "The IP address of the user’s device",
       "The destination web servers",
       "The DNS server settings"
     ],
@@ -1977,13 +2058,13 @@
     "options": [
       "Calibrate the printer",
       "Reboot the printer",
-      "Download the driver from the manufacturer\u2019s website",
+      "Download the driver from the manufacturer’s website",
       "Change the toner cartridge"
     ],
     "correct": [
       2
     ],
-    "explanation": "It is likely that the driver for the operating system is not on the installation media. Therefore, we need to download the up-to-date driver from the manufacturer\u2019s website. All other answers are incorrect. Chapter 2: Networking 127",
+    "explanation": "It is likely that the driver for the operating system is not on the installation media. Therefore, we need to download the up-to-date driver from the manufacturer’s website. All other answers are incorrect. Chapter 2: Networking 127",
     "type": "single"
   },
   {
@@ -2094,6 +2175,21 @@
     "type": "single"
   },
   {
+    "id": 143,
+    "question": "Which of the following is a valid IPv4 address?",
+    "options": [
+      "10.1.1.0",
+      "255.255.255.128",
+      "212.15.1.2",
+      "12.1.1.255"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "212.15.1.2 is a valid IPv4 address. All other answers are incorrect. 10.1.1.0 cannot be used for a host as it ends in 0, indicating that it is a network address. Any address starting with 255 is a subnet mask and cannot be used for a host. 12.1.1.255 cannot be used as a host as it ends in 255, indicating that it is the broadcast address.",
+    "type": "single"
+  },
+  {
     "id": 144,
     "question": "A Windows server has been configured with both IPv4 and IPv6 addresses. What is this known as?",
     "options": [
@@ -2165,7 +2261,7 @@
     "correct": [
       2
     ],
-    "explanation": "If you cannot access the internet, it is most likely to be the router\u2019s gateway or a DNS problem. All other answers are incorrect. NETBIOS is a legacy naming convention. Server Message Block (SMB) traffic is a communication protocol that allows access to file shares and printers. SMTP is used to transfer mail between mail servers.",
+    "explanation": "If you cannot access the internet, it is most likely to be the router’s gateway or a DNS problem. All other answers are incorrect. NETBIOS is a legacy naming convention. Server Message Block (SMB) traffic is a communication protocol that allows access to file shares and printers. SMTP is used to transfer mail between mail servers.",
     "type": "single"
   },
   {

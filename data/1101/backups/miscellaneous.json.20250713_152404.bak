@@ -33,6 +33,22 @@
     "id": 213
   },
   {
+    "id": 215,
+    "question": "A developer is requesting permission to utilize client-side visualization. The developer would like to write code in a setting isolated from other infrastructure to avoid\nnegative impacts of experimental code. Which of the following provides the BEST solution for the developer?",
+    "options": [
+      "Cross-platform functionality",
+      "Software compatibility",
+      "Test case development",
+      "Sandbox environment"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A sandbox environment is an isolated testing environment where code can be written and tested without impacting other infrastructure. This provides a safe and\ncontrolled environment for experimentation and development. References: CompTIA A+ Certification Exam Core 2 Exam Objectives - 5.5 Compare and contrast\ncommon workstation security best practices",
+    "type": "single",
+    "topic": "miscellaneous"
+  },
+  {
     "id": 216,
     "question": "Which of the following wireless technologies has the MOST range and wireless throughput?",
     "options": [

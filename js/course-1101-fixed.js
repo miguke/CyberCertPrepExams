@@ -30,7 +30,7 @@ const courseConfig = {
         }
     },
     examDuration: 5400, // 90 minutes in seconds
-    examQuestionCount: 90, // Total questions for a simulated exam
+    examQuestionCount: 90, // Temporarily set to 1 for testing
     passingScore: 675, // Passing score out of 900
     maxScore: 900,
     description: 'O exame 220-1101 cobre tecnologias móveis, redes tradicionais, nuvem, virtualização e solução de problemas de uma ampla variedade de dispositivos e sistemas.'

@@ -440,6 +440,21 @@
     "id": 30
   },
   {
+    "type": "single",
+    "question": "A technician is troubleshooting a laptop that is unable to browse the internet when connected to the company\u2019s wireless network. The technician has verified\nnetwork connectivity is functional when using an Ethernet cable. Which of the following should the technician use to check if the laptop's wireless NIC is functional?",
+    "options": [
+      "Hotspot",
+      "Near-field communication",
+      "Ethernet tap",
+      "Spectrum analyzer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A hotspot is a wireless access point that provides internet access to devices that are connected to it. The technician can use a hotspot to check if the laptop's\nwireless NIC is functional by connecting the laptop to the hotspot and then trying to browse the internet. If the laptop is able to browse the internet, then the\nwireless NIC is functional. Near-field communication (NFC) is a wireless technology that allows two devices to communicate with each other when they are in close\nproximity. NFC is not typically used to check if a wireless NIC is functional.\nAn Ethernet tap is a device that is used to monitor network traffic. An Ethernet tap is not typically used to check if a wireless NIC is functional.\nA spectrum analyzer is a device that is used to measure the frequency spectrum of a signal. A spectrum analyzer is not typically used to check if a wireless NIC is\nfunctional. Therefore, the correct answer is A. Hotspot.",
+    "id": 31
+  },
+  {
     "type": "multiple",
     "question": "A technician needs to fix a Cat 5 cable issue. The cable, which is connected to a network jack, fails when it is moved around. Which of the following items must the\ntechnician use to fix the issue? (Select TWO).",
     "options": [

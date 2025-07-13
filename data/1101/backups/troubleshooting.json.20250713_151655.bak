@@ -78,7 +78,7 @@
       0,
       3
     ],
-    "explanation": "One beep indicates that memory (RAM) passed POST but there is a subsequent error\u00e2\u20ac\u201doften due to a boot order issue. A misconfigured boot order can also trigger a one-beep error.",
+    "explanation": "One beep indicates that memory (RAM) passed POST but there is a subsequent errorâ€”often due to a boot order issue. A misconfigured boot order can also trigger a one-beep error.",
     "id": 5
   },
   {
@@ -104,10 +104,10 @@
     "type": "multiple",
     "question": "A user reports that printed receipts have black smudges over the entire image. The text is still present but is very dark and sometimes illegible. Which of the following are the MOST likely cause and solution for the printer issue? (Select TWO)",
     "options": [
-      "The ribbon is jammed and is rubbing on the paper \u00e2\u20ac\u201c Clear the bad ribbon and feed it through properly.",
-      "The printhead is too hot \u00e2\u20ac\u201c Adjust the temperature down and retry printing.",
-      "The printer is loaded with the wrong type of paper \u00e2\u20ac\u201c Replace the receipt paper with the correct thermal-receipt paper.",
-      "The blue ink cartridge was loaded with black ink \u00e2\u20ac\u201c Put in the correct ink and clean the printhead."
+      "The ribbon is jammed and is rubbing on the paper â€“ Clear the bad ribbon and feed it through properly.",
+      "The printhead is too hot â€“ Adjust the temperature down and retry printing.",
+      "The printer is loaded with the wrong type of paper â€“ Replace the receipt paper with the correct thermal-receipt paper.",
+      "The blue ink cartridge was loaded with black ink â€“ Put in the correct ink and clean the printhead."
     ],
     "correct": [
       0,
@@ -148,7 +148,7 @@
   },
   {
     "type": "single",
-    "question": "A technician is troubleshooting a laptop that is unable to browse the internet when connected to the company\u2019s wireless network. The technician has verified network connectivity is functional when using an Ethernet cable. Which of the following should the technician use to check if the laptop's wireless NIC is functional?",
+    "question": "A technician is troubleshooting a laptop that is unable to browse the internet when connected to the company’s wireless network. The technician has verified network connectivity is functional when using an Ethernet cable. Which of the following should the technician use to check if the laptop's wireless NIC is functional?",
     "options": [
       "Hotspot",
       "Near-field communication",
@@ -178,7 +178,7 @@
   },
   {
     "type": "single",
-    "question": "A user\u2019s desktop computer slows down after a few minutes of use, and the fans alternate between silent and very loud. Which of the following is MOST likely failing, therefore causing these symptoms?",
+    "question": "A user’s desktop computer slows down after a few minutes of use, and the fans alternate between silent and very loud. Which of the following is MOST likely failing, therefore causing these symptoms?",
     "options": [
       "CPU fan",
       "Memory",
@@ -193,11 +193,41 @@
   },
   {
     "type": "single",
+    "question": "A technician is troubleshooting connectivity issues and needs to promiscuously route a copy of traffic to a separate machine for analysis. Which of the following physical tools would BEST accomplish this task?",
+    "options": [
+      "Toner probe",
+      "Wi-Fi analyzer",
+      "Network tap",
+      "Loopback plug"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A network tap duplicates traffic for external analysis.",
+    "id": 13
+  },
+  {
+    "type": "single",
+    "question": "Several users who share a multifunction printer in an office have reported unintended, thin, vertical lines that cover the entire height of every page printed from the\nprinter. Which of the following steps should a technician complete in order to MOST likely resolve this issue?",
+    "options": [
+      "Replace the printer paper with a new ream.",
+      "Clear the print spooler on each computer.",
+      "Reinstall the printer driver on each computer",
+      "Perform the drum-cleaning procedure."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Thin, vertical lines on every printed page are usually caused by a dirty drum or toner cartridge. Performing the drum-cleaning procedure will likely resolve the\nissue. References: CompTIA A+ Certification Exam Guide, Ninth Edition, Chapter 18",
+    "id": 14
+  },
+  {
+    "type": "single",
     "question": "A user submits a help desk ticket regarding a smartphone that will no longer accept its charging cable. The assigned technician notices the phone does not have a\nprotective case, and the user constantly transport the phone in a pocket. The technician attempts to use a secondary charger, but the cable falls out of the phone.\nWhich of the following is the MOST likely cause of the issue?",
     "options": [
       "The phone requires a firmware update to address charging issues.",
       "The charge port contains foreign objects, such as lint.",
-      "The phone\u2019s battery has swelled, preventing the utilization of the charge port.",
+      "The phone’s battery has swelled, preventing the utilization of the charge port.",
       "The phone has experienced water damage, thus the battery is not charring."
     ],
     "correct": [
@@ -233,7 +263,7 @@
     "correct": [
       0
     ],
-    "explanation": "Based on the information provided in the question, the MOST likely component that needs to be replaced is A. power adapter. If a laptop has been working as\nexpected for several years but suddenly stops working when it is plugged into a wall outlet, it is possible that the power adapter has failed and is no longer able to\nprovide power to the laptop. In this case, replacing the power adapter would likely resolve the issue.\nThe other components listed in the options (battery, system fan, and hard drive) could also potentially fail and cause issues with a laptop\u2019s performance. However,\nbased on the specific scenario described in the question (the laptop suddenly stops working when plugged into a wall outlet), it seems most likely that the issue is\nrelated to the power adapter.\nIf the laptop has been working as expected for several years and suddenly stops working, the power adapter is the most likely component that needs to be\nreplaced. Over time, the power adapter can become worn or damaged, resulting in a loss of power to the laptop. References: CompTIA A+ Certification Exam\nGuide, Ninth Edition, Chapter 3",
+    "explanation": "Based on the information provided in the question, the MOST likely component that needs to be replaced is A. power adapter. If a laptop has been working as\nexpected for several years but suddenly stops working when it is plugged into a wall outlet, it is possible that the power adapter has failed and is no longer able to\nprovide power to the laptop. In this case, replacing the power adapter would likely resolve the issue.\nThe other components listed in the options (battery, system fan, and hard drive) could also potentially fail and cause issues with a laptop’s performance. However,\nbased on the specific scenario described in the question (the laptop suddenly stops working when plugged into a wall outlet), it seems most likely that the issue is\nrelated to the power adapter.\nIf the laptop has been working as expected for several years and suddenly stops working, the power adapter is the most likely component that needs to be\nreplaced. Over time, the power adapter can become worn or damaged, resulting in a loss of power to the laptop. References: CompTIA A+ Certification Exam\nGuide, Ninth Edition, Chapter 3",
     "id": 17
   },
   {
@@ -264,7 +294,7 @@
     "correct": [
       1
     ],
-    "explanation": "The MOST efficient next step the technician should complete is to check the printer paper path to locate any obstructions1. The error message \u201cPaper Jam, Jam\nin fuser\u201d indicates that there is a paper jam in the fuser2. The fuser is one of the parts of a laser printer most likely to fail without giving any explicit message2.\nThe printer LCD screen indicates a paper jam in the fuser. The most efficient next step the\ntechnician should complete is to check the printer paper path to locate any obstructions. Applying a maintenance kit or replacing the fuser may not be necessary if\nthe issue is caused by a paper jam.",
+    "explanation": "The MOST efficient next step the technician should complete is to check the printer paper path to locate any obstructions1. The error message “Paper Jam, Jam\nin fuser” indicates that there is a paper jam in the fuser2. The fuser is one of the parts of a laser printer most likely to fail without giving any explicit message2.\nThe printer LCD screen indicates a paper jam in the fuser. The most efficient next step the\ntechnician should complete is to check the printer paper path to locate any obstructions. Applying a maintenance kit or replacing the fuser may not be necessary if\nthe issue is caused by a paper jam.",
     "id": 19
   },
   {
@@ -434,6 +464,21 @@
   },
   {
     "type": "single",
+    "question": "A technician is troubleshooting a classroom projector that shuts down after fifteen minutes of use. Which of the following should the technician do to resolve the\nissue?",
+    "options": [
+      "Replace the video input cable.",
+      "Change the bulb.",
+      "Clean the air filter.",
+      "Swap the power cord."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cleaning the air filter is the best action to resolve the issue of a projector that shuts down after fifteen minutes of use. A dirty air filter can cause overheating and\ntrigger the projector’s thermal protection mechanism. Replacing the video input cable, changing the bulb, or swapping the power cord are unlikely to solve the\noverheating issue",
+    "id": 31
+  },
+  {
+    "type": "single",
     "question": "The motherboard on a user's company laptop was recently replaced Now the user is unable to log in using the fingerprint reader The fingerprint reader is working\nbut it does not recognize the user's fingerprint Which of the following should a technician perform FIRST to fix the issue?",
     "options": [
       "Restore the system to a previous recovery point",
@@ -520,7 +565,7 @@
     "correct": [
       0
     ],
-    "explanation": "Enabling high-accuracy mode is the most likely action to resolve the issue of unreliable GPS on a user\u2019s phone. High-accuracy mode uses multiple sources of\nlocation data, such as Wi-Fi, cellular networks, and Bluetooth, to improve the accuracy and reliability of GPS. Replacing the battery, disabling Wi-Fi connections, or\nutilizing a third- party map application are unlikely to fix the GPS issue, as they are not directly related to the GPS function",
+    "explanation": "Enabling high-accuracy mode is the most likely action to resolve the issue of unreliable GPS on a user’s phone. High-accuracy mode uses multiple sources of\nlocation data, such as Wi-Fi, cellular networks, and Bluetooth, to improve the accuracy and reliability of GPS. Replacing the battery, disabling Wi-Fi connections, or\nutilizing a third- party map application are unlikely to fix the GPS issue, as they are not directly related to the GPS function",
     "id": 37
   },
   {
@@ -550,7 +595,7 @@
     "correct": [
       2
     ],
-    "explanation": "One of the possible causes of random and incorrect characters appearing on print jobs sent to a laser printer is an outdated or corrupted driver. The driver is a\nsoftware component that communicates between the operating system and the printer, and converts data into a format that the printer can understand. If the driver\nis outdated or corrupted, it may send incorrect or garbled data to the printer, resulting in poor print quality or errors. The technician should update the driver to the\nlatest version from the manufacturer\u2019s website, or uninstall and reinstall it if necessary. Reference:\nhttps://www.comptia.org/training/books/a-core-1-220-1101-study-guide (page 47)",
+    "explanation": "One of the possible causes of random and incorrect characters appearing on print jobs sent to a laser printer is an outdated or corrupted driver. The driver is a\nsoftware component that communicates between the operating system and the printer, and converts data into a format that the printer can understand. If the driver\nis outdated or corrupted, it may send incorrect or garbled data to the printer, resulting in poor print quality or errors. The technician should update the driver to the\nlatest version from the manufacturer’s website, or uninstall and reinstall it if necessary. Reference:\nhttps://www.comptia.org/training/books/a-core-1-220-1101-study-guide (page 47)",
     "id": 39
   },
   {
@@ -570,7 +615,7 @@
   },
   {
     "type": "multiple",
-    "question": "A user\u2019s Windows computer started running slowly after the installation of a CAD program. The computer has intermittent timeouts and often has to be rebooted to\nrestore functionally. The computer seems to work correctly if the application is not running. Which of the following should the technician do NEXT to help\ntroubleshoot the issue? (Select TWO).",
+    "question": "A user’s Windows computer started running slowly after the installation of a CAD program. The computer has intermittent timeouts and often has to be rebooted to\nrestore functionally. The computer seems to work correctly if the application is not running. Which of the following should the technician do NEXT to help\ntroubleshoot the issue? (Select TWO).",
     "options": [
       "Replace the video card.",
       "Research the requirements of the application.",
@@ -588,7 +633,7 @@
   },
   {
     "type": "single",
-    "question": "A user\u00e2\u20ac\u2122s optical drive is producing noise and failing to read discs. Which of the following is the MOST likely cause?",
+    "question": "A userâ€™s optical drive is producing noise and failing to read discs. Which of the following is the MOST likely cause?",
     "options": [
       "Dirty lens",
       "Bad SATA cable",
@@ -603,7 +648,7 @@
   },
   {
     "type": "single",
-    "question": "A user complains that the system\u00e2\u20ac\u2122s USB ports quit working after the system resumes from sleep. Which of the following BIOS settings should the technician modify to resolve this issue?",
+    "question": "A user complains that the systemâ€™s USB ports quit working after the system resumes from sleep. Which of the following BIOS settings should the technician modify to resolve this issue?",
     "options": [
       "Wake-on-LAN",
       "ErP Support",
@@ -630,6 +675,24 @@
     ],
     "explanation": "If local resources are available but nothing external is reachable (including websites), the user's Internet connection is most likely down.",
     "id": 44
+  },
+  {
+    "type": "multiple",
+    "question": "A technician needs to fix a Cat 5 cable issue. The cable, which is connected to a network jack, fails when it is moved around. Which of the following items must the technician use to fix the issue? (Select TWO)",
+    "options": [
+      "Scissors",
+      "Network tap",
+      "Magnetized screwdriver",
+      "Tone generator",
+      "RJ45 connector",
+      "Crimper"
+    ],
+    "correct": [
+      4,
+      5
+    ],
+    "explanation": "To repair a broken Cat 5 cable, you need a new RJ45 connector and a crimper tool to attach it properly.",
+    "id": 45
   },
   {
     "type": "single",
@@ -688,7 +751,7 @@
     "correct": [
       2
     ],
-    "explanation": "The Official CompTIA\u00ae A+\u00ae Core 1 and Core 2 Student Guide (Exams 220-\n1001 and 220-1002) | 193 Protected content. If you encounter an error that indicates unauthorized content or an HDCP error: \u2022 DVI, HDMI, DisplayPort, and\nThunderbolt all provide support for the Digital Rights Management (DRM) mechanism High-bandwidth Digital Content Protection (HDCP). HDCP allows a content\nsource (such as a Blu-ray disc) to disable itself if the display adapter and monitor and/or speaker system do not support HDCP and fail to authenticate themselves\nwith the playback source. There have been various iterations of HDCP (at time of writing the current version is 2.2) and backward- compatibility can be problematic\nas authentication may fail between devices that support different versions of the standard.",
+    "explanation": "The Official CompTIA® A+® Core 1 and Core 2 Student Guide (Exams 220-\n1001 and 220-1002) | 193 Protected content. If you encounter an error that indicates unauthorized content or an HDCP error: • DVI, HDMI, DisplayPort, and\nThunderbolt all provide support for the Digital Rights Management (DRM) mechanism High-bandwidth Digital Content Protection (HDCP). HDCP allows a content\nsource (such as a Blu-ray disc) to disable itself if the display adapter and monitor and/or speaker system do not support HDCP and fail to authenticate themselves\nwith the playback source. There have been various iterations of HDCP (at time of writing the current version is 2.2) and backward- compatibility can be problematic\nas authentication may fail between devices that support different versions of the standard.",
     "id": 49
   },
   {
@@ -846,7 +909,7 @@
   },
   {
     "type": "single",
-    "question": "A user\u2019s phone only charges up to 67% and stops. What component should be replaced?",
+    "question": "A user’s phone only charges up to 67% and stops. What component should be replaced?",
     "options": [
       "Battery",
       "Screen",
@@ -947,7 +1010,7 @@
     "correct": [
       1
     ],
-    "explanation": "Vertical or horizontal lines\u2014Marks that appear in the same place (referred to as repetitive defects) are often due to dirty feed rollers (note that there are rollers in the\ntoner cartridge and fuser unit too) or a damaged or dirty photosensitive drum.\nVertical streaks on a laser printer output are usually caused by a damaged or worn-out drum, which is responsible for transferring toner to the paper. If the drum is\ndamaged, toner may accumulate on certain parts of the drum, leading to streaks on the printed output. References: CompTIA A+ Certification All-in-One Exam\nGuide, Tenth Edition, Chapter 15",
+    "explanation": "Vertical or horizontal lines—Marks that appear in the same place (referred to as repetitive defects) are often due to dirty feed rollers (note that there are rollers in the\ntoner cartridge and fuser unit too) or a damaged or dirty photosensitive drum.\nVertical streaks on a laser printer output are usually caused by a damaged or worn-out drum, which is responsible for transferring toner to the paper. If the drum is\ndamaged, toner may accumulate on certain parts of the drum, leading to streaks on the printed output. References: CompTIA A+ Certification All-in-One Exam\nGuide, Tenth Edition, Chapter 15",
     "id": 66
   },
   {
@@ -998,6 +1061,21 @@
     ],
     "explanation": "Always check basic power and cable connections first when a printer is not responding.",
     "id": 69
+  },
+  {
+    "type": "single",
+    "question": "A technician is receiving reports that the entire office sporadically loses network connectivity throughout the day. The technician determines the root cause to be\nEMI. Which of the following cable mediums would be the MOST cost effective without sacrificing system performance?",
+    "options": [
+      "Coaxial",
+      "Shielded Cat 6",
+      "Plenum Cat 5e",
+      "Multimode fiber"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In this situation, the MOST cost-effective cable medium that would not sacrifice system performance would be B. Shielded Cat 6. Electromagnetic interference\n(EMI) can disrupt network connectivity by interfering with the signals transmitted over network cables. Shielded Cat 6 cables are designed to provide protection\nagainst EMI by incorporating a layer of shielding material around the cable’s conductors. This shielding helps to prevent EMI from interfering with the signals\ntransmitted over the cable.",
+    "id": 70
   },
   {
     "type": "single",
@@ -1167,7 +1245,7 @@
   },
   {
     "type": "single",
-    "question": "A user reports the desktop\u00e2\u20ac\u2122s front panel audio jack is not working. The headphones work fine on another computer. Which of the following is MOST likely the cause?",
+    "question": "A user reports the desktopâ€™s front panel audio jack is not working. The headphones work fine on another computer. Which of the following is MOST likely the cause?",
     "options": [
       "Faulty headset",
       "Disabled audio in BIOS",
@@ -1197,7 +1275,7 @@
   },
   {
     "type": "single",
-    "question": "A user\u2019s laptop is experiencing severe slowdowns when operating process-intensive tasks. Which of the following memory upgrades is compatible with a laptop?",
+    "question": "A user’s laptop is experiencing severe slowdowns when operating process-intensive tasks. Which of the following memory upgrades is compatible with a laptop?",
     "options": [
       "DIMM",
       "ECC RAM",
@@ -1227,6 +1305,21 @@
   },
   {
     "type": "single",
+    "question": "A user's desktop computer slows down after a few minutes of use, and the fans alternate between silent and very loud. Which of the following is MOST likely\nfailing, therefore causing these symptoms?",
+    "options": [
+      "CPU fan",
+      "Memory",
+      "Power supply",
+      "Hard drive"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A CPU fan is a component that cools down the CPU, which is the main processor of the computer. If the CPU fan is failing, it can cause the computer to slow\ndown and the fans to alternate between silent and very loud12. This is because the CPU fan cannot maintain a consistent speed and airflow to keep the CPU at a\nsafe temperature.\nWhen the CPU gets too hot, it throttles its performance to avoid overheating, which results in a slower computer. The other fans in the computer also try to\ncompensate for the lack of cooling from the CPU fan by spinning faster and louder2.",
+    "id": 86
+  },
+  {
+    "type": "single",
     "question": "A technician verifies the slow boot time and slow OS performance of a tower server with a RAID 5 on a PCIe RAID card that does not support hot swapping. Which\nof the following steps should the technician take NEXT to verify RAID health?",
     "options": [
       "Verify S.M.A.R.",
@@ -1238,12 +1331,12 @@
     "correct": [
       4
     ],
-    "explanation": "Since the RAID card does not support hot swapping, the technician needs to shut down the server and check the RAID controller\u2019s status to verify RAID health.\nS.M.A.R.T. is a feature of hard drives, not RAID cards. Replacing the failed drive while users are connected could cause data loss or corruption. Physically\ncleaning the HDDs and connectors is unlikely to solve the slow boot time and performance issues.",
+    "explanation": "Since the RAID card does not support hot swapping, the technician needs to shut down the server and check the RAID controller’s status to verify RAID health.\nS.M.A.R.T. is a feature of hard drives, not RAID cards. Replacing the failed drive while users are connected could cause data loss or corruption. Physically\ncleaning the HDDs and connectors is unlikely to solve the slow boot time and performance issues.",
     "id": 87
   },
   {
     "type": "single",
-    "question": "A user reports that their system\u00e2\u20ac\u2122s front panel USB ports no longer work. The motherboard has rear USB ports that function normally. Which of the following is the MOST likely cause?",
+    "question": "A user reports that their systemâ€™s front panel USB ports no longer work. The motherboard has rear USB ports that function normally. Which of the following is the MOST likely cause?",
     "options": [
       "Faulty front panel USB cable",
       "Missing front panel drivers",
@@ -1258,7 +1351,7 @@
   },
   {
     "type": "single",
-    "question": "A user reports that the system\u00e2\u20ac\u2122s GPU fan is spinning loudly under light load. Which of the following should the technician do FIRST?",
+    "question": "A user reports that the systemâ€™s GPU fan is spinning loudly under light load. Which of the following should the technician do FIRST?",
     "options": [
       "Reseat the GPU",
       "Update the GPU driver",
@@ -1453,6 +1546,21 @@
   },
   {
     "type": "single",
+    "question": "A remote user called the help desk to report a notification indicating there is limited or no connectivity. The user can access local file folders and other local\nmachines but none of the organization's servers or network items. Web pages do not appear to function either. Which of the following is the MOST likely cause of\nthe issue?",
+    "options": [
+      "The user's internet connection is down.",
+      "The user's domain account is locked out.",
+      "The user's switch has stopped working.",
+      "The user's IP address needs to be renewed."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Based on the information provided in the scenario, the most likely cause of the issue is that the user’s internet connection is down (option A). This would explain\nwhy the user is unable to access any of the organization’s servers or network items and why web pages are not functioning. However, since the user can still\naccess local file folders and other local machines, it suggests that their local network is still functioning.\nThe user can access local file folders and other local machines but none of the organization's servers or network items, indicating that the issue is with the user's\ninternet connection, not with the user's domain account, switch, or IP address.\nWhen a user receives a notification indicating that there is limited or no connectivity, it means that their device is unable to establish a connection to the network. In\nthis scenario, the user can access local file folders and other local machines but is unable to access any of the organization’s servers or network items and web\npages are not functioning. This suggests that the issue is with the user’s internet connection.\nAn internet connection allows a device to communicate with other devices and servers outside of its local network. If the internet connection is down or not\nfunctioning properly, the device will be unable to access any resources outside of its local network. This would explain why the user in this scenario can still access\nlocal resources but is unable to access any of the organization’s servers or network items.",
+    "id": 102
+  },
+  {
+    "type": "single",
     "question": "A customer reports that a computer is never able to reach more than a 100Mbps transfer data rate, even when using a Gigabit LAN card. While troubleshooting,\nthe technician notices the network cable needs to be replaced. Which of the following cable categories is limiting the transfer speed?",
     "options": [
       "Cat 5",
@@ -1478,12 +1586,12 @@
     "correct": [
       0
     ],
-    "explanation": "This is a safe and sensible option if you value your data more than anything else. You don\u2019t want to risk losing your data by trying other methods that may worsen\nthe situation. You can use a software tool or a service provider to recover your data before attempting any repairs.",
+    "explanation": "This is a safe and sensible option if you value your data more than anything else. You don’t want to risk losing your data by trying other methods that may worsen\nthe situation. You can use a software tool or a service provider to recover your data before attempting any repairs.",
     "id": 104
   },
   {
     "type": "single",
-    "question": "A user\u00e2\u20ac\u2122s laptop display flickers briefly on boot then remains blank. The external monitor works fine. Which of the following is MOST likely the cause?",
+    "question": "A userâ€™s laptop display flickers briefly on boot then remains blank. The external monitor works fine. Which of the following is MOST likely the cause?",
     "options": [
       "Faulty GPU",
       "Bad backlight",
@@ -1498,6 +1606,21 @@
   },
   {
     "type": "single",
+    "question": "A technician is upgrading a legacy wireless router for a home user. After installing the new router and configuring the SSID to be the same, none of the devices will connect to the network. Which of the following should the technician check NEXT?",
+    "options": [
+      "DHCP pool configuration",
+      "MAC filtering list",
+      "Wireless protocol settings",
+      "DNS servers"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "If MAC filtering is enabled, devices whose MAC addresses are not on the allow list will be unable to connect, even if SSID and password match.",
+    "id": 106
+  },
+  {
+    "type": "single",
     "question": "A university student was able to boot from a live Linux CD on a computer in a shared space on campus. Which of the following will BEST prevent this type of\naction from occurring in the future?",
     "options": [
       "Require TPM security features.",
@@ -1508,7 +1631,7 @@
     "correct": [
       3
     ],
-    "explanation": "Enabling secure boot will verify the digital signature of the bootloader and operating system, ensuring that the system only boots from trusted and authorised\nsources. This can prevent booting from an unauthorised live CD or other external media. The best way to prevent booting from a live Linux CD on a computer in a\nshared space on campus is to enable secure boot. Secure boot is a feature that ensures that the system only runs software that is signed by an authorized party.\nThis means that the system will not boot from any unauthorized media, including live Linux CDs.\nSecure Boot is a feature that ensures that the system only runs software that is signed by an authorized party. This means that the system will not boot from any\nunauthorized media, including live Linux CDs. Secure Boot is an important security feature designed to prevent malicious software from loading when your PC\nstarts up (boots)1.\nBooting from a live Linux CD is a process that allows you to run a Linux operating system from a CD or DVD without installing it on your hard drive. This can be\nuseful for testing or troubleshooting purposes. To boot from a live Linux CD, you need to insert the CD or DVD into your computer\u2019s CD/DVD drive and restart\nyour computer. Most systems are set up to automatically boot from the CD/DVD drive, but if your system is not set up this way, you may need to change a system\nsetting to boot from a Linux CD/DVD23.",
+    "explanation": "Enabling secure boot will verify the digital signature of the bootloader and operating system, ensuring that the system only boots from trusted and authorised\nsources. This can prevent booting from an unauthorised live CD or other external media. The best way to prevent booting from a live Linux CD on a computer in a\nshared space on campus is to enable secure boot. Secure boot is a feature that ensures that the system only runs software that is signed by an authorized party.\nThis means that the system will not boot from any unauthorized media, including live Linux CDs.\nSecure Boot is a feature that ensures that the system only runs software that is signed by an authorized party. This means that the system will not boot from any\nunauthorized media, including live Linux CDs. Secure Boot is an important security feature designed to prevent malicious software from loading when your PC\nstarts up (boots)1.\nBooting from a live Linux CD is a process that allows you to run a Linux operating system from a CD or DVD without installing it on your hard drive. This can be\nuseful for testing or troubleshooting purposes. To boot from a live Linux CD, you need to insert the CD or DVD into your computer’s CD/DVD drive and restart\nyour computer. Most systems are set up to automatically boot from the CD/DVD drive, but if your system is not set up this way, you may need to change a system\nsetting to boot from a Linux CD/DVD23.",
     "id": 107
   },
   {
@@ -1574,6 +1697,25 @@
     "topic": "troubleshooting"
   },
   {
+    "id": 112,
+    "question": "A user reboots a machine. On rebooting, the user hears one beep, and then an error message is displayed. Which of the following are MOST likely causing this\nissue?",
+    "options": [
+      "RAM module",
+      "Graphics card",
+      "CPU",
+      "Boot order",
+      "USB flash drive",
+      "Power supply"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "When a user hears one beep on rebooting a machine, and then an error message is displayed, it could indicate that there is a problem with the RAM module or\nthe boot order. The beep sound indicates that the POST process was successful, and the error message indicates that the boot process was unsuccessful. The\nboot order determines the sequence in which the computer looks for bootable devices. References: CompTIA A+ Certification All-in-One Exam Guide, Tenth\nEdition by Mike Meyers (Page 693)",
+    "type": "multiple",
+    "topic": "troubleshooting"
+  },
+  {
     "id": 113,
     "question": "An organization is looking to upgrade the processing ability for its computers. Most users report that whenever multiple applications are being utilized, the system's\nresponse time slows down drastically. When only one application is open, the response time is acceptable. Which of the following should be upgraded FIRST?",
     "options": [
@@ -1585,7 +1727,7 @@
     "correct": [
       3
     ],
-    "explanation": "The component that should be upgraded first is the RAM. When multiple applications are being utilized, the system\u2019s response time slows down drastically. This is\nbecause the computer is running out of memory. Upgrading the RAM will allow the computer to store more data in memory, which will improve performance when\nmultiple applications are being used123.",
+    "explanation": "The component that should be upgraded first is the RAM. When multiple applications are being utilized, the system’s response time slows down drastically. This is\nbecause the computer is running out of memory. Upgrading the RAM will allow the computer to store more data in memory, which will improve performance when\nmultiple applications are being used123.",
     "type": "single",
     "topic": "troubleshooting"
   },
@@ -1634,6 +1776,22 @@
       2
     ],
     "explanation": "Using a mobile hotspot is the best way to establish an internet connection in minimal time for a remote user who is experiencing connectivity issues with the local\ninternet provider. A mobile hotspot can be set up quickly and provides a reliable connection using cellular data. References: CompTIA A+ Certification Exam\nObjectives 1001, 3.4",
+    "type": "single",
+    "topic": "troubleshooting"
+  },
+  {
+    "id": 117,
+    "question": "A field technician has been dispatched to a site with an internet outage. Upon arriving, the technician discovers that the POTS lines are not working as well. Which\nof the following technologies is the site MOST likely using?",
+    "options": [
+      "Fiber",
+      "Cable",
+      "DSL",
+      "Satellite"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "DSL (Digital Subscriber Line) uses POTS (Plain Old Telephone Service) lines to provide high-speed internet access. If the POTS lines are not working, it could\ncause an internet outage for DSL customers. Fiber and cable internet typically use different types of infrastructure, while satellite internet is not reliant on POTS\nlines. References: CompTIA A+ Certification Exam: Core 1 - Page 231",
     "type": "single",
     "topic": "troubleshooting"
   },
@@ -1729,7 +1887,7 @@
     "correct": [
       2
     ],
-    "explanation": "Asking the user about the symptoms the computer is experiencing is the first step the technician should take when a user reports that a computer has a virus on it.\nThis step helps the technician to gather information and identify the problem before determining a plan of action to resolve it. Running antivirus software, making a\nbackup of the user\u2019s data, or determining a plan of action are not the first steps, but possible actions that can be taken after identifying the problem.",
+    "explanation": "Asking the user about the symptoms the computer is experiencing is the first step the technician should take when a user reports that a computer has a virus on it.\nThis step helps the technician to gather information and identify the problem before determining a plan of action to resolve it. Running antivirus software, making a\nbackup of the user’s data, or determining a plan of action are not the first steps, but possible actions that can be taken after identifying the problem.",
     "type": "single",
     "topic": "troubleshooting"
   },
@@ -1761,7 +1919,7 @@
     "correct": [
       0
     ],
-    "explanation": "an inverter is a device that converts DC power from the laptop\u2019s battery or AC adapter to AC power for the backlight of the LCD panel. If the inverter is defective,\nthe backlight will not work and the LCD panel will appear blank or very dim. The user can still see a faint image if they shine a flashlight into the LCD because the\nLCD itself is still working.",
+    "explanation": "an inverter is a device that converts DC power from the laptop’s battery or AC adapter to AC power for the backlight of the LCD panel. If the inverter is defective,\nthe backlight will not work and the LCD panel will appear blank or very dim. The user can still see a faint image if they shine a flashlight into the LCD because the\nLCD itself is still working.",
     "type": "single",
     "topic": "troubleshooting"
   },
@@ -1793,7 +1951,7 @@
     "correct": [
       0
     ],
-    "explanation": "A USB adapter is a device that can plug into a USB port on a laptop and provide wireless connectivity to a network. A USB adapter can support different wireless\nstandards, such as 802.11a, 802.11b, 802.11g, 802.11n, or 802.11ac. A USB adapter can also support different wireless frequencies, such as 2.4 GHz or 5 GHz.\nIn this case, the user with an older laptop may not be able to connect to the office network after new access points were installed because the laptop\u2019s built-in\nwireless card does not support the same wireless standard or frequency as the new access points. For example, if the new access points use 802.11ac and 5\nGHz, and the laptop\u2019s wireless card only supports 802.11g and 2.4 GHz, the laptop will not be able to communicate with the access points.\nTo quickly resolve this issue, the user should connect a new USB adapter that supports the same wireless standard and frequency as the new access points. This\nway, the user can bypass the laptop\u2019s wireless card and use the USB adapter to connect to the office network wirelessly.\nReference: CompTIA A+ Core 1: Cable Types & Connectors",
+    "explanation": "A USB adapter is a device that can plug into a USB port on a laptop and provide wireless connectivity to a network. A USB adapter can support different wireless\nstandards, such as 802.11a, 802.11b, 802.11g, 802.11n, or 802.11ac. A USB adapter can also support different wireless frequencies, such as 2.4 GHz or 5 GHz.\nIn this case, the user with an older laptop may not be able to connect to the office network after new access points were installed because the laptop’s built-in\nwireless card does not support the same wireless standard or frequency as the new access points. For example, if the new access points use 802.11ac and 5\nGHz, and the laptop’s wireless card only supports 802.11g and 2.4 GHz, the laptop will not be able to communicate with the access points.\nTo quickly resolve this issue, the user should connect a new USB adapter that supports the same wireless standard and frequency as the new access points. This\nway, the user can bypass the laptop’s wireless card and use the USB adapter to connect to the office network wirelessly.\nReference: CompTIA A+ Core 1: Cable Types & Connectors",
     "type": "single",
     "topic": "troubleshooting"
   },
@@ -1825,7 +1983,7 @@
     "correct": [
       0
     ],
-    "explanation": "A burning smell on a desktop computer is a serious issue that indicates a hardware malfunction or failure. It can be caused by overheating, a faulty power supply,\na malfunctioning motherboard, or a short circuit12. If left unchecked, it can damage the components, cause a fire, or harm the user.\nThe first thing the technician should do when troubleshooting a burning smell on a desktop computer is to unplug the computer from the power source. This will\nstop the flow of electricity and prevent further damage or fire. The technician should also wear protective gloves and eye wear to avoid contact with any hot or\nhazardous parts.\nThe other options are less likely to be the first step in troubleshooting, because:\n\u2022Locating a fire extinguisher is a good precaution, but it should not be done before unplugging the computer. The fire extinguisher should only be used if there is\nvisible smoke or flames coming from the computer, and only after unplugging it and ensuring that it is safe to do so.\n\u2022Calling the fire department is an extreme measure that should only be done if there is an actual fire that cannot be controlled by the fire extinguisher. It should not\nbe done before unplugging the computer and trying to identify and fix the problem.\n\u2022Removing the desktop cover is a necessary step to inspect the internal components and find the source of the burning smell. However, it should not be done\nbefore unplugging the computer, as it can expose the technician to live wires and electric shocks.\nFor more information and tips on how to troubleshoot a burning smell on a desktop computer, you can visit these links:\n\u2022How to find the source of a burning smell in my computer?\n\u2022Burning Smell From PC? 10 Reasons Why It Could Happen",
+    "explanation": "A burning smell on a desktop computer is a serious issue that indicates a hardware malfunction or failure. It can be caused by overheating, a faulty power supply,\na malfunctioning motherboard, or a short circuit12. If left unchecked, it can damage the components, cause a fire, or harm the user.\nThe first thing the technician should do when troubleshooting a burning smell on a desktop computer is to unplug the computer from the power source. This will\nstop the flow of electricity and prevent further damage or fire. The technician should also wear protective gloves and eye wear to avoid contact with any hot or\nhazardous parts.\nThe other options are less likely to be the first step in troubleshooting, because:\n•Locating a fire extinguisher is a good precaution, but it should not be done before unplugging the computer. The fire extinguisher should only be used if there is\nvisible smoke or flames coming from the computer, and only after unplugging it and ensuring that it is safe to do so.\n•Calling the fire department is an extreme measure that should only be done if there is an actual fire that cannot be controlled by the fire extinguisher. It should not\nbe done before unplugging the computer and trying to identify and fix the problem.\n•Removing the desktop cover is a necessary step to inspect the internal components and find the source of the burning smell. However, it should not be done\nbefore unplugging the computer, as it can expose the technician to live wires and electric shocks.\nFor more information and tips on how to troubleshoot a burning smell on a desktop computer, you can visit these links:\n•How to find the source of a burning smell in my computer?\n•Burning Smell From PC? 10 Reasons Why It Could Happen",
     "type": "single",
     "topic": "troubleshooting"
   },
@@ -1841,7 +1999,7 @@
     "correct": [
       2
     ],
-    "explanation": "A swollen battery is the most likely cause of the issue that the customer is reporting. A swollen battery is a battery that has expanded in size due to a chemical\nreaction, gas buildup, or overheating. A swollen battery can cause pressure on the laptop\u2019s chassis, keyboard, track pad, and other components, making them\nhard to press or click. A swollen battery can also pose a fire hazard and damage the laptop\u2019s performance and lifespan. The other options are not as likely or\nrelevant to the issue. Dropping the laptop may cause cracks or other visible damage to the chassis or screen, but the technician did not notice any. The digitizer is\nthe part of the laptop that converts touch input into digital signals, and it has nothing to do with the keyboard or the track pad buttons. An open bottle of rubbing\nalcohol falling onto the keyboard may cause liquid damage, corrosion, or short circuits, but it would not affect the track pad buttons or the bottom edge of the\nkeyboard.\nTo troubleshoot and resolve the issue, the technician should remove the battery from the laptop and inspect it for signs of swelling, such as bulging, deformation,\nor leakage. The technician should also check the laptop\u2019s chassis, keyboard, and track pad for any signs of damage or warping caused by the battery. The\ntechnician should then replace the swollen battery with a new one that is compatible with the laptop\u2019s model and specifications. The technician should also\ndispose of the swollen battery properly and safely, following the local regulations and guidelines.\nReferences:\n? CompTIA A+ Certification Exam Core 1 Objectives1\n? The Official CompTIA A+ Core 1 Student Guide (Exam 220-1101) eBook2\n? How to Fix a Swollen Laptop Battery - Lifewire3\n? How to Tell If Your Laptop Battery Is Swollen - Techwalla4",
+    "explanation": "A swollen battery is the most likely cause of the issue that the customer is reporting. A swollen battery is a battery that has expanded in size due to a chemical\nreaction, gas buildup, or overheating. A swollen battery can cause pressure on the laptop’s chassis, keyboard, track pad, and other components, making them\nhard to press or click. A swollen battery can also pose a fire hazard and damage the laptop’s performance and lifespan. The other options are not as likely or\nrelevant to the issue. Dropping the laptop may cause cracks or other visible damage to the chassis or screen, but the technician did not notice any. The digitizer is\nthe part of the laptop that converts touch input into digital signals, and it has nothing to do with the keyboard or the track pad buttons. An open bottle of rubbing\nalcohol falling onto the keyboard may cause liquid damage, corrosion, or short circuits, but it would not affect the track pad buttons or the bottom edge of the\nkeyboard.\nTo troubleshoot and resolve the issue, the technician should remove the battery from the laptop and inspect it for signs of swelling, such as bulging, deformation,\nor leakage. The technician should also check the laptop’s chassis, keyboard, and track pad for any signs of damage or warping caused by the battery. The\ntechnician should then replace the swollen battery with a new one that is compatible with the laptop’s model and specifications. The technician should also\ndispose of the swollen battery properly and safely, following the local regulations and guidelines.\nReferences:\n? CompTIA A+ Certification Exam Core 1 Objectives1\n? The Official CompTIA A+ Core 1 Student Guide (Exam 220-1101) eBook2\n? How to Fix a Swollen Laptop Battery - Lifewire3\n? How to Tell If Your Laptop Battery Is Swollen - Techwalla4",
     "type": "single",
     "topic": "troubleshooting"
   },
@@ -1873,7 +2031,7 @@
     "correct": [
       3
     ],
-    "explanation": "The answer is D. Perform a full backup.\nBefore replacing a failed drive in a RAID 5 array, the technician should perform a full backup of the data on the array to ensure that no data is lost during the hot\nswapping process. Hot swapping is the process of replacing a drive without shutting down the system or the array, which allows for faster recovery and minimal\ndowntime. However, hot swapping also involves some risks, such as accidentally removing the wrong drive, damaging the new drive, or encountering another\ndrive failure during the rebuild process. Therefore, performing a full backup is a precautionary measure that can prevent data loss in case of any unexpected errors\nor complications.\nThe other options are not the first steps that the technician should take before hot swapping the drive. Documenting the replacement date is a good practice, but it\nis not as important as backing up the data. Shutting down the array is not necessary for hot swapping, and it may cause more disruption to the system or the\nusers. Safely disposing of the failed drive is a step that should be done after replacing it, not before.\nReferences:\n? Hot-swapping the hard drives when the RAID crashes | QNAP, section \u201cInstall a new drive to rebuild RAID 5 by hot swapping\u201d: \u201cImportant: Do not install a new\ndrive when the system is not in degraded mode, otherwise you may encounter unexpected system failures.\u201d\n? Hot Swapping hard drives on Raid 5 with data on them - Spiceworks Community, reply by Magnus369: \u201cPart of that slowness would be the raid level you are\nusing. Highly doubt you can change it without losing data either, but your writes are going to be atrociously slow due to having to figure out parity across 11 drives\nfor each write you do. While you may have a ton of space, it\u2019s unstable and subject to self destruction.\u201d\n? hard drive - How do I Change a damaged Disk in a Raid 5 array - Server Fault, answer by Chris S: \u201cIf you have another disk failure during rebuild you will lose all\nyour data.\u201d",
+    "explanation": "The answer is D. Perform a full backup.\nBefore replacing a failed drive in a RAID 5 array, the technician should perform a full backup of the data on the array to ensure that no data is lost during the hot\nswapping process. Hot swapping is the process of replacing a drive without shutting down the system or the array, which allows for faster recovery and minimal\ndowntime. However, hot swapping also involves some risks, such as accidentally removing the wrong drive, damaging the new drive, or encountering another\ndrive failure during the rebuild process. Therefore, performing a full backup is a precautionary measure that can prevent data loss in case of any unexpected errors\nor complications.\nThe other options are not the first steps that the technician should take before hot swapping the drive. Documenting the replacement date is a good practice, but it\nis not as important as backing up the data. Shutting down the array is not necessary for hot swapping, and it may cause more disruption to the system or the\nusers. Safely disposing of the failed drive is a step that should be done after replacing it, not before.\nReferences:\n? Hot-swapping the hard drives when the RAID crashes | QNAP, section “Install a new drive to rebuild RAID 5 by hot swapping”: “Important: Do not install a new\ndrive when the system is not in degraded mode, otherwise you may encounter unexpected system failures.”\n? Hot Swapping hard drives on Raid 5 with data on them - Spiceworks Community, reply by Magnus369: “Part of that slowness would be the raid level you are\nusing. Highly doubt you can change it without losing data either, but your writes are going to be atrociously slow due to having to figure out parity across 11 drives\nfor each write you do. While you may have a ton of space, it’s unstable and subject to self destruction.”\n? hard drive - How do I Change a damaged Disk in a Raid 5 array - Server Fault, answer by Chris S: “If you have another disk failure during rebuild you will lose all\nyour data.”",
     "type": "single",
     "topic": "troubleshooting"
   },
@@ -1905,7 +2063,7 @@
     "correct": [
       1
     ],
-    "explanation": "The best option to help the administrator secure the corporate resources is B. Biometric scanner.\nA biometric scanner is a device that can authenticate a user\u2019s identity based on their physical or behavioral characteristics, such as fingerprint, iris, face, voice, or\nsignature. A biometric scanner can provide a high level of security and convenience for accessing corporate laptops, as it can prevent unauthorized users from\naccessing the devices and eliminate the need to remember passwords .\nThe other options are not the best options for this scenario. A Trusted Platform Module (TPM) is a chip that can store encryption keys and other sensitive data on a\nlaptop. A TPM can enhance the security of data and devices, but it does not limit access to authorized users by itself. A TPM can work with a password or a\nbiometric scanner to provide multifactor authentication . A laptop lock is a device that can physically secure a laptop to a desk or other object using a cable and a\nlock. A laptop lock can deter theft or tampering, but it does not prevent unauthorized users from accessing the laptop if they have the password or the key.\nEncryption is a process that can protect data on a laptop by transforming it into an unreadable format using a key. Encryption can prevent unauthorized users from\naccessing or modifying the data, but it does not prevent them from accessing the laptop itself.",
+    "explanation": "The best option to help the administrator secure the corporate resources is B. Biometric scanner.\nA biometric scanner is a device that can authenticate a user’s identity based on their physical or behavioral characteristics, such as fingerprint, iris, face, voice, or\nsignature. A biometric scanner can provide a high level of security and convenience for accessing corporate laptops, as it can prevent unauthorized users from\naccessing the devices and eliminate the need to remember passwords .\nThe other options are not the best options for this scenario. A Trusted Platform Module (TPM) is a chip that can store encryption keys and other sensitive data on a\nlaptop. A TPM can enhance the security of data and devices, but it does not limit access to authorized users by itself. A TPM can work with a password or a\nbiometric scanner to provide multifactor authentication . A laptop lock is a device that can physically secure a laptop to a desk or other object using a cable and a\nlock. A laptop lock can deter theft or tampering, but it does not prevent unauthorized users from accessing the laptop if they have the password or the key.\nEncryption is a process that can protect data on a laptop by transforming it into an unreadable format using a key. Encryption can prevent unauthorized users from\naccessing or modifying the data, but it does not prevent them from accessing the laptop itself.",
     "type": "single",
     "topic": "troubleshooting"
   },
@@ -1953,7 +2111,7 @@
     "correct": [
       0
     ],
-    "explanation": "The correct answer is A. Bluetooth.\nBluetooth is a wireless technology that allows devices to communicate with each other over short distances. It is commonly used for connecting wireless headsets,\nspeakers, keyboards, mice, and other peripherals to mobile phones, laptops, and other devices.\nTo use a Bluetooth device with a mobile phone, the user needs to enable Bluetooth on both devices and pair them together. Pairing is a process of exchanging\nsecurity codes and creating a trusted connection between the devices. Once paired, the devices can automatically connect when they are in range and turned on.\nIf the user is experiencing an issue when trying to use a wireless headset with a mobile phone, the first thing to check is whether Bluetooth is enabled on both\ndevices. If Bluetooth is turned off, the devices will not be able to connect or communicate with each other.\nTo enable Bluetooth on a mobile phone, the user can follow these steps:\n\u2022Check in quick settings: Select the Network, Sound, or Battery icons ( ) on the right side of the taskbar, look for the Bluetooth quick setting, then select Bluetooth\nto turn it on. You\u2019ll see \u201cNot connected\u201d if your Windows 11 device isn\u2019t connected to any Bluetooth accessories.\n\u2022Check in Settings: Select Start > Settings > Bluetooth & devices . Make sure Bluetooth is turned on.\nThese steps are based on Windows 11 operating system1. The exact steps may vary depending on the type and model of the mobile phone and its operating\nsystem.\nIf Bluetooth is enabled on both devices but they still cannot connect, the user can try some other troubleshooting steps, such as:\n\u2022Turn off your Bluetooth device, wait a few seconds, then turn it back on.\n\u2022Make sure your Bluetooth device is in range of your mobile phone.\n\u2022Remove the Bluetooth device from your mobile phone\u2019s list of paired devices, then add it again.\n\u2022Update the Bluetooth driver on your mobile phone or the firmware on your Bluetooth device.\n\u2022Restart your mobile phone or reset your Bluetooth device.\nFor more details and tips on how to fix Bluetooth problems in Windows 112 or other operating systems1, you can visit the links provided.",
+    "explanation": "The correct answer is A. Bluetooth.\nBluetooth is a wireless technology that allows devices to communicate with each other over short distances. It is commonly used for connecting wireless headsets,\nspeakers, keyboards, mice, and other peripherals to mobile phones, laptops, and other devices.\nTo use a Bluetooth device with a mobile phone, the user needs to enable Bluetooth on both devices and pair them together. Pairing is a process of exchanging\nsecurity codes and creating a trusted connection between the devices. Once paired, the devices can automatically connect when they are in range and turned on.\nIf the user is experiencing an issue when trying to use a wireless headset with a mobile phone, the first thing to check is whether Bluetooth is enabled on both\ndevices. If Bluetooth is turned off, the devices will not be able to connect or communicate with each other.\nTo enable Bluetooth on a mobile phone, the user can follow these steps:\n•Check in quick settings: Select the Network, Sound, or Battery icons ( ) on the right side of the taskbar, look for the Bluetooth quick setting, then select Bluetooth\nto turn it on. You’ll see “Not connected” if your Windows 11 device isn’t connected to any Bluetooth accessories.\n•Check in Settings: Select Start > Settings > Bluetooth & devices . Make sure Bluetooth is turned on.\nThese steps are based on Windows 11 operating system1. The exact steps may vary depending on the type and model of the mobile phone and its operating\nsystem.\nIf Bluetooth is enabled on both devices but they still cannot connect, the user can try some other troubleshooting steps, such as:\n•Turn off your Bluetooth device, wait a few seconds, then turn it back on.\n•Make sure your Bluetooth device is in range of your mobile phone.\n•Remove the Bluetooth device from your mobile phone’s list of paired devices, then add it again.\n•Update the Bluetooth driver on your mobile phone or the firmware on your Bluetooth device.\n•Restart your mobile phone or reset your Bluetooth device.\nFor more details and tips on how to fix Bluetooth problems in Windows 112 or other operating systems1, you can visit the links provided.",
     "type": "single",
     "topic": "troubleshooting"
   },
@@ -2034,7 +2192,7 @@
     "correct": [
       2
     ],
-    "explanation": "The most likely answer is C. Fuser.\nA fuser is a component in a laser printer that uses heat and pressure to fuse the toner powder onto the paper. If the fuser is damaged or worn out, it can cause\nhumming and grinding noises, as well as ghost images on the printouts. Ghost images are faint copies of previous images that appear on the same page. They are\ncaused by the fuser not heating the toner properly, or by the toner sticking to the fuser roller and transferring to the next page12.\nTo fix this problem, you should replace the fuser unit with a new one. You can check your printer manual for instructions on how to remove and install the fuser\nunit. You can also use a diagnostic ruler to measure the distance between the ghost images and determine if the fuser is the source of the problem2. If the ghost\nimages are far apart (between 4cm and 5cm), then the fuser is likely to be faulty.\nReferences:\n1: Solved: \u201cGhost Images\u201d When Printing - HP Support Community\n2: How to Fix Ghosting When Using a Laser Printer and Toner Cartridges \u2013 Inksaver",
+    "explanation": "The most likely answer is C. Fuser.\nA fuser is a component in a laser printer that uses heat and pressure to fuse the toner powder onto the paper. If the fuser is damaged or worn out, it can cause\nhumming and grinding noises, as well as ghost images on the printouts. Ghost images are faint copies of previous images that appear on the same page. They are\ncaused by the fuser not heating the toner properly, or by the toner sticking to the fuser roller and transferring to the next page12.\nTo fix this problem, you should replace the fuser unit with a new one. You can check your printer manual for instructions on how to remove and install the fuser\nunit. You can also use a diagnostic ruler to measure the distance between the ghost images and determine if the fuser is the source of the problem2. If the ghost\nimages are far apart (between 4cm and 5cm), then the fuser is likely to be faulty.\nReferences:\n1: Solved: “Ghost Images” When Printing - HP Support Community\n2: How to Fix Ghosting When Using a Laser Printer and Toner Cartridges – Inksaver",
     "type": "single",
     "topic": "troubleshooting"
   },
@@ -2130,7 +2288,23 @@
     "correct": [
       3
     ],
-    "explanation": "If a user\u2019s PC is very sluggish, the HDD light on the PC is constantly on without blinking, the PC itself is slow receiving input, and it takes a very long time to load\nthe OS, the HDD has no free space is most likely the cause of these issues. When the hard disk drive (HDD) has no free space, the computer may become slow\nand unresponsive.\nThe technician should check the amount of free space on the HDD and delete any unnecessary files to free up space.",
+    "explanation": "If a user’s PC is very sluggish, the HDD light on the PC is constantly on without blinking, the PC itself is slow receiving input, and it takes a very long time to load\nthe OS, the HDD has no free space is most likely the cause of these issues. When the hard disk drive (HDD) has no free space, the computer may become slow\nand unresponsive.\nThe technician should check the amount of free space on the HDD and delete any unnecessary files to free up space.",
+    "type": "single",
+    "topic": "troubleshooting"
+  },
+  {
+    "id": 149,
+    "question": "A Microsoft Windows user is preparing to work in another country and needs to comply with corporate policy for data protection when copying files to portable\nmedia. Which of the following solutions would MOST likely satisfy this requirement?",
+    "options": [
+      "A USB 3.1 flash drive with BitLocker to Go installed",
+      "An SD memory card with NTFS",
+      "An xD memory card with ext3",
+      "A portable hard drive with FAT32"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Using a USB 3.1 flash drive with BitLocker to Go installed is the best option for complying with corporate policy for data protection when copying files to portable\nmedia. References: CompTIA A+ Certification Exam Guide, Ninth Edition, Chapter 12",
     "type": "single",
     "topic": "troubleshooting"
   },
@@ -2148,6 +2322,25 @@
     ],
     "explanation": "",
     "type": "single",
+    "topic": "troubleshooting"
+  },
+  {
+    "id": 151,
+    "question": "The owner of a restaurant reports that wireless network connections are lost intermittently throughout the day. Which of the following steps should a technician\ntake to troubleshoot the issue?",
+    "options": [
+      "Identify the location of devices that utilize 2.4GHz.",
+      "Check to see if the phones are IJTP or STP lines.",
+      "Test to see if the copper electrical Wires are causing interference.",
+      "Map all of the wireless signals in the restaurant.",
+      "Verify T568B is being used in the wiring closet patch panel.",
+      "Schedule timed router reboots throughout the day."
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "The correct answers are A. Identify the location of devices that utilize 2.4GHz and D. Map all of the wireless signals in the restaurant. In order to troubleshoot the\nissue, the technician should first identify the location of devices that utilize the 2.4GHz frequency, as this can cause interference with the wireless signal.\nAdditionally, the technician should map all of the wireless signals in the restaurant in order to identify any potential sources of interference. Checking to see if the\nphones are IJTP or STP lines, testing to see if the copper electrical wires are causing interference, verifying T568B is being used in the wiring closet patch panel,\nand scheduling timed router reboots throughout the day are not necessary steps for troubleshooting this issue.",
+    "type": "multiple",
     "topic": "troubleshooting"
   },
   {
@@ -2242,7 +2435,7 @@
     "correct": [
       1
     ],
-    "explanation": "If a technician is on site troubleshooting a customer\u2019s laptop and needs to download a software update but the company\u2019s proxy is blocking updates, the most\nappropriate action for the technician to take would be to request a traffic exemption from the company\u2019s IT department.",
+    "explanation": "If a technician is on site troubleshooting a customer’s laptop and needs to download a software update but the company’s proxy is blocking updates, the most\nappropriate action for the technician to take would be to request a traffic exemption from the company’s IT department.",
     "type": "single",
     "topic": "troubleshooting"
   },
@@ -2309,7 +2502,7 @@
       2,
       3
     ],
-    "explanation": "The correct answers are C. Pickup roller and D. Separation pad.\nA pickup roller is a rubber wheel that grabs the paper from the paper tray and feeds it into the printer. A separation pad is a small piece of cork or rubber that\nRecommend!! \nprevents more than one sheet of paper from being fed at a time. If the pickup roller or the separation pad is worn out, dirty, or damaged, it can cause the printer to\npull multiple sheets of paper instead of a single sheet. This can lead to paper jams, misprints, or wasted paper.\nTo resolve this issue, a technician should investigate the condition of the pickup roller and the separation pad and replace them if necessary. The technician\nshould also clean the paper tray and make sure the paper is loaded correctly and not stuck together.\nA toner cartridge is a component that contains the toner powder used to create the printout on a laser printer. A tractor feed is a mechanism that uses sprockets to\nmove continuous paper through a dot matrix printer. A duplexer is a device that allows a printer to print on both sides of the paper automatically. A fuser is a part of\na laser printer that melts the toner onto the paper using heat and pressure. None of these components are related to the issue of pulling multiple sheets of paper\nfrom the paper tray.\nReference: Types of Printers\u2014What You Need to Know for the CompTIA A+ Exams",
+    "explanation": "The correct answers are C. Pickup roller and D. Separation pad.\nA pickup roller is a rubber wheel that grabs the paper from the paper tray and feeds it into the printer. A separation pad is a small piece of cork or rubber that\nRecommend!! \nprevents more than one sheet of paper from being fed at a time. If the pickup roller or the separation pad is worn out, dirty, or damaged, it can cause the printer to\npull multiple sheets of paper instead of a single sheet. This can lead to paper jams, misprints, or wasted paper.\nTo resolve this issue, a technician should investigate the condition of the pickup roller and the separation pad and replace them if necessary. The technician\nshould also clean the paper tray and make sure the paper is loaded correctly and not stuck together.\nA toner cartridge is a component that contains the toner powder used to create the printout on a laser printer. A tractor feed is a mechanism that uses sprockets to\nmove continuous paper through a dot matrix printer. A duplexer is a device that allows a printer to print on both sides of the paper automatically. A fuser is a part of\na laser printer that melts the toner onto the paper using heat and pressure. None of these components are related to the issue of pulling multiple sheets of paper\nfrom the paper tray.\nReference: Types of Printers—What You Need to Know for the CompTIA A+ Exams",
     "type": "multiple",
     "topic": "troubleshooting"
   },
@@ -2325,7 +2518,7 @@
     "correct": [
       0
     ],
-    "explanation": "The most likely answer is A. Change the resolution settings.\nThe error \u201cOut of Range\u201d normally means that the resolution being output by the computer is not compatible with the projector. The resolution is the number of\npixels that are displayed on the screen. If the resolution is too high for the projector, it may not be able to display the image correctly or at all12.\nTo resolve this issue, you should try lowering the resolution settings on your laptop to match the native resolution of the projector or a lower one. You can do this\nby following these steps1:\n\u2022Right-click on an empty area of your desktop and select Display settings.\n\u2022Under Scale and layout, click on Display resolution and choose a lower option from the drop-down menu.\n\u2022Click Apply and then Keep changes.\n\u2022Reconnect your laptop to the projector and check if the image is displayed properly.\nIf changing the resolution settings does not help, you may need to check other factors,\nsuch as the video cable, the display settings, or the video card driver. However, these are less likely to cause the \u201cOut of Range\u201d error than the resolution settings.",
+    "explanation": "The most likely answer is A. Change the resolution settings.\nThe error “Out of Range” normally means that the resolution being output by the computer is not compatible with the projector. The resolution is the number of\npixels that are displayed on the screen. If the resolution is too high for the projector, it may not be able to display the image correctly or at all12.\nTo resolve this issue, you should try lowering the resolution settings on your laptop to match the native resolution of the projector or a lower one. You can do this\nby following these steps1:\n•Right-click on an empty area of your desktop and select Display settings.\n•Under Scale and layout, click on Display resolution and choose a lower option from the drop-down menu.\n•Click Apply and then Keep changes.\n•Reconnect your laptop to the projector and check if the image is displayed properly.\nIf changing the resolution settings does not help, you may need to check other factors,\nsuch as the video cable, the display settings, or the video card driver. However, these are less likely to cause the “Out of Range” error than the resolution settings.",
     "type": "single",
     "topic": "troubleshooting"
   },
@@ -2360,7 +2553,7 @@
     "correct": [
       3
     ],
-    "explanation": "One of the possible causes of the error message \u201cNo input source\u201d is that the LCD projector is not receiving any signal from the connected device, such as a\nlaptop1. This could be due to a loose or faulty cable or connector, or an incorrect input source selected on the projector2. Therefore, the first troubleshooting step\nthat the technician should take is to check the physical cabling and make sure it is properly connected and secured12.",
+    "explanation": "One of the possible causes of the error message “No input source” is that the LCD projector is not receiving any signal from the connected device, such as a\nlaptop1. This could be due to a loose or faulty cable or connector, or an incorrect input source selected on the projector2. Therefore, the first troubleshooting step\nthat the technician should take is to check the physical cabling and make sure it is properly connected and secured12.",
     "type": "single",
     "topic": "troubleshooting"
   },
@@ -2379,7 +2572,7 @@
       2,
       3
     ],
-    "explanation": "The technician should check the wattage and the form factor of the power supply to ensure it will support the upgraded workstation. These are the two most\nimportant criteria for choosing a compatible and adequate power supply.\n? Wattage: The wattage of a power supply is the maximum amount of power it can deliver to the components of the workstation. The wattage of the power supply\nshould match or exceed the total power consumption of the components, especially the new graphics card, which is usually the most power-hungry part. If the\npower supply does not have enough wattage, it may cause instability, crashes, or damage to the workstation. To estimate the power consumption of the\ncomponents, the technician can use a power supply calculator tool, such as the ones found in the web search results123. The technician should also add some\nheadroom to the wattage, such as 20% to 50%, to account for peak power consumption, future upgrades, or power supply degradation.\n? Form factor: The form factor of a power supply is the physical size and shape of the unit. The form factor of the power supply should fit in the case of the\nworkstation and match the mounting holes and screws. The most common form factor for desktop power supplies is ATX, which measures 150 x 86 x 140 mm.\nHowever, some older or smaller workstations may use different form factors, such as SFX, TFX, or FlexATX. The technician should check the specifications of the\nworkstation case and the power supply to ensure they have the same form factor.\nOther criteria, such as efficiency rating, heat dissipation, fan type, and modular cabling, are not essential for supporting the upgraded workstation, but they may\naffect the performance, noise, or aesthetics of the power supply. The efficiency rating is the percentage of input power that is converted to output power, and it\nindicates how much power is wasted as heat. The heat dissipation is the ability of the power supply to cool itself and prevent overheating. The fan type is the\ndesign and size of the fan that cools the power supply, and it affects the noise level and airflow of the unit. The modular cabling is the feature that allows the user\nto detach unused cables from the power supply, and it helps to reduce clutter and improve airflow inside the case.\nReferences:\n? How to Choose the Right Power Supply for Your PC - Lifewire4\n? How to Choose a Power Supply: 7 Steps (with Pictures) - wikiHow5\n? How to pick the best PC power supply - PCWorld6\n? Power Supply Calculator \u2013 PSU Wattage Calculator | Newegg1\n? Power Supply Calculator | Cooler Master2\n? Power Supply Calculator - PSU Calculator | OuterVision3",
+    "explanation": "The technician should check the wattage and the form factor of the power supply to ensure it will support the upgraded workstation. These are the two most\nimportant criteria for choosing a compatible and adequate power supply.\n? Wattage: The wattage of a power supply is the maximum amount of power it can deliver to the components of the workstation. The wattage of the power supply\nshould match or exceed the total power consumption of the components, especially the new graphics card, which is usually the most power-hungry part. If the\npower supply does not have enough wattage, it may cause instability, crashes, or damage to the workstation. To estimate the power consumption of the\ncomponents, the technician can use a power supply calculator tool, such as the ones found in the web search results123. The technician should also add some\nheadroom to the wattage, such as 20% to 50%, to account for peak power consumption, future upgrades, or power supply degradation.\n? Form factor: The form factor of a power supply is the physical size and shape of the unit. The form factor of the power supply should fit in the case of the\nworkstation and match the mounting holes and screws. The most common form factor for desktop power supplies is ATX, which measures 150 x 86 x 140 mm.\nHowever, some older or smaller workstations may use different form factors, such as SFX, TFX, or FlexATX. The technician should check the specifications of the\nworkstation case and the power supply to ensure they have the same form factor.\nOther criteria, such as efficiency rating, heat dissipation, fan type, and modular cabling, are not essential for supporting the upgraded workstation, but they may\naffect the performance, noise, or aesthetics of the power supply. The efficiency rating is the percentage of input power that is converted to output power, and it\nindicates how much power is wasted as heat. The heat dissipation is the ability of the power supply to cool itself and prevent overheating. The fan type is the\ndesign and size of the fan that cools the power supply, and it affects the noise level and airflow of the unit. The modular cabling is the feature that allows the user\nto detach unused cables from the power supply, and it helps to reduce clutter and improve airflow inside the case.\nReferences:\n? How to Choose the Right Power Supply for Your PC - Lifewire4\n? How to Choose a Power Supply: 7 Steps (with Pictures) - wikiHow5\n? How to pick the best PC power supply - PCWorld6\n? Power Supply Calculator – PSU Wattage Calculator | Newegg1\n? Power Supply Calculator | Cooler Master2\n? Power Supply Calculator - PSU Calculator | OuterVision3",
     "type": "multiple",
     "topic": "troubleshooting"
   },
@@ -2444,7 +2637,7 @@
     "correct": [
       1
     ],
-    "explanation": "Recommend!! \nDNS servers are responsible for translating domain names into IP addresses, which are used to access websites. If the phone has limited internet connectivity, it\nmight be because the DNS servers are not working properly or are blocked by the network. The technician should check the DNS settings on the phone and try to\nuse a different DNS server, such as Google DNS (8.8.8.8 or 8.8.4.4) or Cloudflare DNS (1.1.1.1 or 1.0.0.1).\nReferences\n\u20229 Best Ways to Fix Wi-Fi Showing Limited Connectivity in Android\n\u20227 Easy Ways to Fix Limited Wi-Fi Connectivity on Android\n\u2022How to Fix Limited Connectivity Issue in Android Wi-Fi",
+    "explanation": "Recommend!! \nDNS servers are responsible for translating domain names into IP addresses, which are used to access websites. If the phone has limited internet connectivity, it\nmight be because the DNS servers are not working properly or are blocked by the network. The technician should check the DNS settings on the phone and try to\nuse a different DNS server, such as Google DNS (8.8.8.8 or 8.8.4.4) or Cloudflare DNS (1.1.1.1 or 1.0.0.1).\nReferences\n•9 Best Ways to Fix Wi-Fi Showing Limited Connectivity in Android\n•7 Easy Ways to Fix Limited Wi-Fi Connectivity on Android\n•How to Fix Limited Connectivity Issue in Android Wi-Fi",
     "type": "single",
     "topic": "troubleshooting"
   },
@@ -2460,7 +2653,7 @@
     "correct": [
       1
     ],
-    "explanation": "The CMOS battery is the correct answer as a faulty or depleted CMOS battery can cause issues with the computer\u2019s ability to retain BIOS settings, leading to POST errors. RAM modules will emit continuous beeping noises. Issues with the hard drive will typically result in boot errors or an inability to access data, but not directly affect the POST process. Graphics card issues may cause display-related problems, but they do not directly impact the POST process. Chapter 5: Hardware and Network Troubleshooting 163",
+    "explanation": "The CMOS battery is the correct answer as a faulty or depleted CMOS battery can cause issues with the computer’s ability to retain BIOS settings, leading to POST errors. RAM modules will emit continuous beeping noises. Issues with the hard drive will typically result in boot errors or an inability to access data, but not directly affect the POST process. Graphics card issues may cause display-related problems, but they do not directly impact the POST process. Chapter 5: Hardware and Network Troubleshooting 163",
     "type": "single"
   },
   {
@@ -2484,13 +2677,13 @@
     "options": [
       "The phone is running resource-intensive apps",
       "The phone is exposed to direct sunlight for a long time",
-      "The phone\u2019s battery is defective",
-      "The phone\u2019s operating system needs an update"
+      "The phone’s battery is defective",
+      "The phone’s operating system needs an update"
     ],
     "correct": [
       2
     ],
-    "explanation": "The phone\u2019s battery is defective when the phone is getting excessively hot. Running resource-intensive apps may cause some heat, but excessive heat is more likely due to a defective battery. Exposure to direct sunlight can cause some heat, but it is unlikely to result in excessive heating. An outdated operating system can cause performance issues, but it is not directly related to excessive heat.",
+    "explanation": "The phone’s battery is defective when the phone is getting excessively hot. Running resource-intensive apps may cause some heat, but excessive heat is more likely due to a defective battery. Exposure to direct sunlight can cause some heat, but it is unlikely to result in excessive heating. An outdated operating system can cause performance issues, but it is not directly related to excessive heat.",
     "type": "single"
   },
   {
@@ -2505,14 +2698,14 @@
     "correct": [
       3
     ],
-    "explanation": "If your phone has liquid damage, you need a professional repair service to repair the phone. Turning on the phone when it has been exposed to liquid can potentially cause short circuits and further damage. Although using rice to absorb moisture is a common suggestion, it is not an effective solution for fully drying the internal components of a phone. Using a hairdryer can introduce heat, which may further damage the phone\u2019s internal components.",
+    "explanation": "If your phone has liquid damage, you need a professional repair service to repair the phone. Turning on the phone when it has been exposed to liquid can potentially cause short circuits and further damage. Although using rice to absorb moisture is a common suggestion, it is not an effective solution for fully drying the internal components of a phone. Using a hairdryer can introduce heat, which may further damage the phone’s internal components.",
     "type": "single"
   },
   {
     "id": 174,
-    "question": "A systems administrator is given a ticket by the help desk to deal with the chief executive officer\u2019s printer. Their secretary said that it will not print, a light is flashing, and they think the printer paper is the issue. What should the systems administrator do first?",
+    "question": "A systems administrator is given a ticket by the help desk to deal with the chief executive officer’s printer. Their secretary said that it will not print, a light is flashing, and they think the printer paper is the issue. What should the systems administrator do first?",
     "options": [
-      "Verify the printer\u2019s full system functionality",
+      "Verify the printer’s full system functionality",
       "Test a theory to determine the cause of the printer issue",
       "Identify the problem with the printer",
       "Establish a plan of action to resolve the email server issue"
@@ -2525,7 +2718,7 @@
   },
   {
     "id": 175,
-    "question": "A junior administrator was given a verbal warning by the IT manager following an incident where they patched the exchange server during working hours. This resulted in rebooting the server and 600 users not having access to their email for 15 minutes. Which of the following BEST describes the junior administrator\u2019s actions?",
+    "question": "A junior administrator was given a verbal warning by the IT manager following an incident where they patched the exchange server during working hours. This resulted in rebooting the server and 600 users not having access to their email for 15 minutes. Which of the following BEST describes the junior administrator’s actions?",
     "options": [
       "Patch management",
       "Poor communication with users",
@@ -2555,7 +2748,7 @@
   },
   {
     "id": 177,
-    "question": "A system administrator has determined that a user\u2019s laptop has the wrong screen resolution. They believe that a recent Windows update has caused the problem. What stage in the troubleshooting process have they just carried out?",
+    "question": "A system administrator has determined that a user’s laptop has the wrong screen resolution. They believe that a recent Windows update has caused the problem. What stage in the troubleshooting process have they just carried out?",
     "options": [
       "Establishing a theory of probable cause",
       "Identifying the problem",
@@ -2589,28 +2782,28 @@
     "options": [
       "The printer is using low-quality ink cartridges",
       "The paper being used is not compatible with the printer",
-      "The printer\u2019s fuser unit is not functioning properly",
-      "The printer\u2019s temperature settings are too low"
+      "The printer’s fuser unit is not functioning properly",
+      "The printer’s temperature settings are too low"
     ],
     "correct": [
       2
     ],
-    "explanation": "The printer\u2019s fuser unit is not functioning properly as it fused the text to the paper. Low-quality ink cartridges may affect the print quality, but they are unlikely to cause the printed text to not stick to the paper. Using incompatible paper might affect the print quality but will not be the cause of this problem. The printer\u2019s temperature settings are not adjustable but are based on the specific printing requirements.",
+    "explanation": "The printer’s fuser unit is not functioning properly as it fused the text to the paper. Low-quality ink cartridges may affect the print quality, but they are unlikely to cause the printed text to not stick to the paper. Using incompatible paper might affect the print quality but will not be the cause of this problem. The printer’s temperature settings are not adjustable but are based on the specific printing requirements.",
     "type": "single"
   },
   {
     "id": 180,
     "question": "What could be the potential cause of a new printer with a duplex unit only being able to print on one side at a time?",
     "options": [
-      "The printer\u2019s firmware requires an update",
-      "The printer\u2019s duplex unit is not properly set up",
-      "The printer\u2019s paper tray is not properly aligned",
-      "The printer\u2019s ink cartridges are low on ink"
+      "The printer’s firmware requires an update",
+      "The printer’s duplex unit is not properly set up",
+      "The printer’s paper tray is not properly aligned",
+      "The printer’s ink cartridges are low on ink"
     ],
     "correct": [
       1
     ],
-    "explanation": "The printer\u2019s duplex unit is not properly set up. You need to read the manufacturer\u2019s leaflet that comes with instructions on how to set it up. Firmware updates are unlikely to resolve a hardware-specific issue related to the duplex unit. The alignment of the paper tray does not directly affect the functioning of the duplex unit. Low ink levels will not affect the printer\u2019s ability to perform double-sided printing.",
+    "explanation": "The printer’s duplex unit is not properly set up. You need to read the manufacturer’s leaflet that comes with instructions on how to set it up. Firmware updates are unlikely to resolve a hardware-specific issue related to the duplex unit. The alignment of the paper tray does not directly affect the functioning of the duplex unit. Low ink levels will not affect the printer’s ability to perform double-sided printing.",
     "type": "single"
   },
   {
@@ -2685,7 +2878,7 @@
     "correct": [
       0
     ],
-    "explanation": "A dirty air filter restricts airflow, causing the projector to overheat. To prevent damage, projectors power down automatically when overheating occurs. An insufficient power supply doesn\u2019t directly cause unexpected power downs during operation. A malfunctioning lamp can cause issues, but it\u2019s not the most likely cause of unexpected power- downs. A loose connection can cause problems, but it doesn\u2019t directly lead to unexpected power downs during operation.",
+    "explanation": "A dirty air filter restricts airflow, causing the projector to overheat. To prevent damage, projectors power down automatically when overheating occurs. An insufficient power supply doesn’t directly cause unexpected power downs during operation. A malfunctioning lamp can cause issues, but it’s not the most likely cause of unexpected power- downs. A loose connection can cause problems, but it doesn’t directly lead to unexpected power downs during operation.",
     "type": "single"
   },
   {
@@ -2790,7 +2983,7 @@
     "correct": [
       3
     ],
-    "explanation": "If the paper gets stuck to the fuser in a newly installed printer, it is best to contact the printer manufacturer or a technician for assistance. They can provide guidance specific to your printer model and help resolve the issue without causing further damage. Using tweezers or pliers could potentially damage the fuser or other printer components, so it is not recommended. If the paper gets stuck to the fuser in a newly installed printer, turn off the printer and allow it to cool down. Instead of removing the paper yourself, consult the printer\u2019s manual or contact the manufacturer for specific instructions. It can provide guidance or recommend contacting a technician to avoid potential damage. Ignoring the problem and continuing to print can lead to additional paper jams or even damage to the printer.",
+    "explanation": "If the paper gets stuck to the fuser in a newly installed printer, it is best to contact the printer manufacturer or a technician for assistance. They can provide guidance specific to your printer model and help resolve the issue without causing further damage. Using tweezers or pliers could potentially damage the fuser or other printer components, so it is not recommended. If the paper gets stuck to the fuser in a newly installed printer, turn off the printer and allow it to cool down. Instead of removing the paper yourself, consult the printer’s manual or contact the manufacturer for specific instructions. It can provide guidance or recommend contacting a technician to avoid potential damage. Ignoring the problem and continuing to print can lead to additional paper jams or even damage to the printer.",
     "type": "single"
   },
   {
@@ -2850,7 +3043,7 @@
     "correct": [
       3
     ],
-    "explanation": "Dust or debris on the imaging drum can cause a consistent line from top to bottom on every sheet. Cleaning the imaging drum using appropriate cleaning methods can often resolve the issue. Low ink or toner levels typically result in faded prints or incomplete text, rather than a consistent line from top to bottom. While a malfunctioning paper feed mechanism can cause various printing problems, it wouldn\u2019t cause a single line to be consistently printed from top to bottom on every sheet. A consistent line from top to bottom is not a common symptom of outdated drivers or firmware.",
+    "explanation": "Dust or debris on the imaging drum can cause a consistent line from top to bottom on every sheet. Cleaning the imaging drum using appropriate cleaning methods can often resolve the issue. Low ink or toner levels typically result in faded prints or incomplete text, rather than a consistent line from top to bottom. While a malfunctioning paper feed mechanism can cause various printing problems, it wouldn’t cause a single line to be consistently printed from top to bottom on every sheet. A consistent line from top to bottom is not a common symptom of outdated drivers or firmware.",
     "type": "single"
   },
   {
@@ -2888,14 +3081,14 @@
     "question": "A computer technician needs to upgrade the Central Processing Unit (CPU) in an AutoCAD computer. What is the first thing they should do?",
     "options": [
       "Turn off the power",
-      "Search the manufacturer\u2019s website for the socket type",
+      "Search the manufacturer’s website for the socket type",
       "Wear an electromagnetic static wrist strap",
       "Back up the data"
     ],
     "correct": [
       1
     ],
-    "explanation": "Before upgrading the CPU on a server, you should consult the manufacturer\u2019s website to identify the socket type of the motherboard. Then, search to see whether that socket type can be upgraded to a faster CPU. Backing up the data, turning the power off, and wearing an electromagnetic static wrist strap should be done prior to the upgrade.",
+    "explanation": "Before upgrading the CPU on a server, you should consult the manufacturer’s website to identify the socket type of the motherboard. Then, search to see whether that socket type can be upgraded to a faster CPU. Backing up the data, turning the power off, and wearing an electromagnetic static wrist strap should be done prior to the upgrade.",
     "type": "single"
   },
   {
@@ -2905,7 +3098,7 @@
       "Change the power cable to the computer",
       "Change the PSU",
       "Change the complementary metal-oxide semiconductor (CMOS) battery",
-      "Search on the manufacturer\u2019s website to see whether there is an update to the BIOS"
+      "Search on the manufacturer’s website to see whether there is an update to the BIOS"
     ],
     "correct": [
       2
@@ -2960,7 +3153,7 @@
   },
   {
     "id": 204,
-    "question": "Which of the following could cause a computer to perform \u201csluggishly\u201d?",
+    "question": "Which of the following could cause a computer to perform “sluggishly”?",
     "options": [
       "The keyboard is not plugged in",
       "A recent configuration has been made incorrectly",
@@ -2970,7 +3163,7 @@
     "correct": [
       1
     ],
-    "explanation": "A computer will perform sluggishly if there has been an incorrect configuration change. A keyboard or a mouse not plugged in will not affect a computer\u2019s performance. A computer without a CPU will not boot up.",
+    "explanation": "A computer will perform sluggishly if there has been an incorrect configuration change. A keyboard or a mouse not plugged in will not affect a computer’s performance. A computer without a CPU will not boot up.",
     "type": "single"
   },
   {
@@ -3105,7 +3298,7 @@
     "correct": [
       0
     ],
-    "explanation": "A Wi-Fi analyzer helps identify sources of signal interference, such as overlapping channels or nearby devices, aiding in troubleshooting wireless connectivity issues. A Wi-Fi analyzer\u2019s primary purpose is to identify and troubleshoot connectivity issues rather than directly increasing speed. Changing the Wi-Fi password is a security measure but is not directly related to troubleshooting connectivity issues. Expanding coverage requires additional hardware or configuration changes, which are beyond the scope of a Wi-Fi analyzer\u2019s capabilities for troubleshooting.",
+    "explanation": "A Wi-Fi analyzer helps identify sources of signal interference, such as overlapping channels or nearby devices, aiding in troubleshooting wireless connectivity issues. A Wi-Fi analyzer’s primary purpose is to identify and troubleshoot connectivity issues rather than directly increasing speed. Changing the Wi-Fi password is a security measure but is not directly related to troubleshooting connectivity issues. Expanding coverage requires additional hardware or configuration changes, which are beyond the scope of a Wi-Fi analyzer’s capabilities for troubleshooting.",
     "type": "single"
   },
   {
@@ -3200,7 +3393,7 @@
   },
   {
     "id": 221,
-    "question": "A user\u2019s computer fails to boot up and they notice the hard drive LED is a solid orange. Which of the following could be causing this issue?",
+    "question": "A user’s computer fails to boot up and they notice the hard drive LED is a solid orange. Which of the following could be causing this issue?",
     "options": [
       "The computer has a memory problem",
       "There is a hardware problem with the hard disk drive",
@@ -3215,9 +3408,9 @@
   },
   {
     "id": 222,
-    "question": "A computer technician runs a performance test against a computer\u2019s hard drive. The test reveals that the disk is suffering from extended read/write times. What should the technician do next?",
+    "question": "A computer technician runs a performance test against a computer’s hard drive. The test reveals that the disk is suffering from extended read/write times. What should the technician do next?",
     "options": [
-      "Launch \u201cAdvanced > SMART settings > SMART self-test\u201d",
+      "Launch “Advanced > SMART settings > SMART self-test”",
       "Run the system diagnostic program that was supplied with the computer",
       "Swap out the disk with a new disk",
       "Disable SMART monitoring"
@@ -3230,7 +3423,7 @@
   },
   {
     "id": 223,
-    "question": "A computer technician boots up a computer and gets the error message \u201cmissing operating system.\u201d Which of the following is causing this error?",
+    "question": "A computer technician boots up a computer and gets the error message “missing operating system.” Which of the following is causing this error?",
     "options": [
       "There is a disk missing from a RAID set",
       "The computer is having a Windows update",
@@ -3240,12 +3433,12 @@
     "correct": [
       2
     ],
-    "explanation": "When the disk that holds the operating system fails it will generate a \u201cmissing operating system\u201d error. If there is a disk missing from a RAID set, the error will say that one of the disks is degraded. If the computer is undergoing a Windows update, it will boot and then notify you it is updating. If the CMOS battery is failing, then the date and time will be wrong.",
+    "explanation": "When the disk that holds the operating system fails it will generate a “missing operating system” error. If there is a disk missing from a RAID set, the error will say that one of the disks is degraded. If the computer is undergoing a Windows update, it will boot and then notify you it is updating. If the CMOS battery is failing, then the date and time will be wrong.",
     "type": "single"
   },
   {
     "id": 224,
-    "question": "How can you tell if a storage device\u2019s performance is degrading?",
+    "question": "How can you tell if a storage device’s performance is degrading?",
     "options": [
       "There will be a solid orange light",
       "Check the IOPS",
@@ -3255,7 +3448,7 @@
     "correct": [
       1
     ],
-    "explanation": "If you believe that your storage device\u2019s performance is degraded, check the input/output operations per second (IOPS) against the manufacturer\u2019s baseline. A solid orange light indicates that there is a hard drive failure. Disk management cannot measure the performance of a storage device. A flashing green light indicates that your hard drive is healthy. Chapter 5: Hardware and Network Troubleshooting 161",
+    "explanation": "If you believe that your storage device’s performance is degraded, check the input/output operations per second (IOPS) against the manufacturer’s baseline. A solid orange light indicates that there is a hard drive failure. Disk management cannot measure the performance of a storage device. A flashing green light indicates that your hard drive is healthy. Chapter 5: Hardware and Network Troubleshooting 161",
     "type": "single"
   },
   {
@@ -3275,17 +3468,17 @@
   },
   {
     "id": 226,
-    "question": "A technician is setting up a projector in a conference room and gets an error saying \u201cno signal.\u201d What could be the cause of this issue?",
+    "question": "A technician is setting up a projector in a conference room and gets an error saying “no signal.” What could be the cause of this issue?",
     "options": [
       "The cable to the projector is faulty and needs to be replaced",
-      "The projectors\u2019 bulb needs to be replaced",
-      "The computer\u2019s monitor is broken",
-      "The computer needs to have its display set to \u201cextend this display\u201d"
+      "The projectors’ bulb needs to be replaced",
+      "The computer’s monitor is broken",
+      "The computer needs to have its display set to “extend this display”"
     ],
     "correct": [
       0
     ],
-    "explanation": "If the projector is displaying a \u201cno signal\u201d error, either the cable is not connected properly or it is faulty and needs replacing. At this stage, the computer is not using its bulb. If the computer\u2019s monitor is broken, it should still project the computer\u2019s desktop. At this stage, it is too early to extend the display setting as we are not getting any signal.",
+    "explanation": "If the projector is displaying a “no signal” error, either the cable is not connected properly or it is faulty and needs replacing. At this stage, the computer is not using its bulb. If the computer’s monitor is broken, it should still project the computer’s desktop. At this stage, it is too early to extend the display setting as we are not getting any signal.",
     "type": "single"
   },
   {
@@ -3300,12 +3493,12 @@
     "correct": [
       2
     ],
-    "explanation": "If the projector has a fuzzy image, then the lens needs to be rotated until the lens shows a clear picture. If the cable was defective, it would say \u201cno signal.\u201d The laptop display has no control over a fuzzy image. If the projector bulb needed to be replaced, then the image would be very dim.",
+    "explanation": "If the projector has a fuzzy image, then the lens needs to be rotated until the lens shows a clear picture. If the cable was defective, it would say “no signal.” The laptop display has no control over a fuzzy image. If the projector bulb needed to be replaced, then the image would be very dim.",
     "type": "single"
   },
   {
     "id": 228,
-    "question": "A presenter is trying to play a video that is on a DVD in their laptop. They can hear the sound but get an error on the projector stating \u201cCOPY PROTECTION: THE DVI/HDMI OUTPUT IS BLOCKED.\u201d Which of the following is causing this issue?",
+    "question": "A presenter is trying to play a video that is on a DVD in their laptop. They can hear the sound but get an error on the projector stating “COPY PROTECTION: THE DVI/HDMI OUTPUT IS BLOCKED.” Which of the following is causing this issue?",
     "options": [
       "The HDMI cable is faulty",
       "The protector is not HDCP-compatible",
@@ -3315,7 +3508,7 @@
     "correct": [
       1
     ],
-    "explanation": "The High-bandwidth Digital Content Protection (HDCP) allows a content source (such as a DVD/Blu-ray disc) to disable itself if the display adapter and monitor and/or speaker system do not support HDCP and fail to authenticate themselves with the playback source. If the HDMI cable was faulty, then a \u201cno signal\u201d error would appear. The display setting does not need to be adjusted as there is output on the projector. If there was a problem with the DVD player, then there would be no sound.",
+    "explanation": "The High-bandwidth Digital Content Protection (HDCP) allows a content source (such as a DVD/Blu-ray disc) to disable itself if the display adapter and monitor and/or speaker system do not support HDCP and fail to authenticate themselves with the playback source. If the HDMI cable was faulty, then a “no signal” error would appear. The display setting does not need to be adjusted as there is output on the projector. If there was a problem with the DVD player, then there would be no sound.",
     "type": "single"
   },
   {
@@ -3330,7 +3523,7 @@
     "correct": [
       2
     ],
-    "explanation": "The HDMI-ARC allows the audio from the TV to be sent to an external sound system. If we don\u2019t use this port, then the soundbar will not receive any audio from the TV. It is unlikely that the soundbar does not have any power. A soundbar does not have volume control; the volume is controlled by the TV remote. Video resolution has nothing to do with sound. 162 Solutions",
+    "explanation": "The HDMI-ARC allows the audio from the TV to be sent to an external sound system. If we don’t use this port, then the soundbar will not receive any audio from the TV. It is unlikely that the soundbar does not have any power. A soundbar does not have volume control; the volume is controlled by the TV remote. Video resolution has nothing to do with sound. 162 Solutions",
     "type": "single"
   },
   {
@@ -3375,7 +3568,7 @@
     "correct": [
       0
     ],
-    "explanation": "Display burn-in is where the previous image remains on the screen or is shown as a ghost image. Dead pixels are where the screen may freeze, and black areas might be visible. A faulty cable would flicker. The laptop freezing could end up with a \u201cno-signal\u201d error.",
+    "explanation": "Display burn-in is where the previous image remains on the screen or is shown as a ghost image. Dead pixels are where the screen may freeze, and black areas might be visible. A faulty cable would flicker. The laptop freezing could end up with a “no-signal” error.",
     "type": "single"
   },
   {
@@ -3390,7 +3583,7 @@
     "correct": [
       2
     ],
-    "explanation": "Testing the output resolution is primarily done to ensure that the system\u2019s output is compatible with a variety of display devices. Display devices can have different resolutions and capabilities, and testing helps confirm that the system can adapt to and function properly with these devices. It ensures that the output is correctly scaled, aligned, and compatible, avoiding issues such as distorted images or cut-off content. The accuracy of color representation and optimization of image quality are secondary considerations, but the main focus is on compatibility with various display devices. It does not enhance system performance.",
+    "explanation": "Testing the output resolution is primarily done to ensure that the system’s output is compatible with a variety of display devices. Display devices can have different resolutions and capabilities, and testing helps confirm that the system can adapt to and function properly with these devices. It ensures that the output is correctly scaled, aligned, and compatible, avoiding issues such as distorted images or cut-off content. The accuracy of color representation and optimization of image quality are secondary considerations, but the main focus is on compatibility with various display devices. It does not enhance system performance.",
     "type": "single"
   },
   {

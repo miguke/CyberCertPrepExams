@@ -31,6 +31,21 @@
   },
   {
     "type": "single",
+    "question": "A salesperson is using a weather application on a mobile device. The application appears to be draining the device's battery very quickly. Which of the following is\nthe BEST action for the salesperson to take in order to view weather forecasts while traveling?",
+    "options": [
+      "Enable the GPS service to ensure accurate location detection.",
+      "Update the PRL when getting to a new location.",
+      "Configure less location checks using cellular location services,",
+      "use the offices' Wi-Fi IP addresses as the geolocation mechanism."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The best action for the salesperson to take in order to view weather forecasts while traveling and minimize the battery drain on their mobile device is to configure\nfewer location checks using cellular location services. This can be done by adjusting the settings for the weather application to limit how often it checks for updates\nand uses location services. This will help to conserve the battery on the device and keep the application from consuming too much power.",
+    "id": 3
+  },
+  {
+    "type": "single",
     "question": "Which connector is used for high-speed data transfer on modern mobile devices?",
     "options": [
       "Micro-USB",
@@ -336,7 +351,7 @@
   },
   {
     "type": "single",
-    "question": "A laptop\u00e2\u20ac\u2122s battery life has significantly decreased. Which of the following should the technician check FIRST?",
+    "question": "A laptopâ€™s battery life has significantly decreased. Which of the following should the technician check FIRST?",
     "options": [
       "Battery age",
       "Fan speed",
@@ -346,7 +361,7 @@
     "correct": [
       0
     ],
-    "explanation": "Battery capacity diminishes over time; checking the battery\u00e2\u20ac\u2122s age and health should be the first step when battery life degrades.",
+    "explanation": "Battery capacity diminishes over time; checking the batteryâ€™s age and health should be the first step when battery life degrades.",
     "id": 24
   },
   {
@@ -533,6 +548,22 @@
     "topic": "mobile-devices"
   },
   {
+    "id": 37,
+    "question": "A user connects a smartphone to a laptop. Which of the following types of networks has the user created?",
+    "options": [
+      "PAN",
+      "MAN",
+      "WLAN",
+      "LAN"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "When a user connects a smartphone to a laptop, they create a Personal Area Network (PAN). A PAN is a type of network used for communication between\ndevices in close proximity to each other, typically within a range of a few meters or less. This type of network is commonly used for wireless communication\nbetween personal devices, such as connecting a smartphone to a laptop for file sharing or internet access. References: CompTIA A+ Certification Exam Objectives\n- 220-1001: 1.1 Explain common connectors and their uses.",
+    "type": "single",
+    "topic": "mobile-devices"
+  },
+  {
     "id": 38,
     "question": "Which of the following components enables the input on a mobile device's touch screen?",
     "options": [
@@ -595,7 +626,7 @@
     "correct": [
       0
     ],
-    "explanation": "Two-factor authentication (2FA) is a method of verifying a user\u2019s identity by requiring two pieces of evidence: something the user knows (such as a password) and\nsomething the user has (such as a device). A mobile authenticator application is a software program that runs on a smartphone or tablet and generates a one-time\ncode or token that the user can enter along with their password to access a system. This adds an extra layer of security to prevent unauthorized access.\nReferences\n\u2022The Official CompTIA A+ Core 1 Student Guide (Exam 220-1101), page 13-14\n\u2022CompTIA A+ Certification Exam Core 1 Objectives, page 9, objective 2.5\n\u2022What is Two-Factor Authentication?",
+    "explanation": "Two-factor authentication (2FA) is a method of verifying a user’s identity by requiring two pieces of evidence: something the user knows (such as a password) and\nsomething the user has (such as a device). A mobile authenticator application is a software program that runs on a smartphone or tablet and generates a one-time\ncode or token that the user can enter along with their password to access a system. This adds an extra layer of security to prevent unauthorized access.\nReferences\n•The Official CompTIA A+ Core 1 Student Guide (Exam 220-1101), page 13-14\n•CompTIA A+ Certification Exam Core 1 Objectives, page 9, objective 2.5\n•What is Two-Factor Authentication?",
     "type": "single",
     "topic": "mobile-devices"
   },
@@ -617,7 +648,7 @@
   },
   {
     "id": 43,
-    "question": "A company issues their sales team smartphones under a CYOD policy. A salesperson decides to watch a film on Netflix when staying at a hotel because it is cheaper than subscribing to the hotel\u2019s video packages. After breakfast, they use their smartphone to find directions to the next customer\u2019s site, but the internet is not working. What is the most likely reason that the internet is not available?",
+    "question": "A company issues their sales team smartphones under a CYOD policy. A salesperson decides to watch a film on Netflix when staying at a hotel because it is cheaper than subscribing to the hotel’s video packages. After breakfast, they use their smartphone to find directions to the next customer’s site, but the internet is not working. What is the most likely reason that the internet is not available?",
     "options": [
       "Network coverage is not available in the area",
       "The phone has a data cap",
@@ -642,7 +673,7 @@
     "correct": [
       1
     ],
-    "explanation": "A password is \u201csomething you know\u201d and a fingerprint is \u201csomething you are\u201d. This is an example of two-factor authentication. All other answers are incorrect. A retina and fingerprint are both \u201csomething you are\u201d, a password and PIN are both \u201csomething you know\u201d, and gait and swiping a card are both \u201csomething you do\u201d.",
+    "explanation": "A password is “something you know” and a fingerprint is “something you are”. This is an example of two-factor authentication. All other answers are incorrect. A retina and fingerprint are both “something you are”, a password and PIN are both “something you know”, and gait and swiping a card are both “something you do”.",
     "type": "single"
   },
   {
@@ -702,7 +733,7 @@
     "correct": [
       1
     ],
-    "explanation": "A Global System for Mobile Communication-based phone has a removable SIM that can be inserted into another handset with the same network provider. All other answers are incorrect. Global System for Mobile Communication can work with cellular, wireless, and satellite communications, so all other answers that use the word \u201conly\u201d are false.",
+    "explanation": "A Global System for Mobile Communication-based phone has a removable SIM that can be inserted into another handset with the same network provider. All other answers are incorrect. Global System for Mobile Communication can work with cellular, wireless, and satellite communications, so all other answers that use the word “only” are false.",
     "type": "single"
   },
   {
@@ -752,7 +783,7 @@
   },
   {
     "id": 52,
-    "question": "On the 70th anniversary of Edmond Hillary\u2019s climb to the summit of Mount Everest, a team from New Zealand plans to follow in his footsteps. Some of the locations that they will visit en route will have very poor connectivity for cell phones. Which of the following would you recommend that they use for communications?",
+    "question": "On the 70th anniversary of Edmond Hillary’s climb to the summit of Mount Everest, a team from New Zealand plans to follow in his footsteps. Some of the locations that they will visit en route will have very poor connectivity for cell phones. Which of the following would you recommend that they use for communications?",
     "options": [
       "Carrier pigeon",
       "DSL",
@@ -797,7 +828,7 @@
   },
   {
     "id": 55,
-    "question": "A foreign government intends to track an intelligence agent\u2019s phone at all times while they travel abroad. Which of the following can prevent them from doing so?",
+    "question": "A foreign government intends to track an intelligence agent’s phone at all times while they travel abroad. Which of the following can prevent them from doing so?",
     "options": [
       "Set location services to pause",
       "Keep the device in a laptop bag",
@@ -807,7 +838,7 @@
     "correct": [
       2
     ],
-    "explanation": "If the agent turns off location services, they will prevent the phone\u2019s GPS location from being advertised. All other answers are incorrect. You cannot set location services to pause, nor can you delete them.",
+    "explanation": "If the agent turns off location services, they will prevent the phone’s GPS location from being advertised. All other answers are incorrect. You cannot set location services to pause, nor can you delete them.",
     "type": "single"
   },
   {
@@ -852,7 +883,7 @@
     "correct": [
       3
     ],
-    "explanation": "Data Loss Prevention (DLP) prevents someone from sending an email containing PII and sensitive information. It blocks data if it finds a pattern match. All other answers are incorrect. A legal hold prevents users from deleting emails from a mailbox. MailTips warn you of events such as a large distribution group being chosen prior to dispatching an email. A firewall is used to block traffic coming into or going out of your company\u2019s networks.",
+    "explanation": "Data Loss Prevention (DLP) prevents someone from sending an email containing PII and sensitive information. It blocks data if it finds a pattern match. All other answers are incorrect. A legal hold prevents users from deleting emails from a mailbox. MailTips warn you of events such as a large distribution group being chosen prior to dispatching an email. A firewall is used to block traffic coming into or going out of your company’s networks.",
     "type": "single"
   },
   {
@@ -887,7 +918,7 @@
   },
   {
     "id": 61,
-    "question": "A user\u2019s smartphone is unable to make a 4G connection. What should they do to resolve this issue?",
+    "question": "A user’s smartphone is unable to make a 4G connection. What should they do to resolve this issue?",
     "options": [
       "Go to Settings, then Mobile Data, and enable Wi-Fi calling",
       "Go to Wi-Fi, then Mobile Data, and enable mobile data",
@@ -904,7 +935,7 @@
     "id": 62,
     "question": "The FBI informs a business that one of their employees might be carrying out some criminal activities. They want to ensure that any messages sent via corporate email are retained and not deleted as these emails might be needed as evidence for the case against the employee. Which of the following solutions will the system administrator implement?",
     "options": [
-      "Back up the employee\u2019s mailbox",
+      "Back up the employee’s mailbox",
       "Apply a legal hold",
       "Set up a forensic toolkit",
       "Maintain the chain of custody"
@@ -942,7 +973,7 @@
     "correct": [
       3
     ],
-    "explanation": "The gyroscope is used by the phone to rotate the screen as you twist your phone around. All other answers are incorrect. The bezel is the border between the phone\u2019s frames and the screen. The digitizer is a layer of glass that enables touchscreen functionality. The accelerometer tracks the motion of the phone and adjusts the screen size.",
+    "explanation": "The gyroscope is used by the phone to rotate the screen as you twist your phone around. All other answers are incorrect. The bezel is the border between the phone’s frames and the screen. The digitizer is a layer of glass that enables touchscreen functionality. The accelerometer tracks the motion of the phone and adjusts the screen size.",
     "type": "single"
   },
   {
@@ -1122,7 +1153,7 @@
     "correct": [
       0
     ],
-    "explanation": "The digitizer is a piece of glass that sits over the phone screen and enables touchscreen functionality. When you can see the icons perfectly but cannot open them, this most likely means that the digitizer is broken and will need to be replaced. All other answers are incorrect. If there was no power, the screen would be black. A broken CPU would mean that each app would respond but would be much slower than normal. \u201cAll of the above\u201d is not the correct solution as some answers are incompatible.",
+    "explanation": "The digitizer is a piece of glass that sits over the phone screen and enables touchscreen functionality. When you can see the icons perfectly but cannot open them, this most likely means that the digitizer is broken and will need to be replaced. All other answers are incorrect. If there was no power, the screen would be black. A broken CPU would mean that each app would respond but would be much slower than normal. “All of the above” is not the correct solution as some answers are incompatible.",
     "type": "single"
   },
   {
@@ -1262,7 +1293,7 @@
   },
   {
     "id": 86,
-    "question": "Following an update to the operating system of their desktop computer, the user\u2019s webcam is no longer functioning. The user is due to join a Zoom session in 45 minutes time. Which of the following should be their first step to resolve the issue?",
+    "question": "Following an update to the operating system of their desktop computer, the user’s webcam is no longer functioning. The user is due to join a Zoom session in 45 minutes time. Which of the following should be their first step to resolve the issue?",
     "options": [
       "Quickly go to the shops and buy another webcam",
       "Reboot their computer",
@@ -1272,7 +1303,7 @@
     "correct": [
       2
     ],
-    "explanation": "When a webcam stops functioning, the first thing to try is to unplug it and then plug it back in. If that fails to work, then you should uninstall it completely and reinstall the webcam software and any latest updates from the manufacturer\u2019s website. All other answers are incorrect. When an update is applied to an operating system, it is likely that the computer has already been rebooted as part of the update, so doing so again is unlikely to help. It is most likely that there is nothing wrong with the webcam, and the user may not have enough time to go to the shops, make a purchase, and set it up before the Zoom conference commences. There is no need to update the operating system as this has already been done and is the root cause of this issue.",
+    "explanation": "When a webcam stops functioning, the first thing to try is to unplug it and then plug it back in. If that fails to work, then you should uninstall it completely and reinstall the webcam software and any latest updates from the manufacturer’s website. All other answers are incorrect. When an update is applied to an operating system, it is likely that the computer has already been rebooted as part of the update, so doing so again is unlikely to help. It is most likely that there is nothing wrong with the webcam, and the user may not have enough time to go to the shops, make a purchase, and set it up before the Zoom conference commences. There is no need to update the operating system as this has already been done and is the root cause of this issue.",
     "type": "single"
   },
   {

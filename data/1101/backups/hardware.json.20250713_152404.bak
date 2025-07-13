@@ -750,6 +750,24 @@
   },
   {
     "type": "multiple",
+    "question": "A technician receives several error alerts on a server after an unexpected reboot. A message states that one or more disks are in a degraded state. When the\ntechnician advances to the next error message, it indicates the OS is missing. Which of the following are the MOST likely causes of these errors? (Choose two.)",
+    "options": [
+      "Missing drives in the OS",
+      "RAID failure",
+      "Bootable device not found",
+      "Data loss",
+      "Controller failure",
+      "CMOS corruption\nG. TPM malfunction"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "The message stating that one or more disks are in a degraded state is a clear indication of a RAID failure. RAID stands for Redundant Array of Independent\nDisks, and it is a technology used to provide fault tolerance and improve performance by combining multiple hard drives into a single logical unit.\nThe message indicating that the OS is missing is most likely caused by a bootable device not found. This means that the server is unable to boot from the\ndesignated boot device, which could be the hard drive, a CD/DVD drive, or a USB flash drive. This could be caused by a faulty boot device, a loose cable, or a\nmisconfiguration in the BIOS or UEFI settings.",
+    "id": 50
+  },
+  {
+    "type": "multiple",
     "question": "Which of the following are valid reasons to replace thermal paste on a CPU? (Select TWO)",
     "options": [
       "CPU running erratically",
