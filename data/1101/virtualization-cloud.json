@@ -855,9 +855,8 @@
   },
   {
     "id": 58,
-    "question": "A company would like to enable its developers to create bespoke applications. These applications will require two separate servers, one for PHP and the other for MySQ",
+    "question": "A company would like to enable its developers to create bespoke applications. These applications will require two separate servers, one for PHP and the other for MySQL. What cloud service is the best for this?",
     "options": [
-      "What cloud service",
       "SaaS",
       "IaaS",
       "PaaS",
@@ -1252,8 +1251,7 @@
       "Putting an application into a sandbox for testing",
       "Installing an application locally on a virtual machine",
       "Putting the application inside a container",
-      "Running an application from a remote server that has additional resources",
-      "In the CompTIA A+ Core 1 (220-1101) certification examination, Domain 5.0 Hardware and Network"
+      "Running an application from a remote server that has additional resources"
     ],
     "correct": [
       3

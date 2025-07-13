@@ -3103,9 +3103,9 @@
       "To improve network performance"
     ],
     "correct": [
-      0
+      2
     ],
-    "explanation": "A Wi-Fi analyzer helps identify sources of signal interference, such as overlapping channels or nearby devices, aiding in troubleshooting wireless connectivity issues. A Wi-Fi analyzer\u2019s primary purpose is to identify and troubleshoot connectivity issues rather than directly increasing speed. Changing the Wi-Fi password is a security measure but is not directly related to troubleshooting connectivity issues. Expanding coverage requires additional hardware or configuration changes, which are beyond the scope of a Wi-Fi analyzer\u2019s capabilities for troubleshooting.",
+    "explanation": "A heat sink is a passive heat exchanger that transfers heat from a heat source to a cooler medium, such as air or a liquid. It is used to dissipate heat from a component, such as a CPU or GPU, to prevent overheating and ensure optimal performance. Amplifying audio signals is unrelated to heat sinks. Additional storage space is unrelated to heat sinks. Improving network performance is unrelated to heat sinks.",
     "type": "single"
   },
   {
@@ -3120,7 +3120,7 @@
     "correct": [
       2
     ],
-    "explanation": "Poor VoIP quality can occur when there is not enough available bandwidth to support voice data transmission, leading to audio quality issues. Outdated hardware is not directly linked to poor VoIP quality. A low battery will not affect poor VoIP quality. 168 Solutions Mock Exam",
+    "explanation": "They provide a means of connecting devices such as hard drives, CD/DVD drives, and other peripherals to the motherboard. They do not store system configuration settings, provide additional power to the CPU, or control the display output.",
     "type": "single"
   },
   {

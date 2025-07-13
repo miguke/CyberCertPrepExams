@@ -555,6 +555,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const startExamTimer = () => {
         stopExamTimer();
         examTimeRemaining = courseConfig.examDuration || 5400; // 90 minutes
+        // Make timer visible
+        const timerElement = document.getElementById('time-remaining');
+        if (timerElement) {
+            timerElement.style.display = 'block';
+        }
         if (timerDisplay) {
             timerDisplay.textContent = formatTime(examTimeRemaining);
         }

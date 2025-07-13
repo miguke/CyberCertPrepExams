@@ -316,21 +316,6 @@
   },
   {
     "type": "single",
-    "question": "A company wants to use client-side visualization for application testing. Which of the following configurations would BEST support this goal?",
-    "options": [
-      "Option A",
-      "Option B",
-      "Option C",
-      "Option D"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "The diagram in Option A shows a client-side sandboxed VM environment, which is ideal for isolated application testing.",
-    "id": 23
-  },
-  {
-    "type": "single",
     "question": "An online retailer would like to add capacity to support increased sales. Additional servers have been installed. Which of the following should be used to ensure each new server is being properly utilized?",
     "options": [
       "Virtualization",
