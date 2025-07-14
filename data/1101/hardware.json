@@ -1160,7 +1160,7 @@
     "correct": [
       0
     ],
-    "explanation": "Every computer has a CMOS battery and when you remove that battery, your computer will work almost the same as before. The only difference is you won\u2019t be\nable to save any settings in the BIOS, which includes the date and time. If your PC is not booting after removing CMOS, you need to make sure that you have your\nCPU and RAM connected because it\u2019s not possible for your system to boot without those.. Your motherboard and computer will be able to boot just fine even\nwithout a CMOS battery present. The only issue is all your BIOS settings will be reset and the time and date will be inaccurate. You will also be unable to save\nBIOS settings.",
+    "explanation": "Start by testing each RAM stick in each memory slot—one at a time. If a particular stick or slot fails, that'll pinpoint the issue. Only then should you move on to less common causes like power supply, motherboard, or CMOS battery. Every computer has a CMOS battery and when you remove that battery, your computer will work almost the same as before. The only difference is you won\u2019t be\nable to save any settings in the BIOS, which includes the date and time. If your PC is not booting after removing CMOS, you need to make sure that you have your\nCPU and RAM connected because it\u2019s not possible for your system to boot without those.. Your motherboard and computer will be able to boot just fine even\nwithout a CMOS battery present. The only issue is all your BIOS settings will be reset and the time and date will be inaccurate. You will also be unable to save\nBIOS settings.",
     "type": "single",
     "topic": "hardware"
   },
@@ -2191,9 +2191,8 @@
   },
   {
     "id": 149,
-    "question": "A user wants to replace the existing hard drive with the fastest possible 1 TB HD",
+    "question": "A user wants to replace the existing hard drive with the fastest possible 1 TB HD. Which of the following should the user choose?",
     "options": [
-      "Which of",
       "eSATA",
       "1TB NVMe SSD",
       "1TB USB 3.0",

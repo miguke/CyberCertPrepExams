@@ -2033,9 +2033,8 @@
   },
   {
     "id": 140,
-    "question": "A systems administrator is configuring an IP address on the external port of the firewall that connects to the WA",
+    "question": "A systems administrator is configuring an IP address on the external port of the firewall that connects to the WAN. Which of the following IP addresses will they use?",
     "options": [
-      "Which of the following IP addresses will they use?",
       "131.107.1.1",
       "192.168.1.1",
       "169.254.1.223",

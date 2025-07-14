@@ -1513,7 +1513,7 @@
   },
   {
     "type": "single",
-    "question": "A thermal punier that is used 10 print order buckets m a factory has been experiencing Issues following the failure of the alt conditioner during the summer. Each\nticket has blank spots or is missing text. Which of the following would MOST likely solve these Issues?",
+    "question": "A thermal printer used to print order tickets in a factory has been experiencing issues following the failure of the air conditioner during the summer. Each ticket now has blank spots or is missing text. Which of the following would MOST likely solve these issues?",
     "options": [
       "Restore function to the air conditioner.",
       "Clean the heating element.",
@@ -1521,9 +1521,9 @@
       "Install new toner."
     ],
     "correct": [
-      0
+      1
     ],
-    "explanation": "it appears that option A, restoring function to the air conditioner, would most likely solve the thermal printer issue in the described scenario. The failure of the air\nconditioner during the summer could likely have caused high humidity or heat in the factory, which can affect the printing quality of thermal printers by causing\nblank spots or missing text. By restoring function to the air conditioner, the temperature and humidity in the factory can be controlled, which can help eliminate\nthese printing issues. However, it is still possible that any of the other options listed could also potentially solve the issue, so it is best to assess the situation further\nand try different solutions if necessary.",
+    "explanation": "Thermal printers rely on a clean, evenly heated print head (the heating element) to activate the chemical coating on thermal paper. Excessive ambient heat (from the failed air conditioner) can cause dust and residue to bake onto the print head, leading to uneven heating and blank spots on printed material. Cleaning the heating element will remove that buildup and restore uniform contact and heat transfer to the paper. ",
     "id": 108
   },
   {
@@ -1937,7 +1937,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "For running unsupported legacy applications on current Windows systems in a manner aligned with CompTIA A+ 220‑1101 objectives, application virtualization is the most appropriate, straightforward, and exam-relevant solution.",
     "type": "single",
     "topic": "troubleshooting"
   },
@@ -2066,7 +2066,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "The question asks for an immediate workaround. Because the wired Ethernet port is non‑functional, switching the laptop’s network connection to Wi‑Fi by connecting to a wireless access point (WAP) will restore Internet access right away. Updating drivers or resoldering could take significant time and may not actually fix a physically damaged port. Replacing the NIC (network interface card) would eventually solve the Ethernet issue but is not the fastest way to get the user back online. ",
     "type": "single",
     "topic": "troubleshooting"
   },
