@@ -1222,7 +1222,7 @@
       "USB-C"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "Thunderbolt 3 is a USB-C port, so any device with a USB-C connector can be plugged into it. MiniUSB, microUSB and USB-A are not compatible with Thunderbolt\n3.",
     "type": "single",
