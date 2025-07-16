@@ -274,6 +274,21 @@
   },
   {
     "id": 17,
+    "question": "A technician has verified a computer is infected with malware. The technician isolates the system and updates the anti-malware software. Which of the following\nshould the technician do next?",
+    "options": [
+      "Mastered",
+      "Not Mastered"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Malware is malicious software that can cause damage or harm to a computer system or network4. A technician has verified a computer is infected with malware\nby observing unusual behavior, such as slow performance, pop-ups, or unwanted ads. The technician isolates the system and updates the anti-malware software\nto prevent further infection or spread of the malware. The next step is to run repeated remediation scans until the malware is removed. A remediation scan is a\nscan that detects and removes malware from the system. Running one scan may not be enough to remove all traces of malware, as some malware may hide or\nregenerate itself.",
+    "source_pdf": "220-1102_1.pdf",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 18,
     "question": "A user's mobile phone has become sluggish A systems administrator discovered several malicious applications on the device and reset the phone. The\nadministrator installed MDM software. Which of the following should the administrator do to help secure the device against this threat in the future?",
     "options": [
       "Prevent a device root",
@@ -293,7 +308,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 18,
+    "id": 19,
     "question": "A user visits a game vendor's website to view the latest patch notes, but this information is not available on the page. Which of the following should the user\nperform before reloading the page?",
     "options": [
       "Synchronize the browser data.",
@@ -310,7 +325,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 19,
+    "id": 20,
     "question": "A technician is troubleshooting a customer's PC and receives a phone call. The technician does not take the call and sets the phone to silent. Which of the\nfollowing BEST describes the technician's actions?",
     "options": [
       "Avoid distractions",
@@ -327,7 +342,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 20,
+    "id": 21,
     "question": "A user's computer unexpectedly shut down immediately after the user plugged in a USB headset. Once the user turned the computer back on, everything was\nfunctioning properly, including the headset. Which of the following Microsoft tools would most likely be used to determine the root cause?",
     "options": [
       "Event Viewer",
@@ -344,7 +359,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 21,
+    "id": 22,
     "question": "A technician is unable to access the internet or named network resources. The technician receives a valid IP address from the DHCP server and can ping the\ndefault gateway. Which of the following should the technician check next to resolve the issue?",
     "options": [
       "Verify the DNS server settings.",
@@ -361,7 +376,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 22,
+    "id": 23,
     "question": "The screen on a user's mobile device is not autorotating even after the feature has been enabled and the device has been restarted. Which of the following should\nthe technician do next to troubleshoot the issue?",
     "options": [
       "Calibrate the phone sensors.",
@@ -378,7 +393,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 23,
+    "id": 24,
     "question": "Which of the following defines the extent of a change?",
     "options": [
       "Scope",
@@ -395,7 +410,22 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 24,
+    "id": 25,
+    "question": "An Android user reports that when attempting to open the company's proprietary mobile application it immediately doses. The user states that the issue persists,\neven after rebooting the phone. The application contains critical information that cannot be lost. Which of the following steps should a systems administrator\nattempt FIRST?",
+    "options": [
+      "Mastered",
+      "Not Mastered"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The systems administrator should clear the application cach1e2\nIf clearing the application cache does not work, the systems administrator should uninstall and reinstall the application12\nResetting the phone to factory settings is not necessary at this point12\nInstalling an alternative application with similar functionality is not necessary at this point12",
+    "source_pdf": "220-1102_1.pdf",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 26,
     "question": "An architecture firm is considering upgrading its computer-aided design (CAD) software to the newest version that forces storage of backups of all CAD files on the\nsoftware's cloud server. Which of the following is MOST likely to be of concern to the IT manager?",
     "options": [
       "All updated software must be tested with alt system types and accessories",
@@ -412,7 +442,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 25,
+    "id": 27,
     "question": "A user reports that a workstation is operating sluggishly Several other users operate on the same workstation and have reported that the workstation is operating\nnormally. The systems administrator has validated that the workstation functions normally. Which of the following steps should the systems administrator most\nlikely attempt NEXT?",
     "options": [
       "Increase the paging file size",
@@ -430,7 +460,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 26,
+    "id": 28,
     "question": "After clicking on a link in an email a Chief Financial Officer (CFO) received the following error:\nThe CFO then reported the incident to a technician. The link is purportedly to the organization's bank. Which of the following should the technician perform FIRST?",
     "options": [
       "Update the browser's CRLs",
@@ -447,7 +477,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 27,
+    "id": 29,
     "question": "A technician is editing the hosts file on a few PCs in order to block certain domains. Which of the following would the technician need to execute after editing the\nhosts file?",
     "options": [
       "Enable promiscuous mode.",
@@ -464,7 +494,22 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 28,
+    "id": 30,
+    "question": "A user contacted the help desk to report pop-ups on a company workstation indicating the computer has been infected with 137 viruses and payment is needed to\nremove them. The user thought the company-provided antivirus software would prevent this issue. The help desk ticket states that the user only receives these\nmessages when first opening the web browser. Which of the following steps would MOST likely resolve the issue?",
+    "options": [
+      "Mastered",
+      "Not Mastered"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "\"The user thought the company-provided antivirus software would prevent this issue.\" The most likely steps to resolve the issue are to deploy an ad-blocking\nextension to the browser and perform a reset on the user’s web browser. Ad-blocking extensions can help to prevent pop-ups and other unwanted content from\nappearing in the browser, and resetting the browser can help to remove any malicious extensions or settings that may be causing the issue.",
+    "source_pdf": "220-1102_1.pdf",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 31,
     "question": "Which of the following file types allows a user to easily uninstall software from macOS by simply placing it in the trash bin?",
     "options": [
       ".exe",
@@ -482,7 +527,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 29,
+    "id": 32,
     "question": "A customer calls a service support center and begins yelling at a technician about a feature for a product that is not working to the customer's satisfaction. This\nfeature is not supported by the service support center and requires a field technician to troubleshoot. The customer continues to demand service. Which of the\nfollowing is the BEST course of action for the support center representative to take?",
     "options": [
       "Inform the customer that the issue is not within the scope of this department.",
@@ -499,7 +544,7 @@
     "topic": "software-troubleshooting"
   },
   {
-    "id": 30,
+    "id": 33,
     "question": "A user has opened a help desk ticket regarding the battery life on their mobile phone. The battery in the phone held a charge for most of the day prior to connecting to the corporate network. The battery now only lasts about half a day and the back of the phone is warmer than usual. The phone is configured as follows: Storage: 216.2 GB of 512 GB used Display and Brightness: Automatic Wi-Fi: Enabled Auto-lock: Disabled VPN: Not connected Low Power Mode: Disabled Battery Maximum Capacity: 100% Which of the following changes would have the BEST impact on battery performance?",
     "options": [
       "Enable auto-lock",
@@ -516,7 +561,7 @@
     "source_id": "A7"
   },
   {
-    "id": 31,
+    "id": 34,
     "question": "A user in the accounting department has received this error message: “The print spooler service is not running.” The user contacts the help desk and opens a ticket for assistance. The help desk technician performs some testing and identifies the issue. Which of these would be the best NEXT step?",
     "options": [
       "Reinstall all printer drivers",
@@ -533,7 +578,7 @@
     "source_id": "A8"
   },
   {
-    "id": 32,
+    "id": 35,
     "question": "A user is attempting to AirDrop a document to an associate, but they do not see any destination devices in their list of available AirDrop locations. Which of the following would be the MOST likely reason for this issue?",
     "options": [
       "Low battery",
@@ -550,7 +595,7 @@
     "source_id": "A11"
   },
   {
-    "id": 33,
+    "id": 36,
     "question": "When connecting a new USB webcam to Windows 10, a message appears stating \"The controller does not have enough resources for this device.\" Which of the following would be the BEST next troubleshooting step?",
     "options": [
       "Close all large-memory processes",
@@ -567,7 +612,7 @@
     "source_id": "A23"
   },
   {
-    "id": 34,
+    "id": 37,
     "question": "A help desk technician has been called to a training room that uses Android tablets as presentation devices. An application used for the training program will not start on any of the tablets. When the application is selected, the splash screen appears for a moment and then completely disappears with no error message. Which of the following would be the best NEXT troubleshooting step?",
     "options": [
       "Install all operating system updates",
@@ -584,7 +629,7 @@
     "source_id": "A27"
   },
   {
-    "id": 35,
+    "id": 38,
     "question": "A user on the headquarters network has opened a help desk ticket about their Windows desktop. When starting their computer, the login process proceeds normally but the Windows desktop takes fifteen minutes to appear. Yesterday, the desktop would appear in just a few seconds. Which of the following would be the MOST likely reason for this issue?",
     "options": [
       "Slow profile load",
@@ -601,7 +646,7 @@
     "source_id": "A28"
   },
   {
-    "id": 36,
+    "id": 39,
     "question": "Daniel, a user in the finance department, has purchased a new Android smartphone and has installed a number of productivity apps. After a day of use, Daniel finds the phone displaying a large number of advertisements when browsing the Internet. Which of the following tasks should Daniel perform after completing a factory reset?",
     "options": [
       "Disable Bluetooth",
@@ -618,7 +663,7 @@
     "source_id": "A34"
   },
   {
-    "id": 37,
+    "id": 40,
     "question": "A user has noticed their system has been running very slowly over the last few days. They have also noticed files stored on their computer randomly disappear after the files are saved. The user has rebooted the computer, but the same problems continue to occur. Which of the following should the user perform to resolve these issues?",
     "options": [
       "Boot to Safe Mode",
@@ -635,7 +680,7 @@
     "source_id": "A43"
   },
   {
-    "id": 38,
+    "id": 41,
     "question": "A user in the sales department is attempting to upgrade the operating system of their smartphone, but the smartphone will not start the installation when selected. Which of the following is the MOST likely reason for this issue?",
     "options": [
       "Bluetooth is enabled",
@@ -652,7 +697,7 @@
     "source_id": "A44"
   },
   {
-    "id": 39,
+    "id": 42,
     "question": "A computer on a manufacturing floor has been identified as a malware- infected system. Which of the following should be the best NEXT step to resolve this issue?",
     "options": [
       "Disconnect the network cable",
@@ -669,7 +714,7 @@
     "source_id": "A48"
   },
   {
-    "id": 40,
+    "id": 43,
     "question": "A workstation on a manufacturing floor is taking much longer than normal to boot. Which of the following would be the BEST way to troubleshoot this issue?",
     "options": [
       "Replace the CPU",
@@ -686,7 +731,7 @@
     "source_id": "A52"
   },
   {
-    "id": 41,
+    "id": 44,
     "question": "A user has received a pop up message on their computer that states applications on their computer are infected with a virus. A technician has determined that the pop up message is a hoax that needs to be removed from the computer. The technician has disabled System Restore to remove all previous restore points. Which of the following tasks would be the best NEXT step?",
     "options": [
       "Update the anti-virus signatures",
@@ -703,7 +748,7 @@
     "source_id": "A58"
   },
   {
-    "id": 42,
+    "id": 45,
     "question": "A user is using a smartphone at their desk, and they occasionally receive a security warning in the browser. After some additional troubleshooting, the technician determines the security warnings are fake. Which of the following should a technician follow to BEST resolve this issue?",
     "options": [
       "Put the phone into airplane mode",
@@ -720,7 +765,7 @@
     "source_id": "A60"
   },
   {
-    "id": 43,
+    "id": 46,
     "question": "Sam, a user on the research and development team, reports that her computer displays the message “Missing operating system” during boot. A technician runs hardware diagnostics and finds that the RAM, CPU, storage drive, and power supply all pass the tests. The technician then finds that a connected USB flash drive was causing the issue. Which of the following would prevent this issue from occurring in the future?",
     "options": [
       "Create a login script",
@@ -737,7 +782,7 @@
     "source_id": "A61"
   },
   {
-    "id": 44,
+    "id": 47,
     "question": "Jack, a user, has opened a help desk ticket relating to desktop alerts randomly appearing throughout the day. Most of the alerts contain information about third-party products and services. Which of the following is the MOST likely cause of these messages?",
     "options": [
       "On-path attack",
@@ -754,7 +799,7 @@
     "source_id": "A62"
   },
   {
-    "id": 45,
+    "id": 48,
     "question": "Jack, a user, is having problems with the 802.11 wireless connection on his iOS phone. Although there are names appearing in the network list, his phone does not show any connectivity to a wireless network. Jack has confirmed that airplane mode is not enabled, Bluetooth is on, and VPN is not enabled. Which of the following is the MOST likely reason for this lack of wireless connectivity?",
     "options": [
       "The phone does not include a data plan",
@@ -772,7 +817,7 @@
     "source_id": "A68"
   },
   {
-    "id": 46,
+    "id": 49,
     "question": "A technician has been tasked with removing malware on a training room laptop. After updating the anti-virus software and removing the malware, the technician creates a backup of the system. After the training class ends, the technician is notified that the malware has returned. Which of the following steps was missed and caused the system to be infected again?",
     "options": [
       "Boot to a pre-installation environment",
@@ -789,7 +834,7 @@
     "source_id": "A75"
   },
   {
-    "id": 47,
+    "id": 50,
     "question": "While using a laptop during presentations, a company vice president has found her system randomly locks up. While the problem is occurring, the screen continues to display the last presentation slide but none of the mouse or keyboard buttons will work. To regain control, the vice president must power down and reboot her computer. Which of the following would be the BEST option for troubleshooting this issue?",
     "options": [
       "Examine the Task Manager",
@@ -806,7 +851,7 @@
     "source_id": "A79"
   },
   {
-    "id": 48,
+    "id": 51,
     "question": "A user has opened a help desk ticket for application slowdowns and unwanted pop-up windows. A technician updates the anti-virus software, scans the computer, and removes the malware. The technician then schedules future scans and creates a new restore point. Which of the following should be the NEXT step in the removal process?",
     "options": [
       "Disable System Restore",
@@ -823,7 +868,7 @@
     "source_id": "A81"
   },
   {
-    "id": 49,
+    "id": 52,
     "question": "Sam, a user in the accounting department, has opened a help desk ticket due to problems accessing the website of the company’s payroll service provider. While testing other website connections on Sam’s computer, the technician finds that many pop-up windows are displayed. Which of the following would be the BEST way for the technician to resolve this issue?",
     "options": [
       "Uninstall the browser and reinstall with a different version",
@@ -840,7 +885,7 @@
     "source_id": "A83"
   },
   {
-    "id": 50,
+    "id": 53,
     "question": "After booting, a laptop computer is showing a black screen instead of the normal Windows login prompt. The logs from the update server show drivers on the laptop were automatically updated overnight. Which of the following would be the BEST way to resolve this issue?",
     "options": [
       "Reinstall the operating system",
@@ -857,7 +902,7 @@
     "source_id": "A88"
   },
   {
-    "id": 51,
+    "id": 54,
     "question": "A user is reporting some apps launched on their mobile phone will show an error message and then disappear without starting. This problem occurs with a group of apps normally used during the work day. Which of the following tasks would be the FIRST step for troubleshooting this issue?",
     "options": [
       "Install the previous version of the apps",
@@ -874,7 +919,7 @@
     "source_id": "B16"
   },
   {
-    "id": 52,
+    "id": 55,
     "question": "Jack, a user, has opened a help desk ticket to remove malware from his laptop. A previous removal occurred two weeks earlier with a similar malware infection. Which of the following was missed during the first malware removal?",
     "options": [
       "Restart the computer",
@@ -891,7 +936,7 @@
     "source_id": "B18"
   },
   {
-    "id": 53,
+    "id": 56,
     "question": "A user is performing a series of Google searches, but the results pages are displaying links and advertisements from a different website. This issue occurs each time a Google search is performed. The same Google search on a different computer results in a normal Google results page. Which of the following would resolve this issue?",
     "options": [
       "Run the search from Safe Mode",
@@ -908,7 +953,7 @@
     "source_id": "B24"
   },
   {
-    "id": 54,
+    "id": 57,
     "question": "Jack, a user in the accounting department, is having an issue with his smartphone reaching websites and retrieving mail when working from home. Inside the office, the phone appears to work normally. Which of the following would be the best NEXT step for troubleshooting this issue?",
     "options": [
       "Verify the network configuration at home",
@@ -925,7 +970,7 @@
     "source_id": "B25"
   },
   {
-    "id": 55,
+    "id": 58,
     "question": "A user in the shipping department has logged into the Windows domain. However, the desktop does not show the user’s normal wallpaper and all of the user’s spreadsheets and documents in the “My Documents” folder are missing. Which of these would be the BEST way to restore the user’s normal work environment?",
     "options": [
       "Rename the user’s folder and delete their profile in the registry",
@@ -942,7 +987,7 @@
     "source_id": "B28"
   },
   {
-    "id": 56,
+    "id": 59,
     "question": "A company’s shipping department maintains ten different computers to print shipping labels and track outgoing shipments. All of the systems are displaying an error when they access a third-party shipping management website over a secure connection. Which of the following would be the MOST likely reason for this issue?",
     "options": [
       "The computers have not been updated with the latest OS patches",
@@ -959,7 +1004,7 @@
     "source_id": "B29"
   },
   {
-    "id": 57,
+    "id": 60,
     "question": "A user is receiving alerts on their desktop computer stating, \"Access to this PC has been blocked for security reasons.\" A technician has determined this message was not created by the company's security software. Which of the following would be the best NEXT step in this troubleshooting process?",
     "options": [
       "Update the desktop computer operating system",
@@ -976,7 +1021,7 @@
     "source_id": "B34"
   },
   {
-    "id": 58,
+    "id": 61,
     "question": "A desktop administrator has just removed malware from a user’s desktop computer and has configured the system to automatically update anti- virus signatures and perform a scan each night. Which of the following should be the NEXT step in the removal process?",
     "options": [
       "Enable System Protection",
@@ -993,7 +1038,7 @@
     "source_id": "B40"
   },
   {
-    "id": 59,
+    "id": 62,
     "question": "A user has called the help desk to get assistance with random blue screens on their Windows 10 laptop. The technician finds CPU utilization is constantly high, and many network sites are unavailable or only load half of the site content. The user mentions some random pop-up messages have appeared on the desktop during the workday. Which of the following would be the MOST likely reason for these issues?",
     "options": [
       "Storage drive is failing",
@@ -1011,7 +1056,7 @@
     "source_id": "B46"
   },
   {
-    "id": 60,
+    "id": 63,
     "question": "A technician is troubleshooting an issue with an iOS tablet randomly restarting during normal use. A check of the device shows no significant application updates and the operating system was upgraded to a new version three days ago. The user states the tablet was working normally last week. Which of the following would be the MOST likely reason for these random reboots?",
     "options": [
       "Faulty OS upgrade",
@@ -1029,7 +1074,7 @@
     "source_id": "B47"
   },
   {
-    "id": 61,
+    "id": 64,
     "question": "A desktop administrator is troubleshooting poor performance on a user’s laptop computer. The system takes an excessive amount of time during the boot process, and pop up messages appear while using the word processor and spreadsheet applications. Which of the following steps should the technician do NEXT?",
     "options": [
       "Educate the end-user",
@@ -1046,7 +1091,7 @@
     "source_id": "B50"
   },
   {
-    "id": 62,
+    "id": 65,
     "question": "Jack, an executive, has a laptop that runs very slowly after login and continues running slowly throughout the day. Jack has complained that certain applications cannot be started and others will randomly crash. A check of the laptop shows that the memory utilization is very close to 100%. Which of the following would provide a short-term fix for this issue?",
     "options": [
       "Disable startup items",
@@ -1063,7 +1108,7 @@
     "source_id": "B51"
   },
   {
-    "id": 63,
+    "id": 66,
     "question": "A user has opened a help desk ticket regarding the battery life in her three-year old smartphone. If a power source is not available, the phone battery is usually depleted by the middle of the work day. She uses the smartphone to access resources across the VPN, send and receive email, and run company-related apps. Her average screen time during the day usually exceeds six hours. Which of the following would be the MOST likely reason for this battery issue?",
     "options": [
       "The phone is consuming more power than usual",
@@ -1080,7 +1125,7 @@
     "source_id": "B62"
   },
   {
-    "id": 64,
+    "id": 67,
     "question": "An administrator has identified and removed malware on a corporate desktop computer. Which of the following malware removal steps should be performed NEXT?",
     "options": [
       "Disconnect the computer from the corporate network",
@@ -1097,7 +1142,7 @@
     "source_id": "B63"
   },
   {
-    "id": 65,
+    "id": 68,
     "question": "A graphics designer has been editing image files that have become increasingly large over the last few months. The designer is now receiving error messages from their graphics application complaining of low temporary file cache space. Which of the following would be the best NEXT step?",
     "options": [
       "Replace all system RAM",
@@ -1114,7 +1159,7 @@
     "source_id": "B64"
   },
   {
-    "id": 66,
+    "id": 69,
     "question": "An employee used their tablet to take pictures of the company's newest product. Those pictures were posted on an industry rumor website the following week. Which of the following should be evaluated as the MOST likely security concern?",
     "options": [
       "Cloud storage",
@@ -1131,7 +1176,7 @@
     "source_id": "B74"
   },
   {
-    "id": 67,
+    "id": 70,
     "question": "An administrator is troubleshooting a desktop computer experiencing a reboot issue. Before the Windows login screen appears, the system reboots in a continuous loop. Which of the following would be the BEST way to address this issue?",
     "options": [
       "Start Safe Mode and perform a defragmentation",
@@ -1148,7 +1193,7 @@
     "source_id": "B85"
   },
   {
-    "id": 68,
+    "id": 71,
     "question": "A user on the marketing team is experiencing slower load times and ongoing sluggishness with applications on their laptop. A technician examines the Windows Update logs and finds the monthly updates are failing. Which of the following should be the best NEXT step for resolving this issue?",
     "options": [
       "Perform an anti-malware scan",
@@ -1165,7 +1210,7 @@
     "source_id": "B88"
   },
   {
-    "id": 69,
+    "id": 72,
     "question": "A technician has been called to resolve an issue with a desktop computer in a training facility. The computer appears to boot properly to the desktop, but applications take five minutes to load. While using the application, pop-up messages and other windows appear on the desktop. Which of the following should be the best NEXT troubleshooting step?",
     "options": [
       "View running processes in Task Manager",
@@ -1182,7 +1227,7 @@
     "source_id": "C6"
   },
   {
-    "id": 70,
+    "id": 73,
     "question": "A user has noticed a Bluetooth device is currently connected to their tablet, but they don’t recognize the make or model of the connected device. Which of the following would be the FIRST step for troubleshooting this issue?",
     "options": [
       "Perform an anti-malware scan",
@@ -1199,7 +1244,7 @@
     "source_id": "C8"
   },
   {
-    "id": 71,
+    "id": 74,
     "question": "A user has recently been assigned a new tablet, but each time she tries to read emails the tablet reboots. The user has reinstalled the email client, but the problem continues to occur. Which of the following would be the best NEXT troubleshooting step?",
     "options": [
       "Replace the battery",
@@ -1216,7 +1261,7 @@
     "source_id": "C9"
   },
   {
-    "id": 72,
+    "id": 75,
     "question": "A user has just installed a driver update from a laptop manufacturer. After restarting, their system shows a Windows Stop Error before the login prompt is displayed. Each subsequent reboot causes the same error to be displayed. Which of the following should the system administrator follow to BEST resolve this issue?",
     "options": [
       "Modify the BIOS boot order",
@@ -1233,7 +1278,7 @@
     "source_id": "C16"
   },
   {
-    "id": 73,
+    "id": 76,
     "question": "A desktop administrator is troubleshooting a laptop computer experiencing slowdowns and delays during normal operation. There are many icons displayed in the Windows taskbar, and an error message on the screen shows “Out of memory or system resources.” Which of the following troubleshooting steps would be the BEST way to address this issue?",
     "options": [
       "Use Task Manager to close applications",
@@ -1250,7 +1295,7 @@
     "source_id": "C21"
   },
   {
-    "id": 74,
+    "id": 77,
     "question": "A desktop administrator is removing a virus from a laptop computer in a shared lab. The computer has been removed from the network and the System Restore feature has been disabled. When the administrator attempts to update to the latest anti-virus signatures, the anti-virus utility disables itself. Which of the following would be the best NEXT step?",
     "options": [
       "Boot to Safe Mode and use signatures downloaded from a separate computer",
@@ -1267,7 +1312,7 @@
     "source_id": "C22"
   },
   {
-    "id": 75,
+    "id": 78,
     "question": "An app on a user’s corporate smartphone has stopped updating. Which of the following would be the BEST way to resolve this issue?",
     "options": [
       "Connect the smartphone to a power source",
@@ -1284,7 +1329,7 @@
     "source_id": "C24"
   },
   {
-    "id": 76,
+    "id": 79,
     "question": "George, a user, has a smartphone to assist with maps and directions when traveling to other company locations. At a remote site, George finds his phone is attempting to contact a third-party website to share location information. Which of the following would be the BEST way to address this issue?",
     "options": [
       "Disable the GPS",
@@ -1301,7 +1346,7 @@
     "source_id": "C34"
   },
   {
-    "id": 77,
+    "id": 80,
     "question": "A desktop administrator has been tasked with removing malware from an executive’s laptop computer. The system has been removed from the network, but the Windows startup process shows a Stop Error before rebooting into a repeating cycle. Which of the following would be the best NEXT step in the malware removal process?",
     "options": [
       "Perform a Windows Repair installation",
@@ -1318,7 +1363,7 @@
     "source_id": "C36"
   },
   {
-    "id": 78,
+    "id": 81,
     "question": "A user in the shipping department is using a tracking app on a tablet. The app normally takes 10 seconds to load, but is now taking over a minute before it can be used. Tracking searches that normally take seconds are taking almost a minute to show the tracking details. Other tablets are not experiencing this slowdown. Which of the following would be the best NEXT troubleshooting step?",
     "options": [
       "Reinstall the tracking app",
@@ -1335,7 +1380,7 @@
     "source_id": "C39"
   },
   {
-    "id": 79,
+    "id": 82,
     "question": "A user is receiving this message on their Windows desktop: \"The controller does not have enough resources for this device.\" Which of the following would be the MOST likely reason for this issue?",
     "options": [
       "Remote printer has been disabled",
@@ -1352,7 +1397,7 @@
     "source_id": "C44"
   },
   {
-    "id": 80,
+    "id": 83,
     "question": "An application update has been installed to all computers in the accounting department. A user starts the updated application for the first time but nothing appears on the screen. Which of the following would be the best NEXT troubleshooting step?",
     "options": [
       "Reinstall the application",
@@ -1369,7 +1414,7 @@
     "source_id": "C53"
   },
   {
-    "id": 81,
+    "id": 84,
     "question": "A client’s desktop computer is randomly rebooting throughout the workday without any warnings or error messages. Which of the following would be the BEST next troubleshooting step?",
     "options": [
       "Update the system BIOS",
@@ -1386,7 +1431,7 @@
     "source_id": "C58"
   },
   {
-    "id": 82,
+    "id": 85,
     "question": "A member of the accounting department has been infected with malware, and the technician has just completed the removal process. Which of the following would be the BEST way to verify the integrity of the core operating system files?",
     "options": [
       "Perform a clean Windows install",
@@ -1403,7 +1448,7 @@
     "source_id": "C60"
   },
   {
-    "id": 83,
+    "id": 86,
     "question": "A user has noticed his computer begins to slow down during daily use and eventually locks up completely. During the lock up, the keyboard and mouse do not respond and the screen does not show any error messages. Which of the following tasks should a technician follow to BEST troubleshoot this issue? (Choose TWO)",
     "options": [
       "Start the computer in Safe Mode",
@@ -1422,7 +1467,7 @@
     "source_id": "C61"
   },
   {
-    "id": 84,
+    "id": 87,
     "question": "A user receives this message each time they visit a secure website: “The site’s security certificate is not trusted.” A technician investigates the issue and finds the problem only occurs on this user’s computer and not with other computers in the same office. Which of the following would be the best NEXT troubleshooting task?",
     "options": [
       "Disable Windows Firewall for all HTTPS traffic",
@@ -1439,7 +1484,7 @@
     "source_id": "C62"
   },
   {
-    "id": 85,
+    "id": 88,
     "question": "A computer on a manufacturing floor has a virus, and the system administrator has removed the system from the company network. Which of the following virus removal tasks should occur NEXT?",
     "options": [
       "Discuss virus prevention with the end user",
@@ -1456,7 +1501,7 @@
     "source_id": "C65"
   },
   {
-    "id": 86,
+    "id": 89,
     "question": "When a user starts their desktop computer, the Windows splash screen is shown with a rotating circle, but the login screen is never displayed. A technician researches the issue and finds the computer was just updated to the latest set of Windows patches. Which of the following would be the NEXT step the technician should follow to help solve this issue?",
     "options": [
       "Restart the computer",
@@ -1473,7 +1518,7 @@
     "source_id": "C67"
   },
   {
-    "id": 87,
+    "id": 90,
     "question": "A user would like to use their smartphone for a payment during checkout at the grocery store, but the smartphone is not seen by the payment system. Which of the following would be the BEST next troubleshooting step?",
     "options": [
       "Restart the smartphone",
@@ -1490,7 +1535,7 @@
     "source_id": "C70"
   },
   {
-    "id": 88,
+    "id": 91,
     "question": "A user's smartphone app shows a splash screen but disappears after a few seconds. Which of the following would be the BEST way for the a technician use to view logs and memory statistics for the app?",
     "options": [
       "Developer mode",
@@ -1507,7 +1552,7 @@
     "source_id": "C72"
   },
   {
-    "id": 89,
+    "id": 92,
     "question": "A user is browsing to their corporate home page, but a different website appears instead. The user tries to connect with other browsers on the same computer, but the result is identical. Which of the following would be the best NEXT troubleshooting step?",
     "options": [
       "Try connecting to the site in Safe Mode",

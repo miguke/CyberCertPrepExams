@@ -322,9 +322,9 @@
       "Replace the modem because it is not working correctly based on the test result."
     ],
     "correct": [
-      0
+      2
     ],
-    "explanation": "The technician should restart the modem and run an online internet connection and speed diagnostic tool1. High latency is a common issue with satellite internet\nconnections, and it can cause slow internet speeds2. Restarting the modem can help to resolve the issue1. The technician should also run an online internet\nconnection and speed diagnostic tool to check the connection and speed1. Guiding the customer on how to upgrade the internet plan with the provider in order to\nimprove latency is not likely to be the correct option2.\nHigh latency while pinging can indicate a problem with the modem or the connection between the modem and the satellite. Restarting the modem can often\nresolve connectivity issues. Running an online internet connection and speed diagnostic tool can help identify any other issues with the connection. Upgrading the\ninternet plan may not resolve latency issues and may not be necessary if the download test is performing perfectly with very good download speeds. High latency\nis not normal for satellite internet connections, so replacing the modem based on this one test result is premature. References: CompTIA A+ Certification Exam:\nCore 1 - Page 102",
+    "explanation": "One drawback of satellites placed in a high geostationary orbit is increased latency. The signal must travel over thousands of miles more than terrestrial connections, introducing a delay of many times what might be expected over a land link. For example, if accessing an internet web server over DSL involves a 10–20 ms round trip time (RTT) delay on the link, accessing the same site over a satellite link could involve a 600–800 ms RTT delay.",
     "id": 23
   },
   {

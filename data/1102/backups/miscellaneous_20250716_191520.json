@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "question": "Which of the following is the most likely reason a filtration system is critical for data centers?",
+    "options": [
+      "Plastics degrade over time.",
+      "High humidity levels can rust metal.",
+      "Insects can invade the data center.",
+      "Dust particles can clog the machines."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A filtration system is critical for data centers because it can control the humidity and temperature levels in the environment. High humidity levels can cause\ncondensation and corrosion on the metal components of the servers and other equipment, leading to malfunction and damage. A filtration system can also prevent\ndust, dirt, and other contaminants from entering the data center and clogging the machines or causing overheating.",
+    "source_pdf": "220-1102_1.pdf",
+    "type": "single",
+    "topic": "miscellaneous"
+  },
+  {
+    "id": 2,
+    "question": "A user calls the help desk to report that none of the files on a PC will open. The user also indicates a program on the desktop is requesting payment in exchange\nfor file access A technician verifies the user's PC is infected with ransorrrware. Which of the following should the technician do FIRST?",
+    "options": [
+      "Scan and remove the malware",
+      "Schedule automated malware scans",
+      "Quarantine the system",
+      "Disable System Restore"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The technician should quarantine the system first1 Reference:\nCompTIA A+ Certification Exam: Core 2 Objectives Version 4.0. Retrieved from https://partners.comptia.org/docs/default-source/resources/comptia-\na-220-1102-exam- objectives-(3-0)",
+    "source_pdf": "220-1102_1.pdf",
+    "type": "single",
+    "topic": "miscellaneous"
+  }
+]

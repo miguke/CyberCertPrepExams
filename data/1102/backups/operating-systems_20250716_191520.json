@@ -37,7 +37,7 @@
     "id": 3,
     "question": "A Linux technician needs a filesystem type that meets the following requirements:\n. All changes are tracked.\n. The possibility of file corruption is reduced.\n· Data recovery is easy.\nWhich of the following filesystem types best meets these requirements?",
     "options": [
-      "ext3",
+      "",
       "FAT32",
       "exFAT",
       "NTFS"
@@ -223,6 +223,21 @@
   },
   {
     "id": 14,
+    "question": "A technician downloaded software from the Internet that required the technician to scroll through a text box and at the end of the text box, click a button labeled\nAccept Which of the following agreements IS MOST likely in use?",
+    "options": [
+      "Mastered",
+      "Not Mastered"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The most likely agreement in use here is a EULA (End User License Agreement). This is a legally binding agreement between the user and the software\ndeveloper, outlining the terms and conditions that the user must agree to in order to use the software. It is important that the user understands and agrees to the\nEULA before they can proceed with downloading and installing the software. As stated in the CompTIA A+ Core 2 exam objectives, users should be aware of the\nEULA before downloading any software.",
+    "source_pdf": "220-1102_1.pdf",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 15,
     "question": "Which of the following default system tools can be used in macOS to allow the technician to view the screen simultaneously with the user?",
     "options": [
       "Remote Assistance Remote Desktop Protocol",
@@ -239,7 +254,7 @@
     "topic": "operating-systems"
   },
   {
-    "id": 15,
+    "id": 16,
     "question": "A technician is creating a location on a Windows workstation for a customer to store meeting minutes. Which of the following commands should the technician\nuse?",
     "options": [
       "c: \\minutes",
@@ -256,7 +271,7 @@
     "topic": "operating-systems"
   },
   {
-    "id": 16,
+    "id": 17,
     "question": "A technician is trying to connect to a user's laptop in order to securely install updates. Given the following information about the laptop: Hostane: corp-laptop-01\nIP Address: 192.168.0.45\nSubnet Mask: 255.255.252.0\nDefault Gateway: 192.168.0.1\n Open ports: 21, 22, 80, 443\nWhich of the following should the technician do to connect via RDP?",
     "options": [
       "Confirm the user can ping the default gateway.",
@@ -273,7 +288,7 @@
     "topic": "operating-systems"
   },
   {
-    "id": 17,
+    "id": 18,
     "question": "Which of the following filesystem types does macOS use?",
     "options": [
       "ext4",
@@ -290,7 +305,7 @@
     "topic": "operating-systems"
   },
   {
-    "id": 18,
+    "id": 19,
     "question": "A developer's Type 2 hypervisor is performing inadequately when compiling new source code. Which of the following components should the developer upgrade to\nimprove the hypervisor’s performance?",
     "options": [
       "Amount of system RAM",
@@ -307,7 +322,7 @@
     "topic": "operating-systems"
   },
   {
-    "id": 19,
+    "id": 20,
     "question": "A technician is setting up a desktop computer in a small office. The user will need to\naccess files on a drive shared from another desktop on the network. Which of the following configurations should the technician employ\nto achieve this goal?",
     "options": [
       "Configure the network as private",
@@ -324,7 +339,7 @@
     "topic": "operating-systems"
   },
   {
-    "id": 20,
+    "id": 21,
     "question": "A technician is setting up a newly built computer. Which of the following is the fastest way for the technician to install Windows 10?",
     "options": [
       "Factory reset",
@@ -341,7 +356,7 @@
     "topic": "operating-systems"
   },
   {
-    "id": 21,
+    "id": 22,
     "question": "Which of the following Is a package management utility for PCs that are running the Linux operating system?",
     "options": [
       "chmod",
@@ -358,7 +373,7 @@
     "topic": "operating-systems"
   },
   {
-    "id": 22,
+    "id": 23,
     "question": "A user has a computer with Windows 10 Home installed and purchased a Windows 10 Pro license. The user is not sure how to upgrade the OS. Which of the\nfollowing should the technician do to apply this license?",
     "options": [
       "Copy the c:\\Wlndows\\wlndows.lie file over to the machine and restart.",
@@ -375,7 +390,7 @@
     "topic": "operating-systems"
   },
   {
-    "id": 23,
+    "id": 24,
     "question": "Which of these Windows features provides full disk encryption for all data on a storage drive?",
     "options": [
       "Domain Services",
@@ -392,7 +407,7 @@
     "source_id": "A13"
   },
   {
-    "id": 24,
+    "id": 25,
     "question": "What is the maximum amount of RAM supported by a 32-bit version of an operating system?",
     "options": [
       "4 GB",
@@ -409,7 +424,7 @@
     "source_id": "A19"
   },
   {
-    "id": 25,
+    "id": 26,
     "question": "Daniel, a user, is attempting to start an application on his laptop computer. Each time the application shows the starting graphic, it suddenly disappears and the application icon disappears from the taskbar. A technician would like to get more information about each previous occurrence of the application crash. Which of these choices would provide these details?",
     "options": [
       "Event Viewer",
@@ -426,7 +441,7 @@
     "source_id": "A20"
   },
   {
-    "id": 26,
+    "id": 27,
     "question": "A system administrator has created a shared folder on a server to store operating system images. Technicians access the shared folder to download the latest images when performing large-scale system installations. Which of the following will be the MOST likely method of accessing this data?",
     "options": [
       "Map the shared folder to an available drive letter",
@@ -443,7 +458,7 @@
     "source_id": "A24"
   },
   {
-    "id": 27,
+    "id": 28,
     "question": "A desktop administrator is installing a 64-bit version of Windows 10 Pro on a workstation, but the installation will not start. The workstation configuration is: 1 GHz CPU 2 GB of RAM 15 GB of free storage space 1280 x 720 video resolution Which of the following would allow this installation to proceed?",
     "options": [
       "Increase free storage space to 32 GB",
@@ -460,7 +475,7 @@
     "source_id": "A25"
   },
   {
-    "id": 28,
+    "id": 29,
     "question": "A system administrator has been asked to install a new application on a server, but the application is 64-bit and the server operating system is 32-bit. Which of the following describes the issue associated with this installation?",
     "options": [
       "File permissions",
@@ -477,7 +492,7 @@
     "source_id": "A29"
   },
   {
-    "id": 29,
+    "id": 30,
     "question": "A Linux administrator needs to modify the configuration text file for a service. Which of the following utilities would provide this functionality?",
     "options": [
       "nano",
@@ -494,7 +509,7 @@
     "source_id": "A31"
   },
   {
-    "id": 30,
+    "id": 31,
     "question": "A user has installed multiple applications over the last week. During the startup process, the computer now takes over fifteen minutes to display the Windows 10 desktop. Which of the following utilities would help the system administrator troubleshoot this issue?",
     "options": [
       "defrag",
@@ -511,7 +526,7 @@
     "source_id": "A37"
   },
   {
-    "id": 31,
+    "id": 32,
     "question": "A system administrator needs to view a set of application log files contained in a folder named “logs.” Which of the following commands should be used to make this folder the current directory?",
     "options": [
       "cd logs",
@@ -528,7 +543,7 @@
     "source_id": "A40"
   },
   {
-    "id": 32,
+    "id": 33,
     "question": "A system administrator is configuring a server to use eight bootable partitions on a single SSD. Which of the following partition styles would be the BEST choice for this configuration?",
     "options": [
       "MBR",
@@ -545,7 +560,7 @@
     "source_id": "A41"
   },
   {
-    "id": 33,
+    "id": 34,
     "question": "A technician is installing a fresh Windows operating system on a file server. Unfortunately, the drive controller in the system is not recognized during the installation process. Which of the following would be the BEST way to manage this issue?",
     "options": [
       "Load third-party drivers",
@@ -562,7 +577,7 @@
     "source_id": "A42"
   },
   {
-    "id": 34,
+    "id": 35,
     "question": "The hard drive in a macOS desktop has failed and none of the data on the drive was recoverable. A new storage drive has now been installed. Which of the following should be used to restore the data on the computer?",
     "options": [
       "Backup and Restore",
@@ -579,7 +594,7 @@
     "source_id": "A45"
   },
   {
-    "id": 35,
+    "id": 36,
     "question": "A system administrator is upgrading four workstations from Windows 8.1 to Windows 11. All of the user files and applications are stored on the server, and no documents or settings need to be retained between versions. Which of these installation methods would be the BEST way to provide this upgrade?",
     "options": [
       "Factory reset",
@@ -596,7 +611,7 @@
     "source_id": "A47"
   },
   {
-    "id": 36,
+    "id": 37,
     "question": "An administrator is upgrading a Windows 8.1 Enterprise x64 computer to Windows 10. The user would like to maintain all applications and files during the upgrade process. Which of the following upgrade options would meet this requirement?",
     "options": [
       "Windows 10 Enterprise x86",
@@ -613,7 +628,7 @@
     "source_id": "A50"
   },
   {
-    "id": 37,
+    "id": 38,
     "question": "A user in the marketing department is using an application that randomly shuts down during normal use. When the problem occurs, the application suddenly disappears and no error messages are shown on the screen. Which of the following would provide the system administrator with additional information regarding this issue?",
     "options": [
       "System Configuration",
@@ -631,7 +646,7 @@
     "source_id": "A51"
   },
   {
-    "id": 38,
+    "id": 39,
     "question": "A user working from home is not able to print to a laser printer at the corporate office. Which of the following would be the MOST likely reason for this issue?",
     "options": [
       "WPA3 settings",
@@ -648,7 +663,7 @@
     "source_id": "A54"
   },
   {
-    "id": 39,
+    "id": 40,
     "question": "A malware infection has recently been removed from a computer. When starting the operating system, Windows shows errors during the startup process indicating some core operating system files are missing. Which of the following should be used to restore these missing files?",
     "options": [
       "gpupdate",
@@ -665,7 +680,7 @@
     "source_id": "A64"
   },
   {
-    "id": 40,
+    "id": 41,
     "question": "A system administrator is creating a series of shared folders that should not be visible when users browse the network for available resources. What symbol should be added to the end of a share name to provide this functionality?",
     "options": [
       ". (period)",
@@ -682,7 +697,7 @@
     "source_id": "A67"
   },
   {
-    "id": 41,
+    "id": 42,
     "question": "A technician is troubleshooting a computer infected with a virus. The user thought they were opening a spreadsheet, but the file was actually a virus executable. Which of the following Windows options were MOST likely associated with this issue?",
     "options": [
       "Always show icons, never thumbnails",
@@ -699,7 +714,7 @@
     "source_id": "A71"
   },
   {
-    "id": 42,
+    "id": 43,
     "question": "A system administrator is adding an additional drive to a server and extending the size of an existing volume. Which of the following utilities would provide a graphical summary of the existing storage configuration?",
     "options": [
       "Disk Management",
@@ -717,7 +732,7 @@
     "source_id": "A78"
   },
   {
-    "id": 43,
+    "id": 44,
     "question": "A system administrator needs to upgrade a training room of twenty systems to the latest Windows version. Which of the following would be the MOST efficient method of performing this upgrade process?",
     "options": [
       "Recovery partition",
@@ -734,7 +749,7 @@
     "source_id": "A80"
   },
   {
-    "id": 44,
+    "id": 45,
     "question": "A Linux administrator has been asked to upgrade the web server software on a device. Which of the following would provide the administrator with the appropriate rights and permissions for this upgrade?",
     "options": [
       "chmod",
@@ -751,7 +766,7 @@
     "source_id": "A85"
   },
   {
-    "id": 45,
+    "id": 46,
     "question": "A user is connecting their laptop to an external monitor and keyboard, but the laptop goes into sleep mode if the laptop screen is shut. Which of the following would modify this configuration to keep the laptop running when the lid is closed?",
     "options": [
       "Power Options",
@@ -768,7 +783,7 @@
     "source_id": "A86"
   },
   {
-    "id": 46,
+    "id": 47,
     "question": "A user needs to modify a spreadsheet for an upcoming meeting. The spreadsheet is currently stored on a remote computer in a shared drive. The user would like to access the shared drive as a drive letter inside of Windows File Explorer. Which of the following command line options would provide this functionality?",
     "options": [
       "tasklist",
@@ -785,7 +800,7 @@
     "source_id": "B8"
   },
   {
-    "id": 47,
+    "id": 48,
     "question": "A macOS server administrator needs a backup system to allow the recovery of data from any point in the last thirty days. Which of the following should be used for this requirement?",
     "options": [
       "Backup and Restore",
@@ -802,7 +817,7 @@
     "source_id": "B9"
   },
   {
-    "id": 48,
+    "id": 49,
     "question": "A desktop administrator is upgrading an older computer to support the 64-bit version of Windows 10 Pro. The computer currently has: 1 GHz CPU 1 GB of RAM 50 GB of free storage space 1024 x 768 video resolution Which of the following should be upgraded to support the Windows 10 installation?",
     "options": [
       "CPU",
@@ -819,7 +834,7 @@
     "source_id": "B11"
   },
   {
-    "id": 49,
+    "id": 50,
     "question": "A system administrator has been tasked with locating all of the log files contained within an application folder. The folder currently contains over a thousand files, and only a portion of them have a .log extension. Which of these Windows commands would be the BEST way to find these files?",
     "options": [
       "sfc",
@@ -836,7 +851,7 @@
     "source_id": "B13"
   },
   {
-    "id": 50,
+    "id": 51,
     "question": "A system administrator is analyzing a problem with a USB flash drive on a Windows 10 computer. When the flash drive is inserted, the CPU utilization increases to 100%. The administrator would like to disable one of the computer’s USB controllers for troubleshooting. Which of the following would provide this functionality?",
     "options": [
       "Services",
@@ -853,7 +868,7 @@
     "source_id": "B15"
   },
   {
-    "id": 51,
+    "id": 52,
     "question": "Which of the following features would be found in Windows 10 Pro but not in Windows 10 Home?",
     "options": [
       "32-bit and 64-bit versions",
@@ -870,7 +885,7 @@
     "source_id": "B19"
   },
   {
-    "id": 52,
+    "id": 53,
     "question": "A security administrator has been asked to reinstall Windows on a web server diagnosed with a rootkit infection. Which of the following installation methods would be the BEST choice for this server?",
     "options": [
       "In-place upgrade",
@@ -887,7 +902,7 @@
     "source_id": "B26"
   },
   {
-    "id": 53,
+    "id": 54,
     "question": "A desktop administrator is troubleshooting an older computer that has been slowing down as more applications and files are stored on the hard drive. Which of the following commands would be the BEST choice for increasing the performance of this computer?",
     "options": [
       "defrag",
@@ -905,7 +920,7 @@
     "source_id": "B33"
   },
   {
-    "id": 54,
+    "id": 55,
     "question": "A technician has created a Windows image that can be used across all of the computers in a test lab. Which of the following would be the best way to deploy these images?",
     "options": [
       "Clean install",
@@ -922,7 +937,7 @@
     "source_id": "B36"
   },
   {
-    "id": 55,
+    "id": 56,
     "question": "Which of the following partition types limit a Windows installation to a maximum partition size of 2 TB?",
     "options": [
       "FAT32",
@@ -939,7 +954,7 @@
     "source_id": "B42"
   },
   {
-    "id": 56,
+    "id": 57,
     "question": "A server administrator is installing a 4 TB drive in a database server and would like to use all free space as a single partition. Which of the following technologies should be used with this drive?",
     "options": [
       "FAT32",
@@ -956,7 +971,7 @@
     "source_id": "B45"
   },
   {
-    "id": 57,
+    "id": 58,
     "question": "A system administrator needs to modify a file in the \\Windows\\Installer directory, but the folder doesn’t appear in the file list. Which of these options would help the system administrator with this task?",
     "options": [
       "Safe Mode",
@@ -973,7 +988,7 @@
     "source_id": "B48"
   },
   {
-    "id": 58,
+    "id": 59,
     "question": "A Linux administrator is modifying a log file and needs to rename the file. Which of the following should be used to make this change?",
     "options": [
       "rm",
@@ -990,7 +1005,7 @@
     "source_id": "B49"
   },
   {
-    "id": 59,
+    "id": 60,
     "question": "A technician would like to modify a configuration in a user's UEFI BIOS, but the system will not provide a BIOS configuration hotkey after shutting down and powering on the computer. Which of the following would be the BEST way to address this issue?",
     "options": [
       "Change the File Explorer Options",
@@ -1008,7 +1023,7 @@
     "source_id": "B53"
   },
   {
-    "id": 60,
+    "id": 61,
     "question": "A user on the sales team has opened a help desk ticket because of short battery times on a new company-provided tablet. When using the tablet, the battery only lasts a few hours before shutting off. Which of the following would be the BEST choices for improving the battery life? (Select TWO)",
     "options": [
       "Install the latest operating system patches",
@@ -1028,7 +1043,7 @@
     "source_id": "B57"
   },
   {
-    "id": 61,
+    "id": 62,
     "question": "A user in the accounting department has installed a new application for the upcoming tax year. Although the current application worked perfectly, the newer application runs significantly slower. Which of the following should be the FIRST troubleshooting step?",
     "options": [
       "Roll back to the previous application",
@@ -1045,7 +1060,7 @@
     "source_id": "B59"
   },
   {
-    "id": 62,
+    "id": 63,
     "question": "A macOS user needs to encrypt all of the information on their laptop. Which of the following would be the BEST choice for this requirement?",
     "options": [
       "Spaces",
@@ -1062,7 +1077,7 @@
     "source_id": "B60"
   },
   {
-    "id": 63,
+    "id": 64,
     "question": "An administrator is troubleshooting an error message that appears each time an application is started. The administrator has uninstalled and reinstalled the application, but the error message still appears. Which of the following would be the BEST next troubleshooting step?",
     "options": [
       "Use Performance Manager to monitor the system",
@@ -1079,7 +1094,7 @@
     "source_id": "B66"
   },
   {
-    "id": 64,
+    "id": 65,
     "question": "Which of these describes a free, open-source operating system?",
     "options": [
       "macOS",
@@ -1096,7 +1111,7 @@
     "source_id": "B69"
   },
   {
-    "id": 65,
+    "id": 66,
     "question": "A system administrator has installed a SOHO network of five Windows computers. The administrator would like to provide a method of sharing documents and spreadsheets between all of the office computers. Which of the following would be the BEST way to provide this functionality?",
     "options": [
       "Domain",
@@ -1113,7 +1128,7 @@
     "source_id": "B73"
   },
   {
-    "id": 66,
+    "id": 67,
     "question": "A system administrator needs to configure a laptop to support inbound Remote Desktop services for the help desk team. Which of these Control Panel features provides access to these settings?",
     "options": [
       "Internet Options",
@@ -1130,7 +1145,7 @@
     "source_id": "B79"
   },
   {
-    "id": 67,
+    "id": 68,
     "question": "A system administrator is installing a new video editing application on a user’s workstation from an installation USB flash drive. However, the installation process fails due to lack of available drive space. Which of the following would be the BEST way to complete the installation process?",
     "options": [
       "Use a share drive for the installation source",
@@ -1147,7 +1162,7 @@
     "source_id": "B82"
   },
   {
-    "id": 68,
+    "id": 69,
     "question": "A system administrator is troubleshooting an application issue. The application uses an increasing amount of memory until all available RAM is eventually depleted. The computer must be rebooted every few days when this memory issue occurs. Which of the following utilities would show how much RAM is used by this application?",
     "options": [
       "Event Viewer",
@@ -1164,7 +1179,7 @@
     "source_id": "B84"
   },
   {
-    "id": 69,
+    "id": 70,
     "question": "A desktop administrator is troubleshooting an error that randomly causes a workstation to spike to 100% utilization. Which of these utilities would help the administrator track and report on system utilization over a 24-hour period?",
     "options": [
       "Performance Monitor",
@@ -1181,7 +1196,7 @@
     "source_id": "B89"
   },
   {
-    "id": 70,
+    "id": 71,
     "question": "A system administrator would like to remove the TFTP Client in Windows 10. Which of the following Control Panel options would be the BEST choice for this task?",
     "options": [
       "Programs and Features",
@@ -1198,7 +1213,7 @@
     "source_id": "C7"
   },
   {
-    "id": 71,
+    "id": 72,
     "question": "A computer technician has been asked to verify a set of new Group Policy settings on computers at a remote site. Which of the following commands should be used to validate the last policy update on the systems?",
     "options": [
       "net use",
@@ -1216,7 +1231,7 @@
     "source_id": "C10"
   },
   {
-    "id": 72,
+    "id": 73,
     "question": "A system administrator needs to modify the Linux group associated with a file. Which of the following would provide this functionality?",
     "options": [
       "ps",
@@ -1233,7 +1248,7 @@
     "source_id": "C11"
   },
   {
-    "id": 73,
+    "id": 74,
     "question": "A system administrator is concerned about the security of devices in the field and would like to encrypt all data on company laptops. Which of these Windows features would provide this functionality?",
     "options": [
       "EFS",
@@ -1250,7 +1265,7 @@
     "source_id": "C15"
   },
   {
-    "id": 74,
+    "id": 75,
     "question": "The available storage space on a user’s workstation is running low, and some updates are failing due to insufficient drive space. Which of the following would be the BEST way to increase drive space until a larger storage drive can be installed?",
     "options": [
       "Use a Guest login",
@@ -1267,7 +1282,7 @@
     "source_id": "C17"
   },
   {
-    "id": 75,
+    "id": 76,
     "question": "A technician is troubleshooting a Windows 10 computer performing very slowly when moving from one application to another. Which of the following utilities would allow the technician to view real-time resource activity?",
     "options": [
       "Services",
@@ -1284,7 +1299,7 @@
     "source_id": "C18"
   },
   {
-    "id": 76,
+    "id": 77,
     "question": "A server administrator needs to create a folder on a Windows server to store weekly status report documents. Which of the following command- line tools would provide this functionality?",
     "options": [
       "md",
@@ -1302,7 +1317,7 @@
     "source_id": "C20"
   },
   {
-    "id": 77,
+    "id": 78,
     "question": "A Windows 10 computer is displaying a series of error messages during the startup process. A technician has been dispatched and would like to view more information about the errors without restarting the computer. Which of the following utilities would provide the technician with more details?",
     "options": [
       "taskschd",
@@ -1320,7 +1335,7 @@
     "source_id": "C23"
   },
   {
-    "id": 78,
+    "id": 79,
     "question": "A desktop technician has received a complaint that a remotely-hosted application has stopped working. The technician believes that a network outage at the application provider is the root cause of the issue. Which of the following tools would be the BEST choice to confirm the location of the outage?",
     "options": [
       "ping",
@@ -1337,7 +1352,7 @@
     "source_id": "C28"
   },
   {
-    "id": 79,
+    "id": 80,
     "question": "A Linux administrator is using the grep command while monitoring a database application. Which of the following would BEST describe this activity?",
     "options": [
       "Search through a file for specific text",
@@ -1354,7 +1369,7 @@
     "source_id": "C31"
   },
   {
-    "id": 80,
+    "id": 81,
     "question": "A system administrator would like to upgrade a user's Windows video editing application to the latest version, but the upgrade utility fails with the error \"Not enough free space.\" Which of the following utilities would allow the system administrator to resolve this issue?",
     "options": [
       "cleanmgr",
@@ -1372,7 +1387,7 @@
     "source_id": "C38"
   },
   {
-    "id": 81,
+    "id": 82,
     "question": "A Windows administrator needs to define a minimum password length for all network users. Which of the following should be used to complete this task?",
     "options": [
       "Device Manager",
@@ -1389,7 +1404,7 @@
     "source_id": "C42"
   },
   {
-    "id": 82,
+    "id": 83,
     "question": "A manager in the accounting department would like to upgrade to Windows 10, but she doesn’t want to lose access to any of the currently installed applications or data. Which of the following methods would be the BEST choice for these requirements?",
     "options": [
       "Clean install",
@@ -1406,7 +1421,7 @@
     "source_id": "C46"
   },
   {
-    "id": 83,
+    "id": 84,
     "question": "A help desk is receiving reports that a group of devices is not able to communicate outside of their local IP subnet. A technician can ping devices on the same network, but does not receive a response when pinging the IP address of external devices. Which of the following would be the MOST likely cause of this issue?",
     "options": [
       "Default gateway",
@@ -1423,7 +1438,7 @@
     "source_id": "C48"
   },
   {
-    "id": 84,
+    "id": 85,
     "question": "A user is working with a .dmg file on their macOS desktop. Which of the following would describe the contents of this file?",
     "options": [
       "Debug information",
@@ -1440,7 +1455,7 @@
     "source_id": "C59"
   },
   {
-    "id": 85,
+    "id": 86,
     "question": "A user would like to configure their local printer to be accessible to anyone on the corporate network. Which of the following would be the BEST way to configure this connection?",
     "options": [
       "Configure a VPN connection",
@@ -1457,7 +1472,7 @@
     "source_id": "C64"
   },
   {
-    "id": 86,
+    "id": 87,
     "question": "A user in the marketing department needs to move data between macOS and Windows computers using a USB flash drive. Which of the following file systems would be the BEST way to easily transfer files between these operating systems?",
     "options": [
       "exFAT",
@@ -1474,7 +1489,7 @@
     "source_id": "C66"
   },
   {
-    "id": 87,
+    "id": 88,
     "question": "A workstation technician manages a training center with thirty student computers in each room. All of the computers have the same hardware configurations. Which of these installation methods would be the BEST choice for quickly resetting the training rooms at the end of each week?",
     "options": [
       "In-place upgrade",
@@ -1491,7 +1506,7 @@
     "source_id": "C69"
   },
   {
-    "id": 88,
+    "id": 89,
     "question": "An administrator is implementing security measures on a server. Which TWO of the following would be the BEST choices to increase the security of this server? (Choose two.)",
     "options": [
       "Disable guest account",
@@ -1511,7 +1526,7 @@
     "source_id": "C74"
   },
   {
-    "id": 89,
+    "id": 90,
     "question": "A user has purchased a computer that uses a 32-bit version of an operating system. Which of the following would be the maximum amount of RAM supported in this OS?",
     "options": [
       "32 GB",
@@ -1530,7 +1545,7 @@
     "source_id": "C75"
   },
   {
-    "id": 90,
+    "id": 91,
     "question": "A technician is troubleshooting a problem on a Linux server and needs to view the real-time CPU and memory utilization for each operating system process. Which of the following would provide this functionality?",
     "options": [
       "dig",

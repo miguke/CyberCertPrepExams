@@ -70,6 +70,21 @@
   },
   {
     "id": 5,
+    "question": "A small-office customer needs three PCs to be configured in a network with no server. Which of the following network types is the customer's BEST choice for this\nenvironment?",
+    "options": [
+      "Mastered",
+      "Not Mastered"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A workgroup network is a peer-to-peer network where each PC can share files and resources with other PCs without a central server. A public network is a\nnetwork that is accessible to anyone on the internet. A wide area network is a network that spans a large geographic area, such as a country or a continent. A\ndomain network is a network where a server controls the access and security of the PCs. Verified References: https://www.comptia.org/blog/network-types\nhttps://www.comptia.org/certifications/a",
+    "source_pdf": "220-1102_1.pdf",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 6,
     "question": "A technician is creating a tunnel that hides IP addresses and secures all network traffic. Which of the following protocols is capable of enduring enhanced security?",
     "options": [
       "DNS",
@@ -86,7 +101,7 @@
     "topic": "security"
   },
   {
-    "id": 6,
+    "id": 7,
     "question": "Which of the following would MOST likely be deployed to enhance physical security for a building?",
     "options": [
       "Multifactor authentication",
@@ -106,7 +121,7 @@
     "topic": "security"
   },
   {
-    "id": 7,
+    "id": 8,
     "question": "A user has requested help setting up the fingerprint reader on a Windows 10 laptop. The laptop is equipped with a fingerprint reader\nand is joined to a domain Group Policy enables Windows Hello on all computers in the environment. Which of the following options describes how to set up\nWindows Hello Fingerprint for the user?",
     "options": [
       "Navigate to the Control Panel utility, select the Security and Maintenance submenu, select Change Security and Maintenance settings, select Windows Hello Fingerprint, and have the user place a fingerprint on the fingerprint reader repeatedly until Windows indicates setup is complete",
@@ -123,7 +138,7 @@
     "topic": "security"
   },
   {
-    "id": 8,
+    "id": 9,
     "question": "A computer on a corporate network has a malware infection. Which of the following would be the BEST method for returning the computer to service?",
     "options": [
       "Scanning the system with a Linux live disc, flashing the BIOS, and then returning the computer to service",
@@ -141,7 +156,7 @@
     "topic": "security"
   },
   {
-    "id": 9,
+    "id": 10,
     "question": "Which of the following is also known as something you know, something you have, and something you are?",
     "options": [
       "ACL",
@@ -158,7 +173,7 @@
     "topic": "security"
   },
   {
-    "id": 10,
+    "id": 11,
     "question": "A company-owned mobile device is displaying a high number of ads, receiving data-usage limit notifications, and experiencing slow response. After checking the\ndevice, a technician notices the device has been jailbroken. Which of the following should the technician do next?",
     "options": [
       "Run an antivirus and enable encryption.",
@@ -175,7 +190,7 @@
     "topic": "security"
   },
   {
-    "id": 11,
+    "id": 12,
     "question": "While trying to repair a Windows 10 OS, a technician receives a prompt asking for a key. The technician tries the administrator password, but it is rejected. Which\nof the following does the technician need in order to continue the OS repair?",
     "options": [
       "SSL key",
@@ -192,7 +207,7 @@
     "topic": "security"
   },
   {
-    "id": 12,
+    "id": 13,
     "question": "A company is experiencing a DDoS attack. Several internal workstations are the source of the traffic. Which of the following types of infections are the workstations\nmost likely experiencing?",
     "options": [
       "Zombies",
@@ -212,7 +227,7 @@
     "topic": "security"
   },
   {
-    "id": 13,
+    "id": 14,
     "question": "A technician has verified that a user's computer has a virus and the antivirus software is out of date. Which of the following steps should the technician take next?",
     "options": [
       "Quarantine the computer.",
@@ -229,7 +244,7 @@
     "topic": "security"
   },
   {
-    "id": 14,
+    "id": 15,
     "question": "The findings from a security audit indicate the risk of data loss from lost or stolen laptops is high. The company wants to reduce this risk with minimal impact to\nusers who want to use their laptops when not on the network. Which of the following would BEST reduce this risk for Windows laptop users?",
     "options": [
       "Requiring strong passwords",
@@ -246,7 +261,7 @@
     "topic": "security"
   },
   {
-    "id": 15,
+    "id": 16,
     "question": "A user's corporate phone was stolen, and the device contains company trade secrets. Which of the following technologies should be implemented to mitigate this\nrisk?",
     "options": [
       "Remote wipe",
@@ -266,7 +281,7 @@
     "topic": "security"
   },
   {
-    "id": 16,
+    "id": 17,
     "question": "A hard drive that previously contained PI I needs to be repurposed for a public access workstation. Which of the following data destruction methods should a\ntechnician use to ensure data is completely removed from the hard drive?",
     "options": [
       "Shredding",
@@ -283,7 +298,7 @@
     "topic": "security"
   },
   {
-    "id": 17,
+    "id": 18,
     "question": "A user contacts a technician about an issue with a laptop. The user states applications open without being launched and the browser redirects when trying to go to\ncertain websites. Which of the following is MOST likely the cause of the user's issue?",
     "options": [
       "Keylogger",
@@ -300,7 +315,22 @@
     "topic": "security"
   },
   {
-    "id": 18,
+    "id": 19,
+    "question": "A user reports a workstation has been performing strangely after a suspicious email was opened on it earlier in the week. Which of the following should the\ntechnician perform FIRST?",
+    "options": [
+      "Mastered",
+      "Not Mastered"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "https://partners.comptia.org/docs/default-source/resources/comptia-a-220-1102-exam-objectives-(3-0)\nWhen a user reports that their workstation is behaving strangely after opening a suspicious email, the first step a technician should take is to run a virus scan on\nthe computer. This is because opening a suspicious email is a common way for viruses and malware to infect a computer. Running a virus scan can help identify\nand remove any infections that may be causing the computer to behave strangely.",
+    "source_pdf": "220-1102_1.pdf",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 20,
     "question": "A Windows workstation that was recently updated with approved system patches shut down instead of restarting. Upon reboot, the technician notices an alert\nstating the workstation has malware in the root OS folder. The technician promptly performs a System Restore and reboots the workstation, but the malware is still\ndetected. Which of the following BEST describes why the system still has malware?",
     "options": [
       "A system patch disabled the antivirus protection and host firewall.",
@@ -317,7 +347,7 @@
     "topic": "security"
   },
   {
-    "id": 19,
+    "id": 21,
     "question": "Which of the following operating systems is most commonly used in embedded systems?",
     "options": [
       "Chrome OS",
@@ -334,7 +364,7 @@
     "topic": "security"
   },
   {
-    "id": 20,
+    "id": 22,
     "question": "A user's smartphone data usage is well above average. The user suspects an installed application is transmitting data in the background. The user would like to be\nalerted when an application attempts to communicate with the internet. Which of the following BEST addresses the user's concern?",
     "options": [
       "Operating system updates",
@@ -351,7 +381,7 @@
     "topic": "security"
   },
   {
-    "id": 21,
+    "id": 23,
     "question": "A technician is concerned about a large increase in the number of whaling attacks happening in the industry. The technician wants to limit the company's risk to\navoid any issues. Which of the following items should the technician implement?",
     "options": [
       "Screened subnet",
@@ -368,7 +398,7 @@
     "topic": "security"
   },
   {
-    "id": 22,
+    "id": 24,
     "question": "A company is recycling old hard drives and wants to quickly reprovision the drives for reuse. Which of the following data destruction methods should the company\nuse?",
     "options": [
       "Degaussing",
@@ -385,7 +415,7 @@
     "topic": "security"
   },
   {
-    "id": 23,
+    "id": 25,
     "question": "A manager called the help desk to ask for assistance with creating a more secure environment for the finance department- which resides in a non-domain\nenvironment. Which of the following would be the BEST method to protect against unauthorized use?",
     "options": [
       "Implementing password expiration",
@@ -402,7 +432,7 @@
     "topic": "security"
   },
   {
-    "id": 24,
+    "id": 26,
     "question": "A technician has just used an anti-malware removal tool to resolve a user's malware issue on a corporate laptop. Which of the following BEST describes what the\ntechnician should\ndo before returning the laptop to the user?",
     "options": [
       "Educate the user on malware removal.",
@@ -419,7 +449,7 @@
     "topic": "security"
   },
   {
-    "id": 25,
+    "id": 27,
     "question": "A technician is troubleshooting a PC that has been performing poorly. Looking at the Task Manager, the technician sees that CPU and\nmemory resources seem fine, but disk throughput is at 100%.\nWhich of the following types of malware is the system MOST likely infected with?",
     "options": [
       "Keylogger",
@@ -436,7 +466,7 @@
     "topic": "security"
   },
   {
-    "id": 26,
+    "id": 28,
     "question": "Which of the following protocols supports fast roaming between networks?",
     "options": [
       "WEP",
@@ -454,7 +484,7 @@
     "topic": "security"
   },
   {
-    "id": 27,
+    "id": 29,
     "question": "Which of the following protects a mobile device against unwanted access when it is left unattended?",
     "options": [
       "PIN code",
@@ -471,7 +501,7 @@
     "topic": "security"
   },
   {
-    "id": 28,
+    "id": 30,
     "question": "A user's antivirus software reports an infection that it is unable to remove. Which of the following is the most appropriate way to remediate the issue?",
     "options": [
       "Disable System Restore.",
@@ -488,7 +518,7 @@
     "topic": "security"
   },
   {
-    "id": 29,
+    "id": 31,
     "question": "A student would like to prevent the theft of their laptop while studying at the library. Which of the following security methods would be the BEST choice to protect this laptop?",
     "options": [
       "Biometrics",
@@ -505,7 +535,7 @@
     "source_id": "A9"
   },
   {
-    "id": 30,
+    "id": 32,
     "question": "A user in the accounting department would like to ensure that their mobile device data is always available. If the user's smartphone is damaged or stolen, they would like to replace the device and restore all data as quickly as possible. Which of the following would provide this functionality?",
     "options": [
       "Full device encryption",
@@ -522,7 +552,7 @@
     "source_id": "A15"
   },
   {
-    "id": 31,
+    "id": 33,
     "question": "A system administrator is troubleshooting an older application on a Windows 10 computer and needs to modify the UAC process. Which of the following options would provide access to these settings?",
     "options": [
       "Device Manager",
@@ -539,7 +569,7 @@
     "source_id": "A17"
   },
   {
-    "id": 32,
+    "id": 34,
     "question": "An attacker is using every combination of letters, numbers, and special characters in an attempt to discover a user's password. Which of the following would describe this attack type?",
     "options": [
       "Spoofing",
@@ -556,7 +586,7 @@
     "source_id": "A21"
   },
   {
-    "id": 33,
+    "id": 35,
     "question": "A security technician has identified malware running in the OS kernel. Traditional anti-malware scans were not able to identify any problems on the computer. Which of the following would be the BEST description of this malware?",
     "options": [
       "Rootkit",
@@ -573,7 +603,7 @@
     "source_id": "A26"
   },
   {
-    "id": 34,
+    "id": 36,
     "question": "A security guard has reported a person was seen passing through a secure door without using a door badge. The intruder slipped through the door by closely following the person in front of them. Which of these would best describe these actions?",
     "options": [
       "Dumpster diving",
@@ -590,7 +620,7 @@
     "source_id": "A30"
   },
   {
-    "id": 35,
+    "id": 37,
     "question": "A network administrator has configured all of their wireless access points with WPA3 security. Which of the following technologies would be associated with this configuration?",
     "options": [
       "RC4",
@@ -607,7 +637,7 @@
     "source_id": "A35"
   },
   {
-    "id": 36,
+    "id": 38,
     "question": "A user has been provided with a username and password to access the corporate VPN. The user has also been provided with a hardware device displaying a six digit code, and the code changes every 30 seconds. Which of the following would BEST describe the use of this device?",
     "options": [
       "ACL",
@@ -625,7 +655,7 @@
     "source_id": "A36"
   },
   {
-    "id": 37,
+    "id": 39,
     "question": "A technician is dismantling a test lab for a recently completed project, and the lab manager would like to use the existing computers on a new project. However, the security administrator would like to ensure that none of the data from the previous project is accessible on the existing hard drives. Which of the following would be the best way to accomplish this?",
     "options": [
       "Quick format",
@@ -642,7 +672,7 @@
     "source_id": "A39"
   },
   {
-    "id": 38,
+    "id": 40,
     "question": "A Windows 10 user is installing a new application that also installs a service. Which of the following permissions will be required for this installation?",
     "options": [
       "Guest",
@@ -659,7 +689,7 @@
     "source_id": "A53"
   },
   {
-    "id": 39,
+    "id": 41,
     "question": "An employee has modified the NTFS permissions on a local file share to provide read access to Everyone. However, users connecting from a different computer do not have access to the file. Which of the following is the reason for this issue?",
     "options": [
       "The NTFS permissions were not synchronized",
@@ -676,7 +706,7 @@
     "source_id": "A55"
   },
   {
-    "id": 40,
+    "id": 42,
     "question": "A healthcare company has replaced some of their desktop computers with laptops and will be disposing of the older computers. The security administrator would like to guarantee none of the existing data on the hard drives could be recovered once the systems are sent to the recycling center. Which of the following methods would meet this requirement?",
     "options": [
       "Quick format",
@@ -693,7 +723,7 @@
     "source_id": "A56"
   },
   {
-    "id": 41,
+    "id": 43,
     "question": "A system administrator would like to require a specific password complexity for all Active Directory users. Which of the following would be the BEST way to complete this requirement?",
     "options": [
       "Login script",
@@ -710,7 +740,7 @@
     "source_id": "A66"
   },
   {
-    "id": 42,
+    "id": 44,
     "question": "A financial management company would like to ensure mobile users are configured with the highest level of wireless encryption while working in the office. They would also like to include an additional user verification step during the login process. Which of the following would provide this functionality? (Choose TWO)",
     "options": [
       "RADIUS",
@@ -729,7 +759,7 @@
     "source_id": "A72"
   },
   {
-    "id": 43,
+    "id": 45,
     "question": "A financial corporation is deploying tablets to their salespeople in the field. The company would like to ensure that the data on the tablets would remain private if the devices were ever stolen or lost. Which of the following would be the BEST way to meet this requirement?",
     "options": [
       "Use full device encryption",
@@ -746,7 +776,7 @@
     "source_id": "A77"
   },
   {
-    "id": 44,
+    "id": 46,
     "question": "A business partner in a different country needs to access an internal company server during the very early morning hours. The internal firewall will limit the partner’s access to this single server. Which of these would be the MOST important security task to perform on this server?",
     "options": [
       "Install the latest OS patches",
@@ -763,7 +793,7 @@
     "source_id": "A84"
   },
   {
-    "id": 45,
+    "id": 47,
     "question": "A network administrator is configuring a wireless network at a small office. The administrator would like to allow wireless access for all computers but exclude a single kiosk in the lobby. Which of the following configuration settings would meet this requirement?",
     "options": [
       "SSID suppression",
@@ -781,7 +811,7 @@
     "source_id": "A87"
   },
   {
-    "id": 46,
+    "id": 48,
     "question": "A security administrator has received an alert that a user’s workstation in the shipping department has attempted to communicate to a command and control server for a well-known botnet. The logs on the workstation show that the user manually installed a new Internet browser the previous day. Which of the following would be the BEST next step for troubleshooting this issue?",
     "options": [
       "Uninstall the new browser",
@@ -798,7 +828,7 @@
     "source_id": "A89"
   },
   {
-    "id": 47,
+    "id": 49,
     "question": "A technician is installing a new wireless network in a small remote office. Which of the following should the technician choose to provide the highest level of security on the network?",
     "options": [
       "WPA3",
@@ -815,7 +845,7 @@
     "source_id": "A90"
   },
   {
-    "id": 48,
+    "id": 50,
     "question": "A technician is delivering a new laptop to a user and moving the older laptop to a different user. Which of the following would allow the existing hard drive to be used but prevent recovery of any of the previous user’s data?",
     "options": [
       "Regular format",
@@ -832,7 +862,7 @@
     "source_id": "B6"
   },
   {
-    "id": 49,
+    "id": 51,
     "question": "A medical research company is using laptop computers when visiting testing centers. The IT security team is concerned about a data breach if a laptop is lost or stolen. Which of the following would be the BEST way to manage this issue?",
     "options": [
       "BIOS password",
@@ -850,7 +880,7 @@
     "source_id": "B20"
   },
   {
-    "id": 50,
+    "id": 52,
     "question": "A user would like to encrypt a small group of files in a shared folder without modifying other files on the drive. Which of the following would be the BEST way to accomplish this?",
     "options": [
       "EFS",
@@ -867,7 +897,7 @@
     "source_id": "B21"
   },
   {
-    "id": 51,
+    "id": 53,
     "question": "A mobile user is using apps on their smartphone for all business tasks. To ensure that no data will be lost, the smartphone will need to have multiple backups each day. The user travels most of the time and rarely visits the home office. Which of the following would be the best way to provide these backups?",
     "options": [
       "Connect an external USB drive",
@@ -884,7 +914,7 @@
     "source_id": "B22"
   },
   {
-    "id": 52,
+    "id": 54,
     "question": "A local coffee shop has a public wireless network for customers and a private wireless network for company devices. The shop owner wants to be sure that customers can never connect to the company network. Which of the following should be configured on this network?",
     "options": [
       "Install a new access point for company devices",
@@ -902,7 +932,7 @@
     "source_id": "B27"
   },
   {
-    "id": 53,
+    "id": 55,
     "question": "A manufacturing company performs a third-party audit of their accounting records each year. The auditors use laptops provided by the company to access internal resources. When the audit is complete, the auditors should be prevented from logging on until the following audit process begins. Which of the following would be the BEST way to accomplish this?",
     "options": [
       "Uninstall the audit software",
@@ -919,7 +949,7 @@
     "source_id": "B30"
   },
   {
-    "id": 54,
+    "id": 56,
     "question": "A manufacturing company is donating some older computers to a local charity. Which of the following should be done to ensure that the existing hard drives could still be used but none of the existing data would be recoverable?",
     "options": [
       "Degaussing",
@@ -936,7 +966,7 @@
     "source_id": "B31"
   },
   {
-    "id": 55,
+    "id": 57,
     "question": "A system administrator has inadvertently installed a Trojan horse that has deleted a number of files across many Windows file shares. The Trojan also had access to user documents and login credentials and transmitted numerous documents to an off-site file storage system. Which of the following would limit the scope of future exploits?",
     "options": [
       "Require multi-factor authentication",
@@ -955,7 +985,7 @@
     "source_id": "B35"
   },
   {
-    "id": 56,
+    "id": 58,
     "question": "Which of the following Windows Share permissions has the priority when assigning access on a mapped drive?",
     "options": [
       "Allow",
@@ -972,7 +1002,7 @@
     "source_id": "B37"
   },
   {
-    "id": 57,
+    "id": 59,
     "question": "A user in the shipping department has received a call from someone claiming to be from the IT Help Desk. The caller asks the user to disclose their location, employee ID, and login credentials. Which of the following would describe this situation?",
     "options": [
       "Denial of service",
@@ -989,7 +1019,7 @@
     "source_id": "B39"
   },
   {
-    "id": 58,
+    "id": 60,
     "question": "A security administrator is installing a new VPN connection for remote users. The administrator would like all users to authenticate with their Windows Active Directory credentials. Which of the following technologies would provide this functionality?",
     "options": [
       "RADIUS",
@@ -1006,7 +1036,7 @@
     "source_id": "B41"
   },
   {
-    "id": 59,
+    "id": 61,
     "question": "A user has noticed their mouse arrow has been moving around the screen without any user intervention. The user has watched the mouse opening applications and changing settings in the Control Panel. Which of the following would be the BEST way for an administrator to resolve this issue?",
     "options": [
       "Turn the firewall off and back on again",
@@ -1023,7 +1053,7 @@
     "source_id": "B54"
   },
   {
-    "id": 60,
+    "id": 62,
     "question": "A user receives a browser security alert on his laptop when visiting any website that uses HTTPS. If he uses his smartphone, he does not receive any error messages. Which of the following would BEST describe this situation?",
     "options": [
       "The date and time on the laptop is incorrect",
@@ -1040,7 +1070,7 @@
     "source_id": "B56"
   },
   {
-    "id": 61,
+    "id": 63,
     "question": "A data center manager is installing a new access door that will require multi-factor authentication. Which of the following should be used to meet this requirement? (Select TWO)",
     "options": [
       "Cabinet locks",
@@ -1059,7 +1089,7 @@
     "source_id": "B61"
   },
   {
-    "id": 62,
+    "id": 64,
     "question": "A network administrator is installing a set of upgraded Internet routers in the data center. Which of the following would be the best choices to secure the access to the internal data center door? (Select TWO)",
     "options": [
       "Biometric lock",
@@ -1078,7 +1108,7 @@
     "source_id": "B65"
   },
   {
-    "id": 63,
+    "id": 65,
     "question": "A user in the accounting department has received an email asking for payment of an outstanding invoice and a link to a third-party payment site. The email contains purchase information that appears to be correct, but additional research shows that the invoice number is not valid. Which of the following would BEST describe this attack type?",
     "options": [
       "Phishing",
@@ -1095,7 +1125,7 @@
     "source_id": "B67"
   },
   {
-    "id": 64,
+    "id": 66,
     "question": "A company is installing a new wireless access point in a conference room. Which of the following would provide the BEST security for this network?",
     "options": [
       "SSID",
@@ -1112,7 +1142,7 @@
     "source_id": "B77"
   },
   {
-    "id": 65,
+    "id": 67,
     "question": "A user has downloaded a browser add-on that assists with new car purchases. During the installation, the Windows UAC is requesting administrative permissions to continue with the install. Which of these is the MOST likely situation?",
     "options": [
       "The operating system requires an update",
@@ -1129,7 +1159,7 @@
     "source_id": "B86"
   },
   {
-    "id": 66,
+    "id": 68,
     "question": "Which of these would be the BEST way to prevent an attacker from modifying default routes on a SOHO wireless network?",
     "options": [
       "Configure MAC address filtering",
@@ -1146,7 +1176,7 @@
     "source_id": "B90"
   },
   {
-    "id": 67,
+    "id": 69,
     "question": "An attacker has gained access to a password hash file. Which of the following will the attacker use to obtain the passwords?",
     "options": [
       "DoS",
@@ -1163,7 +1193,7 @@
     "source_id": "C19"
   },
   {
-    "id": 68,
+    "id": 70,
     "question": "A user has started their computer and received this message on the screen: “Your important files are encrypted. If you want to decrypt all of your files, you need to pay.” A desktop administrator has confirmed the user can no longer access his desktop, and none of his installed applications are available in the system menus. Sam notices that a payment link is posted at the bottom of the screen. Which of the following would BEST describe this scenario?",
     "options": [
       "Spyware",
@@ -1180,7 +1210,7 @@
     "source_id": "C27"
   },
   {
-    "id": 69,
+    "id": 71,
     "question": "Users on the corporate network authenticate once at the beginning of the day, and are not prompted again for authentication until the following day. Which of the following would BEST describe this functionality?",
     "options": [
       "NTFS",
@@ -1197,7 +1227,7 @@
     "source_id": "C29"
   },
   {
-    "id": 70,
+    "id": 72,
     "question": "A Windows 10 application includes the installation of a service during the setup process. Which of the following would be the MOST important consideration during the application setup?",
     "options": [
       "OS compatibility",
@@ -1214,7 +1244,7 @@
     "source_id": "C32"
   },
   {
-    "id": 71,
+    "id": 73,
     "question": "A medical center's hospital staff uses shared computer systems installed in hallways and patient rooms. However, hospital administrators are concerned that patient information might be visible if someone leaves the computer without logging out. Which of the following would help prevent this type of issue?",
     "options": [
       "Multi-factor authentication",
@@ -1231,7 +1261,7 @@
     "source_id": "C33"
   },
   {
-    "id": 72,
+    "id": 74,
     "question": "A company requires all users to authenticate to a proxy before communicating to external websites. Which of the following should be used to integrate the proxy authentication with the existing Active Directory credentials?",
     "options": [
       "AES",
@@ -1248,7 +1278,7 @@
     "source_id": "C35"
   },
   {
-    "id": 73,
+    "id": 75,
     "question": "A security administrator is deploying a new application to users in the field, but the administrator is concerned that simply using a username and password does not provide enough security. Which of the following would be the BEST way to address this issue?",
     "options": [
       "Enable Windows Firewall",
@@ -1266,7 +1296,7 @@
     "source_id": "C37"
   },
   {
-    "id": 74,
+    "id": 76,
     "question": "The Human Resources department is installing a shared computer in the company lobby to use for electronic job applications. The kiosk should start automatically without requiring any network login prompt, and the kiosk should only have access to the job application modules. Which of the following account types would be the BEST choice for this system?",
     "options": [
       "SSO user",
@@ -1283,7 +1313,7 @@
     "source_id": "C41"
   },
   {
-    "id": 75,
+    "id": 77,
     "question": "A user in the shipping department is able to view order information, but they cannot modify or delete any order details. Which of the following would best describe this security principle?",
     "options": [
       "Multi-factor authentication",
@@ -1300,7 +1330,7 @@
     "source_id": "C43"
   },
   {
-    "id": 76,
+    "id": 78,
     "question": "A small office is located in a large office building with over fifty different companies. A network administrator would like to limit the possibility of someone else in the building accidentally connecting to their wireless network. Which of these configuration settings would prevent their wireless network from appearing in a list of available networks?",
     "options": [
       "MAC filtering",
@@ -1317,7 +1347,7 @@
     "source_id": "C45"
   },
   {
-    "id": 77,
+    "id": 79,
     "question": "A network administrator has modified all wireless access points to use WPA3 instead of WPA2. Which of the following would be a reason for this change?",
     "options": [
       "Additional frequency choices",
@@ -1334,7 +1364,7 @@
     "source_id": "C47"
   },
   {
-    "id": 78,
+    "id": 80,
     "question": "A network technician has been tasked with preventing corporate laptops from connecting to a training room’s wireless network. Which of the following would be the BEST way to accomplish this?",
     "options": [
       "Enable MAC filtering",
@@ -1351,7 +1381,7 @@
     "source_id": "C49"
   },
   {
-    "id": 79,
+    "id": 81,
     "question": "A system administrator has configured EFS on a user’s workstation. Which of the following would describe this functionality?",
     "options": [
       "Encryption of individual files and folders",
@@ -1368,7 +1398,7 @@
     "source_id": "C52"
   },
   {
-    "id": 80,
+    "id": 82,
     "question": "A user commonly stores large graphic image files in a shared folder on a network server. After logging in one morning, the user notices that the shared folders are no longer in the list of available storage drives. The user confirms they are logged in properly to the Windows Domain. Which of the following would be the MOST likely reason for this issue?",
     "options": [
       "User’s permissions have been modified",
@@ -1385,7 +1415,7 @@
     "source_id": "C56"
   },
   {
-    "id": 81,
+    "id": 83,
     "question": "A user’s smartphone contains company confidential information that should not be shared outside of the organization. Which of the following would be the BEST way to limit access to this data if the smartphone was lost or stolen?",
     "options": [
       "Locator application",
@@ -1402,7 +1432,7 @@
     "source_id": "C63"
   },
   {
-    "id": 82,
+    "id": 84,
     "question": "A desktop technician is moving hard drives from one set of training room computers to another. Which of the following would allow the drives to be used in the new computers but prevent any of the existing data from being recovered?",
     "options": [
       "Shredder",
@@ -1419,7 +1449,7 @@
     "source_id": "C68"
   },
   {
-    "id": 83,
+    "id": 85,
     "question": "A technician is troubleshooting a problem with user’s laptop and very high utilization, even with no activity on the screen or user input to the operating system. Task Manager shows the CPU is operating at 100% utilization, memory utilization is slightly elevated, and there is a large amount of outbound network communication. Which of the following would be the MOST likely reason for these issues?",
     "options": [
       "System RAM is faulty",
@@ -1436,7 +1466,7 @@
     "source_id": "C71"
   },
   {
-    "id": 84,
+    "id": 86,
     "question": "A financial services company is upgrading the storage drives on their SAN and need to dispose of one hundred older storage drives. The security administrator would like to permanently disable the drive and guarantee the data on the drives could not be recovered. Which of the following methods would be the BEST way to accomplish this goal?",
     "options": [
       "Standard format",
@@ -1453,7 +1483,7 @@
     "source_id": "C76"
   },
   {
-    "id": 85,
+    "id": 87,
     "question": "A healthcare administrator, stores sensitive data on his laptop computer. His desk is in an open area near a busy hallway. Which of the following would add additional security to Jack’s work area?",
     "options": [
       "Door lock",
@@ -1470,7 +1500,7 @@
     "source_id": "C79"
   },
   {
-    "id": 86,
+    "id": 88,
     "question": "A security administrator is configuring VPN connectivity on company smartphones and tablets. The administrator would like to ensure the login requests are from corporate users and not unauthorized third-parties. Which of the following would provide this security feature?",
     "options": [
       "Biometrics",
@@ -1487,7 +1517,7 @@
     "source_id": "C87"
   },
   {
-    "id": 87,
+    "id": 89,
     "question": "Which of the following would allow someone else in the room to maliciously obtain a username and password?",
     "options": [
       "Spoofing",

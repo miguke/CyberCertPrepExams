@@ -1,0 +1,11 @@
+{
+  "threshold": 0.9,
+  "within_topic": {
+    "total_pairs": 0,
+    "pairs": []
+  },
+  "cross_topic": {
+    "total_pairs": 0,
+    "pairs": []
+  }
+}
