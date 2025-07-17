@@ -5,8 +5,8 @@
     "options": [
       "Open-source software",
       "EULA",
-      "Chain of custody AUP",
-      ""
+      "Chain of custody",
+      "AUP"
     ],
     "correct": [
       2
@@ -57,7 +57,7 @@
       "Battery backup",
       "Thermal paste",
       "ESD strap",
-      ""
+      "Consistent power"
     ],
     "correct": [
       2

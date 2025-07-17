@@ -110,7 +110,7 @@
     "question": "A user has requested help setting up the fingerprint reader on a Windows 10 laptop. The laptop is equipped with a fingerprint reader\nand is joined to a domain Group Policy enables Windows Hello on all computers in the environment. Which of the following options describes how to set up\nWindows Hello Fingerprint for the user?",
     "options": [
       "Navigate to the Control Panel utility, select the Security and Maintenance submenu, select Change Security and Maintenance settings, select Windows Hello Fingerprint, and have the user place a fingerprint on the fingerprint reader repeatedly until Windows indicates setup is complete",
-      "",
+      "Navigate to the Control Panel utility, select the Display submenu, select Change Security and Maintenance settings, select Windows Hello Fingerprint, and have the user place a fingerprint on the fingerprint reader repeatedly until Windows indicates setup is complete",
       "Navigate to the Windows 10 Settings menu, select the Update & Security submenu select Windows Security, select Windows Hello Fingerprint and have the user place a fingerprint on the fingerprint reader repeatedly until Windows indicates setup is complete",
       "Navigate to the Control Panel utility, select the Administrative Tools submenu, select the user account in the list, select Windows Hello Fingerprint, and have the user place a fingerprint on the fingerprint reader repeatedly until Windows indicates setup is complete."
     ],
@@ -129,8 +129,7 @@
       "Scanning the system with a Linux live disc, flashing the BIOS, and then returning the computer to service",
       "Flashing the BIOS, reformatting the drive, and then reinstalling the OS",
       "Degaussing the hard drive, flashing the BIOS, and then reinstalling the OS",
-      "Reinstalling the O",
-      "flashing the BIOS, and then scanning with on-premises antivirus"
+      "Reinstalling the OS, flashing the BIOS, and then scanning with on-premises antivirus"
     ],
     "correct": [
       1
@@ -199,7 +198,7 @@
       "Keylogger",
       "Adware",
       "Botnet",
-      "",
+      "Ransomware",
       "Spyware"
     ],
     "correct": [
@@ -270,7 +269,7 @@
     "question": "A hard drive that previously contained PI I needs to be repurposed for a public access workstation. Which of the following data destruction methods should a\ntechnician use to ensure data is completely removed from the hard drive?",
     "options": [
       "Shredding",
-      "",
+      "Degaussing",
       "Low-level formatting",
       "Recycling"
     ],

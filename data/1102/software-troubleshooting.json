@@ -55,8 +55,8 @@
     "question": "A developer receives the following error while trying to install virtualization software on a workstation:\nVTx not supported by system\nWhich of the following upgrades will MOST likely fix the issue?",
     "options": [
       "Processor",
-      "Hard drive Memory",
-      "",
+      "Hard drive",
+      "Memory",
       "Video card"
     ],
     "correct": [
@@ -244,7 +244,7 @@
     "options": [
       "Control Panel",
       "Processes Startup",
-      "",
+      "Processes",
       "Services"
     ],
     "correct": [
@@ -434,9 +434,9 @@
     "question": "After clicking on a link in an email a Chief Financial Officer (CFO) received the following error:\nThe CFO then reported the incident to a technician. The link is purportedly to the organization's bank. Which of the following should the technician perform FIRST?",
     "options": [
       "Update the browser's CRLs",
-      "File a trouble ticket with the bank. Contact the ISP to report the CFCs concern",
-      "",
-      ""
+      "File a trouble ticket with the bank. ",
+      "Contact the ISP to report the CFCs concern",
+      "Contact the bank to report the CFO's concern"
     ],
     "correct": [
       0
