@@ -11,7 +11,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Using disk-wiping software. Using disk-wiping software is the most secure method for removing information from past users' hard drives before reuse. Disk-wiping software performs multiple passes of overwriting data with random patterns, making it virtually impossible to recover the original information. Reinstalling Windows, performing a quick format, or deleting files from command line only remove file system references but leave the actual data intact on the drive, which can be recovered using data recovery tools. For secure data destruction, specialized disk-wiping software is essential.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -28,7 +28,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Uninstall the fraudulent application. When a user experiences high network utilization and repeated security warnings after installing a performance optimization app, the first step should be to uninstall the fraudulent application. These symptoms indicate the app is likely malware or a potentially unwanted program (PUP) that is consuming network resources and triggering security alerts. Uninstalling the suspicious application addresses the root cause directly. Factory reset is too extreme as a first step, increasing data plan limits won't solve the security issue, and disabling mobile hotspot doesn't address the underlying malware problem.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -45,7 +45,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Ease of Access Center. The Ease of Access Center is the Windows utility used to change cursor color and other accessibility settings for visually impaired users. This utility provides comprehensive accessibility options including cursor appearance, size, and color modifications to improve visibility for users with visual impairments. The Keyboard and Touch pad settings don't control cursor appearance, and Display settings primarily handle screen resolution and monitor configuration rather than cursor-specific accessibility features.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -62,7 +62,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Open the Startup tab and methodically disable items currently listed as enabled and reboot, checking for issue resolution at each startup. To troubleshoot excessive boot times caused by startup programs, the technician should use Task Manager's Startup tab to methodically disable items one by one and test after each change. This systematic approach allows identification of the specific program causing the issue without disrupting the entire system. Moving items to Recycle Bin from shell:startup is destructive, editing registry entries is risky, and disabling all startup tasks at once makes it impossible to identify the specific culprit.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -79,7 +79,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Ask the user to click in the Search field, type Check for Updates, and then press the Enter key. When helping a user update Windows, the technician should provide clear, step-by-step instructions to access Windows Update through the search function. This is the standard and secure method for users to check for and install Windows updates. Suggesting an iPad is unprofessional and unhelpful, asking for passwords violates security protocols, and advising to wait for automatic patches doesn't address the user's immediate need for assistance with manual updates.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -97,7 +97,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Expired certificate. When a user cannot log in to a network using 802.1X with EAP-TLS authentication after being away for several months, the most likely cause is an expired certificate. EAP-TLS relies on digital certificates for authentication, and these certificates have expiration dates. After extended leave, the user's certificate may have expired, preventing network authentication. OS update failures, service issues, application crashes, and profile problems wouldn't specifically prevent 802.1X certificate-based authentication in this scenario.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -114,7 +114,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Default Apps. When PDF files are opening in Microsoft Edge instead of Adobe Reader after a Windows update, the Default Apps utility should be used to change file associations. Default Apps allows users to specify which application should handle specific file types, including PDFs. Windows updates can sometimes reset default application associations, so this utility is the proper way to restore Adobe Reader as the default PDF handler. Network and Sharing Center handles network settings, while Programs and Features and Add or Remove Programs manage software installation/removal but not file associations.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -131,7 +131,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) robocopy. Robocopy (Robust File Copy) is the best tool for transferring large numbers of files over unreliable connections with resume capability. Robocopy includes built-in retry logic and can resume interrupted transfers, making it ideal for unreliable network connections. It can automatically retry failed copies and continue where it left off if the connection is interrupted. SFC (System File Checker) repairs system files, chkdsk checks disk integrity, and git clone is for version control repositories - none of these tools are designed for robust file transfers over unreliable connections.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -151,7 +151,7 @@
       2,
       5
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: C) Deploy an ad-blocking extension to the browser and F) Perform a reset on the user's web browser. The pop-ups claiming virus infection and demanding payment are classic fake antivirus scareware that appears only when opening the browser. Deploying an ad-blocking extension will prevent these malicious pop-ups from displaying, while performing a browser reset will remove any malicious extensions or settings causing the issue. Scanning with antivirus won't help since these are browser-based scareware ads, not actual malware. Installing a new hard drive is excessive, uninstalling company antivirus is counterproductive, and clicking payment links would compromise the user further.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "software-troubleshooting"
@@ -171,7 +171,7 @@
       0,
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: A) Turn on autorotation and C) Close unnecessary applications. The smartphone symptoms indicate overheating and resource exhaustion from too many running applications, plus orientation issues. Turning on autorotation will fix the GPS and other apps displaying in wrong orientation modes. Closing unnecessary applications will reduce CPU load, memory usage, and heat generation, addressing the overheating and crash issues. These solutions have minimal impact compared to factory reset. Airplane mode would disable connectivity, OS updates might not address immediate issues, and reinstalling specific apps doesn't solve the underlying resource problem.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "software-troubleshooting"
@@ -188,7 +188,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Check for any installed patches and roll them back one at a time until the issue is resolved. When applications fail to load after a midnight reboot on a Windows 10 PC with default configuration, the first troubleshooting step should be to check for recently installed patches and roll them back systematically. Windows often installs updates during automatic maintenance windows, and a problematic update could cause application loading issues. Rolling back patches one at a time helps identify the specific update causing the problem. Installing alternate software, running hardware tests, or reformatting are more drastic measures that should be attempted after simpler solutions.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -205,7 +205,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) The laptop has Windows 10 Home installed. Windows 10 Home edition cannot join a domain - this feature is only available in Windows 10 Pro, Enterprise, and Education editions. Domain joining requires the advanced networking and security features that are not included in the Home edition. Processor compatibility, Ethernet adapters, and Windows updates are not requirements for domain joining, and most modern laptops meet these basic requirements regardless of the Windows edition installed.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -222,7 +222,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Chrome OS. Chrome OS provides a lightweight operating system option specifically designed for workstations that need an easy-to-use, browser-based interface. Chrome OS is built around the Chrome web browser and focuses on web-based applications and cloud computing, making it ideal for users who primarily work through web browsers. FreeBSD is a server-oriented Unix system, macOS is a full-featured desktop OS for Apple hardware, and Windows is a comprehensive desktop OS - none of these are specifically designed as lightweight, browser-centric operating systems.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -239,7 +239,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) RAM. After upgrading from a 32-bit to 64-bit Windows OS, the company will be able to fully take advantage of the RAM. 32-bit operating systems can only address up to 4GB of RAM, while 64-bit systems can address much more memory (theoretically up to 16 exabytes). Since the application requires 6GB of RAM, the 64-bit upgrade will allow the system to utilize all available memory. The quad-core CPU, hard drive space, and touch screens are not limited by the 32-bit vs 64-bit architecture in the same way that memory addressing is.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -256,7 +256,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Time drift. When a desktop PC cannot log in to the domain but a laptop works properly on the same network, and the technician can log in locally but cannot access secure intranet sites, time drift is the most likely cause. Domain authentication and secure websites rely on time synchronization for security protocols like Kerberos and SSL certificates. If the desktop's system clock has drifted significantly from the domain controller's time, authentication will fail. Memory failures, application crashes, and filesystem errors wouldn't specifically prevent domain login while allowing local login.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -274,7 +274,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Rebuild the user's profile. When one user reports sluggish performance but other users on the same workstation report normal operation, and the systems administrator has validated normal system function, the issue is likely with the specific user's profile. Rebuilding the user's profile will resolve corrupted user-specific settings, preferences, or registry entries that may be causing the performance issues. Increasing paging file, running chkdsk, adding memory, or defragmenting would affect all users equally, not just one specific user.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -291,7 +291,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Port forwarding. After installing a new SOHO router, customers cannot access the company-hosted public website because port forwarding needs to be configured. Port forwarding allows external traffic from the internet to reach the internal web server by mapping external ports to internal IP addresses and ports. Without proper port forwarding rules, the router will block incoming requests to the web server. Firmware updates, IP filtering, and content filtering don't address the fundamental issue of routing external web traffic to the internal server.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -308,7 +308,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Changing channels. When a wireless network experiences interference from other nearby SSIDs, changing channels is the best solution to resolve the interference. Wi-Fi networks operate on specific channels within the 2.4GHz and 5GHz frequency bands, and overlapping channels can cause interference. By switching to a less congested channel, the network can avoid interference from neighboring wireless networks. Modifying wireless security, disabling SSID broadcast, or changing the access point name don't address the fundamental issue of channel interference between competing wireless signals.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -325,7 +325,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Determine if the device has adequate storage available. When an Android smartphone fails to complete a tethered OS update with no error messages, the technician should next check if the device has adequate storage available. OS updates require significant free space to download and install the update files. Insufficient storage is a common cause of failed updates that may not always generate clear error messages. Verifying third-party apps are disabled, checking battery charge, and confirming internet connection are also important but storage space is the most likely culprit when updates fail silently.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -342,7 +342,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) The newly installed OS is x86. When a Windows 10 installation on a PC with 16GB of RAM only shows 4GB available for use, the newly installed OS is x86 (32-bit). 32-bit operating systems have a memory addressing limitation of approximately 4GB of RAM, regardless of how much physical RAM is installed. To utilize all 16GB of RAM, the system needs a 64-bit (x64) version of Windows 10. UEFI settings, RAM compatibility issues, and defective RAM wouldn't specifically limit memory recognition to exactly 4GB - this is a characteristic limitation of 32-bit architecture.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -359,7 +359,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Name on a medical diagnosis. Names on medical diagnoses are most likely to be regulated data due to HIPAA (Health Insurance Portability and Accountability Act) and other healthcare privacy regulations. Medical information, including patient names associated with diagnoses, is considered Protected Health Information (PHI) and must be handled according to strict regulatory requirements. Names in phone books, job applications, and employer websites are generally public or less regulated information that doesn't fall under the same stringent privacy protection laws as medical data.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -376,7 +376,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) EULA. When software requires scrolling through a text box and clicking Accept at the end, this is most likely an End User License Agreement (EULA). EULAs are legal contracts between software publishers and users that outline the terms and conditions for using the software. They typically require users to scroll through the entire agreement and explicitly accept the terms before installation can proceed. DRM (Digital Rights Management) controls usage, NDA (Non-Disclosure Agreement) protects confidential information, and MOU (Memorandum of Understanding) is a formal agreement between parties - none require the scroll-and-accept format typical of EULAs.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -393,7 +393,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Remove the static IP configuration from the desktop. When both a new laptop and old desktop receive 'address already in use' messages for specialized software requiring a specifically allocated address, the issue is an IP address conflict. The desktop likely has a static IP configuration that conflicts with the laptop's network settings. Removing the static IP configuration from the desktop will resolve the conflict and allow the laptop to use the required address. Bridging connections, setting DHCP, or replacing network cards don't address the fundamental IP address conflict issue.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -410,7 +410,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Rebuild the profile. When a user has issues with document-processing software but other users on the same device don't experience problems, the issue is user-specific and likely related to a corrupted user profile. Rebuilding the user's profile will restore default settings and resolve corrupted user-specific configurations affecting the software. Rolling back updates, increasing page file, or updating drivers would affect all users equally, not just one specific user experiencing the issue.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -427,7 +427,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Have the user check for recently installed applications and outline those installed since the link in the email was clicked. When a user reports potential malware after clicking a suspicious email link, the technician should first investigate if any new applications were installed around the time of the click. This helps identify if the malware was delivered through the email link and what type of malware it might be. Running a system scan, checking safe mode, or disconnecting from the network are important subsequent steps, but identifying new installations helps pinpoint the source of the issue.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -444,7 +444,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Clearing the cache. When a user cannot access a website that has been verified to be online, clearing the browser cache is the most likely step to resolve the issue. The cache stores temporary data from websites, which can sometimes cause issues with accessing certain sites. Clearing the cache removes this data, allowing the browser to load the website fresh. Deleting browser history, enabling private mode, or enabling ad blocking might not directly address the issue of accessing a specific website.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -461,7 +461,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) The user connected to a captive portal while traveling. When a user returns from vacation and cannot access the network or any websites, but can log in to Windows, the most likely cause is that the user connected to a captive portal while traveling. Captive portals are public Wi-Fi networks that require users to accept terms or log in before accessing the internet. If the user's device is still set to use this network, it can cause connectivity issues on the corporate network. Password expiration, malicious emails, or airplane mode wouldn't specifically cause this set of symptoms.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -481,7 +481,7 @@
       1,
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: B) .pkg and D) .dmg. The file extensions commonly used to install applications on macOS machines are .pkg (package files) and .dmg (disk image files). PKG files are installer packages that contain applications and installation scripts, while DMG files are disk images that mount as virtual drives containing applications or installers. .mac and .app are not installation formats (.app is the application bundle format), .deb is for Debian Linux, .msi and .appx are for Windows, and .apk is for Android.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "software-troubleshooting"
@@ -498,7 +498,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Performance Monitor to check for resource utilization. When a computer runs slowly after installing security applications and shows constant hard drive activity, the technician should first check Performance Monitor to assess resource utilization. Security suites often consume significant CPU, memory, and disk resources, especially during initial scans or real-time protection activities. Performance Monitor will reveal which resources are being overutilized. Checking services, system files, or event logs are secondary steps after confirming the resource utilization issue.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -515,7 +515,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Changing proxy settings. When Internet Explorer redirects users from familiar web pages to unfamiliar websites, the most likely solution is changing proxy settings. Malware often modifies proxy settings to redirect web traffic through malicious servers, causing unexpected redirections. Checking and correcting proxy settings will restore normal web browsing behavior. Updating the OS, reinstalling the browser, or enabling port forwarding don't address the specific issue of web traffic redirection caused by compromised proxy configurations.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -532,7 +532,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Operating systems no longer receive updates. The primary consequence of end-of-life operating systems is that they no longer receive security updates, patches, or technical support from the vendor. This leaves systems vulnerable to newly discovered security threats and compatibility issues. End-of-life OS doesn't void hardware warranties, cause systems to cease functioning immediately, or prevent data migration - these are not direct consequences of reaching end-of-life status. The main concern is the lack of ongoing security and functionality updates.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -549,7 +549,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Close out of the site and contact the bank. When a user receives a security certificate error stating the certificate was issued for a different website's address, the technician should instruct the user to close out of the site and contact the bank. This error indicates a potential security threat such as a man-in-the-middle attack or phishing attempt. Users should never continue to a site with certificate errors, especially for banking websites. Clearing cache or updating the browser won't resolve legitimate certificate mismatches, and continuing to the site would compromise security.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -566,7 +566,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Rearranging the monitor's position in display settings. When adding a second monitor via USB and the mouse cannot move from the original monitor to the new monitor, the monitor positions need to be rearranged in display settings. Windows needs to know the physical arrangement of monitors to enable proper mouse movement between them. The display settings allow you to drag and position monitor representations to match their physical layout. Swapping cables, using keyboard shortcuts, or updating drivers won't resolve the logical positioning issue in the display configuration.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -583,7 +583,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) The smartphone's line was not provisioned with a data plan. When a smartphone can use Wi-Fi for internet but cannot access internet functions without Wi-Fi, while still being able to make calls and send texts, the line was not provisioned with a data plan. Voice and SMS services work through the cellular network without requiring a data plan, but internet access requires a separate data plan subscription. A failed SIM card would prevent all cellular functions, disabled Bluetooth doesn't affect internet access, and too many open applications wouldn't selectively block internet while allowing voice/SMS.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -600,7 +600,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Run chkdsk on the drive as the administrator. When a technician suspects bad sectors on a boot disk, running chkdsk (Check Disk) as administrator will verify disk integrity without making changes by default. The chkdsk command scans for file system errors and bad sectors, providing a report of disk health. SFC (System File Checker) checks system files not disk sectors, cleanmgr (Disk Cleanup) removes temporary files, and dfrgui (Disk Defragmenter) reorganizes files but doesn't check for bad sectors. Chkdsk is the appropriate tool for disk sector verification.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -617,7 +617,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Stop code. When a BSOD (Blue Screen of Death) appears repeatedly, the technician should use the stop code to determine the cause. Stop codes are hexadecimal error codes displayed on blue screens that identify specific system errors or hardware failures. These codes provide precise diagnostic information about what caused the system crash. Event Viewer, Services, and System Configuration are useful tools but the stop code displayed on the BSOD itself is the most direct way to identify the specific cause of the system failure.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -634,7 +634,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Change the default administrative password. When installing new network equipment in a SOHO environment, the first security action should be changing the default administrative password. Network devices ship with well-known default passwords that are easily exploited by attackers. Changing these passwords immediately prevents unauthorized access to device configuration. Physical security, manufacturer consistency, and OS updates are important but changing default credentials is the most critical first step to prevent immediate compromise of the network equipment.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -651,7 +651,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) resmon.exe. When a PC is running slowly and the technician suspects high disk I/O, running resmon.exe (Resource Monitor) is the next step. Resource Monitor provides detailed real-time information about disk activity, including which processes are generating disk I/O and the amount of disk usage. This helps identify the specific cause of high disk activity. msconfig.exe manages startup programs, dfrgui.exe is for disk defragmentation, and msinfo32.exe shows system information but doesn't provide real-time disk I/O monitoring like Resource Monitor.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -670,7 +670,7 @@
     "correct": [
       5
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: F) services.msc. When troubleshooting an 'Audio Driver is not running' error in a conference room, services.msc (Services console) will most likely resolve the issue. This error indicates that the Windows Audio service or related audio services have stopped running. The Services console allows technicians to start, stop, and configure Windows services, including audio-related services. compmgmt.msc is Computer Management, regedit.exe is Registry Editor, explorer.exe is Windows Explorer, taskmgr.exe is Task Manager, and gpmc.msc is Group Policy Management - none of these directly manage Windows services like services.msc.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -688,7 +688,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) If NFC is enabled. When a mobile payment application cannot successfully complete transactions at payment terminals, the technician should confirm if NFC (Near Field Communication) is enabled. Mobile payment systems like Apple Pay, Google Pay, and Samsung Pay rely on NFC technology to communicate with payment terminals. If NFC is disabled, the device cannot establish the necessary connection for contactless payments. Airplane mode, Bluetooth, Wi-Fi, and location services are not directly required for NFC-based payment transactions at terminals.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -705,7 +705,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Zero day. When a CEO learns that an exploit has been identified on web server software but no patch is available yet, this indicates a zero-day attack. Zero-day attacks exploit previously unknown vulnerabilities for which no security patches exist. The fact that a patch is not available yet is the key indicator - vendors need time to develop and test patches for newly discovered vulnerabilities. Brute force attacks don't require software exploits, denial of service attacks overwhelm services rather than exploit code, and on-path attacks intercept communications rather than exploit software vulnerabilities.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -725,7 +725,7 @@
       0,
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: A) Device drivers and C) Installed application license keys. When building a master image for deployment, the desktop engineer should consider device drivers and installed application license keys. Device drivers ensure hardware compatibility across target devices, while license keys must be properly configured to avoid licensing violations when the image is deployed to multiple systems. Keyboard backlight settings, display orientation, power supply specifications, and express charging settings are device-specific configurations that don't belong in a master image intended for multiple different devices.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "software-troubleshooting"
@@ -742,7 +742,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Use a network share to share the installation files. For a small business owner wanting to install software on all networked PCs using the easiest method, creating a network share with the installation files is most efficient. This allows all computers to access the installation files from a central location without requiring physical media transfer. External hard drives require manual connection to each PC, imaging USBs need individual creation for each computer, and downloading from vendor websites requires internet access and individual downloads on each machine, making network sharing the most streamlined approach.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -759,7 +759,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Booting into safe mode. When malware returns after removal and reboot, booting into safe mode will most likely help permanently remove the malware. Safe mode loads only essential system files and drivers, preventing many types of malware from loading and allowing antivirus software to detect and remove persistent threats. Enabling System Restore could restore infected system states, educating the user doesn't address the technical malware persistence, and scheduling scans won't help if the malware prevents normal operation of security software.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -776,7 +776,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Check for application updates. When an application becomes unresponsive immediately after a mobile OS update, the first troubleshooting step should be checking for application updates. OS updates often change system APIs and frameworks, requiring applications to be updated for compatibility. App developers typically release updates to address compatibility issues with new OS versions. Deleting cache, rolling back the OS, or reinstalling the app are more drastic measures that should be attempted after checking for available updates.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -793,7 +793,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) EOL (End of Life). When a vendor indicates that a version will no longer be sold and will not receive patches or updates, this represents EOL (End of Life) status. EOL means the vendor has discontinued support for the product, including security updates, bug fixes, and technical support. AUP (Acceptable Use Policy) governs user behavior, EULA (End User License Agreement) defines usage terms, and UAC (User Account Control) is a Windows security feature - none of these indicate discontinued vendor support.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -810,7 +810,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Uninstall the unapproved application. When sensitive data was leaked from a smartphone with an unapproved application installed and the user has command shell access, the next step is to uninstall the unapproved application. The combination of an unauthorized app and command shell access (indicating jailbreaking/rooting) suggests the app may be the source of the data leak. Removing the suspicious application prevents further data exfiltration. Factory reset, disabling unknown sources, or WiFi connectivity don't address the immediate threat from the installed malicious application.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -827,7 +827,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) DNS servers. When a user tries to go to their selected web search provider but a different website opens instead, the technician should first check DNS servers. Malware often modifies DNS settings to redirect web traffic to malicious sites, causing users to reach unintended websites when typing familiar URLs. DNS hijacking is a common attack vector that redirects legitimate website requests. System time, IP address, and Windows updates wouldn't cause consistent redirection to different websites when accessing specific URLs.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -844,7 +844,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Accelerometer. When a mobile device screen fails to rotate after being dropped, despite correct settings, the accelerometer should be replaced. The accelerometer is the hardware component that detects device orientation and triggers screen rotation. Physical damage from dropping can damage this sensitive component, preventing automatic screen rotation even when the feature is enabled in settings. The LCD displays the image, battery provides power, and digitizer handles touch input - none of these components control screen rotation functionality.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -861,7 +861,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Check corporate policies for guidance. When troubleshooting a computer with sensitive information that needs off-site repair, the technician should first check corporate policies for guidance. Organizations typically have specific procedures for handling sensitive data during repairs, including data protection requirements, approved repair vendors, and authorization processes. Following established policies ensures compliance with security protocols and legal requirements. Removing the HDD, deleting data, or getting manager authorization may be required steps, but checking policies first determines the proper procedure.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -878,7 +878,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Unattended installation. For installing Windows 10 on a newly built computer, an unattended installation is the fastest method. Unattended installations use answer files to automate the installation process, eliminating the need for user interaction during setup. This method can complete installations without technician intervention, making it highly efficient for new system deployments. Factory reset applies to existing systems, System Restore recovers previous states, and in-place upgrades update existing Windows installations rather than performing fresh installations on new hardware.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -895,7 +895,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Change the default credentials. To defend against SOHO routers being used in DDoS attacks, changing the default credentials is the most important step. Attackers commonly exploit routers with default usernames and passwords to create botnets for DDoS attacks. Changing default credentials prevents unauthorized access to router configuration. Network content filtering blocks malicious websites, disabling SSID broadcast provides minimal security, and port forwarding actually opens additional attack vectors - none of these address the primary vulnerability of default authentication credentials.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -912,7 +912,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Chromium. Chromium (Chrome OS) only has a web browser interface. Chrome OS is designed as a lightweight, browser-based operating system where all applications run within the Chrome browser environment. Users interact primarily through web applications and browser-based tools. Linux, Microsoft Windows, and iOS all have full desktop/mobile interfaces with native applications, file managers, and system utilities beyond just web browser functionality.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -929,7 +929,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Data usage limits. When web browsing speed on a mobile phone slows down every few weeks and returns to normal after 3-4 days, the technician should first check data usage limits. This pattern indicates the user is likely hitting their monthly data plan limit, causing the carrier to throttle speeds until the billing cycle resets. The cyclical nature (every few weeks) and automatic recovery strongly suggests data plan throttling rather than Wi-Fi issues, airplane mode problems, or system uptime concerns.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -946,7 +946,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Reset the network adapter. After editing the hosts file to block certain domains, the technician needs to reset the network adapter to ensure the changes take effect. The hosts file maps domain names to IP addresses, and network adapters cache DNS information. Resetting the network adapter clears this cache and forces the system to use the updated hosts file entries. Enabling promiscuous mode is for network monitoring, clearing browser cache affects only web browsing, and adding network adapters is unnecessary for hosts file changes.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -963,7 +963,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Scope. Scope defines the extent of a change in change management processes. The scope determines what systems, applications, users, or infrastructure components will be affected by the proposed change. It establishes the boundaries and limits of what the change will impact. Purpose explains why the change is needed, analysis evaluates the change requirements, and impact assesses the consequences, but scope specifically defines the extent or breadth of the change.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -980,7 +980,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Rolling back video card drivers. When desktop icons become very large after a recent software patch deployment, rolling back video card drivers would best resolve the issue. Display driver updates can change screen resolution, DPI scaling, or display settings, causing icons to appear oversized. Rolling back to previous drivers restores the original display configuration. Restoring to factory settings, repairing Windows profiles, or reinstalling the OS are more drastic measures that aren't necessary for a display scaling issue caused by driver updates.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -997,7 +997,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Drive failure. When a user cannot start the OS and receives an error indicating no OS found, with audit logs showing S.M.A.R.T. (Self-Monitoring, Analysis, and Reporting Technology) alerts, this indicates drive failure. S.M.A.R.T. monitors hard drive health and reports impending failures. A failing drive would prevent OS boot and trigger S.M.A.R.T. warnings. Boot order issues wouldn't generate S.M.A.R.T. alerts, malware typically doesn't prevent initial OS detection, and Windows updates don't cause 'no OS found' errors with hardware monitoring alerts.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1017,7 +1017,7 @@
       2,
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: C) Screen timeout and D) Screen brightness. When a phone has poor battery life and the screen stays on for a long time after being set down, the technician should first check screen timeout and screen brightness. Screen timeout controls how long the display remains active after user interaction, and extended timeout periods drain battery significantly. High screen brightness also consumes substantial battery power. These two settings have the most direct impact on battery consumption related to display usage. Screen resolution, zoom, damage, and motion smoothness have less immediate impact on the described symptoms.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "software-troubleshooting"
@@ -1034,7 +1034,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) VNC. When a technician needs to remotely connect to a Linux desktop using a tool natively designed for Linux, VNC (Virtual Network Computing) is the most likely choice. VNC is a cross-platform remote desktop protocol that works natively on Linux systems and provides graphical desktop access. MFA (Multi-Factor Authentication) is a security method, MSRA (Microsoft Remote Assistance) is Windows-specific, and RDP (Remote Desktop Protocol) is primarily designed for Windows systems, though it can work on Linux with additional configuration.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1051,7 +1051,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) EULA. When multiple copies of home edition software are installed on business computers, this most likely violates the EULA (End User License Agreement). Home edition software licenses typically restrict usage to personal, non-commercial environments and limit the number of installations. Using home editions in business settings or installing multiple copies beyond license terms violates the EULA. PII (Personally Identifiable Information) relates to data protection, DRM (Digital Rights Management) is copy protection technology, and open-source agreements govern free software usage.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1068,7 +1068,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) FAT32. FAT32 is the best filesystem format for USB flash drives to ensure read and write compatibility across several generations of Microsoft operating systems. FAT32 is supported by all Windows versions from Windows 95 onwards, making it universally compatible. APFS is Apple's proprietary filesystem, ext4 is Linux-specific, and CDFS (Compact Disc File System) is read-only for optical media. FAT32's broad compatibility makes it ideal for removable storage devices used across different systems.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1085,7 +1085,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Processor. When a developer receives a 'VTx not supported by system' error while installing virtualization software, upgrading the processor will most likely fix the issue. VT-x (Intel Virtualization Technology) is a hardware feature built into modern processors that enables efficient virtualization. Older processors lack this capability, preventing virtualization software from running. Hard drives, memory, and video cards don't provide virtualization extensions - this is specifically a CPU feature requirement.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1102,7 +1102,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Calibrate the phone sensors. When a mobile device screen is not autorotating despite the feature being enabled and the device restarted, the next troubleshooting step is to calibrate the phone sensors. The accelerometer and gyroscope sensors detect device orientation for screen rotation, and calibration can resolve sensor accuracy issues. Enabling the touchscreen doesn't affect rotation, reinstalling the OS is excessive for this issue, and replacing the screen wouldn't fix sensor-related rotation problems.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1119,7 +1119,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Boot into safe mode. When a user clicks on a web advertisement and now experiences pop-ups every time the mouse moves, the technician should boot into safe mode. This behavior indicates adware or malware infection that triggers on mouse movement. Safe mode loads only essential system files, preventing malware from running and allowing for effective removal. Performing a malware scan in normal mode might be blocked by the malware, restarting won't remove persistent threats, and reinstalling the browser doesn't address system-level infections.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1136,7 +1136,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) The incorrect DNS address was assigned. When a computer can ping localhost, gateway, and known IP addresses but cannot access web pages, the issue is most likely incorrect DNS settings. DNS (Domain Name System) translates domain names to IP addresses. Since the computer can reach IP addresses directly but not websites by name, DNS resolution is failing. A firewall blocking applications wouldn't affect all web access, VLAN issues would prevent IP connectivity entirely, and browser cache problems are application-specific.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1153,7 +1153,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Check the computer's date and time. When a user receives a security certificate error stating the certificate has expired or is not yet valid, and the website works on other computers, the issue is likely incorrect system date and time. SSL certificates are time-sensitive and will be rejected if the computer's clock is significantly wrong. Checking and correcting the date/time settings will resolve certificate validation issues. Rebooting, reinstalling the OS, or configuring static IP won't fix time-related certificate problems.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1173,7 +1173,7 @@
       3,
       4
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: D) Deleting the application cache and E) Clearing the application storage. When an Android application immediately closes upon opening while other apps work normally, clearing the application cache and storage will most likely resolve the issue. Corrupted cache files or stored data can cause app crashes. Deleting cache removes temporary files, while clearing storage resets the app to default state. Uninstalling requires reinstallation, root access is unnecessary for basic troubleshooting, browser cache is irrelevant, and disabling MDM could create security issues.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "software-troubleshooting"
@@ -1190,7 +1190,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) taskmgr. When MSConfig no longer shows startup items (as in newer Windows versions), the technician can use Task Manager (taskmgr) to view startup programs. Task Manager's Startup tab displays all programs that launch with Windows and their impact on boot time. msinfo32 shows system information but not startup management, perfmon monitors performance, and regedit edits the registry but isn't the recommended tool for startup management.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1207,7 +1207,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Primary account and password. When an iPhone is permanently locked after failed login attempts, using the primary Apple ID account and password will restore access to the device. This allows the user to unlock the device remotely through iCloud or during device recovery. Biometric methods (fingerprint, facial recognition) and secondary authentication are disabled when the device is locked due to failed attempts. The primary account credentials provide the highest level of authentication for device recovery.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1224,7 +1224,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Screen-sharing software. When troubleshooting a remote user's issues accessing an online share, screen-sharing software would most likely be used. Screen-sharing allows the technician to see the user's desktop, observe the problem firsthand, and guide the user through troubleshooting steps in real-time. This provides visual confirmation of error messages and allows direct assistance. SSH is for command-line access, VPN provides network connectivity, and file transfer software moves files but doesn't help diagnose access issues.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1241,7 +1241,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Apologize to the customer and escalate the issue to a manager. When a customer is yelling about an issue outside the support center's scope, the best course of action is to apologize and escalate to a manager. This demonstrates professionalism, acknowledges the customer's frustration, and ensures proper handling by someone with authority to coordinate field technician services. Simply informing the customer about scope limitations without escalation may increase frustration, attempting unauthorized fixes creates liability, and suggesting self-service is unprofessional.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1258,7 +1258,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Educate the end user. When a user returns with the same virus infection after removal, educating the end user is the best prevention strategy. User behavior is often the root cause of repeated infections - clicking malicious links, downloading unsafe files, or visiting compromised websites. Education about safe computing practices, recognizing threats, and proper browsing habits prevents future infections. Disabling System Restore, installing patches, or cleaning environments are technical measures but don't address the behavioral cause of reinfection.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1275,7 +1275,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Roll back the updates. When a systems administrator receives numerous slow performance tickets after installing Windows security patches, rolling back the updates should resolve the issue. If the performance problems started immediately after patch installation, the updates are likely causing compatibility issues or resource conflicts. Rolling back restores previous system performance while allowing time to investigate the specific problematic update. Rebuilding profiles, restarting services, or running system file checks don't address update-related performance degradation.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1292,7 +1292,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) System. When a user wants to extend the display to a second monitor, the System settings in Windows is where this change is most likely made. In Windows 10/11, display configuration including extending, duplicating, or choosing primary monitors is found under Settings > System > Display. This section contains all multi-monitor configuration options. Devices manages hardware connections, Personalization handles themes and wallpapers, and Accessibility focuses on user assistance features.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1309,7 +1309,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Quarantine the computer. When a technician sees a file requesting payment to a cryptocurrency address (indicating ransomware), the first action should be to quarantine the computer. Quarantine isolates the infected system from the network to prevent ransomware spread to other computers and servers. This containment is critical before any other remediation steps. Disabling System Restore, updating antivirus, or booting to safe mode are secondary actions that should occur after network isolation to prevent further damage.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1326,7 +1326,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Remote network installation. For a bare-metal server installation when installation media is not available on site, remote network installation is the appropriate method. This allows the engineer to install the operating system over the network using PXE boot, network deployment servers, or remote installation services. Image deployment requires pre-existing images, recovery partition installation needs existing partitions, and repair installation requires an existing OS to repair.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1343,7 +1343,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Check for Windows updates. When a technician receives a 'failed to install package' message while trying to install Developer Mode, checking for Windows updates should be the first step. Developer Mode installation may require specific Windows updates or patches to be installed first. Ensuring internet connectivity is necessary but not the first step, enabling SSH is unrelated, and rebooting the computer may not resolve the issue without addressing the underlying cause.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1363,7 +1363,7 @@
       1,
       4
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: B) Removing the applications from startup and D) Running the Disk Cleanup utility. To resolve slow boot times at minimal expense, removing startup applications and running the Disk Cleanup utility are the best options. Startup applications consume resources during boot, and removing unnecessary ones speeds up the process. Disk Cleanup removes temporary files and system files that are no longer needed, freeing up disk space and potentially speeding up boot times. Installing RAM or a faster SSD requires hardware purchases, defragmenting has minimal impact on boot times, and ending Task Manager processes doesn't affect boot performance.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "software-troubleshooting"
@@ -1380,7 +1380,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Attach the external hardware token. When specialized software displays a message indicating it's not authorized to run, attaching an external hardware token will most likely resolve the issue. Many specialized software applications use hardware tokens (dongles) for licensing and copy protection. The software checks for the presence of the token before allowing execution. Installing in safe mode, OS updates, or restarting won't address hardware-based authorization requirements.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1397,7 +1397,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Amount of system RAM. When a Type 2 hypervisor performs inadequately during source code compilation, upgrading the amount of system RAM will most likely improve performance. Type 2 hypervisors run on top of the host operating system and share system resources. Compilation is memory-intensive, requiring significant RAM for the host OS, hypervisor, and virtual machines. More RAM allows better resource allocation and reduces memory bottlenecks. NIC performance affects network operations, storage IOPS helps with disk operations, and dedicated GPU assists with graphics but won't significantly impact compilation performance.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1414,7 +1414,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Clear the cached file. When a user visits a website but doesn't see the latest patch notes, clearing the cached files should be performed before reloading the page. Browser cache stores local copies of web content, and outdated cached files can prevent new content from displaying. Clearing the cache forces the browser to download fresh content from the server. Synchronizing browser data, enabling private browsing, or marking sites as trusted won't resolve cached content issues.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1431,7 +1431,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Repair Windows. When a user receives a 'BOOTMGR is missing' error, the desktop engineer should first attempt to repair Windows. BOOTMGR (Boot Manager) is a critical Windows boot component, and this error indicates boot sector corruption or missing boot files. Windows repair tools can restore the boot manager and fix boot sector issues without data loss. Partitioning the hard disk would destroy data, reimaging is more drastic than necessary, and rolling back updates won't fix missing boot manager files.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1448,7 +1448,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Report the error to the bank. When a user receives a 'Your connection is not private. Authority invalid' error from an online banking site, they should report the error to the bank. This error indicates SSL certificate problems that could signal a security threat, man-in-the-middle attack, or compromised connection. Banks need to be aware of such issues immediately for security reasons. Proceeding to the site exposes the user to security risks, using a different browser won't fix certificate issues, and reinstalling the browser is unnecessary.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1465,7 +1465,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Instruct the user to disconnect the Wi-Fi. When a technician suspects a rogue access point (unrecognized Wi-Fi connection), the first action should be to instruct the user to disconnect from the Wi-Fi immediately. Rogue access points can intercept data, steal credentials, and compromise security. Disconnecting prevents further data exposure and security risks. Restarting the adapter, launching browsers, or running antivirus are secondary actions that should occur after securing the connection by disconnecting from the suspicious network.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1482,7 +1482,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) pathping. For troubleshooting network performance issues with unstable traffic and frequent drops, pathping provides the most detailed information. Pathping combines ping and traceroute functionality, showing packet loss statistics at each hop along the network path. This helps identify where network instability occurs between source and destination. ipconfig shows local network configuration, arp displays address resolution tables, and nslookup resolves DNS queries, but none provide the comprehensive path analysis needed for intermittent connectivity issues.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1499,7 +1499,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Verify drive readability in the BIOS. When a workstation shows 'no bootable device' error, the analyst should first verify drive readability in the BIOS. This error indicates the system cannot detect or access the boot drive. Checking BIOS/UEFI settings confirms whether the drive is recognized by the hardware and properly configured in boot order. Reimaging requires a functioning drive, safe mode needs an accessible OS, and Linux live images don't address the underlying drive detection issue.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1516,7 +1516,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Graphics card. When a user experiences low frame rates in a new computer game, upgrading the graphics card will resolve the issue. Frame rate performance is primarily determined by the graphics processing unit (GPU), which renders game visuals. Modern games require powerful graphics cards for smooth gameplay at acceptable frame rates. Hard drives affect loading times, RAM impacts overall system performance, and monitors display the output but don't generate the frames - the graphics card is the bottleneck for gaming performance.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1533,7 +1533,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Perform a system file check. When browser crashes occur with 'crypt32.dll is missing or not found' errors, performing a system file check should be attempted first. The crypt32.dll file is a critical Windows cryptographic services library required for secure communications and certificate handling. System File Checker (sfc /scannow) can detect and repair missing or corrupted system files. Rebuilding profiles, reimaging, or rolling back updates are more drastic measures that should be tried after attempting to repair the missing system file.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1550,7 +1550,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Reimage the computer. When proprietary software crashes intermittently with persistent 'low memory' warnings even after restarting, reimaging the computer is the next troubleshooting step. The persistent low memory warnings after restart suggest system-level memory management issues, corrupted system files, or malware that cannot be resolved by simple restarts. Reimaging provides a clean system state. Replacing RAM is hardware-focused but the issue persists after restart, reinstalling software won't fix system memory issues, and decreasing page file size would worsen memory problems.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1567,7 +1567,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Private-browsing mode. To mitigate the risk of customer data being accidentally saved to a public kiosk, private-browsing mode should be enforced. Private browsing prevents the browser from storing browsing history, cookies, form data, passwords, and downloaded files locally. This ensures customer information doesn't persist on the kiosk after use. Manual clearing requires user action and may be forgotten, browser synchronization would save data to cloud accounts, and password managers store credentials locally - all increasing data exposure risks.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1584,7 +1584,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Avoiding distractions. When a technician receives a personal text message while troubleshooting but doesn't reply and continues working, this best describes avoiding distractions. Professional technicians maintain focus on customer issues and avoid personal interruptions during service calls. This demonstrates proper work prioritization and customer service dedication. While this behavior also shows professionalism, the specific action of ignoring personal messages to maintain focus is primarily about avoiding distractions rather than appearance, timelines, or confidence.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1602,7 +1602,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Reinstall the operating system. When a workstation displays a ransomware message demanding cryptocurrency for decryption, reinstalling the operating system is the best way to safely return the device to service. Ransomware encrypts files and system components, making recovery through normal means impossible. Complete OS reinstallation removes all malware and provides a clean system. AV scans may not detect all ransomware components, firewalls don't remove existing infections, system restore points may be corrupted, and complying with ransom demands funds criminal activity without guaranteeing data recovery.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1619,7 +1619,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Load the system in safe mode. When a system freezes at the desktop background consistently, loading the system in safe mode should be the next troubleshooting step. Safe mode loads only essential system files and drivers, bypassing problematic startup programs, services, or drivers that may be causing the freeze. This allows the technician to identify and resolve the underlying issue. Disabling BIOS options is premature, using flash drive repair is more complex than needed, and enabling Secure Boot with reinstallation is excessive for a startup freeze issue.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1636,7 +1636,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Reinstall the application. When a corporate smartphone was stored for five months without updates and an application crashes intermittently, reinstalling the application should be done next. Extended storage without updates can cause application compatibility issues, corrupted app data, or outdated app versions that conflict with the OS. Reinstalling provides a fresh, clean application installation. Restarting is temporary, reimaging the OS is excessive for a single app issue, and clearing cache may not resolve fundamental compatibility problems from extended storage.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1653,7 +1653,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Create a restore point. Before modifying registry keys to fix corrupted files, the technician should create a restore point. Registry modifications can have serious system consequences if done incorrectly, potentially making the system unbootable or causing additional problems. A restore point provides a safety net to revert system changes if the registry modifications cause issues. Updating anti-malware, running in safe mode, or rolling back updates don't provide the specific protection needed when making potentially risky registry changes.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1671,7 +1671,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) .ps1. A technician should use the .ps1 file extension for PowerShell scripts. PowerShell Script files use the .ps1 extension and contain PowerShell commands and cmdlets. .py is for Python scripts, .sh is for Unix/Linux shell scripts, .bat is for Windows batch files, and .cmd is for Windows command files. Each scripting language has its specific file extension, and PowerShell specifically uses .ps1 for its script files.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1688,7 +1688,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Content filtering. To prevent access to malicious content and apply internet access protection on a SOHO router, the technician should configure content filtering. Content filtering blocks access to known malicious websites, inappropriate content, and potentially harmful domains, providing internet access protection for users. Port forwarding opens network access, firmware updates maintain security but don't filter content, and DHCP reservations assign IP addresses but don't provide content protection.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1705,7 +1705,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Utilizing the backups. When database file extensions have been changed from .db to .enc and files cannot be opened manually, this indicates ransomware encryption. The best option for recovering the data is utilizing backups. Ransomware encrypts files making them inaccessible, and the .enc extension suggests encryption. Backups provide clean, unencrypted copies of the data. Restore points may also be encrypted, safe mode doesn't decrypt files, and AV scans can't reverse encryption - only clean backups can restore the original data.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1722,7 +1722,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Scan the system for malware. When an Android device takes a long time to boot and all applications crash after being installed from a third-party website, scanning the system for malware should be the first diagnostic step. Third-party app installations outside official app stores are a common source of malware infections. Malware can cause system instability, slow boot times, and application crashes. Clearing browser cache won't address system-wide issues, MDM enrollment is for management not diagnosis, and compatibility checking doesn't address the malware risk from untrusted sources.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1739,7 +1739,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Quarantine the system. When a branch office suspects a machine contains ransomware, the first mitigation step should be to quarantine the system. Quarantine isolates the infected machine from the network to prevent ransomware spread to other systems and servers. This containment is critical before any remediation efforts. Disabling System Restore, remediating the system, or educating users are secondary actions that should occur after the threat is contained and cannot spread further.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1756,7 +1756,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Perform a safe mode boot. When a computer shows a blue screen of death (BSOD) after a failed Windows 10 update, performing a safe mode boot should be the first diagnostic step. Safe mode loads only essential system files and drivers, bypassing problematic updates or drivers that may be causing the BSOD. This allows the technician to access the system and perform further troubleshooting. System Restore, last known-good configuration, or BIOS reset are secondary options after safe mode access is established.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1773,7 +1773,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) eventvwr.msc. When applications are not updating and preventing file access, the technician should launch Event Viewer (eventvwr.msc) to continue troubleshooting. Event Viewer contains application, system, and security logs that can reveal why applications are failing to update. Error messages and event codes provide specific information about update failures. gpedit.msc is for Group Policy, perfmon.msc monitors performance, and devmgmt.msc manages device drivers - none directly address application update issues.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1790,7 +1790,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Restart the PC. When malware is installed after clicking a suspicious email link, restarting the PC is the best way to remove the malware. The question appears to be truncated, but restarting in safe mode would be the logical complete answer. Safe mode prevents malware from loading and allows for effective removal. System Restore may not remove all malware components, recovery mode is for system repair, and scheduling a scan in normal mode might be blocked by active malware.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1807,7 +1807,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Install a trusted browser. After uninstalling a malicious browser from an unsolicited USB drive that redirected searches, the user should install a trusted browser next. The malicious browser likely contained malware that could have infected the system beyond just browser settings. Installing a clean, trusted browser from a legitimate source ensures safe web browsing. Deleting cookies, resetting settings, or changing search engines won't address potential system-wide malware infections from the malicious software.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1824,7 +1824,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) msinfo32.exe. When a technician cannot uninstall a system driver because it's currently in use, msinfo32.exe (System Information) should be used to help uninstall the driver. System Information provides detailed information about system drivers, their status, and dependencies, helping identify what's using the driver. This information helps determine the proper sequence for driver removal. dxdiag.exe is for DirectX diagnostics, msconfig.exe manages startup programs, and regedit.exe edits the registry but doesn't provide driver usage information.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1841,7 +1841,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Go to Programs and Features, select the program, and click on Change. To install optional features for a program that's already installed, the technician should go to Programs and Features, select the program, and click Change. This opens the program's installer in modification mode, allowing addition or removal of optional components without complete reinstallation. Uninstalling and reinstalling is unnecessary, Administrative Tools don't modify program features, and Disk Cleanup removes temporary files but doesn't add program features.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1858,7 +1858,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Check for system updates. When Bluetooth devices are paired but not functioning properly (no audio from speaker, sync issues with smartwatch), checking for system updates should be the next step. Bluetooth functionality often depends on system drivers and firmware that are updated through system updates. Outdated Bluetooth drivers can cause connectivity and functionality issues. Restarting, resetting network settings, or unpairing devices are more drastic measures that should be tried after ensuring the system has current updates.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1875,7 +1875,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) To automate tasks and reduce the amount of manual labor. The primary purpose of scripting languages is to automate tasks and reduce manual labor. Scripts automate repetitive processes, system administration tasks, and complex workflows that would otherwise require manual intervention. While scripts can interact with hardware and abstract complexity, their main purpose is automation and efficiency. Scripting languages are typically interpreted rather than compiled into executable files.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1893,7 +1893,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Enable boot logging on the system. When troubleshooting Windows OS loading issues at startup, enabling boot logging should be done first to diagnose the issue. Boot logging creates a detailed log (ntbtlog.txt) of all drivers and services that load during startup, helping identify what's causing the boot failure. Last known-good configuration, Task Manager, sfc /scannow, and Event Viewer are useful but boot logging provides the most specific information about startup problems.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1910,7 +1910,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Business. When upgrading a legacy system that's critically important to the organization, the IT manager is most concerned with business impact. The caution about not having detrimental effects on company finances indicates concern about business continuity, operational disruption, and financial consequences. Business impact encompasses revenue loss, productivity disruption, and operational costs that could result from system changes. Device, network, and operation impacts are technical considerations, but business impact addresses the overall organizational consequences.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1927,7 +1927,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Apologize and ask what would help resolve the issue. When dealing with an upset customer, the best approach is to apologize and ask what would help resolve the issue. This demonstrates empathy, takes responsibility for the situation, and focuses on finding a solution. It de-escalates tension and shows commitment to customer satisfaction. Insisting the customer is correct without action, remaining silent, or immediately escalating doesn't address the customer's concerns or work toward resolution.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1945,7 +1945,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) sfc. When a Windows 10 PC with a new SSD and fresh Windows installation cannot start the GUI, the sfc (System File Checker) command is most appropriate. Since this is a new installation, system files may be corrupted or missing, preventing the GUI from loading. The sfc /scannow command scans and repairs corrupted system files. msconfig manages startup programs, chkdsk checks disk errors, diskpart manages disk partitions, and mstsc is for remote desktop - none address system file corruption in a new installation.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1962,7 +1962,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Available storage space. When a smartphone cannot download OS updates and operates slowly, the technician should check available storage space next. OS updates require significant free space for download and installation. Insufficient storage prevents updates and causes performance issues as the system struggles with limited space. Application permissions don't affect OS updates, battery level doesn't prevent downloads (though low battery may pause installation), and Wi-Fi speed affects download time but not the ability to start downloads.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1979,7 +1979,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Reboot the smartphone. When a calendar application is experiencing frequent crashes and the smartphone has become unresponsive, rebooting the smartphone should be done first to resolve the issue. A reboot clears temporary files, resets memory allocation, and stops any problematic processes that may be causing the crashes and system unresponsiveness. This is the least invasive troubleshooting step that often resolves app crashes and system performance issues. Reinstalling the app, updating the OS, or factory reset are more drastic measures that should be tried after a simple reboot.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -1996,7 +1996,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Network and Sharing Center. When a Windows 10 device cannot access a mapped drive from a Windows XP machine while other XP devices can access it, the user should select Network and Sharing Center in Control Panel. This utility manages network connectivity settings, sharing permissions, and network discovery options. Windows 10 may have different default network sharing settings that prevent connectivity with older systems like Windows XP. Network and Sharing Center allows configuration of network profiles, sharing settings, and advanced sharing options needed for cross-platform connectivity.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -2013,7 +2013,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Static IP settings. When a smartphone shows it's connected to Wi-Fi with an IP address (192.168.1.42) but has no subnet mask and no internet access, the technician should check static IP settings next. The absence of a subnet mask indicates incomplete network configuration, likely due to manual static IP settings that are missing required network parameters like subnet mask, gateway, and DNS servers. After a screen repair, network settings may have been reset or corrupted. Internal antenna connections, airplane mode, and digitizer calibration wouldn't cause this specific IP configuration issue.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -2030,7 +2030,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Check the system event logs. When a computer is automatically restarting with a BSOD error message showing 0% complete, the technician should first check the system event logs to diagnose the issue. Event logs contain detailed information about system crashes, including error codes, driver failures, and hardware issues that cause BSODs. This diagnostic information helps identify the root cause before attempting other solutions. Verifying driver versions, installing updates, or performing RAM diagnostics are secondary steps that should be guided by the information found in the event logs.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -2051,7 +2051,7 @@
       1,
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: A) net use, B) robocopy, D) diskpart. For enterprise Windows installation with network scripting, SSD system drives, and HDD backup drives, the technician should use these three command-line tools: 1) net use - connects to network shares to access installation files over the network, 2) robocopy - robust file copy utility for transferring installation files from network share to local system, 3) diskpart - disk partitioning utility to prepare the new SSD as system drive and configure the existing HDD as backup drive. winver shows version info, sfc repairs system files, netstat/ping/chkdsk are for different purposes.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "software-troubleshooting"
@@ -2068,7 +2068,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Group Policy. To modify the default home page of all workstations in a company, Group Policy will help implement this change. Group Policy allows centralized management and configuration of multiple computers in a domain environment. Through Group Policy, administrators can set browser home pages, security settings, and other configurations that apply to all computers or specific groups of users/computers. Browser extensions work per-browser, System Configuration affects individual machines, and Task Scheduler runs scheduled tasks but doesn't manage browser settings across multiple workstations.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -2085,7 +2085,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Test the computer's memory. When File Explorer keeps crashing after running Windows Update, CHKDSK, SFC /scannow, and clearing File Explorer history, the technician should test the computer's memory next. Memory issues can cause application crashes, especially after system changes like Windows updates. Faulty RAM can lead to data corruption and application instability. Rolling back updates is premature without identifying hardware issues, reimaging is too drastic, and repartitioning the boot drive doesn't address the crash symptoms that suggest memory problems.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -2102,7 +2102,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Upgrading the current mesh network to support the 802.11n specification. When a WAP mesh network experiences higher than anticipated traffic after deploying laptops and docking stations, upgrading to 802.11n specification would be the most efficient solution. 802.11n provides higher bandwidth, better range, and improved performance compared to older standards. This addresses the root cause of network congestion. Replacing laptops with desktops is impractical, increasing adapter metrics affects routing priority but not capacity, and adding repeaters may create more interference without solving the bandwidth limitation.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -2122,7 +2122,7 @@
       1,
       5
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: B) Volume shadow copy, F) Disk imaging. For executives' laptops requiring both granular and whole-disk recovery capabilities, the best options are Volume Shadow Copy and Disk Imaging. Volume Shadow Copy enables granular recovery by creating point-in-time snapshots of files and folders, allowing restoration of individual files or previous versions. Disk Imaging provides whole-disk recovery by creating complete system images that can restore entire systems. RAID is for fault tolerance, incremental backup lacks whole-disk capability, System Restore is limited to system files, and grandfather-father-son is a rotation strategy rather than a recovery method.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "software-troubleshooting"
@@ -2139,7 +2139,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Perform a full-system, antivirus scan and check browser notifications. When a user reports constant unwanted pop-ups, inability to close browser windows, and potential file alterations, the technician should perform a full-system antivirus scan and check browser notifications with minimal impact to the user. These symptoms indicate malware infection, specifically adware or browser hijackers. A comprehensive scan can detect and remove malware while checking browser notifications addresses pop-up sources. System Restore may not remove all malware, wiping the computer is too drastic, and checking partition tables doesn't address malware symptoms.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -2156,7 +2156,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Quality of service. When a web developer launches a new external web server and all firewall traffic performance degrades substantially, the overlooked consideration was Quality of Service (QoS). QoS manages network bandwidth allocation and traffic prioritization. Without proper QoS configuration, the new web server can consume excessive bandwidth, causing performance degradation for all other network traffic. OS compatibility, 32- vs 64-bit architecture, and storage requirements are server-specific considerations that wouldn't directly impact overall network traffic performance through the firewall.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -2173,7 +2173,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Developer Mode. When a corporate iPhone has applications unavailable from the App Store compared to an identical phone, this best describes Developer Mode being enabled. Developer Mode allows installation of applications that aren't distributed through the official App Store, including enterprise apps, beta versions, or custom applications. This mode is often used for corporate applications or testing purposes. APK Source refers to Android, connectivity issues wouldn't affect app availability comparison, and jailbreak would show more extensive modifications beyond just additional apps.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -2190,7 +2190,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Roll back the device drivers. When a Windows 10 PC experiences a BSOD after installing optional Windows updates, the best way to resolve the issue is to roll back the device drivers. Optional Windows updates often include driver updates that may be incompatible with specific hardware configurations, causing system instability and BSODs. Rolling back drivers returns the system to previously working driver versions. Enabling System Restore is a recovery option but doesn't directly address driver conflicts, reinstalling the OS is too drastic, and updating BIOS may not resolve driver-related BSOD issues.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -2210,7 +2210,7 @@
       2,
       4
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: C) Increase the RAM, E) Uninstall unnecessary software. When a Windows computer works well initially but performance degrades throughout the day with system freezes when multiple applications are open, the technician should increase RAM and uninstall unnecessary software. These symptoms indicate memory exhaustion and resource competition. Adding RAM provides more memory for multiple applications, while removing unnecessary software reduces background processes and memory usage. GPU drivers, OS reinstallation, hard drive space, and disabling scheduled tasks don't directly address the memory-related performance degradation pattern described.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "software-troubleshooting"
@@ -2227,7 +2227,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Verify Bluetooth settings on the mobile phone. When a mobile phone will no longer connect to a smart watch after reinstalling the app, enabling synchronization, and rebooting, the user should verify Bluetooth settings on the mobile phone next. Smart watches typically connect via Bluetooth, and connection issues often stem from Bluetooth pairing problems, disabled Bluetooth, or corrupted Bluetooth profiles. Connecting the watch to Wi-Fi, enabling NFC, or turning on mobile hotspot are not relevant to smart watch connectivity, which primarily relies on Bluetooth communication.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -2244,7 +2244,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Clear the cache. When a company phone has pending software updates after rebooting, connecting to Wi-Fi, and disabling metered data, the technician should clear the cache next. Cached data from previous update attempts can interfere with new update downloads and installations. Clearing the cache removes temporary files and corrupted data that may be blocking the update process. Factory reset is too drastic, browser history doesn't affect system updates, and uninstalling/reinstalling applications won't resolve system update issues.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -2261,7 +2261,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Corporate. When a large organization researches proprietary software with vendor support for a multiuser environment, a Corporate EULA type should be selected. Corporate EULAs are specifically designed for business environments, providing multiuser licensing, vendor support, and enterprise-level terms and conditions. Perpetual refers to licensing duration, open-source doesn't provide proprietary vendor support, and personal licenses are for individual use and typically prohibit commercial/multiuser deployment.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -2281,7 +2281,7 @@
       0,
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: A) Isolate the computer from the network, C) Update the endpoint protection software. When a customer sees a window stating antivirus protection is no longer functioning, the technician should first isolate the computer from the network and update the endpoint protection software. Isolation prevents potential malware spread and protects other network resources, while updating endpoint protection ensures the latest virus definitions and security patches are installed. Enabling firewall, System Restore, deleting cookies, and running sfc /scannow are secondary measures that don't directly address the antivirus protection failure.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "software-troubleshooting"
@@ -2298,7 +2298,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) The application installer is 64-bit. When a graphics application installation fails with the error message 'Not compatible with OS', the most likely reason is that the application installer is 64-bit while the operating system is 32-bit. This architecture mismatch prevents installation as 64-bit applications cannot run on 32-bit operating systems. Graphics card driver updates, administrative rights, and disk space issues would generate different error messages, not an OS compatibility error.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"

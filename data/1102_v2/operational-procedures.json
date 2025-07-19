@@ -11,7 +11,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Communicate to stakeholders. After a change advisory board approves a change request, the next logical step is to communicate the approved change to all relevant stakeholders. This ensures everyone affected by the change is informed about what will happen, when it will occur, and what to expect. Risk analysis should have been performed before the change was submitted for approval. Sandbox testing typically occurs during the implementation phase. End user acceptance comes after successful implementation and testing.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -28,7 +28,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) WPA2 with AES. For a 10-year-old SOHO router, WPA2 with AES represents the most secure option available. While WPA3 with AES-256 or AES-128 would be more secure, older routers typically don't support WPA3 as it was introduced in 2018. WPA2 with TKIP is less secure than WPA2 with AES because TKIP has known vulnerabilities and uses older encryption methods. AES (Advanced Encryption Standard) provides strong encryption that's still considered secure today.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -45,7 +45,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Register the ticket with a unique user identifier. Using a unique user identifier (such as employee ID, username, or email address) ensures the ticket is properly associated with the correct user in the system. This creates a reliable link between the user and their support request. A callback phone number doesn't guarantee proper association and could be shared among users. Assigning to a power user doesn't associate it with the original requester. While providing a unique ticket number is helpful for reference, it doesn't ensure the ticket is associated with the correct user in the system.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -62,7 +62,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Humidity levels. Humidity levels are the most critical environmental concern in a data center because improper humidity can cause serious damage to electronic equipment. Low humidity increases static electricity risk, which can damage sensitive components. High humidity can cause condensation, leading to short circuits and corrosion. Data centers typically maintain humidity between 40-60% relative humidity. While battery disposal, ESD mats, and toner disposal are important considerations, they don't pose the same immediate and ongoing operational risk as improper humidity control.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -79,7 +79,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Use Settings to access Screensaver settings. In Windows, the screensaver settings include options to require a password when resuming from sleep or screensaver mode. This is found in Settings > Personalization > Lock screen > Screen saver settings, where you can configure 'On resume, display logon screen.' CYOD (Choose Your Own Device) policies often require this security measure to protect corporate data when devices are left unattended. Screen Timeout, General, and Display settings don't contain the password requirement options for resume from sleep.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -96,7 +96,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Clone any impacted hard drives. Cloning hard drives creates an exact bit-for-bit copy of the original drive, preserving all data including deleted files, metadata, and system artifacts that might be crucial for litigation. This maintains the integrity of the evidence while allowing investigators to work on the copy rather than the original. Encrypting files could alter evidence. Contacting cyber insurance or law enforcement are important steps but don't directly preserve the evidence. The cloned drives should be stored securely with proper chain of custody documentation.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -113,7 +113,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Differential. Differential backups are ideal for this scenario because they back up only files that have changed since the last full backup, saving storage space while providing good protection against ransomware. Since only a few files are regularly modified, differential backups will be small and efficient. They also provide faster recovery than incremental backups because you only need the last full backup and the most recent differential backup. Full backups would use too much storage space. Off-site and Grandfather-father-son are backup strategies, not backup methods that address the storage space concern.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -130,7 +130,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Avoid distractions. The technician's action of not taking the call and setting the phone to silent demonstrates professional behavior by avoiding distractions while working on a customer's PC. This ensures full attention is given to the customer's problem and maintains focus on the task at hand. This behavior doesn't directly relate to confidential material handling, user privacy policy, or timeline management. Professional technicians should minimize interruptions when working with customers to provide the best service possible.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -147,7 +147,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Full. When implementing a new backup and recovery system, a full backup should be completed first to establish a complete baseline of all data. This creates a comprehensive starting point from which all subsequent incremental or differential backups can be based. Without an initial full backup, incremental and differential backups have no reference point and cannot function properly. Non-parity is not a standard backup type. The full backup provides the foundation for any backup strategy and ensures complete data protection from the start.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -164,7 +164,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Badge reader. A badge reader provides secure physical access control by requiring authorized personnel to present valid credentials (badges/cards) to enter the data center. This creates an audit trail of who accessed the facility and when. While geofencing, alarm systems, and motion sensors are useful security measures, they don't directly control access - they detect or alert. Badge readers actively prevent unauthorized entry by only allowing access to individuals with proper credentials, making them the most effective solution for implementing secure physical access control.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -181,7 +181,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Network utilization will be significantly increased due to the size of CAD files. CAD files are typically very large (often hundreds of megabytes to gigabytes), and forcing automatic cloud backups of all CAD files would dramatically increase network bandwidth usage. This could impact overall network performance and potentially require infrastructure upgrades. While software testing, technician hours, and storage space are valid concerns, the network utilization impact would be the most significant and immediate concern for an IT manager, especially given the large file sizes typical in architectural CAD work.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -198,7 +198,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Degaussing. Degaussing is the best method for disposing of hard drives containing PII (Personally Identifiable Information) because it uses powerful magnetic fields to completely destroy all data on magnetic storage media, making it unrecoverable. This method meets compliance requirements for secure data destruction. Drilling creates holes but may leave recoverable data between the holes. Low-level formatting and erasing/wiping can potentially be defeated by advanced recovery techniques. Degaussing ensures complete data destruction and is often required by regulations when disposing of drives with sensitive information.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -215,7 +215,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Escalate the ticket. After spending hours on a high-priority issue for the CEO without resolution, the appropriate next step is to escalate the ticket to a higher level of support or management. This ensures the issue gets the attention and resources it needs while keeping the CEO informed of progress. Continuing to research or repeat processes wastes valuable time when escalation could bring in additional expertise. Telling the CEO it will take weeks is unprofessional and doesn't address the urgency of the situation.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -232,7 +232,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Chain of custody. Chain of custody is a critical legal requirement that must be maintained throughout the entire forensic evidence lifecycle. It documents who had possession of the evidence, when they had it, what they did with it, and ensures the evidence hasn't been tampered with or altered. This documentation is essential for evidence to be admissible in legal proceedings. Acceptable use policies, security policies, and information management are important but don't specifically address the legal requirements for handling forensic evidence.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -249,7 +249,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) DHCP reservation. DHCP reservation allows a server to receive the same IP address automatically from the DHCP server every time it boots, based on its MAC address. This satisfies both requirements: it's not a static IP address (it's still assigned by DHCP), but the server maintains the same IP address consistently. Port forwarding routes traffic but doesn't assign IP addresses. DNS A records resolve names to IP addresses but don't control IP assignment. NAT translates addresses but doesn't ensure consistent IP assignment.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -266,7 +266,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Owners can be notified a change is being made and can monitor it for performance impact. Following change management processes ensures that system owners and stakeholders are properly notified about changes being made to their systems. This allows them to monitor for any performance impacts or issues that might arise from the software installation. While risk assessment, end user awareness, and rollback plans are components of change management, the primary benefit in this scenario is ensuring proper notification and monitoring capabilities for system owners.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -286,7 +286,7 @@
       0,
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: A) Utilizing an ESD strap and B) Disconnecting the computer from the power source. These two safety procedures are essential for protecting PC components. An ESD (Electrostatic Discharge) strap prevents static electricity from damaging sensitive electronic components by grounding the technician. Disconnecting the computer from the power source ensures no electrical current can flow through the system, preventing electrical shock and component damage. The other options, while good practices, don't directly protect internal components from the primary risks of static discharge and electrical current during processor replacement.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "operational-procedures"
@@ -303,7 +303,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) AUP (Acceptable Use Policy). The Acceptable Use Policy (AUP) outlines what is considered acceptable behavior when using company resources, including computers and networks. Since the company has determined that mining cryptocurrency on work desktops violates its guidelines, the AUP should be updated to explicitly state this prohibition. MDM (Mobile Device Management) is related to managing mobile devices, EULA (End User License Agreement) is about software licensing, and IRP (Incident Response Plan) is for responding to security incidents.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -320,7 +320,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Rollback plan. The change advisory board rejected the request due to lack of alternative actions if implementation failed, which directly refers to a rollback plan. A rollback plan outlines the steps to reverse changes and restore systems to their previous state if the implementation fails or causes problems. This is a critical component of change management that provides a safety net for changes. Scope of change, risk level, and end user acceptance are important but don't address the specific concern about having alternative actions for implementation failure.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -335,9 +335,9 @@
       "Restricted user permissions"
     ],
     "correct": [
-      0
+      1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Lock the workstations after five minutes of inactivity. Automatic screen locking after a short period of inactivity is the most effective solution for preventing data theft when agents walk away from their workstations. This ensures patient data is protected immediately when the workstation is left unattended. Hard drive encryption protects against theft but doesn't prevent viewing of data on unlocked screens. Privacy screens help but don't fully prevent viewing. Manually logging off users isn't practical and could interrupt legitimate work.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -354,7 +354,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) set AirDrop so that transfers are only accepted from known contacts. The executive is receiving unwanted files through AirDrop, which by default can accept files from anyone nearby. Setting AirDrop to 'Contacts Only' or 'Receiving Off' prevents strangers from sending files. This is a common issue on flights where many devices are in close proximity. Completely disabling wireless would prevent internet access for the movie. Discontinuing iMessage wouldn't solve the AirDrop issue. Restricting messages and calls doesn't address file transfers through AirDrop.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -371,7 +371,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Proceed with the custom manufacturer's procedure. Printer consumables like toner cartridges and ink cartridges often contain hazardous materials and should be disposed of according to the manufacturer's specific procedures. Most manufacturers have take-back programs or specific disposal instructions to ensure environmental compliance. Standard trash disposal can harm the environment due to toxic chemicals. Simply emptying residual ink/toner doesn't address the cartridge materials themselves. Standard recycling bins aren't equipped to handle the specialized materials in printer consumables.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -388,7 +388,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Lock the workstations after five minutes of inactivity. Automatic screen locking after a short period of inactivity is the most effective solution for preventing data theft when agents walk away from their workstations. This ensures patient data is protected immediately when the workstation is left unattended. Hard drive encryption protects against theft but doesn't prevent viewing of data on unlocked screens. Privacy screens help but don't fully prevent viewing. Manually logging off users isn't practical and could interrupt legitimate work.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -405,7 +405,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) A full backup of the data that is stored off site in cold storage. For sensitive, legacy PII with long-term regulatory retention requirements, a full backup stored off-site in cold storage is the best solution. Cold storage provides air-gapped protection against ransomware while meeting regulatory requirements for long-term retention. Daily incremental backups to corporate servers could be compromised by ransomware. RAID provides redundancy but not ransomware protection. Cloud backups could be accessible to ransomware and may not meet regulatory requirements for data sovereignty.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -422,7 +422,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Use a key combination to lock the computer when leaving. Using Windows+L or Ctrl+Alt+Del to lock the workstation is the quickest and most effective way to secure it when stepping away. This immediately requires authentication to regain access. Ensuring no unauthorized personnel are around isn't reliable security. A 30-minute screensaver timeout is too long for sensitive law enforcement data. Turning off the monitor doesn't prevent access - anyone can turn it back on and see the unlocked desktop.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -439,7 +439,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Disconnect the power before servicing the PC. When dealing with a suspected power supply short, the first and most critical safety step is to disconnect power to prevent electrical shock, fire, or further damage. This ensures technician safety and prevents the short from causing additional damage to components. While ESD protection, grounded workbenches, and ESD mats are important safety measures, they come after ensuring there's no electrical hazard from the suspected short circuit.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -456,7 +456,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) The network cable has become disconnected. Given the construction activity in surrounding offices and the fact that the desktop doesn't respond to ping, the most likely cause is physical damage to the network connection. Construction work often involves drilling, moving equipment, or other activities that can disconnect or damage network cables. A duplicate IP address would typically show some network response. HDD failure wouldn't prevent network response. Malware is less likely given the construction context and complete lack of network response.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -473,7 +473,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) WPA3. WPA3 is the newest and strongest wireless security protocol available, providing the best possible security for a new wireless router. It offers improved encryption, better protection against brute-force attacks, and enhanced security features compared to older protocols. WPS (WiFi Protected Setup) is a convenience feature that can introduce security vulnerabilities. TKIP is an older encryption method used with WPA. WEP is the oldest and weakest wireless security protocol with known vulnerabilities.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -490,7 +490,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) The workstations and the authentication server have a system clock difference. SNTP (Simple Network Time Protocol) synchronizes system clocks. If workstations are forced to use a different SNTP server, their clocks might become out of sync with the domain controller's clock. Domain authentication (Kerberos) is very sensitive to time differences - typically failing if clocks are more than 5 minutes apart. The SNTP server being offline would prevent time sync but wouldn't necessarily cause immediate login failures. Group Policy disruption and local time zone changes are less likely to cause widespread login issues.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -507,7 +507,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Differential backup. Differential backups only require two sets of tapes to restore: the last full backup and the most recent differential backup. This meets the requirement perfectly. Differential backups capture all changes since the last full backup, so you only need these two sets for complete restoration. Off-site backup is a storage location strategy, not a backup method. Incremental backups require the full backup plus all incremental backups since the full backup. Full backups only require one set but don't meet the 'two sets' specification in the question.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -524,7 +524,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) acceptable use policy. The technician correctly refuses because accessing another user's email account, even with provided credentials, violates the acceptable use policy (AUP). AUPs typically prohibit accessing other users' accounts and personal data, even when credentials are provided. This protects both the user's privacy and the organization from liability. While regulatory compliance, NDAs, and incident response procedures are important, the AUP is the most direct policy governing appropriate use of computer systems and user accounts.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -541,7 +541,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Risk analysis. Before any change can be approved, a risk analysis must be completed to identify potential impacts, risks, and mitigation strategies. This is a fundamental requirement of change management processes that occurs before approval. Sandbox testing happens during implementation after approval. End user acceptance occurs after implementation. Lessons learned are documented after the change is completed. Risk analysis is the critical pre-approval step that informs the decision-making process.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -558,7 +558,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) The runtime environment is not installed. The error message 'How do you want to open this file?' indicates that Windows doesn't know how to execute the .py file, which means Python (the runtime environment) is not installed on the system. When the proper runtime is installed, the system knows how to handle .py files automatically. Scripts not being permitted would show a different error. The script being built for a different OS would typically show compatibility errors. Administrator privileges would show access denied errors, not file association errors.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -575,7 +575,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Distributed denial of service. A DDoS attack involves multiple computers from different geographic locations sending high volumes of connection requests to overwhelm a server, making it unavailable to legitimate users. This matches the description perfectly. Zero day attacks exploit unknown vulnerabilities. SQL injection attacks target database vulnerabilities. Cross-site scripting attacks target web application vulnerabilities. Only DDoS involves multiple geographic locations coordinating to overwhelm a server with connection requests.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -592,7 +592,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) WPA3. WPA3 is the strongest and most secure wireless configuration available. It provides the latest security enhancements including improved encryption algorithms, better protection against password attacks, and enhanced security features compared to all previous wireless security protocols. WPS is a setup feature that can introduce vulnerabilities. WEP is the oldest and weakest wireless security protocol. WMN (Wireless Mesh Network) is a network topology, not a security configuration.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -609,7 +609,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Send a quick message regarding the delay to the next customer. Professional customer service requires proactive communication about delays. Informing the next customer about the 5-minute delay shows respect for their time and allows them to adjust their schedule accordingly. Cutting the current customer's time short provides poor service and may not resolve their issue. Apologizing after arriving late is reactive rather than proactive. Arriving late without acknowledgment is unprofessional and disrespectful to the customer's time.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -626,7 +626,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Creating a ticketing system. A ticketing system is the best solution for managing high volumes of service requests. It provides organization, prioritization, tracking, assignment, and reporting capabilities that are essential for efficient service desk operations. A support portal is helpful but doesn't manage the workflow. Automated callback systems help with communication but don't organize requests. Email submission can create tickets but doesn't provide the management capabilities needed for high-volume operations.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -643,7 +643,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Restrictions of use. An EULA (End User License Agreement) primarily contains restrictions on how software can be used, including limitations on copying, distribution, modification, and commercial use. This defines what users can and cannot do with the software legally. Chain of custody relates to evidence handling. Backup of software code is a technical consideration, not typically in EULAs. While EULAs may reference PII handling, their primary content is usage restrictions and legal terms.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -660,7 +660,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) The device does not have enough free space to download the OS updates. Even with auto-update enabled, OS updates require significant storage space to download and install. If the device lacks sufficient free space, updates will fail silently or be postponed indefinitely. Corporate-managed devices often have limited storage due to applications and data. User confirmation for major releases wouldn't prevent all updates. Device compatibility issues would typically show error messages. Corporate security policies would usually disable auto-update entirely rather than causing silent failures.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -677,7 +677,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Name server. When a user can access websites by IP address but cannot resolve external web pages by domain name, the issue is with DNS (Domain Name System) resolution. The name server (DNS server) setting needs to be corrected to allow proper domain name resolution. Default gateway handles routing between networks. Host address is the computer's own IP address. Subnet mask defines the network boundary. Only DNS server configuration affects domain name resolution while allowing direct IP access to work.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -694,7 +694,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Implement the deployment. After a change request has been approved, the next step is to implement the deployment. Risk analysis should have been completed before approval. End user acceptance and lessons learned documentation occur after implementation. The change management process follows a sequence: request → risk analysis → approval → implementation → testing → user acceptance → documentation of lessons learned.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -711,7 +711,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) devmgmt.msc. Device Manager (devmgmt.msc) is the correct tool for troubleshooting hardware driver issues like a non-functioning touchpad after Windows updates. It allows the technician to view, update, rollback, or reinstall device drivers. Event Viewer (eventvwr.msc) shows system logs but doesn't allow driver management. Performance Monitor (perfmon.msc) tracks system performance. Group Policy Editor (gpedit.msc) manages system policies but not hardware drivers.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -728,7 +728,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Shredding. Shredding is the most effective method for securely disposing of optical discs (CDs, DVDs, Blu-rays) because it physically destroys the disc and makes data recovery impossible. Degaussing only works on magnetic media, not optical discs. Low-level formatting doesn't apply to optical discs. Standard recycling doesn't ensure data destruction and could allow data recovery. Physical destruction through shredding ensures complete data security for optical media.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -745,7 +745,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Sandbox testing. Sandbox testing is used to identify potential issues with proposed changes before implementation by testing them in an isolated environment that mimics production. This allows identification of problems without affecting the live system. Request forms initiate changes but don't identify issues. Rollback plans address issues after they occur. End-user acceptance tests functionality after implementation, not before.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -765,7 +765,7 @@
       0,
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: A) ipconfig /all and B) hostname. Both commands can provide the computer's network name. 'ipconfig /all' displays comprehensive network configuration including the computer name/hostname. 'hostname' directly displays the computer's network name. The other commands serve different purposes: netstat shows network connections, nslookup performs DNS queries, arp shows MAC address tables, and ping tests connectivity. For remote administration tools, the computer's network name is essential for establishing connections.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "operational-procedures"
@@ -782,7 +782,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) PCI. The Payment Card Industry Data Security Standard (PCI DSS) is a set of security standards designed to ensure that all companies that accept, process, store, or transmit credit card information maintain a secure environment. PHI (Protected Health Information) is related to healthcare data. NIST (National Institute of Standards and Technology) provides general security guidelines. GDPR (General Data Protection Regulation) is a European Union regulation on data protection and privacy.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -802,7 +802,7 @@
       1,
       4
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: B) Drilling and E) Incinerating. For certificate of destruction requirements, drilling and incinerating are the most effective methods to ensure data is completely unrecoverable. Drilling creates physical holes that destroy data sectors. Incinerating completely burns the drives, leaving no recoverable data. Standard formatting and erasing can be defeated by forensic recovery tools. Low-level formatting is more secure than standard formatting but may still leave recoverable data. Recycling doesn't guarantee data destruction. Both drilling and incineration provide the highest level of data destruction assurance.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "operational-procedures"
@@ -819,7 +819,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Incremental. Incremental backups are ideal for retaining more versions while using less storage space. Each incremental backup only contains changes since the last backup (full or incremental), allowing many more backup versions to be stored. Since the law firm isn't concerned about restore times (which are longer with incremental backups), this method maximizes version retention. Full backups use too much space for multiple versions. Mirror backups only maintain current state. Differential backups use more space than incremental for multiple versions.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -836,7 +836,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Verify that NFC is enabled. NFC (Near Field Communication) is the technology used for contactless payments when placing a phone on a payment pad. If NFC is disabled, the phone cannot communicate with the payment terminal. Airplane mode, Wi-Fi, and Bluetooth are not required for NFC payments. The payment terminal uses NFC to communicate with the phone's payment app (like Apple Pay, Google Pay, or Samsung Pay). Restarting the phone doesn't enable NFC if it's turned off in settings.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -853,7 +853,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Regionally diverse backups. For areas prone to hurricanes and power grid instability, regionally diverse backups (geographically distributed) are essential. This ensures backups survive regional disasters that could affect the primary site. Local disasters like hurricanes can destroy both primary systems and local backups. High availability helps with uptime but doesn't protect against regional disasters. On-site backups would be destroyed in a hurricane. Incremental backups are a backup method, not a disaster recovery strategy.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -870,7 +870,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Run a virus scan. When a workstation is performing strangely after a suspicious email was opened, the first step should be to run a virus scan to detect and remove any malware. This addresses the most likely cause directly and quickly. Escalating to Tier 2 is premature without first attempting basic remediation. Using a restore point or reimaging are more drastic measures that should be considered only after antivirus scanning fails to resolve the issue. The suspicious email strongly suggests malware infection.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -887,7 +887,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) netstat. The netstat command displays network connections, listening ports, and network statistics, making it perfect for investigating which services or applications are using bandwidth. It shows active connections and can help identify background services consuming network resources. nslookup performs DNS queries, net use manages network drive mappings, and net user manages user accounts. For bandwidth investigation, netstat provides the network connection information needed to identify the source of network usage.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -904,7 +904,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Personalization. In Windows 10, screensaver settings are found under Settings > Personalization > Lock screen > Screen saver settings. This is where you can configure screensaver activation time and enable 'On resume, display logon screen' to require password authentication after screensaver activation. Ease of Access contains accessibility options, Privacy manages data collection settings, and Update and Security handles Windows updates and security features. Personalization contains display and lock screen customization options.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -921,7 +921,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Asset tags and IDs. Asset tags and IDs are essential for IT hardware inventory documentation management. They provide unique identifiers for each piece of equipment, enabling tracking, maintenance scheduling, warranty management, and lifecycle management. Checklists are for processes, user information is for personnel management, and procurement lifecycle is for purchasing processes. Asset tags create a systematic way to identify, track, and manage all IT hardware assets throughout their operational life.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -938,7 +938,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) robocopy. Robocopy (Robust File Copy) is the best utility for mirroring dynamic data because it can synchronize directories, handle file deletions, and maintain exact copies of source folders. It has advanced options for mirroring including the ability to delete files in the destination that no longer exist in the source. The basic copy command only copies files without synchronization. xcopy has some synchronization features but lacks robocopy's advanced mirroring capabilities. Copy-Item is PowerShell's copy command but doesn't have built-in mirroring features.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -955,7 +955,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) AUP (Acceptable Use Policy). New employees must sign an Acceptable Use Policy before being granted network access. The AUP defines what constitutes acceptable behavior when using company IT resources, including computers, networks, and internet access. MSDS (Material Safety Data Sheets) relate to hazardous materials, EULA (End User License Agreement) is for software licensing, and UAC (User Account Control) is a Windows security feature. The AUP is the standard document that governs employee use of IT resources.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -972,7 +972,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Using a PIN and providing it to employees. Since the kiosk only has a numeric keypad and needs to be accessible to any employee, using a PIN is the most practical solution. The PIN can be entered using the existing numeric keypad, and all employees can be given the same PIN for access. Username/password entry isn't possible with only a numeric keypad. Facial recognition and fingerprint authentication require specialized hardware not mentioned in the scenario and wouldn't work with the numeric keypad limitation.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -989,7 +989,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Shredding. Shredding is the best method for physical destruction of SSDs containing sensitive information. Unlike traditional hard drives, SSDs use flash memory that cannot be degaussed (magnetic erasure). Wiping and erasing may not be completely effective on SSDs due to wear leveling and over-provisioning features that can leave data remnants. Low-level formatting also may not completely eliminate all data on SSDs. Physical shredding ensures complete destruction of the SSD and all data stored on it, meeting data center security requirements for sensitive information disposal.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1006,7 +1006,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) .py. Python scripts use the .py file extension by default. This is the standard file extension for Python source code files. .ps1 files are PowerShell scripts, .vbs files are VBScript files, and .bat files are Windows batch files. When creating or running Python scripts, the .py extension tells the operating system and development environments that the file contains Python code and should be executed with the Python interpreter.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1023,7 +1023,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) net use. The 'net use' command is the correct tool for managing network drive mappings in Windows. It can display current mappings, disconnect existing drives, and reconnect network drives. To remove a mapped drive, use 'net use [drive letter]: /delete' and to reconnect, use 'net use [drive letter]: \\\\server\\share'. The 'set' command manages environment variables, 'mkdir' creates directories, and 'rename' renames files. For network drive troubleshooting, net use is the primary command-line tool.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1040,7 +1040,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Mount the ISO and run the installation file. ISO files are disc images that need to be mounted (virtually inserted) before their contents can be accessed. Modern Windows versions can mount ISO files natively by double-clicking or right-clicking and selecting 'Mount'. Once mounted, the ISO appears as a virtual drive, and you can run the installation file directly. Copying the ISO doesn't make it executable. You cannot 'unzip' an ISO file as it's not a compressed archive - it's a disc image format.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1057,7 +1057,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Evil twin. An evil twin attack involves creating a rogue wireless access point with a name (SSID) similar to a legitimate network to trick users into connecting. The attacker can then intercept data or perform man-in-the-middle attacks. Multiple SSIDs with very similar names to the hotel's legitimate Wi-Fi is a classic evil twin setup. Impersonation involves pretending to be someone else, insider threats come from within an organization, and whaling targets high-profile individuals with phishing attacks.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1074,7 +1074,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Risk analysis. Risk analysis is used to explain and identify potential issues that may occur during a change implementation. It evaluates the likelihood and impact of problems before implementing changes, allowing teams to prepare mitigation strategies. Scope change refers to modifications to the project scope. End-user acceptance occurs after implementation to verify the change meets requirements. Rollback plans address what to do if issues occur, but risk analysis explains what issues might happen in the first place.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1094,7 +1094,7 @@
       1,
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: B) Chain of custody and D) Data integrity. When preserving data for forensic analysis, chain of custody and data integrity are critical. Chain of custody documents who handled the evidence, when, and how, ensuring legal admissibility. Data integrity ensures the evidence hasn't been altered or corrupted through proper handling and verification methods (like hash checksums). Licensing agreements, incident documentation, safety data sheets, and retention requirements are important but not the primary forensic considerations for evidence preservation.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "operational-procedures"
@@ -1111,7 +1111,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Restricting user permissions. In a non-domain environment, restricting user permissions is the most effective method to protect against unauthorized use. This involves implementing the principle of least privilege, giving users only the minimum access needed for their job functions. Password expiration helps but doesn't prevent authorized users from misusing their access. Screen locks protect against physical access but not logical misuse. Disabling unnecessary services helps security but doesn't directly address unauthorized use by legitimate users.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1128,7 +1128,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Battery backup. For short power outages lasting up to five minutes, a battery backup (UPS - Uninterruptible Power Supply) is the ideal solution. UPS systems provide immediate power during outages and can sustain systems for several minutes to hours depending on capacity. Surge suppressors protect against voltage spikes but don't provide power during outages. CMOS batteries only maintain BIOS settings. Generator backups are for longer outages and take time to start up, making them unsuitable for brief micro-outages.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1145,7 +1145,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Shoulder surfing. Privacy screens (also called privacy filters) prevent shoulder surfing by limiting the viewing angle of the screen. They make the screen appear dark or distorted when viewed from the side, preventing unauthorized individuals from reading sensitive information over someone's shoulder. Impersonation involves pretending to be someone else, whaling targets high-profile individuals with phishing, and tailgating involves following authorized personnel through secure doors. Privacy screens specifically address visual eavesdropping.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1162,7 +1162,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) SQL injection. Input validation (the question likely meant 'input validation' rather than 'put validation') is specifically designed to prevent SQL injection attacks. SQL injection occurs when malicious SQL code is inserted into application input fields, potentially allowing attackers to access or manipulate databases. Input validation ensures that only properly formatted, expected data is accepted. While input validation can help with other attacks, it's most directly effective against SQL injection. Brute-force attacks involve password guessing, XSS involves malicious scripts, and CSRF involves unauthorized requests.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1179,7 +1179,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Synthetic. Synthetic backups provide complete system backup while minimizing network impact. They combine previous full and incremental backups to create a new full backup without reading from the original data source, reducing network traffic and system load. Off-site refers to backup location, not method. Full backups create complete copies but use maximum network bandwidth. Differential backups save changes since the last full backup but don't provide the lowest network impact for comprehensive data protection.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1196,7 +1196,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Personalization. Desktop wallpaper settings in Windows 10 are found under Settings > Personalization > Background. This section allows users to change wallpaper, colors, themes, and other visual customization options. The Apps section manages installed applications, Updates handles Windows updates, and Display manages screen resolution and multiple monitor settings. Personalization is the dedicated area for customizing the desktop appearance including wallpaper selection.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1216,7 +1216,7 @@
       4,
       5
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: E) Windows Defender and F) Network Packet Analyzer. For malware removal, Windows Defender (built-in antivirus) can scan and remove malicious software. A Network Packet Analyzer can help identify malicious network traffic and communication from infected systems. Local Network Connection manages network settings but doesn't remove malware. User Account Control prevents unauthorized changes but doesn't remove existing malware. Windows Backup and Restore handles data backup, not malware removal. Windows Firewall blocks network traffic but doesn't remove malware.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "operational-procedures"
@@ -1233,7 +1233,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Rollback. Rollback refers to the steps taken if an issue occurs during change implementation. It's the predetermined plan to reverse changes and return systems to their previous working state when problems arise. Testing occurs before implementation, Risk analysis happens during planning, and Acceptance occurs after successful implementation. Rollback is specifically the contingency process activated when implementation problems occur, allowing quick restoration of service.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1250,7 +1250,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Verifying warranty status with the vendor. After determining a motherboard has failed, the most logical next step is to verify warranty status before proceeding with replacement or repair. This determines whether the repair will be covered under warranty, potentially saving costs and ensuring proper vendor support. Escalating to Tier 2 may be premature if warranty replacement is available. Replacing the motherboard or purchasing a new PC should only be considered after warranty options are explored.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1267,7 +1267,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Proper ventilation. Proper ventilation is most likely to extend device life by preventing overheating, which is a primary cause of hardware failure. Good airflow and temperature control reduce thermal stress on components, extending their operational lifespan. Battery backup protects against power issues but doesn't extend device life. ESD mats prevent static damage during handling but don't affect operational lifespan. Green disposal is for end-of-life environmental responsibility, not extending device life.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1284,7 +1284,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) RDP. Remote Desktop Protocol (RDP) is the appropriate tool for assisting a user with program features when they're in a different building but on the same network. RDP allows the technician to remotely control the user's desktop and provide hands-on assistance. AAA (Authentication, Authorization, Accounting) is for access control. SSH is for secure command-line access, typically to servers. VPN creates secure connections over the internet but isn't needed since they're on the same network.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1301,7 +1301,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Roll back updates. When locally attached devices stop working after a Windows update, rolling back the updates is the most appropriate solution. Windows updates can sometimes include driver changes that cause compatibility issues with existing hardware. Rolling back removes the problematic update and restores previous functionality. Disabling Windows Update prevents future updates but doesn't fix the current issue. Checking for more updates or restoring hidden updates won't resolve driver compatibility problems caused by recent updates.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1318,7 +1318,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Determine the risk level of this change. Before network use is authorized for any change, determining the risk level is crucial. This assessment evaluates potential impacts, security implications, and business risks associated with the change. Risk assessment must occur before authorization to ensure informed decision-making. Documenting date/time happens after implementation. Submitting the change request form occurs earlier in the process. Requesting an IP address is a technical step that happens after risk assessment and approval.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1335,7 +1335,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Screen lock. The Group Policy that returns a computer to the log-in screen after three minutes of inactivity describes a screen lock policy. This automatically locks the workstation and requires user authentication to regain access, improving security by preventing unauthorized access to unattended computers. Log-in times refer to when users can log in. User permissions control what users can access. Log-in lockout attempts refer to account lockout after failed password attempts.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1352,7 +1352,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Low-level formatting. For repurposing a hard drive that contained PII (Personally Identifiable Information), low-level formatting provides the most thorough data removal while keeping the drive usable. Low-level formatting overwrites every sector on the drive, making data recovery extremely difficult. Shredding and degaussing would destroy the drive entirely, preventing reuse. Standard recycling doesn't guarantee data destruction. Since the drive needs to be repurposed (not destroyed), low-level formatting is the best balance of security and utility.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1369,7 +1369,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Move factory applications to external memory. When a phone shows 'Insufficient storage space' for updates but has no third-party apps or photos, the issue is likely that factory applications are consuming too much internal storage. Moving factory applications to external memory (SD card) frees up internal storage space needed for system updates. Exchanging for a newer device is unnecessary and expensive. Upgrading onboard storage isn't typically possible on phones. Removing factory applications might cause system instability and isn't recommended.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1386,7 +1386,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Corporate use license. A corporate use license is best for enterprise rollouts as it typically covers multiple users/installations under a single license agreement, reducing the number of individual licenses to manage while ensuring EULA compliance. Personal use licenses are for individual users only. Open-source licenses may not meet specific application requirements. Non-expiring licenses address duration but not the management complexity. Corporate licenses simplify administration and often provide volume discounts for enterprise deployments.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1403,7 +1403,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Incremental. Incremental backups work best with synthetic full backups to minimize storage capacity. Incremental backups only capture changes since the last backup (full or incremental), using minimal storage space. Synthetic full backups then combine these incremental backups to create complete restore points without reading from the original data source. Differential backups capture all changes since the last full backup, using more space than incremental. Open file and archive are not primary backup methodologies for this scenario.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1420,7 +1420,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Document the date and time of change. After successfully implementing an authorized change, the next step is to document the date and time of the change for change management records. This provides an audit trail and completion timestamp for the change process. The purpose and risk level should have been documented before implementation during the planning phase. Sandbox test findings would have been documented before authorization. Post-implementation documentation focuses on execution details and results.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1437,7 +1437,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Preserving chain of custody. By documenting the movement of evidence (the portable hard drive with financial data), the administrator demonstrated preserving chain of custody. This forensic concept requires detailed documentation of who handled evidence, when, where, and how, ensuring legal admissibility and evidence integrity. Implementing data protection policies would involve preventing the incident. Informing law enforcement and creating incident summaries are separate activities that may follow chain of custody documentation.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1454,7 +1454,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Full. Full backups provide the simplest restore process because they contain complete copies of all data at the time of backup. Restoration requires only the full backup file, making the process straightforward and fast. Incremental backups require the last full backup plus all incremental backups since then. Differential backups require the last full backup plus the most recent differential. Synthetic backups are complex and may require multiple components. For simplicity, full backups are optimal despite using more storage space.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1471,7 +1471,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) To control evidence and maintain integrity. Chain of custody is important in incident response because it controls evidence and maintains its integrity throughout the investigation process. This ensures evidence remains unaltered and legally admissible by documenting every person who handled it, when, and under what circumstances. While it supports information security policies and helps gather information, the primary purpose is evidence control and integrity preservation for potential legal proceedings.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1488,7 +1488,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) LAN. High-definition IP videoconferencing equipment in all classrooms would most likely impact the Local Area Network (LAN). HD video requires significant bandwidth and network resources, potentially causing congestion and requiring network infrastructure upgrades. SAN (Storage Area Network) handles storage, not video streaming. GPU (Graphics Processing Unit) processes video locally but doesn't impact network infrastructure. PAN (Personal Area Network) covers very short distances and isn't relevant for classroom-to-classroom communication.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1505,7 +1505,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Standard formatting. For quickly reprovisioning drives for reuse, standard formatting is the most practical method. It removes the file system structure and makes data inaccessible to normal users while allowing immediate reuse of the drives. Degaussing works on magnetic drives but can damage them. Low-level wiping is more thorough but takes much longer. Simple deletion doesn't actually remove data. Since the goal is quick reprovisioning rather than high-security data destruction, standard formatting balances speed with basic data removal.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1522,7 +1522,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Keychain. Keychain is macOS's built-in password manager that securely stores passwords, certificates, and other sensitive information. It integrates with Safari and other applications to automatically fill in login credentials. Terminal is the command-line interface, FileVault is disk encryption, and Privacy manages data access permissions. Keychain provides centralized password management and synchronization across Apple devices when signed into the same Apple ID.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1539,7 +1539,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Creating a database. Creating a database will most likely help the company gain a holistic view of asset cost by centralizing all asset information, including purchase prices, maintenance costs, depreciation, and lifecycle expenses. A database enables comprehensive reporting and analysis across all assets. Assigning users to assets tracks responsibility but not costs. Inventorying asset tags provides identification but not financial data. Updating procurement account owners manages purchasing authority but doesn't provide cost visibility.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1556,7 +1556,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Acceptable use policy. A document listing websites that users are allowed to access is most likely an Acceptable Use Policy (AUP). AUPs define what constitutes acceptable behavior when using company IT resources, including approved websites and internet usage guidelines. An Access Control List (ACL) is a technical configuration, not a document. Incident reports document security events. Standard Operating Procedures (SOPs) describe step-by-step processes, not usage policies.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1573,7 +1573,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) UEFI password. Setting a UEFI password prevents unauthorized access to the UEFI settings, where virtualization settings are typically configured. This ensures users cannot enable virtual technology without the password, adhering to the company's security policy. Secure boot ensures the system boots with authorized firmware, account lockout is a security measure for login attempts, and disabling network drivers is unrelated to virtualization.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1590,7 +1590,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Requiring all network changes include updating the network diagrams. Ensuring that all network changes, including additions like new switches, are documented by updating network diagrams will prevent mismatches between physical and documented configurations. This ensures support documentation accurately reflects the current network topology. Annual reviews might catch discrepancies but don't prevent them. Allowing changes once a year is too restrictive and unrelated to documentation. Backing up switch configurations is important for recovery but doesn't address documentation accuracy.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1607,7 +1607,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Chain of custody. Maintaining the chain of custody ensures that evidence is handled in a way that preserves its integrity and makes it admissible in court. This involves documenting every step of evidence handling, from collection to storage, to prove that the evidence has not been tampered with or altered. A data integrity form might be part of the process but isn't the primary method. A valid operating system license is unrelated to evidence admissibility. Documentation of an incident is broader and doesn't specifically address evidence handling.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1624,7 +1624,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Static entry. The IP address 169.254.0.2 is an Automatic Private IP Addressing (APIPA) address, indicating the machine cannot obtain an IP address from a DHCP server. Assigning a static IP address that is part of the network's subnet will allow the machine to communicate with the rest of the network. ARP (Address Resolution Protocol) tables resolve IP addresses to MAC addresses but don't assign IP addresses. APIPA addresses are the problem, not the solution. NTP (Network Time Protocol) specifications are for time synchronization, not IP addressing.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1641,7 +1641,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) RMM. Remote Monitoring and Management (RMM) tools allow technicians to remotely access and control user devices, which would enable the technician to view the distorted email and assist with troubleshooting. VNC (Virtual Network Computing) and SSH (Secure Shell) provide remote access but are more commonly used for server or network device management. VPN (Virtual Private Network) provides secure network access but doesn't allow device control or viewing of specific emails.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1658,7 +1658,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Respond to calls and text messages only when an emergency situation requires a response. Even with clearance to work unsupervised, it's professional and respectful to minimize personal communications while on site, especially when working directly with personnel. Responding only in emergency situations ensures the technician remains focused on the task and maintains a professional demeanor. The other options either allow too much personal communication or are too restrictive.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1675,7 +1675,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) VNC. Virtual Network Computing (VNC) allows for remote access and control of a computer, providing the technician with the same level of control as the customer. This is ideal for troubleshooting and assistance. FTP (File Transfer Protocol) is for file transfer, RDP (Remote Desktop Protocol) is specific to Windows and might not offer the same level of control, and SSH (Secure Shell) is primarily for secure command-line access, not full desktop control.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1692,7 +1692,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) ESD strap. An Electrostatic Discharge (ESD) strap is the best protection against electrostatic discharge when installing RAM or handling sensitive electronic components. The strap grounds the technician to prevent static electricity buildup that could damage components. Battery backup provides power protection, thermal paste aids heat transfer, and consistent power prevents electrical fluctuations, but none of these protect against ESD like a proper grounding strap does.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1709,7 +1709,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Providing user training. While technical solutions like spam gateways help filter spam, user training is the most effective method for preventing users from opening malicious messages that bypass filters. Training teaches users to recognize suspicious emails, phishing attempts, and social engineering tactics. Adjusting the spam gateway or updating firmware might help but won't address the human factor. AV settings provide some protection but user awareness is the primary defense against social engineering attacks that rely on user interaction.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1726,7 +1726,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Close the browser window and report the email to IT security. When a certificate cannot be verified, it indicates a potential security threat such as a man-in-the-middle attack or phishing attempt. The appropriate response is to immediately close the browser window to prevent potential compromise and report the suspicious email to IT security for investigation. Clicking proceed would expose the system to security risks. Reporting to HR is inappropriate as this is a security issue, not a policy violation. Restoring from backup is premature without evidence of actual compromise.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1743,7 +1743,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Ask the user for the model number of the hardware. The first step in hardware troubleshooting is to gather information about the specific hardware involved, including the model number. This information is essential for determining compatibility, warranty status, available drivers, and appropriate troubleshooting procedures. Offering a replacement device, submitting to manufacturer, or installing driver updates are premature actions that should only be taken after proper identification and initial diagnosis of the hardware issue.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1760,7 +1760,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Dumpster for recycling plastics. Among the given options, recycling is the most environmentally friendly disposal method for non-compliant Ethernet cards. Electronic components should be properly recycled through certified e-waste recycling programs that can recover valuable materials and dispose of hazardous substances safely. Incineration and physical destruction create pollution and waste materials. Resale isn't appropriate for non-compliant cards that were replaced for regulatory reasons, as they cannot be legally used in regulated environments.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1780,7 +1780,7 @@
       0,
       4
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: A) NIC and E) RAM. HCL (Hardware Compatibility List) failures typically occur when core system components don't meet software requirements. Network Interface Cards (NICs) may lack proper drivers or have compatibility issues with the software's networking requirements. RAM is often a critical factor as insufficient memory or incompatible memory types can prevent software installation. CPU compatibility is usually broader, PSU provides power but doesn't affect software compatibility, KVM is external hardware, and DVI is just a display connector.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "operational-procedures"
@@ -1800,7 +1800,7 @@
       3,
       4
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: D) Laptop battery and E) CRT monitor. These items require special e-waste recycling due to hazardous materials. Laptop batteries contain lithium, cobalt, and other toxic chemicals that can leak into the environment if improperly disposed of. CRT monitors contain lead and other heavy metals in the cathode ray tube that are highly toxic. SSDs, A/C adapters, surge protectors, and power supplies, while electronic waste, don't typically contain the same level of hazardous materials requiring specialized recycling processes.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "operational-procedures"
@@ -1817,7 +1817,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Copy the program file to a USB drive and install. When network share access fails on a Windows tablet, the most practical solution is to use a USB drive for file transfer. Modern tablets support USB connectivity, making this the most reliable method. Burning to CD is outdated and many tablets lack optical drives. Formatting or replacing the HDD is extreme and unnecessary for a simple file transfer issue. The problem is likely network connectivity or permissions, not storage hardware failure.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1834,7 +1834,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Time Machine. Time Machine is macOS's built-in backup and versioning system that automatically creates incremental backups and allows users to access multiple versions of files over time. Users can browse through different versions of files and restore previous versions as needed. Multiple desktops is a workspace management feature, Remote Disc is for accessing optical drives over a network, and FileVault is disk encryption, not file versioning.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1851,7 +1851,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Cloud storage. For a small business with ten workstations, cloud storage provides the safest and most secure backup solution. Cloud storage offers offsite backup protection against local disasters, automatic encryption, professional-grade security, and scalability. RAID provides redundancy but not backup (still vulnerable to site disasters). Tape drives are outdated and require manual management. Local backups are vulnerable to the same risks as the primary systems (fire, theft, natural disasters).",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1868,7 +1868,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Acceptable use policy. Guidelines for generative AI solutions would be published in an Acceptable Use Policy (AUP), which defines appropriate and inappropriate uses of technology resources within an organization. AUPs typically cover new technologies, data usage, security requirements, and compliance standards. Standard operating procedures are for specific technical processes, security protocols focus on technical security measures, and data flow diagrams are technical documentation showing data movement, not policy guidelines.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1885,7 +1885,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Contact the customer if the technician is arriving late. Professional communication requires notifying customers of any delays, regardless of whether the customer is also running late. This demonstrates professionalism, respect for the customer's time, and maintains trust. Not notifying shows poor communication, dismissing the customer is unprofessional and inappropriate, and sharing experiences on social media violates confidentiality and professionalism standards.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1903,7 +1903,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Connections. The Connections tab in Internet Options is where proxy server settings are configured. This tab contains LAN settings where you can specify proxy server addresses, ports, and bypass settings for local addresses. Privacy controls tracking and cookies, Advanced contains miscellaneous settings, Content manages certificates and content filtering, and Security manages security zones and levels.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1920,7 +1920,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Dedicated GPU. For 3D rendering of promotional movies, a dedicated GPU (Graphics Processing Unit) is the most critical component. 3D rendering is extremely GPU-intensive, requiring specialized graphics processing power, VRAM, and parallel processing capabilities that only dedicated GPUs provide. DDR5 SODIMM is laptop memory (not desktop), NVMe storage helps with file access but isn't the primary bottleneck, and while a 64-bit CPU is important, the GPU is the primary performance determinant for 3D rendering workloads.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1937,7 +1937,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Full. Full backups provide the fastest data recovery because they contain complete copies of all data in a single backup set. Recovery requires only one backup file, making restoration quick and straightforward. Differential backups require the last full backup plus the most recent differential. Incremental backups require the last full backup plus all subsequent incremental backups. Synthetic backups are created from other backup types and may require processing time to reconstruct data.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1955,7 +1955,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Family Options. Windows 10's Family Options (Microsoft Family) provides parental controls including screen time limits, content filtering, and internet usage restrictions. This feature allows parents to set daily time limits for device usage and internet access for their children's accounts. Update & Security manages system updates, Ease of Access provides accessibility features, Network & Internet manages connectivity settings, and Privacy controls data sharing permissions.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1972,7 +1972,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Apologize and ask what would help resolve the issue. When dealing with an angry customer who believes their issue isn't resolved, the best approach is to apologize (showing empathy) and ask what would help resolve their concerns. This demonstrates active listening, customer focus, and problem-solving orientation. Insisting the customer is correct without understanding their concerns is inappropriate. Remaining silent doesn't address the issue. Escalation should be considered after attempting to understand and address the customer's specific concerns.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -1989,7 +1989,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Scope of the change. The scope of the change should be documented to ensure the change management plan is followed properly. Scope defines what systems, processes, and components will be affected by the change, providing clear boundaries and expectations. While purpose, rollback plan, and risk analysis are important change management elements, the scope is fundamental for ensuring the change stays within defined parameters and the plan is executed as intended.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -2006,7 +2006,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Windows. Windows operating systems are most commonly used for factory inventory management systems due to their enterprise features, extensive software compatibility, database connectivity, and integration with industrial systems. Windows supports the complex applications, databases, and network connectivity required for inventory management. Chrome OS is limited for enterprise applications, Android and iOS are mobile platforms not suitable for comprehensive factory inventory management systems.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -2023,7 +2023,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Ask the user for clarification. When a support request contains insufficient information, the first step is to ask the user for clarification to gather the necessary details for proper troubleshooting. This ensures accurate problem identification and appropriate resolution. Keeping the user updated, documenting root cause, and following escalation procedures are important but premature without first understanding the actual problem through proper information gathering.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -2040,7 +2040,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Chain of custody. Chain of custody describes the process of tracking evidence in a forensic investigation. It documents who handled the evidence, when it was handled, where it was stored, and what actions were taken to maintain evidence integrity. This creates a legal trail proving the evidence hasn't been tampered with. Valid license relates to software compliance, data retention requirements are about storage policies, and material safety data sheets are for hazardous materials handling.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -2057,7 +2057,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Configuring remote wipe. Remote wipe is the best way to limit confidential data loss if a company smartphone is lost or stolen. This feature allows IT administrators to remotely erase all data on the device, preventing unauthorized access to sensitive information. VPN protects data in transit but doesn't help if the device is compromised. Location tracking helps find the device but doesn't protect the data. Backups help restore data but don't prevent unauthorized access to the lost device.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -2074,7 +2074,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) To evaluate the change before deployment. Sandbox testing in change management provides an isolated environment to evaluate changes before deploying them to production systems. This allows testing for functionality, compatibility, and potential issues without affecting live systems. End-user acceptance testing is separate from sandbox testing. Determining affected systems and selecting change owners are planning activities that occur before sandbox testing.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -2091,7 +2091,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Wait until the customer is done speaking and offer assistance. When dealing with an angry customer, the best approach is to remain calm, listen actively by waiting until they finish speaking, and then offer assistance. This demonstrates professionalism, respect, and allows the customer to vent their frustration before moving toward resolution. Placing on hold may escalate anger, disconnecting is unprofessional, and immediate escalation should only occur after attempting to help.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -2108,7 +2108,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) The device has been jailbroken. Mobile Device Management (MDM) systems typically reject enrollment of jailbroken or rooted devices because they pose security risks. Jailbreaking removes built-in security restrictions, making the device non-compliant with corporate security policies. MDM systems detect this modification and prevent enrollment to protect corporate data and network security. RAM amount, AirDrop settings, and profile pictures don't affect MDM compliance status.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -2125,7 +2125,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Configure MAC filtering. MAC filtering allows only specific computers with approved MAC addresses to connect to the network. This provides access control by maintaining a whitelist of authorized devices. Disabling DHCP doesn't prevent connections (devices can use static IPs), port forwarding is for incoming connections from the internet, and disabling guest access only affects guest network access, not the main network.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -2142,7 +2142,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) devmgmt.msc. Device Manager (devmgmt.msc) is the primary tool for diagnosing hardware device issues, including USB devices like CD drives. It shows device status, driver information, and can identify hardware conflicts or missing drivers. lusrmgr.msc manages local users and groups, certmgr.msc manages certificates, and perfmon.msc monitors system performance - none of which directly diagnose hardware device problems.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -2159,7 +2159,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Static IP. Configuring a static IP address ensures the printer maintains the same IP address consistently, making it reliably accessible to all computers on the network. DHCP can assign different IP addresses over time, causing connectivity issues. DNS settings don't affect IP consistency, WWAN is for cellular connections, and metered connection settings are for data usage management, not network stability.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -2176,7 +2176,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) PII. Personally Identifiable Information (PII) is protected by government policies and regulations such as GDPR, CCPA, and HIPAA. These laws mandate how personal data must be collected, stored, processed, and protected. DRM protects digital content, EULA governs software usage, and PCI protects payment card data, but PII has the broadest government policy protection covering all types of personal information.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -2193,7 +2193,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Investigate the firewall logs. Firewall logs provide detailed information about network traffic, including source and destination addresses, ports, protocols, and timestamps, which can help identify the source and nature of malicious traffic. Isolating the machine stops the attack but doesn't identify the source. Windows Event Viewer shows system events but limited network traffic details. Physical inventory doesn't provide information about network-based attacks.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -2210,7 +2210,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Device encryption. Device encryption ensures that data becomes unrecoverable on a lost or stolen mobile device because the data is encrypted with keys tied to the device's security features. Even if someone accesses the device, the encrypted data cannot be read without proper authentication. Remote wipe can delete data but requires network connectivity. Data backup doesn't protect the device itself. Fingerprint readers provide access control but don't make data unrecoverable if bypassed.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -2227,7 +2227,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Differential. The question asks for a backup method that can back up the OS installation, applications, user profiles, and system settings. However, looking at the options, 'Image' would be the most appropriate choice for backing up all these components as it creates a complete system image. Since 'Image' isn't option A, there may be an error in the question numbering. Differential backups only capture changes since the last full backup and wouldn't include the complete OS installation and applications.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -2244,7 +2244,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Knowledge base. After resolving a help desk ticket, technicians should update the knowledge base to document the solution and assist other technicians in resolving similar issues in the future. The knowledge base serves as a repository of solutions and troubleshooting procedures. End user training is for educating users, progress notes are for tracking ticket status, and acceptable use policy documents define usage guidelines, not technical solutions.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -2261,7 +2261,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Acceptable use policy. A Windows splash screen detailing log-in expectations would most likely reference the Acceptable Use Policy (AUP), which defines appropriate behavior and usage guidelines for system access. This policy typically covers login procedures, password requirements, and expected user conduct. EULA covers software licensing terms, NDA covers confidentiality, and regulatory compliance covers legal requirements, but AUP specifically addresses user login and system usage expectations.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -2278,7 +2278,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Impersonation. This scenario describes an impersonation attack where an attacker creates a fake email address that closely resembles a trusted contact (with one character changed) to deceive the recipient. The goal is to impersonate someone the victim trusts to obtain confidential information. Evil twin refers to rogue wireless access points, insider threat involves actual trusted individuals, and zero-day attacks exploit unknown vulnerabilities.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -2298,7 +2298,7 @@
       0,
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: A) Temperature levels and C) Humidity levels. Temperature and humidity are the most critical environmental factors for data center configuration. Proper temperature control prevents equipment overheating and extends hardware lifespan, while humidity control prevents static electricity buildup (too low) and condensation damage (too high). Server location, noise levels, lighting levels, and cable management are important but secondary to the fundamental environmental controls of temperature and humidity.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "operational-procedures"
@@ -2315,7 +2315,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Low-level formatting. Low-level formatting is the best solution for securely removing PII from hard drives that will be repurposed. This process overwrites all data sectors with zeros or random patterns, making data recovery extremely difficult. Drilling and incinerating physically destroy the drives (not suitable for repurposing). Degaussing works for magnetic drives but may not be effective on SSDs and also prevents reuse of the drive.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -2332,7 +2332,7 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Chain of custody. In criminal proceedings, the chain of custody document must be updated every time evidence is touched, moved, or transferred to maintain its legal validity. This document tracks who handled the evidence, when, where, and why, ensuring evidence integrity and admissibility in court. Licensing agreements, regulatory compliance documents, and incident documentation don't serve this specific legal evidence tracking purpose.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -2349,7 +2349,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Check the machine's certificates. Enterprise Wi-Fi authentication often uses certificates for WPA2-Enterprise or 802.1X authentication. If a user cannot authenticate, the most likely issue is expired, missing, or corrupted certificates on the client machine. Reinstalling the OS is extreme and unnecessary. Resyncing Group Policy might help but certificates are more directly related to Wi-Fi authentication. Power cycling the switch affects all users, not just one.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -2366,7 +2366,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Shredding. Physical shredding is the best way to eliminate data on SSDs for secure disposal. Unlike traditional hard drives, SSDs use flash memory that doesn't respond to degaussing (magnetic field erasure). While drilling can work, shredding ensures complete destruction of all memory chips. Erasing (software-based) may not completely remove data due to wear leveling and over-provisioning in SSDs. Physical destruction through shredding is the most reliable method.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -2383,7 +2383,7 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Scripting. Scripting languages enable the automation of tasks by allowing administrators to write code that can execute repetitive operations, system configurations, and administrative tasks automatically. Examples include PowerShell, Python, Bash, and batch files. Compiled languages require compilation before execution, web languages are for web development, and database languages are for database queries - none of these are specifically designed for task automation like scripting languages.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"

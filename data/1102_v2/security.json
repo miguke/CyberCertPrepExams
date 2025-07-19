@@ -1,23 +1,6 @@
 [
   {
     "id": 1,
-    "question": "A user calls the help desk to report that none of the files on a PC will open. The user also indicates a program on the desktop is requesting payment in exchange for file access. A technician verifies the user's PC is infected with ransomware. Which of the following should the technician do FIRST?",
-    "options": [
-      "Scan and remove the malware.",
-      "Schedule automated malware scans.",
-      "Quarantine the system.",
-      "Disable System Restore."
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 2,
     "question": "A company is issuing smartphone to employees and needs to ensure data is secure if the devices are lost or stolen. Which of the following provides the BEST solution?",
     "options": [
       "Anti-malware",
@@ -26,15 +9,15 @@
       "Screen lock"
     ],
     "correct": [
-      1
+      2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Chain of custody. Chain of custody is the process that documents who had possession of evidence at every step of the process from collection to presentation in legal proceedings. This chronological documentation includes the names of individuals who handled the evidence, dates and times of transfers, and the purpose of each transfer. Maintaining proper chain of custody is essential for evidence admissibility in court. Rights management controls access permissions, audit trails track system activities, and data integrity ensures information accuracy.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 3,
+    "id": 42,
     "question": "A user reports seeing random, seemingly non-malicious advertisement notifications in the Windows 10 Action Center. The notifications indicate the advertisements are coming from a web browser. Which of the following is the BEST solution for a technician to implement?",
     "options": [
       "Disable the browser from sending notifications to the Action Center.",
@@ -43,15 +26,15 @@
       "Move specific site notifications from Allowed to Block."
     ],
     "correct": [
-      3
+      0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Disable the browser from sending notifications to the Action Center. This is the BEST solution because it directly addresses the issue by stopping the browser from sending notifications, which are the source of the problem. Running a full antivirus scan might help if the issue is caused by malware, but it's not the most direct solution. Disabling all Action Center notifications is too broad and might hide important system notifications. Moving specific site notifications from Allowed to Block might not be feasible if the ads are coming from multiple or unknown sources.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 4,
+    "id": 43,
     "question": "A help desk technician is troubleshooting a workstation in a SOHO environment that is running above normal system baselines. The technician discovers an unknown executable with a random string name running on the system. The technician terminates the process, and the system returns to normal operation. The technician thinks the issue was an infected file, but the antivirus is not detecting a threat. The technician is concerned other machines may be infected with this unknown virus. Which of the following is the MOST effective way to check other machines on the network for this unknown threat?",
     "options": [
       "Run a startup script that removes files by name.",
@@ -60,15 +43,15 @@
       "Monitor outbound network traffic."
     ],
     "correct": [
-      3
+      1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Provide a sample to the antivirus vendor. This is the MOST effective way because it allows the antivirus vendor to analyze the unknown executable and update their virus definitions to detect and remove the threat. This ensures that all machines on the network can be protected against this specific threat. Running a startup script to remove files by name might not be effective if the file name changes. Manually checking each machine is time-consuming and might not catch all instances. Monitoring outbound network traffic might help detect command and control communications but won't remove the threat.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 5,
+    "id": 44,
     "question": "A manager reports that staff members often forget the passwords to their mobile devices and applications. Which of the following should the systems administrator do to reduce the number of help desk tickets submitted?",
     "options": [
       "Enable multifactor authentication.",
@@ -79,47 +62,30 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Implement a single sign-on with biometrics. This is the BEST solution because it reduces the number of passwords staff members need to remember, thus reducing the likelihood of forgotten passwords. Single sign-on (SSO) solutions allow users to access multiple applications with a single set of credentials, and biometric authentication (like fingerprints or facial recognition) eliminates the need to remember complex passwords. Enabling multifactor authentication adds an extra layer of security but doesn't directly address the issue of forgotten passwords. Increasing the failed log-in threshold might actually increase help desk tickets if users are locked out more frequently. Removing complex password requirements would decrease security.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 6,
-    "question": "A technician suspects a rootkit has been installed and needs to be removed. Which of the following would BEST resolve the issue?",
+    "id": 45,
+    "question": "Upon downloading a new ISO, an administrator is presented with the following string: 59d15a16ce90c8ee97fa7c211b7673a8 Which of the following BEST describes the purpose of this string?",
     "options": [
-      "Application updates",
-      "Anti-malware software",
-      "OS reinstallation",
-      "File restore"
+      "XSS verification",
+      "AES-256 verification",
+      "Hash verification",
+      "Digital signature verification"
     ],
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Hash verification. The string '59d15a16ce90c8ee97fa7c211b7673a8' is a hash value (likely MD5) used for hash verification. Hash verification ensures file integrity by comparing the calculated hash of a downloaded file with the provided hash value. If they match, the file hasn't been corrupted or tampered with during download. XSS verification relates to web security, AES-256 is an encryption algorithm, and digital signatures use different cryptographic methods than simple hash strings.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 7,
-    "question": "A technician is working with a company to determine the best way to transfer sensitive personal information between offices when conducting business. The company currently uses USB drives and is resistant to change. The company's compliance officer states that all media at rest must be encrypted. Which of the following would be the BEST way to secure the current workflow?",
-    "options": [
-      "Deploy a secondary hard drive with encryption on the appropriate workstation.",
-      "Configure a hardened SFTP portal for file transfers between file servers.",
-      "Require files to be individually password protected with unique passwords.",
-      "Enable BitLocker To Go with a password that meets corporate requirements."
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 8,
+    "id": 46,
     "question": "A user's smartphone data usage is well above average. The user suspects an installed application is transmitting data in the background. The user would like to be alerted when an application attempts to communicate with the internet. Which of the following BEST addresses the user's concern?",
     "options": [
       "Operating system updates",
@@ -130,13 +96,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Firewall. A firewall is the BEST solution because it can alert the user when an application attempts to communicate with the internet and block or allow the communication based on predefined rules. Firewalls control incoming and outgoing network traffic based on predetermined security rules, which can include alerting the user to unknown or suspicious activity. Operating system updates might fix security vulnerabilities but won't alert the user to application internet activity. Remote wipe is used to erase data from a lost or stolen device. Antivirus software protects against malware but doesn't control internet communication.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 9,
+    "id": 47,
     "question": "A technician has been tasked with installing a workstation that will be used for point-of-sale transactions. The point-of-sale system will process credit cards and loyalty cards. Which of the following encryption technologies should be used to secure the workstation in case of theft?",
     "options": [
       "Data-in-transit encryption",
@@ -147,13 +113,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Disk encryption. Disk encryption is the BEST solution because it protects all data stored on the workstation's hard drive, including sensitive credit card information, in case the workstation is stolen. Disk encryption encrypts the entire disk, ensuring that even if the thief can access the physical device, they won't be able to read the data without the decryption key. Data-in-transit encryption protects data during transmission, file encryption protects specific files, and USB drive encryption protects data on removable USB drives.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 10,
+    "id": 48,
     "question": "The Chief Executive Officer at a bank recently saw a news report about a high-profile cybercrime where a remote-access tool that the bank uses for support was also used in this crime. The report stated that attackers were able to brute force passwords to access systems. Which of the following would BEST limit the bank's risk? (Choose two.)",
     "options": [
       "Enable multifactor authentication for each support account.",
@@ -167,13 +133,13 @@
       0,
       5
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: A) Enable multifactor authentication for each support account and F) Enforce account lockouts after five bad password attempts. These two options BEST limit the bank's risk by adding an extra layer of security to the login process and preventing brute force attacks. Multifactor authentication requires something the user knows (password), something the user has (token), and/or something the user is (biometric), making it much harder for attackers to gain access. Enforcing account lockouts after a few bad password attempts prevents brute force attacks by limiting the number of login attempts. The other options might provide some security benefits but don't directly address the risk of brute force attacks.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "security"
   },
   {
-    "id": 11,
+    "id": 49,
     "question": "Upon downloading a new ISO, an administrator is presented with the following string: 59d15a16ce90c8ee97fa7c211b7673a8 Which of the following BEST describes the purpose of this string?",
     "options": [
       "XSS verification",
@@ -184,33 +150,13 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Hash verification. The string '59d15a16ce90c8ee97fa7c211b7673a8' is a hash value (likely MD5) used for hash verification. Hash verification ensures file integrity by comparing the calculated hash of a downloaded file with the provided hash value. If they match, the file hasn't been corrupted or tampered with during download. XSS verification relates to web security, AES-256 is an encryption algorithm, and digital signatures use different cryptographic methods than simple hash strings.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 12,
-    "question": "A user's mobile phone has become sluggish. A systems administrator discovered several malicious applications on the device and reset the phone. The administrator installed MDM software. Which of the following should the administrator do to help secure the device against this threat in the future? (Choose two.)",
-    "options": [
-      "Prevent a device root.",
-      "Disable biometric authentication.",
-      "Require a PIN on the unlock screen.",
-      "Enable developer mode.",
-      "Block a third-party application installation.",
-      "Prevent GPS spoofing."
-    ],
-    "correct": [
-      2,
-      4
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "multiple",
-    "topic": "security"
-  },
-  {
-    "id": 13,
+    "id": 11,
     "question": "The network was breached over the weekend. System logs indicate that a single user's account was successfully breached after 500 attempts with a dictionary attack. Which of the following would BEST mitigate this threat?",
     "options": [
       "Encryption at rest",
@@ -221,13 +167,13 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Account lockout. Account lockout would BEST mitigate dictionary attacks by automatically disabling accounts after a specified number of failed login attempts. This prevents attackers from making hundreds of password attempts against a single account. The 500 attempts mentioned in the scenario would have been stopped after just a few failed attempts with proper account lockout policies. Encryption at rest, automatic screen lock, and antivirus don't prevent brute force authentication attacks.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 14,
+    "id": 12,
     "question": "A user is configuring a new SOHO Wi-Fi router for the first time. Which of the following settings should the user change FIRST?",
     "options": [
       "Encryption",
@@ -238,13 +184,30 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Default passwords. The user should change default passwords FIRST when configuring a new SOHO Wi-Fi router. Default passwords are well-known and easily exploited by attackers, making this the most critical security vulnerability to address immediately. Once administrative access is secured with strong passwords, other security settings like encryption, Wi-Fi channel optimization, and SSID configuration can be properly implemented. Without changing default passwords, attackers could gain full control of the router.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 15,
+    "id": 13,
+    "question": "Which of the following must be maintained throughout the forensic evidence life cycle when dealing with a piece of evidence?",
+    "options": [
+      "Acceptable use",
+      "Chain of custody",
+      "Security policy",
+      "Information management"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Correct Answer: B) Chain of custody. Chain of custody must be maintained throughout the forensic evidence life cycle when dealing with evidence. This refers to the chronological documentation of evidence handling, including all individuals who have possessed the evidence from collection to presentation in legal proceedings. Maintaining proper chain of custody ensures evidence integrity and admissibility in court. Acceptable use policies, security policies, and information management are important but not specific to forensic evidence handling.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 14,
     "question": "A user attempts to open some files, but a message appears stating that the files are encrypted. The user was able to access these files before without receiving this message, and no changes have been made within the company. Which of the following has infected the computer?",
     "options": [
       "Cryptominer",
@@ -255,13 +218,13 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Ransomware. The symptoms described - files that were previously accessible now showing as encrypted without any company changes - are classic indicators of ransomware infection. Ransomware encrypts user files and demands payment for decryption keys. Cryptominers use system resources for cryptocurrency mining but don't encrypt files. Phishing is a social engineering attack method, not malware that encrypts files. Keyloggers capture keystrokes but don't encrypt files.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 16,
+    "id": 15,
     "question": "A user reports that antivirus software indicates a computer is infected with viruses. The user thinks this happened while browsing the internet. The technician does not recognize the interface with which the antivirus message is presented. Which of the following is the NEXT step the technician should take?",
     "options": [
       "Shut down the infected computer and swap it with another computer.",
@@ -272,13 +235,13 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Investigate what the interface is and what triggered it to pop up. When a technician doesn't recognize an antivirus interface, the NEXT step should be to investigate its legitimacy. This could be a fake antivirus (scareware) designed to trick users into paying for unnecessary software or installing actual malware. Investigating helps determine if it's legitimate security software or a scam. Never trust unrecognized interfaces, call unknown phone numbers, or proceed with scans from suspicious software.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 17,
+    "id": 16,
     "question": "An organization is centralizing support functions and requires the ability to support a remote user's desktop. Which of the following technologies will allow a technician to see the issue along with the user?",
     "options": [
       "RDP",
@@ -289,13 +252,13 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) VNC. VNC (Virtual Network Computing) allows a technician to see the issue along with the user by providing shared screen access where both parties can view and interact with the same desktop simultaneously. This enables collaborative troubleshooting where the technician can observe user actions and demonstrate solutions. RDP provides remote desktop access but typically for single-user control. SSH is command-line only. VPN provides network access but not desktop sharing capabilities.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 18,
+    "id": 17,
     "question": "Which of the following provide the BEST way to secure physical access to a data center server room? (Choose two.)",
     "options": [
       "Biometric lock",
@@ -309,13 +272,13 @@
       0,
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: A) Biometric lock and B) Badge reader. These provide the BEST physical security for a data center server room through multi-factor authentication. Biometric locks use unique biological characteristics (fingerprints, retina scans) that cannot be easily duplicated or stolen. Badge readers provide access control through programmed access cards that can be quickly deactivated if lost. Together, they create strong authentication requiring both something you have (badge) and something you are (biometric). USB tokens, video surveillance, locking racks, and access control vestibules provide additional security but are secondary to primary access control.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "security"
   },
   {
-    "id": 19,
+    "id": 18,
     "question": "Which of the following is a proprietary Cisco AAA protocol?",
     "options": [
       "TKIP",
@@ -326,13 +289,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) TACACS+. TACACS+ (Terminal Access Controller Access-Control System Plus) is a proprietary Cisco AAA (Authentication, Authorization, and Accounting) protocol. It provides centralized authentication services and is commonly used in Cisco network environments for device management and user access control. TKIP and AES are wireless encryption protocols, while RADIUS is an open standard AAA protocol (not proprietary to Cisco).",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 20,
+    "id": 19,
     "question": "A user reports that a PC seems to be running more slowly than usual. A technician checks system resources, but disk, CPU, and memory usage seem to be fine. The technician sees that GPU temperature is extremely high. Which of the following types of malware is MOST likely to blame?",
     "options": [
       "Spyware",
@@ -343,47 +306,30 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Cryptominer. Cryptominer malware is MOST likely to blame when GPU temperature is extremely high while other system resources appear normal. Cryptominers use GPU processing power to mine cryptocurrency, causing intensive graphics card usage and high temperatures. The system may appear to run normally for basic tasks while the GPU is heavily utilized in the background. Spyware, ransomware, and boot sector viruses typically don't cause specific GPU overheating issues.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 20,
+    "question": "A technician is setting up a new laptop. The company's security policy states that users cannot install virtual machines. Which of the following should the technician implement to prevent users from enabling virtual technology on their laptops?",
+    "options": [
+      "UEFI password",
+      "Secure boot",
+      "Account lockout",
+      "Restricted user permissions"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Correct Answer: A) UEFI password. A UEFI password should be implemented to prevent users from enabling virtual technology on their laptops. UEFI (Unified Extensible Firmware Interface) passwords protect BIOS/UEFI settings, including virtualization features like Intel VT-x or AMD-V. By setting a UEFI password, administrators can prevent users from accessing and enabling these virtualization technologies. Secure boot prevents unauthorized operating systems, account lockout prevents login attempts, and restricted user permissions don't control BIOS-level settings.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
     "id": 21,
-    "question": "A user is experiencing frequent malware symptoms on a Windows workstation. The user has tried several times to roll back the state, but the malware persists. Which of the following would MOST likely resolve the issue?",
-    "options": [
-      "Quarantining system files",
-      "Reimaging the workstation",
-      "Encrypting the hard drive",
-      "Disabling TLS 1.0 support"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 22,
-    "question": "A technician receives a call from a user who is unable to open Outlook. The user states that Outlook worked fine yesterday, but the computer may have restarted sometime overnight. Which of the following is the MOST likely reason Outlook has stopped functioning?",
-    "options": [
-      "Spam filter installation",
-      "Invalid registry settings",
-      "Malware infection",
-      "Operating system update"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 23,
     "question": "A bank would like to enhance building security in order to prevent vehicles from driving into the building while also maintaining easy access for customers. Which of the following BEST addresses this need?",
     "options": [
       "Guards",
@@ -394,13 +340,30 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Bollards. Bollards BEST address the bank's need to prevent vehicles from driving into the building while maintaining easy customer access. Bollards are short, sturdy vertical posts designed specifically to stop vehicle ramming attacks while allowing pedestrian access between them. They provide effective physical security against vehicle-borne threats without impeding foot traffic. Guards are expensive and not always present, motion sensors detect but don't prevent, and access control vestibules don't stop vehicles.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 24,
+    "id": 22,
+    "question": "An organization's Chief Financial Officer (CFO) is concerned about losing access to very sensitive, legacy, unmaintained PII on a workstation if a ransomware outbreak occurs. The CFO has a regulatory requirement to retain this data for many years. Which of the following backup methods would BEST meet the requirements?",
+    "options": [
+      "A daily, incremental backup that is saved to the corporate file server",
+      "An additional, secondary hard drive in a mirrored RAID configuration",
+      "A full backup of the data that is stored off site in cold storage",
+      "Weekly, differential backups that are stored in a cloud-hosting provider"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Correct Answer: C) A full backup of the data that is stored off site in cold storage. For very sensitive, legacy PII with regulatory retention requirements, a full backup stored off-site in cold storage BEST meets the requirements. Cold storage provides air-gapped protection against ransomware (completely disconnected from networks), ensures long-term data preservation, and meets regulatory compliance for data retention. Daily incremental backups to corporate servers remain vulnerable to ransomware, RAID provides redundancy but not ransomware protection, and cloud storage may not meet regulatory requirements for sensitive PII.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 23,
     "question": "A homeowner recently moved and requires a new router for the new ISP to function correctly. The internet service has been installed and has been confirmed as functional. Which of the following is the FIRST step the homeowner should take after installation of all relevant cabling and hardware?",
     "options": [
       "Convert the PC from a DHCP assignment to a static IP address.",
@@ -411,13 +374,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Change the default passwords on new network devices. Changing default passwords should be the FIRST step after installing new network hardware. Default passwords are well-known security vulnerabilities that attackers can easily exploit to gain administrative access to network devices. This critical security step must be completed before any network functionality testing or configuration. Speed tests, network sharing tests, and IP configuration can be performed after securing the devices with strong passwords.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 25,
+    "id": 24,
     "question": "While browsing a website, a staff member received a message that the website could not be trusted. Shortly afterward, several other colleagues reported the same issue across numerous other websites. Remote users who were not connected to corporate resources did not have any issues. Which of the following is MOST likely the cause of this issue?",
     "options": [
       "A bad antivirus signature update was installed.",
@@ -428,13 +391,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) The time or date was not in sync with the website. When multiple users experience certificate trust issues across numerous websites while remote users have no problems, the MOST likely cause is time/date synchronization issues. SSL/TLS certificates have validity periods, and if the local system time is significantly different from the certificate's valid time range, browsers will show 'cannot be trusted' warnings. This affects all HTTPS sites and only impacts users connected to the corporate network with the time sync issue.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 26,
+    "id": 25,
     "question": "A company is deploying mobile phones on a one-to-one basis, but the IT manager is concerned that users will root/jailbreak their phones. Which of the following technologies can be implemented to prevent this issue?",
     "options": [
       "Signed system images",
@@ -445,13 +408,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) MDM. Mobile Device Management (MDM) can prevent users from rooting or jailbreaking their phones by enforcing security policies, detecting unauthorized modifications, and remotely managing device configurations. MDM solutions can monitor device integrity, prevent installation of unauthorized software, and even remotely wipe devices that have been compromised through rooting/jailbreaking. Signed system images, antivirus, and SSO don't specifically prevent device rooting/jailbreaking.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 27,
+    "id": 26,
     "question": "A systems administrator is tasked with configuring desktop systems to use a new proxy server that the organization has added to provide content filtering. Which of the following Windows utilities is the BEST choice for accessing the necessary configuration to complete this goal?",
     "options": [
       "Security and Maintenance",
@@ -462,13 +425,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Internet Options. Internet Options is the BEST Windows utility for configuring proxy server settings for content filtering. Internet Options (found in Control Panel or Internet Explorer settings) contains the Connections tab where proxy server configuration is managed, including server addresses, ports, and bypass settings. This affects system-wide proxy settings for web browsers and other applications. Security and Maintenance, Network and Sharing Center, and Windows Defender Firewall don't contain proxy configuration options.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 28,
+    "id": 27,
     "question": "Which of the following is an example of MFA?",
     "options": [
       "Fingerprint scan and retina scan",
@@ -479,47 +442,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Smart card and password. Smart card and password represents true Multi-Factor Authentication (MFA) because it combines two different authentication factors: something you have (smart card) and something you know (password). MFA requires at least two different types of authentication factors. Fingerprint and retina scan are both biometric (something you are), password and PIN are both knowledge factors (something you know), and username/password is single-factor authentication.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 29,
-    "question": "Which of the following is the MOST basic version of Windows that includes BitLocker?",
-    "options": [
-      "Home",
-      "Pro",
-      "Enterprise",
-      "Pro for Workstations"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 30,
-    "question": "A Windows user reported that a pop-up indicated a security issue. During inspection, an antivirus system identified malware from a recent download, but it was unable to remove the malware. Which of the following actions would be BEST to remove the malware while also preserving the user's files?",
-    "options": [
-      "Run the virus scanner in an administrative mode.",
-      "Reinstall the operating system.",
-      "Reboot the system in safe mode and rescan.",
-      "Manually delete the infected files."
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 31,
+    "id": 28,
     "question": "A technician is setting up a new laptop for an employee who travels. Which of the following is the BEST security practice for this scenario?",
     "options": [
       "PIN-based login",
@@ -530,13 +459,13 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Hard drive encryption. Hard drive encryption is the BEST security practice for a traveling employee's laptop. Full disk encryption protects all data on the device if it's lost or stolen, ensuring that sensitive corporate information cannot be accessed even if the physical device is compromised. This is especially critical for mobile devices that face higher theft risks during travel. PIN-based login, password changes, and physical locks provide additional security but don't protect data if the device is compromised.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 32,
+    "id": 29,
     "question": "The findings from a security audit indicate the risk of data loss from lost or stolen laptops is high. The company wants to reduce this risk with minimal impact to users who want to use their laptops when not on the network. Which of the following would BEST reduce this risk for Windows laptop users?",
     "options": [
       "Requiring strong passwords",
@@ -547,13 +476,47 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Enabling BitLocker on all hard drives. BitLocker full disk encryption would BEST reduce the risk of data loss from lost or stolen laptops with minimal impact to users. BitLocker encrypts the entire hard drive, making data inaccessible without proper authentication, even if the laptop is stolen. Users can continue working normally when connected to the network or offline, as BitLocker operates transparently. Strong passwords, disabled cached credentials, and MFA provide security but don't protect data if the physical device is compromised.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 33,
+    "id": 30,
+    "question": "After returning from vacation, a user is unable to connect to the network at the corporate office. Windows allows the user to log in; however, no internal or external websites are accessible when running a browser. The user's expected network shares are unreachable, and all websites attempted return the message, `Hmm, we can't reach this page.` Which of the following is the MOST likely cause of this issue?",
+    "options": [
+      "The user's password expired while on vacation.",
+      "The user clicked on a malicious email.",
+      "The user connected to a captive portal while traveling.",
+      "The user enabled airplane mode."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Correct Answer: D) The user enabled airplane mode. When a user can log into Windows but cannot access any internal or external websites or network shares, airplane mode is the MOST likely cause. Airplane mode disables all network connectivity (Wi-Fi, Ethernet, cellular) while still allowing local login to cached credentials. The 'Hmm, we can't reach this page' message indicates complete network isolation. An expired password would prevent login, malicious emails don't typically cause complete network isolation, and captive portals would show redirect pages rather than complete connectivity failure.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 31,
+    "question": "A technician receives a call from a user who is on vacation. The user provides the necessary credentials and asks the technician to log in to the user's account and read a critical email that the user has been expecting. The technician refuses because this is a violation of the:",
+    "options": [
+      "acceptable use policy.",
+      "regulatory compliance requirements.",
+      "non-disclosure agreement.",
+      "incident response procedures."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Correct Answer: A) acceptable use policy. The technician correctly refuses because accessing another user's email account violates the acceptable use policy. Even with provided credentials, technicians should not access user accounts for personal tasks like reading emails. This violates privacy policies and professional boundaries. The request should be handled through proper channels like forwarding the email or having the user access it themselves. Regulatory compliance, NDAs, and incident response procedures are not the primary concern in this scenario.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 32,
     "question": "A technician received a call stating that all files in a user's documents folder appear to be changed, and each of the files now has a .lock file extension. Which of the following actions is the FIRST step the technician should take?",
     "options": [
       "Run a live disk clone.",
@@ -564,13 +527,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Disconnect the machine from the network. When files have .lock extensions (indicating ransomware infection), the FIRST step is to disconnect the machine from the network to prevent the ransomware from spreading to other systems and encrypting network shares. This immediate isolation contains the threat. After isolation, the technician can then run antivirus scans, create disk clones for forensic analysis, and plan recovery strategies. Never attempt to rename encrypted files as this won't restore the data and may cause further damage.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 34,
+    "id": 33,
     "question": "A network administrator is deploying a client certificate to be used for Wi-Fi access for all devices in an organization. The certificate will be used in conjunction with the user's existing username and password. Which of the following BEST describes the security benefits realized after this deployment?",
     "options": [
       "Multifactor authentication will be forced for Wi-Fi.",
@@ -581,13 +544,13 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Multifactor authentication will be forced for Wi-Fi. Deploying client certificates in conjunction with username/password creates multifactor authentication for Wi-Fi access. This combines something you know (password) with something you have (certificate), providing stronger authentication than passwords alone. While certificates do enable encryption and help prevent some attacks, the primary security benefit described is the implementation of MFA. The certificate doesn't directly prevent rogue access points from connecting, but it does make it much harder for unauthorized devices to authenticate.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 35,
+    "id": 34,
     "question": "A user in a corporate office reports the inability to connect to any network drives. No other users have reported this issue. Which of the following is the MOST likely reason the user is having this issue?",
     "options": [
       "The user is not connected to the VPN.",
@@ -598,13 +561,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) The log-in script failed. When a single user cannot connect to network drives while others have no issues, the MOST likely cause is a failed login script. Login scripts typically map network drives during user authentication. If the script fails to execute properly, the user can still log in but won't have access to mapped network drives. VPN connectivity would affect external access, a file server being offline would affect all users, and low battery doesn't prevent network drive connections.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 36,
+    "id": 35,
     "question": "A user enabled a mobile device's screen lock function with pattern unlock. The user is concerned someone could access the mobile device by repeatedly attempting random patterns to unlock the device. Which of the following features BEST addresses the user's concern?",
     "options": [
       "Remote wipe",
@@ -615,24 +578,41 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Failed login restrictions. Failed login restrictions (also called account lockout or login attempt limits) BEST address the user's concern about repeated pattern unlock attempts. This security feature automatically locks the device or increases delay times after multiple failed unlock attempts, preventing brute force attacks on the pattern lock. Remote wipe, anti-malware, and device encryption provide other security benefits but don't specifically prevent repeated unlock attempts.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 36,
+    "question": "Which of the following is MOST likely contained in an EULA?",
+    "options": [
+      "Chain of custody",
+      "Backup of software code",
+      "Personally identifiable information",
+      "Restrictions of use"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Correct Answer: D) Restrictions of use. An End User License Agreement (EULA) is MOST likely to contain restrictions of use, including what users can and cannot do with the software, redistribution limitations, and usage terms. EULAs define the legal relationship between the software vendor and user, specifying permitted uses and prohibited activities. Chain of custody relates to evidence handling, backup of software code is typically not included in user agreements, and while EULAs may reference PII handling, the primary content is usage restrictions.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
     "id": 37,
-    "question": "A junior administrator is responsible for deploying software to a large group of computers in an organization. The administrator finds a script on a popular coding website to automate this distribution but does not understand the scripting language. Which of the following BEST describes the risks in running this script?",
+    "question": "A user opened a ticket regarding a corporate-managed mobile device. The assigned technician notices the OS is several versions out of date. The user is unaware the OS version is not current because auto-update is turned on. Which of the following is MOST likely the cause of the issue?",
     "options": [
-      "The instructions from the software company are not being followed.",
-      "Security controls will treat automated deployments as malware.",
-      "The deployment script is performing unknown actions.",
-      "Copying scripts off the internet is considered plagiarism."
+      "The device does not have enough free space to download the OS updates.",
+      "The device needs user confirmation to update to a major release.",
+      "The device is not compatible with the newest version of the OS.",
+      "The device is restricted from updating due to a corporate security policy."
     ],
     "correct": [
-      2
+      0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) The device does not have enough free space to download the OS updates. When auto-update is enabled but the OS remains several versions out of date, insufficient storage space is the MOST likely cause. OS updates require significant free space for download and installation. If the device lacks adequate storage, updates will fail silently while auto-update remains enabled. User confirmation for major releases, compatibility issues, and corporate restrictions would typically generate notifications or show different symptoms.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
@@ -649,7 +629,7 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Power off the machine. When ransomware cannot be quarantined, powering off the machine should be performed FIRST to prevent further damage to the host and other systems. This immediately stops the ransomware from continuing to encrypt files and prevents it from spreading across the network. Once powered off, the technician can plan recovery strategies, boot from external media, or restore from clean backups. Running additional scans, removing network cards, or installing new solutions won't stop active ransomware encryption.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
@@ -666,7 +646,7 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Modified file. When the hash value changes from the vendor's published hash (a11e11a1) to a different value (2a222a2b2), the MOST likely cause is a modified file. Hash verification is designed to detect any changes to file integrity - even a single bit change will produce a completely different hash value. This indicates the downloaded file has been corrupted during transfer or potentially tampered with. Private-browsing mode, invalid certificates, and browser cache don't affect hash calculations of downloaded files.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
@@ -683,30 +663,13 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) VPN. A VPN (Virtual Private Network) should be implemented to interconnect two offices to the main branch while complying with good practices and security standards. VPNs create secure, encrypted tunnels over public networks, ensuring data confidentiality and integrity between office locations. This is the standard solution for secure site-to-site connectivity. MSRA is for remote assistance, VNC is for desktop sharing, and SSH is for secure command-line access - none of these provide the comprehensive site-to-site connectivity that VPN offers.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
     "id": 41,
-    "question": "A user receives a notification indicating the data plan on the user's corporate phone has reached its limit. The user has also noted the performance of the phone is abnormally slow. A technician discovers a third-party GPS application was installed on the phone. Which of the following is the MOST likely cause?",
-    "options": [
-      "The GPS application is installing software updates.",
-      "The GPS application contains malware.",
-      "The GPS application is updating its geospatial map data.",
-      "The GPS application is conflicting with the built-in GPS."
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 42,
     "question": "A technician needs to document who had possession of evidence at every step of the process. Which of the following does this process describe?",
     "options": [
       "Rights management",
@@ -717,13 +680,13 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Chain of custody. Chain of custody refers to the chronological documentation of evidence possession, from the initial collection to its presentation in court. This process ensures that evidence is handled securely and that its integrity is maintained throughout the investigation. Rights management deals with access control, audit trails record system activities, and data integrity ensures data accuracy and consistency.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 43,
+    "id": 42,
     "question": "A user lost a company tablet that was used for customer intake at a doctor's office. Which of the following actions would BEST protect against unauthorized access of the data?",
     "options": [
       "Changing the office's Wi-Fi SSID and password",
@@ -734,30 +697,13 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Performing a remote wipe on the device. Remote wipe would BEST protect against unauthorized access of patient data on a lost company tablet. Remote wipe allows administrators to remotely delete all data from the device, ensuring that sensitive customer intake information cannot be accessed by unauthorized individuals who find the tablet. This is critical for HIPAA compliance in healthcare environments. Changing Wi-Fi credentials, user passwords, or enabling encryption won't help if the device is already lost and potentially in unauthorized hands.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 44,
-    "question": "A technician is configuring a new Windows laptop. Corporate policy requires that mobile devices make use of full disk encryption at all times. Which of the following encryption solutions should the technician choose?",
-    "options": [
-      "Encrypting File System",
-      "File Vault",
-      "BitLocker",
-      "Encrypted LVM"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 45,
+    "id": 43,
     "question": "A technician has verified that a user's computer has a virus, and the antivirus software is out of date. Which of the following steps should the technician take NEXT?",
     "options": [
       "Quarantine the computer.",
@@ -768,13 +714,13 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Quarantine the computer. After verifying a virus infection and outdated antivirus software, the NEXT step is to quarantine the computer to prevent the virus from spreading to other systems on the network. This isolates the infected machine, containing the threat. After quarantine, the technician can update the antivirus software, run a full scan, and apply any necessary patches. Using a previous restore point or educating the user about viruses won't address the immediate need to contain the virus.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 46,
+    "id": 44,
     "question": "A team of support agents will be using their workstations to store credit card data. Which of the following should the IT department enable on the workstations in order to remain compliant with common regulatory controls? (Choose two.)",
     "options": [
       "Encryption",
@@ -788,13 +734,13 @@
       0,
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: A) Encryption and B) Antivirus. For workstations storing credit card data to remain compliant with common regulatory controls (like PCI DSS), encryption and antivirus are essential. Encryption protects sensitive cardholder data both at rest and in transit, while antivirus provides protection against malware that could compromise payment card information. AutoRun, guest accounts, and default passwords actually increase security risks. Backups are important for business continuity but aren't specifically required for credit card data compliance.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "security"
   },
   {
-    "id": 47,
+    "id": 45,
     "question": "A technician is working to resolve a Wi-Fi network issue at a doctor's office that is located next to an apartment complex. The technician discovers that employees and patients are not the only people on the network. Which of the following should the technician do to BEST minimize this issue?",
     "options": [
       "Disable unused ports.",
@@ -805,30 +751,13 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Add a password to the guest network. Adding a password to the guest network would BEST minimize unauthorized access from apartment complex residents. The issue is that people outside the medical practice are connecting to an unsecured guest network. By adding password protection, only authorized individuals (patients and staff) who receive the password can access the network. Disabling unused ports affects wired connections, removing the guest network eliminates patient access, and changing channels addresses interference but not unauthorized access.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 48,
-    "question": "A user needs assistance installing software on a Windows PC but will not be in the office. Which of the following solutions would a technician MOST likely use to assist the user without having to install additional software?",
-    "options": [
-      "VPN",
-      "MSRA",
-      "SSH",
-      "RDP"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 49,
+    "id": 46,
     "question": "A user receives a notification indicating the antivirus protection on a company laptop is out of date. A technician is able to ping the user's laptop. The technician checks the antivirus parent servers and sees the latest signatures have been installed. The technician then checks the user's laptop and finds the antivirus engine and definitions are current. Which of the following has MOST likely occurred?",
     "options": [
       "Ransomware",
@@ -839,13 +768,13 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Adware. Adware has MOST likely occurred when a user receives false antivirus notifications despite having current antivirus protection. Adware often displays fake security warnings to trick users into purchasing unnecessary software or clicking malicious links. Since the technician confirmed that both the antivirus engine and definitions are current, and the laptop is network-accessible, the false notifications are likely generated by adware rather than actual security issues. Ransomware would encrypt files, failed OS updates wouldn't cause false antivirus alerts, and missing system files would cause broader system issues.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 50,
+    "id": 47,
     "question": "A user is unable to access files on a work PC after opening a text document. The text document was labeled “URGENT PLEASE READ.txt - In active folder, .txt file titled urgent please read”. Which of the following should a support technician do FIRST?",
     "options": [
       "Quarantine the host in the antivirus system.",
@@ -856,47 +785,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Reimage the computer. The technician should FIRST reimage the computer when a user cannot access files after opening a suspicious text document with a filename like 'URGENT PLEASE READ.txt'. This scenario strongly suggests ransomware infection that has encrypted the user's files. Since the damage is already done and files are inaccessible, reimaging (complete OS reinstallation) is the fastest way to restore system functionality. Quarantining, scanning, and investigating are important for prevention but won't recover the encrypted files - only restoration from clean backups after reimaging will.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 51,
-    "question": "A technician is investigating unauthorized Wi-Fi access on a customer's home network. Individuals are able to access the customer's Wi-Fi network without a password. Which of the following is the MOST likely reason this situation is occurring?",
-    "options": [
-      "Channel utilization is oversubscribed.",
-      "WPA2 exploits are being leveraged.",
-      "The Wi-Fi password is posted on the router.",
-      "The customer has a guest network enabled."
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 52,
-    "question": "A technician is troubleshooting an issue that requires a user profile to be rebuilt. The technician is unable to locate Local Users and Groups in the MMC console. Which of the following is the NEXT step the technician should take to resolve the issue?",
-    "options": [
-      "Run the antivirus scan.",
-      "Add the required snap-in.",
-      "Restore the system backup.",
-      "Use the administrator console."
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 53,
+    "id": 48,
     "question": "Which of the following physical security controls can prevent laptops from being stolen?",
     "options": [
       "Encryption",
@@ -908,13 +803,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Equipment lock. Equipment locks (cable locks, security cables) are physical security controls that can prevent laptops from being stolen by physically securing them to desks or other immovable objects. These locks make it difficult for thieves to quickly grab and run with laptops. Encryption protects data if stolen but doesn't prevent theft, LoJack helps recover stolen devices but doesn't prevent theft, multifactor authentication secures access but not physical theft, and bollards prevent vehicle access to buildings.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 54,
+    "id": 49,
     "question": "Which of the following wireless security features can be enabled to allow a user to use login credentials to attach to available corporate SSIDs?",
     "options": [
       "TACACS+",
@@ -925,30 +820,13 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Kerberos. Kerberos is a wireless security feature that can be enabled to allow users to use their login credentials to attach to available corporate SSIDs. Kerberos provides network authentication protocol that allows users to authenticate once and gain access to multiple network resources, including wireless networks, using their domain credentials. TACACS+ is primarily for device administration, preshared keys require manual key distribution, and WPA2/AES is an encryption method but doesn't provide credential-based authentication.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 55,
-    "question": "Which of the following would MOST likely be used to change the security settings on a user's device in a domain environment?",
-    "options": [
-      "Security groups",
-      "Access control list",
-      "Group Policy",
-      "Login script"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 56,
+    "id": 50,
     "question": "Which of the following often uses an SMS or third-party application as a secondary method to access a system?",
     "options": [
       "MFA",
@@ -959,13 +837,13 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) MFA. MFA (Multi-Factor Authentication) often uses an SMS or third-party application as a secondary method to access a system. MFA requires multiple forms of verification - typically something you know (password), something you have (SMS code or authenticator app), and/or something you are (biometric). SMS codes and authenticator apps like Google Authenticator or Microsoft Authenticator are common secondary authentication methods. WPA2 and AES are encryption protocols, while RADIUS is an authentication server protocol.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 57,
+    "id": 51,
     "question": "A user receives a call from someone who claims to be from the user's bank and requests information to ensure the user's account is safe. Which of the following social-engineering attacks is the user experiencing?",
     "options": [
       "Phishing",
@@ -976,13 +854,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Vishing. Vishing (voice phishing) is the social-engineering attack the user is experiencing when receiving a phone call from someone claiming to be from their bank requesting account information. Vishing uses voice communication (phone calls) to trick victims into revealing sensitive information. Phishing typically uses email, smishing uses SMS text messages, and whaling targets high-profile individuals like executives. The key indicator here is that the attack came via a phone call.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 58,
+    "id": 52,
     "question": "An internet café has several computers available for public use. Recently, users have reported the computers are much slower than they were the previous week. A technician finds the CPU is at 100% utilization, and antivirus scans report no current infection. Which of the following is MOST likely causing the issue?",
     "options": [
       "Spyware is redirecting browser searches.",
@@ -993,13 +871,13 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) A cryptominer is verifying transactions. A cryptominer is MOST likely causing the issue when internet café computers show 100% CPU utilization but no current infection is detected by antivirus. Cryptominers use intensive CPU processing to mine cryptocurrency, which would cause the dramatic slowdown users are experiencing. Modern cryptominers can evade detection by some antivirus software. Spyware typically doesn't cause such high CPU usage, damaged files wouldn't cause sustained 100% CPU usage, and keyloggers operate with minimal system impact.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 59,
+    "id": 53,
     "question": "Which of the following should be used to secure a device from known exploits?",
     "options": [
       "Encryption",
@@ -1010,30 +888,13 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Operating system updates. Operating system updates should be used to secure a device from known exploits. OS updates include security patches that fix vulnerabilities and close security holes that attackers could exploit. Regular patching is one of the most effective ways to protect against known threats. Encryption protects data confidentiality, remote wipe removes data from lost devices, and cross-site scripting is actually a type of web vulnerability, not a security control.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 60,
-    "question": "A technician is creating a tunnel that hides IP addresses and secures all network traffic. Which of the following protocols is capable of enduring enhanced security?",
-    "options": [
-      "DNS",
-      "IPS",
-      "VPN",
-      "SSH"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 61,
+    "id": 54,
     "question": "A technician receives a call from a user who is having issues with an application. To best understand the issue, the technician simultaneously views the user's screen with the user. Which of the following would BEST accomplish this task?",
     "options": [
       "SSH",
@@ -1044,13 +905,13 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) VNC. VNC (Virtual Network Computing) would BEST accomplish simultaneous screen viewing between a technician and user. VNC allows both parties to view and interact with the same desktop simultaneously, making it ideal for collaborative troubleshooting where the technician needs to see exactly what the user is experiencing. SSH provides command-line access only, VPN creates secure network connections but doesn't provide desktop sharing, and RDP typically provides single-user remote desktop control rather than simultaneous viewing.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 62,
+    "id": 55,
     "question": "An organization implemented a method of wireless security that requires both a user and the user's computer to be in specific managed groups on the server in order to connect to Wi-Fi. Which of the following wireless security methods BEST describes what this organization implemented?",
     "options": [
       "TKIP",
@@ -1061,13 +922,13 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) RADIUS. RADIUS (Remote Authentication Dial-In User Service) BEST describes the wireless security method that requires both a user and the user's computer to be in specific managed groups on the server to connect to Wi-Fi. RADIUS provides centralized authentication, authorization, and accounting for network access, allowing administrators to control which users and devices can connect based on group membership. TKIP and AES are encryption protocols, while WPA2 is a security standard that can use RADIUS for authentication.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 63,
+    "id": 56,
     "question": "A user reports that the pages flash on the screen two or three times before finally staying open when attempting to access banking web pages. Which of the following troubleshooting steps should the technician perform NEXT to resolve the issue?",
     "options": [
       "Examine the antivirus logs.",
@@ -1078,13 +939,13 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Verify the address bar URL. When banking web pages flash multiple times before staying open, the technician should NEXT verify the address bar URL to check for potential pharming or DNS hijacking attacks. The flashing could indicate the browser is being redirected through malicious sites before reaching the legitimate banking site. Verifying the URL ensures the user is actually connecting to the correct banking website and not a spoofed site. Examining antivirus logs, testing connection speed, and checking web service status don't address the specific security concern of potential URL redirection.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 64,
+    "id": 57,
     "question": "A technician discovers user input has been captured by a malicious actor. Which of the following malware types is MOST likely being used?",
     "options": [
       "Cryptominers",
@@ -1095,13 +956,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Keylogger. A keylogger is MOST likely being used when user input has been captured by a malicious actor. Keyloggers are malware that record keystrokes, allowing attackers to capture sensitive information such as passwords, credit card numbers, and other personal data. Cryptominers use CPU resources for cryptocurrency mining, rootkits hide malware or themselves from the system, and spear phishing is a social engineering attack via targeted emails.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 65,
+    "id": 58,
     "question": "A computer on a corporate network has a malware infection. Which of the following would be the BEST method for returning the computer to service?",
     "options": [
       "Scanning the system with a Linux live disc, flashing the BIOS, and then returning the computer to service",
@@ -1112,13 +973,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Reinstalling the OS, flashing the BIOS, and then scanning with on-premises antivirus. This is the BEST method for returning the computer to service after a malware infection. Reinstalling the OS ensures a clean start, flashing the BIOS updates the firmware to prevent any BIOS-level malware, and scanning with on-premises antivirus ensures the system is free from malware before returning to service. Scanning with a Linux live disc might not catch all malware, reformatting the drive could be unnecessary if the OS can be cleanly reinstalled, and degaussing the hard drive is an extreme measure that erases all data and is typically not necessary for malware removal.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 66,
+    "id": 59,
     "question": "Which of the following is an advantage of using WPA2 instead of WPA3?",
     "options": [
       "Connection security",
@@ -1129,30 +990,13 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Device compatibility. An advantage of using WPA2 instead of WPA3 is device compatibility. WPA2 is an older standard that is widely supported by most devices, including older devices that may not support the newer WPA3 standard. While WPA3 offers better security features like improved encryption and protection against certain types of attacks, WPA2 remains compatible with a broader range of devices. Connection security, encryption key length, and offline decryption resistance are all security features that WPA3 improves upon compared to WPA2.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 67,
-    "question": "A technician is preparing to remediate a Trojan virus that was found on a workstation. Which of the following steps should the technician complete BEFORE removing the virus?",
-    "options": [
-      "Disable System Restore.",
-      "Schedule a malware scan.",
-      "Educate the end user.",
-      "Run Windows Update."
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 68,
+    "id": 60,
     "question": "Which of the following would MOST likely be deployed to enhance physical security for a building? (Choose two.)",
     "options": [
       "Multifactor authentication",
@@ -1166,13 +1010,13 @@
       1,
       4
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: B) Badge reader and E) Motion sensor. These would MOST likely be deployed to enhance physical security for a building. Badge readers control access by requiring authorized identification cards to enter secured areas, while motion sensors detect unauthorized movement and can trigger alarms or alerts. Multifactor authentication, PINs, and soft tokens are logical security controls, while firewalls provide network security rather than physical building security.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "security"
   },
   {
-    "id": 69,
+    "id": 61,
     "question": "A user tries to access commonly used web pages but is redirected to unexpected websites. Clearing the web browser cache does not resolve the issue. Which of the following should a technician investigate NEXT to resolve the issue?",
     "options": [
       "Enable firewall ACLs.",
@@ -1183,47 +1027,13 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Examine the localhost file entries. When a user is redirected to unexpected websites and clearing browser cache doesn't resolve the issue, the technician should NEXT examine the hosts file (localhost file entries). Malware often modifies the hosts file to redirect legitimate websites to malicious ones. The hosts file overrides DNS resolution, so even if DNS is working correctly, entries in the hosts file can cause redirections. Enabling firewall ACLs, verifying routing tables, and updating antivirus definitions don't address host file manipulation.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 70,
-    "question": "Which of the following features must be configured on a Windows OS desktop in order to encrypt files in a laptop?",
-    "options": [
-      "HDD drivers",
-      "BitLocker",
-      "Boot settings",
-      "RAID"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 71,
-    "question": "A Windows workstation that was recently updated with approved system patches shut down instead of restarting. Upon reboot, the technician notices an alert stating the workstation has malware in the root OS folder. The technician promptly performs a System Restore and reboots the workstation, but the malware is still detected. Which of the following BEST describes why the system still has malware?",
-    "options": [
-      "A system patch disabled the antivirus protection and host firewall.",
-      "The system updates did not include the latest anti-malware definitions.",
-      "The system restore process was compromised by the malware.",
-      "The malware was installed before the system restore point was created."
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 72,
+    "id": 62,
     "question": "Which of the following would cause a corporate-owned iOS device to have an Activation Lock issue?",
     "options": [
       "A forgotten keychain password",
@@ -1234,13 +1044,30 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) An employee's Apple ID used on the device. An employee's Apple ID used on a corporate-owned iOS device would cause an Activation Lock issue. When an employee signs into their personal Apple ID on a corporate device, Activation Lock becomes tied to their personal account. If the employee leaves the company or forgets their credentials, the device becomes locked and unusable by the organization. Corporate devices should use corporate Apple IDs or be managed through MDM solutions to prevent this issue.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 73,
+    "id": 63,
+    "question": "A technician is attempting to mitigate micro power outages, which occur frequently within the area of operation. The outages are usually short, with the longest occurrence lasting five minutes. Which of the following should the technician use to mitigate this issue?",
+    "options": [
+      "Surge suppressor",
+      "Battery backup",
+      "CMOS battery",
+      "Generator backup"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Correct Answer: B) Battery backup. A battery backup (UPS - Uninterruptible Power Supply) should be used to mitigate micro power outages lasting up to five minutes. Battery backups provide immediate power during outages and can sustain systems for several minutes to hours depending on the load. For short outages like these, a UPS is the most appropriate solution. Surge suppressors protect against voltage spikes but don't provide power during outages, CMOS batteries only maintain BIOS settings, and generator backups are overkill for such short outages.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 64,
     "question": "A user contacts a technician about an issue with a laptop. The user states applications open without being launched and the browser redirects when trying to go to certain websites. Which of the following is MOST likely the cause of the user's issue?",
     "options": [
       "Keylogger",
@@ -1251,13 +1078,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Malware. Malware is MOST likely the cause when applications open without being launched and the browser redirects to unexpected websites. These are classic symptoms of malware infection that has compromised system control and browser behavior. While keyloggers and cryptominers are specific types of malware, the broad term 'malware' best encompasses the variety of malicious software that could cause these symptoms. The combination of unauthorized application launches and browser redirections indicates comprehensive system compromise.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 74,
+    "id": 65,
     "question": "Which of the following security methods supports the majority of current Wi-Fi-capable devices without sacrificing security?",
     "options": [
       "WPA3",
@@ -1268,30 +1095,30 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) RADIUS. RADIUS (Remote Authentication Dial-In User Service) supports the majority of current Wi-Fi-capable devices without sacrificing security. RADIUS provides centralized authentication and authorization for wireless networks and is widely supported across different device types and manufacturers. WPA3 offers better security but has limited device compatibility, MAC filtering is easily bypassed and doesn't scale well, and TACACS+ is primarily used for network device administration rather than general Wi-Fi access.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 75,
-    "question": "A technician needs to override DNS and redirect IP addresses and URLs to different locations. Which of the following should the technician do?",
+    "id": 66,
+    "question": "Which of the following threats will the use of a privacy screen on a computer help prevent?",
     "options": [
-      "Install signal repeaters.",
-      "Edit the hosts file.",
-      "Configure the firewall.",
-      "Enable port forwarding."
+      "Impersonation",
+      "Shoulder surfing",
+      "Whaling",
+      "Tailgating"
     ],
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Shoulder surfing. A privacy screen on a computer helps prevent shoulder surfing attacks. Privacy screens use special filters that make the screen content visible only when viewed directly from the front, preventing people from reading the screen from side angles. This protects against unauthorized individuals looking over someone's shoulder to view sensitive information. Impersonation, whaling, and tailgating are different types of social engineering attacks that privacy screens don't address.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 76,
+    "id": 67,
     "question": "A company needs employees who work remotely to have secure access to the corporate intranet. Which of the following should the company implement?",
     "options": [
       "Password-protected Wi-Fi",
@@ -1302,13 +1129,13 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Virtual private network. A company should implement a Virtual Private Network (VPN) to provide employees who work remotely with secure access to the corporate intranet. VPNs create encrypted tunnels over public networks, allowing remote workers to securely access internal company resources as if they were directly connected to the corporate network. Password-protected Wi-Fi, port forwarding, and perimeter networks don't provide the comprehensive secure remote access solution that VPN offers.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 77,
+    "id": 68,
     "question": "A technician is investigating options to secure a small office wireless network. One requirement is to allow automatic logins to the network using certificates instead of passwords. Which of the following should the wireless solution have in order to support this feature?",
     "options": [
       "RADIUS",
@@ -1319,13 +1146,13 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) RADIUS. The wireless solution should have RADIUS to support automatic logins using certificates instead of passwords. RADIUS can integrate with certificate-based authentication systems, allowing devices with valid certificates to automatically authenticate to the wireless network without user intervention. AES is an encryption standard, EAP-EKE is an authentication protocol, and MFA requires user interaction, none of which specifically enable automatic certificate-based authentication like RADIUS does.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 78,
+    "id": 69,
     "question": "A SOHO client is having trouble navigating to a corporate website. Which of the following should a technician do to allow access?",
     "options": [
       "Adjust the content filtering.",
@@ -1336,13 +1163,13 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Adjust the content filtering. When a SOHO client has trouble navigating to a corporate website, the technician should adjust the content filtering settings. Many SOHO routers have built-in content filtering that may block access to certain websites or categories of sites. Corporate websites might be incorrectly categorized or blocked by these filters. Unmapping port forwarding, disabling unused ports, and reducing encryption strength don't address website access issues caused by content filtering.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 79,
+    "id": 70,
     "question": "A technician needs a way to test software without placing company systems at risk. Which of the following features should the technician use to completely achieve this objective?",
     "options": [
       "Cryptography",
@@ -1353,13 +1180,13 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Sandbox. A sandbox should be used to test software without placing company systems at risk. Sandboxes create isolated environments where software can be executed and tested without affecting the host system or network. This containment prevents potential malware or unstable software from compromising production systems. Cryptography secures data, perimeter networks provide network segmentation, and firewalls control network traffic, but none provide the complete isolation needed for safe software testing like sandboxes do.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 80,
+    "id": 71,
     "question": "A systems administrator notices that a server on the company network has extremely high CPU utilization. Upon further inspection, the administrator sees that the server is consistently communicating with an IP address that is traced back to a company that awards digital currency for salving hash algorithms. Which of the following was MOST likely used to compromise the server?",
     "options": [
       "Keylogger",
@@ -1370,30 +1197,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Cryptomining malware. Cryptomining malware was MOST likely used to compromise the server. The symptoms - extremely high CPU utilization and communication with an IP address traced to a company that awards digital currency for solving hash algorithms - are classic indicators of cryptomining malware. This malware uses infected systems' processing power to mine cryptocurrency, causing high CPU usage and network communication with mining pools. Keyloggers capture keystrokes, ransomware encrypts files, and boot sector viruses infect system startup, none of which match these specific symptoms.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 81,
-    "question": "A Windows administrator is creating user profiles that will include home directories and network printers for several new users. Which of the following is the MOST efficient way for the technician to complete this task?",
-    "options": [
-      "Access control",
-      "Authentication application",
-      "Group Policy",
-      "Folder redirection"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 82,
+    "id": 72,
     "question": "A user's corporate laptop with proprietary work information was stolen from a coffee shop. The user logged in to the laptop with a simple password, and no other security mechanisms were in place. Which of the following would MOST likely prevent the stored data from being recovered?",
     "options": [
       "Biometrics",
@@ -1404,64 +1214,13 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Full disk encryption. Full disk encryption would MOST likely prevent stored data from being recovered from a stolen corporate laptop. Even with a simple password and no other security mechanisms, full disk encryption protects all data on the drive by making it unreadable without the encryption key. Biometrics, strong system passwords, and two-factor authentication protect against unauthorized access but don't prevent data recovery if the drive is removed and accessed directly. Only full disk encryption renders the data unrecoverable without proper decryption credentials.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 83,
-    "question": "A large company is selecting a new Windows operating system and needs to ensure it has built-in encryption and endpoint protection. Which of the following Windows versions will MOST likely be selected?",
-    "options": [
-      "Home",
-      "Pro",
-      "Pro for Workstations",
-      "Enterprise"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 84,
-    "question": "A technician is trying to encrypt a single folder on a PC. Which of the following should the technician use to accomplish this task?",
-    "options": [
-      "FAT32",
-      "exFAT",
-      "BitLocker",
-      "EFS"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 85,
-    "question": "A technician needs to establish a remote access session with a user who has a Windows workstation. The session must allow for simultaneous viewing of the workstation by both the user and technician. Which of the following remote access technologies should be used?",
-    "options": [
-      "RDP",
-      "VPN",
-      "SSH",
-      "MSRA"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 86,
+    "id": 73,
     "question": "A user is receiving repeated pop-up advertising messages while browsing the internet. A malware scan is unable to locate the source of an infection. Which of the following should the technician check NEXT?",
     "options": [
       "Windows updates",
@@ -1472,13 +1231,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Browser plug-ins. When a user receives repeated pop-up advertising messages and malware scans can't locate the infection source, the technician should NEXT check browser plug-ins. Malicious browser extensions and plug-ins can inject advertisements and pop-ups without being detected by traditional antivirus software. These plug-ins operate within the browser environment and may not be scanned by standard malware detection tools. Windows updates, DNS settings, and certificate stores don't typically cause advertising pop-ups.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 87,
+    "id": 74,
     "question": "The courts determined that a cybercrimes case could no longer be prosecuted due to the agency’s handling of evidence. Which of the following was MOST likely violated during the investigation?",
     "options": [
       "Open-source software",
@@ -1489,31 +1248,13 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Chain of custody. Chain of custody was MOST likely violated during the cybercrime investigation. When courts determine that a case cannot be prosecuted due to evidence handling issues, it typically means the chain of custody was broken. Chain of custody requires proper documentation of who handled evidence, when, and how it was stored and transferred. Any gaps or improper handling can make evidence inadmissible in court. Open-source software, EULA, and AUP violations don't typically result in evidence being thrown out of court.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 88,
-    "question": "A user reports a virus is on a PC. The user installs additional real-time protection antivirus software, and the PC begins performing extremely slow. Which of the following steps should the technician take to resolve the issue?",
-    "options": [
-      "Uninstall one antivirus software program and install a different one.",
-      "Launch Windows Update, and then download and install OS updates.",
-      "Activate real-time protection on both antivirus software programs.",
-      "Enable the quarantine feature on both antivirus software programs.",
-      "Remove the user-installed antivirus software program."
-    ],
-    "correct": [
-      4
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 89,
+    "id": 75,
     "question": "A technician is concerned about a large increase in the number of whaling attacks happening in the industry. The technician wants to limit the company’s risk to avoid any issues. Which of the following items should the technician implement?",
     "options": [
       "Screened subnet",
@@ -1524,13 +1265,13 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Anti-phishing training. To limit the company's risk from whaling attacks, the technician should implement anti-phishing training. Whaling is a targeted phishing attack that focuses on high-profile individuals like executives and senior management. Since these attacks rely on social engineering rather than technical vulnerabilities, education and training are the most effective countermeasures. Screened subnets, firewalls, and antivirus provide technical security but don't address the human element that whaling attacks exploit.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 90,
+    "id": 76,
     "question": "Which of the following protects a mobile device against unwanted access when it is left unattended?",
     "options": [
       "PIN code",
@@ -1541,13 +1282,13 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) PIN code. A PIN code protects a mobile device against unwanted access when it is left unattended. PIN codes provide screen lock security that prevents unauthorized users from accessing the device's contents and applications. This is the primary defense against physical access to an unattended mobile device. OS updates provide security patches, antivirus software protects against malware, and BYOD policies govern device usage, but none directly prevent unauthorized access to an unattended device like a PIN code does.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 91,
+    "id": 77,
     "question": "A Windows user recently replaced a computer. The user can access the public internet on the computer; however, an internal site at https://companyintranet.com:8888 is no longer loading. Which of the following should a technician adjust to resolve the issue?",
     "options": [
       "Default gateway settings",
@@ -1559,13 +1300,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Firewall settings. The technician should adjust firewall settings to resolve the issue with accessing the internal site at https://companyintranet.com:8888. Since the user can access the public internet but not the internal site on a specific port (8888), the firewall is likely blocking that port or the specific internal traffic. The new computer may have different firewall rules than the previous one. Default gateway, DHCP, and IP address settings wouldn't prevent access to a specific internal site while allowing general internet access.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 92,
+    "id": 78,
     "question": "A company would like to implement multifactor authentication for all employees at a minimal cost. Which of the following best meets the company's requirements?",
     "options": [
       "Biometrics",
@@ -1576,13 +1317,30 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Soft token. A soft token best meets the company's requirements for implementing multifactor authentication for all employees at minimal cost. Soft tokens are software-based authentication applications (like Google Authenticator or Microsoft Authenticator) that can be installed on employees' existing smartphones, eliminating hardware costs. Biometrics require expensive hardware, smart cards need physical cards and readers, and access control lists are not an authentication method but rather authorization controls.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 93,
+    "id": 79,
+    "question": "While trying to repair a Windows 10 OS, a technician receives a prompt asking for a key. The technician tries the administrator password, but it is rejected. Which of the following does the technician need in order to continue the OS repair?",
+    "options": [
+      "SSL key",
+      "Preshared key",
+      "WPA2 key",
+      "Recovery key"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Correct Answer: D) Recovery key. The technician needs a recovery key to continue the Windows 10 OS repair. When BitLocker or other disk encryption is enabled, Windows requires a recovery key during certain repair operations to decrypt the drive and access system files. The administrator password is rejected because disk-level encryption requires the specific recovery key, not user account credentials. SSL keys, preshared keys, and WPA2 keys are used for different security purposes, not OS repair.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 80,
     "question": "A company is experiencing a DDoS attack. Several internal workstations are the source of the traffic. Which of the following types of infections are the workstations most likely experiencing? (Choose two.)",
     "options": [
       "Zombies",
@@ -1596,30 +1354,13 @@
       0,
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: A) Zombies and D) Botnet. When internal workstations are the source of DDoS attack traffic, they are most likely experiencing zombie and botnet infections. Zombies are compromised computers controlled remotely by attackers, and a botnet is a network of these zombie computers working together to launch coordinated attacks like DDoS. Keyloggers capture keystrokes, adware displays advertisements, ransomware encrypts files, and spyware steals information - none of these typically participate in DDoS attacks like zombies in a botnet do.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "security"
   },
   {
-    "id": 94,
-    "question": "A technician needs to transfer a file to a user's workstation. Which of the following would best accomplish this task utilizing the workstation's built-in protocols?",
-    "options": [
-      "VPN",
-      "SMB",
-      "RMM",
-      "MSRA"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 95,
+    "id": 81,
     "question": "When trying to access a secure internal network, the user receives an error messaging stating, \"There is a problem with this website's security certificate.\" The user reboots the desktop and tries to access the website again, but the issue persists. Which of the following should the user do to prevent this error from reoccurring?",
     "options": [
       "Reimage the system and install SSL.",
@@ -1630,13 +1371,13 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Install Trusted Root Certificate. To prevent the security certificate error from reoccurring, the user should install the Trusted Root Certificate. When accessing secure internal networks, the organization often uses self-signed certificates or certificates from internal Certificate Authorities that aren't recognized by default. Installing the trusted root certificate ensures the system recognizes and trusts the internal CA, preventing future certificate warnings. Reimaging the system, manually installing certificates, or continuing to access the website don't address the root cause.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 96,
+    "id": 82,
     "question": "A company recently experienced a security incident in which a USB drive containing malicious software was able to covertly install malware on a workstation. Which of the following actions should be taken to prevent this incident from happening again? (Choose two.)",
     "options": [
       "Install a host-based IDS.",
@@ -1649,13 +1390,13 @@
     "correct": [
       4
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: E) Disable AutoRun. To prevent malicious USB drives from covertly installing malware, the company should disable AutoRun. AutoRun automatically executes programs when removable media is inserted, which is exactly how the malicious USB drive was able to install malware without user interaction. Disabling AutoRun prevents automatic execution of programs from USB drives and other removable media. Host-based IDS, login time restrictions, BIOS passwords, and password complexity don't prevent automatic malware execution from USB devices.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 97,
+    "id": 83,
     "question": "A user's corporate phone was stolen, and the device contains company trade secrets. Which of the following technologies should be implemented to mitigate this risk? (Choose two.)",
     "options": [
       "Remote wipe",
@@ -1669,47 +1410,30 @@
       0,
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: A) Remote wipe and C) Device encryption. These technologies should be implemented to mitigate the risk of stolen corporate phones containing trade secrets. Remote wipe allows administrators to remotely delete all data from the stolen device, preventing unauthorized access to company information. Device encryption ensures that even if the device is compromised, the data remains unreadable without proper decryption keys. Firewalls, remote backup, antivirus, and GPS don't directly protect data on a stolen device like remote wipe and encryption do.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "security"
   },
   {
-    "id": 98,
-    "question": "A technician successfully removed malicious software from an infected computer after running updates and scheduled scans to mitigate future risks. Which of the following should the technician do next?",
+    "id": 84,
+    "question": "An administrator responded to an incident where an employee copied financial data to a portable hard drive and then left the company with the data. The administrator documented the movement of the evidence. Which of the following concepts did the administrator demonstrate?",
     "options": [
-      "Educate the end user on best practices for security.",
-      "Quarantine the host in the antivirus system.",
-      "Investigate how the system was infected with malware.",
-      "Create a system restore point."
+      "Preserving chain of custody",
+      "Implementing data protection policies",
+      "Informing law enforcement",
+      "Creating a summary of the incident"
     ],
     "correct": [
-      3
+      0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Preserving chain of custody. The administrator demonstrated preserving chain of custody by documenting the movement of evidence. Chain of custody is the chronological documentation of evidence handling, including who had possession of the evidence, when transfers occurred, and how the evidence was stored and protected. This documentation is crucial for maintaining evidence integrity and admissibility in legal proceedings. Data protection policies, law enforcement notification, and incident summaries are important but don't specifically relate to evidence handling documentation.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 99,
-    "question": "Users access files in the department share. When a user creates a new subfolder, only that user can access the folder and its files. Which of the following will MOST likely allow all users to access the new folders?",
-    "options": [
-      "Assigning share permissions",
-      "Enabling inheritance",
-      "Requiring multifactor authentication",
-      "Removing archive attribute"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 100,
+    "id": 85,
     "question": "A computer technician is investigating a computer that is not booting. The user reports that the computer was working prior to shutting it down last night. The technician notices a removable USB device is inserted, and the user explains the device is a prize the user received in the mail yesterday. Which of the following types of attacks does this describe?",
     "options": [
       "Phishing",
@@ -1720,13 +1444,13 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Phishing. This describes a phishing attack where the user received a malicious USB device disguised as a prize in the mail. This is a form of physical phishing (sometimes called 'baiting') where attackers send malicious hardware disguised as legitimate items to trick users into connecting them to their systems. The USB device likely contained malware that prevented the computer from booting. Dumpster diving involves searching through trash, tailgating is following someone through secure doors, and evil twin is a rogue wireless access point.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 101,
+    "id": 86,
     "question": "A customer is requesting help with a technical issue. Which of the following techniques should the technician use to properly evaluate and correct the customer concern?",
     "options": [
       "Have a videoconference using the customer’s personal phone so the customer can share the screen.",
@@ -1737,13 +1461,13 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Use open-ended questions to get additional information. When helping customers with technical issues, technicians should use open-ended questions to gather comprehensive information about the problem. Open-ended questions allow customers to provide detailed explanations, helping technicians understand the full context and symptoms. Videoconferencing on personal devices poses security risks, yes/no questions limit information gathering, and asking for passwords violates security protocols and best practices.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 102,
+    "id": 87,
     "question": "A user notices a small USB drive is attached to the user’s computer after a new vendor visited the office. The technician notices two files named grabber.exe and output.txt. Which of the following attacks is most likely occurring?",
     "options": [
       "Trojan",
@@ -1754,13 +1478,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Keylogger. A keylogger attack is most likely occurring based on the files 'grabber.exe' and 'output.txt' found on the USB drive. Keyloggers are designed to capture and record keystrokes, and the file names suggest a program that 'grabs' input data and stores it in an output file. The USB drive was likely planted by the vendor to steal sensitive information like passwords and confidential data. Trojans, rootkits, and cryptominers have different purposes and wouldn't typically create files with these specific names.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 103,
+    "id": 88,
     "question": "Which of the following social engineering tactics is best avoided by shredding sensitive documents?",
     "options": [
       "Dumpster diving",
@@ -1771,13 +1495,30 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Dumpster diving. Shredding sensitive documents best avoids dumpster diving attacks. Dumpster diving involves attackers searching through trash and discarded materials to find sensitive information like passwords, account numbers, or confidential documents. By shredding documents before disposal, organizations prevent attackers from reconstructing and using this information. Phishing uses email/web deception, whaling targets executives, and shoulder surfing involves observing someone's screen or keyboard - none of these are prevented by shredding documents.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 104,
+    "id": 89,
+    "question": "A systems administrator received a request to limit the amount of cellular data a user's Windows 10 tablet can utilize when traveling. Which of the following can the administrator do to best solve the user's issue?",
+    "options": [
+      "Turn on airplane mode.",
+      "Set the connection to be metered.",
+      "Configure the device to use a static IP address.",
+      "Enable the Windows Defender Firewall."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Correct Answer: B) Set the connection to be metered. To limit cellular data usage on a Windows 10 tablet, the administrator should set the connection to be metered. Metered connections in Windows automatically reduce data usage by limiting background app updates, Windows updates, and other data-intensive activities. This helps control data consumption while still allowing essential connectivity. Airplane mode disables all connectivity, static IP addresses don't control data usage, and Windows Defender Firewall doesn't limit data consumption.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 90,
     "question": "Which of the following is used to ensure users have the appropriate level of access to perform their job functions?",
     "options": [
       "Access control list",
@@ -1788,13 +1529,13 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Least privilege. Least privilege is used to ensure users have the appropriate level of access to perform their job functions. This security principle grants users only the minimum permissions necessary to complete their work tasks, reducing the risk of unauthorized access or accidental damage. Access control lists implement permissions, multifactor authentication verifies identity, and mobile device management controls devices, but least privilege specifically addresses appropriate access levels for job functions.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 105,
+    "id": 91,
     "question": "A company implemented a BYOD policy and would like to reduce data disclosure caused by malware that may infect these devices. Which of the following should the company deploy to address these concerns?",
     "options": [
       "UAC",
@@ -1805,13 +1546,13 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) MDM. Mobile Device Management (MDM) should be deployed to reduce data disclosure caused by malware on BYOD devices. MDM solutions provide centralized control over mobile devices, including the ability to enforce security policies, remotely wipe devices, control app installations, and monitor for malware. This helps protect corporate data even when employees use personal devices. UAC controls user permissions on Windows, LDAP provides directory services, and SSO manages authentication, but none specifically address BYOD malware concerns like MDM does.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 106,
+    "id": 92,
     "question": "Which of the following would allow physical access to a restricted area while maintaining a record of events?",
     "options": [
       "Hard token",
@@ -1822,47 +1563,30 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Key fob. A key fob would allow physical access to a restricted area while maintaining a record of events. Key fobs contain unique identifiers that are logged when used to access secure areas, creating an audit trail of who accessed what areas and when. This provides both access control and accountability. Hard tokens are for authentication, access control vestibules provide dual-door security, and door locks don't typically maintain detailed access records like key fob systems do.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 107,
-    "question": "Windows updates need to be performed on a department's servers. Which of the following methods should be used to connect to the server?",
+    "id": 93,
+    "question": "Maintaining the chain of custody is an important part of the incident response process. Which of the following reasons explains why this is important?",
     "options": [
-      "FTP",
-      "MSRA",
-      "RDP",
-      "VPN"
+      "To maintain an information security policy",
+      "To properly identify the issue",
+      "To control evidence and maintain integrity",
+      "To gather as much information as possible"
     ],
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) To control evidence and maintain integrity. Maintaining chain of custody is important in incident response to control evidence and maintain integrity. Chain of custody ensures that evidence remains uncontaminated and legally admissible by documenting every person who handled the evidence, when transfers occurred, and how the evidence was stored. This documentation proves the evidence hasn't been tampered with or compromised. Information security policies, issue identification, and information gathering are important but don't specifically relate to evidence integrity.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 108,
-    "question": "A technician receives an invalid certificate error when visiting a website. Other workstations on the same local network are unable to replicate this issue. Which of the following is most likely causing the issue?",
-    "options": [
-      "Date and time",
-      "User access control",
-      "UEFI boot mode",
-      "Log-on times"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 109,
+    "id": 94,
     "question": "Which of the following types of malicious software is most likely to demand payments in cryptocurrency?",
     "options": [
       "Ransomware",
@@ -1873,13 +1597,30 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Ransomware. Ransomware is the type of malicious software most likely to demand payments in cryptocurrency. Ransomware encrypts victims' files and demands payment (typically in Bitcoin or other cryptocurrencies) in exchange for the decryption key. Cryptocurrency payments are preferred by attackers because they're difficult to trace and reverse. Keyloggers steal information, cryptomining uses system resources to mine cryptocurrency, and rootkits hide malware presence, but none typically demand cryptocurrency payments like ransomware does.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 110,
+    "id": 95,
+    "question": "A technician is setting up a new laptop. The company's security policy states that users cannot install virtual machines. Which of the following should the technician implement to prevent users from enabling virtual technology on their laptops?",
+    "options": [
+      "UEFI password",
+      "Secure boot",
+      "Account lockout",
+      "Disable network drivers"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Correct Answer: A) UEFI password. To prevent users from enabling virtual technology on laptops, the technician should implement a UEFI password. Virtualization features are typically controlled at the BIOS/UEFI level, and setting a UEFI password prevents users from accessing these settings to enable virtualization capabilities. This effectively blocks virtual machine installation by restricting access to the underlying virtualization hardware features. Secure boot prevents unauthorized OS loading, account lockout handles failed logins, and disabling network drivers doesn't affect virtualization capabilities.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 96,
     "question": "Which of the following involves sending arbitrary characters in a web page request?",
     "options": [
       "SMS",
@@ -1890,13 +1631,13 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) XSS. Cross-Site Scripting (XSS) involves sending arbitrary characters in a web page request. XSS attacks inject malicious scripts into web applications by sending specially crafted input that includes script code or arbitrary characters that get executed by the victim's browser. These attacks exploit insufficient input validation on web applications. SMS is text messaging, SSL is encryption protocol, and VPN is virtual private networking - none involve sending arbitrary characters in web requests like XSS attacks do.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 111,
+    "id": 97,
     "question": "An office is experiencing constant connection attempts to the corporate Wi-Fi. Which of the following should be disabled to mitigate connection attempts?",
     "options": [
       "SSID",
@@ -1907,47 +1648,30 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) SSID. To mitigate constant connection attempts to corporate Wi-Fi, the SSID broadcast should be disabled. When SSID broadcasting is disabled, the wireless network name isn't visible to casual users, reducing unauthorized connection attempts. While this isn't foolproof security (the SSID can still be discovered), it does reduce casual connection attempts and makes the network less obvious to potential attackers. DHCP provides IP addresses, firewalls control traffic, and SSD is storage technology - none directly affect Wi-Fi visibility.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 112,
-    "question": "A technician is unable to access the internet or named network resources. The technician receives a valid IP address from the DHCP server and can ping the default gateway. Which of the following should the technician check next to resolve the issue?",
+    "id": 98,
+    "question": "A customer is accessing a public kiosk in a company’s lobby. Which of the following should be enforced to mitigate the risk of customer data being accidentally saved to the kiosk?",
     "options": [
-      "Verify the DNS server settings",
-      "Turn off the Windows firewall",
-      "Confirm the subnet mask is correct",
-      "Configure a static IP address"
+      "Manually clearing browsing data",
+      "Private-browsing mode",
+      "Browser data synchronization",
+      "Password manager"
     ],
     "correct": [
-      0
+      1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Private-browsing mode. Private-browsing mode should be enforced on public kiosks to mitigate the risk of customer data being accidentally saved. Private browsing prevents the browser from storing browsing history, cookies, form data, passwords, and other personal information locally on the kiosk. This ensures customer data doesn't persist after their session ends. Manual clearing requires user action, browser synchronization would save data to cloud accounts, and password managers would store credentials - all inappropriate for public kiosks.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 113,
-    "question": "A user's iPhone was permanently locked after several failed log-in attempts. Which of the following authentication methods are needed to restore access, applications, and data to the device?",
-    "options": [
-      "Fingerprint and pattern",
-      "Facial recognition and PIN code",
-      "Primary account and password",
-      "Recovery contact and recovery key"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 114,
+    "id": 99,
     "question": "A company-owned mobile device is displaying a high number of ads, receiving data-usage limit notifications, and experiencing slow response. After checking the device, a technician notices the device has been jailbroken. Which of the following should the technician do next?",
     "options": [
       "Run an antivirus and enable encryption",
@@ -1958,13 +1682,13 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Restore the defaults and reimage the corporate OS. When a company-owned mobile device has been jailbroken and shows signs of malware (high ads, data usage, slow response), the technician should restore defaults and reimage the corporate OS. Jailbreaking removes security restrictions and often introduces malware, compromising the device's integrity. Complete restoration ensures all malicious software is removed and corporate security policies are restored. Running antivirus on a compromised jailbroken device, backing up potentially infected files, or simply undoing the jailbreak don't adequately address the security compromise.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 115,
+    "id": 100,
     "question": "A remote user is experiencing issues with Outlook settings and asks a technician to review the settings. Which of the following can the technician use to access the user's computer remotely?",
     "options": [
       "VPN",
@@ -1975,50 +1699,30 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) RDP. Remote Desktop Protocol (RDP) can be used by the technician to access the user's computer remotely to review Outlook settings. RDP provides full desktop access, allowing the technician to see and control the user's computer as if sitting directly at it. This enables direct troubleshooting of Outlook configuration issues. VPN provides network connectivity but not desktop access, RMM is for monitoring and management, and SSH is primarily for command-line access to servers - none provide the graphical desktop access needed for Outlook troubleshooting like RDP does.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 116,
-    "question": "Which of the following Windows 10 editions is the most appropriate for a single user who wants to encrypt a hard drive with BitLocker?",
+    "id": 101,
+    "question": "Which of the following helps ensure that a piece of evidence extracted from a PC is admissible in a court of law?",
     "options": [
-      "Professional",
-      "Home",
-      "Enterprise",
-      "Embedded"
+      "Data integrity form",
+      "Valid operating system license",
+      "Documentation of an incident",
+      "Chain of custody."
     ],
     "correct": [
-      0
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 117,
-    "question": "A user connected a smartphone to a coffee shop's public Wi-Fi and noticed the smartphone started sending unusual SMS messages and registering strange network activity. A technician thinks a virus or other malware has infected the device. Which of the following should the technician suggest the user do to best address these security and privacy concerns? (Choose two.)",
-    "options": [
-      "Disable Wi-Fi autoconnect.",
-      "Stay offline when in public places.",
-      "Uninstall all recently installed applications.",
-      "Schedule an antivirus scan.",
-      "Reboot the device.",
-      "Update the OS."
-    ],
-    "correct": [
-      0,
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Chain of custody. Chain of custody helps ensure that evidence extracted from a PC is admissible in court. Chain of custody is the chronological documentation that records the seizure, custody, control, transfer, analysis, and disposition of evidence. This documentation proves that evidence has been properly handled, hasn't been tampered with, and maintains its integrity throughout the investigation process. Data integrity forms, OS licenses, and incident documentation are important but don't specifically ensure legal admissibility like chain of custody does.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "multiple",
+    "type": "single",
     "topic": "security"
   },
   {
-    "id": 118,
+    "id": 102,
     "question": "In an organization with a standardized set of installed software, a developer submits a request to have new software installed. The company does not currently have a license for this software, but the developer already downloaded the installation file and is requesting that the technician install it. The developer states that the management team approved the business use of this software. Which of the following is the best action for the technician to take?",
     "options": [
       "Contact the software vendor to obtain the license for the user, and assist the user with installation once the license is purchased.",
@@ -2029,13 +1733,13 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Indicate to the developer that formal approval is needed; then, the IT team should investigate the software and the impact it will have on the organization before installing the software. When a developer requests new software installation without a company license, the technician should indicate that formal approval is needed. The IT team should then investigate the software's impact on the organization, including security, compatibility, and licensing requirements. This ensures the software aligns with company policies and doesn't introduce security risks. Contacting the vendor for a license, scanning for malware, or installing and scanning the system are not sufficient without proper approval and investigation.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 119,
+    "id": 103,
     "question": "Which of the following combinations meets the requirements for mobile device multifactor authentication?",
     "options": [
       "Password and PIN",
@@ -2046,30 +1750,13 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Fingerprint and password. Multifactor authentication (MFA) requires at least two different authentication factors. For mobile devices, combining a fingerprint (something you are) with a password (something you know) meets MFA requirements. This combination strengthens security by requiring both physical and knowledge-based authentication. Password and PIN, password and swipe, and swipe and PIN combinations do not meet MFA requirements as they either use the same factor type or are not secure enough.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 120,
-    "question": "A remote user's smartphone is performing very slowly. The user notices that the performance improves slightly after rebooting but then reverts back to performing slowly. The user also notices that the phone does not get any faster after connecting to the company's corporate guest network. A technician sees that the phone has a large number of applications installed on it. Which of the following is the most likely cause of the issue?",
-    "options": [
-      "The user is in a poor signal area.",
-      "The user has too many processes running.",
-      "The smartphone has malware on it.",
-      "The smartphone has been jailbroken."
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 121,
+    "id": 104,
     "question": "After a security event, a technician removes malware from an affected laptop and disconnects the laptop from the network. Which of the following should the technician do to prevent the operating system from automatically returning to an infected state?",
     "options": [
       "Enable System Restore.",
@@ -2081,13 +1768,13 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Disable System Restore. After removing malware and disconnecting a laptop from the network, the technician should disable System Restore to prevent the operating system from automatically returning to an infected state. System Restore can potentially restore malware if the restore point was created while the malware was present. Disabling System Restore ensures the system remains in a clean state. Enabling System Restore, enabling or disabling antivirus, and educating the user do not directly address the risk of restoring malware through System Restore.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 122,
+    "id": 105,
     "question": "An employee has repeatedly contacted a technician about malware infecting a work computer. The technician has removed the malware several times, but the user's PC keeps getting infected. Which of the following should the technician do to reduce the risk of future infections?",
     "options": [
       "Configure the firewall",
@@ -2098,13 +1785,13 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Educate the end user. When a user's PC is repeatedly infected with malware, the technician should educate the end user to reduce the risk of future infections. User education is key in preventing malware infections, as it teaches users how to identify and avoid phishing attempts, suspicious downloads, and other common infection vectors. Configuring the firewall, restoring from backups, and updating antivirus software are important but do not address the root cause of repeated infections, which is often user behavior.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 123,
+    "id": 106,
     "question": "A user receives a call from someone claiming to be a technical support agent. The caller asks the user to log in to the computer. Which of the following security measures should the user take to ensure security and privacy?",
     "options": [
       "Only accept calls from known people.",
@@ -2116,13 +1803,13 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Only accept calls from known people. When a user receives a call from an unknown person claiming to be a technical support agent, the user should only accept calls from known people to ensure security and privacy. This is because unsolicited calls from unknown individuals can be phishing attempts or social engineering tactics. Disregarding suspicious emails, updating antivirus software, enabling two-factor authentication, and installing a malware scanner are all good security practices but do not directly address the risk of the current call.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 124,
+    "id": 107,
     "question": "A user reports that an air-gapped computer may have been infected with a virus after the user transferred files from a USB drive. The technician runs a computer scan with Windows Defender but does not find an infection. Which of the following actions should the technician take next? (Choose two.)",
     "options": [
       "Examine the event logs",
@@ -2136,47 +1823,13 @@
       0,
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: A) Examine the event logs and C) Document the findings. When Windows Defender doesn't find an infection on an air-gapped computer suspected of virus infection, the technician should examine event logs and document findings. Event logs may reveal suspicious activities, system changes, or malware traces that the antivirus missed. Documentation is crucial for incident response and future reference. Connecting to the network compromises air-gap security, updating definitions requires network access, reimaging is premature without evidence, and enabling firewall doesn't help with detection.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "security"
   },
   {
-    "id": 125,
-    "question": "A technician has verified a computer is infected with malware. The technician isolates the system and updates the anti-malware software. Which of the following should the technician do next?",
-    "options": [
-      "Run one scan and schedule future scans.",
-      "Back up the uninfected files and reimage the computer.",
-      "Restore the clean backup copies of the infected files.",
-      "Run repeated remediation scans until the malware is removed."
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 126,
-    "question": "A technician needs to configure security settings on a Windows 10 workstation. Which of the following should the technician configure to limit password attempts?",
-    "options": [
-      "Account Lockout Policy",
-      "User Access Control",
-      "System Protection",
-      "Firewall"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 127,
+    "id": 108,
     "question": "Multiple users routinely record log-in information in readily accessible areas. Which of the following is the best way to mitigate this issue?",
     "options": [
       "Trusted sources",
@@ -2187,13 +1840,13 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) User training. User training is the best way to mitigate the issue of multiple users recording login information in readily accessible areas. This security problem stems from poor user awareness and practices. Training users about password security, the risks of writing down credentials, and proper password management techniques addresses the root cause. Trusted sources, valid certificates, and password managers are security tools, but they don't directly address the behavioral issue of users writing down login information where others can access it.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 128,
+    "id": 109,
     "question": "A technician is hardening a company file server and needs to prevent unauthorized LAN devices from accessing stored files. Which of the following should the technician use?",
     "options": [
       "Software firewall",
@@ -2204,13 +1857,13 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Software firewall. To prevent unauthorized LAN devices from accessing stored files on a company file server, the technician should use a software firewall. A software firewall can control which devices and services can access the server by filtering network traffic based on IP addresses, ports, and protocols. This provides granular access control to protect stored files from unauthorized network access. Password complexity affects authentication strength, antivirus prevents malware, and anti-malware scans detect threats, but none directly control network access like a firewall does.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 129,
+    "id": 110,
     "question": "Which of the following is an example of MFA?",
     "options": [
       "Fingerprint scan and retina scan",
@@ -2221,64 +1874,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Smart card and password. Smart card and password is an example of MFA (Multi-Factor Authentication). MFA requires at least two different authentication factors: something you know (password), something you have (smart card), or something you are (biometric). A smart card represents 'something you have' and a password represents 'something you know', making this a true MFA combination. Fingerprint and retina scans are both biometric (same factor), password and PIN are both knowledge factors, and username and password are standard single-factor authentication.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 130,
-    "question": "A technician wants to enable BitLocker on a Windows 10 laptop and is unable to find the BitLocker Drive Encryption menu item in Control Panel. Which of the following explains why the technician is unable to find this menu item?",
-    "options": [
-      "The hardware does not meet BitLocker’s minimum system requirements.",
-      "BitLocker was renamed for Windows 10.",
-      "BitLocker is not included on Windows 10 Home.",
-      "BitLocker was disabled in the registry of the laptop."
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 131,
-    "question": "A user’s laptop has been performing slowly and redirecting to unfamiliar websites. The user has also noticed random pop-up windows. Which of the following is the first step a technician should take to resolve the issue?",
-    "options": [
-      "Scan for malware and ransomware.",
-      "Perform a system restore.",
-      "Check the network utilization.",
-      "Update the antivirus software."
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 132,
-    "question": "A user reports being unable to access a sports team’s website on an office computer. The administrator tells the user this blocked access is intentional and based on company guidelines. Which of the following is the administrator referring to?",
-    "options": [
-      "NDA",
-      "AUP",
-      "VPN",
-      "SOP"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 133,
+    "id": 111,
     "question": "Which of the following authentication types is the most secure?",
     "options": [
       "WPA3",
@@ -2290,30 +1892,13 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) WPA3. WPA3 is the most secure authentication type among the options provided. WPA3 is the latest Wi-Fi security protocol that provides enhanced encryption and protection against various attacks. WEP is outdated and easily compromised, RADIUS and TACACS+ are authentication protocols but not wireless security standards, and WPS has known security vulnerabilities. WPA3 offers the strongest security for wireless networks with improved encryption algorithms and protection against brute-force attacks.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 134,
-    "question": "A technician wants to update the local security policies on a Windows machine but is unable to launch the expected snap-in. Which of the following is the most likely reason?",
-    "options": [
-      "The computer is running Windows Home.",
-      "The user did not sign the end user license agreement.",
-      "The user disabled the User Account Control.",
-      "An antivirus application is blocking access."
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 135,
+    "id": 112,
     "question": "When visiting a particular website, a user receives a message stating, “Your connection is not private”. Which of the following describes this issue?",
     "options": [
       "Certificate warning",
@@ -2324,13 +1909,13 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Certificate warning. When visiting a website and receiving the message 'Your connection is not private', this describes a certificate warning. This warning appears when there's an issue with the website's SSL/TLS certificate, such as an expired, self-signed, or invalid certificate. The browser cannot verify the website's identity, so it warns users about the potential security risk. Malware, JavaScript errors, and missing OS updates don't typically generate this specific privacy warning message.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 136,
+    "id": 113,
     "question": "A company is creating an access control system that uses something you have and something you are. Which of the following will be required for user authentication? (Choose two.)",
     "options": [
       "Password manager",
@@ -2344,30 +1929,13 @@
       2,
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: C) Biometric scanner and D) Smartcard reader. For an access control system using 'something you have' and 'something you are', a biometric scanner and smartcard reader will be required. The biometric scanner captures 'something you are' (fingerprint, retina, etc.), while the smartcard reader processes 'something you have' (the physical smartcard). Password managers, encryption keys, host-based IDS, and PIN codes don't fit the specific 'have' and 'are' authentication factor requirements described in the question.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "security"
   },
   {
-    "id": 137,
-    "question": "An administrator configured security features on company-owned mobile devices to help protect against data loss. Which of the following is the best way to protect data on a misplaced device?",
-    "options": [
-      "Remote wipe",
-      "Device encryption",
-      "PIN codes",
-      "Locator applications"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 138,
+    "id": 114,
     "question": "A technician needs to strengthen security controls against brute-force attacks. Which of the following options best meets this requirement?",
     "options": [
       "Multifactor authentication",
@@ -2378,13 +1946,13 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Increased password complexity. To strengthen security controls against brute-force attacks, increased password complexity best meets this requirement. Complex passwords with longer lengths, mixed character types, and unpredictable patterns make brute-force attacks exponentially more difficult and time-consuming. While multifactor authentication, encryption, and secure password vaults are valuable security measures, increased password complexity directly addresses the core weakness that brute-force attacks exploit - predictable or simple passwords.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 139,
+    "id": 115,
     "question": "When a user attempts to open an email using a company-issued smartphone, the user receives a message stating the email is encrypted and cannot be opened. The user forwards the email to a personal account and receives the same message. The user then contacts the IT department for assistance. The technician instructs the user to contact the sender to exchange information in order to decode the message. Which of the following will the user receive from the sender?",
     "options": [
       "Keys",
@@ -2395,13 +1963,13 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Keys. When a user receives an encrypted email that cannot be opened, the user will receive keys from the sender to decode the message. In email encryption systems, cryptographic keys are used to encrypt and decrypt messages. The sender must provide the appropriate decryption key (or public key in asymmetric encryption) to allow the recipient to decode the encrypted email. Tokens, passwords, and Root CA certificates serve different purposes and wouldn't directly enable email decryption like cryptographic keys do.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 140,
+    "id": 116,
     "question": "A user's work PC has been the target of multiple phishing attacks. Which of the following is a way for the user to prevent further attacks?",
     "options": [
       "Enabling Windows Firewall",
@@ -2412,50 +1980,13 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Activating the email spam filter. To prevent further phishing attacks on a user's work PC, activating the email spam filter is the most effective solution. Spam filters can identify and block phishing emails before they reach the user's inbox, preventing exposure to malicious links and attachments. While Windows Firewall, VPN connections, and vulnerability scans provide security benefits, they don't specifically target the email-based phishing attack vector like spam filtering does.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 141,
-    "question": "A company recently experienced a security incident in which a USB drive containing malicious software was able to covertly install malware on a workstation. Which of the following actions should be taken to prevent this incident from happening again? (Choose two.)",
-    "options": [
-      "Install a host-based IDS.",
-      "Restrict log-ln times.",
-      "Enable a BIOS password.",
-      "Update the password complexity.",
-      "Disable AutoRun.",
-      "Restrict user permissions."
-    ],
-    "correct": [
-      4,
-      5
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "multiple",
-    "topic": "security"
-  },
-  {
-    "id": 142,
-    "question": "A user reports that a new, personally owned tablet will not connect to the corporate Wi-Fi network. The user is able to connect to the Wi-Fi network with other devices, and the tablet is running the latest software. Which of the following is the most likely cause of the issue?",
-    "options": [
-      "Incorrect encryption settings",
-      "Blocked MAC address",
-      "Outdated drivers",
-      "Disabled location services"
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 143,
+    "id": 117,
     "question": "A technician is troubleshooting a PC because the user has reported strange pop-up windows and computer performance issues. Which of the following actions should the technician take next?",
     "options": [
       "Isolate the machine from the network.",
@@ -2467,13 +1998,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Install antivirus software. When troubleshooting a PC with strange pop-up windows and performance issues, the technician should install antivirus software as the next action. These symptoms strongly suggest malware infection, and antivirus software can detect, quarantine, and remove malicious programs causing the pop-ups and performance degradation. Isolating the machine, scanning for hidden files, disabling ports, and reconfiguring firewalls may be subsequent steps, but installing antivirus addresses the immediate malware threat.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 144,
+    "id": 118,
     "question": "A technician has been unable to remediate a persistent malware infection on a user's workstation. After the technician reinstalled the OS, the malware infection returned later that day. Which of the following is the most likely source?",
     "options": [
       "Trojan",
@@ -2484,30 +2015,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Rootkit. A rootkit is the most likely source when malware infection returns after OS reinstallation. Rootkits are sophisticated malware that can hide deep within system firmware, BIOS, or boot sectors, surviving operating system reinstallation. They can reinstall themselves when the system restarts, making them extremely persistent. Trojans, boot sector viruses, and spyware are typically removed by OS reinstallation, but rootkits can persist at a lower system level and reinfect the newly installed operating system.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 145,
-    "question": "A company using Active Directory wants to change the location of all users' \"Documents\" to a file server on the network. Which of the following should the company set up to accomplish this task?",
-    "options": [
-      "Security groups",
-      "Folder redirection",
-      "Organizational unit structure",
-      "Access control list"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 146,
+    "id": 119,
     "question": "Which of the following authentication methods should be used for BYOD wireless devices?",
     "options": [
       "Local certificates",
@@ -2518,33 +2032,13 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) RADIUS. RADIUS (Remote Authentication Dial-In User Service) should be used for BYOD wireless device authentication. RADIUS provides centralized authentication, authorization, and accounting for network access, making it ideal for managing diverse BYOD devices. It can integrate with existing directory services and enforce consistent security policies across different device types. Local certificates are device-specific, TACACS+ is primarily for network device management, and captive portals provide basic web-based authentication but lack the robust features needed for enterprise BYOD environments.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 147,
-    "question": "A user recently downloaded a free game application on an Android device. The device then began crashing frequently and quickly losing its battery charge. Which of the following should the technician recommend be done first to remediate these issues? (Choose two.)",
-    "options": [
-      "Uninstall the game application.",
-      "Perform a factory reset of the device.",
-      "Connect the device to an external charger.",
-      "Install the latest security patches.",
-      "Clear the application's cache.",
-      "Enable the device's built-in anti-malware protection."
-    ],
-    "correct": [
-      0,
-      3
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "multiple",
-    "topic": "security"
-  },
-  {
-    "id": 148,
+    "id": 120,
     "question": "Which of the following is used to prevent automobiles from crashing into a building?",
     "options": [
       "Cameras",
@@ -2555,13 +2049,13 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Bollard. A bollard is used to prevent automobiles from crashing into a building. Bollards are sturdy, short vertical posts designed to control or limit vehicle access to specific areas. They serve as physical barriers that can stop vehicles from entering pedestrian areas or crashing into buildings, providing protection against both accidental collisions and intentional vehicle-ramming attacks. Cameras provide surveillance, lighting improves visibility, and biometrics control access, but none physically prevent vehicle impacts like bollards do.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 149,
+    "id": 121,
     "question": "A user wants to acquire antivirus software for a SOHO PC. A technician recommends a licensed software product, but the user does not want to pay for a license. Which of the following license types should the technician recommend?",
     "options": [
       "Corporate",
@@ -2572,13 +2066,13 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Open-source. When a user doesn't want to pay for antivirus software, the technician should recommend open-source license types. Open-source antivirus solutions are freely available and can provide effective protection without licensing costs. These solutions are community-developed and maintained, offering legitimate alternatives to commercial products. Corporate and enterprise licenses are expensive business solutions, while personal licenses still require payment, making open-source the best option for cost-conscious users.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 150,
+    "id": 122,
     "question": "Which of the following describes a concept that requires using a combination of an ID, a password, and a biometric?",
     "options": [
       "Types of security",
@@ -2589,13 +2083,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Multifactor authentication. Multifactor authentication describes a concept that requires using a combination of an ID, a password, and a biometric. MFA combines multiple authentication factors: something you know (ID/password), something you have (token/card), and something you are (biometric). This three-factor approach provides the highest level of security by requiring multiple forms of verification. Types of security, access control, and principle of least privilege are security concepts but don't specifically describe the multi-factor authentication process.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 151,
+    "id": 123,
     "question": "A SOHO wireless router needs to be configured so incoming traffic is only allowed on specified ports. Which of the following is the best way for the technician to accomplish this task?",
     "options": [
       "Physically secure access to the router.",
@@ -2606,13 +2100,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Disable Universal Plug and Play. To configure a SOHO wireless router so incoming traffic is only allowed on specified ports, the technician should disable Universal Plug and Play (UPnP). UPnP automatically opens ports for devices and applications, which can create security vulnerabilities by allowing unauthorized incoming traffic. Disabling UPnP ensures that only manually configured ports remain open, giving administrators control over which ports accept incoming traffic. Physical security, AES encryption, and firmware updates are important but don't specifically control port access like disabling UPnP does.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 152,
+    "id": 124,
     "question": "A company is requiring its staff to work remotely and needs to ensure remote access to servers and fileshares is secure. Which of the following should the company implement? (Choose two.)",
     "options": [
       "RDP",
@@ -2626,13 +2120,13 @@
       1,
       5
     ],
-    "explanation": "",
+    "explanation": "Correct Answers: B) VPN and F) HTTPS. For secure remote access to servers and fileshares, the company should implement VPN and HTTPS. VPN creates an encrypted tunnel for secure remote connectivity, protecting data transmission over public networks. HTTPS provides encrypted web-based access to resources and applications. RDP provides remote desktop access but isn't inherently secure without additional protection, FTP transmits data in plaintext, VLAN provides network segmentation, Telnet is unencrypted, and DHCP assigns IP addresses - none provide the comprehensive secure remote access like VPN and HTTPS do.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "security"
   },
   {
-    "id": 153,
+    "id": 125,
     "question": "An administrator received a new shipment of mobile devices. Per company policy, all enterprise-issued devices must have two authentication methods, and the organization has already enforced the use of PIN codes as one method. Which of the following device features should the administrator enable?",
     "options": [
       "Smart card",
@@ -2643,64 +2137,13 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Biometrics. Since the organization already enforces PIN codes as one authentication method, the administrator should enable biometrics as the second authentication method. Biometrics (fingerprint, facial recognition, etc.) combined with PIN codes provides true multifactor authentication by combining 'something you know' (PIN) with 'something you are' (biometric). Smart cards and hard tokens require additional hardware, while one-time passwords are typically software-based and may not be available on all mobile devices.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 154,
-    "question": "A user’s antivirus software reports an infection that it is unable to remove. Which of the following is the most appropriate way to remediate the issue?",
-    "options": [
-      "Disable System Restore.",
-      "Utilize a Linux live disc.",
-      "Quarantine the infected system.",
-      "Update the anti-malware."
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 155,
-    "question": "A user clicked on a link in an email and was redirected to a web page. Now, some commonly used websites are not accessible. A technician confirms that other users are not experiencing the same issue. Which of the following steps should the technician take next to properly identify the issue?",
-    "options": [
-      "Check the hosts file.",
-      "Review the laptop’s IP settings",
-      "Enable the Windows Firewall.",
-      "Verify if the wireless router is functioning."
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 156,
-    "question": "A technician is implementing the latest application security updates for endpoints on an enterprise network. Which of the following solutions should the technician use to ensure device security on the network while adhering to industry best practices?",
-    "options": [
-      "Automate the patching process",
-      "Monitor the firewall configuration,",
-      "Implement access control lists.",
-      "Document all changes."
-    ],
-    "correct": [
-      0
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 157,
+    "id": 126,
     "question": "A customer needs to verify an executable file that the customer downloaded from a website. Which of the following should the customer use to verify the file?",
     "options": [
       "Password manager",
@@ -2712,30 +2155,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Checksum. To verify an executable file downloaded from a website, the customer should use a checksum. Checksums are cryptographic hash values that verify file integrity by comparing the calculated hash of the downloaded file with the original hash provided by the website. If the checksums match, the file hasn't been corrupted or tampered with during download. Password managers store credentials, BitLocker and File Vault provide encryption, and secure sites provide HTTPS protection, but none verify file integrity like checksums do.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 158,
-    "question": "A technician is troubleshooting a user's PC that is running slowly and displaying frequent pop-ups. The technician thinks malware may be causing the issues, but before the issues began the user installed anti-malware software in response to a pop-up window. Which of the following is the most likely cause of these issues?",
-    "options": [
-      "Expired certificate",
-      "False alert",
-      "Missing system files",
-      "OS update failure"
-    ],
-    "correct": [
-      1
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 159,
+    "id": 127,
     "question": "Which of the following is used to generate passcodes necessary to access applications or systems that require an extra layer of security?",
     "options": [
       "Authenticator application",
@@ -2746,13 +2172,13 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Authenticator application. An authenticator application is used to generate passcodes necessary to access applications or systems that require an extra layer of security. These apps generate time-based one-time passwords (TOTP) or HMAC-based one-time passwords (HOTP) that change regularly, providing dynamic authentication codes for multifactor authentication. Access control lists manage permissions, biometrics capture physical characteristics, and smart card readers process cards, but none generate the dynamic passcodes needed for time-sensitive authentication like authenticator applications do.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 160,
+    "id": 128,
     "question": "A customer wants to make sure the data is protected and secure on a Windows laptop's hard drive. Which of the following is the best solution?",
     "options": [
       "Windows Backup",
@@ -2763,13 +2189,13 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) BitLocker. To protect and secure data on a Windows laptop's hard drive, BitLocker is the best solution. BitLocker provides full disk encryption, protecting all data stored on the hard drive from unauthorized access if the laptop is lost or stolen. Even if someone removes the hard drive, the encrypted data remains unreadable without the proper decryption key. Windows Backup creates copies of data, Shadow Copy provides file versioning, and TPM provides hardware security, but none provide comprehensive data protection like BitLocker's full disk encryption.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 161,
+    "id": 129,
     "question": "Employees at comptia.org are reporting getting a usual amount of emails from a coworker. A technician discovers the emails were sent from the following address: john@cOmptia.org. Which of the following social engineering attacks is this an example of?",
     "options": [
       "Whaling",
@@ -2781,47 +2207,13 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Phishing. The emails sent from 'john@cOmptia.org' (with a capital O instead of lowercase o) represent a phishing attack. This is a classic example of domain spoofing or typosquatting, where attackers use similar-looking domain names to deceive recipients into thinking the emails are legitimate. The subtle character substitution (O for o) is designed to bypass casual inspection while appearing authentic. Whaling targets executives, insider threats come from within the organization, vishing uses voice calls, and evil twin involves rogue wireless access points.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 162,
-    "question": "A web server is configured to only allow secure connections. Which of the following will a user most likely use to connect to the web server?",
-    "options": [
-      "TFTP",
-      "HTTP",
-      "FTP",
-      "TLS"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 163,
-    "question": "Which of the following allows users to access connected system features through account federation?",
-    "options": [
-      "MFA",
-      "NAC",
-      "SSO",
-      "UAC"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 164,
+    "id": 130,
     "question": "A company was recently attacked by ransomware. The IT department has remediated the threat and determined that the attack method used was email. Which of the following the most effective way to prevent this issue from reoccurring?",
     "options": [
       "Spam filtering",
@@ -2832,50 +2224,30 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) End user education. After a ransomware attack via email, end user education is the most effective way to prevent reoccurrence. Since the attack method was email, educating users about recognizing phishing emails, suspicious attachments, and social engineering tactics directly addresses the root cause. While spam filtering, malware prevention software, and firewall inspection are valuable technical controls, they can be bypassed, making user awareness and education the most critical defense against email-based ransomware attacks.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 165,
-    "question": "Remote employees need access to information that is hosted on local servers at the company. The IT department needs to find a solution that gives employees secure access to the company's resources as if the employees were on premises. Which of the following remote connection services should the IT team implement?",
+    "id": 131,
+    "question": "Which of the following ensures data is unrecoverable on a lost or stolen mobile device?",
     "options": [
-      "SSH",
-      "VNC",
-      "VPN",
-      "RDP"
+      "Device encryption",
+      "Remote wipe Most Voted",
+      "Data backup",
+      "Fingerprint reader"
     ],
     "correct": [
-      2
+      0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Device encryption. Device encryption ensures data is unrecoverable on a lost or stolen mobile device. When a device is encrypted, all data stored on it becomes unreadable without the proper decryption key, making it virtually impossible for unauthorized users to access sensitive information even if they physically possess the device. Remote wipe can delete data but requires network connectivity, data backup creates copies elsewhere, and fingerprint readers provide access control but don't protect data if the device is compromised at a hardware level.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 166,
-    "question": "A technician is upgrading the Microsoft Windows 10 OS. Which of the following are required for the technician to safely upgrade the OS? (Choose two.)",
-    "options": [
-      "Release notes",
-      "Antivirus software",
-      "Backup of critical data",
-      "Device drivers",
-      "Word processing software",
-      "Safe boot mode"
-    ],
-    "correct": [
-      2,
-      3
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "multiple",
-    "topic": "security"
-  },
-  {
-    "id": 167,
+    "id": 132,
     "question": "An employee has been using the same password for multiple applications and websites for the past several years. Which of the following would be best to prevent security issues?",
     "options": [
       "Configuring firewall settings",
@@ -2886,13 +2258,13 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) Implementing expiration policies. To prevent security issues from an employee using the same password for multiple applications and websites for years, implementing expiration policies is the best solution. Password expiration forces users to change passwords regularly, reducing the risk of compromised credentials being used indefinitely. This breaks the pattern of password reuse and ensures that even if a password is compromised, its useful lifetime is limited. Firewall settings, complexity requirements, and antivirus updates don't address the core issue of password reuse and staleness.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 168,
+    "id": 133,
     "question": "A technician is deploying a new Wi-Fi solution for the office and wants to ensure users can log in to the Wi-Fi with their existing network log-in and password. Which of the following methods should the technician use?",
     "options": [
       "AES",
@@ -2903,13 +2275,13 @@
     "correct": [
       1
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: B) RADIUS. To allow users to log in to Wi-Fi with their existing network login and password, the technician should use RADIUS. RADIUS (Remote Authentication Dial-In User Service) integrates with existing directory services like Active Directory, enabling single sign-on functionality where users can authenticate to wireless networks using their domain credentials. AES is an encryption standard, TKIP is a security protocol, and WPA3 is a wireless security standard - none provide the authentication integration capabilities that RADIUS offers.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 169,
+    "id": 134,
     "question": "A user clicked a link in an email, and now the cursor is moving around on its own. A technician notices that File Explorer is open and data is being copied from the local drive to an unknown cloud storage location. Which of the following should the technician do first?",
     "options": [
       "Investigate the reported symptoms.",
@@ -2920,13 +2292,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) Quarantine the workstation. When a user clicks a malicious link and the cursor moves on its own while data is being copied to unknown cloud storage, the technician should first quarantine the workstation. This immediate isolation prevents the malware from spreading to other systems and stops ongoing data exfiltration. The system is clearly compromised and actively transmitting data, making containment the top priority. Investigating symptoms, running anti-malware, and user education are important subsequent steps, but quarantine must happen first to limit damage.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 170,
+    "id": 135,
     "question": "A customer reports that an Android phone will not allow the use of contactless electronic payment. Which of the following needs to be enabled to resolve the issue?",
     "options": [
       "Wi-Fi",
@@ -2937,13 +2309,13 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) NFC. To enable contactless electronic payment on an Android phone, NFC (Near Field Communication) needs to be enabled. NFC technology allows the phone to communicate with payment terminals by bringing the devices close together, enabling contactless payments through services like Google Pay, Samsung Pay, or other mobile payment apps. Wi-Fi provides internet connectivity, Nearby Share enables file sharing, and Bluetooth connects to other devices, but none enable the close-proximity communication required for contactless payments like NFC does.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 171,
+    "id": 136,
     "question": "A management team at a small office wants to block access to inappropriate websites and create a log of these access attempts. Which of the following is a way to meet these requirements?",
     "options": [
       "Content filter",
@@ -2954,13 +2326,30 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) Content filter. To block access to inappropriate websites and create a log of access attempts, a content filter is the appropriate solution. Content filters can categorize and block websites based on content type, maintain detailed logs of blocked and allowed access attempts, and provide reporting capabilities for management review. Screened subnets provide network segmentation, port forwarding redirects traffic, and access control lists manage permissions, but none provide the website categorization and logging capabilities needed for this requirement.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 172,
+    "id": 137,
+    "question": "Which of the following documents in criminal proceedings must be updated every time a piece of evidence is touched or transferred in order for the evidence to be considered valid?",
+    "options": [
+      "Licensing agreement",
+      "Regulatory compliance",
+      "Incident documentation",
+      "Chain of custody"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Correct Answer: D) Chain of custody. In criminal proceedings, the chain of custody document must be updated every time evidence is touched or transferred for the evidence to be considered valid. Chain of custody provides a chronological record of who handled the evidence, when transfers occurred, and how the evidence was stored and protected. This documentation is crucial for maintaining evidence integrity and legal admissibility in court. Licensing agreements, regulatory compliance, and incident documentation serve different purposes and don't track evidence handling like chain of custody does.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 138,
     "question": "A user in a corporate office reports the inability to connect to any network drives. No other users have reported this issue. Which of the following is the most likely reason the user is having this issue?",
     "options": [
       "The user is not connected to the correct VPN site.",
@@ -2971,13 +2360,13 @@
     "correct": [
       0
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: A) The user is not connected to the correct VPN site. When only one user cannot connect to network drives while others can, the most likely reason is that the user is not connected to the correct VPN site. Network drives typically require VPN connectivity for remote access, and connecting to the wrong VPN endpoint or having VPN connectivity issues would prevent access to internal resources. If the file server were offline, all users would be affected. Low battery and encrypted files don't typically prevent network drive connections.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 173,
+    "id": 139,
     "question": "A technician needs to configure a computer for a user to work from home so the user can still securely access the user's shared files and corporate email. Which of the following tools would best accomplish this task?",
     "options": [
       "MSRA",
@@ -2988,13 +2377,13 @@
     "correct": [
       3
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: D) VPN. To configure a computer for secure home access to shared files and corporate email, VPN is the best tool. VPN (Virtual Private Network) creates an encrypted tunnel between the home computer and the corporate network, allowing secure access to internal resources like file shares and email servers. MSRA (Microsoft Remote Assistance) is for technical support, FTP transfers files but isn't secure, and RMM (Remote Monitoring and Management) is for IT management - none provide the comprehensive secure network access that VPN offers for remote work.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 174,
+    "id": 140,
     "question": "A technician received a notification about encrypted production data files and thinks active ransomware is on the network. The technician isolated and removed the suspicious system from the network. Which of the following steps should the technician take next?",
     "options": [
       "Schedule and perform an antivirus scan and system update.",
@@ -3005,13 +2394,13 @@
     "correct": [
       2
     ],
-    "explanation": "",
+    "explanation": "Correct Answer: C) Perform a system scan to remove the malware. After isolating and removing a suspicious system from the network due to ransomware, the technician should next perform a system scan to remove the malware. Since the system has been isolated to prevent spread, the immediate priority is to thoroughly scan and clean the infected system to remove all traces of ransomware. Scheduling updates, user education, and creating restore points are important but secondary to the immediate need to eliminate the active malware threat from the isolated system.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "security"
   },
   {
-    "id": 175,
+    "id": 141,
     "question": "A technician wants to improve password security after several users admitted to using very simple passwords. Which of the following is the best way to resolve this issue?",
     "options": [
       "Requiring four character types",
@@ -3028,7 +2417,7 @@
     "topic": "security"
   },
   {
-    "id": 176,
+    "id": 142,
     "question": "During a routine check, a systems administrator discovers that a user’s PC is running slowly and CPU utilization is at 100%. Further investigation shows a large amount of resource usage. Which of the following is the most likely cause of the high resource usage?",
     "options": [
       "Firewall activities",
@@ -3045,59 +2434,7 @@
     "topic": "security"
   },
   {
-    "id": 177,
-    "question": "A technician needs to recommend a way to keep company devices for field and home-based staff up to date. The users live in various places across the country and the company has several national offices that stair can go no for technical support. Which of the following methods is most appropriate for the users?",
-    "options": [
-      "Make office attendance mandatory for one day per week so that updates can be installed.",
-      "Ask users to ensure that they run updates on devices and reboot computers on a regular basis.",
-      "Push updates out via VPN on a weekly basis in a staggered manner so that the network is not affected.",
-      "Configure cloud-based endpoint management software to automatically manage computer updates."
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 178,
-    "question": "An organization’s critical database files were attacked with ransomware. The company refuses to pay the ransom tor a decryption key. All traces of the infection have been removed from the underlying servers Which of me following should the company do next?",
-    "options": [
-      "Scan all of tie infected files with up-to-date, anti-malware cleaning software.",
-      "Fully patch the server operating systems hosting the fileshares.",
-      "Change the files to be read-only.",
-      "Restore critical data from backup."
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 179,
-    "question": "A technician is helping a customer connect to a shared drive. The technician notices some unused drives that have already been mapped and wants to disconnect those drives first. Which of the following commands should the technician use?",
-    "options": [
-      "format",
-      "netstat",
-      "diskpart",
-      "net use",
-      "rmdir"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "",
-    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
-    "type": "single",
-    "topic": "security"
-  },
-  {
-    "id": 180,
+    "id": 143,
     "question": "A company wants to take advantage of modern technology and transition away from face-to-face meetings Which of the following types or software would benefit the company the most? (Choose two.)",
     "options": [
       "Videoconferencing",
