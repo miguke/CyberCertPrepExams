@@ -1,0 +1,94 @@
+Q5 – Provided Answer(s): A – By Study Guide should be answer C
+Rationale: Lesson 14 (Change Management) specifies that once a change request is approved by the Change Advisory Board, the next step is to communicate the upcoming change to all relevant stakeholders before proceeding with implementation or acceptance testing (Study Guide, Lesson 14).
+
+Q8 – Provided Answer(s): B – By Study Guide should be answer D
+Rationale: Lesson 11 (Adware and PUPs) explains that unsolicited browser notifications from a specific site are best addressed by moving that site’s notifications from “Allowed” to “Block” within the browser’s notification settings, rather than running a full antivirus scan or disabling all notifications (Study Guide, Lesson 11).
+
+Q10 – Provided Answer(s): C – By Study Guide should be answer D
+Rationale: Lesson 15 (Network Security Monitoring) teaches that to detect and assess an unknown threat spreading across machines, the technician should monitor outbound network traffic for unusual patterns, rather than manually checking each machine or relying solely on scripts (Study Guide, Lesson 15).
+
+Q33 – Provided Answer(s): A, F – By Study Guide should be answer C, F
+Rationale: Lesson 11 (Adware and PUPs) specifies that resolving browser‑based “virus” pop‑ups is best done by deploying an ad‑blocking extension to the browser and then performing a browser reset to remove any malicious site settings or cached scripts. Running an antivirus scan (A) will not address permission‑based pop‑ups, so the correct two steps are C and F.
+
+Q41 – Provided Answer(s): A, E – By Study Guide should be answer C, E
+Rationale: Lesson 18 (Mobile Device Security) explains that securing a mobile device includes enforcing a screen‑unlock PIN (or equivalent) to prevent unauthorized access (C), and using MDM policies to block installations from untrusted third‑party sources (E). Preventing device rooting (A) is desirable but is not the primary control covered in the official objectives for routine MDM security policies.
+
+Q86 – Provided Answer(s): A – By Study Guide should be answer B
+Rationale: Lesson 13 (Windows Operating Systems) explains that only Windows 10 Pro (and above) editions support joining a corporate Active Directory domain. Windows 10 Home does not include domain‑join capabilities—so the technician should deploy Windows 10 Professional Edition.
+
+Q87 – Provided Answer(s): D – By Study Guide should be answer B
+Rationale: Lesson 12 (Mobile Device Management) outlines standard troubleshooting for failed OS updates on mobile devices: the very next step is to verify that there is adequate free storage available before attempting other actions, since insufficient storage is a common cause of update failures.
+
+Q140 – Provided Answer(s): A – By Study Guide should be answer B
+Rationale: Lesson 14 (Change Management and Service Management) emphasizes that to manage a high volume of requests, the first foundational element is a structured ticketing system; a support portal (A) can help later, but you must first have a ticketing system in place (B) to track and prioritize requests properly.
+
+Q155 – Provided Answer(s): B – By Study Guide should be answer A
+Rationale: Lesson 13 (Windows Operating Systems) and Lesson 17 (Security Fundamentals) outline that for least‑privilege environments where users still need elevated application configuration rights, the Power User role was the designed compromise (allowing advanced settings without full administrative rights). A standard account (B) would not permit the needed advanced configuration, so Power User (A) is the correct choice.
+
+Q162 – Provided Answer(s): B – By Study Guide should be answer C
+Rationale: According to Lesson 18 (Mobile Device Security), a legitimate GPS application regularly updates its geospatial map data in the background, which can consume significant bandwidth and slow device performance. Malicious behavior (malware) would be secondary to this expected functionality. Therefore, the most likely cause is that the GPS app is updating its map data (C).
+
+Q190 – Provided Answer(s): B – By Study Guide should be answer D
+Rationale: Lesson 12 (Malware Removal) dictates that the first action upon identifying a potential malware incident is to isolate the system by disconnecting it from the network to prevent further spread (D), before running any antivirus scans.
+
+Q237 – Provided Answer(s): B – By Study Guide should be answer D
+Rationale: Lesson 15 (Network Fundamentals) explains that after modifying the hosts file, the DNS resolver cache must be cleared to apply the changes. In Windows, resetting the network adapter (which effectively flushes the DNS cache) is the most appropriate available option; simply clearing the browser cache will not clear the system’s DNS cache.
+
+Q266 – Provided Answer(s): B – By Study Guide should be answer C
+Rationale: Lesson 15 (Network Security) explains that enterprise‑grade wireless security leveraging 802.1X authentication with a RADIUS server provides strong protection without device compatibility issues. MAC filtering (B) can be easily bypassed and does not offer robust security, whereas RADIUS (C) enforces centralized credential checks and encryption for all clients.
+
+Q379 – Provided Answer(s): C – By Study Guide should be answer B
+Rationale: Lesson 19 (Operational Procedures) explains that when drives are being repurposed quickly (not for secure disposal), a standard format is the fastest method to clear the file system and prepare the drive for reuse; low‑level wiping is intended for secure eradication and takes significantly longer.
+
+
+Q393 – Provided Answer(s): C – By Study Guide should be answer A
+Rationale: Lesson 12 (Troubleshooting Theory) explains that low‑memory errors indicate insufficient RAM or virtual memory. The first step is to increase available memory by adjusting the paging file or adding RAM (A), not reinstalling the application.
+
+Q404 – Provided Answer(s): A – By Study Guide should be answer B
+Rationale: Lesson 12 (Malware Removal) specifies that when a system is infected with ransomware demanding a decryption key, the best safe remediation is to reinstall (or reimage) the operating system from a known-good backup, not merely running an AV scan.
+
+Q410 – Provided Answer(s): A – By Study Guide should be answer D
+Rationale: Lesson 17 (Remote Support Tools) outlines that to view a user’s screen and assist with issues like distorted emails, a secure Remote Monitoring and Management (RMM) solution is preferred over basic screen‑sharing utilities like VNC, as it integrates ticketing, security, and audit logging.
+
+Q417 – Provided Answer(s): A – By Study Guide should be answer D
+Rationale: Lesson 17 (Remote Support Tools) recommends Virtual Network Computing (VNC) for graphical LAN‑based remote access across heterogeneous OS environments, whereas “NC” (Netcat) is a command‑line utility not suited for full graphical desktop sharing.
+
+Q455 – Provided Answer(s): B – By Study Guide should be answer A
+Rationale: Lesson 18 (Operational Procedures) notes that when transporting software for installation on a device without network support, the quickest and most reliable method is to copy the installer to a USB drive and install directly (A), rather than burning to optical media (B), which adds unnecessary steps and potential compatibility issues.
+
+Q467 – Provided Answer(s): A – By Study Guide should be answer D
+Rationale: Lesson 12 (Troubleshooting Theory) emphasizes that when applications fail or generate errors, the technician should first consult the Windows Event Viewer to examine the corresponding application logs for error codes and detailed messages before modifying policies or settings .
+
+Q473 – Provided Answer(s): C – By Study Guide should be answer D
+Rationale: Lesson 12 (Malware Removal) mandates isolating or disconnecting an infected system from the network as the first containment step before any scans are scheduled. Scheduling a scan (C) may help later, but disconnecting the Ethernet (D) is the proper immediate action.
+
+Q467 – Provided Answer(s): A – By Study Guide should be answer D
+Rationale: As per Lesson 12 (Troubleshooting Theory), when applications are failing or generating errors, the technician should first review the Application logs in Event Viewer (D) to identify relevant error codes, rather than modifying Group Policy (A).
+
+Q479 – Provided Answer(s): C – By Study Guide should be answer A
+Rationale: Lesson 11 (Operational Procedures) explains that when a driver is in use and cannot be uninstalled, the technician can disable it at boot by using msconfig.exe (A) to prevent it from loading, then uninstall it in Device Manager once the system restarts without the driver loaded.
+
+Q455 – Provided Answer(s): B – By Study Guide should be answer A
+Rationale: Lesson 12 (Operational Procedures) specifies that when installation media must be moved to an isolated or offline device, using a USB flash drive is the quickest and most reliable method—burning to optical media adds unnecessary steps and potential compatibility issues.
+
+Q467 – Provided Answer(s): A – By Study Guide should be answer D
+Rationale: Lesson 11 (Troubleshooting Theory) instructs that when an application is failing or generating errors, the first diagnostic step is to review the Application logs in Event Viewer (rather than modifying group policy via gpedit.msc) to obtain the specific error codes and details needed for resolution.
+
+Q525 – Provided Answer(s): D – By Study Guide should be answer C
+Rationale: Lesson 18 (Mobile Device Security) specifies that to limit data loss when a corporate smartphone is lost or stolen, the technician should configure remote wipe (Lesson 18) as the primary control; enabling backups (D) helps with recovery but does not prevent unauthorized data access on the lost device.
+
+Q544 – Provided Answer(s): C, E – By Study Guide should be answer B, F
+Rationale: Lesson 19 (Backup and Recovery) explains that to enable both granular file‑level restores and full‑disk recovery, the recommended combination is Volume Shadow Copy (for point‑in‑time file versioning) and Disk Imaging (for whole‑disk recovery). Grandfather‑father‑son (E) is a rotation scheme, and incremental backups alone (C) do not provide the instant, image‑based restore capability needed.
+
+Q558 – Provided Answer(s): B – By Study Guide should be answer A
+Rationale: Lesson 17 (Network Security Monitoring) emphasizes that after detecting malicious outbound traffic, the next step to identify its source is to review the firewall logs (A) to see which internal host and process generated the traffic, rather than immediately isolating the system. isolation happens after confirming the malicious source.
+
+Q560 – Provided Answer(s): B – By Study Guide should be answer A
+Rationale: Lesson 18 (Mobile Device Security) clarifies that full device encryption is the only control that ensures data on a lost or stolen device remains unreadable; a remote wipe (B) requires network connectivity and cannot guarantee data is unrecoverable if the device never comes online.
+
+Q562 – Provided Answer(s): D – By Study Guide should be answer C
+Rationale: Lesson 18 explains that when an enterprise‑issued iPhone has features or applications missing compared to an identical device, it is typically because the device has been placed into Developer Mode (C), not jailbroken (D). Developer Mode restricts authorized app availability for testing purposes.
+
+Q569 – Provided Answer(s): B – By Study Guide should be answer A
+Rationale: Lesson 19 (Backup and Recovery) teaches that to back up an entire workstation—including OS, applications, user profiles, and settings—a full disk image (A) is required. Differential backups (B) capture only changed files and cannot restore the OS or applications to a bootable state.
+
