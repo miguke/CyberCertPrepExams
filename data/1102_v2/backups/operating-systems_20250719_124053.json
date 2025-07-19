@@ -1,0 +1,4187 @@
+[
+  {
+    "id": 1,
+    "question": "A help desk team lead contacts a systems administrator because the technicians are unable to log in to a Linux server that is used to access tools. When the administrator tries to use remote desktop to log in to the server, the administrator sees the GUI is crashing. Which of the following methods can the administrator use to troubleshoot the server effectively?",
+    "options": [
+      "SFTP",
+      "SSH",
+      "VNC",
+      "MSRA"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 2,
+    "question": "A technician is setting up a SOHO wireless router. The router is about ten years old. The customer would like the most secure wireless network possible. Which of the following should the technician configure?",
+    "options": [
+      "WPA2 with TKIP",
+      "WPA2 with AES",
+      "WPA3 with AES-256",
+      "WPA3 with AES-128"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 3,
+    "question": "A technician is troubleshooting an issue involving programs on a Windows 10 machine that are loading on startup but causing excessive boot times. Which of the following should the technician do to selectively prevent programs from loading?",
+    "options": [
+      "Right-click the Windows button, then select Run... entering shell:startup and clicking OK, and then move items one by one to the Recycle Bin.",
+      "Remark out entries listed HKEY_LOCAL_MACHINE>SOFTWARE>Microsoft>Windows>CurrentVersion>Run.",
+      "Manually disable all startup tasks currently listed as enabled and reboot, checking for issue resolution at startup.",
+      "Open the Startup tab and methodically disable items currently listed as enabled and reboot, checking for issue resolution at each startup."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 4,
+    "question": "When a user calls in to report an issue, a technician submits a ticket on the user's behalf. Which of the following practices should the technician use to make sure the ticket is associated with the correct user?",
+    "options": [
+      "Have the user provide a callback phone number to be added to the ticket.",
+      "Assign the ticket to the department's power user.",
+      "Register the ticket with a unique user identifier.",
+      "Provide the user with a unique ticket number that can be referenced on subsequent calls."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 5,
+    "question": "A technician needs to format a USB drive to transfer 20GB of data from a Linux computer to a Windows computer. Which of the following filesystems will the technician MOST likely use?",
+    "options": [
+      "FAT32",
+      "ext4",
+      "NTFS",
+      "exFAT"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 6,
+    "question": "A technician needs to exclude an application folder from being cataloged by a Windows 10 search. Which of the following utilities should be used?",
+    "options": [
+      "Privacy",
+      "Indexing Options",
+      "System",
+      "Device Manager"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 7,
+    "question": "As part of a CYOD policy, a systems administrator needs to configure each user's Windows device to require a password when resuming from a period of sleep or inactivity. Which of the following paths will lead the administrator to the correct settings?",
+    "options": [
+      "Use Settings to access Screensaver settings.",
+      "Use Settings to access Screen Timeout settings.",
+      "Use Settings to access General.",
+      "Use Settings to access Display."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 8,
+    "question": "The command cat comptia.txt was issued on a Linux terminal. Which of the following results should be expected?",
+    "options": [
+      "The contents of the text comptia.txt will be replaced with a new blank document.",
+      "The contents of the text comptia.txt would be displayed.",
+      "The contents of the text comptia.txt would be categorized in alphabetical order.",
+      "The contents of the text comptia.txt would be copied to another comptia.txt file."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 9,
+    "question": "An incident handler needs to preserve evidence for possible litigation. Which of the following will the incident handler MOST likely do to preserve the evidence?",
+    "options": [
+      "Encrypt the files.",
+      "Clone any impacted hard drives.",
+      "Contact the cyber insurance company.",
+      "Inform law enforcement."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 10,
+    "question": "Which of the following could be used to implement secure physical access to a data center?",
+    "options": [
+      "Geofence",
+      "Alarm system",
+      "Badge reader",
+      "Motion sensor"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 11,
+    "question": "A user reports a computer is running slow. Which of the following tools will help a technician identify the issue?",
+    "options": [
+      "Disk Cleanup",
+      "Group Policy Editor",
+      "Disk Management",
+      "Resource Monitor"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 12,
+    "question": "Which of the following OS types provides a lightweight option for workstations that need an easy-to-use, browser-based interface?",
+    "options": [
+      "FreeBSD",
+      "Chrome OS",
+      "macOS",
+      "Windows"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 13,
+    "question": "A user has requested help setting up the fingerprint reader on a Windows 10 laptop. The laptop is equipped with a fingerprint reader and is joined to a domain. Group Policy enables Windows Hello on all computers in the environment. Which of the following options describes how to set up Windows Hello Fingerprint for the user?",
+    "options": [
+      "Navigate to the Control Panel utility, select the Security and Maintenance submenu, select Change Security and Maintenance settings, select Windows Hello Fingerprint, and have the user place a fingerprint on the fingerprint reader repeatedly until Windows indicates setup is complete.",
+      "Navigate to the Windows 10 Settings menu, select the Accounts submenu, select Sign-in options, select Windows Hello Fingerprint, and have the user place a fingerprint on the fingerprint reader repeatedly until Windows indicates setup is complete.",
+      "Navigate to the Windows 10 Settings menu, select the Update & Security submenu, select Windows Security, select Windows Hello Fingerprint, and have the user place a fingerprint on the fingerprint reader repeatedly until Windows indicates setup is complete.",
+      "Navigate to the Control Panel utility, select the Administrative Tools submenu, select the user account in the list, select Windows Hello Fingerprint, and have the user place a fingerprint on the fingerprint reader repeatedly until Windows indicates setup is complete."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 14,
+    "question": "Someone who is fraudulently claiming to be from a reputable bank calls a company employee. Which of the following describes this incident?",
+    "options": [
+      "Pretexting",
+      "Spoofing",
+      "Vishing",
+      "Scareware"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 15,
+    "question": "A user reports a PC is running slowly. The technician suspects it has a badly fragmented hard drive. Which of the following tools should the technician use?",
+    "options": [
+      "resmon.exe",
+      "msconfig.exe",
+      "dfrgui.exe",
+      "msinfo32.exe"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 16,
+    "question": "A company has just refreshed several desktop PCs. The hard drives contain PII. Which of the following is the BEST method to dispose of the drives?",
+    "options": [
+      "Drilling",
+      "Degaussing",
+      "Low-level formatting",
+      "Erasing/wiping"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 17,
+    "question": "Which of the following is the MOST cost-effective version of Windows 10 that allows remote access through Remote Desktop?",
+    "options": [
+      "Home",
+      "Pro for Workstations",
+      "Enterprise",
+      "Pro"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 18,
+    "question": "A user created a file on a shared drive and wants to prevent its data from being accidentally deleted by others. Which of the following applications should the technician use to assist the user with hiding the file?",
+    "options": [
+      "Device Manager",
+      "Indexing Options",
+      "File Explorer",
+      "Administrative Tools"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 19,
+    "question": "Once weekly, a user needs Linux to run a specific open-source application that is not available for the currently installed Windows platform. The user has limited bandwidth throughout the day. Which of the following solutions would be the MOST efficient, allowing for parallel execution of the Linux application and Windows applications?",
+    "options": [
+      "Install and run Linux and the required application in a PaaS cloud environment.",
+      "Install and run Linux and the required application as a virtual machine installed under the Windows OS.",
+      "Use a swappable drive bay for the boot drive and install each OS with applications on its own drive. Swap the drives as needed.",
+      "Set up a dual boot system by selecting the option to install Linux alongside Windows."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 20,
+    "question": "A user connects a laptop that is running Windows 10 to a docking station with external monitors when working at a desk. The user would like to close the laptop when it is docked, but the user reports it goes to sleep when it is closed. Which of the following is the BEST solution to prevent the laptop from going to sleep when it is closed and on the docking station?",
+    "options": [
+      "Within the Power Options of the Control Panel utility, click the Change Plan Settings button for the enabled power plan and select Put the Computer to Sleep under the Plugged In category to Never.",
+      "Within the Power Options of the Control Panel utility, click the Change Plan Settings button for the enabled power plan and select Put the Computer to Sleep under the On Battery category to Never.",
+      "Within the Power Options of the Control Panel utility, select the option Choose When to Turn Off the Display and select Turn Off the Display under the Plugged In category to Never.",
+      "Within the Power Options of the Control Panel utility, select the option Choose What Closing the Lid Does and select When I Close the Lid under the Plugged In category to Do Nothing."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 21,
+    "question": "A user wants to set up speech recognition on a PC. In which of the following Windows Settings tools can the user enable this option?",
+    "options": [
+      "Language",
+      "System",
+      "Personalization",
+      "Ease of Access"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 22,
+    "question": "Which of the following Wi-Fi protocols is the MOST secure?",
+    "options": [
+      "WPA3",
+      "WPA-AES",
+      "WEP",
+      "WPA-TKIP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 23,
+    "question": "A user is unable to log in to the domain with a desktop PC, but a laptop PC is working properly on the same network. A technician logs in to the desktop PC with a local account but is unable to browse to the secure intranet site to get troubleshooting tools. Which of the following is the MOST likely cause of the issue?",
+    "options": [
+      "Time drift",
+      "Dual in-line memory module failure",
+      "Application crash",
+      "Filesystem errors"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 24,
+    "question": "A technician is setting up a desktop computer in a small office. The user will need to access files on a drive shared from another desktop on the network. Which of the following configurations should the technician employ to achieve this goal?",
+    "options": [
+      "Configure the network as private.",
+      "Enable a proxy server.",
+      "Grant the network administrator role to the user.",
+      "Create a shortcut to public documents."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 25,
+    "question": "A technician is asked to resize a partition on the internal storage drive of a computer running macOS. Which of the followings tools should the technician use to accomplish this task?",
+    "options": [
+      "Console",
+      "Disk Utility",
+      "Time Machine",
+      "FileVault"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 26,
+    "question": "A user is experiencing frequent malware symptoms on a Windows workstation. The user has tried several times to roll back the state, but the malware persists. Which of the following would MOST likely resolve the issue?",
+    "options": [
+      "Quarantining system files",
+      "Reimaging the workstation",
+      "Encrypting the hard drive",
+      "Disabling TLS 1.0 support"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 27,
+    "question": "During a recent flight, an executive unexpectedly received several dog and cat pictures while trying to watch a movie via in-flight Wi-Fi on an iPhone. The executive has no records of any contacts sending pictures like these and has not seen these pictures before. To BEST resolve this issue, the executive should:",
+    "options": [
+      "set AirDrop so that transfers are only accepted from known contacts.",
+      "completely disable all wireless systems during the flight.",
+      "discontinue using iMessage and only use secure communication applications.",
+      "only allow messages and calls from saved contacts."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 28,
+    "question": "A wireless network is set up, but it is experiencing some interference from other nearby SSIDs. Which of the following can BEST resolve the interference?",
+    "options": [
+      "Changing channels",
+      "Modifying the wireless security",
+      "Disabling the SSID broadcast",
+      "Changing the access point name"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 29,
+    "question": "A user rotates a cell phone horizontally to read emails, but the display remains vertical, even though the settings indicate autorotate is on. Which of the following will MOST likely resolve the issue?",
+    "options": [
+      "Recalibrating the magnetometer",
+      "Recalibrating the compass",
+      "Recalibrating the digitizer",
+      "Recalibrating the accelerometer"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 30,
+    "question": "A Microsoft Windows PC needs to be set up for a user at a large corporation. The user will need access to the corporate domain to access email and shared drives. Which of the following versions of Windows would a technician MOST likely deploy for the user?",
+    "options": [
+      "Windows Enterprise Edition",
+      "Windows Professional Edition",
+      "Windows Server Standard Edition",
+      "Windows Home Edition"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 31,
+    "question": "A call center handles inquiries into billing issues for multiple medical facilities. A security analyst notices that call center agents often walk away from their workstations, leaving patient data visible for anyone to see. Which of the following should a network administrator do to BEST prevent data theft within the call center?",
+    "options": [
+      "Encrypt the workstation hard drives.",
+      "Lock the workstations after five minutes of inactivity.",
+      "Install privacy screens.",
+      "Log off the users when their workstations are not in use."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 32,
+    "question": "A police officer often leaves a workstation for several minutes at a time. Which of the following is the BEST way the officer can secure the workstation quickly when walking away?",
+    "options": [
+      "Use a key combination to lock the computer when leaving.",
+      "Ensure no unauthorized personnel are in the area.",
+      "Configure a screensaver to lock the computer automatically after approximately 30 minutes of inactivity.",
+      "Turn off the monitor to prevent unauthorized visibility of information."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 33,
+    "question": "A technician is setting up a conference room computer with a script that boots the application on log-in. Which of the following would the technician use to accomplish this task? (Choose two.)",
+    "options": [
+      "File Explorer",
+      "Startup Folder",
+      "System Information",
+      "Programs and Features",
+      "Task Scheduler",
+      "Device Manager"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 34,
+    "question": "A systems administrator needs to reset a user's password because the user forgot it. The systems administrator creates the new password and wants to further protect the user's account. Which of the following should the systems administrator do?",
+    "options": [
+      "Require the user to change the password at the next log-in",
+      "Disallow the user from changing the password.",
+      "Disable the account.",
+      "Choose a password that never expires."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 35,
+    "question": "Which of the following command-line tools will delete a directory?",
+    "options": [
+      "md",
+      "del",
+      "dir",
+      "rd",
+      "cd"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 36,
+    "question": "An analyst needs GUI access to server software running on a macOS server. Which of the following options provides the BEST way for the analyst to access the macOS server from the Windows workstation?",
+    "options": [
+      "RDP through RD Gateway",
+      "Apple Remote Desktop",
+      "SSH access with SSH keys",
+      "VNC with username and password"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 37,
+    "question": "Which of the following is the MOST basic version of Windows that includes BitLocker?",
+    "options": [
+      "Home",
+      "Pro",
+      "Enterprise",
+      "Pro for Workstations"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 38,
+    "question": "A Windows user reported that a pop-up indicated a security issue. During inspection, an antivirus system identified malware from a recent download, but it was unable to remove the malware. Which of the following actions would be BEST to remove the malware while also preserving the user's files?",
+    "options": [
+      "Run the virus scanner in an administrative mode.",
+      "Reinstall the operating system.",
+      "Reboot the system in safe mode and rescan.",
+      "Manually delete the infected files."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 39,
+    "question": "A technician is troubleshooting a lack of outgoing audio on a third-party Windows 10 VoIP application. The PC uses a USB microphone connected to a powered hub. The technician verifies the microphone works on the PC using Voice Recorder. Which of the following should the technician do to solve the issue?",
+    "options": [
+      "Remove the microphone from the USB hub and plug it directly into a USB port on the P",
+      "Enable the microphone under Windows Privacy settings to allow desktop applications to access it.",
+      "Delete the microphone from Device Manager and scan for new hardware.",
+      "Replace the USB microphone with one that uses a traditional 3.5mm plug."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 40,
+    "question": "A technician has been asked to set up a new wireless router with the best possible security. Which of the following should the technician implement?",
+    "options": [
+      "WPS",
+      "TKIP",
+      "WPA3",
+      "WEP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 41,
+    "question": "A suite of security applications was installed a few days ago on a user's home computer. The user reports that the computer has been running slowly since the installation. The user notices the hard drive activity light is constantly solid. Which of the following should be checked FIRST?",
+    "options": [
+      "Services in Control Panel to check for overutilization",
+      "Performance Monitor to check for resource utilization",
+      "System File Checker to check for modified Windows files",
+      "Event Viewer to identify errors"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 42,
+    "question": "A field technician applied a Group Policy setting to all the workstations in the network. This setting forced the workstations to use a specific SNTP server. Users are unable to log in now. Which of the following is the MOST likely cause of this issue?",
+    "options": [
+      "The SNTP server is offline.",
+      "A user changed the time zone on a local machine.",
+      "The Group Policy setting has disrupted domain authentication on the system.",
+      "The workstations and the authentication server have a system clock difference."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 43,
+    "question": "A technician is tasked with configuring a computer for a visually impaired user. Which of the following utilities should the technician use?",
+    "options": [
+      "Device Manager",
+      "System",
+      "Ease of Access Center",
+      "Programs and Features"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 44,
+    "question": "A user is unable to use any internet-related functions on a smartphone when it is not connected to Wi-Fi. When the smartphone is connected to Wi-Fi, the user can browse the internet and send and receive email. The user is also able to send and receive text messages and phone calls when the smartphone is not connected to Wi-Fi. Which of the following is the MOST likely reason the user is unable to use the internet on the smartphone when it is not connected to Wi-Fi?",
+    "options": [
+      "The smartphone's line was not provisioned with a data plan",
+      "The smartphone's SIM card has failed.",
+      "The smartphone's Bluetooth radio is disabled",
+      "The smartphone has too many applications open"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 45,
+    "question": "A company discovered that numerous computers from multiple geographic locations are sending a very high number of connection requests which is causing the company’s web server to become unavailable to the general public. Which of the following attacks is occurring?",
+    "options": [
+      "Zero day",
+      "SQL injection",
+      "Cross-site scripting",
+      "Distributed denial of service"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 46,
+    "question": "A technician suspects the boot disk of a user’s computer contains bad sectors. Which of the following should the technician verify in the command prompt to address the issue without making any changes?",
+    "options": [
+      "Run sfc / scannow on the drive as the administrator",
+      "Run cleanmgr on the drive as the administrator",
+      "Run chkdsk on the drive as the administrator",
+      "Run dfrgui on the drive as the administrator"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 47,
+    "question": "A BSOD appears on a user’s workstation monitor. The user immediately presses the power button to shut down the PC, hoping to repair the issue. The user then restarts the PC, and the BSOD reappears, so the user contacts the help desk. Which of the following should the technician use to determine the cause?",
+    "options": [
+      "Stop code",
+      "Event Viewer",
+      "Services",
+      "System Configuration"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 48,
+    "question": "Which of the following is the STRONGEST wireless configuration?",
+    "options": [
+      "WPS",
+      "WPA3",
+      "WEP",
+      "WMN"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 49,
+    "question": "While assisting a customer with an issue, a support representative realizes the appointment is taking longer than expected and will cause the next customer meeting to be delayed by five minutes. Which of the following should the support representative do NEXT?",
+    "options": [
+      "Send a quick message regarding the delay to the next customer.",
+      "Cut the current customer's time short and rush to the next customer.",
+      "Apologize to the next customer when arriving late.",
+      "Arrive late to the next meeting without acknowledging the time."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 50,
+    "question": "A user connected a laptop to a wireless network and was tricked into providing log-in credentials for a website. Which of the following threats was used to carry out the attack?",
+    "options": [
+      "Zero day",
+      "Vishing",
+      "DDoS",
+      "Evil twin"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 51,
+    "question": "Which of the following Linux commands would be used to install an application?",
+    "options": [
+      "yum",
+      "grep",
+      "ls",
+      "sudo"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 52,
+    "question": "A user reports a PC is running slowly. The technician suspects high disk I/O. Which of the following should the technician perform NEXT?",
+    "options": [
+      "resmon.exe",
+      "msconfig.exe",
+      "dfrgui.exe",
+      "msinfo32.exe"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 53,
+    "question": "A junior administrator is responsible for deploying software to a large group of computers in an organization. The administrator finds a script on a popular coding website to automate this distribution but does not understand the scripting language. Which of the following BEST describes the risks in running this script?",
+    "options": [
+      "The instructions from the software company are not being followed.",
+      "Security controls will treat automated deployments as malware.",
+      "The deployment script is performing unknown actions.",
+      "Copying scripts off the internet is considered plagiarism."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 54,
+    "question": "A user calls the help desk to report that Windows installed updates on a laptop and rebooted overnight. When the laptop started up again, the touchpad was no longer working. The technician thinks the software that controls the touchpad might be the issue. Which of the following tools should the technician use to make adjustments?",
+    "options": [
+      "eventvwr.msc",
+      "perfmon.msc",
+      "gpedit.msc",
+      "devmgmt.msc"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 55,
+    "question": "A technician has been tasked with troubleshooting audiovisual issues in a conference room. The meeting presenters are unable to play a video with sound. The following error is received: The Audio Driver is not running. Which of the following will MOST likely resolve the issue?",
+    "options": [
+      "compmgmt.msc",
+      "regedit.exe",
+      "explorer.exe",
+      "taskmgr.exe",
+      "gpmc.msc",
+      "services.msc"
+    ],
+    "correct": [
+      5
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 56,
+    "question": "A technician installed a new application on a workstation. For the program to function properly, it needs to be listed in the Path Environment Variable. Which of the following Control Panel utilities should the technician use?",
+    "options": [
+      "System",
+      "Indexing Options",
+      "Device Manager",
+      "Programs and Features"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 57,
+    "question": "A systems administrator is setting up a Windows computer for a new user. Corporate policy requires a least privilege environment. The user will need to access advanced features and configuration settings for several applications. Which of the following BEST describes the account access level the user will need?",
+    "options": [
+      "Power user account",
+      "Standard account",
+      "Guest account",
+      "Administrator account"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 58,
+    "question": "A mobile phone user has downloaded a new payment application that allows payments to be made with a mobile device. The user attempts to use the device at a payment terminal but is unable to do so successfully. The user contacts a help desk technician to report the issue. Which of the following should the technician confirm NEXT as part of the troubleshooting process?",
+    "options": [
+      "If airplane mode is enabled",
+      "If Bluetooth is disabled",
+      "If NFC is enabled",
+      "If Wi-Fi is enabled",
+      "If location services are disabled"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 59,
+    "question": "A user has a license for an application that is in use on a personal home laptop. The user approaches a systems administrator about using the same license on multiple computers on the corporate network. Which of the following BEST describes what the systems administrator should tell the user?",
+    "options": [
+      "Use the application only on the home laptop because it contains the initial license.",
+      "Use the application at home and contact the vendor regarding a corporate license.",
+      "Use the application on any computer since the user has a license.",
+      "Use the application only on corporate computers."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 60,
+    "question": "A malicious file was executed automatically when a flash drive was plugged in. Which of the following features would prevent this type of incident?",
+    "options": [
+      "Disabling UAC",
+      "Restricting local administrators",
+      "Enabling UPnP",
+      "Turning off AutoPlay"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 61,
+    "question": "A user needs assistance changing the desktop wallpaper on a Windows 10 computer. Which of the following methods will enable the user to change the wallpaper using a Windows 10 Settings tool?",
+    "options": [
+      "Open Settings, select Accounts, select Your info, click Browse, and then locate and open the image the user wants to use as the wallpaper.",
+      "Open Settings, select Personalization, click Browse, and then locate and open the image the user wants to use as the wallpaper.",
+      "Open Settings, select System, select Display, click Browse, and then locate and open the image the user wants to use as the wallpaper.",
+      "Open Settings, select Apps, select Apps & features, click Browse, and then locate and open the image the user wants to use as the wallpaper."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 62,
+    "question": "A macOS user needs to create another virtual desktop space. Which of the following applications will allow the user to accomplish this task?",
+    "options": [
+      "Dock",
+      "Spotlight",
+      "Mission Control",
+      "Launchpad"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 63,
+    "question": "A technician installed an application on a user's desktop and received an error message. Which of the following tools can the technician use to research the error?",
+    "options": [
+      "Resource Monitor > CPU > Services",
+      "Task Manager > Processes > Apps",
+      "Event Viewer > Windows Logs > Application",
+      "Device Manager > Computer"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 64,
+    "question": "A technician is configuring a new Windows laptop. Corporate policy requires that mobile devices make use of full disk encryption at all times. Which of the following encryption solutions should the technician choose?",
+    "options": [
+      "Encrypting File System",
+      "File Vault",
+      "BitLocker",
+      "Encrypted LVM"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 65,
+    "question": "A user is being directed by the help desk to look up a Windows PC's network name so the help desk can use a remote administration tool to assist the user. Which of the following commands would allow the user to give the technician the correct information? (Choose two.)",
+    "options": [
+      "ipconfig /all",
+      "hostname",
+      "netstat /?",
+      "nslookup localhost",
+      "arp -a",
+      "ping ::1"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 66,
+    "question": "A technician installs specialized software on a workstation. The technician then attempts to run the software. The workstation displays a message indicating the software is not authorized to run. Which of the following should the technician do to MOST likely resolve the issue?",
+    "options": [
+      "Grant permissions to the installation directory.",
+      "Attach the external hardware token.",
+      "Install OS updates.",
+      "Restart the workstation after installation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 67,
+    "question": "Which of the following editions of Windows 10 requires reactivation every 180 days?",
+    "options": [
+      "Enterprise",
+      "Pro for Workstation",
+      "Home",
+      "Pro"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 68,
+    "question": "A technician has an external SSD. The technician needs to read and write to an external SSD on both Macs and Windows PCs. Which of the following filesystems is supported by both OS types?",
+    "options": [
+      "NTFS",
+      "APFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 69,
+    "question": "Which of the following is a package management utility for PCs that are running the Linux operating system?",
+    "options": [
+      "chmod",
+      "yum",
+      "man",
+      "grep"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 70,
+    "question": "A user is attempting to make a purchase at a store using a phone. The user places the phone on the payment pad, but the device does not recognize the phone. The user attempts to restart the phone but still has the same results. Which of the following should the user do to resolve the issue?",
+    "options": [
+      "Tum off airplane mode while at the register.",
+      "Verify that NFC is enabled.",
+      "Connect to the store's Wi-Fi network.",
+      "Enable Bluetooth on the phone."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 71,
+    "question": "A technician is investigating unauthorized Wi-Fi access on a customer's home network. Individuals are able to access the customer's Wi-Fi network without a password. Which of the following is the MOST likely reason this situation is occurring?",
+    "options": [
+      "Channel utilization is oversubscribed.",
+      "WPA2 exploits are being leveraged.",
+      "The Wi-Fi password is posted on the router.",
+      "The customer has a guest network enabled."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 72,
+    "question": "A user reports a workstation has been performing strangely after a suspicious email was opened on it earlier in the week. Which of the following should the technician perform FIRST?",
+    "options": [
+      "Escalate the ticket to Tier 2.",
+      "Run a virus scan.",
+      "Utilize a Windows restore point.",
+      "Reimage the computer."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 73,
+    "question": "Which of the following would MOST likely be used to change the security settings on a user's device in a domain environment?",
+    "options": [
+      "Security groups",
+      "Access control list",
+      "Group Policy",
+      "Login script"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 74,
+    "question": "A technician needs to ensure that USB devices are not suspended by the operating system. Which of the following Control Panel utilities should the technician use to configure the setting?",
+    "options": [
+      "System",
+      "Power Options",
+      "Devices and Printers",
+      "Device Manager"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 75,
+    "question": "A technician needs to manually set an IP address on a computer that is running macOS. Which of the following commands should the technician use?",
+    "options": [
+      "ipconfig",
+      "ifconfig",
+      "arpa",
+      "ping"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 76,
+    "question": "A user called the help desk to report an issue with the internet connection speed on a laptop. The technician thinks that background services may be using extra bandwidth. Which of the following tools should the technician use to investigate connections on the laptop?",
+    "options": [
+      "nslookup",
+      "net use",
+      "netstat",
+      "net user"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 77,
+    "question": "Which of the following operating systems is considered closed source?",
+    "options": [
+      "Ubuntu",
+      "Android",
+      "CentOS",
+      "OSX"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 78,
+    "question": "A technician is securing a new Windows 10 workstation and wants to enable a screensaver lock. Which of the following options in the Windows settings should the technician use?",
+    "options": [
+      "Ease of Access",
+      "Privacy",
+      "Personalization",
+      "Update and Security"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 79,
+    "question": "A systems administrator is creating periodic backups of a folder on a Microsoft Windows machine. The source data is very dynamic, and files are either added or deleted regularly. Which of the following utilities can be used to mirror the source data for the backup?",
+    "options": [
+      "copy",
+      "xcopy",
+      "robocopy",
+      "Copy-Item"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 80,
+    "question": "Each time a user tries to go to the selected web search provider, a different website opens. Which of the following should the technician check FIRST?",
+    "options": [
+      "System time",
+      "IP address",
+      "DNS servers",
+      "Windows updates"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 81,
+    "question": "A technician is troubleshooting a mobile device that was dropped. The technician finds that the screen fails to rotate, even though the settings are correctly applied. Which of the following pieces of hardware should the technician replace to resolve the issue?",
+    "options": [
+      "LCD",
+      "Battery",
+      "Accelerometer",
+      "Digitizer"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 82,
+    "question": "Which of the following macOS features provides the user with a high-level view of all open windows?",
+    "options": [
+      "Mission Control",
+      "Finder",
+      "Multiple Desktops",
+      "Spotlight"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 83,
+    "question": "A technician is creating a tunnel that hides IP addresses and secures all network traffic. Which of the following protocols is capable of enduring enhanced security?",
+    "options": [
+      "DNS",
+      "IPS",
+      "VPN",
+      "SSH"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 84,
+    "question": "A technician needs to access a Windows 10 desktop on the network in a SOHO using RDP. Although the connection is unsuccessful, the technician is able to ping the computer successfully. Which of the following is MOST likely preventing the connection?",
+    "options": [
+      "The Windows 10 desktop has Windows 10 Home installed.",
+      "The Windows 10 desktop does not have DHCP configured.",
+      "The Windows 10 desktop is connected via Wi-Fi.",
+      "The Windows 10 desktop is hibernating."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 85,
+    "question": "A new employee was hired recently. Which of the following documents will the new employee need to sign before being granted login access to the network?",
+    "options": [
+      "MSDS",
+      "EULA",
+      "UAC",
+      "AUP"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 86,
+    "question": "Which of the following is used to integrate Linux servers and desktops into Windows Active Directory environments?",
+    "options": [
+      "apt-get",
+      "CIFS",
+      "Samba",
+      "grep"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 87,
+    "question": "A kiosk, which is running Microsoft Windows 10, relies exclusively on a numeric keypad to allow customers to enter their ticket numbers but no other information. If the kiosk is idle for four hours, the login screen locks. Which of the following sign-on options would allow any employee the ability to unlock the kiosk?",
+    "options": [
+      "Requiring employees to enter their usernames and passwords",
+      "Setting up facial recognition for each employee",
+      "Using a PIN and providing it to employees",
+      "Requiring employees to use their fingerprints"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 88,
+    "question": "A data center is required to destroy SSDs that contain sensitive information. Which of the following is the BEST method to use for the physical destruction of SSDs?",
+    "options": [
+      "Wiping",
+      "Low-level formatting",
+      "Shredding",
+      "Erasing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 89,
+    "question": "Which of the following script types is used with the Python language by default?",
+    "options": [
+      ".ps1",
+      ".vbs",
+      ".bat",
+      ".py"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 90,
+    "question": "Which of the following only has a web browser interface?",
+    "options": [
+      "Linux",
+      "Microsoft Windows",
+      "iOS",
+      "Chromium"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 91,
+    "question": "A user has been unable to receive emails or browse the internet from a smartphone while traveling. However, text messages and phone calls are working without issue. Which of the following should a support technician check FIRST?",
+    "options": [
+      "User account status",
+      "Mobile OS version",
+      "Data plan coverage",
+      "Network traffic outages"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 92,
+    "question": "A user calls the help desk to report that mapped drives are no longer accessible. The technician verifies that clicking on any of the drives on the user's machine results in an error message. Other users in the office are not having any issues. As a first step, the technician would like to remove and attempt to reconnect the drives. Which of the following command-line tools should the technician use?",
+    "options": [
+      "net use",
+      "set",
+      "mkdir",
+      "rename"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 93,
+    "question": "A technician is finalizing a new workstation for a user. The user's PC will be connected to the internet but will not require the same private address each time. Which of the following protocols will the technician MOST likely utilize?",
+    "options": [
+      "DHCP",
+      "SMTP",
+      "DNS",
+      "RDP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 94,
+    "question": "A company acquired a local office, and a technician is attempting to join the machines at the office to the local domain. The technician notes that the domain join option appears to be missing. Which of the following editions of Windows is MOST likely installed on the machines?",
+    "options": [
+      "Windows Professional",
+      "Windows Education",
+      "Windows Enterprise",
+      "Windows Home"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 95,
+    "question": "A user is trying to use a third-party USB adapter but is experiencing connection issues. Which of the following tools should the technician use to resolve this issue?",
+    "options": [
+      "taskschd.msc",
+      "eventvwr.msc",
+      "devmgmt.msc",
+      "diskmgmt.msc"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 96,
+    "question": "While staying at a hotel, a user attempts to connect to the hotel Wi-Fi but notices that multiple SSIDs have very similar names. Which of the following social-engineering attacks is being attempted?",
+    "options": [
+      "Evil twin",
+      "Impersonation",
+      "Insider threat",
+      "Whaling"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 97,
+    "question": "A technician needs to remotely connect to a Linux desktop to assist a user with troubleshooting. The technician needs to make use of a tool natively designed for Linux. Which of the following tools will the technician MOST likely use?",
+    "options": [
+      "VNC",
+      "MFA",
+      "MSRA",
+      "RDP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 98,
+    "question": "Which of the following features must be configured on a Windows OS desktop in order to encrypt files in a laptop?",
+    "options": [
+      "HDD drivers",
+      "BitLocker",
+      "Boot settings",
+      "RAID"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 99,
+    "question": "A manager called the help desk to ask for assistance with creating a more secure environment for the finance department, which resides in a non-domain environment. Which of the following would be the BEST method to protect against unauthorized use?",
+    "options": [
+      "Implementing password expiration",
+      "Restricting user permissions",
+      "Using screen locks",
+      "Disabling unnecessary services"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 100,
+    "question": "Which of the following is the default GUI and file manager in macOS?",
+    "options": [
+      "Disk Utility",
+      "Finder",
+      "Dock",
+      "FileVault"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 101,
+    "question": "A technician needs to override DNS and redirect IP addresses and URLs to different locations. Which of the following should the technician do?",
+    "options": [
+      "Install signal repeaters.",
+      "Edit the hosts file.",
+      "Configure the firewall.",
+      "Enable port forwarding."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 102,
+    "question": "Which of the following operating systems can allow users to have access to the source code, can host various server applications, and can be command line only?",
+    "options": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Chrome OS"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 103,
+    "question": "A system dives nearly full, and a technician needs to free up some space. Which of the following tools should the technician use?",
+    "options": [
+      "Disk Cleanup",
+      "Resource Monitor",
+      "Disk Defragment",
+      "Disk Management"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 104,
+    "question": "A technician is partitioning a hard disk. The five primary partitions should contain 4TB of free space. Which of the following partition styles should the technician use to partition the device?",
+    "options": [
+      "EFS",
+      "GPT",
+      "MBR",
+      "FAT32"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 105,
+    "question": "A user’s permissions are limited to read on a shared network folder using NTFS security settings. Which of the following describes this type of security control?",
+    "options": [
+      "SMS",
+      "MFA",
+      "ACL",
+      "MDM"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 106,
+    "question": "A user attempts to install additional software and receives a UAC prompt. Which of the following is the BEST way to resolve this issue?",
+    "options": [
+      "Add a user account to the local administrator's group.",
+      "Configure Windows Defender Firewall to allow access to all networks.",
+      "Create a Microsoft account.",
+      "Disable the guest account."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 107,
+    "question": "A technician needs to add an individual as a local administrator on a Windows home PC. Which of the following utilities would the technician MOST likely use?",
+    "options": [
+      "Settings > Personalization",
+      "Control Panel > Credential Manager",
+      "Settings > Accounts > Family and Other Users",
+      "Control Panel > Network and Sharing Center"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 108,
+    "question": "A Windows administrator is creating user profiles that will include home directories and network printers for several new users. Which of the following is the MOST efficient way for the technician to complete this task?",
+    "options": [
+      "Access control",
+      "Authentication application",
+      "Group Policy",
+      "Folder redirection"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 109,
+    "question": "A technician is troubleshooting boot times for a user. The technician attempts to use MSConfig to see which programs are starting with the OS but receives a message that it can no longer be used to view startup items. Which of the following programs can the technician use to view startup items?",
+    "options": [
+      "msinfo32",
+      "perfmon",
+      "regedit",
+      "taskmgr"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 110,
+    "question": "A systems administrator is experiencing issues connecting from a laptop to the corporate network using PKI. Which of the following tools can the systems administrator use to help remediate the issue?",
+    "options": [
+      "certmgr.msc",
+      "mscontig.exe",
+      "lusrmgr.msc",
+      "perfmon.msc"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 111,
+    "question": "A large company is selecting a new Windows operating system and needs to ensure it has built-in encryption and endpoint protection. Which of the following Windows versions will MOST likely be selected?",
+    "options": [
+      "Home",
+      "Pro",
+      "Pro for Workstations",
+      "Enterprise"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 112,
+    "question": "A technician is reimaging a desktop PC. The technician connects the PC to the network and powers it on. The technician attempts to boot the computer via the NIC to image the computer, but this method does not work. Which of the following is the MOST likely reason the computer is unable to boot into the imaging system via the network?",
+    "options": [
+      "The computer's CMOS battery failed.",
+      "The computer's NIC is faulty.",
+      "The PXE boot option has not been enabled.",
+      "The Ethernet cable the technician is using to connect the desktop to the network is faulty."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 113,
+    "question": "Which of the following features allows a technician to configure policies in a Windows 10 Professional desktop?",
+    "options": [
+      "gpedit",
+      "gpmc",
+      "gpresult",
+      "gpupdate"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 114,
+    "question": "A technician is trying to encrypt a single folder on a PC. Which of the following should the technician use to accomplish this task?",
+    "options": [
+      "FAT32",
+      "exFAT",
+      "BitLocker",
+      "EFS"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 115,
+    "question": "A small-office customer needs three PCs to be configured in a network with no server. Which of the following network types is the customer's BEST choice for this environment?",
+    "options": [
+      "Workgroup network",
+      "Public network",
+      "Wide area network",
+      "Domain network"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 116,
+    "question": "Which of the following common security vulnerabilities can be mitigated by using put validation?",
+    "options": [
+      "Brute-force attack",
+      "Cross-site scripting",
+      "SQL injection",
+      "Cross-site request forgery"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 117,
+    "question": "A technician needs to establish a remote access session with a user who has a Windows workstation. The session must allow for simultaneous viewing of the workstation by both the user and technician. Which of the following remote access technologies should be used?",
+    "options": [
+      "RDP",
+      "VPN",
+      "SSH",
+      "MSRA"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 118,
+    "question": "Which of the following macOS utilities uses AES-128 to encrypt the startup disk?",
+    "options": [
+      "fdisk",
+      "Diskpart",
+      "Disk Utility",
+      "FileVault"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 119,
+    "question": "A customer calls a service support center and begins yelling at a technician about a feature for a product that is not working to the customer's satisfaction. This feature is not supported by the service support center and requires a field technician to troubleshoot. The customer continues to demand service. Which of the following is the BEST course of action for the support center representative to take?",
+    "options": [
+      "Inform the customer that the issue is not within the scope of this department.",
+      "Apologize to the customer and escalate the issue to a manager.",
+      "Ask the customer to explain the issue and then try to fix it independently.",
+      "Respond that the issue is something the customer should be able to fix."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 120,
+    "question": "A user reported that a laptop's screen turns off very quickly after sitting for a few moments and is also very dim when not plugged in to an outlet. Everything else seems to be functioning normally. Which of the following Windows settings should be configured?",
+    "options": [
+      "Power Plans",
+      "Hibernate",
+      "Sleep/Suspend",
+      "Screensaver"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 121,
+    "question": "A customer calls the help desk asking for instructions on how to modify desktop wallpaper. Which of the following Windows 10 settings should the technician recommend?",
+    "options": [
+      "Personalization",
+      "Apps",
+      "Updates",
+      "Display"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 122,
+    "question": "A user calls the help desk and reports a workstation is infected with malicious software. Which of the following tools should the help desk technician use to remove the malicious software? (Choose two.)",
+    "options": [
+      "Local Network Connection",
+      "User Account Control",
+      "Windows Backup and Restore",
+      "Windows Firewall",
+      "Windows Defender",
+      "Network Packet Analyzer"
+    ],
+    "correct": [
+      4,
+      5
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 123,
+    "question": "A systems administrator is monitoring an unusual amount of network traffic from a kiosk machine and needs to investigate to determine the source of the traffic. Which of the following tools can the administrator use to view which processes on the kiosk machine are connecting to the internet?",
+    "options": [
+      "Resource Monitor",
+      "Performance Monitor",
+      "Command Prompt",
+      "System Information"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 124,
+    "question": "A corporation purchased new computers for a school. The computers are the same make and model and need to have the standard image loaded. Which of the following orchestration tools should a desktop administrator use for wide-scale deployment?",
+    "options": [
+      "USB drive",
+      "DVD installation media",
+      "PXE boot",
+      "Recovery partition"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 125,
+    "question": "A user added a second monitor and wants to extend the display to it. In which of the following Windows settings will the user most likely be able to make this change?",
+    "options": [
+      "System",
+      "Devices",
+      "Personalization",
+      "Accessibility"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 126,
+    "question": "A systems administrator is configuring centralized desktop management for computers on a domain. The management team has decided that all users' workstations should have the same network drives, printers, and configurations. Which of the following should the administrator use to accomplish this task?",
+    "options": [
+      "Network and Sharing Center",
+      "net use",
+      "User Accounts",
+      "regedit",
+      "Group Policy"
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 127,
+    "question": "A user connected an external hard drive but is unable to see it as a destination to save files. Which of the following tools will allow the drive to be formatted?",
+    "options": [
+      "Disk Management",
+      "Device Manager",
+      "Disk Cleanup",
+      "Disk Defragmenter"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 128,
+    "question": "Which of the following best describes when to use the YUM command in Linux?",
+    "options": [
+      "To add functionality",
+      "To change folder permissions",
+      "To show documentation",
+      "To list file contents"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 129,
+    "question": "Which of the following allows access to the command line in macOS?",
+    "options": [
+      "PsExec",
+      "command.com",
+      "Terminal",
+      "CMD"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 130,
+    "question": "A desktop technician has received reports that a user's PC is slow to load programs and saved files. The technician investigates and discovers an older HDD with adequate free space. Which of the following should the technician use to alleviate the issue first?",
+    "options": [
+      "Disk Management",
+      "Disk Defragment",
+      "Disk Cleanup",
+      "Device Manager"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 131,
+    "question": "An employee calls the help desk regarding an issue with a laptop PC. After a Windows update, the user can no longer use certain locally attached devices, and a reboot has not fixed the issue. Which of the following should the technician perform to fix the issue?",
+    "options": [
+      "Disable the Windows Update service.",
+      "Check for updates.",
+      "Restore hidden updates.",
+      "Roll back updates."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 132,
+    "question": "A technician needs to transfer a file to a user's workstation. Which of the following would best accomplish this task utilizing the workstation's built-in protocols?",
+    "options": [
+      "VPN",
+      "SMB",
+      "RMM",
+      "MSRA"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 133,
+    "question": "Which of the following is most likely used to run .vbs files on Windows devices?",
+    "options": [
+      "winmgmt.exe",
+      "powershell.exe",
+      "cscript.exe",
+      "explorer.exe"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 134,
+    "question": "A technician wants to install Developer Mode on a Windows laptop but is receiving a “failed to install package” message. Which of the following should the technician do first?",
+    "options": [
+      "Ensure internet connectivity.",
+      "Check for Windows updates.",
+      "Enable SSH.",
+      "Reboot computer."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 135,
+    "question": "Which of the following would most likely be used in a small office environment?",
+    "options": [
+      "Print server",
+      "Virtualization",
+      "Domain access",
+      "Workgroup"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 136,
+    "question": "An IT security team is implementing a new Group Policy that will return a computer to the log-in after three minutes. Which of the following best describes the change in policy?",
+    "options": [
+      "Log-in times",
+      "Screen lock",
+      "User permission",
+      "Log-in lockout attempts"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 137,
+    "question": "During an enterprise rollout of a new application, a technician needs to validate compliance with an application’s EULA while also reducing the number of licenses to manage. Which of the following licenses would best accomplish this goal?",
+    "options": [
+      "Personal use license",
+      "Corporate use license",
+      "Open-source license",
+      "Non-expiring license"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 138,
+    "question": "An administrator is designing and implementing a server backup system that minimizes the capacity of storage used. Which of the following is the best backup approach to use in conjunction with synthetic full backups?",
+    "options": [
+      "Differential",
+      "Open file",
+      "Archive",
+      "Incremental"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 139,
+    "question": "A user receives the following error while attempting to boot a computer: • BOOTMGR is missing • Press Ctrl+Alt+Del to restart Which of the following should a desktop engineer attempt first to address this issue?",
+    "options": [
+      "Repair Windows.",
+      "Partition the hard disk.",
+      "Reimage the workstation.",
+      "Roll back the updates."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 140,
+    "question": "A technician is working on a way to register all employee badges and associated computer IDs. Which of the following options should the technician use in order to achieve this objective?",
+    "options": [
+      "Database system",
+      "Software management",
+      "Active Directory description",
+      "Infrastructure as a Service"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 141,
+    "question": "A user requires a drive to be mapped through a Windows command line. Which of the following command-line tools can be utilized to map the drive?",
+    "options": [
+      "gpupdate",
+      "net use",
+      "hostname",
+      "dir"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 142,
+    "question": "Users access files in the department share. When a user creates a new subfolder, only that user can access the folder and its files. Which of the following will MOST likely allow all users to access the new folders?",
+    "options": [
+      "Assigning share permissions",
+      "Enabling inheritance",
+      "Requiring multifactor authentication",
+      "Removing archive attribute"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 143,
+    "question": "Which of the following ls command options is used to display hidden files and directories?",
+    "options": [
+      "-a",
+      "-s",
+      "-lh",
+      "-t"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 144,
+    "question": "Which of the following filesystems replaced FAT as the preferred filesystem for Microsoft Windows OS?",
+    "options": [
+      "APFS",
+      "FAT32",
+      "NTFS",
+      "ext4"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 145,
+    "question": "A user requires local administrative access to a workstation. Which of the following Control Panel utilities allows the technician to grant access to the user?",
+    "options": [
+      "System",
+      "Network and Sharing Center",
+      "User Accounts",
+      "Security and Maintenance"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 146,
+    "question": "A systems administrator is troubleshooting network performance issues in a large corporate office. The end users report that traffic to certain internal environments is not stable and often drops. Which of the following command-line tools can provide the most detailed information for investigating the issue further?",
+    "options": [
+      "ipconfig",
+      "arp",
+      "nslookup",
+      "pathping"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 147,
+    "question": "A user's workstation is failing to load. An analyst inspects the workstation and sees a message that states there is no bootable device. Which of the following should the analyst do first?",
+    "options": [
+      "Reimage the machine back to factory defaults.",
+      "Verify drive readability in the BIOS.",
+      "Select safe mode when the machine begins booting.",
+      "Boot to a Linux live image."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 148,
+    "question": "A large university wants to equip all classrooms with high-definition IP videoconferencing equipment. Which of the following would most likely be impacted in this situation?",
+    "options": [
+      "SAN",
+      "LAN",
+      "GPU",
+      "PAN"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 149,
+    "question": "A technician needs administrator access on a Windows workstation to facilitate system changes without elevating permissions. Which of the following would best accomplish this task?",
+    "options": [
+      "Group Policy Editor",
+      "Local Users and Groups",
+      "Device Manager",
+      "System Configuration"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 150,
+    "question": "Which of the following default system tools can be used in macOS to allow the technician to view the screen simultaneously with the user?",
+    "options": [
+      "Remote Assistance",
+      "Remote Desktop Protocol",
+      "Screen Sharing",
+      "Virtual Network Computing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 151,
+    "question": "Windows updates need to be performed on a department's servers. Which of the following methods should be used to connect to the server?",
+    "options": [
+      "FTP",
+      "MSRA",
+      "RDP",
+      "VPN"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 152,
+    "question": "A technician is working on a Windows 10 PC that has unwanted applications starting on boot. Which of the following tools should the technician use to disable applications on startup?",
+    "options": [
+      "System Configuration",
+      "Task Manager",
+      "Performance Monitor",
+      "Group Policy Editor"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 153,
+    "question": "A technician receives an invalid certificate error when visiting a website. Other workstations on the same local network are unable to replicate this issue. Which of the following is most likely causing the issue?",
+    "options": [
+      "Date and time",
+      "User access control",
+      "UEFI boot mode",
+      "Log-on times"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 154,
+    "question": "Which of the following is used as a password manager in the macOS?",
+    "options": [
+      "Terminal",
+      "FileVault",
+      "Privacy",
+      "Keychain"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 155,
+    "question": "Which of the following file types would be used in the Windows Startup folder to automate copying a personal storage table (.pst file) to a network drive at log-in?",
+    "options": [
+      ".bat",
+      ".dll",
+      ".ps1",
+      ".txt"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 156,
+    "question": "Which of the following macOS features can help a user dose an application that has stopped responding?",
+    "options": [
+      "Finder",
+      "Mission Control",
+      "System Preferences",
+      "Force Quit"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 157,
+    "question": "Which of the following filesystem types does macOS use?",
+    "options": [
+      "ext4",
+      "exFAT",
+      "NTFS",
+      "APFS"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 158,
+    "question": "A company recently outsourced its night-shift cleaning service. A technician is concerned about having unsupervised contractors in the building. Which of the following security measures can be used to prevent the computers from being accessed? (Choose two.)",
+    "options": [
+      "Implementing data-at-rest encryption",
+      "Disabling AutoRun",
+      "Restricting user permissions",
+      "Restricting log-in times",
+      "Enabling a screen lock",
+      "Disabling local administrator accounts"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 159,
+    "question": "A user requested that the file permissions on a Linux device be changed to only allow access to a certain group of users. Which of the following commands should be used to complete the user's request?",
+    "options": [
+      "cat",
+      "chmod",
+      "pwd",
+      "cacls"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 160,
+    "question": "A new employee is having difficulties using a laptop with a docking station. The laptop is connected to the docking station, and the laptop is closed. The external monitor works for a few seconds, but then the laptop goes to sleep. Which of the following options should the technician configure in order to fix the issue?",
+    "options": [
+      "Hibernate",
+      "Sleep/suspend",
+      "Choose what closing the lid does",
+      "Turn on fast startup"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 161,
+    "question": "A technician is unable to access the internet or named network resources. The technician receives a valid IP address from the DHCP server and can ping the default gateway. Which of the following should the technician check next to resolve the issue?",
+    "options": [
+      "Verify the DNS server settings",
+      "Turn off the Windows firewall",
+      "Confirm the subnet mask is correct",
+      "Configure a static IP address"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 162,
+    "question": "A technician needs to ensure that USB devices are not suspended by the operating system. Which of the following Control Panel utilities should the technician use to configure the setting?",
+    "options": [
+      "System",
+      "Power Options",
+      "Devices and Printers",
+      "Ease of Access"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 163,
+    "question": "A salesperson's computer is unable to print any orders on a local printer that is connected to the computer. Which of the following tools should the salesperson use to restart the print spooler?",
+    "options": [
+      "Control Panel",
+      "Processes",
+      "Startup",
+      "Services"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 164,
+    "question": "A user wants to back up a Windows 10 device. Which of the following should the user select?",
+    "options": [
+      "Devices and Printers",
+      "Email and Accounts",
+      "Update and Security",
+      "Apps and Features"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 165,
+    "question": "A technician is familiar with most personnel at a customer's location and has clearance to work unsupervised. Which of the following describes how the technician should handle personal communication while on site?",
+    "options": [
+      "Respond to calls and text messages while on site but not when working directly with personnel.",
+      "Respond to calls and text messages only from family.",
+      "Respond to calls and text messages only when an emergency situation requires a response.",
+      "Respond to calls and text messages discreetly while on site."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 166,
+    "question": "Which of the following Windows 10 editions is the most appropriate for a single user who wants to encrypt a hard drive with BitLocker?",
+    "options": [
+      "Professional",
+      "Home",
+      "Enterprise",
+      "Embedded"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 167,
+    "question": "A technician needs to reimage a desktop in an area without network access. Which of the following should the technician use? (Choose two.)",
+    "options": [
+      "USB",
+      "PXE",
+      "Optical media",
+      "Partition",
+      "Boot record",
+      "SMB"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 168,
+    "question": "A customer has a USB-only printer attached to a computer. A technician is configuring an arrangement that allows other computers on the network to use the printer. In which of the following locations on the customer's desktop should the technician make this configuration?",
+    "options": [
+      "Printing Preferences/Advanced tab",
+      "Printer Properties/Sharing tab",
+      "Printer Properties/Security tab",
+      "Printer Properties/Ports tab"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 169,
+    "question": "A technician requires graphical remote access to various Windows, Linux, and macOS desktops on the company LAN. The security administrator asks the technician to utilize a single software solution that does not require an external internet connection. Which of the following remote access tools is the technician most likely to install?",
+    "options": [
+      "NC",
+      "RMM",
+      "RDP",
+      "SSH"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 170,
+    "question": "A help desk technician needs to remotely access and control a customer's Windows PC by using a secure session that allows the technician the same control as the customer. Which of the following tools provides this type of access?",
+    "options": [
+      "FTP",
+      "RDP",
+      "SSH",
+      "VNC"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 171,
+    "question": "A remote user's smartphone is performing very slowly. The user notices that the performance improves slightly after rebooting but then reverts back to performing slowly. The user also notices that the phone does not get any faster after connecting to the company's corporate guest network. A technician sees that the phone has a large number of applications installed on it. Which of the following is the most likely cause of the issue?",
+    "options": [
+      "The user is in a poor signal area.",
+      "The user has too many processes running.",
+      "The smartphone has malware on it.",
+      "The smartphone has been jailbroken."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 172,
+    "question": "Which of the following is the most likely to use NTFS as the native filesystem?",
+    "options": [
+      "macOS",
+      "Linux",
+      "Windows",
+      "Android"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 173,
+    "question": "A user's application is unresponsive. Which of the following Task Manager tabs will allow the user to address the situation?",
+    "options": [
+      "Startup",
+      "Performance",
+      "Application history",
+      "Processes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 174,
+    "question": "A new spam gateway was recently deployed at a small business. However, users still occasionally receive spam. The management team is concerned that users will open the messages and potentially infect the network systems. Which of the following is the most effective method for dealing with this issue?",
+    "options": [
+      "Adjusting the spam gateway",
+      "Updating firmware for the spam appliance",
+      "Adjusting AV settings",
+      "Providing user training"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 175,
+    "question": "Which of the following file extensions should a technician use for a PowerShell script?",
+    "options": [
+      ".ps1",
+      ".py",
+      ".sh",
+      ".bat",
+      ".cmd"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 176,
+    "question": "An administrator needs to select a method to dispose of SSDs containing sensitive data. Which of the following are the most appropriate methods? (Choose two.)",
+    "options": [
+      "Degauss",
+      "Delete",
+      "Incinerate",
+      "Recycle",
+      "Format",
+      "Shred"
+    ],
+    "correct": [
+      2,
+      5
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 177,
+    "question": "A technician needs to configure security settings on a Windows 10 workstation. Which of the following should the technician configure to limit password attempts?",
+    "options": [
+      "Account Lockout Policy",
+      "User Access Control",
+      "System Protection",
+      "Firewall"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 178,
+    "question": "Which of the following protocols supports fast roaming between networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "LEAP",
+      "PEAP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 179,
+    "question": "A user's computer unexpectedly shut down immediately after the user plugged in a USB headset. Once the user turned the computer back on, everything was functioning properly, including the headset. Which of the following Microsoft tools would most likely be used to determine the root cause?",
+    "options": [
+      "Event Viewer",
+      "System Configuration",
+      "Device Manager",
+      "Performance Monitor"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 180,
+    "question": "A large company is changing its password length requirements. The Chief Information Officer is mandating that passwords now be at least 12 characters long, instead of 10. Which of the following should be used to adjust this setting?",
+    "options": [
+      "Group Policy",
+      "User accounts",
+      "Access control lists",
+      "Authenticator applications"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 181,
+    "question": "A user recently purchased a second monitor and wants to extend the Windows desktop to the new screen. Which of the following Control Panel options should a technician adjust to help the user?",
+    "options": [
+      "Color Management",
+      "System",
+      "Troubleshooting",
+      "Device Manager",
+      "Administrative Tools"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 182,
+    "question": "Which of the following commands can a technician use to get the MAC address of a Linux distribution?",
+    "options": [
+      "net use",
+      "ifconfig",
+      "netstat",
+      "ping"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 183,
+    "question": "A user reports that the hard drive activity light on a Windows 10 desktop computer has been steadily lit for more than an hour and performance is severely degraded. Which of the following tabs in Task Manager contains the information a technician should use to identify the cause of this issue?",
+    "options": [
+      "Services",
+      "Processes",
+      "Performance",
+      "Startup"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 184,
+    "question": "Which of the following features can be used to ensure a user can access multiple versions of files?",
+    "options": [
+      "Multiple desktops",
+      "Remote Disc",
+      "Time Machine",
+      "FileVault"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 185,
+    "question": "A technician wants to enable BitLocker on a Windows 10 laptop and is unable to find the BitLocker Drive Encryption menu item in Control Panel. Which of the following explains why the technician is unable to find this menu item?",
+    "options": [
+      "The hardware does not meet BitLocker’s minimum system requirements.",
+      "BitLocker was renamed for Windows 10.",
+      "BitLocker is not included on Windows 10 Home.",
+      "BitLocker was disabled in the registry of the laptop."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 186,
+    "question": "A user’s Windows 10 workstation with an HDD is running really slowly. The user has opened, closed, and saved many large files over the past week. Which of the following tools should a technician use to remediate the issue?",
+    "options": [
+      "Disk Defragment",
+      "Registry Editor",
+      "System Information",
+      "Disk Cleanup"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 187,
+    "question": "A Linux technician needs a filesystem type that meets the following requirements: • All changes are tracked. • The possibility of file corruption is reduced. • Data recovery is easy. Which of the following filesystem types best meets these requirements?",
+    "options": [
+      "ext3",
+      "FAT32",
+      "exFAT",
+      "NTFS"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 188,
+    "question": "A user reports being unable to access a sports team’s website on an office computer. The administrator tells the user this blocked access is intentional and based on company guidelines. Which of the following is the administrator referring to?",
+    "options": [
+      "NDA",
+      "AUP",
+      "VPN",
+      "SOP"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 189,
+    "question": "A technician is manually updating Windows workstations. Each workstation is currently running Windows Pro in a workgroup environment. Which of the following changes can the technician make to create a more manageable environment?",
+    "options": [
+      "Downgrade all workstations from the Pro version to the Home version of the OS.",
+      "Upgrade all workstations from the Pro version to Pro for Workstations.",
+      "Create a domain and join the workstations to the domain for management purposes.",
+      "Make sure all workstations are operating under the same workgroup name."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 190,
+    "question": "A technician wants to update the local security policies on a Windows machine but is unable to launch the expected snap-in. Which of the following is the most likely reason?",
+    "options": [
+      "The computer is running Windows Home.",
+      "The user did not sign the end user license agreement.",
+      "The user disabled the User Account Control.",
+      "An antivirus application is blocking access."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 191,
+    "question": "Which of the following is also known as something you know, something you have, and something you are?",
+    "options": [
+      "ACL",
+      "MFA",
+      "SMS",
+      "NFC"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 192,
+    "question": "A client wants a technician to set up a proxy server in a branch office to manage internet access. This involves configuring the workstations to use the new proxy server. Which of the following Internet Options tabs in Control Panel would be most appropriate for the technician to use to configure the settings?",
+    "options": [
+      "Privacy",
+      "Advanced",
+      "Content",
+      "Connections",
+      "Security"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 193,
+    "question": "An administrator configured security features on company-owned mobile devices to help protect against data loss. Which of the following is the best way to protect data on a misplaced device?",
+    "options": [
+      "Remote wipe",
+      "Device encryption",
+      "PIN codes",
+      "Locator applications"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 194,
+    "question": "Which of the following operating systems is most commonly used in embedded systems?",
+    "options": [
+      "Chrome OS",
+      "macOS",
+      "Windows",
+      "Linux"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 195,
+    "question": "A technician is building a new desktop machine for a user who will be using the workstation to render 3-D promotional movies. Which of the following is the most important component?",
+    "options": [
+      "Dedicated GPU",
+      "DDR5 SODIMM",
+      "NVMe disk",
+      "64-bit CPU"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 196,
+    "question": "A technician is setting up a printer on a Linux workstation. Which of the following commands should the technician use to set the default printer?",
+    "options": [
+      "lpr",
+      "lspool",
+      "lpstat",
+      "lpoptions"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 197,
+    "question": "A technician is troubleshooting a Windows system that is having issues with the OS loading at startup. Which of the following should the technician do to diagnose the issue?",
+    "options": [
+      "Enable boot logging on the system.",
+      "Launch the last known-good configuration.",
+      "Check the system resource usage in Task Manager.",
+      "Run the sfc /scannow command.",
+      "Use the Event Viewer to open the application log."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 198,
+    "question": "A user is trying to limit the amount of time their children spend on the internet. Which of the following Windows 10 settings should be enabled to accomplish this objective?",
+    "options": [
+      "Family Options",
+      "Update & Security",
+      "Ease of Access",
+      "Network & Internet",
+      "Privacy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 199,
+    "question": "A technician is on site dealing with an angry customer. The customer thinks the issues have not been addressed, while the technician thinks that the issue has been correctly resolved. Which of the following should the technician do to best handle the situation?",
+    "options": [
+      "Insist that the customer is correct and document the concern.",
+      "Listen to the customer and do not speak at all.",
+      "Escalate the issue to the next tier.",
+      "Apologize and ask what would help resolve the issue."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 200,
+    "question": "A technician is doing a bare-metal installation of the Windows 10 operating system. Which of the following prerequisites must be in place before the technician can start the installation process?",
+    "options": [
+      "Internet connection",
+      "Product key",
+      "Sufficient storage space",
+      "UEFI firmware",
+      "Legacy BIOS"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 201,
+    "question": "Which of the following operating systems would most likely be used to run the inventory management system at a factory?",
+    "options": [
+      "Windows",
+      "Chrome OS",
+      "Android",
+      "iOS"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 202,
+    "question": "A company using Active Directory wants to change the location of all users' \"Documents\" to a file server on the network. Which of the following should the company set up to accomplish this task?",
+    "options": [
+      "Security groups",
+      "Folder redirection",
+      "Organizational unit structure",
+      "Access control list"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 203,
+    "question": "A technician is creating a location on a Windows workstation for a customer to store meeting minutes. Which of the following commands should the technician use?",
+    "options": [
+      "c:\\minutes",
+      "dir",
+      "rmdir",
+      "md"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 204,
+    "question": "Which of the following is the most likely reason a filtration system is critical for data centers?",
+    "options": [
+      "Plastics degrade over time.",
+      "High humidity levels can rust metal.",
+      "Insects can invade the data center.",
+      "Dust particles can clog the machines."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 205,
+    "question": "Which of the following Linux commands would help to identify which directory the user is currently operating in?",
+    "options": [
+      "pwd",
+      "dig",
+      "find",
+      "cat"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 206,
+    "question": "A user is setting up a new Windows 10 laptop. Which of the following Windows settings should be used to input the SSID and password?",
+    "options": [
+      "Network & Internet",
+      "System",
+      "Personalization",
+      "Accounts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 207,
+    "question": "A customer is configuring on an old desktop an inexpensive file server to share photos and videos and wants to avoid complicated licensing. Which of the following operating systems should the technician most likely recommend?",
+    "options": [
+      "Chrome OS",
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 208,
+    "question": "Which of the following operating systems uses the ext4 filesystem type?",
+    "options": [
+      "macOS",
+      "iOS",
+      "Linux",
+      "Windows"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 209,
+    "question": "Which of the following is the Windows OS that only recognizes 4GB of RAM?",
+    "options": [
+      "The Home version OS",
+      "The 32-bit OS",
+      "The 64-bit OS",
+      "The trial version OS"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 210,
+    "question": "A user receives an error message on a Windows 10 device when trying to access a mapped drive from a Windows XP machine in the office. Other Windows XP devices in the office can access the drive. Which of the following Control Panel utilities should the user select to enable connectivity to the device?",
+    "options": [
+      "Devices and Printers",
+      "Administrative Tools",
+      "Network and Sharing Center",
+      "Programs and Features"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 211,
+    "question": "An IT technician is attempting to access a user’s workstation on the corporate network but needs more information from the user before an invitation can be sent. Which of the following command-line tools should the technician instruct the user to run?",
+    "options": [
+      "nslookup",
+      "tracert",
+      "hostname",
+      "gpresult"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 212,
+    "question": "A customer calls desktop support and begins yelling at a technician. The customer claims to have submitted a support ticket two hours ago and complains that the issue still has not been resolved. Which of the following describes how the technician should respond?",
+    "options": [
+      "Place the customer on hold until the customer calms down.",
+      "Disconnect the call to avoid a confrontation.",
+      "Wait until the customer is done speaking and offer assistance.",
+      "Escalate the issue to a supervisor."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 213,
+    "question": "Which of the following operating systems was the .app file type designed to run under as an application file bundle?",
+    "options": [
+      "macOS",
+      "Chrome",
+      "Windows",
+      "Linux"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 214,
+    "question": "A healthcare organization wants to provide iPads to the nursing staff. Which of the following accounts would provide the least privilege to the users?",
+    "options": [
+      "Guest",
+      "Root",
+      "Superuser",
+      "Administrator"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 215,
+    "question": "A user clicked on a link in an email and was redirected to a web page. Now, some commonly used websites are not accessible. A technician confirms that other users are not experiencing the same issue. Which of the following steps should the technician take next to properly identify the issue?",
+    "options": [
+      "Check the hosts file.",
+      "Review the laptop’s IP settings",
+      "Enable the Windows Firewall.",
+      "Verify if the wireless router is functioning."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 216,
+    "question": "A newly hired employee is trying to enroll a personal mobile device in the company's mobile device management system. After the initial attempt, the employee receives a notification stating, \"not compliant - call support.' Which of the following is the reason why the employee is receiving this message?",
+    "options": [
+      "More RAM is needed.",
+      "AirDrop is not enabled.",
+      "The device has been jailbroken.",
+      "The account has no profile picture."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 217,
+    "question": "A technician is modifying the default home page of all the workstations in a company. Which of the following will help to implement this change?",
+    "options": [
+      "Group Policy",
+      "Browser extension",
+      "System Configuration",
+      "Task Scheduler"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 218,
+    "question": "A technician is configuring a SOHO router and wants to only allow specific computers on the network. Which of the following should the technician do?",
+    "options": [
+      "Configure MAC filtering.",
+      "Disable DHCP.",
+      "Configure port forwarding.",
+      "Disable guest access."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 219,
+    "question": "A technician is adding some Windows 10 workstations to the corporate domain. A script was able to add the majority of the workstations, but failed on a couple. Which of the following menus should the technician check in order to complete the task manually?",
+    "options": [
+      "User Accounts",
+      "System Properties",
+      "Windows Firewall",
+      "Network and Sharing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 220,
+    "question": "A technician is setting up a network printer for a customer who has a SOHO router. The technician wants to make sure the printer stays connected in the future and is available on all the computers in the house. Which of the following should the technician configure on the printer?",
+    "options": [
+      "DNS settings",
+      "Static IP",
+      "WWAN",
+      "Metered connection"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 221,
+    "question": "A web server is configured to only allow secure connections. Which of the following will a user most likely use to connect to the web server?",
+    "options": [
+      "TFTP",
+      "HTTP",
+      "FTP",
+      "TLS"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 222,
+    "question": "Which of the following allows users to access connected system features through account federation?",
+    "options": [
+      "MFA",
+      "NAC",
+      "SSO",
+      "UAC"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 223,
+    "question": "A technician has identified malicious traffic originating from a user's computer. Which of the following is the best way to identify the source of the attack?",
+    "options": [
+      "Investigate the firewall logs.",
+      "Isolate the machine from the network.",
+      "Inspect the Windows Event Viewer.",
+      "Take a physical inventory of the device."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 224,
+    "question": "Remote employees need access to information that is hosted on local servers at the company. The IT department needs to find a solution that gives employees secure access to the company's resources as if the employees were on premises. Which of the following remote connection services should the IT team implement?",
+    "options": [
+      "SSH",
+      "VNC",
+      "VPN",
+      "RDP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 225,
+    "question": "A user received an alert from a Windows computer indicating low storage space. Which of the following will best resolve this issue?",
+    "options": [
+      "Reviewing System information",
+      "Running Disk Cleanup",
+      "Editing the Registry",
+      "Checking the Performance Monitor",
+      "Increasing the memory"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 226,
+    "question": "Which of the following would typically require the most computing resources from the host computer?",
+    "options": [
+      "Chrome OS",
+      "Windows",
+      "Android",
+      "macOS",
+      "Linux"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 227,
+    "question": "Which of the following languages is used for scripting the creation of Active Directory accounts?",
+    "options": [
+      "Bash",
+      "Structured Query Language",
+      "Hypertext Preprocessor",
+      "PowerShell"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 228,
+    "question": "A technician is creating a Windows splash screen that details log-in expectations. Which of the following should the technician most likely use?",
+    "options": [
+      "End user license agreement",
+      "Non-disclosure agreement",
+      "Regulatory compliance",
+      "Acceptable use policy"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 229,
+    "question": "A user receives an email from what appears to be a trusted, known insider who is requesting confidential banking information. After the user further inspects the email, the user notices that one character in the email address is incorrect. Which of the following is being attempted?",
+    "options": [
+      "Evil twin",
+      "Insider threat",
+      "Zero-day attack",
+      "Impersonation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 230,
+    "question": "A network administrator is setting up the security for a SOHO wireless network. Which of the following options should the administrator enable to secure the network?",
+    "options": [
+      "NAT",
+      "WPA3",
+      "802.1X",
+      "Static IP"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 231,
+    "question": "Which of the following environmental factors are most important to consider when planning the configuration of a data center? (Choose two.)",
+    "options": [
+      "Temperature levels",
+      "Location of the servers",
+      "Humidity levels",
+      "Noise levels",
+      "Lighting levels",
+      "Cable management"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 232,
+    "question": "A technician would like to repurpose hard drives that contain PII. Which of the following would be the best solution to securely remove the data?",
+    "options": [
+      "Drilling",
+      "Degaussing",
+      "Low-level formatting",
+      "Incinerating"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 233,
+    "question": "An organization is updating the monitors on kiosk machines. While performing the upgrade, the organization would like to remove physical input devices. Which of the following utilities in the Control Panel can be used to turn on the on-screen keyboard to replace the physical input devices?",
+    "options": [
+      "Devices and Printers",
+      "Ease of Access",
+      "Programs and Features",
+      "Device Manager"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 234,
+    "question": "A technician is working at a client office site and the technician’s family member repeatedly calls and texts about a non-emergency situation. Which of the following should the technician do?",
+    "options": [
+      "Step aside and answer.",
+      "Put the phone on silent.",
+      "Text a reply.",
+      "Ignore the phone and continue working."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 235,
+    "question": "A technician needs to ensure that USB devices are not suspended by the operating system. Which of the following Control Panel utilities should the technician use to configure the setting?",
+    "options": [
+      "System",
+      "Power Options",
+      "Recovery",
+      "Ease of Access"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 236,
+    "question": "A technician is an administrator on a messaging application for a private work group of mixed departments. One of the technician’s colleagues discloses to the group that their employer recently suffered a major security breach and shared details about the breach to the group. Which of the following should the technician do first?",
+    "options": [
+      "Ignore the messages as all of the group members work for the same employer.",
+      "Remove the colleague from the group and ask members to delete the messages.",
+      "Message the colleague privately and ask the colleague to delete the messages immediately.",
+      "Contact the supervisor and report the colleague with screenshots of the messages."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 237,
+    "question": "An enterprise user cannot authenticate to the office Wi-Fi. Which of the following steps should most likely be taken to resolve the issue?",
+    "options": [
+      "Reinstall the OS.",
+      "Check the machine’s certificates.",
+      "Resync the Group Policy.",
+      "Power cycle the switch."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 238,
+    "question": "A user reported that Windows has crashed several times during the day. A technician needs to check error messages to determine whether the issue pertains to the hardware or an application. Which of the following tools the technician use?",
+    "options": [
+      "Event Viewer",
+      "Resource Monitor",
+      "Performance Monitor",
+      "Device Manager"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 239,
+    "question": "A users Windows desktop has low disk space. A technician thinks some upgrade files were never removed. Which of the following tools should me technician use to correct the issue?",
+    "options": [
+      "devmgmt.msc",
+      "cleanmgr.exe",
+      "dfrgui.exe",
+      "diskmgmt.msc"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 240,
+    "question": "A user is unable to access the internet but can still print to network printers. Other users are not experiencing this issue. Which of the following steps should the technician take first to diagnose the issue?",
+    "options": [
+      "Validate physical connectivity.",
+      "Reboot the router.",
+      "Disable IPv6.",
+      "Check the DNS settings."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 241,
+    "question": "A user’s computer is running slower than usual and takes a long time to start up. Which of the following tools should me technician use first to investigate the issue?",
+    "options": [
+      "Action Center",
+      "Task Manager",
+      "Resource Monitor",
+      "Security Configuration Wizard",
+      "Event Viewer"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 242,
+    "question": "A technician wants to securely dispose of storage drives. Which or the following is the best way to eliminate data on SSDs?",
+    "options": [
+      "Degaussing",
+      "Shredding",
+      "Erasing",
+      "Drilling"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 243,
+    "question": "A technician is helping a customer connect to a shared drive. The technician notices some unused drives that have already been mapped and wants to disconnect those drives first. Which of the following commands should the technician use?",
+    "options": [
+      "format",
+      "netstat",
+      "diskpart",
+      "net use",
+      "rmdir"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 244,
+    "question": "Winch of the following language types enables the automation of tasks?",
+    "options": [
+      "Compiled",
+      "Scripting",
+      "Web",
+      "Database"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  }
+]

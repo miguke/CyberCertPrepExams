@@ -1,0 +1,1645 @@
+[
+  {
+    "id": 1,
+    "question": "A company wants to remove information from past users' hard drives in order to reuse the hard drives. Which of the following is the MOST secure method?",
+    "options": [
+      "Reinstalling Windows",
+      "Performing a quick format",
+      "Using disk-wiping software"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 2,
+    "question": "A user is having phone issues after installing a new application that claims to optimize performance. The user downloaded the application directly from the vendor's website and is now experiencing high network utilization and is receiving repeated security warnings. Which of the following should the technician perform FIRST to mitigate the issue?",
+    "options": [
+      "Reset the phone to factory settings.",
+      "Uninstall the fraudulent application.",
+      "Increase the data plan limits."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 3,
+    "question": "A technician needs to transfer a large number of files over an unreliable connection. The technician should be able to resume the process if the connection is interrupted. Which of the following tools can be used?",
+    "options": [
+      "sfc",
+      "chkdsk",
+      "git clone",
+      "robocopy"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 4,
+    "question": "A company installed a new backup and recovery system. Which of the following types of backups should be completed FIRST? A. Full",
+    "options": [
+      "Non-parity",
+      "Incremental"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 5,
+    "question": "A user contacted the help desk to report pop-ups on a company workstation, indicating the computer has been infected with 137 viruses and payment is needed to remove them. The user thought the company-provided antivirus software would prevent this issue. The help desk ticket states that the user only receives these messages when first opening the web browser. Which of the following steps would MOST likely resolve the issue? (Choose two.)",
+    "options": [
+      "Scan the computer with the company-provided antivirus software.",
+      "Install a new hard drive and clone the user's drive to it.",
+      "Uninstall the company-provided antivirus software.",
+      "Perform a reset on the user's web browser."
+    ],
+    "correct": [
+      2,
+      5
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 6,
+    "question": "A technician is installing new software on a macOS computer. Which of the following file types will the technician MOST likely use?",
+    "options": [
+      ".deb",
+      ".vbs",
+      ".exe",
+      ".app"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 7,
+    "question": "A technician is investigating an employee's smartphone that has the following symptoms: • The device is hot, even when it is not in use. • Applications crash, especially when others are launched. • Certain applications, such as GPS, are in portrait mode when they should be in landscape mode. Which of the following can the technician do to MOST likely resolve these issues with minimal impact? (Choose two.)",
+    "options": [
+      "Turn on autorotation.",
+      "Perform a factory reset.",
+      "Update the device's operating system.",
+      "Reinstall the applications that have crashed."
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 8,
+    "question": "A user's mobile phone has become sluggish. A systems administrator discovered several malicious applications on the device and reset the phone. The administrator installed MDM software. Which of the following should the administrator do to help secure the device against this threat in the future? (Choose two.)",
+    "options": [
+      "Prevent a device root.",
+      "Require a PIN on the unlock screen.",
+      "Prevent GPS spoofing."
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 9,
+    "question": "A technician is unable to join a Windows 10 laptop to a domain. Which of the following is the MOST likely reason?",
+    "options": [
+      "The domain's processor compatibility is not met.",
+      "The laptop has Windows 10 Home installed.",
+      "The laptop does not have all current Windows updates installed."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 10,
+    "question": "A desktop specialist needs to prepare a laptop running Windows 10 for a newly hired employee. Which of the following methods should the technician use to refresh the laptop?",
+    "options": [
+      "Internet-based upgrade",
+      "Repair installation",
+      "In-place upgrade"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 11,
+    "question": "A change advisory board did not approve a requested change due to the lack of alternative actions if implementation failed. Which of the following should be updated before requesting approval again?",
+    "options": [
+      "Scope of change",
+      "Risk level",
+      "Rollback plan"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 12,
+    "question": "A technician receives a call from a user who is unable to open Outlook. The user states that Outlook worked fine yesterday, but the computer may have restarted sometime overnight. Which of the following is the MOST likely reason Outlook has stopped functioning?",
+    "options": [
+      "Spam filter installation",
+      "Invalid registry settings",
+      "Malware infection",
+      "Operating system update"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 13,
+    "question": "After a company installed a new SOHO router, customers were unable to access the company-hosted public website. Which of the following will MOST likely allow customers to access the website?",
+    "options": [
+      "Port forwarding",
+      "IP filtering"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 14,
+    "question": "Which of the following data is MOST likely to be regulated?",
+    "options": [
+      "Name in a phone book",
+      "Name on a medical diagnosis",
+      "Name on a job application",
+      "Name on an employer's website"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 15,
+    "question": "A user is having issues with document-processing software on a Windows workstation. Other users that log in to the same device do not have the same issue. Which of the following should a technician do to remediate the issue?",
+    "options": [
+      "Roll back the updates.",
+      "Increase the page file.",
+      "Update the drivers.",
+      "Rebuild the profile."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 16,
+    "question": "A desktop support technician is tasked with migrating several PCs from Windows 7 Pro to Windows 10 Pro. The technician must ensure files and user preferences are retained, must perform the operation locally, and should migrate one station at a time. Which of the following methods would be MOST efficient?",
+    "options": [
+      "Golden image",
+      "Remote network install",
+      "In-place upgrade"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 17,
+    "question": "Which of the following file extensions are commonly used to install applications on a macOS machine? (Choose three.)",
+    "options": [
+      ".mac",
+      ".pkg",
+      ".deb",
+      ".dmg",
+      ".msi",
+      ".appx G. .app H. .apk G"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 18,
+    "question": "A technician is setting up a backup method on a workstation that only requires two sets of tapes to restore. Which of the following would BEST accomplish this task? A. Differential backup",
+    "options": [
+      "Off-site backup",
+      "Incremental backup"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 19,
+    "question": "A user is attempting to browse the internet using Internet Explorer. When trying to load a familiar web page, the user is unexpectedly redirected to an unfamiliar website. Which of the following would MOST likely solve the issue?",
+    "options": [
+      "Updating the operating system",
+      "Reinstalling the browser"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 20,
+    "question": "Which of the following is a consequence of end-of life operating systems?",
+    "options": [
+      "Operating systems void the hardware warranty.",
+      "Operating systems cease to function.",
+      "Operating systems no longer receive updates.",
+      "Operating systems are unable to migrate data to the new operating system."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 21,
+    "question": "A user received the following error upon visiting a banking website: The security certificate presented by this website was issued for a different website's address. A technician should instruct the user to:",
+    "options": [
+      "clear the browser cache and contact the bank.",
+      "close out of the site and contact the bank.",
+      "continue to the site and contact the bank",
+      "update the browser and contact the bank."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 22,
+    "question": "A technician connects an additional monitor to a PC using a USB port. The original HDMI monitor is mounted to the left of the new monitor. When moving the mouse to the right from the original monitor to the new monitor, the mouse stops at the end of the screen on the original monitor. Which of the following will allow the mouse to correctly move to the new monitor?",
+    "options": [
+      "Rearranging the monitor's position in display settings",
+      "Swapping the cables for the monitors",
+      "Updating the display drivers for the video card"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 23,
+    "question": "A help desk technician runs the following script: Inventory.py. The technician receives the following error message: How do you want to open this file? Which of the following is the MOST likely reason this script is unable to run?",
+    "options": [
+      "Scripts are not permitted to run.",
+      "The script was not built for Windows.",
+      "The script requires administrator privileges.",
+      "The runtime environment is not installed."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 24,
+    "question": "A BSOD appears on a user’s workstation monitor. The user immediately presses the power button to shut down the PC, hoping to repair the issue. The user then restarts the PC, and the BSOD reappears, so the user contacts the help desk. Which of the following should the technician use to determine the cause?",
+    "options": [
+      "Stop code",
+      "Services"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 25,
+    "question": "A technician receives a ticket indicating the user cannot resolve external web pages. However, specific IP addresses are working. Which of the following does the technician MOST likely need to change on the workstation to resolve the issue? A. Default gateway",
+    "options": [
+      "Host address",
+      "Name server",
+      "Subnet mask"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 26,
+    "question": "A technician installed a new application on a workstation. For the program to function properly, it needs to be listed in the Path Environment Variable. Which of the following Control Panel utilities should the technician use?",
+    "options": [
+      "System",
+      "Indexing Options"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 27,
+    "question": "A Chief Executive Officer has learned that an exploit has been identified on the web server software, and a patch is not available yet. Which of the following attacks MOST likely occurred? A. Brute force",
+    "options": [
+      "Zero day",
+      "On-path"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 28,
+    "question": "A user receives a notification indicating the data plan on the user's corporate phone has reached its limit. The user has also noted the performance of the phone is abnormally slow. A technician discovers a third-party GPS application was installed on the phone. Which of the following is the MOST likely cause?",
+    "options": [
+      "The GPS application is installing software updates.",
+      "The GPS application contains malware.",
+      "The GPS application is updating its geospatial map data.",
+      "The GPS application is conflicting with the built-in GPS."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 29,
+    "question": "A desktop engineer is deploying a master image. Which of the following should the desktop engineer consider when building the master image? (Choose two.) A. Device drivers",
+    "options": [
+      "Keyboard backlight settings",
+      "Installed application license keys",
+      "Target device power supply"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 30,
+    "question": "A small business owner wants to install newly purchased software on all networked PCs. The network is not configured as a domain, and the owner wants to use the easiest method possible. Which of the following is the MOST efficient way for the owner to install the application?",
+    "options": [
+      "Use a network share to share the installation files.",
+      "Save software to an external hard drive to install.",
+      "Install the software from the vendor's website."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 31,
+    "question": "A technician is troubleshooting an issue that requires a user profile to be rebuilt. The technician is unable to locate Local Users and Groups in the MMC console. Which of the following is the NEXT step the technician should take to resolve the issue?",
+    "options": [
+      "Run the antivirus scan.",
+      "Restore the system backup.",
+      "Use the administrator console."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 32,
+    "question": "A technician needs to provide recommendations about how to upgrade backup solutions for a site in an area that has frequent hurricanes and an unstable power grid. Which of the following should the technician recommend implementing?",
+    "options": [
+      "High availability",
+      "Regionally diverse backups",
+      "On-site backups",
+      "Incremental backups"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 33,
+    "question": "A user updates a mobile device's OS. A frequently used application becomes consistently unresponsive immediately after the device is launched. Which of the following troubleshooting steps should the user perform FIRST? A. Delete the application's cache. B. Check for application updates.",
+    "options": [
+      "Roll back the OS update.",
+      "Uninstall and reinstall the application."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 34,
+    "question": "Sensitive data was leaked from a user's smartphone. A technician discovered an unapproved application was installed, and the user has full access to the device's command shell. Which of the following is the NEXT step the technician should take to find the cause of the leaked data?",
+    "options": [
+      "Restore the device to factory settings.",
+      "Uninstall the unapproved application."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 35,
+    "question": "The web browsing speed on a customer's mobile phone slows down every few weeks and then returns to normal after three or four days. Restarting the device does not usually restore performance. Which of the following should a technician check FIRST to troubleshoot this issue? A. Data usage limits B. Wi-Fi connection speed",
+    "options": [
+      "Status of airplane mode",
+      "System uptime"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 36,
+    "question": "Which of the following defines the extent of a change?",
+    "options": [
+      "Scope",
+      "Purpose",
+      "Impact"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 37,
+    "question": "All the desktop icons on a user's newly issued PC are very large. The user reports that the PC was working fine until a recent software patch was deployed. Which of the following would BEST resolve the issue?",
+    "options": [
+      "Rolling back video card drivers",
+      "Repairing the Windows profile",
+      "Reinstalling the Windows OS"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 38,
+    "question": "A technician is installing a program from an ISO file. Which of the following steps should the technician take?",
+    "options": [
+      "Mount the ISO and run the installation file.",
+      "Unzip the ISO and execute the setup.exe file."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 39,
+    "question": "A technician installed Windows 10 on a workstation. The workstation only has 3.5GB of usable RAM, even though the technician installed 8GB. Which of the following is the MOST likely reason this system is not utilizing all the available RAM?",
+    "options": [
+      "The system is missing updates.",
+      "The system is utilizing a 32-bit OS.",
+      "The system's memory is failing."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 40,
+    "question": "A user is no longer able to start the OS on a computer and receives an error message indicating there is no OS found. A technician reviews the audit logs and notes that the user's system posted a S.M.",
+    "options": [
+      "R.T. error just days before this issue. Which of the following is the MOST likely cause of this issue?",
+      "Malware",
+      "Windows updates"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 41,
+    "question": "The battery life on an employee's new phone seems to be drastically less than expected, and the screen stays on for a very long time after the employee sets the phone down. Which of the following should the technician check FIRST to troubleshoot this issue? (Choose two.)",
+    "options": [
+      "Screen resolution",
+      "Screen zoom",
+      "Screen timeout",
+      "Screen brightness",
+      "Screen damage",
+      "Screen motion smoothness"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 42,
+    "question": "Which of the following is used to explain issues that may occur during a change implementation?",
+    "options": [
+      "Scope change",
+      "Risk analysis",
+      "Rollback plan"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 43,
+    "question": "A technician is preparing to remediate a Trojan virus that was found on a workstation. Which of the following steps should the technician complete BEFORE removing the virus? A. Disable System Restore.",
+    "options": [
+      "Schedule a malware scan.",
+      "Run Windows Update."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 44,
+    "question": "A technician, who is working at a local office, has found multiple copies of home edition software installed on computers. Which of the following does this MOST likely violate? A. EULA",
+    "options": [
+      "PII",
+      "Open-source agreement"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 45,
+    "question": "A technician needs a way to test software without placing company systems at risk. Which of the following features should the technician use to completely achieve this objective? A. Cryptography",
+    "options": [
+      "Sandbox",
+      "Perimeter network"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 46,
+    "question": "A developer receives the following error while trying to install virtualization software on a workstation: VTx not supported by system Which of the following upgrades will MOST likely fix the issue?",
+    "options": [
+      "Processor",
+      "Hard drive",
+      "Memory",
+      "Video card"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 47,
+    "question": "The screen on a user's mobile device is not autorotating even after the feature has been enabled and the device has been restarted. Which of the following should the technician do NEXT to troubleshoot the issue? A. Calibrate the phone sensors. B. Enable the touchscreen.",
+    "options": [
+      "Reinstall the operating system.",
+      "Replace the screen."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 48,
+    "question": "A technician received a call from a user who clicked on a web advertisement. Now, every time the user moves the mouse, a pop-up displays across the monitor. Which of the following procedures should the technician perform? A. Boot into safe mode.",
+    "options": [
+      "Perform a malware scan.",
+      "Restart the machine.",
+      "Reinstall the browser."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 49,
+    "question": "A company is looking for a solution that provides a backup for all data on the system while providing the lowest impact to the network. Which of the following backup types will the company MOST likely select?",
+    "options": [
+      "Off-site",
+      "Synthetic"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 50,
+    "question": "A remote user is having issues accessing an online share. Which of the following tools would MOST likely be used to troubleshoot the issue?",
+    "options": [
+      "Screen-sharing software",
+      "Secure shell",
+      "Virtual private network"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 51,
+    "question": "Which of the following protects a mobile device against unwanted access when it is left unattended?",
+    "options": [
+      "PIN code",
+      "OS updates"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 52,
+    "question": "A systems administrator installed the latest Windows security patch and received numerous tickets reporting slow performance the next day. Which of the following should the administrator do to resolve this issue?",
+    "options": [
+      "Rebuild user profiles.",
+      "Roll back the updates.",
+      "Restart the services.",
+      "Perform a system file check."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 53,
+    "question": "Which of the following refers to the steps to be taken if an issue occurs during a change implementation?",
+    "options": [
+      "Testing",
+      "Rollback",
+      "Risk"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 54,
+    "question": "An engineer is configuring a new server that requires a bare-metal installation. Which of the following installation methods should the engineer use if installation media is not available on site?",
+    "options": [
+      "Image deployment",
+      "Recovery partition Installation",
+      "Remote network installation",
+      "Repair installation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 55,
+    "question": "A technician installs specialized software on a workstation. The technician then attempts to run the software. The workstation displays a message indicating the software is not authorized to run. Which of the following should the technician do to most likely resolve the issue?",
+    "options": [
+      "Install the software in safe mode.",
+      "Install OS updates.",
+      "Restart the workstation after installation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 56,
+    "question": "A user's corporate phone was stolen, and the device contains company trade secrets. Which of the following technologies should be implemented to mitigate this risk? (Choose two.)",
+    "options": [
+      "Remote wipe",
+      "Remote backup",
+      "Global Positioning System"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 57,
+    "question": "A user is setting up backups on a workstation. The user wants to ensure that the restore process is as simple as possible. Which of the following backup types should the user select? A. Full",
+    "options": [
+      "Incremental",
+      "Synthetic"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 58,
+    "question": "A user receives an error message from an online banking site that states the following: Your connection is not private. Authority invalid. Which of the following actions should the user take next?",
+    "options": [
+      "Proceed to the site.",
+      "Use a different browser.",
+      "Report the error to the bank.",
+      "Reinstall the browser."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 59,
+    "question": "A remote user is experiencing issues connecting to a corporate email account on a laptop. The user clicks the internet connection icon and does not recognize the connected Wi-Fi. The help desk technician, who is troubleshooting the issue, assumes this is a rogue access point. Which of the following is the first action the technician should take?",
+    "options": [
+      "Restart the wireless adapter.",
+      "Launch the browser to see if it redirects to an unknown site.",
+      "Instruct the user to run the installed antivirus software."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 60,
+    "question": "A user's workstation is failing to load. An analyst inspects the workstation and sees a message that states there is no bootable device. Which of the following should the analyst do first?",
+    "options": [
+      "Reimage the machine back to factory defaults.",
+      "Select safe mode when the machine begins booting."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 61,
+    "question": "A user installed a new computer game. Upon starting the game, the user notices the frame rates are low. Which of the following should the user upgrade to resolve the issue?",
+    "options": [
+      "Hard drive",
+      "Graphics card",
+      "Random-access memory",
+      "Monitor"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 62,
+    "question": "A technician is troubleshooting application crashes on a Windows workstation. Each time the workstation user tries to open a website in a browser, the following message is displayed: crypt32.dll is missing or not found Which of the following should the technician attempt first?",
+    "options": [
+      "Rebuild Windows profiles",
+      "Reimage the workstation",
+      "Roll back updates",
+      "Perform a system file check"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 63,
+    "question": "A user is trying to use proprietary software, but it crashes intermittently. The user notices that the desktop is displaying a \"low memory\" warning message. Upon restarting the desktop, the issue persists. Which of the following should a technician do next to troubleshoot the issue?",
+    "options": [
+      "Reimage the computer.",
+      "Reinstall and update the failing software."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 64,
+    "question": "A technician receives a personal text message while troubleshooting a customer's P",
+    "options": [
+      "The technician does not reply to the message and continues troubleshooting. Which of the following best describes the technician's actions?",
+      "Presenting a professional appearance",
+      "Setting and meeting timelines",
+      "Projecting confidence"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 65,
+    "question": "During a network outage, a technician discovers a new network switch that was not listed in the support documentation. The switch was installed during a recent change window when a new office was added to the environment. Which of the following would most likely prevent this type of mismatch after next month's change window?",
+    "options": [
+      "Performing annual network topology reviews",
+      "Requiring all network changes include updating the network diagrams",
+      "Routinely backing up switch configuration files"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 66,
+    "question": "A workstation is displaying a message indicating that a user must exchange cryptocurrency for a decryption key. Which of the following is the best way for a technician to return the device to service safely? A. Run an AV scan.",
+    "options": [
+      "Reinstall the operating system.",
+      "Install a software firewall.",
+      "Perform a system restore"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 67,
+    "question": "A network technician is deploying a new machine in a small branch office that does not have a DHCP server. The new machine automatically receives the IP address of 169.254.0.2 and is unable to communicate with the rest of the network. Which of the following would restore communication?",
+    "options": [
+      "Static entry",
+      "NTP specification"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 68,
+    "question": "A technician is unable to completely start up a system. The OS freezes when the desktop background appears, and the issue persists when the system is restarted. Which of the following should the technician do next to troubleshoot the issue? A. Disable applicable BIOS options.",
+    "options": [
+      "Load the system in safe mode.",
+      "Start up using a flash drive OS and run System Repair."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 69,
+    "question": "A user connected a smartphone to a coffee shop's public Wi-Fi and noticed the smartphone started sending unusual SMS messages and registering strange network activity. A technician thinks a virus or other malware has infected the device. Which of the following should the technician suggest the user do to best address these security and privacy concerns? (Choose two.) A. Disable Wi-Fi autoconnect.",
+    "options": [
+      "Stay offline when in public places.",
+      "Uninstall all recently installed applications.",
+      "Schedule an antivirus scan.",
+      "Reboot the device.",
+      "Update the OS."
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 70,
+    "question": "A corporate smartphone was stored for five months after setup. During this time, the company did not have any system updates. When the phone is turned on, an application runs, but it crashes intermittently. Which of the following should a technician do next?",
+    "options": [
+      "Restart the phone.",
+      "Reimage the OS.",
+      "Reinstall the application."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 71,
+    "question": "A user is unable to access several documents saved on a work PC. A technician discovers the files were corrupted and must change several system settings within Registry Editor to correct the issue. Which of the following should the technician do before modifying the registry keys?",
+    "options": [
+      "Update the anti-malware software.",
+      "Roll back the system updates."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 72,
+    "question": "Which of the following file types allows a user to easily uninstall software from macOS by simply placing it in the trash bin?",
+    "options": [
+      ".exe",
+      ".dmg",
+      ".app",
+      ".rpm",
+      ".pkg"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 73,
+    "question": "A user reports a hardware issue to the help desk. Which of the following should the help desk technician do first when responding to the user? A. Ask the user for the model number of the hardware.",
+    "options": [
+      "Offer a temporary replacement device to the user.",
+      "Submit the issue to the manufacturer.",
+      "Remotely install updates to the device driver."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 74,
+    "question": "A technician is installing software on a user’s workstation. The installation fails due to incompliance with the HCL. Which of the following components is most likely causing the installation to fail? (Choose two.) A. NIC B. CPU",
+    "options": [
+      "PSU",
+      "KVM"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 75,
+    "question": "A user’s laptop has been performing slowly and redirecting to unfamiliar websites. The user has also noticed random pop-up windows. Which of the following is the first step a technician should take to resolve the issue?",
+    "options": [
+      "Scan for malware and ransomware.",
+      "Perform a system restore.",
+      "Update the antivirus software."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 76,
+    "question": "A user is unable to start a computer following a failed Windows 10 update. When trying to start the computer, the user sees a blue screen of death. Which of the following steps should a technician take to diagnose the issue?",
+    "options": [
+      "Perform a safe mode boot.",
+      "Run the System Restore wizard.",
+      "Start the computer in the last known-good configuration."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 77,
+    "question": "Applications on a computer are not updating, which is preventing the user from opening certain files. Which of the following MAC snap-ins should the technician launch next to continue troubleshooting the issue?",
+    "options": [
+      "gpedit.msc",
+      "perfmon.msc",
+      "devmgmt.msc",
+      "eventvwr.msc"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 78,
+    "question": "A technician needs to back up a small business’s entire network that includes ten workstations. Which of the following methods should the technician use to safely and securely back up the business’s network? A. Cloud storage B. RAID",
+    "options": [
+      "Tape drive",
+      "Local backups"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 79,
+    "question": "Malware is installed on a device after a user clicks on a link in a suspicious email. Which of the following is the best way to remove the malware?",
+    "options": [
+      "Run System Restore.",
+      "Place in recovery mode.",
+      "Schedule a scan.",
+      "Restart the P"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 80,
+    "question": "A technician cannot uninstall a system driver because the driver is currently in use. Which of the following tools should the technician use to help uninstall the driver?",
+    "options": [
+      "msinfo32.exe",
+      "dxdiag.exe",
+      "msconfig.exe",
+      "regedit.exe"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 81,
+    "question": "Which of the following statements describes the purpose of scripting languages?",
+    "options": [
+      "To access the hardware of the computer it is running on",
+      "To automate tasks and reduce the amount of manual labor",
+      "To abstract the complexity of the computer system",
+      "To compile the program into an executable file"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 82,
+    "question": "A payroll server has data on it that needs to be readily available and can be recovered quickly if something is accidentally removed. Which of the following backup methods should be used to provide the fastest data recovery in this situation? A. Full B. Differential",
+    "options": [
+      "Synthetic",
+      "Incremental"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 83,
+    "question": "A user reports that a new, personally owned tablet will not connect to the corporate Wi-Fi network. The user is able to connect to the Wi-Fi network with other devices, and the tablet is running the latest software. Which of the following is the most likely cause of the issue?",
+    "options": [
+      "Incorrect encryption settings",
+      "Outdated drivers"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 84,
+    "question": "A technician needs to upgrade a legacy system running on a 32-bit OS with new applications that can work both on a 32-bit and a 64-bit system. The legacy system is critically important to the organization. The IT manager cautions that the new applications must not have a detrimental effect on company finances. Which of the following impacts is the IT manager most concerned with? A. Device B. Business",
+    "options": [
+      "Network",
+      "Operation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 85,
+    "question": "A technician is troubleshooting a Windows 10 PC that is unable to start the GUI. A new SSD and a new copy of Windows were recently installed on the P",
+    "options": [
+      "Which of the following is the most appropriate command to use to fix the issue?",
+      "msconfig",
+      "chkdsk",
+      "sfc",
+      "diskpart",
+      "mstsc"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 86,
+    "question": "A user recently downloaded a free game application on an Android device. The device then began crashing frequently and quickly losing its battery charge. Which of the following should the technician recommend be done first to remediate these issues? (Choose two.)",
+    "options": [
+      "Uninstall the game application.",
+      "Perform a factory reset of the device.",
+      "Install the latest security patches."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 87,
+    "question": "The calendar application on an employee's smartphone is experiencing frequent crashes, and the smartphone has become unresponsive. Which of the following should a technician do first to resolve the issue?",
+    "options": [
+      "Reinstall the application on the smartphone.",
+      "Update the smartphone's OS.",
+      "Reset the smartphone to factory settings.",
+      "Reboot the smartphone."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 88,
+    "question": "A customer, whose smartphone's screen was recently repaired, reports that the device has no internet access through Wi-Fi. The device shows that it is connected to Wi-Fi, has an address of 192.168.1.42, and has no subnet mask. Which of the following should the technician check next?",
+    "options": [
+      "Internal antenna connections",
+      "Static IP settings"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 89,
+    "question": "A computer is restarting automatically and displaying the following error message: Your PC ran into a problem and needs to restart. We’re just collecting some error info, and then we’ll restart for you. (0% complete). Which of the following should the technician do first to diagnose the issue? A. Check the system event logs.",
+    "options": [
+      "Verify the hardware driver versions.",
+      "Install Windows updates."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 90,
+    "question": "A technician is installing a new copy of Windows on all computers in the enterprise. Given the following requirements: • The install phase must be scripted to run over the network. • Each computer requires a new SSD as the system drive. • The existing HDD should remain as a backup drive Which of the following command-line tools should the technician use to install the drive and transfer the installation files from the network share? (Choose three.)",
+    "options": [
+      "net use",
+      "robocopy",
+      "winver",
+      "diskpart",
+      "sfc",
+      "netstat G. ping H. chkdsk"
+    ],
+    "correct": [
+      0,
+      1,
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 91,
+    "question": "A user's File Explorer keeps crashing. The technician is troubleshooting and tries the following: • Runs Windows Update • Runs CHKDSK and SFC /scannow • Clears File Explorer history Which of the following actions should the technician take next?",
+    "options": [
+      "Roll back the most recent set of Windows updates.",
+      "Reimage the computer and ask the user to test.",
+      "Test the computer's memory.",
+      "Repartition the boot drive."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 92,
+    "question": "A technician needs to implement a backup and recovery solution that will ensure executives’ laptops can be restored if needed. The plan should include the capability to perform granular and whole-disk recovery. Which of the following are the best options for the technician to successfully implement the plan? (Choose two.) A. RAID",
+    "options": [
+      "Volume shadow copy",
+      "Incremental backup",
+      "System restore",
+      "Grandfather-father-son backup"
+    ],
+    "correct": [
+      1,
+      5
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 93,
+    "question": "A technician is troubleshooting a user's PC that is running slowly and displaying frequent pop-ups. The technician thinks malware may be causing the issues, but before the issues began the user installed anti-malware software in response to a pop-up window. Which of the following is the most likely cause of these issues? A. Expired certificate B. False alert",
+    "options": [
+      "Missing system files",
+      "OS update failure"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 94,
+    "question": "A user reports receiving constant, unwanted pop-ups and being unable to close the browser window. These issues have impacted the user's productivity and may have caused the user's files to be altered. Which of the following should a technician do to address these issues with minimal impact to the user?",
+    "options": [
+      "Use System Restore to recover the OS files.",
+      "Wipe the computer and install a new copy of the OS.",
+      "Identify whether the disk partition table has been reduced in size.",
+      "Perform a full-system, antivirus scan and check browser notifications."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 95,
+    "question": "A web developer installs and launches a new external web server. Immediately following the launch, the performance of all traffic traversing the firewall degrades substantially. Which of the following considerations was overlooked?",
+    "options": [
+      "OS compatibility",
+      "Quality of service",
+      "32- vs. 64-bit architecture",
+      "Storage requirements"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 96,
+    "question": "A technician is troubleshooting a Windows 10 PC that has experienced a BSO",
+    "options": [
+      "The user recently installed optional Windows updates. Which of the following is best way to resolve the issue?",
+      "Roll back the device drivers.",
+      "Reinstall the OS."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 97,
+    "question": "An administrator needs to back up the following components of a single workstation: • The installation of the operating system • Applications • User profiles • System settings Which of the following backup methods can the administrator use to ensure the workstation is properly backed up? A. Differential",
+    "options": [
+      "Image",
+      "Synthetic"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 98,
+    "question": "A user's Windows computer seems to work well at the beginning of the day. However, its performance degrades throughout the day, and the system freezes when several applications are open. Which of the following should a technician do to resolve the issue? (Choose two.)",
+    "options": [
+      "Install the latest GPU drivers.",
+      "Reinstall the OS.",
+      "Increase the hard drive space.",
+      "Uninstall unnecessary software."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 99,
+    "question": "A large organization is researching proprietary software with vendor support for a multiuser environment. Which of the following EULA types should be selected? A. Corporate",
+    "options": [
+      "Perpetual",
+      "Open-source",
+      "Personal"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 100,
+    "question": "While browsing the Internet, a customer sees a window stating antivirus protection is no longer functioning. Which of the following steps should a technician take next? (Choose two.)",
+    "options": [
+      "Isolate the computer from the network.",
+      "Update the endpoint protection software.",
+      "Use System Restore to undo changes.",
+      "Run sfc /scannow."
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "software-troubleshooting"
+  },
+  {
+    "id": 101,
+    "question": "A user submits a request to have a graphics application installed on a desktop. When the technician attempts to install the application, the installation fails and the error message “Not compatible with OS” is displayed. Which of the following is the most likely reason for this error message?",
+    "options": [
+      "The graphics card driver needs to be updated.",
+      "The application installer is 64-blt.",
+      "The installation requires administrative rights",
+      "The disk space is inadequate."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "software-troubleshooting"
+  }
+]

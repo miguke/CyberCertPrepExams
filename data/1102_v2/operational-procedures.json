@@ -1,0 +1,2391 @@
+[
+  {
+    "id": 1,
+    "question": "A change advisory board just approved a change request. Which of the following is the MOST likely next step in the change process?",
+    "options": [
+      "End user acceptance",
+      "Perform risk analysis",
+      "Communicate to stakeholders",
+      "Sandbox testing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 2,
+    "question": "A technician is setting up a SOHO wireless router. The router is about ten years old. The customer would like the most secure wireless network possible. Which of the following should the technician configure?",
+    "options": [
+      "WPA2 with TKIP",
+      "WPA2 with AES",
+      "WPA3 with AES-256",
+      "WPA3 with AES-128"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 3,
+    "question": "When a user calls in to report an issue, a technician submits a ticket on the user's behalf. Which of the following practices should the technician use to make sure the ticket is associated with the correct user?",
+    "options": [
+      "Have the user provide a callback phone number to be added to the ticket.",
+      "Assign the ticket to the department's power user.",
+      "Register the ticket with a unique user identifier.",
+      "Provide the user with a unique ticket number that can be referenced on subsequent calls."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 4,
+    "question": "Which of the following is the MOST important environmental concern inside a data center?",
+    "options": [
+      "Battery disposal",
+      "Electrostatic discharge mats",
+      "Toner disposal",
+      "Humidity levels"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 5,
+    "question": "As part of a CYOD policy, a systems administrator needs to configure each user's Windows device to require a password when resuming from a period of sleep or inactivity. Which of the following paths will lead the administrator to the correct settings?",
+    "options": [
+      "Use Settings to access Screensaver settings.",
+      "Use Settings to access Screen Timeout settings.",
+      "Use Settings to access General.",
+      "Use Settings to access Display."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 6,
+    "question": "An incident handler needs to preserve evidence for possible litigation. Which of the following will the incident handler MOST likely do to preserve the evidence?",
+    "options": [
+      "Encrypt the files.",
+      "Clone any impacted hard drives.",
+      "Contact the cyber insurance company.",
+      "Inform law enforcement."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 7,
+    "question": "A technician needs to recommend the best backup method that will mitigate ransomware attacks. Only a few files are regularly modified; however, storage space is a concern. Which of the following backup methods would BEST address these concerns?",
+    "options": [
+      "Full",
+      "Differential",
+      "Off-site",
+      "Grandfather-father-son"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 8,
+    "question": "A technician is troubleshooting a customer's PC and receives a phone call. The technician does not take the call and sets the phone to silent. Which of the following BEST describes the technician's actions?",
+    "options": [
+      "Avoid distractions",
+      "Deal appropriately with customer's confidential material",
+      "Adhere to user privacy policy",
+      "Set and meet timelines"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 9,
+    "question": "A company installed a new backup and recovery system. Which of the following types of backups should be completed FIRST?",
+    "options": [
+      "Full",
+      "Non-parity",
+      "Differential",
+      "Incremental"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 10,
+    "question": "Which of the following could be used to implement secure physical access to a data center?",
+    "options": [
+      "Geofence",
+      "Alarm system",
+      "Badge reader",
+      "Motion sensor"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 11,
+    "question": "An architecture firm is considering upgrading its computer-aided design (CAD) software to the newest version that forces storage of backups of all CAD files on the software's cloud server. Which of the following is MOST likely to be of concern to the IT manager?",
+    "options": [
+      "All updated software must be tested with all system types and accessories.",
+      "Extra technician hours must be budgeted during installation of updates.",
+      "Network utilization will be significantly increased due to the size of CAD files.",
+      "Large update and installation files will overload the local hard drives."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 12,
+    "question": "A company has just refreshed several desktop PCs. The hard drives contain PII. Which of the following is the BEST method to dispose of the drives?",
+    "options": [
+      "Drilling",
+      "Degaussing",
+      "Low-level formatting",
+      "Erasing/wiping"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 13,
+    "question": "A technician has spent hours trying to resolve a computer issue for the company's Chief Executive Officer (CEO). The CEO needs the device returned as soon as possible. Which of the following step should the technician take NEXT?",
+    "options": [
+      "Continue researching the issue.",
+      "Repeat the iterative processes.",
+      "Inform the CEO the repair will take a couple of weeks.",
+      "Escalate the ticket."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 14,
+    "question": "Which of the following must be maintained throughout the forensic evidence life cycle when dealing with a piece of evidence?",
+    "options": [
+      "Acceptable use",
+      "Chain of custody",
+      "Security policy",
+      "Information management"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 15,
+    "question": "A technician is configuring a SOHO device. Company policy dictates that static IP addresses cannot be used. The company wants the server to maintain the same IP address at all times. Which of the following should the technician use?",
+    "options": [
+      "DHCP reservation",
+      "Port forwarding",
+      "DNS A record",
+      "NAT"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 16,
+    "question": "Security software was accidentally uninstalled from all servers in the environment. After requesting the same version of the software be reinstalled, the security analyst learns that a change request will need to be filled out. Which of the following is the BEST reason to follow the change management process in this scenario?",
+    "options": [
+      "Owners can be notified a change is being made and can monitor it for performance impact.",
+      "A risk assessment can be performed to determine if the software is needed.",
+      "End users can be aware of the scope of the change.",
+      "A rollback plan can be implemented in case the software breaks an application."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 17,
+    "question": "A technician is replacing the processor in a desktop computer. Prior to opening the computer, the technician wants to ensure the internal components are protected. Which of the following safety procedures would BEST protect the components in the PC? (Choose two.)",
+    "options": [
+      "Utilizing an ESD strap",
+      "Disconnecting the computer from the power source",
+      "Placing the PSU in an antistatic bag",
+      "Ensuring proper ventilation",
+      "Removing dust from the ventilation fans",
+      "Ensuring equipment is grounded"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 18,
+    "question": "A technician found that an employee is mining cryptocurrency on a work desktop. The company has decided that this action violates its guidelines. Which of the following should be updated to reflect this new requirement?",
+    "options": [
+      "MDM",
+      "EULA",
+      "IRP",
+      "AUP"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 19,
+    "question": "A change advisory board did not approve a requested change due to the lack of alternative actions if implementation failed. Which of the following should be updated before requesting approval again?",
+    "options": [
+      "Scope of change",
+      "Risk level",
+      "Rollback plan",
+      "End user acceptance"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 20,
+    "question": "A technician is setting up a new laptop. The company's security policy states that users cannot install virtual machines. Which of the following should the technician implement to prevent users from enabling virtual technology on their laptops?",
+    "options": [
+      "UEFI password",
+      "Secure boot",
+      "Account lockout",
+      "Restricted user permissions"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 21,
+    "question": "During a recent flight, an executive unexpectedly received several dog and cat pictures while trying to watch a movie via in-flight Wi-Fi on an iPhone. The executive has no records of any contacts sending pictures like these and has not seen these pictures before. To BEST resolve this issue, the executive should:",
+    "options": [
+      "set AirDrop so that transfers are only accepted from known contacts.",
+      "completely disable all wireless systems during the flight.",
+      "discontinue using iMessage and only use secure communication applications.",
+      "only allow messages and calls from saved contacts."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 22,
+    "question": "Which of the following is the proper way for a technician to dispose of used printer consumables?",
+    "options": [
+      "Proceed with the custom manufacturer's procedure.",
+      "Proceed with the disposal of consumables in standard trash receptacles.",
+      "Empty any residual Ink or toner from consumables before disposing of them in a standard recycling bin.",
+      "Proceed with the disposal of consumables in standard recycling bins."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 23,
+    "question": "A call center handles inquiries into billing issues for multiple medical facilities. A security analyst notices that call center agents often walk away from their workstations, leaving patient data visible for anyone to see. Which of the following should a network administrator do to BEST prevent data theft within the call center?",
+    "options": [
+      "Encrypt the workstation hard drives.",
+      "Lock the workstations after five minutes of inactivity.",
+      "Install privacy screens.",
+      "Log off the users when their workstations are not in use."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 24,
+    "question": "An organization's Chief Financial Officer (CFO) is concerned about losing access to very sensitive, legacy, unmaintained PII on a workstation if a ransomware outbreak occurs. The CFO has a regulatory requirement to retain this data for many years. Which of the following backup methods would BEST meet the requirements?",
+    "options": [
+      "A daily, incremental backup that is saved to the corporate file server",
+      "An additional, secondary hard drive in a mirrored RAID configuration",
+      "A full backup of the data that is stored off site in cold storage",
+      "Weekly, differential backups that are stored in a cloud-hosting provider"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 25,
+    "question": "A police officer often leaves a workstation for several minutes at a time. Which of the following is the BEST way the officer can secure the workstation quickly when walking away?",
+    "options": [
+      "Use a key combination to lock the computer when leaving.",
+      "Ensure no unauthorized personnel are in the area.",
+      "Configure a screensaver to lock the computer automatically after approximately 30 minutes of inactivity.",
+      "Turn off the monitor to prevent unauthorized visibility of information."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 26,
+    "question": "A technician is troubleshooting a computer with a suspected short in the power supply. Which of the following is the FIRST step the technician should take?",
+    "options": [
+      "Put on an ESD strap.",
+      "Disconnect the power before servicing the P",
+      "Place the PC on a grounded work bench.",
+      "Place components on an ESD mat."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 27,
+    "question": "A user who is unable to connect to the network submits a help desk ticket. The assigned help desk technician inquires about whether any recent changes have been made. The user reports there is construction activity in the surrounding offices. The help desk technician proceeds to ping the user's desktop, which does not respond. Which of the following is the MOST likely cause of this issue?",
+    "options": [
+      "A duplicate IP address has been issued to the user's desktop.",
+      "The HDD of the OS is failing.",
+      "The network cable has become disconnected.",
+      "Malware has infected the system."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 28,
+    "question": "A technician has been asked to set up a new wireless router with the best possible security. Which of the following should the technician implement?",
+    "options": [
+      "WPS",
+      "TKIP",
+      "WPA3",
+      "WEP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 29,
+    "question": "A field technician applied a Group Policy setting to all the workstations in the network. This setting forced the workstations to use a specific SNTP server. Users are unable to log in now. Which of the following is the MOST likely cause of this issue?",
+    "options": [
+      "The SNTP server is offline.",
+      "A user changed the time zone on a local machine.",
+      "The Group Policy setting has disrupted domain authentication on the system.",
+      "The workstations and the authentication server have a system clock difference."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 30,
+    "question": "A technician is setting up a backup method on a workstation that only requires two sets of tapes to restore. Which of the following would BEST accomplish this task?",
+    "options": [
+      "Differential backup",
+      "Off-site backup",
+      "Incremental backup",
+      "Full backup"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 31,
+    "question": "A technician receives a call from a user who is on vacation. The user provides the necessary credentials and asks the technician to log in to the user's account and read a critical email that the user has been expecting. The technician refuses because this is a violation of the:",
+    "options": [
+      "acceptable use policy.",
+      "regulatory compliance requirements.",
+      "non-disclosure agreement.",
+      "incident response procedures."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 32,
+    "question": "An administrator has submitted a change request for an upcoming server deployment. Which of the following must be completed before the change can be approved?",
+    "options": [
+      "Risk analysis",
+      "Sandbox testing",
+      "End user acceptance",
+      "Lessons learned"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 33,
+    "question": "A help desk technician runs the following script: Inventory.py. The technician receives the following error message: How do you want to open this file? Which of the following is the MOST likely reason this script is unable to run?",
+    "options": [
+      "Scripts are not permitted to run.",
+      "The script was not built for Windows.",
+      "The script requires administrator privileges.",
+      "The runtime environment is not installed."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 34,
+    "question": "A company discovered that numerous computers from multiple geographic locations are sending a very high number of connection requests which is causing the company’s web server to become unavailable to the general public. Which of the following attacks is occurring?",
+    "options": [
+      "Zero day",
+      "SQL injection",
+      "Cross-site scripting",
+      "Distributed denial of service"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 35,
+    "question": "Which of the following is the STRONGEST wireless configuration?",
+    "options": [
+      "WPS",
+      "WPA3",
+      "WEP",
+      "WMN"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 36,
+    "question": "While assisting a customer with an issue, a support representative realizes the appointment is taking longer than expected and will cause the next customer meeting to be delayed by five minutes. Which of the following should the support representative do NEXT?",
+    "options": [
+      "Send a quick message regarding the delay to the next customer.",
+      "Cut the current customer's time short and rush to the next customer.",
+      "Apologize to the next customer when arriving late.",
+      "Arrive late to the next meeting without acknowledging the time."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 37,
+    "question": "A new service desk is having a difficult time managing the volume of requests. Which of the following is the BEST solution for the department?",
+    "options": [
+      "Implementing a support portal",
+      "Creating a ticketing system",
+      "Commissioning an automated callback system",
+      "Submitting tickets through email"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 38,
+    "question": "Which of the following is MOST likely contained in an EULA?",
+    "options": [
+      "Chain of custody",
+      "Backup of software code",
+      "Personally identifiable information",
+      "Restrictions of use"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 39,
+    "question": "A user opened a ticket regarding a corporate-managed mobile device. The assigned technician notices the OS is several versions out of date. The user is unaware the OS version is not current because auto-update is turned on. Which of the following is MOST likely the cause of the issue?",
+    "options": [
+      "The device does not have enough free space to download the OS updates.",
+      "The device needs user confirmation to update to a major release.",
+      "The device is not compatible with the newest version of the OS.",
+      "The device is restricted from updating due to a corporate security policy."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 40,
+    "question": "A technician receives a ticket indicating the user cannot resolve external web pages. However, specific IP addresses are working. Which of the following does the technician MOST likely need to change on the workstation to resolve the issue?",
+    "options": [
+      "Default gateway",
+      "Host address",
+      "Name server",
+      "Subnet mask"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 41,
+    "question": "An administrator has received approval for a change request for an upcoming server deployment. Which of the following steps should be completed NEXT?",
+    "options": [
+      "Perform a risk analysis.",
+      "Implement the deployment.",
+      "Verify end user acceptance.",
+      "Document the lessons learned."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 42,
+    "question": "A user calls the help desk to report that Windows installed updates on a laptop and rebooted overnight. When the laptop started up again, the touchpad was no longer working. The technician thinks the software that controls the touchpad might be the issue. Which of the following tools should the technician use to make adjustments?",
+    "options": [
+      "eventvwr.msc",
+      "perfmon.msc",
+      "gpedit.msc",
+      "devmgmt.msc"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 43,
+    "question": "A company needs to securely dispose of data stored on optical discs. Which of the following is the MOST effective method to accomplish this task?",
+    "options": [
+      "Degaussing",
+      "Low-level formatting",
+      "Recycling",
+      "Shredding"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 44,
+    "question": "Which of the following is used to identify potential issues with a proposed change prior to implementation?",
+    "options": [
+      "Request form",
+      "Rollback plan",
+      "End-user acceptance",
+      "Sandbox testing"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 45,
+    "question": "A user is being directed by the help desk to look up a Windows PC's network name so the help desk can use a remote administration tool to assist the user. Which of the following commands would allow the user to give the technician the correct information? (Choose two.)",
+    "options": [
+      "ipconfig /all",
+      "hostname",
+      "netstat /?",
+      "nslookup localhost",
+      "arp -a",
+      "ping ::1"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 46,
+    "question": "Which of the following is a data security standard for protecting credit cards?",
+    "options": [
+      "PHI",
+      "NIST",
+      "PCI",
+      "GDPR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 47,
+    "question": "A company is retiring old workstations and needs a certificate of destruction for all hard drives. Which of the following would be BEST to perform on the hard drives to ensure the data is unrecoverable? (Choose two.)",
+    "options": [
+      "Standard formatting",
+      "Drilling",
+      "Erasing",
+      "Recycling",
+      "Incinerating",
+      "Low-level formatting"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 48,
+    "question": "A technician is upgrading the backup system for documents at a high-volume law firm. The current backup system can retain no more than three versions of full backups before failing. The law firm is not concerned about restore times but asks the technician to retain more versions when possible. Which of the following backup methods should the technician MOST likely implement?",
+    "options": [
+      "Full",
+      "Mirror",
+      "Incremental",
+      "Differential"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 49,
+    "question": "A user is attempting to make a purchase at a store using a phone. The user places the phone on the payment pad, but the device does not recognize the phone. The user attempts to restart the phone but still has the same results. Which of the following should the user do to resolve the issue?",
+    "options": [
+      "Tum off airplane mode while at the register.",
+      "Verify that NFC is enabled.",
+      "Connect to the store's Wi-Fi network.",
+      "Enable Bluetooth on the phone."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 50,
+    "question": "A technician needs to provide recommendations about how to upgrade backup solutions for a site in an area that has frequent hurricanes and an unstable power grid. Which of the following should the technician recommend implementing?",
+    "options": [
+      "High availability",
+      "Regionally diverse backups",
+      "On-site backups",
+      "Incremental backups"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 51,
+    "question": "A user reports a workstation has been performing strangely after a suspicious email was opened on it earlier in the week. Which of the following should the technician perform FIRST?",
+    "options": [
+      "Escalate the ticket to Tier 2.",
+      "Run a virus scan.",
+      "Utilize a Windows restore point.",
+      "Reimage the computer."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 52,
+    "question": "A user called the help desk to report an issue with the internet connection speed on a laptop. The technician thinks that background services may be using extra bandwidth. Which of the following tools should the technician use to investigate connections on the laptop?",
+    "options": [
+      "nslookup",
+      "net use",
+      "netstat",
+      "net user"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 53,
+    "question": "A technician is securing a new Windows 10 workstation and wants to enable a screensaver lock. Which of the following options in the Windows settings should the technician use?",
+    "options": [
+      "Ease of Access",
+      "Privacy",
+      "Personalization",
+      "Update and Security"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 54,
+    "question": "A technician is creating a full inventory of the company’s IT hardware. Which of the following should the technician use for documentation management?",
+    "options": [
+      "Checklist for new user setup",
+      "User information",
+      "Asset tags and IDs",
+      "Procurement life cycle"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 55,
+    "question": "A systems administrator is creating periodic backups of a folder on a Microsoft Windows machine. The source data is very dynamic, and files are either added or deleted regularly. Which of the following utilities can be used to mirror the source data for the backup?",
+    "options": [
+      "copy",
+      "xcopy",
+      "robocopy",
+      "Copy-Item"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 56,
+    "question": "A new employee was hired recently. Which of the following documents will the new employee need to sign before being granted login access to the network?",
+    "options": [
+      "MSDS",
+      "EULA",
+      "UAC",
+      "AUP"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 57,
+    "question": "A kiosk, which is running Microsoft Windows 10, relies exclusively on a numeric keypad to allow customers to enter their ticket numbers but no other information. If the kiosk is idle for four hours, the login screen locks. Which of the following sign-on options would allow any employee the ability to unlock the kiosk?",
+    "options": [
+      "Requiring employees to enter their usernames and passwords",
+      "Setting up facial recognition for each employee",
+      "Using a PIN and providing it to employees",
+      "Requiring employees to use their fingerprints"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 58,
+    "question": "A data center is required to destroy SSDs that contain sensitive information. Which of the following is the BEST method to use for the physical destruction of SSDs?",
+    "options": [
+      "Wiping",
+      "Low-level formatting",
+      "Shredding",
+      "Erasing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 59,
+    "question": "Which of the following script types is used with the Python language by default?",
+    "options": [
+      ".ps1",
+      ".vbs",
+      ".bat",
+      ".py"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 60,
+    "question": "A user calls the help desk to report that mapped drives are no longer accessible. The technician verifies that clicking on any of the drives on the user's machine results in an error message. Other users in the office are not having any issues. As a first step, the technician would like to remove and attempt to reconnect the drives. Which of the following command-line tools should the technician use?",
+    "options": [
+      "net use",
+      "set",
+      "mkdir",
+      "rename"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 61,
+    "question": "A technician is installing a program from an ISO file. Which of the following steps should the technician take?",
+    "options": [
+      "Mount the ISO and run the installation file.",
+      "Copy the ISO and execute on the server.",
+      "Copy the ISO file to a backup location and run the ISO file.",
+      "Unzip the ISO and execute the setup.exe file."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 62,
+    "question": "While staying at a hotel, a user attempts to connect to the hotel Wi-Fi but notices that multiple SSIDs have very similar names. Which of the following social-engineering attacks is being attempted?",
+    "options": [
+      "Evil twin",
+      "Impersonation",
+      "Insider threat",
+      "Whaling"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 63,
+    "question": "Which of the following is used to explain issues that may occur during a change implementation?",
+    "options": [
+      "Scope change",
+      "End-user acceptance",
+      "Risk analysis",
+      "Rollback plan"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 64,
+    "question": "Which of the following options should MOST likely be considered when preserving data from a hard drive for forensic analysis? (Choose two.)",
+    "options": [
+      "Licensing agreements",
+      "Chain of custody",
+      "Incident management documentation",
+      "Data integrity",
+      "Material safety data sheet",
+      "Retention requirements"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 65,
+    "question": "A manager called the help desk to ask for assistance with creating a more secure environment for the finance department, which resides in a non-domain environment. Which of the following would be the BEST method to protect against unauthorized use?",
+    "options": [
+      "Implementing password expiration",
+      "Restricting user permissions",
+      "Using screen locks",
+      "Disabling unnecessary services"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 66,
+    "question": "A technician is attempting to mitigate micro power outages, which occur frequently within the area of operation. The outages are usually short, with the longest occurrence lasting five minutes. Which of the following should the technician use to mitigate this issue?",
+    "options": [
+      "Surge suppressor",
+      "Battery backup",
+      "CMOS battery",
+      "Generator backup"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 67,
+    "question": "Which of the following threats will the use of a privacy screen on a computer help prevent?",
+    "options": [
+      "Impersonation",
+      "Shoulder surfing",
+      "Whaling",
+      "Tailgating"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 68,
+    "question": "Which of the following common security vulnerabilities can be mitigated by using put validation?",
+    "options": [
+      "Brute-force attack",
+      "Cross-site scripting",
+      "SQL injection",
+      "Cross-site request forgery"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 69,
+    "question": "A company is looking for a solution that provides a backup for all data on the system while providing the lowest impact to the network. Which of the following backup types will the company MOST likely select?",
+    "options": [
+      "Off-site",
+      "Synthetic",
+      "Full",
+      "Differential"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 70,
+    "question": "A customer calls the help desk asking for instructions on how to modify desktop wallpaper. Which of the following Windows 10 settings should the technician recommend?",
+    "options": [
+      "Personalization",
+      "Apps",
+      "Updates",
+      "Display"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 71,
+    "question": "A user calls the help desk and reports a workstation is infected with malicious software. Which of the following tools should the help desk technician use to remove the malicious software? (Choose two.)",
+    "options": [
+      "Local Network Connection",
+      "User Account Control",
+      "Windows Backup and Restore",
+      "Windows Firewall",
+      "Windows Defender",
+      "Network Packet Analyzer"
+    ],
+    "correct": [
+      4,
+      5
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 72,
+    "question": "Which of the following refers to the steps to be taken if an issue occurs during a change implementation?",
+    "options": [
+      "Testing",
+      "Rollback",
+      "Risk",
+      "Acceptance"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 73,
+    "question": "A help desk technician determines a motherboard has failed. Which of the following is the most logical next step in the remediation process?",
+    "options": [
+      "Escalating the issue to Tier 2",
+      "Verifying warranty status with the vendor",
+      "Replacing the motherboard",
+      "Purchasing another PC"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 74,
+    "question": "Which of the following would MOST likely be used to extend the life of a device?",
+    "options": [
+      "Battery backup",
+      "Electrostatic discharge mat",
+      "Proper ventilation",
+      "Green disposal"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 75,
+    "question": "A user contacts the help desk to request assistance with a program feature. The user is in a different building but on the same network as the help desk technician. Which of the following should the technician use to assist the user?",
+    "options": [
+      "AAA",
+      "SSH",
+      "RDP",
+      "VPN"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 76,
+    "question": "An employee calls the help desk regarding an issue with a laptop PC. After a Windows update, the user can no longer use certain locally attached devices, and a reboot has not fixed the issue. Which of the following should the technician perform to fix the issue?",
+    "options": [
+      "Disable the Windows Update service.",
+      "Check for updates.",
+      "Restore hidden updates.",
+      "Roll back updates."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 77,
+    "question": "A department manager submits a help desk ticket to request the migration of a printer's port utilization from USB to Ethernet so multiple users can access the printer. This will be a new network printer, thus a new IP address allocation is required. Which of the following should happen immediately before network use is authorized?",
+    "options": [
+      "Document the date and time of the change.",
+      "Submit a change request form.",
+      "Determine the risk level of this change.",
+      "Request an unused IP address."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 78,
+    "question": "An IT security team is implementing a new Group Policy that will return a computer to the log-in after three minutes. Which of the following best describes the change in policy?",
+    "options": [
+      "Log-in times",
+      "Screen lock",
+      "User permission",
+      "Log-in lockout attempts"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 79,
+    "question": "A hard drive that previously contained PII needs to be repurposed for a public access workstation. Which of the following data destruction methods should a technician use to ensure data is completely removed from the hard drive?",
+    "options": [
+      "Shredding",
+      "Degaussing",
+      "Low-level formatting",
+      "Recycling"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 80,
+    "question": "A technician receives a help desk ticket from a user who is unable to update a phone. The technician investigates the issue and notices the following error message: Insufficient storage space. While analyzing the phone, the technician does not discover any third-party applications or photos. Which of the following is the best way to resolve the issue?",
+    "options": [
+      "Exchange the device for a newer one.",
+      "Upgrade the onboard storage.",
+      "Allocate more space by removing factory applications.",
+      "Move factory applications to external memory."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 81,
+    "question": "During an enterprise rollout of a new application, a technician needs to validate compliance with an application’s EULA while also reducing the number of licenses to manage. Which of the following licenses would best accomplish this goal?",
+    "options": [
+      "Personal use license",
+      "Corporate use license",
+      "Open-source license",
+      "Non-expiring license"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 82,
+    "question": "An administrator is designing and implementing a server backup system that minimizes the capacity of storage used. Which of the following is the best backup approach to use in conjunction with synthetic full backups?",
+    "options": [
+      "Differential",
+      "Open file",
+      "Archive",
+      "Incremental"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 83,
+    "question": "A change advisory board authorized a setting change so a technician is permitted to implement the change. The technician successfully implemented the change. Which of the following should be done next?",
+    "options": [
+      "Document the date and time of change.",
+      "Document the purpose of the change.",
+      "Document the risk level.",
+      "Document the findings of the sandbox test."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 84,
+    "question": "An administrator responded to an incident where an employee copied financial data to a portable hard drive and then left the company with the data. The administrator documented the movement of the evidence. Which of the following concepts did the administrator demonstrate?",
+    "options": [
+      "Preserving chain of custody",
+      "Implementing data protection policies",
+      "Informing law enforcement",
+      "Creating a summary of the incident"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 85,
+    "question": "A user is setting up backups on a workstation. The user wants to ensure that the restore process is as simple as possible. Which of the following backup types should the user select?",
+    "options": [
+      "Full",
+      "Incremental",
+      "Differential",
+      "Synthetic"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 86,
+    "question": "Maintaining the chain of custody is an important part of the incident response process. Which of the following reasons explains why this is important?",
+    "options": [
+      "To maintain an information security policy",
+      "To properly identify the issue",
+      "To control evidence and maintain integrity",
+      "To gather as much information as possible"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 87,
+    "question": "A large university wants to equip all classrooms with high-definition IP videoconferencing equipment. Which of the following would most likely be impacted in this situation?",
+    "options": [
+      "SAN",
+      "LAN",
+      "GPU",
+      "PAN"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 88,
+    "question": "A company is recycling old hard drives and wants to quickly reprovision the drives for reuse. Which of the following data destruction methods should the company use?",
+    "options": [
+      "Degaussing",
+      "Standard formatting",
+      "Low-level wiping",
+      "Deleting"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 89,
+    "question": "Which of the following is used as a password manager in the macOS?",
+    "options": [
+      "Terminal",
+      "FileVault",
+      "Privacy",
+      "Keychain"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 90,
+    "question": "A company's assets are scanned annually. Which of the following will most likely help the company gain a holistic view of asset cost?",
+    "options": [
+      "Creating a database",
+      "Assigning users to assets",
+      "Inventorying asset tags",
+      "Updating the procurement account owners"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 91,
+    "question": "A systems administrator is creating a new document with a list of the websites that users are allowed to access. Which of the following types of documents is the administrator most likely creating?",
+    "options": [
+      "Access control list",
+      "Acceptable use policy",
+      "Incident report",
+      "Standard operating procedure"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 92,
+    "question": "A technician is setting up a new laptop. The company's security policy states that users cannot install virtual machines. Which of the following should the technician implement to prevent users from enabling virtual technology on their laptops?",
+    "options": [
+      "UEFI password",
+      "Secure boot",
+      "Account lockout",
+      "Disable network drivers"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 93,
+    "question": "During a network outage, a technician discovers a new network switch that was not listed in the support documentation. The switch was installed during a recent change window when a new office was added to the environment. Which of the following would most likely prevent this type of mismatch after next month's change window?",
+    "options": [
+      "Performing annual network topology reviews",
+      "Requiring all network changes include updating the network diagrams",
+      "Allowing network changes once per year",
+      "Routinely backing up switch configuration files"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 94,
+    "question": "Which of the following helps ensure that a piece of evidence extracted from a PC is admissible in a court of law?",
+    "options": [
+      "Data integrity form",
+      "Valid operating system license",
+      "Documentation of an incident",
+      "Chain of custody."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 95,
+    "question": "A network technician is deploying a new machine in a small branch office that does not have a DHCP server. The new machine automatically receives the IP address of 169.254.0.2 and is unable to communicate with the rest of the network. Which of the following would restore communication?",
+    "options": [
+      "Static entry",
+      "ARP table",
+      "APIPA address",
+      "NTP specification"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 96,
+    "question": "A remote user contacts the help desk about an email that appears to be distorted. The technician is unsure what the user means and needs to view the email to assist with troubleshooting. Which of the following should the technician use to assist the user?",
+    "options": [
+      "VNC",
+      "SSH",
+      "VPN",
+      "RMM"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 97,
+    "question": "A technician is familiar with most personnel at a customer's location and has clearance to work unsupervised. Which of the following describes how the technician should handle personal communication while on site?",
+    "options": [
+      "Respond to calls and text messages while on site but not when working directly with personnel.",
+      "Respond to calls and text messages only from family.",
+      "Respond to calls and text messages only when an emergency situation requires a response.",
+      "Respond to calls and text messages discreetly while on site."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 98,
+    "question": "A help desk technician needs to remotely access and control a customer's Windows PC by using a secure session that allows the technician the same control as the customer. Which of the following tools provides this type of access?",
+    "options": [
+      "FTP",
+      "RDP",
+      "SSH",
+      "VNC"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 99,
+    "question": "A technician is installing RAM in a new workstation and needs to protect against electrostatic discharge. Which of the following will best resolve this concern?",
+    "options": [
+      "Battery backup",
+      "Thermal paste",
+      "ESD strap",
+      "Consistent power"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 100,
+    "question": "A new spam gateway was recently deployed at a small business. However, users still occasionally receive spam. The management team is concerned that users will open the messages and potentially infect the network systems. Which of the following is the most effective method for dealing with this issue?",
+    "options": [
+      "Adjusting the spam gateway",
+      "Updating firmware for the spam appliance",
+      "Adjusting AV settings",
+      "Providing user training"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 101,
+    "question": "A user clicks a link in an email. A warning message in the user's browser states the site's certificate cannot be verified. Which of the following is the most appropriate action for a technician to take?",
+    "options": [
+      "Click proceed.",
+      "Report the employee to the human resources department for violating company policy.",
+      "Restore the computer from the last known backup.",
+      "Close the browser window and report the email to IT security."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 102,
+    "question": "A user reports a hardware issue to the help desk. Which of the following should the help desk technician do first when responding to the user?",
+    "options": [
+      "Ask the user for the model number of the hardware.",
+      "Offer a temporary replacement device to the user.",
+      "Submit the issue to the manufacturer.",
+      "Remotely install updates to the device driver."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 103,
+    "question": "An IT services company that supports a large government contract replaced the Ethernet cards on several hundred desktop machines to comply with regulatory requirements. Which of the following disposal methods for the non-compliant cards is the most environmentally friendly?",
+    "options": [
+      "Incineration",
+      "Resale",
+      "Physical destruction",
+      "Dumpster for recycling plastics"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 104,
+    "question": "A technician is installing software on a user’s workstation. The installation fails due to incompliance with the HCL. Which of the following components is most likely causing the installation to fail? (Choose two.)",
+    "options": [
+      "NIC",
+      "CPU",
+      "PSU",
+      "KVM",
+      "RAM",
+      "DVI"
+    ],
+    "correct": [
+      0,
+      4
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 105,
+    "question": "Which of the following items require special e-waste recycling? (Choose two.)",
+    "options": [
+      "Solid-state drive",
+      "A/C adapter",
+      "Surge protector",
+      "Laptop battery",
+      "CRT monitor",
+      "Power supply"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 106,
+    "question": "A technician downloaded a software program to a network share. When the technician attempts to copy the program to the Windows tablet for installation, the technician receives an error. Which of the following is the best procedure for the technician to use to complete the assignment?",
+    "options": [
+      "Copy the program file to a USB drive and install.",
+      "Burn the program file to a CD and install.",
+      "Format the HDD and then do the installation.",
+      "Replace the HDD and then do the installation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 107,
+    "question": "Which of the following features can be used to ensure a user can access multiple versions of files?",
+    "options": [
+      "Multiple desktops",
+      "Remote Disc",
+      "Time Machine",
+      "FileVault"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 108,
+    "question": "A technician needs to back up a small business’s entire network that includes ten workstations. Which of the following methods should the technician use to safely and securely back up the business’s network?",
+    "options": [
+      "Cloud storage",
+      "RAID",
+      "Tape drive",
+      "Local backups"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 109,
+    "question": "An organization is creating guidelines for the incorporation of generative AI solutions. In which of the following would these guidelines be published?",
+    "options": [
+      "Standard operating procedure",
+      "Acceptable use policy",
+      "Security protocols",
+      "Data flow diagram"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 110,
+    "question": "A technician needs to perform after-hours service starting at 10:00 p.m. The technician is currently 20 minutes late. The customer will also be late. Which of the following should the technician do considering proper communication techniques and professionalism?",
+    "options": [
+      "Do not notify the customer if arriving before the customer.",
+      "Dismiss the customer and proceed with the after-hours work.",
+      "Contact the customer if the technician is arriving late.",
+      "Disclose the experience via social media"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 111,
+    "question": "A client wants a technician to set up a proxy server in a branch office to manage internet access. This involves configuring the workstations to use the new proxy server. Which of the following Internet Options tabs in Control Panel would be most appropriate for the technician to use to configure the settings?",
+    "options": [
+      "Privacy",
+      "Advanced",
+      "Content",
+      "Connections",
+      "Security"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 112,
+    "question": "A technician is building a new desktop machine for a user who will be using the workstation to render 3-D promotional movies. Which of the following is the most important component?",
+    "options": [
+      "Dedicated GPU",
+      "DDR5 SODIMM",
+      "NVMe disk",
+      "64-bit CPU"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 113,
+    "question": "A payroll server has data on it that needs to be readily available and can be recovered quickly if something is accidentally removed. Which of the following backup methods should be used to provide the fastest data recovery in this situation?",
+    "options": [
+      "Full",
+      "Differential",
+      "Synthetic",
+      "Incremental"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 114,
+    "question": "A user is trying to limit the amount of time their children spend on the internet. Which of the following Windows 10 settings should be enabled to accomplish this objective?",
+    "options": [
+      "Family Options",
+      "Update & Security",
+      "Ease of Access",
+      "Network & Internet",
+      "Privacy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 115,
+    "question": "A technician is on site dealing with an angry customer. The customer thinks the issues have not been addressed, while the technician thinks that the issue has been correctly resolved. Which of the following should the technician do to best handle the situation?",
+    "options": [
+      "Insist that the customer is correct and document the concern.",
+      "Listen to the customer and do not speak at all.",
+      "Escalate the issue to the next tier.",
+      "Apologize and ask what would help resolve the issue."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 116,
+    "question": "Which of the following should be documented to ensure that the change management plan is followed?",
+    "options": [
+      "Scope of the change",
+      "Purpose of the change",
+      "Change rollback plan",
+      "Change risk analysis"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 117,
+    "question": "Which of the following operating systems would most likely be used to run the inventory management system at a factory?",
+    "options": [
+      "Windows",
+      "Chrome OS",
+      "Android",
+      "iOS"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 118,
+    "question": "A technician is following the ticketing system's best practices when handling user support requests. Which of the following should the technician do first when responding to a user support request that contains insufficient information?",
+    "options": [
+      "Ask the user for clarification.",
+      "Keep the user updated on the progress.",
+      "Document the root cause.",
+      "Follow the system's escalation process."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 119,
+    "question": "A technician needs to track evidence for a forensic investigation on a Windows computer. Which of the following describes this process?",
+    "options": [
+      "Valid license",
+      "Data retention requirements",
+      "Material safety data sheet",
+      "Chain of custody"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 120,
+    "question": "Which of the following is the best way to limit the loss of confidential data if an employee's company smartphone is lost or stolen?",
+    "options": [
+      "Installing a VPN",
+      "Implementing location tracking",
+      "Configuring remote wipe",
+      "Enabling backups"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 121,
+    "question": "Which of the following is the best reason for sandbox testing in change management?",
+    "options": [
+      "To evaluate the change before deployment",
+      "To obtain end-user acceptance",
+      "To determine the affected systems",
+      "To select a change owner"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 122,
+    "question": "A customer calls desktop support and begins yelling at a technician. The customer claims to have submitted a support ticket two hours ago and complains that the issue still has not been resolved. Which of the following describes how the technician should respond?",
+    "options": [
+      "Place the customer on hold until the customer calms down.",
+      "Disconnect the call to avoid a confrontation.",
+      "Wait until the customer is done speaking and offer assistance.",
+      "Escalate the issue to a supervisor."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 123,
+    "question": "A newly hired employee is trying to enroll a personal mobile device in the company's mobile device management system. After the initial attempt, the employee receives a notification stating, \"not compliant - call support.' Which of the following is the reason why the employee is receiving this message?",
+    "options": [
+      "More RAM is needed.",
+      "AirDrop is not enabled.",
+      "The device has been jailbroken.",
+      "The account has no profile picture."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 124,
+    "question": "A technician is configuring a SOHO router and wants to only allow specific computers on the network. Which of the following should the technician do?",
+    "options": [
+      "Configure MAC filtering.",
+      "Disable DHCP.",
+      "Configure port forwarding.",
+      "Disable guest access."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 125,
+    "question": "A customer called the help desk to report that a new USB CD drive is not working. Which of the following tools should the technician use to diagnose the issue?",
+    "options": [
+      "lusrmgr.msc",
+      "devmgmt.msc",
+      "certmgr.msc",
+      "perfmon.msc"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 126,
+    "question": "A technician is setting up a network printer for a customer who has a SOHO router. The technician wants to make sure the printer stays connected in the future and is available on all the computers in the house. Which of the following should the technician configure on the printer?",
+    "options": [
+      "DNS settings",
+      "Static IP",
+      "WWAN",
+      "Metered connection"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 127,
+    "question": "Which of the following is protected by government policy for end user information?",
+    "options": [
+      "DRM",
+      "EULA",
+      "PCI",
+      "PII"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 128,
+    "question": "A technician has identified malicious traffic originating from a user's computer. Which of the following is the best way to identify the source of the attack?",
+    "options": [
+      "Investigate the firewall logs.",
+      "Isolate the machine from the network.",
+      "Inspect the Windows Event Viewer.",
+      "Take a physical inventory of the device."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 129,
+    "question": "Which of the following ensures data is unrecoverable on a lost or stolen mobile device?",
+    "options": [
+      "Device encryption",
+      "Remote wipe Most Voted",
+      "Data backup",
+      "Fingerprint reader"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 130,
+    "question": "An administrator needs to back up the following components of a single workstation: • The installation of the operating system • Applications • User profiles • System settings Which of the following backup methods can the administrator use to ensure the workstation is properly backed up?",
+    "options": [
+      "Differential",
+      "Image",
+      "Synthetic",
+      "Archive"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 131,
+    "question": "A technician was assigned a help desk ticket and resolved the issue. Which of the following should the technician update to assist other technicians in resolving similar issues?",
+    "options": [
+      "End user training",
+      "Progress notes",
+      "Knowledge base",
+      "Acceptable use policy document"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 132,
+    "question": "A technician is creating a Windows splash screen that details log-in expectations. Which of the following should the technician most likely use?",
+    "options": [
+      "End user license agreement",
+      "Non-disclosure agreement",
+      "Regulatory compliance",
+      "Acceptable use policy"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 133,
+    "question": "A user receives an email from what appears to be a trusted, known insider who is requesting confidential banking information. After the user further inspects the email, the user notices that one character in the email address is incorrect. Which of the following is being attempted?",
+    "options": [
+      "Evil twin",
+      "Insider threat",
+      "Zero-day attack",
+      "Impersonation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 134,
+    "question": "Which of the following environmental factors are most important to consider when planning the configuration of a data center? (Choose two.)",
+    "options": [
+      "Temperature levels",
+      "Location of the servers",
+      "Humidity levels",
+      "Noise levels",
+      "Lighting levels",
+      "Cable management"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 135,
+    "question": "A technician would like to repurpose hard drives that contain PII. Which of the following would be the best solution to securely remove the data?",
+    "options": [
+      "Drilling",
+      "Degaussing",
+      "Low-level formatting",
+      "Incinerating"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 136,
+    "question": "Which of the following documents in criminal proceedings must be updated every time a piece of evidence is touched or transferred in order for the evidence to be considered valid?",
+    "options": [
+      "Licensing agreement",
+      "Regulatory compliance",
+      "Incident documentation",
+      "Chain of custody"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 137,
+    "question": "An enterprise user cannot authenticate to the office Wi-Fi. Which of the following steps should most likely be taken to resolve the issue?",
+    "options": [
+      "Reinstall the OS.",
+      "Check the machine’s certificates.",
+      "Resync the Group Policy.",
+      "Power cycle the switch."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 138,
+    "question": "A technician wants to securely dispose of storage drives. Which or the following is the best way to eliminate data on SSDs?",
+    "options": [
+      "Degaussing",
+      "Shredding",
+      "Erasing",
+      "Drilling"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  },
+  {
+    "id": 139,
+    "question": "Winch of the following language types enables the automation of tasks?",
+    "options": [
+      "Compiled",
+      "Scripting",
+      "Web",
+      "Database"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operational-procedures"
+  }
+]

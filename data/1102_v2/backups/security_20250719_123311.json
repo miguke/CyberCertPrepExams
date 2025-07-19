@@ -1,0 +1,1067 @@
+[
+  {
+    "id": 1,
+    "question": "A user calls the help desk to report that none of the files on a PC will open. The user also indicates a program on the desktop is requesting payment in exchange for file access. A technician verifies the user's PC is infected with ransomware. Which of the following should the technician do FIRST?",
+    "options": [
+      "Scan and remove the malware.",
+      "Schedule automated malware scans.",
+      "Quarantine the system."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 2,
+    "question": "A company is issuing smartphone to employees and needs to ensure data is secure if the devices are lost or stolen. Which of the following provides the BEST solution? A. Anti-malware",
+    "options": [
+      "Remote wipe",
+      "Locator applications",
+      "Screen lock"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 3,
+    "question": "A help desk technician is troubleshooting a workstation in a SOHO environment that is running above normal system baselines. The technician discovers an unknown executable with a random string name running on the system. The technician terminates the process, and the system returns to normal operation. The technician thinks the issue was an infected file, but the antivirus is not detecting a threat. The technician is concerned other machines may be infected with this unknown virus. Which of the following is the MOST effective way to check other machines on the network for this unknown threat?",
+    "options": [
+      "Run a startup script that removes files by name.",
+      "Provide a sample to the antivirus vendor.",
+      "Manually check each machine.",
+      "Monitor outbound network traffic."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 4,
+    "question": "A user is unable to log in to the network. The network uses 802.1X with EAP-TLS to authenticate on the wired network. The user has been on an extended leave and has not logged in to the computer in several months. Which of the following is causing the log-in issue? A. Expired certificate",
+    "options": [
+      "OS update failure",
+      "Service not started",
+      "Profile rebuild needed"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 5,
+    "question": "A technician needs to recommend the best backup method that will mitigate ransomware attacks. Only a few files are regularly modified; however, storage space is a concern. Which of the following backup methods would BEST address these concerns? A. Full B. Differential",
+    "options": [
+      "Off-site",
+      "Grandfather-father-son"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 6,
+    "question": "The Chief Executive Officer at a bank recently saw a news report about a high-profile cybercrime where a remote-access tool that the bank uses for support was also used in this crime. The report stated that attackers were able to brute force passwords to access systems. Which of the following would BEST limit the bank's risk? (Choose two.) A. Enable multifactor authentication for each support account.",
+    "options": [
+      "Limit remote access to destinations inside the corporate network.",
+      "Purchase a password manager for remote-access tool users."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 7,
+    "question": "Which of the following must be maintained throughout the forensic evidence life cycle when dealing with a piece of evidence? A. Acceptable use B. Chain of custody",
+    "options": [
+      "Security policy",
+      "Information management"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 8,
+    "question": "A user attempts to open some files, but a message appears stating that the files are encrypted. The user was able to access these files before without receiving this message, and no changes have been made within the company. Which of the following has infected the computer? A. Cryptominer",
+    "options": [
+      "Phishing",
+      "Ransomware",
+      "Keylogger"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 9,
+    "question": "A user reports that antivirus software indicates a computer is infected with viruses. The user thinks this happened while browsing the internet. The technician does not recognize the interface with which the antivirus message is presented. Which of the following is the NEXT step the technician should take?",
+    "options": [
+      "Shut down the infected computer and swap it with another computer.",
+      "Investigate what the interface is and what triggered it to pop up.",
+      "Proceed with initiating a full scan and removal of the viruses using the presented interface."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 10,
+    "question": "An organization is centralizing support functions and requires the ability to support a remote user's desktop. Which of the following technologies will allow a technician to see the issue along with the user? A. RDP B. VNC",
+    "options": [
+      "SSH",
+      "VPN"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 11,
+    "question": "Which of the following provide the BEST way to secure physical access to a data center server room? (Choose two.) A. Biometric lock B. Badge reader C. USB token",
+    "options": [
+      "Video surveillance",
+      "Locking rack"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "security"
+  },
+  {
+    "id": 12,
+    "question": "A user reports that a PC seems to be running more slowly than usual. A technician checks system resources, but disk, CPU, and memory usage seem to be fine. The technician sees that GPU temperature is extremely high. Which of the following types of malware is MOST likely to blame?",
+    "options": [
+      "Spyware",
+      "Ransomware"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 13,
+    "question": "A technician is setting up a new laptop. The company's security policy states that users cannot install virtual machines. Which of the following should the technician implement to prevent users from enabling virtual technology on their laptops? A. UEFI password",
+    "options": [
+      "Secure boot",
+      "Restricted user permissions"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 14,
+    "question": "A technician is setting up a new laptop for an employee who travels. Which of the following is the BEST security practice for this scenario?",
+    "options": [
+      "PIN-based login",
+      "Quarterly password changes",
+      "Hard drive encryption"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 15,
+    "question": "After returning from vacation, a user is unable to connect to the network at the corporate office. Windows allows the user to log in; however, no internal or external websites are accessible when running a browser. The user's expected network shares are unreachable, and all websites attempted return the message, `Hmm, we can't reach this page.` Which of the following is the MOST likely cause of this issue?",
+    "options": [
+      "The user's password expired while on vacation.",
+      "The user clicked on a malicious email.",
+      "The user connected to a captive portal while traveling.",
+      "The user enabled airplane mode."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 16,
+    "question": "A technician receives a call from a user who is on vacation. The user provides the necessary credentials and asks the technician to log in to the user's account and read a critical email that the user has been expecting. The technician refuses because this is a violation of the:",
+    "options": [
+      "acceptable use policy.",
+      "regulatory compliance requirements.",
+      "non-disclosure agreement.",
+      "incident response procedures."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 17,
+    "question": "A user opened a ticket regarding a corporate-managed mobile device. The assigned technician notices the OS is several versions out of date. The user is unaware the OS version is not current because auto-update is turned on. Which of the following is MOST likely the cause of the issue?",
+    "options": [
+      "The device does not have enough free space to download the OS updates.",
+      "The device needs user confirmation to update to a major release.",
+      "The device is not compatible with the newest version of the OS.",
+      "The device is restricted from updating due to a corporate security policy."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 18,
+    "question": "Antivirus software indicates that a workstation is infected with ransomware that cannot be quarantined. Which of the following should be performed FIRST to prevent further damage to the host and other systems?",
+    "options": [
+      "Power off the machine.",
+      "Run a full antivirus scan.",
+      "Install a different endpoint solution."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 19,
+    "question": "A technician downloads a validated security tool and notes the vendor hash of a11e11a1. When the download is complete, the technician again validates the hash, but the value returns as 2a222a2b2. Which of the following is the MOST likely cause of the issue?",
+    "options": [
+      "Private-browsing mode",
+      "Invalid certificate",
+      "Modified file"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 20,
+    "question": "A technician has verified that a user's computer has a virus, and the antivirus software is out of date. Which of the following steps should the technician take NEXT?",
+    "options": [
+      "Quarantine the computer.",
+      "Use a previous restore point."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 21,
+    "question": "A user is unable to access files on a work PC after opening a text document. The text document was labeled “URGENT PLEASE READ.txt - In active folder, .txt file titled urgent please read”. Which of the following should a support technician do FIRST?",
+    "options": [
+      "Quarantine the host in the antivirus system.",
+      "Run antivirus scan for malicious software.",
+      "Investigate how malicious software was installed.",
+      "Reimage the computer."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 22,
+    "question": "Which of the following wireless security features can be enabled to allow a user to use login credentials to attach to available corporate SSIDs? A. TACACS+",
+    "options": [
+      "Kerberos",
+      "Preshared key"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 23,
+    "question": "A user receives a call from someone who claims to be from the user's bank and requests information to ensure the user's account is safe. Which of the following social-engineering attacks is the user experiencing?",
+    "options": [
+      "Phishing",
+      "Smishing",
+      "Whaling",
+      "Vishing"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 24,
+    "question": "A user reports that the pages flash on the screen two or three times before finally staying open when attempting to access banking web pages. Which of the following troubleshooting steps should the technician perform NEXT to resolve the issue? A. Examine the antivirus logs.",
+    "options": [
+      "Verify the address bar URL.",
+      "Test the internet connection speed."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 25,
+    "question": "Which of the following would MOST likely be deployed to enhance physical security for a building? (Choose two.)",
+    "options": [
+      "Multifactor authentication",
+      "Personal identification number",
+      "Motion sensor",
+      "Soft token"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 26,
+    "question": "A user tries to access commonly used web pages but is redirected to unexpected websites. Clearing the web browser cache does not resolve the issue. Which of the following should a technician investigate NEXT to resolve the issue? A. Enable firewall ACLs. B. Examine the localhost file entries.",
+    "options": [
+      "Verify the routing tables.",
+      "Update the antivirus definitions."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 27,
+    "question": "A technician is attempting to mitigate micro power outages, which occur frequently within the area of operation. The outages are usually short, with the longest occurrence lasting five minutes. Which of the following should the technician use to mitigate this issue?",
+    "options": [
+      "Surge suppressor",
+      "Generator backup"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 28,
+    "question": "Which of the following threats will the use of a privacy screen on a computer help prevent?",
+    "options": [
+      "Impersonation",
+      "Shoulder surfing",
+      "Whaling",
+      "Tailgating"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 29,
+    "question": "A company needs employees who work remotely to have secure access to the corporate intranet. Which of the following should the company implement? A. Password-protected Wi-Fi",
+    "options": [
+      "Port forwarding",
+      "Virtual private network",
+      "Perimeter network"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 30,
+    "question": "A SOHO client is having trouble navigating to a corporate website. Which of the following should a technician do to allow access? A. Adjust the content filtering.",
+    "options": [
+      "Unmap port forwarding.",
+      "Reduce the encryption strength."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 31,
+    "question": "A company would like to implement multifactor authentication for all employees at a minimal cost. Which of the following best meets the company's requirements? A. Biometrics",
+    "options": [
+      "Soft token",
+      "Smart card"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 32,
+    "question": "A technician sees a file that is requesting payment to a cryptocurrency address. Which of the following should the technician do first?",
+    "options": [
+      "Quarantine the computer.",
+      "Update the antivirus software definitions."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 33,
+    "question": "A company is experiencing a DDoS attack. Several internal workstations are the source of the traffic. Which of the following types of infections are the workstations most likely experiencing? (Choose two.)",
+    "options": [
+      "Zombies",
+      "Keylogger",
+      "Ransomware",
+      "Spyware"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "security"
+  },
+  {
+    "id": 34,
+    "question": "A technician is working on a way to register all employee badges and associated computer IDs. Which of the following options should the technician use in order to achieve this objective? A. Database system",
+    "options": [
+      "Software management",
+      "Infrastructure as a Service"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 35,
+    "question": "An administrator responded to an incident where an employee copied financial data to a portable hard drive and then left the company with the data. The administrator documented the movement of the evidence. Which of the following concepts did the administrator demonstrate?",
+    "options": [
+      "Preserving chain of custody",
+      "Implementing data protection policies",
+      "Informing law enforcement"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 36,
+    "question": "A computer technician is investigating a computer that is not booting. The user reports that the computer was working prior to shutting it down last night. The technician notices a removable USB device is inserted, and the user explains the device is a prize the user received in the mail yesterday. Which of the following types of attacks does this describe?",
+    "options": [
+      "Phishing",
+      "Tailgating"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 37,
+    "question": "Which of the following social engineering tactics is best avoided by shredding sensitive documents? A. Dumpster diving",
+    "options": [
+      "Phishing",
+      "Whaling",
+      "Shoulder surfing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 38,
+    "question": "Which of the following is used to ensure users have the appropriate level of access to perform their job functions? A. Access control list",
+    "options": [
+      "Multifactor authentication",
+      "Least privilege",
+      "Mobile device management"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 39,
+    "question": "Maintaining the chain of custody is an important part of the incident response process. Which of the following reasons explains why this is important?",
+    "options": [
+      "To maintain an information security policy",
+      "To properly identify the issue",
+      "To control evidence and maintain integrity",
+      "To gather as much information as possible"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 40,
+    "question": "Which of the following types of malicious software is most likely to demand payments in cryptocurrency?",
+    "options": [
+      "Ransomware",
+      "Keylogger",
+      "Rootkit"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 41,
+    "question": "Which of the following involves sending arbitrary characters in a web page request?",
+    "options": [
+      "SMS",
+      "SSL",
+      "XSS",
+      "VPN"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 42,
+    "question": "A customer is accessing a public kiosk in a company’s lobby. Which of the following should be enforced to mitigate the risk of customer data being accidentally saved to the kiosk?",
+    "options": [
+      "Manually clearing browsing data",
+      "Private-browsing mode",
+      "Password manager"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 43,
+    "question": "A company-owned mobile device is displaying a high number of ads, receiving data-usage limit notifications, and experiencing slow response. After checking the device, a technician notices the device has been jailbroken. Which of the following should the technician do next?",
+    "options": [
+      "Run an antivirus and enable encryption",
+      "Restore the defaults and reimage the corporate OS",
+      "Undo the jailbreak and enable an antivirus"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 44,
+    "question": "A remote user is experiencing issues with Outlook settings and asks a technician to review the settings. Which of the following can the technician use to access the user's computer remotely?",
+    "options": [
+      "VPN",
+      "RMM",
+      "SSH"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 45,
+    "question": "In an organization with a standardized set of installed software, a developer submits a request to have new software installed. The company does not currently have a license for this software, but the developer already downloaded the installation file and is requesting that the technician install it. The developer states that the management team approved the business use of this software. Which of the following is the best action for the technician to take? A. Contact the software vendor to obtain the license for the user, and assist the user with installation once the license is purchased.",
+    "options": [
+      "Run a scan on the downloaded installation file to confirm that it is free of malicious software, install the software, and document the software installation process.",
+      "Indicate to the developer that formal approval is needed; then, the IT team should investigate the software and the impact it will have on the organization before installing the software.",
+      "Install the software and run a full system scan with antivirus software to confirm that the operating system is free of malicious software."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 46,
+    "question": "Which of the following combinations meets the requirements for mobile device multifactor authentication?",
+    "options": [
+      "Password and PIN",
+      "Password and swipe",
+      "Swipe and PIN"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 47,
+    "question": "A user receives a call from someone claiming to be a technical support agent. The caller asks the user to log in to the computer. Which of the following security measures should the user take to ensure security and privacy?",
+    "options": [
+      "Only accept calls from known people.",
+      "Update the antivirus software.",
+      "Install a malware scanner."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 48,
+    "question": "A user reports that an air-gapped computer may have been infected with a virus after the user transferred files from a USB drive. The technician runs a computer scan with Windows Defender but does not find an infection. Which of the following actions should the technician take next? (Choose two.) A. Examine the event logs B. Connect to the network C. Document the findings",
+    "options": [
+      "Update the definitions",
+      "Reimage the computer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 49,
+    "question": "Multiple users routinely record log-in information in readily accessible areas. Which of the following is the best way to mitigate this issue?",
+    "options": [
+      "Trusted sources",
+      "Valid certificates",
+      "User training",
+      "Password manager"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 50,
+    "question": "A technician is hardening a company file server and needs to prevent unauthorized LAN devices from accessing stored files. Which of the following should the technician use?",
+    "options": [
+      "Software firewall",
+      "Password complexity"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 51,
+    "question": "When visiting a particular website, a user receives a message stating, “Your connection is not private”. Which of the following describes this issue? A. Certificate warning",
+    "options": [
+      "Malware",
+      "JavaScript error",
+      "Missing OS update"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 52,
+    "question": "A company is creating an access control system that uses something you have and something you are. Which of the following will be required for user authentication? (Choose two.)",
+    "options": [
+      "Password manager",
+      "Smartcard reader",
+      "PIN code"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 53,
+    "question": "A technician needs to strengthen security controls against brute-force attacks. Which of the following options best meets this requirement?",
+    "options": [
+      "Multifactor authentication",
+      "Increased password complexity",
+      "Secure password vault"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 54,
+    "question": "When a user attempts to open an email using a company-issued smartphone, the user receives a message stating the email is encrypted and cannot be opened. The user forwards the email to a personal account and receives the same message. The user then contacts the IT department for assistance. The technician instructs the user to contact the sender to exchange information in order to decode the message. Which of the following will the user receive from the sender?",
+    "options": [
+      "Keys",
+      "Token",
+      "Password"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 55,
+    "question": "A user's work PC has been the target of multiple phishing attacks. Which of the following is a way for the user to prevent further attacks? A. Enabling Windows Firewall B. Activating the email spam filter",
+    "options": [
+      "Using a secure VPN connection",
+      "Running vulnerability scans on a schedule"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 56,
+    "question": "A technician is troubleshooting a PC because the user has reported strange pop-up windows and computer performance issues. Which of the following actions should the technician take next?",
+    "options": [
+      "Isolate the machine from the network.",
+      "Scan the system for hidden files.",
+      "Install antivirus software.",
+      "Reconfigure the firewall."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 57,
+    "question": "A user wants to acquire antivirus software for a SOHO PC. A technician recommends a licensed software product, but the user does not want to pay for a license. Which of the following license types should the technician recommend? A. Corporate",
+    "options": [
+      "Open-source",
+      "Personal"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 58,
+    "question": "A company is requiring its staff to work remotely and needs to ensure remote access to servers and fileshares is secure. Which of the following should the company implement? (Choose two.) A. RDP",
+    "options": [
+      "VPN",
+      "Telnet"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 59,
+    "question": "An administrator received a new shipment of mobile devices. Per company policy, all enterprise-issued devices must have two authentication methods, and the organization has already enforced the use of PIN codes as one method. Which of the following device features should the administrator enable?",
+    "options": [
+      "Smart card",
+      "Hard token",
+      "One-time password"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 60,
+    "question": "Which of the following is the best way to limit the loss of confidential data if an employee's company smartphone is lost or stolen?",
+    "options": [
+      "Installing a VPN",
+      "Implementing location tracking"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 61,
+    "question": "A technician is implementing the latest application security updates for endpoints on an enterprise network. Which of the following solutions should the technician use to ensure device security on the network while adhering to industry best practices? A. Automate the patching process",
+    "options": [
+      "Monitor the firewall configuration,",
+      "Implement access control lists."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 62,
+    "question": "Employees at comptia.org are reporting getting a usual amount of emails from a coworker. A technician discovers the emails were sent from the following address: john@cOmptia.org. Which of the following social engineering attacks is this an example of?",
+    "options": [
+      "Whaling",
+      "Insider threat",
+      "Phishing",
+      "Vishing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 63,
+    "question": "A technician has identified malicious traffic originating from a user's computer. Which of the following is the best way to identify the source of the attack?",
+    "options": [
+      "Investigate the firewall logs.",
+      "Isolate the machine from the network.",
+      "Take a physical inventory of the device."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 64,
+    "question": "A company was recently attacked by ransomware. The IT department has remediated the threat and determined that the attack method used was email. Which of the following the most effective way to prevent this issue from reoccurring?",
+    "options": [
+      "Spam filtering",
+      "Malware prevention software",
+      "Stateful firewall inspection"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 65,
+    "question": "An employee has been using the same password for multiple applications and websites for the past several years. Which of the following would be best to prevent security issues? A. Configuring firewall settings",
+    "options": [
+      "Implementing expiration policies",
+      "Updating antivirus definitions"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 66,
+    "question": "A user in a corporate office reports the inability to connect to any network drives. No other users have reported this issue. Which of the following is the most likely reason the user is having this issue?",
+    "options": [
+      "The user is not connected to the correct VPN site.",
+      "The file server is offline.",
+      "The files on the server are encrypted."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "security"
+  },
+  {
+    "id": 67,
+    "question": "A company wants to take advantage of modern technology and transition away from face-to-face meetings Which of the following types or software would benefit the company the most? (Choose two.)",
+    "options": [
+      "Videoconferencing",
+      "Screen-sharing",
+      "Remote access",
+      "Record-keeping"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "security"
+  }
+]

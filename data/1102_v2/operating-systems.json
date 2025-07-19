@@ -1,0 +1,2456 @@
+[
+  {
+    "id": 1,
+    "question": "A help desk team lead contacts a systems administrator because the technicians are unable to log in to a Linux server that is used to access tools. When the administrator tries to use remote desktop to log in to the server, the administrator sees the GUI is crashing. Which of the following methods can the administrator use to troubleshoot the server effectively?",
+    "options": [
+      "SFTP",
+      "SSH",
+      "VNC",
+      "MSRA"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SSH is the correct answer because it allows for secure remote access to the Linux server, enabling the administrator to troubleshoot the issue without relying on the GUI. SSH provides a command-line interface to the server, allowing the administrator to diagnose and fix problems even if the GUI is not functioning. SFTP is used for secure file transfers, VNC is a remote desktop protocol that may not work if the GUI is crashing, and MSRA is a remote assistance tool that may not be suitable for troubleshooting a server.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 2,
+    "question": "A technician needs to format a USB drive to transfer 20GB of data from a Linux computer to a Windows computer. Which of the following filesystems will the technician MOST likely use?",
+    "options": [
+      "FAT32",
+      "ext4",
+      "NTFS",
+      "exFAT"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "exFAT is the correct answer for transferring 20GB of data between Linux and Windows systems. exFAT supports large files (over 4GB) and is compatible with both Linux and Windows. FAT32 has a 4GB file size limit, ext4 is Linux-specific and not natively supported by Windows, and while NTFS supports large files, it requires additional drivers on Linux for full read/write compatibility. exFAT is designed specifically for cross-platform compatibility with large file support.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 3,
+    "question": "A technician needs to exclude an application folder from being cataloged by a Windows 10 search. Which of the following utilities should be used?",
+    "options": [
+      "Privacy",
+      "Indexing Options",
+      "System",
+      "Device Manager"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Indexing Options is the correct tool for excluding folders from Windows search indexing. This utility allows you to specify which locations should or should not be included in the search index, improving search performance and excluding sensitive or unnecessary folders. Privacy settings control data collection, System shows computer information, and Device Manager handles hardware drivers - none of these control search indexing behavior.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 4,
+    "question": "The command cat comptia.txt was issued on a Linux terminal. Which of the following results should be expected?",
+    "options": [
+      "The contents of the text comptia.txt will be replaced with a new blank document.",
+      "The contents of the text comptia.txt would be displayed.",
+      "The contents of the text comptia.txt would be categorized in alphabetical order.",
+      "The contents of the text comptia.txt would be copied to another comptia.txt file."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The 'cat' command in Linux displays the contents of a file to the terminal. 'cat comptia.txt' will show the entire contents of the comptia.txt file on the screen. The command does not replace, categorize, or copy the file - it simply concatenates and displays the file contents. This is one of the most basic and commonly used Linux commands for viewing file contents.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 5,
+    "question": "A technician is installing new software on a macOS computer. Which of the following file types will the technician MOST likely use?",
+    "options": [
+      ".deb",
+      ".vbs",
+      ".exe",
+      ".app"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": ".app is the correct file extension for macOS applications. macOS applications are typically packaged as .app bundles that contain all necessary files and resources. .deb files are used in Debian-based Linux distributions, .vbs files are Visual Basic scripts primarily for Windows, and .exe files are Windows executables that won't run natively on macOS. Understanding platform-specific file types is essential for cross-platform support.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 6,
+    "question": "A user reports a computer is running slow. Which of the following tools will help a technician identify the issue?",
+    "options": [
+      "Disk Cleanup",
+      "Group Policy Editor",
+      "Disk Management",
+      "Resource Monitor"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Resource Monitor (resmon.exe) is the best tool for identifying performance issues on a slow computer. It provides real-time monitoring of CPU, memory, disk, and network usage, allowing technicians to see which processes are consuming resources. Disk Cleanup frees space but doesn't identify performance issues, Group Policy Editor manages system policies, and Disk Management handles drive partitioning - none of these provide the real-time performance monitoring needed to diagnose slowness.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 7,
+    "question": "A user has requested help setting up the fingerprint reader on a Windows 10 laptop. The laptop is equipped with a fingerprint reader and is joined to a domain. Group Policy enables Windows Hello on all computers in the environment. Which of the following options describes how to set up Windows Hello Fingerprint for the user?",
+    "options": [
+      "Navigate to the Control Panel utility, select the Security and Maintenance submenu, select Change Security and Maintenance settings, select Windows Hello Fingerprint, and have the user place a fingerprint on the fingerprint reader repeatedly until Windows indicates setup is complete.",
+      "Navigate to the Windows 10 Settings menu, select the Accounts submenu, select Sign-in options, select Windows Hello Fingerprint, and have the user place a fingerprint on the fingerprint reader repeatedly until Windows indicates setup is complete.",
+      "Navigate to the Windows 10 Settings menu, select the Update & Security submenu, select Windows Security, select Windows Hello Fingerprint, and have the user place a fingerprint on the fingerprint reader repeatedly until Windows indicates setup is complete.",
+      "Navigate to the Control Panel utility, select the Administrative Tools submenu, select the user account in the list, select Windows Hello Fingerprint, and have the user place a fingerprint on the fingerprint reader repeatedly until Windows indicates setup is complete."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct path is Windows 10 Settings > Accounts > Sign-in options > Windows Hello Fingerprint. This is the standard location in Windows 10 for configuring biometric authentication methods. The Settings app is the modern interface for user account and security configurations. Control Panel's Security and Maintenance is for system security overview, Update & Security is for system updates and Windows Defender, and Administrative Tools is for system management - none of these contain the Windows Hello fingerprint setup.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 8,
+    "question": "Someone who is fraudulently claiming to be from a reputable bank calls a company employee. Which of the following describes this incident?",
+    "options": [
+      "Pretexting",
+      "Spoofing",
+      "Vishing",
+      "Scareware"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Vishing (Voice phishing) is the correct answer. This describes a phone-based social engineering attack where criminals impersonate legitimate organizations (like banks) to trick victims into revealing sensitive information. Pretexting involves creating false scenarios, spoofing refers to falsifying technical identifiers (like email addresses), and scareware uses fake security warnings. The key indicator here is the fraudulent phone call claiming to be from a reputable bank.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 9,
+    "question": "A user reports a PC is running slowly. The technician suspects it has a badly fragmented hard drive. Which of the following tools should the technician use?",
+    "options": [
+      "resmon.exe",
+      "msconfig.exe",
+      "dfrgui.exe",
+      "msinfo32.exe"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "dfrgui.exe is the Disk Defragmenter utility in Windows, which is the correct tool for addressing hard drive fragmentation issues. Fragmentation occurs when files are stored in non-contiguous sectors, slowing down read/write operations. resmon.exe is Resource Monitor for real-time performance monitoring, msconfig.exe is System Configuration for startup management, and msinfo32.exe displays system information. Only the defragmentation tool directly addresses fragmented hard drives.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 10,
+    "question": "Which of the following is the MOST cost-effective version of Windows 10 that allows remote access through Remote Desktop?",
+    "options": [
+      "Home",
+      "Pro for Workstations",
+      "Enterprise",
+      "Pro"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Windows 10 Pro is the most cost-effective version that supports Remote Desktop connections. Windows 10 Home does not include Remote Desktop host capabilities (can only connect as a client), while Pro for Workstations and Enterprise include Remote Desktop but are more expensive than Pro. Windows 10 Pro provides the essential business features including Remote Desktop, domain join, and BitLocker at a reasonable price point for small to medium businesses.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 11,
+    "question": "A user created a file on a shared drive and wants to prevent its data from being accidentally deleted by others. Which of the following applications should the technician use to assist the user with hiding the file?",
+    "options": [
+      "Device Manager",
+      "Indexing Options",
+      "File Explorer",
+      "Administrative Tools"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "File Explorer is the correct tool for hiding files on a shared drive. In File Explorer, you can right-click on a file, select Properties, and check the 'Hidden' attribute to hide the file from normal view. This prevents accidental deletion by making the file invisible unless 'Show hidden files' is enabled in folder options. Device Manager handles hardware drivers, Indexing Options controls search indexing, and Administrative Tools contains system management utilities - none of these can hide individual files. Note that hiding files provides basic protection but is not a security measure against determined users.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 12,
+    "question": "Once weekly, a user needs Linux to run a specific open-source application that is not available for the currently installed Windows platform. The user has limited bandwidth throughout the day. Which of the following solutions would be the MOST efficient, allowing for parallel execution of the Linux application and Windows applications?",
+    "options": [
+      "Install and run Linux and the required application in a PaaS cloud environment.",
+      "Install and run Linux and the required application as a virtual machine installed under the Windows OS.",
+      "Use a swappable drive bay for the boot drive and install each OS with applications on its own drive. Swap the drives as needed.",
+      "Set up a dual boot system by selecting the option to install Linux alongside Windows."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Installing Linux as a virtual machine is the most efficient solution for parallel execution. VMs allow running both Windows and Linux simultaneously without rebooting, use minimal bandwidth (only for VM setup), and provide isolation between systems. PaaS cloud requires constant internet connectivity and bandwidth, swappable drives require physical hardware changes and rebooting, and dual boot prevents parallel execution as only one OS can run at a time.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 13,
+    "question": "A user connects a laptop that is running Windows 10 to a docking station with external monitors when working at a desk. The user would like to close the laptop when it is docked, but the user reports it goes to sleep when it is closed. Which of the following is the BEST solution to prevent the laptop from going to sleep when it is closed and on the docking station?",
+    "options": [
+      "Within the Power Options of the Control Panel utility, click the Change Plan Settings button for the enabled power plan and select Put the Computer to Sleep under the Plugged In category to Never.",
+      "Within the Power Options of the Control Panel utility, click the Change Plan Settings button for the enabled power plan and select Put the Computer to Sleep under the On Battery category to Never.",
+      "Within the Power Options of the Control Panel utility, select the option Choose When to Turn Off the Display and select Turn Off the Display under the Plugged In category to Never.",
+      "Within the Power Options of the Control Panel utility, select the option Choose What Closing the Lid Does and select When I Close the Lid under the Plugged In category to Do Nothing."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The correct setting is 'Choose What Closing the Lid Does' → 'When I Close the Lid' → 'Do Nothing' for plugged-in mode. This specifically controls laptop lid behavior when connected to external power (docking station). The other options control sleep timing but don't address the lid-closing trigger, and display settings don't prevent the system from sleeping when the lid closes.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 14,
+    "question": "A user wants to set up speech recognition on a PC. In which of the following Windows Settings tools can the user enable this option?",
+    "options": [
+      "Language",
+      "System",
+      "Personalization",
+      "Ease of Access"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Speech recognition is found in 'Ease of Access' settings in Windows 10. This section contains accessibility features including speech recognition, narrator, magnifier, and other assistive technologies. Language settings control regional formats, System shows hardware info, and Personalization handles themes and appearance - none of these contain speech recognition configuration.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 15,
+    "question": "Which of the following Wi-Fi protocols is the MOST secure?",
+    "options": [
+      "WPA3",
+      "WPA-AES",
+      "WEP",
+      "WPA-TKIP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "WPA3 is the most secure Wi-Fi protocol available. It provides the strongest encryption (AES-256), improved protection against brute-force attacks, and enhanced security for open networks. WPA-AES and WPA-TKIP are older WPA2 variants with weaker security, and WEP is extremely vulnerable and should never be used in modern networks.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 16,
+    "question": "A technician is setting up a desktop computer in a small office. The user will need to access files on a drive shared from another desktop on the network. Which of the following configurations should the technician employ to achieve this goal?",
+    "options": [
+      "Configure the network as private.",
+      "Enable a proxy server.",
+      "Grant the network administrator role to the user.",
+      "Create a shortcut to public documents."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Configuring the network as 'Private' enables network discovery and file sharing features in Windows, allowing access to shared drives on other computers. Private network profile enables SMB/CIFS protocols needed for file sharing. Proxy servers are for internet access control, administrator roles are unnecessary for basic file sharing, and public documents shortcuts don't provide access to other computers' shared drives.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 17,
+    "question": "A technician is asked to resize a partition on the internal storage drive of a computer running macOS. Which of the followings tools should the technician use to accomplish this task?",
+    "options": [
+      "Console",
+      "Disk Utility",
+      "Time Machine",
+      "FileVault"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Disk Utility is the correct macOS tool for partition management. It handles disk formatting, partitioning, resizing, and repair functions. Console shows system logs, Time Machine is for backups, and FileVault provides disk encryption - none of these can resize partitions.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 18,
+    "question": "A desktop specialist needs to prepare a laptop running Windows 10 for a newly hired employee. Which of the following methods should the technician use to refresh the laptop?",
+    "options": [
+      "Internet-based upgrade",
+      "Repair installation",
+      "Clean install",
+      "USB repair",
+      "In-place upgrade"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Clean install is the best method for preparing a laptop for a new employee. It completely removes all previous user data, applications, and configurations, providing a fresh, secure starting point. Internet-based and in-place upgrades preserve existing data, repair installation fixes problems but doesn't remove user data, and USB repair is for troubleshooting, not preparation.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 19,
+    "question": "An Android user reports that when attempting to open the company's proprietary mobile application, it immediately closes. The user states that the issue persists, even after rebooting the phone. The application contains critical information that cannot be lost. Which of the following steps should a systems administrator attempt FIRST?",
+    "options": [
+      "Uninstall and reinstall the application.",
+      "Reset the phone to factory settings.",
+      "Install an alternative application with similar functionality.",
+      "Clear the application cache."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Clearing the application cache should be attempted first as it's the least disruptive solution. App crashes often result from corrupted cache files, and clearing cache preserves user data and settings. Uninstalling removes all data, factory reset affects the entire device, and alternative applications don't solve the original app's problem.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 20,
+    "question": "A user rotates a cell phone horizontally to read emails, but the display remains vertical, even though the settings indicate autorotate is on. Which of the following will MOST likely resolve the issue?",
+    "options": [
+      "Recalibrating the magnetometer",
+      "Recalibrating the compass",
+      "Recalibrating the digitizer",
+      "Recalibrating the accelerometer"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Recalibrating the accelerometer will most likely resolve autorotate issues. The accelerometer detects device orientation changes and triggers screen rotation. Magnetometer detects magnetic fields, compass shows direction, and digitizer handles touch input - none of these control screen rotation functionality.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 21,
+    "question": "A Microsoft Windows PC needs to be set up for a user at a large corporation. The user will need access to the corporate domain to access email and shared drives. Which of the following versions of Windows would a technician MOST likely deploy for the user?",
+    "options": [
+      "Windows Enterprise Edition",
+      "Windows Professional Edition",
+      "Windows Server Standard Edition",
+      "Windows Home Edition"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Windows Professional Edition is the most likely version of Windows that a technician would deploy for a user in a large corporation. This version of Windows includes features such as domain join, Group Policy support, and enterprise security features that are necessary for a corporate environment. It also provides access to email and shared drives, making it an ideal choice for business users. Windows Enterprise Edition is also suitable, but it is more expensive and typically used in larger organizations. Windows Server Standard Edition is not suitable for client computers, and Windows Home Edition lacks the necessary features for a corporate environment.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 22,
+    "question": "A technician is setting up a conference room computer with a script that boots the application on log-in. Which of the following would the technician use to accomplish this task? (Choose two.)",
+    "options": [
+      "File Explorer",
+      "Startup Folder",
+      "System Information",
+      "Programs and Features",
+      "Task Scheduler",
+      "Device Manager"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "Both Startup Folder and Task Scheduler can be used to run applications at login. The Startup Folder is the simplest method - placing a script or shortcut here will execute it when any user logs in. Task Scheduler provides more advanced options like running with specific privileges, delays, or conditions. File Explorer is just for browsing files, System Information displays hardware details, Programs and Features manages installed software, and Device Manager handles hardware drivers - none of these can configure startup applications.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 23,
+    "question": "A systems administrator needs to reset a user's password because the user forgot it. The systems administrator creates the new password and wants to further protect the user's account. Which of the following should the systems administrator do?",
+    "options": [
+      "Require the user to change the password at the next log-in",
+      "Disallow the user from changing the password.",
+      "Disable the account.",
+      "Choose a password that never expires."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Requiring the user to change the password at next login is the best security practice. This ensures the user creates a personal password they'll remember, and the administrator doesn't know the final password. Disallowing password changes prevents users from creating secure personal passwords, disabling the account prevents access entirely, and passwords that never expire create long-term security risks.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 24,
+    "question": "Which of the following command-line tools will delete a directory?",
+    "options": [
+      "md",
+      "del",
+      "dir",
+      "rd",
+      "cd"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The 'rd' (remove directory) command deletes directories in Windows command line. 'md' creates directories, 'del' deletes files (not directories), 'dir' lists directory contents, and 'cd' changes the current directory. For removing directories with contents, use 'rd /s' to remove subdirectories and files recursively.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 25,
+    "question": "An analyst needs GUI access to server software running on a macOS server. Which of the following options provides the BEST way for the analyst to access the macOS server from the Windows workstation?",
+    "options": [
+      "RDP through RD Gateway",
+      "Apple Remote Desktop",
+      "SSH access with SSH keys",
+      "VNC with username and password"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "VNC with username and password provides the best cross-platform GUI access from Windows to macOS. VNC is platform-independent and works well between different operating systems. RDP is Windows-specific and doesn't natively support macOS, Apple Remote Desktop requires macOS client software, and SSH provides command-line access only, not GUI access.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 26,
+    "question": "A technician is installing a new business application on a user's desktop computer. The machine is running Windows 10 Enterprise 32-bit operating system. Which of the following files should the technician execute in order to complete the installation?",
+    "options": [
+      "Installer_x64.exe",
+      "Installer_Files.zip",
+      "Installer_32.msi",
+      "Installer_x86.exe",
+      "Installer_Win10Enterprise.dmg"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "For a 32-bit Windows 10 system, use 'Installer_x86.exe' as x86 refers to 32-bit architecture. x64 installers are for 64-bit systems, .zip files need extraction first, .msi files are Windows Installer packages but the .exe is more appropriate here, and .dmg files are macOS disk images that won't work on Windows.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 27,
+    "question": "A technician is troubleshooting a lack of outgoing audio on a third-party Windows 10 VoIP application. The PC uses a USB microphone connected to a powered hub. The technician verifies the microphone works on the PC using Voice Recorder. Which of the following should the technician do to solve the issue?",
+    "options": [
+      "Remove the microphone from the USB hub and plug it directly into a USB port on the P",
+      "Enable the microphone under Windows Privacy settings to allow desktop applications to access it.",
+      "Delete the microphone from Device Manager and scan for new hardware.",
+      "Replace the USB microphone with one that uses a traditional 3.5mm plug."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Enable the microphone under Windows Privacy settings to allow desktop applications to access it. Windows 10 privacy settings can block third-party applications from accessing microphone hardware even when the device works with built-in Windows apps. Since Voice Recorder works, the hardware and drivers are fine. Moving the USB connection, deleting from Device Manager, or replacing the microphone won't solve the privacy permission issue.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 28,
+    "question": "A desktop support technician is tasked with migrating several PCs from Windows 7 Pro to Windows 10 Pro. The technician must ensure files and user preferences are retained, must perform the operation locally, and should migrate one station at a time. Which of the following methods would be MOST efficient?",
+    "options": [
+      "Golden image",
+      "Remote network install",
+      "In-place upgrade",
+      "Clean install"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In-place upgrade is the most efficient method for migrating from Windows 7 Pro to Windows 10 Pro while retaining files and user preferences. This method upgrades the existing installation locally, preserving user data and settings. Golden image requires network deployment, remote network install contradicts the local requirement, and clean install removes all existing data and preferences.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 29,
+    "question": "A macOS user reports seeing a spinning round cursor on a program that appears to be frozen. Which of the following methods does the technician use to force the program to close in macOS?",
+    "options": [
+      "The technician presses the Ctrl+Alt+Del keys to open the Force Quit menu, selects the frozen application in the list, and clicks Force Quit.",
+      "The technician clicks on the frozen application and presses and holds the Esc key on the keyboard for 10 seconds which causes the application to force quit.",
+      "The technician opens Finder, navigates to the Applications folder, locates the application that is frozen in the list, right-clicks on the application, and selects the Force Quit option.",
+      "The technician opens the Apple icon menu, selects Force Quit, selects the frozen application in the list, and clicks Force Quit."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Open the Apple menu, select Force Quit, select the frozen application, and click Force Quit. This is the standard macOS method for force-closing unresponsive applications. Ctrl+Alt+Del is Windows-specific, holding Esc doesn't force quit applications, and right-clicking in Finder doesn't provide force quit options for running applications.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 30,
+    "question": "A technician is tasked with configuring a computer for a visually impaired user. Which of the following utilities should the technician use?",
+    "options": [
+      "Device Manager",
+      "System",
+      "Ease of Access Center",
+      "Programs and Features"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Ease of Access Center is the correct utility for configuring accessibility features for visually impaired users. This includes screen readers, magnifiers, high contrast themes, and other visual accessibility tools. Device Manager handles hardware, System shows computer information, and Programs and Features manages installed software - none of these provide accessibility configuration options.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 31,
+    "question": "A user connected a laptop to a wireless network and was tricked into providing log-in credentials for a website. Which of the following threats was used to carry out the attack?",
+    "options": [
+      "Zero day",
+      "Vishing",
+      "DDoS",
+      "Evil twin"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Evil twin attack was used to carry out this attack. An evil twin is a malicious wireless access point that mimics a legitimate network to trick users into connecting and providing credentials. Zero day refers to unknown vulnerabilities, vishing is voice phishing over phone calls, and DDoS is a denial of service attack - none of these involve fake wireless networks capturing login credentials.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 32,
+    "question": "Which of the following Linux commands would be used to install an application?",
+    "options": [
+      "yum",
+      "grep",
+      "ls",
+      "sudo"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "'yum' is a package management utility used to install applications on Red Hat-based Linux distributions. It handles dependencies automatically and downloads packages from repositories. 'grep' searches text patterns, 'ls' lists directory contents, and 'sudo' executes commands with elevated privileges - none of these install applications.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 33,
+    "question": "A technician installed a new application on a workstation. For the program to function properly, it needs to be listed in the Path Environment Variable. Which of the following Control Panel utilities should the technician use?",
+    "options": [
+      "System",
+      "Indexing Options",
+      "Device Manager",
+      "Programs and Features"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The System Control Panel utility is used to modify the Path Environment Variable. Go to System > Advanced system settings > Environment Variables to edit the PATH. Indexing Options controls search indexing, Device Manager handles hardware drivers, and Programs and Features manages installed software - none of these provide access to environment variables.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 34,
+    "question": "A systems administrator is setting up a Windows computer for a new user. Corporate policy requires a least privilege environment. The user will need to access advanced features and configuration settings for several applications. Which of the following BEST describes the account access level the user will need?",
+    "options": [
+      "Power user account",
+      "Standard account",
+      "Guest account",
+      "Administrator account"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A Power user account provides the best balance for least privilege while allowing access to advanced features. Power users can modify system settings and install software but don't have full administrative rights. Standard accounts are too restrictive for advanced features, Guest accounts have minimal permissions, and Administrator accounts violate least privilege principles.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 35,
+    "question": "A user has a license for an application that is in use on a personal home laptop. The user approaches a systems administrator about using the same license on multiple computers on the corporate network. Which of the following BEST describes what the systems administrator should tell the user?",
+    "options": [
+      "Use the application only on the home laptop because it contains the initial license.",
+      "Use the application at home and contact the vendor regarding a corporate license.",
+      "Use the application on any computer since the user has a license.",
+      "Use the application only on corporate computers."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The administrator should tell the user to use the application at home and contact the vendor regarding a corporate license. Personal licenses typically don't allow corporate network use, and using software beyond license terms violates copyright law. The user needs to purchase appropriate corporate licensing for business use.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 36,
+    "question": "A malicious file was executed automatically when a flash drive was plugged in. Which of the following features would prevent this type of incident?",
+    "options": [
+      "Disabling UAC",
+      "Restricting local administrators",
+      "Enabling UPnP",
+      "Turning off AutoPlay"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Turning off AutoPlay would prevent automatic execution of malicious files when USB drives are inserted. AutoPlay automatically runs programs from removable media, creating security risks. Disabling UAC reduces security, restricting local administrators doesn't address AutoPlay, and enabling UPnP creates additional security vulnerabilities.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 37,
+    "question": "A user needs assistance changing the desktop wallpaper on a Windows 10 computer. Which of the following methods will enable the user to change the wallpaper using a Windows 10 Settings tool?",
+    "options": [
+      "Open Settings, select Accounts, select Your info, click Browse, and then locate and open the image the user wants to use as the wallpaper.",
+      "Open Settings, select Personalization, click Browse, and then locate and open the image the user wants to use as the wallpaper.",
+      "Open Settings, select System, select Display, click Browse, and then locate and open the image the user wants to use as the wallpaper.",
+      "Open Settings, select Apps, select Apps & features, click Browse, and then locate and open the image the user wants to use as the wallpaper."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The correct path is Settings > Personalization > Background (or Desktop Background) to change wallpaper in Windows 10. Personalization contains all appearance and theme settings including wallpapers. Accounts manages user information, System contains hardware settings, and Apps manages installed applications - none of these control wallpaper settings.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 38,
+    "question": "A macOS user needs to create another virtual desktop space. Which of the following applications will allow the user to accomplish this task?",
+    "options": [
+      "Dock",
+      "Spotlight",
+      "Mission Control",
+      "Launchpad"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Mission Control allows users to create and manage virtual desktop spaces (called Spaces) in macOS. It provides an overview of all open windows and desktops. Dock shows running applications, Spotlight is for searching, and Launchpad displays applications - none of these create virtual desktops.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 39,
+    "question": "A technician installed an application on a user's desktop and received an error message. Which of the following tools can the technician use to research the error?",
+    "options": [
+      "Resource Monitor > CPU > Services",
+      "Task Manager > Processes > Apps",
+      "Event Viewer > Windows Logs > Application",
+      "Device Manager > Computer"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Event Viewer > Windows Logs > Application is the correct tool for researching application installation errors. Application logs contain detailed error information, error codes, and timestamps for troubleshooting software issues. Resource Monitor shows performance data, Task Manager shows running processes, and Device Manager shows hardware - none provide detailed error logs.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 40,
+    "question": "A user reports that text on the screen is too small. The user would like to make the text larger and easier to see. Which of the following is the BEST way for the user to increase the size of text, applications, and other items using the Windows 10 Settings tool?",
+    "options": [
+      "Open Settings, select Devices, select Display, and change the display resolution to a lower resolution option.",
+      "Open Settings, select System, select Display, and change the display resolution to a lower resolution option.",
+      "Open Settings, select System, select Display, and change the Scale and layout setting to a higher percentage.",
+      "Open Settings, select Personalization, select Display, and change the Scale and layout setting to a higher percentage."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Settings > System > Display > Scale and layout setting to a higher percentage is the best method to increase text size. This scales all interface elements proportionally without reducing image quality. Changing resolution to lower settings reduces clarity, and Personalization doesn't contain display scaling options.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 41,
+    "question": "A technician installs specialized software on a workstation. The technician then attempts to run the software. The workstation displays a message indicating the software is not authorized to run. Which of the following should the technician do to MOST likely resolve the issue?",
+    "options": [
+      "Grant permissions to the installation directory.",
+      "Attach the external hardware token.",
+      "Install OS updates.",
+      "Restart the workstation after installation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Attaching the external hardware token will most likely resolve the authorization issue. Many specialized software applications use hardware dongles or tokens for license verification and copy protection. Granting permissions addresses file access but not software authorization, OS updates are unrelated, and restarting doesn't resolve licensing issues.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 42,
+    "question": "Which of the following editions of Windows 10 requires reactivation every 180 days?",
+    "options": [
+      "Enterprise",
+      "Pro for Workstation",
+      "Home",
+      "Pro"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Windows 10 Enterprise requires reactivation every 180 days when using volume licensing with Key Management Service (KMS). This prevents unauthorized long-term use of enterprise licenses. Home, Pro, and Pro for Workstation editions use different activation methods that don't require periodic reactivation.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 43,
+    "question": "A technician has an external SSD. The technician needs to read and write to an external SSD on both Macs and Windows PCs. Which of the following filesystems is supported by both OS types?",
+    "options": [
+      "NTFS",
+      "APFS",
+      "ext4",
+      "exFAT"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "exFAT is supported by both macOS and Windows for read/write operations on external drives. NTFS has limited macOS support (read-only without additional drivers), APFS is Apple-specific, and ext4 is Linux-specific. exFAT is designed for cross-platform compatibility with removable storage.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 44,
+    "question": "A user has a computer with Windows 10 Home installed and purchased a Windows 10 Pro license. The user is not sure how to upgrade the OS. Which of the following should the technician do to apply this license?",
+    "options": [
+      "Copy the c:\\Windows\\windows.1ic file over to the machine and restart.",
+      "Redeem the included activation key card for a product key.",
+      "Insert a Windows USB hardware dongle and initiate activation.",
+      "Activate with the digital license included with the device hardware."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Redeem the included activation key card for a product key to upgrade from Windows 10 Home to Pro. The user needs to enter the Pro license key in Settings > Update & Security > Activation. Copying license files, USB dongles, and digital licenses are not valid upgrade methods for retail Windows licenses.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 45,
+    "question": "Which of the following is a package management utility for PCs that are running the Linux operating system?",
+    "options": [
+      "chmod",
+      "yum",
+      "man",
+      "grep"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "'yum' is a package management utility for Linux systems, specifically Red Hat-based distributions. It installs, updates, and removes software packages. 'chmod' changes file permissions, 'man' displays manual pages, and 'grep' searches text patterns - none of these manage software packages.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 46,
+    "question": "A technician needs to ensure that USB devices are not suspended by the operating system. Which of the following Control Panel utilities should the technician use to configure the setting?",
+    "options": [
+      "System",
+      "Power Options",
+      "Devices and Printers",
+      "Device Manager"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Power Options is the correct Control Panel utility to prevent USB device suspension. In Power Options > Advanced settings, you can disable 'USB selective suspend setting' to prevent the OS from powering down USB devices. System shows computer info, Devices and Printers manages peripherals, and Device Manager handles drivers - none control power management.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 47,
+    "question": "A technician needs to manually set an IP address on a computer that is running macOS. Which of the following commands should the technician use?",
+    "options": [
+      "ipconfig",
+      "ifconfig",
+      "arpa",
+      "ping"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "'ifconfig' is the correct command to manually set IP addresses on macOS and Linux systems. 'ipconfig' is Windows-specific, 'arpa' is not a standard networking command, and 'ping' tests network connectivity but doesn't configure IP addresses. Use 'ifconfig interface_name IP_address netmask subnet_mask' syntax.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 48,
+    "question": "Which of the following operating systems is considered closed source?",
+    "options": [
+      "Ubuntu",
+      "Android",
+      "CentOS",
+      "OSX"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "macOS (OSX) is considered closed source as Apple doesn't release the source code publicly. Ubuntu, Android, and CentOS are open source operating systems where source code is freely available for modification and distribution. Apple maintains proprietary control over macOS development and licensing.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 49,
+    "question": "Which of the following macOS features provides the user with a high-level view of all open windows?",
+    "options": [
+      "Mission Control",
+      "Finder",
+      "Multiple Desktops",
+      "Spotlight"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Mission Control provides a high-level view of all open windows, virtual desktops, and full-screen applications in macOS. It allows users to see and navigate between all open content at once. Finder is for file management, Multiple Desktops is a feature within Mission Control, and Spotlight is for searching - none provide the comprehensive window overview.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 50,
+    "question": "After a failed update, an application no longer launches and generates the following error message: Application needs to be repaired. Which of the following Windows 10 utilities should a technician use to address this concern?",
+    "options": [
+      "Device Manager",
+      "Administrator Tools",
+      "Programs and Features",
+      "Recovery"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Programs and Features is the correct utility to repair failed applications in Windows 10. It allows you to modify, repair, or uninstall programs. When an application shows 'needs to be repaired', use Programs and Features to run the repair function. Device Manager handles hardware, Administrator Tools contains system utilities, and Recovery is for system restoration - none specifically repair applications.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 51,
+    "question": "A technician needs to access a Windows 10 desktop on the network in a SOHO using RDP. Although the connection is unsuccessful, the technician is able to ping the computer successfully. Which of the following is MOST likely preventing the connection?",
+    "options": [
+      "The Windows 10 desktop has Windows 10 Home installed.",
+      "The Windows 10 desktop does not have DHCP configured.",
+      "The Windows 10 desktop is connected via Wi-Fi.",
+      "The Windows 10 desktop is hibernating."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Windows 10 Home does not support RDP (Remote Desktop Protocol) as a host - it can only connect as a client to other RDP servers. Since ping works, network connectivity is fine. DHCP configuration doesn't affect RDP functionality, Wi-Fi connection doesn't prevent RDP, and hibernating would prevent ping responses as well.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 52,
+    "question": "Which of the following is used to integrate Linux servers and desktops into Windows Active Directory environments?",
+    "options": [
+      "apt-get",
+      "CIFS",
+      "Samba",
+      "grep"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Samba is used to integrate Linux servers and desktops into Windows Active Directory environments. It provides file and print services and allows Linux systems to participate in Windows domains. 'apt-get' is a package manager, 'CIFS' is a file sharing protocol, and 'grep' searches text patterns - none of these integrate with Active Directory.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 53,
+    "question": "A user has been unable to receive emails or browse the internet from a smartphone while traveling. However, text messages and phone calls are working without issue. Which of the following should a support technician check FIRST?",
+    "options": [
+      "User account status",
+      "Mobile OS version",
+      "Data plan coverage",
+      "Network traffic outages"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Data plan coverage should be checked first when emails and internet don't work but calls and texts do. Voice and SMS use different network protocols than data services. User account status, mobile OS version, and network outages would affect all services, not just data connectivity.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 54,
+    "question": "A technician is finalizing a new workstation for a user. The user's PC will be connected to the internet but will not require the same private address each time. Which of the following protocols will the technician MOST likely utilize?",
+    "options": [
+      "DHCP",
+      "SMTP",
+      "DNS",
+      "RDP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "DHCP (Dynamic Host Configuration Protocol) will most likely be utilized for automatic IP address assignment. Since the user doesn't need the same private address each time, DHCP provides dynamic addressing. SMTP handles email, DNS resolves domain names, and RDP provides remote access - none handle dynamic IP addressing.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 55,
+    "question": "A company acquired a local office, and a technician is attempting to join the machines at the office to the local domain. The technician notes that the domain join option appears to be missing. Which of the following editions of Windows is MOST likely installed on the machines?",
+    "options": [
+      "Windows Professional",
+      "Windows Education",
+      "Windows Enterprise",
+      "Windows Home"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Windows Home edition is most likely installed as it lacks domain join capability. Only Professional, Education, and Enterprise editions can join domains. Windows Home is designed for personal use and doesn't include business features like domain membership.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 56,
+    "question": "A user is trying to use a third-party USB adapter but is experiencing connection issues. Which of the following tools should the technician use to resolve this issue?",
+    "options": [
+      "taskschd.msc",
+      "eventvwr.msc",
+      "devmgmt.msc",
+      "diskmgmt.msc"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "devmgmt.msc (Device Manager) should be used to resolve USB adapter connection issues. Device Manager shows hardware devices, driver status, and allows driver updates or troubleshooting. taskschd.msc manages scheduled tasks, eventvwr.msc views event logs, and diskmgmt.msc manages disk partitions - none directly handle USB adapter issues.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 57,
+    "question": "A technician installed Windows 10 on a workstation. The workstation only has 3.5GB of usable RAM, even though the technician installed 8GB. Which of the following is the MOST likely reason this system is not utilizing all the available RAM?",
+    "options": [
+      "The system is missing updates.",
+      "The system is utilizing a 32-bit OS.",
+      "The system's memory is failing.",
+      "The system requires BIOS updates."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The system is utilizing a 32-bit OS, which has a ~3.5GB RAM limitation due to memory addressing constraints. 32-bit systems can only address about 4GB total, with some reserved for system use. Missing updates, memory failure, or BIOS issues wouldn't cause this specific 3.5GB limitation.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 58,
+    "question": "Which of the following is the default GUI and file manager in macOS?",
+    "options": [
+      "Disk Utility",
+      "Finder",
+      "Dock",
+      "FileVault"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Finder is the default GUI and file manager in macOS. It provides the graphical interface for browsing files, folders, and system resources. Disk Utility manages storage devices, Dock shows running applications, and FileVault provides encryption - none serve as the primary file manager.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 59,
+    "question": "Which of the following operating systems can allow users to have access to the source code, can host various server applications, and can be command line only?",
+    "options": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Chrome OS"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Linux allows users access to source code (open source), can host various server applications, and can be command line only. Windows and macOS are closed source, Chrome OS is limited in server capabilities. Linux's open-source nature and flexibility make it ideal for servers and command-line environments.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 60,
+    "question": "A system dives nearly full, and a technician needs to free up some space. Which of the following tools should the technician use?",
+    "options": [
+      "Disk Cleanup",
+      "Resource Monitor",
+      "Disk Defragment",
+      "Disk Management"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Disk Cleanup should be used to free up space on a nearly full system drive. It removes temporary files, recycle bin contents, system cache, and other unnecessary files. Resource Monitor shows performance data, Disk Defragment reorganizes files, and Disk Management handles partitions - none directly free up space.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 61,
+    "question": "A technician is partitioning a hard disk. The five primary partitions should contain 4TB of free space. Which of the following partition styles should the technician use to partition the device?",
+    "options": [
+      "EFS",
+      "GPT",
+      "MBR",
+      "FAT32"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "GPT (GUID Partition Table) should be used for partitioning 4TB drives with five primary partitions. GPT supports larger drives and more partitions than MBR. EFS is encryption, MBR has size limitations (2TB max), and FAT32 is a file system, not a partition style.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 62,
+    "question": "A user’s permissions are limited to read on a shared network folder using NTFS security settings. Which of the following describes this type of security control?",
+    "options": [
+      "SMS",
+      "MFA",
+      "ACL",
+      "MDM"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "ACL (Access Control List) describes NTFS security settings that limit user permissions to read-only on shared folders. ACLs define who can access resources and what actions they can perform. SMS is messaging, MFA is multi-factor authentication, and MDM is mobile device management - none describe file permissions.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 63,
+    "question": "A user attempts to install additional software and receives a UAC prompt. Which of the following is the BEST way to resolve this issue?",
+    "options": [
+      "Add a user account to the local administrator's group.",
+      "Configure Windows Defender Firewall to allow access to all networks.",
+      "Create a Microsoft account.",
+      "Disable the guest account."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Adding a user account to the local administrator's group is the best way to resolve UAC prompts for software installation. UAC prompts appear when standard users try to perform administrative tasks. Windows Defender Firewall, Microsoft accounts, and guest account settings don't address UAC permission issues.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 64,
+    "question": "A technician needs to add an individual as a local administrator on a Windows home PC. Which of the following utilities would the technician MOST likely use?",
+    "options": [
+      "Settings > Personalization",
+      "Control Panel > Credential Manager",
+      "Settings > Accounts > Family and Other Users",
+      "Control Panel > Network and Sharing Center"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Settings > Accounts > Family and Other Users is the correct utility to add a local administrator on Windows home PC. This section manages user accounts and permissions. Personalization controls appearance, Credential Manager stores passwords, and Network and Sharing Center manages network settings - none add local administrators.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 65,
+    "question": "A systems administrator is experiencing issues connecting from a laptop to the corporate network using PKI. Which of the following tools can the systems administrator use to help remediate the issue?",
+    "options": [
+      "certmgr.msc",
+      "mscontig.exe",
+      "lusrmgr.msc",
+      "perfmon.msc"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "certmgr.msc (Certificate Manager) can help remediate PKI connection issues by managing digital certificates. PKI relies on certificates for authentication and encryption. mscontig.exe defragments files, lusrmgr.msc manages local users, and perfmon.msc monitors performance - none handle PKI certificates.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 66,
+    "question": "A technician is reimaging a desktop PC. The technician connects the PC to the network and powers it on. The technician attempts to boot the computer via the NIC to image the computer, but this method does not work. Which of the following is the MOST likely reason the computer is unable to boot into the imaging system via the network?",
+    "options": [
+      "The computer's CMOS battery failed.",
+      "The computer's NIC is faulty.",
+      "The PXE boot option has not been enabled.",
+      "The Ethernet cable the technician is using to connect the desktop to the network is faulty."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The PXE boot option has not been enabled in BIOS/UEFI settings. PXE (Preboot Execution Environment) allows network booting for imaging. CMOS battery failure, faulty NIC, or bad Ethernet cable would prevent network connectivity entirely, but the technician connected to the network successfully.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 67,
+    "question": "Which of the following features allows a technician to configure policies in a Windows 10 Professional desktop?",
+    "options": [
+      "gpedit",
+      "gpmc",
+      "gpresult",
+      "gpupdate"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "gpedit (Group Policy Editor) allows technicians to configure policies in Windows 10 Professional. It provides local policy management for security, user rights, and system settings. gpmc manages domain policies, gpresult shows applied policies, and gpupdate refreshes policies - none configure local policies.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 68,
+    "question": "A small-office customer needs three PCs to be configured in a network with no server. Which of the following network types is the customer's BEST choice for this environment?",
+    "options": [
+      "Workgroup network",
+      "Public network",
+      "Wide area network",
+      "Domain network"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Workgroup network is the best choice for three PCs with no server in a small office. Workgroups allow peer-to-peer networking without centralized authentication. Public networks are for internet access, wide area networks span large distances, and domain networks require a server for centralized management.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 69,
+    "question": "Which of the following macOS utilities uses AES-128 to encrypt the startup disk?",
+    "options": [
+      "fdisk",
+      "Diskpart",
+      "Disk Utility",
+      "FileVault"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "FileVault uses AES-128 encryption to encrypt the startup disk in macOS. It provides full-disk encryption for security. fdisk and Diskpart are partitioning tools, Disk Utility manages storage but doesn't specifically encrypt with AES-128 - only FileVault provides this encryption feature.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 70,
+    "question": "A user reported that a laptop's screen turns off very quickly after sitting for a few moments and is also very dim when not plugged in to an outlet. Everything else seems to be functioning normally. Which of the following Windows settings should be configured?",
+    "options": [
+      "Power Plans",
+      "Hibernate",
+      "Sleep/Suspend",
+      "Screensaver"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Power Plans should be configured to address screen timeout and dimming issues on battery power. Power Plans control display brightness, sleep timers, and power management settings for battery vs. plugged-in operation. Hibernate, Sleep/Suspend, and Screensaver settings don't address the brightness and timeout combination described.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 71,
+    "question": "A systems administrator is monitoring an unusual amount of network traffic from a kiosk machine and needs to investigate to determine the source of the traffic. Which of the following tools can the administrator use to view which processes on the kiosk machine are connecting to the internet?",
+    "options": [
+      "Resource Monitor",
+      "Performance Monitor",
+      "Command Prompt",
+      "System Information"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Resource Monitor can view which processes are connecting to the internet by showing network activity per process. It displays real-time network connections and bandwidth usage by application. Performance Monitor tracks system metrics, Command Prompt provides CLI access, and System Information shows hardware details - none show process-specific network connections.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 72,
+    "question": "A corporation purchased new computers for a school. The computers are the same make and model and need to have the standard image loaded. Which of the following orchestration tools should a desktop administrator use for wide-scale deployment?",
+    "options": [
+      "USB drive",
+      "DVD installation media",
+      "PXE boot",
+      "Recovery partition"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "PXE boot should be used for wide-scale deployment of standard images to multiple identical computers. PXE allows network-based installation from a central server, ideal for mass deployment. USB drives and DVD media require physical handling of each machine, and recovery partitions are for individual system restoration - none scale efficiently.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 73,
+    "question": "A systems administrator is configuring centralized desktop management for computers on a domain. The management team has decided that all users' workstations should have the same network drives, printers, and configurations. Which of the following should the administrator use to accomplish this task?",
+    "options": [
+      "Network and Sharing Center",
+      "net use",
+      "User Accounts",
+      "regedit",
+      "Group Policy"
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "Group Policy should be used to accomplish centralized desktop management with consistent network drives, printers, and configurations across domain computers. Group Policy provides centralized configuration management. Network and Sharing Center manages local network settings, net use maps drives manually, User Accounts manages local users, and regedit edits registry - none provide centralized domain management.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 74,
+    "question": "A user connected an external hard drive but is unable to see it as a destination to save files. Which of the following tools will allow the drive to be formatted?",
+    "options": [
+      "Disk Management",
+      "Device Manager",
+      "Disk Cleanup",
+      "Disk Defragmenter"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Disk Management will allow the external hard drive to be formatted and assigned a drive letter. When drives aren't visible as save destinations, they often need initialization and formatting. Device Manager handles hardware drivers, Disk Cleanup removes files, and Disk Defragmenter optimizes file layout - none format drives.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 75,
+    "question": "Which of the following best describes when to use the YUM command in Linux?",
+    "options": [
+      "To add functionality",
+      "To change folder permissions",
+      "To show documentation",
+      "To list file contents"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "YUM command in Linux is best used 'To add functionality' by installing software packages and managing dependencies. YUM (Yellowdog Updater Modified) is a package manager for Red Hat-based distributions. Changing folder permissions uses chmod, showing documentation uses man, and listing file contents uses ls or cat.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 76,
+    "question": "While trying to repair a Windows 10 OS, a technician receives a prompt asking for a key. The technician tries the administrator password, but it is rejected. Which of the following does the technician need in order to continue the OS repair?",
+    "options": [
+      "SSL key",
+      "Preshared key",
+      "WPA2 key",
+      "Recovery key"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The technician needs a Recovery key to continue Windows 10 OS repair when the administrator password is rejected. Recovery keys are used for BitLocker-encrypted drives during system recovery. SSL keys are for web encryption, preshared keys are for wireless security, and WPA2 keys are for Wi-Fi authentication - none are used for OS repair.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 77,
+    "question": "Which of the following allows access to the command line in macOS?",
+    "options": [
+      "PsExec",
+      "command.com",
+      "Terminal",
+      "CMD"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Terminal allows access to the command line in macOS. It provides a Unix-based command-line interface for system administration and scripting. PsExec is a Windows tool, command.com is DOS-based, and CMD is Windows Command Prompt - none provide macOS command-line access.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 78,
+    "question": "A desktop technician has received reports that a user's PC is slow to load programs and saved files. The technician investigates and discovers an older HDD with adequate free space. Which of the following should the technician use to alleviate the issue first?",
+    "options": [
+      "Disk Management",
+      "Disk Defragment",
+      "Disk Cleanup",
+      "Device Manager"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Disk Defragment should be used first to alleviate slow loading on an older HDD with adequate free space. Fragmentation causes slow file access on traditional hard drives. Disk Management handles partitions, Disk Cleanup removes files, and Device Manager manages hardware - none address file fragmentation performance issues.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 79,
+    "question": "Which of the following is most likely used to run .vbs files on Windows devices?",
+    "options": [
+      "winmgmt.exe",
+      "powershell.exe",
+      "cscript.exe",
+      "explorer.exe"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "cscript.exe is most likely used to run .vbs (VBScript) files on Windows devices. It's the command-line script host for VBScript and JScript execution. winmgmt.exe manages WMI, powershell.exe runs PowerShell scripts, and explorer.exe is the Windows shell - none specifically execute VBScript files.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 80,
+    "question": "Which of the following would most likely be used in a small office environment?",
+    "options": [
+      "Print server",
+      "Virtualization",
+      "Domain access",
+      "Workgroup"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Workgroup would most likely be used in a small office environment for simple peer-to-peer networking without server infrastructure. Print servers, virtualization, and domain access typically require more complex infrastructure and are more common in larger organizations with dedicated IT resources.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 81,
+    "question": "A technician is working on a way to register all employee badges and associated computer IDs. Which of the following options should the technician use in order to achieve this objective?",
+    "options": [
+      "Database system",
+      "Software management",
+      "Active Directory description",
+      "Infrastructure as a Service"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Database system should be used to register all employee badges and associated computer IDs for tracking and management purposes. Databases provide structured data storage, querying capabilities, and relational data management ideal for tracking assets and personnel. Software management, Active Directory descriptions, and Infrastructure as a Service don't provide the structured data storage needed for badge/computer registration.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 82,
+    "question": "A user requires a drive to be mapped through a Windows command line. Which of the following command-line tools can be utilized to map the drive?",
+    "options": [
+      "gpupdate",
+      "net use",
+      "hostname",
+      "dir"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "'net use' is the correct command-line tool to map network drives in Windows. It connects, disconnects, and displays information about shared network resources. 'gpupdate' refreshes Group Policy, 'hostname' displays computer name, and 'dir' lists directory contents - none of these map network drives.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 83,
+    "question": "A macOS user is installing a new application. Which of the following system directories is the software most likely to install by default?",
+    "options": [
+      "/etc/services",
+      "/Applications",
+      "/usr/bin",
+      "C:\\Program Files"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "/Applications is the default system directory where macOS applications install. This is the standard location for user-accessible applications in macOS. /etc/services contains network service definitions, /usr/bin contains system binaries, and C:\\Program Files is Windows-specific - none are default macOS application directories.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 84,
+    "question": "Which of the following ls command options is used to display hidden files and directories?",
+    "options": [
+      "-a",
+      "-s",
+      "-lh",
+      "-t"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The '-a' option displays hidden files and directories with the ls command in Linux/Unix systems. Hidden files start with a dot (.) and are not shown by default. '-s' shows file sizes, '-lh' shows long format with human-readable sizes, and '-t' sorts by modification time - none specifically show hidden files.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 85,
+    "question": "Which of the following filesystems replaced FAT as the preferred filesystem for Microsoft Windows OS?",
+    "options": [
+      "APFS",
+      "FAT32",
+      "NTFS",
+      "ext4"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "NTFS replaced FAT as the preferred filesystem for Microsoft Windows OS. NTFS provides better security, larger file support, journaling, and advanced features compared to FAT. APFS is Apple-specific, FAT32 is an older Microsoft filesystem, and ext4 is Linux-specific - none replaced FAT as Windows' preferred filesystem.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 86,
+    "question": "A user requires local administrative access to a workstation. Which of the following Control Panel utilities allows the technician to grant access to the user?",
+    "options": [
+      "System",
+      "Network and Sharing Center",
+      "User Accounts",
+      "Security and Maintenance"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "User Accounts Control Panel utility allows technicians to grant local administrative access to users. It manages user account types, passwords, and permissions. System shows computer information, Network and Sharing Center manages network settings, and Security and Maintenance shows security status - none directly grant administrative access.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 87,
+    "question": "A systems administrator received a request to limit the amount of cellular data a user's Windows 10 tablet can utilize when traveling. Which of the following can the administrator do to best solve the user's issue?",
+    "options": [
+      "Turn on airplane mode.",
+      "Set the connection to be metered.",
+      "Configure the device to use a static IP address.",
+      "Enable the Windows Defender Firewall."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Setting the connection to be metered is the best solution to limit cellular data usage on a Windows 10 tablet. This setting allows the administrator to track data usage and set limits. Turning on airplane mode disables all wireless connectivity, configuring a static IP address doesn't affect data usage, and enabling the Windows Defender Firewall doesn't limit data usage - none directly address data usage limits.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 88,
+    "question": "A technician needs administrator access on a Windows workstation to facilitate system changes without elevating permissions. Which of the following would best accomplish this task?",
+    "options": [
+      "Group Policy Editor",
+      "Local Users and Groups",
+      "Device Manager",
+      "System Configuration"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Local Users and Groups is the best option to grant administrator access on a Windows workstation. It allows technicians to manage user accounts, groups, and permissions. Group Policy Editor manages group policies, Device Manager manages hardware devices, and System Configuration manages system startup settings - none directly grant administrator access.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 89,
+    "question": "Which of the following default system tools can be used in macOS to allow the technician to view the screen simultaneously with the user?",
+    "options": [
+      "Remote Assistance",
+      "Remote Desktop Protocol",
+      "Screen Sharing",
+      "Virtual Network Computing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Screen Sharing is the default system tool in macOS that allows technicians to view the screen simultaneously with the user. It provides remote access to the Mac's screen for assistance and collaboration. Remote Assistance is Windows-specific, Remote Desktop Protocol is a Windows protocol, and Virtual Network Computing is a cross-platform protocol - none are default macOS tools.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 90,
+    "question": "A technician is working on a Windows 10 PC that has unwanted applications starting on boot. Which of the following tools should the technician use to disable applications on startup?",
+    "options": [
+      "System Configuration",
+      "Task Manager",
+      "Performance Monitor",
+      "Group Policy Editor"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Task Manager is the best tool to disable applications on startup in Windows 10. It allows technicians to manage startup programs and disable unwanted applications. System Configuration manages system startup settings, Performance Monitor monitors system performance, and Group Policy Editor manages group policies - none directly disable startup applications.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 91,
+    "question": "Which of the following file types would be used in the Windows Startup folder to automate copying a personal storage table (.pst file) to a network drive at log-in?",
+    "options": [
+      ".bat",
+      ".dll",
+      ".ps1",
+      ".txt"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": ".bat files are used in the Windows Startup folder to automate tasks, including copying files to a network drive. .dll files are dynamic link libraries, .ps1 files are PowerShell scripts, and .txt files are plain text files - none are used for automation in the Startup folder.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 92,
+    "question": "Which of the following macOS features can help a user dose an application that has stopped responding?",
+    "options": [
+      "Finder",
+      "Mission Control",
+      "System Preferences",
+      "Force Quit"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Force Quit is the macOS feature that helps users close unresponsive applications. It provides a way to terminate applications that are not responding. Finder is the file manager, Mission Control manages multiple desktops, and System Preferences manages system settings - none directly close unresponsive applications.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 93,
+    "question": "Which of the following filesystem types does macOS use?",
+    "options": [
+      "ext4",
+      "exFAT",
+      "NTFS",
+      "APFS"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "APFS (Apple File System) is the default filesystem type used by macOS. It provides improved performance, security, and reliability compared to older filesystems. ext4 is a Linux filesystem, exFAT is a cross-platform filesystem, and NTFS is a Windows filesystem - none are default macOS filesystems.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 94,
+    "question": "A company recently outsourced its night-shift cleaning service. A technician is concerned about having unsupervised contractors in the building. Which of the following security measures can be used to prevent the computers from being accessed? (Choose two.)",
+    "options": [
+      "Implementing data-at-rest encryption",
+      "Disabling AutoRun",
+      "Restricting user permissions",
+      "Restricting log-in times",
+      "Enabling a screen lock",
+      "Disabling local administrator accounts"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "explanation": "Restricting log-in times and enabling a screen lock are the best security measures to prevent unsupervised contractors from accessing computers. Log-in time restrictions prevent access during cleaning hours, and screen locks require authentication to access active sessions. Data-at-rest encryption, disabling AutoRun, restricting user permissions, and disabling local admin accounts don't directly prevent physical access during off-hours.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 95,
+    "question": "A user requested that the file permissions on a Linux device be changed to only allow access to a certain group of users. Which of the following commands should be used to complete the user's request?",
+    "options": [
+      "cat",
+      "chmod",
+      "pwd",
+      "cacls"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "chmod is the command used to change file permissions on Linux devices. It allows technicians to modify access permissions for users and groups. cat displays file contents, pwd shows the current working directory, and cacls is a Windows command - none change Linux file permissions.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 96,
+    "question": "A new employee is having difficulties using a laptop with a docking station. The laptop is connected to the docking station, and the laptop is closed. The external monitor works for a few seconds, but then the laptop goes to sleep. Which of the following options should the technician configure in order to fix the issue?",
+    "options": [
+      "Hibernate",
+      "Sleep/suspend",
+      "Choose what closing the lid does",
+      "Turn on fast startup"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Choose what closing the lid does is the correct option to configure to prevent the laptop from sleeping when closed. This setting allows technicians to specify the action taken when the laptop lid is closed. Hibernate and Sleep/Suspend are power-saving modes, and Turn on fast startup is a startup setting - none directly address the lid closure issue.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 97,
+    "question": "A technician needs to ensure that USB devices are not suspended by the operating system. Which of the following Control Panel utilities should the technician use to configure the setting?",
+    "options": [
+      "System",
+      "Power Options",
+      "Devices and Printers",
+      "Ease of Access"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Power Options is the Control Panel utility used to configure power settings, including USB suspension. It allows technicians to manage power plans and device settings. System shows computer information, Devices and Printers manages devices, and Ease of Access manages accessibility settings - none directly configure USB suspension.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 98,
+    "question": "A salesperson's computer is unable to print any orders on a local printer that is connected to the computer. Which of the following tools should the salesperson use to restart the print spooler?",
+    "options": [
+      "Control Panel",
+      "Processes",
+      "Startup",
+      "Services"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Services is the tool used to manage system services, including the print spooler. It allows technicians to start, stop, and restart services. Control Panel is a general configuration tool, Processes shows running processes, and Startup manages startup programs - none directly restart the print spooler.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 99,
+    "question": "A user wants to back up a Windows 10 device. Which of the following should the user select?",
+    "options": [
+      "Devices and Printers",
+      "Email and Accounts",
+      "Update and Security",
+      "Apps and Features"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Update and Security is the correct option to back up a Windows 10 device. It provides access to backup settings and tools. Devices and Printers manages devices, Email and Accounts manages email settings, and Apps and Features manages installed applications - none directly provide backup options.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 100,
+    "question": "A technician needs to reimage a desktop in an area without network access. Which of the following should the technician use? (Choose two.)",
+    "options": [
+      "USB",
+      "PXE",
+      "Optical media",
+      "Partition",
+      "Boot record",
+      "SMB"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "USB and Optical media are the best options to reimage a desktop without network access. Both provide portable storage for OS images and installation files. PXE requires network access, Partition and Boot record are disk structures not installation media, and SMB is a network protocol - none work without network connectivity.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 101,
+    "question": "A customer has a USB-only printer attached to a computer. A technician is configuring an arrangement that allows other computers on the network to use the printer. In which of the following locations on the customer's desktop should the technician make this configuration?",
+    "options": [
+      "Printing Preferences/Advanced tab",
+      "Printer Properties/Sharing tab",
+      "Printer Properties/Security tab",
+      "Printer Properties/Ports tab"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Printer Properties/Sharing tab is where the technician should configure printer sharing to allow other network computers to use the USB printer. The Sharing tab enables network sharing and sets share permissions. Printing Preferences controls print settings, Security tab manages access permissions, and Ports tab manages printer connections - none enable network sharing.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 102,
+    "question": "A technician requires graphical remote access to various Windows, Linux, and macOS desktops on the company LAN. The security administrator asks the technician to utilize a single software solution that does not require an external internet connection. Which of the following remote access tools is the technician most likely to install?",
+    "options": [
+      "NC",
+      "RMM",
+      "RDP",
+      "SSH"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "SSH is the most likely remote access tool to install for cross-platform graphical access without external internet connection. While SSH is primarily command-line, it can tunnel X11 for graphical applications and works across Windows, Linux, and macOS. NC (netcat) is for network connections, RMM requires internet, and RDP is primarily Windows-focused - SSH provides the most universal solution.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 103,
+    "question": "Which of the following is the most likely to use NTFS as the native filesystem?",
+    "options": [
+      "macOS",
+      "Linux",
+      "Windows",
+      "Android"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Windows is most likely to use NTFS as the native filesystem. NTFS is Microsoft's proprietary filesystem designed specifically for Windows operating systems, providing advanced features like journaling, encryption, and large file support. macOS uses APFS, Linux uses ext4, and Android uses ext4 or F2FS - none use NTFS natively.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 104,
+    "question": "Which of the following file types allows a user to easily uninstall software from macOS by simply placing it in the trash bin?",
+    "options": [
+      ".exe",
+      ".dmg",
+      ".app",
+      ".rpm",
+      ".pkg"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": ".app files allow users to easily uninstall software from macOS by simply placing them in the trash bin. macOS applications are typically packaged as .app bundles that can be dragged to trash for removal. .exe files are Windows executables, .dmg files are disk images, .rpm files are Linux packages, and .pkg files are installer packages - none can be uninstalled by simple trash deletion.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 105,
+    "question": "A user's application is unresponsive. Which of the following Task Manager tabs will allow the user to address the situation?",
+    "options": [
+      "Startup",
+      "Performance",
+      "Application history",
+      "Processes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Processes tab in Task Manager allows users to address unresponsive applications by viewing running processes and ending unresponsive ones. It shows CPU and memory usage for each process and provides options to end tasks. Startup manages startup programs, Performance shows system metrics, and Application history shows usage statistics - none directly manage unresponsive applications.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 106,
+    "question": "An administrator needs to select a method to dispose of SSDs containing sensitive data. Which of the following are the most appropriate methods? (Choose two.)",
+    "options": [
+      "Degauss",
+      "Delete",
+      "Incinerate",
+      "Recycle",
+      "Format",
+      "Shred"
+    ],
+    "correct": [
+      2,
+      5
+    ],
+    "explanation": "Incinerate and Shred are the most appropriate methods to dispose of SSDs containing sensitive data. Incineration completely destroys the physical media, while shredding physically destroys the storage chips. Degaussing doesn't work on SSDs (only magnetic media), Delete and Format don't permanently remove data, and Recycle doesn't ensure data destruction - none provide secure data destruction for SSDs.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "multiple",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 107,
+    "question": "Which of the following protocols supports fast roaming between networks?",
+    "options": [
+      "WEP",
+      "WPA",
+      "WPA2",
+      "LEAP",
+      "PEAP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "WPA2 supports fast roaming between networks through features like Pre-Shared Key (PSK) caching and 802.11r fast transition. It allows seamless handoffs between access points without full re-authentication. WEP is outdated and insecure, WPA has limited roaming support, and LEAP/PEAP are authentication protocols - none provide the fast roaming capabilities of WPA2.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 108,
+    "question": "A user's computer unexpectedly shut down immediately after the user plugged in a USB headset. Once the user turned the computer back on, everything was functioning properly, including the headset. Which of the following Microsoft tools would most likely be used to determine the root cause?",
+    "options": [
+      "Event Viewer",
+      "System Configuration",
+      "Device Manager",
+      "Performance Monitor"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Event Viewer would most likely be used to determine the root cause of the unexpected shutdown. It logs system events, errors, and warnings that can help identify what caused the computer to shut down when the USB headset was plugged in. System Configuration manages startup settings, Device Manager handles hardware, and Performance Monitor tracks system metrics - none provide detailed event logging for troubleshooting.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 109,
+    "question": "A large company is changing its password length requirements. The Chief Information Officer is mandating that passwords now be at least 12 characters long, instead of 10. Which of the following should be used to adjust this setting?",
+    "options": [
+      "Group Policy",
+      "User accounts",
+      "Access control lists",
+      "Authenticator applications"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Group Policy should be used to adjust password length requirements across a large company. It allows centralized management of security policies including password complexity, length, and expiration. User accounts manage individual users, Access control lists manage permissions, and Authenticator applications provide two-factor authentication - none centrally manage password policies across an organization.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 110,
+    "question": "A user recently purchased a second monitor and wants to extend the Windows desktop to the new screen. Which of the following Control Panel options should a technician adjust to help the user?",
+    "options": [
+      "Color Management",
+      "System",
+      "Troubleshooting",
+      "Device Manager",
+      "Administrative Tools"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "System Control Panel option should be adjusted to help extend the Windows desktop to a second monitor. The System settings include Display options where you can configure multiple monitors, resolution, and desktop extension. Color Management handles color profiles, Troubleshooting provides diagnostic tools, Device Manager manages hardware, and Administrative Tools provides system utilities - none directly configure display settings.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 111,
+    "question": "Which of the following commands can a technician use to get the MAC address of a Linux distribution?",
+    "options": [
+      "net use",
+      "ifconfig",
+      "netstat",
+      "ping"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "'ifconfig' can be used to get the MAC address of a Linux distribution. It displays network interface configuration including MAC addresses (shown as HWaddr or ether). 'net use' is a Windows command, 'netstat' shows network connections, and 'ping' tests connectivity - none display MAC addresses on Linux systems.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 112,
+    "question": "A user reports that the hard drive activity light on a Windows 10 desktop computer has been steadily lit for more than an hour and performance is severely degraded. Which of the following tabs in Task Manager contains the information a technician should use to identify the cause of this issue?",
+    "options": [
+      "Services",
+      "Processes",
+      "Performance",
+      "Startup"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Processes tab in Task Manager contains information to identify the cause of high disk activity and performance issues. It shows which processes are using the most disk resources, allowing technicians to identify problematic applications. Services shows system services, Performance shows overall metrics, and Startup shows startup programs - none provide detailed process-level disk usage information.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 113,
+    "question": "A user’s Windows 10 workstation with an HDD is running really slowly. The user has opened, closed, and saved many large files over the past week. Which of the following tools should a technician use to remediate the issue?",
+    "options": [
+      "Disk Defragment",
+      "Registry Editor",
+      "System Information",
+      "Disk Cleanup"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Disk Defragment should be used to remediate slow performance on an HDD after handling many large files. Defragmentation reorganizes fragmented files to improve access speed and system performance. Registry Editor modifies system registry, System Information displays system details, and Disk Cleanup removes temporary files - none address file fragmentation that causes slow HDD performance.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 114,
+    "question": "A Linux technician needs a filesystem type that meets the following requirements: • All changes are tracked. • The possibility of file corruption is reduced. • Data recovery is easy. Which of the following filesystem types best meets these requirements?",
+    "options": [
+      "ext3",
+      "FAT32",
+      "exFAT",
+      "NTFS"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "ext3 filesystem type best meets the requirements for tracking changes, reducing corruption, and easy data recovery. ext3 includes journaling that tracks all changes, reduces corruption risk through transaction logging, and enables easier recovery. FAT32 and exFAT lack journaling, and NTFS is Windows-specific - none provide the journaling features needed for Linux systems.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 115,
+    "question": "A technician is manually updating Windows workstations. Each workstation is currently running Windows Pro in a workgroup environment. Which of the following changes can the technician make to create a more manageable environment?",
+    "options": [
+      "Downgrade all workstations from the Pro version to the Home version of the OS.",
+      "Upgrade all workstations from the Pro version to Pro for Workstations.",
+      "Create a domain and join the workstations to the domain for management purposes.",
+      "Make sure all workstations are operating under the same workgroup name."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Creating a domain and joining workstations to the domain creates a more manageable environment. Domain environments allow centralized management, Group Policy deployment, and unified security policies. Downgrading to Home removes management features, upgrading to Pro for Workstations doesn't improve management, and same workgroup names don't provide centralized management - none offer the management benefits of a domain.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 116,
+    "question": "Which of the following is also known as something you know, something you have, and something you are?",
+    "options": [
+      "ACL",
+      "MFA",
+      "SMS",
+      "NFC"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "MFA (Multi-Factor Authentication) is known as something you know, something you have, and something you are. These represent the three authentication factors: knowledge (passwords), possession (tokens/cards), and inherence (biometrics). ACL manages access permissions, SMS is a messaging protocol, and NFC is a communication technology - none represent the three-factor authentication concept.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 117,
+    "question": "Which of the following operating systems is most commonly used in embedded systems?",
+    "options": [
+      "Chrome OS",
+      "macOS",
+      "Windows",
+      "Linux"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Linux is the operating system most commonly used in embedded systems. Its open-source nature, small footprint, customizability, and real-time capabilities make it ideal for embedded devices like routers, IoT devices, and industrial systems. Chrome OS is browser-focused, macOS is desktop-oriented, and Windows requires more resources - none are as suitable for embedded systems as Linux.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 118,
+    "question": "A technician is setting up a printer on a Linux workstation. Which of the following commands should the technician use to set the default printer?",
+    "options": [
+      "lpr",
+      "lspool",
+      "lpstat",
+      "lpoptions"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "'lpstat' should be used to set the default printer on a Linux workstation. The 'lpstat -d' command shows the current default printer, and 'lpoptions -d printername' sets the default. 'lpr' sends jobs to printer, 'lspool' isn't a standard command, and 'lpoptions' manages printer options but 'lpstat' is specifically used to check and manage default printer status.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 119,
+    "question": "A technician is doing a bare-metal installation of the Windows 10 operating system. Which of the following prerequisites must be in place before the technician can start the installation process?",
+    "options": [
+      "Internet connection",
+      "Product key",
+      "Sufficient storage space",
+      "UEFI firmware",
+      "Legacy BIOS"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sufficient storage space must be in place before starting a bare-metal Windows 10 installation. The system needs adequate disk space to install the operating system and its components. Internet connection, Product key, UEFI firmware, and Legacy BIOS are helpful but not absolute prerequisites - the installation can proceed without internet, product key can be entered later, and either UEFI or Legacy BIOS will work.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 120,
+    "question": "A technician is creating a location on a Windows workstation for a customer to store meeting minutes. Which of the following commands should the technician use?",
+    "options": [
+      "c:\\minutes",
+      "dir",
+      "rmdir",
+      "md"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "'md' (make directory) should be used to create a location for storing meeting minutes on a Windows workstation. This command creates new directories/folders. 'c:\\minutes' is a path not a command, 'dir' lists directory contents, and 'rmdir' removes directories - none create new directories like 'md' does.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 121,
+    "question": "Which of the following is the most likely reason a filtration system is critical for data centers?",
+    "options": [
+      "Plastics degrade over time.",
+      "High humidity levels can rust metal.",
+      "Insects can invade the data center.",
+      "Dust particles can clog the machines."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Dust particles can clog the machines is the most likely reason filtration systems are critical for data centers. Dust accumulation can block airflow, cause overheating, and damage sensitive electronic components. Plastic degradation, humidity rusting metal, and insect invasion are concerns but not the primary reason for filtration systems - dust prevention is the main purpose.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 122,
+    "question": "Which of the following Linux commands would help to identify which directory the user is currently operating in?",
+    "options": [
+      "pwd",
+      "dig",
+      "find",
+      "cat"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "'pwd' (print working directory) is the Linux command that helps identify which directory the user is currently operating in. It displays the full path of the current directory. 'dig' is for DNS lookups, 'find' searches for files and directories, and 'cat' displays file contents - none show the current working directory.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 123,
+    "question": "A user is setting up a new Windows 10 laptop. Which of the following Windows settings should be used to input the SSID and password?",
+    "options": [
+      "Network & Internet",
+      "System",
+      "Personalization",
+      "Accounts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Network & Internet Windows settings should be used to input the SSID and password for WiFi connections. This section contains WiFi settings, network profiles, and connection management. System manages computer information, Personalization handles appearance, and Accounts manages user accounts - none provide WiFi connection settings.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 124,
+    "question": "A customer is configuring on an old desktop an inexpensive file server to share photos and videos and wants to avoid complicated licensing. Which of the following operating systems should the technician most likely recommend?",
+    "options": [
+      "Chrome OS",
+      "Linux",
+      "macOS",
+      "Windows"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Linux should be recommended for an inexpensive file server to avoid complicated licensing. Linux is free, open-source, stable for server use, and has excellent file sharing capabilities. Chrome OS is limited, macOS requires Apple hardware and licensing, and Windows requires licensing fees - none provide the cost-effective, license-free solution that Linux offers.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 125,
+    "question": "Which of the following operating systems uses the ext4 filesystem type?",
+    "options": [
+      "macOS",
+      "iOS",
+      "Linux",
+      "Windows"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Linux uses the ext4 filesystem type as its default modern filesystem. ext4 provides journaling, large file support, and improved performance over earlier ext filesystems. macOS uses APFS, iOS uses APFS, and Windows uses NTFS - none use ext4 as their primary filesystem.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 126,
+    "question": "Which of the following is the Windows OS that only recognizes 4GB of RAM?",
+    "options": [
+      "The Home version OS",
+      "The 32-bit OS",
+      "The 64-bit OS",
+      "The trial version OS"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The 32-bit OS is the Windows OS that only recognizes 4GB of RAM due to architectural limitations. 32-bit systems have a 4GB memory address space limit. The Home version, 64-bit OS, and trial version don't have this specific 4GB limitation - 64-bit systems can address much more RAM.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 127,
+    "question": "An IT technician is attempting to access a user’s workstation on the corporate network but needs more information from the user before an invitation can be sent. Which of the following command-line tools should the technician instruct the user to run?",
+    "options": [
+      "nslookup",
+      "tracert",
+      "hostname",
+      "gpresult"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "'hostname' should be used to get the computer name needed for remote access invitations. This command displays the computer's network name that the technician needs to identify and connect to the workstation. 'nslookup' queries DNS, 'tracert' traces network routes, and 'gpresult' shows Group Policy results - none provide the computer name.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 128,
+    "question": "A technician needs to upgrade the operating system on 200 lab computers to the latest version of Linux. Which of the following is the fastest upgrade method?",
+    "options": [
+      "Starting up from the USB flash drive",
+      "Cloning each computer’s hard drive",
+      "Installing from a network share",
+      "Using the Windows Subsystem for Linux"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Installing from a network share is the fastest method to upgrade 200 lab computers to Linux. Network installation allows simultaneous deployment to multiple machines and centralized management. USB flash drives require individual handling, cloning is time-consuming for each machine, and Windows Subsystem for Linux doesn't upgrade the OS - none match the efficiency of network deployment.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 129,
+    "question": "Which of the following operating systems was the .app file type designed to run under as an application file bundle?",
+    "options": [
+      "macOS",
+      "Chrome",
+      "Windows",
+      "Linux"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "macOS was the operating system the .app file type was designed to run under as an application file bundle. .app files are macOS application packages that contain all necessary resources. Chrome is a browser, Windows uses .exe files, and Linux uses various formats - none use .app bundles as their native application format.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 130,
+    "question": "A healthcare organization wants to provide iPads to the nursing staff. Which of the following accounts would provide the least privilege to the users?",
+    "options": [
+      "Guest",
+      "Root",
+      "Superuser",
+      "Administrator"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Guest accounts would provide the least privilege to nursing staff using iPads. Guest accounts have minimal permissions and restricted access to system functions, following the principle of least privilege. Root, Superuser, and Administrator accounts all provide elevated privileges - none offer the restricted access appropriate for standard users.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 131,
+    "question": "A technician is adding some Windows 10 workstations to the corporate domain. A script was able to add the majority of the workstations, but failed on a couple. Which of the following menus should the technician check in order to complete the task manually?",
+    "options": [
+      "User Accounts",
+      "System Properties",
+      "Windows Firewall",
+      "Network and Sharing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "System Properties should be checked to manually join Windows 10 workstations to the corporate domain. This menu contains the Computer Name tab where domain membership is configured. User Accounts manages local users, Windows Firewall manages network security, and Network and Sharing manages network connections - none provide domain joining functionality.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 132,
+    "question": "A user received an alert from a Windows computer indicating low storage space. Which of the following will best resolve this issue?",
+    "options": [
+      "Reviewing System information",
+      "Running Disk Cleanup",
+      "Editing the Registry",
+      "Checking the Performance Monitor",
+      "Increasing the memory"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Running Disk Cleanup will best resolve low storage space issues by removing temporary files, system cache, and unnecessary files. It's specifically designed to free up disk space safely. Reviewing System information shows disk usage but doesn't free space, Editing the Registry is risky and doesn't address storage, Performance Monitor tracks performance, and Increasing memory doesn't affect storage space - none directly resolve storage issues.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 133,
+    "question": "Which of the following would typically require the most computing resources from the host computer?",
+    "options": [
+      "Chrome OS",
+      "Windows",
+      "Android",
+      "macOS",
+      "Linux"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Windows would typically require the most computing resources from the host computer due to its graphical interface, background services, and resource-intensive features. Chrome OS is lightweight, Android is mobile-optimized, macOS is efficient but resource-aware, and Linux can be very lightweight - none typically require as many resources as Windows.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 134,
+    "question": "Which of the following languages is used for scripting the creation of Active Directory accounts?",
+    "options": [
+      "Bash",
+      "Structured Query Language",
+      "Hypertext Preprocessor",
+      "PowerShell"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "PowerShell is the language used for scripting the creation of Active Directory accounts. It provides cmdlets specifically designed for AD management and automation. Bash is for Linux/Unix, SQL is for databases, and PHP is for web development - none are designed for Active Directory scripting.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 135,
+    "question": "A network administrator is setting up the security for a SOHO wireless network. Which of the following options should the administrator enable to secure the network?",
+    "options": [
+      "NAT",
+      "WPA3",
+      "802.1X",
+      "Static IP"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "WPA3 should be enabled to secure a SOHO wireless network as it provides the strongest current wireless security standard. NAT provides network address translation but not security, 802.1X is for enterprise authentication, and Static IP doesn't provide security - none offer the comprehensive wireless security that WPA3 provides.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 136,
+    "question": "An organization is updating the monitors on kiosk machines. While performing the upgrade, the organization would like to remove physical input devices. Which of the following utilities in the Control Panel can be used to turn on the on-screen keyboard to replace the physical input devices?",
+    "options": [
+      "Devices and Printers",
+      "Ease of Access",
+      "Programs and Features",
+      "Device Manager"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ease of Access Control Panel utility can be used to turn on the on-screen keyboard for kiosk machines. This utility provides accessibility features including virtual keyboards. Devices and Printers manages hardware, Programs and Features manages software, and Device Manager manages device drivers - none provide on-screen keyboard functionality.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 137,
+    "question": "A technician is working at a client office site and the technician’s family member repeatedly calls and texts about a non-emergency situation. Which of the following should the technician do?",
+    "options": [
+      "Step aside and answer.",
+      "Put the phone on silent.",
+      "Text a reply.",
+      "Ignore the phone and continue working."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The technician should ignore the phone and continue working when receiving non-emergency calls from family while at a client site. Professional conduct requires maintaining focus on client work and avoiding personal distractions. Stepping aside to answer, putting phone on silent, or texting replies all create unprofessional interruptions - ignoring maintains professional standards.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 138,
+    "question": "A technician needs to ensure that USB devices are not suspended by the operating system. Which of the following Control Panel utilities should the technician use to configure the setting?",
+    "options": [
+      "System",
+      "Power Options",
+      "Recovery",
+      "Ease of Access"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Power Options Control Panel utility should be used to prevent USB devices from being suspended by the operating system. It contains advanced power settings including USB selective suspend settings. System shows computer information, Recovery manages system recovery, and Ease of Access provides accessibility features - none control USB power management.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 139,
+    "question": "A technician is an administrator on a messaging application for a private work group of mixed departments. One of the technician’s colleagues discloses to the group that their employer recently suffered a major security breach and shared details about the breach to the group. Which of the following should the technician do first?",
+    "options": [
+      "Ignore the messages as all of the group members work for the same employer.",
+      "Remove the colleague from the group and ask members to delete the messages.",
+      "Message the colleague privately and ask the colleague to delete the messages immediately.",
+      "Contact the supervisor and report the colleague with screenshots of the messages."
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The technician should contact the supervisor and report the colleague with screenshots when sensitive security breach information is shared inappropriately. This follows proper incident reporting procedures for security violations. Ignoring messages, removing from group, or private messaging don't address the serious security policy violation - formal reporting is required.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 140,
+    "question": "A user reported that Windows has crashed several times during the day. A technician needs to check error messages to determine whether the issue pertains to the hardware or an application. Which of the following tools the technician use?",
+    "options": [
+      "Event Viewer",
+      "Resource Monitor",
+      "Performance Monitor",
+      "Device Manager"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Event Viewer should be used to check error messages and determine whether Windows crashes are hardware or application-related. It logs system events, application errors, and hardware failures with detailed information. Resource Monitor shows current resource usage, Performance Monitor tracks performance metrics, and Device Manager manages hardware - none provide detailed crash analysis like Event Viewer.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 141,
+    "question": "A users Windows desktop has low disk space. A technician thinks some upgrade files were never removed. Which of the following tools should me technician use to correct the issue?",
+    "options": [
+      "devmgmt.msc",
+      "cleanmgr.exe",
+      "dfrgui.exe",
+      "diskmgmt.msc"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "cleanmgr.exe (Disk Cleanup) should be used to remove upgrade files and free disk space. This tool specifically removes temporary files, old Windows installations, and upgrade remnants. devmgmt.msc manages devices, dfrgui.exe defragments drives, and diskmgmt.msc manages disk partitions - none remove upgrade files like Disk Cleanup.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 142,
+    "question": "A user is unable to access the internet but can still print to network printers. Other users are not experiencing this issue. Which of the following steps should the technician take first to diagnose the issue?",
+    "options": [
+      "Validate physical connectivity.",
+      "Reboot the router.",
+      "Disable IPv6.",
+      "Check the DNS settings."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Validate physical connectivity should be the first step when a user can't access the internet but can print to network printers. This indicates partial network connectivity, so checking cables and connections is the logical first step. Rebooting the router affects all users, disabling IPv6 is unnecessary, and checking DNS settings comes after confirming physical connectivity.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  },
+  {
+    "id": 143,
+    "question": "A user’s computer is running slower than usual and takes a long time to start up. Which of the following tools should me technician use first to investigate the issue?",
+    "options": [
+      "Action Center",
+      "Task Manager",
+      "Resource Monitor",
+      "Security Configuration Wizard",
+      "Event Viewer"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Task Manager should be used first to investigate slow computer performance and startup issues. It shows running processes, startup programs, and resource usage, helping identify performance bottlenecks. Action Center shows notifications, Resource Monitor provides detailed resource info, Security Configuration Wizard manages security, and Event Viewer shows logs - Task Manager provides the best initial overview for performance troubleshooting.",
+    "source_pdf": "220-1102_en_RealDeal_compressed.txt",
+    "type": "single",
+    "topic": "operating-systems"
+  }
+]
