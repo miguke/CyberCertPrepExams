@@ -9,11 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
     let examTimerInterval = null;
     let courseConfig = null;
     let isRealExamMode = false;
+    let isReviewMode = false;
+    let originalQuestions = [];
+    let originalAnswers = [];
+    let originalCorrectCount = 0;
 
     // --- DOM Elements ---
     const startScreen = document.getElementById('startScreen');
     const quizScreen = document.getElementById('quizScreen');
-    const resultsScreen = document.getElementById('resultsScreen');
+    const resultScreen = document.getElementById('resultScreen');
     const loadingScreen = document.getElementById('loadingScreen');
     const topicList = document.getElementById('topicList');
     const qText = document.getElementById('qText');
@@ -39,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Helper Functions ---
     const showScreen = (screenId) => {
-        [startScreen, quizScreen, resultsScreen, loadingScreen].forEach(screen => {
+        [startScreen, quizScreen, resultScreen, loadingScreen].forEach(screen => {
             if (screen) screen.classList.remove('active');
         });
         const screenToShow = document.getElementById(screenId);
@@ -120,58 +124,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    const renderTopics = () => {
-        if (!courseConfig || !topicList) return;
-        topicList.innerHTML = '';
-        for (const [topic, config] of Object.entries(courseConfig.topics)) {
-            if (config.weight === 0 && topic.toLowerCase() === 'miscellaneous') continue; // Don't show miscellaneous as a selectable topic
-
-            const topicEl = document.createElement('div');
-            topicEl.className = 'topic-item';
-            topicEl.innerHTML = `
-                <input type="checkbox" id="${topic}" name="topic" value="${topic}">
-                <label for="${topic}">
-                    <span class="topic-title">${topic} <span class="question-count">(${config.count || 0})</span></span>
-                    <span class="topic-description">${config.description}</span>
-                </label>
-            `;
-            topicList.appendChild(topicEl);
-        }
-    };
-
-    const updateStartButtons = () => {
-        const anySelected = selectedTopics.length > 0;
-        if (startQuizBtn) {
-            startQuizBtn.disabled = !anySelected;
-            startQuizBtn.title = anySelected ? 'Start the quiz with selected topics' : 'Please select at least one topic';
-        }
-    };
-
-
-    const startExamTimer = () => {
-        if (!timerDisplay) return;
-        stopExamTimer(); // Ensure no multiple timers
-        examTimeRemaining = courseConfig.examDuration || 5400;
-        timerDisplay.parentElement.style.display = 'block';
-        timerDisplay.textContent = formatTime(examTimeRemaining);
-
-        examTimerInterval = setInterval(() => {
-            examTimeRemaining--;
-            timerDisplay.textContent = formatTime(examTimeRemaining);
-            if (examTimeRemaining <= 0) {
-                stopExamTimer();
-                alert('Time is up!');
-                showResults();
-            }
-        }, 1000);
-    };
-
-    const stopExamTimer = () => {
-        clearInterval(examTimerInterval);
-        examTimerInterval = null;
-        if (timerDisplay) timerDisplay.parentElement.style.display = 'none';
-    };
-
     // --- Core Quiz Logic ---
 
     const loadCourseConfig = async () => {
@@ -213,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (isExam) {
             console.log('[loadQuestions] Exam mode: Calculating weighted question limits.');
-            const totalExamQuestions = courseConfig.examQuestionCount || 80;
+            const totalExamQuestions = courseConfig.examQuestionCount || 90;
             let totalWeight = 0;
             topicsToLoad.forEach(topic => {
                 totalWeight += courseConfig.topics[topic]?.weight || 0;
@@ -232,13 +184,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 let diff = totalExamQuestions - assignedQuestions;
                 let topicIndex = 0;
-                let iterations = 0; // Safety break for while loop
-                while (diff !== 0 && iterations < topicsToLoad.length * 5) { // Increased safety break iterations
+                let iterations = 0;
+                while (diff !== 0 && iterations < topicsToLoad.length * 5) {
                     const topic = topicsToLoad[topicIndex % topicsToLoad.length];
                     if (diff > 0) {
                         questionLimits[topic]++;
                         diff--;
-                    } else { // diff < 0
+                    } else {
                         if(questionLimits[topic] > 0) {
                            questionLimits[topic]--;
                            diff++;
@@ -246,9 +198,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                     topicIndex++;
                     iterations++;
-                }
-                if (iterations >= topicsToLoad.length * 5 && diff !==0) {
-                    console.warn('[loadQuestions] Could not perfectly distribute questions after iterations, diff remaining:', diff, 'Final limits:', JSON.parse(JSON.stringify(questionLimits)));
                 }
                 console.log('[loadQuestions] Final question limits for exam:', JSON.parse(JSON.stringify(questionLimits)));
             }
@@ -275,7 +224,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 topicQuestions = topicQuestions.map(q => ({ ...q, topic }));
 
                 const limit = questionLimits[topic];
-                // Only apply limit if in exam mode AND a limit is set for the topic
                 if (isExam && limit !== undefined && topicQuestions.length > limit) { 
                     console.log(`[loadQuestions] Limiting ${topic} from ${topicQuestions.length} to ${limit} questions for exam mode.`);
                     topicQuestions = shuffle([...topicQuestions]).slice(0, limit);
@@ -372,7 +320,6 @@ document.addEventListener('DOMContentLoaded', () => {
             input.disabled = true;
             const isCorrect = q.correct.includes(index);
             
-            // userAnswer might be null if we are reviewing unanswered questions
             const isSelected = userAnswer ? userAnswer.includes(index) : false;
 
             if (isCorrect) {
@@ -410,13 +357,18 @@ document.addEventListener('DOMContentLoaded', () => {
         updateButtonStates();
         updateQuizProgress();
     };
-
+    
     const nextQ = () => {
         if (currentQ < quizQuestions.length - 1) {
             currentQ++;
             loadQ();
         } else {
-            showResults();
+            if (isReviewMode) {
+                restoreOriginalQuiz();
+                showResults(false);
+            } else {
+                showResults(true);
+            }
         }
     };
 
@@ -427,36 +379,185 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    const showResults = () => {
+    const restoreOriginalQuiz = () => {
+        if (isReviewMode) {
+            quizQuestions = originalQuestions;
+            userAnswers = originalAnswers;
+            correctCount = originalCorrectCount;
+            isReviewMode = false;
+        }
+    };
+
+    const showResults = (recalculate = true) => {
+        console.log('[showResults] Function called - displaying results screen');
         stopExamTimer();
         const answeredCount = userAnswers.filter(a => a !== null).length;
-        const accuracy = answeredCount > 0 ? Math.round((correctCount / answeredCount) * 100) : 0;
+        const totalQuestions = quizQuestions.length;
+        const accuracy = totalQuestions > 0 ? Math.round((correctCount / totalQuestions) * 100) : 0;
 
-        document.getElementById('finalScore').textContent = `${accuracy}%`;
-        document.getElementById('totalQuestions').textContent = quizQuestions.length;
-        document.getElementById('correctAnswers').textContent = correctCount;
-        document.getElementById('incorrectAnswers').textContent = answeredCount - correctCount;
-        document.getElementById('accuracyResult').textContent = `${accuracy}%`;
-        
-        const timeTakenEl = document.getElementById('timeTaken');
-        if (isRealExamMode) {
-            const totalDuration = courseConfig.examDuration || 5400;
-            const timeElapsed = totalDuration - examTimeRemaining;
-            timeTakenEl.textContent = formatTime(timeElapsed);
-            timeTakenEl.parentElement.style.display = 'block';
-        } else {
-            timeTakenEl.parentElement.style.display = 'none';
+        if (recalculate) {
+            originalQuestions = [...quizQuestions];
+            originalAnswers = [...userAnswers];
+            originalCorrectCount = correctCount;
+
+            document.getElementById('score').textContent = accuracy;
+            document.getElementById('totalQuestions').textContent = totalQuestions;
+            document.getElementById('correctAnswers').textContent = correctCount;
+            document.getElementById('percentage').textContent = accuracy;
+            
+            const scoreProgress = document.getElementById('scoreProgress');
+            if (scoreProgress) {
+                scoreProgress.style.background = `conic-gradient(var(--primary) ${accuracy}%, #e0e0e0 ${accuracy}%)`;
+            }
+            
+            const passFail = document.getElementById('passFail');
+            if (passFail) {
+                const isPassed = accuracy >= 75;
+                passFail.textContent = isPassed ? 'APROVADO' : 'REPROVADO';
+                passFail.className = isPassed ? 'pass-status' : 'fail-status';
+            }
+
+            // Calculate topic stats first
+            const topicStats = {};
+            Object.keys(courseConfig.topics).forEach(topic => {
+                topicStats[topic] = {
+                    total: 0,
+                    correct: 0,
+                    incorrect: 0,
+                    skipped: 0
+                };
+            });
+            
+            quizQuestions.forEach((q, index) => {
+                const topic = q.topic;
+                if (topic && topicStats[topic]) {
+                    topicStats[topic].total++;
+                    
+                    if (userAnswers[index] === null) {
+                        topicStats[topic].skipped++;
+                    } else if (arraysEqual(userAnswers[index], q.correct)) {
+                        topicStats[topic].correct++;
+                    } else {
+                        topicStats[topic].incorrect++;
+                    }
+                }
+            });
+
+            const topicBreakdownEl = document.getElementById('topicBreakdown');
+            if (topicBreakdownEl) {
+                let breakdownHTML = '<div class="topic-performance">';
+                breakdownHTML += '<h3>Desempenho por Tópico</h3>';
+                breakdownHTML += '<table class="topic-table">';
+                breakdownHTML += '<tr><th>Tópico</th><th>Corretas</th><th>Incorretas</th><th>Taxa</th></tr>';
+                
+                Object.keys(topicStats).forEach(topic => {
+                    const stats = topicStats[topic];
+                    const accuracy = stats.total > 0 ? Math.round((stats.correct / stats.total) * 100) : 0;
+                    const rowClass = stats.incorrect > 0 ? 'topic-needs-review' : 'topic-mastered';
+                    
+                    breakdownHTML += `<tr class="${rowClass}">`;
+                    breakdownHTML += `<td>${topic}</td>`;
+                    breakdownHTML += `<td>${stats.correct}/${stats.total}</td>`;
+                    breakdownHTML += `<td>${stats.incorrect}</td>`;
+                    breakdownHTML += `<td>${accuracy}%</td>`;
+                    breakdownHTML += '</tr>';
+                });
+                
+                breakdownHTML += '</table></div>';
+                topicBreakdownEl.innerHTML = breakdownHTML;
+            }
+            
+            const hasFailures = Object.keys(topicStats).some(topic => topicStats[topic].incorrect > 0);
+            if (reviewBtn) reviewBtn.style.display = hasFailures ? 'inline-block' : 'none';
         }
 
-        showScreen('resultsScreen');
+        showScreen('resultScreen');
+        console.log(`[showResults] Results displayed - Score: ${accuracy}%, Correct: ${correctCount}/${totalQuestions}`);
+    };
+
+    const reviewIncorrect = () => {
+        const incorrectOrUnanswered = quizQuestions.filter((q, i) => {
+            const answer = userAnswers[i];
+            return answer === null || !arraysEqual(answer, q.correct);
+        });
+
+        if (incorrectOrUnanswered.length > 0) {
+            isReviewMode = true;
+            quizQuestions = incorrectOrUnanswered;
+            userAnswers = new Array(quizQuestions.length).fill(null);
+            currentQ = 0;
+            correctCount = 0;
+            showScreen('quizScreen');
+            loadQ();
+        } else {
+            alert("No incorrect answers to review!");
+        }
+    };
+
+    const renderTopics = () => {
+        if (!courseConfig || !topicList) return;
+        topicList.innerHTML = '';
+        for (const [topic, config] of Object.entries(courseConfig.topics)) {
+            if (config.weight === 0 && topic.toLowerCase() === 'miscellaneous') continue;
+
+            const topicEl = document.createElement('div');
+            topicEl.className = 'topic-item';
+            topicEl.innerHTML = `
+                <input type="checkbox" id="${topic}" name="topic" value="${topic}">
+                <label for="${topic}">
+                    <span class="topic-title">${topic} <span class="question-count">(${config.count || 0})</span></span>
+                    <span class="topic-description">${config.description}</span>
+                </label>
+            `;
+            topicList.appendChild(topicEl);
+        }
+    };
+
+    const updateStartButtons = () => {
+        const anySelected = selectedTopics.length > 0;
+        if (startQuizBtn) {
+            startQuizBtn.disabled = !anySelected;
+            startQuizBtn.title = anySelected ? 'Start the quiz with selected topics' : 'Please select at least one topic';
+        }
+    };
+
+    const startExamTimer = () => {
+        if (!timerDisplay) return;
+        stopExamTimer();
+        examTimeRemaining = courseConfig.examDuration || 5400;
+        if(timerDisplay.parentElement) timerDisplay.parentElement.style.display = 'block';
+        timerDisplay.textContent = formatTime(examTimeRemaining);
+
+        examTimerInterval = setInterval(() => {
+            examTimeRemaining--;
+            timerDisplay.textContent = formatTime(examTimeRemaining);
+            if (examTimeRemaining <= 0) {
+                stopExamTimer();
+                alert('Time is up!');
+                showResults(true);
+            }
+        }, 1000);
+    };
+
+    const stopExamTimer = () => {
+        clearInterval(examTimerInterval);
+        examTimerInterval = null;
+        if (timerDisplay && timerDisplay.parentElement) timerDisplay.parentElement.style.display = 'none';
     };
 
     // --- Event Listeners ---
     if (topicList) {
         topicList.addEventListener('change', (e) => {
             if (e.target.type === 'checkbox') {
-                selectedTopics = Array.from(topicList.querySelectorAll('input:checked')).map(cb => cb.value);
-                e.target.closest('.topic-item')?.classList.toggle('selected', e.target.checked);
+                selectedTopics = Array.from(document.querySelectorAll('#topicList input:checked')).map(cb => cb.value);
+                document.querySelectorAll('#topicList .topic-item').forEach(item => {
+                    const cb = item.querySelector('input');
+                    if (cb.checked) {
+                        item.classList.add('selected');
+                    } else {
+                        item.classList.remove('selected');
+                    }
+                });
                 updateStartButtons();
             }
         });
@@ -464,14 +565,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (selectAllBtn) {
         selectAllBtn.addEventListener('click', () => {
-            const checkboxes = topicList.querySelectorAll('input[type="checkbox"]');
-            const allSelected = selectedTopics.length === checkboxes.length;
+            const checkboxes = document.querySelectorAll('#topicList input[type="checkbox"]');
+            const allSelected = checkboxes.length > 0 && Array.from(checkboxes).every(cb => cb.checked);
+            
             checkboxes.forEach(cb => {
                 cb.checked = !allSelected;
-                cb.closest('.topic-item')?.classList.toggle('selected', !allSelected);
+                cb.dispatchEvent(new Event('change', { bubbles: true })); 
             });
-            selectedTopics = allSelected ? [] : Array.from(checkboxes).map(cb => cb.value);
-            updateStartButtons();
         });
     }
 
@@ -499,30 +599,30 @@ document.addEventListener('DOMContentLoaded', () => {
         menuBtn.addEventListener('click', goToMenu);
     }
 
-    if (restartBtn) {
-        restartBtn.addEventListener('click', () => startQuiz(isRealExamMode));
-    }
-
     if (backToMenuBtn) {
         backToMenuBtn.addEventListener('click', goToMenu);
     }
 
-    if (reviewBtn) {
-        reviewBtn.addEventListener('click', () => {
-            currentQ = 0;
-            showScreen('quizScreen');
-            loadQ();
+    if (restartBtn) {
+        restartBtn.addEventListener('click', () => {
+            if(isReviewMode) {
+                restoreOriginalQuiz();
+                startQuiz(isRealExamMode);
+            } else {
+                startQuiz(isRealExamMode);
+            }
         });
     }
 
-    // --- Initialization ---
-    const initializeApp = async () => {
-        const success = await loadCourseConfig();
+    if (reviewBtn) {
+        reviewBtn.addEventListener('click', reviewIncorrect);
+    }
+
+    // --- Initial Load ---
+    loadCourseConfig().then(success => {
         if (success) {
             showScreen('startScreen');
             updateStartButtons();
-        } 
-    };
-
-    initializeApp();
+        }
+    });
 });

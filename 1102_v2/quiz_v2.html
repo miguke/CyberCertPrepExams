@@ -6,6 +6,7 @@
     <title>CompTIA A+ 220-1102 v2 (Real Exam) Study</title>
     <link rel="stylesheet" href="../css/quiz.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/results.css">
 </head>
 <body>
     <div class="container">
@@ -83,15 +84,24 @@
         </div>
         
         <!-- Result Screen -->
-        <div id="resultScreen" class="screen" style="display: none; text-align: center; padding: 30px 20px;">
+        <div id="resultScreen" class="screen">
             <h2>Resultado do Questionário</h2>
             <div class="result-summary">
                 <div class="score-circle">
+                    <div id="scoreProgress" class="score-circle-progress"></div>
                     <span id="score">0</span>%
                 </div>
                 <p class="result-text">Você acertou <span id="correctAnswers">0</span> de <span id="totalQuestions">0</span> perguntas</p>
                 <p class="result-percentage"><span id="percentage">0</span>% de acerto</p>
+                <div class="pass-fail-container">
+                    <span id="passFail"></span>
+                </div>
             </div>
+            <!-- Topic Breakdown Section -->
+            <div id="topicBreakdown" class="topic-breakdown-container">
+                <!-- This will be populated by JavaScript -->
+            </div>
+            
             <div class="result-actions">
                 <button id="reviewBtn" class="btn btn-outline">Revisar Respostas</button>
                 <button id="restartBtn" class="btn btn-primary">Fazer Novamente</button>
@@ -100,7 +110,7 @@
         </div>
     </div>
 
-    <script type="module" src="../js/quiz-app-1102-v2.js?v=1.0.2"></script>
+    <script type="module" src="../js/quiz-app-1102-v2.js?v=1.0.4"></script>
     <style>
         .actions {
             display: flex;

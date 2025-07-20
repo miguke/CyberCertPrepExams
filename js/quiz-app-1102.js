@@ -427,28 +427,106 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    const showResults = () => {
+    const showResults = (recalculate = true) => {
+        console.log('[showResults] Function called - displaying results screen');
         stopExamTimer();
         const answeredCount = userAnswers.filter(a => a !== null).length;
-        const accuracy = answeredCount > 0 ? Math.round((correctCount / answeredCount) * 100) : 0;
+        const totalQuestions = quizQuestions.length;
+        const accuracy = totalQuestions > 0 ? Math.round((correctCount / totalQuestions) * 100) : 0;
 
-        document.getElementById('finalScore').textContent = `${accuracy}%`;
-        document.getElementById('totalQuestions').textContent = quizQuestions.length;
-        document.getElementById('correctAnswers').textContent = correctCount;
-        document.getElementById('incorrectAnswers').textContent = answeredCount - correctCount;
-        document.getElementById('accuracyResult').textContent = `${accuracy}%`;
+        if (recalculate) {
+            // Using correct element IDs that match the HTML
+            document.getElementById('score').textContent = accuracy;
+            document.getElementById('totalQuestions').textContent = totalQuestions;
+            document.getElementById('correctAnswers').textContent = correctCount;
+            document.getElementById('percentage').textContent = accuracy;
+            
+            // Update the circular progress indicator to show the exact percentage
+            const scoreProgress = document.getElementById('scoreProgress');
+            if (scoreProgress) {
+                scoreProgress.style.background = `conic-gradient(var(--primary) ${accuracy}%, #e0e0e0 ${accuracy}%)`;
+            }
+            
+            // Calculate pass/fail status based on CompTIA standards
+            const passFail = document.getElementById('passFail');
+            if (passFail) {
+                // CompTIA passing score is typically 675 out of 900 (75%)
+                const isPassed = accuracy >= 75;
+                passFail.textContent = isPassed ? 'APROVADO' : 'REPROVADO';
+                passFail.className = isPassed ? 'pass-status' : 'fail-status';
+            }
+
+            // Calculate topic stats first
+            const topicStats = {};
+            Object.keys(courseConfig.topics).forEach(topic => {
+                topicStats[topic] = {
+                    total: 0,
+                    correct: 0,
+                    incorrect: 0,
+                    skipped: 0
+                };
+            });
+            
+            quizQuestions.forEach((q, index) => {
+                const topic = q.topic;
+                if (topic && topicStats[topic]) {
+                    topicStats[topic].total++;
+                    
+                    if (userAnswers[index] === null) {
+                        topicStats[topic].skipped++;
+                    } else if (arraysEqual(userAnswers[index], q.correct)) {
+                        topicStats[topic].correct++;
+                    } else {
+                        topicStats[topic].incorrect++;
+                    }
+                }
+            });
+
+            // Generate topic performance breakdown
+            const topicBreakdownEl = document.getElementById('topicBreakdown');
+            if (topicBreakdownEl) {
+                let breakdownHTML = '<div class="topic-performance">';
+                breakdownHTML += '<h3>Desempenho por Tópico</h3>';
+                breakdownHTML += '<table class="topic-table">';
+                breakdownHTML += '<tr><th>Tópico</th><th>Corretas</th><th>Incorretas</th><th>Taxa</th></tr>';
+                
+                Object.keys(topicStats).forEach(topic => {
+                    const stats = topicStats[topic];
+                    const accuracy = stats.total > 0 ? Math.round((stats.correct / stats.total) * 100) : 0;
+                    const rowClass = stats.incorrect > 0 ? 'topic-needs-review' : 'topic-mastered';
+                    
+                    breakdownHTML += `<tr class="${rowClass}">`;
+                    breakdownHTML += `<td>${topic}</td>`;
+                    breakdownHTML += `<td>${stats.correct}/${stats.total}</td>`;
+                    breakdownHTML += `<td>${stats.incorrect}</td>`;
+                    breakdownHTML += `<td>${accuracy}%</td>`;
+                    breakdownHTML += '</tr>';
+                });
+                
+                breakdownHTML += '</table></div>';
+                topicBreakdownEl.innerHTML = breakdownHTML;
+            }
+            
+            const hasFailures = Object.keys(topicStats).some(topic => topicStats[topic].incorrect > 0);
+            if (reviewBtn) reviewBtn.style.display = hasFailures ? 'inline-block' : 'none';
+        }
         
+        // Add null checks for optional elements
         const timeTakenEl = document.getElementById('timeTaken');
-        if (isRealExamMode) {
+        if (isRealExamMode && timeTakenEl) {
             const totalDuration = courseConfig.examDuration || 5400;
             const timeElapsed = totalDuration - examTimeRemaining;
             timeTakenEl.textContent = formatTime(timeElapsed);
-            timeTakenEl.parentElement.style.display = 'block';
-        } else {
+            if (timeTakenEl.parentElement) {
+                timeTakenEl.parentElement.style.display = 'block';
+            }
+        } else if (timeTakenEl && timeTakenEl.parentElement) {
             timeTakenEl.parentElement.style.display = 'none';
         }
 
-        showScreen('resultsScreen');
+        // Show the results screen using the correct ID
+        showScreen('resultScreen');
+        console.log(`[showResults] Results displayed - Score: ${accuracy}%, Correct: ${correctCount}/${totalQuestions}`);
     };
 
     // --- Event Listeners ---
