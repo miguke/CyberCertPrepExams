@@ -475,13 +475,16 @@
       ".deb",
       ".dmg",
       ".msi",
-      ".appx G. .app H. .apk"
+      ".appx",
+      ".app",
+      ".apk"
     ],
     "correct": [
       1,
-      3
+      3,
+      6
     ],
-    "explanation": "Correct Answers: B) .pkg and D) .dmg. The file extensions commonly used to install applications on macOS machines are .pkg (package files) and .dmg (disk image files). PKG files are installer packages that contain applications and installation scripts, while DMG files are disk images that mount as virtual drives containing applications or installers. .mac and .app are not installation formats (.app is the application bundle format), .deb is for Debian Linux, .msi and .appx are for Windows, and .apk is for Android.",
+    "explanation": "Correct answers) .pkg – Installer packages used by the macOS Installer.app - .dmg – Disk image containers that mount as virtual volumes, from which apps are typically dragged into /Applications - .app – Bundled application directories (app “bundles”) that can be executed or copied. Incorrect answers) .mac – Not a standard installer format - .deb – Debian/Ubuntu Linux packages - .msi – Windows Installer packages - .appx – Windows 10 UWP packages - .apk – Android application packages",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "software-troubleshooting"
@@ -1763,7 +1766,7 @@
   },
   {
     "id": 103,
-    "question": "Applications on a computer are not updating, which is preventing the user from opening certain files. Which of the following MAC snap-ins should the technician launch next to continue troubleshooting the issue?",
+    "question": "Applications on a computer are not updating, which is preventing the user from opening certain files. Which of the following MSC snap-ins should the technician launch next to continue troubleshooting the issue?",
     "options": [
       "gpedit.msc",
       "perfmon.msc",
@@ -1788,9 +1791,9 @@
       "Restart the P"
     ],
     "correct": [
-      3
+      2
     ],
-    "explanation": "Correct Answer: D) Restart the PC. When malware is installed after clicking a suspicious email link, restarting the PC is the best way to remove the malware. The question appears to be truncated, but restarting in safe mode would be the logical complete answer. Safe mode prevents malware from loading and allows for effective removal. System Restore may not remove all malware components, recovery mode is for system repair, and scheduling a scan in normal mode might be blocked by active malware.",
+    "explanation": "Correct Answer: C) Schedule a scan. When malware is installed after clicking a suspicious email link, the best way to remove the malware is to schedule a scan. This allows the antivirus software to detect and remove the malware. Running System Restore, placing the device in recovery mode, or restarting the PC are secondary actions that should occur after the malware is detected and removed.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "software-troubleshooting"
@@ -2044,14 +2047,16 @@
       "winver",
       "diskpart",
       "sfc",
-      "netstat G. ping H. chkdsk"
+      "netstat",
+      "ping",
+      "chkdsk"
     ],
     "correct": [
       0,
       1,
       3
     ],
-    "explanation": "Correct Answers: A) net use, B) robocopy, D) diskpart. For enterprise Windows installation with network scripting, SSD system drives, and HDD backup drives, the technician should use these three command-line tools: 1) net use - connects to network shares to access installation files over the network, 2) robocopy - robust file copy utility for transferring installation files from network share to local system, 3) diskpart - disk partitioning utility to prepare the new SSD as system drive and configure the existing HDD as backup drive. winver shows version info, sfc repairs system files, netstat/ping/chkdsk are for different purposes.",
+    "explanation": "Diskpart – Prepare the new SSD (create/format partitions, assign drive letters). Net use – Map the network share containing your scripted install files. Robocopy – Efficiently copy the installation files from the network share to the SSD.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "multiple",
     "topic": "software-troubleshooting"

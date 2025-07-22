@@ -1733,15 +1733,15 @@
     "id": 102,
     "question": "A technician requires graphical remote access to various Windows, Linux, and macOS desktops on the company LAN. The security administrator asks the technician to utilize a single software solution that does not require an external internet connection. Which of the following remote access tools is the technician most likely to install?",
     "options": [
-      "NC",
+      "VNC",
       "RMM",
       "RDP",
       "SSH"
     ],
     "correct": [
-      3
+      0
     ],
-    "explanation": "SSH is the most likely remote access tool to install for cross-platform graphical access without external internet connection. While SSH is primarily command-line, it can tunnel X11 for graphical applications and works across Windows, Linux, and macOS. NC (netcat) is for network connections, RMM requires internet, and RDP is primarily Windows-focused - SSH provides the most universal solution.",
+    "explanation": "VNC is the most likely remote access tool to install for cross-platform graphical access without external internet connection. While SSH is primarily command-line, it can tunnel X11 for graphical applications and works across Windows, Linux, and macOS. NC (netcat) is for network connections, RMM requires internet, and RDP is primarily Windows-focused - SSH provides the most universal solution.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operating-systems"
@@ -2343,9 +2343,9 @@
       "Ignore the phone and continue working."
     ],
     "correct": [
-      3
+      1
     ],
-    "explanation": "The technician should ignore the phone and continue working when receiving non-emergency calls from family while at a client site. Professional conduct requires maintaining focus on client work and avoiding personal distractions. Stepping aside to answer, putting phone on silent, or texting replies all create unprofessional interruptions - ignoring maintains professional standards.",
+    "explanation": "The technician should put the phone on silent when receiving non-emergency calls from family while at a client site. Professional conduct requires maintaining focus on client work and avoiding personal distractions. Stepping aside to answer, texting replies, or ignoring all create unprofessional interruptions - putting phone on silent maintains professional standards.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operating-systems"
@@ -2428,9 +2428,9 @@
       "Check the DNS settings."
     ],
     "correct": [
-      0
+      3
     ],
-    "explanation": "Validate physical connectivity should be the first step when a user can't access the internet but can print to network printers. This indicates partial network connectivity, so checking cables and connections is the logical first step. Rebooting the router affects all users, disabling IPv6 is unnecessary, and checking DNS settings comes after confirming physical connectivity.",
+    "explanation": "Check the DNS settings should be the first step when a user can't access the internet but can print to network printers. This indicates partial network connectivity, so checking cables and connections is the logical first step. Rebooting the router affects all users, disabling IPv6 is unnecessary, and checking DNS settings comes after confirming physical connectivity.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operating-systems"

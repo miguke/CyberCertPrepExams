@@ -1,0 +1,433 @@
+{
+  "threshold": 0.9,
+  "within_topic": {
+    "total_pairs": 6,
+    "pairs": [
+      {
+        "index1": 45,
+        "index2": 96,
+        "similarity": 1.0,
+        "same_answers": true,
+        "q1_text": "A technician needs to ensure that USB devices are not suspended by the operating system. Which of the following Control Panel utilities should the technician use to configure the setting?",
+        "q2_text": "A technician needs to ensure that USB devices are not suspended by the operating system. Which of the following Control Panel utilities should the technician use to configure the setting?",
+        "q1_correct": [
+          1
+        ],
+        "q2_correct": [
+          1
+        ],
+        "topic": "operating-systems",
+        "filename": "operating-systems.json"
+      },
+      {
+        "index1": 45,
+        "index2": 137,
+        "similarity": 1.0,
+        "same_answers": true,
+        "q1_text": "A technician needs to ensure that USB devices are not suspended by the operating system. Which of the following Control Panel utilities should the technician use to configure the setting?",
+        "q2_text": "A technician needs to ensure that USB devices are not suspended by the operating system. Which of the following Control Panel utilities should the technician use to configure the setting?",
+        "q1_correct": [
+          1
+        ],
+        "q2_correct": [
+          1
+        ],
+        "topic": "operating-systems",
+        "filename": "operating-systems.json"
+      },
+      {
+        "index1": 96,
+        "index2": 137,
+        "similarity": 1.0,
+        "same_answers": true,
+        "q1_text": "A technician needs to ensure that USB devices are not suspended by the operating system. Which of the following Control Panel utilities should the technician use to configure the setting?",
+        "q2_text": "A technician needs to ensure that USB devices are not suspended by the operating system. Which of the following Control Panel utilities should the technician use to configure the setting?",
+        "q1_correct": [
+          1
+        ],
+        "q2_correct": [
+          1
+        ],
+        "topic": "operating-systems",
+        "filename": "operating-systems.json"
+      },
+      {
+        "index1": 4,
+        "index2": 8,
+        "similarity": 1.0,
+        "same_answers": true,
+        "q1_text": "Upon downloading a new ISO, an administrator is presented with the following string: 59d15a16ce90c8ee97fa7c211b7673a8 Which of the following BEST describes the purpose of this string?",
+        "q2_text": "Upon downloading a new ISO, an administrator is presented with the following string: 59d15a16ce90c8ee97fa7c211b7673a8 Which of the following BEST describes the purpose of this string?",
+        "q1_correct": [
+          2
+        ],
+        "q2_correct": [
+          2
+        ],
+        "topic": "security",
+        "filename": "security.json"
+      },
+      {
+        "index1": 18,
+        "index2": 93,
+        "similarity": 1.0,
+        "same_answers": true,
+        "q1_text": "A technician is setting up a new laptop. The company's security policy states that users cannot install virtual machines. Which of the following should the technician implement to prevent users from enabling virtual technology on their laptops?",
+        "q2_text": "A technician is setting up a new laptop. The company's security policy states that users cannot install virtual machines. Which of the following should the technician implement to prevent users from enabling virtual technology on their laptops?",
+        "q1_correct": [
+          0
+        ],
+        "q2_correct": [
+          0
+        ],
+        "topic": "security",
+        "filename": "security.json"
+      },
+      {
+        "index1": 25,
+        "index2": 108,
+        "similarity": 1.0,
+        "same_answers": true,
+        "q1_text": "Which of the following is an example of MFA?",
+        "q2_text": "Which of the following is an example of MFA?",
+        "q1_correct": [
+          3
+        ],
+        "q2_correct": [
+          3
+        ],
+        "topic": "security",
+        "filename": "security.json"
+      }
+    ]
+  },
+  "cross_topic": {
+    "total_pairs": 18,
+    "pairs": [
+      {
+        "topic1": "operating-systems",
+        "topic2": "security",
+        "file1": "operating-systems.json",
+        "file2": "security.json",
+        "index1": 75,
+        "index2": 77,
+        "similarity": 1.0,
+        "same_answers": true,
+        "q1_text": "While trying to repair a Windows 10 OS, a technician receives a prompt asking for a key. The technician tries the administrator password, but it is rejected. Which of the following does the technician need in order to continue the OS repair?",
+        "q2_text": "While trying to repair a Windows 10 OS, a technician receives a prompt asking for a key. The technician tries the administrator password, but it is rejected. Which of the following does the technician need in order to continue the OS repair?",
+        "q1_correct": [
+          3
+        ],
+        "q2_correct": [
+          3
+        ]
+      },
+      {
+        "topic1": "operating-systems",
+        "topic2": "security",
+        "file1": "operating-systems.json",
+        "file2": "security.json",
+        "index1": 86,
+        "index2": 87,
+        "similarity": 1.0,
+        "same_answers": true,
+        "q1_text": "A systems administrator received a request to limit the amount of cellular data a user's Windows 10 tablet can utilize when traveling. Which of the following can the administrator do to best solve the user's issue?",
+        "q2_text": "A systems administrator received a request to limit the amount of cellular data a user's Windows 10 tablet can utilize when traveling. Which of the following can the administrator do to best solve the user's issue?",
+        "q1_correct": [
+          1
+        ],
+        "q2_correct": [
+          1
+        ]
+      },
+      {
+        "topic1": "operating-systems",
+        "topic2": "software-troubleshooting",
+        "file1": "operating-systems.json",
+        "file2": "software-troubleshooting.json",
+        "index1": 40,
+        "index2": 79,
+        "similarity": 1.0,
+        "same_answers": true,
+        "q1_text": "A technician installs specialized software on a workstation. The technician then attempts to run the software. The workstation displays a message indicating the software is not authorized to run. Which of the following should the technician do to MOST likely resolve the issue?",
+        "q2_text": "A technician installs specialized software on a workstation. The technician then attempts to run the software. The workstation displays a message indicating the software is not authorized to run. Which of the following should the technician do to most likely resolve the issue?",
+        "q1_correct": [
+          1
+        ],
+        "q2_correct": [
+          1
+        ]
+      },
+      {
+        "topic1": "security",
+        "topic2": "software-troubleshooting",
+        "file1": "security.json",
+        "file2": "software-troubleshooting.json",
+        "index1": 28,
+        "index2": 26,
+        "similarity": 1.0,
+        "same_answers": true,
+        "q1_text": "After returning from vacation, a user is unable to connect to the network at the corporate office. Windows allows the user to log in; however, no internal or external websites are accessible when running a browser. The user's expected network shares are unreachable, and all websites attempted return the message, `Hmm, we can't reach this page.` Which of the following is the MOST likely cause of this issue?",
+        "q2_text": "After returning from vacation, a user is unable to connect to the network at the corporate office. Windows allows the user to log in; however, no internal or external websites are accessible when running a browser. The user's expected network shares are unreachable, and all websites attempted return the message, `Hmm, we can't reach this page.` Which of the following is the MOST likely cause of this issue?",
+        "q1_correct": [
+          3
+        ],
+        "q2_correct": [
+          3
+        ]
+      },
+      {
+        "topic1": "security",
+        "topic2": "software-troubleshooting",
+        "file1": "security.json",
+        "file2": "software-troubleshooting.json",
+        "index1": 96,
+        "index2": 90,
+        "similarity": 1.0,
+        "same_answers": true,
+        "q1_text": "A customer is accessing a public kiosk in a company\u2019s lobby. Which of the following should be enforced to mitigate the risk of customer data being accidentally saved to the kiosk?",
+        "q2_text": "A customer is accessing a public kiosk in a company\u2019s lobby. Which of the following should be enforced to mitigate the risk of customer data being accidentally saved to the kiosk?",
+        "q1_correct": [
+          1
+        ],
+        "q2_correct": [
+          1
+        ]
+      },
+      {
+        "topic1": "security",
+        "topic2": "operational-procedures",
+        "file1": "security.json",
+        "file2": "operational-procedures.json",
+        "index1": 11,
+        "index2": 13,
+        "similarity": 1.0,
+        "same_answers": true,
+        "q1_text": "Which of the following must be maintained throughout the forensic evidence life cycle when dealing with a piece of evidence?",
+        "q2_text": "Which of the following must be maintained throughout the forensic evidence life cycle when dealing with a piece of evidence?",
+        "q1_correct": [
+          1
+        ],
+        "q2_correct": [
+          1
+        ]
+      },
+      {
+        "topic1": "security",
+        "topic2": "operational-procedures",
+        "file1": "security.json",
+        "file2": "operational-procedures.json",
+        "index1": 18,
+        "index2": 91,
+        "similarity": 1.0,
+        "same_answers": true,
+        "q1_text": "A technician is setting up a new laptop. The company's security policy states that users cannot install virtual machines. Which of the following should the technician implement to prevent users from enabling virtual technology on their laptops?",
+        "q2_text": "A technician is setting up a new laptop. The company's security policy states that users cannot install virtual machines. Which of the following should the technician implement to prevent users from enabling virtual technology on their laptops?",
+        "q1_correct": [
+          0
+        ],
+        "q2_correct": [
+          0
+        ]
+      },
+      {
+        "topic1": "security",
+        "topic2": "operational-procedures",
+        "file1": "security.json",
+        "file2": "operational-procedures.json",
+        "index1": 20,
+        "index2": 23,
+        "similarity": 1.0,
+        "same_answers": true,
+        "q1_text": "An organization's Chief Financial Officer (CFO) is concerned about losing access to very sensitive, legacy, unmaintained PII on a workstation if a ransomware outbreak occurs. The CFO has a regulatory requirement to retain this data for many years. Which of the following backup methods would BEST meet the requirements?",
+        "q2_text": "An organization's Chief Financial Officer (CFO) is concerned about losing access to very sensitive, legacy, unmaintained PII on a workstation if a ransomware outbreak occurs. The CFO has a regulatory requirement to retain this data for many years. Which of the following backup methods would BEST meet the requirements?",
+        "q1_correct": [
+          2
+        ],
+        "q2_correct": [
+          2
+        ]
+      },
+      {
+        "topic1": "security",
+        "topic2": "operational-procedures",
+        "file1": "security.json",
+        "file2": "operational-procedures.json",
+        "index1": 29,
+        "index2": 30,
+        "similarity": 1.0,
+        "same_answers": true,
+        "q1_text": "A technician receives a call from a user who is on vacation. The user provides the necessary credentials and asks the technician to log in to the user's account and read a critical email that the user has been expecting. The technician refuses because this is a violation of the:",
+        "q2_text": "A technician receives a call from a user who is on vacation. The user provides the necessary credentials and asks the technician to log in to the user's account and read a critical email that the user has been expecting. The technician refuses because this is a violation of the:",
+        "q1_correct": [
+          0
+        ],
+        "q2_correct": [
+          0
+        ]
+      },
+      {
+        "topic1": "security",
+        "topic2": "operational-procedures",
+        "file1": "security.json",
+        "file2": "operational-procedures.json",
+        "index1": 34,
+        "index2": 37,
+        "similarity": 1.0,
+        "same_answers": true,
+        "q1_text": "Which of the following is MOST likely contained in an EULA?",
+        "q2_text": "Which of the following is MOST likely contained in an EULA?",
+        "q1_correct": [
+          3
+        ],
+        "q2_correct": [
+          3
+        ]
+      },
+      {
+        "topic1": "security",
+        "topic2": "operational-procedures",
+        "file1": "security.json",
+        "file2": "operational-procedures.json",
+        "index1": 35,
+        "index2": 38,
+        "similarity": 1.0,
+        "same_answers": true,
+        "q1_text": "A user opened a ticket regarding a corporate-managed mobile device. The assigned technician notices the OS is several versions out of date. The user is unaware the OS version is not current because auto-update is turned on. Which of the following is MOST likely the cause of the issue?",
+        "q2_text": "A user opened a ticket regarding a corporate-managed mobile device. The assigned technician notices the OS is several versions out of date. The user is unaware the OS version is not current because auto-update is turned on. Which of the following is MOST likely the cause of the issue?",
+        "q1_correct": [
+          0
+        ],
+        "q2_correct": [
+          0
+        ]
+      },
+      {
+        "topic1": "security",
+        "topic2": "operational-procedures",
+        "file1": "security.json",
+        "file2": "operational-procedures.json",
+        "index1": 61,
+        "index2": 65,
+        "similarity": 1.0,
+        "same_answers": true,
+        "q1_text": "A technician is attempting to mitigate micro power outages, which occur frequently within the area of operation. The outages are usually short, with the longest occurrence lasting five minutes. Which of the following should the technician use to mitigate this issue?",
+        "q2_text": "A technician is attempting to mitigate micro power outages, which occur frequently within the area of operation. The outages are usually short, with the longest occurrence lasting five minutes. Which of the following should the technician use to mitigate this issue?",
+        "q1_correct": [
+          1
+        ],
+        "q2_correct": [
+          1
+        ]
+      },
+      {
+        "topic1": "security",
+        "topic2": "operational-procedures",
+        "file1": "security.json",
+        "file2": "operational-procedures.json",
+        "index1": 64,
+        "index2": 66,
+        "similarity": 1.0,
+        "same_answers": true,
+        "q1_text": "Which of the following threats will the use of a privacy screen on a computer help prevent?",
+        "q2_text": "Which of the following threats will the use of a privacy screen on a computer help prevent?",
+        "q1_correct": [
+          1
+        ],
+        "q2_correct": [
+          1
+        ]
+      },
+      {
+        "topic1": "security",
+        "topic2": "operational-procedures",
+        "file1": "security.json",
+        "file2": "operational-procedures.json",
+        "index1": 82,
+        "index2": 83,
+        "similarity": 1.0,
+        "same_answers": true,
+        "q1_text": "An administrator responded to an incident where an employee copied financial data to a portable hard drive and then left the company with the data. The administrator documented the movement of the evidence. Which of the following concepts did the administrator demonstrate?",
+        "q2_text": "An administrator responded to an incident where an employee copied financial data to a portable hard drive and then left the company with the data. The administrator documented the movement of the evidence. Which of the following concepts did the administrator demonstrate?",
+        "q1_correct": [
+          0
+        ],
+        "q2_correct": [
+          0
+        ]
+      },
+      {
+        "topic1": "security",
+        "topic2": "operational-procedures",
+        "file1": "security.json",
+        "file2": "operational-procedures.json",
+        "index1": 91,
+        "index2": 85,
+        "similarity": 1.0,
+        "same_answers": true,
+        "q1_text": "Maintaining the chain of custody is an important part of the incident response process. Which of the following reasons explains why this is important?",
+        "q2_text": "Maintaining the chain of custody is an important part of the incident response process. Which of the following reasons explains why this is important?",
+        "q1_correct": [
+          2
+        ],
+        "q2_correct": [
+          2
+        ]
+      },
+      {
+        "topic1": "security",
+        "topic2": "operational-procedures",
+        "file1": "security.json",
+        "file2": "operational-procedures.json",
+        "index1": 93,
+        "index2": 91,
+        "similarity": 1.0,
+        "same_answers": true,
+        "q1_text": "A technician is setting up a new laptop. The company's security policy states that users cannot install virtual machines. Which of the following should the technician implement to prevent users from enabling virtual technology on their laptops?",
+        "q2_text": "A technician is setting up a new laptop. The company's security policy states that users cannot install virtual machines. Which of the following should the technician implement to prevent users from enabling virtual technology on their laptops?",
+        "q1_correct": [
+          0
+        ],
+        "q2_correct": [
+          0
+        ]
+      },
+      {
+        "topic1": "security",
+        "topic2": "operational-procedures",
+        "file1": "security.json",
+        "file2": "operational-procedures.json",
+        "index1": 99,
+        "index2": 93,
+        "similarity": 1.0,
+        "same_answers": true,
+        "q1_text": "Which of the following helps ensure that a piece of evidence extracted from a PC is admissible in a court of law?",
+        "q2_text": "Which of the following helps ensure that a piece of evidence extracted from a PC is admissible in a court of law?",
+        "q1_correct": [
+          3
+        ],
+        "q2_correct": [
+          3
+        ]
+      },
+      {
+        "topic1": "security",
+        "topic2": "operational-procedures",
+        "file1": "security.json",
+        "file2": "operational-procedures.json",
+        "index1": 135,
+        "index2": 135,
+        "similarity": 1.0,
+        "same_answers": true,
+        "q1_text": "Which of the following documents in criminal proceedings must be updated every time a piece of evidence is touched or transferred in order for the evidence to be considered valid?",
+        "q2_text": "Which of the following documents in criminal proceedings must be updated every time a piece of evidence is touched or transferred in order for the evidence to be considered valid?",
+        "q1_correct": [
+          3
+        ],
+        "q2_correct": [
+          3
+        ]
+      }
+    ]
+  }
+}

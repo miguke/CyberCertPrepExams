@@ -335,9 +335,9 @@
       "Restricted user permissions"
     ],
     "correct": [
-      1
+      0
     ],
-    "explanation": "Correct Answer: B) Lock the workstations after five minutes of inactivity. Automatic screen locking after a short period of inactivity is the most effective solution for preventing data theft when agents walk away from their workstations. This ensures patient data is protected immediately when the workstation is left unattended. Hard drive encryption protects against theft but doesn't prevent viewing of data on unlocked screens. Privacy screens help but don't fully prevent viewing. Manually logging off users isn't practical and could interrupt legitimate work.",
+    "explanation": "Correct Answer: A) UEFI password. Implementing a UEFI password is the most effective way to prevent users from enabling virtual technology on their laptops. UEFI (Unified Extensible Firmware Interface) is the firmware that initializes the system and provides a secure boot process. By setting a UEFI password, the technician can ensure that virtualization technology cannot be enabled or changed without proper authentication. Secure boot, account lockout, and restricted user permissions are important security measures but don't directly prevent virtualization technology from being enabled.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
@@ -2225,9 +2225,9 @@
       "Archive"
     ],
     "correct": [
-      0
+      1
     ],
-    "explanation": "Correct Answer: A) Differential. The question asks for a backup method that can back up the OS installation, applications, user profiles, and system settings. However, looking at the options, 'Image' would be the most appropriate choice for backing up all these components as it creates a complete system image. Since 'Image' isn't option A, there may be an error in the question numbering. Differential backups only capture changes since the last full backup and wouldn't include the complete OS installation and applications.",
+    "explanation": "Correct Answer: B) Image. Image backup creates a complete copy of the system, including the OS installation, applications, user profiles, and system settings. This ensures the workstation is properly backed up.",
     "source_pdf": "220-1102_en_RealDeal_compressed.txt",
     "type": "single",
     "topic": "operational-procedures"
