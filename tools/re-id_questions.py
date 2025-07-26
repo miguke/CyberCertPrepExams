@@ -4,7 +4,7 @@ import json
 # --- CONFIGURATION ---
 # Specify the directory containing the JSON files you want to re-ID.
 # Options: 'data/1101', 'data/1102'
-TARGET_DIRECTORY = 'data/1102'
+TARGET_DIRECTORY = 'data/1102_v2'
 
 # --- SCRIPT LOGIC ---
 

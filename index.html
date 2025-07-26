@@ -3,25 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CompTIA Certification Prep</title>
+    <title>Cybersecurity Certification Prep</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <div class="container">
         <div class="header">
-            <h1>CompTIA Certification Prep</h1>
+            <h1>Cybersecurity Certification Prep</h1>
             <p class="subtitle">Selecione o seu exame</p>
         </div>
         
         <div class="course-selection">
             <div class="course-card" data-course="1101" onclick="window.location.href='1101/quiz.html'">
-                <h2>220-1101</h2>
+                <h2>CompTIA A+ 220-1101</h2>
                 <p>Core 1: Hardware, Redes, Dispositivos Móveis e mais</p>
             </div>
             <div class="course-card" data-course="1102" onclick="window.location.href='1102/quiz.html'">
-                <h2>220-1102</h2>
+                <h2>CompTIA A+ 220-1102</h2>
                 <p>Core 2: Sistemas Operacionais, Segurança, Resolução de Problemas de Software</p>
+            </div>
+            <div class="course-card" data-course="sec+" onclick="window.location.href='security_plus/quiz.html'">
+                <h2>CompTIA Security+ SY0-701</h2>
+                <p>Foco em segurança de redes, ameaças e vulnerabilidades.</p>
+            </div>
+            <div class="course-card soon" data-course="iso27001">
+                <h2>ISO 27001</h2>
+                <p>Framework de Segurança da Informação (em breve)</p>
+            </div>
+            <div class="course-card soon" data-course="ceh">
+                <h2>EC-Council CEH</h2>
+                <p>Certified Ethical Hacker (em breve)</p>
             </div>
         </div>
     </div>

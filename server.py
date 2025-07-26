@@ -3,7 +3,7 @@ import socketserver
 import os
 import webbrowser
 
-PORT = 8000
+PORT = 8080
 Handler = http.server.SimpleHTTPRequestHandler
 
 # Add CORS headers to allow loading resources

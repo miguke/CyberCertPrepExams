@@ -5,10 +5,10 @@ from datetime import datetime
 import shutil
 
 # Path to the operating systems JSON file
-input_file = '../data/1102/operating-systems.json'
+input_file = '../data/1102_v2/operating-systems.json'
 
 # Create a backup directory if it doesn't exist
-backup_dir = '../data/1102/backups'
+backup_dir = '../data/1102_v2/backups'
 os.makedirs(backup_dir, exist_ok=True)
 
 # Create a backup of the original file

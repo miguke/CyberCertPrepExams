@@ -5,7 +5,7 @@ from datetime import datetime
 import shutil
 
 # Directory containing the 1102 JSON files
-data_dir = '../data/1102'
+data_dir = '../data/1102_v2'
 
 # Create backup directory if it doesn't exist
 backup_dir = os.path.join(data_dir, 'backups')

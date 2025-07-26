@@ -5,27 +5,27 @@ const courseConfig = {
     topics: {
         'Operating Systems': { 
             weight: 0.31, // 31%
-            file: '../data/1102/operating-systems.json',
+            file: '../data/1102_v2/operating-systems.json',
             description: 'Instalar e dar suporte a sistemas operacionais Windows, macOS, Linux, iOS e Android.'
         },
         'Security': { 
             weight: 0.25, // 25%
-            file: '../data/1102/security.json',
+            file: '../data/1102_v2/security.json',
             description: 'Identificar e proteger contra vulnerabilidades de segurança em dispositivos e suas conexões de rede.'
         },
         'Software Troubleshooting': { 
             weight: 0.22, // 22%
-            file: '../data/1102/software-troubleshooting.json',
+            file: '../data/1102_v2/software-troubleshooting.json',
             description: 'Solucionar problemas de software em PCs e dispositivos móveis.'
         },
         'Operational Procedures': { 
             weight: 0.22, // 22%
-            file: '../data/1102/operational-procedures.json',
+            file: '../data/1102_v2/operational-procedures.json',
             description: 'Seguir as melhores práticas de segurança, ambientais, profissionais e de comunicação.'
         },
         'Miscellaneous': {
             weight: 0, // Not officially weighted
-            file: '../data/1102/miscellaneous.json',
+            file: '../data/1102_v2/miscellaneous.json',
             description: 'Tópicos diversos e questões que abrangem múltiplos domínios.'
         }
     },
