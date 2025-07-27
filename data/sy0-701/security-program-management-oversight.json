@@ -1,0 +1,411 @@
+[
+  {
+    "id": 8,
+    "question": "Which of the following is the BEST reason to conduct a tabletop exercise?",
+    "options": [
+      "Demonstrate compliance with regulations",
+      "Identify gaps in incident response plans",
+      "Test network configurations",
+      "Validate employee background checks"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Tabletop exercises walk through scenarios on paper to reveal weaknesses in your plan. Compliance, network tests, and background checks are handled by other audit or technical controls.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 12,
+    "question": "Which of the following would be most useful in determining whether the long‑term cost to transfer a risk is less than the impact of the risk?",
+    "options": [
+      "ARO",
+      "RTO",
+      "RPO",
+      "ALE",
+      "SLE"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "ALE – Annual Loss Expectancy calculates expected yearly loss (SLE × ARO), letting you compare the cost of insurance or outsourcing versus the impact if the risk occurs. ARO (Annualized Rate of Occurrence) estimates frequency, RTO/RPO relate to recovery objectives, and SLE is the loss per event.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 18,
+    "question": "A company decided to reduce the cost of its annual cyber‑insurance policy by removing coverage for ransomware attacks. Which of the following analysis elements did the company most likely use in making this decision?",
+    "options": [
+      "MTTR",
+      "RTO",
+      "MTBF",
+      "ARO"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "ARO (Annualized Rate of Occurrence) estimates how often an event occurs per year. By lowering the ARO for ransomware, they can justify dropping coverage to save on premiums. MTTR/MTBF relate to repair times; RTO is recovery time.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 27,
+    "question": "A technician needs to apply a high‑priority patch to a production system. Which of the following steps should be taken first?",
+    "options": [
+      "Air‑gap the system",
+      "Move the system to a different network segment",
+      "Create a change control request",
+      "Apply the patch to the system"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Submitting and approving a change control request ensures the patch is authorized, documented, tested, and can be rolled back if necessary. You don’t air‑gap or relocate a live system before planning the change, and you shouldn’t apply the patch without following change management procedures.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 44,
+    "question": "Which of the following security control types does an acceptable use policy best represent?",
+    "options": [
+      "Detective",
+      "Compensating",
+      "Corrective",
+      "Preventive"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An acceptable‑use policy sets rules that forbid risky behaviors before they happen. It doesn’t detect incidents, compensate for control gaps, or correct problems after the fact.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 46,
+    "question": "Which of the following can best protect against an employee inadvertently installing malware on a company system?",
+    "options": [
+      "Host‑based firewall",
+      "System isolation",
+      "Least privilege",
+      "Application allowlist"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An application allowlist only permits approved software to run, blocking unknown or malicious installers at execution time. Firewalls or isolation don’t stop local installs, and least privilege limits rights but doesn’t prevent execution of malware by an allowed user.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 49,
+    "question": "An organization maintains intellectual property that it wants to protect. Which of the following concepts would be most beneficial to add to the company’s security awareness training program?",
+    "options": [
+      "Insider threat detection",
+      "Simulated threats",
+      "Phishing awareness",
+      "Business continuity planning"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Protecting IP often hinges on spotting insiders who misuse legitimate access. Training to detect insider‑style misuse is more directly relevant than phishing, simulations, or continuity planning.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 53,
+    "question": "A company is developing a business continuity strategy and needs to determine how many staff members would be required to sustain the business in the case of a disruption. Which of the following best describes this step?",
+    "options": [
+      "Capacity planning",
+      "Redundancy",
+      "Geographic dispersion",
+      "Tabletop exercise"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Capacity planning estimates required resources—including personnel—to keep operations running under stress. Redundancy duplicates systems, geographic dispersion spreads risk, and tabletop exercises test plans on paper.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 59,
+    "question": "A security team wants to measure how quickly incident response procedures are executed end‑to‑end. Which metric should they track?",
+    "options": [
+      "MTTR",
+      "MTTD",
+      "MTBF",
+      "ARO"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Mean Time to Respond (or Resolve) measures the average time from incident detection to restoration. MTTD is detection time only, MTBF is failure intervals, and ARO is event frequency per year.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 65,
+    "question": "Which of the following tasks is part of a risk assessment?",
+    "options": [
+      "Configuring redundant systems",
+      "Identifying threats and vulnerabilities",
+      "Writing incident response playbooks",
+      "Monitoring security logs"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Risk assessment involves cataloging threats, vulnerabilities, and the potential impact to prioritize risk. Redundancy, playbooks, and monitoring come later in mitigation and operations.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 71,
+    "question": "Which of the following is the best reason to complete an audit in a banking environment?",
+    "options": [
+      "Regulatory requirement",
+      "Organizational change",
+      "Self‑assessment requirement",
+      "Service‑level requirement"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Regulatory requirement – Banks are subject to laws and industry regulations that mandate periodic audits to ensure compliance with security, privacy, and financial‑reporting standards. Organizational changes, internal self‑assessments, or SLA checks may prompt reviews, but only regulators compel formal audits in banking .",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 72,
+    "question": "An organization disabled unneeded services and placed a firewall in front of a business‑critical legacy system. Which of the following best describes the actions taken by the organization?",
+    "options": [
+      "Exception",
+      "Segmentation",
+      "Risk transfer",
+      "Compensating controls"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Compensating controls – When primary safeguards (like patching) aren’t feasible, you deploy alternative measures—disabling services and adding a firewall—to reduce risk around a legacy system. This differs from segmentation (network isolation), risk transfer (insurance), or granting exceptions .",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 77,
+    "question": "To improve the security at a data center, a security administrator implements a CCTV system and posts several signs about the possibility of being filmed. Which of the following best describe these types of controls? (Select two.)",
+    "options": [
+      "Preventive",
+      "Deterrent",
+      "Corrective",
+      "Directive",
+      "Compensating",
+      "Detective"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Deterrent – Warning signs discourage unauthorized actions. Detective – CCTV records events for later review. These measures don’t prevent directly (preventive), correct after the fact (corrective), provide policy guidance (directive), or substitute missing controls (compensating) .",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 78,
+    "question": "Which of the following is most likely to be used to document risks, responsible parties, and thresholds?",
+    "options": [
+      "Risk tolerance",
+      "Risk transfer",
+      "Risk register",
+      "Risk analysis"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Risk register – A living document listing each risk’s description, owner, likelihood, impact, and response thresholds. Risk tolerance defines acceptable levels, transfer shifts risk, and analysis is the process of assessment .",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 79,
+    "question": "Which of the following is most likely associated with introducing vulnerabilities on a corporate network by the deployment of unapproved software?",
+    "options": [
+      "Hacktivists",
+      "Script kiddies",
+      "Competitors",
+      "Shadow IT"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Shadow IT refers to systems or applications used within an organization without explicit approval, often bypassing security reviews and introducing vulnerabilities. The other actors may cause breaches, but unapproved internal software use is classic Shadow IT",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 82,
+    "question": "A company wants to verify that the software the company is deploying came from the vendor the company purchased the software from. Which of the following is the best way for the company to confirm this information?",
+    "options": [
+      "Validate the code signature",
+      "Execute the code in a sandbox",
+      "Search the executable for ASCII strings",
+      "Generate a hash of the files"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Code signing uses a vendor’s private key to sign the software, and verifying that signature with the vendor’s public key confirms both origin and integrity. Hashing only proves consistency, sandboxing tests behavior, and searching for ASCII strings reveals embedded text but not authenticity .",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 84,
+    "question": "A security administrator is re‑issuing a former employee’s laptop. Which of the following is the best combination of data‑handling activities for the administrator to perform? (Choose two.)",
+    "options": [
+      "Classification",
+      "Sanitization",
+      "Enumeration",
+      "Certification",
+      "Destruction",
+      "Data retention"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sanitization (e.g., secure wipe) removes sensitive data before reuse, and destruction (e.g., shredding old drives) ensures data can’t be recovered if the drive is retired. Classification, enumeration, certification, and retention don’t reliably remove or destroy data on the device .",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 85,
+    "question": "A systems administrator would like to deploy a change to a production system. Which of the following must the administrator submit to demonstrate that the system can be restored to a working state in the event of a performance issue?",
+    "options": [
+      "Backout plan",
+      "Impact analysis",
+      "Test procedure",
+      "Approval procedure"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A backout plan outlines steps to revert the system to its prior state if the change causes problems. Impact analyses estimate potential effects, test procedures verify the change, and approval procedures grant permission but don’t define recovery steps .",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 88,
+    "question": "A company needs to provide administrative access to internal resources while minimizing the traffic allowed through the security boundary. Which of the following methods is most secure?",
+    "options": [
+      "Implementing a bastion host",
+      "Deploying a perimeter network",
+      "Installing a WAF",
+      "Utilizing single sign‑on"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A bastion host is a hardened, single gateway for admin access, reducing open ports and minimizing attack surface. A perimeter network opens an extra segment, a WAF filters web traffic only, and SSO simplifies auth but doesn’t reduce network traffic .",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 94,
+    "question": "Which document provides a high‑level outline of an organization’s approach to managing information security?",
+    "options": [
+      "Incident response plan",
+      "Acceptable use policy",
+      "Security policy",
+      "Disaster recovery plan"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A security policy defines the organization’s overall security goals, responsibilities, and governance. Incident response and disaster recovery plans detail specific procedures, and acceptable use policies govern user behavior.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 99,
+    "question": "A company reviews its risk register monthly and finds many risks marked as “accepted.” Which of the following actions should be taken next?",
+    "options": [
+      "Remove accepted risks from the register",
+      "Reevaluate the risk threshold",
+      "Transfer the accepted risks to insurance",
+      "Monitor the accepted risks for changes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Accepted risks remain in the register and must be monitored for any change in likelihood or impact. Removing them loses visibility, transferring to insurance applies only if mitigation requires it, and changing thresholds without context risks misalignment.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 107,
+    "question": "A technician wants to improve the situational and environmental awareness of existing users as they transition from remote to in‑office work. Which of the following is the best option?",
+    "options": [
+      "Send out periodic security reminders",
+      "Update the content of new‑hire documentation",
+      "Modify the content of recurring training",
+      "Implement a phishing campaign"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Recurring security training that’s updated with context‑specific scenarios keeps users aware of emerging threats and changing work environments. Periodic reminders and new‑hire docs alone miss experienced staff, while a phishing campaign tests but doesn’t directly educate .",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 112,
+    "question": "A company is expanding its threat surface program and allowing individuals to security test the company's internet-facing application. The company will compensate researchers based on the vulnerabilities discovered. Which of the following best describes the program the company is setting up?",
+    "options": [
+      "Open-source intelligence",
+      "Bug bounty",
+      "Red team",
+      "Penetration testing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A bug bounty invites external researchers to find vulnerabilities in exchange for compensation. Penetration testing is usually contracted and internal, red teams simulate adversaries, and open-source intelligence involves gathering public data.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 119,
+    "question": "A security administrator is reissuing a former employee's laptop. Which of the following is the best combination of data-handling activities for the administrator to perform? (Choose two.)",
+    "options": [
+      "Classification",
+      "Sanitization",
+      "Enumeration",
+      "Certification",
+      "Destruction",
+      "Data retention"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sanitization ensures all previous user data is wiped clean before reissue. Destruction applies if components like drives are no longer reused. Classification and retention apply to data management, not reissuing a device.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 123,
+    "question": "Which of the following are the most likely vectors for the unauthorized or unintentional inclusion of vulnerable code in a software company’s final software releases? (Choose two.)",
+    "options": [
+      "Certificate mismatch",
+      "Use of penetration-testing utilities",
+      "Weak passwords",
+      "Included third-party libraries",
+      "Vendors/supply chain",
+      "Outdated anti-malware software"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Third-party libraries and supply chain dependencies are common sources of hidden vulnerabilities. These are often included without full code review. Certificate mismatches, pentest tools, or weak passwords don’t directly affect software builds.",
+    "type": "single",
+    "topic": "security-program-management"
+  }
+]

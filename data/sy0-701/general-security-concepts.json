@@ -1,0 +1,130 @@
+[
+  {
+    "id": 5,
+    "question": "Which of the following allows for the attribution of messages to individuals?",
+    "options": [
+      "Adaptive identity",
+      "Non‑repudiation",
+      "Authentication",
+      "Access logs"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Non‑repudiation – Digital signatures prove exactly who sent and signed a message. Adaptive identity is not a standard security control. Authentication verifies identity but doesn’t stop someone from later denying they sent something. Access logs record events but can be altered or disputed.",
+    "type": "single",
+    "topic": "general-security-concepts"
+  },
+  {
+    "id": 15,
+    "question": "Which of the following describes the maximum allowance of accepted risk?",
+    "options": [
+      "Risk indicator",
+      "Risk level",
+      "Risk score",
+      "Risk threshold"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Risk threshold (or appetite) is the maximum risk an organization will accept. Risk indicators, levels, and scores measure or quantify risk but don’t define the acceptance boundary.",
+    "type": "single",
+    "topic": "general-security-concepts"
+  },
+  {
+    "id": 23,
+    "question": "A network administrator is working on a project to deploy a load balancer in the company’s cloud environment. Which of the following fundamental security requirements does this project fulfil?",
+    "options": [
+      "Privacy",
+      "Integrity",
+      "Confidentiality",
+      "Availability"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Load balancers distribute traffic across multiple servers to keep services up and responsive, directly supporting availability. They don’t prevent unauthorized access (confidentiality), verify data accuracy (integrity), or protect personal data (privacy).",
+    "type": "single",
+    "topic": "general-security-concepts"
+  },
+  {
+    "id": 55,
+    "question": "Which of the following is the strongest form of multi‑factor authentication?",
+    "options": [
+      "Fingerprint + PIN",
+      "Smart card + password",
+      "Password + security questions",
+      "SMS OTP + password"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Fingerprint (biometric) + PIN (something you know) uses two distinct factor types. Smart card + password is also two factors but hardware tokens can be cloned; biometrics are inherently tied to the user. Password + security questions are both knowledge‑based, and SMS OTP is susceptible to SIM‑swap attacks.",
+    "type": "single",
+    "topic": "general-security-concepts"
+  },
+  {
+    "id": 64,
+    "question": "Which of the following describes the principle of “defense in depth”?",
+    "options": [
+      "Implementing the strongest firewall available",
+      "Using multiple layers of security controls to protect assets",
+      "Limiting user access to only what’s necessary",
+      "Encrypting data at rest and in transit"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Defense in depth employs overlapping security measures—firewalls, IDS, encryption, policies—so if one fails, others still protect. A single strong firewall, least privilege, or encryption alone don’t capture the layered approach.",
+    "type": "single",
+    "topic": "general-security-concepts"
+  },
+  {
+    "id": 87,
+    "question": "A company must ensure sensitive data at rest is rendered unreadable. Which of the following will the company most likely use?",
+    "options": [
+      "Hashing",
+      "Tokenization",
+      "Encryption",
+      "Segmentation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Encryption transforms data so it can’t be read without the decryption key. Hashing is one‑way, tokenization replaces data with a token needing lookup, and segmentation isolates systems but doesn’t obscure data itself .",
+    "type": "single",
+    "topic": "general-security-concepts"
+  },
+  {
+    "id": 98,
+    "question": "Which cryptographic algorithm is symmetric?",
+    "options": [
+      "RSA",
+      "ECC",
+      "AES",
+      "DSA"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AES is a symmetric block cipher using the same key for encryption and decryption. RSA and ECC are asymmetric public‑key algorithms, and DSA is a digital signature algorithm.",
+    "type": "single",
+    "topic": "general-security-concepts"
+  },
+  {
+    "id": 115,
+    "question": "A security administrator identifies an application that is storing data using MD5. Which of the following best identifies the vulnerability likely present in the application?",
+    "options": [
+      "Cryptographic",
+      "Malicious update",
+      "Zero-day",
+      "Sideloading"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "MD5 is a weak hashing algorithm that’s vulnerable to collisions, making it a cryptographic vulnerability. It’s not a malicious update, a zero-day exploit, or sideloading.",
+    "type": "single",
+    "topic": "general-security-concepts"
+  }
+]

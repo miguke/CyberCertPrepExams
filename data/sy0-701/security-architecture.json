@@ -1,0 +1,577 @@
+[
+  {
+    "id": 3,
+    "question": "A newly identified network access vulnerability has been found in the OS of legacy IoT devices. Which of the following would best mitigate this vulnerability quickly?",
+    "options": [
+      "Insurance",
+      "Patching",
+      "Segmentation",
+      "Replacement"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Segmentation isolates vulnerable devices into their own network zone to prevent attackers from moving laterally. Insurance transfers financial risk but doesn’t stop attacks. Patching may not be available for legacy OS. Replacement takes time and money.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 4,
+    "question": "An engineer moved to another team and is unable to access the new team’s shared folders while still being able to access the shared folders from the former team. After opening a ticket, the engineer discovers that the account was never moved to the new group. Which of the following access controls is most likely causing the lack of access?",
+    "options": [
+      "Discretionary",
+      "Time‑of‑day",
+      "Least privilege",
+      "Role‑based"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Role‑based access control grants permissions based on group or role membership. Discretionary is owner‑based rights, time‑of‑day limits when you can access, and least privilege is a principle to minimize rights but doesn’t define group membership.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 9,
+    "question": "Which of the following devices would an organization place at the network perimeter to provide stateful packet inspection?",
+    "options": [
+      "Switch",
+      "Router",
+      "Firewall",
+      "Proxy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Firewalls inspect and track the state of network connections. Switches forward on MAC, routers route packets but don’t inspect state deeply, and proxies operate at the application layer.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 11,
+    "question": "A network engineer configures a router ACL to allow only HTTP and HTTPS traffic into the web server subnet. Which of the following ACL entries would achieve this?",
+    "options": [
+      "permit tcp any any eq 80",
+      "permit tcp any any eq 443",
+      "permit tcp any any eq 80"
+    ],
+    "correct": [],
+    "explanation": "",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 13,
+    "question": "A security engineer needs to configure an NGFW to minimize the impact of the increasing number of various traffic types during attacks. Which of the following types of rules is the engineer most likely to configure?",
+    "options": [
+      "Signature-based",
+      "Behavioral-based",
+      "URL-based",
+      "Agent-based"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Behavioral-based rules detect anomalies by comparing current traffic patterns against a baseline of normal behavior, making them ideal for spotting varied or novel attack traffic. Signature-based only covers known threats, URL-based filters web content, and agent-based implies host agents rather than NGFW logic.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 19,
+    "question": "A business received a small grant to migrate its infrastructure off‑premises. Which of the following should be considered first?",
+    "options": [
+      "Security of cloud providers",
+      "Cost of implementation",
+      "Ability of engineers",
+      "Security of architecture"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Designing a secure architecture is the foundational step before evaluating providers, costs, or staff skills. A solid design identifies controls, segmentation, and compliance needs up front.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 21,
+    "question": "A software development manager wants to ensure the authenticity of the code created by the company. Which of the following options is most appropriate?",
+    "options": [
+      "Code signing",
+      "Version control",
+      "Input validation",
+      "Secure cookies"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Code signing uses digital signatures to verify code origin and integrity. Version control tracks changes but doesn’t cryptographically authenticate. Input validation and secure cookies address runtime security, not code authenticity.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 22,
+    "question": "A systems administrator sets up a perimeter firewall but continues to notice suspicious connections between internal endpoints. Which of the following should be set up in order to mitigate the threat posed by the suspicious activity?",
+    "options": [
+      "Host‑based firewall",
+      "Web application firewall",
+      "Access control list",
+      "Application allowlist"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Host‑based firewalls run on each individual endpoint and filter incoming and outgoing traffic based on detailed rules, so they can block those unwanted internal connections right at the source. A web application firewall protects only web‑facing applications, not general endpoint traffic. An access control list on a network device controls traffic flows at a higher level but can’t enforce rules on every endpoint. An application allowlist stops unauthorized programs from running, but it doesn’t specifically filter network connections between hosts.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 26,
+    "question": "An analyst is evaluating the implementation of Zero Trust principles within the data plane. Which of the following would be most relevant for the analyst to evaluate?",
+    "options": [
+      "Secured zones",
+      "Subject role",
+      "Adaptive identity",
+      "Threat scope reduction"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In the data plane, Zero Trust focuses on segmenting and securing traffic flows—“secured zones” or micro‑segments—so that every request is authenticated and authorized. Subject role and adaptive identity relate more to control‑plane policies, and threat scope reduction is a high‑level strategy, not a dataplane mechanism.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 28,
+    "question": "After a recent vulnerability scan, a security engineer needs to harden the routers within the corporate network. Which of the following is the most appropriate feature to disable?",
+    "options": [
+      "Console access",
+      "Routing protocols",
+      "VLANs",
+      "Web‑based administration"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Disabling web‑based administration removes a common attack surface, especially if that interface uses weak authentication or encryption. Console access can be locked down physically, routing protocols are essential for network operation, and VLANs are used for segmentation—not something you disable for hardening.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 31,
+    "question": "Which of the following security concepts is accomplished with the installation of a RADIUS server?",
+    "options": [
+      "CIA",
+      "AAA",
+      "ACL",
+      "PEM"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AAA – RADIUS provides centralized Authentication (verifies user IDs), Authorization (grants permissions), and Accounting (logs session usage). CIA covers confidentiality, integrity, and availability but isn’t a service you install. ACLs are access‑control lists on network devices. PEM is a certificate format, not a security framework .",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 34,
+    "question": "A small business uses kiosks on the sales floor to display product information for customers. A security team discovers the kiosks use end‑of‑life operating systems. Which of the following is the security implication of the current architecture?",
+    "options": [
+      "Patch availability",
+      "Product software compatibility",
+      "Ease of recovery",
+      "Cost of replacement"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "End‑of‑life OSes no longer receive patches, leaving known vulnerabilities uncorrected. Compatibility, recovery, and cost are considerations but don’t directly address missing security updates .",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 37,
+    "question": "Which of the following is the best way to secure a non‑site data center against intrusion from an insider?",
+    "options": [
+      "Bollards",
+      "Access badge",
+      "Motion sensor",
+      "Video surveillance"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Access badges enforce and log who enters secure areas, preventing insiders without proper authorization. Bollards stop vehicles, motion sensors detect movement, and cameras record activity but don’t block entry .",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 38,
+    "question": "A certificate vendor notified a company that recently invalidated certificates may need to be updated. Which of the following mechanisms should a security administrator use to determine whether the certificates installed on the company’s machines need to be updated?",
+    "options": [
+      "SCEP",
+      "OCSP",
+      "CSR",
+      "CRL"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A Certificate Revocation List lists all invalidated certificates so you can compare your installed certs against it. OCSP also checks revocation but requires per‑certificate queries; CRLs are the traditional bulk mechanism .",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 39,
+    "question": "Which of the following security concepts is the best reason for permissions on a human resources file share to follow the principle of least privilege?",
+    "options": [
+      "Integrity",
+      "Availability",
+      "Confidentiality",
+      "Non‑repudiation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Least privilege restricts access to only those who need it, protecting sensitive HR data from unauthorized disclosure. Integrity, availability, and non‑repudiation are important but don’t drive minimal‑access rules on a confidential file share",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 41,
+    "question": "While troubleshooting a firewall configuration, a technician determines that a “deny any” policy should be added to the bottom of the ACL. The technician updates the policy, but the new policy causes several company servers to become unreachable. Which of the following actions would prevent this issue?",
+    "options": [
+      "Testing the policy in a non‑production environment before enabling the policy in the production network",
+      "Including an “allow any” policy above the “deny any” policy",
+      "Documenting the new policy in a change request and submitting the request to change management",
+      "Disabling any intrusion prevention signatures on the “deny any” policy prior to enabling the new policy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Testing changes first in a lab or staging environment catches errors—like blocking legitimate servers—before they impact real users. Simply documenting the change, disabling IPS, or inserting an “allow any” rule doesn’t validate whether the ACL will work correctly under production conditions.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 42,
+    "question": "During a security incident, the security operations team identified sustained network traffic from a malicious IP address: 10.1.4.9. A security analyst is creating an inbound firewall rule to block the IP address from accessing the organization’s network. Which of the following fulfills this request?",
+    "options": [
+      "access‑list inbound deny ip source 0.0.0.0/0 destination 10.1.4.9/32",
+      "access‑list inbound deny ip source 10.1.4.9/32 destination 0.0.0.0/0",
+      "access‑list inbound permit ip source 10.1.4.9/32 destination 0.0.0.0/0",
+      "access‑list inbound permit ip source 0.0.0.0/0 destination 10.1.4.9/32"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "To block traffic coming from that single IP to anywhere on your network, you deny source 10.1.4.9/32 to destination 0.0.0.0/0. The other statements either block the wrong direction or mistakenly permit it .",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 43,
+    "question": "A security administrator would like to protect data on employees’ laptops. Which of the following encryption techniques should the security administrator use?",
+    "options": [
+      "Partition",
+      "Asymmetric",
+      "Full disk",
+      "Database"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Full‑disk encryption scrambles everything on the drive—OS, applications, and user files—so a lost or stolen laptop can’t be read without the decryption key. Partition encryption only covers specific volumes; asymmetric crypto is a key type, not a disk solution; and database encryption protects only database files .",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 45,
+    "question": "A systems administrator is working on a defense‑in‑depth strategy and needs to restrict activity from employees after hours. Which of the following should the systems administrator implement?",
+    "options": [
+      "Role‑based restrictions",
+      "Attribute‑based restrictions",
+      "Mandatory restrictions",
+      "Time‑of‑day restrictions"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Time‑of‑day controls enforce login windows—blocking access outside designated hours. Role‑ or attribute‑based and mandatory controls govern who or how, not when .",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 48,
+    "question": "An organization’s end users are reporting that they are unable to reach external websites. After reviewing the performance data for the DNS servers, the analyst discovers that CPU, disk, and memory usage are minimal, but the network interface is flooded with inbound traffic. Network logs show only a small number of DNS queries sent to this server. Which of the following best describes what the security analyst is seeing?",
+    "options": [
+      "Concurrent session usage",
+      "Secure DNS cryptographic downgrade",
+      "On‑path resource consumption",
+      "Reflected denial of service"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A reflected DoS (RDoS) uses spoofed source addresses to flood a target via third‑party servers—like DNS—which respond to spoofed queries, overwhelming the victim’s interface. Other options don’t match this amplification behavior.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 52,
+    "question": "Which of the following must be considered when designing a high‑availability network? (Choose two.)",
+    "options": [
+      "Ease of recovery",
+      "Ability to patch",
+      "Physical isolation",
+      "Responsiveness",
+      "Attack surface",
+      "Extensible authentication"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Explanation: Ease of recovery – You need rapid failover and recovery processes to meet uptime goals. Responsiveness – The network must react quickly to failures or load spikes to maintain service. Ability to patch is maintenance, not availability design. Physical isolation can enhance security but may hinder redundancy. Attack surface and authentication extensibility are security concerns, not core HA considerations.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 54,
+    "question": "When designing a network for both performance and security, which of the following elements should be placed at the edge to offload SSL/TLS processing from internal servers?",
+    "options": [
+      "VPN concentrator",
+      "SSL/TLS accelerator",
+      "Proxy server",
+      "Load balancer"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An SSL/TLS accelerator (or offload appliance) handles encryption/decryption at the perimeter, freeing backend servers for application tasks. VPN concentrators manage tunnels, proxies cache/inspect traffic, and load balancers distribute connections but don’t specialize in crypto offload.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 58,
+    "question": "During an audit, it was discovered that backup tapes containing sensitive data are stored off‑site without encryption. Which of the following risks is most relevant?",
+    "options": [
+      "Data in transit",
+      "Data at rest",
+      "Data integrity",
+      "Data remanence"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Unencrypted tapes off‑site are data at rest and vulnerable if stolen. Data in transit involves moving data, integrity concerns tampering, and remanence is data left over after deletion.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 62,
+    "question": "During a security review, an engineer discovers that remote administrators are using unsecured protocols to manage network devices. Which of the following should be implemented to secure administrative access?",
+    "options": [
+      "SNMPv1",
+      "Telnet",
+      "SSH",
+      "HTTP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SSH encrypts management traffic, protecting credentials and commands. SNMPv1 is insecure, Telnet sends plaintext, and HTTP is unencrypted.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 66,
+    "question": "A company wants to secure its wireless network using WPA3. Which additional feature from WPA3 provides individualized encryption for each client?",
+    "options": [
+      "PSK",
+      "SAE",
+      "EAP",
+      "WEP"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Simultaneous Authentication of Equals (SAE) replaces PSK in WPA3, providing a unique key exchange per client for individualized encryption. PSK is the older shared key method, EAP is an authentication framework, and WEP is outdated and insecure.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 68,
+    "question": "An administrator notices that VPN throughput is limited by encryption overhead on the VPN concentrator. Which solution will best reduce the load on the concentrator?",
+    "options": [
+      "Increase digital certificate length",
+      "Offload encryption to a hardware module",
+      "Enable PAP instead of CHAP",
+      "Add more user accounts"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A cryptographic accelerator or HSM handles heavy encryption operations, freeing the VPN concentrator CPU. Lengthening certificates increases load, PAP vs. CHAP is authentication method, and extra users don’t affect encryption throughput.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 75,
+    "question": "A company's end users are reporting that they are unable to reach external websites. After reviewing the performance data for the DNS servers, the analyst discovers that CPU, disk, and memory usage are minimal, but the network interface is flooded with inbound traffic. Network logs show only a small number of DNS queries sent to this server. Which of the following best describes what the security analyst is seeing?",
+    "options": [
+      "Concurrent session usage",
+      "Secure DNS cryptographic downgrade",
+      "On‑path resource consumption",
+      "Reflected denial of service"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Reflected DoS – Attackers send DNS queries with the victim’s spoofed IP to open resolvers, which then flood the victim with amplified responses. Few actual queries to your DNS imply reflection/amplification rather than legitimate sessions, downgrade, or on‑path consumption .",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 81,
+    "question": "Which of the following methods to secure credit card data is best to use when a requirement is to see only the last four numbers on a credit card?",
+    "options": [
+      "Encryption",
+      "Hashing",
+      "Masking",
+      "Tokenization"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Masking replaces most of the card number with symbols, leaving only the last four digits visible for identification. Encryption and tokenization both transform data but still require a key or lookup to reveal the hidden digits. Hashing irreversibly transforms data, so you couldn’t retrieve even the last four digits .",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 92,
+    "question": "Which of the following technologies provides network‑based malware inspection by analyzing packet contents in real time?",
+    "options": [
+      "WAF",
+      "NIPS",
+      "HIPS",
+      "Proxy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A Network Intrusion Prevention System (NIPS) inspects live traffic for malware signatures and anomalies. A WAF focuses on web traffic, HIPS runs on endpoints, and proxies cache or filter but don’t perform in‑depth malware detection.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 96,
+    "question": "An organization wants to segment traffic by department while reusing the same physical switches. Which technology should be implemented?",
+    "options": [
+      "VLAN",
+      "ACL",
+      "VPN",
+      "VXLAN"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Virtual LANs logically separate traffic on the same switch infrastructure by tagging frames. ACLs control traffic flows but don’t create separate broadcast domains. VPNs connect remote sites, and VXLAN extends VLANs over overlays.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 101,
+    "question": "A company is decommissioning its physical servers and replacing them with an architecture that will reduce the number of individual operating systems. Which of the following strategies should the company use to achieve this security requirement?",
+    "options": [
+      "Microservices",
+      "Containerization",
+      "Virtualization",
+      "Infrastructure as code"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Containerization allows multiple applications to run isolated from one another on a single operating‐system kernel, significantly reducing the need for separate OS instances. Microservices describe an application design style but don’t inherently reduce OS count. Virtualization still spins up full OS images per workload, and infrastructure as code merely automates deployment .",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 111,
+    "question": "Which of the following methods to secure credit card data is best to use when a requirement is to see only the last four numbers on a credit card?",
+    "options": [
+      "Encryption",
+      "Hashing",
+      "Masking",
+      "Tokenization"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Masking hides parts of the credit card number by replacing digits with symbols, leaving only the last few digits visible. This approach meets the requirement for readability without exposing the full card number. Encryption and tokenization transform the entire value, and hashing is irreversible, so none of them allows partial visibility.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 117,
+    "question": "A company wants to verify that the software the company is deploying came from the vendor the company purchased the software from. Which of the following is the best way for the company to confirm this information?",
+    "options": [
+      "Validate the code signature",
+      "Execute the code in a sandbox",
+      "Search the executable for ASCII strings",
+      "Generate a hash of the files"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Code signing uses cryptographic signatures to verify the origin and integrity of software. A sandbox can show behavior, but not origin. ASCII strings and hashes are insufficient to confirm authorship.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 121,
+    "question": "A company needs to provide administrative access to internal resources while minimizing the traffic allowed through the security boundary. Which of the following methods is most secure?",
+    "options": [
+      "Implementing a bastion host",
+      "Deploying a perimeter network",
+      "Installing a WAF",
+      "Utilizing single sign-on"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A bastion host is a hardened system exposed to external traffic for administrative access. It’s a controlled single point of entry, reducing the attack surface. A perimeter network broadens exposure, WAF protects web apps, and SSO simplifies access but doesn’t limit traffic.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 122,
+    "question": "After a security incident, a systems administrator asks the company to buy a NAC platform. Which of the following attack surfaces is the systems administrator trying to protect?",
+    "options": [
+      "Bluetooth",
+      "Wired",
+      "NFC",
+      "SCADA"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "NAC (Network Access Control) verifies device compliance before allowing access to the network. This applies to both wired and wireless, but the question implies physical connection, making “wired” the best answer.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 124,
+    "question": "Which of the following would be the best way to block unknown programs from executing?",
+    "options": [
+      "Access control list",
+      "Application allowlist",
+      "Host-based firewall",
+      "DLP solution"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Application allowlisting permits only approved software to run, effectively blocking anything unrecognized or unauthorized. ACLs restrict user/resource access, firewalls control network traffic, and DLP prevents data loss, not execution control.",
+    "type": "single",
+    "topic": "security-architecture"
+  }
+]

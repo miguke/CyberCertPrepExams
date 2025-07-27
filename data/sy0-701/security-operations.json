@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "question": "After conducting a vulnerability scan, a systems administrator notices that one of the identified vulnerabilities is not present on the systems that were scanned. Which of the following describes this example?",
+    "options": [
+      "False positive",
+      "False negative",
+      "True positive",
+      "True negative"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "False positive is when a scanner flags a vulnerability that isn’t actually there. False negative misses an existing vulnerability. True positive correctly finds a real vulnerability. True negative correctly reports no vulnerability exists.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 2,
+    "question": "A security analyst is reviewing alerts in the SIEM related to potential malicious network traffic coming from an employee’s corporate laptop. The security analyst has determined that additional data about the executable running on the machine is necessary to continue the investigation. Which of the following logs should the analyst use as a data source?",
+    "options": [
+      "Application",
+      "IPS/IDS",
+      "Network",
+      "Endpoint"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Endpoint logs give detailed process and executable events on the host. Application logs only cover specific apps, IPS/IDS logs detect network signatures but not local process details, and network logs show traffic flows without linking back to the exact executable.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 7,
+    "question": "A security operations center is creating use cases for detecting new malware families. Which of the following steps should they perform first?",
+    "options": [
+      "Deploy endpoint detection agents",
+      "Define normal behavior",
+      "Develop response playbooks",
+      "Tune SIEM alerts"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Before you detect anomalies, you must know what “normal” looks like. Only then can you tune alerts, deploy agents effectively, or write playbooks.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 14,
+    "question": "An assistant is reviewing log files from a newly installed security camera and sees no traffic. Before deploying it live, which of the following should the technician do?",
+    "options": [
+      "Configure the correct VLAN",
+      "Perform a vulnerability scan",
+      "Disable unnecessary ports",
+      "Conduct a site survey"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A site survey lets you verify camera placement, coverage, and connectivity needs before go‑live. VLAN configuration and port hardening come later in the network rollout; vulnerability scanning applies to software, not initial placement.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 17,
+    "question": "Which of the following exercises should an organization use to improve its incident response process?",
+    "options": [
+      "Tabletop",
+      "Replication",
+      "Failover",
+      "Recovery"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Tabletop exercises walk through hypothetical incidents on paper to identify gaps in response plans and roles. Replication/failover/recovery are technical controls or DR procedures, not planning exercises.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 24,
+    "question": "Which of the following teams combines both offensive and defensive testing techniques to protect an organization’s critical systems?",
+    "options": [
+      "Red",
+      "Blue",
+      "Purple",
+      "Yellow"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The purple team is a collaborative effort that merges the red team’s attack simulations with the blue team’s defensive controls into a unified process. The red team focuses solely on offense, the blue team on defense, and the yellow team (often developers) builds tools rather than testing security.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 25,
+    "question": "A security analyst is investigating an alert that was produced by endpoint protection software. The analyst determines this event was a false positive triggered by an employee who attempted to download a file. Which of the following is the most likely reason the download was blocked?",
+    "options": [
+      "A misconfiguration in the endpoint protection software",
+      "A zero‑day vulnerability in the file",
+      "A supply chain attack on the endpoint protection vendor",
+      "Incorrect file permissions"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "False positives usually happen because the security software’s rules or signatures are too aggressive or misconfigured. A zero‑day or supply chain attack implies a real threat, not a mistakenly blocked download. Incorrect file permissions would prevent access but wouldn’t typically generate a malware‑style alert.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 29,
+    "question": "A security operations center determines that the malicious activity detected on a server is normal. Which of the following activities describes the act of ignoring detected activity in the future?",
+    "options": [
+      "Tuning",
+      "Aggregating",
+      "Quarantining",
+      "Archiving"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Tuning involves adjusting detection rules or parameters so that known benign activity no longer triggers alerts. Aggregating combines data for analysis, quarantining isolates potential threats, and archiving stores logs for compliance or future reference.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 32,
+    "question": "During a penetration test, a vendor attempts to enter an unauthorized area using an access badge. Which of the following types of tests does this represent?",
+    "options": [
+      "Passive",
+      "Physical",
+      "Defensive",
+      "Offensive"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Physical testing verifies controls like badges, locks, and barriers by attempting real‑world access. Passive testing gathers information without interaction. Offensive/defensive describe red vs. blue team activities, not this social/physical check .",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 36,
+    "question": "A systems administrator is changing the password policy within an enterprise and wants this update implemented on all systems as quickly as possible. Which of the following operating system security measures will the administrator most likely use?",
+    "options": [
+      "Deploying PowerShell scripts",
+      "Pushing GPO update",
+      "Enabling PAP",
+      "Updating EDR profiles"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A Group Policy Object push instantly applies the new password policy across all domain‑joined Windows systems. PowerShell scripts, PAP (Password Authentication Protocol), or EDR profile changes aren’t as centralized or fast for policy enforcement .",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 47,
+    "question": "An attacker posing as the Chief Executive Officer calls an employee and instructs the employee to buy gift cards. Which of the following techniques is the attacker using?",
+    "options": [
+      "Smishing",
+      "Disinformation",
+      "Impersonating",
+      "Whaling"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Whaling targets high‑level executives or uses their identity to deceive. This CEO‑impersonation scam is classic whaling (also called CEO fraud). Smishing is SMS‑based. “Impersonation” is generic, and disinformation is spreading false information, not direct fraud.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 57,
+    "question": "Which of the following is the primary purpose of a honeypot?",
+    "options": [
+      "Data backup",
+      "Threat intelligence",
+      "Secure communications",
+      "Performance optimization"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A honeypot lures attackers so you can observe their methods and gather intelligence. It doesn’t provide backups, secure channels, or performance gains.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 63,
+    "question": "An organization wants to proactively search its network for signs of previously undiscovered malware. Which technique should the security team use?",
+    "options": [
+      "Threat hunting",
+      "Vulnerability scanning",
+      "Penetration testing",
+      "Log aggregation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Threat hunting is the proactive search for hidden threats or malware without waiting for alerts. Vulnerability scans find known weaknesses, penetration testing simulates attacks, and log aggregation just collects data for analysis.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 67,
+    "question": "Which of the following is an essential first step when performing incident response?",
+    "options": [
+      "Containment",
+      "Detection and analysis",
+      "Eradication",
+      "Recovery"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Incident response begins with identifying and understanding the incident’s scope before deciding on containment or eradication. Jumping straight to containment without knowing the threat may misallocate resources.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 74,
+    "question": "Which of the following is classified as high availability in a cloud environment?",
+    "options": [
+      "Access broker",
+      "Cloud HSM",
+      "WAF",
+      "Load balancer"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Load balancer – By distributing traffic across multiple instances, it ensures services remain up even if some servers fail. An access broker handles identity brokering, Cloud HSM secures keys, and a WAF filters web attacks but doesn’t inherently provide redundancy .",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 76,
+    "question": "Which of the following penetration‑testing teams is focused only on trying to compromise an organization using an attacker’s tactics?",
+    "options": [
+      "White",
+      "Red",
+      "Purple",
+      "Blue"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Red team – Acts solely as an adversary, simulating real‑world attack methods to find vulnerabilities. White teams oversee rules of engagement, blue teams defend, and purple teams blend red/blue functions .",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 83,
+    "question": "Which of the following scenarios describes a possible business email compromise (BEC) attack?",
+    "options": [
+      "An employee receives a gift‑card request in an email that has an executive’s name in the display field.",
+      "Employees who open an email attachment receive messages demanding payment in order to access files.",
+      "A service‑desk employee receives an email from the HR director asking for log‑in credentials to a cloud administrator account.",
+      "An employee receives an email with a link to a phishing site that is designed to look like the company’s email portal."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "BEC attackers impersonate high‑level or trusted insiders (like HR) to trick employees into revealing sensitive credentials. A gift‑card request is CEO fraud, attachments demanding payment is ransomware, and a generic phishing link is classic phishing rather than targeted BEC .",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 86,
+    "question": "Which of the following is the phase in the incident response process when a security analyst reviews roles and responsibilities?",
+    "options": [
+      "Preparation",
+      "Recovery",
+      "Lessons learned",
+      "Analysis"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Preparation is when policies, playbooks, and team roles are defined and reviewed in advance of incidents. Analysis examines event data, recovery restores systems, and lessons learned occurs after the incident .",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 89,
+    "question": "Which of the following would be a good use case for orchestration in an account‑creation process?",
+    "options": [
+      "Off‑the‑shelf software",
+      "Orchestration",
+      "Baseline",
+      "Policy enforcement"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Orchestration automates multi‑step workflows—like creating user accounts across systems—saving time and reducing errors. Off‑the‑shelf software may or may not support workflows natively, baselines ensure consistency, and policy enforcement applies rules but not workflow automation.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 91,
+    "question": "An attacker sends a crafted packet to a server that causes it to crash. Which of the following attack types is this?",
+    "options": [
+      "Replay",
+      "DoS",
+      "MITM",
+      "Spoofing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A Denial of Service (DoS) attack floods or exploits a system to make it unavailable—crashing the server fits DoS. Replay resends valid data, MITM intercepts communications, and spoofing fakes identities.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 93,
+    "question": "A security analyst wants to ensure that future phishing emails are automatically blocked at the gateway. Which of the following features should the analyst enable?",
+    "options": [
+      "SPF",
+      "Greylisting",
+      "Email filtering",
+      "DLP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Email filtering at the gateway inspects incoming messages and blocks those matching phishing indicators. SPF helps validate senders but doesn’t block all phishing. Greylisting delays unknown senders, and DLP focuses on preventing data exfiltration rather than inbound phishing.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 97,
+    "question": "Which of the following actions would best prevent the exfiltration of sensitive data through instant messaging apps?",
+    "options": [
+      "DLP",
+      "Antivirus",
+      "NAC",
+      "SIEM"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Data Loss Prevention (DLP) tools inspect content leaving systems—including IM apps—to block or encrypt sensitive data. Antivirus catches malware, NAC controls device access, and SIEM aggregates logs but doesn’t enforce policy on data streams.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 108,
+    "question": "Which of the following incident‑response activities ensures evidence is properly handled?",
+    "options": [
+      "E‑discovery",
+      "Chain of custody",
+      "Legal hold",
+      "Preservation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Chain‑of‑custody documents every transfer and handler of evidence, preserving its integrity and admissibility. E‑discovery locates data for legal cases, legal hold prevents deletion, and preservation copies data but doesn’t track handling .",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 113,
+    "question": "A cyber operations team informs a security analyst about a new tactic malicious actors are using to compromise networks. SIEM alerts have not yet been configured. Which of the following best describes what the security analyst should do to identify this behavior?",
+    "options": [
+      "Digital forensics",
+      "E-discovery",
+      "Incident response",
+      "Threat hunting"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Threat hunting is a proactive approach to look for adversaries or TTPs without relying on pre-existing alerts. Forensics and e-discovery happen post-incident, and incident response assumes an alert has already occurred.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 114,
+    "question": "A security administrator is deploying a DLP solution to prevent the exfiltration of sensitive customer data. Which of the following should the administrator do first?",
+    "options": [
+      "Block access to cloud storage websites",
+      "Create a rule to block outgoing email attachments",
+      "Apply classifications to the data",
+      "Remove all user permissions from shares on the file server"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Classification is the first step in DLP: understanding what data is sensitive allows policies to be applied appropriately. Without classification, the DLP cannot distinguish sensitive data from regular content.",
+    "type": "single",
+    "topic": "security-operations"
+  }
+]
