@@ -1,6 +1,6 @@
 [
   {
-    "id": 6,
+    "id": 312,
     "question": "An attacker uses a custom script to continuously request web pages from a server until it becomes unresponsive. Which type of attack is this?",
     "options": [
       "SQL injection",
@@ -16,7 +16,7 @@
     "topic": "threats"
   },
   {
-    "id": 16,
+    "id": 313,
     "question": "Several employees received a fraudulent text message from someone claiming to be the CEO asking for gift card purchases. Which of the following are the best responses? (Choose two.)",
     "options": [
       "Cancel current employee recognition gift cards",
@@ -35,7 +35,7 @@
     "topic": "threats"
   },
   {
-    "id": 33,
+    "id": 314,
     "question": "An administrator was notified that a user logged in remotely after hours and copied large amounts of data to a personal device. Which of the following best describes the user’s activity?",
     "options": [
       "Penetration testing",
@@ -51,7 +51,7 @@
     "topic": "threats"
   },
   {
-    "id": 56,
+    "id": 315,
     "question": "A user receives an email that appears to come from a colleague but contains a malicious link. The email’s “From” address was spoofed. Which of the following is the best way to prevent this type of attack in the future?",
     "options": [
       "SPF",
@@ -67,7 +67,7 @@
     "topic": "threats"
   },
   {
-    "id": 61,
+    "id": 316,
     "question": "A security analyst notices a significant increase in DNS query traffic to internal resources that aren’t publicly accessible. Which of the following attacks is most likely occurring?",
     "options": [
       "DNS tunneling",
@@ -83,7 +83,7 @@
     "topic": "threats"
   },
   {
-    "id": 69,
+    "id": 317,
     "question": "A security team discovers that attackers have modified production database records without authorization. Which of the following properties of information security has been violated?",
     "options": [
       "Confidentiality",
@@ -99,7 +99,7 @@
     "topic": "threats"
   },
   {
-    "id": 73,
+    "id": 318,
     "question": "An employee receives a text message that appears to have been sent by the payroll department and is asking for credential verification. Which of the following social‑engineering techniques are being attempted? (Choose two.)",
     "options": [
       "Impersonation",
@@ -117,7 +117,7 @@
     "topic": "threats"
   },
   {
-    "id": 95,
+    "id": 319,
     "question": "Which of the following best describes an attacker modifying network device firmware to gain persistent access?",
     "options": [
       "Logic bomb",
@@ -133,7 +133,7 @@
     "topic": "threats"
   },
   {
-    "id": 109,
+    "id": 320,
     "question": "An administrator finds that all user workstations and servers are displaying a message associated with files containing an extension of .ryk. Which of the following types of infections is present on the systems?",
     "options": [
       "Virus",
@@ -149,7 +149,7 @@
     "topic": "threats"
   },
   {
-    "id": 116,
+    "id": 321,
     "question": "An administrator finds that all user workstations and servers are displaying a message that is associated with files containing an extension of .ryk. Which of the following types of infections is present on the systems?",
     "options": [
       "Virus",
@@ -165,7 +165,492 @@
     "topic": "threats"
   },
   {
-    "id": 118,
+    "id": 322,
+    "question": "Which of the following scenarios describes a possible business email compromise attack?",
+    "options": [
+      "An employee receives a gift card request in an email that has an executive’s name in the display field.",
+      "Employees who open an email attachment receive messages demanding payment in order to access files.",
+      "A service desk employee receives an email from the HR director asking for log-in credentials to a cloud administrator account.",
+      "An employee receives an email with a link to a phishing site that is designed to look like the company’s email portal."
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Business Email Compromise (BEC) typically involves impersonating an executive or high-level employee to trick someone into giving up access or information. This example directly reflects that tactic.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 323,
+    "question": "Question: An employee in the accounting department receives an email containing a demand for payment to services performed by a vendor. However, the vendor is not in the vendor management database. Which of the following in this scenario is an example of?",
+    "options": [
+      "Pretexting",
+      "Impersonation",
+      "Ransomware",
+      "Invoice scam"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An invoice scam is a type of social engineering where attackers send fake payment requests pretending to be trusted vendors. Since the vendor is not in the database, this shows fraudulent intent. Pretexting is fabricating a scenario to obtain data, impersonation may support the scam but isn't the scam itself, and ransomware is unrelated to invoicing. This is covered in Lesson 2.1: Social Engineering Attacks and Techniques in the Student Guide.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 324,
+    "question": "Question: An administrator is investigating an incident and discovers several users’ computers were infected with malware after viewing files that were shared with them. The administrator discovers no degraded performance in the infected machines and an examination of the log files does not show excessive failed logins. Which of the following attacks is most likely the cause of the malware?",
+    "options": [
+      "Malicious flash drive",
+      "Remote access Trojan",
+      "Brute‑forced password",
+      "Cryptojacking"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cryptojacking malware stealthily uses CPU cycles to mine cryptocurrency, often without obvious performance degradation or login failures. A Trojan could give remote access but usually shows network connections or user interaction. A malicious USB and brute‑force attacks leave distinct artifacts. Cryptojacking behavior is discussed in Lesson 2.2: Malware Types of the Student Guide.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 325,
+    "question": "Question: Which of the following is a primary security concern for a company setting up a BYOD program?",
+    "options": [
+      "End of life",
+      "Buffer overflow",
+      "VM escape",
+      "Jailbreaking"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Jailbroken mobile devices bypass vendor controls, exposing the network to malware and policy violations. EOL, buffer overflows, and VM escapes are valid threats but less directly tied to unmanaged personal devices. Mobile security and BYOD risks are covered in Lesson 10.1: Mobile Device Security of the Student Guide.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 326,
+    "question": "Question: A security analyst receives alerts about an internal system sending a large number of unusual DNS queries to systems on the internet over short periods during non‑business hours. Which of the following is most likely occurring?",
+    "options": [
+      "A worm is propagating across the network",
+      "Data is being exfiltrated",
+      "A logic bomb is deleting data",
+      "Ransomware is encrypting files"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "DNS‑based exfiltration uses DNS queries to sneak data out. Worms spread laterally, logic bombs delete on triggers, and ransomware encrypts files locally—none match the burst of DNS to external hosts. See Lesson 2.2: Malware Types.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 327,
+    "question": "Question: An employee receives a text message from an unknown number claiming to be the company’s Chief Executive Officer and asking the employee to purchase several gift cards. Which of the following types of attacks does this describe?",
+    "options": [
+      "Vishing",
+      "Smishing",
+      "Pretexting",
+      "Phishing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Explanation: Smishing is “SMS phishing,” using text messages to impersonate a trusted figure (the CEO) and trick the victim into buying gift cards. Vishing uses voice calls, phishing usually email, and pretexting is the broader tactic of inventing scenarios—but here it’s specifically via SMS. You’ll find this in Lesson 2.1: Social Engineering Attacks and Techniques of the Student Guide.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 328,
+    "question": "An administrator wants to perform a risk assessment without using proprietary company information. Which of the following methods should the administrator use to gather information?",
+    "options": [
+      "Network scanning",
+      "Penetration testing",
+      "Configuration auditing",
+      "Open-source intelligence"
+    ],
+    "correct": [],
+    "explanation": "Explanation: Open-source intelligence (OSINT) involves collecting publicly available data—such as corporate filings, job postings, and internet search results—making it ideal when proprietary information is off-limits. Network scanning and penetration testing both actively probe internal systems and could disclose sensitive data. Configuration auditing reviews internal device settings. OSINT, in contrast, respects the boundary of publicly accessible information. Lesson 1.4: Intelligence Sources, p. 58",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 329,
+    "question": "During a SQL update of a database, a temporary field that was created was replaced by an attacker in order to allow access to the system. Which of the following best describes this type of vulnerability?",
+    "options": [
+      "Sideloading",
+      "Race condition",
+      "Memory injection",
+      "Malicious update"
+    ],
+    "correct": [],
+    "explanation": "Explanation: A malicious update occurs when an attacker modifies authorized code or data—such as replacing a temporary field in a SQL script—to introduce unauthorized backdoors or logic. Sideloading (A) refers to installing software from unofficial sources. A race condition (B) is an unexpected behavior when two processes access shared data concurrently. Memory injection (C) involves injecting code into a process’s memory space. Only a malicious update describes the deliberate replacement of a field to create unauthorized access. Lesson 2.3: Software Vulnerabilities, p. 127",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 330,
+    "question": "A systems administrator is concerned users are accessing emails through a duplicate site that is not run by the company. Which of the following is used in this scenario?",
+    "options": [
+      "Phishing",
+      "Impersonation",
+      "Replication",
+      "Smishing"
+    ],
+    "correct": [],
+    "explanation": "Explanation: Phishing involves directing users to fake websites to harvest credentials—this “duplicate” email site is a classic phishing tactic. Impersonation (B) is a broader social-engineering concept but phishing specifically uses fake sites. Replication (C) simply copies data, not to trick users. Smishing (D) uses SMS, not web pages. Lesson 2.1: Social-Engineering Attacks, p. 72",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 331,
+    "question": "A company relies on open-source software libraries to build the software used by its customers. Which of the following vulnerability types would be the most difficult to remediate due to the company’s reliance on open-source libraries?",
+    "options": [
+      "Buffer overflow",
+      "SQL injection",
+      "Cross-site scripting",
+      "Zero day"
+    ],
+    "correct": [],
+    "explanation": "Explanation: Zero-day vulnerabilities are unknown flaws with no existing patch—and in open-source components, you may lack dedicated support teams to provide timely fixes. Buffer overflows (A), SQLi (B), and XSS (C) are known issues for which patches or workarounds usually exist. Lesson 2.3: Emerging Threats, p. 102",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 332,
+    "question": "Which of the following threat actors is the most likely to use large financial resources to attack critical systems located in other countries?",
+    "options": [
+      "Insider",
+      "Unskilled attacker",
+      "Nation-state",
+      "Hacktivist"
+    ],
+    "correct": [],
+    "explanation": "Explanation: Nation-state actors are backed by government budgets and target strategic infrastructure abroad. Insiders (A) are internal, unskilled attackers (B) lack resources, and hacktivists (D) are ideology-driven rather than well-funded. Lesson 2.1: Threat Actors and Attributes, p. 59",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 333,
+    "question": "Which of the following vulnerabilities is associated with installing software outside of a manufacturer’s approved software repository?",
+    "options": [
+      "Jailbreaking",
+      "Memory injection",
+      "Resource reuse",
+      "Sideloading"
+    ],
+    "correct": [],
+    "explanation": "Explanation: Sideloading occurs when users install applications from unofficial sources rather than the vetted, manufacturer-approved repository, introducing untested code or malware. Jailbreaking (A) removes device restrictions but doesn’t necessarily involve installing unapproved apps. Memory injection (B) is a runtime exploit, not an installation method. Resource reuse (C) refers to using the same assets or components improperly, not how software is installed. Lesson 2.2: Attack Methods, p. 42",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 334,
+    "question": "A security analyst discovers that a large number of employee credentials have been stolen and are being sold on the dark web. Investigation reveals only hourly employees who clock in from network-connected kiosks inside the building were affected. The web time-keeping site is internet-facing. What is the most likely cause?",
+    "options": [
+      "A brute-force attack against the public website",
+      "A malicious actor compromised the time-keeping website with malicious code using an unpatched vulnerability on the site, stealing the credentials",
+      "DNS poisoning redirected kiosks to a fake site",
+      "ARP poisoning caused kiosks to send copies of credentials to an attacker"
+    ],
+    "correct": [],
+    "explanation": "Explanation: Only kiosks accessing the vulnerable, internet-facing site lost credentials, which points to a web application compromise (e.g., injected JavaScript or skimmer code). A brute-force attack (A) would target all users, not just those on kiosks. DNS poisoning (C) would redirect every DNS client, not selectively kiosk users. ARP poisoning (D) captures local network traffic indiscriminately, not solely kiosk submissions to a website. Lesson 2.4: Web Application Attacks, p. 67",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 335,
+    "question": "An unexpected and out-of-character email message from a Chief Executive Officer’s corporate account asked an employee to provide financial information and to change the recipient’s contact number. Which of the following attack vectors is most likely being used?",
+    "options": [
+      "Business email compromise",
+      "Phishing",
+      "Brand impersonation",
+      "Pretexting"
+    ],
+    "correct": [],
+    "explanation": "Explanation: Business Email Compromise (BEC) is a targeted attack where fraudsters impersonate executives to trick employees into transferring funds or sensitive data. While phishing (B) is a broader category, BEC specifically uses executive impersonation. Brand impersonation (C) fakes a company’s identity, not an individual executive. Pretexting (D) is a social engineering tactic but doesn’t necessarily involve executive email account spoofing. Lesson 2.3: Social Engineering Attacks, p. 58",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 336,
+    "question": "An employee fell for a phishing scam, which allowed an attacker to gain access to a company PC. The attackers scraped the PC’s memory to find other credentials. Without cracking these credentials, the attacker used them to move laterally through the corporate network. Which of the following describes this type of attack?",
+    "options": [
+      "Privilege escalation",
+      "Buffer overflow",
+      "SQL injection",
+      "Pass-the-hash"
+    ],
+    "correct": [],
+    "explanation": "Explanation: Pass-the-hash is an attack where the adversary captures hashed credentials from system memory and reuses them to authenticate to other systems without cracking the passwords. Privilege escalation (A) is gaining higher rights on the same host. Buffer overflow (B) exploits memory corruption, and SQL injection (C) attacks databases. Lesson 2.5: Credential Theft Attacks, p. 75",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 337,
+    "question": "A malicious update was distributed to a common software platform and disabled services at many organizations. Which of the following best describes this type of vulnerability?",
+    "options": [
+      "Insider threat",
+      "DDoS attack",
+      "Rogue employee",
+      "Supply chain"
+    ],
+    "correct": [],
+    "explanation": "Explanation: When an attacker compromises or tampers with software before it reaches end users—by injecting malicious code into updates or libraries—that represents a supply chain vulnerability. An insider threat (A) involves someone within the targeted organization; here, the attack comes via the software provider. A DDoS attack (B) floods services with traffic rather than embedding malware in updates. A rogue employee (C) implies deliberate sabotage by an insider, not a third-party software compromise. Lesson 2.7: Supply Chain Attacks, p. 90",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 338,
+    "question": "A systems administrator receives a text message from an unknown number claiming to be the Chief Executive Officer of the company. The message states an emergency situation requires a password reset. Which of the following threat vectors is being used?",
+    "options": [
+      "Typosquatting",
+      "Smishing",
+      "Pretexting",
+      "Impersonation"
+    ],
+    "correct": [],
+    "explanation": "Explanation: Smishing is phishing via SMS messages, tricking recipients into revealing credentials or performing actions. The attacker impersonates the CEO to add urgency. Pretexting (C) covers any invented scenario but doesn’t specify SMS. Impersonation (D) is generic and could be voice or email. Typosquatting (A) involves malicious domains that mimic legitimate ones. Lesson 2.2: Social Engineering Techniques, p. 50",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 339,
+    "question": "A security administrator observed the following in a web server log while investigating an incident: GET /../../etc/passwd HTTP/1.1 Which of the following attacks did the security administrator most likely see?",
+    "options": [
+      "Directory traversal",
+      "Brute force",
+      "Credential replay",
+      "Privilege escalation"
+    ],
+    "correct": [],
+    "explanation": "Explanation: The “../” sequences aim to navigate above the webroot and access sensitive files like /etc/passwd, characteristic of a directory traversal attack. Brute-force (B) attempts multiple credentials, credential replay (C) reuses valid tokens, and privilege escalation (D) abuses flaws to gain higher rights—none use filesystem path manipulation. Lesson 2.4: Web Application Attacks, p. 67",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 340,
+    "question": "During a SQL update of a database, a temporary field used as part of the update sequence was modified by an attacker before the update completed in order to allow access to the system. Which of the following best describes this type of vulnerability?",
+    "options": [
+      "Race condition",
+      "Memory injection",
+      "Malicious update",
+      "Sideloading"
+    ],
+    "correct": [],
+    "explanation": "Explanation: A race condition (specifically TOCTOU—time-of-check to time-of-use) arises when two processes access or modify the same resource without proper synchronization, allowing an attacker to insert unauthorized data between checks. Memory injection (B) targets in-memory code, sideloading (D) installs unauthorized software, and “malicious update” (C) is too generic. Lesson 2.3: Race Conditions and TOCTOU, p. 58",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 341,
+    "question": "While reviewing logs, a security administrator identifies the following code: <script>function(send_info)</script> Which of the following best describes the vulnerability being exploited?",
+    "options": [
+      "CSRF",
+      "XSS",
+      "SQLi",
+      "DDoS"
+    ],
+    "correct": [],
+    "explanation": "Explanation: Embedding <script> tags in user-supplied data is characteristic of Cross-Site Scripting (XSS), where malicious scripts run in victims’ browsers. CSRF (A) uses forged requests, SQLi (C) injects database commands, and DDoS (D) overwhelms resources—it’s XSS here. Lesson 2.4: Web Application Attacks, p. 67",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 342,
+    "question": "Which of the following allows an exploit to go undetected by the operating system?",
+    "options": [
+      "Encrypted payloads",
+      "Firmware vulnerabilities",
+      "Memory injection",
+      "Sideloading"
+    ],
+    "correct": [],
+    "explanation": "Explanation: Memory injection (e.g., in-memory rootkits) places malicious code directly into a process’s runtime memory, bypassing disk-based detection and leaving no files on the hard drive for signature scanners to catch. Encrypted payloads (A) may obfuscate a file, firmware flaws (B) happen below the OS but don’t themselves hide code in memory, and sideloading (D) just installs unapproved software. Lesson 2.3: Malware Types and Evasion, p. 87",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 343,
+    "question": "A new employee logs into the email system for the first time and notices a message from Human Resources about onboarding. The employee hovers over a few of the links within the email and discovers that the links do not correspond to official company domains. Which of the following attack vectors is most likely being used?",
+    "options": [
+      "Business email",
+      "Social engineering",
+      "Unsecured network",
+      "Default credentials"
+    ],
+    "correct": [],
+    "explanation": "Explanation: Seeing fake URLs in a seemingly legitimate email is classic social engineering—tricking users into clicking malicious links. Business email compromise (A) specifically targets high-level execs for fraud, unsecured networks (C) aren’t about malicious links, and default credentials (D) don’t apply to link spoofing. Lesson 2.4: Phishing and Social Engineering, p. 50",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 344,
+    "question": "An attacker uses a custom script to continuously request web pages from a server until it becomes unresponsive. Which type of attack is this?",
+    "options": [
+      "SQL injection",
+      "Cross‑site scripting",
+      "Denial of service",
+      "Man‑in‑the‑middle"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Denial of service floods a system with requests until it can’t respond. SQL injection targets databases, cross‑site scripting injects scripts into webpages, and man‑in‑the‑middle intercepts communications.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 345,
+    "question": "Several employees received a fraudulent text message from someone claiming to be the CEO asking for gift card purchases. Which of the following are the best responses? (Choose two.)",
+    "options": [
+      "Cancel current employee recognition gift cards",
+      "Add a smishing exercise to annual training",
+      "Issue a general email warning",
+      "Have the CEO change phone numbers",
+      "Conduct a forensic investigation on the CEO’s phone",
+      "Implement mobile device management"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Adding a smishing exercise educates staff on SMS-based phishing. Issuing a company-wide warning alerts everyone immediately. Canceling existing gift cards doesn’t prevent future attempts, changing numbers is disruptive, forensics on the CEO’s phone is overkill, and MDM manages devices, not human risk.",
+    "type": "multiple",
+    "topic": "threats"
+  },
+  {
+    "id": 346,
+    "question": "An administrator was notified that a user logged in remotely after hours and copied large amounts of data to a personal device. Which of the following best describes the user’s activity?",
+    "options": [
+      "Penetration testing",
+      "Phishing campaign",
+      "External audit",
+      "Insider threat"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Insider threat comes from someone within the organization misusing legitimate access—here, after‑hours data exfiltration. Pen tests are authorized, phishing is external deception, and audits are formal reviews .",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 347,
+    "question": "A user receives an email that appears to come from a colleague but contains a malicious link. The email’s “From” address was spoofed. Which of the following is the best way to prevent this type of attack in the future?",
+    "options": [
+      "SPF",
+      "DMZ",
+      "VPN",
+      "DLP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sender Policy Framework (SPF) verifies that incoming mail comes from authorized IP addresses for the sending domain, preventing spoofed “From” addresses. A DMZ is a network segment, a VPN encrypts tunnels, and DLP prevents data loss—not email spoofing.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 348,
+    "question": "A security analyst notices a significant increase in DNS query traffic to internal resources that aren’t publicly accessible. Which of the following attacks is most likely occurring?",
+    "options": [
+      "DNS tunneling",
+      "Amplification",
+      "Reflection",
+      "Cache poisoning"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "DNS tunneling uses DNS queries to exfiltrate data or establish covert channels, often showing high query volumes to internal or unexpected domains. Amplification and reflection involve public servers, and cache poisoning corrupts DNS records rather than generating excessive internal queries.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 349,
+    "question": "A security team discovers that attackers have modified production database records without authorization. Which of the following properties of information security has been violated?",
+    "options": [
+      "Confidentiality",
+      "Integrity",
+      "Availability",
+      "Accountability"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Integrity ensures data is accurate and unaltered. Unauthorized modifications break this property, whereas confidentiality protects secrecy, availability ensures access, and accountability logs actions.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 350,
+    "question": "An employee receives a text message that appears to have been sent by the payroll department and is asking for credential verification. Which of the following social‑engineering techniques are being attempted? (Choose two.)",
+    "options": [
+      "Impersonation",
+      "Vishing",
+      "Misinformation",
+      "Typosquatting",
+      "Smishing",
+      "Phishing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Impersonation – The attacker poses as payroll staff to earn trust. Smishing – This is phishing over SMS. Vishing would be voice‑based, misinformation spreads false data, typosquatting uses look‑alike domains, and phishing usually refers to email .",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 351,
+    "question": "Which of the following best describes an attacker modifying network device firmware to gain persistent access?",
+    "options": [
+      "Logic bomb",
+      "Worm",
+      "Rootkit",
+      "Trojan"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A rootkit hides itself at a low level (e.g., firmware) to maintain stealthy, persistent control. Logic bombs trigger under conditions, worms self‑replicate, and Trojans masquerade as benign software.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 352,
+    "question": "An administrator finds that all user workstations and servers are displaying a message associated with files containing an extension of .ryk. Which of the following types of infections is present on the systems?",
+    "options": [
+      "Virus",
+      "Trojan",
+      "Spyware",
+      "Ransomware"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Ransomware encrypts files (often adding a unique extension like .ryk for the Ryuk variant) and displays a ransom note. Viruses attach to programs, trojans masquerade as benign software, and spyware covertly steals data, but only ransomware locks files and demands payment",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 353,
+    "question": "An administrator finds that all user workstations and servers are displaying a message that is associated with files containing an extension of .ryk. Which of the following types of infections is present on the systems?",
+    "options": [
+      "Virus",
+      "Trojan",
+      "Spyware",
+      "Ransomware"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The file extension .ryk is associated with Ryuk ransomware. The presence of ransom notes and encrypted files indicates a ransomware attack. Viruses replicate, trojans disguise themselves, and spyware collects information silently.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 354,
     "question": "Which of the following scenarios describes a possible business email compromise attack?",
     "options": [
       "An employee receives a gift card request in an email that has an executive’s name in the display field.",

@@ -109,25 +109,37 @@ def validate_questions(filepath):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Validate the structure of CompTIA question JSON files.')
-    parser.add_argument('exam', choices=['1101', '1102'], nargs='?', default='1101', help='The exam core to validate (1101 or 1102). Defaults to 1101.')
+    parser.add_argument('--file', type=str, help='Path to a specific JSON file to validate.')
+    parser.add_argument('--exam', choices=['1101', '1102'], help='The exam core to validate (1101 or 1102). Used if --file is not specified.')
     args = parser.parse_args()
 
-    config = EXAM_CONFIGS[args.exam]
-    data_dir = config['data_dir']
-    question_files = config['question_files']
-    
-    print(f"\n--- Validating Exam {args.exam} Data ---")
-    
     total_valid_questions = 0
     total_invalid_questions = 0
     total_questions_processed = 0
 
-    for q_file in question_files:
-        file_path = os.path.join(data_dir, q_file)
+    if args.file:
+        print(f"\n--- Validating Single File ---")
+        file_path = args.file
         valid, invalid_list, num_processed = validate_questions(file_path)
-        total_valid_questions += valid
-        total_invalid_questions += len(invalid_list)
-        total_questions_processed += num_processed
+        total_valid_questions = valid
+        total_invalid_questions = len(invalid_list)
+        total_questions_processed = num_processed
+    elif args.exam:
+        config = EXAM_CONFIGS[args.exam]
+        data_dir = config['data_dir']
+        question_files = config['question_files']
+        
+        print(f"\n--- Validating Exam {args.exam} Data ---")
+
+        for q_file in question_files:
+            file_path = os.path.join(data_dir, q_file)
+            valid, invalid_list, num_processed = validate_questions(file_path)
+            total_valid_questions += valid
+            total_invalid_questions += len(invalid_list)
+            total_questions_processed += num_processed
+    else:
+        parser.print_help()
+        exit(1)
 
     print("\n--- Overall Summary ---")
     print(f"Total questions processed: {total_questions_processed}")

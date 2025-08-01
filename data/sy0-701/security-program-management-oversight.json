@@ -1,6 +1,6 @@
 [
   {
-    "id": 8,
+    "id": 216,
     "question": "Which of the following is the BEST reason to conduct a tabletop exercise?",
     "options": [
       "Demonstrate compliance with regulations",
@@ -16,7 +16,7 @@
     "topic": "security-program-management"
   },
   {
-    "id": 12,
+    "id": 217,
     "question": "Which of the following would be most useful in determining whether the long‑term cost to transfer a risk is less than the impact of the risk?",
     "options": [
       "ARO",
@@ -33,7 +33,7 @@
     "topic": "security-program-management"
   },
   {
-    "id": 18,
+    "id": 218,
     "question": "A company decided to reduce the cost of its annual cyber‑insurance policy by removing coverage for ransomware attacks. Which of the following analysis elements did the company most likely use in making this decision?",
     "options": [
       "MTTR",
@@ -49,7 +49,7 @@
     "topic": "security-program-management"
   },
   {
-    "id": 27,
+    "id": 219,
     "question": "A technician needs to apply a high‑priority patch to a production system. Which of the following steps should be taken first?",
     "options": [
       "Air‑gap the system",
@@ -65,7 +65,7 @@
     "topic": "security-program-management"
   },
   {
-    "id": 44,
+    "id": 220,
     "question": "Which of the following security control types does an acceptable use policy best represent?",
     "options": [
       "Detective",
@@ -81,7 +81,7 @@
     "topic": "security-program-management"
   },
   {
-    "id": 46,
+    "id": 221,
     "question": "Which of the following can best protect against an employee inadvertently installing malware on a company system?",
     "options": [
       "Host‑based firewall",
@@ -97,7 +97,7 @@
     "topic": "security-program-management"
   },
   {
-    "id": 49,
+    "id": 222,
     "question": "An organization maintains intellectual property that it wants to protect. Which of the following concepts would be most beneficial to add to the company’s security awareness training program?",
     "options": [
       "Insider threat detection",
@@ -113,7 +113,7 @@
     "topic": "security-program-management"
   },
   {
-    "id": 53,
+    "id": 223,
     "question": "A company is developing a business continuity strategy and needs to determine how many staff members would be required to sustain the business in the case of a disruption. Which of the following best describes this step?",
     "options": [
       "Capacity planning",
@@ -129,7 +129,7 @@
     "topic": "security-program-management"
   },
   {
-    "id": 59,
+    "id": 224,
     "question": "A security team wants to measure how quickly incident response procedures are executed end‑to‑end. Which metric should they track?",
     "options": [
       "MTTR",
@@ -145,7 +145,7 @@
     "topic": "security-program-management"
   },
   {
-    "id": 65,
+    "id": 225,
     "question": "Which of the following tasks is part of a risk assessment?",
     "options": [
       "Configuring redundant systems",
@@ -161,7 +161,7 @@
     "topic": "security-program-management"
   },
   {
-    "id": 71,
+    "id": 226,
     "question": "Which of the following is the best reason to complete an audit in a banking environment?",
     "options": [
       "Regulatory requirement",
@@ -177,7 +177,7 @@
     "topic": "security-program-management"
   },
   {
-    "id": 72,
+    "id": 227,
     "question": "An organization disabled unneeded services and placed a firewall in front of a business‑critical legacy system. Which of the following best describes the actions taken by the organization?",
     "options": [
       "Exception",
@@ -193,7 +193,7 @@
     "topic": "security-program-management"
   },
   {
-    "id": 77,
+    "id": 228,
     "question": "To improve the security at a data center, a security administrator implements a CCTV system and posts several signs about the possibility of being filmed. Which of the following best describe these types of controls? (Select two.)",
     "options": [
       "Preventive",
@@ -211,7 +211,7 @@
     "topic": "security-program-management"
   },
   {
-    "id": 78,
+    "id": 229,
     "question": "Which of the following is most likely to be used to document risks, responsible parties, and thresholds?",
     "options": [
       "Risk tolerance",
@@ -227,7 +227,7 @@
     "topic": "security-program-management"
   },
   {
-    "id": 79,
+    "id": 230,
     "question": "Which of the following is most likely associated with introducing vulnerabilities on a corporate network by the deployment of unapproved software?",
     "options": [
       "Hacktivists",
@@ -243,7 +243,7 @@
     "topic": "security-program-management"
   },
   {
-    "id": 82,
+    "id": 231,
     "question": "A company wants to verify that the software the company is deploying came from the vendor the company purchased the software from. Which of the following is the best way for the company to confirm this information?",
     "options": [
       "Validate the code signature",
@@ -259,7 +259,7 @@
     "topic": "security-program-management"
   },
   {
-    "id": 84,
+    "id": 232,
     "question": "A security administrator is re‑issuing a former employee’s laptop. Which of the following is the best combination of data‑handling activities for the administrator to perform? (Choose two.)",
     "options": [
       "Classification",
@@ -277,7 +277,7 @@
     "topic": "security-program-management"
   },
   {
-    "id": 85,
+    "id": 233,
     "question": "A systems administrator would like to deploy a change to a production system. Which of the following must the administrator submit to demonstrate that the system can be restored to a working state in the event of a performance issue?",
     "options": [
       "Backout plan",
@@ -293,7 +293,7 @@
     "topic": "security-program-management"
   },
   {
-    "id": 88,
+    "id": 234,
     "question": "A company needs to provide administrative access to internal resources while minimizing the traffic allowed through the security boundary. Which of the following methods is most secure?",
     "options": [
       "Implementing a bastion host",
@@ -309,7 +309,7 @@
     "topic": "security-program-management"
   },
   {
-    "id": 94,
+    "id": 235,
     "question": "Which document provides a high‑level outline of an organization’s approach to managing information security?",
     "options": [
       "Incident response plan",
@@ -325,7 +325,7 @@
     "topic": "security-program-management"
   },
   {
-    "id": 99,
+    "id": 236,
     "question": "A company reviews its risk register monthly and finds many risks marked as “accepted.” Which of the following actions should be taken next?",
     "options": [
       "Remove accepted risks from the register",
@@ -341,7 +341,7 @@
     "topic": "security-program-management"
   },
   {
-    "id": 107,
+    "id": 237,
     "question": "A technician wants to improve the situational and environmental awareness of existing users as they transition from remote to in‑office work. Which of the following is the best option?",
     "options": [
       "Send out periodic security reminders",
@@ -357,7 +357,7 @@
     "topic": "security-program-management"
   },
   {
-    "id": 112,
+    "id": 238,
     "question": "A company is expanding its threat surface program and allowing individuals to security test the company's internet-facing application. The company will compensate researchers based on the vulnerabilities discovered. Which of the following best describes the program the company is setting up?",
     "options": [
       "Open-source intelligence",
@@ -373,7 +373,7 @@
     "topic": "security-program-management"
   },
   {
-    "id": 119,
+    "id": 239,
     "question": "A security administrator is reissuing a former employee's laptop. Which of the following is the best combination of data-handling activities for the administrator to perform? (Choose two.)",
     "options": [
       "Classification",
@@ -391,7 +391,1118 @@
     "topic": "security-program-management"
   },
   {
-    "id": 123,
+    "id": 240,
+    "question": "Which of the following are the most likely vectors for the unauthorized or unintentional inclusion of vulnerable code in a software company’s final software releases? (Choose two.)",
+    "options": [
+      "Certificate mismatch",
+      "Use of penetration-testing utilities",
+      "Weak passwords",
+      "Included third-party libraries",
+      "Vendors/supply chain",
+      "Outdated anti-malware software"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Third-party libraries and supply chain dependencies are common sources of hidden vulnerabilities. These are often included without full code review. Certificate mismatches, pentest tools, or weak passwords don’t directly affect software builds.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 241,
+    "question": "Question: A company is developing a critical system for the government and storing project information on a file share. Which of the following describes how this data will be classified? (Select two.)",
+    "options": [
+      "Private",
+      "Confidential",
+      "Public",
+      "Operational",
+      "Urgent",
+      "Restricted"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Confidential and Restricted are the most appropriate labels for government-related and critical data. Confidential indicates sensitive information with controlled access. Restricted implies even tighter controls for highly sensitive or regulated data. Private refers to personal information, and the rest are unrelated to classification. This is outlined in Lesson 3.3: Data Security Controls and Classification of the Student Guide.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 242,
+    "question": "Question: Which of the following is most likely to be included as an element of communication in a security awareness program?",
+    "options": [
+      "Reporting phishing attempts or other suspicious activities",
+      "Detecting insider threats using anomalous behavior recognition",
+      "Verifying information when modifying wire transfer data",
+      "Performing social engineering as part of third‑party penetration testing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Explanation: A security awareness program educates users by, among other things, encouraging them to report phishing or odd behavior. Detecting insiders is a technical SOC task, verifying wire transfers is a finance control, and running social‑engineering tests is a pen‑tester activity, not an awareness communication. Raising user‑driven incident reports is taught in Lesson 5.2: Awareness and Training of the Student Guide.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 243,
+    "question": "Question: Which of the following risk management strategies should an enterprise adopt first if a legacy application is critical to business operations and there are preventative controls that are not yet implemented?",
+    "options": [
+      "Mitigate",
+      "Accept",
+      "Transfer",
+      "Avoid"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Explanation: Mitigation reduces either the likelihood or impact of a risk—appropriate when an essential legacy app has gaps in controls. Acceptance leaves the risk unaddressed, transfer shifts it away, and avoidance removes the asset, which isn’t feasible here. This strategy is discussed in Lesson 1.4: Risk Management of the Student Guide.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 244,
+    "question": "Question: The Chief Information Security Officer of an organization needs to ensure recovery from ransomware would likely occur within the organization’s agreed‑upon RPOs and RTOs. Which of the following backup scenarios would best ensure recovery?",
+    "options": [
+      "Hourly differential backups stored on a local SAN array",
+      "Daily full backups stored on premises in magnetic offline media",
+      "Daily differential backups maintained by a third‑party cloud provider",
+      "Weekly full backups with daily incremental stored on a NAS drive"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Combining weekly full with daily incremental backups offers the best balance of minimal data loss (meeting RPO) and quick recovery (meeting RTO). Hourly differential on SAN may overload local storage; cloud daily differential adds recovery time; offline media full backups risk delayed restore. This strategy is in Lesson 5.3: Data Backup and Recovery of the Student Guide.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 245,
+    "question": "Question: Two companies are in the process of merging. The companies need to decide how to standardize their information security programs. Which of the following would best align the security programs?",
+    "options": [
+      "Shared deployment of CIS baselines",
+      "Joint cybersecurity best practices",
+      "Both companies following the same CSF",
+      "Assessment of controls in a vulnerability report"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Explanation: Adopting a common Cybersecurity Framework (CSF) ensures both firms use the same governance structure, control mapping, and risk language—critical for a smooth merger. CIS baselines are specific configurations, best practices are general guidelines, and vulnerability reports don’t provide a unified program structure. Framework alignment is described in Lesson 1.4: Security Program Management and Governance of the Student Guide.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 246,
+    "question": "Question: The marketing department set up its own project management software without telling the appropriate departments. Which of the following describes this scenario?",
+    "options": [
+      "Shadow IT",
+      "Insider threat",
+      "Data exfiltration",
+      "Service disruption"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Explanation: Shadow IT occurs when business units deploy technology outside IT’s approval, creating unmanaged risk. An insider threat is a malicious actor within IT-approved systems; data exfiltration and service disruption are outcomes, not root causes. The governance gap of Shadow IT is discussed in Lesson 1.3: Risk Management and Governance of the Student Guide.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 247,
+    "question": "Question: A company is planning a disaster recovery site and needs to ensure that a single natural disaster would not result in the complete loss of regulated backup data. Which of the following should the company consider?",
+    "options": [
+      "Geographic dispersion",
+      "Platform diversity",
+      "Hotsite",
+      "Load balancing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Storing backup data in two or more distant locations prevents a single event from destroying all copies. Hotsites and platform diversity help availability, but don’t guarantee multiple geographic copies. Load balancing distributes traffic, not backups. Geographic dispersion is explained in Lesson 5.3: Data Backup and Recovery of the Student Guide.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 248,
+    "question": "Question: Which of the following can a security director use to prioritize vulnerability patching within a company’s IT environment?",
+    "options": [
+      "SOAR",
+      "CVSS",
+      "SIEM",
+      "CVE"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "CVSS provides a numeric severity score (0–10) for vulnerabilities, guiding which to patch first. A CVE is simply an identifier, a SIEM aggregates logs, and SOAR automates responses. Using CVSS for patch prioritization is described in Lesson 4.2: Vulnerability Management Process of the Student Guide.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 249,
+    "question": "Question: Which of the following most impacts an administrator’s ability to address CVEs discovered on a server?",
+    "options": [
+      "Rescanning requirements",
+      "Patch availability",
+      "Organizational impact",
+      "Risk tolerance"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Without an available patch, the administrator cannot directly remediate a vulnerability, regardless of urgency or tolerance. Rescanning ensures validation, and organizational impact or risk tolerance influence prioritization but don’t enable patching itself. This is discussed in Lesson 4.2: Vulnerability Management Process of the Student Guide.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 250,
+    "question": "Question: After a security awareness training session, a user called the IT help desk and reported a suspicious call. The suspicious caller stated that the Chief Financial Officer wanted credit‑card information in order to close an invoice. Which of the following topics did the user recognize from the training?",
+    "options": [
+      "Insider threat",
+      "Email phishing",
+      "Social engineering",
+      "Executive whaling"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Pretending to be a CFO to solicit credit‑card data is a classic social engineering tactic. Phishing is email‑based, whaling targets executives, and insider threat involves internal actors. Recognizing the human‑manipulation component ties directly to social engineering. See Lesson 2.1: Social Engineering Attacks and Techniques.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 251,
+    "question": "Question: Which of the following agreement types defines the timeframe in which a vendor needs to respond?",
+    "options": [
+      "SOW",
+      "SLA",
+      "MOA",
+      "MOU"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A Service Level Agreement (SLA) specifies response and resolution timeframes for vendor‑provided services. A Statement of Work (SOW) describes deliverables, MOA/MOU are memoranda of understanding, not binding performance metrics. This is in Lesson 1.3: Risk Management and Governance.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 252,
+    "question": "Question: A security manager is implementing MFA and patch management. Which of the following would best describe the control type and category? (Select two.)",
+    "options": [
+      "Physical",
+      "Managerial",
+      "Detective",
+      "Administrative",
+      "Preventive",
+      "Technical"
+    ],
+    "correct": [
+      4
+    ],
+    "explanation": "Both MFA and patch management are technical (tool‑based) controls designed to prevent unauthorized access or vulnerabilities—thus they are preventive, technical controls. They are not detective, physical, or purely administrative. See Lesson 1.1: Security Principles and Controls.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 253,
+    "question": "Question: A client demands at least 99.99% uptime from a service provider’s hosted security services. Which of the following documents includes the information the service provider should return to the client?",
+    "options": [
+      "MOA",
+      "SOW",
+      "MOU",
+      "SLA"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A Service Level Agreement (SLA) defines expected metrics like uptime (e.g., 99.99%) and outlines remedies if those levels aren’t met. An MOA, SOW, or MOU establish relationships or deliverables but don’t set performance guarantees. This is covered in Lesson 1.3: Risk Management and Governance of the Student Guide.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 254,
+    "question": "Question: Which of the following factors are the most important to address when formulating a training curriculum plan for a security awareness program? (Select two.)",
+    "options": [
+      "Channels by which the organization communicates with customers",
+      "The reporting mechanisms for ethics violations",
+      "Threat vectors based on the industry in which the organization operates",
+      "Secure software development training for all personnel",
+      "Cadence and duration of training events",
+      "Retraining requirements for individuals who fail phishing simulations"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Training must focus on the specific threats the industry faces (e.g., healthcare vs. finance) and be delivered at appropriate intervals/lengths to reinforce learning. Communication channels (A) or ethics mechanisms (B) are secondary. Secure development (D) is for developers, and retraining (F) is tactical, not curriculum planning. See Lesson 5.2: Awareness and Training.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 255,
+    "question": "Question: Which of the following tasks is typically included in the BIA process?",
+    "options": [
+      "Estimating the recovery time of systems",
+      "Identifying the communication strategy",
+      "Evaluating the risk management plan",
+      "Establishing the backup and recovery procedures",
+      "Developing the incident response plan"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A Business Impact Analysis quantifies how long critical services can be down (RTO) and acceptable data loss (RPO). Communication plans, risk plan evaluation, DR procedures, and IR plans are separate but informed by the BIA. See Lesson 5.3: Business Continuity and Disaster Recovery.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 256,
+    "question": "Question: A department is not using the company VPN when accessing various company‑related services and systems. Which of the following scenarios describes this activity?",
+    "options": [
+      "Espionage",
+      "Data exfiltration",
+      "Nation‑state attack",
+      "Shadow IT"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Bypassing corporate VPN for service access is unmanaged, unauthorized IT use—classic Shadow IT. Espionage and nation‑state attacks involve malicious actors; data exfiltration is data theft. See Lesson 1.3: Risk Management and Governance.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 257,
+    "question": "Question: Several employees received a fraudulent text message from someone claiming to be the Chief Executive Officer (CEO). The message stated: “I’m in an airport right now with no access to email. I need you to buy gift cards for employee recognition awards. Please send the gift card to the following email address.” Which of the following are the best responses to this situation? (Choose two.)",
+    "options": [
+      "Cancel current employee recognition gift cards.",
+      "Add a smishing exercise to the annual company training.",
+      "Issue a general email warning to the company.",
+      "Have the CEO change phone numbers.",
+      "Conduct a forensic investigation on the CEO’s phone.",
+      "Implement mobile device management."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 258,
+    "question": "Question: After a company was compromised, customers initiated a lawsuit. The company’s attorneys have requested that the security team initiate a legal hold in response to the lawsuit. Which of the following describes the action the security team will most likely be required to take?",
+    "options": [
+      "Retain the emails between the security team and affected customers for 30 days.",
+      "Retain any communications related to the security breach until further notice.",
+      "Retain any communications between security members during the breach response.",
+      "Retain all emails from the company to affected customers for an indefinite period of time."
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Explanation: A legal hold instructs all relevant custodians to preserve any potentially relevant ESI—emails, logs, reports—related to the breach until the hold is lifted. Limiting to 30 days (A) or only internal messages (C) risks spoliation, and indefinite blanket retention (D) is impractical. This procedure is in Lesson 4.4: Digital Forensics and Investigations of the Student Guide.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 259,
+    "question": "Question: A company purchased cyber insurance to address items listed on the risk register. Which of the following strategies does this represent?",
+    "options": [
+      "Accept",
+      "Transfer",
+      "Mitigate",
+      "Avoid"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Explanation: Buying insurance shifts financial risk to the insurer—classic risk transfer. Acceptance retains risk, mitigation reduces likelihood or impact, and avoidance removes the risk entirely. You can read about this in Lesson 1.4: Risk Management Strategies of the Student Guide.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 260,
+    "question": "Question: A technician is opening ports on a firewall for a new system being deployed and supported by a SaaS provider. Which of the following is a risk in the new system?",
+    "options": [
+      "Default credentials",
+      "Non‑segmented network",
+      "Supply‑chain vendor",
+      "Vulnerable software"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Explanation: Relying on a SaaS provider introduces third‑party (supply chain) risk—if the vendor is compromised, so is your service. Default creds and vulnerable software are generic flaws, and network segmentation is an internal design choice, not specific to SaaS adoption. Supply‑chain risk is discussed in Lesson 1.4: Risk Management Strategies.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 261,
+    "question": "Question: A company that is located in an area prone to hurricanes is developing a disaster recovery plan and looking at site considerations that allow the company to immediately continue operations. Which of the following is the best type of site for this company?",
+    "options": [
+      "Cold",
+      "Tertiary",
+      "Warm",
+      "Hot"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Explanation: A hot site is fully configured off‑site, with live data and systems ready for instant failover—essential when you need immediate continuity. Warm sites require setup time; cold sites need even more; “tertiary” isn’t a standard DR term. This is in Lesson 5.3: Business Continuity and Disaster Recovery.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 262,
+    "question": "Question: The application development teams have been asked to answer the following questions: Does this application receive patches from an external source? Does this application contain open‑source code? Is this application accessible by external users? Does this application meet the corporate password standard? Which of the following are these questions part of?",
+    "options": [
+      "Risk control self‑assessment",
+      "Risk management strategy",
+      "Risk acceptance",
+      "Risk matrix"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Explanation: A Risk Control Self‑Assessment (RCSA) has teams evaluate their own controls (patching, open‑source usage, access, password policy) to identify gaps. The other options are different risk artifacts. This process is described in Lesson 1.4: Risk Management Strategies of the Student Guide.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 263,
+    "question": "Question: An IT manager informs the entire help‑desk staff that only the IT manager and the help‑desk lead will have access to the administrator console of the help‑desk software. Which of the following security techniques is the IT manager setting up?",
+    "options": [
+      "Hardening",
+      "Employee monitoring",
+      "Configuration enforcement",
+      "Least privilege"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Explanation: Restricting console access to only necessary personnel enforces the principle of least privilege—users get only the rights they need. Hardening is broader system locking, monitoring tracks user actions, and configuration enforcement pushes settings. Least privilege is in Lesson 5.1: Identity and Access Management Controls.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 264,
+    "question": "Question: An organization is required to maintain financial data records for three years and customer data for five years. Which of the following data management policies should the organization implement?",
+    "options": [
+      "Retention",
+      "Destruction",
+      "Inventory",
+      "Certification"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Explanation: A retention policy specifies how long to keep each data type to meet legal or regulatory requirements. Destruction covers secure deletion after retention, inventory tracks assets, and certification validates processes. See Lesson 8.1: Data Protection Techniques.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 265,
+    "question": "An employee recently resigned from a company. The employee was responsible for managing and supporting weekly batch jobs over the past five years. A few weeks after the employee resigned, one of the batch jobs failed and caused a major disruption. Which of the following would work best to prevent this type of incident from reoccurring?",
+    "options": [
+      "Job rotation",
+      "Retention",
+      "Outsourcing",
+      "Separation of duties"
+    ],
+    "correct": [],
+    "explanation": "Explanation: Job rotation ensures that more than one person is familiar with critical processes, so if one individual leaves, others can step in without interruption. This reduces the risk of undocumented knowledge “islands” causing outages. Retention (B) deals with how long data is kept, not continuity of expertise. Outsourcing (C) may shift risk but doesn’t guarantee internal continuity. Separation of duties (D) prevents fraud by dividing tasks; it doesn’t ensure process coverage when an employee departs. Lesson 5.2: Business Continuity and Risk Mitigation, p. 305",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 266,
+    "question": "Which of the following aspects of the data-management lifecycle is most directly impacted by local and international regulations?",
+    "options": [
+      "Destruction",
+      "Certification",
+      "Retention",
+      "Sanitization"
+    ],
+    "correct": [],
+    "explanation": "Explanation: Regulations like GDPR and HIPAA dictate how long certain categories of data must be kept—this directly governs data retention periods. Destruction (A) and sanitization (D) address how data is deleted, but the “how long” question is retention. Certification (B) covers verification of systems or processes, not storage duration. Lesson 5.4: Data Governance and Privacy, p. 332",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 267,
+    "question": "Which of the following is the most relevant reason a Data Protection Officer (DPO) would develop a data inventory?",
+    "options": [
+      "To determine the impact in the event of a breach",
+      "To manage data storage requirements better",
+      "To extend the length of time data can be retained",
+      "To automate the reduction of duplicated data"
+    ],
+    "correct": [],
+    "explanation": "Explanation: A data inventory catalogs what sensitive data exists, its location, and sensitivity—critical for calculating breach risk and notification obligations. Storage management (B) or deduplication (D) are operational concerns; retention periods (C) follow from inventory but aren’t the primary driver. Lesson 5.2: Data Governance and Compliance, p. 312",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 268,
+    "question": "A security professional discovers a folder containing an employee’s personal information on the enterprise’s shared drive. Which of the following best describes the data type the security professional should use to identify organizational policies and standards concerning the storage of employees’ personal information?",
+    "options": [
+      "Legal",
+      "Financial",
+      "Privacy",
+      "Intellectual property"
+    ],
+    "correct": [],
+    "explanation": "Explanation: Employee PII falls under “privacy data,” governed by policies on how to collect, store, and handle personal information. Legal (A) relates to contracts or compliance, financial (B) covers monetary records, and intellectual property (D) protects creative assets. Lesson 5.1: Data Classification and Handling, p. 301",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 269,
+    "question": "An administrator at a small business notices an increase in support calls from employees who receive a “blocked page” message after trying to navigate to a spoofed website. Which of the following should the administrator do?",
+    "options": [
+      "Deploy multi-factor authentication",
+      "Decrease the level of the web-filter settings",
+      "Implement security awareness training",
+      "Update the acceptable use policy"
+    ],
+    "correct": [],
+    "explanation": "Explanation: Employees encountering a block are being protected technically, but their continued attempts to visit spoofed sites indicate a lack of phishing awareness. Security awareness training educates users on how to recognize and avoid malicious URLs, reducing repeat support calls and risk. MFA (A) strengthens authentication but doesn’t stop clicks on bad links. Lowering filter strictness (B) would re-expose users to threats. Updating policy (D) sets expectations but lacks the interactive reinforcement that training offers. Lesson 5.3: Awareness and Training, p. 329",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 270,
+    "question": "Which of the following is the most important security concern when using legacy systems to provide production service?",
+    "options": [
+      "Instability",
+      "Lack of vendor support",
+      "Loss of availability",
+      "Use of insecure protocols"
+    ],
+    "correct": [],
+    "explanation": "Explanation: Without vendor support, legacy systems receive no security patches or firmware updates, leaving known vulnerabilities unmitigated. While instability (A), availability (C), and insecure protocols (D) are worries, they often stem from the root issue of unsupported software. Lesson 5.1: Risk Management, p. 302",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 271,
+    "question": "Which of the following describes an executive team that is meeting in a boardroom and testing the company’s incident response plan?",
+    "options": [
+      "Continuity of operations",
+      "Capacity planning",
+      "Tabletop exercise",
+      "Parallel processing"
+    ],
+    "correct": [],
+    "explanation": "Explanation: A tabletop exercise is a discussion-based session where executives walk through a simulated incident scenario to validate roles, decisions, and plan effectiveness without disrupting real operations. Continuity of operations (A) refers to maintaining business functions during actual disruptions. Capacity planning (B) is about sizing resources for expected demand. Parallel processing (D) describes simultaneous execution of processes, unrelated to incident plan validation. Lesson 5.3: Business Continuity and Incident Exercises, p. 210",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 272,
+    "question": "A company is concerned about the theft of client data from decommissioned laptops. Which of the following is the most cost-effective method to decrease this risk?",
+    "options": [
+      "Wiping",
+      "Recycling",
+      "Shredding",
+      "Deletion"
+    ],
+    "correct": [],
+    "explanation": "Explanation: Secure wiping overwrites the entire drive so that data cannot be recovered and is far less expensive than physical destruction. Recycling (B) disposes of hardware but doesn’t guarantee data removal. Shredding (C) destroys the drive physically but has higher costs and logistics. Deletion (D) merely removes file pointers, leaving data recoverable. Lesson 5.2: Asset Lifecycle Management, p. 195",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 273,
+    "question": "An organization would like to calculate the time needed to resolve a hardware issue with a server. Which of the following risk management processes describes this example?",
+    "options": [
+      "Mean time between failures",
+      "Recovery point objective",
+      "Recovery time objective",
+      "Mean time to repair"
+    ],
+    "correct": [],
+    "explanation": "Explanation: Mean Time to Repair (MTTR) measures the average time required to fix a failed component and restore service. Mean Time Between Failures (A) is the expected operational interval between failures. Recovery Point Objective (B) defines acceptable data loss in terms of time, not repair duration. Recovery Time Objective (C) is the target maximum downtime after an incident, not the measured repair time. Lesson 5.4: Metrics and Reporting, p. 228",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 274,
+    "question": "An organization is evaluating new regulatory requirements associated with the implementation of corrective controls on a group of interconnected financial systems. Which of the following is the most likely reason for the new requirement?",
+    "options": [
+      "To defend against insider threats altering banking details",
+      "To ensure that errors are not passed to other systems",
+      "To allow for business insurance to be purchased",
+      "To prevent unauthorized changes of financial data"
+    ],
+    "correct": [],
+    "explanation": "Explanation: Corrective controls are designed to fix or remediate issues after they occur, preventing errors or corrupt data from propagating across integrated systems. In financial environments, a single incorrect transaction could cascade through multiple subsystems, so regulations often mandate corrective controls to isolate and rectify mistakes. Preventing unauthorized changes (D) is a preventive control; defending against insiders (A) and purchasing insurance (C) are unrelated to the corrective objective. Lesson 5.3: Control Types and Effectiveness, p. 214",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 275,
+    "question": "A security audit of an organization revealed that most of the IT staff members have domain administrator credentials and do not change the passwords regularly. Which of the following solutions should the security team propose to resolve the findings in the most complete way?",
+    "options": [
+      "Creating group policies to enforce password rotation on domain administrator credentials",
+      "Reviewing the domain administrator group, removing all unnecessary administrators, and rotating all passwords",
+      "Integrating the domain administrator’s group with an IdP and requiring SSO with MFA for all access",
+      "Securing domain administrator credentials in a PAM vault and controlling access with role-based access control"
+    ],
+    "correct": [],
+    "explanation": "Explanation: A Privileged Access Management (PAM) solution vaults credentials, enforces just-in-time access, automates password rotation, and applies RBAC to ensure only authorized personnel can retrieve admin passwords. Simply enforcing GPOs (A) or reviewing groups (B) addresses parts of the issue but lacks the comprehensive credential management and auditing provided by PAM. SSO with MFA (C) strengthens authentication but does not secure the underlying passwords. Lesson 5.2: Privileged Access Management, p. 200",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 276,
+    "question": "An organization is developing a security program that conveys the responsibilities associated with the general operation of systems and software within the organization. Which of the following documents would most likely communicate these expectations?",
+    "options": [
+      "Business continuity plan",
+      "Change management procedure",
+      "Acceptable use policy",
+      "Software development lifecycle policy"
+    ],
+    "correct": [],
+    "explanation": "Explanation: An SDLC policy outlines roles, responsibilities, and standards for developing, deploying, and maintaining applications, ensuring secure practices throughout a system’s life. An acceptable use policy (C) governs end-user behavior on systems, not the development process. A BCP (A) addresses continuity in disasters; change management (B) focuses on process for changes, not overarching development responsibilities. Lesson 5.1: Policies and Standards, p. 210",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 277,
+    "question": "While conducting a business continuity tabletop exercise, the security team becomes concerned by potential impacts if a generator fails during failover. Which of the following is the team most likely to consider in regard to risk management activities?",
+    "options": [
+      "RPO",
+      "ARO",
+      "BIA",
+      "MTTR"
+    ],
+    "correct": [],
+    "explanation": "Explanation: Mean Time To Repair (MTTR) measures how long it takes to restore a failed component such as a backup generator. Understanding MTTR helps set restoration expectations and design redundancy or rapid repair processes. RPO (A) defines data loss tolerance; ARO (B) estimates incident frequency; a BIA (C) assesses overall impact, but MTTR specifically addresses repair time. Lesson 5.4: Continuity Metrics, p. 221",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 278,
+    "question": "Which of the following tasks is typically included in the Business Impact Analysis (BIA) process?",
+    "options": [
+      "Evaluating the risk management plan",
+      "Establishing the backup and recovery procedures",
+      "Identifying the communication strategy",
+      "Developing the incident response plan",
+      "Estimating the recovery time of systems"
+    ],
+    "correct": [],
+    "explanation": "Explanation: A BIA identifies critical systems and estimates metrics such as Recovery Time Objectives (RTO), which define acceptable downtime. Backup procedures (B), communication plans (C), and incident response plans (D) are separate phases; risk management plan review (A) is ongoing governance. Lesson 5.4: Business Impact Analysis, p. 218",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 279,
+    "question": "A legal department must maintain a backup from all devices that have been shredded and recycled by a third party. Which of the following best describes this requirement?",
+    "options": [
+      "Sanitation",
+      "Data retention",
+      "Certification",
+      "Destruction"
+    ],
+    "correct": [],
+    "explanation": "Explanation: A data retention policy specifies how long and in what form backups must be kept—even after physical device disposal—to satisfy legal or regulatory requirements. Sanitation (A) and destruction (D) describe secure data removal; certification (C) validates processes but doesn’t define retention periods. Lesson 5.3: Data Lifecycle and Retention, p. 210",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 280,
+    "question": "A company is required to use certified hardware when building networks. Which of the following best addresses the risks associated with procuring counterfeit hardware?",
+    "options": [
+      "A thorough analysis of the supply chain",
+      "A legally enforceable corporate acquisition policy",
+      "A right-to-audit clause in vendor contracts and SOWs",
+      "An in-depth penetration test of all suppliers and vendors"
+    ],
+    "correct": [],
+    "explanation": "Explanation: By mapping and validating every supplier, distributor, and manufacturer in the hardware procurement chain, the company can verify authenticity, trace origins, and detect tampered or counterfeit components before deployment. A contractual audit clause (C) helps ensure compliance but does not proactively identify counterfeits. A corporate acquisition policy (B) defines rules but won’t uncover fake parts without supply-chain insight. Penetration tests (D) assess deployed systems, not the hardware’s provenance. Lesson 5.2: Supply Chain Risk Management, p. 312",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 281,
+    "question": "Which of the following topics would most likely be included within an organization’s Software Development Life Cycle (SDLC)?",
+    "options": [
+      "Service-level agreements",
+      "Information security policy",
+      "Penetration testing methodology",
+      "Branch protection requirements"
+    ],
+    "correct": [],
+    "explanation": "Explanation: An information security policy embedded in the SDLC defines coding standards, access controls, and data handling requirements to prevent vulnerabilities during design, development, and deployment. Service-level agreements (A) govern operations, penetration testing (C) is typically performed post-development, and branch protection rules (D) apply to version control workflows but are narrower than a full security policy. Lesson 3.5: Secure SDLC Practices, p. 159",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 282,
+    "question": "Which of the following provides the details about the terms of a test with a third-party penetration tester?",
+    "options": [
+      "Rules of engagement",
+      "Supply chain analysis",
+      "Right-to-audit clause",
+      "Due diligence"
+    ],
+    "correct": [],
+    "explanation": "Explanation: Rules of engagement specify scope, objectives, prohibited activities, data handling, scheduling, and reporting formats for a penetration test—ensuring the exercise is legal, ethical, and aligned to business goals. Supply chain analysis (B) assesses hardware/software origins; a right-to-audit clause (C) grants compliance checks; due diligence (D) is vendor evaluation, not test scoping. Lesson 5.6: Third-Party Assessment and Testing, p. 329",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 283,
+    "question": "The Chief Information Security Officer (CISO) at a large company would like to gain an understanding of how the company’s security policies compare to the requirements imposed by external regulators. Which of the following should the CISO use?",
+    "options": [
+      "Penetration test",
+      "Internal audit",
+      "Attestation",
+      "External examination"
+    ],
+    "correct": [],
+    "explanation": "Explanation: An external examination (external audit) performed by third-party assessors benchmarks organizational policies against regulatory standards, providing an impartial compliance report. Penetration tests (A) find technical flaws, internal audits (B) review internal controls only, and attestation (C) is a statement of fact without in-depth evaluation. Lesson 5.7: Audit and Assessment, p. 338",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 284,
+    "question": "Which of the following consequences would a retail chain most likely face from customers in the event the retailer is non-compliant with PCI DSS?",
+    "options": [
+      "Contractual impacts",
+      "Sanctions",
+      "Fines",
+      "Reputational damage"
+    ],
+    "correct": [],
+    "explanation": "Explanation: Customers lose trust when payment-card breaches occur; reputational damage leads to lost sales and churn. Contractual impacts (A) and fines (C) are imposed by regulators or banks, sanctions (B) by authorities. While those matter, customer reaction is primarily reputational. Lesson 5.4: Compliance and Privacy, p. 287",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 285,
+    "question": "An organization is required to provide assurance that its controls are properly designed and operating effectively. Which of the following reports will best achieve the objective?",
+    "options": [
+      "Red teaming",
+      "Independent audit",
+      "Vulnerability assessment",
+      "Penetration testing"
+    ],
+    "correct": [],
+    "explanation": "Explanation: An independent audit reviews policies, procedures, and control operation against standards, producing a formal attestation of design and effectiveness. Red teaming (A) and penetration testing (D) simulate attacks, and vulnerability scans (C) identify technical gaps, but none formally validate control design and operation. Lesson 5.7: Audit and Assessment, p. 338",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 286,
+    "question": "An organization has a new regulatory requirement to implement corrective controls on a financial system. Which of the following is the most likely reason for the new requirement?",
+    "options": [
+      "To defend against insider threats altering banking details",
+      "To ensure that errors are not passed to other systems",
+      "To allow for business insurance to be purchased",
+      "To prevent unauthorized changes to financial data"
+    ],
+    "correct": [],
+    "explanation": "Explanation: Corrective controls (e.g., auditing, versioning) are put in place after an error or unauthorized change has occurred to restore data integrity and prevent future tampering. While stopping error propagation (B) is related, the heart of corrective controls in financial contexts is detecting and rolling back unauthorized changes. Insurance (C) and insider threat defense (A) are secondary concerns. Lesson 5.4: Financial Controls and Compliance, p. 412",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 287,
+    "question": "Which of the following is the BEST reason to conduct a tabletop exercise?",
+    "options": [
+      "Demonstrate compliance with regulations",
+      "Identify gaps in incident response plans",
+      "Test network configurations",
+      "Validate employee background checks"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Tabletop exercises walk through scenarios on paper to reveal weaknesses in your plan. Compliance, network tests, and background checks are handled by other audit or technical controls.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 288,
+    "question": "Which of the following would be most useful in determining whether the long‑term cost to transfer a risk is less than the impact of the risk?",
+    "options": [
+      "ARO",
+      "RTO",
+      "RPO",
+      "ALE",
+      "SLE"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "ALE – Annual Loss Expectancy calculates expected yearly loss (SLE × ARO), letting you compare the cost of insurance or outsourcing versus the impact if the risk occurs. ARO (Annualized Rate of Occurrence) estimates frequency, RTO/RPO relate to recovery objectives, and SLE is the loss per event.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 289,
+    "question": "A company decided to reduce the cost of its annual cyber‑insurance policy by removing coverage for ransomware attacks. Which of the following analysis elements did the company most likely use in making this decision?",
+    "options": [
+      "MTTR",
+      "RTO",
+      "MTBF",
+      "ARO"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "ARO (Annualized Rate of Occurrence) estimates how often an event occurs per year. By lowering the ARO for ransomware, they can justify dropping coverage to save on premiums. MTTR/MTBF relate to repair times; RTO is recovery time.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 290,
+    "question": "A technician needs to apply a high‑priority patch to a production system. Which of the following steps should be taken first?",
+    "options": [
+      "Air‑gap the system",
+      "Move the system to a different network segment",
+      "Create a change control request",
+      "Apply the patch to the system"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Submitting and approving a change control request ensures the patch is authorized, documented, tested, and can be rolled back if necessary. You don’t air‑gap or relocate a live system before planning the change, and you shouldn’t apply the patch without following change management procedures.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 291,
+    "question": "Which of the following security control types does an acceptable use policy best represent?",
+    "options": [
+      "Detective",
+      "Compensating",
+      "Corrective",
+      "Preventive"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An acceptable‑use policy sets rules that forbid risky behaviors before they happen. It doesn’t detect incidents, compensate for control gaps, or correct problems after the fact.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 292,
+    "question": "Which of the following can best protect against an employee inadvertently installing malware on a company system?",
+    "options": [
+      "Host‑based firewall",
+      "System isolation",
+      "Least privilege",
+      "Application allowlist"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An application allowlist only permits approved software to run, blocking unknown or malicious installers at execution time. Firewalls or isolation don’t stop local installs, and least privilege limits rights but doesn’t prevent execution of malware by an allowed user.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 293,
+    "question": "An organization maintains intellectual property that it wants to protect. Which of the following concepts would be most beneficial to add to the company’s security awareness training program?",
+    "options": [
+      "Insider threat detection",
+      "Simulated threats",
+      "Phishing awareness",
+      "Business continuity planning"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Protecting IP often hinges on spotting insiders who misuse legitimate access. Training to detect insider‑style misuse is more directly relevant than phishing, simulations, or continuity planning.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 294,
+    "question": "A company is developing a business continuity strategy and needs to determine how many staff members would be required to sustain the business in the case of a disruption. Which of the following best describes this step?",
+    "options": [
+      "Capacity planning",
+      "Redundancy",
+      "Geographic dispersion",
+      "Tabletop exercise"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Capacity planning estimates required resources—including personnel—to keep operations running under stress. Redundancy duplicates systems, geographic dispersion spreads risk, and tabletop exercises test plans on paper.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 295,
+    "question": "A security team wants to measure how quickly incident response procedures are executed end‑to‑end. Which metric should they track?",
+    "options": [
+      "MTTR",
+      "MTTD",
+      "MTBF",
+      "ARO"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Mean Time to Respond (or Resolve) measures the average time from incident detection to restoration. MTTD is detection time only, MTBF is failure intervals, and ARO is event frequency per year.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 296,
+    "question": "Which of the following tasks is part of a risk assessment?",
+    "options": [
+      "Configuring redundant systems",
+      "Identifying threats and vulnerabilities",
+      "Writing incident response playbooks",
+      "Monitoring security logs"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Risk assessment involves cataloging threats, vulnerabilities, and the potential impact to prioritize risk. Redundancy, playbooks, and monitoring come later in mitigation and operations.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 297,
+    "question": "Which of the following is the best reason to complete an audit in a banking environment?",
+    "options": [
+      "Regulatory requirement",
+      "Organizational change",
+      "Self‑assessment requirement",
+      "Service‑level requirement"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Regulatory requirement – Banks are subject to laws and industry regulations that mandate periodic audits to ensure compliance with security, privacy, and financial‑reporting standards. Organizational changes, internal self‑assessments, or SLA checks may prompt reviews, but only regulators compel formal audits in banking .",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 298,
+    "question": "An organization disabled unneeded services and placed a firewall in front of a business‑critical legacy system. Which of the following best describes the actions taken by the organization?",
+    "options": [
+      "Exception",
+      "Segmentation",
+      "Risk transfer",
+      "Compensating controls"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Compensating controls – When primary safeguards (like patching) aren’t feasible, you deploy alternative measures—disabling services and adding a firewall—to reduce risk around a legacy system. This differs from segmentation (network isolation), risk transfer (insurance), or granting exceptions .",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 299,
+    "question": "To improve the security at a data center, a security administrator implements a CCTV system and posts several signs about the possibility of being filmed. Which of the following best describe these types of controls? (Select two.)",
+    "options": [
+      "Preventive",
+      "Deterrent",
+      "Corrective",
+      "Directive",
+      "Compensating",
+      "Detective"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Deterrent – Warning signs discourage unauthorized actions. Detective – CCTV records events for later review. These measures don’t prevent directly (preventive), correct after the fact (corrective), provide policy guidance (directive), or substitute missing controls (compensating) .",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 300,
+    "question": "Which of the following is most likely to be used to document risks, responsible parties, and thresholds?",
+    "options": [
+      "Risk tolerance",
+      "Risk transfer",
+      "Risk register",
+      "Risk analysis"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Risk register – A living document listing each risk’s description, owner, likelihood, impact, and response thresholds. Risk tolerance defines acceptable levels, transfer shifts risk, and analysis is the process of assessment .",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 301,
+    "question": "Which of the following is most likely associated with introducing vulnerabilities on a corporate network by the deployment of unapproved software?",
+    "options": [
+      "Hacktivists",
+      "Script kiddies",
+      "Competitors",
+      "Shadow IT"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Shadow IT refers to systems or applications used within an organization without explicit approval, often bypassing security reviews and introducing vulnerabilities. The other actors may cause breaches, but unapproved internal software use is classic Shadow IT",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 302,
+    "question": "A company wants to verify that the software the company is deploying came from the vendor the company purchased the software from. Which of the following is the best way for the company to confirm this information?",
+    "options": [
+      "Validate the code signature",
+      "Execute the code in a sandbox",
+      "Search the executable for ASCII strings",
+      "Generate a hash of the files"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Code signing uses a vendor’s private key to sign the software, and verifying that signature with the vendor’s public key confirms both origin and integrity. Hashing only proves consistency, sandboxing tests behavior, and searching for ASCII strings reveals embedded text but not authenticity .",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 303,
+    "question": "A security administrator is re‑issuing a former employee’s laptop. Which of the following is the best combination of data‑handling activities for the administrator to perform? (Choose two.)",
+    "options": [
+      "Classification",
+      "Sanitization",
+      "Enumeration",
+      "Certification",
+      "Destruction",
+      "Data retention"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sanitization (e.g., secure wipe) removes sensitive data before reuse, and destruction (e.g., shredding old drives) ensures data can’t be recovered if the drive is retired. Classification, enumeration, certification, and retention don’t reliably remove or destroy data on the device .",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 304,
+    "question": "A systems administrator would like to deploy a change to a production system. Which of the following must the administrator submit to demonstrate that the system can be restored to a working state in the event of a performance issue?",
+    "options": [
+      "Backout plan",
+      "Impact analysis",
+      "Test procedure",
+      "Approval procedure"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A backout plan outlines steps to revert the system to its prior state if the change causes problems. Impact analyses estimate potential effects, test procedures verify the change, and approval procedures grant permission but don’t define recovery steps .",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 305,
+    "question": "A company needs to provide administrative access to internal resources while minimizing the traffic allowed through the security boundary. Which of the following methods is most secure?",
+    "options": [
+      "Implementing a bastion host",
+      "Deploying a perimeter network",
+      "Installing a WAF",
+      "Utilizing single sign‑on"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A bastion host is a hardened, single gateway for admin access, reducing open ports and minimizing attack surface. A perimeter network opens an extra segment, a WAF filters web traffic only, and SSO simplifies auth but doesn’t reduce network traffic .",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 306,
+    "question": "Which document provides a high‑level outline of an organization’s approach to managing information security?",
+    "options": [
+      "Incident response plan",
+      "Acceptable use policy",
+      "Security policy",
+      "Disaster recovery plan"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A security policy defines the organization’s overall security goals, responsibilities, and governance. Incident response and disaster recovery plans detail specific procedures, and acceptable use policies govern user behavior.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 307,
+    "question": "A company reviews its risk register monthly and finds many risks marked as “accepted.” Which of the following actions should be taken next?",
+    "options": [
+      "Remove accepted risks from the register",
+      "Reevaluate the risk threshold",
+      "Transfer the accepted risks to insurance",
+      "Monitor the accepted risks for changes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Accepted risks remain in the register and must be monitored for any change in likelihood or impact. Removing them loses visibility, transferring to insurance applies only if mitigation requires it, and changing thresholds without context risks misalignment.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 308,
+    "question": "A technician wants to improve the situational and environmental awareness of existing users as they transition from remote to in‑office work. Which of the following is the best option?",
+    "options": [
+      "Send out periodic security reminders",
+      "Update the content of new‑hire documentation",
+      "Modify the content of recurring training",
+      "Implement a phishing campaign"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Recurring security training that’s updated with context‑specific scenarios keeps users aware of emerging threats and changing work environments. Periodic reminders and new‑hire docs alone miss experienced staff, while a phishing campaign tests but doesn’t directly educate .",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 309,
+    "question": "A company is expanding its threat surface program and allowing individuals to security test the company's internet-facing application. The company will compensate researchers based on the vulnerabilities discovered. Which of the following best describes the program the company is setting up?",
+    "options": [
+      "Open-source intelligence",
+      "Bug bounty",
+      "Red team",
+      "Penetration testing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A bug bounty invites external researchers to find vulnerabilities in exchange for compensation. Penetration testing is usually contracted and internal, red teams simulate adversaries, and open-source intelligence involves gathering public data.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 310,
+    "question": "A security administrator is reissuing a former employee's laptop. Which of the following is the best combination of data-handling activities for the administrator to perform? (Choose two.)",
+    "options": [
+      "Classification",
+      "Sanitization",
+      "Enumeration",
+      "Certification",
+      "Destruction",
+      "Data retention"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sanitization ensures all previous user data is wiped clean before reissue. Destruction applies if components like drives are no longer reused. Classification and retention apply to data management, not reissuing a device.",
+    "type": "single",
+    "topic": "security-program-management"
+  },
+  {
+    "id": 311,
     "question": "Which of the following are the most likely vectors for the unauthorized or unintentional inclusion of vulnerable code in a software company’s final software releases? (Choose two.)",
     "options": [
       "Certificate mismatch",

@@ -8,6 +8,7 @@ import json
 import re
 import os
 from pathlib import Path
+import argparse
 
 # Topic mapping from the questions to JSON files
 TOPIC_MAPPING = {
@@ -195,18 +196,17 @@ def write_topic_files(topic_groups, data_dir):
         print(f"Written {len(questions)} questions to {file_name}")
 
 def main():
-    # Set up paths
-    script_dir = Path(__file__).parent
-    project_root = script_dir.parent
-    questions_file = project_root / "data" / "sy0-701" / "Questions.txt"
-    data_dir = project_root / "data" / "sy0-701"
+    """Main function to parse file and write to staging."""
+    parser = argparse.ArgumentParser(description="Parse SY0-701 questions from a text file into a JSON staging file.")
+    parser.add_argument("input_file", help="Path to the input text file (e.g., 'Questions 3.txt')")
+    parser.add_argument("output_file", help="Path to the output JSON staging file")
+    args = parser.parse_args()
+
+    questions_file = Path(args.input_file)
+    output_staging_file = Path(args.output_file)
     
     if not questions_file.exists():
-        print(f"Error: Questions file not found at {questions_file}")
-        return
-    
-    if not data_dir.exists():
-        print(f"Error: Data directory not found at {data_dir}")
+        print(f"Error: Input file not found at {questions_file}")
         return
     
     print(f"Parsing questions from: {questions_file}")
@@ -214,20 +214,14 @@ def main():
     # Parse questions
     questions = parse_questions_file(questions_file)
     print(f"Parsed {len(questions)} questions")
+
+    # Write to a single staging file
+    print(f"\nWriting to staging file: {output_staging_file}")
+    with open(output_staging_file, 'w', encoding='utf-8') as f:
+        json.dump(questions, f, indent=2, ensure_ascii=False)
     
-    # Group by topic
-    topic_groups = group_questions_by_topic(questions)
-    
-    # Print topic distribution
-    print("\nTopic distribution:")
-    for topic, questions_list in topic_groups.items():
-        print(f"  {topic}: {len(questions_list)} questions")
-    
-    # Write to JSON files
-    print("\nWriting to JSON files...")
-    write_topic_files(topic_groups, data_dir)
-    
-    print("\nDone! All questions have been parsed and written to JSON files.")
+    print(f"\nDone! All {len(questions)} questions have been parsed and written to {output_staging_file}.")
+
 
 if __name__ == "__main__":
     main()

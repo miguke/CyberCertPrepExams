@@ -141,157 +141,118 @@ def check_for_select_two(text):
     return "(Select TWO)" in text
 
 def main():
-    parser = argparse.ArgumentParser(description='Find similar questions within and across topic files that may be duplicates.')
-    parser.add_argument('exam', choices=['1101', '1102'], nargs='?', default='1101', 
-                        help='The exam core to check (1101 or 1102). Defaults to 1101.')
-    parser.add_argument('--threshold', type=float, default=0.9, 
-                        help='Similarity threshold (0.0-1.0). Default is 0.9 (90%)')
+    parser = argparse.ArgumentParser(description='Find similar questions within and across topic JSON files.')
+    parser.add_argument('--files', nargs='+', help='A list of JSON file paths to compare.')
+    parser.add_argument('--exam', choices=['1101', '1102'], help='The exam core to check (1101 or 1102). Used if --files is not specified.')
+    parser.add_argument('--threshold', type=float, default=0.9, help='Similarity threshold (0.0 to 1.0). Default is 0.9.')
     parser.add_argument('--show-all', action='store_true',
                         help='Show all similar pairs regardless of whether answers match')
     parser.add_argument('--cross-topic-only', action='store_true',
                         help='Only show cross-topic duplicates')
     args = parser.parse_args()
-    
-    config = EXAM_CONFIGS[args.exam]
-    data_dir = config['data_dir']
-    
-    print(f"--- Finding Similar Questions in Exam {args.exam} with {args.threshold*100:.0f}% Similarity Threshold ---")
-    
+
+    all_topic_questions = {}
+    data_dir = None
+
+    if args.files:
+        # Use the directory of the first file as the base for output
+        if args.files:
+            data_dir = os.path.dirname(args.files[0])
+
+        for filepath in args.files:
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    filename = os.path.basename(filepath)
+                    topic_name = os.path.splitext(filename)[0]
+                    all_topic_questions[topic_name] = json.load(f)
+            except FileNotFoundError:
+                print(f"Warning: File not found, skipping: {filepath}")
+                continue
+            except json.JSONDecodeError:
+                print(f"Warning: Could not decode JSON, skipping: {filepath}")
+                continue
+    elif args.exam:
+        config = EXAM_CONFIGS[args.exam]
+        data_dir = config['data_dir']
+        topic_files = config['topic_files']
+        for filename in topic_files:
+            filepath = os.path.join(data_dir, filename)
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    topic_name = os.path.splitext(filename)[0]
+                    all_topic_questions[topic_name] = json.load(f)
+            except FileNotFoundError:
+                print(f"Warning: File not found, skipping: {filepath}")
+                continue
+            except json.JSONDecodeError:
+                print(f"Warning: Could not decode JSON, skipping: {filepath}")
+                continue
+    else:
+        parser.print_help()
+        return
+
+    if not all_topic_questions:
+        print("Error: No questions loaded. Please check file paths or exam configuration.")
+        return
+
+    print(f"Loaded {sum(len(q) for q in all_topic_questions.values())} questions from {len(all_topic_questions)} files.")
+
+    # --- Start of Analysis Logic ---
     within_topic_pairs = []
     cross_topic_pairs = []
-    topic_questions = {}
-    
-    # Load questions from each topic file
-    for filename in config['topic_files']:
-        filepath = os.path.join(data_dir, filename)
-        topic = filename.replace('.json', '')
-        
-        if not os.path.exists(filepath):
-            print(f"Warning: File {filename} not found. Skipping.")
-            continue
-        
-        try:
-            with open(filepath, 'r', encoding='utf-8') as f:
-                content = f.read()
-                questions = json.loads(content) if content.strip() else []
-                print(f"Loaded {len(questions)} questions from {filename}")
-                
-                # Store questions for cross-topic analysis
-                topic_questions[topic] = questions
-                
-                # Find similar questions within this topic file
-                if not args.cross_topic_only:
-                    print(f"Analyzing {topic}...")
-                    similar = find_similar_questions_within_topic(questions, args.threshold)
-                    
-                    for pair in similar:
-                        pair['topic'] = topic
-                        pair['filename'] = filename
-                        within_topic_pairs.append(pair)
-        except json.JSONDecodeError:
-            print(f"Error: Could not decode {filename}. Skipping.")
-    
-    # Find similar questions across different topic files
-    print("\nLooking for cross-topic duplicates...")
-    cross_topic_pairs = find_similar_questions_across_topics(topic_questions, args.threshold)
-    
+
+    # Find similar questions within each file
+    for topic, questions in all_topic_questions.items():
+        print(f"Analyzing {topic} for internal duplicates...")
+        similar = find_similar_questions_within_topic(questions, args.threshold)
+        for pair in similar:
+            pair['topic'] = topic
+            pair['filename'] = f"{topic}.json"
+            within_topic_pairs.append(pair)
+
+    # Find similar questions across different files
+    print("\nAnalyzing for cross-file duplicates...")
+    cross_topic_pairs = find_similar_questions_across_topics(all_topic_questions, args.threshold)
+
     # Sort results by similarity (highest first)
     within_topic_pairs.sort(key=lambda x: x['similarity'], reverse=True)
     cross_topic_pairs.sort(key=lambda x: x['similarity'], reverse=True)
-    
-    # Filter by same answers if needed
-    if not args.show_all:
-        within_topic_pairs = [p for p in within_topic_pairs if p['same_answers']]
-        cross_topic_pairs = [p for p in cross_topic_pairs if p['same_answers']]
-    
+
     # Display results for within-topic duplicates
-    if within_topic_pairs and not args.cross_topic_only:
-        print(f"\nFound {len(within_topic_pairs)} potentially duplicate question pairs WITHIN the same topic")
+    if within_topic_pairs:
+        print(f"\nFound {len(within_topic_pairs)} potentially duplicate question pairs WITHIN the same file")
         print("=" * 80)
-        
         for idx, pair in enumerate(within_topic_pairs, 1):
-            select_two1 = check_for_select_two(pair['q1_text'])
-            select_two2 = check_for_select_two(pair['q2_text'])
-            
-            print(f"Duplicate #{idx} - Similarity: {pair['similarity']*100:.2f}%, "
-                  f"Same Answers: {'YES' if pair['same_answers'] else 'NO'}")
-            print(f"Topic: {pair['topic']} (File: {pair['filename']})")
-            print(f"Q1 (Index {pair['index1']}): {pair['q1_text'][:100]}{'...' if len(pair['q1_text']) > 100 else ''}")
-            print(f"Q1 Contains 'Select TWO': {'YES' if select_two1 else 'NO'}")
-            print(f"Q2 (Index {pair['index2']}): {pair['q2_text'][:100]}{'...' if len(pair['q2_text']) > 100 else ''}")
-            print(f"Q2 Contains 'Select TWO': {'YES' if select_two2 else 'NO'}")
-            print(f"Q1 Answers: {pair['q1_correct']}")
-            print(f"Q2 Answers: {pair['q2_correct']}")
+            print(f"Duplicate #{idx} - Similarity: {pair['similarity']*100:.2f}% - Same Answers: {pair['same_answers']}")
+            print(f"File: {pair['filename']}")
+            print(f"  Q1 (Index {pair['index1']}): {pair['q1_text'][:100]}...")
+            print(f"  Q2 (Index {pair['index2']}): {pair['q2_text'][:100]}...")
             print("-" * 80)
-        
-        # Summary of within-topic duplicates
-        print("\nWithin-Topic Summary:")
-        by_topic = defaultdict(int)
-        for pair in within_topic_pairs:
-            by_topic[pair['topic']] += 1
-        
-        for topic, count in by_topic.items():
-            print(f"- {topic}: {count} potential duplicates")
-    
+
     # Display results for cross-topic duplicates
     if cross_topic_pairs:
-        print(f"\nFound {len(cross_topic_pairs)} potentially duplicate question pairs ACROSS different topics")
+        print(f"\nFound {len(cross_topic_pairs)} potentially duplicate question pairs ACROSS different files")
         print("=" * 80)
-        
         for idx, pair in enumerate(cross_topic_pairs, 1):
-            select_two1 = check_for_select_two(pair['q1_text'])
-            select_two2 = check_for_select_two(pair['q2_text'])
-            
-            print(f"Cross-Topic Duplicate #{idx} - Similarity: {pair['similarity']*100:.2f}%, "
-                  f"Same Answers: {'YES' if pair['same_answers'] else 'NO'}")
-            print(f"Topic 1: {pair['topic1']} (File: {pair['file1']}, Index: {pair['index1']})")
-            print(f"Topic 2: {pair['topic2']} (File: {pair['file2']}, Index: {pair['index2']})")
-            print(f"Q1: {pair['q1_text'][:100]}{'...' if len(pair['q1_text']) > 100 else ''}")
-            print(f"Q1 Contains 'Select TWO': {'YES' if select_two1 else 'NO'}")
-            print(f"Q2: {pair['q2_text'][:100]}{'...' if len(pair['q2_text']) > 100 else ''}")
-            print(f"Q2 Contains 'Select TWO': {'YES' if select_two2 else 'NO'}")
-            print(f"Q1 Answers: {pair['q1_correct']}")
-            print(f"Q2 Answers: {pair['q2_correct']}")
+            print(f"Cross-File Duplicate #{idx} - Similarity: {pair['similarity']*100:.2f}% - Same Answers: {pair['same_answers']}")
+            print(f"  File 1: {pair['file1']} (Index: {pair['index1']}) | Q: {pair['q1_text'][:80]}...")
+            print(f"  File 2: {pair['file2']} (Index: {pair['index2']}) | Q: {pair['q2_text'][:80]}...")
             print("-" * 80)
-        
-        # Summary of cross-topic duplicates
-        print("\nCross-Topic Summary:")
-        by_topic_pair = defaultdict(int)
-        for pair in cross_topic_pairs:
-            topic_key = f"{pair['topic1']}-{pair['topic2']}"
-            by_topic_pair[topic_key] += 1
-        
-        for topic_pair, count in by_topic_pair.items():
-            print(f"- {topic_pair}: {count} potential duplicates")
-    
-    # If no duplicates found
+
     if not within_topic_pairs and not cross_topic_pairs:
         print("\nSuccess: No similar questions found with the current threshold.")
-    
-    # Save results to files
-    results = {
-        'threshold': args.threshold,
-        'within_topic': {
-            'total_pairs': len(within_topic_pairs),
-            'pairs': within_topic_pairs
-        },
-        'cross_topic': {
-            'total_pairs': len(cross_topic_pairs),
-            'pairs': cross_topic_pairs
+
+    # Save detailed results to a file
+    if data_dir:
+        results = {
+            'threshold': args.threshold,
+            'within_file_duplicates': within_topic_pairs,
+            'cross_file_duplicates': cross_topic_pairs
         }
-    }
-    
-    results_file = os.path.join(data_dir, f"duplicate_analysis_enhanced_{args.threshold:.1f}.json")
-    with open(results_file, 'w', encoding='utf-8') as f:
-        json.dump(results, f, indent=2)
-    
-    print(f"\nDetailed results saved to: {results_file}")
-    
-    # Additional recommendation for users
-    if within_topic_pairs or cross_topic_pairs:
-        print("\nRecommendation: ")
-        print("1. Run 'python clean_duplicate_questions.py' to automatically clean within-topic duplicates")
-        print("2. Review cross-topic duplicates manually to decide which topic is most appropriate")
+        results_file = os.path.join(data_dir, f"duplicate_analysis_results.json")
+        with open(results_file, 'w', encoding='utf-8') as f:
+            json.dump(results, f, indent=2)
+        print(f"\nDetailed results saved to: {results_file}")
 
 if __name__ == '__main__':
     main()
