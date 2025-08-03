@@ -810,9 +810,7 @@
       "Outsourcing",
       "Separation of duties"
     ],
-    "correct": [
-      0
-    ],
+    "correct": [],
     "explanation": "Explanation: Job rotation ensures that more than one person is familiar with critical processes, so if one individual leaves, others can step in without interruption. This reduces the risk of undocumented knowledge “islands” causing outages. Retention (B) deals with how long data is kept, not continuity of expertise. Outsourcing (C) may shift risk but doesn’t guarantee internal continuity. Separation of duties (D) prevents fraud by dividing tasks; it doesn’t ensure process coverage when an employee departs. Lesson 5.2: Business Continuity and Risk Mitigation, p. 305",
     "type": "single",
     "topic": "security-program-management"
@@ -826,9 +824,7 @@
       "Retention",
       "Sanitization"
     ],
-    "correct": [
-      2
-    ],
+    "correct": [],
     "explanation": "Explanation: Regulations like GDPR and HIPAA dictate how long certain categories of data must be kept—this directly governs data retention periods. Destruction (A) and sanitization (D) address how data is deleted, but the “how long” question is retention. Certification (B) covers verification of systems or processes, not storage duration. Lesson 5.4: Data Governance and Privacy, p. 332",
     "type": "single",
     "topic": "security-program-management"
@@ -842,9 +838,7 @@
       "To extend the length of time data can be retained",
       "To automate the reduction of duplicated data"
     ],
-    "correct": [
-      0
-    ],
+    "correct": [],
     "explanation": "Explanation: A data inventory catalogs what sensitive data exists, its location, and sensitivity—critical for calculating breach risk and notification obligations. Storage management (B) or deduplication (D) are operational concerns; retention periods (C) follow from inventory but aren’t the primary driver. Lesson 5.2: Data Governance and Compliance, p. 312",
     "type": "single",
     "topic": "security-program-management"
@@ -858,9 +852,7 @@
       "Privacy",
       "Intellectual property"
     ],
-    "correct": [
-      2
-    ],
+    "correct": [],
     "explanation": "Explanation: Employee PII falls under “privacy data,” governed by policies on how to collect, store, and handle personal information. Legal (A) relates to contracts or compliance, financial (B) covers monetary records, and intellectual property (D) protects creative assets. Lesson 5.1: Data Classification and Handling, p. 301",
     "type": "single",
     "topic": "security-program-management"
@@ -874,9 +866,7 @@
       "Implement security awareness training",
       "Update the acceptable use policy"
     ],
-    "correct": [
-      2
-    ],
+    "correct": [],
     "explanation": "Explanation: Employees encountering a block are being protected technically, but their continued attempts to visit spoofed sites indicate a lack of phishing awareness. Security awareness training educates users on how to recognize and avoid malicious URLs, reducing repeat support calls and risk. MFA (A) strengthens authentication but doesn’t stop clicks on bad links. Lowering filter strictness (B) would re-expose users to threats. Updating policy (D) sets expectations but lacks the interactive reinforcement that training offers. Lesson 5.3: Awareness and Training, p. 329",
     "type": "single",
     "topic": "security-program-management"
@@ -890,9 +880,7 @@
       "Loss of availability",
       "Use of insecure protocols"
     ],
-    "correct": [
-      1
-    ],
+    "correct": [],
     "explanation": "Explanation: Without vendor support, legacy systems receive no security patches or firmware updates, leaving known vulnerabilities unmitigated. While instability (A), availability (C), and insecure protocols (D) are worries, they often stem from the root issue of unsupported software. Lesson 5.1: Risk Management, p. 302",
     "type": "single",
     "topic": "security-program-management"
@@ -906,9 +894,7 @@
       "Tabletop exercise",
       "Parallel processing"
     ],
-    "correct": [
-      2
-    ],
+    "correct": [],
     "explanation": "Explanation: A tabletop exercise is a discussion-based session where executives walk through a simulated incident scenario to validate roles, decisions, and plan effectiveness without disrupting real operations. Continuity of operations (A) refers to maintaining business functions during actual disruptions. Capacity planning (B) is about sizing resources for expected demand. Parallel processing (D) describes simultaneous execution of processes, unrelated to incident plan validation. Lesson 5.3: Business Continuity and Incident Exercises, p. 210",
     "type": "single",
     "topic": "security-program-management"
@@ -922,9 +908,7 @@
       "Shredding",
       "Deletion"
     ],
-    "correct": [
-      0
-    ],
+    "correct": [],
     "explanation": "Explanation: Secure wiping overwrites the entire drive so that data cannot be recovered and is far less expensive than physical destruction. Recycling (B) disposes of hardware but doesn’t guarantee data removal. Shredding (C) destroys the drive physically but has higher costs and logistics. Deletion (D) merely removes file pointers, leaving data recoverable. Lesson 5.2: Asset Lifecycle Management, p. 195",
     "type": "single",
     "topic": "security-program-management"
@@ -938,9 +922,7 @@
       "Recovery time objective",
       "Mean time to repair"
     ],
-    "correct": [
-      3
-    ],
+    "correct": [],
     "explanation": "Explanation: Mean Time to Repair (MTTR) measures the average time required to fix a failed component and restore service. Mean Time Between Failures (A) is the expected operational interval between failures. Recovery Point Objective (B) defines acceptable data loss in terms of time, not repair duration. Recovery Time Objective (C) is the target maximum downtime after an incident, not the measured repair time. Lesson 5.4: Metrics and Reporting, p. 228",
     "type": "single",
     "topic": "security-program-management"
@@ -954,9 +936,7 @@
       "To allow for business insurance to be purchased",
       "To prevent unauthorized changes of financial data"
     ],
-    "correct": [
-      1
-    ],
+    "correct": [],
     "explanation": "Explanation: Corrective controls are designed to fix or remediate issues after they occur, preventing errors or corrupt data from propagating across integrated systems. In financial environments, a single incorrect transaction could cascade through multiple subsystems, so regulations often mandate corrective controls to isolate and rectify mistakes. Preventing unauthorized changes (D) is a preventive control; defending against insiders (A) and purchasing insurance (C) are unrelated to the corrective objective. Lesson 5.3: Control Types and Effectiveness, p. 214",
     "type": "single",
     "topic": "security-program-management"
@@ -970,9 +950,7 @@
       "Integrating the domain administrator’s group with an IdP and requiring SSO with MFA for all access",
       "Securing domain administrator credentials in a PAM vault and controlling access with role-based access control"
     ],
-    "correct": [
-      3
-    ],
+    "correct": [],
     "explanation": "Explanation: A Privileged Access Management (PAM) solution vaults credentials, enforces just-in-time access, automates password rotation, and applies RBAC to ensure only authorized personnel can retrieve admin passwords. Simply enforcing GPOs (A) or reviewing groups (B) addresses parts of the issue but lacks the comprehensive credential management and auditing provided by PAM. SSO with MFA (C) strengthens authentication but does not secure the underlying passwords. Lesson 5.2: Privileged Access Management, p. 200",
     "type": "single",
     "topic": "security-program-management"
@@ -986,9 +964,7 @@
       "Acceptable use policy",
       "Software development lifecycle policy"
     ],
-    "correct": [
-      3
-    ],
+    "correct": [],
     "explanation": "Explanation: An SDLC policy outlines roles, responsibilities, and standards for developing, deploying, and maintaining applications, ensuring secure practices throughout a system’s life. An acceptable use policy (C) governs end-user behavior on systems, not the development process. A BCP (A) addresses continuity in disasters; change management (B) focuses on process for changes, not overarching development responsibilities. Lesson 5.1: Policies and Standards, p. 210",
     "type": "single",
     "topic": "security-program-management"
@@ -1002,9 +978,7 @@
       "BIA",
       "MTTR"
     ],
-    "correct": [
-      3
-    ],
+    "correct": [],
     "explanation": "Explanation: Mean Time To Repair (MTTR) measures how long it takes to restore a failed component such as a backup generator. Understanding MTTR helps set restoration expectations and design redundancy or rapid repair processes. RPO (A) defines data loss tolerance; ARO (B) estimates incident frequency; a BIA (C) assesses overall impact, but MTTR specifically addresses repair time. Lesson 5.4: Continuity Metrics, p. 221",
     "type": "single",
     "topic": "security-program-management"
@@ -1019,9 +993,7 @@
       "Developing the incident response plan",
       "Estimating the recovery time of systems"
     ],
-    "correct": [
-      4
-    ],
+    "correct": [],
     "explanation": "Explanation: A BIA identifies critical systems and estimates metrics such as Recovery Time Objectives (RTO), which define acceptable downtime. Backup procedures (B), communication plans (C), and incident response plans (D) are separate phases; risk management plan review (A) is ongoing governance. Lesson 5.4: Business Impact Analysis, p. 218",
     "type": "single",
     "topic": "security-program-management"
@@ -1035,9 +1007,7 @@
       "Certification",
       "Destruction"
     ],
-    "correct": [
-      1
-    ],
+    "correct": [],
     "explanation": "Explanation: A data retention policy specifies how long and in what form backups must be kept—even after physical device disposal—to satisfy legal or regulatory requirements. Sanitation (A) and destruction (D) describe secure data removal; certification (C) validates processes but doesn’t define retention periods. Lesson 5.3: Data Lifecycle and Retention, p. 210",
     "type": "single",
     "topic": "security-program-management"
@@ -1051,9 +1021,7 @@
       "A right-to-audit clause in vendor contracts and SOWs",
       "An in-depth penetration test of all suppliers and vendors"
     ],
-    "correct": [
-      0
-    ],
+    "correct": [],
     "explanation": "Explanation: By mapping and validating every supplier, distributor, and manufacturer in the hardware procurement chain, the company can verify authenticity, trace origins, and detect tampered or counterfeit components before deployment. A contractual audit clause (C) helps ensure compliance but does not proactively identify counterfeits. A corporate acquisition policy (B) defines rules but won’t uncover fake parts without supply-chain insight. Penetration tests (D) assess deployed systems, not the hardware’s provenance. Lesson 5.2: Supply Chain Risk Management, p. 312",
     "type": "single",
     "topic": "security-program-management"
@@ -1067,9 +1035,7 @@
       "Penetration testing methodology",
       "Branch protection requirements"
     ],
-    "correct": [
-      1
-    ],
+    "correct": [],
     "explanation": "Explanation: An information security policy embedded in the SDLC defines coding standards, access controls, and data handling requirements to prevent vulnerabilities during design, development, and deployment. Service-level agreements (A) govern operations, penetration testing (C) is typically performed post-development, and branch protection rules (D) apply to version control workflows but are narrower than a full security policy. Lesson 3.5: Secure SDLC Practices, p. 159",
     "type": "single",
     "topic": "security-program-management"
@@ -1083,9 +1049,7 @@
       "Right-to-audit clause",
       "Due diligence"
     ],
-    "correct": [
-      0
-    ],
+    "correct": [],
     "explanation": "Explanation: Rules of engagement specify scope, objectives, prohibited activities, data handling, scheduling, and reporting formats for a penetration test—ensuring the exercise is legal, ethical, and aligned to business goals. Supply chain analysis (B) assesses hardware/software origins; a right-to-audit clause (C) grants compliance checks; due diligence (D) is vendor evaluation, not test scoping. Lesson 5.6: Third-Party Assessment and Testing, p. 329",
     "type": "single",
     "topic": "security-program-management"
@@ -1099,9 +1063,7 @@
       "Attestation",
       "External examination"
     ],
-    "correct": [
-      3
-    ],
+    "correct": [],
     "explanation": "Explanation: An external examination (external audit) performed by third-party assessors benchmarks organizational policies against regulatory standards, providing an impartial compliance report. Penetration tests (A) find technical flaws, internal audits (B) review internal controls only, and attestation (C) is a statement of fact without in-depth evaluation. Lesson 5.7: Audit and Assessment, p. 338",
     "type": "single",
     "topic": "security-program-management"
@@ -1115,9 +1077,7 @@
       "Fines",
       "Reputational damage"
     ],
-    "correct": [
-      3
-    ],
+    "correct": [],
     "explanation": "Explanation: Customers lose trust when payment-card breaches occur; reputational damage leads to lost sales and churn. Contractual impacts (A) and fines (C) are imposed by regulators or banks, sanctions (B) by authorities. While those matter, customer reaction is primarily reputational. Lesson 5.4: Compliance and Privacy, p. 287",
     "type": "single",
     "topic": "security-program-management"
@@ -1131,9 +1091,7 @@
       "Vulnerability assessment",
       "Penetration testing"
     ],
-    "correct": [
-      1
-    ],
+    "correct": [],
     "explanation": "Explanation: An independent audit reviews policies, procedures, and control operation against standards, producing a formal attestation of design and effectiveness. Red teaming (A) and penetration testing (D) simulate attacks, and vulnerability scans (C) identify technical gaps, but none formally validate control design and operation. Lesson 5.7: Audit and Assessment, p. 338",
     "type": "single",
     "topic": "security-program-management"
@@ -1147,9 +1105,7 @@
       "To allow for business insurance to be purchased",
       "To prevent unauthorized changes to financial data"
     ],
-    "correct": [
-      3
-    ],
+    "correct": [],
     "explanation": "Explanation: Corrective controls (e.g., auditing, versioning) are put in place after an error or unauthorized change has occurred to restore data integrity and prevent future tampering. While stopping error propagation (B) is related, the heart of corrective controls in financial contexts is detecting and rolling back unauthorized changes. Insurance (C) and insider threat defense (A) are secondary concerns. Lesson 5.4: Financial Controls and Compliance, p. 412",
     "type": "single",
     "topic": "security-program-management"

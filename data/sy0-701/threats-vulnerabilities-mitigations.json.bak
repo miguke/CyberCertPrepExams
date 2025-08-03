@@ -269,9 +269,7 @@
       "Configuration auditing",
       "Open-source intelligence"
     ],
-    "correct": [
-      3
-    ],
+    "correct": [],
     "explanation": "Explanation: Open-source intelligence (OSINT) involves collecting publicly available data—such as corporate filings, job postings, and internet search results—making it ideal when proprietary information is off-limits. Network scanning and penetration testing both actively probe internal systems and could disclose sensitive data. Configuration auditing reviews internal device settings. OSINT, in contrast, respects the boundary of publicly accessible information. Lesson 1.4: Intelligence Sources, p. 58",
     "type": "single",
     "topic": "threats"
@@ -285,9 +283,7 @@
       "Memory injection",
       "Malicious update"
     ],
-    "correct": [
-      3
-    ],
+    "correct": [],
     "explanation": "Explanation: A malicious update occurs when an attacker modifies authorized code or data—such as replacing a temporary field in a SQL script—to introduce unauthorized backdoors or logic. Sideloading (A) refers to installing software from unofficial sources. A race condition (B) is an unexpected behavior when two processes access shared data concurrently. Memory injection (C) involves injecting code into a process’s memory space. Only a malicious update describes the deliberate replacement of a field to create unauthorized access. Lesson 2.3: Software Vulnerabilities, p. 127",
     "type": "single",
     "topic": "threats"
@@ -301,9 +297,7 @@
       "Replication",
       "Smishing"
     ],
-    "correct": [
-      0
-    ],
+    "correct": [],
     "explanation": "Explanation: Phishing involves directing users to fake websites to harvest credentials—this “duplicate” email site is a classic phishing tactic. Impersonation (B) is a broader social-engineering concept but phishing specifically uses fake sites. Replication (C) simply copies data, not to trick users. Smishing (D) uses SMS, not web pages. Lesson 2.1: Social-Engineering Attacks, p. 72",
     "type": "single",
     "topic": "threats"
@@ -317,9 +311,7 @@
       "Cross-site scripting",
       "Zero day"
     ],
-    "correct": [
-      3
-    ],
+    "correct": [],
     "explanation": "Explanation: Zero-day vulnerabilities are unknown flaws with no existing patch—and in open-source components, you may lack dedicated support teams to provide timely fixes. Buffer overflows (A), SQLi (B), and XSS (C) are known issues for which patches or workarounds usually exist. Lesson 2.3: Emerging Threats, p. 102",
     "type": "single",
     "topic": "threats"
@@ -333,9 +325,7 @@
       "Nation-state",
       "Hacktivist"
     ],
-    "correct": [
-      2
-    ],
+    "correct": [],
     "explanation": "Explanation: Nation-state actors are backed by government budgets and target strategic infrastructure abroad. Insiders (A) are internal, unskilled attackers (B) lack resources, and hacktivists (D) are ideology-driven rather than well-funded. Lesson 2.1: Threat Actors and Attributes, p. 59",
     "type": "single",
     "topic": "threats"
@@ -349,9 +339,7 @@
       "Resource reuse",
       "Sideloading"
     ],
-    "correct": [
-      3
-    ],
+    "correct": [],
     "explanation": "Explanation: Sideloading occurs when users install applications from unofficial sources rather than the vetted, manufacturer-approved repository, introducing untested code or malware. Jailbreaking (A) removes device restrictions but doesn’t necessarily involve installing unapproved apps. Memory injection (B) is a runtime exploit, not an installation method. Resource reuse (C) refers to using the same assets or components improperly, not how software is installed. Lesson 2.2: Attack Methods, p. 42",
     "type": "single",
     "topic": "threats"
@@ -365,9 +353,7 @@
       "DNS poisoning redirected kiosks to a fake site",
       "ARP poisoning caused kiosks to send copies of credentials to an attacker"
     ],
-    "correct": [
-      1
-    ],
+    "correct": [],
     "explanation": "Explanation: Only kiosks accessing the vulnerable, internet-facing site lost credentials, which points to a web application compromise (e.g., injected JavaScript or skimmer code). A brute-force attack (A) would target all users, not just those on kiosks. DNS poisoning (C) would redirect every DNS client, not selectively kiosk users. ARP poisoning (D) captures local network traffic indiscriminately, not solely kiosk submissions to a website. Lesson 2.4: Web Application Attacks, p. 67",
     "type": "single",
     "topic": "threats"
@@ -381,9 +367,7 @@
       "Brand impersonation",
       "Pretexting"
     ],
-    "correct": [
-      0
-    ],
+    "correct": [],
     "explanation": "Explanation: Business Email Compromise (BEC) is a targeted attack where fraudsters impersonate executives to trick employees into transferring funds or sensitive data. While phishing (B) is a broader category, BEC specifically uses executive impersonation. Brand impersonation (C) fakes a company’s identity, not an individual executive. Pretexting (D) is a social engineering tactic but doesn’t necessarily involve executive email account spoofing. Lesson 2.3: Social Engineering Attacks, p. 58",
     "type": "single",
     "topic": "threats"
@@ -397,9 +381,7 @@
       "SQL injection",
       "Pass-the-hash"
     ],
-    "correct": [
-      3
-    ],
+    "correct": [],
     "explanation": "Explanation: Pass-the-hash is an attack where the adversary captures hashed credentials from system memory and reuses them to authenticate to other systems without cracking the passwords. Privilege escalation (A) is gaining higher rights on the same host. Buffer overflow (B) exploits memory corruption, and SQL injection (C) attacks databases. Lesson 2.5: Credential Theft Attacks, p. 75",
     "type": "single",
     "topic": "threats"
@@ -413,9 +395,7 @@
       "Rogue employee",
       "Supply chain"
     ],
-    "correct": [
-      3
-    ],
+    "correct": [],
     "explanation": "Explanation: When an attacker compromises or tampers with software before it reaches end users—by injecting malicious code into updates or libraries—that represents a supply chain vulnerability. An insider threat (A) involves someone within the targeted organization; here, the attack comes via the software provider. A DDoS attack (B) floods services with traffic rather than embedding malware in updates. A rogue employee (C) implies deliberate sabotage by an insider, not a third-party software compromise. Lesson 2.7: Supply Chain Attacks, p. 90",
     "type": "single",
     "topic": "threats"
@@ -429,9 +409,7 @@
       "Pretexting",
       "Impersonation"
     ],
-    "correct": [
-      1
-    ],
+    "correct": [],
     "explanation": "Explanation: Smishing is phishing via SMS messages, tricking recipients into revealing credentials or performing actions. The attacker impersonates the CEO to add urgency. Pretexting (C) covers any invented scenario but doesn’t specify SMS. Impersonation (D) is generic and could be voice or email. Typosquatting (A) involves malicious domains that mimic legitimate ones. Lesson 2.2: Social Engineering Techniques, p. 50",
     "type": "single",
     "topic": "threats"
@@ -445,9 +423,7 @@
       "Credential replay",
       "Privilege escalation"
     ],
-    "correct": [
-      0
-    ],
+    "correct": [],
     "explanation": "Explanation: The “../” sequences aim to navigate above the webroot and access sensitive files like /etc/passwd, characteristic of a directory traversal attack. Brute-force (B) attempts multiple credentials, credential replay (C) reuses valid tokens, and privilege escalation (D) abuses flaws to gain higher rights—none use filesystem path manipulation. Lesson 2.4: Web Application Attacks, p. 67",
     "type": "single",
     "topic": "threats"
@@ -461,9 +437,7 @@
       "Malicious update",
       "Sideloading"
     ],
-    "correct": [
-      0
-    ],
+    "correct": [],
     "explanation": "Explanation: A race condition (specifically TOCTOU—time-of-check to time-of-use) arises when two processes access or modify the same resource without proper synchronization, allowing an attacker to insert unauthorized data between checks. Memory injection (B) targets in-memory code, sideloading (D) installs unauthorized software, and “malicious update” (C) is too generic. Lesson 2.3: Race Conditions and TOCTOU, p. 58",
     "type": "single",
     "topic": "threats"
@@ -477,9 +451,7 @@
       "SQLi",
       "DDoS"
     ],
-    "correct": [
-      1
-    ],
+    "correct": [],
     "explanation": "Explanation: Embedding <script> tags in user-supplied data is characteristic of Cross-Site Scripting (XSS), where malicious scripts run in victims’ browsers. CSRF (A) uses forged requests, SQLi (C) injects database commands, and DDoS (D) overwhelms resources—it’s XSS here. Lesson 2.4: Web Application Attacks, p. 67",
     "type": "single",
     "topic": "threats"
@@ -493,9 +465,7 @@
       "Memory injection",
       "Sideloading"
     ],
-    "correct": [
-      2
-    ],
+    "correct": [],
     "explanation": "Explanation: Memory injection (e.g., in-memory rootkits) places malicious code directly into a process’s runtime memory, bypassing disk-based detection and leaving no files on the hard drive for signature scanners to catch. Encrypted payloads (A) may obfuscate a file, firmware flaws (B) happen below the OS but don’t themselves hide code in memory, and sideloading (D) just installs unapproved software. Lesson 2.3: Malware Types and Evasion, p. 87",
     "type": "single",
     "topic": "threats"
@@ -509,9 +479,7 @@
       "Unsecured network",
       "Default credentials"
     ],
-    "correct": [
-      1
-    ],
+    "correct": [],
     "explanation": "Explanation: Seeing fake URLs in a seemingly legitimate email is classic social engineering—tricking users into clicking malicious links. Business email compromise (A) specifically targets high-level execs for fraud, unsecured networks (C) aren’t about malicious links, and default credentials (D) don’t apply to link spoofing. Lesson 2.4: Phishing and Social Engineering, p. 50",
     "type": "single",
     "topic": "threats"

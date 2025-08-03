@@ -136,9 +136,7 @@
       "Non-repudiation",
       "Integrity"
     ],
-    "correct": [
-      0
-    ],
+    "correct": [],
     "explanation": "Explanation: DDoS (Distributed Denial of Service) protections are designed to keep services online and accessible under attack, directly supporting the security principle of availability. Confidentiality (B) protects data privacy, integrity (D) protects against unauthorized modification, and non-repudiation (C) prevents denial of actions—none of which specifically address service uptime under volumetric attacks. Lesson 1.1: CIA Triad Fundamentals, p. 22",
     "type": "single",
     "topic": "general-security-concepts"
@@ -152,9 +150,7 @@
       "Avoid",
       "Accept"
     ],
-    "correct": [
-      3
-    ],
+    "correct": [],
     "explanation": "Explanation: When a critical legacy system can neither be updated nor replaced, the organization must acknowledge (accept) the risk and put compensating controls in place rather than transfer, avoid, or reject the risk. Transfer (A) would mean shifting the risk to a third party, which isn’t feasible here. Avoid (C) would require eliminating the system altogether, which isn’t possible given its criticality. Reject (B) isn’t a standard risk‐treatment option in the CompTIA framework. Lesson 1.3: Risk Management Fundamentals, p. 28",
     "type": "single",
     "topic": "general-security-concepts"
@@ -203,9 +199,7 @@
       "Prepending",
       "Dumpster diving"
     ],
-    "correct": [
-      3
-    ],
+    "correct": [ 3 ],
     "explanation": "Explanation: Dumpster diving involves retrieving sensitive documents (including printed output) from physical waste when they haven’t been properly shredded. Whaling (A) targets executives via email, credential harvesting (B) steals logon data electronically, and prepending (C) adds malicious code to the start of files. Lesson 1.4: Physical Security and Cyber Hygiene, p. 22",
     "type": "single",
     "topic": "general-security-concepts"
@@ -219,9 +213,7 @@
       "Access badges",
       "Password policy"
     ],
-    "correct": [
-      1
-    ],
+    "correct": [],
     "explanation": "Explanation: Simulated phishing campaigns train users to recognize suspicious emails—complementing posters and e-learning to reinforce behavioral change. A risk assessment (A) identifies threats, access badges (C) are physical controls, and a password policy (D) sets technical requirements, none directly engage users in awareness exercises. Lesson 1.3: Security Awareness and Training, p. 19",
     "type": "single",
     "topic": "general-security-concepts"
@@ -235,9 +227,7 @@
       "Reviewing email policies",
       "Recognizing phishing"
     ],
-    "correct": [
-      3
-    ],
+    "correct": [],
     "explanation": "Explanation: Training users to recognize phishing helps them spot fraudulent messages that try to trick them into revealing credentials or clicking malicious links. In this scenario, if the administrator had been trained to identify phishing emails—looking for unexpected requests, mismatched URLs, or poor grammar—they would have been far less likely to change the password in response. Situational awareness (A) is broader, password managers (B) help with strong credentials but not social engineering, and reviewing policies (C) alone doesn’t teach staff how to spot phishing. Lesson 1.3: Social Engineering and Phishing, p. 42",
     "type": "single",
     "topic": "general-security-concepts"
@@ -253,11 +243,8 @@
       "Camera",
       "Memorable question"
     ],
-    "correct": [
-      0,
-      3
-    ],
-    "explanation": "Explanation: Swipe cards (A) and biometric scanners (D) provide physical access control, while phone authentication applications (C) offer remote access. Picture IDs (B) and memorable questions (E) are less secure. Lesson 1.3: Access Control Concepts, p. 38",
+    "correct": [],
+    "explanation": "",
     "type": "single",
     "topic": "general-security-concepts"
   }
