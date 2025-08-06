@@ -331,7 +331,7 @@
       0
     ],
     "explanation": "Explanation: Ease of recovery – You need rapid failover and recovery processes to meet uptime goals. Responsiveness – The network must react quickly to failures or load spikes to maintain service. Ability to patch is maintenance, not availability design. Physical isolation can enhance security but may hinder redundancy. Attack surface and authentication extensibility are security concerns, not core HA considerations.",
-    "type": "single",
+    "type": "multiple",
     "topic": "security-architecture"
   },
   {
@@ -415,22 +415,6 @@
     "topic": "security-architecture"
   },
   {
-    "id": 43,
-    "question": "A company's end users are reporting that they are unable to reach external websites. After reviewing the performance data for the DNS servers, the analyst discovers that CPU, disk, and memory usage are minimal, but the network interface is flooded with inbound traffic. Network logs show only a small number of DNS queries sent to this server. Which of the following best describes what the security analyst is seeing?",
-    "options": [
-      "Concurrent session usage",
-      "Secure DNS cryptographic downgrade",
-      "On‑path resource consumption",
-      "Reflected denial of service"
-    ],
-    "correct": [
-      3
-    ],
-    "explanation": "Reflected DoS – Attackers send DNS queries with the victim’s spoofed IP to open resolvers, which then flood the victim with amplified responses. Few actual queries to your DNS imply reflection/amplification rather than legitimate sessions, downgrade, or on‑path consumption .",
-    "type": "single",
-    "topic": "security-architecture"
-  },
-  {
     "id": 44,
     "question": "Which of the following methods to secure credit card data is best to use when a requirement is to see only the last four numbers on a credit card?",
     "options": [
@@ -491,22 +475,6 @@
       1
     ],
     "explanation": "Containerization allows multiple applications to run isolated from one another on a single operating‐system kernel, significantly reducing the need for separate OS instances. Microservices describe an application design style but don’t inherently reduce OS count. Virtualization still spins up full OS images per workload, and infrastructure as code merely automates deployment .",
-    "type": "single",
-    "topic": "security-architecture"
-  },
-  {
-    "id": 48,
-    "question": "Which of the following methods to secure credit card data is best to use when a requirement is to see only the last four numbers on a credit card?",
-    "options": [
-      "Encryption",
-      "Hashing",
-      "Masking",
-      "Tokenization"
-    ],
-    "correct": [
-      2
-    ],
-    "explanation": "Masking hides parts of the credit card number by replacing digits with symbols, leaving only the last few digits visible. This approach meets the requirement for readability without exposing the full card number. Encryption and tokenization transform the entire value, and hashing is irreversible, so none of them allows partial visibility.",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -653,7 +621,7 @@
       0
     ],
     "explanation": "Explanation: Key escrow – Storing recovery keys in a secure location (such as an HSM or trusted third party) ensures that encrypted laptops can be recovered if a user forgets a password or the device fails. TPM presence – A Trusted Platform Module protects encryption keys in hardware, strengthening FDE by safeguarding keys from software attacks and enabling secure boot. Digital signatures, tokenization, PKI management, and CA linking are important elsewhere but do not directly support full‑disk encryption deployment. This planning is covered in Lesson 3.3: Data Security Controls of the Student Guide.",
-    "type": "single",
+    "type": "multiple",
     "topic": "security-architecture"
   },
   {
@@ -703,7 +671,7 @@
       1
     ],
     "explanation": "Explanation: Devices using cleartext credentials (B) or unable to receive security updates (F) present unmitigated risks and should be retired. Moving a device (A, C, D) doesn’t inherently require decommissioning, and encryption levels (E) can sometimes be mitigated with compensating controls, but outdated firmware and insecure authentication are definitive end‑of‑life indicators. This lifecycle guidance appears in Lesson 3.2: Network Device Hardening of the Student Guide.",
-    "type": "single",
+    "type": "multiple",
     "topic": "security-architecture"
   },
   {
@@ -1133,7 +1101,7 @@
       0
     ],
     "explanation": "Explanation: SSH provides secure shell access for command‑line tasks. SFTP is built on SSH for encrypted file transfer. SNMP manages devices, RDP is Windows GUI, S/MIME secures email, and SMTP sends email—none support secure CLI file transfer. See Lesson 3.2: Network Security Infrastructure and Devices.",
-    "type": "single",
+    "type": "multiple",
     "topic": "security-architecture"
   },
   {

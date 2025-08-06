@@ -258,7 +258,7 @@
       3
     ],
     "explanation": "Explanation: Swipe cards (A) and biometric scanners (D) provide physical access control, while phone authentication applications (C) offer remote access. Picture IDs (B) and memorable questions (E) are less secure. Lesson 1.3: Access Control Concepts, p. 38",
-    "type": "single",
+    "type": "multiple",
     "topic": "general-security-concepts"
   }
 ]

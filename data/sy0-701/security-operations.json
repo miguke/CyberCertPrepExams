@@ -574,7 +574,7 @@
       1
     ],
     "explanation": "Explanation: Remote wipe allows the organization to erase a lost or stolen device’s data before it can be misused. Geolocation lets administrators track a missing phone’s whereabouts, enabling faster recovery or targeted wipe. Screen locks and encryption are important baseline controls but don’t let you recover or disable a missing device after loss. Push notifications and application management govern updates and app installs, not device recovery. These MDM capabilities are detailed in Lesson 10.2: Mobile Device Management of the Student Guide.",
-    "type": "single",
+    "type": "multiple",
     "topic": "security-operations"
   },
   {
@@ -958,7 +958,7 @@
     ],
     "correct": [],
     "explanation": "Explanation:",
-    "type": "single",
+    "type": "multiple",
     "topic": "security-operations"
   },
   {
