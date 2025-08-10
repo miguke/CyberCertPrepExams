@@ -330,7 +330,7 @@
     "correct": [
       0
     ],
-    "explanation": "Explanation: Ease of recovery – You need rapid failover and recovery processes to meet uptime goals. Responsiveness – The network must react quickly to failures or load spikes to maintain service. Ability to patch is maintenance, not availability design. Physical isolation can enhance security but may hinder redundancy. Attack surface and authentication extensibility are security concerns, not core HA considerations.",
+    "explanation": "Ease of recovery – You need rapid failover and recovery processes to meet uptime goals. Responsiveness – The network must react quickly to failures or load spikes to maintain service. Ability to patch is maintenance, not availability design. Physical isolation can enhance security but may hinder redundancy. Attack surface and authentication extensibility are security concerns, not core HA considerations.",
     "type": "multiple",
     "topic": "security-architecture"
   },
@@ -620,7 +620,7 @@
     "correct": [
       0
     ],
-    "explanation": "Explanation: Key escrow – Storing recovery keys in a secure location (such as an HSM or trusted third party) ensures that encrypted laptops can be recovered if a user forgets a password or the device fails. TPM presence – A Trusted Platform Module protects encryption keys in hardware, strengthening FDE by safeguarding keys from software attacks and enabling secure boot. Digital signatures, tokenization, PKI management, and CA linking are important elsewhere but do not directly support full‑disk encryption deployment. This planning is covered in Lesson 3.3: Data Security Controls of the Student Guide.",
+    "explanation": "Key escrow – Storing recovery keys in a secure location (such as an HSM or trusted third party) ensures that encrypted laptops can be recovered if a user forgets a password or the device fails. TPM presence – A Trusted Platform Module protects encryption keys in hardware, strengthening FDE by safeguarding keys from software attacks and enabling secure boot. Digital signatures, tokenization, PKI management, and CA linking are important elsewhere but do not directly support full‑disk encryption deployment. This planning is covered in Lesson 3.3: Data Security Controls of the Student Guide.",
     "type": "multiple",
     "topic": "security-architecture"
   },
@@ -636,7 +636,7 @@
     "correct": [
       0
     ],
-    "explanation": "Explanation: Air‑gapping physically isolates the server by removing all network connections, preventing any network‑based attacks. A screened subnet or port security can limit exposure, but cannot stop attacks if the server still has any network path. “Barricade” is not a standard network control. This extreme isolation technique is detailed in Lesson 3.2: Network Security Infrastructure and Devices of the Student Guide.",
+    "explanation": "Air‑gapping physically isolates the server by removing all network connections, preventing any network‑based attacks. A screened subnet or port security can limit exposure, but cannot stop attacks if the server still has any network path. “Barricade” is not a standard network control. This extreme isolation technique is detailed in Lesson 3.2: Network Security Infrastructure and Devices of the Student Guide.",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -652,7 +652,7 @@
     "correct": [
       1
     ],
-    "explanation": "Explanation: Group Policy Objects (GPOs) centrally enforce configuration settings—including password complexity and rotation—across all domain‑joined Windows machines in real time. PowerShell scripts require manual execution, PAP is a weak authentication protocol, and EDR profiles manage threat detection, not OS password policies. This OS security orchestration method is covered in Lesson 2.4: Operating System Security of the Student Guide.",
+    "explanation": "Group Policy Objects (GPOs) centrally enforce configuration settings—including password complexity and rotation—across all domain‑joined Windows machines in real time. PowerShell scripts require manual execution, PAP is a weak authentication protocol, and EDR profiles manage threat detection, not OS password policies. This OS security orchestration method is covered in Lesson 2.4: Operating System Security of the Student Guide.",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -670,7 +670,7 @@
     "correct": [
       1
     ],
-    "explanation": "Explanation: Devices using cleartext credentials (B) or unable to receive security updates (F) present unmitigated risks and should be retired. Moving a device (A, C, D) doesn’t inherently require decommissioning, and encryption levels (E) can sometimes be mitigated with compensating controls, but outdated firmware and insecure authentication are definitive end‑of‑life indicators. This lifecycle guidance appears in Lesson 3.2: Network Device Hardening of the Student Guide.",
+    "explanation": "Devices using cleartext credentials (B) or unable to receive security updates (F) present unmitigated risks and should be retired. Moving a device (A, C, D) doesn’t inherently require decommissioning, and encryption levels (E) can sometimes be mitigated with compensating controls, but outdated firmware and insecure authentication are definitive end‑of‑life indicators. This lifecycle guidance appears in Lesson 3.2: Network Device Hardening of the Student Guide.",
     "type": "multiple",
     "topic": "security-architecture"
   },
@@ -750,7 +750,7 @@
     "correct": [
       1
     ],
-    "explanation": "Explanation: Infrastructure as Code (IaC) uses declarative scripts (e.g. Terraform, ARM templates) to provision, configure, and manage cloud resources consistently and repeatably. SaaS delivers applications, IoT refers to device networks, and SDN abstracts networking—all important concepts, but only IaC directly automates resource deployment. This approach is covered in Lesson 7.3: Cloud and Virtualization Concepts of the Student Guide.",
+    "explanation": "Infrastructure as Code (IaC) uses declarative scripts (e.g. Terraform, ARM templates) to provision, configure, and manage cloud resources consistently and repeatably. SaaS delivers applications, IoT refers to device networks, and SDN abstracts networking—all important concepts, but only IaC directly automates resource deployment. This approach is covered in Lesson 7.3: Cloud and Virtualization Concepts of the Student Guide.",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -766,7 +766,7 @@
     "correct": [
       0
     ],
-    "explanation": "Explanation: Role‑Based Access Control (RBAC) assigns permissions to roles—such as recovery operator or administrator—rather than individual users, enforcing least privilege with a simple role assignment. ACLs manage access at the object level but become complex at scale; SAML is an authentication protocol, and GPO is Windows‑specific policy deployment. RBAC is covered in Lesson 5.1: Identity and Access Management Controls of the Student Guide.",
+    "explanation": "Role‑Based Access Control (RBAC) assigns permissions to roles—such as recovery operator or administrator—rather than individual users, enforcing least privilege with a simple role assignment. ACLs manage access at the object level but become complex at scale; SAML is an authentication protocol, and GPO is Windows‑specific policy deployment. RBAC is covered in Lesson 5.1: Identity and Access Management Controls of the Student Guide.",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -782,7 +782,7 @@
     "correct": [
       3
     ],
-    "explanation": "Explanation: Under least privilege, users and processes have only the minimal rights needed. A patch installer may lack write or network permissions to transfer files. Attribute‑based and role‑based controls can restrict access but are typically broader policies; time‑of‑day limits windows, unlikely blocking all transfers. IAM principles around least privilege are in Lesson 5.1: Identity and Access Management Controls of the Student Guide.",
+    "explanation": "Under least privilege, users and processes have only the minimal rights needed. A patch installer may lack write or network permissions to transfer files. Attribute‑based and role‑based controls can restrict access but are typically broader policies; time‑of‑day limits windows, unlikely blocking all transfers. IAM principles around least privilege are in Lesson 5.1: Identity and Access Management Controls of the Student Guide.",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -798,7 +798,7 @@
     "correct": [
       1
     ],
-    "explanation": "Explanation: Containers package apps with dependencies in lightweight, portable images that can be rapidly deployed, updated, and rolled back—ideal for dynamic workloads. RTOS and embedded systems are for fixed-function devices, while SCADA manages industrial controls. Containerization is covered in Lesson 7.2: Cloud and Virtualization Concepts of the Student Guide.",
+    "explanation": "Containers package apps with dependencies in lightweight, portable images that can be rapidly deployed, updated, and rolled back—ideal for dynamic workloads. RTOS and embedded systems are for fixed-function devices, while SCADA manages industrial controls. Containerization is covered in Lesson 7.2: Cloud and Virtualization Concepts of the Student Guide.",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1034,7 +1034,7 @@
     "correct": [
       2
     ],
-    "explanation": "Explanation: A self‑signed certificate (signed by its own private key rather than a trusted CA) coupled with a compromised private key makes spoofing undetectable by external PKI. An expired or wildcard cert may be misconfigured, but only self‑signed plus private key misuse allows identity spoofing. This falls under Lesson 2.5: Public Key Infrastructure (PKI).",
+    "explanation": "A self‑signed certificate (signed by its own private key rather than a trusted CA) coupled with a compromised private key makes spoofing undetectable by external PKI. An expired or wildcard cert may be misconfigured, but only self‑signed plus private key misuse allows identity spoofing. This falls under Lesson 2.5: Public Key Infrastructure (PKI).",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1050,7 +1050,7 @@
     "correct": [
       0
     ],
-    "explanation": "Explanation: An air gap physically isolates machines from any network—including the internet—guaranteeing no unauthorized data flow. Jump servers and logical segmentation still provide network paths; virtualization alone doesn’t block external connectivity. Air‑gapping is covered in Lesson 3.4: Network Isolation Techniques.",
+    "explanation": "An air gap physically isolates machines from any network—including the internet—guaranteeing no unauthorized data flow. Jump servers and logical segmentation still provide network paths; virtualization alone doesn’t block external connectivity. Air‑gapping is covered in Lesson 3.4: Network Isolation Techniques.",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1066,7 +1066,7 @@
     "correct": [
       2
     ],
-    "explanation": "Explanation: Password = something you know; authentication token = something you have; thumbprint = something you are. Options A and D mix non‑factors; B uses VPN IP and company ID incorrectly. MFA factors are detailed in Lesson 5.1: Identity and Access Management Controls of the Student Guide.",
+    "explanation": "Password = something you know; authentication token = something you have; thumbprint = something you are. Options A and D mix non‑factors; B uses VPN IP and company ID incorrectly. MFA factors are detailed in Lesson 5.1: Identity and Access Management Controls of the Student Guide.",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1082,7 +1082,7 @@
     "correct": [
       0
     ],
-    "explanation": "Explanation: Code injected into running memory can spawn network activity on arbitrary ports. Race conditions affect timing-based logic, sideloading is about unauthorized libraries, and SQL injection targets databases. Memory injection attacks are covered in Lesson 2.2: Malware and Exploit Techniques of the Student Guide.",
+    "explanation": "Code injected into running memory can spawn network activity on arbitrary ports. Race conditions affect timing-based logic, sideloading is about unauthorized libraries, and SQL injection targets databases. Memory injection attacks are covered in Lesson 2.2: Malware and Exploit Techniques of the Student Guide.",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1100,7 +1100,7 @@
     "correct": [
       0
     ],
-    "explanation": "Explanation: SSH provides secure shell access for command‑line tasks. SFTP is built on SSH for encrypted file transfer. SNMP manages devices, RDP is Windows GUI, S/MIME secures email, and SMTP sends email—none support secure CLI file transfer. See Lesson 3.2: Network Security Infrastructure and Devices.",
+    "explanation": "SSH provides secure shell access for command‑line tasks. SFTP is built on SSH for encrypted file transfer. SNMP manages devices, RDP is Windows GUI, S/MIME secures email, and SMTP sends email—none support secure CLI file transfer. See Lesson 3.2: Network Security Infrastructure and Devices.",
     "type": "multiple",
     "topic": "security-architecture"
   },
@@ -1116,7 +1116,7 @@
     "correct": [
       0
     ],
-    "explanation": "Explanation: In IaaS, the provider secures the infrastructure; the client secures the OS, applications, and data—including databases. The DBA may implement controls, but the responsibility falls to the client organization. This is explained in Lesson 7.2: Cloud and Virtualization Concepts of the Student Guide.",
+    "explanation": "In IaaS, the provider secures the infrastructure; the client secures the OS, applications, and data—including databases. The DBA may implement controls, but the responsibility falls to the client organization. This is explained in Lesson 7.2: Cloud and Virtualization Concepts of the Student Guide.",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1130,7 +1130,7 @@
       "Security zone"
     ],
     "correct": [],
-    "explanation": "Explanation: A Virtual Private Network (VPN) is designed to provide remote users with secure, encrypted tunnels into the corporate network, preventing eavesdropping or tampering of data in transit. This directly meets the requirement for off-site employees to access resources “without interception concerns.” A proxy server can filter or anonymize web requests but does not encrypt every packet end-to-end. An NGFW (Next-Generation Firewall) offers advanced inspection at the perimeter but does not inherently establish a secure remote tunnel. A security zone refers to network segmentation within an organization’s infrastructure and does not facilitate remote access. Lesson 3.2: Secure Remote Access, p. 145",
+    "explanation": "A Virtual Private Network (VPN) is designed to provide remote users with secure, encrypted tunnels into the corporate network, preventing eavesdropping or tampering of data in transit. This directly meets the requirement for off-site employees to access resources “without interception concerns.” A proxy server can filter or anonymize web requests but does not encrypt every packet end-to-end. An NGFW (Next-Generation Firewall) offers advanced inspection at the perimeter but does not inherently establish a secure remote tunnel. A security zone refers to network segmentation within an organization’s infrastructure and does not facilitate remote access. Lesson 3.2: Secure Remote Access, p. 145",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1146,7 +1146,7 @@
     "correct": [
       0
     ],
-    "explanation": "Explanation: When a legacy system remains in production, the most critical architecturally is that it may represent a single point of failure: if it fails, the business-critical function it supports goes offline. Complexity (B) and cost (D) are concerns but secondary, and resource provisioning (C) addresses capacity rather than structural risk. Identifying and mitigating single points of failure is essential to maintain availability. Lesson 3.4: Resilient Architectures, p. 162",
+    "explanation": "When a legacy system remains in production, the most critical architecturally is that it may represent a single point of failure: if it fails, the business-critical function it supports goes offline. Complexity (B) and cost (D) are concerns but secondary, and resource provisioning (C) addresses capacity rather than structural risk. Identifying and mitigating single points of failure is essential to maintain availability. Lesson 3.4: Resilient Architectures, p. 162",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1162,7 +1162,7 @@
     "correct": [
       3
     ],
-    "explanation": "Explanation: Key escrow involves storing encryption keys in a trusted, secure repository—often backed by a Hardware Security Module (HSM)—so that authorized parties can retrieve them when necessary. This meets the requirement of shared, controlled access while keeping the keys protected at rest. Public key encryption (A) describes a method of encrypting data, not a storage mechanism for keys. A Public Key Infrastructure (B) provides the overall framework for managing keys and certificates, but doesn’t by itself dictate how individual keys are stored or recovered in a shared scenario. An open public ledger (C), such as blockchain, is transparent by design and unsuitable for storing secret keys. Lesson 3.3: Cryptographic Key Management, p. 162",
+    "explanation": "Key escrow involves storing encryption keys in a trusted, secure repository—often backed by a Hardware Security Module (HSM)—so that authorized parties can retrieve them when necessary. This meets the requirement of shared, controlled access while keeping the keys protected at rest. Public key encryption (A) describes a method of encrypting data, not a storage mechanism for keys. A Public Key Infrastructure (B) provides the overall framework for managing keys and certificates, but doesn’t by itself dictate how individual keys are stored or recovered in a shared scenario. An open public ledger (C), such as blockchain, is transparent by design and unsuitable for storing secret keys. Lesson 3.3: Cryptographic Key Management, p. 162",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1178,7 +1178,7 @@
     "correct": [
       1
     ],
-    "explanation": "Explanation: The BIOS (Basic Input/Output System) is firmware—a specialized software embedded in hardware that initializes and manages low-level device functions. Patching the BIOS addresses firmware vulnerabilities that could allow attackers to tamper with the boot process or gain low-level access to the machine. Virtualization (A) refers to hypervisor issues, not BIOS. Application (C) and operating system (D) vulnerabilities reside higher in the software stack than firmware. Lesson 3.1: Device and Platform Security, p. 130",
+    "explanation": "The BIOS (Basic Input/Output System) is firmware—a specialized software embedded in hardware that initializes and manages low-level device functions. Patching the BIOS addresses firmware vulnerabilities that could allow attackers to tamper with the boot process or gain low-level access to the machine. Virtualization (A) refers to hypervisor issues, not BIOS. Application (C) and operating system (D) vulnerabilities reside higher in the software stack than firmware. Lesson 3.1: Device and Platform Security, p. 130",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1192,7 +1192,7 @@
       "Company URL, TLS certificate, home address"
     ],
     "correct": [],
-    "explanation": "Explanation: A password satisfies “something you know,” a hardware or software token (one-time passcode) is “something you have,” and a fingerprint/thumbprint is “something you are.” Options A, B, and D mix non‐authentication elements like domain names or home addresses that don’t match the three MFA factors. Lesson 3.4: Identity and Access Management, p. 175",
+    "explanation": "A password satisfies “something you know,” a hardware or software token (one-time passcode) is “something you have,” and a fingerprint/thumbprint is “something you are.” Options A, B, and D mix non‐authentication elements like domain names or home addresses that don’t match the three MFA factors. Lesson 3.4: Identity and Access Management, p. 175",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1208,7 +1208,7 @@
     "correct": [
       1
     ],
-    "explanation": "Explanation: Cloud-native architectures leverage microservices, containers, and orchestration (e.g., Kubernetes) to distribute workloads across multiple hosts and availability zones, inherently providing redundancy and resilience. Multitenant (A) is about shared resources across customers, not redundancy. Server-side (C) simply denotes operations on the server rather than the client. Network-enabled (D) is not a standard term for resilience design. Lesson 3.2: Designing Resilient Systems, p. 142",
+    "explanation": "Cloud-native architectures leverage microservices, containers, and orchestration (e.g., Kubernetes) to distribute workloads across multiple hosts and availability zones, inherently providing redundancy and resilience. Multitenant (A) is about shared resources across customers, not redundancy. Server-side (C) simply denotes operations on the server rather than the client. Network-enabled (D) is not a standard term for resilience design. Lesson 3.2: Designing Resilient Systems, p. 142",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1224,7 +1224,7 @@
     "correct": [
       1
     ],
-    "explanation": "Explanation: SQL injection exploits improper input handling or misconfigured database permissions to inject and execute arbitrary SQL. Buffer overflow (A) targets memory boundaries in applications. VM escape (C) breaks out of a virtual machine. Memory injection (D) injects code into running processes. Lesson 2.2: Common Software Vulnerabilities, p. 91",
+    "explanation": "SQL injection exploits improper input handling or misconfigured database permissions to inject and execute arbitrary SQL. Buffer overflow (A) targets memory boundaries in applications. VM escape (C) breaks out of a virtual machine. Memory injection (D) injects code into running processes. Lesson 2.2: Common Software Vulnerabilities, p. 91",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1240,7 +1240,7 @@
     "correct": [
       3
     ],
-    "explanation": "Explanation: Peer review ensures that multiple developers examine code changes, catching malicious or faulty logic before it enters production. Automated code scanning (A) finds certain vulnerabilities but cannot detect intent. QA testing (C) validates functionality, not motive. Open-source usage (B) is about leveraging external code, not internal controls. Lesson 3.6: Secure Software Development, p. 212",
+    "explanation": "Peer review ensures that multiple developers examine code changes, catching malicious or faulty logic before it enters production. Automated code scanning (A) finds certain vulnerabilities but cannot detect intent. QA testing (C) validates functionality, not motive. Open-source usage (B) is about leveraging external code, not internal controls. Lesson 3.6: Secure Software Development, p. 212",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1256,7 +1256,7 @@
     "correct": [
       0
     ],
-    "explanation": "Explanation: By virtualizing and isolating computing resources—using VMs or containers per application or service—you prevent “noisy neighbor” issues and cross-tenant attacks in a shared cloud environment. Network segmentation (B) is important for traffic control but doesn’t enforce strict compute isolation. Data encryption (C) protects data at rest or in transit but doesn’t prevent one tenant from seeing another’s workload. Strong authentication (D) is critical but does not by itself isolate resources. Lesson 3.2: Cloud Security and Architecture, p. 148",
+    "explanation": "By virtualizing and isolating computing resources—using VMs or containers per application or service—you prevent “noisy neighbor” issues and cross-tenant attacks in a shared cloud environment. Network segmentation (B) is important for traffic control but doesn’t enforce strict compute isolation. Data encryption (C) protects data at rest or in transit but doesn’t prevent one tenant from seeing another’s workload. Strong authentication (D) is critical but does not by itself isolate resources. Lesson 3.2: Cloud Security and Architecture, p. 148",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1272,7 +1272,7 @@
     "correct": [
       2
     ],
-    "explanation": "Explanation: Tokenization replaces sensitive card data with non-reversible tokens, allowing transactions without exposing real numbers. Pseudo-anonymization (A) or database masking (D) are different approaches. Tokenization is not an authentication factor (B). Lesson 3.4: Data Protection and Privacy, p. 167",
+    "explanation": "Tokenization replaces sensitive card data with non-reversible tokens, allowing transactions without exposing real numbers. Pseudo-anonymization (A) or database masking (D) are different approaches. Tokenization is not an authentication factor (B). Lesson 3.4: Data Protection and Privacy, p. 167",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1288,7 +1288,7 @@
     "correct": [
       3
     ],
-    "explanation": "Explanation: Bollards physically block or slow vehicle access, preventing unauthorized entry. Video surveillance (A) and motion sensors (B) detect events (detective controls), and alarms (C) alert but don’t physically stop entry. Lesson 3.1: Physical Security Controls, p. 132",
+    "explanation": "Bollards physically block or slow vehicle access, preventing unauthorized entry. Video surveillance (A) and motion sensors (B) detect events (detective controls), and alarms (C) alert but don’t physically stop entry. Lesson 3.1: Physical Security Controls, p. 132",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1304,7 +1304,7 @@
     "correct": [
       0
     ],
-    "explanation": "Explanation: A Secure Web Gateway filters and inspects HTTPS traffic at the edge, enforcing policies and scanning for malware without a full VPN tunnel. A VPC endpoint (B) is internal to cloud, DPI (C) inspects packets but not policy enforcement for remote users, and an NGFW (D) sits on-prem and doesn’t inherently protect remote web traffic. Lesson 3.3: Secure Remote Access, p. 157",
+    "explanation": "A Secure Web Gateway filters and inspects HTTPS traffic at the edge, enforcing policies and scanning for malware without a full VPN tunnel. A VPC endpoint (B) is internal to cloud, DPI (C) inspects packets but not policy enforcement for remote users, and an NGFW (D) sits on-prem and doesn’t inherently protect remote web traffic. Lesson 3.3: Secure Remote Access, p. 157",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1320,7 +1320,7 @@
     "correct": [
       3
     ],
-    "explanation": "Explanation: Version control systems (e.g., Git) record every change to code, who made it, and when—allowing rollbacks to previous states and full audit trails. A change-ticket system (A) tracks requests, not code diffs; behavioral analyzers (B) monitor runtime activity; collaboration platforms (C) support discussion but don’t inherently track code revisions. Lesson 3.3: Secure Development Lifecycle, p. 122",
+    "explanation": "Version control systems (e.g., Git) record every change to code, who made it, and when—allowing rollbacks to previous states and full audit trails. A change-ticket system (A) tracks requests, not code diffs; behavioral analyzers (B) monitor runtime activity; collaboration platforms (C) support discussion but don’t inherently track code revisions. Lesson 3.3: Secure Development Lifecycle, p. 122",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1336,7 +1336,7 @@
     "correct": [
       2
     ],
-    "explanation": "Explanation: Homomorphic encryption permits data to remain encrypted end-to-end while enabling computations (search, analytics) on ciphertext. Neither symmetric (B) nor asymmetric (A) alone allows processing without decryption. Ephemeral (D) refers to short-lived keys, not processing encrypted data. Lesson 3.4: Advanced Cryptographic Techniques, p. 173",
+    "explanation": "Homomorphic encryption permits data to remain encrypted end-to-end while enabling computations (search, analytics) on ciphertext. Neither symmetric (B) nor asymmetric (A) alone allows processing without decryption. Ephemeral (D) refers to short-lived keys, not processing encrypted data. Lesson 3.4: Advanced Cryptographic Techniques, p. 173",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1352,7 +1352,7 @@
     "correct": [
       0
     ],
-    "explanation": "Explanation: Serverless computing abstracts server management entirely—developers push code and the provider runs it on demand—eliminating provisioning, patching, and scaling overhead. Thin clients (B) shift computation to servers, private cloud (C) still requires VM management, and virtual machines (D) need full lifecycle operations. Lesson 3.2: Cloud Service Models, p. 139",
+    "explanation": "Serverless computing abstracts server management entirely—developers push code and the provider runs it on demand—eliminating provisioning, patching, and scaling overhead. Thin clients (B) shift computation to servers, private cloud (C) still requires VM management, and virtual machines (D) need full lifecycle operations. Lesson 3.2: Cloud Service Models, p. 139",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1368,7 +1368,7 @@
     "correct": [
       1
     ],
-    "explanation": "Explanation: Hashing transforms passwords into irreversible digests; even if the database is leaked, attackers cannot recover the original credentials (especially when salted). Tokenization (A) replaces data with tokens but isn’t standard for passwords. Obfuscation (C) is easily reversed, and network segmentation (D) isolates systems but doesn’t protect stored data itself. Lesson 3.4: Data Protection Mechanisms, p. 175",
+    "explanation": "Hashing transforms passwords into irreversible digests; even if the database is leaked, attackers cannot recover the original credentials (especially when salted). Tokenization (A) replaces data with tokens but isn’t standard for passwords. Obfuscation (C) is easily reversed, and network segmentation (D) isolates systems but doesn’t protect stored data itself. Lesson 3.4: Data Protection Mechanisms, p. 175",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1384,7 +1384,7 @@
     "correct": [
       0
     ],
-    "explanation": "Explanation: Environmental variables store configuration (paths, API keys, flags) that applications trust at runtime. If an attacker can modify these, they might redirect execution, expose credentials, or expand the reach of an exploit—directly changing the vulnerability’s scope. Option B overstates an attack vector; C conflates variables with crypto policy files; D confuses scheduling with risk scope. Lesson 3.1: System Hardening and Configuration, p. 89",
+    "explanation": "Environmental variables store configuration (paths, API keys, flags) that applications trust at runtime. If an attacker can modify these, they might redirect execution, expose credentials, or expand the reach of an exploit—directly changing the vulnerability’s scope. Option B overstates an attack vector; C conflates variables with crypto policy files; D confuses scheduling with risk scope. Lesson 3.1: System Hardening and Configuration, p. 89",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1400,7 +1400,7 @@
     "correct": [
       0
     ],
-    "explanation": "Explanation: A jump server (or bastion host) sits between a workstation and a protected segment, enforcing strong authentication, logging, and auditing—allowing DBAs to reach the database network without direct access. RADIUS (B) is an authentication protocol, HSM (C) safeguards keys, and load balancers (D) distribute traffic; none provide an intermediary access point. Lesson 3.3: Network Segmentation and Zoning, p. 104",
+    "explanation": "A jump server (or bastion host) sits between a workstation and a protected segment, enforcing strong authentication, logging, and auditing—allowing DBAs to reach the database network without direct access. RADIUS (B) is an authentication protocol, HSM (C) safeguards keys, and load balancers (D) distribute traffic; none provide an intermediary access point. Lesson 3.3: Network Segmentation and Zoning, p. 104",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1416,7 +1416,7 @@
     "correct": [
       0
     ],
-    "explanation": "Explanation: Dynamic analysis evaluates an application in execution—monitoring inputs, outputs, memory use, and behavior to uncover runtime vulnerabilities. Code review (B) and package monitoring (C) are static activities, and bug bounty (D) is a testing program, not a direct runtime method. Lesson 3.4: Application Security Testing, p. 156",
+    "explanation": "Dynamic analysis evaluates an application in execution—monitoring inputs, outputs, memory use, and behavior to uncover runtime vulnerabilities. Code review (B) and package monitoring (C) are static activities, and bug bounty (D) is a testing program, not a direct runtime method. Lesson 3.4: Application Security Testing, p. 156",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1432,7 +1432,7 @@
     "correct": [
       1
     ],
-    "explanation": "Explanation: A jump server acts as the sole gateway into protected segments—users authenticate there first, and only approved sessions are forwarded. This “bastion host” model adds a choke point for logging, access control, and monitoring. RDP server (A) exposes remote desktop, proxy (C) filters web traffic, hypervisor (D) virtualizes hosts but doesn’t mediate access. Lesson 3.3: Secure Network Architecture, p. 108",
+    "explanation": "A jump server acts as the sole gateway into protected segments—users authenticate there first, and only approved sessions are forwarded. This “bastion host” model adds a choke point for logging, access control, and monitoring. RDP server (A) exposes remote desktop, proxy (C) filters web traffic, hypervisor (D) virtualizes hosts but doesn’t mediate access. Lesson 3.3: Secure Network Architecture, p. 108",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1448,7 +1448,7 @@
     "correct": [
       2
     ],
-    "explanation": "Explanation: By sanitizing user-supplied data through regular expressions—whitelisting or blacklisting dangerous characters—the application defends against injection (SQLi, command) and cross-site scripting attacks. That is core input validation. Embedded key identification (A) finds secrets in code, debugging (B) fixes logic bugs, and static analysis (D) scans code but doesn’t itself remove harmful input. Lesson 3.4: Input Validation and Sanitization, p. 162",
+    "explanation": "By sanitizing user-supplied data through regular expressions—whitelisting or blacklisting dangerous characters—the application defends against injection (SQLi, command) and cross-site scripting attacks. That is core input validation. Embedded key identification (A) finds secrets in code, debugging (B) fixes logic bugs, and static analysis (D) scans code but doesn’t itself remove harmful input. Lesson 3.4: Input Validation and Sanitization, p. 162",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1464,7 +1464,7 @@
     "correct": [
       2
     ],
-    "explanation": "Explanation: Insecure key storage describes situations where private keys or certificates are stored without proper protection—plain-text on disk, in code repositories, or with overly permissive file permissions—allowing attackers to steal or misuse them. Misconfiguration (A) is broader, covering many settings; resource reuse (B) applies to memory or session tokens; and weak cipher suites (D) stem from algorithm choice rather than certificate handling. Lesson 2.2: Cryptographic Vulnerabilities and Mitigation, p. 67",
+    "explanation": "Insecure key storage describes situations where private keys or certificates are stored without proper protection—plain-text on disk, in code repositories, or with overly permissive file permissions—allowing attackers to steal or misuse them. Misconfiguration (A) is broader, covering many settings; resource reuse (B) applies to memory or session tokens; and weak cipher suites (D) stem from algorithm choice rather than certificate handling. Lesson 2.2: Cryptographic Vulnerabilities and Mitigation, p. 67",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1481,7 +1481,7 @@
       0,
       1
     ],
-    "explanation": "Explanation: Non-encrypted web traffic uses the HTTP protocol, so blocking URLs containing “http://” stops users before the browser attempts an unencrypted connection. Option A is a query parameter not universally present. www.*.com (C) matches many sites regardless of HTTPS. Port 443 (D) is for encrypted traffic—opposite of the goal. Lesson 3.2: Web Security Controls, p. 149",
+    "explanation": "Non-encrypted web traffic uses the HTTP protocol, so blocking URLs containing “http://” stops users before the browser attempts an unencrypted connection. Option A is a query parameter not universally present. www.*.com (C) matches many sites regardless of HTTPS. Port 443 (D) is for encrypted traffic—opposite of the goal. Lesson 3.2: Web Security Controls, p. 149",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1497,7 +1497,7 @@
     "correct": [
       3
     ],
-    "explanation": "Explanation: Self-signed certificates are not issued by a trusted Certificate Authority (CA), triggering “insecure” browser warnings. Third-party (A) and root of trust (B) CAs are generally trusted by browsers. Wildcard (C) covers multiple subdomains but must still be issued by a trusted CA to avoid warnings. Lesson 3.5: Public Key Infrastructure, p. 179",
+    "explanation": "Self-signed certificates are not issued by a trusted Certificate Authority (CA), triggering “insecure” browser warnings. Third-party (A) and root of trust (B) CAs are generally trusted by browsers. Wildcard (C) covers multiple subdomains but must still be issued by a trusted CA to avoid warnings. Lesson 3.5: Public Key Infrastructure, p. 179",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1513,7 +1513,7 @@
     "correct": [
       3
     ],
-    "explanation": "Explanation: Injection attacks exploit unfiltered user input; properly sanitizing and validating inputs (e.g., whitelisting allowed characters, escaping meta-characters) prevents malicious payloads from reaching interpreters. Static code analysis (A) can detect potential flaws but doesn’t stop live attacks. Sandboxing (B) contains execution but doesn’t prevent injection. Secure cookies (C) protect session integrity, not input injection. Lesson 3.3: Input Validation and Output Encoding, p. 122",
+    "explanation": "Injection attacks exploit unfiltered user input; properly sanitizing and validating inputs (e.g., whitelisting allowed characters, escaping meta-characters) prevents malicious payloads from reaching interpreters. Static code analysis (A) can detect potential flaws but doesn’t stop live attacks. Sandboxing (B) contains execution but doesn’t prevent injection. Secure cookies (C) protect session integrity, not input injection. Lesson 3.3: Input Validation and Output Encoding, p. 122",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1531,7 +1531,7 @@
       0,
       4
     ],
-    "explanation": "Explanation: VM escape allows malicious code in one virtual machine to break out and affect the underlying hypervisor or other VMs—a critical risk in multitenant cloud environments. Password spraying (B) is an authentication attack; TOC/TOU (C) refers to time-of-check/time-of-use races; SQL injection (D) targets applications; tokenization (E) protects data at rest or in transit. While all matter, VM escape most directly endangers cloud isolation. Lesson 3.1: Virtualization Security, p. 110",
+    "explanation": "VM escape allows malicious code in one virtual machine to break out and affect the underlying hypervisor or other VMs—a critical risk in multitenant cloud environments. Password spraying (B) is an authentication attack; TOC/TOU (C) refers to time-of-check/time-of-use races; SQL injection (D) targets applications; tokenization (E) protects data at rest or in transit. While all matter, VM escape most directly endangers cloud isolation. Lesson 3.1: Virtualization Security, p. 110",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1547,7 +1547,7 @@
     "correct": [
       0
     ],
-    "explanation": "Explanation: Virtual Desktop Infrastructure (VDI) hosts desktop environments on centrally managed servers. Offshore users connect remotely to these virtual desktops, ensuring all sensitive data and applications remain on company infrastructure rather than resident on user-provided devices. A VPN (C) secures the network channel but still exposes data on the endpoint. MDM (B) manages mobile devices’ configuration but does not eliminate data storage on user hardware. A VPC (D) isolates cloud resources but doesn’t address remote desktop provisioning. Lesson 3.1: Virtualization and Cloud Architecture, p. 102",
+    "explanation": "Virtual Desktop Infrastructure (VDI) hosts desktop environments on centrally managed servers. Offshore users connect remotely to these virtual desktops, ensuring all sensitive data and applications remain on company infrastructure rather than resident on user-provided devices. A VPN (C) secures the network channel but still exposes data on the endpoint. MDM (B) manages mobile devices’ configuration but does not eliminate data storage on user hardware. A VPC (D) isolates cloud resources but doesn’t address remote desktop provisioning. Lesson 3.1: Virtualization and Cloud Architecture, p. 102",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1563,7 +1563,7 @@
     "correct": [
       0
     ],
-    "explanation": "Explanation: A warm site provides pre-configured hardware and network connectivity (including internet) but may lack the most current data backups, striking a balance between cost and readiness. A hot site (D) is fully mirrored with live data and real-time failover—but at much higher expense. A cold site (B) offers only basic infrastructure without installed servers or connectivity. “Recovery site” (C) is a generic term that doesn’t specify readiness level. Lesson 3.4: Business Continuity Site Types, p. 137",
+    "explanation": "A warm site provides pre-configured hardware and network connectivity (including internet) but may lack the most current data backups, striking a balance between cost and readiness. A hot site (D) is fully mirrored with live data and real-time failover—but at much higher expense. A cold site (B) offers only basic infrastructure without installed servers or connectivity. “Recovery site” (C) is a generic term that doesn’t specify readiness level. Lesson 3.4: Business Continuity Site Types, p. 137",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1578,7 +1578,7 @@
       "SaaS"
     ],
     "correct": [],
-    "explanation": "Explanation: Software-as-a-Service (SaaS) delivers fully hosted applications over the Internet with no requirement for on-premises infrastructure. Users simply connect via a browser, and all backend management is handled by the provider. Platform-as-a-Service (PaaS) and Infrastructure-as-a-Service (IaaS) still require customers to manage platforms or VMs. Hybrid and private clouds involve on-premises or co-located resources that aren’t universally accessible. Lesson 3.3: Cloud Service Models, p. 128",
+    "explanation": "Software-as-a-Service (SaaS) delivers fully hosted applications over the Internet with no requirement for on-premises infrastructure. Users simply connect via a browser, and all backend management is handled by the provider. Platform-as-a-Service (PaaS) and Infrastructure-as-a-Service (IaaS) still require customers to manage platforms or VMs. Hybrid and private clouds involve on-premises or co-located resources that aren’t universally accessible. Lesson 3.3: Cloud Service Models, p. 128",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1594,7 +1594,7 @@
     "correct": [
       3
     ],
-    "explanation": "Explanation: Time-based One-Time Password (TOTP) tokens (e.g., RFC 6238 apps) generate codes locally on any smartphone or hardware token without an Internet connection, making them device-agnostic and functional offline. SMS (B) requires cellular service and isn’t truly offline. Biometrics (A) depend on the device’s hardware and enrollment, and username/password (C) offers no second factor or offline proof of possession. Lesson 4.1: Multi-Factor Authentication, p. 142",
+    "explanation": "Time-based One-Time Password (TOTP) tokens (e.g., RFC 6238 apps) generate codes locally on any smartphone or hardware token without an Internet connection, making them device-agnostic and functional offline. SMS (B) requires cellular service and isn’t truly offline. Biometrics (A) depend on the device’s hardware and enrollment, and username/password (C) offers no second factor or offline proof of possession. Lesson 4.1: Multi-Factor Authentication, p. 142",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1610,7 +1610,7 @@
     "correct": [
       2
     ],
-    "explanation": "Explanation: Trust chains require that the root (or intermediary) CA certificate is present in the server’s trust store. Even with a valid CSR, key pair, and proper wildcard configuration, a missing root CA will cause trust errors. Verifying the public key (B) and CSR (D) were already covered, and wildcard settings (A) only affect hostname matching, not trust. Lesson 3.5: Public Key Infrastructure, p. 156",
+    "explanation": "Trust chains require that the root (or intermediary) CA certificate is present in the server’s trust store. Even with a valid CSR, key pair, and proper wildcard configuration, a missing root CA will cause trust errors. Verifying the public key (B) and CSR (D) were already covered, and wildcard settings (A) only affect hostname matching, not trust. Lesson 3.5: Public Key Infrastructure, p. 156",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1626,7 +1626,7 @@
     "correct": [
       0
     ],
-    "explanation": "Explanation: A load balancer distributes incoming requests across multiple servers to optimize resource use, improve response times, and provide failover. A proxy server (B) forwards client requests but doesn’t inherently distribute load. A jump server (C) secures administrative access. SD-WAN (D) optimizes network traffic across WAN links, not application server load. Lesson 3.2: Network and Application Availability, p. 134",
+    "explanation": "A load balancer distributes incoming requests across multiple servers to optimize resource use, improve response times, and provide failover. A proxy server (B) forwards client requests but doesn’t inherently distribute load. A jump server (C) secures administrative access. SD-WAN (D) optimizes network traffic across WAN links, not application server load. Lesson 3.2: Network and Application Availability, p. 134",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1642,7 +1642,7 @@
     "correct": [
       3
     ],
-    "explanation": "Explanation: IPSec operates at the network layer to provide authentication, integrity, and confidentiality for IP traffic—even across private cloud segments—by encapsulating and encrypting each IP packet. RSA (B) is an encryption algorithm but does not by itself secure all network communications; SHA-1 (A) is a deprecated hash function; a TGT (C) is a Kerberos ticket for authentication, not a transport encryption mechanism. Lesson 3.4: Network Encryption and VPNs, p. 138",
+    "explanation": "IPSec operates at the network layer to provide authentication, integrity, and confidentiality for IP traffic—even across private cloud segments—by encapsulating and encrypting each IP packet. RSA (B) is an encryption algorithm but does not by itself secure all network communications; SHA-1 (A) is a deprecated hash function; a TGT (C) is a Kerberos ticket for authentication, not a transport encryption mechanism. Lesson 3.4: Network Encryption and VPNs, p. 138",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1658,7 +1658,7 @@
     "correct": [
       0
     ],
-    "explanation": "Explanation: Mandating TLS (and similar encrypted protocols) at the network layer ensures all data in transit is encrypted end-to-end. While NAC (B) and firewalls help with authorization, they do not enforce encryption. Blocking specific IPS signatures (C) or monitoring endpoints (D) doesn’t guarantee that transport is always encrypted. Lesson 3.2: Secure Network Protocols, p. 132",
+    "explanation": "Mandating TLS (and similar encrypted protocols) at the network layer ensures all data in transit is encrypted end-to-end. While NAC (B) and firewalls help with authorization, they do not enforce encryption. Blocking specific IPS signatures (C) or monitoring endpoints (D) doesn’t guarantee that transport is always encrypted. Lesson 3.2: Secure Network Protocols, p. 132",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1674,7 +1674,7 @@
     "correct": [
       0
     ],
-    "explanation": "Explanation: A Virtual Private Network (VPN) creates an encrypted tunnel that limits network exposure by granting access only through secure endpoints. LDAP (B) is an authentication protocol, FTP (C) is an insecure file transfer protocol, and RADIUS (D) is an AAA server—none directly secure remote connectivity. Lesson 3.2: Secure Remote Access, p. 145",
+    "explanation": "A Virtual Private Network (VPN) creates an encrypted tunnel that limits network exposure by granting access only through secure endpoints. LDAP (B) is an authentication protocol, FTP (C) is an insecure file transfer protocol, and RADIUS (D) is an AAA server—none directly secure remote connectivity. Lesson 3.2: Secure Remote Access, p. 145",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1690,7 +1690,7 @@
     "correct": [
       3
     ],
-    "explanation": "Explanation: A secure configuration guide provides step-by-step instructions (e.g., disabling unnecessary services, setting file-integrity checks) to ensure every new server is hardened consistently before going live. A change management procedure (A) governs how changes are approved, an overarching policy (B) sets principles but not detailed settings, and a cybersecurity framework (C) is a high-level governance model. Lesson 3.3: System Hardening and Baseline Configurations, p. 147",
+    "explanation": "A secure configuration guide provides step-by-step instructions (e.g., disabling unnecessary services, setting file-integrity checks) to ensure every new server is hardened consistently before going live. A change management procedure (A) governs how changes are approved, an overarching policy (B) sets principles but not detailed settings, and a cybersecurity framework (C) is a high-level governance model. Lesson 3.3: System Hardening and Baseline Configurations, p. 147",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1706,7 +1706,7 @@
     "correct": [
       1
     ],
-    "explanation": "Explanation: Secure Access Service Edge (SASE) combines network and security functions delivered as a service—firewall, SWG, CASB, ZTNA—removing the need to deploy and maintain on-premises appliances, ideal when IT resources are constrained. A WAF (A) protects web apps only; an IPS (C) inspects traffic but requires infrastructure; IAM (D) manages identities but doesn’t deliver network security as a service. Lesson 3.6: Cloud Security Architectures, p. 167",
+    "explanation": "Secure Access Service Edge (SASE) combines network and security functions delivered as a service—firewall, SWG, CASB, ZTNA—removing the need to deploy and maintain on-premises appliances, ideal when IT resources are constrained. A WAF (A) protects web apps only; an IPS (C) inspects traffic but requires infrastructure; IAM (D) manages identities but doesn’t deliver network security as a service. Lesson 3.6: Cloud Security Architectures, p. 167",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1722,7 +1722,7 @@
     "correct": [
       1
     ],
-    "explanation": "Explanation: Using multiple vendors for similar functions reduces the risk that a single zero-day vulnerability will compromise the entire infrastructure—if one product is attacked, others may remain unaffected. Load balancing (A) distributes traffic, configuration guides (C) are tech artifacts, and patch availability (D) depends on each vendor but is not a diversity benefit in itself. Lesson 2.5: Supply Chain and Vendor Management, p. 74",
+    "explanation": "Using multiple vendors for similar functions reduces the risk that a single zero-day vulnerability will compromise the entire infrastructure—if one product is attacked, others may remain unaffected. Load balancing (A) distributes traffic, configuration guides (C) are tech artifacts, and patch availability (D) depends on each vendor but is not a diversity benefit in itself. Lesson 2.5: Supply Chain and Vendor Management, p. 74",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1738,7 +1738,7 @@
     "correct": [
       3
     ],
-    "explanation": "Explanation: Sideloading is the installation of apps from untrusted sources outside an official store, bypassing vendor validation and opening devices to malware or poorly vetted software. Cross-site scripting (A) is a web-app injection flaw, buffer overflow (B) corrupts memory, and jailbreaking (C) breaks OS controls but isn’t the act of installing apps—sideloading is the specific term. Lesson 3.4: Mobile and Embedded Device Security, p. 512",
+    "explanation": "Sideloading is the installation of apps from untrusted sources outside an official store, bypassing vendor validation and opening devices to malware or poorly vetted software. Cross-site scripting (A) is a web-app injection flaw, buffer overflow (B) corrupts memory, and jailbreaking (C) breaks OS controls but isn’t the act of installing apps—sideloading is the specific term. Lesson 3.4: Mobile and Embedded Device Security, p. 512",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1754,7 +1754,7 @@
     "correct": [
       0
     ],
-    "explanation": "Explanation: Port security on switches limits which MAC addresses may connect on each physical port, blocking unauthorized devices like a visitor’s laptop. A web application firewall (B) protects web servers, TLS (C) encrypts traffic but doesn’t control port access, and a VPN (D) secures remote connections but doesn’t stop someone plugging in locally. Lesson 3.2: Network Segmentation and Controls, p. 145",
+    "explanation": "Port security on switches limits which MAC addresses may connect on each physical port, blocking unauthorized devices like a visitor’s laptop. A web application firewall (B) protects web servers, TLS (C) encrypts traffic but doesn’t control port access, and a VPN (D) secures remote connections but doesn’t stop someone plugging in locally. Lesson 3.2: Network Segmentation and Controls, p. 145",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1770,7 +1770,7 @@
     "correct": [
       2
     ],
-    "explanation": "Explanation: Data “in use” is currently being processed—read, written, or manipulated—by an application or database engine. “At rest” (A) is stored, “in transit” (D) is moving over a network, and “being hashed” (B) is a cryptographic operation, not a general state. Lesson 3.1: Data Security and Privacy, p. 123",
+    "explanation": "Data “in use” is currently being processed—read, written, or manipulated—by an application or database engine. “At rest” (A) is stored, “in transit” (D) is moving over a network, and “being hashed” (B) is a cryptographic operation, not a general state. Lesson 3.1: Data Security and Privacy, p. 123",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1786,7 +1786,7 @@
     "correct": [
       3
     ],
-    "explanation": "Explanation: Choosing an IdP is the foundational step—once an IdP is in place, you can configure SAML (A) or OAuth (B) for single sign-on (SSO) across all SaaS apps. Password vaulting (C) merely stores multiple credentials rather than reducing them. Lesson 3.3: Federated Identity and SSO, p. 158",
+    "explanation": "Choosing an IdP is the foundational step—once an IdP is in place, you can configure SAML (A) or OAuth (B) for single sign-on (SSO) across all SaaS apps. Password vaulting (C) merely stores multiple credentials rather than reducing them. Lesson 3.3: Federated Identity and SSO, p. 158",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1802,7 +1802,7 @@
     "correct": [
       1
     ],
-    "explanation": "Explanation: IoT platforms must encrypt device-to-cloud and cloud-to-console traffic (e.g., via TLS) to prevent eavesdropping or tampering. Federated identity (A) and SSO (D) ease user authentication but don’t protect device communications, and firewalls (C) control network access but don’t ensure confidentiality in transit. Lesson 3.7: IoT and Cloud Security, p. 168",
+    "explanation": "IoT platforms must encrypt device-to-cloud and cloud-to-console traffic (e.g., via TLS) to prevent eavesdropping or tampering. Federated identity (A) and SSO (D) ease user authentication but don’t protect device communications, and firewalls (C) control network access but don’t ensure confidentiality in transit. Lesson 3.7: IoT and Cloud Security, p. 168",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1818,7 +1818,7 @@
     "correct": [
       0
     ],
-    "explanation": "Explanation: Secure Access Service Edge (SASE) converges networking (SD-WAN, VPN) and security (software-based firewall, SWG, CASB, ZTNA) into a cloud-delivered service. Its globally distributed points of presence ensure high redundancy and low latency for a fully remote workforce while providing integrated VPN and firewall capabilities. An IPS (B) only inspects traffic, a CASB (C) protects only SaaS apps, and a SIEM (D) handles logging and alerting rather than access enforcement. Lesson 3.5: Cloud Security Architectures – SASE, p. 178",
+    "explanation": "Secure Access Service Edge (SASE) converges networking (SD-WAN, VPN) and security (software-based firewall, SWG, CASB, ZTNA) into a cloud-delivered service. Its globally distributed points of presence ensure high redundancy and low latency for a fully remote workforce while providing integrated VPN and firewall capabilities. An IPS (B) only inspects traffic, a CASB (C) protects only SaaS apps, and a SIEM (D) handles logging and alerting rather than access enforcement. Lesson 3.5: Cloud Security Architectures – SASE, p. 178",
     "type": "single",
     "topic": "security-architecture"
   }

@@ -43,7 +43,7 @@
     "correct": [
       1
     ],
-    "explanation": "Before you detect anomalies, you must know what “normal” looks like. Only then can you tune alerts, deploy agents effectively, or write playbooks. Lesson 4.1: Establishing a Baseline for Detection",
+    "explanation": "Before you detect anomalies, you must know what “normal” looks like. Only then can you tune alerts, deploy agents effectively, or write playbooks.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -59,7 +59,7 @@
     "correct": [
       0
     ],
-    "explanation": "If the security camera shows no traffic in the logs during testing, the most likely cause is that it is not placed on the proper VLAN for camera network traffic. Security cameras often operate on a dedicated surveillance VLAN for both performance and security isolation. Without being on the correct VLAN, the device may not be able to communicate with the recording server or management system. Configure the correct VLAN (A) ensures the camera is logically connected to the right network segment and can send/receive video data. Vulnerability scan (B) is important for security but would not restore connectivity in this setup phase. Disable unnecessary ports (C) is a hardening step done after confirming the device works. Conduct a site survey (D) is usually performed before installing the camera, to determine optimal placement and coverage, not after noticing no traffic. Student Guide Reference: Lesson 3.3: Secure Network Architecture, section Network Segmentation and VLAN Configuration, covers the need for placing IoT devices like security cameras on the proper VLAN to ensure connectivity and maintain security separation. Lesson 3.3: Secure Network Architecture – VLAN Segmentation",
+    "explanation": "If the security camera shows no traffic in the logs during testing, the most likely cause is that it is not placed on the proper VLAN for camera network traffic. Security cameras often operate on a dedicated surveillance VLAN for both performance and security isolation. Without being on the correct VLAN, the device may not be able to communicate with the recording server or management system. Configure the correct VLAN (A) ensures the camera is logically connected to the right network segment and can send/receive video data. Vulnerability scan (B) is important for security but would not restore connectivity in this setup phase. Disable unnecessary ports (C) is a hardening step done after confirming the device works. Conduct a site survey (D) is usually performed before installing the camera, to determine optimal placement and coverage, not after noticing no traffic. Student Guide Reference: Lesson 3.3: Secure Network Architecture, section Network Segmentation and VLAN Configuration, covers the need for placing IoT devices like security cameras on the proper VLAN to ensure connectivity and maintain security separation.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -75,7 +75,7 @@
     "correct": [
       0
     ],
-    "explanation": "Tabletop exercises walk through hypothetical incidents on paper to identify gaps in response plans and roles. Replication/failover/recovery are technical controls or DR procedures, not planning exercises. Lesson 5.3: Incident Response Testing Methods",
+    "explanation": "Tabletop exercises walk through hypothetical incidents on paper to identify gaps in response plans and roles. Replication/failover/recovery are technical controls or DR procedures, not planning exercises.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -91,7 +91,7 @@
     "correct": [
       2
     ],
-    "explanation": "The purple team is a collaborative effort that merges the red team’s attack simulations with the blue team’s defensive controls into a unified process. The red team focuses solely on offense, the blue team on defense, and the yellow team (often developers) builds tools rather than testing security. Lesson 4.1: Red, Blue, and Purple Teams",
+    "explanation": "The purple team is a collaborative effort that merges the red team’s attack simulations with the blue team’s defensive controls into a unified process. The red team focuses solely on offense, the blue team on defense, and the yellow team (often developers) builds tools rather than testing security.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -107,7 +107,7 @@
     "correct": [
       0
     ],
-    "explanation": "False positives usually happen because the security software’s rules or signatures are too aggressive or misconfigured. A zero‑day or supply chain attack implies a real threat, not a mistakenly blocked download. Incorrect file permissions would prevent access but wouldn’t typically generate a malware‑style alert. Lesson 4.2: Investigating Alerts and False Positives",
+    "explanation": "False positives usually happen because the security software’s rules or signatures are too aggressive or misconfigured. A zero‑day or supply chain attack implies a real threat, not a mistakenly blocked download. Incorrect file permissions would prevent access but wouldn’t typically generate a malware‑style alert.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -123,7 +123,7 @@
     "correct": [
       0
     ],
-    "explanation": "Tuning involves adjusting detection rules or parameters so that known benign activity no longer triggers alerts. Aggregating combines data for analysis, quarantining isolates potential threats, and archiving stores logs for compliance or future reference. Lesson 4.2: SIEM Tuning",
+    "explanation": "Tuning involves adjusting detection rules or parameters so that known benign activity no longer triggers alerts. Aggregating combines data for analysis, quarantining isolates potential threats, and archiving stores logs for compliance or future reference.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -139,7 +139,7 @@
     "correct": [
       1
     ],
-    "explanation": "Physical testing verifies controls like badges, locks, and barriers by attempting real‑world access. Passive testing gathers information without interaction. Offensive/defensive describe red vs. blue team activities, not this social/physical check . Lesson 4.3: Physical Penetration Testing",
+    "explanation": "Physical testing verifies controls like badges, locks, and barriers by attempting real‑world access. Passive testing gathers information without interaction. Offensive/defensive describe red vs. blue team activities, not this social/physical check .",
     "type": "single",
     "topic": "security-operations"
   },
@@ -155,7 +155,7 @@
     "correct": [
       1
     ],
-    "explanation": "A Group Policy Object push instantly applies the new password policy across all domain‑joined Windows systems. PowerShell scripts, PAP (Password Authentication Protocol), or EDR profile changes aren’t as centralized or fast for policy enforcement . Lesson 3.4: Group Policy and Centralized Management",
+    "explanation": "A Group Policy Object push instantly applies the new password policy across all domain‑joined Windows systems. PowerShell scripts, PAP (Password Authentication Protocol), or EDR profile changes aren’t as centralized or fast for policy enforcement .",
     "type": "single",
     "topic": "security-operations"
   },
@@ -171,7 +171,7 @@
     "correct": [
       3
     ],
-    "explanation": "Whaling targets high‑level executives or uses their identity to deceive. This CEO‑impersonation scam is classic whaling (also called CEO fraud). Smishing is SMS‑based. “Impersonation” is generic, and disinformation is spreading false information, not direct fraud. Lesson 1.4: Social Engineering Techniques – Whaling",
+    "explanation": "Whaling targets high‑level executives or uses their identity to deceive. This CEO‑impersonation scam is classic whaling (also called CEO fraud). Smishing is SMS‑based. “Impersonation” is generic, and disinformation is spreading false information, not direct fraud.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -187,7 +187,7 @@
     "correct": [
       1
     ],
-    "explanation": "A honeypot lures attackers so you can observe their methods and gather intelligence. It doesn’t provide backups, secure channels, or performance gains. Lesson 2.4: Deception and Threat Intelligence – Honeypots",
+    "explanation": "A honeypot lures attackers so you can observe their methods and gather intelligence. It doesn’t provide backups, secure channels, or performance gains.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -203,7 +203,7 @@
     "correct": [
       0
     ],
-    "explanation": "Threat hunting is the proactive search for hidden threats or malware without waiting for alerts. Vulnerability scans find known weaknesses, penetration testing simulates attacks, and log aggregation just collects data for analysis. Lesson 4.2: Threat Hunting",
+    "explanation": "Threat hunting is the proactive search for hidden threats or malware without waiting for alerts. Vulnerability scans find known weaknesses, penetration testing simulates attacks, and log aggregation just collects data for analysis.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -219,7 +219,7 @@
     "correct": [
       1
     ],
-    "explanation": "Incident response begins with identifying and understanding the incident’s scope before deciding on containment or eradication. Jumping straight to containment without knowing the threat may misallocate resources. Lesson 5.2: Incident Response Process – Detection & Analysis",
+    "explanation": "Incident response begins with identifying and understanding the incident’s scope before deciding on containment or eradication. Jumping straight to containment without knowing the threat may misallocate resources.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -235,7 +235,7 @@
     "correct": [
       3
     ],
-    "explanation": "Load balancer – By distributing traffic across multiple instances, it ensures services remain up even if some servers fail. An access broker handles identity brokering, Cloud HSM secures keys, and a WAF filters web attacks but doesn’t inherently provide redundancy . Lesson 3.6: High Availability & Load Balancing",
+    "explanation": "Load balancer – By distributing traffic across multiple instances, it ensures services remain up even if some servers fail. An access broker handles identity brokering, Cloud HSM secures keys, and a WAF filters web attacks but doesn’t inherently provide redundancy .",
     "type": "single",
     "topic": "security-operations"
   },
@@ -251,7 +251,7 @@
     "correct": [
       1
     ],
-    "explanation": "Red team – Acts solely as an adversary, simulating real‑world attack methods to find vulnerabilities. White teams oversee rules of engagement, blue teams defend, and purple teams blend red/blue functions . Lesson 4.1: Red Team Operations",
+    "explanation": "Red team – Acts solely as an adversary, simulating real‑world attack methods to find vulnerabilities. White teams oversee rules of engagement, blue teams defend, and purple teams blend red/blue functions .",
     "type": "single",
     "topic": "security-operations"
   },
@@ -267,7 +267,7 @@
     "correct": [
       2
     ],
-    "explanation": "BEC attackers impersonate high‑level or trusted insiders (like HR) to trick employees into revealing sensitive credentials. A gift‑card request is CEO fraud, attachments demanding payment is ransomware, and a generic phishing link is classic phishing rather than targeted BEC . Lesson 1.4: Social Engineering – BEC",
+    "explanation": "BEC attackers impersonate high‑level or trusted insiders (like HR) to trick employees into revealing sensitive credentials. A gift‑card request is CEO fraud, attachments demanding payment is ransomware, and a generic phishing link is classic phishing rather than targeted BEC .",
     "type": "single",
     "topic": "security-operations"
   },
@@ -283,7 +283,7 @@
     "correct": [
       0
     ],
-    "explanation": "Preparation is when policies, playbooks, and team roles are defined and reviewed in advance of incidents. Analysis examines event data, recovery restores systems, and lessons learned occurs after the incident . Lesson 5.2: Incident Response Process – Preparation",
+    "explanation": "Preparation is when policies, playbooks, and team roles are defined and reviewed in advance of incidents. Analysis examines event data, recovery restores systems, and lessons learned occurs after the incident .",
     "type": "single",
     "topic": "security-operations"
   },
@@ -299,7 +299,7 @@
     "correct": [
       1
     ],
-    "explanation": "Orchestration automates multi‑step workflows—like creating user accounts across systems—saving time and reducing errors. Off‑the‑shelf software may or may not support workflows natively, baselines ensure consistency, and policy enforcement applies rules but not workflow automation. Lesson 5.4: Automation and Orchestration",
+    "explanation": "Orchestration automates multi‑step workflows—like creating user accounts across systems—saving time and reducing errors. Off‑the‑shelf software may or may not support workflows natively, baselines ensure consistency, and policy enforcement applies rules but not workflow automation.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -315,7 +315,7 @@
     "correct": [
       1
     ],
-    "explanation": "A Denial of Service (DoS) attack floods or exploits a system to make it unavailable—crashing the server fits DoS. Replay resends valid data, MITM intercepts communications, and spoofing fakes identities. Lesson 1.2: DoS Attacks",
+    "explanation": "A Denial of Service (DoS) attack floods or exploits a system to make it unavailable—crashing the server fits DoS. Replay resends valid data, MITM intercepts communications, and spoofing fakes identities.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -331,7 +331,7 @@
     "correct": [
       2
     ],
-    "explanation": "Email filtering at the gateway inspects incoming messages and blocks those matching phishing indicators. SPF helps validate senders but doesn’t block all phishing. Greylisting delays unknown senders, and DLP focuses on preventing data exfiltration rather than inbound phishing. Lesson 2.5: Email Security Controls",
+    "explanation": "Email filtering at the gateway inspects incoming messages and blocks those matching phishing indicators. SPF helps validate senders but doesn’t block all phishing. Greylisting delays unknown senders, and DLP focuses on preventing data exfiltration rather than inbound phishing.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -347,7 +347,7 @@
     "correct": [
       0
     ],
-    "explanation": "Data Loss Prevention (DLP) tools inspect content leaving systems—including IM apps—to block or encrypt sensitive data. Antivirus catches malware, NAC controls device access, and SIEM aggregates logs but doesn’t enforce policy on data streams. Lesson 2.5: DLP Controls",
+    "explanation": "Data Loss Prevention (DLP) tools inspect content leaving systems—including IM apps—to block or encrypt sensitive data. Antivirus catches malware, NAC controls device access, and SIEM aggregates logs but doesn’t enforce policy on data streams.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -363,7 +363,7 @@
     "correct": [
       1
     ],
-    "explanation": "Chain‑of‑custody documents every transfer and handler of evidence, preserving its integrity and admissibility. E‑discovery locates data for legal cases, legal hold prevents deletion, and preservation copies data but doesn’t track handling . Lesson 5.3: Evidence Handling",
+    "explanation": "Chain‑of‑custody documents every transfer and handler of evidence, preserving its integrity and admissibility. E‑discovery locates data for legal cases, legal hold prevents deletion, and preservation copies data but doesn’t track handling .",
     "type": "single",
     "topic": "security-operations"
   },
@@ -379,7 +379,7 @@
     "correct": [
       3
     ],
-    "explanation": "Threat hunting is a proactive approach to look for adversaries or TTPs without relying on pre-existing alerts. Forensics and e-discovery happen post-incident, and incident response assumes an alert has already occurred. Lesson 4.2: Threat Hunting",
+    "explanation": "Threat hunting is a proactive approach to look for adversaries or TTPs without relying on pre-existing alerts. Forensics and e-discovery happen post-incident, and incident response assumes an alert has already occurred.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -395,7 +395,7 @@
     "correct": [
       2
     ],
-    "explanation": "Classification is the first step in DLP: understanding what data is sensitive allows policies to be applied appropriately. Without classification, the DLP cannot distinguish sensitive data from regular content. Lesson 2.5: Data Classification for DLP",
+    "explanation": "Classification is the first step in DLP: understanding what data is sensitive allows policies to be applied appropriately. Without classification, the DLP cannot distinguish sensitive data from regular content.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -427,7 +427,7 @@
     "correct": [
       1
     ],
-    "explanation": "CVSS (Common Vulnerability Scoring System) provides a numeric rating (0–10) for vulnerability severity, helping prioritize remediation. CVE is the identifier of the vulnerability, CIA is a security principle, and CERT is a coordination center. This is discussed in Lesson 4.2: Vulnerability Management Process of the Student Guide. Lesson 4.2: CVSS Scoring",
+    "explanation": "CVSS (Common Vulnerability Scoring System) provides a numeric rating (0–10) for vulnerability severity, helping prioritize remediation. CVE is the identifier of the vulnerability, CIA is a security principle, and CERT is a coordination center. This is discussed in Lesson 4.2: Vulnerability Management Process of the Student Guide.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -443,7 +443,7 @@
     "correct": [
       0
     ],
-    "explanation": "Analysis involves gathering data and determining the root cause, scope, and method of the attack. It's the step that follows detection and precedes containment in the incident response lifecycle. Lessons learned come at the end of the process. This is described in Lesson 4.2: Incident Response Process in the Student Guide. Lesson 5.2: Incident Response Process – Analysis",
+    "explanation": "Analysis involves gathering data and determining the root cause, scope, and method of the attack. It's the step that follows detection and precedes containment in the incident response lifecycle. Lessons learned come at the end of the process. This is described in Lesson 4.2: Incident Response Process in the Student Guide.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -459,7 +459,7 @@
     "correct": [
       0
     ],
-    "explanation": "Multifactor authentication (MFA) requires two or more proofs of identity—such as a password plus a token or biometric—so stolen credentials alone aren’t enough for an attacker. Permissions assignment and access management govern rights and conditions but don’t stop compromised passwords. Enforcing password complexity helps resist guessing but offers no protection once a password is known. This control is discussed in Lesson 5.1: Identity and Access Management Controls of the Student Guide. Lesson 5.1: MFA Implementation",
+    "explanation": "Multifactor authentication (MFA) requires two or more proofs of identity—such as a password plus a token or biometric—so stolen credentials alone aren’t enough for an attacker. Permissions assignment and access management govern rights and conditions but don’t stop compromised passwords. Enforcing password complexity helps resist guessing but offers no protection once a password is known. This control is discussed in Lesson 5.1: Identity and Access Management Controls of the Student Guide.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -475,7 +475,7 @@
     "correct": [
       3
     ],
-    "explanation": "An image backup (full system image) captures the OS, applications, configurations, and data so a system can be restored to its exact state. Incremental and differential backups only copy changed files; a SAN is storage infrastructure, not a backup type. The use of image-based backups is detailed in Lesson 5.3: Data Backup and Recovery of the Student Guide. Lesson 5.3: Backup Types – Image Backups",
+    "explanation": "An image backup (full system image) captures the OS, applications, configurations, and data so a system can be restored to its exact state. Incremental and differential backups only copy changed files; a SAN is storage infrastructure, not a backup type. The use of image-based backups is detailed in Lesson 5.3: Data Backup and Recovery of the Student Guide.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -491,7 +491,7 @@
     "correct": [
       2
     ],
-    "explanation": "Reviewing logs in a SIEM to find anomalies is a detective control—it identifies incidents after they occur. Preventive controls stop incidents, corrective controls fix them, and deterrent controls discourage misbehavior. Log monitoring as a detective activity is covered in Lesson 5.2: Security Monitoring and Logging of the Student Guide. Lesson 5.2: Detective Controls",
+    "explanation": "Reviewing logs in a SIEM to find anomalies is a detective control—it identifies incidents after they occur. Preventive controls stop incidents, corrective controls fix them, and deterrent controls discourage misbehavior. Log monitoring as a detective activity is covered in Lesson 5.2: Security Monitoring and Logging of the Student Guide.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -507,7 +507,7 @@
     "correct": [
       0
     ],
-    "explanation": "Security Orchestration, Automation, and Response (SOAR) platforms automate repetitive tasks—ticket creation, alert triage, and response workflows—freeing analysts from manual work. A SIEM collects and correlates logs but doesn’t automate responses, MDM manages devices, and DLP prevents data loss. SOAR capabilities are covered in Lesson 5.4: Automation and Orchestration of the Student Guide. Lesson 5.4: SOAR Platforms",
+    "explanation": "Security Orchestration, Automation, and Response (SOAR) platforms automate repetitive tasks—ticket creation, alert triage, and response workflows—freeing analysts from manual work. A SIEM collects and correlates logs but doesn’t automate responses, MDM manages devices, and DLP prevents data loss. SOAR capabilities are covered in Lesson 5.4: Automation and Orchestration of the Student Guide.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -523,7 +523,7 @@
     "correct": [
       2
     ],
-    "explanation": "Rapid, repeated failed logins from an unfamiliar IP indicate a brute‑force attack trying many password guesses. Account lockout (A) may result later, but the logs show attempts in progress. A keylogger would not produce failed logins, and ransomware would not manifest as login failures. This pattern is detailed in Lesson 1.1: Threat Actors and Attributes of the Student Guide. Lesson 1.1: Brute Force Attacks",
+    "explanation": "Rapid, repeated failed logins from an unfamiliar IP indicate a brute‑force attack trying many password guesses. Account lockout (A) may result later, but the logs show attempts in progress. A keylogger would not produce failed logins, and ransomware would not manifest as login failures. This pattern is detailed in Lesson 1.1: Threat Actors and Attributes of the Student Guide.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -539,7 +539,7 @@
     "correct": [
       3
     ],
-    "explanation": "The Red Team performs adversarial simulations—including pen testing and social engineering—to test defenses. The Blue Team defends, the White Team oversees rules of engagement, and the Purple Team coordinates red‑blue integration. This is explained in Lesson 4.1: Security Assessment Types of the Student Guide. Lesson 4.1: Red Team Activities",
+    "explanation": "The Red Team performs adversarial simulations—including pen testing and social engineering—to test defenses. The Blue Team defends, the White Team oversees rules of engagement, and the Purple Team coordinates red‑blue integration. This is explained in Lesson 4.1: Security Assessment Types of the Student Guide.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -555,7 +555,7 @@
     "correct": [
       3
     ],
-    "explanation": "Endpoint management (or EDR) tools centrally track configurations and detect unauthorized changes or software installations on hosts. Logging scheduled tasks or traffic monitoring helps but doesn’t catch software installs as effectively. Blocking by signatures fights known threats, not change monitoring. Endpoint management is covered in Lesson 5.2: Security Monitoring and Logging of the Student Guide. Lesson 5.2: Endpoint Monitoring",
+    "explanation": "Endpoint management (or EDR) tools centrally track configurations and detect unauthorized changes or software installations on hosts. Logging scheduled tasks or traffic monitoring helps but doesn’t catch software installs as effectively. Blocking by signatures fights known threats, not change monitoring. Endpoint management is covered in Lesson 5.2: Security Monitoring and Logging of the Student Guide.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -573,7 +573,7 @@
     "correct": [
       1
     ],
-    "explanation": "Remote wipe allows the organization to erase a lost or stolen device’s data before it can be misused. Geolocation lets administrators track a missing phone’s whereabouts, enabling faster recovery or targeted wipe. Screen locks and encryption are important baseline controls but don’t let you recover or disable a missing device after loss. Push notifications and application management govern updates and app installs, not device recovery. These MDM capabilities are detailed in Lesson 10.2: Mobile Device Management of the Student Guide. Lesson 4.4: Exploit Frameworks",
+    "explanation": "Remote wipe allows the organization to erase a lost or stolen device’s data before it can be misused. Geolocation lets administrators track a missing phone’s whereabouts, enabling faster recovery or targeted wipe. Screen locks and encryption are important baseline controls but don’t let you recover or disable a missing device after loss. Push notifications and application management govern updates and app installs, not device recovery. These MDM capabilities are detailed in Lesson 10.2: Mobile Device Management of the Student Guide.",
     "type": "multiple",
     "topic": "security-operations"
   },
@@ -589,7 +589,7 @@
     "correct": [
       3
     ],
-    "explanation": "Video files often store metadata—such as creation timestamp and author—directly within the file header. Extracting that metadata (with tools like MediaInfo or ffprobe) reveals the desired information. A SHA‑256 hash only verifies integrity, hexdump shows raw bytes without structure, and endpoint logs may not reliably record file properties. This process is covered in Lesson 5.2: Security Monitoring and Logging of the Student Guide. Lesson 2.2: Fileless Malware",
+    "explanation": "Video files often store metadata—such as creation timestamp and author—directly within the file header. Extracting that metadata (with tools like MediaInfo or ffprobe) reveals the desired information. A SHA‑256 hash only verifies integrity, hexdump shows raw bytes without structure, and endpoint logs may not reliably record file properties. This process is covered in Lesson 5.2: Security Monitoring and Logging of the Student Guide.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -637,7 +637,7 @@
     "correct": [
       0
     ],
-    "explanation": "An IPS could have detected and blocked the malicious ransomware traffic during lateral movement. An IDS would only have alerted. A WAF protects web applications, not internal host‑to‑host propagation. UAT (user acceptance testing) isn’t a preventive control. This is covered in Lesson 3.2: Network Security Infrastructure and Devices. Lesson 4.3: Penetration Testing – Unknown Environment (Black Box)",
+    "explanation": "An IPS could have detected and blocked the malicious ransomware traffic during lateral movement. An IDS would only have alerted. A WAF protects web applications, not internal host‑to‑host propagation. UAT (user acceptance testing) isn’t a preventive control. This is covered in Lesson 3.2: Network Security Infrastructure and Devices.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -653,7 +653,7 @@
     "correct": [
       3
     ],
-    "explanation": "A dashboard provides visual summaries (charts, counters) of incident metrics tailored for executives. Packet captures are too granular, vulnerability scans focus on weaknesses, and metadata is descriptive data, not an executive‑level report. Dashboard usage is in Lesson 5.2: Security Monitoring and Logging. Lesson 2.2: Ransomware",
+    "explanation": "A dashboard provides visual summaries (charts, counters) of incident metrics tailored for executives. Packet captures are too granular, vulnerability scans focus on weaknesses, and metadata is descriptive data, not an executive‑level report. Dashboard usage is in Lesson 5.2: Security Monitoring and Logging.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -669,7 +669,7 @@
     "correct": [
       0
     ],
-    "explanation": "Rapid successive failed login attempts indicate a brute‑force attempt to guess credentials. Privilege escalation occurs after a successful exploit, audits don’t generate failures, and a forgotten password is a single user event—not repeated attempts. This pattern is in Lesson 1.1: Threat Actors and Attributes of the Student Guide. Lesson 5.1: Access Control Models – Role-Based Access Control (RBAC)",
+    "explanation": "Rapid successive failed login attempts indicate a brute‑force attempt to guess credentials. Privilege escalation occurs after a successful exploit, audits don’t generate failures, and a forgotten password is a single user event—not repeated attempts. This pattern is in Lesson 1.1: Threat Actors and Attributes of the Student Guide.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -685,7 +685,7 @@
     "correct": [
       3
     ],
-    "explanation": "Data Loss Prevention inspects outbound email content for sensitive patterns (PII) and can block or alert on accidental disclosures. SCAP assesses configurations, NetFlow logs flows, and antivirus catches malware, none focus on content‑centric leakage. This is in Lesson 8.1: Data Protection Techniques. Lesson 2.3: Zero-Day Vulnerabilities",
+    "explanation": "Data Loss Prevention inspects outbound email content for sensitive patterns (PII) and can block or alert on accidental disclosures. SCAP assesses configurations, NetFlow logs flows, and antivirus catches malware, none focus on content‑centric leakage. This is in Lesson 8.1: Data Protection Techniques.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -701,7 +701,7 @@
     "correct": [
       1
     ],
-    "explanation": "Reviewing logs to identify what happened is a detective control—it uncovers incidents that occurred. Preventive controls stop events before they happen, corrective controls fix issues, and compensating controls are alternatives when primary controls can’t be used. See Lesson 1.1: Security Principles and Controls. Lesson 5.1: Access Control Lists (ACLs)",
+    "explanation": "Reviewing logs to identify what happened is a detective control—it uncovers incidents that occurred. Preventive controls stop events before they happen, corrective controls fix issues, and compensating controls are alternatives when primary controls can’t be used. See Lesson 1.1: Security Principles and Controls.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -717,7 +717,7 @@
     "correct": [
       0
     ],
-    "explanation": "Automated configuration monitoring (via scripts or tools) provides daily checks of server settings, alerting on changes immediately and consistently. Checklists and attestations are manual and periodic; audits are labor‑intensive and error‑prone. This approach is in Lesson 5.1: Security Monitoring and Logging. Lesson 3.4: Application Security – Static Application Security Testing (SAST)",
+    "explanation": "Automated configuration monitoring (via scripts or tools) provides daily checks of server settings, alerting on changes immediately and consistently. Checklists and attestations are manual and periodic; audits are labor‑intensive and error‑prone. This approach is in Lesson 5.1: Security Monitoring and Logging.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -733,7 +733,7 @@
     "correct": [
       1
     ],
-    "explanation": "Sanitization (e.g., secure erase, crypto‑erase) removes data so it can’t be recovered. Destruction physically destroys drives, enumeration catalogs assets, and inventory tracks hardware. See Lesson 3.4: System Hardening and Configuration Management. Lesson 1.4: Physical Security Controls – Door Locks",
+    "explanation": "Sanitization (e.g., secure erase, crypto‑erase) removes data so it can’t be recovered. Destruction physically destroys drives, enumeration catalogs assets, and inventory tracks hardware. See Lesson 3.4: System Hardening and Configuration Management.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -749,7 +749,7 @@
     "correct": [
       1
     ],
-    "explanation": "Default credentials are well-known; updating them prevents unauthorized access. Least privilege and unique IDs help but won’t stop default‑account misuse; log reviews detect events afterward. See Lesson 2.4: Identity and Access Management Controls. Lesson 5.2: Log Analysis – Network Logs",
+    "explanation": "Default credentials are well-known; updating them prevents unauthorized access. Least privilege and unique IDs help but won’t stop default‑account misuse; log reviews detect events afterward. See Lesson 2.4: Identity and Access Management Controls.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -765,7 +765,7 @@
     "correct": [
       3
     ],
-    "explanation": "Full packet capture records every byte of network traffic—both decrypted SQL traffic and context—so you can pinpoint and reconstruct injection attempts during investigations. NetFlow gives only metadata, sensors may miss off‑subnet traffic, and OS logs won’t capture decrypted SQL statements. This deep‑capture approach is in Lesson 5.2: Security Monitoring and Logging. Lesson 1.3: Risk Response Strategies – Avoidance",
+    "explanation": "Full packet capture records every byte of network traffic—both decrypted SQL traffic and context—so you can pinpoint and reconstruct injection attempts during investigations. NetFlow gives only metadata, sensors may miss off‑subnet traffic, and OS logs won’t capture decrypted SQL statements. This deep‑capture approach is in Lesson 5.2: Security Monitoring and Logging.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -781,7 +781,7 @@
     "correct": [
       1
     ],
-    "explanation": "An Uninterruptible Power Supply (UPS) provides immediate backup power to keep systems running or gracefully shut down, mitigating outages. Hot sites replicate infrastructure but require failover; snapshots protect data, SOAR automates responses. UPS usage is covered in Lesson 3.3: Data Center Security and Controls of the Student Guide. Lesson 5.3: Backup Types – Differential Backups",
+    "explanation": "An Uninterruptible Power Supply (UPS) provides immediate backup power to keep systems running or gracefully shut down, mitigating outages. Hot sites replicate infrastructure but require failover; snapshots protect data, SOAR automates responses. UPS usage is covered in Lesson 3.3: Data Center Security and Controls of the Student Guide.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -813,7 +813,7 @@
     "correct": [
       0
     ],
-    "explanation": "Acquisition is the forensic phase during which bit-for-bit images of storage media or memory are captured for analysis, ensuring an exact replica of the evidence. Preservation (B) involves maintaining data integrity after capture, reporting (C) occurs post-analysis, and e-discovery (D) refers to legal evidence collection in litigation contexts. Lesson 4.4: Digital Forensics and Investigations, p. 230 Lesson 1.1: Supply Chain Attacks",
+    "explanation": "Acquisition is the forensic phase during which bit-for-bit images of storage media or memory are captured for analysis, ensuring an exact replica of the evidence. Preservation (B) involves maintaining data integrity after capture, reporting (C) occurs post-analysis, and e-discovery (D) refers to legal evidence collection in litigation contexts. Lesson 4.4: Digital Forensics and Investigations, p. 230",
     "type": "single",
     "topic": "security-operations"
   },
@@ -829,7 +829,7 @@
     "correct": [
       3
     ],
-    "explanation": "The second log entry shows an SQL injection attempt that may have succeeded in creating a new “temp” user. Before deploying preventive controls (like a WAF), the analyst must confirm whether the injection was successful by examining the database. Disabling the script (B) or blocking brute‐force (C) does not address the immediate need to contain potential damage. Implementing a WAF (A) is a longer‐term mitigation after verifying and correcting the breach. Lesson 4.1: Web Application Security, p. 218 Lesson 2.1: Social Engineering – Pretexting",
+    "explanation": "The second log entry shows an SQL injection attempt that may have succeeded in creating a new “temp” user. Before deploying preventive controls (like a WAF), the analyst must confirm whether the injection was successful by examining the database. Disabling the script (B) or blocking brute‐force (C) does not address the immediate need to contain potential damage. Implementing a WAF (A) is a longer‐term mitigation after verifying and correcting the breach. Lesson 4.1: Web Application Security, p. 218",
     "type": "single",
     "topic": "security-operations"
   },
@@ -845,7 +845,7 @@
     "correct": [
       0
     ],
-    "explanation": "Daily vulnerability scans highlight missing patches and software flaws on endpoints, allowing the team to verify that updates have been applied. Discovering shadow IT (B) or monitoring hardware (C) are better served by inventory or cloud‐monitoring tools. Hunting active attackers (D) requires real‐time detection (IDS/EDR), not periodic vulnerability scans. Lesson 4.3: Vulnerability Management, p. 252 Lesson 2.3: Privilege Escalation",
+    "explanation": "Daily vulnerability scans highlight missing patches and software flaws on endpoints, allowing the team to verify that updates have been applied. Discovering shadow IT (B) or monitoring hardware (C) are better served by inventory or cloud‐monitoring tools. Hunting active attackers (D) requires real‐time detection (IDS/EDR), not periodic vulnerability scans. Lesson 4.3: Vulnerability Management, p. 252",
     "type": "single",
     "topic": "security-operations"
   },
@@ -861,7 +861,7 @@
     "correct": [
       3
     ],
-    "explanation": "User activity logs capture login attempts, including failed authentications, and can be reviewed or alerted on to detect brute-force attempts. A firewall (A) blocks or allows traffic but doesn’t log user-level authentication details. Two-factor authentication (B) prevents unauthorized access but doesn’t itself detect attempts. An IPS (C) may block attacks but isn’t configured to log per-user credential guessing in application logs. Lesson 4.4: Monitoring and Logging, p. 273 Lesson 3.1: Secure Protocols – HTTPS",
+    "explanation": "User activity logs capture login attempts, including failed authentications, and can be reviewed or alerted on to detect brute-force attempts. A firewall (A) blocks or allows traffic but doesn’t log user-level authentication details. Two-factor authentication (B) prevents unauthorized access but doesn’t itself detect attempts. An IPS (C) may block attacks but isn’t configured to log per-user credential guessing in application logs. Lesson 4.4: Monitoring and Logging, p. 273",
     "type": "single",
     "topic": "security-operations"
   },
@@ -877,7 +877,7 @@
     "correct": [
       0
     ],
-    "explanation": "With CPU, disk, and memory all low but network at 95%, the network link is clearly overloaded. “Resource consumption” (D) is generic—here specifically the network is saturated. Concurrent sessions (B) and account lockouts (C) are unrelated to utilization metrics. Lesson 4.1: Network and System Monitoring, p. 245 Lesson 5.2: Log Analysis – Firewall Logs",
+    "explanation": "With CPU, disk, and memory all low but network at 95%, the network link is clearly overloaded. “Resource consumption” (D) is generic—here specifically the network is saturated. Concurrent sessions (B) and account lockouts (C) are unrelated to utilization metrics. Lesson 4.1: Network and System Monitoring, p. 245",
     "type": "single",
     "topic": "security-operations"
   },
@@ -893,7 +893,7 @@
     "correct": [
       2
     ],
-    "explanation": "Automation and orchestration enable the SIEM to automatically investigate, respond, and remediate at machine speed—extending the team’s capacity without adding headcount. While it may add guardrails (A), its key value is boosting effectiveness. It does not inherently increase complexity (B) or address legacy technical debt (D). Lesson 4.5: Security Automation and Orchestration, p. 286 Lesson 3.5: Cloud Security Architectures – SASE",
+    "explanation": "Automation and orchestration enable the SIEM to automatically investigate, respond, and remediate at machine speed—extending the team’s capacity without adding headcount. While it may add guardrails (A), its key value is boosting effectiveness. It does not inherently increase complexity (B) or address legacy technical debt (D). Lesson 4.5: Security Automation and Orchestration, p. 286",
     "type": "single",
     "topic": "security-operations"
   },
@@ -909,7 +909,7 @@
     "correct": [
       0
     ],
-    "explanation": "A Security Information and Event Management (SIEM) platform aggregates and correlates logs across environments, raising alerts and providing dashboards. Data Loss Prevention (B) protects sensitive data flows, an IDS (C) detects intrusions on the wire, and SNMP (D) is a network-management protocol, not a log aggregator. Lesson 4.3: Monitoring and Analytics, p. 256 Lesson 4.2: Advanced SIEM and SOAR Integration",
+    "explanation": "A Security Information and Event Management (SIEM) platform aggregates and correlates logs across environments, raising alerts and providing dashboards. Data Loss Prevention (B) protects sensitive data flows, an IDS (C) detects intrusions on the wire, and SNMP (D) is a network-management protocol, not a log aggregator. Lesson 4.3: Monitoring and Analytics, p. 256",
     "type": "single",
     "topic": "security-operations"
   },
@@ -925,7 +925,7 @@
     "correct": [
       0
     ],
-    "explanation": "Mobile Device Management (MDM) lets IT enforce policies (remote wipe, encryption, lock screens) on smartphones and tablets—preventing data leaks if a device is lost. Endpoint Detection & Response (B) monitors for threats, DLP (C) watches data flows, and Full Disk Encryption (D) secures data at rest but lacks remote wipe and policy enforcement. Lesson 4.5: Endpoint Security, p. 268 Lesson 2.1: Social Engineering – Smishing",
+    "explanation": "Mobile Device Management (MDM) lets IT enforce policies (remote wipe, encryption, lock screens) on smartphones and tablets—preventing data leaks if a device is lost. Endpoint Detection & Response (B) monitors for threats, DLP (C) watches data flows, and Full Disk Encryption (D) secures data at rest but lacks remote wipe and policy enforcement. Lesson 4.5: Endpoint Security, p. 268",
     "type": "single",
     "topic": "security-operations"
   },
@@ -941,7 +941,7 @@
     "correct": [
       0
     ],
-    "explanation": "Containment is the first step after detecting malware—it isolates infected machines to prevent lateral spread. Blocklisting (B) and firewall rules (D) are preventive measures that come later; segmentation (C) protects assets but doesn’t immediately stop the active infection. Lesson 4.1: Incident Response Lifecycle, p. 243 Lesson 4.2: Incident Response – Log Sources for C2 Detection",
+    "explanation": "Containment is the first step after detecting malware—it isolates infected machines to prevent lateral spread. Blocklisting (B) and firewall rules (D) are preventive measures that come later; segmentation (C) protects assets but doesn’t immediately stop the active infection. Lesson 4.1: Incident Response Lifecycle, p. 243",
     "type": "single",
     "topic": "security-operations"
   },
@@ -956,11 +956,8 @@
       "Firewall",
       "Database"
     ],
-    "correct": [
-      2,
-      4
-    ],
-    "explanation": "When investigating a C2 (command-and-control) incident, the goal is to trace network communications back to the specific internal host that was compromised. DHCP logs (C) show which IP address was leased to which MAC address at a given time. This lets you map the malicious C2 traffic back to the exact device on the network. Firewall logs (E) record inbound/outbound network connections, including traffic to suspicious IP addresses (e.g., the C2 server). Reviewing them can confirm which internal IP contacted the malicious external address. Other options are less effective for identifying the specific host: Application logs (A) may show errors or suspicious behavior but usually lack IP-to-host mapping for C2 identification. Authentication logs (B) track login events, not necessarily network communications. Network logs (D) is too broad — often collected from IDS/IPS or switches — but DHCP + firewall is the more direct, mapped approach for this case. Database logs (F) track database queries, not network-to-host activity. Lesson 4.2: Incident Response – Log Sources for C2 Detection",
+    "correct": [2, 4],
+    "explanation": "When investigating a C2 (command-and-control) incident, the goal is to trace network communications back to the specific internal host that was compromised. DHCP logs (C) show which IP address was leased to which MAC address at a given time. This lets you map the malicious C2 traffic back to the exact device on the network. Firewall logs (E) record inbound/outbound network connections, including traffic to suspicious IP addresses (e.g., the C2 server). Reviewing them can confirm which internal IP contacted the malicious external address. Other options are less effective for identifying the specific host: Application logs (A) may show errors or suspicious behavior but usually lack IP-to-host mapping for C2 identification. Authentication logs (B) track login events, not necessarily network communications. Network logs (D) is too broad — often collected from IDS/IPS or switches — but DHCP + firewall is the more direct, mapped approach for this case. Database logs (F) track database queries, not network-to-host activity.",
     "type": "multiple",
     "topic": "security-operations"
   },
@@ -976,7 +973,7 @@
     "correct": [
       1
     ],
-    "explanation": "Vulnerability scanners detect outdated operating systems, missing patches, and unsupported software—highlighting legacy systems no longer maintained or receiving updates. Bug bounties (A) rely on external testers, package monitors (C) track individual software installations, and dynamic analysis (D) tests runtime behavior but doesn’t inventory system age or support status. Lesson 4.1: Asset Discovery and Inventory, p. 232 Lesson 2.2: Rootkits",
+    "explanation": "Vulnerability scanners detect outdated operating systems, missing patches, and unsupported software—highlighting legacy systems no longer maintained or receiving updates. Bug bounties (A) rely on external testers, package monitors (C) track individual software installations, and dynamic analysis (D) tests runtime behavior but doesn’t inventory system age or support status. Lesson 4.1: Asset Discovery and Inventory, p. 232",
     "type": "single",
     "topic": "security-operations"
   },
@@ -992,7 +989,7 @@
     "correct": [
       0
     ],
-    "explanation": "Quarantine isolates the suspect machine by removing all network connectivity, often by placing it on a physically separate (air-gapped) network—halting malware spread while preserving evidence. Disabling log-in (B) doesn’t stop lateral movement, sandboxing (C) is for analysis, and remote wipe (D) destroys data rather than containing the threat. Lesson 4.4: Incident Response and Containment, p. 265 Lesson 5.2: Monitoring – File Integrity Monitoring (FIM)",
+    "explanation": "Quarantine isolates the suspect machine by removing all network connectivity, often by placing it on a physically separate (air-gapped) network—halting malware spread while preserving evidence. Disabling log-in (B) doesn’t stop lateral movement, sandboxing (C) is for analysis, and remote wipe (D) destroys data rather than containing the threat. Lesson 4.4: Incident Response and Containment, p. 265",
     "type": "single",
     "topic": "security-operations"
   },
@@ -1008,7 +1005,7 @@
     "correct": [
       3
     ],
-    "explanation": "Full packet capture records every byte of traffic, including decrypted SQL payloads—critical for spotting injection sequences and reconstructing the attack. NetFlow (A) summarizes flow metadata but omits query details. Traffic sensors (B) may sniff packets but often lack long-term storage or context. Endpoint logs (C) record local events but miss raw SQL commands on the wire. Lesson 4.2: Network Monitoring and Analysis, p. 252 Lesson 4.2: Incident Response – Containment",
+    "explanation": "Full packet capture records every byte of traffic, including decrypted SQL payloads—critical for spotting injection sequences and reconstructing the attack. NetFlow (A) summarizes flow metadata but omits query details. Traffic sensors (B) may sniff packets but often lack long-term storage or context. Endpoint logs (C) record local events but miss raw SQL commands on the wire. Lesson 4.2: Network Monitoring and Analysis, p. 252",
     "type": "single",
     "topic": "security-operations"
   },
@@ -1024,7 +1021,7 @@
     "correct": [
       0
     ],
-    "explanation": "A SIEM (Security Information and Event Management) centralizes log collection from servers, network devices, applications, and more—providing correlation, real-time alerting, dashboards, and automated analysis. Custom scripts (B) can work but lack scale and support. EDR (C) focuses on endpoints, not all logs. UTM appliances (D) combine firewall/IPS but don’t handle broad log sources. Lesson 4.1: Logging and Monitoring, p. 240 Lesson 2.2: Logic Bombs",
+    "explanation": "A SIEM (Security Information and Event Management) centralizes log collection from servers, network devices, applications, and more—providing correlation, real-time alerting, dashboards, and automated analysis. Custom scripts (B) can work but lack scale and support. EDR (C) focuses on endpoints, not all logs. UTM appliances (D) combine firewall/IPS but don’t handle broad log sources. Lesson 4.1: Logging and Monitoring, p. 240",
     "type": "single",
     "topic": "security-operations"
   },
@@ -1040,7 +1037,7 @@
     "correct": [
       0
     ],
-    "explanation": "Network logs (firewall, proxy) reveal outbound connection attempts, success or failure—confirming if the user’s system reached the malicious server. System logs (B) record OS events, application logs (C) focus on local software, and authentication logs (D) show login attempts, none of which directly track web requests. Lesson 4.2: Incident Investigation Techniques, p. 259 Lesson 5.3: Backup Types – Full Backups",
+    "explanation": "Network logs (firewall, proxy) reveal outbound connection attempts, success or failure—confirming if the user’s system reached the malicious server. System logs (B) record OS events, application logs (C) focus on local software, and authentication logs (D) show login attempts, none of which directly track web requests. Lesson 4.2: Incident Investigation Techniques, p. 259",
     "type": "single",
     "topic": "security-operations"
   },
@@ -1056,7 +1053,7 @@
     "correct": [
       3
     ],
-    "explanation": "Adding or modifying firewall rules is a configuration change that must follow the organization’s change management process: request, review, approval, testing, documentation, and rollback planning. DR (A) and BC (C) cover recovery, while incident response (B) governs post-breach actions—not routine rule changes. Lesson 4.3: Configuration Management, p. 273 Lesson 5.2: Log Analysis – DNS Logs",
+    "explanation": "Adding or modifying firewall rules is a configuration change that must follow the organization’s change management process: request, review, approval, testing, documentation, and rollback planning. DR (A) and BC (C) cover recovery, while incident response (B) governs post-breach actions—not routine rule changes. Lesson 4.3: Configuration Management, p. 273",
     "type": "single",
     "topic": "security-operations"
   },
@@ -1072,7 +1069,7 @@
     "correct": [
       0
     ],
-    "explanation": "Application logs record each transaction or action taken within the billing system (e.g., check issuance), making them the primary source for spotting additional fraudulent entries. Firewall logs (B) show network connections, not business logic events. IDS/IPS logs (C) detect network-level attacks rather than misuse of application functions. Vulnerability scanner logs (D) list discovered weaknesses, not runtime fraudulent transactions. Lesson 4.2: Logging and Monitoring, p. 178 Lesson 5.1: Identity Federation",
+    "explanation": "Application logs record each transaction or action taken within the billing system (e.g., check issuance), making them the primary source for spotting additional fraudulent entries. Firewall logs (B) show network connections, not business logic events. IDS/IPS logs (C) detect network-level attacks rather than misuse of application functions. Vulnerability scanner logs (D) list discovered weaknesses, not runtime fraudulent transactions. Lesson 4.2: Logging and Monitoring, p. 178",
     "type": "single",
     "topic": "security-operations"
   },
@@ -1088,7 +1085,7 @@
     "correct": [
       2
     ],
-    "explanation": "Incident response begins when an event is detected—through logs, alerts, or user reports. Only after detection can incidents be declared, contained, eradicated, and recovered. Containment (A) comes later to prevent further damage. Declaration (B) formalizes that an incident is underway but follows detection. Vacation (D) is not part of the IR lifecycle. Lesson 4.1: Incident Response Process, p. 160 Lesson 5.1: Single Sign-On (SSO)",
+    "explanation": "Incident response begins when an event is detected—through logs, alerts, or user reports. Only after detection can incidents be declared, contained, eradicated, and recovered. Containment (A) comes later to prevent further damage. Declaration (B) formalizes that an incident is underway but follows detection. Vacation (D) is not part of the IR lifecycle. Lesson 4.1: Incident Response Process, p. 160",
     "type": "single",
     "topic": "security-operations"
   },
@@ -1104,7 +1101,7 @@
     "correct": [
       0
     ],
-    "explanation": "A Security Information and Event Management (SIEM) system collects and correlates logs from servers, applications, network devices, and more, enabling real-time alerting and anomaly detection. A Web Application Firewall (B) filters HTTP traffic but doesn’t centralize disparate logs. Network taps (C) duplicate traffic for monitoring, not log aggregation. An IDS (D) generates alerts on suspicious network patterns but lacks the broad log-ingestion and correlation capabilities of a SIEM. Lesson 4.3: Monitoring and Logging, p. 172 Lesson 5.3: Disaster Recovery Sites – Hot Site",
+    "explanation": "A Security Information and Event Management (SIEM) system collects and correlates logs from servers, applications, network devices, and more, enabling real-time alerting and anomaly detection. A Web Application Firewall (B) filters HTTP traffic but doesn’t centralize disparate logs. Network taps (C) duplicate traffic for monitoring, not log aggregation. An IDS (D) generates alerts on suspicious network patterns but lacks the broad log-ingestion and correlation capabilities of a SIEM. Lesson 4.3: Monitoring and Logging, p. 172",
     "type": "single",
     "topic": "security-operations"
   },
@@ -1120,7 +1117,7 @@
     "correct": [
       0
     ],
-    "explanation": "Data Loss Prevention (DLP) solutions can fingerprint or hash sensitive files and then monitor email, endpoint, or network channels to block or alert on unauthorized transfers. SNMP traps (B) are used for device status monitoring, not file-level policies. SCAP (C) automates vulnerability management and compliance checks. An IPS (D) blocks network attacks but isn’t designed for content-aware file‐transfer controls. Lesson 4.5: Data Loss Prevention, p. 188 Lesson 5.2: Monitoring – Unified Threat Management (UTM)",
+    "explanation": "Data Loss Prevention (DLP) solutions can fingerprint or hash sensitive files and then monitor email, endpoint, or network channels to block or alert on unauthorized transfers. SNMP traps (B) are used for device status monitoring, not file-level policies. SCAP (C) automates vulnerability management and compliance checks. An IPS (D) blocks network attacks but isn’t designed for content-aware file‐transfer controls. Lesson 4.5: Data Loss Prevention, p. 188",
     "type": "single",
     "topic": "security-operations"
   },
@@ -1136,7 +1133,7 @@
     "correct": [
       1
     ],
-    "explanation": "Anomaly detection relies on understanding “normal” behavior so deviations can be flagged. Establishing a baseline of typical network or system activity comes before choosing which events to monitor (A), deciding log formats (C), or creating new event logs (D). Without a baseline, it’s impossible to distinguish anomalies. Lesson 4.4: Anomaly Detection and Baseline Analysis, p. 182 Lesson 2.1: Phishing",
+    "explanation": "Anomaly detection relies on understanding “normal” behavior so deviations can be flagged. Establishing a baseline of typical network or system activity comes before choosing which events to monitor (A), deciding log formats (C), or creating new event logs (D). Without a baseline, it’s impossible to distinguish anomalies. Lesson 4.4: Anomaly Detection and Baseline Analysis, p. 182",
     "type": "single",
     "topic": "security-operations"
   },
@@ -1152,7 +1149,7 @@
     "correct": [
       0
     ],
-    "explanation": "User and Entity Behavior Analytics (UEBA) establishes baselines of normal activity per user and flags deviations—such as unusual data access or file transfers—that may indicate insider threats. ACLs (B) enforce access but don’t detect anomalous use. IAM (C) manages identities and permissions but lacks real-time behavior monitoring. NIDS (D) focuses on network traffic patterns, not individual user behavior across applications and endpoints. Lesson 4.6: User Behavior Analytics, p. 190 Lesson 2.3: DLL Injection",
+    "explanation": "User and Entity Behavior Analytics (UEBA) establishes baselines of normal activity per user and flags deviations—such as unusual data access or file transfers—that may indicate insider threats. ACLs (B) enforce access but don’t detect anomalous use. IAM (C) manages identities and permissions but lacks real-time behavior monitoring. NIDS (D) focuses on network traffic patterns, not individual user behavior across applications and endpoints. Lesson 4.6: User Behavior Analytics, p. 190",
     "type": "single",
     "topic": "security-operations"
   },
@@ -1168,7 +1165,7 @@
     "correct": [
       2
     ],
-    "explanation": "A standard operating procedure (SOP) details step-by-step instructions—such as patch application order, rollback steps, and verification—that ensure consistency with the organization’s secure baseline. An information security policy (A) sets high-level objectives; service-level expectations (B) define uptime; a test report (D) documents outcomes but doesn’t enforce process. Lesson 4.3: Patch Management, p. 188 Lesson 5.2: Monitoring – IDS vs. IPS",
+    "explanation": "A standard operating procedure (SOP) details step-by-step instructions—such as patch application order, rollback steps, and verification—that ensure consistency with the organization’s secure baseline. An information security policy (A) sets high-level objectives; service-level expectations (B) define uptime; a test report (D) documents outcomes but doesn’t enforce process. Lesson 4.3: Patch Management, p. 188",
     "type": "single",
     "topic": "security-operations"
   },
@@ -1184,7 +1181,7 @@
     "correct": [
       2
     ],
-    "explanation": "A tabletop exercise is a discussion-based activity where participants walk through their roles and decisions during a hypothetical incident without deploying real systems or tools. Simulations (D) involve live, hands-on testing; penetration tests (A) target system weaknesses; continuity planning (B) is the overall strategy, not the exercise format. Lesson 4.7: Incident Response Exercises, p. 202 Lesson 2.3: ARP Poisoning",
+    "explanation": "A tabletop exercise is a discussion-based activity where participants walk through their roles and decisions during a hypothetical incident without deploying real systems or tools. Simulations (D) involve live, hands-on testing; penetration tests (A) target system weaknesses; continuity planning (B) is the overall strategy, not the exercise format. Lesson 4.7: Incident Response Exercises, p. 202",
     "type": "single",
     "topic": "security-operations"
   },
@@ -1200,7 +1197,7 @@
     "correct": [
       2
     ],
-    "explanation": "Endpoint Detection and Response (EDR) continuously monitors and analyzes endpoint activity—processes, files, network connections—enabling rapid detection and containment of malware (viruses, Trojans, ransomware) before it can spread laterally. An IDS (A) watches network traffic but cannot quarantine or remediate on the host. An ACL (B) restricts access at routers or switches but does not inspect endpoint behavior. NAC (D) enforces access policies at connection time but does not detect or stop malware execution on the endpoint. Lesson 4.2: Endpoint Security and Monitoring, p. 256 Lesson 1.2: Security Controls – Compensating Controls",
+    "explanation": "Endpoint Detection and Response (EDR) continuously monitors and analyzes endpoint activity—processes, files, network connections—enabling rapid detection and containment of malware (viruses, Trojans, ransomware) before it can spread laterally. An IDS (A) watches network traffic but cannot quarantine or remediate on the host. An ACL (B) restricts access at routers or switches but does not inspect endpoint behavior. NAC (D) enforces access policies at connection time but does not detect or stop malware execution on the endpoint. Lesson 4.2: Endpoint Security and Monitoring, p. 256",
     "type": "single",
     "topic": "security-operations"
   },
@@ -1216,7 +1213,7 @@
     "correct": [
       1
     ],
-    "explanation": "A honeypot is a deliberately vulnerable system that lures attackers so that their methods can be recorded and studied in detail. A firewall (A) blocks or allows traffic, an IDS (C) detects known patterns but doesn’t emulate targets, and a Layer 3 switch (D) routes traffic without the specialized logging or deception capabilities of a honeypot. Lesson 4.3: Deception and Threat Intelligence, p. 221 Lesson 3.3: Secure Network Architecture – DMZ",
+    "explanation": "A honeypot is a deliberately vulnerable system that lures attackers so that their methods can be recorded and studied in detail. A firewall (A) blocks or allows traffic, an IDS (C) detects known patterns but doesn’t emulate targets, and a Layer 3 switch (D) routes traffic without the specialized logging or deception capabilities of a honeypot. Lesson 4.3: Deception and Threat Intelligence, p. 221",
     "type": "single",
     "topic": "security-operations"
   },
@@ -1232,7 +1229,7 @@
     "correct": [
       1
     ],
-    "explanation": "Automating the revocation of user accounts and entitlements ensures departing employees no longer retain active credentials, closing a critical insider-threat gap. Provisioning (A) grants access, change approvals (C) and escalation (D) are process steps but don’t directly revoke permissions. Lesson 4.1: Incident Response and Automation, p. 202 Lesson 3.1: Secure Protocols – SFTP",
+    "explanation": "Automating the revocation of user accounts and entitlements ensures departing employees no longer retain active credentials, closing a critical insider-threat gap. Provisioning (A) grants access, change approvals (C) and escalation (D) are process steps but don’t directly revoke permissions. Lesson 4.1: Incident Response and Automation, p. 202",
     "type": "single",
     "topic": "security-operations"
   },
@@ -1248,7 +1245,7 @@
     "correct": [
       0
     ],
-    "explanation": "Playbooks are step-by-step guides that detail exactly how to respond to specific types of incidents, ensuring consistency and speed when an alert is triggered. Frameworks (B) provide high-level guidance, baselines (C) define normal behavior for detection, and benchmarks (D) set performance targets but don’t prescribe response steps. Lesson 4.2: Incident Response and Playbooks, p. 225 Lesson 5.1: Biometric Factors",
+    "explanation": "Playbooks are step-by-step guides that detail exactly how to respond to specific types of incidents, ensuring consistency and speed when an alert is triggered. Frameworks (B) provide high-level guidance, baselines (C) define normal behavior for detection, and benchmarks (D) set performance targets but don’t prescribe response steps. Lesson 4.2: Incident Response and Playbooks, p. 225",
     "type": "single",
     "topic": "security-operations"
   },
@@ -1264,7 +1261,7 @@
     "correct": [
       2
     ],
-    "explanation": "Sanitization methods (e.g., multiple overwrites with specific patterns) securely erase data and allow drives to be redeployed. Degaussing (B) destroys magnetic media, rendering drives unusable. Formatting (D) or defragmentation (A) do not reliably remove all data. Lesson 4.4: Media Sanitization and Disposal, p. 242 Lesson 5.3: Recovery Objectives – RTO and RPO",
+    "explanation": "Sanitization methods (e.g., multiple overwrites with specific patterns) securely erase data and allow drives to be redeployed. Degaussing (B) destroys magnetic media, rendering drives unusable. Formatting (D) or defragmentation (A) do not reliably remove all data. Lesson 4.4: Media Sanitization and Disposal, p. 242",
     "type": "single",
     "topic": "security-operations"
   },
@@ -1280,7 +1277,7 @@
     "correct": [
       1
     ],
-    "explanation": "When endpoint logs are missing, the network firewall’s logs are the next-best source to trace outbound connections, including IPs, ports, and timestamps. IPS logs (A) detect intrusions but may lack full connection detail, ACLs (C) record permission changes, and Windows security logs (D) were on the endpoint and already wiped. Lesson 4.6: Network Logging and Forensics, p. 238 Lesson 5.3: Backup Types – Incremental Backups",
+    "explanation": "When endpoint logs are missing, the network firewall’s logs are the next-best source to trace outbound connections, including IPs, ports, and timestamps. IPS logs (A) detect intrusions but may lack full connection detail, ACLs (C) record permission changes, and Windows security logs (D) were on the endpoint and already wiped. Lesson 4.6: Network Logging and Forensics, p. 238",
     "type": "single",
     "topic": "security-operations"
   },
@@ -1296,7 +1293,7 @@
     "correct": [
       3
     ],
-    "explanation": "Root-cause analysis digs into the underlying factors that allowed an incident to occur—such as a weak password policy or missing patch—and drives corrective actions so the same issue does not recur. Gathering IOCs (A), finding affected systems (B), and malware removal (C) are important parts of investigation, identification, and containment/eradication phases, but only root-cause analysis focuses on long-term prevention. Lesson 4.4: Incident Response and Lessons Learned, p. 332 Lesson 1.4: Security Awareness Training – Tailgating Prevention",
+    "explanation": "Root-cause analysis digs into the underlying factors that allowed an incident to occur—such as a weak password policy or missing patch—and drives corrective actions so the same issue does not recur. Gathering IOCs (A), finding affected systems (B), and malware removal (C) are important parts of investigation, identification, and containment/eradication phases, but only root-cause analysis focuses on long-term prevention. Lesson 4.4: Incident Response and Lessons Learned, p. 332",
     "type": "single",
     "topic": "security-operations"
   },
@@ -1312,7 +1309,7 @@
     "correct": [
       1
     ],
-    "explanation": "Firewall logs show all outbound connections—including IP addresses, ports, and timestamps—making them the prime source to trace C2 destinations. Application logs (A) focus on app-level events, antivirus logs (C) record malware detections, and IDS logs (D) flag suspicious activity but may not capture every outbound flow. Lesson 4.6: Network Logging for Forensics, p. 238 Lesson 5.3: Data Sovereignty",
+    "explanation": "Firewall logs show all outbound connections—including IP addresses, ports, and timestamps—making them the prime source to trace C2 destinations. Application logs (A) focus on app-level events, antivirus logs (C) record malware detections, and IDS logs (D) flag suspicious activity but may not capture every outbound flow. Lesson 4.6: Network Logging for Forensics, p. 238",
     "type": "single",
     "topic": "security-operations"
   },
@@ -1328,7 +1325,7 @@
     "correct": [
       0
     ],
-    "explanation": "Next-generation SIEMs integrate SOAR capabilities, enabling automated playbook-driven responses (isolation, blocking, ticket creation) immediately when alerts fire. Agent deployment (B) and vulnerability scanning (C) are deployment or discovery functions, and virus signatures (D) are antivirus features, not core SIEM functions. Lesson 4.2: Advanced SIEM and SOAR Integration, p. 220 Lesson 2.1: Watering Hole Attacks",
+    "explanation": "Next-generation SIEMs integrate SOAR capabilities, enabling automated playbook-driven responses (isolation, blocking, ticket creation) immediately when alerts fire. Agent deployment (B) and vulnerability scanning (C) are deployment or discovery functions, and virus signatures (D) are antivirus features, not core SIEM functions. Lesson 4.2: Advanced SIEM and SOAR Integration, p. 220",
     "type": "single",
     "topic": "security-operations"
   }
