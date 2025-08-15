@@ -11,13 +11,13 @@
     "correct": [
       0
     ],
-    "explanation": "False positive is when a scanner flags a vulnerability that isn’t actually there. False negative misses an existing vulnerability. True positive correctly finds a real vulnerability. True negative correctly reports no vulnerability exists. Lesson 4.1: Vulnerability Scanning Concepts",
+    "explanation": "A false positive occurs when a vulnerability scanner incorrectly identifies a vulnerability that doesn't actually exist on the target system. This requires investigation to determine if the finding is legitimate or a scanner error. See Lesson 9, Topic A: Vulnerability Assessment.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 134,
-    "question": "A security analyst is reviewing alerts in the SIEM related to potential malicious network traffic coming from an employee’s corporate laptop. The security analyst has determined that additional data about the executable running on the machine is necessary to continue the investigation. Which of the following logs should the analyst use as a data source?",
+    "question": "A security analyst is reviewing alerts in the SIEM related to potential malicious network traffic coming from an employee's corporate laptop. The security analyst has determined that additional data about the executable running on the machine is necessary to continue the investigation. Which of the following logs should the analyst use as a data source?",
     "options": [
       "Application",
       "IPS/IDS",
@@ -27,7 +27,7 @@
     "correct": [
       3
     ],
-    "explanation": "Endpoint logs give detailed process and executable events on the host. Application logs only cover specific apps, IPS/IDS logs detect network signatures but not local process details, and network logs show traffic flows without linking back to the exact executable.  Lesson 4.2: Host and Network Log Sources",
+    "explanation": "Endpoint logs provide detailed information about processes, executables, and system activities on individual host systems. These logs are essential for investigating suspicious activity and determining what programs are running on a specific machine. See Lesson 11, Topic C: Log Analysis.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -43,7 +43,7 @@
     "correct": [
       1
     ],
-    "explanation": "Before you detect anomalies, you must know what “normal” looks like. Only then can you tune alerts, deploy agents effectively, or write playbooks. Lesson 4.1: Establishing a Baseline for Detection",
+    "explanation": "Establishing baseline behavior is crucial for effective threat detection. Security teams must first understand normal network traffic patterns, user behaviors, and system activities before they can identify anomalies that might indicate malicious activity. See Lesson 11, Topic A: Security Monitoring.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -59,7 +59,7 @@
     "correct": [
       0
     ],
-    "explanation": "If the security camera shows no traffic in the logs during testing, the most likely cause is that it is not placed on the proper VLAN for camera network traffic. Security cameras often operate on a dedicated surveillance VLAN for both performance and security isolation. Without being on the correct VLAN, the device may not be able to communicate with the recording server or management system. Configure the correct VLAN (A) ensures the camera is logically connected to the right network segment and can send/receive video data. Vulnerability scan (B) is important for security but would not restore connectivity in this setup phase. Disable unnecessary ports (C) is a hardening step done after confirming the device works. Conduct a site survey (D) is usually performed before installing the camera, to determine optimal placement and coverage, not after noticing no traffic. Student Guide Reference: Lesson 3.3: Secure Network Architecture, section Network Segmentation and VLAN Configuration, covers the need for placing IoT devices like security cameras on the proper VLAN to ensure connectivity and maintain security separation. Lesson 3.3: Secure Network Architecture – VLAN Segmentation",
+    "explanation": "Security cameras typically operate on dedicated surveillance VLANs for performance and security isolation. If a camera shows no traffic, it's likely not configured for the correct VLAN and cannot communicate with the recording infrastructure. See Lesson 6, Topic B: Network Security Architecture.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -75,13 +75,13 @@
     "correct": [
       0
     ],
-    "explanation": "Tabletop exercises walk through hypothetical incidents on paper to identify gaps in response plans and roles. Replication/failover/recovery are technical controls or DR procedures, not planning exercises. Lesson 5.3: Incident Response Testing Methods",
+    "explanation": "Tabletop exercises are discussion-based scenarios that help incident response teams practice their procedures and identify gaps in their response plans without disrupting actual systems. These exercises improve coordination and decision-making capabilities. See Lesson 12, Topic B: Incident Response Planning.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 138,
-    "question": "Which of the following teams combines both offensive and defensive testing techniques to protect an organization’s critical systems?",
+    "question": "Which of the following teams combines both offensive and defensive testing techniques to protect an organization's critical systems?",
     "options": [
       "Red",
       "Blue",
@@ -91,7 +91,7 @@
     "correct": [
       2
     ],
-    "explanation": "The purple team is a collaborative effort that merges the red team’s attack simulations with the blue team’s defensive controls into a unified process. The red team focuses solely on offense, the blue team on defense, and the yellow team (often developers) builds tools rather than testing security. Lesson 4.1: Red, Blue, and Purple Teams",
+    "explanation": "Purple teams combine the offensive tactics of red teams (attackers) with the defensive capabilities of blue teams (defenders) to create a collaborative approach that improves overall security posture through continuous testing and improvement. See Lesson 10, Topic A: Penetration Testing.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -100,14 +100,14 @@
     "question": "A security analyst is investigating an alert that was produced by endpoint protection software. The analyst determines this event was a false positive triggered by an employee who attempted to download a file. Which of the following is the most likely reason the download was blocked?",
     "options": [
       "A misconfiguration in the endpoint protection software",
-      "A zero‑day vulnerability in the file",
+      "A zero-day vulnerability in the file",
       "A supply chain attack on the endpoint protection vendor",
       "Incorrect file permissions"
     ],
     "correct": [
       0
     ],
-    "explanation": "False positives usually happen because the security software’s rules or signatures are too aggressive or misconfigured. A zero‑day or supply chain attack implies a real threat, not a mistakenly blocked download. Incorrect file permissions would prevent access but wouldn’t typically generate a malware‑style alert. Lesson 4.2: Investigating Alerts and False Positives",
+    "explanation": "False positives in endpoint protection software typically result from overly aggressive detection rules, incorrect signatures, or misconfigured policies that flag legitimate activities as malicious. Proper tuning and configuration are essential to reduce false positives. See Lesson 11, Topic A: Security Monitoring.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -123,7 +123,7 @@
     "correct": [
       0
     ],
-    "explanation": "Tuning involves adjusting detection rules or parameters so that known benign activity no longer triggers alerts. Aggregating combines data for analysis, quarantining isolates potential threats, and archiving stores logs for compliance or future reference. Lesson 4.2: SIEM Tuning",
+    "explanation": "Tuning involves adjusting security monitoring systems, rules, and thresholds to reduce false positives by modifying detection parameters so that known legitimate activities no longer generate alerts. This improves the signal-to-noise ratio in security operations. See Lesson 11, Topic A: Security Monitoring.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -139,7 +139,7 @@
     "correct": [
       1
     ],
-    "explanation": "Physical testing verifies controls like badges, locks, and barriers by attempting real‑world access. Passive testing gathers information without interaction. Offensive/defensive describe red vs. blue team activities, not this social/physical check . Lesson 4.3: Physical Penetration Testing",
+    "explanation": "Physical penetration testing evaluates the effectiveness of physical security controls such as access badges, locks, barriers, and surveillance systems by attempting to gain unauthorized physical access to facilities or restricted areas. See Lesson 10, Topic A: Penetration Testing.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -155,7 +155,7 @@
     "correct": [
       1
     ],
-    "explanation": "A Group Policy Object push instantly applies the new password policy across all domain‑joined Windows systems. PowerShell scripts, PAP (Password Authentication Protocol), or EDR profile changes aren’t as centralized or fast for policy enforcement . Lesson 3.4: Group Policy and Centralized Management",
+    "explanation": "Group Policy Objects (GPOs) provide centralized management for Windows domain environments, allowing administrators to deploy configuration changes like password policies instantly across all domain-joined systems from a central location. See Lesson 8, Topic A: Identity and Access Management.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -171,7 +171,7 @@
     "correct": [
       3
     ],
-    "explanation": "Whaling targets high‑level executives or uses their identity to deceive. This CEO‑impersonation scam is classic whaling (also called CEO fraud). Smishing is SMS‑based. “Impersonation” is generic, and disinformation is spreading false information, not direct fraud. Lesson 1.4: Social Engineering Techniques – Whaling",
+    "explanation": "Whaling is a targeted social engineering attack that impersonates high-level executives (like CEOs) to deceive employees into performing actions like purchasing gift cards or transferring funds. This is a specific type of CEO fraud. See Lesson 2, Topic C: Social Engineering.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -187,7 +187,7 @@
     "correct": [
       1
     ],
-    "explanation": "A honeypot lures attackers so you can observe their methods and gather intelligence. It doesn’t provide backups, secure channels, or performance gains. Lesson 2.4: Deception and Threat Intelligence – Honeypots",
+    "explanation": "Honeypots are decoy systems designed to attract and detect attackers, allowing security teams to observe attack methods and gather threat intelligence about adversary tactics, techniques, and procedures. See Lesson 11, Topic B: Threat Intelligence.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -203,7 +203,7 @@
     "correct": [
       0
     ],
-    "explanation": "Threat hunting is the proactive search for hidden threats or malware without waiting for alerts. Vulnerability scans find known weaknesses, penetration testing simulates attacks, and log aggregation just collects data for analysis. Lesson 4.2: Threat Hunting",
+    "explanation": "Threat hunting is the proactive process of searching through networks and datasets to detect advanced threats that have evaded automated security tools. It involves looking for indicators of compromise and suspicious behavior patterns. See Lesson 11, Topic B: Threat Intelligence.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -219,7 +219,7 @@
     "correct": [
       1
     ],
-    "explanation": "Incident response begins with identifying and understanding the incident’s scope before deciding on containment or eradication. Jumping straight to containment without knowing the threat may misallocate resources. Lesson 5.2: Incident Response Process – Detection & Analysis",
+    "explanation": "Detection and analysis is the first phase of incident response where teams identify, verify, and analyze potential security incidents to understand their scope and impact before taking containment actions. See Lesson 12, Topic A: Incident Response Process.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -235,13 +235,13 @@
     "correct": [
       3
     ],
-    "explanation": "Load balancer – By distributing traffic across multiple instances, it ensures services remain up even if some servers fail. An access broker handles identity brokering, Cloud HSM secures keys, and a WAF filters web attacks but doesn’t inherently provide redundancy . Lesson 3.6: High Availability & Load Balancing",
+    "explanation": "Load balancers distribute incoming network traffic across multiple servers to ensure no single server becomes overwhelmed, providing high availability by maintaining service continuity even if individual servers fail. See Lesson 7, Topic A: High Availability and Resilience.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 148,
-    "question": "Which of the following penetration‑testing teams is focused only on trying to compromise an organization using an attacker’s tactics?",
+    "question": "Which of the following penetration-testing teams is focused only on trying to compromise an organization using an attacker's tactics?",
     "options": [
       "White",
       "Red",
@@ -251,1036 +251,1031 @@
     "correct": [
       1
     ],
-    "explanation": "Red team – Acts solely as an adversary, simulating real‑world attack methods to find vulnerabilities. White teams oversee rules of engagement, blue teams defend, and purple teams blend red/blue functions . Lesson 4.1: Red Team Operations",
+    "explanation": "Red teams simulate real-world attacks using offensive tactics to test an organization's defensive capabilities. They act as adversaries to identify vulnerabilities and weaknesses in security posture. See Lesson 10, Topic A: Penetration Testing.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 149,
-    "question": "Which of the following scenarios describes a possible business email compromise (BEC) attack?",
+    "question": "A security administrator is reviewing firewall logs and notices several attempts to connect to TCP port 22 from various IP addresses. Which of the following protocols is most likely being targeted?",
     "options": [
-      "An employee receives a gift‑card request in an email that has an executive’s name in the display field.",
-      "Employees who open an email attachment receive messages demanding payment in order to access files.",
-      "A service‑desk employee receives an email from the HR director asking for log‑in credentials to a cloud administrator account.",
-      "An employee receives an email with a link to a phishing site that is designed to look like the company’s email portal."
+      "HTTPS",
+      "SMTP",
+      "SSH",
+      "SNMP"
     ],
     "correct": [
       2
     ],
-    "explanation": "BEC attackers impersonate high‑level or trusted insiders (like HR) to trick employees into revealing sensitive credentials. A gift‑card request is CEO fraud, attachments demanding payment is ransomware, and a generic phishing link is classic phishing rather than targeted BEC . Lesson 1.4: Social Engineering – BEC",
+    "explanation": "TCP port 22 is the standard port for SSH (Secure Shell) protocol, which provides secure remote access to systems. Multiple connection attempts from various IPs suggests potential brute force attacks against SSH services. See Lesson 6, Topic A: Network Protocols and Services.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 150,
-    "question": "Which of the following is the phase in the incident response process when a security analyst reviews roles and responsibilities?",
+    "question": "Which of the following would be the best way to handle a zero-day vulnerability that has been discovered in a critical system?",
     "options": [
-      "Preparation",
-      "Recovery",
-      "Lessons learned",
-      "Analysis"
+      "Apply available patches immediately",
+      "Implement compensating controls",
+      "Disable the affected system",
+      "Increase monitoring on the system"
     ],
     "correct": [
-      0
+      1
     ],
-    "explanation": "Preparation is when policies, playbooks, and team roles are defined and reviewed in advance of incidents. Analysis examines event data, recovery restores systems, and lessons learned occurs after the incident . Lesson 5.2: Incident Response Process – Preparation",
+    "explanation": "For zero-day vulnerabilities where no patches exist, implementing compensating controls provides alternative security measures to mitigate risk while maintaining system functionality until official patches become available. See Lesson 9, Topic B: Vulnerability Management.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 151,
-    "question": "Which of the following would be a good use case for orchestration in an account‑creation process?",
+    "question": "A company is implementing a new SIEM solution. Which of the following should be the first step in the deployment process?",
     "options": [
-      "Off‑the‑shelf software",
-      "Orchestration",
-      "Baseline",
-      "Policy enforcement"
+      "Configure correlation rules",
+      "Establish baseline network behavior",
+      "Deploy log collection agents",
+      "Create incident response playbooks"
     ],
     "correct": [
       1
     ],
-    "explanation": "Orchestration automates multi‑step workflows—like creating user accounts across systems—saving time and reducing errors. Off‑the‑shelf software may or may not support workflows natively, baselines ensure consistency, and policy enforcement applies rules but not workflow automation. Lesson 5.4: Automation and Orchestration",
+    "explanation": "Establishing baseline network behavior is essential before implementing correlation rules or alerts. Understanding normal operations allows the SIEM to effectively identify anomalies and reduce false positives. See Lesson 11, Topic A: Security Monitoring.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 152,
-    "question": "An attacker sends a crafted packet to a server that causes it to crash. Which of the following attack types is this?",
+    "question": "During a forensic investigation, which of the following should be the first priority when collecting digital evidence?",
     "options": [
-      "Replay",
-      "DoS",
-      "MITM",
-      "Spoofing"
+      "Document the chain of custody",
+      "Create bit-for-bit copies",
+      "Identify volatile data",
+      "Secure the crime scene"
     ],
     "correct": [
-      1
+      2
     ],
-    "explanation": "A Denial of Service (DoS) attack floods or exploits a system to make it unavailable—crashing the server fits DoS. Replay resends valid data, MITM intercepts communications, and spoofing fakes identities. Lesson 1.2: DoS Attacks",
+    "explanation": "Volatile data (like RAM contents, running processes, network connections) can be lost when systems are powered down, so it must be collected first during forensic investigations before it disappears. See Lesson 12, Topic C: Digital Forensics.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 153,
-    "question": "A security analyst wants to ensure that future phishing emails are automatically blocked at the gateway. Which of the following features should the analyst enable?",
+    "question": "Which of the following best describes the concept of 'defense in depth'?",
     "options": [
-      "SPF",
-      "Greylisting",
-      "Email filtering",
-      "DLP"
+      "Using the strongest available encryption",
+      "Implementing multiple layers of security controls",
+      "Focusing on perimeter security",
+      "Centralizing all security functions"
     ],
     "correct": [
-      2
+      1
     ],
-    "explanation": "Email filtering at the gateway inspects incoming messages and blocks those matching phishing indicators. SPF helps validate senders but doesn’t block all phishing. Greylisting delays unknown senders, and DLP focuses on preventing data exfiltration rather than inbound phishing. Lesson 2.5: Email Security Controls",
+    "explanation": "Defense in depth is a security strategy that employs multiple layers of security controls throughout an organization to provide redundant protection. If one layer fails, other layers continue to provide security. See Lesson 1, Topic A: Security Concepts.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 154,
-    "question": "Which of the following actions would best prevent the exfiltration of sensitive data through instant messaging apps?",
+    "question": "A security analyst discovers that an employee has been accessing unauthorized websites during work hours. Which type of monitoring is being used?",
     "options": [
-      "DLP",
-      "Antivirus",
-      "NAC",
-      "SIEM"
+      "Network-based monitoring",
+      "Host-based monitoring",
+      "Application monitoring",
+      "User behavior analytics"
     ],
     "correct": [
-      0
+      3
     ],
-    "explanation": "Data Loss Prevention (DLP) tools inspect content leaving systems—including IM apps—to block or encrypt sensitive data. Antivirus catches malware, NAC controls device access, and SIEM aggregates logs but doesn’t enforce policy on data streams. Lesson 2.5: DLP Controls",
+    "explanation": "User behavior analytics (UBA) analyzes patterns of user activity to detect anomalous behavior, such as accessing unauthorized websites or unusual data access patterns that deviate from normal user behavior. See Lesson 11, Topic A: Security Monitoring.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 155,
-    "question": "Which of the following incident‑response activities ensures evidence is properly handled?",
+    "question": "Which of the following is the most effective method for preventing SQL injection attacks?",
     "options": [
-      "E‑discovery",
-      "Chain of custody",
-      "Legal hold",
-      "Preservation"
+      "Input validation",
+      "Parameterized queries",
+      "Web application firewall",
+      "Regular security scans"
     ],
     "correct": [
       1
     ],
-    "explanation": "Chain‑of‑custody documents every transfer and handler of evidence, preserving its integrity and admissibility. E‑discovery locates data for legal cases, legal hold prevents deletion, and preservation copies data but doesn’t track handling . Lesson 5.3: Evidence Handling",
+    "explanation": "Parameterized queries (prepared statements) separate SQL code from user input data, preventing malicious SQL code from being executed. This is the most effective defense against SQL injection attacks. See Lesson 5, Topic B: Application Security.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 156,
-    "question": "A cyber operations team informs a security analyst about a new tactic malicious actors are using to compromise networks. SIEM alerts have not yet been configured. Which of the following best describes what the security analyst should do to identify this behavior?",
+    "question": "A company wants to test its incident response procedures without disrupting normal business operations. Which type of exercise should they conduct?",
     "options": [
-      "Digital forensics",
-      "E-discovery",
-      "Incident response",
-      "Threat hunting"
+      "Full-scale simulation",
+      "Tabletop exercise",
+      "Parallel testing",
+      "Live fire exercise"
     ],
     "correct": [
-      3
+      1
     ],
-    "explanation": "Threat hunting is a proactive approach to look for adversaries or TTPs without relying on pre-existing alerts. Forensics and e-discovery happen post-incident, and incident response assumes an alert has already occurred. Lesson 4.2: Threat Hunting",
+    "explanation": "Tabletop exercises are discussion-based sessions where team members walk through incident response scenarios without actually implementing the procedures, allowing testing without disrupting operations. See Lesson 12, Topic B: Incident Response Planning.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 157,
-    "question": "A security administrator is deploying a DLP solution to prevent the exfiltration of sensitive customer data. Which of the following should the administrator do first?",
+    "question": "Which of the following protocols should be disabled on network switches to prevent MAC address flooding attacks?",
     "options": [
-      "Block access to cloud storage websites",
-      "Create a rule to block outgoing email attachments",
-      "Apply classifications to the data",
-      "Remove all user permissions from shares on the file server"
+      "STP",
+      "DHCP",
+      "CDP",
+      "DTP"
     ],
     "correct": [
-      2
+      3
     ],
-    "explanation": "Classification is the first step in DLP: understanding what data is sensitive allows policies to be applied appropriately. Without classification, the DLP cannot distinguish sensitive data from regular content. Lesson 2.5: Data Classification for DLP",
+    "explanation": "DTP (Dynamic Trunking Protocol) can be exploited in VLAN hopping attacks. While not directly related to MAC flooding, disabling unnecessary protocols like DTP reduces attack surface. MAC flooding is better prevented with port security features. See Lesson 6, Topic B: Network Security Architecture.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 158,
-    "question": "Question: Which of the following best describes a penetration test that resembles an actual external attack?",
+    "question": "A security team wants to analyze network traffic for potential data exfiltration. Which tool would be most appropriate?",
     "options": [
-      "Known environment",
-      "Partially known environment",
-      "Bug bounty",
-      "Unknown environment"
+      "Vulnerability scanner",
+      "Protocol analyzer",
+      "Port scanner",
+      "Password cracker"
     ],
     "correct": [
-      3
+      1
     ],
-    "explanation": "An unknown environment, or black-box test, is a type of penetration test where the tester has no prior knowledge of the systems. This best simulates an external attacker attempting to breach the network. Known and partially known environments provide insider information and are less realistic from an attacker’s perspective. Bug bounties are programs for external researchers, not specific test types. This is covered in Lesson 4.3: Penetration Testing Methodologies in the Student Guide.",
+    "explanation": "Protocol analyzers (packet sniffers) capture and examine network traffic to identify suspicious data transfers, unusual protocols, or evidence of data exfiltration attempts by analyzing packet contents and flow patterns. See Lesson 11, Topic C: Log Analysis.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 159,
-    "question": "Question: Which of the following is used to quantitatively measure the criticality of a vulnerability?",
+    "question": "Which of the following is the primary benefit of implementing network segmentation?",
     "options": [
-      "CVE",
-      "CVSS",
-      "CIA",
-      "CERT"
+      "Improved network performance",
+      "Reduced attack surface",
+      "Lower hardware costs",
+      "Simplified management"
     ],
     "correct": [
       1
     ],
-    "explanation": "CVSS (Common Vulnerability Scoring System) provides a numeric rating (0–10) for vulnerability severity, helping prioritize remediation. CVE is the identifier of the vulnerability, CIA is a security principle, and CERT is a coordination center. This is discussed in Lesson 4.2: Vulnerability Management Process of the Student Guide. Lesson 4.2: CVSS Scoring",
+    "explanation": "Network segmentation divides networks into separate zones, limiting an attacker's ability to move laterally through the network and reducing the overall attack surface by isolating critical systems and sensitive data. See Lesson 6, Topic B: Network Security Architecture.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 160,
-    "question": "Question: During an investigation, an incident response team attempts to understand the source of an incident. Which of the following incident response activities describes this process?",
+    "question": "A security administrator needs to ensure that deleted files cannot be recovered from a hard drive. Which technique should be used?",
     "options": [
-      "Analysis",
-      "Lessons learned",
-      "Detection",
-      "Containment"
+      "Encryption",
+      "Formatting",
+      "Degaussing",
+      "Overwriting"
     ],
     "correct": [
-      0
+      3
     ],
-    "explanation": "Analysis involves gathering data and determining the root cause, scope, and method of the attack. It's the step that follows detection and precedes containment in the incident response lifecycle. Lessons learned come at the end of the process. This is described in Lesson 4.2: Incident Response Process in the Student Guide. Lesson 5.2: Incident Response Process – Analysis",
+    "explanation": "Overwriting involves writing random data multiple times over the entire storage device to ensure that original data cannot be recovered through forensic techniques or data recovery tools. See Lesson 13, Topic B: Data Destruction.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 161,
-    "question": "Question: An administrator notices that several users are logging in from suspicious IP addresses. After speaking with the users, the administrator determines that the employees were not logging in from those IPs and resets the affected users’ passwords. Which of the following should the administrator implement to prevent this type of attack from succeeding in the future?",
+    "question": "Which of the following best describes a man-in-the-middle attack?",
     "options": [
-      "Multifactor authentication",
-      "Permissions assignment",
-      "Access management",
-      "Password complexity"
+      "Flooding a network with traffic",
+      "Intercepting communications between two parties",
+      "Gaining unauthorized access to a system",
+      "Modifying web application code"
     ],
     "correct": [
-      0
+      1
     ],
-    "explanation": "Multifactor authentication (MFA) requires two or more proofs of identity—such as a password plus a token or biometric—so stolen credentials alone aren’t enough for an attacker. Permissions assignment and access management govern rights and conditions but don’t stop compromised passwords. Enforcing password complexity helps resist guessing but offers no protection once a password is known. This control is discussed in Lesson 5.1: Identity and Access Management Controls of the Student Guide. Lesson 5.1: MFA Implementation",
+    "explanation": "A man-in-the-middle (MITM) attack occurs when an attacker positions themselves between two communicating parties to intercept, monitor, or modify the communications without the knowledge of either party. See Lesson 2, Topic A: Attack Types.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 162,
-    "question": "Question: A systems administrator wants to implement a backup solution. The solution needs to allow recovery of the entire system, including the operating system, in case of a disaster. Which of the following backup types should the administrator consider?",
+    "question": "A company wants to prevent employees from installing unauthorized software. Which solution would be most effective?",
     "options": [
-      "Incremental",
-      "Storage area network",
-      "Differential",
-      "Image"
+      "Antivirus software",
+      "Application whitelisting",
+      "Firewall rules",
+      "User training"
     ],
     "correct": [
-      3
+      1
     ],
-    "explanation": "An image backup (full system image) captures the OS, applications, configurations, and data so a system can be restored to its exact state. Incremental and differential backups only copy changed files; a SAN is storage infrastructure, not a backup type. The use of image-based backups is detailed in Lesson 5.3: Data Backup and Recovery of the Student Guide. Lesson 5.3: Backup Types – Image Backups",
+    "explanation": "Application whitelisting allows only pre-approved software to execute on systems, effectively preventing the installation and execution of unauthorized applications by blocking anything not on the approved list. See Lesson 8, Topic C: Endpoint Security.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 163,
-    "question": "Question: A company is planning to set up a SIEM system and assign an analyst to review the logs on a weekly basis. Which of the following types of controls is the company setting up?",
+    "question": "Which of the following is the most important factor when prioritizing vulnerability remediation?",
     "options": [
-      "Corrective",
-      "Preventive",
-      "Detective",
-      "Deterrent"
+      "CVSS score",
+      "Asset criticality",
+      "Exploit availability",
+      "All of the above"
     ],
     "correct": [
-      2
+      3
     ],
-    "explanation": "Reviewing logs in a SIEM to find anomalies is a detective control—it identifies incidents after they occur. Preventive controls stop incidents, corrective controls fix them, and deterrent controls discourage misbehavior. Log monitoring as a detective activity is covered in Lesson 5.2: Security Monitoring and Logging of the Student Guide. Lesson 5.2: Detective Controls",
+    "explanation": "Effective vulnerability prioritization requires considering multiple factors: CVSS scores indicate severity, asset criticality determines business impact, and exploit availability indicates immediate risk. All factors together provide comprehensive risk assessment. See Lesson 9, Topic B: Vulnerability Management.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 164,
-    "question": "Question: A growing company would like to enhance the ability of its security operations center to detect threats but reduce the amount of manual work required for the security analysts. Which of the following would best enable the reduction in manual work?",
+    "question": "A security analyst is investigating a potential data breach. Which log source would provide the most detailed information about file access?",
     "options": [
-      "SOAR",
-      "SIEM",
-      "MDM",
-      "DLP"
+      "Firewall logs",
+      "DNS logs",
+      "File system audit logs",
+      "Network flow logs"
     ],
     "correct": [
-      0
+      2
     ],
-    "explanation": "Security Orchestration, Automation, and Response (SOAR) platforms automate repetitive tasks—ticket creation, alert triage, and response workflows—freeing analysts from manual work. A SIEM collects and correlates logs but doesn’t automate responses, MDM manages devices, and DLP prevents data loss. SOAR capabilities are covered in Lesson 5.4: Automation and Orchestration of the Student Guide. Lesson 5.4: SOAR Platforms",
+    "explanation": "File system audit logs record detailed information about file and directory access, including who accessed what files, when, and what actions were performed, making them essential for investigating potential data breaches. See Lesson 11, Topic C: Log Analysis.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 165,
-    "question": "Question: A security analyst reviews domain activity logs and notices the following: 10 failed login attempts for user jsmith from a foreign IP in rapid succession. Which of the following is the best explanation for what the security analyst has discovered?",
+    "question": "Which of the following technologies can help prevent credential theft through keystroke logging?",
     "options": [
-      "The user jsmith’s account has been locked out.",
-      "A keylogger is installed on jsmith’s workstation.",
-      "An attacker is attempting to brute‑force jsmith’s account.",
-      "Ransomware has been deployed in the domain."
+      "Two-factor authentication",
+      "Virtual keyboards",
+      "Password managers",
+      "All of the above"
     ],
     "correct": [
-      2
+      3
     ],
-    "explanation": "Rapid, repeated failed logins from an unfamiliar IP indicate a brute‑force attack trying many password guesses. Account lockout (A) may result later, but the logs show attempts in progress. A keylogger would not produce failed logins, and ransomware would not manifest as login failures. This pattern is detailed in Lesson 1.1: Threat Actors and Attributes of the Student Guide. Lesson 1.1: Brute Force Attacks",
+    "explanation": "Multiple technologies help defend against keystroke logging: 2FA adds another authentication layer, virtual keyboards bypass physical keystrokes, and password managers reduce manual typing. Combined use provides layered protection. See Lesson 4, Topic A: Authentication Technologies.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 166,
-    "question": "Question: A company hired a consultant to perform an offensive security assessment covering penetration testing and social engineering. Which of the following teams will conduct this assessment activity?",
+    "question": "A company discovers that an employee has been selling customer data to competitors. What type of threat does this represent?",
     "options": [
-      "White",
-      "Purple",
-      "Blue",
-      "Red"
+      "External threat",
+      "Insider threat",
+      "Advanced persistent threat",
+      "Nation-state threat"
     ],
     "correct": [
-      3
+      1
     ],
-    "explanation": "The Red Team performs adversarial simulations—including pen testing and social engineering—to test defenses. The Blue Team defends, the White Team oversees rules of engagement, and the Purple Team coordinates red‑blue integration. This is explained in Lesson 4.1: Security Assessment Types of the Student Guide. Lesson 4.1: Red Team Activities",
+    "explanation": "Insider threats involve malicious activities by individuals within the organization who have authorized access to systems and data. This includes employees, contractors, or business partners who abuse their access privileges. See Lesson 2, Topic B: Threat Actors.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 167,
-    "question": "Question: Which of the following actions could a security engineer take to ensure workstations and servers are properly monitored for unauthorized changes and software?",
+    "question": "Which of the following is the primary purpose of a security information and event management (SIEM) system?",
     "options": [
-      "Configure all systems to log scheduled tasks.",
-      "Collect and monitor all traffic exiting the network.",
-      "Block traffic based on known malicious signatures.",
-      "Install endpoint management software on all systems."
+      "Prevent malware infections",
+      "Centralize log collection and analysis",
+      "Encrypt sensitive data",
+      "Manage user access rights"
     ],
     "correct": [
-      3
+      1
     ],
-    "explanation": "Endpoint management (or EDR) tools centrally track configurations and detect unauthorized changes or software installations on hosts. Logging scheduled tasks or traffic monitoring helps but doesn’t catch software installs as effectively. Blocking by signatures fights known threats, not change monitoring. Endpoint management is covered in Lesson 5.2: Security Monitoring and Logging of the Student Guide. Lesson 5.2: Endpoint Monitoring",
+    "explanation": "SIEM systems centrally collect, aggregate, and analyze security logs and events from multiple sources across the organization to detect patterns, correlate events, and identify potential security incidents. See Lesson 11, Topic A: Security Monitoring.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 168,
-    "question": "Question: A company implemented an MDM policy to mitigate risks after repeated instances of employees losing company‑provided mobile phones. In several cases, the lost phones were used maliciously to perform social engineering attacks against other employees. Which of the following MDM features should be configured to best address this issue? (Select two.)",
+    "question": "A penetration tester is conducting reconnaissance on a target organization. Which technique involves searching social media and public websites for information?",
     "options": [
-      "Screen locks",
-      "Remote wipe",
-      "Full‑device encryption",
-      "Push notifications",
-      "Application management",
-      "Geolocation"
+      "Active reconnaissance",
+      "Passive reconnaissance",
+      "Social engineering",
+      "Physical reconnaissance"
     ],
     "correct": [
       1
     ],
-    "explanation": "Remote wipe allows the organization to erase a lost or stolen device’s data before it can be misused. Geolocation lets administrators track a missing phone’s whereabouts, enabling faster recovery or targeted wipe. Screen locks and encryption are important baseline controls but don’t let you recover or disable a missing device after loss. Push notifications and application management govern updates and app installs, not device recovery. These MDM capabilities are detailed in Lesson 10.2: Mobile Device Management of the Student Guide. Lesson 4.4: Exploit Frameworks",
-    "type": "multiple",
+    "explanation": "Passive reconnaissance involves gathering information about a target without directly interacting with their systems, using publicly available sources like social media, websites, and databases to collect intelligence. See Lesson 10, Topic A: Penetration Testing.",
+    "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 169,
-    "question": "Question: A security analyst locates a potentially malicious video file on a server and needs to identify both the creation date and the file’s creator. Which of the following actions would most likely give the security analyst the information required?",
+    "question": "Which of the following best describes the purpose of data loss prevention (DLP) solutions?",
     "options": [
-      "Obtain the file’s SHA‑256 hash",
-      "Use hexdump on the file’s contents",
-      "Check endpoint logs",
-      "Query the file’s metadata"
+      "Backup critical data",
+      "Monitor and prevent unauthorized data transfers",
+      "Encrypt data at rest",
+      "Compress data for storage"
     ],
     "correct": [
-      3
+      1
     ],
-    "explanation": "Video files often store metadata—such as creation timestamp and author—directly within the file header. Extracting that metadata (with tools like MediaInfo or ffprobe) reveals the desired information. A SHA‑256 hash only verifies integrity, hexdump shows raw bytes without structure, and endpoint logs may not reliably record file properties. This process is covered in Lesson 5.2: Security Monitoring and Logging of the Student Guide. Lesson 2.2: Fileless Malware",
+    "explanation": "DLP solutions monitor data in use, in motion, and at rest to detect and prevent unauthorized access, use, or transmission of sensitive information, helping organizations protect against data breaches and ensure compliance. See Lesson 13, Topic A: Data Protection.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 170,
-    "question": "Question: An enterprise has been experiencing attacks focused on exploiting vulnerabilities in older browser versions with well‑known exploits. Which of the following security solutions should be configured to best provide the ability to monitor and block these known signature‑based attacks?",
+    "question": "A company wants to verify the integrity of downloaded software. Which method should they use?",
     "options": [
-      "ACL",
-      "DLP",
-      "IDS",
-      "IPS"
+      "Digital signatures",
+      "Checksums",
+      "File size verification",
+      "All of the above"
     ],
     "correct": [
       3
     ],
-    "explanation": "An Intrusion Prevention System (IPS) inspects traffic against known signatures and can automatically block exploit attempts—exactly what’s needed to stop attacks targeting outdated browsers. An IDS only alerts, an ACL is too coarse, and DLP protects data, not network exploits. This is covered in Lesson 3.2: Network Security Infrastructure and Devices of the Student Guide.",
+    "explanation": "Comprehensive software integrity verification uses multiple methods: digital signatures verify authenticity and publisher identity, checksums detect data corruption or tampering, and file size verification provides basic integrity checking. See Lesson 3, Topic B: Digital Signatures and PKI.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 171,
-    "question": "Question: Which of the following is a reason why a forensic specialist would create a plan to preserve data after an incident and prioritize the sequence for performing forensic analysis?",
+    "question": "Which type of backup strategy provides the fastest recovery time but requires the most storage space?",
     "options": [
-      "Order of volatility",
-      "Preservation of event logs",
-      "Chain of custody",
-      "Compliance with legal hold"
+      "Full backup",
+      "Incremental backup",
+      "Differential backup",
+      "Synthetic backup"
     ],
     "correct": [
       0
     ],
-    "explanation": "The order of volatility dictates capturing the most ephemeral data (e.g., memory, network state) before it’s lost, then less volatile data. Event log preservation, chain of custody, and legal hold are all important, but the sequence itself is driven by volatility order. You’ll find this in Lesson 4.4: Digital Forensics of the Student Guide.",
+    "explanation": "Full backups contain complete copies of all data, enabling the fastest recovery since only one backup set is needed for restoration. However, they require the most storage space and take the longest time to create. See Lesson 7, Topic B: Backup and Recovery.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 172,
-    "question": "Question: A hacker gained access to a system via a phishing attempt that was a direct result of a user clicking a suspicious link. The link laterally deployed ransomware, which laid dormant for multiple weeks across the network. Which of the following would have mitigated the spread?",
+    "question": "A security administrator needs to grant temporary access to a contractor. Which principle should guide this decision?",
     "options": [
-      "IPS",
-      "IDS",
-      "WAF",
-      "UAT"
+      "Defense in depth",
+      "Least privilege",
+      "Separation of duties",
+      "Job rotation"
     ],
     "correct": [
-      0
+      1
     ],
-    "explanation": "An IPS could have detected and blocked the malicious ransomware traffic during lateral movement. An IDS would only have alerted. A WAF protects web applications, not internal host‑to‑host propagation. UAT (user acceptance testing) isn’t a preventive control. This is covered in Lesson 3.2: Network Security Infrastructure and Devices. Lesson 4.3: Penetration Testing – Unknown Environment (Black Box)",
+    "explanation": "The principle of least privilege ensures that users receive only the minimum access rights necessary to perform their job functions. For contractors, this means granting only the specific access needed for their temporary work assignment. See Lesson 4, Topic B: Authorization.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 173,
-    "question": "Question: A newly appointed board member with cybersecurity knowledge wants the board of directors to receive a quarterly report detailing the number of incidents that impacted the organization. The systems administrator is creating a way to present the data to the board of directors. Which of the following should the systems administrator use?",
+    "question": "A newly appointed board member with cybersecurity knowledge wants the board of directors to receive a quarterly report detailing the number of incidents that impacted the organization. The systems administrator is creating a way to present the data to the board of directors. Which of the following should the systems administrator use?",
     "options": [
       "Packet captures",
       "Vulnerability scans",
-      "Metadata",
-      "Dashboard"
+      "Metrics and key performance indicators",
+      "Risk register"
     ],
     "correct": [
-      3
+      2
     ],
-    "explanation": "A dashboard provides visual summaries (charts, counters) of incident metrics tailored for executives. Packet captures are too granular, vulnerability scans focus on weaknesses, and metadata is descriptive data, not an executive‑level report. Dashboard usage is in Lesson 5.2: Security Monitoring and Logging. Lesson 2.2: Ransomware",
+    "explanation": "Metrics and key performance indicators (KPIs) provide high-level, quantifiable data suitable for executive reporting, such as incident counts, response times, and security posture trends that board members need for governance decisions. See Lesson 16, Topic A: Security Governance.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 174,
-    "question": "Question: An administrator is reviewing a single server’s security logs and discovers multiple failed login attempts in a short time span against the Administrator account. Which of the following best describes the action captured in this log file?",
+    "question": "A security engineer is reviewing the logs for a SIEM system and notices the database is full. Which of the following should the security engineer do to resolve the issue?",
     "options": [
-      "Brute‑force attack",
-      "Privilege escalation",
-      "Failed password audit",
-      "Forgotten password by the user"
+      "Increase storage capacity",
+      "Archive old logs",
+      "Delete oldest logs",
+      "Compress log files"
     ],
     "correct": [
-      0
+      1
     ],
-    "explanation": "Rapid successive failed login attempts indicate a brute‑force attempt to guess credentials. Privilege escalation occurs after a successful exploit, audits don’t generate failures, and a forgotten password is a single user event—not repeated attempts. This pattern is in Lesson 1.1: Threat Actors and Attributes of the Student Guide. Lesson 5.1: Access Control Models – Role-Based Access Control (RBAC)",
+    "explanation": "Archiving old logs preserves them for compliance and forensic purposes while freeing up database space. Simply deleting logs destroys evidence, while increasing storage or compression are temporary solutions that don't address log lifecycle management. See Lesson 11, Topic A: Security Monitoring.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 175,
-    "question": "Question: Which of the following tools can assist with detecting an employee who has accidentally emailed a file containing a customer’s PII?",
+    "question": "A security analyst is investigating alerts related to suspicious network activity. The analyst determines that the activity is legitimate but wants to prevent similar alerts in the future. Which action should the analyst take?",
     "options": [
-      "SCAP",
-      "NetFlow",
-      "Antivirus",
-      "DLP"
+      "Create a rule exception",
+      "Disable the monitoring system",
+      "Increase alert thresholds",
+      "Archive the alerts"
     ],
     "correct": [
-      3
+      0
     ],
-    "explanation": "Data Loss Prevention inspects outbound email content for sensitive patterns (PII) and can block or alert on accidental disclosures. SCAP assesses configurations, NetFlow logs flows, and antivirus catches malware, none focus on content‑centric leakage. This is in Lesson 8.1: Data Protection Techniques. Lesson 2.3: Zero-Day Vulnerabilities",
+    "explanation": "Creating a rule exception allows legitimate activity to continue without generating false positive alerts while maintaining security monitoring for actual threats. This is part of SIEM tuning and optimization processes. See Lesson 11, Topic A: Security Monitoring.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 176,
-    "question": "Question: After a recent ransomware attack on a company’s system, an administrator reviewed the log files. Which of the following control types did the administrator use?",
+    "question": "Which of the following incident response phases involves determining the scope and impact of a security incident?",
     "options": [
-      "Compensating",
-      "Detective",
-      "Preventive",
-      "Corrective"
+      "Preparation",
+      "Detection and analysis",
+      "Containment",
+      "Post-incident activity"
     ],
     "correct": [
       1
     ],
-    "explanation": "Reviewing logs to identify what happened is a detective control—it uncovers incidents that occurred. Preventive controls stop events before they happen, corrective controls fix issues, and compensating controls are alternatives when primary controls can’t be used. See Lesson 1.1: Security Principles and Controls. Lesson 5.1: Access Control Lists (ACLs)",
+    "explanation": "Detection and analysis phase involves identifying, validating, and analyzing security incidents to determine their scope, impact, and appropriate response actions before moving to containment. See Lesson 12, Topic A: Incident Response Process.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 177,
-    "question": "Question: Which of the following is the best way to consistently determine on a daily basis whether security settings on servers have been modified?",
+    "question": "A company wants to implement a solution that will automatically isolate infected endpoints from the network. Which type of solution should they deploy?",
     "options": [
-      "Automation",
-      "Compliance checklist",
-      "Attestation",
-      "Manual audit"
+      "EDR",
+      "SIEM",
+      "NAC",
+      "DLP"
     ],
     "correct": [
       0
     ],
-    "explanation": "Automated configuration monitoring (via scripts or tools) provides daily checks of server settings, alerting on changes immediately and consistently. Checklists and attestations are manual and periodic; audits are labor‑intensive and error‑prone. This approach is in Lesson 5.1: Security Monitoring and Logging. Lesson 3.4: Application Security – Static Application Security Testing (SAST)",
+    "explanation": "Endpoint Detection and Response (EDR) solutions can automatically isolate compromised endpoints from the network when malicious activity is detected, preventing lateral movement and containing threats. See Lesson 8, Topic C: Endpoint Security.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 178,
-    "question": "Question: A company requires hard drives to be securely wiped before sending decommissioned systems to recycling. Which of the following best describes this policy?",
+    "question": "Which of the following best describes the primary purpose of vulnerability scanning?",
     "options": [
-      "Enumeration",
-      "Sanitization",
-      "Destruction",
-      "Inventory"
+      "Exploit known vulnerabilities",
+      "Identify potential security weaknesses",
+      "Monitor network traffic",
+      "Backup critical data"
     ],
     "correct": [
       1
     ],
-    "explanation": "Sanitization (e.g., secure erase, crypto‑erase) removes data so it can’t be recovered. Destruction physically destroys drives, enumeration catalogs assets, and inventory tracks hardware. See Lesson 3.4: System Hardening and Configuration Management. Lesson 1.4: Physical Security Controls – Door Locks",
+    "explanation": "Vulnerability scanning systematically identifies potential security weaknesses in systems, applications, and infrastructure by comparing against known vulnerability databases and security configurations. See Lesson 9, Topic A: Vulnerability Assessment.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 179,
-    "question": "Question: The local administrator account for a company’s VPN appliance was unexpectedly used to log in to the remote management interface. Which of the following would have most likely prevented this from happening?",
+    "question": "A security team is conducting a risk assessment and needs to identify the most critical assets. Which factor should be the primary consideration?",
     "options": [
-      "Using least privilege",
-      "Changing the default password",
-      "Assigning individual user IDs",
-      "Reviewing logs more frequently"
+      "Asset purchase cost",
+      "Business impact if compromised",
+      "Physical location",
+      "Age of the asset"
     ],
     "correct": [
       1
     ],
-    "explanation": "Default credentials are well-known; updating them prevents unauthorized access. Least privilege and unique IDs help but won’t stop default‑account misuse; log reviews detect events afterward. See Lesson 2.4: Identity and Access Management Controls. Lesson 5.2: Log Analysis – Network Logs",
+    "explanation": "Business impact assessment determines how the loss, corruption, or compromise of an asset would affect business operations, making it the primary factor in determining asset criticality for risk management. See Lesson 15, Topic A: Risk Management Processes and Concepts.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 180,
-    "question": "Question: A Chief Information Security Officer wants to monitor the company’s servers for SQL injection attacks and allow for comprehensive investigations if an attack occurs. The company uses SSL decryption to allow traffic monitoring. Which of the following strategies would best accomplish this goal?",
+    "question": "Which of the following security controls would be most effective in preventing unauthorized access to a server room?",
     "options": [
-      "Logging all NetFlow traffic into a SIEM",
-      "Deploying network traffic sensors on the same subnet as the servers",
-      "Logging endpoint and OS‑specific security logs",
-      "Enabling full packet capture for traffic entering and exiting the servers"
+      "Security cameras",
+      "Access badges",
+      "Motion sensors",
+      "Security guards"
     ],
     "correct": [
-      3
+      1
     ],
-    "explanation": "Full packet capture records every byte of network traffic—both decrypted SQL traffic and context—so you can pinpoint and reconstruct injection attempts during investigations. NetFlow gives only metadata, sensors may miss off‑subnet traffic, and OS logs won’t capture decrypted SQL statements. This deep‑capture approach is in Lesson 5.2: Security Monitoring and Logging. Lesson 1.3: Risk Response Strategies – Avoidance",
+    "explanation": "Access badges provide authentication and authorization controls that actively prevent unauthorized entry, while cameras, sensors, and guards are primarily detective or deterrent controls that don't physically block access. See Lesson 7, Topic C: Physical Security.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 181,
-    "question": "Question: Which of the following would most likely mitigate the impact of an extended power outage on a company’s environment?",
+    "question": "A penetration tester needs to gather information about a target organization without directly interacting with their systems. Which approach should they use?",
     "options": [
-      "Hot site",
-      "UPS",
-      "Snapshots",
-      "SOAR"
+      "Port scanning",
+      "Social engineering",
+      "OSINT gathering",
+      "Vulnerability scanning"
     ],
     "correct": [
-      1
+      2
     ],
-    "explanation": "An Uninterruptible Power Supply (UPS) provides immediate backup power to keep systems running or gracefully shut down, mitigating outages. Hot sites replicate infrastructure but require failover; snapshots protect data, SOAR automates responses. UPS usage is covered in Lesson 3.3: Data Center Security and Controls of the Student Guide. Lesson 5.3: Backup Types – Differential Backups",
+    "explanation": "Open Source Intelligence (OSINT) gathering involves collecting information from publicly available sources without directly interacting with target systems, making it ideal for passive reconnaissance activities. See Lesson 10, Topic A: Penetration Testing.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 182,
-    "question": "Which of the following definitions best describes the concept of log correlation?",
+    "question": "Which of the following would be the best method to secure data in transit between two network segments?",
     "options": [
-      "Searching and processing data to identify patterns of malicious activity",
-      "Analyzing the log files of the system components",
-      "Combining relevant logs from multiple sources into one location",
-      "Making a record of the events that occur in the system"
+      "File encryption",
+      "VPN tunneling",
+      "Access controls",
+      "Data classification"
     ],
     "correct": [
-      2
+      1
     ],
-    "explanation": "Log correlation is the process of aggregating log entries from diverse sources—such as firewalls, servers, and applications—into a central system where they can be cross-referenced and analyzed together. While searching for attack patterns (A) is an analytical step, true correlation occurs when logs are normalized and combined in one place. Simply analyzing logs (B) or recording events (D) does not capture the multi-source aggregation that defines correlation. Lesson 4.2: Log Management and SIEM, p. 212",
+    "explanation": "VPN tunneling creates encrypted communication channels that protect data as it travels between network segments, ensuring confidentiality and integrity of data in transit. See Lesson 3, Topic D: VPN Technologies.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 183,
-    "question": "Which of the following is the stage in an investigation when forensic images are obtained?",
+    "question": "A security administrator discovers that an attacker has been exfiltrating data for several months without detection. Which type of threat is this most likely?",
     "options": [
-      "Acquisition",
-      "Preservation",
-      "Reporting",
-      "E-discovery"
+      "Insider threat",
+      "Advanced persistent threat",
+      "Ransomware",
+      "Distributed denial of service"
     ],
     "correct": [
-      0
+      1
     ],
-    "explanation": "Acquisition is the forensic phase during which bit-for-bit images of storage media or memory are captured for analysis, ensuring an exact replica of the evidence. Preservation (B) involves maintaining data integrity after capture, reporting (C) occurs post-analysis, and e-discovery (D) refers to legal evidence collection in litigation contexts. Lesson 4.4: Digital Forensics and Investigations, p. 230 Lesson 1.1: Supply Chain Attacks",
+    "explanation": "Advanced Persistent Threats (APTs) are characterized by long-term, stealthy access to networks where attackers maintain presence for extended periods to exfiltrate data while avoiding detection. See Lesson 2, Topic B: Threat Actors.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 184,
-    "question": "While investigating a possible incident, a security analyst discovers the following log entries: swift Copiar Editar 67.118.34.157 [28/Jul/2022:10:26:59-0300] \"GET /query.php?q=wireless%20headphones HTTP/1.0\" 200 12737 132.18.222.103 [28/Jul/2022:10:27:10-0300] \"GET /query.php?q=123INSERT INTO users VALUES('temp','pass123')#/ HTTP/1.0\" 200 935 12.45.101.121 [28/Jul/2022:10:27:22-0300] \"GET /query.php?q=mp3%20players HTTP/1.0\" 200 14650 Which of the following should the analyst do first?",
+    "question": "Which authentication factor is represented by a fingerprint scanner?",
     "options": [
-      "Implement a WAF",
-      "Disable the query.php script",
-      "Block brute‐force attempts on temporary users",
-      "Check the users table for new accounts"
+      "Something you know",
+      "Something you have",
+      "Something you are",
+      "Somewhere you are"
     ],
     "correct": [
-      3
+      2
     ],
-    "explanation": "The second log entry shows an SQL injection attempt that may have succeeded in creating a new “temp” user. Before deploying preventive controls (like a WAF), the analyst must confirm whether the injection was successful by examining the database. Disabling the script (B) or blocking brute‐force (C) does not address the immediate need to contain potential damage. Implementing a WAF (A) is a longer‐term mitigation after verifying and correcting the breach. Lesson 4.1: Web Application Security, p. 218 Lesson 2.1: Social Engineering – Pretexting",
+    "explanation": "Biometric authentication factors like fingerprint scanners represent 'something you are' - inherent physical or behavioral characteristics unique to an individual that cannot be easily shared or replicated. See Lesson 4, Topic A: Authentication.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 185,
-    "question": "Which of the following would best explain why a security analyst is running daily vulnerability scans on all corporate endpoints?",
+    "question": "A company wants to ensure that all software updates are tested before deployment to production systems. Which process should they implement?",
     "options": [
-      "To track the status of patching installations",
-      "To find shadow IT cloud deployments",
-      "To continuously monitor hardware inventory",
-      "To hunt for active attackers in the network"
+      "Change management",
+      "Asset management",
+      "Configuration management",
+      "Vulnerability management"
     ],
     "correct": [
       0
     ],
-    "explanation": "Daily vulnerability scans highlight missing patches and software flaws on endpoints, allowing the team to verify that updates have been applied. Discovering shadow IT (B) or monitoring hardware (C) are better served by inventory or cloud‐monitoring tools. Hunting active attackers (D) requires real‐time detection (IDS/EDR), not periodic vulnerability scans. Lesson 4.3: Vulnerability Management, p. 252 Lesson 2.3: Privilege Escalation",
+    "explanation": "Change management processes ensure that all modifications to systems, including software updates, are properly tested, approved, and documented before implementation to minimize risk and maintain system stability. See Lesson 16, Topic A: Security Governance.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 186,
-    "question": "A university employee logged on to the academic server and attempted to guess the system administrators’ log-in credentials. Which of the following security measures should the university have implemented to detect the employee’s attempts to gain access to the administrators’ accounts?",
+    "question": "Which of the following would be the most appropriate response to a confirmed data breach involving customer personal information?",
     "options": [
-      "Firewall",
-      "Two-factor authentication",
-      "Intrusion prevention system",
-      "User activity logs"
+      "Ignore if impact is minimal",
+      "Notify customers and regulators",
+      "Fix the vulnerability quietly",
+      "Increase monitoring only"
     ],
     "correct": [
-      3
+      1
     ],
-    "explanation": "User activity logs capture login attempts, including failed authentications, and can be reviewed or alerted on to detect brute-force attempts. A firewall (A) blocks or allows traffic but doesn’t log user-level authentication details. Two-factor authentication (B) prevents unauthorized access but doesn’t itself detect attempts. An IPS (C) may block attacks but isn’t configured to log per-user credential guessing in application logs. Lesson 4.4: Monitoring and Logging, p. 273 Lesson 3.1: Secure Protocols – HTTPS",
+    "explanation": "Data breach notification laws and regulations typically require organizations to notify affected individuals and regulatory authorities when personal information has been compromised, regardless of perceived impact. See Lesson 12, Topic A: Incident Response Process.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 187,
-    "question": "A systems administrator receives an alert that a company’s internal file server is very slow and is only working intermittently. The administrator reviews the server management software and finds the following metrics: CPU 20%, Disk I/O 15%, Memory 30%, Network 95% utilization. Which of the following indicators most likely triggered this alert?",
+    "question": "A security engineer wants to prevent lateral movement within the network after an initial compromise. Which technique would be most effective?",
     "options": [
-      "Network saturation",
-      "Concurrent session usage",
-      "Account lockout",
-      "Resource consumption"
+      "Network segmentation",
+      "Intrusion detection",
+      "Vulnerability scanning",
+      "User training"
     ],
     "correct": [
       0
     ],
-    "explanation": "With CPU, disk, and memory all low but network at 95%, the network link is clearly overloaded. “Resource consumption” (D) is generic—here specifically the network is saturated. Concurrent sessions (B) and account lockouts (C) are unrelated to utilization metrics. Lesson 4.1: Network and System Monitoring, p. 245 Lesson 5.2: Log Analysis – Firewall Logs",
+    "explanation": "Network segmentation isolates different parts of the network, limiting an attacker's ability to move laterally from one compromised system to access other network resources and critical assets. See Lesson 6, Topic B: Network Security Architecture.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 188,
-    "question": "A security engineer would like to enhance the use of automation and orchestration within the SIEM. Which of the following would be the primary benefit of this enhancement?",
+    "question": "Which of the following log sources would provide the most detailed information about user login activities?",
     "options": [
-      "It adds additional guardrails.",
-      "It increases complexity.",
-      "It acts as a workforce multiplier.",
-      "It removes technical debt."
+      "Firewall logs",
+      "Authentication logs",
+      "Application logs",
+      "Network flow logs"
     ],
     "correct": [
-      2
+      1
     ],
-    "explanation": "Automation and orchestration enable the SIEM to automatically investigate, respond, and remediate at machine speed—extending the team’s capacity without adding headcount. While it may add guardrails (A), its key value is boosting effectiveness. It does not inherently increase complexity (B) or address legacy technical debt (D). Lesson 4.5: Security Automation and Orchestration, p. 286 Lesson 3.5: Cloud Security Architectures – SASE",
+    "explanation": "Authentication logs specifically record user login attempts, successful authentications, failures, and related identity verification activities, providing the most comprehensive view of user access patterns. See Lesson 11, Topic C: Log Analysis.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 189,
-    "question": "Which of the following describes a security alerting and monitoring tool that collects system, application, and network logs from multiple sources in a centralized system?",
+    "question": "A company discovers that employees are using unauthorized cloud storage services to share work files. Which solution would best address this issue?",
     "options": [
-      "SIEM",
-      "DLP",
-      "IDS",
-      "SNMP"
+      "Firewall rules",
+      "Cloud access security broker",
+      "Antivirus software",
+      "User training only"
     ],
     "correct": [
-      0
+      1
     ],
-    "explanation": "A Security Information and Event Management (SIEM) platform aggregates and correlates logs across environments, raising alerts and providing dashboards. Data Loss Prevention (B) protects sensitive data flows, an IDS (C) detects intrusions on the wire, and SNMP (D) is a network-management protocol, not a log aggregator. Lesson 4.3: Monitoring and Analytics, p. 256 Lesson 4.2: Advanced SIEM and SOAR Integration",
+    "explanation": "Cloud Access Security Brokers (CASBs) provide visibility and control over cloud service usage, allowing organizations to monitor, secure, and govern employee access to cloud applications and data sharing. See Lesson 14, Topic B: Cloud Security Solutions.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 190,
-    "question": "An employee who was working remotely lost a mobile device containing company data. Which of the following provides the best solution to prevent future data loss?",
+    "question": "Which cryptographic concept ensures that a sender cannot deny having sent a message?",
     "options": [
-      "MDM",
-      "EDR",
-      "DLP",
-      "FDE"
+      "Confidentiality",
+      "Integrity",
+      "Non-repudiation",
+      "Authentication"
     ],
     "correct": [
-      0
+      2
     ],
-    "explanation": "Mobile Device Management (MDM) lets IT enforce policies (remote wipe, encryption, lock screens) on smartphones and tablets—preventing data leaks if a device is lost. Endpoint Detection & Response (B) monitors for threats, DLP (C) watches data flows, and Full Disk Encryption (D) secures data at rest but lacks remote wipe and policy enforcement. Lesson 4.5: Endpoint Security, p. 268 Lesson 2.1: Social Engineering – Smishing",
+    "explanation": "Non-repudiation prevents senders from denying they sent a message by using digital signatures and cryptographic proof that definitively links the message to its originator. See Lesson 3, Topic B: Digital Signatures and PKI.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 191,
-    "question": "A cybersecurity incident-response team at a large company receives notification that malware is present on several corporate desktops. No known indicators of compromise have been found on the network. Which of the following should the team do first to secure the environment?",
+    "question": "A security analyst needs to analyze malware behavior without risking the production environment. Which approach should they use?",
     "options": [
-      "Contain the impacted hosts",
-      "Add the malware to the application blocklist",
-      "Segment the core database server",
-      "Implement firewall rules to block outbound beaconing"
+      "Static analysis on production systems",
+      "Sandbox environment",
+      "Network monitoring only",
+      "User workstation testing"
     ],
     "correct": [
-      0
+      1
     ],
-    "explanation": "Containment is the first step after detecting malware—it isolates infected machines to prevent lateral spread. Blocklisting (B) and firewall rules (D) are preventive measures that come later; segmentation (C) protects assets but doesn’t immediately stop the active infection. Lesson 4.1: Incident Response Lifecycle, p. 243 Lesson 4.2: Incident Response – Log Sources for C2 Detection",
+    "explanation": "Sandbox environments provide isolated, controlled systems where malware can be safely executed and analyzed without risk to production systems or networks. See Lesson 12, Topic C: Digital Forensics.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 192,
-    "question": "An organization experiences a cybersecurity incident involving a command-and-control (C2) server. Which of the following logs should be analyzed to identify the impacted host? (Select two.)",
+    "question": "Which of the following best describes the principle of separation of duties?",
     "options": [
-      "Application",
-      "Authentication",
-      "DHCP",
-      "Network",
-      "Firewall",
-      "Database"
-    ],
-    "correct": [
-      2,
-      4
-    ],
-    "explanation": "When investigating a C2 (command-and-control) incident, the goal is to trace network communications back to the specific internal host that was compromised. DHCP logs (C) show which IP address was leased to which MAC address at a given time. This lets you map the malicious C2 traffic back to the exact device on the network. Firewall logs (E) record inbound/outbound network connections, including traffic to suspicious IP addresses (e.g., the C2 server). Reviewing them can confirm which internal IP contacted the malicious external address. Other options are less effective for identifying the specific host: Application logs (A) may show errors or suspicious behavior but usually lack IP-to-host mapping for C2 identification. Authentication logs (B) track login events, not necessarily network communications. Network logs (D) is too broad — often collected from IDS/IPS or switches — but DHCP + firewall is the more direct, mapped approach for this case. Database logs (F) track database queries, not network-to-host activity. Lesson 4.2: Incident Response – Log Sources for C2 Detection",
-    "type": "multiple",
-    "topic": "security-operations"
-  },
-  {
-    "id": 193,
-    "question": "Which of the following methods would most likely be used to identify legacy systems?",
-    "options": [
-      "Bug bounty program",
-      "Vulnerability scan",
-      "Package monitoring",
-      "Dynamic analysis"
+      "Users work in isolated environments",
+      "Critical tasks require multiple people",
+      "Each user has unique passwords",
+      "Systems are physically separated"
     ],
     "correct": [
       1
     ],
-    "explanation": "Vulnerability scanners detect outdated operating systems, missing patches, and unsupported software—highlighting legacy systems no longer maintained or receiving updates. Bug bounties (A) rely on external testers, package monitors (C) track individual software installations, and dynamic analysis (D) tests runtime behavior but doesn’t inventory system age or support status. Lesson 4.1: Asset Discovery and Inventory, p. 232 Lesson 2.2: Rootkits",
+    "explanation": "Separation of duties ensures that critical or sensitive tasks require involvement of multiple people, preventing any single individual from having complete control over high-risk processes and reducing fraud potential. See Lesson 4, Topic B: Authorization.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 193,
+    "question": "A security administrator wants to ensure deleted files cannot be recovered from storage devices being disposed of. Which method provides the highest level of assurance?",
+    "options": [
+      "Standard deletion",
+      "Reformatting drives",
+      "Physical destruction",
+      "Overwriting with zeros"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Physical destruction of storage media provides the highest assurance that data cannot be recovered, completely eliminating any possibility of data reconstruction through forensic or technical means. See Lesson 13, Topic B: Data Destruction.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 194,
-    "question": "Which of the following activities should a systems administrator perform to quarantine a potentially infected system?",
+    "question": "Which of the following would be most effective for detecting insider threats?",
     "options": [
-      "Move the device into an air-gapped environment",
-      "Disable remote log-in through Group Policy",
-      "Convert the device into a sandbox",
-      "Remote-wipe the device using the MDM platform"
+      "Firewall monitoring",
+      "User behavior analytics",
+      "Antivirus scanning",
+      "Vulnerability assessments"
     ],
     "correct": [
-      0
+      1
     ],
-    "explanation": "Quarantine isolates the suspect machine by removing all network connectivity, often by placing it on a physically separate (air-gapped) network—halting malware spread while preserving evidence. Disabling log-in (B) doesn’t stop lateral movement, sandboxing (C) is for analysis, and remote wipe (D) destroys data rather than containing the threat. Lesson 4.4: Incident Response and Containment, p. 265 Lesson 5.2: Monitoring – File Integrity Monitoring (FIM)",
+    "explanation": "User Behavior Analytics (UBA) establishes baseline patterns of normal user activity and detects anomalous behaviors that may indicate insider threats, such as unusual data access or after-hours activity. See Lesson 11, Topic A: Security Monitoring.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 195,
-    "question": "A Chief Information Security Officer wants to monitor the company’s servers for SQL injection attacks and allow comprehensive investigations if an attack occurs. The company uses SSL decryption to allow traffic monitoring. Which of the following strategies would best accomplish this goal?",
+    "question": "A company needs to ensure business continuity during a disaster. Which document should outline the steps to maintain operations?",
     "options": [
-      "Logging all NetFlow traffic into a SIEM",
-      "Deploying network traffic sensors on the same subnet as the servers",
-      "Logging endpoint and OS-specific security logs",
-      "Enabling full packet capture for traffic entering and exiting the servers"
+      "Security policy",
+      "Incident response plan",
+      "Business continuity plan",
+      "Risk assessment"
     ],
     "correct": [
-      3
+      2
     ],
-    "explanation": "Full packet capture records every byte of traffic, including decrypted SQL payloads—critical for spotting injection sequences and reconstructing the attack. NetFlow (A) summarizes flow metadata but omits query details. Traffic sensors (B) may sniff packets but often lack long-term storage or context. Endpoint logs (C) record local events but miss raw SQL commands on the wire. Lesson 4.2: Network Monitoring and Analysis, p. 252 Lesson 4.2: Incident Response – Containment",
+    "explanation": "Business Continuity Plans (BCPs) specifically outline procedures, resources, and steps necessary to maintain critical business operations during and after disruptive events or disasters. See Lesson 7, Topic A: High Availability and Resilience.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 196,
-    "question": "Which of the following strategies should an organization use to efficiently manage and analyze multiple types of logs?",
+    "question": "Which type of attack attempts to overwhelm a system's resources to make it unavailable to legitimate users?",
     "options": [
-      "Deploy a SIEM solution",
-      "Create custom scripts to aggregate and analyze logs",
-      "Implement EDR technology",
-      "Install a unified threat management appliance"
+      "Man-in-the-middle",
+      "SQL injection",
+      "Denial of service",
+      "Cross-site scripting"
     ],
     "correct": [
-      0
+      2
     ],
-    "explanation": "A SIEM (Security Information and Event Management) centralizes log collection from servers, network devices, applications, and more—providing correlation, real-time alerting, dashboards, and automated analysis. Custom scripts (B) can work but lack scale and support. EDR (C) focuses on endpoints, not all logs. UTM appliances (D) combine firewall/IPS but don’t handle broad log sources. Lesson 4.1: Logging and Monitoring, p. 240 Lesson 2.2: Logic Bombs",
+    "explanation": "Denial of Service (DoS) attacks specifically target system availability by overwhelming resources such as bandwidth, memory, or processing power to prevent legitimate users from accessing services. See Lesson 2, Topic A: Attack Types.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 197,
-    "question": "An analyst is reviewing an incident in which a user clicked a link in a phishing email. Which of the following log sources would the analyst utilize to determine whether the connection was successful?",
+    "question": "A security team wants to test their organization's security awareness by sending simulated phishing emails. What is this practice called?",
     "options": [
-      "Network",
-      "System",
-      "Application",
-      "Authentication"
+      "Penetration testing",
+      "Vulnerability scanning",
+      "Social engineering assessment",
+      "Red team exercise"
     ],
     "correct": [
-      0
+      2
     ],
-    "explanation": "Network logs (firewall, proxy) reveal outbound connection attempts, success or failure—confirming if the user’s system reached the malicious server. System logs (B) record OS events, application logs (C) focus on local software, and authentication logs (D) show login attempts, none of which directly track web requests. Lesson 4.2: Incident Investigation Techniques, p. 259 Lesson 5.3: Backup Types – Full Backups",
+    "explanation": "Social engineering assessments specifically test human factors by simulating attacks like phishing to evaluate and improve employee security awareness and response to social engineering attempts. See Lesson 10, Topic A: Penetration Testing.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 198,
-    "question": "Which of the following should a security administrator adhere to when setting up a new set of firewall rules?",
+    "question": "Which of the following is the most important consideration when implementing a backup strategy?",
     "options": [
-      "Disaster recovery plan",
-      "Incident response procedure",
-      "Business continuity plan",
-      "Change management procedure"
+      "Storage cost",
+      "Recovery time objectives",
+      "Backup software features",
+      "Storage location convenience"
     ],
     "correct": [
-      3
+      1
     ],
-    "explanation": "Adding or modifying firewall rules is a configuration change that must follow the organization’s change management process: request, review, approval, testing, documentation, and rollback planning. DR (A) and BC (C) cover recovery, while incident response (B) governs post-breach actions—not routine rule changes. Lesson 4.3: Configuration Management, p. 273 Lesson 5.2: Log Analysis – DNS Logs",
+    "explanation": "Recovery Time Objectives (RTOs) define how quickly systems and data must be restored after an incident, making this the primary consideration for designing effective backup strategies that meet business requirements. See Lesson 7, Topic B: Backup and Recovery.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 199,
-    "question": "An employee used a company’s billing system to issue fraudulent checks. The administrator is looking for evidence of other occurrences of this activity. Which of the following should the administrator examine?",
+    "question": "A company wants to prevent employees from accessing social media sites during work hours. Which solution would be most appropriate?",
     "options": [
-      "Application logs",
-      "Firewall logs",
-      "IDS/IPS logs",
-      "Vulnerability scanner logs"
+      "Web content filter",
+      "Data loss prevention",
+      "Intrusion detection system",
+      "Endpoint encryption"
     ],
     "correct": [
       0
     ],
-    "explanation": "Application logs record each transaction or action taken within the billing system (e.g., check issuance), making them the primary source for spotting additional fraudulent entries. Firewall logs (B) show network connections, not business logic events. IDS/IPS logs (C) detect network-level attacks rather than misuse of application functions. Vulnerability scanner logs (D) list discovered weaknesses, not runtime fraudulent transactions. Lesson 4.2: Logging and Monitoring, p. 178 Lesson 5.1: Identity Federation",
+    "explanation": "Web content filters control access to websites and web-based services by blocking or allowing traffic based on content categories, URLs, or other criteria, making them ideal for enforcing internet usage policies. See Lesson 6, Topic B: Network Security Architecture.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 200,
-    "question": "Which of the following activities is the first stage in the incident response process?",
+    "question": "Which of the following would indicate that a system may be compromised by malware?",
     "options": [
-      "Containment",
-      "Declaration",
-      "Detection",
-      "Vacation"
+      "Decreased network traffic",
+      "Improved system performance",
+      "Unexpected outbound connections",
+      "Reduced CPU utilization"
     ],
     "correct": [
       2
     ],
-    "explanation": "Incident response begins when an event is detected—through logs, alerts, or user reports. Only after detection can incidents be declared, contained, eradicated, and recovered. Containment (A) comes later to prevent further damage. Declaration (B) formalizes that an incident is underway but follows detection. Vacation (D) is not part of the IR lifecycle. Lesson 4.1: Incident Response Process, p. 160 Lesson 5.1: Single Sign-On (SSO)",
+    "explanation": "Unexpected outbound network connections may indicate malware attempting to communicate with command and control servers, exfiltrate data, or download additional malicious payloads. See Lesson 11, Topic A: Security Monitoring.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 201,
-    "question": "Which of the following should be used to aggregate log data in order to create alerts and detect anomalous activity?",
+    "question": "A security administrator needs to ensure that only authorized applications can execute on company workstations. Which control should be implemented?",
     "options": [
-      "SIEM",
-      "WAF",
-      "Network taps",
-      "IDS"
+      "Application blacklisting",
+      "Application whitelisting",
+      "Patch management",
+      "Antivirus software"
     ],
     "correct": [
-      0
+      1
     ],
-    "explanation": "A Security Information and Event Management (SIEM) system collects and correlates logs from servers, applications, network devices, and more, enabling real-time alerting and anomaly detection. A Web Application Firewall (B) filters HTTP traffic but doesn’t centralize disparate logs. Network taps (C) duplicate traffic for monitoring, not log aggregation. An IDS (D) generates alerts on suspicious network patterns but lacks the broad log-ingestion and correlation capabilities of a SIEM. Lesson 4.3: Monitoring and Logging, p. 172 Lesson 5.3: Disaster Recovery Sites – Hot Site",
+    "explanation": "Application whitelisting creates an approved list of applications that are allowed to execute, blocking all other software and providing strong protection against unauthorized or malicious applications. See Lesson 8, Topic C: Endpoint Security.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 202,
-    "question": "An administrator has identified and fingerprinted specific files that will generate an alert if an attempt is made to email these files outside of the organization. Which of the following best describes the tool the administrator is using?",
+    "question": "Which phase of incident response involves documenting lessons learned and improving security procedures?",
     "options": [
-      "DLP",
-      "SNMP traps",
-      "SCAP",
-      "IPS"
+      "Preparation",
+      "Detection and analysis",
+      "Containment",
+      "Post-incident activity"
     ],
     "correct": [
-      0
+      3
     ],
-    "explanation": "Data Loss Prevention (DLP) solutions can fingerprint or hash sensitive files and then monitor email, endpoint, or network channels to block or alert on unauthorized transfers. SNMP traps (B) are used for device status monitoring, not file-level policies. SCAP (C) automates vulnerability management and compliance checks. An IPS (D) blocks network attacks but isn’t designed for content-aware file‐transfer controls. Lesson 4.5: Data Loss Prevention, p. 188 Lesson 5.2: Monitoring – Unified Threat Management (UTM)",
+    "explanation": "Post-incident activity involves reviewing the incident response process, documenting lessons learned, and implementing improvements to prevent similar incidents and enhance future response capabilities. See Lesson 12, Topic A: Incident Response Process.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 203,
-    "question": "Which of the following is the first step to take when creating an anomaly detection process?",
+    "question": "A company wants to verify that their security controls are working effectively. Which assessment method provides the most comprehensive evaluation?",
     "options": [
-      "Selecting events",
-      "Building a baseline",
-      "Selecting logging options",
-      "Creating an event log"
+      "Vulnerability scan",
+      "Penetration test",
+      "Compliance audit",
+      "Risk assessment"
     ],
     "correct": [
       1
     ],
-    "explanation": "Anomaly detection relies on understanding “normal” behavior so deviations can be flagged. Establishing a baseline of typical network or system activity comes before choosing which events to monitor (A), deciding log formats (C), or creating new event logs (D). Without a baseline, it’s impossible to distinguish anomalies. Lesson 4.4: Anomaly Detection and Baseline Analysis, p. 182 Lesson 2.1: Phishing",
+    "explanation": "Penetration testing provides comprehensive evaluation by simulating real-world attacks to test the effectiveness of multiple security controls working together, revealing vulnerabilities that other methods might miss. See Lesson 10, Topic A: Penetration Testing.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 204,
-    "question": "An organization needs to monitor its users’ activities to prevent insider threats. Which of the following solutions would help the organization achieve this goal?",
+    "question": "Which of the following best describes the purpose of a security information and event management (SIEM) correlation rule?",
     "options": [
-      "Behavioral analytics",
-      "Access control lists",
-      "Identity and access management",
-      "Network intrusion detection system"
+      "Block malicious traffic",
+      "Encrypt sensitive data",
+      "Identify patterns in security events",
+      "Manage user access rights"
     ],
     "correct": [
-      0
+      2
     ],
-    "explanation": "User and Entity Behavior Analytics (UEBA) establishes baselines of normal activity per user and flags deviations—such as unusual data access or file transfers—that may indicate insider threats. ACLs (B) enforce access but don’t detect anomalous use. IAM (C) manages identities and permissions but lacks real-time behavior monitoring. NIDS (D) focuses on network traffic patterns, not individual user behavior across applications and endpoints. Lesson 4.6: User Behavior Analytics, p. 190 Lesson 2.3: DLL Injection",
+    "explanation": "SIEM correlation rules analyze relationships between different security events and log entries to identify patterns, anomalies, or attack sequences that might indicate security incidents or threats. See Lesson 11, Topic A: Security Monitoring.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 205,
-    "question": "Which of the following would a security administrator use to comply with a secure baseline during a patch update?",
+    "question": "A security team discovers that attackers have been using legitimate administrative tools to move laterally through the network. Which technique is this an example of?",
     "options": [
-      "Information security policy",
-      "Service-level expectations",
-      "Standard operating procedure",
-      "Test result report"
+      "Zero-day exploit",
+      "Living off the land",
+      "Social engineering",
+      "Denial of service"
     ],
     "correct": [
-      2
+      1
     ],
-    "explanation": "A standard operating procedure (SOP) details step-by-step instructions—such as patch application order, rollback steps, and verification—that ensure consistency with the organization’s secure baseline. An information security policy (A) sets high-level objectives; service-level expectations (B) define uptime; a test report (D) documents outcomes but doesn’t enforce process. Lesson 4.3: Patch Management, p. 188 Lesson 5.2: Monitoring – IDS vs. IPS",
+    "explanation": "Living off the land attacks use legitimate system tools and software already present on target systems to conduct malicious activities, making detection more difficult since the tools themselves are trusted. See Lesson 2, Topic A: Attack Types.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 206,
-    "question": "Various stakeholders are meeting to discuss their hypothetical roles and responsibilities in a specific situation, such as a security incident or major disaster. Which of the following best describes this meeting?",
+    "question": "Which of the following would be the best approach for securing IoT devices on a corporate network?",
     "options": [
-      "Penetration test",
-      "Continuity of operations planning",
-      "Tabletop exercise",
-      "Simulation"
+      "Connect all devices to the main network",
+      "Disable all IoT devices",
+      "Segment IoT devices on separate network",
+      "Use only wireless connections"
     ],
     "correct": [
       2
     ],
-    "explanation": "A tabletop exercise is a discussion-based activity where participants walk through their roles and decisions during a hypothetical incident without deploying real systems or tools. Simulations (D) involve live, hands-on testing; penetration tests (A) target system weaknesses; continuity planning (B) is the overall strategy, not the exercise format. Lesson 4.7: Incident Response Exercises, p. 202 Lesson 2.3: ARP Poisoning",
+    "explanation": "Network segmentation isolates IoT devices from critical network resources, limiting potential attack paths and containing security incidents while still allowing devices to function as needed. See Lesson 6, Topic B: Network Security Architecture.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 207,
-    "question": "Which of the following is used to protect a computer from viruses, malware, and Trojans being installed and moving laterally across the network?",
+    "question": "A security administrator wants to ensure that sensitive data is protected even if storage devices are stolen. Which solution addresses this requirement?",
     "options": [
-      "IDS",
-      "ACL",
-      "EDR",
-      "NAC"
+      "Access controls",
+      "Data encryption",
+      "Network monitoring",
+      "Backup procedures"
     ],
     "correct": [
-      2
+      1
     ],
-    "explanation": "Endpoint Detection and Response (EDR) continuously monitors and analyzes endpoint activity—processes, files, network connections—enabling rapid detection and containment of malware (viruses, Trojans, ransomware) before it can spread laterally. An IDS (A) watches network traffic but cannot quarantine or remediate on the host. An ACL (B) restricts access at routers or switches but does not inspect endpoint behavior. NAC (D) enforces access policies at connection time but does not detect or stop malware execution on the endpoint. Lesson 4.2: Endpoint Security and Monitoring, p. 256 Lesson 1.2: Security Controls – Compensating Controls",
+    "explanation": "Data encryption renders stored information unreadable without proper decryption keys, protecting sensitive data even if storage devices are physically compromised or stolen. See Lesson 3, Topic C: Cryptographic Solutions.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 208,
-    "question": "Which of the following would most likely be deployed to obtain and analyze attacker activity and techniques?",
+    "question": "Which of the following is a key benefit of implementing single sign-on (SSO)?",
     "options": [
-      "Firewall",
-      "Honeypot",
-      "IDS",
-      "Layer 3 switch"
+      "Eliminates need for passwords",
+      "Reduces password complexity requirements",
+      "Decreases authentication overhead",
+      "Increases number of user accounts"
     ],
     "correct": [
-      1
+      2
     ],
-    "explanation": "A honeypot is a deliberately vulnerable system that lures attackers so that their methods can be recorded and studied in detail. A firewall (A) blocks or allows traffic, an IDS (C) detects known patterns but doesn’t emulate targets, and a Layer 3 switch (D) routes traffic without the specialized logging or deception capabilities of a honeypot. Lesson 4.3: Deception and Threat Intelligence, p. 221 Lesson 3.3: Secure Network Architecture – DMZ",
+    "explanation": "SSO reduces authentication overhead by allowing users to authenticate once and gain access to multiple systems and applications, improving user experience while maintaining security through centralized authentication. See Lesson 4, Topic A: Authentication.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 209,
-    "question": "Which of the following automation use cases would best enhance the security posture of an organization by rapidly updating permissions when employees leave a company?",
+    "question": "A company needs to ensure that critical systems remain available during power outages. Which solution should they implement?",
     "options": [
-      "Provisioning resources",
-      "Disabling access",
-      "Reviewing change approvals",
-      "Escalating permission requests"
+      "Load balancing",
+      "Data backup",
+      "Uninterruptible power supply",
+      "Network redundancy"
     ],
     "correct": [
-      1
+      2
     ],
-    "explanation": "Automating the revocation of user accounts and entitlements ensures departing employees no longer retain active credentials, closing a critical insider-threat gap. Provisioning (A) grants access, change approvals (C) and escalation (D) are process steps but don’t directly revoke permissions. Lesson 4.1: Incident Response and Automation, p. 202 Lesson 3.1: Secure Protocols – SFTP",
+    "explanation": "Uninterruptible Power Supply (UPS) systems provide backup power during outages, ensuring critical systems remain operational until main power is restored or graceful shutdown procedures can be completed. See Lesson 7, Topic A: High Availability and Resilience.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 210,
-    "question": "Which of the following should a security operations center use to improve its incident response procedure?",
+    "question": "Which type of malware is designed to give attackers remote administrative access to infected systems?",
     "options": [
-      "Playbooks",
-      "Frameworks",
-      "Baselines",
-      "Benchmarks"
+      "Virus",
+      "Worm",
+      "Remote access trojan",
+      "Adware"
     ],
     "correct": [
-      0
+      2
     ],
-    "explanation": "Playbooks are step-by-step guides that detail exactly how to respond to specific types of incidents, ensuring consistency and speed when an alert is triggered. Frameworks (B) provide high-level guidance, baselines (C) define normal behavior for detection, and benchmarks (D) set performance targets but don’t prescribe response steps. Lesson 4.2: Incident Response and Playbooks, p. 225 Lesson 5.1: Biometric Factors",
+    "explanation": "Remote Access Trojans (RATs) provide attackers with remote administrative control over infected systems, allowing them to execute commands, access files, and perform other malicious activities as if they were physically present. See Lesson 2, Topic A: Attack Types.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 211,
-    "question": "Which of the following is a common data removal option for companies that want to wipe sensitive data from hard drives in a repeatable manner but allow the hard drives to be reused?",
+    "question": "A security analyst is investigating a potential security incident and needs to preserve digital evidence. Which principle is most important during evidence collection?",
     "options": [
-      "Defragmentation",
-      "Degaussing",
-      "Sanitization",
-      "Formatting"
+      "Speed of collection",
+      "Chain of custody",
+      "Cost minimization",
+      "Storage efficiency"
     ],
     "correct": [
-      2
+      1
     ],
-    "explanation": "Sanitization methods (e.g., multiple overwrites with specific patterns) securely erase data and allow drives to be redeployed. Degaussing (B) destroys magnetic media, rendering drives unusable. Formatting (D) or defragmentation (A) do not reliably remove all data. Lesson 4.4: Media Sanitization and Disposal, p. 242 Lesson 5.3: Recovery Objectives – RTO and RPO",
+    "explanation": "Chain of custody ensures the integrity and admissibility of digital evidence by documenting who handled the evidence, when, and what actions were taken, maintaining its legal and forensic value. See Lesson 12, Topic C: Digital Forensics.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 212,
-    "question": "A security analyst is investigating a workstation that is suspected of outbound communication to a command-and-control server. During the investigation, the analyst discovered that logs on the endpoint were deleted. Which of the following logs would the analyst most likely look at next?",
+    "question": "Which of the following security measures would be most effective for protecting against tailgating in a secure facility?",
     "options": [
-      "IPS",
-      "Firewall",
-      "ACL",
-      "Windows security"
+      "Security cameras",
+      "Motion sensors",
+      "Mantrap doors",
+      "Key card readers"
     ],
     "correct": [
-      1
+      2
     ],
-    "explanation": "When endpoint logs are missing, the network firewall’s logs are the next-best source to trace outbound connections, including IPs, ports, and timestamps. IPS logs (A) detect intrusions but may lack full connection detail, ACLs (C) record permission changes, and Windows security logs (D) were on the endpoint and already wiped. Lesson 4.6: Network Logging and Forensics, p. 238 Lesson 5.3: Backup Types – Incremental Backups",
+    "explanation": "Mantrap doors (security vestibules) physically prevent tailgating by ensuring only one person can pass through at a time, requiring each individual to authenticate separately before gaining access. See Lesson 7, Topic C: Physical Security.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -1296,39 +1291,119 @@
     "correct": [
       3
     ],
-    "explanation": "Root-cause analysis digs into the underlying factors that allowed an incident to occur—such as a weak password policy or missing patch—and drives corrective actions so the same issue does not recur. Gathering IOCs (A), finding affected systems (B), and malware removal (C) are important parts of investigation, identification, and containment/eradication phases, but only root-cause analysis focuses on long-term prevention. Lesson 4.4: Incident Response and Lessons Learned, p. 332 Lesson 1.4: Security Awareness Training – Tailgating Prevention",
+    "explanation": "Root-cause analysis identifies the underlying reasons why an incident occurred, enabling organizations to implement preventive measures and systemic improvements to avoid similar incidents in the future. See Lesson 12, Topic A: Incident Response Process.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 214,
-    "question": "A security analyst is reviewing logs to identify the destination of command-and-control traffic originating from a compromised device within the on-premises network. Which of the following is the best log to review?",
+    "question": "A security team needs to implement a solution that can automatically respond to security incidents without human intervention. Which technology should they deploy?",
     "options": [
-      "Application",
-      "Firewall",
-      "Antivirus",
-      "IDS"
+      "SIEM",
+      "SOAR",
+      "IDS",
+      "EDR"
     ],
     "correct": [
       1
     ],
-    "explanation": "Firewall logs show all outbound connections—including IP addresses, ports, and timestamps—making them the prime source to trace C2 destinations. Application logs (A) focus on app-level events, antivirus logs (C) record malware detections, and IDS logs (D) flag suspicious activity but may not capture every outbound flow. Lesson 4.6: Network Logging for Forensics, p. 238 Lesson 5.3: Data Sovereignty",
+    "explanation": "Security Orchestration, Automation, and Response (SOAR) platforms automate incident response workflows, enabling automatic remediation actions such as isolating systems, blocking IPs, and creating tickets without requiring human intervention. See Lesson 11, Topic A: Security Monitoring.",
     "type": "single",
     "topic": "security-operations"
   },
   {
     "id": 215,
-    "question": "Which of the following is a feature of a next-generation SIEM system?",
+    "question": "Which of the following would be most effective for preventing data exfiltration through removable media?",
     "options": [
-      "Automated response actions",
-      "Security agent deployment",
-      "Vulnerability scanning",
-      "Virus signatures"
+      "Network segmentation",
+      "Data loss prevention",
+      "Endpoint encryption",
+      "User training"
     ],
     "correct": [
-      0
+      1
     ],
-    "explanation": "Next-generation SIEMs integrate SOAR capabilities, enabling automated playbook-driven responses (isolation, blocking, ticket creation) immediately when alerts fire. Agent deployment (B) and vulnerability scanning (C) are deployment or discovery functions, and virus signatures (D) are antivirus features, not core SIEM functions. Lesson 4.2: Advanced SIEM and SOAR Integration, p. 220 Lesson 2.1: Watering Hole Attacks",
+    "explanation": "Data Loss Prevention (DLP) solutions can monitor and control data transfers to removable media, blocking unauthorized copying of sensitive information to USB drives, external hard drives, and other portable storage devices. See Lesson 13, Topic A: Data Protection.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 216,
+    "question": "A company wants to ensure that their incident response team can practice without affecting production systems. Which type of environment should they use?",
+    "options": [
+      "Production environment",
+      "Development environment",
+      "Staging environment",
+      "Sandbox environment"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sandbox environments provide isolated, controlled spaces where incident response teams can practice procedures, test tools, and simulate incidents without any risk to production systems or data. See Lesson 12, Topic B: Incident Response Planning.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 217,
+    "question": "Which of the following metrics would be most useful for measuring the effectiveness of a security awareness training program?",
+    "options": [
+      "Number of training hours completed",
+      "Percentage of employees trained",
+      "Reduction in successful phishing attempts",
+      "Training completion rate"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The reduction in successful phishing attempts directly measures the behavioral change and effectiveness of security awareness training, demonstrating whether employees are applying what they learned to identify and avoid security threats. See Lesson 16, Topic B: Personnel Policies.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 218,
+    "question": "A security administrator needs to ensure that network traffic is inspected at the application layer. Which solution would be most appropriate?",
+    "options": [
+      "Network firewall",
+      "Web application firewall",
+      "Intrusion detection system",
+      "Proxy server"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Web Application Firewalls (WAFs) specifically inspect HTTP/HTTPS traffic at the application layer, analyzing request content, parameters, and payloads to detect and block application-specific attacks like SQL injection and XSS. See Lesson 6, Topic B: Network Security Architecture.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 219,
+    "question": "Which of the following would be the best approach for ensuring secure disposal of hard drives containing sensitive data?",
+    "options": [
+      "Format the drives",
+      "Delete all files",
+      "Physical destruction",
+      "Reinstall operating system"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Physical destruction ensures complete and irreversible elimination of sensitive data by making the storage media physically unreadable, providing the highest level of assurance that data cannot be recovered by any means. See Lesson 13, Topic B: Data Destruction.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 220,
+    "question": "A security analyst discovers unusual network traffic patterns during off-hours. Which type of analysis would be most helpful in investigating this activity?",
+    "options": [
+      "Static analysis",
+      "Dynamic analysis",
+      "Behavioral analysis",
+      "Code analysis"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Behavioral analysis examines patterns of activity over time to identify deviations from normal operations. Unusual off-hours traffic patterns suggest behavioral anomalies that require understanding baseline behaviors to detect threats. See Lesson 11, Topic A: Security Monitoring.",
     "type": "single",
     "topic": "security-operations"
   }

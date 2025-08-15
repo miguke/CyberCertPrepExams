@@ -4,14 +4,14 @@
     "question": "Which of the following allows for the attribution of messages to individuals?",
     "options": [
       "Adaptive identity",
-      "Non‑repudiation",
+      "Non-repudiation",
       "Authentication",
       "Access logs"
     ],
     "correct": [
       1
     ],
-    "explanation": "Non‑repudiation – Digital signatures prove exactly who sent and signed a message. Adaptive identity is not a standard security control. Authentication verifies identity but doesn’t stop someone from later denying they sent something. Access logs record events but can be altered or disputed.",
+    "explanation": "Non-repudiation ensures that individuals cannot deny their actions or the authenticity of their digital signatures. Digital signatures and certificates provide cryptographic proof of origin and integrity. See Lesson 1, Topic A: Security Concepts.",
     "type": "single",
     "topic": "general-security-concepts"
   },
@@ -27,13 +27,13 @@
     "correct": [
       3
     ],
-    "explanation": "Risk threshold (or appetite) is the maximum risk an organization will accept. Risk indicators, levels, and scores measure or quantify risk but don’t define the acceptance boundary.",
+    "explanation": "Risk threshold (or risk appetite) defines the maximum level of risk an organization is willing to accept before taking action. This sets the boundary for risk acceptance decisions. See Lesson 15, Topic A: Risk Management Processes and Concepts.",
     "type": "single",
     "topic": "general-security-concepts"
   },
   {
     "id": 3,
-    "question": "A network administrator is working on a project to deploy a load balancer in the company’s cloud environment. Which of the following fundamental security requirements does this project fulfil?",
+    "question": "A network administrator is working on a project to deploy a load balancer in the company's cloud environment. Which of the following fundamental security requirements does this project fulfil?",
     "options": [
       "Privacy",
       "Integrity",
@@ -43,13 +43,13 @@
     "correct": [
       3
     ],
-    "explanation": "Load balancers distribute traffic across multiple servers to keep services up and responsive, directly supporting availability. They don’t prevent unauthorized access (confidentiality), verify data accuracy (integrity), or protect personal data (privacy).",
+    "explanation": "Load balancers distribute network traffic across multiple servers to prevent any single server from becoming overwhelmed, directly supporting the availability component of the CIA triad by ensuring services remain accessible. See Lesson 1, Topic A: Security Concepts.",
     "type": "single",
     "topic": "general-security-concepts"
   },
   {
     "id": 4,
-    "question": "Which of the following is the strongest form of multi‑factor authentication?",
+    "question": "Which of the following is the strongest form of multi-factor authentication?",
     "options": [
       "Fingerprint + PIN",
       "Smart card + password",
@@ -59,23 +59,23 @@
     "correct": [
       0
     ],
-    "explanation": "Fingerprint (biometric) + PIN (something you know) uses two distinct factor types. Smart card + password is also two factors but hardware tokens can be cloned; biometrics are inherently tied to the user. Password + security questions are both knowledge‑based, and SMS OTP is susceptible to SIM‑swap attacks.",
+    "explanation": "Fingerprint (something you are) + PIN (something you know) combines two different authentication factor types, providing strong multi-factor authentication. Biometrics are inherently tied to the individual and difficult to replicate. See Lesson 4, Topic A: Authentication.",
     "type": "single",
     "topic": "general-security-concepts"
   },
   {
     "id": 5,
-    "question": "Which of the following describes the principle of “defense in depth”?",
+    "question": "Which of the following describes the principle of 'defense in depth'?",
     "options": [
       "Implementing the strongest firewall available",
       "Using multiple layers of security controls to protect assets",
-      "Limiting user access to only what’s necessary",
+      "Limiting user access to only what's necessary",
       "Encrypting data at rest and in transit"
     ],
     "correct": [
       1
     ],
-    "explanation": "Defense in depth employs overlapping security measures—firewalls, IDS, encryption, policies—so if one fails, others still protect. A single strong firewall, least privilege, or encryption alone don’t capture the layered approach.",
+    "explanation": "Defense in depth is a security strategy that employs multiple layers of security controls throughout an IT system. If one layer fails, other layers continue to provide protection, creating redundancy in security measures. See Lesson 1, Topic A: Security Concepts.",
     "type": "single",
     "topic": "general-security-concepts"
   },
@@ -91,7 +91,7 @@
     "correct": [
       2
     ],
-    "explanation": "Encryption transforms data so it can’t be read without the decryption key. Hashing is one‑way, tokenization replaces data with a token needing lookup, and segmentation isolates systems but doesn’t obscure data itself .",
+    "explanation": "Encryption transforms plaintext data into ciphertext that cannot be read without the proper decryption key, making it the primary method to render sensitive data at rest unreadable. See Lesson 3, Topic C: Cryptographic Solutions.",
     "type": "single",
     "topic": "general-security-concepts"
   },
@@ -107,7 +107,7 @@
     "correct": [
       2
     ],
-    "explanation": "AES is a symmetric block cipher using the same key for encryption and decryption. RSA and ECC are asymmetric public‑key algorithms, and DSA is a digital signature algorithm.",
+    "explanation": "AES (Advanced Encryption Standard) is a symmetric encryption algorithm that uses the same key for both encryption and decryption. RSA and ECC are asymmetric algorithms, while DSA is used for digital signatures. See Lesson 3, Topic A: Cryptographic Algorithms.",
     "type": "single",
     "topic": "general-security-concepts"
   },
@@ -123,7 +123,7 @@
     "correct": [
       0
     ],
-    "explanation": "MD5 is a weak hashing algorithm that’s vulnerable to collisions, making it a cryptographic vulnerability. It’s not a malicious update, a zero-day exploit, or sideloading.",
+    "explanation": "MD5 is a deprecated cryptographic hash function that is vulnerable to collision attacks, making it unsuitable for security applications. This represents a cryptographic vulnerability due to weak algorithm implementation. See Lesson 3, Topic A: Cryptographic Algorithms.",
     "type": "single",
     "topic": "general-security-concepts"
   },
@@ -139,7 +139,7 @@
     "correct": [
       0
     ],
-    "explanation": "DDoS (Distributed Denial of Service) protections are designed to keep services online and accessible under attack, directly supporting the security principle of availability. Confidentiality (B) protects data privacy, integrity (D) protects against unauthorized modification, and non-repudiation (C) prevents denial of actions—none of which specifically address service uptime under volumetric attacks. Lesson 1.1: CIA Triad Fundamentals, p. 22",
+    "explanation": "DDoS (Distributed Denial of Service) protection mechanisms are designed to maintain service availability by preventing or mitigating attacks that attempt to overwhelm systems and make them inaccessible to legitimate users. See Lesson 1, Topic A: Security Concepts.",
     "type": "single",
     "topic": "general-security-concepts"
   },
@@ -155,7 +155,7 @@
     "correct": [
       3
     ],
-    "explanation": "When a critical legacy system can neither be updated nor replaced, the organization must acknowledge (accept) the risk and put compensating controls in place rather than transfer, avoid, or reject the risk. Transfer (A) would mean shifting the risk to a third party, which isn’t feasible here. Avoid (C) would require eliminating the system altogether, which isn’t possible given its criticality. Reject (B) isn’t a standard risk‐treatment option in the CompTIA framework. Lesson 1.3: Risk Management Fundamentals, p. 28",
+    "explanation": "When a critical system cannot be modified, updated, or replaced, the organization must accept the risk and implement compensating controls to mitigate exposure. Risk acceptance acknowledges the risk while maintaining business operations. See Lesson 15, Topic A: Risk Management Processes and Concepts.",
     "type": "single",
     "topic": "general-security-concepts"
   },
@@ -174,7 +174,7 @@
       0,
       5
     ],
-    "explanation": "A. Asset tags tied to employee IDs let you quickly identify and notify the right person—essential during incidents. F. When someone departs, you know exactly which laptop to collect, ensuring corporate data is returned or wiped. Options B and C rely on software configurations, not physical tags. D and E involve network tools or testing scopes unrelated to inventory stickers. Lesson 1.4: Asset Management, p. 22",
+    "explanation": "Asset inventory stickers linked to employee IDs provide two key security benefits: incident response (quickly identifying the responsible employee when security issues occur on a device) and asset recovery (ensuring company data is properly accounted for when employees leave). See Lesson 7, Topic A: Asset Management.",
     "type": "multiple",
     "topic": "general-security-concepts"
   },
@@ -190,7 +190,7 @@
     "correct": [
       3
     ],
-    "explanation": "The principle of least privilege grants each user only the minimum rights they need. By restricting console access to just the IT manager and help-desk lead, the manager is ensuring no one else can make high-level changes—preventing accidental or malicious misuse. Hardening (A) reduces attack surfaces via patching and removing services; employee monitoring (B) tracks user actions; configuration enforcement (C) ensures systems adhere to templates. Only least privilege directly limits who can access the console. Lesson 1.3: Access Control Concepts, p. 38",
+    "explanation": "The principle of least privilege restricts user access rights to only what is necessary to perform their job functions. By limiting administrator console access to only essential personnel, the organization reduces the risk of unauthorized changes or security breaches. See Lesson 4, Topic B: Authorization.",
     "type": "single",
     "topic": "general-security-concepts"
   },
@@ -206,7 +206,7 @@
     "correct": [
       3
     ],
-    "explanation": "Dumpster diving involves retrieving sensitive documents (including printed output) from physical waste when they haven’t been properly shredded. Whaling (A) targets executives via email, credential harvesting (B) steals logon data electronically, and prepending (C) adds malicious code to the start of files. Lesson 1.4: Physical Security and Cyber Hygiene, p. 22",
+    "explanation": "Dumpster diving is a physical security attack where attackers search through trash and recycling for sensitive information, including improperly disposed printed documents from printing centers. See Lesson 7, Topic C: Physical Security.",
     "type": "single",
     "topic": "general-security-concepts"
   },
@@ -222,13 +222,13 @@
     "correct": [
       1
     ],
-    "explanation": "Simulated phishing campaigns train users to recognize suspicious emails—complementing posters and e-learning to reinforce behavioral change. A risk assessment (A) identifies threats, access badges (C) are physical controls, and a password policy (D) sets technical requirements, none directly engage users in awareness exercises. Lesson 1.3: Security Awareness and Training, p. 19",
+    "explanation": "Phishing campaigns are commonly implemented as part of comprehensive security awareness programs to test and train users on recognizing social engineering attacks. This complements other awareness materials like posters and training modules. See Lesson 16, Topic B: Personnel Policies.",
     "type": "single",
     "topic": "general-security-concepts"
   },
   {
     "id": 15,
-    "question": "An employee emailed a new systems administrator a malicious weblink and convinced the administrator to change the email server’s password. The employee used this access to move the mailboxes of key personnel. Which of the following security awareness concepts would help prevent this threat in the future?",
+    "question": "An employee emailed a new systems administrator a malicious weblink and convinced the administrator to change the email server's password. The employee used this access to move the mailboxes of key personnel. Which of the following security awareness concepts would help prevent this threat in the future?",
     "options": [
       "Providing situational awareness training",
       "Using password management",
@@ -238,7 +238,7 @@
     "correct": [
       3
     ],
-    "explanation": "Training users to recognize phishing helps them spot fraudulent messages that try to trick them into revealing credentials or clicking malicious links. In this scenario, if the administrator had been trained to identify phishing emails—looking for unexpected requests, mismatched URLs, or poor grammar—they would have been far less likely to change the password in response. Situational awareness (A) is broader, password managers (B) help with strong credentials but not social engineering, and reviewing policies (C) alone doesn’t teach staff how to spot phishing. Lesson 1.3: Social Engineering and Phishing, p. 42",
+    "explanation": "Training users to recognize phishing attacks helps them identify fraudulent communications designed to trick them into revealing credentials or performing unauthorized actions. This type of social engineering awareness is critical for preventing successful attacks. See Lesson 2, Topic C: Social Engineering.",
     "type": "single",
     "topic": "general-security-concepts"
   },
@@ -257,7 +257,7 @@
       0,
       3
     ],
-    "explanation": "Swipe cards (A) and biometric scanners (D) provide physical access control, while phone authentication applications (C) offer remote access. Picture IDs (B) and memorable questions (E) are less secure. Lesson 1.3: Access Control Concepts, p. 38",
+    "explanation": "Swipe cards and biometric scanners are both strong physical access controls for on-premises security. Swipe cards provide something you have, while biometric scanners provide something you are, creating effective access control for physical locations. See Lesson 7, Topic C: Physical Security.",
     "type": "multiple",
     "topic": "general-security-concepts"
   }

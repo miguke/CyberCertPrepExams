@@ -1,59 +1,70 @@
-# CompTIA A+ 220-1101 Study App
+# Study App for CyberSecurity Certification
 
-Uma aplicação de estudo interativa para o exame CompTIA A+ 220-1101, que permite aos utilizadores praticar com perguntas baseadas nos objetivos do exame. Tanto para o exame 220-1101 como para o 220-1102. 
+[English](./README.md) | [Português (Portugal)](./README.pt.md)
 
-É possivel usar localmente ou online. Localmente é seguir as instruções abaixo. Online é aceder pelo link https://miguke.github.io/A-220-1101/
+## Overview
 
-## Funcionalidades
+An interactive study app that simulates a real exam with 90 questions in 90 minutes based on official exam objectives.
 
-- **Modo de Estudo**: Prática por tópicos específicos.
-- **Simulação de Exame**: Simula um exame real com 90 perguntas em 90 minutos.
-- **Feedback Imediato**: Acesso a explicações detalhadas para cada resposta.
-- **Acompanhamento do Progresso**: Monitorização do seu desempenho com estatísticas em tempo real.
-- **Interface Responsiva**: Compatível com computadores, tablets e smartphones.
+Available locally or online. For local setup, follow the instructions below. Online version: https://miguke.github.io/CyberCertPrepExams/
 
-## Motivação
+## Features
 
-Estudar através de PDFs ou ler no computador é uma tarefa cansativa e demorada. Frequentemente, ao ler as perguntas, a nossa visão periférica acaba por revelar a resposta sem intenção. Para contornar este problema, desenvolvi uma aplicação interativa que permite aos utilizadores praticar com perguntas baseadas nos objetivos do exame. Desta forma, é possível estudar através do telemóvel, substituindo o tempo passado nas redes sociais por uma atividade produtiva. A capacidade de praticar e estudar em qualquer lugar e a qualquer hora representa uma vantagem significativa.
+- **Study Mode**: Practice by specific topics.
+- **Exam Simulation**: Simulates a real exam with 90 questions in 90 minutes.
+- **Immediate Feedback**: Detailed explanations for each answer.
+- **Progress Tracking**: Real-time performance statistics.
+- **Responsive UI**: Works on desktop, tablet, and mobile.
+- **Results and Stats**: Review your results and statistics at the end of the exam simulation.
 
-## Como foi construída a aplicação?
+## Motivation
 
-A minha área de formação não é programação. Com a ajuda do João Guerreiro (@jqsguerreiro), que me recomendou o Windsurf, todo o desenvolvimento foi realizado com o auxílio de Inteligência Artificial, necessitando de poucas intervenções manuais. Foram utilizados vários modelos de IA, como o Gemini, SWE (do Windsurf), ChatGPT, DeepSeek, Claude e outros.
-As perguntas foram recolhidas de fontes online, como sites e documentos PDF. Muitos destes PDFs, contendo perguntas e explicações, foram encontrados através de pesquisas no Google com palavras-chave específicas, utilizando o operador `filetype:pdf` para localizar documentação pública.
+Learning today isn’t what it was 5–10 years ago. I believe interactive study is the best way to learn—especially with immediate feedback and the ability to practice anywhere, anytime. I built this app to let me practice questions aligned with the exam objectives and study whenever and wherever I want. And because it’s in the palm of your hand, it helps turn social media time into productive study time.
 
-## Como Executar Localmente
+## How was the app built?
 
-1. **Pré-requisitos**:
-   - Python 3.6 ou superior
-   - Navegador moderno (Chrome, Firefox, Edge, Safari)
+My background is not in programming. A long-time friend, João Guerreiro (@jqsguerreiro), introduced me to Windsurf. The entire development was done with the help of AI, with minimal manual intervention.
 
-2. **Instalação**:
+Questions were collected from publicly available sources, such as websites and PDFs found via Google using the dork "filetype:pdf" with targeted keywords.
+
+After gathering the PDFs, I noticed that AI couldn’t process them or reliably extract the questions and explanations. Through Cascade AI, Python scripts were created to process the PDFs and extract that content; my role was mainly to guide the AI.
+
+I also spent time testing, fixing, and tweaking those scripts so the parser could extract questions and explanations correctly. That’s when @jqsguerreiro suggested using MCP servers.
+
+Now that the MCP server is running smoothly, the AI can process PDFs, without the need to create scripts, and extract questions and explanations reliably using official study materials—and, importantly, correct questions and explanations from some PDFs.
+
+## Run Locally
+
+1. **Prerequisites**:
+   - Python 3.6 or higher
+   - Modern browser (Chrome, Firefox, Edge, Safari)
+
+2. **Install**:
    ```bash
-   # Clone o repositório
-   git clone [URL_DO_REPOSITÓRIO]
-   cd A-220-1101
+   # Clone the repository
+   git clone [REPOSITORY_URL]
+   cd CyberCertPrepExams
    ```
 
-3. **Iniciar o servidor de desenvolvimento**:
+3. **Start the development server**:
    ```bash
    python server.py
    ```
-   Isto iniciará um servidor local em `http://localhost:8000` e abrirá automaticamente o navegador.
+   This will start a local server at `http://localhost:8080` and automatically open your browser.
 
-4. **Aceder à aplicação**:
-   - Abra o seu navegador e aceda a `http://localhost:8000`.
-   - Selecione o curso "CompTIA A+ 220-1101".
-   - Escolha entre o modo de estudo ou a simulação de exame.
+4. **Access the app**:
+   - Open your browser and go to `http://localhost:8080`.
+   - Select the course you want.
+   - Choose between Study Mode or Exam Simulation.
 
+### Customize the Theme
 
-### Personalizar o Tema
+To customize colors, fonts, and layout, edit the CSS files in the `css/` folder.
 
-Para personalizar as cores, fontes e o layout da aplicação, edite os ficheiros CSS na pasta `css/`.
+## License
 
-## Licença
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-Este projeto está licenciado sob a Licença MIT. Para mais detalhes, consulte o ficheiro [LICENSE](LICENSE).
+## Acknowledgments
 
-## Agradecimentos
-
-Um agradecimento especial ao João Guerreiro (@jqsguerreiro) que me recomendou o Windsurf e que me ajudou a perceber Git-Hub e como funciona o Git.
+Special thanks to João Guerreiro (@jqsguerreiro) for recommending Windsurf and helping me understand GitHub and how Git works.
