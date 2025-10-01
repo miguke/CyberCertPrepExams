@@ -144,6 +144,118 @@
     "topic": "threats-vulnerabilities-mitigations"
   },
   {
+    "id": 77,
+    "question": "A penetration tester enters an office building at the same time as a group of employees despite not having an access badge. Which of the following attack types is the penetration tester performing?",
+    "options": [
+      "Tailgating",
+      "Shoulder surfing",
+      "RFID cloning",
+      "Forgery"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Tailgating is correct because it involves following authorized individuals through secured access points without proper credentials. The tester gains physical access by timing their entry with legitimate employees, bypassing access controls through social engineering. Shoulder surfing involves observing sensitive information over someone's shoulder, RFID cloning duplicates access cards, and forgery creates fake documents. Tailgating specifically describes the act of following others through security checkpoints without authorization. See Lesson 2, Topic C: Physical Security Attacks.",
+    "type": "single",
+    "topic": "threats-vulnerabilities-mitigations"
+  },
+  {
+    "id": 81,
+    "question": "A customer of a large company receives a phone call from someone claiming to work for the company and asking for the customer's credit card information. The customer sees the caller ID is the same as the company's main phone number. Which of the following attacks is the customer most likely a target of?",
+    "options": [
+      "Phishing",
+      "Whaling",
+      "Smishing",
+      "Vishing"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Vishing (voice phishing) is correct because it involves fraudulent phone calls to steal sensitive information, with the attacker using caller ID spoofing to appear legitimate. The voice-based social engineering attack targets the customer through telephone communication. Phishing typically uses email, whaling targets high-value individuals specifically, and smishing uses SMS messages. The phone-based nature with spoofed caller ID specifically characterizes vishing attacks. See Lesson 2, Topic C: Social Engineering Attacks.",
+    "type": "single",
+    "topic": "threats-vulnerabilities-mitigations"
+  },
+  {
+    "id": 87,
+    "question": "Which of the following threat vectors is most commonly used in attacks against IoT devices?",
+    "options": [
+      "Social engineering",
+      "Physical access",
+      "Default credentials",
+      "SQL injection"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Default credentials are correct because many IoT devices ship with default usernames and passwords that users often don't change, making them easily exploitable. IoT devices frequently have weak security practices and limited user interfaces for configuration changes. Social engineering targets humans not devices, physical access requires proximity and may not be practical for distributed IoT devices, and SQL injection affects databases not typical IoT device interfaces. Default credentials represent the most widespread and easily exploitable vulnerability in IoT devices. See Lesson 10, Topic C: IoT Security.",
+    "type": "single",
+    "topic": "threats-vulnerabilities-mitigations"
+  },
+  {
+    "id": 92,
+    "question": "A government official receives a blank envelope containing photos and a note instructing the official to wire a large sum of money by midnight to prevent the photos from being leaked on the internet. Which of the following best describes the threat actor's intent?",
+    "options": [
+      "Organized crime",
+      "Philosophical beliefs",
+      "Espionage",
+      "Blackmail"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Blackmail is correct because the threat actor is demanding payment in exchange for not releasing potentially damaging information (photos). This represents extortion through threats of exposure. Organized crime refers to structured criminal groups, philosophical beliefs drive hacktivists, and espionage involves stealing information for intelligence purposes. The scenario specifically describes coercive demands for money to prevent information disclosure, which is the definition of blackmail. See Lesson 2, Topic A: Threat Actor Motivations.",
+    "type": "single",
+    "topic": "threats-vulnerabilities-mitigations"
+  },
+  {
+    "id": 97,
+    "question": "Which of the following is a possible consequence of a VM escape?",
+    "options": [
+      "Malicious instructions can be inserted into memory and give the attacker elevated permissions",
+      "An attacker can access the hypervisor and compromise other VMs",
+      "Unencrypted data can be read by a user who is in a separate environment",
+      "Users can install software that is not on the manufacturer's approved list"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "VM escape allows attackers to break out of virtual machine isolation and gain access to the underlying hypervisor, potentially compromising other VMs running on the same host. This represents a critical security breach where the fundamental isolation provided by virtualization is violated. Memory injection attacks occur within VMs, unencrypted data access doesn't require VM escape, and unauthorized software installation is contained within individual VMs. VM escape specifically threatens the hypervisor layer and all hosted VMs. See Lesson 6, Topic A: Virtualization Security.",
+    "type": "single",
+    "topic": "threats-vulnerabilities-mitigations"
+  },
+  {
+    "id": 99,
+    "question": "Which of the following is a type of vulnerability that involves inserting scripts into web-based applications in order to take control of the client's web browser?",
+    "options": [
+      "SQL injection",
+      "Cross-site scripting",
+      "Zero-day exploit",
+      "On-path attack"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cross-site scripting (XSS) involves injecting malicious scripts into web applications that execute in users' browsers, allowing attackers to steal cookies, session tokens, or perform actions on behalf of users. XSS specifically targets client-side execution in browsers. SQL injection targets databases not browsers, zero-day exploits are previously unknown vulnerabilities, and on-path attacks intercept communications. Only XSS involves inserting scripts into web applications to control client browsers. See Lesson 8, Topic B: Web Application Vulnerabilities.",
+    "type": "single",
+    "topic": "threats-vulnerabilities-mitigations"
+  },
+  {
+    "id": 101,
+    "question": "Which of the following actors attacking an organization is the most likely to be motivated by personal beliefs?",
+    "options": [
+      "Nation-state",
+      "Organized crime",
+      "Hacktivist",
+      "Insider threat"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Hacktivists are primarily motivated by personal beliefs, ideology, or social/political causes, using cyber attacks to promote their agenda or protest against organizations they oppose. Nation-states are motivated by national interests and intelligence gathering, organized crime seeks financial gain, and insider threats may have various motivations including financial gain or revenge. Only hacktivists consistently operate based on personal convictions and ideological beliefs. See Lesson 2, Topic A: Threat Actor Motivations.",
+    "type": "single",
+    "topic": "threats-vulnerabilities-mitigations"
+  },
+  {
     "id": 112,
     "question": "Which of the following threat actors is the most likely to seek financial gain through the use of ransomware attacks?",
     "options": [
@@ -188,6 +300,118 @@
       3
     ],
     "explanation": "Rootkit is malware designed to maintain persistent access while hiding its presence from users and security software by modifying system functions and processes. Rootkits operate at low system levels to avoid detection while providing backdoor access. Viruses replicate by attaching to files, worms self-propagate across networks, and Trojans disguise themselves as legitimate software but don't necessarily hide their presence. Rootkits specifically focus on stealth and persistent remote access capabilities. See Lesson 3, Topic A: Malware Types.",
+    "type": "single",
+    "topic": "threats-vulnerabilities-mitigations"
+  },
+  {
+    "id": 153,
+    "question": "Which of the following attack techniques involves manipulating the sequence of instructions that a processor executes?",
+    "options": [
+      "SQL injection",
+      "Buffer overflow",
+      "Cross-site scripting",
+      "Directory traversal"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Buffer overflow manipulates processor instruction execution by overwriting memory containing return addresses or function pointers, allowing attackers to redirect program execution to malicious code. Buffer overflows exploit memory management vulnerabilities to control instruction flow. SQL injection targets databases not processor instructions, XSS executes scripts in browsers, and directory traversal accesses unauthorized files. Only buffer overflow directly manipulates the sequence of processor instruction execution through memory corruption. See Lesson 8, Topic B: Memory-Based Attacks.",
+    "type": "single",
+    "topic": "threats-vulnerabilities-mitigations"
+  },
+  {
+    "id": 164,
+    "question": "Which of the following vulnerability types is most commonly found in web applications?",
+    "options": [
+      "Buffer overflow",
+      "SQL injection",
+      "Privilege escalation",
+      "Memory leak"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SQL injection is consistently among the most common web application vulnerabilities, appearing regularly in the OWASP Top 10. SQL injection exploits inadequate input validation in database queries, allowing attackers to manipulate database operations. Buffer overflows typically affect compiled applications not web applications, privilege escalation can occur in various contexts but isn't web-specific, and memory leaks are performance issues not security vulnerabilities. SQL injection specifically targets web application database interactions. See Lesson 8, Topic B: Web Application Vulnerabilities.",
+    "type": "single",
+    "topic": "threats-vulnerabilities-mitigations"
+  },
+  {
+    "id": 178,
+    "question": "Which of the following allows an exploit to go undetected by the operating system?",
+    "options": [
+      "Firmware vulnerabilities",
+      "Side loading",
+      "Memory injection",
+      "Encrypted payloads"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Memory injection techniques load malicious code directly into system memory (RAM) without writing to disk, allowing exploits to avoid detection by traditional file-based security scanners and operating system monitoring. Memory-resident attacks are harder to detect because they don't leave persistent file artifacts. Firmware vulnerabilities affect low-level system code, side loading installs unauthorized applications, and encrypted payloads protect malware during transmission but don't specifically avoid OS detection. Memory injection specifically enables stealthy execution that bypasses many detection mechanisms. See Lesson 3, Topic A: Advanced Attack Techniques.",
+    "type": "single",
+    "topic": "threats-vulnerabilities-mitigations"
+  },
+  {
+    "id": 185,
+    "question": "A penetration tester enters an office building at the same time as a group of employees despite not having an access badge. Which of the following attack types is the penetration tester performing?",
+    "options": [
+      "Tailgating",
+      "Shoulder surfing",
+      "RFID cloning",
+      "Forgery"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Tailgating involves following authorized individuals through secured access points without proper credentials or authorization. The penetration tester gains physical access by timing their entry with legitimate employees, exploiting the social tendency to hold doors open for others. Shoulder surfing involves observing sensitive information over someone's shoulder, RFID cloning duplicates access cards, and forgery creates fake documents or credentials. Tailgating specifically describes unauthorized entry by following authorized personnel. See Lesson 2, Topic C: Physical Security Attacks.",
+    "type": "single",
+    "topic": "threats-vulnerabilities-mitigations"
+  },
+  {
+    "id": 189,
+    "question": "A customer of a large company receives a phone call from someone claiming to work for the company and asking for the customer's credit card information. The customer sees the caller ID is the same as the company's main phone number. Which of the following attacks is the customer most likely a target of?",
+    "options": [
+      "Phishing",
+      "Whaling",
+      "Smishing",
+      "Vishing"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Vishing (voice phishing) involves fraudulent phone calls to obtain sensitive information, often using caller ID spoofing to appear legitimate. The attack uses voice communication to socially engineer victims into revealing confidential information like credit card details. Phishing typically uses email, whaling targets high-value individuals specifically (often via email), and smishing uses SMS text messages. The phone-based nature with spoofed caller ID specifically characterizes vishing attacks against consumers. See Lesson 2, Topic C: Voice-Based Social Engineering.",
+    "type": "single",
+    "topic": "threats-vulnerabilities-mitigations"
+  },
+  {
+    "id": 195,
+    "question": "Which of the following threat vectors is most commonly used in attacks against IoT devices?",
+    "options": [
+      "Social engineering",
+      "Physical access",
+      "Default credentials",
+      "SQL injection"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Default credentials represent the most common attack vector against IoT devices because many devices ship with default usernames and passwords that users often fail to change, and manufacturers sometimes use the same credentials across device models. IoT devices frequently have limited user interfaces making credential changes difficult. Social engineering targets humans not devices directly, physical access requires proximity and may not be practical for distributed IoT deployments, and SQL injection affects database-driven applications rather than typical IoT device interfaces. Default credentials are the most widespread and easily exploitable IoT vulnerability. See Lesson 10, Topic C: IoT Security Challenges.",
+    "type": "single",
+    "topic": "threats-vulnerabilities-mitigations"
+  },
+  {
+    "id": 200,
+    "question": "A government official receives a blank envelope containing photos and a note instructing the official to wire a large sum of money by midnight to prevent the photos from being leaked on the internet. Which of the following best describes the threat actor's intent?",
+    "options": [
+      "Organized crime",
+      "Philosophical beliefs",
+      "Espionage",
+      "Blackmail"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Blackmail involves threatening to reveal potentially damaging or embarrassing information unless demands are met, typically for financial gain. The scenario describes classic blackmail where the threat actor demands payment to prevent information disclosure. Organized crime refers to structured criminal enterprises, philosophical beliefs drive hacktivists, and espionage involves stealing information for intelligence purposes. The specific demand for money in exchange for not releasing compromising information is the definition of blackmail. See Lesson 2, Topic A: Threat Actor Motivations.",
     "type": "single",
     "topic": "threats-vulnerabilities-mitigations"
   },
@@ -636,6 +860,22 @@
       2
     ],
     "explanation": "Organized crime threat actors are most likely motivated by financial gain through various cybercriminal activities including ransomware, banking fraud, credit card theft, cryptocurrency theft, and monetization of stolen data. These groups operate like businesses focused on profit generation through illegal cyber activities. Nation-states typically pursue espionage and strategic objectives, hacktivists are driven by political or social causes, and script kiddies often seek recognition or entertainment rather than financial rewards. Organized crime specifically targets financial profit as their primary motivation for conducting sophisticated cyberattacks and criminal enterprises. See Lesson 2, Topic A: Threat Actor Motivations and Objectives.",
+    "type": "single",
+    "topic": "threats-vulnerabilities-mitigations"
+  },
+  {
+    "id": 386,
+    "question": "Which of the following attack techniques involves compromising a website that is frequently visited by target victims?",
+    "options": [
+      "Spear phishing",
+      "Watering hole attack",
+      "Business email compromise",
+      "Typosquatting"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Watering hole attack involves compromising websites that target victims regularly visit, then waiting for victims to visit the compromised site where malicious code exploits their browsers or downloads malware to their systems. This technique leverages user trust and regular browsing habits to deliver attacks. Spear phishing uses targeted emails, business email compromise involves fraudulent email communications, and typosquatting uses similar domain names to trick users. Watering hole attacks specifically target websites within victims' normal browsing patterns to increase infection success rates through trusted site compromise. See Lesson 2, Topic C: Website Compromise Attack Strategies.",
     "type": "single",
     "topic": "threats-vulnerabilities-mitigations"
   },

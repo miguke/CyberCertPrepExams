@@ -1,0 +1,453 @@
+[
+  {
+    "id": 312,
+    "question": "An attacker uses a custom script to continuously request web pages from a server until it becomes unresponsive. Which type of attack is this?",
+    "options": [
+      "SQL injection",
+      "Cross-site scripting",
+      "Denial of service",
+      "Man-in-the-middle"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A Denial of Service (DoS) attack aims to make a resource unavailable by overwhelming it with traffic. SQL injection targets databases, XSS injects scripts, and MitM intercepts traffic. See Lesson 13, Topic B: Network Attack Indicators.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 313,
+    "question": "Several employees received a fraudulent text message from someone claiming to be the CEO asking for gift card purchases. Which of the following are the best responses? (Choose two.)",
+    "options": [
+      "Cancel current employee recognition gift cards",
+      "Add a smishing exercise to annual training",
+      "Issue a general email warning",
+      "Have the CEO change phone numbers",
+      "Conduct a forensic investigation on the CEO’s phone",
+      "Implement mobile device management"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "This is a smishing (SMS phishing) attack. The best responses are to train users to recognize it (smishing exercise) and to alert all staff immediately (email warning). See Lesson 2, Topic C: Social Engineering.",
+    "type": "multiple",
+    "topic": "threats"
+  },
+  {
+    "id": 314,
+    "question": "An administrator was notified that a user logged in remotely after hours and copied large amounts of data to a personal device. Which of the following best describes the user’s activity?",
+    "options": [
+      "Penetration testing",
+      "Phishing campaign",
+      "External audit",
+      "Insider threat"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An insider threat involves an individual with authorized access misusing it to compromise data. The user's activity—data exfiltration after hours—is a classic example. See Lesson 2, Topic A: Threat Actors.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 315,
+    "question": "A user receives an email that appears to come from a colleague but contains a malicious link. The email’s “From” address was spoofed. Which of the following is the best way to prevent this type of attack in the future?",
+    "options": [
+      "SPF",
+      "DMZ",
+      "VPN",
+      "DLP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sender Policy Framework (SPF) is an email authentication method that prevents spoofing by verifying sender IP addresses. A DMZ is a network segment, a VPN secures connections, and DLP prevents data exfiltration. See Lesson 11, Topic A: Application Protocol Security Baselines.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 316,
+    "question": "A security analyst notices a significant increase in DNS query traffic to internal resources that aren’t publicly accessible. Which of the following attacks is most likely occurring?",
+    "options": [
+      "DNS tunneling",
+      "Amplification",
+      "Reflection",
+      "Cache poisoning"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "DNS tunneling exfiltrates data via DNS queries, often resulting in unusual or high-volume DNS traffic. Amplification and reflection attacks use public servers to target a victim, while cache poisoning corrupts DNS records. See Lesson 13, Topic B: Network Attack Indicators.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 317,
+    "question": "A security team discovers that attackers have modified production database records without authorization. Which of the following properties of information security has been violated?",
+    "options": [
+      "Confidentiality",
+      "Integrity",
+      "Availability",
+      "Non-repudiation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Integrity ensures that data is not altered in an unauthorized manner. Since the database records were modified, integrity has been violated. See Lesson 1, Topic A: Security Concepts.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 318,
+    "question": "A company’s web server was compromised after an attacker exploited a vulnerability in an unpatched content management system. Which of the following best describes this vulnerability?",
+    "options": [
+      "Zero-day",
+      "Improper input handling",
+      "Default configuration",
+      "Vulnerable software"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Using unpatched software is a classic example of a vulnerable software vector. A zero-day is a previously unknown flaw, improper input handling relates to data validation, and default configurations are insecure settings. See Lesson 8, Topic B: Application and Cloud Vulnerabilities.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 320,
+    "question": "An administrator finds that all user workstations and servers are displaying a message associated with files containing an extension of .ryk. Which of the following types of infections is present on the systems?",
+    "options": [
+      "Spyware",
+      "Trojan",
+      "Ransomware",
+      "Rootkit"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Ransomware encrypts files (often changing their extensions) and demands a payment for their release, displaying a message to the user. This matches the scenario perfectly. See Lesson 13, Topic A: Malware Attack Indicators.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 323,
+    "question": "A security analyst discovers that a user’s session ID was stolen and used by an attacker to access a web application. Which of the following attacks has occurred?",
+    "options": [
+      "Session hijacking",
+      "Cross-site scripting",
+      "SQL injection",
+      "Man-in-the-middle"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Session hijacking is the exploitation of a valid computer session to gain unauthorized access to information or services. Stealing a session ID is a primary method for this attack. See Lesson 13, Topic C: Application Attack Indicators.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 324,
+    "question": "An attacker sends a spear-phishing email to a high-level executive. Which of the following threat actors is most likely involved?",
+    "options": [
+      "Hacktivist",
+      "Script kiddie",
+      "Organized crime",
+      "Insider"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Organized crime groups are highly motivated by financial gain and often use targeted attacks like spear phishing against executives to achieve their goals. See Lesson 2, Topic A: Threat Actors.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 325,
+    "question": "Which of the following is a primary security concern for a company setting up a BYOD program?",
+    "options": [
+      "End of life",
+      "Buffer overflow",
+      "VM escape",
+      "Jailbreaking"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Jailbreaking or rooting a device bypasses built-in security controls, making it a significant risk in a BYOD environment as it can lead to data leakage and malware infections. See Lesson 10, Topic B: Mobile Device Hardening.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 326,
+    "question": "A company wants to prevent employees from installing unauthorized software on their workstations. Which of the following is the best solution?",
+    "options": [
+      "Application allowlisting",
+      "Network segmentation",
+      "Firewall rules",
+      "Antivirus software"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Application allowlisting only permits approved applications to run, effectively blocking all unauthorized software. This is the most direct control for this requirement. See Lesson 10, Topic A: Implement Endpoint Security.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 327,
+    "question": "An attacker exploits a vulnerability that allows them to read data from a protected memory space. Which of the following attacks has occurred?",
+    "options": [
+      "Buffer overflow",
+      "Integer overflow",
+      "Memory leak",
+      "DLL injection"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A memory leak is a type of resource leak that occurs when a computer program incorrectly manages memory allocations in a way that memory which is no longer needed is not released. In some cases, this can expose sensitive data. See Lesson 8, Topic A: Device and OS Vulnerabilities.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 328,
+    "question": "An administrator wants to perform a risk assessment without using proprietary company information. Which of the following methods should the administrator use to gather information?",
+    "options": [
+      "Penetration testing",
+      "Vulnerability scanning",
+      "Log analysis",
+      "Open-source intelligence"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Open-source intelligence (OSINT) involves gathering information from publicly available sources. This method does not require access to proprietary information. See Lesson 8, Topic C: Vulnerability Identification Methods.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 329,
+    "question": "During a SQL update of a database, a temporary field that was created was replaced by an attacker in order to allow access to the system. Which of the following best describes this type of vulnerability?",
+    "options": [
+      "Race condition",
+      "Improper error handling",
+      "SQL injection",
+      "Privilege escalation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A race condition occurs when a system's behavior depends on the sequence or timing of uncontrollable events. An attacker can exploit this to interfere with operations, such as replacing a temporary field during an update. See Lesson 8, Topic A: Device and OS Vulnerabilities.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 330,
+    "question": "A systems administrator is concerned users are accessing emails through a duplicate site that is not run by the company. Which of the following is used in this scenario?",
+    "options": [
+      "Phishing",
+      "DNS poisoning",
+      "Typosquatting",
+      "Watering hole"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Phishing involves creating a duplicate or fake website to trick users into entering their credentials. This perfectly matches the scenario described. See Lesson 2, Topic C: Social Engineering.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 331,
+    "question": "An attacker is able to intercept and read encrypted traffic between a user and a web server by using a compromised certificate. Which of the following attacks has occurred?",
+    "options": [
+      "SSL stripping",
+      "Downgrade attack",
+      "Man-in-the-middle",
+      "Replay attack"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A Man-in-the-Middle (MitM) attack allows an adversary to intercept, read, and modify traffic between two parties. Using a compromised certificate to decrypt traffic is a hallmark of this attack. See Lesson 13, Topic B: Network Attack Indicators.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 332,
+    "question": "Which of the following threat actors is the most likely to use large financial resources to attack critical systems located in other countries?",
+    "options": [
+      "Insider",
+      "Unskilled attacker",
+      "Nation-state",
+      "Hacktivist"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Nation-state actors are sponsored by governments and have significant resources, often targeting critical infrastructure in other countries for espionage or disruption. See Lesson 2, Topic A: Threat Actors.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 333,
+    "question": "Which of the following vulnerabilities is associated with installing software outside of a manufacturer’s approved software repository?",
+    "options": [
+      "Jailbreaking",
+      "Memory injection",
+      "Sideloading",
+      "Buffer overflow"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sideloading is the process of installing an application package from an unofficial source. This practice carries a high risk of installing malware. See Lesson 10, Topic B: Mobile Device Hardening.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 334,
+    "question": "A company’s point-of-sale kiosks were compromised, leading to the theft of customer credit card numbers. The investigation revealed that only kiosks that accessed a specific internet-facing promotional website were affected. Which of the following is the most likely attack vector?",
+    "options": [
+      "Brute-force attack on kiosk administrative accounts",
+      "Web application compromise on the promotional site",
+      "DNS poisoning redirected kiosks to a fake site",
+      "ARP poisoning caused kiosks to send copies of credentials to an attacker"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Since only kiosks accessing a specific website were affected, it points to a compromise of that web application (e.g., a card skimmer script was injected). The other options are less likely as they would have a broader or different impact. See Lesson 8, Topic B: Application and Cloud Vulnerabilities.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 335,
+    "question": "An unexpected and out-of-character email message from a Chief Executive Officer’s corporate account asked an employee to provide financial information and to change the recipient’s contact number. Which of the following attack vectors is most likely being used?",
+    "options": [
+      "Business email compromise",
+      "Phishing",
+      "Brand impersonation",
+      "Pretexting"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Business Email Compromise (BEC) is a targeted phishing attack where an attacker impersonates a high-level executive to trick an employee into transferring funds or providing sensitive information. See Lesson 2, Topic C: Social Engineering.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 336,
+    "question": "An employee fell for a phishing scam, which allowed an attacker to gain access to a company PC. The attackers scraped the PC’s memory to find other credentials. Without cracking these credentials, the attacker used them to move laterally through the corporate network. Which of the following describes this type of attack?",
+    "options": [
+      "Privilege escalation",
+      "Buffer overflow",
+      "SQL injection",
+      "Pass-the-hash"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Pass-the-hash involves an attacker capturing a hashed user credential from memory and using it to authenticate to other systems on the network without needing the plaintext password. See Lesson 13, Topic C: Application Attack Indicators.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 337,
+    "question": "A malicious update was distributed to a common software platform and disabled services at many organizations. Which of the following best describes this type of vulnerability?",
+    "options": [
+      "Insider threat",
+      "DDoS attack",
+      "Rogue employee",
+      "Supply chain"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A supply chain attack compromises a trusted third-party vendor or software, using it as a vector to distribute malware to its customers. This matches the scenario of a malicious update. See Lesson 8, Topic B: Application and Cloud Vulnerabilities.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 338,
+    "question": "A user received a text message with a link to update their banking information. The link led to a fraudulent website that looked identical to the bank’s actual site. Which of the following best describes this type of attack?",
+    "options": [
+      "Vishing",
+      "Smishing",
+      "Pharming",
+      "Spam"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Smishing is a form of phishing that uses mobile phones as the attack platform, sending fraudulent text messages to trick users. Vishing is voice phishing, and pharming redirects users via DNS manipulation. See Lesson 2, Topic C: Social Engineering.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 339,
+    "question": "A security administrator observed the following in a web server log while investigating an incident: GET /../../etc/passwd HTTP/1.1 Which of the following attacks did the security administrator most likely see?",
+    "options": [
+      "Directory traversal",
+      "Brute force",
+      "Credential replay",
+      "Privilege escalation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The use of `../` is a classic indicator of a directory traversal attack, where the attacker attempts to access files and directories stored outside the web root folder, such as `/etc/passwd`. See Lesson 13, Topic C: Application Attack Indicators.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 340,
+    "question": "During a SQL update of a database, a temporary field used as part of the update sequence was modified by an attacker before the update completed in order to allow access to the system. Which of the following best describes this type of vulnerability?",
+    "options": [
+      "Race condition",
+      "Memory injection",
+      "Malicious update",
+      "Sideloading"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "This is a time-of-check-to-time-of-use (TOCTOU) race condition, where an attacker manipulates a resource between the time it's checked and the time it's used. See Lesson 8, Topic A: Device and OS Vulnerabilities.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 342,
+    "question": "Which of the following allows an exploit to go undetected by the operating system?",
+    "options": [
+      "Encrypted payloads",
+      "Firmware vulnerabilities",
+      "Memory injection",
+      "Sideloading"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Memory injection places malicious code directly into the memory of a legitimate process, which can help it evade disk-based antivirus scanning and OS detection mechanisms. See Lesson 13, Topic A: Malware Attack Indicators.",
+    "type": "single",
+    "topic": "threats"
+  },
+  {
+    "id": 343,
+    "question": "A new employee logs into the email system for the first time and notices a message from Human Resources about onboarding. The employee hovers over a few of the links within the email and discovers that the links do not correspond to official company domains. Which of the following attack vectors is most likely being used?",
+    "options": [
+      "Business email",
+      "Social engineering",
+      "Unsecured network",
+      "Default credentials"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "This is a social engineering attack (specifically, phishing) that uses deception to trick the user into clicking a malicious link disguised as a legitimate one. See Lesson 2, Topic C: Social Engineering.",
+    "type": "single",
+    "topic": "threats"
+  }
+]

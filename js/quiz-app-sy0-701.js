@@ -296,6 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
         q.options.forEach((option, index) => {
             const li = document.createElement('li');
             const inputType = q.correct.length > 1 ? 'checkbox' : 'radio';
+            li.dataset.index = index;
             li.innerHTML = `<input type="${inputType}" name="option" value="${index}" id="opt${index}"> <label for="opt${index}">${option}</label>`;
             optionsList.appendChild(li);
         });
@@ -315,18 +316,31 @@ document.addEventListener('DOMContentLoaded', () => {
         const userAnswer = userAnswers[currentQ];
         const options = optionsList.querySelectorAll('li');
 
-        options.forEach((li, index) => {
+        // Debug current mapping and selections
+        try {
+            console.debug('[showFeedback]', { qId: q?.id, correct: q?.correct, userAnswer });
+        } catch (e) { /* no-op */ }
+
+        options.forEach((li) => {
             const input = li.querySelector('input');
+            if (!input) return;
             input.disabled = true;
-            const isCorrect = q.correct.includes(index);
-            
-            const isSelected = userAnswer ? userAnswer.includes(index) : false;
+
+            // Always compute using the input's value to avoid any DOM index mismatch
+            const valueIndex = parseInt(input.value, 10);
+
+            // Reset any prior classes defensively
+            li.classList.remove('correct', 'incorrect');
+
+            const isCorrect = Array.isArray(q.correct) && q.correct.includes(valueIndex);
+            const isSelected = Array.isArray(userAnswer) ? userAnswer.includes(valueIndex) : false;
 
             if (isCorrect) {
                 li.classList.add('correct');
             } else if (isSelected) {
                 li.classList.add('incorrect');
             }
+
             if (isSelected) {
                 input.checked = true;
             }

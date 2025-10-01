@@ -372,6 +372,199 @@
     "topic": "security-operations"
   },
   {
+    "id": 78,
+    "question": "Which of the following enables the ability to receive a consolidated report from different devices on the network?",
+    "options": [
+      "IPS",
+      "DLP",
+      "SIEM",
+      "Firewall"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SIEM (Security Information and Event Management) is correct because it aggregates, correlates, and analyzes log data from multiple network devices and systems, generating consolidated reports for security monitoring. SIEM systems collect data from firewalls, IPS, servers, applications, and other sources to provide centralized visibility. IPS detects intrusions but focuses on network protection, DLP prevents data loss, and individual firewalls protect network perimeters. Only SIEM provides the comprehensive log aggregation and reporting capabilities across diverse devices. See Lesson 12, Topic D: Security Information Management.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 79,
+    "question": "Which of the following should an organization focus on the most when making decisions about vulnerability prioritization?",
+    "options": [
+      "Exposure factor",
+      "CVSS",
+      "CVE",
+      "Industry impact"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "CVSS (Common Vulnerability Scoring System) is correct because it provides standardized, quantitative scoring for vulnerability severity based on exploitability, impact, and environmental factors. CVSS scores (0-10) enable consistent prioritization across different vulnerabilities and environments. Exposure factor is used in risk calculations but isn't specific to vulnerability prioritization, CVE provides vulnerability identifiers but not severity ratings, and industry impact is subjective and varies by context. CVSS provides the objective, standardized framework needed for effective vulnerability prioritization decisions. See Lesson 8, Topic D: Vulnerability Management.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 80,
+    "question": "An organization needs to monitor its users' activities in order to prevent insider threats. Which of the following solutions would help the organization achieve this goal?",
+    "options": [
+      "Behavioral analytics",
+      "Access control lists",
+      "Identity and access management",
+      "Network intrusion detection system"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Behavioral analytics is correct because it establishes baselines of normal user behavior and detects anomalies that could indicate insider threats, such as unusual access patterns, data exfiltration attempts, or privilege abuse. This proactive approach identifies suspicious activities that traditional controls might miss. Access control lists manage permissions but don't monitor behavior, IAM manages identities and access but doesn't analyze activity patterns, and NIDS monitors network traffic but not user behavior patterns. Behavioral analytics specifically addresses insider threat detection through activity monitoring. See Lesson 12, Topic D: User Activity Monitoring.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 82,
+    "question": "A security analyst is reviewing logs to identify the destination of command-and-control traffic originating from a compromised device within the on-premises network. Which of the following is the best log to review?",
+    "options": [
+      "IDS",
+      "Antivirus",
+      "Firewall",
+      "Application"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Firewall logs are correct because they record all network connections including source/destination IP addresses, ports, and protocols, providing the complete picture of where traffic is going. For C2 traffic analysis, firewall logs show the external destinations that compromised devices are communicating with. IDS logs focus on detecting threats but may not capture all destination information, antivirus logs track malware detection not network destinations, and application logs show software activity but not network destinations. Firewall logs provide the network visibility needed for C2 destination analysis. See Lesson 12, Topic C: Log Analysis.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 84,
+    "question": "Which of the following would most likely be deployed to obtain and analyze attacker activity and techniques?",
+    "options": [
+      "Firewall",
+      "IDS",
+      "Honeypot",
+      "Layer 3 switch"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Honeypot is correct because it's specifically designed to attract attackers and observe their methods, tactics, and techniques in a controlled environment. Honeypots appear to be valuable targets but are actually deception systems that log all attacker activities for analysis. Firewalls block traffic, IDS detects attacks but focuses on protection not analysis of techniques, and Layer 3 switches route traffic. Only honeypots are designed to deliberately engage with attackers to study their behavior and gather threat intelligence. See Lesson 7, Topic B: Deception Technologies.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 86,
+    "question": "An organization wants to implement a solution that will protect against zero-day malware while providing detailed forensic capabilities. Which of the following would be most appropriate?",
+    "options": [
+      "Antivirus",
+      "Anti-malware",
+      "Sandboxing",
+      "Heuristic analysis"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sandboxing is correct because it executes suspicious files in isolated virtual environments, detecting zero-day malware through behavioral analysis rather than signatures, while providing detailed forensic information about malware actions. Sandboxes capture complete activity logs for analysis. Traditional antivirus relies on signatures and can't detect zero-day threats, anti-malware is similar to antivirus, and heuristic analysis detects suspicious behavior but doesn't provide the detailed forensic capabilities that sandboxing offers. Sandboxing excels at zero-day detection and forensic analysis. See Lesson 9, Topic C: Advanced Threat Protection.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 88,
+    "question": "A security administrator wants to ensure that an organization's backup system can meet a four-hour recovery point objective. Which of the following backup strategies would be most appropriate?",
+    "options": [
+      "Monthly full backups",
+      "Daily incremental backups",
+      "Continuous data protection",
+      "Weekly differential backups"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Continuous data protection (CDP) is correct because it captures changes in real-time or near real-time, ensuring that data loss is minimized to meet the four-hour RPO requirement. CDP can recover to any point within the retention period with minimal data loss. Monthly full backups could result in up to a month of data loss, daily incremental backups might lose up to 24 hours of data, and weekly differential backups could lose up to a week of data. Only CDP provides the granular recovery points needed for a four-hour RPO. See Lesson 13, Topic B: Backup Strategies.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 89,
+    "question": "Which of the following is the primary reason why false negatives on a vulnerability scan should be a concern?",
+    "options": [
+      "The system has vulnerabilities that are not being detected",
+      "The time to remediate vulnerabilities that do not exist is excessive",
+      "Vulnerabilities with a lower severity will be prioritized over critical vulnerabilities",
+      "The system has vulnerabilities, and a patch has not yet been released"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "False negatives mean vulnerabilities exist but aren't detected by the scan, leaving systems exposed to potential exploitation. This is the primary concern because organizations believe they're secure when they're actually vulnerable. Option B describes false positives (detecting non-existent vulnerabilities), option C relates to prioritization issues, and option D describes zero-day vulnerabilities. False negatives create a false sense of security while real vulnerabilities remain unaddressed, making them particularly dangerous for security posture. See Lesson 8, Topic D: Vulnerability Scanning.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 93,
+    "question": "Which of the following is the best security reason for closing service ports that are not needed?",
+    "options": [
+      "To mitigate risks associated with unencrypted traffic",
+      "To eliminate false positives from a vulnerability scan",
+      "To reduce a system's attack surface",
+      "To improve a system's resource utilization"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Reducing attack surface is correct because each open port represents a potential entry point for attackers. Unnecessary services and ports increase the number of possible attack vectors and should be disabled following the principle of least functionality. While closing ports might affect encrypted/unencrypted traffic, eliminate some scan findings, and improve performance, the primary security benefit is minimizing the pathways available to attackers. Attack surface reduction is a fundamental security hardening principle. See Lesson 9, Topic B: System Hardening.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 96,
+    "question": "Which of the following options will provide the lowest RTO and RPO for a database?",
+    "options": [
+      "Snapshots",
+      "On-site backups",
+      "Journaling",
+      "Hot site"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Journaling provides the lowest RTO and RPO because it continuously records all database transactions in real-time, enabling near-instantaneous recovery with minimal data loss. Journal logs can be replayed to restore the database to the exact point before failure. Snapshots capture point-in-time state but have gaps between captures, on-site backups require restoration time and data loss between backup intervals, and hot sites provide infrastructure but still require data synchronization. Journaling enables continuous data protection with the fastest recovery. See Lesson 13, Topic B: Database Recovery.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 98,
+    "question": "A security team at a large, global company needs to reduce the cost of storing data used for performing investigations. Which of the following types of data should have its retention length reduced?",
+    "options": [
+      "Packet capture",
+      "Endpoint logs",
+      "OS security logs",
+      "Vulnerability scan"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Packet capture data should have reduced retention because it generates massive volumes of data and has high storage costs, while typically being most useful for short-term investigation needs. Full packet captures can consume terabytes daily. Endpoint logs, OS security logs, and vulnerability scans are much smaller in size and provide long-term security value for trend analysis, compliance, and historical investigations. Packet captures are primarily useful for immediate incident response and short-term forensics. See Lesson 12, Topic C: Data Retention Strategies.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 100,
+    "question": "Due to a cyberattack, a company's IT systems were not operational for an extended period of time. The company wants to measure how quickly the systems must be restored in order to minimize business disruption. Which of the following would the company most likely use?",
+    "options": [
+      "Recovery point objective",
+      "Risk appetite",
+      "Risk tolerance",
+      "Recovery time objective",
+      "Mean time between failure"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Recovery Time Objective (RTO) measures the maximum acceptable time to restore systems after an incident to minimize business disruption. RTO defines restoration speed requirements. Recovery Point Objective (RPO) measures acceptable data loss in time, risk appetite/tolerance define acceptable risk levels, and MTBF measures system reliability between failures. Only RTO specifically addresses how quickly systems must be restored to limit business impact. See Lesson 13, Topic B: Business Continuity Metrics.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
     "id": 105,
     "question": "Which of the following topics would most likely be included within an organization's SDLC?",
     "options": [
@@ -551,6 +744,22 @@
     "topic": "security-operations"
   },
   {
+    "id": 140,
+    "question": "Which of the following best describes the difference between vulnerability assessment and penetration testing?",
+    "options": [
+      "Vulnerability assessment is automated while penetration testing is manual",
+      "Vulnerability assessment identifies weaknesses while penetration testing exploits them",
+      "Vulnerability assessment is external while penetration testing is internal",
+      "Vulnerability assessment is cheaper while penetration testing is expensive"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Vulnerability assessment identifies and catalogs security weaknesses without exploiting them, while penetration testing actively exploits vulnerabilities to demonstrate real-world attack scenarios and assess actual security impact. Vulnerability assessment provides comprehensive coverage of potential issues, while penetration testing proves exploitability and business impact. Both can be automated or manual, internal or external, and costs vary by scope. The key difference is identification versus exploitation of security weaknesses. See Lesson 8, Topic A: Security Assessment Methods.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
     "id": 141,
     "question": "An organization needs to implement a solution that will protect against advanced persistent threats while providing detailed analysis of attack techniques. Which of the following would be most effective?",
     "options": [
@@ -579,6 +788,345 @@
       2
     ],
     "explanation": "Immutable backups cannot be modified, deleted, or encrypted after creation, making them highly effective against ransomware attacks. Immutable storage ensures backup integrity by preventing any changes to backup data for a specified retention period. Incremental, differential, and full backups describe backup methods but don't prevent modification - they can all be targets for ransomware encryption. Only immutable backups provide write-once, read-many protection that ransomware cannot alter. See Lesson 13, Topic B: Ransomware-Resistant Backups.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 149,
+    "question": "An organization wants to implement a control that will detect when sensitive data is being transmitted outside the organization. Which of the following would be most appropriate?",
+    "options": [
+      "Firewall",
+      "IDS",
+      "DLP",
+      "Proxy server"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Data Loss Prevention (DLP) is specifically designed to detect, monitor, and prevent sensitive data from leaving the organization through various channels including email, web uploads, and removable media. DLP uses content inspection, pattern matching, and policy enforcement to identify sensitive data in motion. Firewalls control network traffic but don't inspect content for sensitive data, IDS detects network attacks but not data exfiltration specifically, and proxy servers control web access but don't monitor for sensitive data transmission. DLP directly addresses data exfiltration detection. See Lesson 9, Topic C: Data Loss Prevention.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 150,
+    "question": "Which of the following best describes the purpose of a security baseline?",
+    "options": [
+      "To establish minimum security requirements",
+      "To document security incidents",
+      "To perform risk assessments",
+      "To train security personnel"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Security baseline establishes minimum security requirements and configuration standards that all systems must meet to ensure consistent security posture across the organization. Baselines define mandatory security controls, settings, and practices. Security baselines don't document incidents (that's incident reporting), perform risk assessments (that's risk management), or train personnel (that's security awareness). Baselines specifically set foundational security standards that serve as the minimum acceptable security level. See Lesson 9, Topic B: Security Configuration Management.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 152,
+    "question": "A security analyst needs to determine if a suspicious executable file is malicious without executing it on production systems. Which of the following environments would be most appropriate?",
+    "options": [
+      "Production environment",
+      "Development environment",
+      "Sandbox environment",
+      "Staging environment"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sandbox environment provides isolated, controlled space for analyzing suspicious files without risking production or other systems. Sandboxes contain malware execution and monitor behavior safely. Production environments must never be used for malware analysis due to risk, development and staging environments support business operations and shouldn't be exposed to potential malware. Sandboxes are specifically designed for safe malware analysis and dynamic testing of suspicious code. See Lesson 9, Topic C: Malware Analysis.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 154,
+    "question": "An administrator needs to ensure that critical security patches are applied to all systems within 72 hours of release. Which of the following would be most effective?",
+    "options": [
+      "Manual patching",
+      "Automated patch management",
+      "Vulnerability scanning",
+      "Change management"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Automated patch management systems can deploy critical security patches across all systems within the required 72-hour timeframe more reliably and efficiently than manual processes. Automation ensures consistency, speed, and comprehensive coverage. Manual patching is too slow and error-prone for large-scale deployment, vulnerability scanning identifies missing patches but doesn't apply them, and change management provides oversight but doesn't address deployment speed. Automation specifically enables meeting tight timeframe requirements. See Lesson 14, Topic B: Patch Management.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 156,
+    "question": "A company wants to ensure that employees cannot install unauthorized software on their workstations. Which of the following would be most effective?",
+    "options": [
+      "Antivirus software",
+      "Host-based firewall",
+      "Application whitelisting",
+      "Intrusion detection system"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Application whitelisting (allow listing) prevents unauthorized software installation by only permitting execution of approved applications on the whitelist. This provides proactive control over software installation and execution. Antivirus detects malware but doesn't prevent legitimate unauthorized software, host-based firewalls control network traffic not application installation, and IDS detects threats but doesn't prevent software installation. Whitelisting specifically addresses unauthorized software prevention through restrictive execution policies. See Lesson 9, Topic C: Application Control.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 157,
+    "question": "Which of the following incident response activities should be performed first when a security breach is discovered?",
+    "options": [
+      "Evidence collection",
+      "System restoration",
+      "Containment",
+      "Root cause analysis"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Containment should be performed first to prevent further damage and limit the scope of the security breach. Immediate containment stops the incident from spreading to additional systems and minimizes impact. Evidence collection is important but secondary to stopping ongoing damage, system restoration comes after containment and eradication, and root cause analysis occurs during the lessons learned phase. Containment prioritizes limiting immediate harm over investigation activities. See Lesson 13, Topic A: Incident Response Priorities.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 166,
+    "question": "Which of the following should be used to aggregate log data in order to create alerts and detect anomalous activity?",
+    "options": [
+      "SIEM",
+      "WAF",
+      "Network taps",
+      "IDS"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SIEM (Security Information and Event Management) aggregates log data from multiple sources, correlates events, and generates alerts for anomalous activity detection. SIEM provides centralized log collection, analysis, and alerting capabilities. WAF protects web applications but doesn't aggregate logs, network taps capture traffic but don't analyze logs, and IDS detects network intrusions but doesn't aggregate diverse log sources. SIEM specifically addresses comprehensive log aggregation and anomaly detection requirements. See Lesson 12, Topic D: Log Management and Analysis.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 167,
+    "question": "Which of the following provides the best protection against unwanted or insecure communications to and from a device?",
+    "options": [
+      "System hardening",
+      "Host-based firewall",
+      "Intrusion detection system",
+      "Anti-malware software"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Host-based firewall provides the best protection against unwanted communications by monitoring and controlling both inbound and outbound network traffic at the device level based on predefined rules. Host-based firewalls can block unauthorized connections, malicious communications, and data exfiltration attempts. System hardening improves overall security but doesn't specifically control communications, IDS detects threats but doesn't block communications, and anti-malware focuses on malicious software not network communications. Host-based firewalls specifically control device communications. See Lesson 9, Topic C: Endpoint Protection.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 169,
+    "question": "An employee who was working remotely lost a mobile device containing company data. Which of the following provides the best solution to prevent future data loss?",
+    "options": [
+      "MDM",
+      "DLP",
+      "FDE",
+      "EDR"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Mobile Device Management (MDM) provides comprehensive protection against mobile data loss through remote wipe capabilities, encryption enforcement, application management, and policy compliance. MDM can immediately secure lost devices by wiping corporate data remotely. DLP prevents data exfiltration but doesn't address lost devices, FDE (Full Disk Encryption) protects stored data but doesn't enable remote response, and EDR focuses on endpoint threat detection not mobile device management. MDM specifically addresses mobile device security and loss scenarios. See Lesson 10, Topic A: Mobile Device Security.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 171,
+    "question": "A company plans to secure its systems by: Preventing users from sending sensitive data over corporate email, Restricting access to potentially harmful websites. Which of the following features should the company set up? (Choose two.)",
+    "options": [
+      "DLP software",
+      "DNS filtering",
+      "File integrity monitoring",
+      "Stateful firewall",
+      "Guardrails",
+      "Antivirus signatures"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "DLP (Data Loss Prevention) software prevents users from sending sensitive data over corporate email by monitoring, detecting, and blocking the transmission of confidential information. DNS filtering restricts access to potentially harmful websites by blocking DNS queries to malicious or inappropriate domains, preventing users from reaching dangerous sites. File integrity monitoring detects file changes but doesn't prevent email data transmission, stateful firewalls control connections but don't inspect email content, guardrails are policy enforcement mechanisms, and antivirus signatures detect malware but don't prevent data transmission or web access. See Lesson 9, Topic C: Data Protection Technologies.",
+    "type": "multiple",
+    "topic": "security-operations"
+  },
+  {
+    "id": 175,
+    "question": "Which of the following definitions best describes the concept of log correlation?",
+    "options": [
+      "Combining relevant logs from multiple sources into one location",
+      "Searching and processing data to identify patterns of malicious activity",
+      "Making a record of the events that occur in the system",
+      "Analyzing the log files of the system components"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Log correlation involves searching and processing data from multiple sources to identify patterns, relationships, and sequences of events that indicate malicious activity or security incidents. Correlation analyzes disparate log entries to detect coordinated attacks, privilege escalation attempts, or other security threats that span multiple systems. Simply combining logs is aggregation not correlation, making records is logging, and analyzing individual log files is review. Correlation specifically identifies meaningful patterns across diverse log sources. See Lesson 12, Topic D: Security Event Correlation.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 177,
+    "question": "Which of the following is the best way to validate the integrity and availability of a disaster recovery site?",
+    "options": [
+      "Lead a simulated failover",
+      "Conduct a tabletop exercise",
+      "Periodically test the generators",
+      "Develop requirements for database encryption"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Leading a simulated failover provides the most comprehensive validation of disaster recovery site integrity and availability by actually testing the complete failover process, system functionality, data accessibility, and recovery procedures under realistic conditions. This validates that the site can truly support operations when needed. Tabletop exercises are discussion-based simulations that don't test actual systems, periodic generator testing only validates power systems, and developing encryption requirements addresses security but not site validation. Simulated failover provides end-to-end testing of disaster recovery capabilities. See Lesson 13, Topic B: Disaster Recovery Testing.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 186,
+    "question": "Which of the following enables the ability to receive a consolidated report from different devices on the network?",
+    "options": [
+      "IPS",
+      "DLP",
+      "SIEM",
+      "Firewall"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SIEM (Security Information and Event Management) aggregates, correlates, and analyzes log data and events from multiple network devices, servers, applications, and security tools to provide consolidated reporting and centralized visibility. SIEM systems collect data from diverse sources and generate unified reports for security monitoring and compliance. IPS detects and prevents intrusions, DLP prevents data loss, and individual firewalls provide network protection, but none offer comprehensive multi-device reporting capabilities. SIEM specifically enables consolidated reporting across diverse network devices. See Lesson 12, Topic D: Centralized Security Management.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 187,
+    "question": "Which of the following should an organization focus on the most when making decisions about vulnerability prioritization?",
+    "options": [
+      "Exposure factor",
+      "CVSS",
+      "CVE",
+      "Industry impact"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "CVSS (Common Vulnerability Scoring System) provides standardized, quantitative vulnerability severity ratings based on exploitability, impact, and environmental factors, enabling consistent prioritization decisions. CVSS scores (0-10) help organizations focus on the most critical vulnerabilities first based on objective risk assessment. Exposure factor is used in risk calculations but isn't vulnerability-specific, CVE provides vulnerability identifiers but not severity ratings, and industry impact varies by context and organization. CVSS offers the objective, standardized framework needed for effective vulnerability prioritization. See Lesson 8, Topic D: Vulnerability Risk Assessment.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 188,
+    "question": "An organization needs to monitor its users' activities in order to prevent insider threats. Which of the following solutions would help the organization achieve this goal?",
+    "options": [
+      "Behavioral analytics",
+      "Access control lists",
+      "Identity and access management",
+      "Network intrusion detection system"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Behavioral analytics establishes baselines of normal user behavior patterns and detects anomalies that could indicate insider threats, such as unusual access patterns, abnormal data downloads, or suspicious activity outside normal work hours. This proactive approach identifies risky behaviors that traditional controls might miss. Access control lists manage permissions but don't monitor behavior, IAM manages identities and access but doesn't analyze activity patterns, and NIDS monitors network traffic but not user behavior patterns. Behavioral analytics specifically addresses insider threat detection through activity monitoring. See Lesson 12, Topic D: User Activity Monitoring.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 190,
+    "question": "A security analyst is reviewing logs to identify the destination of command-and-control traffic originating from a compromised device within the on-premises network. Which of the following is the best log to review?",
+    "options": [
+      "IDS",
+      "Antivirus",
+      "Firewall",
+      "Application"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Firewall logs provide the most comprehensive view of network connections including source and destination IP addresses, ports, protocols, and connection details needed to identify C2 traffic destinations. Firewall logs record all permitted and denied network connections, showing exactly where compromised devices are attempting to communicate. IDS logs focus on detected threats but may not capture all destination details, antivirus logs track malware detection but not network destinations, and application logs show software activity but not network communications. Firewall logs specifically provide network destination visibility. See Lesson 12, Topic C: Network Traffic Analysis.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 192,
+    "question": "Which of the following would most likely be deployed to obtain and analyze attacker activity and techniques?",
+    "options": [
+      "Firewall",
+      "IDS",
+      "Honeypot",
+      "Layer 3 switch"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Honeypots are specifically designed to attract attackers and observe their methods, tactics, and techniques in a controlled environment. Honeypots appear as valuable targets but are actually instrumented systems that log all attacker activities for analysis and threat intelligence gathering. Firewalls block unauthorized traffic, IDS detects and alerts on intrusions but focuses on protection, and Layer 3 switches route network traffic. Only honeypots are intentionally designed to engage with attackers for the purpose of studying their behavior and gathering intelligence. See Lesson 7, Topic B: Deception and Threat Intelligence.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 194,
+    "question": "An organization wants to implement a solution that will protect against zero-day malware while providing detailed forensic capabilities. Which of the following would be most appropriate?",
+    "options": [
+      "Antivirus",
+      "Anti-malware",
+      "Sandboxing",
+      "Heuristic analysis"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sandboxing provides protection against zero-day malware by executing suspicious files in isolated virtual environments where their behavior can be analyzed without risking production systems. Sandboxes detect previously unknown threats through behavioral analysis rather than signature matching, and they provide detailed forensic information about malware actions, network communications, and system modifications. Traditional antivirus and anti-malware rely on signatures and can't detect zero-day threats, while heuristic analysis detects suspicious behavior but doesn't provide the detailed forensic capabilities that sandboxing offers. See Lesson 9, Topic C: Advanced Malware Protection.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 196,
+    "question": "A security administrator wants to ensure that an organization's backup system can meet a four-hour recovery point objective. Which of the following backup strategies would be most appropriate?",
+    "options": [
+      "Monthly full backups",
+      "Daily incremental backups",
+      "Continuous data protection",
+      "Weekly differential backups"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Continuous Data Protection (CDP) captures changes in real-time or near real-time, ensuring minimal data loss that can meet a four-hour RPO requirement. CDP allows recovery to any point within the retention period with granular precision. Monthly full backups could result in up to a month of data loss, daily incremental backups might lose up to 24 hours of data, and weekly differential backups could lose up to a week of data. Only CDP provides the frequent capture intervals needed to limit data loss to four hours or less. See Lesson 13, Topic B: Recovery Point Objectives.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 197,
+    "question": "Which of the following is the primary reason why false negatives on a vulnerability scan should be a concern?",
+    "options": [
+      "The system has vulnerabilities that are not being detected",
+      "The time to remediate vulnerabilities that do not exist is excessive",
+      "Vulnerabilities with a lower severity will be prioritized over critical vulnerabilities",
+      "The system has vulnerabilities, and a patch has not yet been released"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "False negatives mean that actual vulnerabilities exist on systems but are not being detected by the vulnerability scanner, leaving the organization exposed to potential exploitation while believing they are secure. This creates a dangerous false sense of security where real threats remain unaddressed. Option B describes false positives (wasted time on non-existent vulnerabilities), option C relates to prioritization issues, and option D describes zero-day vulnerabilities. False negatives are particularly concerning because they represent missed security weaknesses that could be exploited. See Lesson 8, Topic D: Vulnerability Scanning Accuracy.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 201,
+    "question": "Which of the following is the best security reason for closing service ports that are not needed?",
+    "options": [
+      "To mitigate risks associated with unencrypted traffic",
+      "To eliminate false positives from a vulnerability scan",
+      "To reduce a system's attack surface",
+      "To improve a system's resource utilization"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Reducing attack surface is the primary security benefit of closing unnecessary ports because each open port represents a potential entry point for attackers. Following the principle of least functionality, unused services and ports should be disabled to minimize the number of possible attack vectors. While closing ports might affect encrypted/unencrypted traffic, reduce scan findings, and improve performance, the fundamental security benefit is minimizing the pathways available to attackers. Attack surface reduction is a core security hardening principle. See Lesson 9, Topic B: System Hardening Principles.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -989,6 +1537,22 @@
       2
     ],
     "explanation": "Host-based antivirus provides the most cost-effective virus prevention by protecting individual systems directly at the endpoint level, offering comprehensive protection against various malware types including viruses, with manageable licensing and deployment costs. Email security gateways protect only email-based threats, network-based antivirus may miss encrypted or internal threats, and application sandboxing is more expensive and complex. Host-based antivirus provides broad, cost-effective protection with established management practices and reasonable licensing costs. See Lesson 9, Topic C: Cost-Effective Endpoint Protection.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 292,
+    "question": "A security administrator wants to ensure that backup data cannot be modified or deleted by ransomware. Which of the following backup strategies would be most effective?",
+    "options": [
+      "Incremental backups",
+      "Differential backups",
+      "Immutable backups",
+      "Full backups"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Immutable backups cannot be modified, deleted, or encrypted after creation, making them highly effective against ransomware attacks that attempt to encrypt or destroy backup data. Immutable storage technologies provide write-once, read-many (WORM) functionality that prevents any changes to backup data for specified retention periods. Incremental, differential, and full backups describe backup methods but don't inherently prevent modification by malware. Only immutable backups provide the anti-tampering protection needed against ransomware targeting backup systems. See Lesson 13, Topic B: Ransomware-Resistant Backup Strategies.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -1748,6 +2312,22 @@
     "topic": "security-operations"
   },
   {
+    "id": 428,
+    "question": "An organization wants to implement a solution that can automatically patch security vulnerabilities on endpoints. Which of the following technologies would be most appropriate?",
+    "options": [
+      "Vulnerability scanner",
+      "Patch management system",
+      "Configuration management",
+      "Endpoint detection and response"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Patch management system is most appropriate for automatically patching security vulnerabilities on endpoints because these systems provide centralized deployment, scheduling, and monitoring of security patches across multiple endpoints while ensuring compatibility testing and rollback capabilities. Patch management systems automate the entire patching lifecycle from identification to deployment. Vulnerability scanners identify weaknesses but don't deploy patches, configuration management maintains system configurations but focuses on broader settings, and EDR detects and responds to threats but doesn't deploy patches. Patch management systems specifically address automated vulnerability remediation through systematic patch deployment. See Lesson 8, Topic D: Automated Vulnerability Remediation.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
     "id": 430,
     "question": "A company implements a solution that requires users to solve a visual puzzle before submitting web forms. Which of the following security measures does this represent?",
     "options": [
@@ -2036,6 +2616,22 @@
     "topic": "security-operations"
   },
   {
+    "id": 479,
+    "question": "Which of the following best describes the primary difference between a vulnerability assessment and a penetration test?",
+    "options": [
+      "Vulnerability assessments are automated, while penetration tests are manual",
+      "Vulnerability assessments identify weaknesses, while penetration tests exploit them",
+      "Vulnerability assessments are internal, while penetration tests are external",
+      "Vulnerability assessments are less expensive than penetration tests"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Vulnerability assessments identify and catalog security weaknesses, misconfigurations, and potential vulnerabilities through scanning and analysis, while penetration tests actively exploit identified vulnerabilities to demonstrate real-world attack scenarios and assess actual security impact. The fundamental difference is identification versus exploitation. Both can use automated and manual techniques, both can be performed internally or externally, and cost varies by scope. Vulnerability assessments focus on finding potential problems while penetration testing proves that vulnerabilities can be exploited and determines the extent of compromise possible through actual attack simulation. See Lesson 8, Topic A: Security Testing Methodology Differences.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
     "id": 485,
     "question": "Which of the following incident response phases focuses on preventing similar incidents from occurring in the future?",
     "options": [
@@ -2116,6 +2712,22 @@
     "topic": "security-operations"
   },
   {
+    "id": 498,
+    "question": "An organization wants to implement a solution that can automatically isolate infected devices from the network while still allowing access to remediation resources. Which of the following concepts best describes this approach?",
+    "options": [
+      "Air gapping",
+      "Network quarantine",
+      "VLAN segmentation",
+      "DMZ deployment"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Network quarantine best describes automatically isolating infected devices while maintaining controlled access to remediation resources because quarantine networks provide restricted connectivity that prevents lateral movement and further infection while enabling access to security updates, antivirus definitions, and remediation tools needed for device cleanup. Quarantine balances containment with recovery needs. Air gapping provides complete isolation preventing remediation access, VLAN segmentation divides networks but may not provide the specific access controls needed, and DMZ deployment creates perimeter zones but isn't designed for device remediation. Network quarantine specifically enables secure device remediation through controlled isolation. See Lesson 9, Topic C: Infected Device Containment Strategies.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
     "id": 502,
     "question": "An organization wants to implement a backup solution that provides both rapid recovery and minimal storage requirements. Which of the following technologies would be most appropriate?",
     "options": [
@@ -2176,6 +2788,22 @@
       1
     ],
     "explanation": "System isolation is typically performed during the containment phase of incident response because containment focuses on preventing incident spread and limiting damage by isolating affected systems, disconnecting compromised devices, and implementing barriers to prevent lateral movement or further compromise. Containment prioritizes stopping incident progression. Evidence collection occurs during investigation phases, vulnerability patching happens during recovery, and lessons learned documentation occurs in post-incident analysis. System isolation specifically addresses the primary containment objective of limiting incident scope and preventing further damage through strategic disconnection and isolation of compromised resources. See Lesson 13, Topic A: Incident Containment Strategies.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 510,
+    "question": "An organization wants to implement a solution that can automatically respond to security incidents by executing predefined workflows. Which of the following technologies would be most appropriate?",
+    "options": [
+      "Security information and event management",
+      "Security orchestration, automation, and response",
+      "Intrusion detection system",
+      "Vulnerability management platform"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Security Orchestration, Automation, and Response (SOAR) is most appropriate for automatically executing predefined workflows in response to security incidents because SOAR platforms integrate with security tools to automate incident response processes, orchestrate multi-tool responses, and execute playbooks that define step-by-step response procedures for different incident types. SOAR enables comprehensive incident response automation. SIEM correlates events but typically requires manual response, IDS detects intrusions but doesn't provide automated response workflows, and vulnerability management focuses on weakness identification. SOAR specifically provides the orchestration and automation capabilities needed for executing predefined incident response workflows across multiple security tools. See Lesson 12, Topic D: Incident Response Automation Platforms.",
     "type": "single",
     "topic": "security-operations"
   },
@@ -3120,6 +3748,22 @@
       0
     ],
     "explanation": "Centralized logging is most important for ensuring incident response teams can quickly access critical system information during emergencies because centralized logging aggregates system logs, security events, and operational data from across the infrastructure into searchable repositories that enable rapid information retrieval and analysis during time-critical incident response activities. Centralized logging provides comprehensive system visibility. Documentation management organizes procedures, communication systems enable team coordination, and backup procedures protect data, but centralized logging specifically provides the system information and event data that incident response teams need to understand system states, attack progression, and security events during emergency response situations. See Lesson 12, Topic C: Emergency Information Access Systems.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 661,
+    "question": "An organization wants to implement a solution that can automatically respond to security incidents by updating firewall rules and blocking malicious traffic. Which of the following would be most appropriate?",
+    "options": [
+      "Security information and event management",
+      "Security orchestration, automation, and response",
+      "Intrusion prevention system",
+      "Threat intelligence platform"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Security Orchestration, Automation, and Response (SOAR) is most appropriate for automatically responding to security incidents by updating firewall rules and blocking malicious traffic because SOAR platforms integrate with security tools to execute automated response workflows, orchestrate multi-tool responses, and implement security policy changes across infrastructure without requiring manual intervention. SOAR enables comprehensive automated incident response. SIEM correlates events but typically requires manual response, IPS can block traffic but doesn't orchestrate broader responses, and threat intelligence platforms provide indicators but need orchestration for automated response. SOAR specifically provides the orchestration and automation needed for coordinated security incident response across multiple systems. See Lesson 12, Topic D: Automated Security Response Coordination.",
     "type": "single",
     "topic": "security-operations"
   },

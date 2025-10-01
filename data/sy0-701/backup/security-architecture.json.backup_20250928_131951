@@ -310,6 +310,102 @@
     "topic": "security-architecture"
   },
   {
+    "id": 72,
+    "question": "A malicious insider from the marketing team alters records and transfers company funds to a personal account. Which of the following methods would be the best way to secure company records in the future?",
+    "options": [
+      "Permission restrictions",
+      "Hashing",
+      "Input validation",
+      "Access control list"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Permission restrictions are correct because they implement the principle of least privilege, ensuring users only have access to resources necessary for their job functions. This prevents unauthorized access to financial systems by marketing employees. Hashing protects data integrity but doesn't prevent authorized users from making unauthorized changes, input validation prevents malicious input but not authorized user abuse, and ACLs are one type of permission restriction but the broader concept of permission restrictions encompasses all access limitation methods. Restricting permissions based on job roles prevents insider abuse. See Lesson 4, Topic C: Access Control Models.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 74,
+    "question": "A systems administrator successfully configures VPN access to a cloud environment. Which of the following capabilities should the administrator use to best facilitate remote administration?",
+    "options": [
+      "A jump host in the shared services security zone",
+      "An SSH server within the corporate LAN",
+      "A reverse proxy on the firewall",
+      "An MDM solution with conditional access"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Jump host in shared services security zone is correct because it provides secure, centralized access to cloud resources while maintaining network segmentation and monitoring capabilities. Jump hosts act as secure gateways that log all administrative access and provide controlled entry points to sensitive environments. SSH server in corporate LAN doesn't address cloud access, reverse proxy handles web traffic not administrative access, and MDM manages mobile devices not administrative connections. Jump hosts are specifically designed for secure remote administration. See Lesson 5, Topic A: Secure Network Design.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 83,
+    "question": "When trying to access an internal website, an employee reports that a prompt displays, stating that the site is insecure. Which of the following certificate types is the site most likely using?",
+    "options": [
+      "Wildcard",
+      "Root of trust",
+      "Third-party",
+      "Self-signed"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Self-signed certificate is correct because browsers display security warnings when encountering certificates that aren't issued by trusted Certificate Authorities. Self-signed certificates are created and signed by the same entity that uses them, lacking third-party validation. Wildcard certificates cover multiple subdomains but can be properly trusted, root of trust certificates are CA certificates, and third-party certificates are issued by trusted CAs. Only self-signed certificates consistently trigger browser security warnings about untrusted sites. See Lesson 11, Topic B: Digital Certificates.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 85,
+    "question": "A company is migrating from one authentication system to another. During the migration, the company wants to ensure that users can authenticate using either system. Which of the following best describes this requirement?",
+    "options": [
+      "Password synchronization",
+      "Identity federation",
+      "Multi-factor authentication",
+      "Single sign-on"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Identity federation is correct because it enables authentication across different systems and domains, allowing users to access resources using credentials from either authentication system during migration. Federation creates trust relationships between identity providers. Password synchronization keeps passwords in sync but doesn't enable cross-system authentication, MFA adds authentication factors but doesn't address system interoperability, and SSO provides single login experience but not cross-system compatibility. Federation specifically enables authentication across multiple systems. See Lesson 4, Topic C: Identity Federation.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 91,
+    "question": "A company that has a large IT operation is looking to better control, standardize, and lower the time required to build new servers. Which of the following architectures will best achieve the company's objectives?",
+    "options": [
+      "IoT",
+      "IaC",
+      "IaaS",
+      "ICS"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Infrastructure as Code (IaC) is correct because it defines infrastructure using code templates, enabling automated, consistent, and rapid server deployment. IaC standardizes configurations, reduces manual errors, and significantly decreases build time through automation. IoT refers to Internet of Things devices, IaaS is cloud infrastructure services, and ICS is Industrial Control Systems. Only IaC specifically addresses automated infrastructure provisioning with the control, standardization, and speed benefits the company needs. See Lesson 14, Topic C: Infrastructure Automation.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 95,
+    "question": "A malicious actor conducted a brute-force attack on a company's web servers and eventually gained access to the company's customer information database. Which of the following is the most effective way to prevent similar attacks?",
+    "options": [
+      "Regular patching of servers",
+      "Web application firewalls",
+      "Multifactor authentication",
+      "Enabling encryption of customer data"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Multifactor authentication is correct because it directly prevents brute-force attacks by requiring additional authentication factors beyond passwords. Even if passwords are compromised through brute force, MFA blocks unauthorized access. Regular patching addresses software vulnerabilities but not authentication attacks, WAFs protect against application-layer attacks but may not stop all brute-force attempts, and encryption protects data but doesn't prevent unauthorized access. MFA specifically counters brute-force authentication attacks by adding layers that can't be easily brute-forced. See Lesson 4, Topic B: Authentication Security.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
     "id": 104,
     "question": "An organization recently started hosting a new service that customers access through a web portal. A security engineer needs to add to the existing security devices a new solution to protect this new service. Which of the following is the engineer most likely to deploy?",
     "options": [
@@ -370,6 +466,22 @@
       0
     ],
     "explanation": "IPSec (Internet Protocol Security) is specifically designed for securing IP communications by providing encryption, authentication, and integrity for network traffic within private clouds and between network segments. It operates at the network layer to protect all traffic. SHA-1 is a deprecated hashing algorithm, RSA is an asymmetric encryption algorithm that requires additional protocols for communication, and TGT (Ticket Granting Ticket) is part of Kerberos authentication. IPSec provides comprehensive network-level security for private cloud communications. See Lesson 5, Topic C: Network Security Protocols.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 120,
+    "question": "A systems administrator needs to prevent malware from entering an isolated environment while allowing the environment to access a file share. Which of the following would be the most effective solution?",
+    "options": [
+      "Air gap",
+      "Network segmentation",
+      "DMZ",
+      "Data diode"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Data diode allows one-way communication, enabling the isolated environment to access file shares while preventing any return communication that could introduce malware. Data diodes physically enforce unidirectional data flow. Air gap completely isolates systems preventing file share access, network segmentation allows bidirectional communication, and DMZ provides controlled access but allows two-way communication. Data diodes specifically address the requirement for controlled access while maintaining security isolation. See Lesson 5, Topic A: Network Isolation Technologies.",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -454,6 +566,22 @@
     "topic": "security-architecture"
   },
   {
+    "id": 134,
+    "question": "Which of the following is the primary benefit of implementing network segmentation?",
+    "options": [
+      "Improved network performance",
+      "Reduced hardware costs",
+      "Limited blast radius of security incidents",
+      "Simplified network management"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The primary security benefit of network segmentation is limiting the blast radius of security incidents by containing breaches within specific network segments, preventing lateral movement and minimizing impact. Segmentation isolates compromised systems from critical assets. While segmentation may improve performance by reducing broadcast domains and can simplify management through logical organization, the primary security objective is containment and isolation of threats. Blast radius limitation is the fundamental security principle behind network segmentation. See Lesson 5, Topic A: Network Security Design.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
     "id": 136,
     "question": "Which of the following cloud service models gives the customer the most control over the operating system and applications?",
     "options": [
@@ -514,6 +642,278 @@
       1
     ],
     "explanation": "VPN (Virtual Private Network) creates encrypted tunnels that allow remote workers to securely access internal resources without exposing those resources directly to the internet. VPN extends the internal network securely to remote locations. DMZ exposes services to the internet, proxy servers control web access but don't provide secure remote access, and load balancers distribute traffic but don't provide secure remote connectivity. VPN specifically addresses secure remote access to internal resources. See Lesson 5, Topic C: Remote Access Technologies.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 146,
+    "question": "Which of the following protocols is most commonly used for secure file transfer over the internet?",
+    "options": [
+      "FTP",
+      "TFTP",
+      "SFTP",
+      "HTTP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SFTP (SSH File Transfer Protocol) provides secure file transfer by encrypting both authentication credentials and file data during transmission. SFTP operates over SSH connections ensuring confidentiality and integrity. FTP transmits data in cleartext making it insecure, TFTP is a simplified protocol without authentication or encryption, and HTTP is for web content not file transfer. SFTP specifically addresses secure file transfer requirements with encryption and authentication. See Lesson 5, Topic C: Secure File Transfer Protocols.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 148,
+    "question": "Which of the following is the most important consideration when implementing a zero trust architecture?",
+    "options": [
+      "Network perimeter security",
+      "Continuous verification of trust",
+      "Single sign-on implementation",
+      "Centralized authentication"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Continuous verification of trust is the core principle of zero trust architecture, embodying 'never trust, always verify.' Zero trust requires ongoing validation of users, devices, and access requests regardless of location or previous authentication. Network perimeter security contradicts zero trust principles, SSO and centralized authentication are implementation components but not the fundamental principle. Continuous verification ensures that trust is never assumed and always validated in real-time. See Lesson 6, Topic B: Zero Trust Principles.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 155,
+    "question": "Which of the following is the primary difference between symmetric and asymmetric encryption?",
+    "options": [
+      "Speed of encryption",
+      "Key management complexity",
+      "Use of same or different keys",
+      "Strength of encryption"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The primary difference is that symmetric encryption uses the same key for both encryption and decryption, while asymmetric encryption uses different keys (public/private key pairs). This fundamental difference affects all other characteristics. While symmetric is typically faster, asymmetric has more complex key management, and both can provide strong encryption, the core distinction is the use of same versus different keys for encryption and decryption operations. See Lesson 11, Topic A: Encryption Types.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 158,
+    "question": "An organization wants to implement a solution that will automatically block suspicious IP addresses based on threat intelligence feeds. Which of the following would be most appropriate?",
+    "options": [
+      "Stateful firewall",
+      "Next-generation firewall",
+      "Proxy server",
+      "Network access control"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Next-Generation Firewall (NGFW) integrates threat intelligence feeds and can automatically block suspicious IP addresses based on real-time threat data, reputation scores, and dynamic blacklists. NGFW combines traditional firewall capabilities with advanced threat detection. Stateful firewalls track connections but don't typically integrate threat intelligence, proxy servers control web access but don't provide IP blocking based on threat feeds, and NAC controls device access but doesn't block suspicious IPs. NGFW specifically provides threat intelligence integration. See Lesson 5, Topic B: Advanced Firewall Capabilities.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 159,
+    "question": "Which of the following best describes the concept of non-repudiation?",
+    "options": [
+      "Ensuring data confidentiality",
+      "Preventing unauthorized access",
+      "Proving the origin of data",
+      "Maintaining data integrity"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Non-repudiation proves the origin of data and prevents the sender from denying they created or sent the information. Digital signatures provide non-repudiation by cryptographically linking the sender to the message. Non-repudiation doesn't ensure confidentiality (that's encryption), prevent unauthorized access (that's access controls), or maintain integrity (that's hashing/checksums). Non-repudiation specifically addresses proof of origin and prevents denial of authorship or transmission. See Lesson 11, Topic C: Digital Signature Properties.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 161,
+    "question": "A security administrator wants to ensure that users can only access applications that are approved for their specific job role. Which of the following access control models would be most appropriate?",
+    "options": [
+      "Discretionary access control",
+      "Mandatory access control",
+      "Role-based access control",
+      "Attribute-based access control"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Role-Based Access Control (RBAC) grants access to applications and resources based on user job roles, ensuring users only access what's necessary for their specific position. RBAC simplifies management by grouping permissions around job functions. Discretionary access control lets owners set permissions, mandatory access control uses security labels and classifications, and attribute-based access control uses multiple attributes for decisions. RBAC specifically aligns access permissions with job roles and responsibilities. See Lesson 4, Topic C: Access Control Models.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 163,
+    "question": "An organization needs to implement a solution that will provide secure remote access for contractors who need temporary access to specific resources. Which of the following would be most appropriate?",
+    "options": [
+      "VPN with permanent access",
+      "Jump server with time-limited access",
+      "Direct network connection",
+      "Cloud-based proxy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Jump server with time-limited access provides secure, controlled remote access for contractors with temporal restrictions and specific resource limitations. Jump servers act as secure gateways that log all access and can automatically expire contractor permissions. VPN with permanent access doesn't address temporary needs, direct network connections lack security controls, and cloud proxies don't provide comprehensive access management. Jump servers specifically address temporary, controlled access requirements for external contractors. See Lesson 4, Topic C: Temporary Access Management.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 165,
+    "question": "An organization issued new laptops to all employees and wants to provide web filtering both in and out of the office without configuring additional access to the network. Which of the following types of web filtering should a systems administrator configure?",
+    "options": [
+      "Agent-based",
+      "Centralized proxy",
+      "URL scanning",
+      "Content categorization"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Agent-based web filtering installs software directly on laptops that enforces filtering policies regardless of network location, providing consistent protection both in and out of the office without requiring network infrastructure changes. Centralized proxy requires network connectivity to the proxy server, URL scanning and content categorization are filtering techniques not deployment methods. Agent-based filtering specifically addresses the requirement for location-independent protection without additional network configuration. See Lesson 5, Topic B: Web Filtering Solutions.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 168,
+    "question": "Which of the following is the primary purpose of a service that tracks log-ins and time spent using the service?",
+    "options": [
+      "Availability",
+      "Accounting",
+      "Authentication",
+      "Authorization"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Accounting (the third 'A' in AAA) tracks and records user activities including log-ins, session duration, and resource usage for auditing, billing, and compliance purposes. Accounting creates audit trails of user behavior. Availability refers to system uptime, authentication verifies user identity, and authorization determines access permissions. Only accounting specifically involves tracking and recording user activity over time for monitoring and audit purposes. See Lesson 4, Topic A: AAA Framework.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 173,
+    "question": "Which of the following cryptographic methods is preferred for securing communication with limited computing resources?",
+    "options": [
+      "Hashing algorithm",
+      "Public key infrastructure",
+      "Symmetric encryption",
+      "Elliptic curve cryptography"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Elliptic Curve Cryptography (ECC) is preferred for limited computing resources because it provides the same security level as RSA with significantly smaller key sizes, reducing computational overhead and memory requirements. ECC enables strong encryption on resource-constrained devices like IoT sensors and mobile devices. Hashing algorithms provide integrity but not encryption, PKI involves complex certificate management, and symmetric encryption requires secure key distribution mechanisms. ECC specifically addresses the need for strong security with minimal computational requirements. See Lesson 11, Topic A: Efficient Cryptography.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 174,
+    "question": "A network administrator wants to ensure that network traffic is highly secure while in transit. Which of the following actions best describes the actions the network administrator should take?",
+    "options": [
+      "Ensure that NAC is enforced on all network segments, and confirm that firewalls have updated policies to block unauthorized traffic",
+      "Ensure only TLS and other encrypted protocols are selected for use on the network, and only permit authorized traffic via secure protocols",
+      "Configure the perimeter IPS to block inbound HTTPS directory traversal traffic, and verify that signatures are updated on a daily basis",
+      "Ensure the EDR software monitors for unauthorized applications that could be used by threat actors, and configure alerts for the security team"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ensuring only TLS and other encrypted protocols are used, while permitting only authorized traffic via secure protocols, directly addresses network traffic security in transit. This approach mandates encryption for all network communications and restricts traffic to approved secure protocols. NAC and firewalls provide access control but don't guarantee traffic encryption, IPS focuses on threat detection rather than ensuring encryption, and EDR monitors endpoints but doesn't secure network traffic. Only encrypted protocols ensure data confidentiality and integrity during transmission. See Lesson 11, Topic B: Secure Network Communications.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 176,
+    "question": "An enterprise security team is researching a new security architecture to better protect the company's networks and applications against the latest cyberthreats. The company has a fully remote workforce. The solution should be highly redundant and enable users to connect to a VPN with an integrated, software-based firewall. Which of the following solutions meets these requirements?",
+    "options": [
+      "IPS",
+      "SIEM",
+      "SASE",
+      "CASB"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SASE (Secure Access Service Edge) combines network and security functions into a cloud-delivered service that includes VPN capabilities, software-based firewalls, secure web gateways, and other security services. SASE is designed for remote workforces and provides redundant, cloud-based security architecture. IPS provides intrusion prevention but not comprehensive remote access, SIEM collects and analyzes security events, and CASB secures cloud applications but doesn't provide VPN and firewall integration. SASE specifically addresses converged networking and security for remote users. See Lesson 6, Topic C: SASE Architecture.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 179,
+    "question": "A malicious insider from the marketing team alters records and transfers company funds to a personal account. Which of the following methods would be the best way to secure company records in the future?",
+    "options": [
+      "Permission restrictions",
+      "Hashing",
+      "Input validation",
+      "Access control list"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Permission restrictions implementing the principle of least privilege would prevent marketing employees from accessing financial systems and records they don't need for their job functions. Restricting permissions based on job roles prevents insider abuse by limiting access to only necessary resources. Hashing protects data integrity but doesn't prevent authorized users from making unauthorized changes, input validation prevents malicious input but not insider misuse, and ACLs are one method of implementing permission restrictions. Comprehensive permission restrictions address the root cause of insider threat access. See Lesson 4, Topic C: Insider Threat Mitigation.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 181,
+    "question": "A systems administrator successfully configures VPN access to a cloud environment. Which of the following capabilities should the administrator use to best facilitate remote administration?",
+    "options": [
+      "A jump host in the shared services security zone",
+      "An SSH server within the corporate LAN",
+      "A reverse proxy on the firewall",
+      "An MDM solution with conditional access"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A jump host in the shared services security zone provides secure, controlled access to cloud resources while maintaining proper network segmentation and access logging. Jump hosts serve as secure gateways that administrators connect to first, then access target systems, providing centralized access control and monitoring. SSH servers within corporate LAN don't address cloud access, reverse proxies handle web traffic not administrative access, and MDM manages mobile devices not administrative connections. Jump hosts specifically facilitate secure remote administration with proper controls. See Lesson 5, Topic A: Secure Remote Access.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 191,
+    "question": "When trying to access an internal website, an employee reports that a prompt displays, stating that the site is insecure. Which of the following certificate types is the site most likely using?",
+    "options": [
+      "Wildcard",
+      "Root of trust",
+      "Third-party",
+      "Self-signed"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Self-signed certificates generate browser security warnings because they aren't issued by trusted Certificate Authorities and can't be automatically validated through established trust chains. Browsers flag self-signed certificates as potentially insecure because there's no third-party verification of the certificate's legitimacy. Wildcard certificates cover multiple subdomains but can be properly trusted if issued by trusted CAs, root of trust certificates are CA certificates themselves, and third-party certificates are issued by trusted CAs. Only self-signed certificates consistently trigger browser security warnings. See Lesson 11, Topic B: Certificate Trust Issues.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 193,
+    "question": "A company is migrating from one authentication system to another. During the migration, the company wants to ensure that users can authenticate using either system. Which of the following best describes this requirement?",
+    "options": [
+      "Password synchronization",
+      "Identity federation",
+      "Multi-factor authentication",
+      "Single sign-on"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Identity federation enables authentication across different systems and domains by creating trust relationships between identity providers, allowing users to authenticate with either system during migration periods. Federation specifically addresses cross-system authentication compatibility. Password synchronization keeps passwords in sync but doesn't enable cross-system authentication, MFA adds authentication factors but doesn't address system interoperability, and SSO provides seamless login experience but not necessarily cross-system compatibility. Federation specifically enables authentication across multiple independent systems. See Lesson 4, Topic C: Authentication Integration.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 199,
+    "question": "A company that has a large IT operation is looking to better control, standardize, and lower the time required to build new servers. Which of the following architectures will best achieve the company's objectives?",
+    "options": [
+      "IoT",
+      "IaC",
+      "IaaS",
+      "ICS"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Infrastructure as Code (IaC) enables automated, consistent, and rapid server deployment through code-defined infrastructure templates, achieving all objectives: better control through version-controlled templates, standardization through consistent configurations, and reduced build time through automation. IaC treats infrastructure like software development with version control, testing, and automated deployment. IoT refers to Internet of Things devices, IaaS provides cloud infrastructure services but doesn't address automation, and ICS refers to Industrial Control Systems. Only IaC specifically addresses automated infrastructure provisioning and management. See Lesson 14, Topic C: Infrastructure Automation.",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1391,6 +1791,22 @@
     "topic": "security-architecture"
   },
   {
+    "id": 378,
+    "question": "Which of the following security controls would be most effective in preventing SQL injection attacks?",
+    "options": [
+      "Input validation",
+      "Output encoding",
+      "Session management",
+      "Access control"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Input validation is the most effective security control for preventing SQL injection attacks because it validates, sanitizes, and filters user input before processing, preventing malicious SQL code from being executed by the database. Proper input validation includes parameterized queries, stored procedures, and input sanitization that neutralize SQL metacharacters. Output encoding prevents XSS attacks, session management handles user sessions, and access control manages permissions, but input validation specifically addresses the root cause of SQL injection by ensuring malicious SQL commands cannot be injected through user input fields. See Lesson 6, Topic A: SQL Injection Prevention Techniques.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
     "id": 380,
     "question": "Which of the following best describes the primary purpose of a certificate authority (CA)?",
     "options": [
@@ -1615,6 +2031,22 @@
     "topic": "security-architecture"
   },
   {
+    "id": 433,
+    "question": "Which of the following protocols is commonly used for secure time synchronization?",
+    "options": [
+      "NTP",
+      "SNTP",
+      "NTS",
+      "TFTP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Network Time Security (NTS) is commonly used for secure time synchronization because it provides authenticated and encrypted time synchronization by extending NTP with cryptographic security mechanisms that protect against time spoofing attacks and ensure accurate, trustworthy time information. NTS addresses security vulnerabilities in traditional time protocols. Basic NTP and SNTP lack authentication and encryption making them vulnerable to manipulation, while TFTP is a file transfer protocol unrelated to time synchronization. NTS specifically adds security features to time synchronization protocols to prevent time-based attacks and ensure chronological integrity. See Lesson 5, Topic B: Secure Time Synchronization Protocols.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
     "id": 437,
     "question": "Which of the following encryption methods is most suitable for encrypting large amounts of data efficiently?",
     "options": [
@@ -1691,6 +2123,22 @@
       0
     ],
     "explanation": "Biometric authentication would be most effective in preventing unauthorized physical access to data centers because biometrics verify unique physical characteristics (fingerprints, iris scans, facial recognition) that cannot be easily duplicated, shared, or stolen, providing the highest level of identity assurance for physical access control. Biometric systems prevent unauthorized access even if credentials are compromised. Badge readers can be bypassed with stolen or cloned cards, security cameras provide monitoring but not access prevention, and motion detectors provide detection but not access control. Biometric authentication specifically provides the strongest identity verification for physical access control in high-security environments. See Lesson 7, Topic A: Physical Access Control Technologies.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 461,
+    "question": "Which of the following cloud security responsibilities typically belongs to the customer regardless of the service model?",
+    "options": [
+      "Physical security",
+      "Network infrastructure",
+      "Data classification",
+      "Hypervisor security"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Data classification typically belongs to the customer regardless of cloud service model (IaaS, PaaS, SaaS) because organizations maintain responsibility for understanding, categorizing, and protecting their own data according to sensitivity levels and business requirements. Data classification enables appropriate security controls and compliance measures. Physical security, network infrastructure, and hypervisor security are typically cloud provider responsibilities that vary by service model, but data classification remains a customer responsibility because only the data owner can determine the sensitivity, business value, and protection requirements of their information assets across all cloud deployment models. See Lesson 5, Topic A: Cloud Security Shared Responsibility.",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -1775,6 +2223,22 @@
     "topic": "security-architecture"
   },
   {
+    "id": 477,
+    "question": "Which of the following cloud deployment models provides the highest level of resource sharing among multiple organizations?",
+    "options": [
+      "Private cloud",
+      "Public cloud",
+      "Hybrid cloud",
+      "Community cloud"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Public cloud provides the highest level of resource sharing among multiple organizations because public cloud services share infrastructure, platforms, and services among numerous customers and organizations, maximizing resource utilization and cost efficiency through multi-tenancy. Public clouds serve multiple organizations simultaneously on shared infrastructure. Private clouds serve single organizations, hybrid clouds combine deployment models, and community clouds serve specific groups of organizations with shared interests. Public cloud specifically maximizes resource sharing across the broadest range of organizations and customers through shared infrastructure and services. See Lesson 5, Topic A: Cloud Resource Sharing Models.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
     "id": 481,
     "question": "Which of the following encryption algorithms is considered most suitable for securing wireless communications?",
     "options": [
@@ -1835,6 +2299,22 @@
       1
     ],
     "explanation": "SSH (Secure Shell) is most appropriate for secure remote shell access to network devices because it provides encrypted communication, strong authentication, and secure command-line access while protecting management credentials and commands from eavesdropping and tampering during network device administration. SSH specifically addresses network device management security requirements. Telnet transmits data in cleartext making it insecure, RDP provides Windows desktop access but isn't optimized for network device management, and VNC provides screen sharing but lacks the security features needed for network device management. SSH specifically provides secure, encrypted shell access designed for network infrastructure management. See Lesson 5, Topic B: Secure Network Device Management.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 494,
+    "question": "An organization wants to implement a solution that can provide secure access to internal resources for remote employees without requiring individual VPN connections. Which of the following would be most appropriate?",
+    "options": [
+      "Site-to-site VPN",
+      "Remote access VPN",
+      "Zero trust network access",
+      "Network access control"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Zero Trust Network Access (ZTNA) is most appropriate for providing secure access to internal resources for remote employees without requiring individual VPN connections because ZTNA provides application-level access control with continuous verification, micro-segmentation, and policy-based access that doesn't require traditional VPN infrastructure while maintaining security through identity-centric access controls. Site-to-site VPN connects networks not individual users, remote access VPN requires individual VPN connections, and NAC controls network access but doesn't eliminate VPN requirements. ZTNA specifically provides secure remote access without traditional VPN complexity through application-aware access controls. See Lesson 5, Topic A: Modern Remote Access Architectures.",
     "type": "single",
     "topic": "security-architecture"
   },
@@ -2139,6 +2619,22 @@
       2
     ],
     "explanation": "Collision resistance is the most important factor when selecting cryptographic hash functions because it ensures that it's computationally infeasible to find two different inputs that produce the same hash output, maintaining the integrity and security properties that hash functions provide for digital signatures, data verification, and password storage. Collision resistance ensures hash function security. Computation speed, output length, and memory requirements are important operational considerations, but collision resistance specifically determines whether the hash function provides adequate security against cryptographic attacks that could undermine its fundamental security purpose of providing unique, tamper-evident data fingerprints. See Lesson 11, Topic A: Hash Function Security Properties.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 544,
+    "question": "Which of the following would be the most effective method to protect against password-based attacks?",
+    "options": [
+      "Password complexity requirements",
+      "Account lockout policies",
+      "Multi-factor authentication",
+      "Password encryption"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Multi-factor authentication (MFA) is the most effective protection against password-based attacks because even if passwords are compromised through brute force, dictionary attacks, credential stuffing, or other methods, attackers still cannot access accounts without additional authentication factors like biometrics, tokens, or mobile device confirmations. MFA provides defense in depth against credential compromise. Password complexity requirements and account lockout policies help but can still be bypassed, while password encryption protects stored passwords but doesn't prevent all attack methods. MFA specifically mitigates the impact of password compromise by requiring multiple independent authentication factors that are difficult for attackers to obtain simultaneously. See Lesson 4, Topic A: Comprehensive Password Attack Defense.",
     "type": "single",
     "topic": "security-architecture"
   },

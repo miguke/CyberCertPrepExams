@@ -66,3 +66,7 @@ ENV/
 
 # PDFs (kept from original)
 PDF's/
+
+# MCP
+pdf-reader-mcp
+pdf-reader-mcp/*

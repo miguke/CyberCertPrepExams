@@ -272,6 +272,102 @@
     "topic": "security-program-management-oversight"
   },
   {
+    "id": 73,
+    "question": "An organization is required to provide assurance that its controls are properly designed and operating effectively. Which of the following reports will best achieve the objective?",
+    "options": [
+      "Red teaming",
+      "Penetration testing",
+      "Independent audit",
+      "Vulnerability assessment"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Independent audit is correct because it provides objective, third-party verification that controls are properly designed and operating effectively. Audits examine policies, procedures, and technical controls to ensure they meet requirements and function as intended. Red teaming tests detection capabilities, penetration testing identifies exploitable vulnerabilities, and vulnerability assessments find security weaknesses, but none provide comprehensive assurance about control design and operation. Independent audits specifically validate control effectiveness and compliance. See Lesson 15, Topic A: Audit and Compliance.",
+    "type": "single",
+    "topic": "security-program-management-oversight"
+  },
+  {
+    "id": 75,
+    "question": "Which of the following best describes the concept of information being stored outside of its country of origin while still being subject to the laws and requirements of the country of origin?",
+    "options": [
+      "Data sovereignty",
+      "Geolocation",
+      "Intellectual property",
+      "Geographic restrictions"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Data sovereignty is correct because it refers to the concept that data remains subject to the laws and governance of the country where it originates, regardless of where it's physically stored. This is crucial for compliance with national privacy laws, data protection regulations, and legal requirements that follow data across borders. Geolocation refers to determining physical location, intellectual property protects creations and inventions, and geographic restrictions limit where data can be stored. Data sovereignty specifically addresses legal jurisdiction over data regardless of storage location. See Lesson 16, Topic A: International Data Protection.",
+    "type": "single",
+    "topic": "security-program-management-oversight"
+  },
+  {
+    "id": 76,
+    "question": "An audit reveals that cardholder database logs are exposing account numbers inappropriately. Which of the following mechanisms would help limit the impact of this error?",
+    "options": [
+      "Segmentation",
+      "Hashing",
+      "Journaling",
+      "Masking"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Masking is correct because it obscures sensitive portions of account numbers in logs while maintaining some operational utility (e.g., showing last 4 digits as ****1234). This reduces exposure risk while preserving log functionality for legitimate purposes. Segmentation isolates networks but doesn't address data exposure in logs, hashing creates one-way digests that may not be suitable for operational logs, and journaling tracks changes but doesn't protect exposed data. Masking specifically addresses the need to limit sensitive data exposure in log files. See Lesson 16, Topic A: Data Protection Methods.",
+    "type": "single",
+    "topic": "security-program-management-oversight"
+  },
+  {
+    "id": 90,
+    "question": "A company is concerned about theft of client data from decommissioned laptops. Which of the following is the most cost-effective method to decrease this risk?",
+    "options": [
+      "Wiping",
+      "Recycling",
+      "Shredding",
+      "Deletion"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Wiping is correct because it uses software tools to securely overwrite data multiple times, making it unrecoverable while being cost-effective and allowing hardware reuse or safe disposal. Professional wiping services or tools are relatively inexpensive. Recycling doesn't remove data, shredding is expensive and destroys usable hardware, and simple deletion doesn't actually remove data (just file system references). Wiping provides secure data destruction at low cost while maximizing hardware value recovery. See Lesson 16, Topic A: Data Sanitization.",
+    "type": "single",
+    "topic": "security-program-management-oversight"
+  },
+  {
+    "id": 94,
+    "question": "Which of the following would a security administrator use to comply with a secure baseline during a patch update?",
+    "options": [
+      "Information security policy",
+      "Service-level expectations",
+      "Standard operating procedure",
+      "Test result report"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Standard Operating Procedure (SOP) is correct because it provides step-by-step instructions for performing specific tasks like patch updates while maintaining compliance with security baselines. SOPs ensure consistent, secure implementation of changes according to established standards. Information security policies provide high-level guidance, service-level expectations define performance requirements, and test result reports document outcomes but don't guide implementation. SOPs translate policies into actionable procedures that maintain security baselines during operational activities. See Lesson 14, Topic B: Change Management Procedures.",
+    "type": "single",
+    "topic": "security-program-management-oversight"
+  },
+  {
+    "id": 102,
+    "question": "Which of the following should a security team use to document persistent vulnerabilities with related recommendations?",
+    "options": [
+      "Audit report",
+      "Risk register",
+      "Compliance report",
+      "Penetration test"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Risk register is the appropriate document for tracking persistent vulnerabilities along with their impact assessments, likelihood ratings, and recommended remediation actions. It provides ongoing management of identified risks including vulnerabilities. Audit reports document compliance findings, compliance reports show regulatory adherence, and penetration tests identify vulnerabilities but don't provide ongoing tracking with recommendations. Risk registers specifically manage persistent security issues with associated risk treatment plans. See Lesson 15, Topic A: Risk Management Documentation.",
+    "type": "single",
+    "topic": "security-program-management-oversight"
+  },
+  {
     "id": 117,
     "question": "Which of the following should an internal auditor check for first when conducting an audit of the organization's risk management program?",
     "options": [
@@ -364,6 +460,134 @@
       2
     ],
     "explanation": "Data classification's primary purpose is to apply appropriate security controls based on data sensitivity, value, and regulatory requirements. Classification enables organizations to implement different protection levels - highly sensitive data receives stronger controls than public information. While classification may improve system performance through tiered storage, reduce costs through retention policies, and simplify backups through categorization, the fundamental security purpose is ensuring appropriate protection measures match data sensitivity levels. See Lesson 16, Topic A: Data Classification.",
+    "type": "single",
+    "topic": "security-program-management-oversight"
+  },
+  {
+    "id": 162,
+    "question": "Which of the following is the most effective method for preventing social engineering attacks?",
+    "options": [
+      "Technical controls",
+      "Physical controls",
+      "Security awareness training",
+      "Administrative controls"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Security awareness training is most effective against social engineering because these attacks exploit human psychology rather than technical vulnerabilities. Training educates users to recognize social engineering tactics, verify requests through alternate channels, and respond appropriately to suspicious communications. Technical controls protect systems but don't address human manipulation, physical controls secure facilities but don't prevent psychological manipulation, and administrative controls provide policies but require human understanding. Social engineering targets people, requiring people-focused countermeasures. See Lesson 16, Topic B: Security Awareness Programs.",
+    "type": "single",
+    "topic": "security-program-management-oversight"
+  },
+  {
+    "id": 170,
+    "question": "An IT administrator needs to ensure data retention standards are implemented on an enterprise application. Which of the following describes the administrator's role?",
+    "options": [
+      "Processor",
+      "Custodian",
+      "Privacy officer",
+      "Owner"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Data custodian is responsible for implementing and maintaining data management policies including retention standards on technical systems and applications. Custodians handle the technical implementation of data protection requirements. Data processor processes data on behalf of others, privacy officer oversees privacy compliance programs, and data owner makes decisions about data classification and protection requirements. Custodians specifically implement technical data management controls including retention policies. See Lesson 16, Topic A: Data Roles and Responsibilities.",
+    "type": "single",
+    "topic": "security-program-management-oversight"
+  },
+  {
+    "id": 172,
+    "question": "A company processes and stores sensitive data on its own systems. Which of the following steps should the company take first to ensure compliance with privacy regulations?",
+    "options": [
+      "Implement access controls and encryption",
+      "Develop and provide training on data protection policies",
+      "Create incident response and disaster recovery plans",
+      "Purchase and install security software"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Developing and providing training on data protection policies should be the first step because employees must understand privacy requirements, their responsibilities, and proper data handling procedures before technical controls can be effective. Training creates the foundation for compliance by ensuring staff know what constitutes sensitive data, how to handle it properly, and what actions are prohibited. Access controls and encryption are important technical measures but ineffective without proper user understanding, incident response plans address breaches after they occur, and security software provides technical protection but doesn't ensure compliance understanding. See Lesson 16, Topic B: Privacy Compliance Framework.",
+    "type": "single",
+    "topic": "security-program-management-oversight"
+  },
+  {
+    "id": 180,
+    "question": "An organization is required to provide assurance that its controls are properly designed and operating effectively. Which of the following reports will best achieve the objective?",
+    "options": [
+      "Red teaming",
+      "Penetration testing",
+      "Independent audit",
+      "Vulnerability assessment"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Independent audit provides objective, third-party verification that security controls are properly designed, implemented, and operating effectively according to established standards and frameworks. Independent audits examine policies, procedures, technical implementations, and operational effectiveness to provide assurance to stakeholders. Red teaming tests detection capabilities, penetration testing identifies exploitable vulnerabilities, and vulnerability assessments find security weaknesses, but none provide comprehensive assurance about control design and effectiveness. Audits specifically validate control adequacy and operational effectiveness. See Lesson 15, Topic A: Security Assurance.",
+    "type": "single",
+    "topic": "security-program-management-oversight"
+  },
+  {
+    "id": 182,
+    "question": "Which of the following best describes the concept of information being stored outside of its country of origin while still being subject to the laws and requirements of the country of origin?",
+    "options": [
+      "Data sovereignty",
+      "Geolocation",
+      "Intellectual property",
+      "Geographic restrictions"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Data sovereignty refers to the legal concept that data remains subject to the laws, regulations, and governance of the country where it originated, regardless of where it's physically stored or processed. This is crucial for compliance with national privacy laws, data protection regulations, and legal jurisdiction requirements. Geolocation refers to determining physical location, intellectual property protects creations and innovations, and geographic restrictions limit where data can be stored. Data sovereignty specifically addresses legal jurisdiction and regulatory compliance across borders. See Lesson 16, Topic A: International Data Governance.",
+    "type": "single",
+    "topic": "security-program-management-oversight"
+  },
+  {
+    "id": 183,
+    "question": "An audit reveals that cardholder database logs are exposing account numbers inappropriately. Which of the following mechanisms would help limit the impact of this error?",
+    "options": [
+      "Segmentation",
+      "Hashing",
+      "Journaling",
+      "Masking"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Masking would limit the impact by obscuring sensitive portions of account numbers in logs while maintaining operational utility for legitimate purposes (e.g., showing ****1234 instead of full numbers). Masking reduces exposure risk while preserving log functionality for troubleshooting and analysis. Segmentation isolates networks but doesn't address data exposure in logs, hashing creates one-way digests that may not be suitable for operational logs, and journaling tracks changes but doesn't protect exposed data. Masking specifically addresses sensitive data exposure in log files. See Lesson 16, Topic A: Data Protection in Logs.",
+    "type": "single",
+    "topic": "security-program-management-oversight"
+  },
+  {
+    "id": 198,
+    "question": "A company is concerned about theft of client data from decommissioned laptops. Which of the following is the most cost-effective method to decrease this risk?",
+    "options": [
+      "Wiping",
+      "Recycling",
+      "Shredding",
+      "Deletion"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Wiping is the most cost-effective method because it uses software tools to securely overwrite data multiple times according to standards like NIST 800-88, making data unrecoverable while allowing hardware reuse or safe disposal. Wiping services are relatively inexpensive compared to physical destruction. Recycling doesn't remove data and creates risk, shredding physically destroys drives but is expensive and prevents hardware reuse, and simple deletion only removes file system references leaving data recoverable. Wiping provides secure data destruction at minimal cost while preserving hardware value. See Lesson 16, Topic A: Cost-Effective Data Sanitization.",
+    "type": "single",
+    "topic": "security-program-management-oversight"
+  },
+  {
+    "id": 202,
+    "question": "Which of the following would a security administrator use to comply with a secure baseline during a patch update?",
+    "options": [
+      "Information security policy",
+      "Service-level expectations",
+      "Standard operating procedure",
+      "Test result report"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Standard Operating Procedure (SOP) provides detailed, step-by-step instructions for performing specific tasks like patch updates while maintaining compliance with security baselines and organizational standards. SOPs ensure consistent, secure implementation of changes according to established procedures and security requirements. Information security policies provide high-level guidance but not detailed procedures, service-level expectations define performance requirements, and test result reports document outcomes but don't guide implementation. SOPs translate policies into actionable procedures for maintaining security baselines. See Lesson 14, Topic B: Operational Procedures.",
     "type": "single",
     "topic": "security-program-management-oversight"
   },

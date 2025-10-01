@@ -147,6 +147,22 @@
     "topic": "general-security-concepts"
   },
   {
+    "id": 400,
+    "question": "Which of the following cryptographic concepts ensures that data has not been altered during transmission?",
+    "options": [
+      "Confidentiality",
+      "Integrity",
+      "Availability",
+      "Non-repudiation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Integrity ensures that data has not been altered, modified, or corrupted during transmission or storage by using cryptographic mechanisms like hashing, digital signatures, and message authentication codes (MACs) to detect unauthorized changes. Integrity protection allows recipients to verify that data received matches data sent without modification. Confidentiality protects against unauthorized disclosure, availability ensures system accessibility, and non-repudiation prevents denial of actions. Integrity specifically addresses data modification detection and prevention through cryptographic verification mechanisms that ensure data authenticity and unchanged state. See Lesson 11, Topic A: Cryptographic Security Objectives.",
+    "type": "single",
+    "topic": "general-security-concepts"
+  },
+  {
     "id": 405,
     "question": "Which of the following threat modeling methodologies focuses on identifying threats from an attacker's perspective?",
     "options": [
@@ -291,6 +307,22 @@
     "topic": "general-security-concepts"
   },
   {
+    "id": 458,
+    "question": "An organization implements a solution that automatically adjusts firewall rules based on current threat intelligence. Which of the following security concepts does this represent?",
+    "options": [
+      "Static security",
+      "Adaptive security",
+      "Perimeter security",
+      "Layered security"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Adaptive security represents solutions that automatically adjust security controls, policies, and configurations based on changing conditions like current threat intelligence, risk levels, or environmental factors to provide dynamic protection that responds to evolving threats. Adaptive security uses real-time information to modify security posture automatically. Static security uses fixed configurations, perimeter security focuses on network boundaries, and layered security uses multiple control types, but adaptive security specifically refers to dynamic, automatic adjustment of security measures based on current threat conditions and intelligence feeds. See Lesson 1, Topic B: Dynamic Security Architecture.",
+    "type": "single",
+    "topic": "general-security-concepts"
+  },
+  {
     "id": 464,
     "question": "A company wants to ensure that its web application can handle a large number of concurrent users without becoming unavailable. Which of the following security concepts does this primarily address?",
     "options": [
@@ -403,6 +435,22 @@
     "topic": "general-security-concepts"
   },
   {
+    "id": 531,
+    "question": "An organization wants to implement a solution that can automatically update security policies based on current threat intelligence. Which of the following concepts best describes this approach?",
+    "options": [
+      "Static security",
+      "Adaptive security",
+      "Perimeter security",
+      "Physical security"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Adaptive security best describes automatically updating security policies based on current threat intelligence because adaptive security systems dynamically adjust controls, policies, and responses based on changing threat conditions, risk levels, and intelligence feeds to provide responsive protection that evolves with the threat landscape. Adaptive security responds to changing conditions. Static security uses fixed configurations, perimeter security focuses on network boundaries, and physical security protects facilities, but adaptive security specifically refers to dynamic, intelligence-driven adjustment of security measures that automatically respond to current threat information and environmental changes to optimize protection effectiveness. See Lesson 1, Topic B: Intelligence-Driven Security Architecture.",
+    "type": "single",
+    "topic": "general-security-concepts"
+  },
+  {
     "id": 545,
     "question": "A company wants to ensure that its software development process includes security considerations from the beginning. Which of the following approaches would be most appropriate?",
     "options": [
@@ -431,6 +479,22 @@
       2
     ],
     "explanation": "Adaptive security best describes automatically adjusting security controls based on current risk levels because adaptive security systems dynamically modify controls, policies, and responses based on real-time risk assessment, threat intelligence, and environmental conditions to provide responsive protection that scales with changing risk profiles. Adaptive security responds automatically to risk changes. Risk assessment evaluates potential threats, risk management encompasses overall risk handling, and risk mitigation reduces specific risks, but adaptive security specifically refers to dynamic, automatic adjustment of security measures based on current risk conditions and threat levels to optimize protection effectiveness through real-time responsiveness. See Lesson 1, Topic B: Dynamic Risk-Responsive Security Architecture.",
+    "type": "single",
+    "topic": "general-security-concepts"
+  },
+  {
+    "id": 593,
+    "question": "An organization implements a policy requiring all remote access to be logged and monitored. Which of the following security control types does this represent?",
+    "options": [
+      "Preventive control",
+      "Detective control",
+      "Corrective control",
+      "Compensating control"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Detective control represents logging and monitoring remote access because detective controls identify and document security events, violations, or incidents after they occur, providing visibility into activities for analysis, investigation, and response purposes. Logging and monitoring enable detection of unauthorized or suspicious remote access activities. Preventive controls stop events before they happen, corrective controls fix problems after detection, and compensating controls provide alternative protection, but detective controls specifically focus on identification, logging, and monitoring functions that provide security oversight and enable incident detection and investigation through comprehensive activity recording. See Lesson 1, Topic B: Security Control Function Classifications.",
     "type": "single",
     "topic": "general-security-concepts"
   },

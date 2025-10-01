@@ -1,0 +1,264 @@
+[
+  {
+    "id": 1,
+    "question": "Which of the following allows for the attribution of messages to individuals?",
+    "options": [
+      "Adaptive identity",
+      "Non-repudiation",
+      "Authentication",
+      "Access logs"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Non-repudiation ensures that individuals cannot deny their actions or the authenticity of their digital signatures. Digital signatures and certificates provide cryptographic proof of origin and integrity. See Lesson 1, Topic A: Security Concepts.",
+    "type": "single",
+    "topic": "general-security-concepts"
+  },
+  {
+    "id": 2,
+    "question": "Which of the following describes the maximum allowance of accepted risk?",
+    "options": [
+      "Risk indicator",
+      "Risk level",
+      "Risk score",
+      "Risk threshold"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Risk threshold (or risk appetite) defines the maximum level of risk an organization is willing to accept before taking action. This sets the boundary for risk acceptance decisions. See Lesson 15, Topic A: Risk Management Processes and Concepts.",
+    "type": "single",
+    "topic": "general-security-concepts"
+  },
+  {
+    "id": 3,
+    "question": "A network administrator is working on a project to deploy a load balancer in the company's cloud environment. Which of the following fundamental security requirements does this project fulfil?",
+    "options": [
+      "Privacy",
+      "Integrity",
+      "Confidentiality",
+      "Availability"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Load balancers distribute network traffic across multiple servers to prevent any single server from becoming overwhelmed, directly supporting the availability component of the CIA triad by ensuring services remain accessible. See Lesson 1, Topic A: Security Concepts.",
+    "type": "single",
+    "topic": "general-security-concepts"
+  },
+  {
+    "id": 4,
+    "question": "Which of the following is the strongest form of multi-factor authentication?",
+    "options": [
+      "Fingerprint + PIN",
+      "Smart card + password",
+      "Password + security questions",
+      "SMS OTP + password"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Fingerprint (something you are) + PIN (something you know) combines two different authentication factor types, providing strong multi-factor authentication. Biometrics are inherently tied to the individual and difficult to replicate. See Lesson 4, Topic A: Authentication.",
+    "type": "single",
+    "topic": "general-security-concepts"
+  },
+  {
+    "id": 5,
+    "question": "Which of the following describes the principle of 'defense in depth'?",
+    "options": [
+      "Implementing the strongest firewall available",
+      "Using multiple layers of security controls to protect assets",
+      "Limiting user access to only what's necessary",
+      "Encrypting data at rest and in transit"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Defense in depth is a security strategy that employs multiple layers of security controls throughout an IT system. If one layer fails, other layers continue to provide protection, creating redundancy in security measures. See Lesson 1, Topic A: Security Concepts.",
+    "type": "single",
+    "topic": "general-security-concepts"
+  },
+  {
+    "id": 6,
+    "question": "A company must ensure sensitive data at rest is rendered unreadable. Which of the following will the company most likely use?",
+    "options": [
+      "Hashing",
+      "Tokenization",
+      "Encryption",
+      "Segmentation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Encryption transforms plaintext data into ciphertext that cannot be read without the proper decryption key, making it the primary method to render sensitive data at rest unreadable. See Lesson 3, Topic C: Cryptographic Solutions.",
+    "type": "single",
+    "topic": "general-security-concepts"
+  },
+  {
+    "id": 7,
+    "question": "Which cryptographic algorithm is symmetric?",
+    "options": [
+      "RSA",
+      "ECC",
+      "AES",
+      "DSA"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AES (Advanced Encryption Standard) is a symmetric encryption algorithm that uses the same key for both encryption and decryption. RSA and ECC are asymmetric algorithms, while DSA is used for digital signatures. See Lesson 3, Topic A: Cryptographic Algorithms.",
+    "type": "single",
+    "topic": "general-security-concepts"
+  },
+  {
+    "id": 8,
+    "question": "A security administrator identifies an application that is storing data using MD5. Which of the following best identifies the vulnerability likely present in the application?",
+    "options": [
+      "Cryptographic",
+      "Malicious update",
+      "Zero-day",
+      "Sideloading"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "MD5 is a deprecated cryptographic hash function that is vulnerable to collision attacks, making it unsuitable for security applications. This represents a cryptographic vulnerability due to weak algorithm implementation. See Lesson 3, Topic A: Cryptographic Algorithms.",
+    "type": "single",
+    "topic": "general-security-concepts"
+  },
+  {
+    "id": 9,
+    "question": "Which of the following security concepts is being followed when implementing a product that offers protection against DDoS attacks?",
+    "options": [
+      "Availability",
+      "Confidentiality",
+      "Non-repudiation",
+      "Integrity"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "DDoS (Distributed Denial of Service) protection mechanisms are designed to maintain service availability by preventing or mitigating attacks that attempt to overwhelm systems and make them inaccessible to legitimate users. See Lesson 1, Topic A: Security Concepts.",
+    "type": "single",
+    "topic": "general-security-concepts"
+  },
+  {
+    "id": 10,
+    "question": "A systems administrator discovers a system that is no longer receiving support from the vendor. However, this system and its environment are critical to running the business, cannot be modified, and must stay online. Which of the following risk treatments is the most appropriate in this situation?",
+    "options": [
+      "Transfer",
+      "Reject",
+      "Avoid",
+      "Accept"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "When a critical system cannot be modified, updated, or replaced, the organization must accept the risk and implement compensating controls to mitigate exposure. Risk acceptance acknowledges the risk while maintaining business operations. See Lesson 15, Topic A: Risk Management Processes and Concepts.",
+    "type": "single",
+    "topic": "general-security-concepts"
+  },
+  {
+    "id": 11,
+    "question": "A company has begun labeling all laptops with asset-inventory stickers and associating them with employee IDs. Which of the following security benefits do these actions provide? (Choose two.)",
+    "options": [
+      "If a security incident occurs on the device, the correct employee can be notified.",
+      "The security team will be able to send user awareness training to the appropriate device.",
+      "Users can be mapped to their devices when configuring software MFA tokens.",
+      "User-based firewall policies can be correctly targeted to the appropriate laptops.",
+      "When conducting penetration testing, the security team will be able to target the desired laptops.",
+      "Company data can be accounted for when the employee leaves the organization."
+    ],
+    "correct": [
+      0,
+      5
+    ],
+    "explanation": "Asset inventory stickers linked to employee IDs provide two key security benefits: incident response (quickly identifying the responsible employee when security issues occur on a device) and asset recovery (ensuring company data is properly accounted for when employees leave). See Lesson 7, Topic A: Asset Management.",
+    "type": "multiple",
+    "topic": "general-security-concepts"
+  },
+  {
+    "id": 12,
+    "question": "An IT manager informs the entire help-desk staff that only the IT manager and the help-desk lead will have access to the administrator console of the help-desk software. Which of the following security techniques is the IT manager setting up?",
+    "options": [
+      "Hardening",
+      "Employee monitoring",
+      "Configuration enforcement",
+      "Least privilege"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The principle of least privilege restricts user access rights to only what is necessary to perform their job functions. By limiting administrator console access to only essential personnel, the organization reduces the risk of unauthorized changes or security breaches. See Lesson 4, Topic B: Authorization.",
+    "type": "single",
+    "topic": "general-security-concepts"
+  },
+  {
+    "id": 13,
+    "question": "During a recent company safety stand-down, the cyber-awareness team gave a presentation on the importance of cyber hygiene. One topic covered was best practices for printing centers. Which of the following describes an attack method that relates to printing centers?",
+    "options": [
+      "Whaling",
+      "Credential harvesting",
+      "Prepending",
+      "Dumpster diving"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Dumpster diving is a physical security attack where attackers search through trash and recycling for sensitive information, including improperly disposed printed documents from printing centers. See Lesson 7, Topic C: Physical Security.",
+    "type": "single",
+    "topic": "general-security-concepts"
+  },
+  {
+    "id": 14,
+    "question": "A security officer is implementing a security awareness program and is placing security-themed posters around the building and assigning online user training. Which of the following would the security officer most likely implement?",
+    "options": [
+      "Risk assessment",
+      "Phishing campaign",
+      "Access badges",
+      "Password policy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Phishing campaigns are commonly implemented as part of comprehensive security awareness programs to test and train users on recognizing social engineering attacks. This complements other awareness materials like posters and training modules. See Lesson 16, Topic B: Personnel Policies.",
+    "type": "single",
+    "topic": "general-security-concepts"
+  },
+  {
+    "id": 15,
+    "question": "An employee emailed a new systems administrator a malicious weblink and convinced the administrator to change the email server's password. The employee used this access to move the mailboxes of key personnel. Which of the following security awareness concepts would help prevent this threat in the future?",
+    "options": [
+      "Providing situational awareness training",
+      "Using password management",
+      "Reviewing email policies",
+      "Recognizing phishing"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Training users to recognize phishing attacks helps them identify fraudulent communications designed to trick them into revealing credentials or performing unauthorized actions. This type of social engineering awareness is critical for preventing successful attacks. See Lesson 2, Topic C: Social Engineering.",
+    "type": "single",
+    "topic": "general-security-concepts"
+  },
+  {
+    "id": 16,
+    "question": "Which of the following are the best security controls for controlling on-premises access? (Select two.)",
+    "options": [
+      "Swipe card",
+      "Picture ID",
+      "Phone authentication application",
+      "Biometric scanner",
+      "Camera",
+      "Memorable question"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Swipe cards and biometric scanners are both strong physical access controls for on-premises security. Swipe cards provide something you have, while biometric scanners provide something you are, creating effective access control for physical locations. See Lesson 7, Topic C: Physical Security.",
+    "type": "multiple",
+    "topic": "general-security-concepts"
+  }
+]
