@@ -1,0 +1,117 @@
+[
+  {
+    "id": 154,
+    "question": "Which of the following strategies should an organization use to efficiently manage and analyze multiple types of logs?",
+    "options": [
+      "Deploy a SIEM solution",
+      "Create custom scripts to aggregate and analyze logs",
+      "Implement EDR technology",
+      "Install a unified threat management appliance"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A Security Information and Event Management (SIEM) solution centralizes log collection, aggregation, and analysis from various sources. SIEMs provide real-time monitoring, correlation, and alerting on security events, enabling organizations to efficiently manage and analyze logs from diverse systems in a single platform. This approach is highly effective for identifying security incidents and ensuring compliance. SIEM platforms aggregate data from firewalls, endpoints, servers, applications, and network devices into a unified console, applying correlation rules to detect anomalous patterns that individual log sources might miss. This centralized visibility reduces mean time to detect (MTTD) and mean time to respond (MTTR) for security incidents.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 163,
+    "question": "After a security incident, a systems administrator asks the company to buy a NAC platform. Which of the following attack surfaces is the systems administrator trying to protect?",
+    "options": [
+      "Bluetooth",
+      "Wired",
+      "NFC",
+      "SCADA"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Network Access Control (NAC) platforms are primarily used to secure access to the organization's network, typically focusing on wired and wireless connections. By implementing NAC, the administrator can control which devices are allowed to connect to the network and enforce security policies, reducing the risk of unauthorized access via the wired network. NAC solutions verify device health, compliance with security policies (patch levels, antivirus status, configuration), and user identity before granting network access. They can quarantine non-compliant devices to remediation VLANs, preventing lateral movement of threats and enforcing zero-trust principles at the network edge.",
+    "type": "single",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 185,
+    "question": "A penetration tester enters an office building at the same time as a group of employees despite not having an access badge. Which of the following attack types is the penetration tester performing?",
+    "options": [
+      "Tailgating",
+      "Shoulder surfing",
+      "RFID cloning",
+      "Forgery"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Tailgating is a social engineering technique where an unauthorized person gains access to a restricted area by following closely behind authorized individuals without their knowledge or consent. In this scenario, the penetration tester enters the office building at the same time as a group of employees despite not having an access badge, which exemplifies tailgating. This physical security vulnerability exploits human courtesy and trust, bypassing technical access controls like badge readers or biometric scanners. Organizations should implement anti-tailgating measures such as mantraps, turnstiles, security guards trained to challenge unauthorized followers, and employee awareness training to report suspicious behavior.",
+    "type": "single",
+    "topic": "threats-vulnerabilities-mitigations"
+  },
+  {
+    "id": 187,
+    "question": "Which of the following should an organization focus on the most when making decisions about vulnerability prioritization?",
+    "options": [
+      "Exposure factor",
+      "CVSS",
+      "CVE",
+      "Industry impact"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Common Vulnerability Scoring System (CVSS) is a widely used standard that provides a numerical score reflecting the severity of a vulnerability. Organizations use CVSS scores to prioritize vulnerabilities based on their potential impact and exploitability, which helps in assessing which vulnerabilities need urgent remediation. This approach enables systematic vulnerability prioritization based on quantifiable metrics. CVSS scores range from 0.0 to 10.0 and incorporate factors such as attack vector (network, adjacent, local, physical), attack complexity, privileges required, user interaction, scope, and impact on confidentiality, integrity, and availability. While CVSS provides objective severity ratings, organizations should also consider contextual factors like asset criticality, threat intelligence indicating active exploitation, and compensating controls when prioritizing remediation efforts.",
+    "type": "single",
+    "topic": "security-operations"
+  },
+  {
+    "id": 197,
+    "question": "An organization's web servers host an online ordering system. The organization discovers that the servers are vulnerable to a malicious JavaScript injection, which could allow attackers to access customer payment information. Which of the following mitigation strategies would be most effective for preventing an attack on the organization's web servers? (Choose two.)",
+    "options": [
+      "Regularly updating server software and patches",
+      "Implementing strong password policies",
+      "Encrypting sensitive data at rest and in transit",
+      "Utilizing a web-application firewall",
+      "Performing regular vulnerability scans",
+      "Removing payment information from the servers"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Regularly updating server software and applying patches addresses known vulnerabilities, reducing the risk of exploitation through unpatched flaws. A web-application firewall (WAF) is particularly effective against malicious injections, as it monitors and filters HTTP traffic to block injection attempts, such as JavaScript injections. Together, these strategies provide robust protection against attacks targeting the web servers. WAF rules can detect and block common injection patterns including cross-site scripting (XSS), SQL injection, and malicious JavaScript, while patch management ensures that known vulnerabilities in web server software, frameworks, and libraries are remediated promptly. Additionally, implementing input validation, output encoding, Content Security Policy (CSP) headers, and secure coding practices provides defense-in-depth against injection attacks.",
+    "type": "multiple",
+    "topic": "security-architecture"
+  },
+  {
+    "id": 200,
+    "question": "A group of developers has a shared backup account to access the source code repository. Which of the following is best way to secure the backup account if there is an SSO failure?",
+    "options": [
+      "RAS",
+      "EAP",
+      "SAML",
+      "PAM"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Privileged Access Management (PAM) is the best way to secure shared, privileged accounts like a backup account, especially in cases of Single Sign-On (SSO) failure. PAM solutions provide strict controls over access to sensitive accounts, enforce logging and monitoring, and often include features like session recording and access expiration. This approach ensures that access to the backup account remains secure even when other authentication methods, like SSO, are unavailable. PAM platforms implement just-in-time access provisioning, password vaulting with automatic rotation, multi-factor authentication for privileged sessions, and detailed audit trails that track who accessed what resources and when. These capabilities are essential for protecting high-value accounts that grant access to critical systems and data, ensuring accountability and reducing the risk of credential theft or misuse.",
+    "type": "single",
+    "topic": "security-program-management-oversight"
+  },
+  {
+    "id": 400,
+    "question": "Which of the following is used to calculate the impact to an organization per cybersecurity incident?",
+    "options": [
+      "SLE",
+      "ALE",
+      "ARO",
+      "SLA"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Single Loss Expectancy (SLE) represents the monetary loss an organization expects from a single cybersecurity incident, helping quantify the financial impact of individual events. SLE is calculated by multiplying the asset value (AV) by the exposure factor (EF), which represents the percentage of asset value lost in an incident. For example, if a server worth $50,000 experiences a breach that compromises 40% of its value, the SLE would be $50,000 × 0.40 = $20,000. This metric is fundamental to quantitative risk analysis and helps organizations understand the potential financial consequences of specific threats. SLE is used in conjunction with Annualized Rate of Occurrence (ARO) to calculate the Annualized Loss Expectancy (ALE = SLE × ARO), which estimates the total expected loss per year from a particular risk, enabling informed decisions about security investments and risk mitigation strategies.",
+    "type": "single",
+    "topic": "security-program-management-oversight"
+  }
+]
