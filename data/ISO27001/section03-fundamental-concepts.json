@@ -1,0 +1,474 @@
+[
+    {
+        "id":  1,
+        "question":  "Which of the following statements regarding information security is correct?",
+        "options":  [
+                        "Information security protects the confidentiality, integrity, and availability of information regardless of its type and form",
+                        "Information security protects the confidentiality, integrity, and availability of information only in an electronic form",
+                        "Information security protects the organization against threats by only identifying the threat source"
+                    ],
+        "correct":  [
+                        0
+                    ],
+        "explanation":  "Information security covers information of all types, printed or handwritten, transmitted by email or website, as well as information given during conversations. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  2,
+        "question":  "Which of the following ensures that information is not made available or disclosed to unauthorized users?",
+        "options":  [
+                        "Confidentiality",
+                        "Integrity",
+                        "Availability"
+                    ],
+        "correct":  [
+                        0
+                    ],
+        "explanation":  "Confidentiality requires that only authorized users have access to protected and sensitive data. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  3,
+        "question":  "Which of the listed below are examples of access controls?",
+        "options":  [
+                        "Digital authentication in internal networks",
+                        "Safes, locks on doors, and file cabinets",
+                        "All of the above"
+                    ],
+        "correct":  [
+                        2
+                    ],
+        "explanation":  "An information security management systemâ€™s access controls can be physical, such as safes, locks on doors, and file cabinets, and digital, such as digital authentication in internal networks. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  4,
+        "question":  "Which property of information security ensures that information is not modified when in storage or in transit?",
+        "options":  [
+                        "Confidentiality",
+                        "Integrity",
+                        "Availability"
+                    ],
+        "correct":  [
+                        1
+                    ],
+        "explanation":  "Integrity ensures that information is accurate, authentic, and safe from unauthorized access in order for users to be able to rely on the correctness of information when processing it. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  5,
+        "question":  "Which attack does not affect the integrity of information?",
+        "options":  [
+                        "Denial of service (DoS)",
+                        "Data breach",
+                        "Network breach"
+                    ],
+        "correct":  [
+                        0
+                    ],
+        "explanation":  "Denial of service (DoS) attacks impact the availability of information. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  6,
+        "question":  "Under which category of vulnerability does â€œunstable power gridâ€ fall?",
+        "options":  [
+                        "Hardware vulnerability",
+                        "Network vulnerability",
+                        "Site vulnerability"
+                    ],
+        "correct":  [
+                        2
+                    ],
+        "explanation":  "According to ISO/IEC 27005, example of vulnerabilities in the â€œsiteâ€ category, among others, include unstable power grid and location in an area susceptible to flood. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  7,
+        "question":  "What category of threat does â€œloss of power supplyâ€ fall to?",
+        "options":  [
+                        "Infrastructure failures",
+                        "Technical failures",
+                        "Natural threats"
+                    ],
+        "correct":  [
+                        0
+                    ],
+        "explanation":  "According to ISO/IEC 27005, examples of threats in the â€œinfrastructure failuresâ€ category, among others, include failure of a supply system, loss of power supply, electromagnetic radiation, and thermal radiation. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  8,
+        "question":  "Which cloud computing service ensures an efficient management of the application life cycle?",
+        "options":  [
+                        "Infrastructure as a service (IaaS)",
+                        "Platform as a service (PaaS)",
+                        "Software as a service (SaaS)"
+                    ],
+        "correct":  [
+                        1
+                    ],
+        "explanation":  "One of the main advantages of PaaS is the efficient management of the application life cycle. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  9,
+        "question":  "What is the relationship between data and information?",
+        "options":  [
+                        "Data is structured information.",
+                        "Information is the meaning and value assigned to a collection of data."
+                    ],
+        "correct":  [
+                        1
+                    ],
+        "explanation":  "Information is data that has a meaning in some context for its receiver. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  10,
+        "question":  "In order to take out a fire insurance policy, an administration office must determine the value of the data that it manages. Which factor is not important for determining the value of data for an organization?",
+        "options":  [
+                        "The content of data.",
+                        "The degree to which missing, incomplete or incorrect data can be recovered.",
+                        "The indispensability of data for the business processes.",
+                        "The importance of the business processes that make use of the data."
+                    ],
+        "correct":  [
+                        0
+                    ],
+        "explanation":  "The content of data does not determine its value. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  11,
+        "question":  "A hacker gains access to a webserver and can view a file on the server containing credit card numbers. Which of the Confidentiality, Integrity, Availability (CIA) principles of the credit card file are violated?",
+        "options":  [
+                        "Availability",
+                        "Confidentiality",
+                        "Integrity"
+                    ],
+        "correct":  [
+                        1
+                    ],
+        "explanation":  "The hacker was able to read the file (confidentiality). (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  12,
+        "question":  "There is a network printer in the hallway of the company where you work. Many employees don\u0027t pick up their printouts immediately and leave them on the printer. What are the consequences of this to the reliability of the information?",
+        "options":  [
+                        "The integrity of the information is no longer guaranteed.",
+                        "The availability of the information is no longer guaranteed.",
+                        "The confidentiality of the information is no longer guaranteed."
+                    ],
+        "correct":  [
+                        2
+                    ],
+        "explanation":  "The information can end up or be read by persons who should not have access to the information. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  13,
+        "question":  "A well-executed risk analysis provides a great deal of useful information. A risk analysis has four main objectives. What is not one of the four main objectives of a risk analysis?",
+        "options":  [
+                        "Identifying assets and their value",
+                        "Implementing counter measures",
+                        "Establishing a balance between the costs of an incident and the costs of a security measure",
+                        "Determining relevant vulnerabilities and threats"
+                    ],
+        "correct":  [
+                        1
+                    ],
+        "explanation":  "This is not an objective of a risk analysis. Measures can be selected when in a risk analysis is determined which risks require a security measure. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  14,
+        "question":  "An administration office is going to determine the dangers to which it is exposed. What do we call a possible event that can have a disruptive effect on the reliability of information?",
+        "options":  [
+                        "dependency",
+                        "threat",
+                        "vulnerability",
+                        "risk"
+                    ],
+        "correct":  [
+                        1
+                    ],
+        "explanation":  "A threat is a possible event that can have a disruptive effect on the reliability of information. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  15,
+        "question":  "What is the purpose of risk management?",
+        "options":  [
+                        "To determine the probability that a certain risk will occur.",
+                        "To determine the damage caused by possible security incidents.",
+                        "To outline the threats to which IT resources are exposed.",
+                        "To implement measures to reduce risks to an acceptable level."
+                    ],
+        "correct":  [
+                        3
+                    ],
+        "explanation":  "The purpose of risk management is to reduce risks to an acceptable level. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  16,
+        "question":  "A couple of years ago you started your company which has now grown from 1 to 20 employees. Your company\u0027s information is worth more and more and gone are the days when you could keep control yourself. You are aware that you have to take measures, but what should they be? You hire a consultant who advises you to start with a qualitative risk analysis. What is a qualitative risk analysis?",
+        "options":  [
+                        "This analysis follows a precise statistical probability calculation in order to calculate exact loss caused by damage.",
+                        "This analysis is based on scenarios and situations and produces a subjective view of the possible threats."
+                    ],
+        "correct":  [
+                        1
+                    ],
+        "explanation":  "A qualitative risk analysis involves defining the various threats, determining the extent of the vulnerabilities, and devising countermeasures, should an attack occur. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  17,
+        "question":  "There was a fire in a branch of the company Midwest Insurance. The fire department quickly arrived at the scene and could extinguish the fire before it spread and burned down the entire premises. The server, however, was destroyed in the fire. The backup tapes kept in another room had melted and many other documents were lost for good. What is an example of the indirect damage caused by this fire?",
+        "options":  [
+                        "Melted backup tapes",
+                        "Burned computer systems",
+                        "Burned documents",
+                        "Water damage due to the fire extinguishers"
+                    ],
+        "correct":  [
+                        3
+                    ],
+        "explanation":  "Water damage due to the fire extinguishers is indirect damage caused by the fire. This is a side effect of putting out the fire, which is aimed at minimizing the damage caused by the fire. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  18,
+        "question":  "You are the owner of the courier company SpeeDelivery. You have carried out a risk analysis and now want to determine your risk strategy. You decide to take measures for the large risks but not for the small risks. What is this risk strategy called?",
+        "options":  [
+                        "Risk bearing",
+                        "Risk avoidance",
+                        "Risk neutral"
+                    ],
+        "correct":  [
+                        0
+                    ],
+        "explanation":  "This means certain risks are accepted. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  19,
+        "question":  "What is an example of a human threat?",
+        "options":  [
+                        "A USB-stick passes on a virus to the network.",
+                        "Too much dust in the server room.",
+                        "A leak causes a failure of electricity supply."
+                    ],
+        "correct":  [
+                        0
+                    ],
+        "explanation":  "A USB-stick is always inserted by a person. Thus, if by doing so a virus enters the network, then it is a human threat. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  20,
+        "question":  "What is an example of a human threat?",
+        "options":  [
+                        "a lightning strike",
+                        "fire",
+                        "phishing"
+                    ],
+        "correct":  [
+                        2
+                    ],
+        "explanation":  "Phishing (luring users to false websites) is one form of a human threat. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  21,
+        "question":  "You work in the office of a large company. You receive a call from a person claiming to be from the Helpdesk. He asks you for your password. What kind of threat is this?",
+        "options":  [
+                        "Natural threat",
+                        "Organizational threat",
+                        "Social Engineering"
+                    ],
+        "correct":  [
+                        2
+                    ],
+        "explanation":  "Using the right expressions or names of known people and their departments gives the impression of being a colleague trying to obtain company and trade secrets. You should check whether you are actually talking to the helpdesk. A helpdesk employee will never ask for your password. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  22,
+        "question":  "A fire breaks out in a branch office of a health insurance company. The personnel are transferred to neighboring branches to continue their work. Where in the incident cycle is moving to a stand-by arrangement found?",
+        "options":  [
+                        "between threat and incident",
+                        "between recovery and threat",
+                        "between damage and recovery",
+                        "between incident and damage"
+                    ],
+        "correct":  [
+                        3
+                    ],
+        "explanation":  "A stand-by arrangement is a corrective measure that is initiated in order to limit the damage. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  23,
+        "question":  "Information has a number of reliability aspects. Reliability is constantly being threatened. Examples of threats are: a cable becomes loose, someone alters information by accident, data is used privately or is falsified. Which of these examples is a threat to integrity?",
+        "options":  [
+                        "a loose cable",
+                        "accidental alteration of data",
+                        "private use of data"
+                    ],
+        "correct":  [
+                        1
+                    ],
+        "explanation":  "The unintended alteration of data is a threat to its integrity. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  24,
+        "question":  "A member of staff denies sending a particular message. Which reliability aspect of information is in danger here?",
+        "options":  [
+                        "availability",
+                        "correctness",
+                        "integrity",
+                        "confidentiality"
+                    ],
+        "correct":  [
+                        2
+                    ],
+        "explanation":  "The denial of sending a message has to do with nonrepudiation, a threat to integrity. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  25,
+        "question":  "Which measure is a preventive measure?",
+        "options":  [
+                        "Installing a logging system that enables changes in a system to be recognized",
+                        "Shutting down all internet traffic after a hacker has gained access to the company systems",
+                        "Putting sensitive information in a safe"
+                    ],
+        "correct":  [
+                        2
+                    ],
+        "explanation":  "A safe is a preventive measure, which avoids damage can be done to the sensitive information stored in the safe. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  26,
+        "question":  "What is a repressive measure in case of a fire?",
+        "options":  [
+                        "Taking out a fire insurance",
+                        "Putting out a fire after it has been detected by a fire detector",
+                        "Repairing damage caused by the fire"
+                    ],
+        "correct":  [
+                        1
+                    ],
+        "explanation":  "This repressive measure minimizes the damage caused by the fire. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  27,
+        "question":  "What is the goal of classification of information?",
+        "options":  [
+                        "To create a manual about how to handle mobile devices",
+                        "Applying labels making the information easier to recognize",
+                        "Structuring information according to its sensitivity"
+                    ],
+        "correct":  [
+                        2
+                    ],
+        "explanation":  "Classification of information is used to define the different levels of sensitivity into which information can be structured. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  28,
+        "question":  "Who is authorized to change the classification of a document?",
+        "options":  [
+                        "The author of the document",
+                        "The administrator of the document",
+                        "The owner of the document",
+                        "The manager of the owner of the document"
+                    ],
+        "correct":  [
+                        2
+                    ],
+        "explanation":  "The owner must ensure the asset is classified or reclassified if necessary so is authorized to change the classification of a document. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  29,
+        "question":  "The computer room is protected by a pass reader. Only the System Management department has a pass. What type of security measure is this?",
+        "options":  [
+                        "a corrective security measure",
+                        "a physical security measure",
+                        "a logical security measure",
+                        "a repressive security measure"
+                    ],
+        "correct":  [
+                        1
+                    ],
+        "explanation":  "This is a physical security measure. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  30,
+        "question":  "What is the name of the system that guarantees the coherence of information security in the organization?",
+        "options":  [
+                        "Information Security Management System (ISMS)",
+                        "Rootkit",
+                        "Security regulations for special information for the government"
+                    ],
+        "correct":  [
+                        0
+                    ],
+        "explanation":  "The ISMS is described in ISO/IEC 27001. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    },
+    {
+        "id":  31,
+        "question":  "Under which condition is an employer permitted to check if Internet and e-mail services in the workplace are being used for private purposes?",
+        "options":  [
+                        "The employer is permitted to check this if the employee is informed after each instance of checking.",
+                        "The employer is permitted to check this if the employees are aware that this could happen.",
+                        "The employer is permitted to check this if a firewall is also installed."
+                    ],
+        "correct":  [
+                        1
+                    ],
+        "explanation":  "The employees must know that the employer has the right to monitor the use of IT services. (Reference: See Day1, Section 3: Fundamental Concepts - CIA Triad, Assets, Threats, Vulnerabilities, Risks (pages 47-67))",
+        "type":  "single",
+        "topic":  "Fundamental Concepts"
+    }
+]

@@ -1,0 +1,477 @@
+[
+    {
+        "id":  1,
+        "question":  "What type of assets are information or processes of value for an organization?",
+        "options":  [
+                        "Primary/business assets",
+                        "Secondary assets",
+                        "Tertiary assets"
+                    ],
+        "correct":  [
+                        0
+                    ],
+        "explanation":  "According to ISO/IEC 27005, information or processes of value for an organization are primary assets. (Reference: See Day2, Section 6: Planning - Risk Management, Clause 6 (pages 3-34))",
+        "type":  "single",
+        "topic":  "Planning"
+    },
+    {
+        "id":  2,
+        "question":  "Which of the following is an example of risk avoidance?",
+        "options":  [
+                        "Cancellation or modification of an activity or set of activities related to risk",
+                        "Cancellation or modification of the residual risk",
+                        "Cancellation or modification of the risk acceptance criteria"
+                    ],
+        "correct":  [
+                        0
+                    ],
+        "explanation":  "Risk avoidance involves the decision to not start or continue with the activity that gives rise to the risk. (Reference: See Day2, Section 6: Planning - Risk Management, Clause 6 (pages 3-34))",
+        "type":  "single",
+        "topic":  "Planning"
+    },
+    {
+        "id":  3,
+        "question":  "What is the main objective of the monitoring and review phase of the risk management process?",
+        "options":  [
+                        "To assist interaction with stakeholders, including those with responsibility and accountability for risk management activities",
+                        "To assure and improve the quality and effectiveness of process design, implementation, and outcomes",
+                        "To communicate risk management activities and outcomes across the organization"
+                    ],
+        "correct":  [
+                        1
+                    ],
+        "explanation":  "Ongoing monitoring and periodic review of the risk management process and its outcomes should be a planned part of the risk management process, with responsibilities clearly defined. (Reference: See Day2, Section 6: Planning - Risk Management, Clause 6 (pages 3-34))",
+        "type":  "single",
+        "topic":  "Planning"
+    },
+    {
+        "id":  4,
+        "question":  "What is the purpose of risk evaluation?",
+        "options":  [
+                        "To support decisions that an organization needs to take",
+                        "To create an organizational policy",
+                        "To determine the threat actors"
+                    ],
+        "correct":  [
+                        0
+                    ],
+        "explanation":  "The purpose of risk evaluation is to support decisions. It involves comparing the results of the risk analysis with the established risk criteria to determine where additional action is required. (Reference: See Day2, Section 6: Planning - Risk Management, Clause 6 (pages 3-34))",
+        "type":  "single",
+        "topic":  "Planning"
+    },
+    {
+        "id":  5,
+        "question":  "What should be considered when selecting a risk assessment methodology?",
+        "options":  [
+                        "The identified threats and vulnerabilities",
+                        "The risk management framework established by ISO 31000",
+                        "The evaluation criteria established by ISO/IEC 27001:2022"
+                    ],
+        "correct":  [
+                        2
+                    ],
+        "explanation":  "Any risk analysis at least should consider the evaluation criteria established by ISO/IEC 27001:2022. (Reference: See Day2, Section 6: Planning - Risk Management, Clause 6 (pages 3-34))",
+        "type":  "single",
+        "topic":  "Planning"
+    },
+    {
+        "id":  6,
+        "question":  "What does risk retention refer to?",
+        "options":  [
+                        "Decision to accept the actual level of risk",
+                        "Decision to share risks with external parties",
+                        "Decision to accept the inherent risks"
+                    ],
+        "correct":  [
+                        0
+                    ],
+        "explanation":  "Risk retention involves the decision to accept the actual level of risk by informed choice. (Reference: See Day2, Section 6: Planning - Risk Management, Clause 6 (pages 3-34))",
+        "type":  "single",
+        "topic":  "Planning"
+    },
+    {
+        "id": 7,
+        "question": "What is residual risk?",
+        "options": [
+            "Risk that the organization cannot avoid",
+            "Risk remaining after the treatment of risk",
+            "Risk that is unknown to the organization"
+        ],
+        "correct": [1],
+        "explanation": "Residual risk is defined as the risk that remains after the implementation of controls used to treat the inherent risk.",
+        "type": "single",
+        "topic": "Planning",
+        "section": 6
+    },
+    {
+        "id": 8,
+        "question": "In Company X, the risk methodology includes identifying and evaluating risks, but they are unsure if they should also include a risk treatment plan. Which option best aligns with ISO 27001 requirements?",
+        "options": [
+            "Identifying and evaluating risks only",
+            "Identifying and evaluating risks, and implementing a risk treatment plan",
+            "Identifying risks only, and leaving evaluation and treatment to individual departments",
+            "Outsourcing risk management to a third-party vendor"
+        ],
+        "correct": [1],
+        "explanation": "According to ISO 27001, the risk management process must include identifying and evaluating risks, as well as implementing a risk treatment plan. This is mandatory according to the standard.",
+        "type": "single",
+        "topic": "Risk Management",
+        "section": 6
+    },
+    {
+        "id": 9,
+        "question": "Risks and opportunities need to be addressed in order to:",
+        "options": [
+            "Demonstrate management commitment",
+            "Ensure achievement of the ISMS outcomes",
+            "Prevent or reduce the financial and operational losses",
+            "Ensure all employees are aware of the risks and opportunities"
+        ],
+        "correct": [1],
+        "explanation": "Risks and opportunities need to be addressed according to ISO 27001 in order to ensure the security of information assets and to ensure an effective ISMS. By identifying and addressing risks and opportunities, organizations can better protect their information assets.",
+        "type": "single",
+        "topic": "Risk Management",
+        "section": 6
+    },
+    {
+        "id": 10,
+        "question": "What is the appropriate order for the steps from the Risk Management Process?",
+        "options": [
+            "Identify, Assess, Analyze, Mitigate",
+            "Assess, Identify, Mitigate, Analyze",
+            "Analyze, Mitigate, Assess, Identify",
+            "Mitigate, Identify, Assess, Analyze"
+        ],
+        "correct": [0],
+        "explanation": "The appropriate order for the risk management process is: Identify risks, Assess risks (analyze likelihood and impact), Analyze the assessment results, then Mitigate the risks through treatment plans.",
+        "type": "single",
+        "topic": "Risk Management",
+        "section": 6
+    },
+    {
+        "id": 11,
+        "question": "Which of the following represents assets from an information security perspective?",
+        "options": [
+            "Bathroom",
+            "Unauthorized modification",
+            "Software",
+            "Low awareness of information security"
+        ],
+        "correct": [2],
+        "explanation": "From an information security perspective, assets include anything of value important to an organization, such as hardware, software, data, personnel, and intellectual property. Software is an asset that needs protection.",
+        "type": "single",
+        "topic": "Risk Management",
+        "section": 6
+    },
+    {
+        "id": 12,
+        "question": "In a risk analysis related to ISO 27001, which of the following are true?",
+        "options": [
+            "Organizations must identify, assess, and document risks",
+            "Organizations must prioritize risk management activities",
+            "Organizations must develop action plans to address identified risks",
+            "Organizations must provide a written statement of compliance"
+        ],
+        "correct": [0, 1],
+        "explanation": "Organizations must identify, assess, and document risks in order to prioritize appropriate risk management activities. Developing action plans is also part of the risk analysis process. Providing a written statement of compliance is not a requirement of the risk analysis process.",
+        "type": "multiple",
+        "topic": "Risk Analysis",
+        "section": 6
+    },
+    {
+        "id": 13,
+        "question": "What is the primary outcome of a risk analysis related to ISO 27001?",
+        "options": [
+            "Identification of risks",
+            "Prioritizing of risk management activities",
+            "Development of action plans",
+            "Written statement of compliance"
+        ],
+        "correct": [0],
+        "explanation": "The primary outcome of a risk analysis is the identification of risks. This is done by assessing the potential impact of a threat and determining the likelihood of an adverse outcome. Other components are important but identification is the primary outcome.",
+        "type": "single",
+        "topic": "Risk Analysis",
+        "section": 6
+    },
+    {
+        "id": 14,
+        "question": "Which of the following is an example of risk mitigation in ISO 27001?",
+        "options": [
+            "Eliminating unnecessary access to confidential data",
+            "Outsourcing IT services",
+            "Implementing regular backups",
+            "Replacing hardware every 3 years"
+        ],
+        "correct": [0, 2],
+        "explanation": "Eliminating unnecessary access to confidential data minimizes security risks. Implementing regular backups ensures that data can be restored quickly in the event of data loss. Both are key risk mitigation steps in ISO 27001.",
+        "type": "multiple",
+        "topic": "Risk Mitigation",
+        "section": 6
+    },
+    {
+        "id": 15,
+        "question": "Which of the following is a risk mitigation strategy for ISO 27001?",
+        "options": [
+            "Increasing the frequency of backups",
+            "Implementing encryption",
+            "Developing a disaster recovery plan",
+            "Purchasing new hardware"
+        ],
+        "correct": [0, 1],
+        "explanation": "Increasing the frequency of backups allows organizations to quickly restore data in case of data loss. Implementing encryption makes it more difficult for malicious actors to access confidential data, reducing security breach risks.",
+        "type": "multiple",
+        "topic": "Risk Mitigation",
+        "section": 6
+    },
+    {
+        "id": 16,
+        "question": "What must be considered when accepting a risk according to ISO 27001?",
+        "options": [
+            "Risk assessment",
+            "Impact analysis",
+            "Cost-benefit analysis",
+            "Mitigation strategy"
+        ],
+        "correct": [1, 2],
+        "explanation": "Risk acceptance requires considering both the impact analysis (to understand the potential impact on the organization) and cost-benefit analysis (to assess the costs of accepting the risk versus any potential benefits).",
+        "type": "multiple",
+        "topic": "Risk Acceptance",
+        "section": 6
+    },
+    {
+        "id": 17,
+        "question": "What are some methods of risk transfer in ISO 27001?",
+        "options": [
+            "Insurance",
+            "Outsourcing",
+            "Separation of duties",
+            "Process redesign"
+        ],
+        "correct": [0, 1],
+        "explanation": "Insurance allows purchasing coverage to offset costs of losses from security incidents. Outsourcing transfers certain responsibilities to a third-party provider, helping reduce organizational risk. Separation of duties and process redesign are risk management measures but don't transfer risk to third parties.",
+        "type": "multiple",
+        "topic": "Risk Transfer",
+        "section": 6
+    },
+    {
+        "id": 18,
+        "question": "Who is responsible for managing the risks identified in an ISO 27001 audit?",
+        "options": [
+            "The Auditor",
+            "The Risk Owner",
+            "The Risk Assessor",
+            "The Risk Manager"
+        ],
+        "correct": [1],
+        "explanation": "The Risk Owner is responsible for managing the risks identified in an ISO 27001 audit. The Auditor performs the audit, the Risk Assessor assesses the risks, and the Risk Manager develops the risk management plan.",
+        "type": "single",
+        "topic": "Risk Management Roles",
+        "section": 6
+    },
+    {
+        "id": 19,
+        "question": "What is the risk impact if an organization fails to implement appropriate technical and organizational measures to protect confidential data?",
+        "options": [
+            "Loss of customer trust",
+            "Compromise of confidential data",
+            "Potential legal action",
+            "Damage to the organization's reputation"
+        ],
+        "correct": [0, 1, 2, 3],
+        "explanation": "All options are correct. Failing to protect confidential data can lead to data compromise, loss of customer trust, potential legal action, and damage to the organization's reputation.",
+        "type": "multiple",
+        "topic": "Risk Impact",
+        "section": 6
+    },
+    {
+        "id": 20,
+        "question": "Which factors are used to determine risk according to ISO 27001?",
+        "options": [
+            "The amount of resources available",
+            "The cost to the organization",
+            "The potential impact of the risk",
+            "The probability of the risk occurring"
+        ],
+        "correct": [2, 3],
+        "explanation": "ISO 27001 states that risk is determined by considering both the potential impact of the risk (extent of damage) and the probability of the risk occurring (likelihood). Resources and cost are not the primary determining factors.",
+        "type": "multiple",
+        "topic": "Risk Determination",
+        "section": 6
+    },
+    {
+        "id": 21,
+        "question": "Which actions are accepted as good risk treatment practices?",
+        "options": [
+            "Ignoring the risk",
+            "Risk sharing",
+            "Risk acceptance",
+            "Doubling the risk"
+        ],
+        "correct": [1, 2],
+        "explanation": "Risk sharing (transferring risk to third parties through insurance, contracts, or outsourcing) and risk acceptance (accepting risks within the organization's risk appetite) are both accepted risk treatment options according to ISO 27001. Ignoring risks and doubling risks are not valid treatment practices.",
+        "type": "multiple",
+        "topic": "Risk Treatment",
+        "section": 6
+    },
+    {
+        "id": 22,
+        "question": "The Statement of Applicability document should include:",
+        "options": [
+            "Only the controls from Annex A",
+            "All the controls from Annex A and any additional controls identified in the risk treatment process",
+            "Only additional controls that might be identified in the risk treatment process",
+            "The risk owner"
+        ],
+        "correct": [1],
+        "explanation": "The Statement of Applicability should include a list of security controls selected, an assessment of the risks those controls address, and an explanation of why those controls were selected. This includes all Annex A controls and any additional controls identified.",
+        "type": "single",
+        "topic": "Statement of Applicability",
+        "section": 6
+    },
+    {
+        "id": 23,
+        "question": "What is the purpose of the Statement of Applicability according to ISO 27001?",
+        "options": [
+            "To identify the security controls implemented within an organization",
+            "To document the risk assessment and risk treatment process",
+            "To demonstrate an organization's commitment to information security",
+            "To identify assets and the associated risks"
+        ],
+        "correct": [0, 1, 2, 3],
+        "explanation": "All options are correct. The Statement of Applicability identifies implemented security controls, documents the risk assessment and treatment process, demonstrates commitment to information security, and identifies all assets and associated risks.",
+        "type": "multiple",
+        "topic": "Statement of Applicability",
+        "section": 6
+    },
+    {
+        "id": 24,
+        "question": "What is the purpose of a Risk Treatment Plan?",
+        "options": [
+            "To identify, evaluate, and control risks",
+            "To document potential risks",
+            "To document the responses to a risk",
+            "To create a list of acceptable risks"
+        ],
+        "correct": [0, 2],
+        "explanation": "A Risk Treatment Plan is used to identify, evaluate, and control risks. It also documents the responses to risks, such as avoidance, transfer, mitigation, or acceptance.",
+        "type": "multiple",
+        "topic": "Risk Treatment Plan",
+        "section": 6
+    },
+    {
+        "id": 25,
+        "question": "Which is a step in the risk management process?",
+        "options": [
+            "Define the information Security Policy",
+            "Create the risk treatment plan",
+            "Understand the organization and its context",
+            "Report the incidents to the top management"
+        ],
+        "correct": [1],
+        "explanation": "Creating the risk treatment plan is a step in the risk management process. The risk treatment plan outlines the steps the organization will take to address identified risks, including implementation, monitoring, and review.",
+        "type": "single",
+        "topic": "Risk Management Process",
+        "section": 6
+    },
+    {
+        "id": 26,
+        "question": "According to ISO 27001, the risk assessment must include which element?",
+        "options": [
+            "Risk evaluation",
+            "Risk transfer",
+            "Defining the risk assessment methodology",
+            "Risk treatment"
+        ],
+        "correct": [0],
+        "explanation": "Risk evaluation is an essential step in the risk assessment process. It involves evaluating the risks identified to determine their potential impact on the organization, prioritizing risks based on likelihood and impact.",
+        "type": "single",
+        "topic": "Risk Assessment",
+        "section": 6
+    },
+    {
+        "id": 27,
+        "question": "Which is NOT a valid method for risk evaluation according to ISO 27001?",
+        "options": [
+            "Assessing likelihood and impact of each identified risk",
+            "Comparing risks to a pre-determined set of criteria",
+            "Consulting with industry experts to determine potential risks",
+            "Ignoring risks that have a low likelihood of occurrence"
+        ],
+        "correct": [3],
+        "explanation": "Ignoring risks based on their likelihood of occurrence is not a valid method of risk evaluation as it may lead to overlooking potential threats to information security. All risks should be assessed and evaluated.",
+        "type": "single",
+        "topic": "Risk Evaluation",
+        "section": 6
+    },
+    {
+        "id": 28,
+        "question": "What is the correct way to perform risk evaluation according to ISO 27001?",
+        "options": [
+            "Assess the likelihood of each potential risk and assign a numerical value",
+            "Only consider risks that have occurred in the past",
+            "Only consider risks that have the potential to cause a major impact on the organization",
+            "Only consider risks that are outside of the organization's control"
+        ],
+        "correct": [0, 2],
+        "explanation": "Risk evaluation involves assessing the likelihood and assigning values to risks. Organizations should prioritize risks that have the potential to cause major impact, as these will have the greatest effect on the organization's ability to meet its objectives.",
+        "type": "multiple",
+        "topic": "Risk Evaluation",
+        "section": 6
+    },
+    {
+        "id": 29,
+        "question": "Risk analysis includes assessment of the impact and likelihood. The assessment scale for impact and likelihood must vary between values of 1 and 10.",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "correct": [1],
+        "explanation": "Companies can choose different types of assessment scales for impact and likelihood, such as 'high, medium, and low' scale, or numerical values from 1 to 5, etc. There is no requirement to use a 1-10 scale.",
+        "type": "single",
+        "topic": "Risk Assessment Scales",
+        "section": 6
+    },
+    {
+        "id": 30,
+        "question": "Which is NOT a recommended approach for identifying potential risks during risk evaluation?",
+        "options": [
+            "Reviewing past incidents and near-misses",
+            "Conducting a threat analysis",
+            "Implementing a new software system without testing",
+            "Consulting external experts and industry standards"
+        ],
+        "correct": [2],
+        "explanation": "Implementing a new software system without testing is not recommended as it increases the risk of vulnerabilities and potential incidents. Systematic approaches include reviewing past incidents, conducting threat analysis, and consulting experts.",
+        "type": "single",
+        "topic": "Risk Identification",
+        "section": 6
+    },
+    {
+        "id": 31,
+        "question": "After formulating a risk treatment plan, the Statement of Applicability must be documented.",
+        "options": [
+            "True",
+            "False"
+        ],
+        "correct": [1],
+        "explanation": "First, the Statement of Applicability is documented, and after that, the risk treatment plan is formulated. The SoA comes before the risk treatment plan.",
+        "type": "single",
+        "topic": "Statement of Applicability",
+        "section": 6
+    },
+    {
+        "id": 32,
+        "question": "The Statement of Applicability must include which information according to ISO 27001?",
+        "options": [
+            "A scope of the ISMS",
+            "The risks that have been identified and assessed",
+            "The controls selected to treat risks",
+            "Justification for controls excluded"
+        ],
+        "correct": [0, 1, 2],
+        "explanation": "The Statement of Applicability must include the ISMS scope, the risks identified and assessed, and the controls selected to treat risks. It provides a comprehensive view of the organization's information security posture.",
+        "type": "multiple",
+        "topic": "Statement of Applicability",
+        "section": 6
+    }
+]

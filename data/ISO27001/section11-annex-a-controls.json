@@ -1,0 +1,620 @@
+[
+    {
+        "id":  1,
+        "question":  "Why should organizations review the information security policies after the occurrence of significant changes?",
+        "options":  [
+                        "To ensure continuing suitability, adequacy, and effectiveness of the information security policy",
+                        "To ensure continuing reliability of the information security policy",
+                        "To ensure continuing efficiency, performance, and correctness of the information security policy"
+                    ],
+        "correct":  [
+                        0
+                    ],
+        "explanation":  "Based on ISO/IEC 27001:2022, control 5.1 the policies for information security should be reviewed at planned intervals or if significant changes occur to ensure their continuing suitability, adequacy, and effectiveness. (Reference: See Day2, Section 11: Annex A Controls (pages 85-117))",
+        "type":  "single",
+        "topic":  "Information Security Controls"
+    },
+    {
+        "id":  2,
+        "question":  "Which is the main purpose of control 6.1 Screening of ISO/IEC 27001:2022?",
+        "options":  [
+                        "To ensure that all personnel are eligible and suitable for their roles",
+                        "To ensure that employees and contractors are aware of and fulfil their information security responsibilities",
+                        "To protect the organizationâ€™s interests as part of the process of any changes in employment"
+                    ],
+        "correct":  [
+                        0
+                    ],
+        "explanation":  "The purpose of control 6.1, as defined by ISO/IEC 27002, is to ensure all personnel are eligible and suitable for the roles for which they are considered. (Reference: See Day2, Section 11: Annex A Controls (pages 85-117))",
+        "type":  "single",
+        "topic":  "Information Security Controls"
+    },
+    {
+        "id":  3,
+        "question":  "Who shall have access to documented operating procedures?",
+        "options":  [
+                        "Only the top management",
+                        "The person responsible for operating procedures",
+                        "Any user that needs them"
+                    ],
+        "correct":  [
+                        2
+                    ],
+        "explanation":  "Based on ISO/IEC 27001:2022, control 5.37, operating procedures for information processing facilities shall be documented and made available personnel who need them. (Reference: See Day2, Section 11: Annex A Controls (pages 85-117))",
+        "type":  "single",
+        "topic":  "Information Security Controls"
+    },
+    {
+        "id":  4,
+        "question":  "What is the main requirement of control 8.34 Protection of information systems during audit testing of ISO/IEC 27001:2022?",
+        "options":  [
+                        "The tester and appropriate management shall appropriately manage test information",
+                        "The tester and appropriate management shall plan and agree on audit tests and other assurance activities involving assessment of operational systems",
+                        "The tester shall separate and secure the development, testing, and production environments"
+                    ],
+        "correct":  [
+                        1
+                    ],
+        "explanation":  "According to ISO/IEC 27001:2022, control 8.34, audit tests and other assurance activities involving assessment of operational systems shall be planned and agreed between the tester and appropriate management. (Reference: See Day2, Section 11: Annex A Controls (pages 85-117))",
+        "type":  "single",
+        "topic":  "Information Security Controls"
+    },
+    {
+        "id":  5,
+        "question":  "What is the purpose of control 5.7 Threat intelligence of ISO/IEC 27001:2022?",
+        "options":  [
+                        "To provide awareness of the organizationâ€™s threat environment",
+                        "To ensure appropriate flow of information takes place with respect to information security",
+                        "To ensure authorized access to information and other associated assets"
+                    ],
+        "correct":  [
+                        0
+                    ],
+        "explanation":  "The purpose of control 5.7, is to provide awareness of the organizationâ€™s threat environment so that the appropriate mitigation actions can be taken. (Reference: See Day2, Section 11: Annex A Controls (pages 85-117))",
+        "type":  "single",
+        "topic":  "Information Security Controls"
+    },
+    {
+        "id":  6,
+        "question":  "A security incident regarding a webserver is reported to a helpdesk employee. His colleague has more experience on webservers, so he transfers the case to her. Which term describes this transfer?",
+        "options":  [
+                        "Functional escalation",
+                        "Hierarchical escalation"
+                    ],
+        "correct":  [
+                        0
+                    ],
+        "explanation":  "If the helpdesk employee is not able to deal with the incident personally, the incident can be reported to someone with more expertise who may be able to resolve the problem. This is called a functional (horizontal) escalation. (Reference: See Day2, Section 11: Annex A Controls (pages 85-117))",
+        "type":  "single",
+        "topic":  "Information Security Controls"
+    },
+    {
+        "id":  7,
+        "question":  "A worker from an insurance company discovers that the expiration date of a policy has been changed without her knowledge. She is the only person authorized to do this. She reports this security incident to the Helpdesk. The Helpdesk worker records the following information regarding this incident: date and time, description of the incident, possible consequences of the incident. What most important information about the incident is missing here?",
+        "options":  [
+                        "the name of the person reporting the incident",
+                        "the name of the software package",
+                        "the PC number",
+                        "a list of people who were informed about the incident"
+                    ],
+        "correct":  [
+                        0
+                    ],
+        "explanation":  "When reporting an incident, the name of the reporter must be recorded at a minimum. (Reference: See Day2, Section 11: Annex A Controls (pages 85-117))",
+        "type":  "single",
+        "topic":  "Information Security Controls"
+    },
+    {
+        "id":  8,
+        "question":  "In the incident cycle there are four successive steps. Which step follows after the step Incident?",
+        "options":  [
+                        "Threat",
+                        "Damage",
+                        "Recovery"
+                    ],
+        "correct":  [
+                        1
+                    ],
+        "explanation":  "The order of steps in the incident cycle are: Threat, Incident, Damage, Recovery. (Reference: See Day2, Section 11: Annex A Controls (pages 85-117))",
+        "type":  "single",
+        "topic":  "Information Security Controls"
+    },
+    {
+        "id":  9,
+        "question":  "Strong authentication is needed to access highly protected areas. In case of strong authentication the identity of a person is verified by using three factors. Which factor is verified when we must show our access pass?",
+        "options":  [
+                        "something you are",
+                        "something you have",
+                        "something you know"
+                    ],
+        "correct":  [
+                        1
+                    ],
+        "explanation":  "An access pass is an example of something that you have. (Reference: See Day2, Section 11: Annex A Controls (pages 85-117))",
+        "type":  "single",
+        "topic":  "Information Security Controls"
+    },
+    {
+        "id":  10,
+        "question":  "In physical security multiple expanding zones (protection rings) can be applied in which different measures can be taken. What is not a protection ring?",
+        "options":  [
+                        "Building",
+                        "Middle ring",
+                        "Object",
+                        "Outer ring"
+                    ],
+        "correct":  [
+                        1
+                    ],
+        "explanation":  "Protection rings: Outer ring (area around the premises), Building (access to the premises), Working space (the rooms in the premises, also known as \u0027Inner Ring\u0027), Object (the asset that is to be protected). There is no such thing as a middle ring. (Reference: See Day2, Section 11: Annex A Controls (pages 85-117))",
+        "type":  "single",
+        "topic":  "Information Security Controls"
+    },
+    {
+        "id":  11,
+        "question":  "Which threat can occur as a result of the absence of a physical measure?",
+        "options":  [
+                        "A user can view the files belonging to another user.",
+                        "A server shuts down because of overheating.",
+                        "A confidential document is left in the printer.",
+                        "Hackers can freely enter the computer network."
+                    ],
+        "correct":  [
+                        1
+                    ],
+        "explanation":  "Physical security includes the protection of equipment through climate control (air conditioning, air humidity). (Reference: See Day2, Section 11: Annex A Controls (pages 85-117))",
+        "type":  "single",
+        "topic":  "Information Security Controls"
+    },
+    {
+        "id":  12,
+        "question":  "The backups of the central server are kept in the same locked room as the server. What risk does the organization face?",
+        "options":  [
+                        "If the server crashes, it will take a long time before the server is again operational.",
+                        "In the event of fire it is impossible to get the system back to its former state.",
+                        "No one is responsible for the backups.",
+                        "Unauthorized persons have easy access to the backups."
+                    ],
+        "correct":  [
+                        1
+                    ],
+        "explanation":  "The chance that the back-ups may also be destroyed in a fire is very great. (Reference: See Day2, Section 11: Annex A Controls (pages 85-117))",
+        "type":  "single",
+        "topic":  "Information Security Controls"
+    },
+    {
+        "id":  13,
+        "question":  "Which type of malware builds a network of contaminated computers?",
+        "options":  [
+                        "Logic Bomb",
+                        "Storm Worm or Botnet",
+                        "Trojan",
+                        "Spyware"
+                    ],
+        "correct":  [
+                        1
+                    ],
+        "explanation":  "A worm is a small computer program that purposely replicates itself, copies of the original are spread by making use of the network facilities of its host. (Reference: See Day2, Section 11: Annex A Controls (pages 85-117))",
+        "type":  "single",
+        "topic":  "Information Security Controls"
+    },
+    {
+        "id":  14,
+        "question":  "Within an organization the security officer detects that a workstation of an employee is infected with malicious software. The malicious software was installed due to a targeted Phishing attack. Which action is the most beneficial to prevent such incidents in the future?",
+        "options":  [
+                        "Implementing MAC technology",
+                        "Start a security awareness program",
+                        "Update the firewall rules",
+                        "Update the signatures of the spam filter"
+                    ],
+        "correct":  [
+                        1
+                    ],
+        "explanation":  "The underlying vulnerability of this threat is the unawareness of the user. Users are persuaded in these kinds of attacks to execute some code that violates the policy (e.g. install suspicious software). Addressing these kind of attacks in a security awareness program will reduce the chance of reoccurrence in the future. (Reference: See Day2, Section 11: Annex A Controls (pages 85-117))",
+        "type":  "single",
+        "topic":  "Information Security Controls"
+    },
+    {
+        "id":  15,
+        "question":  "What is \u0027establishing whether someone\u0027s identity is correct\u0027 called?",
+        "options":  [
+                        "Authentication",
+                        "Authorization",
+                        "Identification"
+                    ],
+        "correct":  [
+                        0
+                    ],
+        "explanation":  "Establishing whether someone\u0027s identity is correct is called authentication. (Reference: See Day2, Section 11: Annex A Controls (pages 85-117))",
+        "type":  "single",
+        "topic":  "Information Security Controls"
+    },
+    {
+        "id":  16,
+        "question":  "Why is it necessary to keep a disaster recovery plan up to date and to test it regularly?",
+        "options":  [
+                        "In order to always have access to recent backups that are located outside the office.",
+                        "In order to be able to cope with daily occurring faults.",
+                        "Because otherwise, in the event of a far-reaching disruption, the measures taken and the incident procedures planned may not be adequate or may be outdated.",
+                        "Because this is required by Personal Data Protection legislation."
+                    ],
+        "correct":  [
+                        2
+                    ],
+        "explanation":  "A far-reaching disruption requires an up-to-date and tested plan. (Reference: See Day2, Section 11: Annex A Controls (pages 85-117))",
+        "type":  "single",
+        "topic":  "Information Security Controls"
+    },
+    {
+        "id":  17,
+        "question":  "On the basis of which legislation can someone request to inspect the data that has been registered about him or her?",
+        "options":  [
+                        "Public records legislation",
+                        "Personal data protection legislation",
+                        "Computer criminality legislation",
+                        "Government information (public access) legislation"
+                    ],
+        "correct":  [
+                        1
+                    ],
+        "explanation":  "The right to inspection is regulated in Personal data protection legislation. (Reference: See Day2, Section 11: Annex A Controls (pages 85-117))",
+        "type":  "single",
+        "topic":  "Information Security Controls"
+    },
+    {
+        "id":  18,
+        "question":  "Which is a legislative or regulatory act related to information security that can be imposed upon all organizations?",
+        "options":  [
+                        "Intellectual Property Rights",
+                        "ISO/IEC 27001",
+                        "ISO/IEC 27002",
+                        "Personal data protection legislation"
+                    ],
+        "correct":  [
+                        3
+                    ],
+        "explanation":  "All organizations should have a policy and procedures for personal data protection, which should be known to everybody who processes personal data. (Reference: See Day2, Section 11: Annex A Controls (pages 85-117))",
+        "type":  "single",
+        "topic":  "Information Security Controls"
+    },
+    {
+        "id": 19,
+        "question": "You are the owner of the courier company SpeeDelivery. In which way can the use of Internet and e-mail facilities be best regulated?",
+        "options": [
+            "Installing an application that makes certain websites no longer accessible and filters attachments",
+            "Drafting a code of conduct for the use of the Internet and e-mail",
+            "Implementing privacy regulations",
+            "Installing a virus scanner"
+        ],
+        "correct": [1],
+        "explanation": "In a code of conduct the use of internet and e-mail can be documented which websites may or may not be visited and to which extent private use is permitted.",
+        "type": "single",
+        "topic": "Information Security Controls",
+        "section": 11
+    },
+    {
+        "id": 20,
+        "question": "All 93 controls listed in ISO 27001 Annex A must be implemented.",
+        "options": ["True", "False"],
+        "correct": [1],
+        "explanation": "The controls listed in Annex A are not mandatory; a company can choose for itself which controls it finds applicable, and then it must implement them.",
+        "type": "single",
+        "topic": "Annex A Controls",
+        "section": 11
+    },
+    {
+        "id": 21,
+        "question": "The purpose of the A.6 People controls section of Annex A is:",
+        "options": [
+            "To punish people who don't follow the rules",
+            "To help the company to employ high-quality people",
+            "To ensure that people working under the company understand and fulfill their information security responsibilities",
+            "To prevent information disclosure by employees"
+        ],
+        "correct": [2],
+        "explanation": "The People Controls section ensures that personnel performing security-related activities are qualified and reliable, understand their responsibilities, and includes background checks, training, and other measures.",
+        "type": "single",
+        "topic": "People Controls",
+        "section": 11
+    },
+    {
+        "id": 22,
+        "question": "Which of the following represent physical security controls?",
+        "options": [
+            "Public and private encryption keys",
+            "Ensuring the proper return of assets",
+            "Securing equipment against theft when used outside of offices",
+            "Defining guidelines for classification of information"
+        ],
+        "correct": [2],
+        "explanation": "Physical security controls include measures to protect physical assets, personnel, and information from physical harm or destruction, such as access control systems, security guards, CCTV cameras, locks, alarm systems, and securing equipment against theft.",
+        "type": "single",
+        "topic": "Physical Controls",
+        "section": 11
+    },
+    {
+        "id": 23,
+        "question": "The technological controls from ISO 27001 Annex A are focused on the direct protection of data and information systems used.",
+        "options": ["True", "False"],
+        "correct": [0],
+        "explanation": "Technological controls use physical or software-based processes to protect information or systems from unauthorized access, use, or modification. These include encryption, access control systems, firewalls, and intrusion detection systems.",
+        "type": "single",
+        "topic": "Technological Controls",
+        "section": 11
+    },
+    {
+        "id": 24,
+        "question": "To ensure information security is integrated into new information systems, companies should:",
+        "options": [
+            "Test the security features of the new systems",
+            "Document a Change Management Policy",
+            "Make updates on information systems as soon as vulnerabilities are identified",
+            "Identifying information security requirements is the job of the company that produces the system"
+        ],
+        "correct": [0],
+        "explanation": "New information systems should be designed and implemented with ISO 27001 principles in mind, including testing security features, considering security risks, implementing security controls, and having systems for monitoring and responding to security incidents.",
+        "type": "single",
+        "topic": "System Security",
+        "section": 11
+    },
+    {
+        "id": 25,
+        "question": "Technological controls from ISO 27001 Annex A are those controls that are essential for ensuring secure operations of the IT infrastructure.",
+        "options": ["True", "False"],
+        "correct": [0],
+        "explanation": "Technological controls are operational security controls crucial for ensuring secure IT operations, such as protection against malware, backup, logging, control of operational software, and network security.",
+        "type": "single",
+        "topic": "Technological Controls",
+        "section": 11
+    },
+    {
+        "id": 26,
+        "question": "Information security should be addressed in every project, regardless of its type.",
+        "options": ["True", "False"],
+        "correct": [0],
+        "explanation": "Information security should be addressed in every project because ISO 27001 sets out a framework of best practices and controls to ensure confidentiality, integrity and availability of information, protecting data from unauthorized access, malicious attacks, and natural disasters.",
+        "type": "single",
+        "topic": "Project Security",
+        "section": 11
+    },
+    {
+        "id": 27,
+        "question": "According to ISO 27001 Annex A, information and assets should be managed by:",
+        "options": [
+            "Defining a classification framework considering the levels Public, Internal, Confidential, and Top Secret",
+            "Defining expected behavior on the use of assets",
+            "Implementing an asset management software",
+            "By ensuring the former employee signs the Return of Asset form when leaving"
+        ],
+        "correct": [1],
+        "explanation": "Organizations should create documented policies and procedures detailing steps taken to protect information and assets, including identification of assets, classification of confidential information, authentication and authorization of users, and management of access to sensitive information.",
+        "type": "single",
+        "topic": "Asset Management",
+        "section": 11
+    },
+    {
+        "id": 28,
+        "question": "According to ISO 27001 Annex A, operational security should be managed by:",
+        "options": [
+            "Defining rules that will forbid access by third parties",
+            "Defining how information can be transferred between organizations",
+            "Documenting procedures focusing only on employees from the IT department",
+            "Having security documents not related to regular IT processes"
+        ],
+        "correct": [1],
+        "explanation": "Operational security should be managed by instituting comprehensive policies and procedures covering all areas including physical environment, access control, and data security. These should be regularly reviewed and organizations should periodically assess their security posture.",
+        "type": "single",
+        "topic": "Operational Security",
+        "section": 11
+    },
+    {
+        "id": 29,
+        "question": "Security requirements can be agreed upon verbally with suppliers.",
+        "options": ["True", "False"],
+        "correct": [1],
+        "explanation": "Supplier agreements should be documented to ensure there is no misunderstanding between the company and the supplier regarding their information security obligations.",
+        "type": "single",
+        "topic": "Supplier Management",
+        "section": 11
+    },
+    {
+        "id": 30,
+        "question": "Management of information security incidents includes learning from the incidents.",
+        "options": ["True", "False"],
+        "correct": [0],
+        "explanation": "Knowledge gained from analyzing and resolving incidents should be used for learning from the incidents and reducing the chance of them reoccurring.",
+        "type": "single",
+        "topic": "Incident Management",
+        "section": 11
+    },
+    {
+        "id": 31,
+        "question": "The controls related to compliance are focused primarily on avoiding breaches of intellectual property rights.",
+        "options": ["True", "False"],
+        "correct": [1],
+        "explanation": "Intellectual property is just one small aspect of compliance. The purpose of these controls is to ensure that information security is implemented as prescribed with existing ISMS documentation and to help companies avoid breaches of contractual and legal obligations connected to information security.",
+        "type": "single",
+        "topic": "Compliance",
+        "section": 11
+    },
+    {
+        "id": 32,
+        "question": "Controls related to information security policies require documenting a set of policies. These policies are:",
+        "options": [
+            "High-level policies that set the basic approach of the company for information security",
+            "Mandatory",
+            "Topic-specific policies",
+            "Updated at least once per year"
+        ],
+        "correct": [2],
+        "explanation": "Topic-specific policies are specific to certain topics within Annex A and ISO 27001. These policies are intended to ensure organizations meet requirements and are often tailored to particular organizational needs. Examples include policies related to access control, system security, physical security, and data protection.",
+        "type": "single",
+        "topic": "Security Policies",
+        "section": 11
+    },
+    {
+        "id": 33,
+        "question": "The physical controls from section A.7 cover two sub-topics: controls for securing the area, and controls for securing the equipment.",
+        "options": ["True", "False"],
+        "correct": [0],
+        "explanation": "The sub-topic for securing areas focuses on preventing unauthorized physical access and damage to the information. The sub-topic for securing equipment focuses on preventing loss, damage, or compromise of assets.",
+        "type": "single",
+        "topic": "Physical Controls",
+        "section": 11
+    },
+    {
+        "id": 34,
+        "question": "Section A.5 Organizational controls requires documenting operational procedures that will be available to everyone in the organization who needs them.",
+        "options": ["True", "False"],
+        "correct": [0],
+        "explanation": "According to control A.5.37, companies should document procedures related to operational security, covering elements such as capacity management, controls against malware, backup, logging and monitoring, etc.",
+        "type": "single",
+        "topic": "Organizational Controls",
+        "section": 11
+    },
+    {
+        "id": 35,
+        "question": "Section A.6 People controls aims to ensure that people are aware of their responsibilities regarding information security.",
+        "options": ["True", "False"],
+        "correct": [0],
+        "explanation": "People controls cover security practices from hiring to termination of employment, including onboarding, awareness, development of competencies, and change of functions.",
+        "type": "single",
+        "topic": "People Controls",
+        "section": 11
+    },
+    {
+        "id": 36,
+        "question": "Section A.5 defines controls related to supplier management. These controls aim:",
+        "options": [
+            "To ensure that failure to deliver reports as defined in agreements is properly handled",
+            "To ensure that suppliers exceed the agreed levels of performance",
+            "To ensure that controls to treat risks related to suppliers are properly identified, agreed, monitored, and reviewed",
+            "To force suppliers to pay damages that are incurred as a consequence of incidents"
+        ],
+        "correct": [2],
+        "explanation": "Supplier management controls ensure suppliers are properly managed and monitored to provide necessary products and services. This includes establishing supplier selection criteria, contractual agreements, monitoring performance, maintaining business continuity plans, and establishing secure communications.",
+        "type": "single",
+        "topic": "Supplier Management",
+        "section": 11
+    },
+    {
+        "id": 37,
+        "question": "What is the purpose of people controls in ISO 27001?",
+        "options": [
+            "To ensure that only authorized individuals have access to sensitive information",
+            "To track the amount of time employees spend on specific tasks",
+            "To monitor employee internet usage",
+            "To implement background checks for new hires"
+        ],
+        "correct": [0],
+        "explanation": "People controls refer to measures that ensure only authorized individuals have access to sensitive information. This includes implementing role-based access controls, background checks, and security awareness training for employees.",
+        "type": "single",
+        "topic": "People Controls",
+        "section": 11
+    },
+    {
+        "id": 38,
+        "question": "To prevent unauthorized access to sensitive data, which people controls would be most effective?",
+        "options": [
+            "Installing security cameras throughout the office",
+            "Conducting background checks on all employees",
+            "Implementing a strict password policy",
+            "Providing annual security awareness training for all employees"
+        ],
+        "correct": [1, 3],
+        "explanation": "Conducting background checks helps identify potential security risks. Providing annual security awareness training ensures employees understand their role in maintaining security and are aware of potential risks and how to mitigate them.",
+        "type": "multiple",
+        "topic": "People Controls",
+        "section": 11
+    },
+    {
+        "id": 39,
+        "question": "Which is considered a physical control in an ISO 27001 compliant environment?",
+        "options": [
+            "Employee background checks",
+            "Firewall implementation",
+            "Biometric access controls",
+            "Encryption of sensitive data"
+        ],
+        "correct": [2],
+        "explanation": "Physical controls protect physical assets like buildings, equipment, and data. Biometric access controls (fingerprint or facial recognition) physically restrict access to a facility or equipment. Background checks are personnel controls, firewalls are technical controls, and encryption is a logical control.",
+        "type": "single",
+        "topic": "Physical Controls",
+        "section": 11
+    },
+    {
+        "id": 40,
+        "question": "Which physical control can be implemented to secure a data center?",
+        "options": [
+            "Employee background checks",
+            "Fire suppression system",
+            "Access controls on network devices",
+            "Anti-virus software"
+        ],
+        "correct": [1],
+        "explanation": "A fire suppression system is a physical control that can secure a data center by preventing or extinguishing fires that could damage equipment and compromise stored data. The other options are logical controls without direct impact on physical security.",
+        "type": "single",
+        "topic": "Physical Controls",
+        "section": 11
+    },
+    {
+        "id": 41,
+        "question": "Which is an example of a technological control to protect an organization's information assets?",
+        "options": [
+            "Security cameras",
+            "Background checks on employees",
+            "Firewall",
+            "Regularly scheduled employee trainings"
+        ],
+        "correct": [2],
+        "explanation": "A firewall is a technological control that protects information assets by controlling and monitoring incoming and outgoing network traffic. It acts as a barrier between the internal network and external network to prevent unauthorized access.",
+        "type": "single",
+        "topic": "Technological Controls",
+        "section": 11
+    },
+    {
+        "id": 42,
+        "question": "Which would be considered a technological control to mitigate unauthorized network access risk?",
+        "options": [
+            "Background checks for employees",
+            "Installing a firewall",
+            "Conducting regular security training for employees",
+            "None of the above"
+        ],
+        "correct": [1],
+        "explanation": "A firewall is a technological control that helps prevent unauthorized access to a network by controlling the flow of incoming and outgoing traffic. Background checks and security training are important but are not technological controls.",
+        "type": "single",
+        "topic": "Technological Controls",
+        "section": 11
+    },
+    {
+        "id": 43,
+        "question": "Which would be considered an organizational control when implementing new security controls to comply with ISO 27001?",
+        "options": [
+            "Installing security cameras in the building",
+            "Developing a security incident response plan",
+            "Restricting employee access to sensitive data based on job role",
+            "Updating anti-virus software on all company computers"
+        ],
+        "correct": [1, 2],
+        "explanation": "Developing a security incident response plan and restricting employee access based on job role are organizational controls involving policies and procedures for managing security incidents and protecting sensitive data. Security cameras and anti-virus software are physical or technological controls.",
+        "type": "multiple",
+        "topic": "Organizational Controls",
+        "section": 11
+    },
+    {
+        "id": 44,
+        "question": "What is an example of an organizational control in accordance with ISO 27001?",
+        "options": [
+            "Encryption of sensitive data",
+            "Background checks for new employees",
+            "Regularly scheduled backups of important data",
+            "Installation of firewalls on network devices"
+        ],
+        "correct": [1],
+        "explanation": "Background checks for new employees is an organizational control that involves creating policies and procedures for hiring. Encryption, backups, and firewalls are technological controls.",
+        "type": "single",
+        "topic": "Organizational Controls",
+        "section": 11
+    }
+]

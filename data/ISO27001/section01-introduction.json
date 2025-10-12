@@ -1,0 +1,210 @@
+[
+    {
+        "id": 1,
+        "question": "What is an integrated management system (IMS)?",
+        "options": [
+            "A management system that integrates all the guidelines and best practices so as to enable the achievement of its purpose and mission",
+            "A management system that integrates all the components of a business into a coherent system so as to enable the achievement of its purpose and mission",
+            "A management system that integrates all frameworks and resources so as to enable the achievement of its purpose and mission"
+        ],
+        "correct": [1],
+        "explanation": "An integrated management system (IMS) enables the integration of all the components of a business, which allows an organization to achieve its purpose and mission. (Reference: See Day1, Section 1: Introduction to ISO/IEC 27001 (pages 17-27) and Day1, Section 2: ISMS Framework and Structure (pages 28-46))",
+        "type": "single",
+        "topic": "ISMS and Framework",
+        "section": 1
+    },
+    {
+        "id": 2,
+        "question": "Which standard supports the controls of Annex A?",
+        "options": [
+            "ISO/IEC 27002",
+            "ISO/IEC 27003",
+            "ISO/IEC 27701"
+        ],
+        "correct": [0],
+        "explanation": "The information security controls listed in Annex A of ISO/IEC 27001:2022 are supported by the guidance of ISO/IEC 27002 in clauses 5 to 8. (Reference: See Day1, Section 1: Introduction to ISO/IEC 27001 (pages 17-27) and Day1, Section 2: ISMS Framework and Structure (pages 28-46))",
+        "type": "single",
+        "topic": "ISMS and Framework",
+        "section": 1
+    },
+    {
+        "id": 3,
+        "question": "What is an Information Security Management System (ISMS)?",
+        "options": [
+            "A set of policies and procedures for managing sensitive company information",
+            "A software tool for managing security risks",
+            "A physical security system",
+            "A consulting service for security compliance"
+        ],
+        "correct": [0],
+        "explanation": "An Information Security Management System (ISMS) is a framework of policies, procedures, and guidelines for managing sensitive and confidential information. It is designed to protect an organization's information assets from unauthorized access, use, disclosure, disruption, modification, or destruction.",
+        "type": "single",
+        "topic": "Introduction to ISO 27001",
+        "section": 1
+    },
+    {
+        "id": 4,
+        "question": "What are the two main parts of ISO 27001 standard?",
+        "options": [
+            "The main body (Clauses 0-10) and Annex A (controls)",
+            "Governance and technical controls",
+            "Requirements and recommendations",
+            "Implementation and maintenance"
+        ],
+        "correct": [0],
+        "explanation": "ISO 27001 consists of two main parts: the main body (Clauses 0-10) which contains the requirements for establishing, implementing, maintaining, and continually improving an ISMS, and Annex A which provides a reference set of 93 information security controls.",
+        "type": "single",
+        "topic": "Introduction to ISO 27001",
+        "section": 1
+    },
+    {
+        "id": 5,
+        "question": "What is the purpose of ISO 27001?",
+        "options": [
+            "To provide a framework for managing sensitive company information",
+            "To ensure compliance with government regulations",
+            "To improve an organization's overall security posture",
+            "All of the above"
+        ],
+        "correct": [3],
+        "explanation": "The purpose of ISO 27001 is to provide a framework for managing sensitive and confidential information in order to protect it from unauthorized access, use, disclosure, disruption, modification, or destruction. It helps organizations protect their assets, maintain their reputation, and comply with legal and regulatory requirements.",
+        "type": "single",
+        "topic": "Introduction to ISO 27001",
+        "section": 1
+    },
+    {
+        "id": 6,
+        "question": "What are the benefits of implementing ISO 27001?",
+        "options": [
+            "Improving an organization's overall security posture",
+            "Enhancing an organization's reputation and credibility",
+            "Facilitating compliance with legal and regulatory requirements",
+            "All of the above"
+        ],
+        "correct": [3],
+        "explanation": "There are several benefits to implementing ISO 27001, including: improved security, increased efficiency, better risk management, enhanced reputation, compliance with legal and regulatory requirements, improved business continuity, and competitive advantage.",
+        "type": "single",
+        "topic": "Introduction to ISO 27001",
+        "section": 1
+    },
+    {
+        "id": 7,
+        "question": "What is the main difference between ISO 27001 and ISO 27002?",
+        "options": [
+            "ISO 27001 is a standard and ISO 27002 is a code of practice",
+            "ISO 27001 is for management and ISO 27002 is for technical implementation",
+            "ISO 27001 is for small businesses and ISO 27002 is for large organizations",
+            "ISO 27001 is for government agencies and ISO 27002 is for private sector"
+        ],
+        "correct": [0],
+        "explanation": "ISO 27001 is a standard for an Information Security Management System (ISMS) while ISO 27002 is a code of practice for information security management. ISO 27001 provides the requirements for an ISMS and outlines the framework for implementing, maintaining, and continually improving information security.",
+        "type": "single",
+        "topic": "Introduction to ISO 27001",
+        "section": 1
+    },
+    {
+        "id": 8,
+        "question": "Which of the following best describes the structure of ISO 27001?",
+        "options": [
+            "A set of guidelines for implementing a data backup plan",
+            "A framework for establishing, implementing, maintaining, and continually improving an Information Security Management System (ISMS)",
+            "A set of regulations for protecting personal data in the healthcare industry",
+            "A standard for ensuring the security of industrial control systems"
+        ],
+        "correct": [1],
+        "explanation": "ISO 27001 is an internationally recognized standard that provides a framework for establishing, implementing, maintaining, and continually improving an Information Security Management System (ISMS).",
+        "type": "single",
+        "topic": "Introduction to ISO 27001",
+        "section": 1
+    },
+    {
+        "id": 9,
+        "question": "Which of the following sections are included in the structure of ISO 27001?",
+        "options": [
+            "Information security management system",
+            "Resource management",
+            "Business continuity planning",
+            "Human resources management"
+        ],
+        "correct": [0, 2],
+        "explanation": "ISO 27001 is structured as a series of sections that provide a comprehensive framework for information security management. Section 4 covers the information security management system (ISMS), and Section 8 covers operational planning and control, which includes business continuity planning.",
+        "type": "multiple",
+        "topic": "Introduction to ISO 27001",
+        "section": 1
+    },
+    {
+        "id": 10,
+        "question": "How can an organization ensure the availability of their information systems according to the ISO 27001 standard?",
+        "options": [
+            "By implementing regular backups and disaster recovery plans",
+            "By implementing strict access controls and monitoring user activity",
+            "By implementing firewalls and intrusion detection systems",
+            "By implementing encryption and secure communication protocols"
+        ],
+        "correct": [0],
+        "explanation": "An organization can ensure the availability of their information systems by implementing regular backups and disaster recovery plans. This includes backing up data, implementing disaster recovery procedures, testing the plan regularly, ensuring critical systems are on reliable servers, and conducting regular risk assessments.",
+        "type": "single",
+        "topic": "Introduction to ISO 27001",
+        "section": 1
+    },
+    {
+        "id": 11,
+        "question": "What are the common types of confidentiality controls implemented in an ISMS as per ISO 27001 standard?",
+        "options": [
+            "Encryption and firewalls",
+            "Access controls and intrusion detection",
+            "Backup and disaster recovery",
+            "Physical security and surveillance"
+        ],
+        "correct": [0],
+        "explanation": "Confidentiality controls are implemented to protect the confidentiality of information. Encryption converts plaintext into an unreadable format, and firewalls are network security systems that control access to prevent unauthorized access to the system.",
+        "type": "single",
+        "topic": "Introduction to ISO 27001",
+        "section": 1
+    },
+    {
+        "id": 12,
+        "question": "Which of the following best describes the principle of 'integrity' in the context of ISO 27001?",
+        "options": [
+            "Ensuring that only authorized individuals have access to sensitive information",
+            "Maintaining the accuracy and completeness of information throughout its lifecycle",
+            "Ensuring that information is protected from unauthorized modification or destruction",
+            "Ensuring that information systems are available for their intended purpose"
+        ],
+        "correct": [1],
+        "explanation": "Integrity is one of the three key principles of information security outlined in ISO 27001. It refers to maintaining the accuracy and completeness of information throughout its lifecycle, ensuring data remains intact and unmodified except by authorized processes.",
+        "type": "single",
+        "topic": "Introduction to ISO 27001",
+        "section": 1
+    },
+    {
+        "id": 13,
+        "question": "Which of the following would be the most appropriate action for an organization to take in order to ensure the confidentiality, integrity, and availability of their information assets?",
+        "options": [
+            "Implementing firewalls and antivirus software on all company computers",
+            "Providing regular security awareness training for all employees",
+            "Conducting regular risk assessments and implementing controls to mitigate identified risks",
+            "Restricting access to certain information assets to only a select group of individuals"
+        ],
+        "correct": [2],
+        "explanation": "ISO 27001 requires that organizations regularly identify and assess the risks to the confidentiality, integrity, and availability of their information assets, and then implement controls to treat those risks. This is the most appropriate action for a systematic approach to managing sensitive information.",
+        "type": "single",
+        "topic": "Introduction to ISO 27001",
+        "section": 1
+    },
+    {
+        "id": 14,
+        "question": "A company is in the process of implementing an ISMS in accordance with ISO 27001. The IT department is unsure of how to proceed. Which option would be the best course of action?",
+        "options": [
+            "Hire an external consultant to handle the implementation of the ISMS",
+            "Assign a single employee within the IT department to oversee the implementation",
+            "Form a cross-functional team within the company to handle the implementation",
+            "Outsource the implementation of the ISMS to a third-party vendor"
+        ],
+        "correct": [2],
+        "explanation": "According to ISO 27001, the implementation of an ISMS should involve input and participation from multiple departments including IT, HR, Legal, and management. By forming a cross-functional team, the company can ensure all aspects are considered and aligned with overall goals.",
+        "type": "single",
+        "topic": "Introduction to ISO 27001",
+        "section": 1
+    }
+]

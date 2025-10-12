@@ -1,0 +1,178 @@
+[
+    {
+        "id": 1,
+        "question": "Which of the options below is a benefit of an effective ISMS?",
+        "options": [
+            "Reducing information security risks and minimizing exposure to information security breaches",
+            "Processing and removing redundant information",
+            "Exposing the confidentiality of information"
+        ],
+        "correct": [0],
+        "explanation": "An effective ISMS helps an organization in reducing information security risks and minimizing exposure to information security breaches, protecting assets and sensitive information, creating competitive advantage, improving reputation and increasing customer confidence, and protecting the confidentiality, availability, and integrity of information.",
+        "type": "single",
+        "topic": "ISMS and Framework",
+        "section": 2
+    },
+    {
+        "id": 2,
+        "question": "What is the term for the identification and orderly management of processes within an organization?",
+        "options": [
+            "Input element",
+            "Information security control",
+            "Process approach"
+        ],
+        "correct": [2],
+        "explanation": "The identification and orderly management of processes within an organization, especially the interactions of processes, is called 'process approach'.",
+        "type": "single",
+        "topic": "ISMS and Framework",
+        "section": 2
+    },
+    {
+        "id": 3,
+        "question": "Your company is implementing ISO 27001 requirements. Which actions would be most appropriate?",
+        "options": [
+            "Hire an external consultant to guide the process",
+            "Assign a team within the organization to take on the responsibility",
+            "Take no further action and wait for further guidance",
+            "Outsource the responsibility to a third-party vendor"
+        ],
+        "correct": [0, 1],
+        "explanation": "Hiring an external consultant provides valuable expertise on best practices and industry standards. Assigning a team within the organization ensures team members are familiar with the organization's structure, culture and processes and can provide necessary support.",
+        "type": "multiple",
+        "topic": "ISMS Implementation",
+        "section": 2
+    },
+    {
+        "id": 4,
+        "question": "Which step would be considered the MOST important in implementing ISO 27001 requirements?",
+        "options": [
+            "Creating a detailed project plan",
+            "Conducting a gap analysis",
+            "Obtaining management buy-in and support",
+            "Developing a comprehensive security policy"
+        ],
+        "correct": [2],
+        "explanation": "Obtaining management buy-in and support is crucial for the success of any ISO 27001 implementation project. Without senior management support, it can be difficult to secure the resources and funding needed and ensure necessary changes are made throughout the organization.",
+        "type": "single",
+        "topic": "ISMS Implementation",
+        "section": 2
+    },
+    {
+        "id": 6,
+        "question": "A company is implementing ISO 27001. Which of the following are part of the implementation process?",
+        "options": [
+            "Conducting a gap analysis",
+            "Developing an information security policy",
+            "Training employees on the new standard",
+            "Implementing a new software system for managing information security"
+        ],
+        "correct": [0, 1, 2],
+        "explanation": "A gap analysis identifies areas that don't meet ISO 27001 requirements. Developing an information security policy is required by clause 5.2. Training employees ensures they understand their roles and responsibilities. Implementing software is not required but could be helpful.",
+        "type": "multiple",
+        "topic": "ISMS Implementation",
+        "section": 2
+    },
+    {
+        "id": 7,
+        "question": "What is the main purpose of documenting ISO 27001 requirements?",
+        "options": [
+            "To ensure compliance with legal and regulatory requirements",
+            "To demonstrate the effectiveness of the ISMS",
+            "To provide a clear understanding of the organization's information security risks",
+            "To aid in the implementation and maintenance of the ISMS"
+        ],
+        "correct": [1, 3],
+        "explanation": "The main purpose is to demonstrate the effectiveness of the ISMS and to aid in its implementation and maintenance. This includes documenting the scope, policy, procedures and controls, and is needed for regular internal audits and management reviews.",
+        "type": "multiple",
+        "topic": "ISMS Documentation",
+        "section": 2
+    },
+    {
+        "id": 8,
+        "question": "Which document is required to be maintained as per ISO 27001 standard?",
+        "options": [
+            "Employee handbook",
+            "Statement of applicability",
+            "Health and safety manual",
+            "Employee performance evaluations"
+        ],
+        "correct": [1],
+        "explanation": "The Statement of Applicability (SoA) is mandatory per ISO 27001. It outlines the scope of the ISMS and the specific security controls implemented to protect information assets.",
+        "type": "single",
+        "topic": "ISMS Documentation",
+        "section": 2
+    },
+    {
+        "id": 9,
+        "question": "What are two required documentations for an organization to be compliant with ISO 27001?",
+        "options": [
+            "Information Security Policy",
+            "Risk treatment plan",
+            "Employee handbook",
+            "Annual budget report"
+        ],
+        "correct": [0, 1],
+        "explanation": "Organizations must have an Information Security Policy outlining the approach to managing information security risks, and a Risk treatment plan documenting the steps to address identified risks. These are essential for ISO 27001 compliance.",
+        "type": "multiple",
+        "topic": "ISMS Documentation",
+        "section": 2
+    },
+    {
+        "id": 10,
+        "question": "What are the benefits of implementing ISO 27001?",
+        "options": [
+            "Improved compliance with regulatory requirements",
+            "Increased customer trust and confidence",
+            "Enhanced reputation and competitive advantage",
+            "Reduced risk of data breaches and cyber attacks"
+        ],
+        "correct": [0, 1, 2, 3],
+        "explanation": "All options are correct. ISO 27001 provides multiple benefits including improved compliance, increased customer trust, enhanced reputation, competitive advantage, and reduced risk of data breaches and cyber attacks.",
+        "type": "multiple",
+        "topic": "ISMS Benefits",
+        "section": 2
+    },
+    {
+        "id": 11,
+        "question": "A company is considering implementing ISO 27001 to improve their overall information security. Which benefits would be most important?",
+        "options": [
+            "Improved customer trust and confidence",
+            "Increased efficiency in managing information security",
+            "Cost savings through streamlined processes",
+            "Enhanced compliance with industry regulations"
+        ],
+        "correct": [0, 1],
+        "explanation": "The company would benefit most from improved customer trust and confidence, which is important for building positive relationships and maintaining reputation. Additionally, increased efficiency in managing information security helps effectively protect information assets and minimize security breach risks.",
+        "type": "multiple",
+        "topic": "ISMS Benefits",
+        "section": 2
+    },
+    {
+        "id": 12,
+        "question": "A company is implementing ISO 27001 to improve their overall security posture. Which benefits would be most relevant?",
+        "options": [
+            "Improved brand reputation",
+            "Increased legal compliance",
+            "Reduced insurance costs",
+            "Improved employee productivity"
+        ],
+        "correct": [0, 1],
+        "explanation": "For improving security posture, the most relevant benefits are improved brand reputation (companies certified with ISO 27001 are seen as more trustworthy and reliable) and increased legal compliance (ISO 27001 helps meet legal and regulatory requirements related to information security).",
+        "type": "multiple",
+        "topic": "ISMS Benefits",
+        "section": 2
+    },
+    {
+        "id": 13,
+        "question": "Is ISO 27001 a standard that defines the technical details for information security, e.g., how to configure a firewall?",
+        "options": [
+            "Yes",
+            "No"
+        ],
+        "correct": [1],
+        "explanation": "ISO 27001 specifies the requirements for establishing, implementing, and maintaining information security in organizations. It specifies what needs to be achieved; it doesn't specify any technical details of how things should be done.",
+        "type": "single",
+        "topic": "ISO 27001 Standard",
+        "section": 2
+    }
+]
