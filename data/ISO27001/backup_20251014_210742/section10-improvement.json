@@ -10,7 +10,7 @@
         "correct": [
             2
         ],
-        "explanation": "Situation analysis phase of the corrective action process comprises of three activities: analysis of the root cause, evaluation of options, and selection of solutions. Evaluation and selection are situation analysis. A and B incorrect - are other phases. (Ref: Clause 10.1)",
+        "explanation": "Situation analysis phase of the corrective action process comprises of three activities: analysis of the root cause, evaluation of options, and selection of solutions. Evaluation and selection are situation analysis. A and B incorrect - are other fases. (Ref: Clause 10.1)",
         "type": "single",
         "topic": "Improvement"
     },
@@ -25,7 +25,7 @@
         "correct": [
             0
         ],
-        "explanation": "The continual improvement process helps reduce the number of errors. B and C incorrect - improvement reduces errors, does not increase. (Ref: Clause 10.2)",
+        "explanation": "The continual improvement process helps reduce the number of errors. B and C incorrect - improvement reduz erros, nao aumenta. (Ref: Clause 10.2)",
         "type": "single",
         "topic": "Improvement",
         "section": 10
@@ -43,7 +43,7 @@
             0,
             2
         ],
-        "explanation": "The main objectives are to confirm that the ISMS is suitable, adequate and effective, and to establish objectives for improvement. B and D incorrect - assess risks and financial are not primary objectives. (Ref: Clause 9.3)",
+        "explanation": "The main objectives are to confirm that the ISMS is suitable, adequate and effective, and to establish objectives for improvement. B and D incorrect - assess risks and financial are not objectives primary. (Ref: Clause 9.3)",
         "type": "multiple",
         "topic": "Management Review",
         "section": 10
@@ -61,7 +61,7 @@
             1,
             2
         ],
-        "explanation": "The key outputs are a list of corrective actions that should be taken to address any issues or risks identified during the review, and a revised ISMS policy that reflects any changes or improvements made to the ISMS. A and D are not direct outputs. (Ref: Clause 9.3)",
+        "explanation": "The key outputs are a list of corrective actions that should be taken to address any issues or risks identified during the review, and a revised ISMS policy that reflects any changes or improvements made to the ISMS. A and D are not outputs diretos. (Ref: Clause 9.3)",
         "type": "multiple",
         "topic": "Management Review",
         "section": 10
@@ -79,7 +79,7 @@
             0,
             1
         ],
-        "explanation": "A management review helps ensure compliance with legal and regulatory requirements and helps identify opportunities for improvement in the ISMS. C and D incorrect - risks and financial are not primary benefits. (Ref: Clause 9.3)",
+        "explanation": "A management review helps ensure compliance with legal and regulatory requirements and helps identify opportunities for improvement in the ISMS. C and D incorrect - risks and financial are not benefits primarios. (Ref: Clause 9.3)",
         "type": "multiple",
         "topic": "Management Review",
         "section": 10
@@ -96,7 +96,7 @@
         "correct": [
             0
         ],
-        "explanation": "The three stages are identification (recognizing a nonconformity and determining its cause), investigation (gathering information to determine root cause), and resolution (developing and implementing corrective actions). B, C, D incorrect - are not the three correct stages. (Ref: Clause 10.1)",
+        "explanation": "The three stages are identification (recognizing a nonconformity and determining its cause), investigation (gathering information to determine root cause), and resolution (developing and implementing corrective actions). B, C, D incorrect - are not os tres estagios corretos. (Ref: Clause 10.1)",
         "type": "single",
         "topic": "Nonconformity",
         "section": 10
@@ -113,7 +113,7 @@
         "correct": [
             0
         ],
-        "explanation": "When a nonconformity is identified, the organization should investigate it to determine the root cause and develop corrective actions to address it. These corrective actions should then be implemented to solve the nonconformity. B, C, D incorrect - only report/identify not sufficient. (Ref: Clause 10.1)",
+        "explanation": "When a nonconformity is identified, the organization should investigate it to determine the root cause and develop corrective actions to address it. These corrective actions should then be implemented to solves the nonconformity. B, C, D incorrect - only report/identify nao suficiente. (Ref: Clause 10.1)",
         "type": "single",
         "topic": "Nonconformity",
         "section": 10
@@ -170,7 +170,7 @@
         "correct": [
             0
         ],
-        "explanation": "The best way is to regularly review and update the ISMS. This includes identifying and addressing security risks, ensuring compliance, and implementing additional controls. Without regular review, the organization may be unaware of security issues. B, C, D are important but A is BEST way. (Ref: Clause 10.2)",
+        "explanation": "The best way is to regularly review and update the ISMS. This includes identifying and addressing security risks, ensuring compliance, and implementing additional controls. Without regular review, the organization may be unaware of security issues. B, C, D are importantes but A and BEST way. (Ref: Clause 10.2)",
         "type": "single",
         "topic": "Continual Improvement",
         "section": 10
@@ -185,7 +185,7 @@
         "correct": [
             1
         ],
-        "explanation": "Clause 9.2 from ISO 27001 requires companies to evaluate the ISMS by defining what needs to be monitored and measured, the methods, who shall perform monitoring and when, and who shall analyze the results and when. True incorrect - it is FALSE, does not specify who must be responsible. (Ref: Clause 9.1)",
+        "explanation": "Clause 9.2 from ISO 27001 requires companies to evaluate the ISMS by defining what needs to be monitored and measured, the methods, who shall perform monitoring and when, and who shall analyze the results and when. True incorrect - e FALSE, nao specific quem must be responsavel. (Ref: Clause 9.1)",
         "type": "single",
         "topic": "Monitoring and Measurement",
         "section": 10
@@ -200,7 +200,7 @@
         "correct": [
             1
         ],
-        "explanation": "The main purpose of the internal audit is to provide information on whether the ISMS is fulfilling the requirements of the company for information protection and the requirements of ISO 27001. True incorrect - it is FALSE, objective is not disciplinary actions but sim conformidade. (Ref: Clause 9.2)",
+        "explanation": "The main purpose of the internal audit is to provide information on whether the ISMS is fulfilling the requirements of the company for information protection and the requirements of ISO 27001. True incorrect - e FALSE, objective is not disciplinary actions but sim conformidade. (Ref: Clause 9.2)",
         "type": "single",
         "topic": "Internal Audit",
         "section": 10

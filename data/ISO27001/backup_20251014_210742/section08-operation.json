@@ -10,7 +10,7 @@
         "correct": [
             2
         ],
-        "explanation": "Effectiveness is the extent to which a management system may be expected to achieve its objectives and fulfill the organization's need. A and B incorrect - Suitability is if it applies, Adequacy is if it is sufficient, Effectiveness is if it achieves objectives. (Ref: Clause 9.3)",
+        "explanation": "Effectiveness is the extent to which a management system may be expected to achieve its objectives and fulfill the organization's need. A and B incorrect - Suitability and se aplica, Adequacy and se and suficiente, Effectiveness and se atinge objectives. (Ref: Clause 9.3)",
         "type": "single",
         "topic": "Operation",
         "clause": 8,
@@ -47,7 +47,7 @@
             2,
             3
         ],
-        "explanation": "ISO 27001 requires that an incident management process be in place to ensure incidents are detected, reported, and responded to appropriately. This includes developing plans for incident response and recovery, and implementing measures to prevent recurrence. A and B are preventive/detective. (Ref: Annex A 5.24)",
+        "explanation": "ISO 27001 requires that an incident management process be in place to ensure incidents are detected, reported, and responded to appropriately. This includes developing plans for incident response and recovery, and implementing measures to prevent recurrence. A and B aris preventives/detective. (Ref: Annex A 5.24)",
         "type": "multiple",
         "topic": "Incident Management",
         "clause": 8,
@@ -83,7 +83,7 @@
         "correct": [
             2
         ],
-        "explanation": "According to ISO 27001, it is important to have a defined incident management process and take prompt action to contain, investigate and solve incidents. Waiting to see if an incident resolve itself is not best practice as it could lead to further damage. C is NOT best practice. (Ref: Annex A 5.24)",
+        "explanation": "According to ISO 27001, it is important to have a defined incident management process and take prompt action to contain, investigate and solves incidents. Waiting to see if an incident resolves itself is not best practice as it could lead to further damage. C and NOT best practice. (Ref: Annex A 5.24)",
         "type": "single",
         "topic": "Incident Management",
         "clause": 8,
@@ -101,7 +101,7 @@
         "correct": [
             1
         ],
-        "explanation": "According to ISO 27001, risks should be re-assessed periodically or whenever there is a significant change in the organization that may affect the ISMS. Outsourcing IT maintenance is a significant change that could impact the organization's security. A, C, D minor changes. (Ref: Clause 6.1.3)",
+        "explanation": "According to ISO 27001, risks should be re-assessed periodically or whenever there is a significant change in the organization that may affect the ISMS. Outsourcing IT maintenance is a significant change that could impact the organization's security. A, C, D mudancas minor. (Ref: Clause 6.1.3)",
         "type": "single",
         "topic": "Operational Planning",
         "clause": 8,
@@ -137,7 +137,7 @@
         "correct": [
             1
         ],
-        "explanation": "The risk treatment plan should be based on the outcome of the risk assessment process, which involves identifying and evaluating the likelihood and potential impact of identified risks to help prioritize controls. A, C, D secondary. (Ref: Clause 6.1.3)",
+        "explanation": "The risk treatment plan should be based on the outcome of the risk assessment process, which involves identifying and evaluating the likelihood and potential impact of identified risks to help prioritizis a controls. A, C, D secondary. (Ref: Clause 6.1.3)",
         "type": "single",
         "topic": "Risk Treatment",
         "clause": 8,
@@ -155,7 +155,7 @@
         "correct": [
             2
         ],
-        "explanation": "The most important factor is the effectiveness of the controls. While cost and ease of implementation are considerations, they should not take precedence over the ability to effectively mitigate the identified risks. A, B, D secondary. (Ref: control effectiveness)",
+        "explanation": "The most important factor is the effectiveness of this a controls. While cost and ease of implementation are considerations, they should not take precedence over the ability to effectively mitigate the identified risks. A, B, D secondary. (Ref: control effectiveness)",
         "type": "single",
         "topic": "Control Implementation",
         "clause": 8,
@@ -173,7 +173,7 @@
         "correct": [
             0
         ],
-        "explanation": "It is important to have available resources (personnel, equipment, and budget) when implementing the risk treatment plan. Without adequate resources, it may not be possible to implement the plan effectively and efficiently. B, C, D are other steps. (Ref: Clause 7.1)",
+        "explanation": "It is important to have available resources (personnel, equipment, and budget) when implementing the risk treatment plan. Without adequate resources, it may not be possible to implement the plan effectively and efficiently. B, C, D are other passos. (Ref: Clause 7.1)",
         "type": "single",
         "topic": "Risk Treatment Implementation",
         "clause": 8,

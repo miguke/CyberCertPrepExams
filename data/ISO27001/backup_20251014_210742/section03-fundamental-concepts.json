@@ -10,7 +10,7 @@
         "correct": [
             0
         ],
-        "explanation": "Information security covers information of all types, printed or handwritten, transmitted by email or website, as well as information given during conversations. Day1 page 32: ISMS protects 'confidentiality, availability, and integrity of information' in all forms. Answer B is incorrect - limits to electronic form only. Answer C is incorrect - security involves complete protection, not just identification of threats. (Ref: Day1, page 32)",
+        "explanation": "Information security covers information of all types, printed or handwritten, transmitted by email or website, as well as information given during conversations. Day1 pág 32: ISMS protege 'confidentiality, availability, and integrity of information' em all as formas. Answer B é incorrect - limita a forma electrónica only. Answer C é incorrect - security envolve proteção completa, not só identificação de ameaças. (Ref: Day1, pág 32)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -25,7 +25,7 @@
         "correct": [
             0
         ],
-        "explanation": "Confidentiality requires that only authorized users have access to protected and sensitive data. Day1 page 53: 'Confidentiality: Ensuring that the information is only accessible to authorized individuals'. Answers B (Integrity) and C (Availability) are incorrect - Integrity protects accuracy/completeness, Availability ensures access when needed. (Ref: Day1, pages 53-55)",
+        "explanation": "Confidentiality requires that only authorized users have access to protected and sensitive data. Day1 pág 53: 'Confidentiality: Ensuring that the information is only accessible to authorized individuals'. Answers B (Integrity) and C (Availability) are incorrect - Integrity protege precisão/completude, Availability garante acesso quando necessário. (Ref: Day1, págs 53-55)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -40,7 +40,7 @@
         "correct": [
             2
         ],
-        "explanation": "An information security management system's access controls can be physical, such as safes, locks on doors, and file cabinets, and digital, such as digital authentication in internal networks. Day1 page 53: access controls can be 'Physical (locks on doors, filing cabinets that lock, safes), Digital (internal networks access controls)'. Answers A and B are correct individually, therefore C (All of the above) is the complete answer. (Ref: Day1, page 53)",
+        "explanation": "An information security management system's access controls can be physical, such as safes, locks on doors, and file cabinets, and digital, such as digital authentication in internal networks. Day1 pág 53: access controls can be 'Physical (locks on doors, filing cabinets that lock, safes), Digital (internal networks access controls)'. Answers A and B are correct individualmente, logo C (All of the above) é a resposta completa. (Ref: Day1, pág 53)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -55,7 +55,7 @@
         "correct": [
             1
         ],
-        "explanation": "Integrity ensures that information is accurate, authentic, and safe from unauthorized access in order for users to be able to rely on the correctness of information when processing it. Day1 page 54: 'Integrity: Data must be complete and intact. The accuracy of information is ensured by avoiding unjustified alterations'. Answers A (Confidentiality) and C (Availability) are incorrect - Confidentiality protects against disclosure, Availability ensures access. (Ref: Day1, page 54)",
+        "explanation": "Integrity ensures that information is accurate, authentic, and safe from unauthorized access in order for users to be able to rely on the correctness of information when processing it. Day1 pág 54: 'Integrity: Data must be complete and intact. The accuracy of information is ensured by avoiding unjustified alterations'. Answers A (Confidentiality) and C (Availability) are incorrect - Confidentiality protege contra divulgação, Availability garante acesso. (Ref: Day1, pág 54)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -70,13 +70,13 @@
         "correct": [
             0
         ],
-        "explanation": "Denial of service (DoS) attacks impact the availability of information. Day1 page 55: 'Availability: Information must be easily accessible by persons who need it'. DoS attacks impede access. Answers B (Data breach) and C (Network breach) are incorrect - these mainly affect confidentiality/integrity. (Ref: Day1, page 55)",
+        "explanation": "Denial of service (of the) attacks impact the availability of information. Day1 pág 55: 'Availability: Information must be easily accessible by persons who need it'. of the impede acesso. Answers B (Data breach) and C (Network breach) are incorrect - estas afetam principalmente confidentiality/integrity. (Ref: Day1, pág 55)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
     {
         "id": 6,
-        "question": "Under which category of vulnerability does \"unstable power grid\" fall?",
+        "question": "Under which category of vulnerability does â€œunstable power gridâ€ fall?",
         "options": [
             "Hardware vulnerability",
             "Network vulnerability",
@@ -85,13 +85,13 @@
         "correct": [
             2
         ],
-        "explanation": "According to ISO/IEC 27005, example of vulnerabilities in the 'site' category, among others, include unstable power grid and location in an area susceptible to flood. Day1 page 56: extrinsic vulnerabilities are external factors like 'server located in an area that is prone to seasonal flooding'. Answers A (Hardware) and B (Network) are incorrect - power grid is infrastructure of the site, not hardware or network. (Ref: Day1, page 56)",
+        "explanation": "According to ISO/IEC 27005, example of vulnerabilities in the 'site' category, among others, include unstable power grid and location in an area susceptible to flood. Day1 pág 56: vulnerabilidades extrinsic are fatores externos as 'server located in an area that is prone to seasonal flooding'. Answers A (Hardware) and B (Network) are incorrect - power grid é infraestrutura of the site, not hardware ou rede. (Ref: Day1, pág 56)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
     {
         "id": 7,
-        "question": "What category of threat does \"loss of power supply\" fall to?",
+        "question": "What category of threat does â€œloss of power supplyâ€ fall to?",
         "options": [
             "Infrastructure failures",
             "Technical failures",
@@ -100,7 +100,7 @@
         "correct": [
             0
         ],
-        "explanation": "According to ISO/IEC 27005, examples of threats in the 'infrastructure failures' category, among others, include failure of a supply system, loss of power supply, electromagnetic radiation, and thermal radiation. Day1 page 58: threats can affect 'information, processes, and systems'. Answers B (Technical failures) and C (Natural threats) are incorrect - power loss is typically an infrastructure failure, not technical failure or natural event. (Ref: Day1, page 58)",
+        "explanation": "According to ISO/IEC 27005, examples of threats in the 'infrastructure failures' category, among others, include failure of a supply system, loss of power supply, electromagnetic radiation, and thermal radiation. Day1 pág 58: threats can afetar 'information, processes, and systems'. Answers B (Technical failures) and C (Natural threats) are incorrect - perda de energia é tipicamente infrastructure failure, not falha técnica ou evento natural. (Ref: Day1, pág 58)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -115,7 +115,7 @@
         "correct": [
             1
         ],
-        "explanation": "One of the main advantages of PaaS is the efficient management of the application life cycle. PaaS provides platform for application development/management. Answers A (IaaS) and C (SaaS) are incorrect - IaaS provides infrastructure (servers, storage), SaaS provides ready applications, neither manages application lifecycle like PaaS. (Ref: cloud concept)",
+        "explanation": "One of the main advantages of PaaS is the efficient management of the application life cycle. PaaS provides plataforma for desenvolvimento/management de aplicações. Answers A (IaaS) and C (SaaS) are incorrect - IaaS provides infraestrutura (servidores, storage), SaaS provides aplicações prontas, nenhum gere application lifecycle as PaaS. (Ref: conceito cloud)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -129,7 +129,7 @@
         "correct": [
             1
         ],
-        "explanation": "Information is data that has a meaning in some context for its receiver. Day1 page 49: Information gives meaning to data. Answer A is incorrect - reverses the relationship; data is not 'structured information', information is what gives context/meaning to data. (Ref: Day1, page 49)",
+        "explanation": "Information is data that has a meaning in some context for its receiver. Day1 pagee 49: Information of the significado a data. Answer A and incorrect - inverte a relacao; data is not 'structured information', information and que of the contexto/significado a data. (Ref: Day1, pagee 49)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -145,7 +145,7 @@
         "correct": [
             0
         ],
-        "explanation": "The content of data does not determine its value. The value depends on recoverability, indispensability, and importance of the processes that use the data. Answers B, C, D are incorrect - are important factors. Answer A (content) is correct as NOT important - what matters is the impact on the business. (Ref: data valuation concept)",
+        "explanation": "The content of data does not determine its value. O valor depende de recoverability, indispensability, e importancia of the processes que usam os dados. Answers B, C, D are incorrect - are fatores importantes. Answer A (content) e correct as NOT important - o que importa and o impacto in the negocio. (Ref: conceito data valuation)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -160,7 +160,7 @@
         "correct": [
             1
         ],
-        "explanation": "The hacker was able to read the file (confidentiality). Day1 page 53: 'Confidentiality: Ensuring that the information is only accessible to authorized individuals'. Viewing not authorized violates confidentiality. Answers A (Availability) and C (Integrity) are incorrect - system still available and file was not modified, only viewed. (Ref: Day1, page 53)",
+        "explanation": "The hacker was able to read the file (confidentiality). Day1 pagee 53: 'Confidentiality: Ensuring that the information is only accessible to authorized individuals'. Viewing not authorized violates confidentiality. Answers A (Availability) and C (Integrity) are incorrect - system still available and file was not modified, only viewed. (Ref: Day1, pagee 53)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -175,7 +175,7 @@
         "correct": [
             2
         ],
-        "explanation": "The information can end up or be read by persons who should not have access to the information. Day1 page 53: Confidentiality ensures access only to authorized. Leaving printouts exposed allows access not authorized. Answers A (Integrity) and B (Availability) are incorrect - data is not altered nor unavailable. (Ref: Day1, page 53)",
+        "explanation": "The information can end up or be read by persons who should not have access to the information. Day1 pagee 53: Confidentiality ensures access only to authorized. Leaving printouts exposed allows access not authorized. Answers A (Integrity) and B (Availability) are incorrect - data is not altered nor unavailable. (Ref: Day1, pagee 53)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -191,7 +191,7 @@
         "correct": [
             1
         ],
-        "explanation": "This is not an objective of a risk analysis. Measures can be selected when in a risk analysis is determined which risks require a security measure. Implementing countermeasures is the RESULT, not an objective. Answers A, C, D are objectives: identify assets/valor, balance costs, determine vulnerabilities. (Ref: concept of risk analysis)",
+        "explanation": "This is not an objective of a risk analysis. Measures can be selected when in a risk analysis is determined which risks require a security measure. Implementar contramedidas and RESULTADO, not an objective. Answers A, C, D are objectives: identificar assets/valor, balancear custos, determinar vulnerabilidades. (Ref: conceito risk analysis)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -207,7 +207,7 @@
         "correct": [
             1
         ],
-        "explanation": "A threat is a possible event that can have a disruptive effect on the reliability of information. Day1 page 58: threats have potential to harm assets. Answers A (dependency), C (vulnerability), D (risk) are incorrect - dependency is relationship, vulnerability is weakness, risk is combination. (Ref: Day1, page 58)",
+        "explanation": "A threat is a possible event that can have a disruptive effect on the reliability of information. Day1 pagee 58: threats tem potential to harm assets. Answers A (dependency), C (vulnerability), D (risk) are incorrect - dependency and relacao, vulnerability and fraqueza, risk and combinacao. (Ref: Day1, pagee 58)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -223,7 +223,7 @@
         "correct": [
             3
         ],
-        "explanation": "The purpose of risk management is to reduce risks to an acceptable level. Implementing measures for reduction. Answers A, B, C are steps of the risk ASSESSMENT, not the purpose of the MANAGEMENT. (Ref: concept of risk management)",
+        "explanation": "The purpose of risk management is to reduce risks to an acceptable level. Implementing measures for reduction. Answers A, B, C are steps of the risk ASSESSMENT, not the purpose of the MANAGEMENT. (Ref: conceito risk management)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -237,7 +237,7 @@
         "correct": [
             1
         ],
-        "explanation": "A qualitative risk analysis involves defining the various threats, determining the extent of the vulnerabilities, and devising countermeasures, should an attack occur. Based on scenarios/situations, subjective view. Answer A is incorrect - describes QUANTITATIVE (precise statistical calculations). (Ref: qualitative concept)",
+        "explanation": "A qualitative risk analysis involves defining the various threats, determining the extent of the vulnerabilities, and devising countermeasures, should an attack occur. Baseia-se em cenarios/situacoes, visao subjetiva. Answer A and incorrect - descreve QUANTITATIVA (calculos estatisticos precisos). (Ref: conceito qualitative)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -253,7 +253,7 @@
         "correct": [
             3
         ],
-        "explanation": "Water damage due to the fire extinguishers is indirect damage caused by the fire. This is a side effect of putting out the fire, which is aimed at minimizing the damage caused by the fire. It is a consequence of the RESPONSE to the incident. Answers A, B, C are DIRECT damages from the fire. (Ref: indirect damage concept)",
+        "explanation": "Water damage due to the fire extinguishers is indirect damage caused by the fire. This is a side effect of putting out the fire, which is aimed at minimizing the damage caused by the fire. E consequencia of the RESPOSTA to the incidente. Answers A, B, C are danos DIRETOS of the fogo. (Ref: conceito indirect damage)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -268,7 +268,7 @@
         "correct": [
             0
         ],
-        "explanation": "This means certain risks are accepted. Risk bearing means accepting small risks, mitigating large risks. Answers B (Risk avoidance) and C (Risk neutral) are incorrect - avoidance avoids the activity, neutral is not a recognized strategy. (Ref: risk strategies concept)",
+        "explanation": "This means certain risks are accepted. Risk bearing significa aceitar pequenos risks, mitigar grandes risks. Answers B (Risk avoidance) and C (Risk neutral) are incorrect - avoidance evita atividade, neutral is not estrategia reconhecida. (Ref: conceito risk strategies)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -283,7 +283,7 @@
         "correct": [
             0
         ],
-        "explanation": "A USB-stick is always inserted by a person. Thus, if by doing so a virus enters the network, then it is a human threat. It is a human action intentional/not intentional. Answers B (dust) and C (leak) are incorrect - are environmental/infrastructure threats, not human. (Ref: threat types concept)",
+        "explanation": "A USB-stick is always inserted by a person. Thus, if by doing so a virus enters the network, then it is a human threat. It is a human action intencional/not intentional. Answers B (dust) and C (leak) are incorrect - are ameacas ambientais/infraestrutura, not human. (Ref: conceito threat types)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -298,7 +298,7 @@
         "correct": [
             2
         ],
-        "explanation": "Phishing (luring users to false websites) is one form of a human threat. It is an intentional attack by humans. Answers A (lightning) and B (fire) are incorrect - are natural threats, not human. (Ref: threat types concept)",
+        "explanation": "Phishing (luring users to false websites) is one form of a human threat. It is an intentional attack por humanos. Answers A (lightning) and B (fire) are incorrect - are ameacas naturais, not human. (Ref: conceito threat types)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -313,7 +313,7 @@
         "correct": [
             2
         ],
-        "explanation": "Using the right expressions or names of known people and their departments gives the impression of being a colleague trying to obtain company and trade secrets. You should check whether you are actually talking to the helpdesk. A helpdesk employee will never ask for your password. It is social engineering - human manipulation. Answers A (Natural) and B (Organizational) are incorrect - it is not a natural or organizational threat. (Ref: social engineering concept)",
+        "explanation": "Using the right expressions or names of known people and their departments gives the impression of being a colleague trying to obtain company and trade secrets. You should check whether you are actually talking to the helpdesk. A helpdesk employee will never ask for your password. E engenharia social - manipulacao humana. Answers A (Natural) and B (Organizational) are incorrect - is not ameaca natural nem organizacional. (Ref: conceito social engineering)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -329,7 +329,7 @@
         "correct": [
             3
         ],
-        "explanation": "A stand-by arrangement is a corrective measure that is initiated in order to limit the damage. Occurs AFTER incident but before total recovery - it is a corrective measure. Answers A, B, D are incorrect - stand-by is immediate response after incident to limit damage. (Ref: incident cycle concept)",
+        "explanation": "A stand-by arrangement is a corrective measure that is initiated in order to limit the damage. Ocorre AFTER incidente but before de recuperacao total - e medida corretiva. Answers A, B, D are incorrect - stand-by and resposta imediata apos incidente for limitar dano. (Ref: conceito incident cycle)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -344,7 +344,7 @@
         "correct": [
             1
         ],
-        "explanation": "The unintended alteration of data is a threat to its integrity. Day1 page 54: Integrity is accuracy/completeness. Accidental alteration compromises integrity. Answers A (loose cable) and C (private use) are incorrect - cable affects availability, private use affects confidentiality. (Ref: Day1, page 54)",
+        "explanation": "The unintended alteration of data is a threat to its integrity. Day1 pagee 54: Integrity and precisao/completude. Alteracao acidental compromete integrity. Answers A (loose cable) and C (private use) are incorrect - cabo afeta availability, uso privado afeta confidentiality. (Ref: Day1, pagee 54)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -360,7 +360,7 @@
         "correct": [
             2
         ],
-        "explanation": "The denial of sending a message has to do with nonrepudiation, a threat to integrity. Day1 page 51: Non-repudiation is a property related to integrity. Answers A, B, D are incorrect - denial does not affect availability, correctness is a synonym but non-repudiation is specific to integrity, confidentiality is not affected. (Ref: Day1, page 51)",
+        "explanation": "The denial of sending a message has to of the with nonrepudiation, a threat to integrity. Day1 pagee 51: Non-repudiation is a property related to integrity. Answers A, B, D are incorrect - negacao does not affect availability, correctness is a synonym but non-repudiation is specific to integrity, confidentiality is not afetada. (Ref: Day1, pagee 51)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -375,7 +375,7 @@
         "correct": [
             2
         ],
-        "explanation": "A safe is a preventive measure, which avoids damage can be done to the sensitive information stored in the safe. PREVINE before the incidente. Answers A (logging) and B (shutdown) are incorrect - logging is detective (detecta), shutdown is repressive (responds after incidente). (Ref: concept of preventive measures)",
+        "explanation": "A safe is a preventive measure, which avoids damage can be done to the sensitive information stored in the safe. PREVINE before of the incidente. Answers A (logging) and B (shutdown) are incorrect - logging and detective (detecta), shutdown and repressive (responds apos incidente). (Ref: conceito preventive measures)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -390,7 +390,7 @@
         "correct": [
             1
         ],
-        "explanation": "This repressive measure minimizes the damage caused by the fire. REPRESSIVE acts during/immediately after incident to limit damage. Answers A (insurance) and C (repairing) are incorrect - insurance is compensatory, repair is corrective/recovery (after event). (Ref: concept of repressive measures)",
+        "explanation": "This repressive measure minimizes the damage caused by the fire. REPRESSIVA age during/imediatamente apos incidente for limitar dano. Answers A (insurance) and C (repairing) are incorrect - insurance and compensatoria, repair and corrective/recovery (apos evento). (Ref: conceito repressive measures)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -405,7 +405,7 @@
         "correct": [
             2
         ],
-        "explanation": "Classification of information is used to define the different levels of sensitivity into which information can be structured. Day1 page 51: Annex A 5.12 - classify by confidentiality, integrity, availability. Answers A (mobile devices manual) and B (labels) are incorrect - manual is procedure specific, labels are applied AFTER classification. (Ref: Day1, page 51)",
+        "explanation": "Classification of information is used to define the different levels of sensitivity into which information can be structured. Day1 pagee 51: Annex A 5.12 - classificar por confidentiality, integrity, availability. Answers A (mobile devices manual) and B (labels) are incorrect - manual and procedure specific, labels are aplicadas AFTER classificacao. (Ref: Day1, pagee 51)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -421,7 +421,7 @@
         "correct": [
             2
         ],
-        "explanation": "The owner must ensure the asset is classified or reclassified if necessary so is authorized to change the classification of a document. Owner has responsibility for the asset. Answers A (author), B (administrator), D (manager) are incorrect - author creates, admin manages technically, manager supervises but OWNER decides classification. (Ref: asset ownership concept)",
+        "explanation": "The owner must ensure the asset is classified or reclassified if necessary so is authorized to change the classification of a document. Owner tem responsabilidade by the asset. Answers A (author), B (administrator), D (manager) are incorrect - author cria, admin gere tecnicamente, manager supervisiona but OWNER decide classificacao. (Ref: conceito asset ownership)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -437,7 +437,7 @@
         "correct": [
             1
         ],
-        "explanation": "This is a physical security measure. Day1 page 53: physical access controls include 'locks on doors'. Pass reader is a physical access control. Answers A (corrective), C (logical), D (repressive) are incorrect - it does not correct anything, it is a physical control not logical, it is preventive not repressive. (Ref: Day1, page 53)",
+        "explanation": "This is a physical security measure. Day1 pagee 53: access controls fisicos incluem 'locks on doors'. Pass reader is a physical control de acesso. Answers A (corrective), C (logical), D (repressive) are incorrect - does not correct, is a control fisico not logical, is preventive not repressive. (Ref: Day1, pagee 53)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -452,7 +452,7 @@
         "correct": [
             0
         ],
-        "explanation": "The ISMS is described in ISO/IEC 27001. Day1 page 20: ISMS is 'part of and integrated with the organization's processes and overall management structure'. Ensures coherence. Answers B (Rootkit) and C (government regulations) are incorrect - rootkit is malware, regulations are external not an internal system. (Ref: Day1, page 20)",
+        "explanation": "The ISMS is described in ISO/IEC 27001. Day1 pagee 20: ISMS and 'part of and integrated with the organization's processes and overall management structure'. Ensures coherence. Answers B (Rootkit) and C (government regulations) are incorrect - rootkit is malware, regulamentacoes are externas not a system interno. (Ref: Day1, pagee 20)",
         "type": "single",
         "topic": "Fundamental Concepts"
     },
@@ -467,7 +467,7 @@
         "correct": [
             1
         ],
-        "explanation": "The employees must know that the employer has the right to monitor the use of IT services. Transparency and prior consent are essential. Answers A (informed after) and C (firewall) are incorrect - information must be before not after, firewall is a technical measure not a legal/ethical condition. (Ref: privacy and monitoring concept)",
+        "explanation": "The employees must know that the employer has the right to monitor the use of IT services. Transparency and prior consent are essential. Answers A (informed after) and C (firewall) are incorrect - information must be before not after, firewall and medida tecnica not a condition legal/etica. (Ref: conceito privacy and monitoring)",
         "type": "single",
         "topic": "Fundamental Concepts"
     }

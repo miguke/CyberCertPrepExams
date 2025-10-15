@@ -10,7 +10,7 @@
         "correct": [
             1
         ],
-        "explanation": "Performance evaluation can be defined as a systematic way of assessing an organization's current achievements against its objectives. Performance evaluation measures are of little value per se, unless they are viewed within the context of organizational strategies and objectives. Measure measurable results. A and C incorrect - status/value are not complete definition. (Ref: Clause 9.1)",
+        "explanation": "Performance evaluation can be defined as a systematic way of assessing an organization's current achievements against its objectives. Performance evaluation measures are of little value per se, unless they are viewed within the context of organizational strategies and objectives. Medir resultados mensuraveis. A and C incorrect - status/value are not definicao completa. (Ref: Clause 9.1)",
         "type": "single",
         "topic": "Operation and Performance"
     },
@@ -25,7 +25,7 @@
         "correct": [
             1
         ],
-        "explanation": "SMART stands for: specific, measurable, attainable, realistic, and timely. A and C incorrect - Sophisticated/Adversary/Specialized/Maintainable are not part of the acronym. (Ref: Clause 6.2)",
+        "explanation": "SMART stands for: specific, measurable, attainable, realistic, and timely. A and C incorrect - Sophisticated/Adversary/Specialized/Maintainable nao fazem parte of the acronimo. (Ref: Clause 6.2)",
         "type": "single",
         "topic": "Operation and Performance",
         "section": 9
@@ -40,7 +40,7 @@
         "correct": [
             1
         ],
-        "explanation": "The purpose of the management review is for top management to review the ISMS at planned intervals to ensure it is suitable, adequate, and effective. Evaluation of measurements and analyses is just one element of the management review. True incorrect - it is FALSE, evaluation is only one element. (Ref: Clause 9.3)",
+        "explanation": "The purpose of the management review is for top management to review the ISMS at planned intervals to ensure it is suitable, adequate, and effective. Evaluation of measurements and analyses is just one element of the management review. True incorrect - e FALSE, avaliacao and only um elemento. (Ref: Clause 9.3)",
         "type": "single",
         "topic": "Management Review",
         "section": 9
@@ -55,7 +55,7 @@
         "correct": [
             1
         ],
-        "explanation": "A nonconformity is when a certain requirement is not complied with, such as a requirement from the ISO 27001 standard, relevant legislation, or the ISMS documentation of the company. True incorrect - it is FALSE, nonconformity is non-compliance with requirement, not incident. (Ref: Clause 10.1)",
+        "explanation": "A nonconformity is when a certain requirement is not complied with, such as a requirement from the ISO 27001 standard, relevant legislation, or the ISMS documentation of the company. True incorrect - e FALSE, nonconformity and nao-cumprimento de requirement, nao incident. (Ref: Clause 10.1)",
         "type": "single",
         "topic": "Nonconformity",
         "section": 9
@@ -71,7 +71,7 @@
         "correct": [
             1
         ],
-        "explanation": "ISO 27001 requires organizations to continually improve their ISMS through regular reviews of effectiveness, making changes to improve performance through management reviews, internal audits, and other monitoring and measurement. A and C incorrect - not improve the standard or services, but rather ISMS. (Ref: Clause 10.2)",
+        "explanation": "ISO 27001 requires organizations to continually improve their ISMS through regular reviews of effectiveness, making changes to improve performance through management reviews, internal audits, and other monitoring and measurement. A and C incorrect - nao melhorar o standard ou servicos, but sim ISMS. (Ref: Clause 10.2)",
         "type": "single",
         "topic": "Continual Improvement",
         "section": 9
@@ -105,7 +105,7 @@
         "correct": [
             1
         ],
-        "explanation": "ISO 27001 states that organizations should determine the methods for monitoring the performance and effectiveness of the ISMS, including regular assessment of information security risks to identify changes or trends. A, C, D incorrect - determinar methods and o requirement. (Ref: Clause 9.1)",
+        "explanation": "ISO 27001 states that organizations should determine the methods for monitoring the performance and effectiveness of the ISMS, including regular assessment of information security risks to identify changes or trends. A, C, D incorrect - determinar metodos and o requirement. (Ref: Clause 9.1)",
         "type": "single",
         "topic": "Performance Evaluation",
         "section": 9
@@ -120,7 +120,7 @@
         "correct": [
             1
         ],
-        "explanation": "The objective of the internal audit is to provide assurance that the ISMS conforms to requirements and is effectively implemented and maintained. It identifies areas for improvement and provides feedback to management. True incorrect - it is FALSE, objective is not identify responsible parties but rather conformance. (Ref: Clause 9.2)",
+        "explanation": "The objective of the internal audit is to provide assurance that the ISMS conforms to requirements and is effectively implemented and maintained. It identifies areas for improvement and provides feedback to management. True incorrect - e FALSE, objective is not identificar responsaveis but sim conformidade. (Ref: Clause 9.2)",
         "type": "single",
         "topic": "Internal Audit",
         "section": 9
@@ -135,7 +135,7 @@
         "correct": [
             1
         ],
-        "explanation": "ISO 27001 doesn't specify that a meeting should be conducted. The standard simply requires top management to review the ISMS at planned intervals. True incorrect - it is FALSE, does not require specific meeting. (Ref: Clause 9.3)",
+        "explanation": "ISO 27001 doesn't specify that a meeting should be conducted. The standard simply requires top management to review the ISMS at planned intervals. True incorrect - e FALSE, nao requires meeting specific. (Ref: Clause 9.3)",
         "type": "single",
         "topic": "Management Review",
         "section": 9
@@ -152,7 +152,7 @@
         "correct": [
             0
         ],
-        "explanation": "The management review should consider opportunities for improvement of the ISMS, including its effectiveness in achieving objectives, suitability and adequacy in addressing risks, and any changes in external and internal issues that may affect the ISMS. B, C, D incorrect - cafeteria/router/financial are not ISMS aspects. (Ref: Clause 9.3)",
+        "explanation": "The management review should consider opportunities for improvement of the ISMS, including its effectiveness in achieving objectives, suitability and adequacy in addressing risks, and any changes in external and internal issues that may affect the ISMS. B, C, D incorrect - cafeteria/router/financial are not aspectos ISMS. (Ref: Clause 9.3)",
         "type": "single",
         "topic": "Management Review",
         "section": 9
@@ -169,7 +169,7 @@
         "correct": [
             1
         ],
-        "explanation": "According to ISO 27001, monitoring should include review of security-related incidents and their causes. This helps identify areas where the ISMS may need improvement and allows for implementation of corrective actions. A, C, D are not primary methods. (Ref: Clause 9.1)",
+        "explanation": "According to ISO 27001, monitoring should include review of security-related incidents and their causes. This helps identify areas where the ISMS may need improvement and allows for implementation of corrective actions. A, C, D are not metodos primarios. (Ref: Clause 9.1)",
         "type": "single",
         "topic": "Monitoring",
         "section": 9
@@ -204,7 +204,7 @@
         "correct": [
             0
         ],
-        "explanation": "According to ISO 27001, an organization's internal audit should evaluate the documentation, implementation, monitoring, and review of the information security management system components. B, C, D incomplete. (Ref: Clause 9.2)",
+        "explanation": "According to ISO 27001, an organization's internal audit should evaluate the documentation, implementation, monitoring, and review of the information security management system components. B, C, D incompletas. (Ref: Clause 9.2)",
         "type": "single",
         "topic": "Internal Audit",
         "section": 9
@@ -221,7 +221,7 @@
         "correct": [
             3
         ],
-        "explanation": "An audit should assess whether the system meets the organization's security objectives and whether it complies with applicable laws and regulations. A, B, C are important but D is primary. (Ref: Clause 9.2)",
+        "explanation": "An audit should assess whether the system meets the organization's security objectives and whether it complies with applicable laws and regulations. A, B, C are importantes but D and primario. (Ref: Clause 9.2)",
         "type": "single",
         "topic": "Internal Audit",
         "section": 9
