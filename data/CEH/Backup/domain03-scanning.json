@@ -1,0 +1,646 @@
+[
+    {
+        "id": 1,
+        "question": "You are attempting to run an Nmap port scan on a web server. Which of the following commands would result in a scan of common ports with the least amount of noise in order to evade IDS?",
+        "options": [
+            "nmap -A -Pn",
+            "nmap -sP -p-65535 -T5",
+            "nmap -sT -O -T0",
+            "nmap -A --host-timeout 99 -T1"
+        ],
+        "correct": [
+            2
+        ],
+        "explanation": "**Correct Answer: nmap -sT -O -T0**\n\nThis command provides the stealthiest scan that evades IDS detection. According to CEH Module 3 (Scanning Networks), the key parameters are: (1) **-sT** performs a TCP connect scan (completes the 3-way handshake), which is more reliable for evading some IDS systems when done slowly, (2) **-O** enables OS detection to identify the web server's operating system, and (3) **-T0** (Paranoid timing) is the slowest timing template, sending one packet every 5 minutes, making it nearly impossible for IDS to correlate packets and detect the scan. This combination minimizes \"noise\" by being extremely slow and methodical.\n\n**Why other answers are incorrect:**\n\n- **A. nmap -A -Pn (Incorrect):** The `-A` flag enables aggressive scanning including OS detection, version detection, script scanning, and traceroute—generating significant noise. `-Pn` skips host discovery (assumes host is up) but doesn't reduce noise. No timing parameter means it uses default speed (T3), which is easily detected by IDS.\n\n- **B. nmap -sP -p-65535 -T5 (Incorrect):** The `-sP` performs only ping sweep (host discovery), not port scanning. `-p-65535` is invalid syntax (should be `-p-` or `-p 1-65535`). Most critically, `-T5` (Insane timing) is the FASTEST and NOISIEST timing template, sending packets as quickly as possible—the opposite of IDS evasion.\n\n- **D. nmap -A --host-timeout 99 -T1 (Incorrect):** While `-T1` (Sneaky) is slow and better for evasion, the `-A` aggressive scanning flag still generates considerable noise through comprehensive probing. The `--host-timeout 99` (99 seconds) is relatively short and may cause the scan to skip hosts, defeating the purpose. This combination is contradictory—trying to be both aggressive and stealthy.\n\n**Nmap Timing Templates:**\n- **T0 (Paranoid):** 5 minutes between packets - Maximum stealth\n- **T1 (Sneaky):** 15 seconds between packets - Very slow\n- **T2 (Polite):** Slows down to reduce bandwidth\n- **T3 (Normal):** Default timing\n- **T4 (Aggressive):** Fast scan\n- **T5 (Insane):** Extremely fast - Maximum noise\n\n**Reference:** CEH v13 Module 3 - Scanning Networks, Nmap timing templates and IDS evasion techniques",
+        "type": "single",
+        "topic": "Nmap - IDS Evasion Techniques",
+        "domain": 3
+    },
+    {
+        "id": 2,
+        "question": "While performing an Nmap scan against a host, Paola determines the existence of a firewall. In an attempt to determine whether the firewall is stateful or stateless, which of the following options would be best to use?",
+        "options": [
+            "-sA",
+            "-sX",
+            "-sT",
+            "-sF"
+        ],
+        "correct": [
+            0
+        ],
+        "explanation": "**Correct Answer: -sA (ACK scan)**\n\nThe `-sA` (ACK scan) is specifically designed to determine if a firewall is stateful or stateless. According to CEH Module 3 (Scanning Networks), this scan sends TCP packets with only the ACK flag set. **Stateful firewalls** track connection states and will drop unsolicited ACK packets (packets not part of an established connection), marking ports as \"filtered.\" **Stateless firewalls** only examine individual packets without tracking connection state, so they'll let ACK packets through, and ports will appear \"unfiltered.\" By analyzing which ports are filtered vs. unfiltered, you can determine if the firewall maintains state information.\n\n**Why other answers are incorrect:**\n\n- **B. -sX (Incorrect):** The `-sX` (Xmas scan) sends packets with FIN, PSH, and URG flags set (\"lit up like a Christmas tree\"). While it can evade some firewalls, it's designed primarily to detect open/closed ports on systems, not to specifically differentiate between stateful and stateless firewalls. Its behavior doesn't clearly distinguish firewall types.\n\n- **C. -sT (Incorrect):** The `-sT` (TCP connect scan) performs a complete TCP 3-way handshake (SYN, SYN/ACK, ACK). Both stateful and stateless firewalls typically handle these similarly since they represent legitimate connection attempts. This scan doesn't provide clear indicators of whether the firewall tracks connection state.\n\n- **D. -sF (Incorrect):** The `-sF` (FIN scan) sends TCP packets with only the FIN flag set. While useful for stealth scanning and bypassing some firewalls, it doesn't effectively differentiate between stateful and stateless firewalls. Both firewall types might handle unexpected FIN packets similarly, making results ambiguous.\n\n**How ACK Scan Works:**\n1. Send ACK packet (no SYN) to target\n2. **Stateful firewall:** Drops packet (no established connection) → Port shows \"filtered\"\n3. **Stateless firewall:** Forwards packet (only checks packet, not state) → Port shows \"unfiltered\"\n4. Analyze results to determine firewall type\n\n**Key Difference:**\n- **Stateful:** Tracks connections = blocks unsolicited ACKs\n- **Stateless:** No connection tracking = forwards ACKs\n\n**Reference:** CEH v13 Module 3 - Scanning Networks, ACK scanning and firewall identification techniques",
+        "type": "single",
+        "topic": "Firewall Detection - Stateful vs Stateless",
+        "domain": 3
+    },
+    {
+        "id": 3,
+        "question": "A newly joined employee, Janet, has been allocated an existing system used by a previous employee. Before issuing the system to Janet, it was assessed by Martin, the administrator. Martin found that there were possibilities of compromise through user directories, registries, and other system parameters. He also identified vulnerabilities such as native configuration tables, incorrect registry or file permissions, and software configuration errors. What is the type of vulnerability assessment performed by Martin?",
+        "options": [
+            "Database assessment",
+            "Host-based assessment",
+            "Credentialed assessment",
+            "Distributed assessment"
+        ],
+        "correct": [
+            1
+        ],
+        "explanation": "**Correct Answer: Host-based assessment**\n\nA host-based vulnerability assessment examines security vulnerabilities on individual systems (hosts) by analyzing the operating system, applications, and configurations on that specific computer. According to CEH Module 5 (Vulnerability Analysis), host-based assessments check: (1) user directories and home folders, (2) system registries, (3) system parameters and configurations, (4) file and registry permissions, (5) installed software and patch levels, and (6) local security settings. The scenario describes Martin examining all these elements on Janet's individual workstation—classic host-based assessment focusing on a single system's internal security posture.\n\n**Why other answers are incorrect:**\n\n- **A. Database assessment (Incorrect):** Database vulnerability assessments specifically target database management systems (DBMS) like MySQL, Oracle, SQL Server, or MongoDB. They examine database configurations, user privileges, SQL injection vulnerabilities, and data encryption. The scenario describes examining an operating system (user directories, registries, file permissions)—not database-specific elements.\n\n- **C. Credentialed assessment (Incorrect):** \"Credentialed\" describes the METHOD of assessment (using login credentials to access the system), not the TYPE of assessment. While Martin likely used credentials to log in and examine the system, this describes HOW he accessed it, not WHAT he assessed. A credentialed assessment can be host-based, network-based, or application-based. The question asks for the type, not the authentication method.\n\n- **D. Distributed assessment (Incorrect):** Distributed vulnerability assessment refers to scanning multiple systems across a network simultaneously using distributed scanning agents or tools. The scenario describes Martin assessing a single workstation for Janet—not scanning multiple distributed systems across the network. This is a focused, single-system assessment.\n\n**Types of Vulnerability Assessments:**\n- **Host-based:** Single system/computer assessment ← This scenario\n- **Network-based:** Scanning network infrastructure and devices\n- **Application-based:** Testing specific applications\n- **Database-based:** Examining database systems\n- **Wireless-based:** Testing wireless networks\n\n**Host-Based Assessment Components:**\n- Operating system vulnerabilities\n- Patch levels and updates\n- User accounts and permissions\n- Registry and configuration errors\n- Installed software inventory\n- Local security policies\n\n**Reference:** CEH v13 Module 5 - Vulnerability Analysis, Types of vulnerability assessments",
+        "type": "single",
+        "topic": "Vulnerability Assessment Types",
+        "domain": 3
+    },
+    {
+        "id": 4,
+        "question": "An organization is performing a vulnerability assessment for mitigating threats. James, a pen tester, scanned the organization by building an inventory of the protocols found on the organization's machines to detect which ports are attached to services such as an email server, a web server, or a database server. After identifying the services, he selected the vulnerabilities on each machine and started executing only the relevant tests. What is the type of vulnerability assessment solution that James employed in the above scenario?",
+        "options": [
+            "Service-based solutions",
+            "Product-based solutions",
+            "Tree-based assessment",
+            "Inference-based assessment"
+        ],
+        "correct": [
+            3
+        ],
+        "explanation": "**Correct Answer: Inference-based assessment**\n\nInference-based assessment is an intelligent vulnerability scanning approach that first identifies running services and then selectively tests only vulnerabilities relevant to those specific services. According to CEH Module 5 (Vulnerability Analysis), this method: (1) builds an inventory of active protocols and services, (2) maps services to specific ports (e.g., port 25=SMTP, 80=HTTP, 3306=MySQL), (3) infers which vulnerabilities are applicable based on the identified services, and (4) executes only relevant vulnerability tests—avoiding unnecessary checks. This reduces scan time and false positives by targeting only plausible vulnerabilities.\n\n**Why other answers are incorrect:**\n\n- **A. Service-based solutions (Incorrect):** While similar in name, service-based solutions typically refer to vulnerability assessment offered as a managed service by third-party vendors (SaaS model), not the intelligent scanning methodology described.\n\n- **B. Product-based solutions (Incorrect):** Product-based solutions refer to vulnerability scanners deployed as software products within the organization's infrastructure (like Nessus, Qualys, OpenVAS). This describes deployment model, not the scanning intelligence approach.\n\n- **C. Tree-based assessment (Incorrect):** Tree-based assessment uses a hierarchical decision tree to evaluate vulnerabilities systematically. While it can be methodical, it doesn't specifically describe the service-identification-then-targeted-testing approach in the scenario.\n\n**Reference:** CEH v13 Module 5 - Vulnerability Analysis",
+        "type": "single",
+        "topic": "Vulnerability Assessment Methods",
+        "domain": 3
+    },
+    {
+        "id": 5,
+        "question": "John, a professional hacker, targeted an organization that uses LDAP for accessing distributed directory services. He used an automated tool to anonymously query the LDAP service for sensitive information such as usernames, addresses, departmental details, and server names to launch further attacks on the target organization. What is the tool employed by John to gather information from the LDAP service?",
+        "options": [
+            "ike-scan",
+            "Zabasearch",
+            "JXplorer",
+            "EarthExplorer"
+        ],
+        "correct": [
+            2
+        ],
+        "explanation": "**Correct Answer: JXplorer**\n\nJXplorer is a cross-platform LDAP browser and editor that allows users to browse, search, and modify LDAP directories. According to CEH Module 4 (Enumeration), JXplorer can anonymously query LDAP servers to extract: usernames, email addresses, departmental information, organizational units, computer names, server details, and user attributes. It supports LDAP and DSML protocols and provides a graphical interface for directory service enumeration, making it ideal for reconnaissance against Active Directory and other LDAP-based systems.\n\n**Why other answers are incorrect:**\n\n- **A. ike-scan (Incorrect):** ike-scan is a command-line tool for discovering, fingerprinting, and testing IPsec VPN servers using the Internet Key Exchange (IKE) protocol. It's used for VPN enumeration, not LDAP directory services.\n\n- **B. Zabasearch (Incorrect):** Zabasearch is a people search engine website that aggregates public records data like phone numbers and addresses from various sources. It's an OSINT tool for finding information about individuals, not for querying LDAP servers.\n\n- **D. EarthExplorer (Incorrect):** EarthExplorer is a USGS (United States Geological Survey) tool for searching and downloading satellite imagery and geospatial data. It has no relation to LDAP enumeration or directory services.\n\n**Reference:** CEH v13 Module 4 - Enumeration, LDAP enumeration tools",
+        "type": "single",
+        "topic": "LDAP Enumeration",
+        "domain": 3
+    },
+    {
+        "id": 6,
+        "question": "David is a security professional working in an organization, and he is implementing a vulnerability management program in the organization to evaluate and control the risks and vulnerabilities in its IT infrastructure. He is currently executing the process of applying fixes on vulnerable systems to reduce the impact and severity of vulnerabilities. Which phase of the vulnerability-management life cycle is David currently in?",
+        "options": [
+            "Remediation",
+            "Verification",
+            "Risk assessment",
+            "Vulnerability scan"
+        ],
+        "correct": [
+            0
+        ],
+        "explanation": "**Correct Answer: Remediation**\n\nRemediation is the phase where identified vulnerabilities are fixed. According to CEH Module 5 (Vulnerability Analysis), the vulnerability management lifecycle consists of: (1) Asset Discovery and Inventory, (2) Vulnerability Scan, (3) Risk Assessment, (4) Remediation, and (5) Verification. The remediation phase involves applying fixes such as patches, configuration changes, implementing compensating controls, or removing vulnerable services. David is applying fixes to reduce vulnerabilities—this is textbook remediation.\n\n**Why other answers are incorrect:**\n\n- **B. Verification (Incorrect):** Verification comes AFTER remediation. It's the phase where security professionals re-scan systems to confirm that fixes were successfully applied and vulnerabilities are resolved.\n\n- **C. Risk assessment (Incorrect):** Risk assessment evaluates and prioritizes vulnerabilities based on severity, exploitability, and business impact. It determines WHICH vulnerabilities to fix, not the actual fixing process.\n\n- **D. Vulnerability scan (Incorrect):** Vulnerability scanning is the automated detection phase that identifies weaknesses. It comes BEFORE remediation—you must first find vulnerabilities before fixing them.\n\n**Reference:** CEH v13 Module 5 - Vulnerability Analysis",
+        "type": "single",
+        "topic": "Vulnerability Management Lifecycle",
+        "domain": 3
+    },
+    {
+        "id": 7,
+        "question": "Alice, a professional hacker, targeted an organization's cloud services. She infiltrated the target's MSP provider by sending spear-phishing emails and distributed custom-made malware to compromise user accounts and gain remote access to the cloud service. Further, she accessed the target customer profiles with her MSP account, compressed the customer data, and stored them in the MSP. Then, she used this information to launch further attacks on the target organization. Which of the following cloud attacks did Alice perform in the above scenario?",
+        "options": [
+            "Cloud cryptojacking",
+            "Man-in-the-cloud (MITC) attack",
+            "Cloud hopper attack",
+            "Cloudborne attack"
+        ],
+        "correct": [
+            2
+        ],
+        "explanation": "**Correct Answer: Cloud hopper attack**\n\nA Cloud Hopper attack targets Managed Service Providers (MSPs) to gain access to their clients' data and systems. According to CEH Module 19 (Cloud Computing), Cloud Hopper attacks: (1) infiltrate MSPs through phishing or malware, (2) compromise MSP infrastructure and accounts, (3) use MSP access to reach multiple client organizations, (4) steal sensitive client data stored in MSP systems, and (5) maintain persistent access for espionage. This matches the scenario perfectly—Alice compromised the MSP provider and used that access to reach the target organization's data.\n\n**Why other answers are incorrect:**\n\n- **A. Cloud cryptojacking (Incorrect):** Cryptojacking secretly uses cloud resources to mine cryptocurrency. It focuses on hijacking compute resources for mining, not infiltrating MSPs to steal customer data.\n\n- **B. Man-in-the-cloud (MITC) attack (Incorrect):** MITC attacks manipulate cloud synchronization tokens to intercept data synced between devices and cloud storage services. It targets sync protocols, not MSP compromise for multi-client access.\n\n- **D. Cloudborne attack (Incorrect):** Cloudborne attacks exploit vulnerabilities in bare-metal cloud servers' firmware to implant persistent backdoors. It targets hardware-level persistence, not MSP compromise.\n\n**Reference:** CEH v13 Module 19 - Cloud Computing",
+        "type": "single",
+        "topic": "Cloud Attacks - Cloud Hopper",
+        "domain": 3
+    },
+    {
+        "id": 8,
+        "question": "Henry is a cyber security specialist hired by BlackEye – Cyber Security Solutions. He was tasked with discovering the operating system (OS) of a host. He used the Unicornscan tool to discover the OS of the target system. As a result, he obtained a TTL value, which indicates that the target system is running a Windows OS. Identify the TTL value Henry obtained, which indicates that the target OS is Windows.",
+        "options": [
+            "128",
+            "255",
+            "64",
+            "138"
+        ],
+        "correct": [
+            0
+        ],
+        "explanation": "**Correct Answer: 128**\n\nAccording to CEH Module 3 (Scanning Networks), different operating systems use different default TTL (Time To Live) values in IP packets. **Windows systems** use a default TTL of **128**. This is a key fingerprinting technique. **Common TTL values:** Windows = 128, Linux/Unix = 64, Network devices = 255. By examining the TTL value in ICMP or TCP responses, attackers can identify the target's OS.\n\n**Why other answers are incorrect:**\n- **B. 255 (Incorrect):** Used by network devices (routers, switches), not Windows.\n- **C. 64 (Incorrect):** Default for Linux/Unix systems, not Windows.\n- **D. 138 (Incorrect):** Not a standard default TTL for any major OS.\n\n**Reference:** CEH v13 Module 3 - Scanning Networks, OS fingerprinting",
+        "type": "single",
+        "topic": "OS Fingerprinting - TTL Values",
+        "domain": 3
+    },
+    {
+        "id": 9,
+        "question": "Which of the following allows attackers to draw a map or outline the target organization's network infrastructure to know about the actual environment that they are going to hack?",
+        "options": [
+            "Vulnerability analysis",
+            "Malware analysis",
+            "Scanning networks",
+            "Enumeration"
+        ],
+        "correct": [
+            2
+        ],
+        "explanation": "**Correct Answer: Scanning networks**\n\nNetwork scanning is the process of mapping the network infrastructure to understand the topology, live hosts, open ports, services, and devices. According to CEH Module 3 (Scanning Networks), scanning allows attackers to create a network map showing: host IP addresses, network topology, routing paths, operating systems, and running services. This provides the 'actual environment' picture before launching attacks.\n\n**Why other answers are incorrect:**\n- **A. Vulnerability analysis (Incorrect):** Identifies weaknesses but doesn't map network infrastructure.\n- **B. Malware analysis (Incorrect):** Examines malware behavior, not network mapping.\n- **D. Enumeration (Incorrect):** Extracts detailed information from identified hosts (users, shares), not initial network mapping.\n\n**Reference:** CEH v13 Module 3 - Scanning Networks",
+        "type": "single",
+        "topic": "Network Scanning Concepts",
+        "domain": 3
+    },
+    {
+        "id": 10,
+        "question": "Your company was hired by a small healthcare provider to perform a technical assessment on the network. What is the best approach for discovering vulnerabilities on a Windows-based computer?",
+        "options": [
+            "Use the built-in Windows Update tool",
+            "Use a scan tool like Nessus",
+            "Check MITRE.org for the latest list of CVE findings",
+            "Create a disk image of a clean Windows installation"
+        ],
+        "correct": [
+            1
+        ],
+        "explanation": "**Correct Answer: Use a scan tool like Nessus**\n\nNessus is a professional vulnerability scanner that automatically detects security weaknesses. According to CEH Module 5 (Vulnerability Analysis), Nessus: (1) scans for thousands of vulnerabilities, (2) checks missing patches, (3) identifies misconfigurations, (4) provides prioritized remediation guidance, (5) supports credentialed scanning for comprehensive assessment. It's the industry standard for vulnerability discovery.\n\n**Why other answers are incorrect:**\n- **A. Windows Update (Incorrect):** Only shows available Microsoft patches, doesn't identify vulnerabilities or assess security posture comprehensively.\n- **C. MITRE CVE (Incorrect):** CVE list shows known vulnerabilities but doesn't scan your specific system to determine which apply.\n- **D. Disk image (Incorrect):** Baselining tool for comparison, not vulnerability discovery.\n\n**Reference:** CEH v13 Module 5 - Vulnerability Analysis",
+        "type": "single",
+        "topic": "Vulnerability Assessment Tools",
+        "domain": 3
+    },
+    {
+        "id": 11,
+        "question": "You are a penetration tester and are about to perform a scan on a specific server. The agreement that you signed with the client contains the following specific condition for the scan: 'The attacker must scan every port on the server several times using a set of spoofed source IP addresses.' Suppose that you are using Nmap to perform this scan. What flag will you use to satisfy this requirement?",
+        "options": [
+            "The -g flag",
+            "The -A flag",
+            "The -f flag",
+            "The -D flag"
+        ],
+        "correct": [
+            3
+        ],
+        "explanation": "**Correct Answer: The -D flag**\n\nThe Nmap `-D` flag (decoy scan) generates multiple spoofed source IP addresses alongside your real IP when scanning. According to CEH Module 3 (Scanning Networks), `-D` syntax: `nmap -D decoy1,decoy2,ME,decoy3 target` makes it appear that multiple hosts are scanning simultaneously, making it difficult for the target to identify the real scanner. The decoys send packets with spoofed source addresses, satisfying the requirement of scanning 'using a set of spoofed source IP addresses.' You can specify multiple decoy IPs or use `RND` for random decoys.\n\n**Why other answers are incorrect:**\n\n- **A. -g flag (Incorrect):** The `-g` (or `--source-port`) flag specifies a particular source port number for the scan. It's used to bypass firewalls that allow traffic from specific ports (like 53 for DNS or 20 for FTP-data). It doesn't generate multiple spoofed source IP addresses—it only sets the source port.\n\n- **B. -A flag (Incorrect):** The `-A` flag enables aggressive scanning, including OS detection (-O), version detection (-sV), script scanning (-sC), and traceroute (--traceroute). While comprehensive, it doesn't use spoofed IP addresses—it performs thorough scanning from your real IP address.\n\n- **C. -f flag (Incorrect):** The `-f` flag fragments packets into 8-byte chunks (or 16 bytes with `-ff`) to evade packet filters and firewalls that don't reassemble fragments. It manipulates packet structure, not source IP addresses. It doesn't create spoofed IPs.\n\n**Nmap Decoy Scan Examples:**\n- `nmap -D RND:10 target` - Use 10 random decoys\n- `nmap -D decoy1,ME,decoy2 target` - Specific decoys with your IP\n- `nmap -D RND:5,ME target` - 5 random + your real IP\n\n**Reference:** CEH v13 Module 3 - Scanning Networks",
+        "type": "single",
+        "topic": "Nmap - Decoy Scanning",
+        "domain": 3
+    },
+    {
+        "id": 12,
+        "question": "Jude, a pen tester, examined a network from a hacker's perspective to identify exploits and vulnerabilities accessible to the outside world by using devices such as firewalls, routers, and servers. In this process, he also estimated the threat of network security attacks and determined the level of security of the corporate network. What is the type of vulnerability assessment that Jude performed on the organization?",
+        "options": [
+            "Application assessment",
+            "External assessment",
+            "Passive assessment",
+            "Host-based assessment"
+        ],
+        "correct": [
+            1
+        ],
+        "explanation": "**Correct Answer: External assessment**\n\nExternal vulnerability assessment examines the network from an outsider's perspective, testing Internet-facing systems and perimeter defenses. According to CEH Module 5 (Vulnerability Analysis), external assessments: (1) scan from outside the network perimeter, (2) identify vulnerabilities in firewalls, routers, web servers, and DMZ hosts, (3) simulate real-world attacker perspective, (4) assess publicly accessible attack surface, (5) evaluate perimeter security controls. Jude examined from 'hacker's perspective' using external devices—classic external assessment.\n\n**Why other answers are incorrect:**\n\n- **A. Application assessment (Incorrect):** Application-specific vulnerability testing focuses on web applications, mobile apps, or software security—analyzing code, logic flaws, and application-layer vulnerabilities. The scenario describes network infrastructure testing (firewalls, routers), not application-specific testing.\n\n- **C. Passive assessment (Incorrect):** Passive assessment uses non-intrusive methods like traffic sniffing, log analysis, and configuration review without actively probing systems. Jude 'examined' and 'identified exploits'—suggesting active scanning, not passive observation.\n\n- **D. Host-based assessment (Incorrect):** Host-based assessment evaluates individual systems' security from an internal perspective, examining OS configurations, installed software, patches, and local security settings. External assessment focuses on perimeter devices from outside, not internal host configurations.\n\n**External Assessment Characteristics:**\n- Outsider's viewpoint\n- Tests perimeter defenses\n- Scans Internet-facing assets\n- Identifies external attack surface\n- No internal network access\n\n**Reference:** CEH v13 Module 5 - Vulnerability Analysis",
+        "type": "single",
+        "topic": "Vulnerability Assessment Types - External",
+        "domain": 3
+    },
+    {
+        "id": 13,
+        "question": "Which of the following Bluetooth hacking techniques does an attacker use to send messages to users without the recipient's consent, similar to email spamming?",
+        "options": [
+            "Bluesmacking",
+            "Bluejacking",
+            "Bluesnarfing",
+            "Bluebugging"
+        ],
+        "correct": [1],
+        "explanation": "**Correct Answer: Bluejacking**\n\nBluejacking sends unsolicited messages to Bluetooth-enabled devices without consent, similar to spam. According to CEH Module 16, bluejacking: (1) sends anonymous messages via vCard format, (2) doesn't access device data, (3) mainly used for advertising/pranks, (4) exploits device discoverability. It's relatively harmless compared to other Bluetooth attacks.\n\n**Why other answers are incorrect:**\n- **A. Bluesmacking (Incorrect):** DoS attack overloading devices with data packets.\n- **C. Bluesnarfing (Incorrect):** Unauthorized access to device data (contacts, photos).\n- **D. Bluebugging (Incorrect):** Full device remote control including calls/messages.\n\n**Reference:** CEH v13 Module 16",
+        "type": "single",
+        "topic": "Bluetooth Attacks",
+        "domain": 3
+    },
+    {
+        "id": 14,
+        "question": "Which of the following tools is used to analyze the files and folders in Windows?",
+        "options": [
+            "Cygwin",
+            "WinHex",
+            "Metasploit",
+            "Windump"
+        ],
+        "correct": [1],
+        "explanation": "**Correct Answer: WinHex**\n\nWinHex is a universal hexadecimal editor for analyzing files, disks, and RAM. According to CEH Module 11, WinHex: (1) performs disk cloning and imaging, (2) analyzes file structures, (3) recovers deleted files, (4) edits binary data. Essential for forensic analysis and file structure examination in Windows.\n\n**Why other answers are incorrect:**\n- **A. Cygwin (Incorrect):** Linux-like environment for Windows, not file analysis tool.\n- **C. Metasploit (Incorrect):** Penetration testing framework, not file analyzer.\n- **D. Windump (Incorrect):** Packet capture tool (tcpdump for Windows), not file analysis.\n\n**Reference:** CEH v13 Module 11",
+        "type": "single",
+        "topic": "Forensic Tools",
+        "domain": 3
+    },
+    {
+        "id": 15,
+        "question": "You are a security analyst performing a penetration test. You want to extract credential data from memory. Which tool should you use?",
+        "options": [
+            "PWDump",
+            "Mimikatz",
+            "Hashcat",
+            "John the Ripper"
+        ],
+        "correct": [1],
+        "explanation": "**Correct Answer: Mimikatz**\n\nMimikatz extracts credentials directly from Windows memory (LSASS process). According to CEH Module 6, Mimikatz: (1) dumps plaintext passwords from memory, (2) extracts Kerberos tickets, (3) performs pass-the-hash attacks, (4) accesses cached credentials. It's the gold standard for in-memory credential extraction.\n\n**Why other answers are incorrect:**\n- **A. PWDump (Incorrect):** Extracts password hashes from SAM file, not live memory.\n- **C. Hashcat (Incorrect):** Cracks password hashes offline, doesn't extract from memory.\n- **D. John the Ripper (Incorrect):** Password cracker, not memory extraction tool.\n\n**Reference:** CEH v13 Module 6",
+        "type": "single",
+        "topic": "Credential Dumping",
+        "domain": 3
+    },
+    {
+        "id": 16,
+        "question": "Which of the following viruses tries to hide from anti-virus programs by actively altering and corrupting the chosen service call interruptions when they are being run?",
+        "options": [
+            "Stealth/Tunneling virus",
+            "Cavity virus",
+            "Polymorphic virus",
+            "Metamorphic virus"
+        ],
+        "correct": [0],
+        "explanation": "**Correct Answer: Stealth/Tunneling virus**\n\nStealth viruses intercept and modify system calls to hide their presence. According to CEH Module 7, stealth viruses: (1) intercept anti-virus API calls, (2) return false information to hide infection, (3) manipulate interrupt handlers, (4) corrupt service calls during execution. They tunnel below anti-virus detection by altering system-level interrupts.\n\n**Why other answers are incorrect:**\n- **B. Cavity virus (Incorrect):** Fills empty spaces in files without increasing size.\n- **C. Polymorphic (Incorrect):** Changes code appearance but not behavior, doesn't alter system calls.\n- **D. Metamorphic (Incorrect):** Completely rewrites itself, not focused on interrupt manipulation.\n\n**Reference:** CEH v13 Module 7",
+        "type": "single",
+        "topic": "Malware Types",
+        "domain": 3
+    },
+    {
+        "id": 17,
+        "question": "Which of the following describes the amount of information that can be transmitted in a given time period?",
+        "options": [
+            "Baud",
+            "Bandwidth",
+            "Signal strength",
+            "Latency"
+        ],
+        "correct": [1],
+        "explanation": "**Correct Answer: Bandwidth**\n\nBandwidth measures data transmission capacity over time, typically in bits per second. According to CEH Module 3, bandwidth: (1) represents maximum data transfer rate, (2) determines network capacity, (3) affects transmission speed, (4) measured in bps, Kbps, Mbps, Gbps. It's the fundamental measure of how much information can flow through a connection.\n\n**Why other answers are incorrect:**\n- **A. Baud (Incorrect):** Symbol rate (signals per second), not data capacity.\n- **C. Signal strength (Incorrect):** Power level of signal, not transmission capacity.\n- **D. Latency (Incorrect):** Time delay, not amount of data.\n\n**Reference:** CEH v13 Module 3",
+        "type": "single",
+        "topic": "Network Fundamentals",
+        "domain": 3
+    },
+    {
+        "id": 18,
+        "question": "Which of the following vulnerabilities allows an attacker to force users to execute actions without their knowledge?",
+        "options": [
+            "Cross-Site Request Forgery (CSRF)",
+            "SQL injection",
+            "Cross-Site Scripting (XSS)",
+            "Server-Side Request Forgery (SSRF)"
+        ],
+        "correct": [0],
+        "explanation": "**Correct Answer: Cross-Site Request Forgery (CSRF)**\n\nCSRF tricks authenticated users into executing unwanted actions. According to CEH Module 14, CSRF: (1) exploits user's authenticated session, (2) forces unintended actions (transfer funds, change settings), (3) uses social engineering to trigger malicious requests, (4) victim unknowingly submits requests. The key is forcing actions without user's knowledge.\n\n**Why other answers are incorrect:**\n- **B. SQL injection (Incorrect):** Attacks database, doesn't force user actions.\n- **C. XSS (Incorrect):** Injects scripts but user sees/interacts with page.\n- **D. SSRF (Incorrect):** Forces server to make requests, not user actions.\n\n**Reference:** CEH v13 Module 14",
+        "type": "single",
+        "topic": "Web Attacks - CSRF",
+        "domain": 3
+    },
+    {
+        "id": 19,
+        "question": "What is the default port number used by SSH (Secure Shell) protocol for secure remote access to systems?",
+        "options": [
+            "Port 21",
+            "Port 22",
+            "Port 23",
+            "Port 25"
+        ],
+        "correct": [1],
+        "explanation": "**Correct Answer: Port 22**\n\nSSH (Secure Shell) uses TCP port 22 by default for encrypted remote access and secure file transfers. According to CEH Module 3 (Scanning Networks) and Module 4 (Enumeration), SSH provides: (1) **Encrypted communication**—all data, including authentication credentials, is encrypted to prevent eavesdropping, (2) **Strong authentication**—supports password, public key, and multi-factor authentication, (3) **Secure tunneling**—can tunnel other protocols (X11, port forwarding) securely, (4) **File transfer capabilities**—includes SCP and SFTP for secure file operations. SSH version 2 (SSHv2) is the current standard, fixing security vulnerabilities present in SSHv1. Port 22 is one of the most commonly scanned ports by attackers and should be protected through: firewall rules, fail2ban/rate limiting, key-based authentication (disabling password auth), changing to non-standard port, and implementing jump hosts/bastion servers.\n\n**Why other answers are incorrect:**\n\n- **A. Port 21 (Incorrect):** Port 21 is used by FTP (File Transfer Protocol) for control connections in file transfers. FTP is insecure as it transmits data, including usernames and passwords, in plaintext. FTP uses two ports: 21 for command/control and 20 for data transfer in active mode. FTP should be replaced with SFTP (SSH File Transfer Protocol over port 22) or FTPS (FTP Secure) for secure file transfers.\n\n- **C. Port 23 (Incorrect):** Port 23 is used by Telnet for remote terminal access. Telnet is highly insecure because it transmits all data, including login credentials, in cleartext without any encryption. Attackers can easily sniff Telnet traffic using tools like Wireshark to capture passwords. Telnet has been largely replaced by SSH and should never be used in production environments. The similarity between Telnet (23) and SSH (22) port numbers is intentional—SSH was designed as a secure replacement for Telnet.\n\n- **D. Port 25 (Incorrect):** Port 25 is used by SMTP (Simple Mail Transfer Protocol) for email transmission between mail servers. SMTP handles outgoing mail and mail relay functions. Port 25 is commonly blocked by ISPs to prevent spam, and email clients typically use port 587 (submission) or 465 (SMTPS) for sending mail. SMTP has nothing to do with remote system access.\n\n**Common Secure Remote Access Ports:**\n- **Port 22:** SSH (Secure Shell) ← Correct answer\n- **Port 3389:** RDP (Remote Desktop Protocol) for Windows\n- **Port 5900+:** VNC (Virtual Network Computing)\n- **Port 443:** HTTPS-based remote access (web-based)\n\n**SSH Security Best Practices:**\n1. Disable SSHv1, use only SSHv2\n2. Use key-based authentication\n3. Disable root login\n4. Implement fail2ban or similar\n5. Use non-standard port (security through obscurity)\n6. Restrict access by IP (firewall rules)\n7. Enable two-factor authentication\n8. Keep SSH software updated\n\n**Reference:** CEH v13 Module 3 - Scanning Networks, Module 4 - Enumeration, common ports and services",
+        "type": "single",
+        "topic": "Network Services - SSH Port",
+        "domain": 3
+    },
+    {
+        "id": 20,
+        "question": "What is the three-way handshake in TCP, and which flags are used in each step?",
+        "options": [
+            "SYN, SYN-ACK, ACK",
+            "SYN, ACK, FIN",
+            "SYN, RST, ACK",
+            "ACK, SYN, FIN"
+        ],
+        "correct": [0],
+        "explanation": "**Correct Answer: SYN, SYN-ACK, ACK**\n\nThe TCP three-way handshake establishes reliable connections between client and server. According to CEH Module 3, the three steps are: (1) Client sends SYN (Synchronize) with initial sequence number, (2) Server responds with SYN-ACK (acknowledges client's SYN and sends own sequence number), (3) Client sends ACK (acknowledges server's SYN), completing the handshake. Connection is now ESTABLISHED for data transfer.\n\n**Why others incorrect:** SYN-ACK-FIN (FIN terminates, not establishes), SYN-RST-ACK (RST rejects connection), ACK-SYN-FIN (illogical order - cannot ACK before SYN).\n\n**Handshake Steps:** Step 1: Client→Server SYN (flags: SYN=1, ACK=0, state: SYN_SENT). Step 2: Server→Client SYN-ACK (flags: SYN=1, ACK=1, state: SYN_RECEIVED). Step 3: Client→Server ACK (flags: SYN=0, ACK=1, state: ESTABLISHED).\n\n**Security:** SYN Flood (exhaust resources), SYN Scan (half-open stealth scan), Session Hijacking (predict sequence numbers), Firewall Evasion (manipulate flags).\n\n**Reference:** CEH v13 Module 3 - Scanning Networks, TCP protocol",
+        "type": "single",
+        "topic": "TCP Protocol - Three-Way Handshake",
+        "domain": 3
+    },
+    {
+        "id": 21,
+        "question": "What is banner grabbing, and how is it used during the enumeration phase?",
+        "options": [
+            "A technique to capture network packets",
+            "A method to obtain information about services running on open ports",
+            "A tool to perform port scanning",
+            "A process to encrypt network communication"
+        ],
+        "correct": [1],
+        "explanation": "**Correct Answer: A method to obtain information about services running on open ports**\n\nBanner grabbing is an enumeration technique used to extract information from banners displayed by services running on open ports. According to CEH Module 4 (Enumeration), when you connect to a service (HTTP, FTP, SSH, SMTP), it typically responds with a banner containing: (1) **Service type and version** (e.g., 'Apache/2.4.41'), (2) **Operating system details** (e.g., 'Ubuntu'), (3) **Software build information**, (4) **Configuration details**. This information helps attackers identify vulnerable versions and plan exploits. Banner grabbing can be performed using: telnet (telnet target 80, then 'HEAD / HTTP/1.0'), netcat (nc target port), Nmap (-sV for version detection), specialized tools (dmitry, p0f). Example: connecting to port 21 (FTP) might reveal 'ProFTPD 1.3.3c Server', immediately identifying a specific vulnerable version. Defense against banner grabbing includes: disabling verbose banners, customizing banners to hide version info, implementing banner randomization, and monitoring unusual connection patterns.\n\n**Why other answers are incorrect:**\n\n- **A. A technique to capture network packets (Incorrect):** This describes packet sniffing or packet capture, not banner grabbing. Packet sniffing uses tools like Wireshark, tcpdump, or tshark to intercept and analyze network traffic at the packet level. While packet sniffing can capture banners within intercepted traffic, banner grabbing is an active technique that deliberately connects to services to elicit banner responses. Packet capture is passive (listening) while banner grabbing is active (connecting).\n\n- **C. A tool to perform port scanning (Incorrect):** Banner grabbing is not a scanning tool—it's an enumeration technique used AFTER port scanning identifies open ports. Port scanning (using Nmap, Masscan, unicornscan) determines which ports are open/closed/filtered. Once scanning reveals open ports, banner grabbing enumerates the services on those ports to gather detailed information. The sequence is: scan for open ports, then grab banners for service identification. Nmap can do both, but they're distinct phases.\n\n- **D. A process to encrypt network communication (Incorrect):** Banner grabbing has nothing to do with encryption. Encryption (using SSL/TLS, IPsec, VPN) secures data in transit to prevent eavesdropping and tampering. Banner grabbing is an information-gathering technique that reads service responses. Ironically, encrypted services (HTTPS, FTPS, SSH) still display banners during connection establishment, before encryption fully activates, making them vulnerable to banner grabbing.\n\n**Banner Grabbing Examples:**\n\n**Telnet Method:**\n```bash\ntelnet target.com 80\nHEAD / HTTP/1.0\n[Enter twice]\nResponse: Server: Apache/2.4.41 (Ubuntu)\n```\n\n**Netcat Method:**\n```bash\nnc target.com 21\nResponse: 220 ProFTPD 1.3.3c Server\n```\n\n**Nmap Method:**\n```bash\nnmap -sV -p 22,80,443 target.com\nResponse: \n22/tcp open  ssh     OpenSSH 7.2p2\n80/tcp open  http    Apache httpd 2.4.18\n```\n\n**Common Banners by Service:**\n- **HTTP (80/443):** Server type, version, modules\n- **FTP (21):** FTP daemon type, version\n- **SSH (22):** SSH version, OpenSSH release\n- **SMTP (25):** Mail server type, hostname\n- **Telnet (23):** System type, login prompt\n- **SMB (445):** Windows version, workgroup\n\n**Information Revealed:**\n1. Service name and version\n2. Operating system type\n3. Patch level/build date\n4. Configuration details\n5. Potential vulnerabilities\n\n**Defensive Measures:**\n- Modify banners to remove version info\n- Use generic banners ('Web Server')\n- Implement banner randomization\n- Deploy honeypot banners (false information)\n- Monitor for banner grabbing attempts\n- Update services promptly\n\n**Reference:** CEH v13 Module 4 - Enumeration, banner grabbing techniques and service fingerprinting",
+        "type": "single",
+        "topic": "Enumeration - Banner Grabbing",
+        "domain": 3
+    },
+    {
+        "id": 22,
+        "question": "What is the difference between vulnerability scanning and penetration testing?",
+        "options": [
+            "There is no difference; they are the same",
+            "Vulnerability scanning identifies potential vulnerabilities; penetration testing actively exploits them",
+            "Penetration testing is automated; vulnerability scanning is manual",
+            "Vulnerability scanning is illegal; penetration testing is legal"
+        ],
+        "correct": [1],
+        "explanation": "**Correct Answer: Vulnerability scanning identifies potential vulnerabilities; penetration testing actively exploits them**\n\nVulnerability scanning and penetration testing are complementary but distinct security assessment activities. According to CEH Module 5 (Vulnerability Analysis), the key differences are: **Vulnerability Scanning** (1) automated process using tools like Nessus, Qualys, OpenVAS, (2) identifies and reports potential vulnerabilities, misconfigurations, and missing patches, (3) provides a list of weaknesses with severity ratings (CVSS scores), (4) non-intrusive—doesn't attempt exploitation, (5) can be scheduled regularly (weekly, monthly), (6) generates reports for remediation teams. **Penetration Testing** (1) manual or semi-automated ethical hacking, (2) actively exploits discovered vulnerabilities to demonstrate real-world impact, (3) simulates attacker behavior through reconnaissance, exploitation, post-exploitation, (4) intrusive—may cause system instability, (5) performed periodically (quarterly, annually) or before major releases, (6) provides detailed attack narratives and business risk context. The analogy: vulnerability scanning is like checking doors and windows to see if they're locked (identifying vulnerabilities), while penetration testing is like actually trying to break in (exploiting vulnerabilities).\n\n**Why other answers are incorrect:**\n\n- **A. There is no difference; they are the same (Incorrect):** This is completely wrong. The activities have fundamentally different purposes, methodologies, and outcomes. Vulnerability scanning is automated identification, while penetration testing is manual exploitation. Organizations need both: scans provide broad, frequent visibility into potential issues, while pen tests validate exploitability and business impact. Treating them as identical leads to incomplete security posture—scanning finds issues but doesn't prove they're exploitable, and pen testing is too expensive/disruptive to run constantly.\n\n- **C. Penetration testing is automated; vulnerability scanning is manual (Incorrect):** This reverses the reality. Vulnerability scanning is primarily automated—scanners automatically probe thousands of vulnerabilities using signature databases and configuration checks. Penetration testing is predominantly manual, performed by skilled security professionals who use creativity, experience, and judgment to chain vulnerabilities, bypass defenses, and demonstrate impact. While pen testers use automated tools (Metasploit, Burp Suite), the overall process requires human expertise to interpret results and make strategic decisions.\n\n- **D. Vulnerability scanning is illegal; penetration testing is legal (Incorrect):** Neither is inherently illegal or legal—legality depends on authorization. Both require explicit written permission from the system owner before execution. Unauthorized scanning or pen testing violates computer fraud laws (CFAA in US, Computer Misuse Act in UK). With proper authorization, both are legal and beneficial security practices. Organizations perform vulnerability scans regularly and hire pen testers for comprehensive assessments. Without authorization, both constitute unauthorized access.\n\n**Detailed Comparison:**\n\n| Aspect | Vulnerability Scanning | Penetration Testing |\n|--------|------------------------|---------------------|\n| **Nature** | Automated | Manual/Semi-automated |\n| **Scope** | Broad, systematic | Focused, goal-oriented |\n| **Depth** | Identifies weaknesses | Exploits weaknesses |\n| **Impact** | Low-risk, non-destructive | May cause disruption |\n| **Frequency** | Weekly/Monthly | Quarterly/Annually |\n| **Cost** | Lower | Higher |\n| **Skill Required** | Low-Medium | High (expert) |\n| **Output** | Vulnerability list | Attack narratives |\n| **Tools** | Nessus, Qualys, OpenVAS | Metasploit, Burp, Cobalt Strike |\n| **Goal** | Find all vulnerabilities | Prove exploitability |\n\n**When to Use Each:**\n\n**Vulnerability Scanning:**\n- Continuous security monitoring\n- Compliance requirements (PCI DSS)\n- Patch management validation\n- Configuration audits\n- Pre-pen test reconnaissance\n\n**Penetration Testing:**\n- Annual security assessments\n- Before major application releases\n- After significant infrastructure changes\n- Compliance requirements (PCI DSS 11.3)\n- Security program validation\n\n**Combined Approach:**\n1. Run vulnerability scans regularly\n2. Remediate critical/high findings\n3. Perform pen test annually\n4. Exploit scan findings to demonstrate risk\n5. Validate remediation effectiveness\n\n**Reference:** CEH v13 Module 5 - Vulnerability Analysis, vulnerability assessment vs. penetration testing",
+        "type": "single",
+        "topic": "Security Assessment - Vuln Scanning vs Pen Testing",
+        "domain": 3
+    },
+    {
+        "id": 23,
+        "question": "What is a NULL scan in Nmap?",
+        "options": ["Scan with no TCP flags set", "Scan with all flags set", "UDP scan", "ICMP scan"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Scan with no TCP flags set**\n\nNULL scan (-sN in Nmap) sends TCP packets with absolutely NO flags set (no SYN, ACK, FIN, RST, PSH, URG). According to CEH Module 3, NULL scan exploits RFC 793 behavior: (1) closed ports respond with RST packet, (2) open/filtered ports send no response (timeout). Advantages: stealthy, bypasses simple stateless firewalls that only check SYN flags. Disadvantages: unreliable on Windows systems (respond RST regardless of port state), requires root/admin privileges. Part of stealth scan trilogy with FIN (-sF) and Xmas (-sX) scans.\n\n**Why other answers are incorrect:**\n\n- **B. Scan with all flags set (Incorrect):** This describes Xmas scan (-sX), which sets FIN, PSH, and URG flags, lighting up packet like Christmas tree. NULL is opposite—NO flags. Xmas also exploits same RFC 793 behavior but uses different flag combination.\n\n- **C. UDP scan (Incorrect):** UDP scan (-sU) targets UDP ports, completely different protocol from TCP. UDP scan sends UDP packets and analyzes ICMP port unreachable responses. NULL scan specifically uses TCP with no flags.\n\n- **D. ICMP scan (Incorrect):** ICMP scan (ping sweep, -sn) uses ICMP Echo Request packets for host discovery, different protocol and purpose. NULL scan is TCP-based port scanning, not ICMP-based host discovery.\n\n**Reference:** CEH v13 Module 3",
+        "type": "single",
+        "topic": "Nmap - NULL Scan",
+        "domain": 3
+    },
+    {
+        "id": 24,
+        "question": "What is Nmap's -O flag?",
+        "options": ["OS detection", "Output format", "Omit scan", "Open ports only"],
+        "correct": [0],
+        "explanation": "**Correct Answer: OS detection**\n\nNmap's -O flag enables operating system detection/fingerprinting by analyzing TCP/IP stack implementation details. According to CEH Module 3, OS detection examines: (1) **TTL values** - different OS use different default TTL, (2) **TCP window size** - varies by OS, (3) **TCP options** - ordering and values differ, (4) **ICMP responses** - implementation variations, (5) **IP ID sequences** - generation patterns. Nmap compares responses against database of known OS fingerprints. Requires root/administrator privileges. Example output: Linux 3.2-4.9, Windows 7/8/10. Often combined with -sV for comprehensive enumeration.\n\n**Why other answers are incorrect:**\n\n- **B. Output format (Incorrect):** Output format flags are -oN (normal), -oX (XML), -oG (greppable), -oA (all formats). -O specifically performs OS detection, not output formatting. This confuses detection with reporting.\n\n- **C. Omit scan (Incorrect):** No Nmap flag omits scanning. -O actively performs additional OS detection analysis. This invents non-existent functionality.\n\n- **D. Open ports only (Incorrect):** No specific -O flag for filtering open ports. Port filtering uses --open flag. -O is OS detection that analyzes responses from various port states to fingerprint operating system.\n\n**Reference:** CEH v13 Module 3",
+        "type": "single",
+        "topic": "Nmap - OS Detection",
+        "domain": 3
+    },
+    {
+        "id": 25,
+        "question": "What is the purpose of Nmap Scripting Engine (NSE)?",
+        "options": ["Automate advanced scanning tasks with Lua scripts", "Compile C code", "Encrypt scans", "Generate reports"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Automate advanced scanning tasks with Lua scripts**\n\nNmap Scripting Engine (NSE) extends Nmap's capabilities through Lua scripts for advanced reconnaissance and vulnerability detection. According to CEH Module 3, NSE enables: (1) **Vulnerability detection** - identify specific CVEs and security issues, (2) **Authentication testing** - brute force, default credentials, (3) **Version detection enhancement** - detailed service fingerprinting, (4) **Malware discovery** - identify backdoors, infections, (5) **Network discovery** - broadcast scripts for finding devices. Script categories: auth, broadcast, brute, default, discovery, dos, exploit, external, fuzzer, intrusive, malware, safe, version, vuln. Usage: --script=vuln or --script=http-*. Example: nmap --script=smb-vuln-ms17-010.\n\n**Why other answers are incorrect:**\n\n- **B. Compile C code (Incorrect):** NSE uses Lua scripting language interpreted at runtime, not C compilation. NSE doesn't compile code—it executes pre-written Lua scripts. This confuses interpreted scripting with compiled languages.\n\n- **C. Encrypt scans (Incorrect):** NSE doesn't encrypt scan traffic. Some NSE scripts test SSL/TLS services but don't encrypt Nmap's scanning packets. Scan encryption isn't NSE's purpose. This misunderstands scripting vs. traffic encryption.\n\n- **D. Generate reports (Incorrect):** While NSE output appears in Nmap reports, NSE's PURPOSE is advanced scanning automation, not report generation. Output formatting is handled by -o flags. This confuses script execution with output formatting.\n\n**Reference:** CEH v13 Module 3",
+        "type": "single",
+        "topic": "Nmap - NSE",
+        "domain": 3
+    },
+    {
+        "id": 26,
+        "question": "What is hping3?",
+        "options": ["Packet crafting and analysis tool", "Web server", "Database", "IDE"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Packet crafting and analysis tool**\n\nhping3 is a command-line packet crafting and analysis tool for creating custom TCP/IP packets and network testing. According to CEH Module 3: (1) **Custom packets** - craft packets with specific flags, ports, payloads, (2) **Firewall testing** - test firewall rules, ACLs, (3) **Advanced port scanning** - more flexible than Nmap for specific scenarios, (4) **Traceroute** - TCP/UDP traceroute instead of ICMP, (5) **DoS testing** - flood testing, (6) **Idle scan** - zombie host scanning. Supports TCP, UDP, ICMP, RAW-IP. More flexible than standard ping. Example: hping3 -S -p 80 target (SYN scan port 80).\n\n**Why other answers are incorrect:**\n\n- **B. Web server (Incorrect):** Web servers (Apache, Nginx) host websites and serve HTTP content. hping3 is a packet manipulation tool for network testing and reconnaissance, not server infrastructure. This completely misunderstands hping3's purpose.\n\n- **C. Database (Incorrect):** Databases (MySQL, PostgreSQL) store and manage data. hping3 crafts network packets for testing, doesn't store data. This confuses network tools with data storage systems.\n\n- **D. IDE (Incorrect):** IDEs (Visual Studio, Eclipse) are development environments for writing code. hping3 is a command-line network tool, not a code editor. This confuses network utilities with software development tools.\n\n**Reference:** CEH v13 Module 3",
+        "type": "single",
+        "topic": "Packet Crafting - hping3",
+        "domain": 3
+    },
+    {
+        "id": 27,
+        "question": "What is NetBIOS enumeration?",
+        "options": ["Extracting information from Windows networks using NetBIOS", "Mac enumeration", "Linux scanning", "Router config"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Extracting information from Windows networks using NetBIOS**\n\nNetBIOS enumeration extracts information from Windows networks by querying NetBIOS services. According to CEH Module 4: (1) **Ports** - 137 (name service), 138 (datagram), 139 (session), (2) **Information gathered** - computer names, usernames, workgroups, domains, shared resources, MAC addresses, (3) **Tools** - nbtstat (Windows), enum4linux (Linux), nbtscan, NetBIOS Enumerator, (4) **Null sessions** - older Windows systems allow anonymous connections. Legacy protocol being phased out in modern networks (SMB Direct over TCP 445). Still found in legacy environments.\n\n**Why other answers are incorrect:**\n\n- **B. Mac enumeration (Incorrect):** Mac systems use Bonjour/mDNS for network discovery, not NetBIOS (Windows-specific protocol). NetBIOS enumeration targets Windows networks specifically.\n\n- **C. Linux scanning (Incorrect):** Linux doesn't natively use NetBIOS (though Samba can). NetBIOS enumeration is Windows-focused. Linux uses different service discovery mechanisms.\n\n- **D. Router config (Incorrect):** Router configuration uses SNMP, web interfaces, Telnet/SSH. NetBIOS is for Windows network resource sharing, not router management.\n\n**Reference:** CEH v13 Module 4",
+        "type": "single",
+        "topic": "Enumeration - NetBIOS",
+        "domain": 3
+    },
+    {
+        "id": 28,
+        "question": "What is SNMP enumeration?",
+        "options": ["Querying SNMP-enabled devices for management information", "Email protocol", "File transfer", "Web protocol"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Querying SNMP-enabled devices for management information**\n\nSNMP (Simple Network Management Protocol) enumeration queries network devices for management information using SNMP. According to CEH Module 4: (1) **Ports** - UDP 161 (agent), 162 (manager/traps), (2) **Community strings** - public (read-only), private (read-write), act as passwords, (3) **MIB** - Management Information Base, hierarchical database of device info, (4) **Information** - system details, network interfaces, routing tables, running processes, installed software, network connections. Tools: snmpwalk, snmp-check, snmpenum, Metasploit snmp modules. Devices: routers, switches, printers, servers, IoT. Default community strings (public/private) often unchanged, allowing easy enumeration.\n\n**Why other answers are incorrect:**\n\n- **B. Email protocol (Incorrect):** Email uses SMTP (Simple Mail Transfer Protocol), not SNMP. SNMP is network device management, SMTP is email transmission. Similar acronyms, completely different protocols.\n\n- **C. File transfer (Incorrect):** File transfer uses FTP, SFTP, SCP. SNMP is for network device monitoring and management, not file transfer. Different purposes and protocols.\n\n- **D. Web protocol (Incorrect):** Web uses HTTP/HTTPS. SNMP is UDP-based network management protocol. While devices may have web interfaces, SNMP enumeration specifically uses SNMP protocol.\n\n**Reference:** CEH v13 Module 4",
+        "type": "single",
+        "topic": "Enumeration - SNMP",
+        "domain": 3
+    },
+    {
+        "id": 29,
+        "question": "What is LDAP enumeration?",
+        "options": ["Querying directory services for user/group information", "Database querying", "Web scraping", "Email harvesting"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Querying directory services for user/group information**\n\nLDAP (Lightweight Directory Access Protocol) enumeration queries directory services like Active Directory for organizational information. According to CEH Module 4: (1) **Ports** - 389 (LDAP), 636 (LDAPS/SSL), 3268 (Global Catalog), (2) **Information** - users, groups, organizational units (OUs), computer accounts, email addresses, phone numbers, group memberships, password policies, (3) **Tools** - ldapsearch, AD Explorer, JXplorer, ldapenum, (4) **Techniques** - anonymous bind (if allowed), authenticated queries, null sessions. Reveals organizational structure, targets for social engineering, privilege escalation paths.\n\n**Why other answers are incorrect:**\n\n- **B. Database querying (Incorrect):** Database querying uses SQL for relational databases (MySQL, PostgreSQL). LDAP queries hierarchical directory services, different data model and query language. LDAP uses filters, not SQL.\n\n- **C. Web scraping (Incorrect):** Web scraping extracts data from HTML web pages. LDAP enumeration queries directory service databases via LDAP protocol, not HTTP/web pages.\n\n- **D. Email harvesting (Incorrect):** While LDAP can contain email addresses, email harvesting typically scrapes websites, WHOIS, documents. LDAP enumeration is broader, querying entire directory structure including users, groups, OUs.\n\n**Reference:** CEH v13 Module 4",
+        "type": "single",
+        "topic": "Enumeration - LDAP",
+        "domain": 3
+    },
+    {
+        "id": 30,
+        "question": "What is SMB enumeration?",
+        "options": ["Enumerating Windows file shares and permissions", "Email enumeration", "DNS querying", "Web directory listing"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Enumerating Windows file shares and permissions**\n\nSMB (Server Message Block) enumeration discovers shared resources on Windows networks. According to CEH Module 4: (1) **Port** - 445 (SMB), 139 (NetBIOS-SSN), (2) **Information** - shared folders, files, printers, users, groups, permissions, sessions, (3) **Tools** - smbclient, enum4linux, CrackMapExec, smbmap, Metasploit smb modules, (4) **Null sessions** - older Windows systems allow anonymous connections without credentials. Modern systems require authentication. Reveals sensitive shares (C$, ADMIN$, IPC$), misconfigurations, accessible files.\n\n**Why other answers are incorrect:**\n\n- **B. Email enumeration (Incorrect):** Email enumeration uses SMTP VRFY/EXPN commands. SMB is file sharing protocol, not email. Different protocols and purposes.\n\n- **C. DNS querying (Incorrect):** DNS enumeration queries DNS records for domains/subdomains. SMB enumerates Windows file shares. Different protocols.\n\n- **D. Web directory listing (Incorrect):** Web directory listing enumerates HTTP server directories. SMB is Windows file sharing, not web protocol.\n\n**Reference:** CEH v13 Module 4",
+        "type": "single",
+        "topic": "Enumeration - SMB",
+        "domain": 3
+    },
+    {
+        "id": 31,
+        "question": "What is NTP enumeration?",
+        "options": ["Querying Network Time Protocol servers for time sync info", "FTP enumeration", "SSH enumeration", "HTTP enumeration"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Querying Network Time Protocol servers for time sync info**\n\nNTP enumeration queries NTP servers for time synchronization information and connected clients. According to CEH Module 4: (1) **Port** - UDP 123, (2) **Commands** - ntpq -c monlist (lists clients), ntpdc, ntpq -p (shows peers), (3) **Information** - connected clients, network topology, internal IP addresses, time sources, (4) **Security** - monlist command disabled in NTPv4.2.7+ due to DDoS amplification abuse. Reveals internal network hosts that sync time with NTP server.\n\n**Why other answers are incorrect:**\n\n- **B. FTP enumeration (Incorrect):** FTP enumeration lists files/directories on FTP servers (port 21). NTP is time synchronization (UDP 123), completely different protocol and purpose.\n\n- **C. SSH enumeration (Incorrect):** SSH enumeration identifies SSH versions, banner grabbing (port 22). NTP is time protocol, not remote access.\n\n- **D. HTTP enumeration (Incorrect):** HTTP enumeration discovers web directories, files, virtual hosts. NTP is time synchronization, not web protocol.\n\n**Reference:** CEH v13 Module 4",
+        "type": "single",
+        "topic": "Enumeration - NTP",
+        "domain": 3
+    },
+    {
+        "id": 32,
+        "question": "What is DNS enumeration?",
+        "options": ["Gathering DNS records to map network infrastructure", "Enumerating files", "User enumeration", "Process listing"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Gathering DNS records to map network infrastructure**\n\nDNS enumeration collects DNS records to map organization's network infrastructure. According to CEH Module 4: (1) **Record types** - A (IPv4), AAAA (IPv6), MX (mail servers), NS (name servers), CNAME (aliases), TXT (text info), PTR (reverse lookup), SOA (zone authority), (2) **Tools** - dig, nslookup, host, fierce, dnsrecon, dnsenum, (3) **Techniques** - zone transfers (AXFR - if misconfigured, dumps entire DNS database), subdomain brute-forcing, reverse DNS lookups, (4) **Information** - subdomains, IP addresses, mail servers, name servers, network topology.\n\n**Why other answers are incorrect:**\n\n- **B. Enumerating files (Incorrect):** File enumeration lists files/directories on servers (FTP, web, SMB). DNS enumeration queries DNS records for network infrastructure, not file systems.\n\n- **C. User enumeration (Incorrect):** User enumeration discovers usernames (SMTP VRFY, LDAP, SMB). DNS enumeration maps network infrastructure via DNS records, not user accounts.\n\n- **D. Process listing (Incorrect):** Process listing shows running processes on systems. DNS enumeration queries external DNS servers for domain records, not system processes.\n\n**Reference:** CEH v13 Module 4",
+        "type": "single",
+        "topic": "Enumeration - DNS",
+        "domain": 3
+    },
+    {
+        "id": 33,
+        "question": "What is the purpose of enum4linux?",
+        "options": ["Enumerate Windows/Samba systems for shares, users, groups", "Linux kernel enumeration", "Android app analysis", "iOS security"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Enumerate Windows/Samba systems for shares, users, groups**\n\nenum4linux is a Perl script wrapper for enumerating Windows and Samba systems. According to CEH Module 4: (1) **Functions** - enumerate shares, users, groups, password policies, printers, OS information, (2) **Protocols** - uses SMB, NetBIOS, LDAP protocols, (3) **Automated** - runs multiple enumeration techniques in one command, (4) **Output** - comprehensive report with all discovered information. Commonly used in penetration testing for initial Windows network reconnaissance. Example: enum4linux -a target (all enumeration).\n\n**Why other answers are incorrect:**\n\n- **B. Linux kernel enumeration (Incorrect):** Kernel enumeration identifies Linux kernel version for exploit selection. enum4linux targets Windows/Samba network services, not Linux kernels.\n\n- **C. Android app analysis (Incorrect):** Android analysis uses tools like APKTool, jadx for app reverse engineering. enum4linux is network enumeration for Windows systems.\n\n- **D. iOS security (Incorrect):** iOS security uses tools like Frida, Objection for app testing. enum4linux is Windows/Samba network enumeration.\n\n**Reference:** CEH v13 Module 4",
+        "type": "single",
+        "topic": "Enumeration Tools - enum4linux",
+        "domain": 3
+    },
+    {
+        "id": 34,
+        "question": "What is SMTP enumeration?",
+        "options": ["Verifying email addresses and users on mail server", "Web enumeration", "Database enumeration", "File enumeration"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Verifying email addresses and users on mail server**\n\nSMTP enumeration verifies valid email addresses and usernames on mail servers. According to CEH Module 4: (1) **Commands** - VRFY (verify user), EXPN (expand mailing list), RCPT TO (recipient check), (2) **Port** - 25 (SMTP), 587 (submission), (3) **Tools** - smtp-user-enum, Metasploit smtp_enum module, ismtp, (4) **Modern defenses** - most servers disable VRFY/EXPN to prevent enumeration. Used to build target lists for phishing, spear-phishing campaigns. Reveals valid vs invalid email addresses without sending emails.\n\n**Why other answers are incorrect:**\n\n- **B. Web enumeration (Incorrect):** Web enumeration discovers web directories, files, virtual hosts (HTTP/HTTPS). SMTP enumeration verifies email users on mail servers, different protocol.\n\n- **C. Database enumeration (Incorrect):** Database enumeration extracts database structure, tables, columns. SMTP enumeration verifies email addresses, not database schemas.\n\n- **D. File enumeration (Incorrect):** File enumeration lists files/directories on file servers. SMTP enumeration validates email users on mail servers.\n\n**Reference:** CEH v13 Module 4",
+        "type": "single",
+        "topic": "Enumeration - SMTP",
+        "domain": 3
+    },
+    {
+        "id": 35,
+        "question": "What is IPv6 scanning?",
+        "options": ["Scanning IPv6 addresses and networks", "IPv4 upgrade", "Protocol scanning", "Version scanning"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Scanning IPv6 addresses and networks**\n\nIPv6 scanning discovers devices on IPv6 networks despite unique challenges. According to CEH Module 3: (1) **Challenges** - enormous address space (2^128, ~340 undecillion addresses), no broadcast (uses multicast), different neighbor discovery, (2) **Tools** - Nmap with -6 flag, alive6, thc-ipv6 toolkit, scan6, (3) **Techniques** - multicast scanning (ff02::1 all-nodes), known address patterns (::1, ::2), local-link addresses (fe80::), DNS/DHCPv6 logs, (4) **Practical** - most IPv6 hosts use EUI-64 addressing (MAC-based) making them more predictable than random.\n\n**Why other answers are incorrect:**\n\n- **B. IPv4 upgrade (Incorrect):** IPv4 upgrade refers to transitioning from IPv4 to IPv6. IPv6 scanning is network reconnaissance technique, not protocol migration.\n\n- **C. Protocol scanning (Incorrect):** Protocol scanning identifies IP protocols supported (Nmap -sO). IPv6 scanning specifically targets IPv6 addresses, not protocol enumeration.\n\n- **D. Version scanning (Incorrect):** Version scanning identifies software versions (Nmap -sV). IPv6 scanning discovers hosts on IPv6 networks.\n\n**Reference:** CEH v13 Module 3",
+        "type": "single",
+        "topic": "IPv6 Scanning",
+        "domain": 3
+    },
+    {
+        "id": 36,
+        "question": "What is service detection?",
+        "options": ["Identifying services and versions on open ports", "Service restart", "Service monitoring", "Service configuration"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Identifying services and versions on open ports**\n\nService detection identifies software applications and versions running on open ports. According to CEH Module 3: (1) **Nmap -sV** - service version detection, probes ports with various payloads, (2) **Banner grabbing** - connects and reads service banners revealing software/version, (3) **Application fingerprinting** - analyzes responses to identify specific software, (4) **Information** - Apache 2.4.29, OpenSSH 7.4, MySQL 5.7.28. Critical for vulnerability assessment—identifies outdated, vulnerable versions for exploitation. More accurate than assuming service from port number.\n\n**Why other answers are incorrect:**\n\n- **B. Service restart (Incorrect):** Service restart stops and starts services on systems. Service detection IDENTIFIES running services, doesn't manage them.\n\n- **C. Service monitoring (Incorrect):** Service monitoring tracks service health, uptime, performance. Service detection IDENTIFIES what services/versions run, not ongoing monitoring.\n\n- **D. Service configuration (Incorrect):** Service configuration sets up service parameters, settings. Service detection DISCOVERS existing services, doesn't configure them.\n\n**Reference:** CEH v13 Module 3",
+        "type": "single",
+        "topic": "Service Detection",
+        "domain": 3
+    },
+    {
+        "id": 37,
+        "question": "What is aggressive scanning?",
+        "options": ["Fast, noisy scan with OS detection, version detection, scripts", "Slow scan", "Stealth scan", "Passive scan"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Fast, noisy scan with OS detection, version detection, scripts**\n\nAggressive scanning (Nmap -A flag) combines multiple intensive scanning techniques for comprehensive reconnaissance. According to CEH Module 3: (1) enables OS detection (-O), (2) version detection (-sV), (3) script scanning (--script=default), (4) traceroute (--traceroute). Fast, thorough, but extremely noisy—easily detected by IDS/IPS, firewalls, logged extensively. Used in authorized penetration testing when stealth unnecessary. Provides maximum information quickly.\n\n**Why other answers are incorrect:**\n\n- **B. Slow scan (Incorrect):** Slow scanning (-T0, -T1) minimizes detection by spreading scan over hours/days. Aggressive scan is FAST and noisy, opposite of slow.\n\n- **C. Stealth scan (Incorrect):** Stealth scans (SYN, NULL, FIN, Xmas) avoid detection. Aggressive scan is DETECTABLE with multiple loud techniques.\n\n- **D. Passive scan (Incorrect):** Passive scanning observes traffic without sending packets. Aggressive scan actively probes with OS detection, scripts—highly active.\n\n**Reference:** CEH v13 Module 3",
+        "type": "single",
+        "topic": "Nmap - Aggressive Scan",
+        "domain": 3
+    },
+    {
+        "id": 38,
+        "question": "What is firewall evasion?",
+        "options": ["Techniques to bypass firewall filtering", "Firewall configuration", "Firewall monitoring", "Firewall installation"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Techniques to bypass firewall filtering**\n\nFirewall evasion uses techniques to bypass firewall packet filtering rules. According to CEH Module 3: (1) **Fragmentation** - split packets to avoid pattern matching (Nmap -f, --mtu), (2) **Source port manipulation** - use trusted ports like 53/DNS, 80/HTTP (--source-port 53), (3) **Decoys** - hide among fake source IPs (Nmap -D), (4) **Timing** - slow scans avoid rate-limiting, (5) **Tunneling** - encapsulate in allowed protocols. Modern stateful firewalls track connections, harder to evade than old packet filters.\n\n**Why other answers are incorrect:**\n\n- **B. Firewall configuration (Incorrect):** Configuration is setting up firewall rules, policies, interfaces. Evasion is BYPASSING firewalls, not administering them.\n\n- **C. Firewall monitoring (Incorrect):** Monitoring tracks firewall logs, alerts, performance. Evasion attacks firewalls, doesn't monitor them.\n\n- **D. Firewall installation (Incorrect):** Installation deploys firewall hardware/software. Evasion circumvents existing firewalls.\n\n**Reference:** CEH v13 Module 3",
+        "type": "single",
+        "topic": "Firewall Evasion",
+        "domain": 3
+    },
+    {
+        "id": 39,
+        "question": "What is IDS evasion?",
+        "options": ["Techniques to avoid IDS detection during scanning", "IDS configuration", "IDS monitoring", "IDS installation"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Techniques to avoid IDS detection during scanning**\n\nIDS (Intrusion Detection System) evasion avoids signature-based detection during scanning. According to CEH Module 3: (1) **Slow scanning** - spread over time to avoid rate thresholds (-T0), (2) **Randomization** - randomize scan order, timing patterns, (3) **Fragmentation** - split packets to evade pattern matching, (4) **Session splicing** - break attack into segments, (5) **Polymorphism** - vary payload encoding. Modern IDS uses behavioral analysis, anomaly detection, making evasion harder.\n\n**Why other answers are incorrect:**\n\n- **B. IDS configuration (Incorrect):** Configuration sets up IDS rules, sensors, alerts. Evasion AVOIDS IDS detection, doesn't configure systems.\n\n- **C. IDS monitoring (Incorrect):** Monitoring analyzes IDS alerts, manages incidents. Evasion attacks systems while avoiding IDS.\n\n- **D. IDS installation (Incorrect):** Installation deploys IDS sensors, software. Evasion bypasses existing IDS.\n\n**Reference:** CEH v13 Module 3",
+        "type": "single",
+        "topic": "IDS Evasion",
+        "domain": 3
+    },
+    {
+        "id": 40,
+        "question": "What is network discovery?",
+        "options": ["Identifying live hosts on network", "Network design", "Network configuration", "Network monitoring"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Identifying live hosts on network**\n\nNetwork discovery identifies active/live hosts on a network before detailed scanning. According to CEH Module 3: (1) **Ping sweep** - ICMP Echo requests to ranges, (2) **ARP scan** - Layer 2 discovery on local network (fastest, most reliable locally), (3) **TCP/UDP probes** - test common ports when ICMP blocked, (4) **Tools** - Nmap -sn (ping scan), fping, angry IP scanner. Determines which IPs are alive, focuses subsequent port scanning on active targets, saves time.\n\n**Why other answers are incorrect:**\n\n- **B. Network design (Incorrect):** Network design is planning network architecture, topology, subnets. Discovery FINDS existing active hosts, doesn't design networks.\n\n- **C. Network configuration (Incorrect):** Configuration sets up network devices (routers, switches, VLANs). Discovery identifies live hosts.\n\n- **D. Network monitoring (Incorrect):** Monitoring tracks ongoing network performance, bandwidth, uptime. Discovery is one-time reconnaissance finding active hosts.\n\n**Reference:** CEH v13 Module 3",
+        "type": "single",
+        "topic": "Network Discovery",
+        "domain": 3
+    },
+    {
+        "id": 41,
+        "question": "What is port knocking?",
+        "options": ["Sequence of connection attempts to open firewall port", "Physical port", "Port forwarding", "Port blocking"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Sequence of connection attempts to open firewall port**\n\nPort knocking requires client to attempt connections to specific closed ports in correct sequence before firewall opens hidden service port. According to CEH Module 3: (1) knock sequence example: attempt connections to ports 7000, 8000, 9000 in order, (2) firewall monitors sequence, opens SSH (22) temporarily for that IP, (3) after timeout, port closes again, (4) security through obscurity. Tools: knockd (server), knock (client). Weak security—detectable by analyzing connection patterns. Better alternatives: VPN, MFA, certificate authentication.\n\n**Why other answers are incorrect:**\n\n- **B. Physical port (Incorrect):** Physical ports are hardware connectors (Ethernet, USB). Port knocking is software-based firewall technique using TCP/UDP port numbers.\n\n- **C. Port forwarding (Incorrect):** Port forwarding redirects traffic from one port to another/different host. Port knocking is authentication mechanism.\n\n- **D. Port blocking (Incorrect):** Port blocking denies traffic to ports. Port knocking OPENS ports after correct sequence.\n\n**Reference:** CEH v13 Module 3",
+        "type": "single",
+        "topic": "Port Knocking",
+        "domain": 3
+    },
+    {
+        "id": 42,
+        "question": "What is idle scan?",
+        "options": ["Stealthy scan using zombie host to hide attacker IP", "Slow scan", "Scheduled scan", "Background scan"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Stealthy scan using zombie host to hide attacker IP**\n\nIdle scan (Nmap -sI) is extremely stealthy technique using third-party \"zombie\" host to scan target. According to CEH Module 3: (1) attacker spoofs zombie's IP when probing target, (2) target responds to zombie, not attacker, (3) attacker monitors zombie's IP ID sequence changes to determine port states, (4) requires zombie with predictable IPID increment, low traffic. Target logs show zombie IP, not attacker. Difficult to execute but extremely stealthy. Example: nmap -sI zombie_ip target_ip.\n\n**Why other answers are incorrect:**\n\n- **B. Slow scan (Incorrect):** Slow scan (-T0) spreads scanning over time for stealth. Idle scan's stealth comes from using ZOMBIE HOST, not speed.\n\n- **C. Scheduled scan (Incorrect):** Scheduled scans run at specific times. Idle scan is technique using third-party host, not scheduling.\n\n- **D. Background scan (Incorrect):** Background scan runs low priority. Idle scan uses zombie host IP spoofing for anonymity.\n\n**Reference:** CEH v13 Module 3",
+        "type": "single",
+        "topic": "Nmap - Idle Scan",
+        "domain": 3
+    },
+    {
+        "id": 43,
+        "question": "What is window scan?",
+        "options": ["Scan analyzing TCP window size to determine port state", "Windows scan", "Window detection", "Screen scan"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Scan analyzing TCP window size to determine port state**\n\nWindow scan (Nmap -sW) analyzes TCP window field in RST response packets to differentiate port states. According to CEH Module 3: sends same packets as ACK scan but examines TCP window size instead of RST bit. On some systems, open ports return RST with non-zero window, closed ports return zero window. Inconsistent across OS—works on some older systems, unreliable on modern. Rarely used today. Similar to ACK scan for firewall rule mapping.\n\n**Why other answers are incorrect:**\n\n- **B. Windows scan (Incorrect):** Could imply scanning Windows OS. Window scan analyzes TCP window FIELD in packets, not OS-specific.\n\n- **C. Window detection (Incorrect):** Vague term. Window scan specifically checks TCP window size in RST packets for port state.\n\n- **D. Screen scan (Incorrect):** No such scan type. Window scan examines TCP window field.\n\n**Reference:** CEH v13 Module 3",
+        "type": "single",
+        "topic": "Nmap - Window Scan",
+        "domain": 3
+    },
+    {
+        "id": 44,
+        "question": "What is Maimon scan?",
+        "options": ["Scan sending FIN/ACK flags", "Email scan", "Mail server scan", "Mailing list scan"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Scan sending FIN/ACK flags**\n\nMaimon scan (Nmap -sM) sends TCP packets with both FIN and ACK flags set. According to CEH Module 3: named after Uriel Maimon who discovered this technique. Exploits BSD systems' behavior where open ports drop FIN/ACK packets, closed ports send RST. Most modern systems follow RFC 793, making this scan ineffective today. Historical technique, rarely useful on current systems.\n\n**Why other answers are incorrect:**\n\n- **B. Email scan (Incorrect):** Named after discoverer Uriel Maimon, not related to email/mail systems.\n\n- **C. Mail server scan (Incorrect):** Maimon scan is TCP flag manipulation technique, not mail server specific.\n\n- **D. Mailing list scan (Incorrect):** Completely unrelated to email. It's a network port scanning technique.\n\n**Reference:** CEH v13 Module 3",
+        "type": "single",
+        "topic": "Nmap - Maimon Scan",
+        "domain": 3
+    },
+    {
+        "id": 45,
+        "question": "What is protocol scan?",
+        "options": ["Determining which IP protocols supported on host", "Network protocol", "Protocol analyzer", "Protocol configuration"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Determining which IP protocols supported on host**\n\nProtocol scan (Nmap -sO) determines which IP protocols (TCP=6, UDP=17, ICMP=1, IGMP=2, etc.) a host supports. According to CEH Module 3: sends raw IP packets iterating through protocol numbers 0-255. Analyzes responses to determine which protocols elicit responses. Reveals protocols allowed through firewalls. Requires root/admin privileges.\n\n**Why other answers are incorrect:**\n\n- **B. Network protocol (Incorrect):** Generic term for communication protocols. Protocol scan is specific SCANNING technique.\n\n- **C. Protocol analyzer (Incorrect):** Protocol analyzer (Wireshark) captures and analyzes packets. Protocol scan TESTS protocol support.\n\n- **D. Protocol configuration (Incorrect):** Configuration sets up protocols. Protocol scan DISCOVERS supported protocols.\n\n**Reference:** CEH v13 Module 3",
+        "type": "single",
+        "topic": "Nmap - Protocol Scan",
+        "domain": 3
+    },
+    {
+        "id": 46,
+        "question": "What is timing template in Nmap?",
+        "options": ["Controlling scan speed/stealthiness (-T0 to -T5)", "Time synchronization", "Scheduling scans", "Timeout settings"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Controlling scan speed/stealthiness (-T0 to -T5)**\n\nNmap timing templates (-T0 to -T5) control scan speed versus stealthiness trade-off. According to CEH Module 3: T0 (Paranoid): extremely slow, one port at a time, IDS evasion. T1 (Sneaky): slow, serial scan. T2 (Polite): slower, less bandwidth. T3 (Normal): default, balanced. T4 (Aggressive): fast, assumes fast/reliable network. T5 (Insane): extremely fast, may miss ports. Lower = stealthy, higher = fast but noisy.\n\n**Why other answers are incorrect:**\n\n- **B. Time synchronization (Incorrect):** Time sync uses NTP. Timing templates control scan SPEED.\n\n- **C. Scheduling scans (Incorrect):** Scheduling sets when scans run. Timing templates set scan PACE.\n\n- **D. Timeout settings (Incorrect):** Timeouts are component of timing, but templates are comprehensive speed/stealth profiles.\n\n**Reference:** CEH v13 Module 3",
+        "type": "single",
+        "topic": "Nmap - Timing Templates",
+        "domain": 3
+    },
+    {
+        "id": 47,
+        "question": "What is vulnerability prioritization?",
+        "options": ["Ranking vulnerabilities by risk for remediation", "Vulnerability scan", "Priority list", "Risk assessment"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Ranking vulnerabilities by risk for remediation**\n\nVulnerability prioritization ranks discovered vulnerabilities by actual risk for effective remediation. According to CEH Module 5: considers exploitability, impact, asset criticality, business context, threat intelligence. Uses CVSS (Common Vulnerability Scoring System) + EPSS (Exploit Prediction Scoring System) + asset value. Not all CVSS Critical require immediate patching. Focuses limited resources on highest risks.\n\n**Why other answers are incorrect:**\n\n- **B. Vulnerability scan (Incorrect):** Scanning DISCOVERS vulnerabilities. Prioritization RANKS them after discovery.\n\n- **C. Priority list (Incorrect):** Generic term. Vulnerability prioritization is specific RISK-BASED ranking methodology.\n\n- **D. Risk assessment (Incorrect):** Risk assessment is broader process. Prioritization specifically RANKS vulnerabilities for patching.\n\n**Reference:** CEH v13 Module 5",
+        "type": "single",
+        "topic": "Vulnerability Management - Prioritization",
+        "domain": 3
+    },
+    {
+        "id": 48,
+        "question": "What is continuous scanning?",
+        "options": ["Ongoing automated vulnerability scanning", "Scheduled scan", "Manual scan", "One-time scan"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Ongoing automated vulnerability scanning**\n\nContinuous scanning runs automated vulnerability scans continuously or very frequently. According to CEH Module 5: detects new vulnerabilities quickly as they emerge, monitors dynamic/cloud environments, uses agent-based or agentless approaches. Tools: Qualys VMDR, Tenable.io, Rapid7. Reduces window of exposure from days to hours/minutes.\n\n**Why other answers are incorrect:**\n\n- **B. Scheduled scan (Incorrect):** Scheduled scans run periodically (weekly/monthly). Continuous is ONGOING, not periodic.\n\n- **C. Manual scan (Incorrect):** Manual scans require human initiation. Continuous is AUTOMATED.\n\n- **D. One-time scan (Incorrect):** One-time is single execution. Continuous is REPEATED/ongoing.\n\n**Reference:** CEH v13 Module 5",
+        "type": "single",
+        "topic": "Vulnerability Management - Continuous Scanning",
+        "domain": 3
+    },
+    {
+        "id": 49,
+        "question": "What is authenticated vs unauthenticated scanning?",
+        "options": ["Scanning with/without credentials to check internal vulnerabilities", "Login scan", "User scan", "Password scan"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Scanning with/without credentials to check internal vulnerabilities**\n\nAuthenticated scanning uses provided credentials to log into systems and check internal vulnerabilities. According to CEH Module 5: Authenticated: checks configs, missing patches, local vulns, more accurate, fewer false negatives. Unauthenticated: external perspective, no credentials, surface vulnerabilities only. Both needed for comprehensive assessment.\n\n**Why other answers are incorrect:**\n\n- **B. Login scan (Incorrect):** Login scan could imply testing login mechanisms. Authenticated scanning uses credentials to ACCESS systems for internal checks.\n\n- **C. User scan (Incorrect):** Vague term. Authenticated scanning is specific technique using credentials for deep inspection.\n\n- **D. Password scan (Incorrect):** Password scanning tests password strength. Authenticated scanning USES credentials for vulnerability assessment.\n\n**Reference:** CEH v13 Module 5",
+        "type": "single",
+        "topic": "Vulnerability Scanning - Authenticated",
+        "domain": 3
+    },
+    {
+        "id": 50,
+        "question": "What is false positive in vulnerability scanning?",
+        "options": ["Scanner incorrectly reports vulnerability that doesn't exist", "Scanning error", "Positive result", "Security issue"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Scanner incorrectly reports vulnerability that doesn't exist**\n\nFalse positive occurs when vulnerability scanner incorrectly reports a vulnerability that doesn't actually exist or isn't exploitable. According to CEH Module 5: wastes time investigating non-issues, reduces trust in scanner, alert fatigue. Causes: outdated signatures, banner-based detection (guesses from version), configuration issues. Tuning, validation, manual verification reduce false positives.\n\n**Why other answers are incorrect:**\n\n- **B. Scanning error (Incorrect):** Generic term. False positive is SPECIFIC type of error: reporting non-existent vulnerability.\n\n- **C. Positive result (Incorrect):** Positive result means vulnerability found. FALSE positive means INCORRECT finding.\n\n- **D. Security issue (Incorrect):** Security issue is actual vulnerability. False positive is MISTAKEN report.\n\n**Reference:** CEH v13 Module 5",
+        "type": "single",
+        "topic": "Vulnerability Scanning - False Positives",
+        "domain": 3
+    },
+    {
+        "id": 51,
+        "question": "What is network mapping?",
+        "options": ["Creating visual topology of network infrastructure", "Network design", "Map creation", "Geographic mapping"],
+        "correct": [0],
+        "explanation": "**Correct Answer: Creating visual topology of network infrastructure**\n\nNetwork mapping creates visual representation of network topology showing devices, connections, subnets, routes. According to CEH Module 3: tools include Nmap, Zenmap (GUI), Netdisco, SolarWinds. Identifies: network segments, security zones, trust boundaries, attack paths, firewall positions. Essential for penetration testing, network security assessment, incident response.\n\n**Why other answers are incorrect:**\n\n- **B. Network design (Incorrect):** Network design PLANS future networks. Mapping DISCOVERS existing topology.\n\n- **C. Map creation (Incorrect):** Too vague. Network mapping specifically creates NETWORK TOPOLOGY visualization.\n\n- **D. Geographic mapping (Incorrect):** Geographic maps show physical locations. Network mapping shows LOGICAL/technical topology.\n\n**Reference:** CEH v13 Module 3",
+        "type": "single",
+        "topic": "Network Mapping",
+        "domain": 3
+    }
+]

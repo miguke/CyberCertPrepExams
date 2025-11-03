@@ -400,11 +400,10 @@
             "To create a list of acceptable risks"
         ],
         "correct": [
-            0,
             2
         ],
-        "explanation": "A Risk Treatment Plan is used to identify, evaluate, and control risks. It also documents the responses to risks, such as avoidance, transfer, mitigation, or acceptance. B and D are not propositos. (Ref: Clause 6.1.3)",
-        "type": "multiple",
+        "explanation": "The purpose of a Risk Treatment Plan is to document the responses to identified risks. According to ISO 27001 Clause 6.1.3, the risk treatment plan documents how the organization will address each risk through avoidance, modification (mitigation), sharing (transfer), or retention (acceptance). Answer A is incorrect - identifying and evaluating risks is part of risk assessment, not the treatment plan. Answer B is incorrect - documenting potential risks is part of risk identification. Answer D is incorrect - the plan documents all risk responses, not just acceptable risks. (Ref: Clause 6.1.3)",
+        "type": "single",
         "topic": "Risk Treatment Plan",
         "section": 6
     },
@@ -469,11 +468,10 @@
             "Only consider risks that are outside of the organization's control"
         ],
         "correct": [
-            0,
-            2
+            0
         ],
-        "explanation": "Risk evaluation involves assessing the likelihood and assigning values to risks. Organizations should prioritize risks that have the potential to cause major impact, as these will have the greatest effect on the organization's ability to meet its objectives. B and D incorrect - not only passado, not only outsidis a control. (Ref: Clause 6.1.2)",
-        "type": "multiple",
+        "explanation": "The correct way to perform risk evaluation according to ISO 27001 is to assess the likelihood of each potential risk and assign a value (numerical or qualitative). According to Clause 6.1.2, risk evaluation involves comparing the results of risk analysis with established risk criteria. This requires assessing both likelihood and impact for all identified risks, not just a subset. Answer B is incorrect - risk evaluation must consider both past incidents and potential future risks. Answer C is incorrect - all risks must be evaluated, not only those with major impact; even lower-impact risks need assessment. Answer D is incorrect - both internal and external risks must be evaluated. (Ref: Clause 6.1.2)",
+        "type": "single",
         "topic": "Risk Evaluation",
         "section": 6
     },

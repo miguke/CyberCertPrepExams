@@ -288,21 +288,6 @@
         "topic": "Fundamental Concepts"
     },
     {
-        "id": 20,
-        "question": "What is an example of a human threat?",
-        "options": [
-            "a lightning strike",
-            "fire",
-            "phishing"
-        ],
-        "correct": [
-            2
-        ],
-        "explanation": "Phishing (luring users to false websites) is one form of a human threat. It is an intentional attack by humans. Answers A (lightning) and B (fire) are incorrect - are natural threats, not human. (Ref: threat types concept)",
-        "type": "single",
-        "topic": "Fundamental Concepts"
-    },
-    {
         "id": 21,
         "question": "You work in the office of a large company. You receive a call from a person claiming to be from the Helpdesk. He asks you for your password. What kind of threat is this?",
         "options": [

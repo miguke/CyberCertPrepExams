@@ -139,26 +139,6 @@
         "section": 2
     },
     {
-        "id": 10,
-        "question": "What are the benefits of implementing ISO 27001?",
-        "options": [
-            "Improved compliance with regulatory requirements",
-            "Increased customer trust and confidence",
-            "Enhanced reputation and competitive advantage",
-            "Reduced risk of data breaches and cyber attacks"
-        ],
-        "correct": [
-            0,
-            1,
-            2,
-            3
-        ],
-        "explanation": "All options are correct. ISO 27001 provides multiple benefits including improved compliance, increased customer trust, enhanced reputation, competitive advantage, and reduced risk of data breaches and cyber attacks. Day1 page 26 and 32 list all these benefits. (Ref: Day1, pages 26, 32)",
-        "type": "multiple",
-        "topic": "ISMS Benefits",
-        "section": 2
-    },
-    {
         "id": 11,
         "question": "A company is considering implementing ISO 27001 to improve their overall information security. Which benefits would be most important?",
         "options": [

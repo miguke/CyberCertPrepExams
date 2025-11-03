@@ -108,24 +108,6 @@
         "section": 8
     },
     {
-        "id": 8,
-        "question": "What key components should be included in the risk treatment plan according to ISO 27001?",
-        "options": [
-            "The likelihood of the identified risks",
-            "The impact of the identified risks",
-            "The proposed controls to mitigate the identified risks",
-            "The cost of implementing the proposed controls"
-        ],
-        "correct": [
-            1
-        ],
-        "explanation": "The risk treatment plan should include a clear understanding of the potential impact of identified risks and the proposed controls that will be implemented to mitigate or eliminate those risks. A, C, D are not key. (Ref: Clause 6.1.3)",
-        "type": "single",
-        "topic": "Risk Treatment",
-        "clause": 8,
-        "section": 8
-    },
-    {
         "id": 9,
         "question": "When formulating a risk treatment plan, what is the most important factor to consider according to ISO 27001?",
         "options": [
@@ -158,24 +140,6 @@
         "explanation": "The most important factor is the effectiveness of the controls. While cost and ease of implementation are considerations, they should not take precedence over the ability to effectively mitigate the identified risks. A, B, D secondary. (Ref: control effectiveness)",
         "type": "single",
         "topic": "Control Implementation",
-        "clause": 8,
-        "section": 8
-    },
-    {
-        "id": 11,
-        "question": "When implementing the information security risk treatment plan, one must:",
-        "options": [
-            "Take into consideration available resources",
-            "Document the information security risk treatment plan",
-            "Re-assess the risks",
-            "Implement all controls from Annex A"
-        ],
-        "correct": [
-            0
-        ],
-        "explanation": "It is important to have available resources (personnel, equipment, and budget) when implementing the risk treatment plan. Without adequate resources, it may not be possible to implement the plan effectively and efficiently. B, C, D are other steps. (Ref: Clause 7.1)",
-        "type": "single",
-        "topic": "Risk Treatment Implementation",
         "clause": 8,
         "section": 8
     }
