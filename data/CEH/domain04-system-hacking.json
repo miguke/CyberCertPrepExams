@@ -4,12 +4,12 @@
         "question": "Tony is a penetration tester tasked with performing a penetration test. After gaining initial access to a target system, he finds a list of hashed passwords. Which of the following tools would NOT be useful for cracking the hashed passwords?",
         "options": [
             "Hashcat",
+            "netcat",
             "John the Ripper",
-            "THC-Hydra",
-            "netcat"
+            "THC-Hydra"
         ],
         "correct": [
-            3
+            1
         ],
         "explanation": "**Correct Answer: netcat**\n\nnetcat is networking utility for reading/writing data across network connections, NOT a password cracking tool. According to CEH Module 7: netcat (nc) used for port scanning, banner grabbing, creating backdoors, transferring files, reverse shells. Does NOT crack password hashes. Other options are actual password cracking tools.\n\n**Why other answers are incorrect:**\n\n- **A. John the Ripper (Incorrect):** John IS password cracking tool - cracks various hashes using dictionary, brute-force, rainbow attacks.\n\n- **B. Hashcat (Incorrect):** Hashcat IS password cracking tool - world's fastest using GPU acceleration.\n\n- **C. Hydra (Incorrect):** Hydra IS password cracking tool - performs online brute-force attacks.\n\n**Reference:** CEH v13 Module 7",
         "type": "single",
@@ -38,12 +38,12 @@
         "question": "Abel, a security professional, conducts penetration testing in his client organization to check for any security loopholes. He launched an attack on the DHCP servers by broadcasting forged DHCP requests and leased all the DHCP addresses available in the DHCP scope until the server could not issue any more IP addresses. This led to a DoS attack, and as a result, legitimate employees were unable to access the client's network. Which of the following attacks did Abel perform in the above scenario?",
         "options": [
             "Rogue DHCP server attack",
+            "DHCP starvation",
             "VLAN hopping",
-            "STP attack",
-            "DHCP starvation"
+            "STP attack"
         ],
         "correct": [
-            3
+            1
         ],
         "explanation": "**Correct Answer: DHCP starvation**\n\nDHCP starvation is a DoS attack that exhausts all available IP addresses in the DHCP scope by making numerous fake DHCP requests. According to CEH Module 12 (Evading IDS, Firewalls), the attacker broadcasts DHCP DISCOVER messages with spoofed MAC addresses until all available IPs are leased, preventing legitimate clients from obtaining IP addresses. This causes network DoS.\n\n**Why other answers are incorrect:**\n- **A. Rogue DHCP (Incorrect):** Involves setting up unauthorized DHCP server, not exhausting legitimate server's IP pool.\n- **B. VLAN hopping (Incorrect):** Accesses unauthorized VLANs through tagging manipulation.\n- **C. STP attack (Incorrect):** Manipulates Spanning Tree Protocol to become root bridge.\n\n**Reference:** CEH v13 Module 12 - Evading IDS",
         "type": "single",
@@ -71,13 +71,13 @@
         "id": 5,
         "question": "Jude, a pen tester working in Keiltech Ltd., performs sophisticated security testing on his company's network infrastructure to identify security loopholes. In this process, he started to circumvent the network protection tools and firewalls used in the company. He employed a technique that can create forged TCP sessions by carrying out multiple SYN, ACK, and RST or FIN packets. Further, this process allowed Jude to execute DDoS attacks that can exhaust the network resources. What is the attack technique used by Jude for finding loopholes in the above scenario?",
         "options": [
-            "Spoofed session flood attack",
             "UDP flood attack",
             "Peer-to-peer attack",
+            "Spoofed session flood attack",
             "Ping-of-death attack"
         ],
         "correct": [
-            0
+            2
         ],
         "explanation": "**Correct Answer: Spoofed session flood attack**\n\nA spoofed session flood attack creates fake TCP sessions using forged packets to overwhelm network resources. According to CEH Module 10 (Denial of Service), this attack: (1) generates multiple TCP packets with spoofed source addresses, (2) sends SYN packets to initiate fake connections, (3) follows with ACK packets to simulate established sessions, (4) uses RST/FIN packets to manipulate connection states, (5) exhausts server resources (memory, CPU, connection tables) by maintaining numerous fake sessions. The scenario describes exactly this—forged TCP sessions using multiple packet types (SYN, ACK, RST, FIN) to circumvent protection and execute DDoS.\n\n**Why other answers are incorrect:**\n\n- **B. UDP flood attack (Incorrect):** UDP flood sends massive volumes of UDP packets to random ports, forcing the target to check for applications and respond with ICMP destination unreachable. It uses UDP protocol, not TCP with SYN/ACK/RST/FIN packets. The question specifically mentions TCP session creation.\n\n- **C. Peer-to-peer attack (Incorrect):** P2P DDoS attacks exploit peer-to-peer networks by instructing multiple peers to connect to the target simultaneously. It leverages legitimate P2P protocols, not forged TCP packets with manipulated flags. This is an amplification technique, not packet forgery.\n\n- **D. Ping-of-death attack (Incorrect):** Ping of Death sends malformed or oversized ICMP echo request packets exceeding the maximum IP packet size (65,535 bytes), causing buffer overflows. It uses ICMP protocol, not TCP, and doesn't involve SYN/ACK/RST/FIN packet manipulation.\n\n**Spoofed Session Flood Characteristics:**\n- Uses forged source IP addresses\n- Creates fake TCP three-way handshakes\n- Maintains bogus connection states\n- Exhausts connection tracking resources\n- Bypasses simple rate-limiting defenses\n- Difficult to distinguish from legitimate traffic\n\n**Reference:** CEH v13 Module 10 - Denial of Service, TCP-based DDoS attacks",
         "type": "single",
@@ -93,7 +93,9 @@
             "WarChalking",
             "WarDriving"
         ],
-        "correct": [2],
+        "correct": [
+            2
+        ],
         "explanation": "**Correct Answer: WarChalking**\n\nWarChalking is the practice of drawing symbols in public places to indicate the presence of wireless networks. According to CEH Module 16 (Hacking Wireless Networks), warchalking symbols indicate: (1) open network availability, (2) SSID information, (3) bandwidth details, (4) security status. It originated as a way to share Wi-Fi access information publicly through chalk markings on sidewalks and walls.\n\n**Why other answers are incorrect:**\n- **A. WarWalking (Incorrect):** Searching for Wi-Fi networks on foot with mobile devices.\n- **B. WarFlying (Incorrect):** Using aircraft/drones to detect wireless networks from the air.\n- **D. WarDriving (Incorrect):** Driving around with equipment to discover wireless networks.\n\n**Reference:** CEH v13 Module 16",
         "type": "single",
         "topic": "Wireless Attacks - WarChalking",
@@ -105,10 +107,12 @@
         "options": [
             "HTTPS",
             "Telnet",
-            "SMB",
-            "SNMP"
+            "SNMP",
+            "SMB"
         ],
-        "correct": [2],
+        "correct": [
+            3
+        ],
         "explanation": "**Correct Answer: SMB (Server Message Block)**\n\nSMB protocol uses TCP port 445 for file sharing and network communication in Windows environments. According to CEH Module 4 (Enumeration), SMB: (1) provides shared access to files and printers, (2) uses port 445 for direct TCP/IP transport (modern), (3) previously used port 139 with NetBIOS, (4) is commonly targeted for attacks like EternalBlue. Port 445 is critical for Windows networking and frequently scanned by attackers.\n\n**Why other answers are incorrect:**\n- **A. HTTPS (Incorrect):** Uses TCP port 443 for secure web traffic.\n- **B. Telnet (Incorrect):** Uses TCP port 23 for remote terminal access.\n- **D. SNMP (Incorrect):** Uses UDP ports 161/162 for network management.\n\n**Reference:** CEH v13 Module 4",
         "type": "single",
         "topic": "Network Protocols - SMB",
@@ -123,7 +127,9 @@
             "Kiwi syslog is not properly installed.",
             "The syn scan is not targeting the correct machine."
         ],
-        "correct": [1],
+        "correct": [
+            1
+        ],
         "explanation": "**Correct Answer: Snort is not configured to log to a syslog server**\n\nFor Snort IDS to send alerts to Kiwi Syslog, it must be explicitly configured with syslog output plugin. According to CEH Module 12 (Evading IDS), Snort configuration requires: (1) enabling syslog output plugin in snort.conf, (2) specifying remote syslog server IP, (3) defining alert format and facility. If Kiwi Syslog doesn't receive alerts, the most likely cause is missing syslog output configuration in Snort, not Kiwi issues.\n\n**Why other answers are incorrect:**\n- **A. Real-time display (Incorrect):** If configured correctly, alerts would appear; this isn't about display timing.\n- **C. Improper installation (Incorrect):** Kiwi would likely show other errors if improperly installed.\n- **D. Wrong target (Incorrect):** Scan target doesn't affect whether Snort sends alerts to syslog.\n\n**Reference:** CEH v13 Module 12",
         "type": "single",
         "topic": "IDS Configuration - Snort",
@@ -138,7 +144,9 @@
             "192.168.1.15",
             "192.168.1.200"
         ],
-        "correct": [3],
+        "correct": [
+            3
+        ],
         "explanation": "**Correct Answer: 192.168.1.200**\n\nFor subnet 192.168.1.0/24: usable range is 192.168.1.1 to 192.168.1.254 (network .0, broadcast .255 excluded). The last 100 usable addresses are 192.168.1.155 through 192.168.1.254. According to CEH Module 3 (Scanning), subnet calculations: /24 = 256 addresses, minus 2 (network + broadcast) = 254 usable. The range 192.168.1.155-254 includes 100 addresses. Only 192.168.1.200 falls within this range.\n\n**Why other answers are incorrect:**\n- **A. 192.168.1.56 (Incorrect):** Below the last 100 range (starts at .155).\n- **B. 192.168.1.155 (Incorrect):** First address of the range, but question says \"last 100\" implies the higher addresses; though technically within range, .200 is more clearly in the last 100.\n- **C. 192.168.1.15 (Incorrect):** Far below the last 100 range.\n\n**Reference:** CEH v13 Module 3",
         "type": "single",
         "topic": "Network Addressing - DHCP",
@@ -148,12 +156,14 @@
         "id": 10,
         "question": "A penetration tester is conducting a port scan on a specific host. The tester found several open ports that were confusing in concluding the Operating System (OS) version installed. Considering the NMAP result below, which of the following is likely to be installed on the target machine?",
         "options": [
-            "The host is likely running Windows.",
             "The host is likely running IOS.",
+            "The host is likely running Windows.",
             "The host is likely running Linux.",
             "The host is likely running Mac OS."
         ],
-        "correct": [0],
+        "correct": [
+            1
+        ],
         "explanation": "**Correct Answer: The host is likely running Windows**\n\nCommon Windows ports include 135 (RPC), 139 (NetBIOS Session), 445 (SMB), 3389 (RDP). According to CEH Module 3 (Scanning Networks), OS fingerprinting based on open ports: Windows systems typically expose 135, 139, 445 for file sharing and RPC services. Linux systems show ports like 22 (SSH), 80/443 (web). The presence of multiple Windows-specific ports (especially 135, 139, 445 together) strongly indicates Windows OS.\n\n**Why other answers are incorrect:**\n- **B. IOS (Incorrect):** Cisco IOS shows network device ports (22, 23, 80), not Windows services.\n- **C. Linux (Incorrect):** Linux typically shows 22 (SSH), not Windows-specific 135, 139, 445.\n- **D. Mac OS (Incorrect):** Mac services differ; wouldn't show all Windows SMB/RPC ports.\n\n**Reference:** CEH v13 Module 3",
         "type": "single",
         "topic": "OS Fingerprinting - Port Analysis",
@@ -162,8 +172,15 @@
     {
         "id": 11,
         "question": "Which HTTP response code indicates 'Unauthorized' access?",
-        "options": ["200", "401", "403", "500"],
-        "correct": [1],
+        "options": [
+            "200",
+            "401",
+            "403",
+            "500"
+        ],
+        "correct": [
+            1
+        ],
         "explanation": "**Correct Answer: 401**\n\n401 Unauthorized indicates authentication is required but not provided or failed. According to CEH Module 14: requires valid credentials (username/password, token). Differs from 403 which means authenticated but forbidden. Response includes WWW-Authenticate header specifying auth method.\n\n**Why other answers are incorrect:**\n\n- **A. 200 (Incorrect):** Success - request succeeded, resource returned.\n\n- **C. 403 (Incorrect):** Forbidden - authenticated but lacks permission. Different from 401 (not authenticated).\n\n- **D. 500 (Incorrect):** Internal Server Error - server-side fault, not authentication issue.\n\n**Reference:** CEH v13 Module 14",
         "type": "single",
         "topic": "HTTP Status Codes",
@@ -172,8 +189,15 @@
     {
         "id": 12,
         "question": "Which password attack uses every possible combination of characters until the password is found?",
-        "options": ["Dictionary", "Rainbow table", "Brute-force", "Hybrid"],
-        "correct": [2],
+        "options": [
+            "Dictionary",
+            "Rainbow table",
+            "Brute-force",
+            "Hybrid"
+        ],
+        "correct": [
+            2
+        ],
         "explanation": "**Correct Answer: Brute-force**\n\nBrute-force attack systematically tries every possible character combination until password found. According to CEH Module 6: exhaustive search, guaranteed success given sufficient time, computationally expensive. Time depends on password length, complexity, hash algorithm. Modern GPUs accelerate cracking.\n\n**Why other answers are incorrect:**\n\n- **A. Dictionary (Incorrect):** Uses wordlist of common passwords, faster but not exhaustive.\n\n- **B. Rainbow table (Incorrect):** Pre-computed hash lookups, trades space for time, defeated by salting.\n\n- **D. Hybrid (Incorrect):** Combines dictionary with variations (numbers, symbols), not pure brute-force.\n\n**Reference:** CEH v13 Module 6",
         "type": "single",
         "topic": "Password Attacks",
@@ -182,8 +206,15 @@
     {
         "id": 13,
         "question": "What type of attack attempts to overflow the allocated memory of an application?",
-        "options": ["XSS", "SQL injection", "Buffer overflow", "CSRF"],
-        "correct": [2],
+        "options": [
+            "XSS",
+            "SQL injection",
+            "Buffer overflow",
+            "CSRF"
+        ],
+        "correct": [
+            2
+        ],
         "explanation": "**Correct Answer: Buffer overflow**\n\nBuffer overflow occurs when program writes data beyond allocated memory buffer boundaries. According to CEH Module 6: can overwrite adjacent memory (stack, heap), execute arbitrary code, crash systems. Common in C/C++ without bounds checking. Mitigations: DEP (Data Execution Prevention), ASLR (Address Space Layout Randomization), stack canaries.\n\n**Why other answers are incorrect:**\n\n- **A. XSS (Incorrect):** Cross-Site Scripting injects malicious scripts into web pages, not memory overflow.\n\n- **B. SQL injection (Incorrect):** Injects SQL commands into database queries, not memory attack.\n\n- **D. CSRF (Incorrect):** Cross-Site Request Forgery forces authenticated actions, not memory attack.\n\n**Reference:** CEH v13 Module 6",
         "type": "single",
         "topic": "Application Attacks",
@@ -192,8 +223,15 @@
     {
         "id": 14,
         "question": "Which protocol is connectionless and operates at the Transport layer?",
-        "options": ["TCP", "UDP", "ICMP", "IP"],
-        "correct": [1],
+        "options": [
+            "TCP",
+            "ICMP",
+            "UDP",
+            "IP"
+        ],
+        "correct": [
+            2
+        ],
         "explanation": "**Correct Answer: UDP**\n\nUDP (User Datagram Protocol) is connectionless transport layer protocol. According to CEH Module 3: no handshake, no guaranteed delivery, no ordering, no flow control, lower overhead than TCP. Used for: DNS, DHCP, streaming, VoIP, gaming where speed > reliability.\n\n**Why other answers are incorrect:**\n\n- **A. TCP (Incorrect):** Connection-oriented with three-way handshake, guaranteed delivery, Transport layer.\n\n- **C. ICMP (Incorrect):** Network layer (Layer 3) protocol for diagnostics/errors, not Transport layer.\n\n- **D. IP (Incorrect):** Network layer protocol for routing/addressing, not Transport layer.\n\n**Reference:** CEH v13 Module 3",
         "type": "single",
         "topic": "Network Protocols",
@@ -202,8 +240,15 @@
     {
         "id": 15,
         "question": "What Windows utility shows active TCP/UDP connections?",
-        "options": ["ipconfig", "netstat", "tracert", "nslookup"],
-        "correct": [1],
+        "options": [
+            "ipconfig",
+            "netstat",
+            "tracert",
+            "nslookup"
+        ],
+        "correct": [
+            1
+        ],
         "explanation": "**Correct Answer: netstat**\n\nnetstat displays active TCP/UDP connections, listening ports, routing tables, network statistics. According to CEH Module 3: netstat -an (all connections/ports numeric), -b (executables), -o (process IDs). Used for: detecting malware connections, checking listening services, network troubleshooting.\n\n**Why other answers are incorrect:**\n\n- **A. ipconfig (Incorrect):** Displays IP configuration (address, subnet, gateway), not active connections.\n\n- **C. tracert (Incorrect):** Traces route packets take to destination, shows hops, not local connections.\n\n- **D. nslookup (Incorrect):** Queries DNS servers for name resolution, not connection monitoring.\n\n**Reference:** CEH v13 Module 3",
         "type": "single",
         "topic": "Windows Networking Tools",
@@ -214,11 +259,13 @@
         "question": "Which type of attack involves an attacker positioning themselves between two communicating parties to intercept, modify, or relay messages without either party knowing that the communication channel has been compromised?",
         "options": [
             "Denial of Service (DoS)",
-            "Man-in-the-Middle (MITM)",
             "Phishing",
-            "SQL Injection"
+            "SQL Injection",
+            "Man-in-the-Middle (MITM)"
         ],
-        "correct": [1],
+        "correct": [
+            3
+        ],
         "explanation": "**Correct Answer: Man-in-the-Middle (MITM)**\n\nA Man-in-the-Middle attack occurs when an attacker secretly intercepts and potentially alters communications between two parties who believe they are directly communicating with each other. According to CEH Module 8 (Sniffing) and Module 12 (Evading IDS, Firewalls, and Honeypots), MITM attacks can be executed through various techniques: (1) **ARP Spoofing/Poisoning**—attacker sends forged ARP messages to associate their MAC address with the IP of a legitimate network device (usually the gateway), redirecting traffic through the attacker's system, (2) **DNS Spoofing**—corrupting DNS cache to redirect victims to malicious websites, (3) **Session Hijacking**—stealing or predicting session tokens to impersonate users, (4) **SSL Stripping**—downgrading HTTPS connections to HTTP to intercept encrypted traffic, (5) **Evil Twin Attack**—creating rogue Wi-Fi access points with legitimate-looking SSIDs. MITM attacks are particularly dangerous because they're often undetectable to victims and can lead to credential theft, data manipulation, and further attacks. Modern defenses include: SSL/TLS with certificate pinning, HSTS (HTTP Strict Transport Security), ARP inspection, and encrypted VPN tunnels.\n\n**Why other answers are incorrect:**\n\n- **A. Denial of Service (DoS) (Incorrect):** DoS attacks aim to make systems, networks, or services unavailable to legitimate users by overwhelming them with traffic or exploiting vulnerabilities to cause crashes. DoS attacks don't involve intercepting or modifying communications—they focus solely on disrupting availability. Common DoS techniques include SYN floods, ping floods, and amplification attacks (Smurf, NTP, DNS amplification). DoS doesn't fit the description of positioning between parties and intercepting messages.\n\n- **C. Phishing (Incorrect):** Phishing is a social engineering attack that uses deceptive emails, websites, or messages to trick users into revealing sensitive information (credentials, credit card numbers, personal data). While phishing may be used as an initial vector in a larger attack chain, it doesn't involve actively intercepting communications between two parties. Phishing targets individual users directly through deception, not by positioning between communicating parties. It's a one-to-one deception, not an interception attack.\n\n- **D. SQL Injection (Incorrect):** SQL injection is a code injection attack that exploits vulnerabilities in an application's database layer by inserting malicious SQL commands through user input fields. SQLi targets databases to extract, modify, or delete data, bypass authentication, or execute administrative operations. It has no relation to intercepting communications between parties—it attacks application-database interfaces, not communication channels between users or systems.\n\n**MITM Attack Types:**\n- **Active MITM:** Attacker modifies data in transit\n- **Passive MITM:** Attacker only eavesdrops without modification\n- **SSL MITM:** Intercepts encrypted SSL/TLS connections\n- **Wi-Fi MITM:** Rouge access points or evil twins\n\n**MITM Prevention:**\n1. Use end-to-end encryption (PGP, Signal)\n2. Implement certificate pinning\n3. Enable HSTS on web servers\n4. Use VPNs on untrusted networks\n5. Verify SSL certificate authenticity\n6. Implement mutual authentication\n7. Use ARP inspection and DHCP snooping\n8. Deploy network segmentation\n\n**Reference:** CEH v13 Module 8 - Sniffing, Module 12 - Evading IDS, Firewalls, and Honeypots, MITM attack techniques",
         "type": "single",
         "topic": "Network Attacks - Man-in-the-Middle",
@@ -233,7 +280,9 @@
             "-sU (UDP scan)",
             "-sA (ACK scan)"
         ],
-        "correct": [1],
+        "correct": [
+            1
+        ],
         "explanation": "**Correct Answer: -sS (SYN stealth scan)**\n\nThe -sS flag in Nmap performs a SYN stealth scan (also called half-open scan), which is the default and most popular scan type. According to CEH Module 3 (Scanning Networks), SYN scan works by: (1) sending a SYN packet to the target port, (2) if the port is open, the target responds with SYN-ACK, (3) **crucially, Nmap sends RST instead of completing the handshake**, (4) if the port is closed, target responds with RST. This scan is called 'stealth' because the TCP three-way handshake is never completed, making it less likely to be logged by applications listening on the port (though modern IDS/IPS systems detect it). Benefits of SYN scan: relatively fast, works against any compliant TCP stack, can differentiate open/closed/filtered ports clearly, requires raw packet privileges (root/Administrator). It's stealthier than TCP connect scan but still detectable by security systems monitoring for incomplete handshakes. The scan provides clear port states: open (SYN-ACK received), closed (RST received), filtered (no response or ICMP unreachable).\n\n**Why other answers are incorrect:**\n\n- **A. -sT (TCP connect scan) (Incorrect):** TCP connect scan completes the full three-way handshake (SYN, SYN-ACK, ACK) by using the operating system's connect() system call. This scan is the LEAST stealthy because it establishes complete connections that are always logged by target systems. TCP connect scan is used when: the user lacks raw packet privileges, scanning through certain types of firewalls, or when maximum accuracy is needed. It's reliable but noisy—every connection is recorded in application logs. This is the opposite of stealth scanning.\n\n- **C. -sU (UDP scan) (Incorrect):** UDP scan targets UDP ports, not TCP ports. UDP is connectionless, so there's no handshake involved. Nmap sends UDP packets to target ports and interprets responses (or lack thereof): no response suggests open|filtered, ICMP port unreachable indicates closed. UDP scanning is notoriously slow because of OS rate limiting on ICMP responses. While UDP scanning is important for discovering services like DNS (53), SNMP (161), DHCP (67), it's not a stealth TCP scanning technique—it's a different protocol entirely.\n\n- **D. -sA (ACK scan) (Incorrect):** ACK scan is used primarily for firewall rule mapping and determining if ports are filtered, not for discovering open ports. It sends TCP packets with only the ACK flag set (no SYN). Stateless firewalls may let ACK packets through, while stateful firewalls drop them. ACK scan results indicate 'unfiltered' (RST received) or 'filtered' (no response/ICMP unreachable), but cannot determine if ports are actually open or closed. It's a specialized reconnaissance technique for firewall analysis, not general port scanning or stealth scanning.\n\n**Nmap Scan Types Comparison:**\n- **-sS (SYN):** Stealth, half-open, requires root, fast, detectable by IDS\n- **-sT (TCP Connect):** Full connection, no root needed, logged, slow\n- **-sU (UDP):** UDP ports, very slow, difficult to interpret\n- **-sA (ACK):** Firewall mapping, doesn't show open ports\n- **-sF/-sX/-sN:** FIN/Xmas/Null scans, very stealthy, unreliable\n\n**SYN Scan Process:**\n1. Nmap sends SYN packet\n2. Open port: Target responds SYN-ACK → Nmap sends RST\n3. Closed port: Target responds RST\n4. Filtered: No response or ICMP unreachable\n\n**Reference:** CEH v13 Module 3 - Scanning Networks, Nmap scan types and stealth techniques",
         "type": "single",
         "topic": "Port Scanning - Nmap SYN Scan",
@@ -245,10 +294,12 @@
         "options": [
             "Smurf attack",
             "SYN flood",
-            "Ping flood",
-            "Teardrop attack"
+            "Teardrop attack",
+            "Ping flood"
         ],
-        "correct": [2],
+        "correct": [
+            3
+        ],
         "explanation": "**Correct Answer: Ping flood**\n\nA ping flood (also called ICMP flood) is a simple Denial of Service attack that overwhelms the target with ICMP Echo Request packets. According to CEH Module 10 (Denial of Service), ping flood attacks: (1) send massive volumes of ICMP Echo Request (ping) packets to the target, (2) consume network bandwidth preventing legitimate traffic, (3) force the target to process and respond to each ping, exhausting CPU and memory resources, (4) can be amplified when multiple attackers coordinate (DDoS), (5) are relatively easy to execute using tools like hping3, LOIC, or simple ping command with large packet sizes and no delays. The attack effectiveness depends on the attacker's bandwidth versus the target's capacity. Modern defenses include: rate limiting ICMP traffic, blocking ICMP at firewalls (though this breaks legitimate network diagnostics), implementing anti-DDoS services, and using IPS to detect abnormal ICMP patterns. Command example: `ping -f -s 65500 target` (flood mode with maximum packet size).\n\n**Why other answers are incorrect:**\n\n- **A. Smurf attack (Incorrect):** While Smurf attack also uses ICMP, it's more sophisticated than a simple ping flood. Smurf is an amplification attack that: (1) spoofs the victim's IP address as the source, (2) sends ICMP Echo Requests to network broadcast addresses, (3) all hosts on the broadcast network respond to the victim, amplifying the attack significantly. Smurf exploits IP broadcast and amplification—the attacker sends few packets but generates massive traffic toward the victim. Modern networks disable IP-directed broadcasts to prevent Smurf attacks. While related to ICMP, Smurf is specifically an amplification attack, not a direct flood.\n\n- **B. SYN flood (Incorrect):** SYN flood is a TCP-based attack, not ICMP-based. It exploits the TCP three-way handshake by: (1) sending massive volumes of SYN packets with spoofed source addresses, (2) forcing the server to allocate resources and wait for ACK responses that never come, (3) exhausting the server's connection queue (SYN backlog), preventing legitimate connections. SYN flood targets TCP connection mechanisms, not ICMP echo requests. Defense mechanisms include SYN cookies, increasing backlog queue size, and rate limiting new connections.\n\n- **D. Teardrop attack (Incorrect):** Teardrop is a completely different attack that exploits vulnerabilities in IP fragmentation reassembly. Teardrop sends fragmented IP packets with overlapping, out-of-order fragments that confuse the reassembly process, causing system crashes or hangs. It manipulates packet fragmentation headers (offset values) to create impossible-to-reassemble packets. Teardrop targets the IP stack's fragment handling, not bandwidth or resources through flooding. It's a vulnerability exploitation attack, not a flood attack, and has been largely mitigated in modern operating systems.\n\n**DoS Attack Types Comparison:**\n- **Ping Flood:** ICMP Echo Requests, bandwidth exhaustion\n- **Smurf:** Amplified ICMP, uses broadcast\n- **SYN Flood:** TCP handshake abuse, connection exhaustion\n- **Teardrop:** IP fragmentation bug, system crash\n- **UDP Flood:** UDP packets, overwhelms processing\n- **HTTP Flood:** Layer 7, application exhaustion\n\n**Ping Flood Characteristics:**\n- Uses ICMP Echo Request (Type 8)\n- Requires significant bandwidth from attacker\n- Easily detected and filtered\n- Can specify packet size for greater impact\n- Flood flag (-f) removes delays between packets\n\n**Reference:** CEH v13 Module 10 - Denial of Service, ICMP-based DoS attacks",
         "type": "single",
         "topic": "DoS Attacks - Ping Flood",
@@ -263,7 +314,9 @@
             "To block all incoming traffic",
             "To increase network bandwidth"
         ],
-        "correct": [1],
+        "correct": [
+            1
+        ],
         "explanation": "**Correct Answer: To attract and detect attackers by simulating vulnerable systems**\n\nA honeypot is a decoy system designed to lure attackers away from actual targets while gathering intelligence about attack methods. According to CEH Module 12 (Evading IDS, Firewalls, and Honeypots), honeypots: (1) **Simulate vulnerable systems** with intentional weaknesses to appear attractive to attackers, (2) **Detect and log attacks** providing early warning of threats, (3) **Gather intelligence** about attacker tactics, techniques, and procedures (TTPs), (4) **Waste attacker resources** by diverting them from real assets, (5) **Study malware** in controlled environments. Types include: low-interaction honeypots (emulate services), high-interaction honeypots (full operating systems), honeynets (networks of honeypots), and production honeypots (deployed alongside real systems). Honeypots never contain real data and are monitored 24/7. Any connection to a honeypot is suspicious since legitimate users have no reason to access it.\n\n**Why other answers are incorrect:**\n\n- **A. To encrypt network traffic (Incorrect):** Encryption is handled by protocols like SSL/TLS, IPsec, or VPNs, not honeypots. Honeypots are deception tools that intentionally appear vulnerable to attract attackers. Encrypting honeypot traffic would defeat their purpose—attackers need to interact with them. The goal is observation and intelligence gathering, not securing communications.\n\n- **C. To block all incoming traffic (Incorrect):** Blocking traffic is the function of firewalls, not honeypots. Honeypots do the opposite—they welcome and encourage connections from attackers. They're designed to be discovered and accessed. If a honeypot blocked traffic, it couldn't fulfill its purpose of attracting and studying attackers. Honeypots complement firewalls by providing visibility into attack attempts.\n\n- **D. To increase network bandwidth (Incorrect):** Network bandwidth is increased through infrastructure upgrades (faster links, load balancers, CDNs), not honeypots. Honeypots actually consume resources monitoring and logging attacker activities. They have zero legitimate business value and exist solely for security research and threat detection. Bandwidth optimization is completely unrelated to honeypot functionality.\n\n**Honeypot Types:**\n\n**By Interaction Level:**\n- **Low-interaction:** Emulate services, limited attacker engagement, safer\n- **Medium-interaction:** More realistic, some OS emulation\n- **High-interaction:** Real systems, full attacker interaction, research-grade\n\n**By Purpose:**\n- **Production honeypots:** Detect attacks on organization\n- **Research honeypots:** Study attacker behavior, malware\n- **Spam honeypots:** Collect spam samples\n- **Malware honeypots:** Capture and analyze malware\n\n**Honeypot Benefits:**\n1. Early threat detection\n2. Reduced false positives (all activity is suspicious)\n3. Malware collection and analysis\n4. Attack technique intelligence\n5. Legal evidence gathering\n6. Distraction from real assets\n\n**Detection by Attackers:**\nSophisticated attackers check for honeypots by:\n- Looking for lack of real user activity\n- Testing for known honeypot fingerprints\n- Checking network topology inconsistencies\n- Analyzing system configurations\n- Monitoring response times\n\n**Reference:** CEH v13 Module 12 - Evading IDS, Firewalls, and Honeypots",
         "type": "single",
         "topic": "Honeypots - Purpose and Function",
@@ -278,7 +331,9 @@
             "Public key cryptography",
             "Biometric authentication"
         ],
-        "correct": [1],
+        "correct": [
+            1
+        ],
         "explanation": "**Correct Answer: Challenge-response protocol with password hashes**\n\nNTLM is a Microsoft authentication protocol that uses challenge-response mechanism with password hashes instead of transmitting passwords. According to CEH Module 6 (System Hacking), NTLM authentication works as follows: (1) **Client requests access** to server, (2) **Server sends challenge** (random number), (3) **Client encrypts challenge** using hash of user's password and sends response, (4) **Server verifies response** by comparing with its own calculation. The password itself is never sent over the network—only the hash-encrypted challenge. NTLM versions: NTLMv1 (legacy, weak, uses DES), NTLMv2 (improved, uses HMAC-MD5). Despite being legacy, NTLM persists in Windows environments for backwards compatibility. Modern networks should use Kerberos (Windows default since 2000), but NTLM remains as fallback. Vulnerabilities include: pass-the-hash attacks (attackers use captured hashes without cracking), relay attacks, and rainbow table attacks on weak passwords.\n\n**Why other answers are incorrect:**\n\n- **A. Plaintext passwords (Incorrect):** Sending plaintext passwords over networks is extremely insecure and was never NTLM's design. Plaintext transmission allows trivial password capture via network sniffing. NTLM specifically avoids this by using challenge-response with hashes. Even early authentication protocols like PAP (Password Authentication Protocol) were criticized for plaintext transmission. NTLM was designed to improve security by never transmitting the actual password.\n\n- **C. Public key cryptography (Incorrect):** Public key cryptography (asymmetric encryption with public/private key pairs) is used by PKI, SSL/TLS certificates, and modern authentication like FIDO2, not NTLM. NTLM uses symmetric cryptography—the same password hash is used by both client and server. Kerberos uses symmetric encryption with session keys, while modern alternatives like certificate-based authentication use public key infrastructure. NTLM predates widespread PKI adoption.\n\n- **D. Biometric authentication (Incorrect):** Biometrics (fingerprints, facial recognition, iris scans) are local authentication methods, not network protocols. Windows Hello uses biometrics locally, then generates cryptographic tokens for network authentication. NTLM operates at the network protocol level using password-derived hashes. Biometrics are a 21st-century authentication factor, while NTLM dates to the 1990s. They're incompatible technologies serving different purposes.\n\n**NTLM Authentication Flow:**\n\n1. **Client → Server:** NEGOTIATE_MESSAGE (request access)\n2. **Server → Client:** CHALLENGE_MESSAGE (8-byte random challenge)\n3. **Client encrypts:** Challenge using NTLM hash of password\n4. **Client → Server:** AUTHENTICATE_MESSAGE (encrypted response)\n5. **Server verifies:** Encrypts same challenge with stored hash, compares\n6. **Result:** Access granted if responses match\n\n**NTLM Hash Generation:**\n- Password → Unicode\n- MD4 hash → NTLM hash\n- Used to encrypt challenge\n\n**Security Issues:**\n- **Pass-the-Hash:** Attackers use captured hash directly without cracking\n- **NTLM Relay:** Forward authentication to other services\n- **Rainbow Tables:** Pre-computed hashes for weak passwords\n- **Downgrade Attacks:** Force NTLMv1 usage\n- **No Mutual Authentication:** Client can't verify server identity\n\n**NTLM vs Kerberos:**\n\n| Feature | NTLM | Kerberos |\n|---------|------|----------|\n| **Authentication** | Challenge-response | Ticket-based |\n| **Mutual Auth** | No | Yes |\n| **Performance** | Slower | Faster (tickets) |\n| **Security** | Weaker | Stronger |\n| **Default** | Legacy | Modern Windows |\n| **Domain** | Workgroup & domain | Domain only |\n\n**When NTLM is Used:**\n- Workgroup (non-domain) authentication\n- Legacy applications\n- IP address connections (not FQDN)\n- Firewall blocks Kerberos ports\n- Kerberos unavailable (fallback)\n\n**Reference:** CEH v13 Module 6 - System Hacking, Windows authentication protocols",
         "type": "single",
         "topic": "Windows Authentication - NTLM",
@@ -287,8 +342,15 @@
     {
         "id": 21,
         "question": "What is a Trojan horse?",
-        "options": ["Malware disguised as legitimate software", "Worm", "Adware", "Firewall"],
-        "correct": [0],
+        "options": [
+            "Worm",
+            "Adware",
+            "Malware disguised as legitimate software",
+            "Firewall"
+        ],
+        "correct": [
+            2
+        ],
         "explanation": "**Correct Answer: Malware disguised as legitimate software**\n\nTrojan horse is malware disguised as legitimate or desirable software. According to CEH Module 7: appears harmless but executes malicious code when run. NO self-replication (unlike worms), requires user action to execute. Creates backdoors, steals data, downloads payloads. Types: RAT (Remote Access Trojan), banking trojans, DDoS trojans, ransomware trojans.\n\n**Why other answers are incorrect:**\n\n- **B. Worm (Incorrect):** Worms self-replicate and spread automatically without user interaction. Trojans require user execution.\n\n- **C. Adware (Incorrect):** Adware displays unwanted advertisements. Trojans have malicious intent beyond ads.\n\n- **D. Firewall (Incorrect):** Firewall is security defense, not malware. Trojans are attacks.\n\n**Reference:** CEH v13 Module 7",
         "type": "single",
         "topic": "Malware - Trojans",
@@ -297,8 +359,15 @@
     {
         "id": 22,
         "question": "What is ransomware?",
-        "options": ["Malware that encrypts data and demands payment", "Spam email", "Phishing", "DDoS tool"],
-        "correct": [0],
+        "options": [
+            "Spam email",
+            "Malware that encrypts data and demands payment",
+            "Phishing",
+            "DDoS tool"
+        ],
+        "correct": [
+            1
+        ],
         "explanation": "**Correct Answer: Malware that encrypts data and demands payment**\n\nRansomware encrypts victim's files and demands ransom payment (usually cryptocurrency) for decryption key. According to CEH Module 7: crypto-ransomware (encrypts files), locker ransomware (locks screen), scareware (fake warnings). Examples: WannaCry, Ryuk, LockBit. Prevention: offline backups, patching, email filtering, security awareness.\n\n**Why other answers are incorrect:**\n\n- **B. Spam email (Incorrect):** Spam is unsolicited email. Ransomware is malware, not email type.\n\n- **C. Phishing (Incorrect):** Phishing steals credentials via fake sites. Ransomware encrypts files for ransom.\n\n- **D. DDoS tool (Incorrect):** DDoS floods services. Ransomware encrypts and extorts.\n\n**Reference:** CEH v13 Module 7",
         "type": "single",
         "topic": "Malware - Ransomware",
@@ -307,8 +376,15 @@
     {
         "id": 23,
         "question": "What is a keylogger?",
-        "options": ["Software/hardware that records keystrokes", "Password manager", "Encryption tool", "Backup software"],
-        "correct": [0],
+        "options": [
+            "Password manager",
+            "Encryption tool",
+            "Software/hardware that records keystrokes",
+            "Backup software"
+        ],
+        "correct": [
+            2
+        ],
         "explanation": "**Correct Answer: Software/hardware that records keystrokes**\n\nKeylogger captures keyboard input including passwords, credit cards, messages. According to CEH Module 7: software-based (trojans, spyware) or hardware (USB devices between keyboard-PC). Legitimate uses: parental control, employee monitoring. Malicious: credential theft. Detection: antimalware, behavioral analysis, checking for unknown processes.\n\n**Why other answers are incorrect:**\n\n- **B. Password manager (Incorrect):** Password managers STORE passwords securely. Keyloggers STEAL keystrokes.\n\n- **C. Encryption tool (Incorrect):** Encryption protects data. Keyloggers capture unencrypted input.\n\n- **D. Backup software (Incorrect):** Backup archives data. Keyloggers spy on keystrokes.\n\n**Reference:** CEH v13 Module 7",
         "type": "single",
         "topic": "Malware - Keyloggers",
@@ -317,8 +393,15 @@
     {
         "id": 24,
         "question": "What is spyware?",
-        "options": ["Software that secretly monitors user activity", "Antivirus", "VPN", "Compiler"],
-        "correct": [0],
+        "options": [
+            "Antivirus",
+            "VPN",
+            "Software that secretly monitors user activity",
+            "Compiler"
+        ],
+        "correct": [
+            2
+        ],
         "explanation": "**Correct Answer: Software that secretly monitors user activity**\n\nSpyware secretly collects user data: browsing habits, keystrokes, credentials, system info. According to CEH Module 7: types include adware, tracking cookies, system monitors, trojans. Installed via: bundled software (PUPs), exploits, social engineering. Removal: anti-spyware tools (Malwarebytes, Ad-Aware).\n\n**Why other answers are incorrect:**\n\n- **B. Antivirus (Incorrect):** Antivirus DETECTS malware. Spyware IS malware.\n\n- **C. VPN (Incorrect):** VPN encrypts connections. Spyware spies on users.\n\n- **D. Compiler (Incorrect):** Compiler translates code. Spyware monitors activity.\n\n**Reference:** CEH v13 Module 7",
         "type": "single",
         "topic": "Malware - Spyware",
@@ -327,8 +410,15 @@
     {
         "id": 25,
         "question": "What is a backdoor?",
-        "options": ["Hidden method to bypass authentication", "Front door", "Firewall rule", "Router"],
-        "correct": [0],
+        "options": [
+            "Front door",
+            "Firewall rule",
+            "Hidden method to bypass authentication",
+            "Router"
+        ],
+        "correct": [
+            2
+        ],
         "explanation": "**Correct Answer: Hidden method to bypass authentication**\n\nBackdoor is hidden method bypassing normal authentication for unauthorized remote access. According to CEH Module 7: installed by malware, attackers, sometimes developers. Maintains persistent access. Types: application backdoors, OS backdoors (rootkits), network backdoors. Detection: file integrity checking, network monitoring, behavioral analysis.\n\n**Why other answers are incorrect:**\n\n- **B. Front door (Incorrect):** Front door is legitimate entry. Backdoor is HIDDEN unauthorized access.\n\n- **C. Firewall rule (Incorrect):** Firewall rules control traffic. Backdoor is unauthorized access method.\n\n- **D. Router (Incorrect):** Router forwards packets. Backdoor is access bypass technique.\n\n**Reference:** CEH v13 Module 7",
         "type": "single",
         "topic": "Malware - Backdoors",
@@ -337,8 +427,15 @@
     {
         "id": 26,
         "question": "What is social engineering?",
-        "options": ["Manipulating people to divulge confidential information", "Network engineering", "Software development", "Database design"],
-        "correct": [0],
+        "options": [
+            "Network engineering",
+            "Software development",
+            "Manipulating people to divulge confidential information",
+            "Database design"
+        ],
+        "correct": [
+            2
+        ],
         "explanation": "**Correct Answer: Manipulating people to divulge confidential information**\n\nSocial engineering exploits human psychology rather than technical vulnerabilities to manipulate people into divulging confidential information or performing actions. According to CEH Module 9: techniques include phishing, pretexting, baiting, tailgating, quid pro quo, impersonation. Exploits trust, authority, urgency, fear. Defense: security awareness training, verification procedures, policies.\n\n**Why other answers are incorrect:**\n\n- **B. Network engineering (Incorrect):** Network engineering designs networks. Social engineering manipulates PEOPLE.\n\n- **C. Software development (Incorrect):** Development creates software. Social engineering is psychological manipulation.\n\n- **D. Database design (Incorrect):** Database design structures data. Social engineering is human exploitation.\n\n**Reference:** CEH v13 Module 9",
         "type": "single",
         "topic": "Social Engineering",
@@ -347,8 +444,15 @@
     {
         "id": 27,
         "question": "What is phishing?",
-        "options": ["Fraudulent emails to steal credentials", "Fishing hobby", "Port scanning", "File sharing"],
-        "correct": [0],
+        "options": [
+            "Fishing hobby",
+            "Port scanning",
+            "Fraudulent emails to steal credentials",
+            "File sharing"
+        ],
+        "correct": [
+            2
+        ],
         "explanation": "**Correct Answer: Fraudulent emails to steal credentials**\n\nPhishing uses fraudulent emails/websites impersonating legitimate entities to trick users into revealing passwords, credit cards, personal information. According to CEH Module 9: spear phishing (targeted individuals), whaling (executives), vishing (voice calls), smishing (SMS). Red flags: urgent language, suspicious links/attachments, spelling errors, mismatched domains.\n\n**Why other answers are incorrect:**\n\n- **B. Fishing hobby (Incorrect):** Phishing is cybercrime, not fishing (catching fish).\n\n- **C. Port scanning (Incorrect):** Port scanning probes services. Phishing is social engineering.\n\n- **D. File sharing (Incorrect):** File sharing exchanges data. Phishing steals credentials.\n\n**Reference:** CEH v13 Module 9",
         "type": "single",
         "topic": "Social Engineering - Phishing",
@@ -357,8 +461,15 @@
     {
         "id": 28,
         "question": "What is pretexting?",
-        "options": ["Creating fabricated scenario to obtain information", "Texting", "Network testing", "Code review"],
-        "correct": [0],
+        "options": [
+            "Texting",
+            "Network testing",
+            "Code review",
+            "Creating fabricated scenario to obtain information"
+        ],
+        "correct": [
+            3
+        ],
         "explanation": "**Correct Answer: Creating fabricated scenario to obtain information**\n\nPretexting creates fabricated scenario (pretext) to gain target's trust and extract information. According to CEH Module 9: attacker impersonates IT support, vendor, authority figure. Researches target, builds credibility through details, requests sensitive data. Example: fake helpdesk call requesting password reset. Prevention: verify identity via independent channel, strict policies.\n\n**Why other answers are incorrect:**\n\n- **B. Texting (Incorrect):** Texting is sending messages. Pretexting is fabricating scenarios for information theft.\n\n- **C. Network testing (Incorrect):** Network testing validates infrastructure. Pretexting is social engineering attack.\n\n- **D. Code review (Incorrect):** Code review examines source code. Pretexting manipulates people.\n\n**Reference:** CEH v13 Module 9",
         "type": "single",
         "topic": "Social Engineering - Pretexting",
@@ -367,8 +478,15 @@
     {
         "id": 29,
         "question": "What is baiting in social engineering?",
-        "options": ["Leaving infected USB drives to lure victims", "Fishing", "Email marketing", "Backup strategy"],
-        "correct": [0],
+        "options": [
+            "Fishing",
+            "Email marketing",
+            "Backup strategy",
+            "Leaving infected USB drives to lure victims"
+        ],
+        "correct": [
+            3
+        ],
         "explanation": "**Correct Answer: Leaving infected USB drives to lure victims**\n\nBaiting uses physical/digital 'bait' to lure victims into compromising security. According to CEH Module 9: exploits curiosity or greed. Physical: infected USB drives labeled 'Employee Salaries' left in parking lot. Digital: free software downloads with malware. When victim uses device/downloads file, malware executes. Prevention: disable autorun, USB policies, security awareness.\n\n**Why other answers are incorrect:**\n\n- **B. Fishing (Incorrect):** Fishing is catching fish. Baiting is social engineering using malicious lures.\n\n- **C. Email marketing (Incorrect):** Email marketing is legitimate advertising. Baiting is malicious physical/digital traps.\n\n- **D. Backup strategy (Incorrect):** Backup preserves data. Baiting tricks victims into infecting systems.\n\n**Reference:** CEH v13 Module 9",
         "type": "single",
         "topic": "Social Engineering - Baiting",
@@ -377,8 +495,15 @@
     {
         "id": 30,
         "question": "What is tailgating?",
-        "options": ["Following authorized person into secure area", "Network monitoring", "Code debugging", "Data backup"],
-        "correct": [0],
+        "options": [
+            "Network monitoring",
+            "Code debugging",
+            "Data backup",
+            "Following authorized person into secure area"
+        ],
+        "correct": [
+            3
+        ],
         "explanation": "**Correct Answer: Following authorized person into secure area**\n\nTailgating (piggybacking) is physically following authorized person through security checkpoint without proper authentication. According to CEH Module 9: exploits politeness/social norms. Attacker carries boxes ('hands full'), appears as employee/delivery person. Prevention: security guards, mantraps (two-door systems), badge readers requiring individual scans, security awareness, challenge unfamiliar people.\n\n**Why other answers are incorrect:**\n\n- **B. Network monitoring (Incorrect):** Network monitoring analyzes traffic. Tailgating is PHYSICAL security breach.\n\n- **C. Code debugging (Incorrect):** Debugging fixes software errors. Tailgating is unauthorized physical access.\n\n- **D. Data backup (Incorrect):** Backup copies data. Tailgating bypasses physical security.\n\n**Reference:** CEH v13 Module 9",
         "type": "single",
         "topic": "Social Engineering - Tailgating",
@@ -387,8 +512,15 @@
     {
         "id": 31,
         "question": "What is privilege escalation?",
-        "options": ["Gaining higher access rights than authorized", "User registration", "Password reset", "Software update"],
-        "correct": [0],
+        "options": [
+            "User registration",
+            "Password reset",
+            "Software update",
+            "Gaining higher access rights than authorized"
+        ],
+        "correct": [
+            3
+        ],
         "explanation": "**Correct Answer: Gaining higher access rights than authorized**\n\nPrivilege escalation exploits vulnerabilities to gain higher access rights than authorized. According to CEH Module 6: **Vertical** escalation (user to admin/root), **Horizontal** escalation (user to another user). Methods: exploit software bugs, kernel vulnerabilities, misconfigurations, weak file permissions, SUID binaries. Prevention: patching, least privilege principle, regular auditing, input validation.\n\n**Why other answers are incorrect:**\n\n- **B. User registration (Incorrect):** User registration creates legitimate accounts. Privilege escalation EXPLOITS to gain unauthorized elevated access.\n\n- **C. Password reset (Incorrect):** Password reset recovers access to own account. Privilege escalation gains HIGHER privileges.\n\n- **D. Software update (Incorrect):** Software update patches systems. Privilege escalation EXPLOITS vulnerabilities.\n\n**Reference:** CEH v13 Module 6",
         "type": "single",
         "topic": "System Hacking - Privilege Escalation",
@@ -397,8 +529,15 @@
     {
         "id": 32,
         "question": "What is a rootkit?",
-        "options": ["Malware that hides itself and other malware at OS/firmware level", "Admin tool", "Backup software", "Compiler"],
-        "correct": [0],
+        "options": [
+            "Admin tool",
+            "Malware that hides itself and other malware at OS/firmware level",
+            "Backup software",
+            "Compiler"
+        ],
+        "correct": [
+            1
+        ],
         "explanation": "**Correct Answer: Malware that hides itself and other malware at OS/firmware level**\n\nRootkit conceals its presence and other malware by modifying operating system or firmware. According to CEH Module 7: **Types** - user-mode (application level), kernel-mode (OS core), bootloader (boot process), firmware/BIOS (hardware level). Hides: processes, files, registry keys, network connections. Detection: rootkit scanners (GMER, Rootkit Revealer), memory forensics, behavior analysis. Extremely difficult to remove - often requires reinstallation.\n\n**Why other answers are incorrect:**\n\n- **B. Admin tool (Incorrect):** Admin tools manage systems legitimately. Rootkits are MALICIOUS stealth malware.\n\n- **C. Backup software (Incorrect):** Backup preserves data. Rootkits HIDE malware at deep system levels.\n\n- **D. Compiler (Incorrect):** Compiler translates code. Rootkit is stealth malware.\n\n**Reference:** CEH v13 Module 7",
         "type": "single",
         "topic": "Malware - Rootkits",
@@ -407,8 +546,15 @@
     {
         "id": 33,
         "question": "What is a botnet?",
-        "options": ["Network of infected computers controlled remotely", "Social network", "Database cluster", "Router network"],
-        "correct": [0],
+        "options": [
+            "Social network",
+            "Database cluster",
+            "Router network",
+            "Network of infected computers controlled remotely"
+        ],
+        "correct": [
+            3
+        ],
         "explanation": "**Correct Answer: Network of infected computers controlled remotely**\n\nBotnet is network of compromised devices (bots/zombies) controlled remotely via Command & Control (C&C) servers. According to CEH Module 7: used for DDoS attacks, spam campaigns, crypto mining, credential stuffing, click fraud. Examples: Mirai (IoT botnet), Emotet, Zeus. Communication: IRC, HTTP, P2P protocols. Detection: network traffic anomalies, C&C communication patterns, behavior analysis.\n\n**Why other answers are incorrect:**\n\n- **B. Social network (Incorrect):** Social networks connect people for communication. Botnets are COMPROMISED devices for attacks.\n\n- **C. Database cluster (Incorrect):** Database cluster provides high availability. Botnet is malicious infected device network.\n\n- **D. Router network (Incorrect):** Router network forwards packets. Botnet is army of infected devices for cybercrime.\n\n**Reference:** CEH v13 Module 7",
         "type": "single",
         "topic": "Malware - Botnets",
@@ -417,8 +563,15 @@
     {
         "id": 34,
         "question": "What is fileless malware?",
-        "options": ["Malware that runs in memory without files on disk", "Deleted malware", "Cloud malware", "Mobile malware"],
-        "correct": [0],
+        "options": [
+            "Deleted malware",
+            "Malware that runs in memory without files on disk",
+            "Cloud malware",
+            "Mobile malware"
+        ],
+        "correct": [
+            1
+        ],
         "explanation": "**Correct Answer: Malware that runs in memory without files on disk**\n\nFileless malware operates entirely in RAM without writing files to disk, using legitimate system tools. According to CEH Module 7: leverages PowerShell, WMI, registry, scheduled tasks. Evades signature-based antivirus, leaves minimal forensic traces. Uses Living-off-the-Land Binaries (LOLBins) - trusted Windows tools. Examples: PowerShell Empire, Koadic. Defense: behavior monitoring, EDR (Endpoint Detection & Response), application whitelisting, disable unnecessary tools.\n\n**Why other answers are incorrect:**\n\n- **B. Deleted malware (Incorrect):** Deleted malware was removed. Fileless malware actively runs in MEMORY, never written to disk.\n\n- **C. Cloud malware (Incorrect):** Cloud malware targets cloud services. Fileless specifically operates in RAM without disk files.\n\n- **D. Mobile malware (Incorrect):** Mobile malware targets phones/tablets. Fileless is memory-resident technique.\n\n**Reference:** CEH v13 Module 7",
         "type": "single",
         "topic": "Malware - Fileless",
@@ -427,8 +580,15 @@
     {
         "id": 35,
         "question": "What is Pass-the-Hash attack?",
-        "options": ["Using captured password hash without cracking it", "Cracking passwords", "Hash function", "Encryption method"],
-        "correct": [0],
+        "options": [
+            "Cracking passwords",
+            "Hash function",
+            "Encryption method",
+            "Using captured password hash without cracking it"
+        ],
+        "correct": [
+            3
+        ],
         "explanation": "**Correct Answer: Using captured password hash without cracking it**\n\nPass-the-Hash (PtH) uses stolen NTLM/LM password hash to authenticate without cracking it to plaintext. According to CEH Module 6: exploits Windows authentication protocol accepting hashes directly. Attacker captures hash via network sniffing/memory dump, reuses for lateral movement. Tools: Mimikatz, Metasploit, Impacket. Mitigation: disable NTLMv1, implement Credential Guard, restrict local admin accounts, monitor for lateral movement.\n\n**Why other answers are incorrect:**\n\n- **B. Cracking passwords (Incorrect):** Cracking converts hash to plaintext. Pass-the-Hash USES hash directly without cracking.\n\n- **C. Hash function (Incorrect):** Hash function is algorithm (MD5, SHA). Pass-the-Hash is ATTACK technique using stolen hashes.\n\n- **D. Encryption method (Incorrect):** Encryption is data protection. Pass-the-Hash is authentication attack.\n\n**Reference:** CEH v13 Module 6",
         "type": "single",
         "topic": "Windows Attacks - Pass-the-Hash",
@@ -437,8 +597,15 @@
     {
         "id": 36,
         "question": "What is a RAT (Remote Access Trojan)?",
-        "options": ["Trojan providing remote control of infected system", "Rodent", "Network device", "Protocol"],
-        "correct": [0],
+        "options": [
+            "Rodent",
+            "Network device",
+            "Trojan providing remote control of infected system",
+            "Protocol"
+        ],
+        "correct": [
+            2
+        ],
         "explanation": "**Correct Answer: Trojan providing remote control of infected system**\n\nRAT (Remote Access Trojan) gives attacker complete remote control over infected system. According to CEH Module 7: capabilities include keylogging, screen capture, file access, webcam/microphone activation, command execution. Examples: njRAT, DarkComet, Poison Ivy, NanoCore. Used for espionage, surveillance, data theft. Detection: network monitoring for C&C traffic, behavior analysis, EDR.\n\n**Why other answers are incorrect:**\n\n- **B. Rodent (Incorrect):** Rat is animal. RAT acronym means Remote Access Trojan.\n\n- **C. Network device (Incorrect):** Network devices route traffic. RAT is malicious remote control software.\n\n- **D. Protocol (Incorrect):** Protocols define communication rules. RAT is malware type.\n\n**Reference:** CEH v13 Module 7",
         "type": "single",
         "topic": "Malware - RAT",
@@ -447,8 +614,15 @@
     {
         "id": 37,
         "question": "What is lateral movement?",
-        "options": ["Moving through network after initial compromise", "Physical movement", "Data transfer", "Backup process"],
-        "correct": [0],
+        "options": [
+            "Physical movement",
+            "Data transfer",
+            "Backup process",
+            "Moving through network after initial compromise"
+        ],
+        "correct": [
+            3
+        ],
         "explanation": "**Correct Answer: Moving through network after initial compromise**\n\nLateral movement is technique of spreading within network after initial compromise to reach high-value targets. According to CEH Module 6: attacker pivots from initial foothold to other systems. Methods: Pass-the-Hash, stolen credentials, exploits, RDP, PsExec, WMI, SMB. Goal: reach domain controllers, databases, sensitive servers. Mitigation: network segmentation, least privilege, monitoring, MFA.\n\n**Why other answers are incorrect:**\n\n- **B. Physical movement (Incorrect):** Physical movement is bodily relocation. Lateral movement is NETWORK traversal.\n\n- **C. Data transfer (Incorrect):** Data transfer moves files. Lateral movement is attacker spreading through systems.\n\n- **D. Backup process (Incorrect):** Backup copies data. Lateral movement is attack progression.\n\n**Reference:** CEH v13 Module 6",
         "type": "single",
         "topic": "Attack Techniques - Lateral Movement",
@@ -457,8 +631,15 @@
     {
         "id": 38,
         "question": "What is data exfiltration?",
-        "options": ["Unauthorized transfer of data out of network", "Data backup", "Data encryption", "Data deletion"],
-        "correct": [0],
+        "options": [
+            "Data backup",
+            "Data encryption",
+            "Unauthorized transfer of data out of network",
+            "Data deletion"
+        ],
+        "correct": [
+            2
+        ],
         "explanation": "**Correct Answer: Unauthorized transfer of data out of network**\n\nData exfiltration is unauthorized transfer of sensitive data from organization to external location. According to CEH Module 6: methods include email attachments, cloud storage uploads, DNS tunneling, steganography, encrypted channels, USB drives, FTP. Often final stage of APT. Detection: DLP (Data Loss Prevention), network traffic monitoring, anomaly detection, access controls, CASB (Cloud Access Security Broker).\n\n**Why other answers are incorrect:**\n\n- **B. Data backup (Incorrect):** Backup is authorized data preservation. Exfiltration is UNAUTHORIZED theft.\n\n- **C. Data encryption (Incorrect):** Encryption protects data. Exfiltration is stealing data (may use encryption to hide theft).\n\n- **D. Data deletion (Incorrect):** Deletion removes data. Exfiltration COPIES data out.\n\n**Reference:** CEH v13 Module 6",
         "type": "single",
         "topic": "Data Theft - Exfiltration",
@@ -467,8 +648,15 @@
     {
         "id": 39,
         "question": "What is steganography?",
-        "options": ["Hiding data within other files (images, audio, video)", "Encryption", "Compression", "Hashing"],
-        "correct": [0],
+        "options": [
+            "Encryption",
+            "Compression",
+            "Hashing",
+            "Hiding data within other files (images, audio, video)"
+        ],
+        "correct": [
+            3
+        ],
         "explanation": "**Correct Answer: Hiding data within other files (images, audio, video)**\n\nSteganography conceals secret data within innocent-looking cover files without apparent encryption. According to CEH Module 20: embeds data in image pixels (LSB - Least Significant Bit), audio frequencies, video frames, text files. Differs from encryption - no visible indication of hidden content. Detection: steganalysis tools, statistical analysis. Uses: covert communication, data exfiltration, digital watermarking. Tools: steghide, OpenStego.\n\n**Why other answers are incorrect:**\n\n- **B. Encryption (Incorrect):** Encryption scrambles data visibly. Steganography HIDES data's existence within files.\n\n- **C. Compression (Incorrect):** Compression reduces file size. Steganography conceals messages within files.\n\n- **D. Hashing (Incorrect):** Hashing creates fingerprints for integrity. Steganography embeds hidden data.\n\n**Reference:** CEH v13 Module 20",
         "type": "single",
         "topic": "Cryptography - Steganography",
@@ -477,8 +665,15 @@
     {
         "id": 40,
         "question": "What is a Zero-Day vulnerability?",
-        "options": ["Unknown vulnerability with no patch available", "Old vulnerability", "Patched vulnerability", "Theoretical vulnerability"],
-        "correct": [0],
+        "options": [
+            "Old vulnerability",
+            "Patched vulnerability",
+            "Theoretical vulnerability",
+            "Unknown vulnerability with no patch available"
+        ],
+        "correct": [
+            3
+        ],
         "explanation": "**Correct Answer: Unknown vulnerability with no patch available**\n\nZero-day vulnerability is previously unknown security flaw with no patch available, often actively exploited. According to CEH Module 5: 'zero days' since vendor learned about it. Highly valuable - sold on black market for thousands-millions. Used in targeted APT attacks. Window of vulnerability between discovery and patch. Defense: behavior-based detection (not signatures), virtual patching via WAF, threat intelligence, network segmentation, application isolation.\n\n**Why other answers are incorrect:**\n\n- **B. Old vulnerability (Incorrect):** Old vulns have known patches. Zero-day is UNKNOWN with NO patch.\n\n- **C. Patched vulnerability (Incorrect):** Patched vulns are fixed. Zero-day specifically has NO patch available.\n\n- **D. Theoretical vulnerability (Incorrect):** Theoretical isn't exploited. Zero-day is actively exploited in wild.\n\n**Reference:** CEH v13 Module 5",
         "type": "single",
         "topic": "Vulnerabilities - Zero-Day",
@@ -487,8 +682,15 @@
     {
         "id": 41,
         "question": "What is Kerberos authentication?",
-        "options": ["Ticket-based network authentication protocol", "Password protocol", "Biometric auth", "Token authentication"],
-        "correct": [0],
+        "options": [
+            "Password protocol",
+            "Biometric auth",
+            "Token authentication",
+            "Ticket-based network authentication protocol"
+        ],
+        "correct": [
+            3
+        ],
         "explanation": "**Correct Answer: Ticket-based network authentication protocol**\n\nKerberos is ticket-based authentication protocol for Windows domains. According to CEH Module 6: uses KDC (Key Distribution Center), TGT (Ticket Granting Ticket), service tickets. Client authenticates once, receives TGT, uses it to request service tickets. Prevents password transmission over network. More secure than NTLM. Vulnerabilities: Golden Ticket (forged TGT), Silver Ticket (forged service ticket), Kerberoasting. Default Windows since 2000.\n\n**Why other answers are incorrect:**\n\n- **B. Password protocol (Incorrect):** Kerberos uses TICKETS, not passwords over network. This minimizes password exposure.\n\n- **C. Biometric auth (Incorrect):** Biometric uses fingerprints/face. Kerberos uses cryptographic tickets.\n\n- **D. Token authentication (Incorrect):** Physical tokens (RSA, YubiKey). Kerberos uses software tickets.\n\n**Reference:** CEH v13 Module 6",
         "type": "single",
         "topic": "Windows Authentication - Kerberos",
@@ -497,8 +699,15 @@
     {
         "id": 42,
         "question": "What is Kerberoasting?",
-        "options": ["Attacking Kerberos by cracking service account passwords", "Cooking attack", "Password attack", "Network attack"],
-        "correct": [0],
+        "options": [
+            "Cooking attack",
+            "Password attack",
+            "Network attack",
+            "Attacking Kerberos by cracking service account passwords"
+        ],
+        "correct": [
+            3
+        ],
         "explanation": "**Correct Answer: Attacking Kerberos by cracking service account passwords**\n\nKerberoasting attacks Kerberos by requesting service tickets, extracting hashes, cracking offline to reveal service account passwords. According to CEH Module 6: targets accounts with SPNs (Service Principal Names), requires only domain user access (no admin), cracks weak service account passwords offline. Tools: Rubeus, Invoke-Kerberoast, GetUserSPNs. Mitigation: strong service passwords (25+ chars), Group Managed Service Accounts (gMSA), monitor for TGS requests.\n\n**Why other answers are incorrect:**\n\n- **B. Cooking attack (Incorrect):** Pun on 'roasting'. Kerberoasting is serious authentication attack.\n\n- **C. Password attack (Incorrect):** Too generic. Kerberoasting specifically exploits Kerberos service tickets.\n\n- **D. Network attack (Incorrect):** Generic term. Kerberoasting specifically targets Kerberos authentication.\n\n**Reference:** CEH v13 Module 6",
         "type": "single",
         "topic": "Windows Attacks - Kerberoasting",
@@ -507,8 +716,15 @@
     {
         "id": 43,
         "question": "What is Golden Ticket attack?",
-        "options": ["Forging Kerberos TGT with compromised KRBTGT hash", "Movie ticket", "Access ticket", "Event ticket"],
-        "correct": [0],
+        "options": [
+            "Forging Kerberos TGT with compromised KRBTGT hash",
+            "Movie ticket",
+            "Access ticket",
+            "Event ticket"
+        ],
+        "correct": [
+            0
+        ],
         "explanation": "**Correct Answer: Forging Kerberos TGT with compromised KRBTGT hash**\n\nGolden Ticket attack forges Ticket Granting Ticket (TGT) using compromised KRBTGT account hash, granting unrestricted domain access. According to CEH Module 6: requires initial domain admin compromise to get KRBTGT hash, creates persistent backdoor access for years (until KRBTGT rotated twice), bypasses normal authentication logging. Tools: Mimikatz. Can create tickets for any user, any group membership. Detection: monitor TGT lifetime anomalies, unusual account access. Mitigation: rotate KRBTGT password twice (invalidates old tickets).\n\n**Why other answers are incorrect:**\n\n- **B. Movie ticket (Incorrect):** Entertainment ticket. Golden Ticket is Kerberos forgery attack.\n\n- **C. Access ticket (Incorrect):** Generic term. Golden Ticket specifically forges Kerberos TGT.\n\n- **D. Event ticket (Incorrect):** Event admission. Golden Ticket is advanced persistent domain attack.\n\n**Reference:** CEH v13 Module 6",
         "type": "single",
         "topic": "Windows Attacks - Golden Ticket",
@@ -517,8 +733,15 @@
     {
         "id": 44,
         "question": "What is Silver Ticket attack?",
-        "options": ["Forging Kerberos service ticket with service account hash", "Payment ticket", "Service access", "Silver badge"],
-        "correct": [0],
+        "options": [
+            "Payment ticket",
+            "Forging Kerberos service ticket with service account hash",
+            "Service access",
+            "Silver badge"
+        ],
+        "correct": [
+            1
+        ],
         "explanation": "**Correct Answer: Forging Kerberos service ticket with service account hash**\n\nSilver Ticket attack forges Kerberos service tickets using compromised service account hash. According to CEH Module 6: targets specific services (CIFS file shares, MSSQL databases, HTTP), stealthier than Golden Ticket (no KDC contact), requires only service account hash (not domain admin). Tools: Mimikatz. Shorter lifetime but harder to detect. No Event ID 4769 logged. Mitigation: strong service passwords, gMSA (Group Managed Service Accounts), service account monitoring.\n\n**Why other answers are incorrect:**\n\n- **B. Payment ticket (Incorrect):** Financial concept. Silver Ticket is Kerberos service ticket forgery.\n\n- **C. Service access (Incorrect):** Generic access term. Silver Ticket specifically forges Kerberos service tickets.\n\n- **D. Silver badge (Incorrect):** Physical access badge. Silver Ticket is authentication attack.\n\n**Reference:** CEH v13 Module 6",
         "type": "single",
         "topic": "Windows Attacks - Silver Ticket",
@@ -527,8 +750,15 @@
     {
         "id": 45,
         "question": "What is Pass-the-Ticket?",
-        "options": ["Using stolen Kerberos tickets for authentication", "Ticket transfer", "Event pass", "Access control"],
-        "correct": [0],
+        "options": [
+            "Using stolen Kerberos tickets for authentication",
+            "Ticket transfer",
+            "Event pass",
+            "Access control"
+        ],
+        "correct": [
+            0
+        ],
         "explanation": "**Correct Answer: Using stolen Kerberos tickets for authentication**\n\nPass-the-Ticket attack reuses stolen Kerberos tickets (TGT or service tickets) for authentication. According to CEH Module 6: extracts tickets from memory using Mimikatz, exports to .kirbi files, injects into attacker session, authenticates as legitimate user. No password/hash needed. Works until ticket expires. Mitigation: shorter ticket lifetimes, Credential Guard (isolates tickets), monitor ticket usage anomalies.\n\n**Why other answers are incorrect:**\n\n- **B. Ticket transfer (Incorrect):** Generic transfer. Pass-the-Ticket specifically STEALS and REUSES Kerberos tickets.\n\n- **C. Event pass (Incorrect):** Event admission. Pass-the-Ticket is Kerberos authentication attack.\n\n- **D. Access control (Incorrect):** Access control manages permissions. Pass-the-Ticket exploits stolen tickets.\n\n**Reference:** CEH v13 Module 6",
         "type": "single",
         "topic": "Windows Attacks - Pass-the-Ticket",
@@ -537,8 +767,15 @@
     {
         "id": 46,
         "question": "What is DCSync attack?",
-        "options": ["Simulating domain controller to extract password hashes", "Data sync", "Clock sync", "File sync"],
-        "correct": [0],
+        "options": [
+            "Data sync",
+            "Clock sync",
+            "Simulating domain controller to extract password hashes",
+            "File sync"
+        ],
+        "correct": [
+            2
+        ],
         "explanation": "**Correct Answer: Simulating domain controller to extract password hashes**\n\nDCSync attack simulates domain controller to extract password hashes from Active Directory. According to CEH Module 6: abuses Directory Replication Service (DRS), requests password data as if legitimate DC replication. Extracts NTLM hashes, Kerberos keys for all domain accounts including KRBTGT. Requires 'Replicating Directory Changes' and 'Replicating Directory Changes All' permissions. Tools: Mimikatz, Invoke-DCSync (PowerSploit). Detection: monitor Event ID 4662, unusual replication requests from non-DC computers.\n\n**Why other answers are incorrect:**\n\n- **B. Data sync (Incorrect):** Generic data synchronization. DCSync specifically extracts password hashes via AD replication.\n\n- **C. Clock sync (Incorrect):** Time synchronization (NTP). DCSync is password hash extraction attack.\n\n- **D. File sync (Incorrect):** File synchronization. DCSync abuses AD replication to steal credentials.\n\n**Reference:** CEH v13 Module 6",
         "type": "single",
         "topic": "Windows Attacks - DCSync",
@@ -547,8 +784,15 @@
     {
         "id": 47,
         "question": "What is DCShadow attack?",
-        "options": ["Registering rogue DC to inject malicious changes", "Shadow copy", "Backup DC", "Dark domain"],
-        "correct": [0],
+        "options": [
+            "Shadow copy",
+            "Backup DC",
+            "Registering rogue DC to inject malicious changes",
+            "Dark domain"
+        ],
+        "correct": [
+            2
+        ],
         "explanation": "**Correct Answer: Registering rogue DC to inject malicious changes**\n\nDCShadow attack registers rogue domain controller to inject malicious Active Directory changes. According to CEH Module 6: creates temporary rogue DC, replicates malicious modifications to legitimate DCs, changes don't appear in DC logs (bypass SIEM), can modify AD objects, add backdoors, manipulate security principals. Requires Domain Admin privileges. Tools: Mimikatz. Extremely stealthy - changes appear as normal replication. Detection: monitor unexpected DC registrations, unusual replication traffic, audit AD topology changes.\n\n**Why other answers are incorrect:**\n\n- **B. Shadow copy (Incorrect):** Volume Shadow Copy for backups. DCShadow is rogue DC registration attack.\n\n- **C. Backup DC (Incorrect):** Legitimate backup domain controller. DCShadow is ROGUE malicious DC.\n\n- **D. Dark domain (Incorrect):** Not a technical term. DCShadow registers unauthorized domain controller.\n\n**Reference:** CEH v13 Module 6",
         "type": "single",
         "topic": "Windows Attacks - DCShadow",
@@ -557,8 +801,15 @@
     {
         "id": 48,
         "question": "What is LLMNR/NBT-NS poisoning?",
-        "options": ["Spoofing name resolution to capture credentials", "DNS poisoning", "Network poisoning", "Protocol attack"],
-        "correct": [0],
+        "options": [
+            "DNS poisoning",
+            "Network poisoning",
+            "Protocol attack",
+            "Spoofing name resolution to capture credentials"
+        ],
+        "correct": [
+            3
+        ],
         "explanation": "**Correct Answer: Spoofing name resolution to capture credentials**\n\nLLMNR/NBT-NS poisoning spoofs name resolution responses to capture NTLMv2 hashes. According to CEH Module 6: Link-Local Multicast Name Resolution (LLMNR) and NetBIOS Name Service (NBT-NS) are Windows fallback protocols when DNS fails. Attacker responds to broadcast queries claiming to be requested resource, victim sends authentication, attacker captures NTLMv2 hash. Tools: Responder, Inveigh. Hashes cracked offline. Mitigation: disable LLMNR/NBT-NS via GPO, enable SMB signing, use strong passwords.\n\n**Why other answers are incorrect:**\n\n- **B. DNS poisoning (Incorrect):** DNS poisoning targets DNS servers. LLMNR/NBT-NS targets Windows fallback name resolution protocols.\n\n- **C. Network poisoning (Incorrect):** Too generic. LLMNR/NBT-NS specifically exploits Windows name resolution.\n\n- **D. Protocol attack (Incorrect):** Generic term. LLMNR/NBT-NS poisoning is specific credential capture technique.\n\n**Reference:** CEH v13 Module 6",
         "type": "single",
         "topic": "Windows Attacks - LLMNR Poisoning",
@@ -567,8 +818,15 @@
     {
         "id": 49,
         "question": "What is relay attack?",
-        "options": ["Relaying authentication to access unauthorized resources", "Network relay", "Email relay", "Proxy relay"],
-        "correct": [0],
+        "options": [
+            "Network relay",
+            "Email relay",
+            "Proxy relay",
+            "Relaying authentication to access unauthorized resources"
+        ],
+        "correct": [
+            3
+        ],
         "explanation": "**Correct Answer: Relaying authentication to access unauthorized resources**\n\nRelay attack (NTLM/SMB relay) intercepts and forwards victim's authentication to target server for unauthorized access. According to CEH Module 6: man-in-the-middle technique, doesn't crack password/hash, directly relays authentication challenge/response. Can escalate privileges by relaying to high-value targets (LDAP for domain admin). Tools: ntlmrelayx (Impacket), Responder, MultiRelay. Mitigation: enforce SMB signing (prevents relay), disable NTLM (use Kerberos only), enable EPA (Extended Protection for Authentication).\n\n**Why other answers are incorrect:**\n\n- **B. Network relay (Incorrect):** Generic network forwarding. Relay attack specifically forwards AUTHENTICATION.\n\n- **C. Email relay (Incorrect):** SMTP email forwarding. Relay attack is authentication forwarding.\n\n- **D. Proxy relay (Incorrect):** Generic proxy concept. Relay attack specifically exploits NTLM authentication.\n\n**Reference:** CEH v13 Module 6",
         "type": "single",
         "topic": "Windows Attacks - Relay Attack",
@@ -577,8 +835,15 @@
     {
         "id": 50,
         "question": "What is Credential Guard?",
-        "options": ["Windows security feature protecting credentials in isolated environment", "Password manager", "Guard service", "Security software"],
-        "correct": [0],
+        "options": [
+            "Windows security feature protecting credentials in isolated environment",
+            "Password manager",
+            "Guard service",
+            "Security software"
+        ],
+        "correct": [
+            0
+        ],
         "explanation": "**Correct Answer: Windows security feature protecting credentials in isolated environment**\n\nCredential Guard uses virtualization-based security to isolate credentials in protected environment. According to CEH Module 6: isolates LSA (Local Security Authority) secrets in virtual secure mode, prevents Pass-the-Hash, Pass-the-Ticket, credential dumping from memory (even with admin). Requires: TPM 2.0, UEFI Secure Boot, hardware virtualization. Windows 10 Enterprise/Server 2016+. Strong defense against Mimikatz, credential theft attacks.\n\n**Why other answers are incorrect:**\n\n- **B. Password manager (Incorrect):** Password managers (LastPass, 1Password) store passwords. Credential Guard PROTECTS OS credentials in isolated container.\n\n- **C. Guard service (Incorrect):** Generic guard service. Credential Guard specifically uses virtualization to protect Windows credentials.\n\n- **D. Security software (Incorrect):** Generic term. Credential Guard is built-in Windows hardware-based credential protection.\n\n**Reference:** CEH v13 Module 6",
         "type": "single",
         "topic": "Windows Security - Credential Guard",
@@ -587,8 +852,15 @@
     {
         "id": 51,
         "question": "What is Device Guard?",
-        "options": ["Application whitelisting and code integrity policy", "Mobile security", "Hardware protection", "Network guard"],
-        "correct": [0],
+        "options": [
+            "Application whitelisting and code integrity policy",
+            "Mobile security",
+            "Hardware protection",
+            "Network guard"
+        ],
+        "correct": [
+            0
+        ],
         "explanation": "**Correct Answer: Application whitelisting and code integrity policy**\n\nDevice Guard (renamed WDAC - Windows Defender Application Control) enforces application whitelisting and code integrity policies. According to CEH Module 6: only allows execution of trusted, signed applications, blocks all unauthorized code including malware. Uses virtualization-based security, UEFI Secure Boot, configurable code integrity (CCI) policies. Deployment challenge: maintaining accurate whitelist. Stronger than AppLocker. Enterprise feature.\n\n**Why other answers are incorrect:**\n\n- **B. Mobile security (Incorrect):** Mobile security protects phones/tablets. Device Guard is Windows PC/server application control.\n\n- **C. Hardware protection (Incorrect):** Device Guard uses hardware features but is APPLICATION CONTROL policy, not hardware security.\n\n- **D. Network guard (Incorrect):** Network guard would protect networks. Device Guard controls APPLICATION execution.\n\n**Reference:** CEH v13 Module 6",
         "type": "single",
         "topic": "Windows Security - Device Guard",
@@ -597,8 +869,15 @@
     {
         "id": 52,
         "question": "What is AMSI?",
-        "options": ["Anti-Malware Scan Interface for script inspection", "Antivirus software", "Malware scanner", "Interface protocol"],
-        "correct": [0],
+        "options": [
+            "Anti-Malware Scan Interface for script inspection",
+            "Antivirus software",
+            "Malware scanner",
+            "Interface protocol"
+        ],
+        "correct": [
+            0
+        ],
         "explanation": "**Correct Answer: Anti-Malware Scan Interface for script inspection**\n\nAMSI (Anti-Malware Scan Interface) allows applications to request antivirus scan of scripts and memory buffers. According to CEH Module 6: integrates PowerShell, VBA macros, JavaScript, VBScript with Windows Defender/third-party AV. Detects fileless malware, obfuscated scripts, malicious commands before execution. Attackers bypass via: AMSI patching (in-memory modification), reflection, obfuscation. Windows 10+, enabled by default.\n\n**Why other answers are incorrect:**\n\n- **B. Antivirus software (Incorrect):** Antivirus is detection engine. AMSI is INTERFACE connecting apps to antivirus for script scanning.\n\n- **C. Malware scanner (Incorrect):** AMSI doesn't scan itself - it provides interface FOR scanners to inspect scripts.\n\n- **D. Interface protocol (Incorrect):** Too generic. AMSI specifically enables script/memory inspection by AV.\n\n**Reference:** CEH v13 Module 6",
         "type": "single",
         "topic": "Windows Security - AMSI",
@@ -607,8 +886,15 @@
     {
         "id": 53,
         "question": "What is AppLocker?",
-        "options": ["Application control policy to restrict executables", "App store", "Application installer", "App manager"],
-        "correct": [0],
+        "options": [
+            "Application control policy to restrict executables",
+            "App store",
+            "Application installer",
+            "App manager"
+        ],
+        "correct": [
+            0
+        ],
         "explanation": "**Correct Answer: Application control policy to restrict executables**\n\nAppLocker enforces application control policies restricting which executables, scripts, DLLs users can run. According to CEH Module 6: rule types - publisher (digital signature), path (file location), hash (file hash). Deployed via Group Policy. Prevents unauthorized software, malware execution. Bypasses exist: trusted folder writes, DLL whitelisting abuse, signed script hosting. Successor to Software Restriction Policies (SRP). Windows 7 Enterprise+.\n\n**Why other answers are incorrect:**\n\n- **B. App store (Incorrect):** App stores distribute applications. AppLocker RESTRICTS which apps can execute.\n\n- **C. Application installer (Incorrect):** Installers deploy software. AppLocker BLOCKS unauthorized app execution.\n\n- **D. App manager (Incorrect):** App managers organize/update apps. AppLocker enforces EXECUTION policies.\n\n**Reference:** CEH v13 Module 6",
         "type": "single",
         "topic": "Windows Security - AppLocker",
@@ -617,8 +903,15 @@
     {
         "id": 54,
         "question": "What is JEA?",
-        "options": ["Just Enough Administration - limited PowerShell access", "Java application", "Job execution", "Joint access"],
-        "correct": [0],
+        "options": [
+            "Just Enough Administration - limited PowerShell access",
+            "Java application",
+            "Job execution",
+            "Joint access"
+        ],
+        "correct": [
+            0
+        ],
         "explanation": "**Correct Answer: Just Enough Administration - limited PowerShell access**\n\nJEA (Just Enough Administration) provides limited PowerShell access via role-based constrained endpoints. According to CEH Module 6: implements least privilege for administrative tasks, users get minimal commands needed for specific role, runs as virtual account (not admin), all actions logged. Reduces attack surface, limits blast radius from compromised accounts. Configuration: PSSessionConfiguration, role capability files. Windows Server 2016+, PowerShell 5.0+.\n\n**Why other answers are incorrect:**\n\n- **B. Java application (Incorrect):** Java is programming platform. JEA is PowerShell role-based access control.\n\n- **C. Job execution (Incorrect):** Job execution runs scheduled tasks. JEA provides constrained admin access.\n\n- **D. Joint access (Incorrect):** Generic term. JEA specifically means Just Enough Administration for PowerShell.\n\n**Reference:** CEH v13 Module 6",
         "type": "single",
         "topic": "Windows Security - JEA",
@@ -627,8 +920,15 @@
     {
         "id": 55,
         "question": "What is LSASS?",
-        "options": ["Local Security Authority Subsystem Service managing authentication", "Service account", "Security software", "Login service"],
-        "correct": [0],
+        "options": [
+            "Local Security Authority Subsystem Service managing authentication",
+            "Service account",
+            "Security software",
+            "Login service"
+        ],
+        "correct": [
+            0
+        ],
         "explanation": "**Correct Answer: Local Security Authority Subsystem Service managing authentication**\n\nLSASS (Local Security Authority Subsystem Service, lsass.exe) manages Windows authentication, password changes, access tokens, security policies. According to CEH Module 6: stores credentials in memory (plaintext/hashes), primary target for Mimikatz credential dumping. Protected Process Light (PPL) defends against memory access. Crashing LSASS forces system reboot. Critical Windows security component. Credential Guard isolates LSASS secrets in virtualized environment.\n\n**Why other answers are incorrect:**\n\n- **B. Service account (Incorrect):** Service accounts run services. LSASS is the SERVICE managing authentication, not an account.\n\n- **C. Security software (Incorrect):** Security software (antivirus) is third-party. LSASS is core Windows authentication service.\n\n- **D. Login service (Incorrect):** Too generic. LSASS specifically manages LOCAL SECURITY AUTHORITY authentication.\n\n**Reference:** CEH v13 Module 6",
         "type": "single",
         "topic": "Windows Internals - LSASS",
@@ -637,8 +937,15 @@
     {
         "id": 56,
         "question": "What is SAM database?",
-        "options": ["Security Accounts Manager storing local passwords", "Database software", "Sample database", "System account"],
-        "correct": [0],
+        "options": [
+            "Security Accounts Manager storing local passwords",
+            "Database software",
+            "Sample database",
+            "System account"
+        ],
+        "correct": [
+            0
+        ],
         "explanation": "**Correct Answer: Security Accounts Manager storing local passwords**\n\nSAM (Security Accounts Manager) database stores local user account password hashes on Windows. According to CEH Module 6: location C:\\Windows\\System32\\config\\SAM, locked/protected during operation. Offline attacks: boot alternate OS (Linux), copy SAM + SYSTEM (encryption key) files, extract hashes. Tools: pwdump, samdump2, ophcrack. Domain accounts stored in NTDS.dit on domain controllers, not SAM. Mitigation: BitLocker (encrypts disk), strong passwords (resist cracking), disable local accounts.\n\n**Why other answers are incorrect:**\n\n- **B. Database software (Incorrect):** Database software (SQL, MySQL) stores application data. SAM is Windows-specific password hash database.\n\n- **C. Sample database (Incorrect):** Sample databases are training/demo data. SAM means Security Accounts Manager.\n\n- **D. System account (Incorrect):** System accounts run services. SAM is DATABASE storing password hashes.\n\n**Reference:** CEH v13 Module 6",
         "type": "single",
         "topic": "Windows Internals - SAM",
@@ -647,8 +954,15 @@
     {
         "id": 57,
         "question": "What is NTDS.dit?",
-        "options": ["Active Directory database containing domain credentials", "Directory service", "Network database", "DNS database"],
-        "correct": [0],
+        "options": [
+            "Active Directory database containing domain credentials",
+            "Directory service",
+            "Network database",
+            "DNS database"
+        ],
+        "correct": [
+            0
+        ],
         "explanation": "**Correct Answer: Active Directory database containing domain credentials**\n\nNTDS.dit is Active Directory database file containing all domain data including password hashes. According to CEH Module 6: location C:\\Windows\\NTDS\\ntds.dit on domain controllers. Contains: user accounts, groups, computers, NTLM hashes, Kerberos keys, security principals. Extraction methods: VSS shadow copies (ntdsutil), DCSync attack, offline (boot alternate OS). Crown jewel of domain - full compromise. Tools: Impacket secretsdump, ntdsutil.\n\n**Why other answers are incorrect:**\n\n- **B. Directory service (Incorrect):** Directory service is the SERVICE (Active Directory). NTDS.dit is the DATABASE FILE.\n\n- **C. Network database (Incorrect):** Generic term. NTDS.dit specifically stores Active Directory domain data.\n\n- **D. DNS database (Incorrect):** DNS databases store zone records. NTDS.dit contains AD credentials and objects.\n\n**Reference:** CEH v13 Module 6",
         "type": "single",
         "topic": "Windows Internals - NTDS.dit",
@@ -657,8 +971,15 @@
     {
         "id": 58,
         "question": "What is PsExec?",
-        "options": ["Tool for remote command execution via SMB", "Process explorer", "PowerShell", "Execution policy"],
-        "correct": [0],
+        "options": [
+            "Tool for remote command execution via SMB",
+            "Process explorer",
+            "PowerShell",
+            "Execution policy"
+        ],
+        "correct": [
+            0
+        ],
         "explanation": "**Correct Answer: Tool for remote command execution via SMB**\n\nPsExec (Sysinternals Suite) executes commands remotely on Windows systems via SMB/named pipes. According to CEH Module 6: legitimate admin tool often abused for lateral movement. Creates temporary Windows service (PSEXESVC) on target, runs command, deletes service. Requires admin credentials, port 445. Detection: monitor SMB connections (Event ID 5140), service creation (7045). Attackers use for spreading. Alternatives: WinRM (5985/5986), WMI.\n\n**Why other answers are incorrect:**\n\n- **B. Process explorer (Incorrect):** Process Explorer is Sysinternals monitoring tool. PsExec is REMOTE EXECUTION tool.\n\n- **C. PowerShell (Incorrect):** PowerShell is scripting language/shell. PsExec is specific remote execution utility.\n\n- **D. Execution policy (Incorrect):** Execution policy controls PowerShell script execution. PsExec is remote command tool.\n\n**Reference:** CEH v13 Module 6",
         "type": "single",
         "topic": "Windows Tools - PsExec",
@@ -667,8 +988,15 @@
     {
         "id": 59,
         "question": "What is WMI?",
-        "options": ["Windows Management Instrumentation for system management", "Wireless management", "Web interface", "Malware tool"],
-        "correct": [0],
+        "options": [
+            "Windows Management Instrumentation for system management",
+            "Wireless management",
+            "Web interface",
+            "Malware tool"
+        ],
+        "correct": [
+            0
+        ],
         "explanation": "**Correct Answer: Windows Management Instrumentation for system management**\n\nWMI (Windows Management Instrumentation) is infrastructure for system management, querying info, executing commands on Windows. According to CEH Module 6: legitimate admin tool abused for: persistence (WMI event subscriptions), lateral movement (remote commands), reconnaissance (system queries), fileless attacks. WMIC command-line interface. Detection: monitor WMI activity, Event IDs 5857-5861, unusual WMI processes. Powerful but often overlooked attack vector.\n\n**Why other answers are incorrect:**\n\n- **B. Wireless management (Incorrect):** Wireless management configures WiFi. WMI is Windows system MANAGEMENT infrastructure.\n\n- **C. Web interface (Incorrect):** Web interfaces are HTTP-based. WMI is Windows system management framework.\n\n- **D. Malware tool (Incorrect):** WMI is LEGITIMATE Windows feature, abused by attackers, not inherently malware.\n\n**Reference:** CEH v13 Module 6",
         "type": "single",
         "topic": "Windows Internals - WMI",
@@ -677,8 +1005,15 @@
     {
         "id": 60,
         "question": "What is Linux privilege escalation?",
-        "options": ["Gaining higher privileges on Linux system", "User upgrade", "Permission change", "Access control"],
-        "correct": [0],
+        "options": [
+            "Gaining higher privileges on Linux system",
+            "User upgrade",
+            "Permission change",
+            "Access control"
+        ],
+        "correct": [
+            0
+        ],
         "explanation": "**Correct Answer: Gaining higher privileges on Linux system**\n\nLinux privilege escalation exploits misconfigurations, vulnerabilities to gain root/higher privileges. According to CEH Module 6: techniques include SUID/SGID binary abuse, writable /etc/passwd, sudo misconfigurations, cron job hijacking, kernel exploits, capability abuse, PATH hijacking. Tools: LinPEAS, linuxprivchecker, linux-exploit-suggester. Resources: GTFOBins (SUID binary bypass methods). Critical step in Linux post-exploitation.\n\n**Why other answers are incorrect:**\n\n- **B. User upgrade (Incorrect):** User upgrade is account management. Privilege escalation is EXPLOITING to gain unauthorized elevated access.\n\n- **C. Permission change (Incorrect):** Permission change modifies file permissions. Privilege escalation exploits system to gain higher privileges.\n\n- **D. Access control (Incorrect):** Access control manages permissions. Privilege escalation BYPASSES controls.\n\n**Reference:** CEH v13 Module 6",
         "type": "single",
         "topic": "Linux - Privilege Escalation",
@@ -687,8 +1022,15 @@
     {
         "id": 61,
         "question": "What is sudo misconfiguration?",
-        "options": ["Improperly configured sudo allowing unintended privilege escalation", "Sudo error", "Configuration file", "Permission issue"],
-        "correct": [0],
+        "options": [
+            "Improperly configured sudo allowing unintended privilege escalation",
+            "Sudo error",
+            "Configuration file",
+            "Permission issue"
+        ],
+        "correct": [
+            0
+        ],
         "explanation": "**Correct Answer: Improperly configured sudo allowing unintended privilege escalation**\n\nSudo misconfiguration allows privilege escalation through overly permissive /etc/sudoers entries. According to CEH Module 6: common issues - wildcards in commands, NOPASSWD (no password required), dangerous binaries (vim, less, find, awk can spawn shells). Enumeration: sudo -l lists allowed commands. Example: 'user ALL=(ALL) NOPASSWD: /usr/bin/vim' allows root shell via :!bash. Mitigation: principle of least privilege, specific commands only, avoid wildcards.\n\n**Why other answers are incorrect:**\n\n- **B. Sudo error (Incorrect):** Sudo error is runtime failure. Misconfiguration is SECURITY FLAW in permissions.\n\n- **C. Configuration file (Incorrect):** Generic term. Sudo misconfiguration specifically allows PRIVILEGE ESCALATION.\n\n- **D. Permission issue (Incorrect):** Too generic. Sudo misconfiguration is specific exploitable weakness.\n\n**Reference:** CEH v13 Module 6",
         "type": "single",
         "topic": "Linux - Sudo Misconfiguration",
@@ -697,8 +1039,15 @@
     {
         "id": 62,
         "question": "What is buffer overflow exploitation?",
-        "options": ["Exploiting memory corruption to execute arbitrary code", "Memory leak", "Overflow error", "Buffer management"],
-        "correct": [0],
+        "options": [
+            "Exploiting memory corruption to execute arbitrary code",
+            "Memory leak",
+            "Overflow error",
+            "Buffer management"
+        ],
+        "correct": [
+            0
+        ],
         "explanation": "**Correct Answer: Exploiting memory corruption to execute arbitrary code**\n\nBuffer overflow exploitation overwrites memory beyond buffer boundaries to corrupt adjacent data and control program execution flow. According to CEH Module 7: types - stack-based (overflow stack buffer, overwrite return address), heap-based (corrupt heap metadata). Attacker injects shellcode, overwrites return address to point to shellcode, gains code execution. Mitigations: DEP (Data Execution Prevention), ASLR (Address Space Layout Randomization), stack canaries, safe functions (strncpy vs strcpy). Classic exploitation technique, still relevant.\n\n**Why other answers are incorrect:**\n\n- **B. Memory leak (Incorrect):** Memory leak fails to free allocated memory. Buffer overflow OVERWRITES memory for exploitation.\n\n- **C. Overflow error (Incorrect):** Overflow error is math/integer overflow. Buffer overflow is MEMORY corruption exploitation.\n\n- **D. Buffer management (Incorrect):** Buffer management allocates/manages buffers. Buffer overflow EXPLOITS poor management.\n\n**Reference:** CEH v13 Module 7",
         "type": "single",
         "topic": "Exploitation - Buffer Overflow",

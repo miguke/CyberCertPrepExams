@@ -8,7 +8,9 @@
             "zANTI",
             "Bluto"
         ],
-        "correct": [3],
+        "correct": [
+            3
+        ],
         "explanation": "**Correct Answer: Bluto**\n\nBluto is a Python-based DNS reconnaissance tool specifically designed for DNS enumeration and zone transfer testing. According to CEH Module 2 (Footprinting and Reconnaissance), Bluto can retrieve comprehensive DNS information including: DNS zone data, domain names, computer names, IP addresses, DNS records (A, MX, NS, TXT, etc.), and network Whois records. The tool automates the process of DNS footprinting and can identify hosts connected to the target network, making it perfect for the scenario described where Gerard gathered detailed DNS information for planning attacks.\n\n**Why other answers are incorrect:**\n\n- **A. Towelroot (Incorrect):** Towelroot is an Android rooting application that exploits kernel vulnerabilities (CVE-2014-3153) to gain root access on Android devices. It's not a DNS reconnaissance or footprinting tool and has no capability to gather DNS zone data or network information.\n\n- **B. Knative (Incorrect):** Knative is a Kubernetes-based platform for deploying and managing serverless workloads and cloud-native applications. It's a development and deployment framework, not a security or reconnaissance tool. It has no functionality related to DNS enumeration or footprinting.\n\n- **C. zANTI (Incorrect):** zANTI is a mobile penetration testing toolkit for Android devices that can perform network mapping, port scanning, and MITM attacks on local networks. While it's a hacking tool, it's primarily focused on network exploitation rather than comprehensive DNS footprinting and zone data retrieval as described in the scenario.\n\n**Bluto Tool Capabilities:**\n- Automated DNS enumeration\n- Zone transfer testing (AXFR)\n- Subdomain discovery\n- Email address harvesting\n- Whois information gathering\n- Integration with multiple data sources\n\n**Reference:** CEH v13 Module 2 - Footprinting and Reconnaissance, DNS Footprinting Tools",
         "type": "single",
         "topic": "DNS Footprinting Tools",
@@ -19,11 +21,13 @@
         "question": "Which of the following Google advanced search operators helps an attacker in gathering information about websites that are similar to a specified target URL?",
         "options": [
             "[inurl:]",
+            "[related:]",
             "[info:]",
-            "[site:]",
-            "[related:]"
+            "[site:]"
         ],
-        "correct": [3],
+        "correct": [
+            1
+        ],
         "explanation": "**Correct Answer: [related:]**\n\nThe `related:` Google search operator (also called Google Dork) finds websites that are similar to a specified URL. According to CEH Module 2 (Footprinting and Reconnaissance), when you use `related:example.com`, Google returns websites that share similar content, purpose, or characteristics with the target site. This is valuable for attackers because: (1) similar sites might use the same technologies or frameworks, (2) they may share common vulnerabilities, (3) it helps identify competing or partner organizations, and (4) it reveals the target's business ecosystem. For example, `related:facebook.com` would return other social networking sites.\n\n**Why other answers are incorrect:**\n\n- **A. [inurl:] (Incorrect):** The `inurl:` operator searches for pages that contain a specific keyword in the URL. For example, `inurl:admin` finds pages with \"admin\" in their URL path. This operator doesn't find similar websites—it searches for specific URL patterns within any website.\n\n- **B. [info:] (Incorrect):** The `info:` operator displays Google's cached information about a specific URL, including the cached page, similar pages, pages that link to the site, and pages from the same domain. While it provides some similar functionality, its primary purpose is showing information about a single URL, not finding similar websites.\n\n- **C. [site:] (Incorrect):** The `site:` operator restricts search results to a specific domain or website. For example, `site:example.com password` searches only within example.com for the word \"password.\" This operator limits searches to one site rather than finding similar sites.\n\n**Common Google Dorks for Reconnaissance:**\n- `related:` - Find similar websites\n- `site:` - Limit to specific domain\n- `inurl:` - Search in URL\n- `intitle:` - Search in page title\n- `filetype:` - Find specific file types\n- `cache:` - View Google's cached version\n\n**Reference:** CEH v13 Module 2 - Footprinting and Reconnaissance, Google Hacking Database (GHDB) and search operators",
         "type": "single",
         "topic": "Google Dorking / Search Operators",
@@ -38,7 +42,9 @@
             "WebSite-Watcher",
             "WAFW00F"
         ],
-        "correct": [1],
+        "correct": [
+            1
+        ],
         "explanation": "**Correct Answer: Web-Stat**\n\nWeb-Stat is a real-time web analytics service that provides comprehensive website monitoring and traffic analysis. According to CEH Module 2 (Footprinting and Reconnaissance), Web-Stat offers: (1) real-time visitor tracking with geographic location data, (2) traffic analysis including visitor count, page views, and session duration, (3) visitor geolocation mapping showing countries/cities, (4) referrer tracking, and (5) detailed statistics about website usage patterns. This matches exactly what Taylor is using to monitor the website, analyze traffic, and track geographical locations.\n\n**Why other answers are incorrect:**\n\n- **A. Webroot (Incorrect):** Webroot is a cybersecurity company providing antivirus, anti-malware, and endpoint protection solutions. It's not a web analytics or website monitoring tool—it's security software for protecting devices from threats.\n\n- **C. WebSite-Watcher (Incorrect):** WebSite-Watcher is a tool for monitoring websites for changes and updates. It alerts users when website content is modified, added, or deleted. While it monitors websites, it doesn't provide traffic analysis or visitor geolocation tracking.\n\n- **D. WAFW00F (Incorrect):** WAFW00F (Web Application Firewall Fingerprinting) is a tool for identifying and fingerprinting Web Application Firewalls (WAF) protecting a website. It detects the presence and type of WAF, not website traffic or visitor analytics.\n\n**Reference:** CEH v13 Module 2 - Footprinting and Reconnaissance, website footprinting tools",
         "type": "single",
         "topic": "Website Monitoring Tools",
@@ -49,11 +55,13 @@
         "question": "Becky has been hired by a client from Dubai to perform a penetration test against one of their remote offices. Working from her location in Columbus, Ohio, Becky runs her usual reconnaissance scans to obtain basic information about their network. When analyzing the results of her Whois search, Becky notices that the IP was allocated to a location in Le Havre, France. Which regional Internet registry should Becky go to for detailed information?",
         "options": [
             "ARIN",
+            "RIPE",
             "LACNIC",
-            "APNIC",
-            "RIPE"
+            "APNIC"
         ],
-        "correct": [3],
+        "correct": [
+            1
+        ],
         "explanation": "**Correct Answer: RIPE (RIPE NCC)**\n\nRIPE NCC (Réseaux IP Européens Network Coordination Centre) is the Regional Internet Registry (RIR) responsible for IP address allocation and registration in Europe, the Middle East, and parts of Central Asia. According to CEH Module 2 (Footprinting and Reconnaissance), since the IP address is allocated to Le Havre, France (which is in Europe), RIPE NCC is the authoritative registry. RIPE maintains detailed information about IP allocations, AS numbers, domain registrations, and network infrastructure in its coverage region.\n\n**Why other answers are incorrect:**\n\n- **A. ARIN (Incorrect):** ARIN (American Registry for Internet Numbers) covers North America including the United States, Canada, and parts of the Caribbean. While Becky is working from Columbus, Ohio (ARIN region), the TARGET IP is in France, so she needs to query RIPE, not ARIN.\n\n- **B. LACNIC (Incorrect):** LACNIC (Latin America and Caribbean Network Information Centre) is responsible for Latin America and the Caribbean region. France is not in LACNIC's coverage area.\n\n- **C. APNIC (Incorrect):** APNIC (Asia-Pacific Network Information Centre) covers the Asia-Pacific region including East Asia, Southeast Asia, South Asia, and Oceania. France is in Europe, not the Asia-Pacific region.\n\n**Five Regional Internet Registries:**\n- **AFRINIC:** Africa\n- **ARIN:** North America\n- **APNIC:** Asia-Pacific\n- **LACNIC:** Latin America & Caribbean\n- **RIPE NCC:** Europe, Middle East, Central Asia\n\n**Reference:** CEH v13 Module 2 - Footprinting and Reconnaissance, Whois and RIR databases",
         "type": "single",
         "topic": "Regional Internet Registries (RIR)",
@@ -68,7 +76,9 @@
             "ARIN",
             "Baidu"
         ],
-        "correct": [2],
+        "correct": [
+            2
+        ],
         "explanation": "**Correct Answer: ARIN**\n\nARIN (American Registry for Internet Numbers) is a Regional Internet Registry providing IP address information and network details. According to CEH Module 2 (Footprinting and Reconnaissance), ARIN's Whois database allows querying IP addresses to retrieve: (1) network range/CIDR blocks, (2) organization name and contact details, (3) ASN (Autonomous System Number), (4) registration and update dates, (5) network topology information. While ARIN doesn't directly provide OS information, the network range and topology data help identify infrastructure details that can lead to OS fingerprinting. Clark used ARIN to map the network infrastructure.\n\n**Why other answers are incorrect:**\n\n- **A. DuckDuckGo (Incorrect):** DuckDuckGo is a privacy-focused search engine for general web searches. While it can search for publicly available information, it's not a specialized tool for querying IP addresses to retrieve network ranges, topology, or technical infrastructure details. It doesn't access RIR databases.\n\n- **B. AOL (Incorrect):** AOL (America Online) is an online service provider and web portal, not a network intelligence or IP address lookup tool. It doesn't provide access to IP registration databases or network infrastructure information.\n\n- **D. Baidu (Incorrect):** Baidu is a Chinese search engine similar to Google. Like DuckDuckGo, it's for general web searches and doesn't provide specialized IP address registry lookups, network range queries, or infrastructure topology information from RIR databases.\n\n**ARIN Lookup Capabilities:**\n- IP address allocation details\n- Network range (CIDR)\n- Organization information\n- ASN assignments\n- POC (Point of Contact) details\n- Registration history\n\n**Reference:** CEH v13 Module 2 - Footprinting and Reconnaissance, Whois and RIR databases",
         "type": "single",
         "topic": "IP Intelligence - ARIN",
@@ -83,7 +93,9 @@
             "IPsec driver",
             "Diffie-Hellman"
         ],
-        "correct": [2],
+        "correct": [
+            2
+        ],
         "explanation": "**Correct Answer: IPsec driver**\n\nThe IPsec driver is the kernel-level component that performs actual encryption/decryption of packets. According to CEH Module 20 (Cryptography), IPsec architecture includes: (1) IPsec driver—handles packet processing, encryption, decryption, (2) IKE—manages key exchange and SA establishment, (3) Policy Agent—enforces security policies. The driver operates at protocol level, intercepting and processing packets according to security associations.\n\n**Why other answers are incorrect:**\n- **A. IKE (Incorrect):** Manages key exchange and authentication, not packet encryption.\n- **B. Oakley (Incorrect):** Key agreement protocol used by IKE, not packet processing.\n- **D. Diffie-Hellman (Incorrect):** Key exchange algorithm, not encryption/decryption component.\n\n**Reference:** CEH v13 Module 20",
         "type": "single",
         "topic": "VPN - IPsec Architecture",
@@ -93,12 +105,14 @@
         "id": 7,
         "question": "Which United States legislation mandates that the Chief Executive Officer (CEO) and the Chief Financial Officer (CFO) must sign statements verifying the completeness and accuracy of financial reports?",
         "options": [
-            "Sarbanes-Oxley Act (SOX)",
             "Gramm-Leach-Bliley Act (GLBA)",
             "Federal Information Security Management Act (FISMA)",
-            "Economic Espionage Act"
+            "Economic Espionage Act",
+            "Sarbanes-Oxley Act (SOX)"
         ],
-        "correct": [0],
+        "correct": [
+            3
+        ],
         "explanation": "**Correct Answer: Sarbanes-Oxley Act (SOX)**\n\nSOX Section 302 requires CEO and CFO to personally certify financial reports' accuracy. According to CEH Module 1, SOX mandates: (1) executive certification of financial statements, (2) personal accountability for disclosures, (3) criminal penalties for false certification. This was enacted after corporate scandals (Enron, WorldCom) to improve corporate governance and financial transparency.\n\n**Why other answers are incorrect:**\n- **B. GLBA (Incorrect):** Governs financial institutions' privacy and data protection, not executive certification.\n- **C. FISMA (Incorrect):** Federal information security requirements, not financial reporting.\n- **D. Economic Espionage Act (Incorrect):** Addresses trade secret theft, not corporate financial reporting.\n\n**Reference:** CEH v13 Module 1",
         "type": "single",
         "topic": "Compliance - SOX",
@@ -108,12 +122,14 @@
         "id": 8,
         "question": "Which of the following parameters describes the amount of information that may be broadcasted over a connection?",
         "options": [
-            "Bandwidth",
             "TCPDUMP",
             "Latency",
+            "Bandwidth",
             "Jitter"
         ],
-        "correct": [0],
+        "correct": [
+            2
+        ],
         "explanation": "**Correct Answer: Bandwidth**\n\nBandwidth is the maximum data transfer rate of a network connection, measured in bits per second. According to CEH Module 3, bandwidth represents: (1) capacity of the connection, (2) amount of data that can be transmitted, (3) theoretical maximum throughput. Higher bandwidth allows more information to be broadcasted over the connection simultaneously.\n\n**Why other answers are incorrect:**\n- **B. TCPDUMP (Incorrect):** Packet capture tool, not a network parameter.\n- **C. Latency (Incorrect):** Time delay in data transmission, not amount of data.\n- **D. Jitter (Incorrect):** Variation in packet arrival times, not capacity.\n\n**Reference:** CEH v13 Module 3",
         "type": "single",
         "topic": "Network Fundamentals",
@@ -128,7 +144,9 @@
             "CNAME",
             "SOA"
         ],
-        "correct": [1],
+        "correct": [
+            1
+        ],
         "explanation": "**Correct Answer: MX (Mail Exchange)**\n\nMX records specify mail servers responsible for receiving email for a domain. According to CEH Module 2 (Footprinting), DNS record types include: (1) **MX**—mail exchange servers with priority values, (2) A—IPv4 address mapping, (3) NS—nameserver records, (4) CNAME—canonical name aliases. MX records are essential for email routing and commonly enumerated during reconnaissance.\n\n**Why other answers are incorrect:**\n- **A. NS (Incorrect):** Nameserver records indicate authoritative DNS servers, not mail servers.\n- **C. CNAME (Incorrect):** Canonical name records create aliases for domain names.\n- **D. SOA (Incorrect):** Start of Authority record contains zone administrative information.\n\n**Reference:** CEH v13 Module 2",
         "type": "single",
         "topic": "DNS Records",
@@ -143,7 +161,9 @@
             "Wireshark",
             "Metasploit"
         ],
-        "correct": [1],
+        "correct": [
+            1
+        ],
         "explanation": "**Correct Answer: dig**\n\nThe dig (Domain Information Groper) command is a powerful DNS lookup utility that can perform zone transfers (AXFR). According to CEH Module 2 (Footprinting and Reconnaissance), DNS zone transfer is a technique used to replicate DNS databases across DNS servers, but when misconfigured, it can leak all DNS records to unauthorized users. The command syntax is: `dig @nameserver domain axfr`. This query type (AXFR) requests a complete copy of the zone file, revealing: (1) all hostnames and subdomains, (2) IP addresses for internal and external hosts, (3) mail servers (MX records), (4) nameservers (NS records), (5) service records and other DNS data. Successful zone transfers provide attackers with a complete network map without any intrusive scanning. While dig is the standard Unix/Linux tool, Windows users can use nslookup with `ls -d domain` command for similar functionality.\n\n**Why other answers are incorrect:**\n\n- **A. Nmap (Incorrect):** Nmap is primarily a network scanner used for host discovery, port scanning, and service/version detection. While Nmap has NSE (Nmap Scripting Engine) scripts like dns-zone-transfer that can attempt zone transfers, it's not the standard or primary tool for this purpose. Nmap excels at active reconnaissance through port scanning, not DNS queries. Using dig is more direct and efficient for zone transfer attempts.\n\n- **C. Wireshark (Incorrect):** Wireshark is a network protocol analyzer (packet sniffer) that captures and analyzes network traffic in real-time. While it can capture and display DNS zone transfer traffic if it occurs, Wireshark doesn't actively request or perform zone transfers—it only passively observes network communications. It's a monitoring tool, not a DNS querying tool.\n\n- **D. Metasploit (Incorrect):** Metasploit is an exploitation framework used for developing, testing, and executing exploits against target systems. While Metasploit has auxiliary modules for various reconnaissance tasks and could theoretically be used for DNS enumeration, it's overkill for simple DNS zone transfers. Metasploit is designed for exploitation, not basic DNS queries, and dig is far more appropriate and efficient for this specific task.\n\n**DNS Zone Transfer Commands:**\n- **Linux/Unix (dig):** `dig @dns-server domain.com axfr`\n- **Windows (nslookup):** `nslookup` → `server dns-server` → `ls -d domain.com`\n- **Alternative (host):** `host -t axfr domain.com dns-server`\n\n**Zone Transfer Attack Process:**\n1. Identify target domain's nameservers (NS records)\n2. Attempt zone transfer on each nameserver\n3. If successful, extract all DNS records\n4. Map the complete network infrastructure\n5. Identify potential targets for further attacks\n\n**Reference:** CEH v13 Module 2 - Footprinting and Reconnaissance, DNS footprinting and zone transfer enumeration",
         "type": "single",
         "topic": "DNS Zone Transfer - dig",
@@ -158,7 +178,9 @@
             "Social engineering",
             "Network enumeration"
         ],
-        "correct": [1],
+        "correct": [
+            1
+        ],
         "explanation": "**Correct Answer: Passive footprinting**\n\nPassive footprinting is a reconnaissance technique where information is gathered without directly interacting with or alerting the target organization. According to CEH Module 2 (Footprinting and Reconnaissance), passive footprinting leverages publicly available information from sources like: (1) **Social media platforms** (LinkedIn, Facebook, Twitter, Instagram) to identify employees, organizational structure, technologies used, projects, and even physical locations through geo-tagged posts, (2) **Search engines** (Google, Bing) using advanced operators (site:, inurl:, filetype:) to find documents, exposed databases, and sensitive files, (3) **Public records** (WHOIS, DNS records, SEC filings, job postings) revealing network infrastructure and technologies, (4) **Archive sites** (Wayback Machine) showing historical website versions, (5) **Company websites** revealing organizational charts, technologies, and contact information. The key characteristic of passive footprinting is that the target has no way of detecting the reconnaissance because the attacker never sends packets to or directly interacts with the target's systems. This makes it the safest reconnaissance method for attackers as it leaves no traces in target logs.\n\n**Why other answers are incorrect:**\n\n- **A. Active footprinting (Incorrect):** Active footprinting involves direct interaction with the target's systems, generating traffic that can be logged and detected. Examples include: port scanning (Nmap), ping sweeps, traceroute, DNS zone transfers, banner grabbing, and vulnerability scanning. When you actively footprint, your IP address appears in the target's logs, firewalls may detect scanning patterns, and IDS/IPS systems can trigger alerts. Social media research doesn't generate any traffic to the target organization's infrastructure, so it cannot be active footprinting.\n\n- **C. Social engineering (Incorrect):** Social engineering is a broader attack technique that involves manipulating people into divulging confidential information or performing actions that compromise security. While social engineering can use information gathered through footprinting, it requires direct interaction with targets through phone calls (pretexting, vishing), emails (phishing), or in-person contact (tailgating, impersonation). Simply viewing public social media profiles without engaging with employees is not social engineering—it's passive information gathering. Social engineering would be sending a fake LinkedIn connection request or calling an employee pretending to be IT support.\n\n- **D. Network enumeration (Incorrect):** Network enumeration is an active reconnaissance technique that occurs after initial access or during active scanning. It involves extracting detailed information about networks, systems, users, and shares through direct queries like: NetBIOS enumeration (nbtstat, enum4linux), SNMP enumeration (snmpwalk), LDAP enumeration (ldapsearch), and SMB enumeration (smbclient). Enumeration requires network connectivity to the target and generates significant logs. Reviewing social media profiles is purely passive research that happens externally, without any network communication with the target organization.\n\n**Passive Footprinting Sources:**\n\n**Social Media Intelligence (SOCMINT):**\n- LinkedIn: Employee roles, technologies, org structure\n- Twitter: Company updates, employee opinions, tech stack\n- Facebook: Company pages, employee personal posts\n- Instagram: Office photos, geo-locations, events\n- GitHub: Code repositories, API keys in commits\n\n**Public Records:**\n- WHOIS databases: Domain ownership, contacts\n- DNS records: Subdomains, mail servers, IP ranges\n- Job postings: Technologies, projects, salaries\n- Financial filings: Partnerships, acquisitions\n- Press releases: Strategic initiatives\n\n**Search Engine Tools:**\n- Google Dorking: site:target.com filetype:pdf\n- Shodan: Internet-connected devices\n- Censys: Certificate transparency logs\n- Archive.org: Historical website data\n\n**Passive vs Active Footprinting:**\n\n| Aspect | Passive | Active |\n|--------|---------|--------|\n| Detection Risk | None | High |\n| Information Depth | Limited | Detailed |\n| Legal Issues | None | Potential |\n| Logs Generated | No | Yes |\n| Example | WHOIS lookup | Port scan |\n\n**Reference:** CEH v13 Module 2 - Footprinting and Reconnaissance, passive information gathering techniques",
         "type": "single",
         "topic": "Footprinting - Passive Reconnaissance",
@@ -173,7 +195,9 @@
             "MX record",
             "PTR record"
         ],
-        "correct": [1],
+        "correct": [
+            1
+        ],
         "explanation": "**Correct Answer: AAAA record**\n\nThe AAAA record (pronounced 'quad-A') is used in DNS to map a domain name to an IPv6 address. According to CEH Module 2 (Footprinting and Reconnaissance), the AAAA record is the IPv6 equivalent of the IPv4 A record. Key characteristics: (1) contains a 128-bit IPv6 address (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334), (2) named 'AAAA' because IPv6 addresses are four times larger than IPv4 (128 bits vs 32 bits), (3) increasingly important as IPv4 addresses exhaust and IPv6 adoption grows, (4) allows dual-stack configurations where domains have both A and AAAA records for backwards compatibility. When a DNS client performs a lookup for an IPv6 address, it requests AAAA records. Example: `dig AAAA google.com` returns IPv6 addresses like 2607:f8b0:4004:c07::65. Modern operating systems prefer IPv6 when both A and AAAA records are available.\n\n**Why other answers are incorrect:**\n\n- **A. A record (Incorrect):** A records map domain names to IPv4 addresses, not IPv6. An A record contains a 32-bit IPv4 address in dotted-decimal notation (e.g., 192.168.1.1). A records were the original DNS address mapping mechanism created when IPv4 was the only IP protocol. They cannot store IPv6 addresses because IPv6's 128-bit format doesn't fit the A record structure designed for 32-bit addresses. To support IPv6, the new AAAA record type was created.\n\n- **C. MX record (Incorrect):** MX (Mail Exchange) records specify mail servers responsible for accepting email for a domain. MX records contain a priority value and the hostname of the mail server, not an IP address (IPv4 or IPv6). The mail server hostname is then resolved separately via A or AAAA records. Example: MX record points to mail.example.com with priority 10, then mail.example.com resolves to an IP via A/AAAA records. MX records are about email routing, not IP address mapping.\n\n- **D. PTR record (Incorrect):** PTR (Pointer) records perform reverse DNS lookups—mapping IP addresses back to domain names (the opposite direction of A/AAAA records). PTR records are stored in special reverse DNS zones: in-addr.arpa for IPv4 and ip6.arpa for IPv6. They're used for email server validation (many mail servers reject mail from IPs without valid PTR records), logging (converting IPs in logs to hostnames), and security verification. While PTR records work with IPv6, they don't map domains TO IPv6 addresses; they map IPv6 addresses TO domains.\n\n**DNS Record Types Summary:**\n\n| Record | Purpose | Example |\n|--------|---------|---------|\n| **A** | Domain → IPv4 | example.com → 93.184.216.34 |\n| **AAAA** | Domain → IPv6 | example.com → 2606:2800:220:1:... |\n| **MX** | Mail servers | example.com → mail.example.com |\n| **PTR** | IP → Domain | 34.216.184.93.in-addr.arpa → example.com |\n| **CNAME** | Domain alias | www → example.com |\n| **NS** | Nameservers | example.com → ns1.provider.com |\n| **TXT** | Text data | SPF, DKIM, verification |\n| **SOA** | Zone authority | Zone admin, serial, TTL |\n\n**IPv4 vs IPv6 DNS:**\n- **IPv4:** A record, 32-bit address\n- **IPv6:** AAAA record, 128-bit address\n- **Dual-stack:** Both A and AAAA records\n- **Preference:** OS prefers IPv6 when available\n\n**Reference:** CEH v13 Module 2 - Footprinting and Reconnaissance, DNS record types and enumeration",
         "type": "single",
         "topic": "DNS - AAAA Records",
@@ -188,7 +212,9 @@
             "It contains the website's sitemap for navigation",
             "It stores user authentication credentials"
         ],
-        "correct": [1],
+        "correct": [
+            1
+        ],
         "explanation": "**Correct Answer: It provides instructions to web crawlers about which pages should not be indexed**\n\nThe robots.txt file is a standard used by websites to communicate with web crawlers and robots about which parts of the site should not be crawled or indexed. According to CEH Module 2 (Footprinting and Reconnaissance), robots.txt is placed in the website root directory (https://example.com/robots.txt) and contains directives like: (1) **User-agent:** specifies which crawler the rules apply to (e.g., Googlebot, *), (2) **Disallow:** lists paths that should not be crawled, (3) **Allow:** permits crawling of specific paths within disallowed directories. The security implication is that robots.txt often reveals sensitive directories and files that organizations want hidden from search engines—exactly what attackers want to find! Common disallowed paths include: /admin/, /backup/, /private/, /dev/, /test/, /config/, /.git/. By accessing robots.txt, attackers get a roadmap of potentially sensitive areas to explore. Example entry: 'Disallow: /admin/' tells attackers there's an admin panel at that location. Important note: robots.txt is a suggestion, not a security control—it doesn't prevent access, and malicious crawlers ignore it.\n\n**Why other answers are incorrect:**\n\n- **A. It blocks all search engine crawlers from indexing the site (Incorrect):** robots.txt does not technically 'block' anything—it's a polite request that well-behaved crawlers honor voluntarily. It has no enforcement mechanism and cannot prevent access to pages. Malicious actors completely ignore robots.txt directives. To actually block access, you need authentication, IP restrictions, or firewall rules. Additionally, robots.txt can selectively disallow certain paths while allowing others, not necessarily blocking the entire site. A complete disallow would be: 'User-agent: * / Disallow: /', but this doesn't block humans or non-compliant bots from accessing the site.\n\n- **C. It contains the website's sitemap for navigation (Incorrect):** While robots.txt can reference a sitemap file (Sitemap: https://example.com/sitemap.xml), it is not itself the sitemap. The sitemap is a separate XML file listing all pages the site owner wants indexed, helping search engines discover content. robots.txt does the opposite—it lists what should NOT be crawled. The sitemap is for helping search engines; robots.txt is for limiting them. They serve complementary but distinct purposes in SEO and site management.\n\n- **D. It stores user authentication credentials (Incorrect):** robots.txt never contains credentials—that would be a catastrophic security mistake. It's a publicly accessible plain text file that anyone can read. Storing credentials in robots.txt would immediately expose them to attackers. Authentication credentials should be stored encrypted in secure databases or credential management systems, never in publicly accessible files. robots.txt contains only crawler directives (User-agent, Disallow, Allow, Sitemap), not sensitive data.\n\n**Example robots.txt:**\n```\nUser-agent: *\nDisallow: /admin/\nDisallow: /backup/\nDisallow: /config/\nDisallow: /private/\nDisallow: /.git/\nAllow: /public/\nSitemap: https://example.com/sitemap.xml\n```\n\n**Attacker Usage:**\n1. Navigate to target.com/robots.txt\n2. Identify disallowed paths\n3. Manually browse to sensitive directories\n4. Find admin panels, backups, configs\n5. Exploit exposed resources\n\n**Defense Recommendations:**\n- Don't rely on robots.txt for security\n- Implement proper access controls\n- Use authentication for sensitive areas\n- Don't list overly sensitive paths\n- Monitor robots.txt access in logs\n- Use robots meta tags for page-specific control\n\n**robots.txt vs Security:**\n- ❌ NOT a security mechanism\n- ❌ Does NOT block access\n- ❌ Ignored by malicious bots\n- ✅ SEO tool for legitimate crawlers\n- ✅ Voluntary compliance only\n\n**Reference:** CEH v13 Module 2 - Footprinting and Reconnaissance, web footprinting and robots.txt analysis",
         "type": "single",
         "topic": "Web Footprinting - robots.txt",
@@ -197,8 +223,15 @@
     {
         "id": 14,
         "question": "What is OSINT (Open Source Intelligence)?",
-        "options": ["Classified government intelligence", "Intelligence gathered from publicly available sources", "Proprietary intelligence tools", "Encrypted intelligence data"],
-        "correct": [1],
+        "options": [
+            "Classified government intelligence",
+            "Proprietary intelligence tools",
+            "Intelligence gathered from publicly available sources",
+            "Encrypted intelligence data"
+        ],
+        "correct": [
+            2
+        ],
         "explanation": "**Correct Answer: Intelligence gathered from publicly available sources**\n\nOSINT (Open Source Intelligence) is intelligence collected from publicly accessible sources without requiring authorization or infiltration. According to CEH Module 2, OSINT sources include: (1) social media platforms (Facebook, LinkedIn, Twitter), (2) public websites and forums, (3) news articles and publications, (4) public records (property, corporate filings, court documents), (5) search engines, (6) online databases and repositories. OSINT is legal, ethical when used properly, passive (no direct interaction with target), and forms foundation of reconnaissance. Tools: Maltego, theHarvester, Shodan, Recon-ng, Google Dorks. Used for threat intelligence, investigations, competitive analysis, due diligence.\n\n**Why other answers are incorrect:**\n\n- **A. Classified government intelligence (Incorrect):** Classified intelligence is restricted, secret information requiring security clearances (HUMINT-human intelligence, SIGINT-signals intelligence, COMINT-communications intelligence). OSINT is the OPPOSITE—publicly available to anyone without special access. Classified intel comes from covert sources; OSINT comes from open sources. This completely reverses the \"Open Source\" meaning.\n\n- **C. Proprietary intelligence tools (Incorrect):** Proprietary tools are commercial software/platforms (paid subscriptions, licensed products). While some OSINT TOOLS may be proprietary (Maltego commercial license), OSINT itself refers to the INFORMATION SOURCE (public data), not the tools used to collect it. OSINT can be gathered with free or proprietary tools. This confuses the data source with the collection tools.\n\n- **D. Encrypted intelligence data (Incorrect):** Encrypted data is protected information requiring decryption keys—it's NOT publicly accessible by definition. OSINT must be openly available; if data is encrypted and inaccessible without keys, it's not open source intelligence. Encrypted data might be encountered during OSINT, but the encryption prevents it from being OSINT until decrypted publicly. This contradicts the \"publicly available\" requirement.\n\n**Reference:** CEH v13 Module 2",
         "type": "single",
         "topic": "OSINT",
@@ -207,8 +240,15 @@
     {
         "id": 15,
         "question": "What is Google Dorking?",
-        "options": ["Using advanced Google search operators to find sensitive information", "Google's security team", "A Google service", "SEO technique"],
-        "correct": [0],
+        "options": [
+            "Google's security team",
+            "A Google service",
+            "Using advanced Google search operators to find sensitive information",
+            "SEO technique"
+        ],
+        "correct": [
+            2
+        ],
         "explanation": "**Correct Answer: Using advanced Google search operators to find sensitive information**\n\nGoogle Dorking (Google Hacking) uses advanced search operators to find sensitive information inadvertently exposed on websites. According to CEH Module 2, common operators: (1) **site:** - searches specific domain (site:example.com admin), (2) **filetype:** - finds specific file types (filetype:pdf password), (3) **inurl:** - searches URLs for keywords (inurl:admin login), (4) **intitle:** - searches page titles (intitle:\"index of\" passwords), (5) **cache:** - views Google's cached version of pages. Can reveal: exposed passwords files, configuration files, vulnerable web applications, directory listings, confidential documents, database dumps. Example query: site:gov filetype:xls inurl:password. Google Hacking Database (GHDB) catalogs effective dorks.\n\n**Why other answers are incorrect:**\n\n- **B. Google's security team (Incorrect):** Google's security team is their internal cybersecurity personnel protecting Google's infrastructure and services. \"Google Dorking\" refers to search TECHNIQUES, not people or organizational units. While the term sounds like it could relate to Google employees, it's actually a hacker term for exploitation of Google's search capabilities. This confuses a security technique with personnel.\n\n- **C. A Google service (Incorrect):** Google Dorking is not an official Google product or service—it's a hacker/security researcher technique USING Google Search in unintended ways. Google provides the search engine; dorking is the creative misuse of its features to find security-sensitive data. Google doesn't offer or endorse dorking; attackers exploit Google's legitimate search capabilities. This confuses a user technique with a vendor service.\n\n- **D. SEO technique (Incorrect):** SEO (Search Engine Optimization) improves website visibility in search results through legitimate marketing tactics (keywords, backlinks, site structure). Google Dorking does the OPPOSITE—it finds data that organizations DON'T want found. SEO is about visibility; dorking exploits over-visibility of sensitive data. SEO is marketing; dorking is reconnaissance. This confuses promotional techniques with security exploitation.\n\n**Reference:** CEH v13 Module 2",
         "type": "single",
         "topic": "Google Dorking",
@@ -217,8 +257,15 @@
     {
         "id": 16,
         "question": "What is Shodan?",
-        "options": ["Search engine for Internet-connected devices", "Antivirus software", "Programming language", "Social media platform"],
-        "correct": [0],
+        "options": [
+            "Antivirus software",
+            "Programming language",
+            "Search engine for Internet-connected devices",
+            "Social media platform"
+        ],
+        "correct": [
+            2
+        ],
         "explanation": "**Correct Answer: Search engine for Internet-connected devices**\n\nShodan is a specialized search engine that scans and indexes Internet-connected devices and services rather than web pages. According to CEH Module 2, Shodan: (1) continuously scans Internet for open ports and services, (2) indexes devices: IoT cameras, industrial control systems (ICS/SCADA), routers, servers, printers, smart TVs, (3) reveals: open ports, running services, software versions, vulnerabilities, device banners, geolocation, (4) searchable by filters (country, port, organization, product). Used for: asset discovery, security research, vulnerability assessment, threat intelligence. Dubbed \"Google for hackers\" because it finds exposed, potentially vulnerable systems. Example searches: default passwords, exposed databases, webcams without authentication.\n\n**Why other answers are incorrect:**\n\n- **B. Antivirus software (Incorrect):** Antivirus detects and removes malware from individual computers. Shodan is a web-based search engine that doesn't install on systems or scan for malware. AV is defensive software protecting endpoints; Shodan is a reconnaissance tool discovering Internet-exposed devices. Completely different purposes and technologies.\n\n- **C. Programming language (Incorrect):** Programming languages (Python, Java, JavaScript) are used to write software. Shodan is a web application/service, not a language. While Shodan provides APIs that can be accessed via programming languages, Shodan itself is not a language. This confuses a search service with coding syntax.\n\n- **D. Social media platform (Incorrect):** Social media (Facebook, Twitter, LinkedIn) are platforms for human social networking and content sharing. Shodan indexes DEVICES and technical infrastructure, not people or social content. Social media is about human connections; Shodan is about discovering network-connected hardware. This completely misunderstands Shodan's technical purpose.\n\n**Reference:** CEH v13 Module 2",
         "type": "single",
         "topic": "Shodan Search Engine",
@@ -227,8 +274,15 @@
     {
         "id": 17,
         "question": "What information can be obtained from WHOIS database?",
-        "options": ["Domain registration details, registrar, nameservers, contact info", "User passwords", "Email contents", "Database records"],
-        "correct": [0],
+        "options": [
+            "User passwords",
+            "Email contents",
+            "Database records",
+            "Domain registration details, registrar, nameservers, contact info"
+        ],
+        "correct": [
+            3
+        ],
         "explanation": "**Correct Answer: Domain registration details, registrar, nameservers, contact info**\n\nWHOIS database contains domain registration information publicly accessible for transparency and accountability. According to CEH Module 2, WHOIS provides: (1) **Registrant information** - domain owner name/organization, (2) **Registration dates** - created, updated, expires, (3) **Registrar** - company that registered the domain, (4) **Nameservers** - DNS servers authoritative for domain, (5) **Contact information** - admin, technical, billing contacts (email, phone, address). Used for: footprinting/reconnaissance, attribution, abuse reporting, domain purchase inquiries. Privacy protection services (WHOIS privacy) can mask personal details showing proxy info instead. Access via whois command or web interfaces.\n\n**Why other answers are incorrect:**\n\n- **B. User passwords (Incorrect):** WHOIS never contains passwords—it's public domain registration data, not credential storage. Storing passwords in public databases would be catastrophic security malpractice. User passwords are hashed and stored in protected authentication databases, never in public registries. This answer shows no understanding of what WHOIS is for.\n\n- **C. Email contents (Incorrect):** WHOIS contains contact EMAIL ADDRESSES (registrant, admin, tech), but not email CONTENTS (messages, attachments). Email contents are private communications stored on mail servers, not in domain registration databases. This confuses contact metadata with communication content.\n\n- **D. Database records (Incorrect):** WHOIS is a specific domain registration database, not a general database containing application data. It only has domain-related metadata. This answer vaguely suggests WHOIS contains generic database records, which misrepresents its narrow, specialized purpose for domain registration information only.\n\n**Reference:** CEH v13 Module 2",
         "type": "single",
         "topic": "WHOIS Database",
@@ -237,8 +291,15 @@
     {
         "id": 18,
         "question": "What is the purpose of traceroute/tracert?",
-        "options": ["Map network path and identify routers between source and destination", "Scan for open ports", "Crack passwords", "Encrypt traffic"],
-        "correct": [0],
+        "options": [
+            "Scan for open ports",
+            "Crack passwords",
+            "Encrypt traffic",
+            "Map network path and identify routers between source and destination"
+        ],
+        "correct": [
+            3
+        ],
         "explanation": "**Correct Answer: Map network path and identify routers between source and destination**\n\nTraceroute (tracert on Windows) maps the network path packets take from source to destination, revealing each intermediate router (hop). According to CEH Module 2, traceroute: (1) sends packets with incrementing TTL (Time To Live), (2) each router decrements TTL and sends ICMP Time Exceeded when TTL=0, (3) displays: each hop's IP/hostname, round-trip times (latency), (4) reveals: network topology, ISPs, geographic routing, potential bottlenecks. Unix uses UDP probe packets; Windows uses ICMP Echo. Used for: network troubleshooting, reconnaissance, understanding infrastructure. Security implications: reveals internal network structure, firewall locations, load balancers.\n\n**Why other answers are incorrect:**\n\n- **B. Scan for open ports (Incorrect):** Port scanning (Nmap, Masscan) tests which TCP/UDP ports are open on a target host. Traceroute maps the ROUTE to a destination, not which services are running. Port scanning is Layer 4; traceroute is Layer 3. Different tools, different purposes. This confuses network mapping with service discovery.\n\n- **C. Crack passwords (Incorrect):** Password cracking (John the Ripper, Hashcat) attempts to recover passwords from hashes using brute force, dictionary attacks, rainbow tables. Traceroute is a network diagnostic tool for path discovery, completely unrelated to cryptographic password recovery. This shows no understanding of what traceroute does.\n\n- **D. Encrypt traffic (Incorrect):** Encryption (VPN, TLS/SSL, IPsec) protects data confidentiality during transmission. Traceroute is a diagnostic tool that REVEALS network paths, it doesn't encrypt anything. VPNs encrypt; traceroute traces. This confuses network diagnostics with security protocols.\n\n**Reference:** CEH v13 Module 2",
         "type": "single",
         "topic": "Network Mapping - Traceroute",
@@ -247,8 +308,15 @@
     {
         "id": 19,
         "question": "What is Maltego used for?",
-        "options": ["Visual link analysis and data mining for OSINT", "Web server", "Database management", "Email client"],
-        "correct": [0],
+        "options": [
+            "Web server",
+            "Database management",
+            "Email client",
+            "Visual link analysis and data mining for OSINT"
+        ],
+        "correct": [
+            3
+        ],
         "explanation": "**Correct Answer: Visual link analysis and data mining for OSINT**\n\nMaltego is a graphical tool for visual link analysis and open source intelligence (OSINT) gathering that maps relationships between entities. According to CEH Module 2: (1) **Transforms** - automated queries gathering data from multiple sources (WHOIS, DNS, social media, search engines), (2) **Entity types** - people, companies, domains, IP addresses, phone numbers, email addresses, social media profiles, (3) **Visual graphs** - displays relationships and connections between entities, (4) **Investigation** - reveals hidden connections, patterns, networks. Used for: cyber investigations, footprinting, threat intelligence, fraud detection, social engineering preparation. Example: map all domains owned by company, find email addresses, trace infrastructure.\n\n**Why other answers are incorrect:**\n\n- **B. Web server (Incorrect):** Web servers (Apache, Nginx, IIS) host websites and serve HTTP content. Maltego is a client application for intelligence gathering and visualization, not server infrastructure. This confuses reconnaissance tools with hosting infrastructure.\n\n- **C. Database management (Incorrect):** Database management systems (MySQL, PostgreSQL, Oracle) store and manage structured data. Maltego visualizes relationships from OSINT, not database administration. This confuses data visualization tools with data storage systems.\n\n- **D. Email client (Incorrect):** Email clients (Outlook, Thunderbird, Gmail) send/receive emails. Maltego can discover email addresses but doesn't send/receive email. This confuses intelligence tools with communication applications.\n\n**Reference:** CEH v13 Module 2",
         "type": "single",
         "topic": "OSINT Tools - Maltego",
@@ -257,8 +325,15 @@
     {
         "id": 20,
         "question": "What is theHarvester tool?",
-        "options": ["Tool to gather emails, subdomains, IPs from public sources", "Crop management software", "Backup tool", "Compiler"],
-        "correct": [0],
+        "options": [
+            "Crop management software",
+            "Backup tool",
+            "Tool to gather emails, subdomains, IPs from public sources",
+            "Compiler"
+        ],
+        "correct": [
+            2
+        ],
         "explanation": "**Correct Answer: Tool for gathering emails, subdomains, hosts from public sources**\n\ntheHarvester is OSINT tool that collects emails, names, subdomains, IPs, URLs from various public sources. According to CEH Module 2: passive reconnaissance without direct target contact. Sources: search engines (Google, Bing, DuckDuckGo), PGP key servers, Shodan, LinkedIn, Twitter, vhost. Command: theharvester -d domain.com -l 500 -b google,bing,yahoo. Output: emails, hosts, virtual hosts, open ports. Essential for initial footprinting.\n\n**Why other answers are incorrect:**\n\n- **B. Network scanner (Incorrect):** Network scanners (nmap) scan ports/services. theHarvester gathers PUBLIC information.\n\n- **C. Vulnerability scanner (Incorrect):** Vulnerability scanners find flaws. theHarvester collects EMAILS/DOMAINS.\n\n- **D. Password cracker (Incorrect):** Password crackers break passwords. theHarvester gathers OSINT data.\n\n**Reference:** CEH v13 Module 2",
         "type": "single",
         "topic": "OSINT Tools - theHarvester",
@@ -267,8 +342,15 @@
     {
         "id": 21,
         "question": "What is subdomain enumeration?",
-        "options": ["Finding all subdomains of a target domain", "Counting database entries", "Listing file directories", "Port scanning"],
-        "correct": [0],
+        "options": [
+            "Counting database entries",
+            "Finding all subdomains of a target domain",
+            "Listing file directories",
+            "Port scanning"
+        ],
+        "correct": [
+            1
+        ],
         "explanation": "**Correct Answer: Finding all subdomains of a target domain**\n\nSubdomain enumeration discovers all subdomains associated with a target domain to expand attack surface. According to CEH Module 2, methods include: (1) **DNS brute-force** - trying common subdomain names (www, mail, ftp, admin, dev, test), (2) **Certificate Transparency logs** - searching public SSL certificate records (crt.sh), (3) **Search engines** - Google dorking for subdomains, (4) **DNS zone transfers** - exploiting misconfigured DNS servers, (5) **Tools** - Sublist3r, Amass, Subfinder, DNSdumpster. Reveals: development servers, admin panels, staging environments, forgotten systems, additional entry points. Example: discovering dev.example.com exposes less-secured development environment.\n\n**Why other answers are incorrect:**\n\n- **B. Counting database entries (Incorrect):** Database enumeration counts records/tables in databases. Subdomain enumeration discovers DNS subdomains, not database contents. This confuses DNS reconnaissance with database querying.\n\n- **C. Listing file directories (Incorrect):** Directory listing reveals files/folders on web servers. Subdomain enumeration finds DNS names, not file systems. This confuses domain discovery with web content enumeration.\n\n- **D. Port scanning (Incorrect):** Port scanning identifies open TCP/UDP ports on systems. Subdomain enumeration finds domain names via DNS, not network ports. Different reconnaissance phases. This confuses DNS enumeration with network service discovery.\n\n**Reference:** CEH v13 Module 2",
         "type": "single",
         "topic": "Subdomain Enumeration",
@@ -277,8 +359,15 @@
     {
         "id": 22,
         "question": "What is email harvesting?",
-        "options": ["Collecting email addresses for attacks/spam", "Email backup", "Email encryption", "Email forwarding"],
-        "correct": [0],
+        "options": [
+            "Email backup",
+            "Email encryption",
+            "Email forwarding",
+            "Collecting email addresses for attacks/spam"
+        ],
+        "correct": [
+            3
+        ],
         "explanation": "**Correct Answer: Collecting email addresses for attacks/spam**\n\nEmail harvesting is collecting email addresses from public sources for malicious purposes (phishing, spam, social engineering). According to CEH Module 2: (1) **Web scraping** - extracting emails from websites, (2) **Search engines** - using Google dorks to find exposed emails, (3) **WHOIS databases** - domain registration contact emails, (4) **Social media** - LinkedIn, Twitter profiles, (5) **Documents** - PDFs, Word docs with author emails. Tools: theHarvester, Hunter.io, Phonebook.cz. Prevention: email obfuscation (name[at]domain[dot]com), contact forms instead of direct emails, CAPTCHAs.\n\n**Why other answers are incorrect:**\n\n- **B. Email backup (Incorrect):** Email backup archives messages for disaster recovery. Harvesting is collecting addresses for attacks, not backing up email content. This confuses attack preparation with data protection.\n\n- **C. Email encryption (Incorrect):** Email encryption (PGP, S/MIME) secures email contents. Harvesting collects addresses, doesn't encrypt messages. This confuses reconnaissance with cryptographic protection.\n\n- **D. Email forwarding (Incorrect):** Email forwarding redirects messages from one address to another. Harvesting is gathering addresses for target lists. This confuses mail routing with address collection.\n\n**Reference:** CEH v13 Module 2",
         "type": "single",
         "topic": "Email Harvesting",
@@ -287,8 +376,15 @@
     {
         "id": 23,
         "question": "What is competitive intelligence?",
-        "options": ["Gathering public info about competitors", "Industrial espionage", "Market research", "Business intelligence"],
-        "correct": [0],
+        "options": [
+            "Industrial espionage",
+            "Market research",
+            "Gathering public info about competitors",
+            "Business intelligence"
+        ],
+        "correct": [
+            2
+        ],
         "explanation": "**Correct Answer: Gathering public info about competitors**\n\nCompetitive intelligence (CI) is legal, ethical gathering of competitor information from public sources for business advantage. According to CEH Module 2: (1) **Financial reports** - public company filings, earnings, (2) **Job postings** - reveals technologies, projects, expansion, (3) **Patents** - innovation, product roadmap, (4) **Social media** - announcements, employee insights, (5) **Trade shows/conferences** - product demonstrations, partnerships. Differentiates from espionage (illegal). Used for: market positioning, strategic planning, product development. OSINT techniques applied to business context.\n\n**Why other answers are incorrect:**\n\n- **B. Industrial espionage (Incorrect):** Industrial espionage is ILLEGAL theft of trade secrets through covert means (hacking, bribery, infiltration). Competitive intelligence uses LEGAL public sources ethically. CI is legitimate business research; espionage is criminal. This confuses legal intelligence with illegal spying.\n\n- **C. Market research (Incorrect):** Market research studies customer preferences, market trends, demographics through surveys and focus groups. Competitive intelligence specifically targets COMPETITOR capabilities and strategies. Market research is customer-focused; CI is competitor-focused. Related but different focuses.\n\n- **D. Business intelligence (Incorrect):** Business intelligence (BI) analyzes internal company data for decision-making using dashboards and analytics. Competitive intelligence gathers EXTERNAL competitor information. BI is internal-facing; CI is external-facing. This confuses internal analytics with external competitor research.\n\n**Reference:** CEH v13 Module 2",
         "type": "single",
         "topic": "Competitive Intelligence",
@@ -297,8 +393,15 @@
     {
         "id": 24,
         "question": "What is geolocation footprinting?",
-        "options": ["Determining physical location from digital info", "GPS tracking", "Map services", "Location services"],
-        "correct": [0],
+        "options": [
+            "GPS tracking",
+            "Map services",
+            "Location services",
+            "Determining physical location from digital info"
+        ],
+        "correct": [
+            3
+        ],
         "explanation": "**Correct Answer: Determining physical location from digital info**\n\nGeolocation footprinting identifies physical location of targets from digital artifacts. According to CEH Module 2: (1) **IP geolocation** - mapping IP addresses to geographic locations (GeoIP databases), (2) **WiFi positioning** - identifying location from WiFi network names/signals, (3) **Photo metadata** - GPS coordinates embedded in EXIF data (exiftool), (4) **Social media** - check-ins, geotagged posts, location history, (5) **Mobile apps** - location permissions, tracking data. Privacy implications: stalking, physical security, OPSEC failures. Tools: Creepy, Maltego, GeoIP databases.\n\n**Why other answers are incorrect:**\n\n- **B. GPS tracking (Incorrect):** GPS tracking uses satellites for real-time location tracking of devices with GPS receivers. Geolocation footprinting infers location from DIGITAL ARTIFACTS (IPs, metadata), not active GPS signals. GPS is hardware-based real-time; footprinting is passive inference from data.\n\n- **C. Map services (Incorrect):** Map services (Google Maps, OpenStreetMap) provide navigation and geographic visualization. Geolocation footprinting uses maps as TOOLS but is about discovering location from digital evidence, not providing mapping services. This confuses the tool with the technique.\n\n- **D. Location services (Incorrect):** Location services are device features (GPS, WiFi positioning) providing real-time location to apps. Geolocation footprinting is OSINT analysis inferring past/current location from digital traces. Services provide location; footprinting discovers it from artifacts.\n\n**Reference:** CEH v13 Module 2",
         "type": "single",
         "topic": "Geolocation Footprinting",
@@ -307,8 +410,15 @@
     {
         "id": 25,
         "question": "What is website mirroring?",
-        "options": ["Downloading entire website for offline analysis", "Website backup", "CDN", "Load balancing"],
-        "correct": [0],
+        "options": [
+            "Website backup",
+            "CDN",
+            "Load balancing",
+            "Downloading entire website for offline analysis"
+        ],
+        "correct": [
+            3
+        ],
         "explanation": "**Correct Answer: Downloading entire website for offline analysis**\n\nWebsite mirroring downloads complete website structure (pages, images, scripts, stylesheets) for offline analysis. According to CEH Module 2: (1) **Tools** - HTTrack, wget, curl with recursion, (2) **Purpose** - analyze site structure without generating server logs, (3) **Benefits** - reveals hidden directories, file structures, technology stack, comments in code, backup files, (4) **Legal** - copyright and terms of service considerations apply. Used for: reconnaissance without detection, finding sensitive files, understanding application architecture, vulnerability research.\n\n**Why other answers are incorrect:**\n\n- **B. Website backup (Incorrect):** Website backups are created by site OWNERS for disaster recovery and stored securely. Mirroring is done by EXTERNAL parties for analysis. Backups preserve site for restoration; mirroring copies for reconnaissance. Different purposes and permissions.\n\n- **C. CDN (Content Delivery Network) (Incorrect):** CDNs (Cloudflare, Akamai) cache and serve website content from geographically distributed servers for performance. Mirroring creates local copy for analysis, not distributed caching for delivery. CDN is infrastructure service; mirroring is reconnaissance technique.\n\n- **D. Load balancing (Incorrect):** Load balancing distributes traffic across multiple servers for performance and reliability. Mirroring downloads site for offline study, doesn't distribute traffic. Load balancing is infrastructure architecture; mirroring is content copying.\n\n**Reference:** CEH v13 Module 2",
         "type": "single",
         "topic": "Website Mirroring",
@@ -317,8 +427,15 @@
     {
         "id": 26,
         "question": "What is metadata extraction?",
-        "options": ["Extracting hidden info from files (author, dates, software)", "Data mining", "File extraction", "Archive extraction"],
-        "correct": [0],
+        "options": [
+            "Data mining",
+            "File extraction",
+            "Archive extraction",
+            "Extracting hidden info from files (author, dates, software)"
+        ],
+        "correct": [
+            3
+        ],
         "explanation": "**Correct Answer: Extracting hidden info from files (author, dates, software)**\n\nMetadata extraction reveals hidden information embedded in files that authors often forget to remove. According to CEH Module 2: (1) **Documents** - author names, company, software version, edit times, revision history, (2) **Images** - camera model, GPS coordinates, timestamps, software used, (3) **PDFs** - creator, producer application, keywords, (4) **Office files** - usernames, network paths, printer names, (5) **Tools** - exiftool, FOCA, metagoofil, Maltego. Security risk: leaks employee names, internal software, organizational structure, physical locations. Mitigation: scrub metadata before publishing files externally.\n\n**Why other answers are incorrect:**\n\n- **B. Data mining (Incorrect):** Data mining analyzes large datasets to discover patterns and insights using statistics and machine learning. Metadata extraction is reading embedded file properties, not analyzing data patterns. Different scope and techniques.\n\n- **C. File extraction (Incorrect):** File extraction unpacks compressed archives (ZIP, RAR, TAR) to access contained files. Metadata extraction reads properties within files, not extracting files from archives. Different purposes.\n\n- **D. Archive extraction (Incorrect):** Same as file extraction - decompressing archives. Metadata extraction reads embedded properties like author and timestamps, not decompressing containers. This confuses property reading with file decompression.\n\n**Reference:** CEH v13 Module 2",
         "type": "single",
         "topic": "Metadata Extraction",
@@ -327,8 +444,15 @@
     {
         "id": 27,
         "question": "What is people search?",
-        "options": ["Finding personal information about individuals online", "HR recruitment", "Social networking", "Contact management"],
-        "correct": [0],
+        "options": [
+            "HR recruitment",
+            "Finding personal information about individuals online",
+            "Social networking",
+            "Contact management"
+        ],
+        "correct": [
+            1
+        ],
         "explanation": "**Correct Answer: Finding personal information about individuals online**\n\nPeople search engines aggregate personal information from public sources. According to CEH Module 2: (1) public records, voter registrations, property records, (2) social media profiles, (3) phone directories, (4) data brokers. Sites: Pipl, Spokeo, BeenVerified, Whitepages. Reveals: addresses, phone numbers, relatives, employment, criminal records. Used for social engineering, pretexting.\n\n**Why other answers are incorrect:**\n\n- **B. HR recruitment (Incorrect):** HR recruitment is formal hiring process requiring consent. People search is informal OSINT without consent.\n\n- **C. Social networking (Incorrect):** Social networking is building connections on platforms. People search extracts data about individuals.\n\n- **D. Contact management (Incorrect):** Contact management organizes personal contacts. People search discovers unknown individuals' information.\n\n**Reference:** CEH v13 Module 2",
         "type": "single",
         "topic": "People Search",
@@ -337,8 +461,15 @@
     {
         "id": 28,
         "question": "What is reverse image search?",
-        "options": ["Finding image sources and similar images online", "Image editing", "Photo backup", "Image compression"],
-        "correct": [0],
+        "options": [
+            "Image editing",
+            "Photo backup",
+            "Finding image sources and similar images online",
+            "Image compression"
+        ],
+        "correct": [
+            2
+        ],
         "explanation": "**Correct Answer: Finding image sources and similar images online**\n\nReverse image search locates where images appear online and finds similar versions. According to CEH Module 2: Google Images, TinEye, Yandex Images. Upload image to find: original source, other sites using it, higher resolution versions, similar images. Used to: identify people, verify profile authenticity, detect stolen/fake images.\n\n**Why other answers are incorrect:**\n\n- **B. Image editing (Incorrect):** Image editing modifies images. Reverse search FINDS images, doesn't edit them.\n\n- **C. Photo backup (Incorrect):** Photo backup saves images. Reverse search locates where images appear online.\n\n- **D. Image compression (Incorrect):** Compression reduces file size. Reverse search finds image sources online.\n\n**Reference:** CEH v13 Module 2",
         "type": "single",
         "topic": "Reverse Image Search",
@@ -347,8 +478,15 @@
     {
         "id": 29,
         "question": "What is dark web footprinting?",
-        "options": ["Searching dark web for leaked data, threat intel", "Illegal activities", "VPN usage", "Tor browsing"],
-        "correct": [0],
+        "options": [
+            "Illegal activities",
+            "VPN usage",
+            "Searching dark web for leaked data, threat intel",
+            "Tor browsing"
+        ],
+        "correct": [
+            2
+        ],
         "explanation": "**Correct Answer: Searching dark web for leaked data, threat intel**\n\nDark web footprinting searches hidden .onion sites for leaked credentials and stolen data. According to CEH Module 2: requires Tor Browser, searches forums, marketplaces, paste sites. Finds: breached passwords, stolen credit cards, corporate data dumps, hacker discussions, ransomware victim lists. Tools: OnionScan, dark web monitoring. Risks: legal liability, malware, law enforcement monitoring.\n\n**Why other answers are incorrect:**\n\n- **B. Illegal activities (Incorrect):** Dark web CONTAINS illegal content but footprinting is legal monitoring for threat intelligence.\n\n- **C. VPN usage (Incorrect):** VPN encrypts traffic. Dark web specifically uses Tor for .onion sites.\n\n- **D. Tor browsing (Incorrect):** Tor is the TOOL for accessing dark web. Footprinting is the INTELLIGENCE activity using Tor.\n\n**Reference:** CEH v13 Module 2",
         "type": "single",
         "topic": "Dark Web Footprinting",
@@ -357,8 +495,15 @@
     {
         "id": 30,
         "question": "What is BGP reconnaissance?",
-        "options": ["Analyzing Border Gateway Protocol routing info", "Border security", "Gateway configuration", "Protocol analysis"],
-        "correct": [0],
+        "options": [
+            "Border security",
+            "Gateway configuration",
+            "Protocol analysis",
+            "Analyzing Border Gateway Protocol routing info"
+        ],
+        "correct": [
+            3
+        ],
         "explanation": "**Correct Answer: Analyzing Border Gateway Protocol routing info**\n\nBGP reconnaissance analyzes Internet routing to understand network infrastructure. According to CEH Module 2: discovers ASNs (Autonomous System Numbers), IP prefixes, peering relationships. Tools: BGPView, Hurricane Electric, RIPEstat. Reveals: network ownership, ISP connections, Internet topology, upstream/downstream providers. Used for reconnaissance, understanding target infrastructure.\n\n**Why other answers are incorrect:**\n\n- **B. Border security (Incorrect):** Border security is physical/immigration security. BGP recon analyzes Internet routing.\n\n- **C. Gateway configuration (Incorrect):** Gateway configuration sets up network gateways. BGP recon analyzes routing data.\n\n- **D. Protocol analysis (Incorrect):** Protocol analysis examines network protocols. BGP recon specifically uses BGP data for network mapping.\n\n**Reference:** CEH v13 Module 2",
         "type": "single",
         "topic": "BGP Reconnaissance",
@@ -367,8 +512,15 @@
     {
         "id": 31,
         "question": "What is certificate transparency logs?",
-        "options": ["Public logs of all SSL/TLS certificates issued", "Certificate backup", "Certificate validation", "Certificate storage"],
-        "correct": [0],
+        "options": [
+            "Public logs of all SSL/TLS certificates issued",
+            "Certificate backup",
+            "Certificate validation",
+            "Certificate storage"
+        ],
+        "correct": [
+            0
+        ],
         "explanation": "**Correct Answer: Public logs of all SSL/TLS certificates issued**\n\nCertificate Transparency logs are public records of all SSL/TLS certificates issued by CAs. According to CEH Module 2: prevents fraudulent certificates, contains domain names, subdomains, SANs, issuance dates. Search via crt.sh, Censys. Reveals: hidden subdomains, development environments, staging servers, internal infrastructure. Attackers enumerate ALL subdomains ever certified.\n\n**Why other answers are incorrect:**\n\n- **B. Certificate backup (Incorrect):** Backups archive certificates for recovery. CT logs are public transparency records.\n\n- **C. Certificate validation (Incorrect):** Validation verifies certificates during HTTPS connections. CT logs are historical records.\n\n- **D. Certificate storage (Incorrect):** Storage saves certificates on servers. CT logs are public search databases.\n\n**Reference:** CEH v13 Module 2",
         "type": "single",
         "topic": "Certificate Transparency",
@@ -377,8 +529,15 @@
     {
         "id": 32,
         "question": "What is favicon hash reconnaissance?",
-        "options": ["Identifying web technologies by favicon hash", "Icon design", "Website branding", "Image hashing"],
-        "correct": [0],
+        "options": [
+            "Identifying web technologies by favicon hash",
+            "Icon design",
+            "Website branding",
+            "Image hashing"
+        ],
+        "correct": [
+            0
+        ],
         "explanation": "**Correct Answer: Identifying web technologies by favicon hash**\n\nFavicon hash fingerprinting identifies frameworks by computing hash of favicon.ico. According to CEH Module 2: MD5/MurmurHash of favicon generates unique signature, specific frameworks have default favicons with known hashes. Tools: Shodan (http.favicon.hash filter), FavFreak. Reveals framework/CMS even when other identifiers removed. Example: Shodan query finds Jenkins instances.\n\n**Why other answers are incorrect:**\n\n- **B. Icon design (Incorrect):** Icon design creates graphics. Favicon hashing identifies technologies via favicon files.\n\n- **C. Website branding (Incorrect):** Branding is visual identity. Favicon hashing is technology fingerprinting.\n\n- **D. Image hashing (Incorrect):** Generic image hashing. Favicon hashing specifically identifies web technologies.\n\n**Reference:** CEH v13 Module 2",
         "type": "single",
         "topic": "Favicon Hash Recon",
@@ -387,8 +546,15 @@
     {
         "id": 33,
         "question": "What is ASN enumeration?",
-        "options": ["Discovering IP ranges owned by organization via ASN", "Network numbering", "IP allocation", "Route configuration"],
-        "correct": [0],
+        "options": [
+            "Discovering IP ranges owned by organization via ASN",
+            "Network numbering",
+            "IP allocation",
+            "Route configuration"
+        ],
+        "correct": [
+            0
+        ],
         "explanation": "**Correct Answer: Discovering IP ranges owned by organization via ASN**\n\nASN enumeration discovers all IP blocks owned by organization. According to CEH Module 2: finds ASN via WHOIS, enumerates IP prefixes announced by ASN. Tools: whois, BGPView, Team Cymru, RIPEstat. Reveals: complete attack surface, data centers, cloud presence. Maps entire network footprint.\n\n**Why other answers are incorrect:**\n\n- **B. Network numbering (Incorrect):** Generic networking concept. ASN enum specifically discovers IP ranges.\n\n- **C. IP allocation (Incorrect):** IP allocation assigns addresses. ASN enum discovers existing allocations.\n\n- **D. Route configuration (Incorrect):** Route config sets up routing. ASN enum discovers network ownership.\n\n**Reference:** CEH v13 Module 2",
         "type": "single",
         "topic": "ASN Enumeration",
@@ -397,8 +563,15 @@
     {
         "id": 34,
         "question": "What is job posting reconnaissance?",
-        "options": ["Analyzing job listings for technology/infrastructure info", "Job searching", "HR intelligence", "Recruitment"],
-        "correct": [0],
+        "options": [
+            "Analyzing job listings for technology/infrastructure info",
+            "Job searching",
+            "HR intelligence",
+            "Recruitment"
+        ],
+        "correct": [
+            0
+        ],
         "explanation": "**Correct Answer: Analyzing job listings for technology/infrastructure info**\n\nJob posting reconnaissance extracts technical details from employment listings. According to CEH Module 2: LinkedIn Jobs, Indeed, company career pages reveal: specific technologies (AWS, Azure), software versions, security tools (Splunk, CrowdStrike), databases, frameworks, projects. Security implications: exposes technology stack attackers can target. Example: \"Palo Alto firewall experience\" reveals firewall vendor.\n\n**Why other answers are incorrect:**\n\n- **B. Job searching (Incorrect):** Job searching is individuals looking for employment. Job recon is extracting technical intelligence.\n\n- **C. HR intelligence (Incorrect):** HR intel is hiring trends, salary benchmarks. Job recon extracts technical/security details.\n\n- **D. Recruitment (Incorrect):** Recruitment is hiring employees. Job recon is analyzing postings for technology intelligence.\n\n**Reference:** CEH v13 Module 2",
         "type": "single",
         "topic": "Job Posting Recon",
@@ -407,8 +580,15 @@
     {
         "id": 35,
         "question": "What is Google Hacking Database (GHDB)?",
-        "options": ["Database of Google dork queries for finding vulnerabilities", "Google hack", "Database vulnerability", "Search engine"],
-        "correct": [0],
+        "options": [
+            "Database of Google dork queries for finding vulnerabilities",
+            "Google hack",
+            "Database vulnerability",
+            "Search engine"
+        ],
+        "correct": [
+            0
+        ],
         "explanation": "**Correct Answer: Database of Google dork queries for finding vulnerabilities**\n\nGoogle Hacking Database (GHDB), maintained by Offensive Security, is a comprehensive catalog of effective Google dork queries for finding exposed sensitive information and vulnerabilities. According to CEH Module 2, GHDB categorizes dorks by: (1) **Sensitive directories** - exposed admin panels, configuration files, (2) **Files containing passwords** - database dumps, password files, (3) **Vulnerable servers** - systems with known exploits, (4) **Error messages** - revealing system information. Example dork: site:gov filetype:xls \"password\". Used for passive reconnaissance to identify security weaknesses without directly interacting with target.\n\n**Why other answers are incorrect:**\n\n- **B. Google hack (Incorrect):** \"Google hack\" vaguely suggests hacking Google itself or a single hack technique. GHDB is a comprehensive DATABASE cataloging thousands of search queries, not a single hack or attack on Google's infrastructure. This misunderstands the organized, documented nature of GHDB.\n\n- **C. Database vulnerability (Incorrect):** Database vulnerability refers to security weaknesses in database software (SQL injection, misconfiguration). GHDB is a database OF search queries, not a vulnerability IN databases. This confuses the tool with the types of vulnerabilities it helps find.\n\n- **D. Search engine (Incorrect):** GHDB is not a search engine—it's a catalog of searches to perform on existing search engines like Google. GHDB documents WHAT to search for; Google is the search engine that executes the searches. This confuses the query repository with the search platform.\n\n**Reference:** CEH v13 Module 2",
         "type": "single",
         "topic": "Google Hacking Database",
@@ -417,8 +597,15 @@
     {
         "id": 36,
         "question": "What is passive DNS?",
-        "options": ["Historical DNS records database", "DNS server", "Passive mode", "DNS cache"],
-        "correct": [0],
+        "options": [
+            "Historical DNS records database",
+            "DNS server",
+            "Passive mode",
+            "DNS cache"
+        ],
+        "correct": [
+            0
+        ],
         "explanation": "**Correct Answer: Historical DNS records database**\n\nPassive DNS is a database storing historical DNS resolution records collected over time from DNS queries. According to CEH Module 2, passive DNS: (1) records past IP addresses associated with domains, (2) tracks subdomain changes, (3) reveals infrastructure evolution, (4) identifies related domains sharing IPs. Sources: SecurityTrails, VirusTotal, DNSDB, Farsight. Used for: threat intelligence, tracking malware infrastructure, investigating domain history, attribution. Example: discover all IPs a malicious domain resolved to over past year.\n\n**Why other answers are incorrect:**\n\n- **B. DNS server (Incorrect):** DNS servers actively resolve domain queries in real-time. Passive DNS is a HISTORICAL database of past resolutions, not an active resolution service. DNS servers answer queries; passive DNS records history.\n\n- **C. Passive mode (Incorrect):** Passive mode generically means non-intrusive observation. While passive DNS is non-intrusive, it's specifically a historical DNS record database, not just a general operating mode.\n\n- **D. DNS cache (Incorrect):** DNS cache temporarily stores recent lookups for performance. Passive DNS stores LONG-TERM historical records for intelligence. Cache is short-lived; passive DNS is permanent historical archive.\n\n**Reference:** CEH v13 Module 2",
         "type": "single",
         "topic": "Passive DNS",
@@ -427,8 +614,15 @@
     {
         "id": 37,
         "question": "What is SSL/TLS certificate reconnaissance?",
-        "options": ["Analyzing certificates for subdomains and info", "Certificate validation", "SSL setup", "Encryption analysis"],
-        "correct": [0],
+        "options": [
+            "Analyzing certificates for subdomains and info",
+            "Certificate validation",
+            "SSL setup",
+            "Encryption analysis"
+        ],
+        "correct": [
+            0
+        ],
         "explanation": "**Correct Answer: Analyzing certificates for subdomains and info**\n\nSSL/TLS certificate reconnaissance examines digital certificates to extract organizational and infrastructure information. According to CEH Module 2: (1) **Subject Alternative Names (SANs)** - reveal all domains/subdomains covered by certificate, (2) **Organization details** - company name, location from certificate metadata, (3) **Certificate chains** - identify certificate authorities, intermediate CAs, (4) **Serial numbers** - track certificate issuance. Tools: crt.sh (Certificate Transparency), Censys, SSLyze, nmap --script ssl-cert. Passive technique revealing subdomains, related domains, infrastructure without active scanning.\n\n**Why other answers are incorrect:**\n\n- **B. Certificate validation (Incorrect):** Certificate validation verifies authenticity during HTTPS connections (checking signatures, expiration, revocation status). Certificate reconnaissance EXTRACTS intelligence from certificates, not validates them. Validation is security function; reconnaissance is information gathering.\n\n- **C. SSL setup (Incorrect):** SSL setup configures certificates on web servers for HTTPS. Certificate recon ANALYZES existing certificates for intelligence, doesn't configure servers. Setup is administration; recon is investigation.\n\n- **D. Encryption analysis (Incorrect):** Encryption analysis examines cryptographic strength, cipher suites, key lengths. Certificate recon extracts organizational/infrastructure data from certificate metadata. Crypto analysis is technical assessment; certificate recon is OSINT.\n\n**Reference:** CEH v13 Module 2",
         "type": "single",
         "topic": "Certificate Reconnaissance",
@@ -437,8 +631,15 @@
     {
         "id": 38,
         "question": "What is OSINT framework?",
-        "options": ["Collection of OSINT tools and resources organized by category", "Intelligence framework", "Security framework", "Data framework"],
-        "correct": [0],
+        "options": [
+            "Collection of OSINT tools and resources organized by category",
+            "Intelligence framework",
+            "Security framework",
+            "Data framework"
+        ],
+        "correct": [
+            0
+        ],
         "explanation": "**Correct Answer: Collection of OSINT tools and resources organized by category**\n\nOSINT Framework (osintframework.com) is a web-based collection organizing hundreds of OSINT tools and resources by category for easy discovery. According to CEH Module 2, categories include: (1) **Username** - search engines for finding users across platforms, (2) **Email** - email verification, harvesting tools, (3) **Domain** - WHOIS, DNS, subdomain enumeration, (4) **Social Media** - platform-specific search tools, (5) **Phone Numbers** - reverse lookup, carrier identification. Presented as interactive visual mind map. Free resource, constantly updated by community. Serves as starting point for reconnaissance, helping investigators find right tool for specific task.\n\n**Why other answers are incorrect:**\n\n- **B. Intelligence framework (Incorrect):** Intelligence framework suggests analytical methodology or theoretical structure. OSINT Framework is a practical TOOL CATALOG with links to resources, not a conceptual framework or analytical model.\n\n- **C. Security framework (Incorrect):** Security frameworks (NIST CSF, ISO 27001) provide security governance structure. OSINT Framework is a tool directory for reconnaissance, not a compliance or security management framework.\n\n- **D. Data framework (Incorrect):** Data framework suggests data structure or data management architecture. OSINT Framework organizes TOOLS, not data. It's a resource directory, not a data architecture.\n\n**Reference:** CEH v13 Module 2",
         "type": "single",
         "topic": "OSINT Framework",
@@ -447,8 +648,15 @@
     {
         "id": 39,
         "question": "What is breach data reconnaissance?",
-        "options": ["Searching data breaches for target credentials", "Data breach", "Security breach", "Password leak"],
-        "correct": [0],
+        "options": [
+            "Searching data breaches for target credentials",
+            "Data breach",
+            "Security breach",
+            "Password leak"
+        ],
+        "correct": [
+            0
+        ],
         "explanation": "**Correct Answer: Searching data breaches for target credentials**\n\nBreach data reconnaissance searches leaked databases and data breaches for target organization's compromised credentials and sensitive information. According to CEH Module 2: (1) **Breach databases** - HaveIBeenPwned, Dehashed, IntelX, BreachDirectory, (2) **Finds** - employee emails, passwords, personal information, corporate data, (3) **Uses** - password spraying attacks (testing leaked passwords), social engineering preparation, credential stuffing, (4) **Monitoring** - organizational exposure assessment, identifying compromised accounts. Example: searching company.com in HaveIBeenPwned reveals 500 employee emails in past breaches with associated passwords.\n\n**Why other answers are incorrect:**\n\n- **B. Data breach (Incorrect):** Data breach is the SECURITY INCIDENT itself (unauthorized data access/theft). Breach data reconnaissance is the INVESTIGATION activity searching breaches for specific targets. Breach is the event; recon is the intelligence gathering.\n\n- **C. Security breach (Incorrect):** Security breach is generic term for security violations. Breach data reconnaissance specifically searches LEAKED DATA from past breaches for intelligence, not the breach event itself.\n\n- **D. Password leak (Incorrect):** Password leak is one TYPE of data in breaches. Breach data recon searches for all compromised information (emails, passwords, personal data, documents), not just passwords. This is too narrow.\n\n**Reference:** CEH v13 Module 2",
         "type": "single",
         "topic": "Breach Data Recon",
