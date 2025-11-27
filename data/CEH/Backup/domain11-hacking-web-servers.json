@@ -1,0 +1,130 @@
+[
+  {
+    "id": 5,
+    "pdf_number": 6,
+    "question": "What are common files on a web server that can be misconfigured and provide useful information for a hacker such as verbose error messages?",
+    "options": [
+      "httpd.conf",
+      "administration.config",
+      "php.ini",
+      "idq.dll"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 11
+  },
+  {
+    "id": 44,
+    "pdf_number": 47,
+    "question": "Larry, a security professional in an organization, has noticed some abnormalities in the user accounts on a web server. To thwart evolving attacks, he decided to harden the security of the web server by adopting a few countermeasures to secure the accounts on the web server. Which of the following countermeasures must Larry implement to secure the user accounts on the web server?",
+    "options": [
+      "Retain all unused modules and application extensions.",
+      "Limit the administrator or root-level access to the minimum number of users.",
+      "Enable all non-interactive accounts that should exist but do not require interactive login.",
+      "Enable unused default user accounts created during the installation of an OS."
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 11
+  },
+  {
+    "id": 152,
+    "pdf_number": 156,
+    "question": "During your summer internship at a tech company, you have been asked to review the security settings of their web server. While inspecting, you notice the server reveals detailed error messages to users, including database query errors and internal server errors. As a cybersecurity beginner, what is your understanding of this setting, and how would you advise the company?",
+    "options": [
+      "Retain the setting as it aids in troubleshooting user issues.",
+      "Suppress detailed error messages, as they can expose sensitive information.",
+      "Implement stronger encryption to secure the error messages.",
+      "Increase the frequency of automated server backups."
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 11
+  },
+  {
+    "id": 174,
+    "pdf_number": 178,
+    "question": "In your cybersecurity class, you are learning about common security risks associated with web servers. One topic that comes up is the risk posed by using default server settings. Why is using default settings on a web server considered a security risk, and what would be the best initial step to mitigate this risk?",
+    "options": [
+      "Default settings allow unlimited login attempts; setup account lockout",
+      "Default settings reveal server software type; change these settings",
+      "Default settings cause server malfunctions; simplify the settings",
+      "Default settings enable auto-updates; disable and manually patch"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 11
+  },
+  {
+    "id": 184,
+    "pdf_number": 188,
+    "question": "As a security consultant, you are tasked with evaluating a client's web server security. During your investigation, you found that the server is configured to use the default HTTP error messages which include the server version and other potentially useful information. What is the most significant risk associated with this configuration, and what would be your primary recommendation to mitigate this risk?",
+    "options": [
+      "The error messages could be exploited for XSS attacks; sanitize error messages.",
+      "The error messages could slow down server response time; customize error pages to be more efficient.",
+      "The error messages could reveal sensitive server information; configure the server to use custom error pages.",
+      "The error messages could confuse users; design more user-friendly error pages."
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 11
+  },
+  {
+    "id": 185,
+    "pdf_number": 189,
+    "question": "As part of a college project, you have set up a web server for hosting your team's application. Given your interest in cybersecurity, you have taken the lead in securing the server. You are aware that hackers often attempt to exploit server misconfigurations. Which of the following actions would best protect your web server from potential misconfiguration-based attacks?",
+    "options": [
+      "Regularly backing up server data",
+      "Enabling multi-factor authentication for users",
+      "Implementing a firewall to filter traffic",
+      "Performing regular server configuration audits"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 11
+  },
+  {
+    "id": 192,
+    "pdf_number": 196,
+    "question": "You have been given the responsibility to ensure the security of your school's web server. As a step towards this, you plan to restrict unnecessary services running on the server. In the context of web server security, why is this step considered important?",
+    "options": [
+      "Unnecessary services eat up server memory; save memory resources.",
+      "Unnecessary services could contain vulnerabilities; minimize the attack surface.",
+      "Unnecessary services reveal server software; hide software details.",
+      "Unnecessary services slow down the server; optimize server speed."
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 11
+  },
+  {
+    "id": 215,
+    "pdf_number": 219,
+    "question": "You have been hired as an intern at a start-up company. Your first task is to help set up a basic web server for the company's new website. The team leader has asked you to make sure the server is secure from common threats. Based on your knowledge from studying for the CEH exam, which of the following actions should be your priority to secure the web server?",
+    "options": [
+      "Limiting the number of concurrent connections to the server",
+      "Installing a web application firewall",
+      "Regularly updating and patching the server software",
+      "Encrypting the company's website with SSL/TLS"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 11
+  }
+]

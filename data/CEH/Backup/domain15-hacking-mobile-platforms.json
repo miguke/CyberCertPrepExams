@@ -1,0 +1,178 @@
+[
+  {
+    "id": 21,
+    "pdf_number": 22,
+    "question": "Bobby, an attacker, targeted a user and decided to hijack and intercept all their wireless communications. He installed a fake communication tower between two authentic endpoints to mislead the victim. Bobby used this virtual tower to interrupt the data transmission between the user and real tower, attempting to hijack an active session. Upon receiving the user's request, Bobby manipulated the traffic with the virtual tower and redirected the victim to a malicious website. What is the attack performed by Bobby in the above scenario?",
+    "options": [
+      "aLTEr attack",
+      "Jamming signal attack",
+      "Wardriving",
+      "KRACK attack"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 15
+  },
+  {
+    "id": 47,
+    "pdf_number": 50,
+    "question": "Don, a student, came across a gaming app in a third-party app store and installed it. Subsequently, all the legitimate apps in his smartphone were replaced by deceptive applications that appeared legitimate. He also received many advertisements on his smartphone after installing the app. What is the attack performed on Don in the above scenario?",
+    "options": [
+      "SIM card attack",
+      "Clickjacking",
+      "SMS phishing attack",
+      "Agent Smith attack"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 15
+  },
+  {
+    "id": 62,
+    "pdf_number": 65,
+    "question": "Which IOS jailbreaking technique patches the kernel during the device boot so that it becomes jailbroken after each successive reboot?",
+    "options": [
+      "Tethered jailbreaking",
+      "Semi-untethered jailbreaking",
+      "Semi-tethered jailbreaking",
+      "Untethered jailbreaking"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 15
+  },
+  {
+    "id": 98,
+    "pdf_number": 102,
+    "question": "What is the file that determines the basic configuration (specifically activities, services, broadcast receivers, etc.) in an Android application?",
+    "options": [
+      "AndroidManifest.xml",
+      "classes.dex",
+      "APK.info",
+      "resources.asrc"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 15
+  },
+  {
+    "id": 135,
+    "pdf_number": 139,
+    "question": "You are a cybersecurity consultant for a global organization. The organization has adopted a Bring Your Own Device (BYOD) policy, but they have recently experienced a phishing incident where an employee's device was compromised. In the investigation, you discovered that the phishing attack occurred through a third-party email app that the employee had installed. Given the need to balance security and user autonomy under the BYOD policy, how should the organization mitigate the risk of such incidents? Moreover, consider a measure that would prevent similar attacks without overly restricting the use of personal devices.",
+    "options": [
+      "Provide employees with corporate-owned devices for work-related tasks.",
+      "Require all employee devices to use a company-provided VPN for internet access.",
+      "Implement a mobile device management solution that restricts the installation of non-approved applications.",
+      "Conduct regular cybersecurity awareness training, focusing on phishing attacks."
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 15
+  },
+  {
+    "id": 162,
+    "pdf_number": 166,
+    "question": "As a cybersecurity analyst for a large corporation, you are auditing the company's mobile device management (MDM) policy. One of your areas of concern is data leakage from company-provided smartphones. You are worried about employees unintentionally installing malicious apps that could access sensitive corporate data on their devices. Which of the following would be an effective measure to prevent such data leakage?",
+    "options": [
+      "Require biometric authentication for unlocking devices.",
+      "Regularly change Wi-Fi passwords used by the devices.",
+      "Mandate the use of VPNs when accessing corporate data.",
+      "Enforce a policy that only allows app installations from approved corporate app stores."
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 15
+  },
+  {
+    "id": 209,
+    "pdf_number": 213,
+    "question": "As the chief security officer at SecureMobile, you are overseeing the development of a mobile banking application. You are aware of the potential risks of man-in-the-middle (MitM) attacks where an attacker might intercept communication between the app and the bank's servers. Recently, you have learned about a technique used by attackers where they use rogue Wi-Fi hotspots to conduct MitM attacks. To prevent this type of attack, you plan to implement a security feature in the mobile app. What should this feature accomplish?",
+    "options": [
+      "It should require two-factor authentication for user logins.",
+      "It should prevent the app from communicating over a network if it detects a rogue access point.",
+      "It should prevent the app from connecting to any unencrypted Wi-Fi networks.",
+      "It should require users to change their password every 30 days."
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 15
+  },
+  {
+    "id": 231,
+    "pdf_number": 235,
+    "question": "As a cybersecurity analyst for SecureNet, you are performing a security assessment of a new mobile payment application. One of your primary concerns is the secure storage of customer data on the device. The application stores sensitive information such as credit card details and personal identification numbers (PINs) on the device. Which of the following measures would best ensure the security of this data?",
+    "options": [
+      "Enable GPS tracking for all devices using the app.",
+      "Regularly update the app to the latest version.",
+      "Encrypt all sensitive data stored on the device.",
+      "Implement biometric authentication for app access."
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 15
+  },
+  {
+    "id": 259,
+    "pdf_number": 263,
+    "question": "Jacob works as a system administrator in an organization. He wants to extract the source code of a mobile application and disassemble the application to analyze its design flaws. Using this technique, he wants to fix any bugs in the application, discover underlying vulnerabilities, and improve defense strategies against attacks. What is the technique used by Jacob in the above scenario to improve the security of the mobile application?",
+    "options": [
+      "Reverse engineering",
+      "App sandboxing",
+      "Jailbreaking",
+      "Social engineering"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 15
+  },
+  {
+    "id": 290,
+    "pdf_number": 294,
+    "question": "Jake, a professional hacker, installed spyware on a target iPhone to spy on the target user's activities. He can take complete control of the target mobile device by jailbreaking the device remotely and record audio, capture screenshots, and monitor all phone calls and SMS messages. What is the type of spyware that Jake used to infect the target device?",
+    "options": [
+      "DroidSheep",
+      "Androrat",
+      "Trident",
+      "Zscaler"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 15
+  },
+  {
+    "id": 292,
+    "pdf_number": 296,
+    "question": "Kate dropped her phone and subsequently encountered an issue with the phone's internal speaker. Thus, she is using the phone's loudspeaker for phone calls and other activities. Bob, an attacker, takes advantage of this vulnerability and secretly exploits the hardware of Kate's phone so that he can monitor the loudspeaker's output from data sources such as voice assistants, multimedia messages, and audio files by using a malicious app to breach speech privacy. What is the type of attack Bob performed on Kate in the above scenario?",
+    "options": [
+      "SIM card attack",
+      "aLTEr attack",
+      "Spearphone attack",
+      "Man-in-the-disk attack"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 15
+  }
+]

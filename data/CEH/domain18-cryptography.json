@@ -1,0 +1,306 @@
+[
+  {
+    "id": 1,
+    "pdf_number": 1,
+    "question": "In this form of encryption algorithm, every individual block contains 64-bit data, and three keys are used, where each key consists of 56 bits. Which is this encryption algorithm?",
+    "options": [
+      "IDEA",
+      "Triple Data Encryption Standard",
+      "AES",
+      "MD5 encryption algorithm"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 18
+  },
+  {
+    "id": 25,
+    "pdf_number": 26,
+    "question": "What piece of hardware on a computer's motherboard generates encryption keys and only releases a part of the key so that decrypting a disk on a new piece of hardware is not possible?",
+    "options": [
+      "CPU",
+      "UEFI",
+      "GPU",
+      "TPM"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 18
+  },
+  {
+    "id": 33,
+    "pdf_number": 34,
+    "question": "Dorian is sending a digitally signed email to Poly. With which key is Dorian signing this message and how is Poly validating it?",
+    "options": [
+      "Dorian is signing the message with his public key, and Poly will verify that the message came from Dorian by using Dorian's private key.",
+      "Dorian is signing the message with Poly's private key, and Poly will verify that the message came from Dorian by using Dorian's public key.",
+      "Dorian is signing the message with his private key, and Poly will verify that the message came from Dorian by using Dorian's public key.",
+      "Dorian is signing the message with Poly's public key, and Poly will verify that the message came from Dorian by using Dorian's public key."
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 18
+  },
+  {
+    "id": 38,
+    "pdf_number": 40,
+    "question": "Bella, a security professional working at an IT firm, finds that a security breach has occurred while transferring important files. Sensitive data, employee usernames, and passwords are shared in plaintext, paving the way for hackers to perform successful session hijacking. To address this situation, Bella implemented a protocol that sends data using encryption and digital certificates. Which of the following protocols is used by Bella?",
+    "options": [
+      "FTPS",
+      "FTP",
+      "HTTPS",
+      "IP"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 18
+  },
+  {
+    "id": 39,
+    "pdf_number": 41,
+    "question": "John wants to send Marie an email that includes sensitive information, and he does not trust the network that he is connected to. Marie gives him the idea of using PGP. What should John do to communicate correctly using this type of encryption?",
+    "options": [
+      "Use his own private key to encrypt the message.",
+      "Use his own public key to encrypt the message.",
+      "Use Marie's private key to encrypt the message.",
+      "Use Marie's public key to encrypt the message."
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 18
+  },
+  {
+    "id": 48,
+    "pdf_number": 51,
+    "question": "Samuel, a security administrator, is assessing the configuration of a web server. He noticed that the server permits SSLv2 connections, and the same private key certificate is used on a different server that allows SSLv2 connections. This vulnerability makes the web server vulnerable to attacks as the SSLv2 server can leak key information. Which of the following attacks can be performed by exploiting the above vulnerability?",
+    "options": [
+      "Padding oracle attack",
+      "DROWN attack",
+      "DUHK attack",
+      "Side-channel attack"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 18
+  },
+  {
+    "id": 54,
+    "pdf_number": 57,
+    "question": "This form of encryption algorithm is a symmetric key block cipher that is characterized by a 128-bit block size, and its key size can be up to 256 bits. Which among the following is this encryption algorithm?",
+    "options": [
+      "HMAC encryption algorithm",
+      "Twofish encryption algorithm",
+      "IDEA",
+      "Blowfish encryption algorithm"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 18
+  },
+  {
+    "id": 97,
+    "pdf_number": 101,
+    "question": "Alice needs to send a confidential document to her coworker, Bryan. Their company has public key infrastructure set up. Therefore, Alice both encrypts the message and digitally signs it. Alice uses _______________ to encrypt the message, and Bryan uses _______________ to confirm the digital signature.",
+    "options": [
+      "Bryan's public key; Bryan's public key",
+      "Alice's public key; Alice's public key",
+      "Bryan's private key; Alice's public key",
+      "Bryan's public key; Alice's public key"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 18
+  },
+  {
+    "id": 153,
+    "pdf_number": 157,
+    "question": "You are the chief security officer at AlphaTech, a tech company that specializes in data storage solutions. Your company is developing a new cloud storage platform where users can store their personal files. To ensure data security, the development team is proposing to use symmetric encryption for data at rest. However, they are unsure of how to securely manage and distribute the symmetric keys to users. Which of the following strategies would you recommend to them?",
+    "options": [
+      "Use hash functions to distribute the keys.",
+      "Use HTTPS protocol for secure key transfer.",
+      "Use digital signatures to encrypt the symmetric keys.",
+      "Implement the Diffie-Hellman protocol for secure key exchange."
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 18
+  },
+  {
+    "id": 160,
+    "pdf_number": 164,
+    "question": "You are the lead cybersecurity analyst at a multinational corporation that uses a hybrid encryption system to secure inter-departmental communications. The system uses RSA encryption for key exchange and AES for data encryption, taking advantage of the strengths of both asymmetric and symmetric encryption. Each RSA key pair has a size of 'n' bits, with larger keys providing more security at the cost of slower performance. The time complexity of generating an RSA key pair is O(n^2), and AES encryption has a time complexity of O(n). An attacker has developed a quantum algorithm with time complexity O((log n)^2) to crack RSA encryption. Given 'n=4000' and variable 'AES key size', which scenario is likely to provide the best balance of security and performance?",
+    "options": [
+      "AES key size=128 bits: This configuration provides less security than option A, but RSA key generation and AES encryption will be faster.",
+      "AES key size=256 bits: This configuration provides a high level of security, but RSA key generation may be slow.",
+      "AES key size=192 bits: This configuration is a balance between options A and B, providing moderate security and performance.",
+      "AES key size=512 bits: This configuration provides the highest level of security but at a significant performance cost due to the large AES key size."
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 18
+  },
+  {
+    "id": 212,
+    "pdf_number": 216,
+    "question": "As a security consultant, you've been asked to evaluate the security of a company's web application. During your investigation, you discover that the application uses a weak encryption algorithm for storing user passwords in its database. You inform the company about this vulnerability and recommend implementing a stronger hashing algorithm. Which of the following should you recommend for storing passwords securely?",
+    "options": [
+      "MD5",
+      "SHA-1",
+      "bcrypt",
+      "DES"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 18
+  },
+  {
+    "id": 230,
+    "pdf_number": 234,
+    "question": "As a cybersecurity consultant for SafePath Corp, you have been tasked with implementing a system for secure email communication. The key requirement is to ensure both confidentiality and non-repudiation. While considering various encryption methods, you are inclined towards using a combination of symmetric and asymmetric cryptography. However, you are unsure which cryptographic technique would best serve the purpose. Which of the following options would you choose to meet these requirements?",
+    "options": [
+      "Apply asymmetric encryption with RSA and use the private key for signing.",
+      "Use the Diffie-Hellman protocol for key exchange and encryption.",
+      "Apply asymmetric encryption with RSA and use the public key for encryption.",
+      "Use symmetric encryption with the AES algorithm."
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 18
+  },
+  {
+    "id": 235,
+    "pdf_number": 239,
+    "question": "Your company, SecureTech Inc., is planning to transmit some sensitive data over an unsecured communication channel. As a cyber security expert, you decide to use symmetric key encryption to protect the data. However, you must also ensure the secure exchange of the symmetric key. Which of the following protocols would you recommend to the team to achieve this?",
+    "options": [
+      "Switching all data transmission to the HTTPS protocol.",
+      "Implementing SSL certificates on your company's web servers.",
+      "Utilizing SSH for secure remote logins to the servers.",
+      "Applying the Diffie-Hellman protocol to exchange the symmetric key."
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 18
+  },
+  {
+    "id": 254,
+    "pdf_number": 258,
+    "question": "Jane is working as a security professional at CyberSol Inc. She was tasked with ensuring the authentication and integrity of messages being transmitted in the corporate network. To encrypt the messages, she implemented a security model in which every user in the network maintains a ring of public keys. In this model, a user needs to encrypt a message using the receiver's public key, and only the receiver can decrypt the message using their private key. What is the security model implemented by Jane to secure corporate messages?",
+    "options": [
+      "Zero trust network",
+      "Secure Socket Layer (SSL)",
+      "Transport Layer Security (TLS)",
+      "Web of trust (WOT)"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 18
+  },
+  {
+    "id": 258,
+    "pdf_number": 262,
+    "question": "Tony wants to integrate a 128-bit symmetric block cipher with key sizes of 128, 192, or 256 bits into a software program, which involves 32 rounds of computational operations that include substitution and permutation operations on four 32-bit word blocks using 8-variable S-boxes with 4-bit entry and 4-bit exit. Which of the following algorithms includes all the above features and can be integrated by Tony into the software program?",
+    "options": [
+      "CAST-128",
+      "RC5",
+      "TEA",
+      "Serpent"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 18
+  },
+  {
+    "id": 269,
+    "pdf_number": 273,
+    "question": "Sam, a web developer, was instructed to incorporate a hybrid encryption software program into a web application to secure email messages. Sam used an encryption software, which is a free implementation of the OpenPGP standard that uses both symmetric-key cryptography and asymmetric-key cryptography for improved speed and secure key exchange. What is the encryption software employed by Sam for securing the email messages?",
+    "options": [
+      "PGP",
+      "SMTP",
+      "GPG",
+      "S/MIME"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 18
+  },
+  {
+    "id": 289,
+    "pdf_number": 293,
+    "question": "Kevin, an encryption specialist, implemented a technique that enhances the security of keys used for encryption and authentication. Using this technique, Kevin input an initial key to an algorithm that generated an enhanced key that is resistant to brute-force attacks. What is the technique employed by Kevin to improve the security of encryption keys?",
+    "options": [
+      "Key stretching",
+      "Public key infrastructure",
+      "Key derivation function",
+      "Key reinstallation"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 18
+  },
+  {
+    "id": 295,
+    "pdf_number": 299,
+    "question": "BitLocker encryption has been implemented for all the Windows-based computers in an organization. You are concerned that someone might lose their cryptographic key. Therefore, a mechanism was implemented to recover the keys from Active Directory. What is this mechanism called in cryptography?",
+    "options": [
+      "Key archival",
+      "Certificate rollover",
+      "Key escrow",
+      "Key renewal"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 18
+  },
+  {
+    "id": 301,
+    "pdf_number": 305,
+    "question": "Harper, a software engineer, is developing an email application. To ensure the confidentiality of email messages, Harper uses a symmetric-key block cipher having a classical 12- or 16-round Feistel network with a block size of 64 bits for encryption, which includes large 8 × 32-bit S-boxes (S1, S2, S3, S4) based on bent functions, modular addition and subtraction, key-dependent rotation, and XOR operations. This cipher also uses a masking key (Km1) and a rotation key (Kr1) for performing its functions. What is the algorithm employed by Harper to secure the email messages?",
+    "options": [
+      "CAST-128",
+      "AES",
+      "GOST block cipher",
+      "DES"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 18
+  }
+]

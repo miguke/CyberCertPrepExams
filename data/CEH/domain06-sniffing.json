@@ -1,0 +1,146 @@
+[
+  {
+    "id": 17,
+    "pdf_number": 18,
+    "question": "Robin, a professional hacker, targeted an organization's network to sniff all the traffic. During this process, Robin plugged in a rogue switch to an unused port in the LAN with a priority lower than any other switch in the network so that he could make it a root bridge that will later allow him to sniff all the traffic in the network. What is the attack performed by Robin in the above scenario?",
+    "options": [
+      "ARP spoofing attack",
+      "STP attack",
+      "DNS poisoning attack",
+      "VLAN hopping attack"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 6
+  },
+  {
+    "id": 41,
+    "pdf_number": 43,
+    "question": "Bill is a network administrator. He wants to eliminate unencrypted traffic inside his company's network. He decides to setup a SPAN port and capture all traffic to the datacenter. He immediately discovers unencrypted traffic in port UDP 161. What protocol is this port using and how can he secure that traffic?",
+    "options": [
+      "RPC and the best practice is to disable RPC completely.",
+      "SNMP and he should change it to SNMP V3.",
+      "SNMP and he should change it to SNMP V2, which is encrypted.",
+      "It is not necessary to perform any actions, as SNMP is not carrying important information."
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 6
+  },
+  {
+    "id": 89,
+    "pdf_number": 93,
+    "question": "You are using a public Wi-Fi network inside a coffee shop. Before surfing the web, you use your VPN to prevent intruders from sniffing your traffic. If you did not have a VPN, how would you identify whether someone is performing an ARP spoofing attack on your laptop?",
+    "options": [
+      "You should check your ARP table and see if there is one IP address with two different MAC addresses.",
+      "You should scan the network using Nmap to check the MAC addresses of all the hosts and look for duplicates.",
+      "You should use netstat to check for any suspicious connections with another IP address within the LAN.",
+      "You cannot identify such an attack and must use a VPN to protect your traffic."
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 6
+  },
+  {
+    "id": 95,
+    "pdf_number": 99,
+    "question": "Garry is a network administrator in an organization. He uses SNMP to manage networked devices from a remote location. To manage nodes in the network, he uses MIB, which contains formal descriptions of all network objects managed by SNMP. He accesses the contents of MIB by using a web browser either by entering the IP address and Lseries.mib or by entering the DNS library name and Lseries.mib. He is currently retrieving information from an MIB that contains object types for workstations and server services. Which of the following types of MIB is accessed by Garry in the above scenario?",
+    "options": [
+      "LNMIB2.MIB",
+      "DHCP.MIB",
+      "MIB_II.MIB",
+      "WINS.MIB"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 6
+  },
+  {
+    "id": 208,
+    "pdf_number": 212,
+    "question": "A large corporate network is being subjected to repeated sniffing attacks. To increase security, the company's IT department decides to implement a combination of several security measures. They permanently add the MAC address of the gateway to the ARP cache, switch to using IPv6 instead of IPv4, implement the use of encrypted sessions such as SSH instead of Telnet, and use Secure File Transfer Protocol instead of FTP. However, they are still faced with the threat of sniffing. Considering the countermeasures, what should be their next step to enhance network security?",
+    "options": [
+      "Use HTTP instead of HTTPS for protecting usernames and passwords",
+      "Implement network scanning and monitoring tools",
+      "Enable network identification broadcasts",
+      "Retrieve MAC addresses from the OS"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 6
+  },
+  {
+    "id": 224,
+    "pdf_number": 228,
+    "question": "In a large organization, a network security analyst discovered a series of packet captures that seem unusual. The network operates on a switched Ethernet environment. The security team suspects that an attacker might be using a sniffer tool. Which technique could the attacker be using to successfully carry out this attack, considering the switched nature of the network?",
+    "options": [
+      "The attacker might be compromising physical security to plug into the network directly.",
+      "The attacker might be implementing MAC flooding to overwhelm the switch's memory.",
+      "The attacker is probably using a Trojan horse with in-built sniffing capability.",
+      "The attacker might be using passive sniffing, as it provides significant stealth advantages."
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 6
+  },
+  {
+    "id": 229,
+    "pdf_number": 233,
+    "question": "Martin, a Certified Ethical Hacker (CEH), is conducting a penetration test on a large enterprise network. He suspects that sensitive information might be leaking out of the network. Martin decides to use network sniffing as part of his testing methodology. Which of the following sniffing techniques should Martin employ to get a comprehensive understanding of the data flowing across the network?",
+    "options": [
+      "Raw Sniffing",
+      "MAC Flooding",
+      "ARP Poisoning",
+      "DNS Poisoning"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 6
+  },
+  {
+    "id": 252,
+    "pdf_number": 256,
+    "question": "Which type of attack attempts to overflow the content-addressable memory (CAM) table in an Ethernet switch?",
+    "options": [
+      "DDoS attack",
+      "Evil twin attack",
+      "DNS cache flooding",
+      "MAC flooding"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 6
+  },
+  {
+    "id": 287,
+    "pdf_number": 291,
+    "question": "Miley, a professional hacker, decided to attack a target organization's network. To perform the attack, she used a tool to send fake ARP messages over the target network to link her MAC address with the target system's IP address. By performing this, Miley received messages directed to the victim's MAC address and further used the tool to intercept steal, modify, and block sensitive communication to the target system. What is the tool employed by Miley to perform the above attack?",
+    "options": [
+      "Wireshark",
+      "BetterCAP",
+      "DerpNSpoof",
+      "Gobbler"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 6
+  }
+]

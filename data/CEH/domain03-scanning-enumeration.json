@@ -1,0 +1,786 @@
+[
+  {
+    "id": 3,
+    "pdf_number": 4,
+    "question": "You are attempting to run an Nmap port scan on a web server. Which of the following commands would result in a scan of common ports with the least amount of noise in order to evade IDS?",
+    "options": [
+      "nmap -A - Pn",
+      "nmap -sP -p-65535 -T5",
+      "nmap -sT -O -T0",
+      "nmap -A --host-timeout 99 -T1"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 10,
+    "pdf_number": 11,
+    "question": "While performing an Nmap scan against a host, Paola determines the existence of a firewall. In an attempt to determine whether the firewall is stateful or stateless, which of the following options would be best to use?",
+    "options": [
+      "-sA",
+      "-sX",
+      "-sT",
+      "-sF"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 11,
+    "pdf_number": 12,
+    "question": "A newly joined employee, Janet, has been allocated an existing system used by a previous employee. Before issuing the system to Janet, it was assessed by Martin, the administrator. Martin found that there were possibilities of compromise through user directories, registries, and other system parameters. He also identified vulnerabilities such as native configuration tables, incorrect registry or file permissions, and software configuration errors. What is the type of vulnerability assessment performed by Martin?",
+    "options": [
+      "Database assessment",
+      "Host-based assessment",
+      "Credentialed assessment",
+      "Distributed assessment"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 13,
+    "pdf_number": 14,
+    "question": "An organization is performing a vulnerability assessment for mitigating threats. James, a pen tester, scanned the organization by building an inventory of the protocols found on the organization's machines to detect which ports are attached to services such as an email server, a web server, or a database server. After identifying the services, he selected the vulnerabilities on each machine and started executing only the relevant tests. What is the type of vulnerability assessment solution that James employed in the above scenario?",
+    "options": [
+      "Service-based solutions",
+      "Product-based solutions",
+      "Tree-based assessment",
+      "Inference-based assessment"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 22,
+    "pdf_number": 23,
+    "question": "John, a professional hacker, targeted an organization that uses LDAP for accessing distributed directory services. He used an automated tool to anonymously query the LDAP service for sensitive information such as usernames, addresses, departmental details, and server names to launch further attacks on the target organization. What is the tool employed by John to gather information from the LDAP service?",
+    "options": [
+      "ike-scan",
+      "Zabasearch",
+      "JXplorer",
+      "EarthExplorer"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 30,
+    "pdf_number": 31,
+    "question": "John, a disgruntled ex-employee of an organization, contacted a professional hacker to exploit the organization. In the attack process, the professional hacker installed a scanner on a machine belonging to one of the victims and scanned several machines on the same network to identify vulnerabilities to perform further exploitation. What is the type of vulnerability assessment tool employed by John in the above scenario?",
+    "options": [
+      "Agent-based scanner",
+      "Network-based scanner",
+      "Cluster scanner",
+      "Proxy scanner"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 37,
+    "pdf_number": 39,
+    "question": "Which of the following commands checks for valid users on an SMTP server?",
+    "options": [
+      "RCPT",
+      "CHK",
+      "VRFY",
+      "EXPN"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 46,
+    "pdf_number": 49,
+    "question": "Allen, a professional pen tester, was hired by XpertTech Solutions to perform an attack simulation on the organization's network resources. To perform the attack, he took advantage of the NetBIOS API and targeted the NetBIOS service. By enumerating NetBIOS, he found that port 139 was open and could see the resources that could be accessed or viewed on a remote system. He came across many NetBIOS codes during enumeration. Identify the NetBIOS code used for obtaining the messenger service running for the logged-in user?",
+    "options": [
+      "<00>",
+      "<20>",
+      "<03>",
+      "<1B>"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 50,
+    "pdf_number": 53,
+    "question": "You are a penetration tester and are about to perform a scan on a specific server. The agreement that you signed with the client contains the following specific condition for the scan: 'The attacker must scan every port on the server several times using a set of spoofed source IP addresses.' Suppose that you are using Nmap to perform this scan. What flag will you use to satisfy this requirement?",
+    "options": [
+      "The -g flag",
+      "The -A flag",
+      "The -f flag",
+      "The -D flag"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 51,
+    "pdf_number": 54,
+    "question": "Jude, a pen tester, examined a network from a hacker's perspective to identify exploits and vulnerabilities accessible to the outside world by using devices such as firewalls, routers, and servers. In this process, he also estimated the threat of network security attacks and determined the level of security of the corporate network. What is the type of vulnerability assessment that Jude performed on the organization?",
+    "options": [
+      "Application assessment",
+      "External assessment",
+      "Passive assessment",
+      "Host-based assessment"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 59,
+    "pdf_number": 62,
+    "question": "Which of the following allows attackers to draw a map or outline the target organization's network infrastructure to know about the actual environment that they are going to hack?",
+    "options": [
+      "Vulnerability analysis",
+      "Malware analysis",
+      "Scanning networks",
+      "Enumeration"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 60,
+    "pdf_number": 63,
+    "question": "Your company was hired by a small healthcare provider to perform a technical assessment on the network. What is the best approach for discovering vulnerabilities on a Windows-based computer?",
+    "options": [
+      "Use the built-in Windows Update tool",
+      "Use a scan tool like Nessus",
+      "Check MITRE.org for the latest list of CVE findings",
+      "Create a disk image of a clean Windows installation"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 71,
+    "pdf_number": 74,
+    "question": "David is a security professional working in an organization, and he is implementing a vulnerability management program in the organization to evaluate and control the risks and vulnerabilities in its IT infrastructure. He is currently executing the process of applying fixes on vulnerable systems to reduce the impact and severity of vulnerabilities. Which phase of the vulnerability-management life cycle is David currently in?",
+    "options": [
+      "Remediation",
+      "Verification",
+      "Risk assessment",
+      "Vulnerability scan"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 80,
+    "pdf_number": 84,
+    "question": "Andrew is an Ethical Hacker who was assigned the task of discovering all the active devices hidden by a restrictive firewall in the IPv4 range in a given target network. Which of the following host discovery techniques must he use to perform the given task?",
+    "options": [
+      "UDP scan",
+      "ARP ping scan",
+      "ACK flag probe scan",
+      "TCP Maimon scan"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 82,
+    "pdf_number": 86,
+    "question": "Henry is a cyber security specialist hired by BlackEye – Cyber Security Solutions. He was tasked with discovering the operating system (OS) of a host. He used the Unicornscan tool to discover the OS of the target system. As a result, he obtained a TTL value, which indicates that the target system is running a Windows OS. Identify the TTL value Henry obtained, which indicates that the target OS is Windows.",
+    "options": [
+      "128",
+      "255",
+      "64",
+      "138"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 91,
+    "pdf_number": 95,
+    "question": "Techno Security Inc. recently hired John as a penetration tester. He was tasked with identifying open ports in the target network and determining whether the ports are online and any firewall rule sets are encountered. John decided to perform a TCP SYN ping scan on the target network. Which of the following Nmap commands must John use to perform the TCP SYN ping scan?",
+    "options": [
+      "nmap -sn -PO < target IP address >",
+      "nmap -sn -PS < target IP address >",
+      "nmap -sn -PA < target IP address >",
+      "nmap -sn -PP < target IP address >"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 110,
+    "pdf_number": 114,
+    "question": "Sam is a penetration tester hired by Inception Tech, a security organization. He was asked to perform port scanning on a target host in the network. While performing the given task, Sam sends FIN/ACK probes and determines that an RST packet is sent in response by the target host, indicating that the port is closed. What is the port scanning technique used by Sam to discover open ports?",
+    "options": [
+      "Xmas scan",
+      "IDLE/IPID header scan",
+      "TCP Maimon scan",
+      "ACK flag probe scan"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 115,
+    "pdf_number": 119,
+    "question": "Morris, a professional hacker, performed a vulnerability scan on a target organization by sniffing the traffic on the network to identify the active systems, network services, applications, and vulnerabilities. He also obtained the list of the users who are currently accessing the network. What is the type of vulnerability assessment that Morris performed on the target organization?",
+    "options": [
+      "Credentialed assessment",
+      "Internal assessment",
+      "External assessment",
+      "Passive assessment"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 117,
+    "pdf_number": 121,
+    "question": "During the enumeration phase, Lawrence performs banner grabbing to obtain information such as OS details and versions of services running. The service that he enumerated runs directly on TCP port 445. Which of the following services is enumerated by Lawrence in this scenario?",
+    "options": [
+      "Remote procedure call (RPC)",
+      "Telnet",
+      "Server Message Block (SMB)",
+      "Network File System (NFS)"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 125,
+    "pdf_number": 129,
+    "question": "A skilled ethical hacker was assigned to perform a thorough OS discovery on a potential target. They decided to adopt an advanced fingerprinting technique and sent a TCP packet to an open TCP port with specific flags enabled. Upon receiving the reply, they noticed the flags were SYN and ECN-Echo. Which test did the ethical hacker conduct and why was this specific approach adopted?",
+    "options": [
+      "Test 3: The test was executed to observe the response of the target system when a packet with URC, PSH, SYN, and FIN flags was sent, thereby identifying the OS",
+      "Test 2: This test was chosen because a TCP packet with no flags enabled is known as a NULL packet and this would allow the hacker to assess the OS of the target",
+      "Test 1: The test was conducted because SYN and ECN-Echo flags enabled to allow the hacker to probe the nature of the response and subsequently determine the OS fingerprint",
+      "Test 6: The hacker selected this test because a TCP packet with the ACK flag enabled sent to a closed TCP port would yield more information about the OS"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 139,
+    "pdf_number": 143,
+    "question": "A Certified Ethical Hacker (CEH) is given the task to perform an LDAP enumeration on a target system. The system is secured and accepts connections only on secure LDAP. The CEH uses Python for the enumeration process. After successfully installing LDAP and establishing a connection with the target, he attempts to fetch details like the domain name and naming context but is unable to receive the expected response. Considering the circumstances, which of the following is the most plausible reason for this situation?",
+    "options": [
+      "The system failed to establish a connection due to an incorrect port number.",
+      "The enumeration process was blocked by the target system's intrusion detection system.",
+      "The secure LDAP connection was not properly initialized due to a lack of 'use_ssl = True' in the server object creation.",
+      "The Python version installed on the CEH's machine is incompatible with the Idap3 library."
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 142,
+    "pdf_number": 146,
+    "question": "You are an ethical hacker tasked with conducting an enumeration of a company's network. Given a Windows system with NetBIOS enabled, port 139 open, and file and printer sharing active, you are about to run some nbtstat commands to enumerate NetBIOS names. The company uses IPv6 for its network. Which of the following actions should you take next?",
+    "options": [
+      "Switch to an enumeration tool that supports IPv6",
+      "Use nbtstat -a followed by the IPv6 address of the target machine",
+      "Use nbtstat -c to get the contents of the NetBIOS name cache",
+      "Utilize Nmap Scripting Engine (NSE) for NetBIOS enumeration"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 143,
+    "pdf_number": 147,
+    "question": "During a red team assessment, a CEH is given a task to perform network scanning on the target network without revealing its IP address. They are also required to find an open port and the services available on the target machine. What scanning technique should they employ, and which command in Zenmap should they use?",
+    "options": [
+      "Use SCTP INIT Scan with the command \"-sY\"",
+      "Use UDP Raw ICMP Port Unreachable Scanning with the command \"-sU\"",
+      "Use the ACK flag probe scanning technique with the command \"-sA\"",
+      "Use the IDLE/IPID header scan technique with the command \"-sI\""
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 146,
+    "pdf_number": 150,
+    "question": "A large organization has recently performed a vulnerability assessment using Nessus Professional, and the security team is now preparing the final report. They have identified a high-risk vulnerability, named XYZ, which could potentially allow unauthorized access to the network. In preparing the report, which of the following elements would NOT be typically included in the detailed documentation for this specific vulnerability?",
+    "options": [
+      "Proof of concept (PoC) of the vulnerability, if possible, to demonstrate its potential impact on the system.",
+      "The total number of high, medium, and low-risk vulnerabilities detected throughout the network.",
+      "The list of all affected systems within the organization that are susceptible to the identified vulnerability.",
+      "The CVE ID of the vulnerability and its mapping to the vulnerability's name, XYZ."
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 150,
+    "pdf_number": 154,
+    "question": "A penetration tester is performing an enumeration on a client's network. The tester has acquired permission to perform enumeration activities. They have identified a remote inter-process communication (IPC) share and are trying to collect more information about it. The tester decides to use a common enumeration technique to collect the desired data. Which of the following techniques would be most appropriate for this scenario?",
+    "options": [
+      "Probe the IPC share by attempting to brute force admin credentials",
+      "Brute force Active Directory",
+      "Extract usernames using email IDs",
+      "Conduct a DNS zone transfer"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 155,
+    "pdf_number": 159,
+    "question": "As a penetration tester, you are conducting a security audit on a company's network. The company uses SNMP for network management. However, you have identified that SNMPv1 and SNMPv2 are in use, which you know are insecure due to their use of community strings for authentication. To demonstrate the risk, you plan to perform an SNMP enumeration attack. Which of the following approaches would you most likely use?",
+    "options": [
+      "Use an SNMP scanning tool to identify devices running SNMP services. Once identified, attempt to brute-force the community strings.",
+      "Leverage a SQL injection attack to gain access to the SNMP management information base (MIB).",
+      "Perform a man-in-the-middle attack to intercept and modify SNMP messages.",
+      "Execute a denial-of-service attack against the SNMP service to disrupt network management operations."
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 168,
+    "pdf_number": 172,
+    "question": "An IT company has just implemented new security controls to their network and system setup. As a Certified Ethical Hacker, your responsibility is to assess the possible vulnerabilities in the new setup. You are given the information that the network and system are adequately patched with the latest updates, and all employees have gone through recent cybersecurity awareness training. Considering the potential vulnerability sources, what is the best initial approach to vulnerability assessment?",
+    "options": [
+      "Conducting social engineering tests to check if employees can be tricked into revealing sensitive information",
+      "Checking for hardware and software misconfigurations to identify any possible loopholes",
+      "Evaluating the network for inherent technology weaknesses prone to specific types of attacks",
+      "Investigating if any ex-employees still have access to the company's system and data"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 169,
+    "pdf_number": 173,
+    "question": "An ethical hacker has been tasked with assessing the security of a major corporation's network. She suspects the network uses default SNMP community strings. To exploit this, she plans to extract valuable network information using SNMP enumeration. Which tool could best help her to get the information without directly modifying any parameters within the SNMP agent's management information base (MIB)?",
+    "options": [
+      "SnmpWalk, with a command to change an OID to a different value",
+      "snmp-check (snmp_enum Module) to gather a wide array of information about the target",
+      "Nmap, with a script to retrieve all running SNMP processes and associated ports",
+      "OpUtils, are mainly designed for device management and not SNMP enumeration"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 173,
+    "pdf_number": 177,
+    "question": "In the process of implementing a network vulnerability assessment strategy for a tech company, the security analyst is confronted with the following scenarios: 1) A legacy application is discovered on the network, which no longer receives updates from the vendor. 2) Several systems in the network are found running outdated versions of web browsers prone to distributed attacks. 3) The network firewall has been configured using default settings and passwords. 4) Certain TCP/IP protocols used in the organization are inherently insecure. The security analyst decides to use vulnerability scanning software. Which of the following limitations of vulnerability assessment should the analyst be most cautious about in this context?",
+    "options": [
+      "Vulnerability scanning software cannot define the impact of an identified vulnerability on different business operations",
+      "Vulnerability scanning software is not immune to software engineering flaws that might lead to serious vulnerabilities being missed",
+      "Vulnerability scanning software is limited in its ability to detect vulnerabilities at a given point in time",
+      "Vulnerability scanning software is limited in its ability to perform live tests on web applications to detect errors or unexpected behavior"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 191,
+    "pdf_number": 195,
+    "question": "A Certified Ethical Hacker (CEH) is analyzing a target network. To do this, he decides to utilize an IDLE/IPID header scan using Nmap. The network analysis reveals that the IPID number increases by 2 after following the steps of an IDLE scan. Based on this information, what can the CEH conclude about the target network?",
+    "options": [
+      "The ports on the target network are open",
+      "The target network has no firewall present",
+      "The ports on the target network are closed",
+      "The target network has a stateful firewall present"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 195,
+    "pdf_number": 199,
+    "question": "An ethical hacker is scanning a target network. They initiate a TCP connection by sending an SYN packet to a target machine and receiving a SYN/ACK packet in response. But instead of completing the three-way handshake with an ACK packet, they send an RST packet. What kind of scan is the ethical hacker likely performing and what is their goal?",
+    "options": [
+      "They are performing an SYN scan to stealthily identify open ports without fully establishing a connection.",
+      "They are performing a network scan to identify live hosts and their IP addresses.",
+      "They are performing a TCP connect scan to identify open ports on the target machine.",
+      "They are performing a vulnerability scan to identify any weaknesses in the target system."
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 197,
+    "pdf_number": 201,
+    "question": "A large e-commerce organization is planning to implement a vulnerability assessment solution to enhance its security posture. They require a solution that imitates the outside view of attackers, performs well-organized inference-based testing, scans automatically against continuously updated databases, and supports multiple networks. Given these requirements, which type of vulnerability assessment solution would be most appropriate?",
+    "options": [
+      "Inference-based assessment solution",
+      "Tree-based assessment approach",
+      "Product-based solution installed on a private network",
+      "Service-based solution offered by an auditing firm"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 198,
+    "pdf_number": 202,
+    "question": "During a penetration testing assignment, a Certified Ethical Hacker (CEH) used a set of scanning tools to create a profile of the target organization. The CEH wanted to scan for live hosts, open ports, and services on a target network. He used Nmap for network inventory and Hping3 for network security auditing. However, he wanted to spoof IP addresses for anonymity during probing. Which command should the CEH use to perform this task?",
+    "options": [
+      "Hping3 -1 10.0.0.25 -ICMP",
+      "Hping3 -2 10.0.0.25-p 80",
+      "Nmap -sS -Pn -n -vw --packet-trace -p- --script discovery -T4",
+      "Hping3 -S 192.168.1.1 -a 192.168.1.254 -p 22 --flood"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 199,
+    "pdf_number": 203,
+    "question": "An ethical hacker is hired to conduct a comprehensive network scan of a large organization that strongly suspects potential intrusions into their internal systems. The hacker decides to employ a combination of scanning tools to obtain a detailed understanding of the network. Which sequence of actions would provide the most comprehensive information about the network's status?",
+    "options": [
+      "Use Hping3 for an ICMP ping scan on the entire subnet, then use Nmap for a SYN scan on identified active hosts, and finally use Metasploit to exploit identified vulnerabilities.",
+      "Start with Hping3 for a UDP scan on random ports, then use Nmap for a version detection scan, and finally use Metasploit to exploit detected vulnerabilities.",
+      "Begin with NetScanTools Pro for a general network scan, then use Nmap for OS detection and version detection, and finally perform an SYN flooding with Hping3.",
+      "Initiate with Nmap for a ping sweep, then use Metasploit to scan for open ports and services, and finally use Hping3 to perform remote OS fingerprinting."
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 202,
+    "pdf_number": 206,
+    "question": "An ethical hacker is performing a network scan to evaluate the security of a company's IT infrastructure. During the scan, he discovers an active host with multiple open ports running various services. The hacker uses TCP communication flags to establish a connection with the host and starts communicating with it. He sends a SYN packet to a port on the host and receives a SYN/ACK packet back. He then sends an ACK packet for the received SYN/ACK packet, which triggers an open connection. Which of the following actions should the ethical hacker perform next?",
+    "options": [
+      "Send a PSH packet to inform the receiving application about the buffered data.",
+      "Conduct a vulnerability scan on the open port to identify any potential weaknesses.",
+      "Scan another port on the same host using the SYN, ACK, and RST flags.",
+      "Send a FIN or RST packet to close the connection."
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 207,
+    "pdf_number": 211,
+    "question": "As a certified ethical hacker, you are tasked with gaining information about an enterprise's internal network. You are permitted to test the network's security using enumeration techniques. You successfully obtain a list of usernames using email IDs and execute a DNS Zone Transfer. Which enumeration technique would be most effective for your next move given that you have identified open TCP ports 25 (SMTP) and 139 (NetBIOS Session Service)?",
+    "options": [
+      "Perform a brute force attack on Microsoft Active Directory to extract valid usernames",
+      "Exploit the NetBIOS Session Service on TCP port 139 to gain unauthorized access to the file system",
+      "Use SNMP to extract usernames given the community strings",
+      "Exploit the NFS protocol on TCP port 2049 to gain control over a remote system"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 218,
+    "pdf_number": 222,
+    "question": "Being a Certified Ethical Hacker (CEH), a company has brought you on board to evaluate the safety measures in place for their network system. The company uses a network time protocol server in the demilitarized zone. During your enumeration, you decide to run a ntptrace command. Given the syntax: ntptrace [-n] [-m maxhosts] [servername/IP_address], which command usage would best serve your objective to find where the NTP server obtains the time from and to trace the list of NTP servers connected to the network?",
+    "options": [
+      "ntptrace -n -m 5192.168.1.1",
+      "ntptrace -m 5192.168.1.1",
+      "ntptrace -n localhost",
+      "ntptrace 192.168.1.1"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 220,
+    "pdf_number": 224,
+    "question": "An ethical hacker is preparing to scan a network to identify live systems. To increase the efficiency and accuracy of his scans, he is considering several different host discovery techniques. He expects several unused IP addresses at any given time, specifically within the private address range of the LAN, but he also anticipates the presence of restrictive firewalls that may conceal active devices. Which scanning method would be most effective in this situation?",
+    "options": [
+      "ICMP ECHO Ping Sweep",
+      "ICMP Timestamp Ping",
+      "TCP SYN Ping",
+      "ARP Ping Scan"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 226,
+    "pdf_number": 230,
+    "question": "Consider a scenario where a Certified Ethical Hacker is attempting to infiltrate a company's network without being detected. The hacker intends to use a stealth scan on a BSD-derived TCP/IP stack, but he suspects that the network security devices may be able to detect SYN packets. Based on this information, which of the following methods should he use to bypass the detection mechanisms and why?",
+    "options": [
+      "Maimon Scan, because it is very similar to NULL, FIN, and Xmas scans, but the probe used here is FIN/ACK",
+      "Xmas Scan, because it can pass through filters undetected, depending on the security mechanisms installed",
+      "TCP Connect/Full-Open Scan, because it completes a three-way handshake with the target machine",
+      "ACK Flag Probe Scan, because it exploits the vulnerabilities within the BSD-derived TCP/IP stack"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 228,
+    "pdf_number": 232,
+    "question": "You are a security analyst of a large IT company and are responsible for maintaining the organization's security posture. You are evaluating multiple vulnerability assessment tools for your network. Given that your network has a hybrid IT environment with on-premise and cloud assets, which tool would be most appropriate considering its comprehensive coverage and visibility, continuous scanning, and ability to monitor unexpected changes before they turn into breaches?",
+    "options": [
+      "GFI LanCuard",
+      "Qualys Vulnerability Management",
+      "Open VAS",
+      "Nessus Professional"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 244,
+    "pdf_number": 248,
+    "question": "Henry is a penetration tester who works for XYZ organization. While performing enumeration on a client organization, he queries the DNS server for a specific cached DNS record. Further, by using this cached record, he determines the sites recently visited by the organization's user. What is the enumeration technique used by Henry on the organization?",
+    "options": [
+      "DNS zone walking",
+      "DNS cache snooping",
+      "DNS cache poisoning",
+      "DNSSEC zone walking"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 249,
+    "pdf_number": 253,
+    "question": "A security analyst uses Zenmap to perform an ICMP timestamp ping scan to acquire information related to the current time from the target host machine. Which of the following Zenmap options must the analyst use to perform the ICMP timestamp ping scan?",
+    "options": [
+      "-Pn",
+      "-PU",
+      "-PP",
+      "-PY"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 251,
+    "pdf_number": 255,
+    "question": "Given below are different steps involved in the vulnerability-management life cycle. 1) Remediation 2) Identify assets and create a baseline 3) Verification 4) Monitor 5) Vulnerability scan 6) Risk assessment. Identify the correct sequence of steps involved in vulnerability management.",
+    "options": [
+      "2 → 5 → 6 → 1 → 3 → 4",
+      "2 → 4 → 5 → 3 → 6 → 1",
+      "2 → 1 → 5 → 6 → 4 → 3",
+      "1 → 2 → 3 → 4 → 5 → 6"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 277,
+    "pdf_number": 281,
+    "question": "What useful information is gathered during a successful Simple Mail Transfer Protocol (SMTP) enumeration?",
+    "options": [
+      "A list of all mail proxy server addresses used by the targeted host.",
+      "The internal command RCPT provides a list of ports open to message traffic.",
+      "The two internal commands VRFY and EXPN provide a confirmation of valid users, email addresses, aliases, and mailing lists.",
+      "Reveals the daily outgoing message limits before mailboxes are locked."
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 281,
+    "pdf_number": 285,
+    "question": "What would be the purpose of running 'wget 192.168.0.15 -q -S' against a web server?",
+    "options": [
+      "Performing content enumeration on the web server to discover hidden folders",
+      "Using wget to perform banner grabbing on the webserver",
+      "Flooding the web server with requests to perform a DoS attack",
+      "Downloading all the contents of the web page locally for further examination"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 282,
+    "pdf_number": 286,
+    "question": "Harris is attempting to identify the OS running on his target machine. He inspected the initial TTL in the IP header and the related TCP window size and obtained the following results: TTL: 64 Window Size: 5840. What the OS running on the target machine?",
+    "options": [
+      "Windows OS",
+      "Mac OS",
+      "Linux OS",
+      "Solaris OS"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 284,
+    "pdf_number": 288,
+    "question": "Jack, a professional hacker, targets an organization and performs vulnerability scanning on the target web server to identify any possible weaknesses, vulnerabilities, and misconfigurations. In this process, Jack uses an automated tool that eases his work and performs vulnerability scanning to find hosts, services, and other vulnerabilities in the target server. Which of the following tools is used by Jack to perform vulnerability scanning?",
+    "options": [
+      "Infoga",
+      "NCollector Studio",
+      "Netsparker",
+      "WebCopier Pro"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 298,
+    "pdf_number": 302,
+    "question": "Which is the first step followed by Vulnerability Scanners for scanning a network?",
+    "options": [
+      "OS Detection",
+      "Firewall detection",
+      "TCP/UDP Port scanning",
+      "Checking if the remote host is alive"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 3
+  },
+  {
+    "id": 299,
+    "pdf_number": 303,
+    "question": "Which Nmap switch helps evade IDS or firewalls?",
+    "options": [
+      "-D",
+      "-n/-R",
+      "-T",
+      "-oN/-oX/-oG"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 3
+  }
+]

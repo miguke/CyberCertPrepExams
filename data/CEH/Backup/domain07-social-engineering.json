@@ -1,0 +1,194 @@
+[
+  {
+    "id": 29,
+    "pdf_number": 30,
+    "question": "Sophia is a shopping enthusiast who spends significant time searching for trendy outfits online. Clark, an attacker, noticed her activities several times and sent a fake email containing a deceptive page link to her social media page displaying all-new and trendy outfits. In excitement, Sophia clicked on the malicious link and logged in to that page using her valid credentials. Which of the following tools is employed by Clark to create the spoofed email?",
+    "options": [
+      "Evilginx",
+      "Slowloris",
+      "PLCinject",
+      "PyLoris"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 7
+  },
+  {
+    "id": 64,
+    "pdf_number": 67,
+    "question": "Attacker Steve targeted an organization's network with the aim of redirecting the company's web traffic to another malicious website. To achieve this goal, Steve performed DNS cache poisoning by exploiting the vulnerabilities in the DNS server software and modified the original IP address of the target website to that of a fake website. What is the technique employed by Steve to gather information for identity theft?",
+    "options": [
+      "Pharming",
+      "Skimming",
+      "Pretexting",
+      "Wardriving"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 7
+  },
+  {
+    "id": 69,
+    "pdf_number": 72,
+    "question": "Jack, a disgruntled ex-employee of Incalsol Ltd., decided to inject fileless malware into Incalsol's systems. To deliver the malware, he used the current employees' email IDs to send fraudulent emails embedded with malicious links that seem to be legitimate. When a victim employee clicks on the link, they are directed to a fraudulent website that automatically loads Flash and triggers the exploit. What is the technique used by Jack to launch the fileless malware on the target systems?",
+    "options": [
+      "In-memory exploits",
+      "Legitimate applications",
+      "Script-based injection",
+      "Phishing"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 7
+  },
+  {
+    "id": 101,
+    "pdf_number": 105,
+    "question": "While browsing his Facebook feed, Matt sees a picture one of his friends posted with the caption, \"Learn more about your friends!\", as well as a number of personal questions. Matt is suspicious and texts his friend, who confirms that he did indeed post it. With assurance that the post is legitimate, Matt responds to the questions on the post. A few days later, Matt's bank account has been accessed, and the password has been changed. What most likely happened?",
+    "options": [
+      "Matt inadvertently provided the answers to his security questions when responding to the post.",
+      "Matt inadvertently provided his password when responding to the post.",
+      "Matt's computer was infected with a keylogger.",
+      "Matt's bank account login information was brute forced."
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 7
+  },
+  {
+    "id": 103,
+    "pdf_number": 107,
+    "question": "Steve, an attacker, created a fake profile on a social media website and sent a request to Stella. Stella was enthralled by Steve's profile picture and the description given for his profile, and she initiated a conversation with him soon after accepting the request. After a few days, Steve started asking about her company details and eventually gathered all the essential information regarding her company. What is the social engineering technique Steve employed in the above scenario?",
+    "options": [
+      "Baiting",
+      "Piggybacking",
+      "Diversion theft",
+      "Honey trap"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 7
+  },
+  {
+    "id": 107,
+    "pdf_number": 111,
+    "question": "Johnson, an attacker, performed online research for the contact details of reputed cybersecurity firms. He found the contact number of sibertech.org and dialed the number, claiming himself to represent a technical support team from a vendor. He warned that a specific server is about to be compromised and requested sibertech.org to follow the provided instructions. Consequently, he prompted the victim to execute unusual commands and install malicious files, which were then used to collect and pass critical information to Johnson's machine. What is the social engineering technique Steve employed in the above scenario?",
+    "options": [
+      "Diversion theft",
+      "Quid pro quo",
+      "Elicitation",
+      "Phishing"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 7
+  },
+  {
+    "id": 144,
+    "pdf_number": 148,
+    "question": "A large corporation is planning to implement preventive measures to counter a broad range of social engineering techniques. The organization has implemented a signature-based IDS, intrusion detection system, to detect known attack payloads and network flow analysis to monitor data entering and leaving the network. The organization is deliberating on the next step. Considering the information provided about various social engineering techniques, what should be the organization's next course of action?",
+    "options": [
+      "Implement endpoint detection and response solution to oversee endpoint activities",
+      "Set up a honeypot to attract potential attackers into a controlled environment for analysis",
+      "Deploy more security personnel to physically monitor key points of access",
+      "Organize regular employee awareness training regarding social engineering techniques and preventive measures"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 7
+  },
+  {
+    "id": 161,
+    "pdf_number": 165,
+    "question": "An experienced cyber attacker has created a fake LinkedIn profile, successfully impersonating a high-ranking official from a well-established company, to execute a social engineering attack. The attacker then connected with other employees within the organization, receiving invitations to exclusive corporate events and gaining access to proprietary project details shared within the network. What advanced social engineering technique has the attacker primarily used to exploit the system and what is the most likely immediate threat to the organization?",
+    "options": [
+      "Whaling and Targeted Attacks",
+      "Pretexting and Network Vulnerability",
+      "Spear Phishing and Spam",
+      "Baiting and Involuntary Data Leakage"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 7
+  },
+  {
+    "id": 166,
+    "pdf_number": 170,
+    "question": "A large organization is investigating a possible identity theft case where an attacker has created a new identity by combining multiple pieces of information from different victims to open a new bank account. The attacker also managed to receive government benefits using a fraudulent identity. Given the circumstances, which type of identity theft is the organization dealing with?",
+    "options": [
+      "Identity Cloning and Concealment",
+      "Child Identity Theft",
+      "Social Identity Theft",
+      "Synthetic Identity Theft"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 7
+  },
+  {
+    "id": 167,
+    "pdf_number": 171,
+    "question": "A company recently experienced a debilitating social engineering attack that led to substantial identity theft. An inquiry found that the employee inadvertently provided critical information during an innocuous phone conversation. Considering the specific guidelines issued by the company to thwart social engineering attacks, which countermeasure would have been the most successful in averting the incident?",
+    "options": [
+      "Conduct comprehensive training sessions for employees on various social engineering methodologies and the risks associated with revealing confidential data.",
+      "Implement a well-documented change management process for modifications related to hardware or software.",
+      "Adopt a robust software policy that restricts the installation of unauthorized applications.",
+      "Reinforce physical security measures to limit access to sensitive zones within the company premises, thereby warding off unauthorized intruders."
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 7
+  },
+  {
+    "id": 272,
+    "pdf_number": 276,
+    "question": "An attacker can employ many methods to perform social engineering against unsuspecting employees, including scareware. What is the best example of a scareware attack?",
+    "options": [
+      "A pop-up appears to a user stating, 'You have won a free cruise! Click here to claim your prize!'",
+      "A banner appears to a user stating, 'Your account has been locked. Click here to reset your password and unlock your account.'",
+      "A pop-up appears to a user stating, 'Your computer may have been infected with spyware. Click here to install an anti-spyware tool to resolve this issue.'",
+      "A banner appears to a user stating, 'Your Amazon order has been delayed. Click here to find out your new delivery date.'"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 7
+  },
+  {
+    "id": 305,
+    "pdf_number": 309,
+    "question": "Which of the following tactics uses malicious code to redirect users' web traffic?",
+    "options": [
+      "Spear-phishing",
+      "Phishing",
+      "Spimming",
+      "Pharming"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 7
+  }
+]

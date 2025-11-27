@@ -1,0 +1,259 @@
+[
+  {
+    "id": 19,
+    "pdf_number": 20,
+    "question": "CyberTech Inc. recently experienced SQL injection attacks on its official website. The company appointed Bob, a security professional, to build and incorporate defensive strategies against such attacks. Bob adopted a practice whereby only a list of entities such as the data type, range, size, and value, which have been approved for secured access, is accepted. What is the defensive technique employed by Bob in the above scenario?",
+    "options": [
+      "Whitelist validation",
+      "Output encoding",
+      "Blacklist validation",
+      "Enforce least privileges"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 13
+  },
+  {
+    "id": 73,
+    "pdf_number": 77,
+    "question": "Ethical hacker Jane Smith is attempting to perform an SQL injection attack. She wants to test the response time of a true or false response and wants to use a second command to determine whether the database will return true or false results for user IDs. Which two SQL injection types would give her the results she is looking for?",
+    "options": [
+      "Out of band and boolean-based",
+      "Union-based and error-based",
+      "Time-based and union-based",
+      "Time-based and boolean-based"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 13
+  },
+  {
+    "id": 83,
+    "pdf_number": 87,
+    "question": "Daniel is a professional hacker who is attempting to perform an SQL injection attack on a target website, www.moviescope.com. During this process, he encountered an IDS that detects SQL injection attempts based on predefined signatures. To evade any comparison statement, he attempted placing characters such as \"'or '1'='1'\" in any basic injection statement such as \"or 1=1.\" Identify the evasion technique used by Daniel in the above scenario.",
+    "options": [
+      "Char encoding",
+      "IP fragmentation",
+      "Variation",
+      "Null byte"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 13
+  },
+  {
+    "id": 84,
+    "pdf_number": 88,
+    "question": "SQL injection (SQLi) attacks attempt to inject SQL syntax into web requests, which may bypass authentication and allow attackers to access and/or modify data attached to a web application. Which of the following SQLi types leverages a database server's ability to make DNS requests to pass data to an attacker?",
+    "options": [
+      "In-band SQLi",
+      "Union-based SQLi",
+      "Out-of-band SQLi",
+      "Time-based blind SQLi"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 13
+  },
+  {
+    "id": 126,
+    "pdf_number": 130,
+    "question": "In an intricate web application architecture using an Oracle database, you, as a security analyst, have identified a potential SQL Injection attack surface. The database consists of 'x' tables, each with 'y' columns. Each table contains 'z' records. An attacker, well-versed in SQL techniques, crafts 'u' SQL payloads, each attempting to extract maximum data from the database. The payloads include 'UNION SELECT' statements and 'DBMS_XSLPROCESSOR.READ2CLOB' to read sensitive files. The attacker aims to maximize the total data extracted 'E=xyz*u'. Assuming 'x=4', 'y=2', and varying 'z' and 'u', which situation is likely to result in the highest extracted data volume?",
+    "options": [
+      "z=600, u=2: The attacker devises 2 SQL payloads, each aimed at tables holding 600 records, affecting all columns across all tables.",
+      "z=550, u=2: Here, the attacker formulates 2 SQL payloads and directs them towards tables containing 550 records, impacting all columns and tables.",
+      "z=500, u=3: The attacker creates 3 SQL payloads and targets tables with 500 records each, exploiting all columns and tables.",
+      "z=400, u=4: The attacker constructs 4 SQL payloads, each focusing on tables with 400 records, influencing all columns of all tables."
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 13
+  },
+  {
+    "id": 131,
+    "pdf_number": 135,
+    "question": "A hacker is attempting to exploit a SQL Injection vulnerability in a web application's login form. The application uses a database with a table named 'users' that has columns 'username' and 'password'. The hacker knows that the SQL query for authentication is SELECT * FROM users WHERE username = '[user_input]' AND password = '[password_input]'. The application has a special character filter that removes common SQL Injection characters like quotes, semicolons, and comment indicators from user inputs before they are inserted into the SQL query, making it resistant to traditional SQL Injection attacks. In this challenging environment, if the hacker still intends to exploit this SQL Injection vulnerability, which strategy is he most likely to employ?",
+    "options": [
+      "The hacker tries to manipulate the 'UNION' keyword in such a way that it triggers a database error, potentially revealing valuable information about the database's structure.",
+      "The hacker switches tactics and resorts to a 'time-based blind' SQL Injection attack, which would force the application to delay its response, thereby revealing information based on the duration of the delay.",
+      "The hacker attempts to bypass the special character filter by encoding his malicious input, which could potentially enable him to successfully inject damaging SQL queries.",
+      "The hacker alters his approach and injects a DROP TABLE' statement, a move that could potentially lead to the loss of vital data stored in the application's database."
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 13
+  },
+  {
+    "id": 132,
+    "pdf_number": 136,
+    "question": "You're the security manager for a tech company that uses a database to store sensitive customer data. You have implemented countermeasures against SQL injection attacks. Recently, you noticed some suspicious activities and suspect an attacker is using SQL injection techniques. The attacker is believed to use different forms of payloads in his SQL queries. In the case of a successful SQL injection attack, which of the following payloads would have the most significant impact?",
+    "options": [
+      "UNION SELECT NULL, NULL, NULL -- : This payload manipulates the UNION SQL operator, enabling the attacker to retrieve data from different database tables",
+      "' OR username LIKE '%': This payload uses the LIKE operator to search for a specific pattern in a column",
+      "' OR '1'='l: This payload manipulates the WHERE clause of an SQL statement, allowing the attacker to view unauthorized data",
+      "' OR 'a'='a; DROP TABLE members; --: This payload combines the manipulation of the WHERE clause with a destructive action, causing data loss"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 13
+  },
+  {
+    "id": 158,
+    "pdf_number": 162,
+    "question": "In a controlled penetration testing exercise, a security analyst is attempting to perform a 'time-based blind' SQL Injection attack on a database. The analyst wants to extract sensitive data by causing deliberate delays in the database responses. The analyst knows that a successful time delay of 'd' seconds (where 'd' is a Fibonacci number) can indicate a successful injection. The analyst sends 'q' number of queries, and each query may or may not cause a time delay based on whether the condition in the SQL injection is true or false. The total time 'T' spent on the attack is the maximum acceptable time the analyst has before the security system triggers an alert. Assuming 'd=13' seconds (a Fibonacci number) and various values of 'q' (a prime number) and 'T'. Which among the following scenarios will most likely trigger an alert?",
+    "options": [
+      "q=17, T=220: Even though the attacker increases 'q', the total delay ('q*d' = 221 seconds) just surpasses the threshold, possibly activating an alert.",
+      "q=13, T=180: In this case, the total delay caused by the attacker ('q*d' = 169 seconds) breaches the threshold, likely leading to the triggering of a security alert.",
+      "q=11, T=150: Here, the total delay induced by the attacker ('q*d' = 143 seconds) does not surpass the threshold, so the security system remains dormant.",
+      "q=19, T=260: Despite the attacker's increased effort, the total delay ('q*d' = 247 seconds) does not exceed the threshold, thus no alert is triggered."
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 13
+  },
+  {
+    "id": 178,
+    "pdf_number": 182,
+    "question": "During an attempt to perform an SQL injection attack, a certified ethical hacker is focusing on the identification of database engine type by generating an ODBC error. The ethical hacker, after injecting various payloads, finds that the web application returns a standard, generic error message that does not reveal any detailed database information. Which of the following techniques would the hacker consider next to obtain useful information about the underlying database?",
+    "options": [
+      "Utilize a blind injection technique that uses time delays or error signatures to extract information",
+      "Try to insert a string value where a number is expected in the input field",
+      "Attempt to compromise the system through OS-level command shell execution",
+      "Use the UNION operator to combine the result sets of two or more SELECT statements"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 13
+  },
+  {
+    "id": 193,
+    "pdf_number": 197,
+    "question": "An ethical hacker is hired to evaluate the defenses of an organization's database system which is known to employ a signature-based IDS. The hacker knows that some SQL Injection evasion techniques may allow him to bypass the system's signatures. During the operation, he successfully retrieved a list of usernames from the database without triggering an alarm by employing an advanced evasion technique. Which of the following could he have used?",
+    "options": [
+      "Utilizing the char encoding function to convert hexadecimal and decimal values into characters that pass-through SQL engine parsing",
+      "Implementing sophisticated matches such as \"OR john' = 'john'\" in place of classical matches like \"OR 1=1\"",
+      "Manipulating white spaces in SQL queries to bypass signature detection",
+      "Using the URL encoding method to replace characters with their ASCII codes in hexadecimal form"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 13
+  },
+  {
+    "id": 214,
+    "pdf_number": 218,
+    "question": "An ethical hacker is conducting a SQL injection test against a web application. The hacker is attempting to exploit a suspected vulnerability by manipulating the input field with various SQL commands. However, the application seems to have an input validation mechanism. It successfully blocks several known SQL injection patterns. This leads the hacker to use a different technique. The hacker decides to encode the attack string in hexadecimal format. Which type of evasion technique is the hacker using?",
+    "options": [
+      "Use the CHAR function to convert decimal values into characters",
+      "Use in-line comments to obscure the SQL keywords",
+      "Insert spaces between SQL keywords to break identifiable keywords",
+      "Use Hex encoding to represent the SQL query string"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 13
+  },
+  {
+    "id": 227,
+    "pdf_number": 231,
+    "question": "While performing a security audit of a web application, an ethical hacker discovers a potential vulnerability. The application responds to logically incorrect queries with detailed error messages that divulge the underlying database's structure. The ethical hacker decides to exploit this vulnerability further. Which type of SQL Injection attack is the ethical hacker likely to use?",
+    "options": [
+      "UNION SQL Injection",
+      "Error-based SQL Injection",
+      "In-band SQL Injection",
+      "Blind/Inferential SQL Injection"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 13
+  },
+  {
+    "id": 234,
+    "pdf_number": 238,
+    "question": "As an IT Security Analyst, you've been asked to review the security measures of an e-commerce website that relies on a SQL database for storing sensitive customer data. Recently, an anonymous tip has alerted you to a possible threat: a seasoned hacker who specializes in SQL Injection attacks may be targeting your system. The site already employs input validation measures to prevent basic injection attacks, and it blocks any user inputs containing suspicious patterns. However, this hacker is known to use advanced SQL Injection techniques. Given this situation, which of the following strategies would the hacker most likely adopt to bypass your security measures?",
+    "options": [
+      "The hacker might employ a 'blind' SQL Injection attack, taking advantage of the application's true or false responses to extract data bit by bit",
+      "The hacker may resort to a DDoS attack instead, attempting to crash the server and thus render the e-commerce site unavailable",
+      "The hacker may try to use SQL commands which are less known and less likely to be blocked by your system's security",
+      "The hacker could deploy an 'out-of-band' SQL Injection attack, extracting data via a different communication channel, such as DNS or HTTP requests"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 13
+  },
+  {
+    "id": 253,
+    "pdf_number": 257,
+    "question": "What is the following command used for?",
+    "options": [
+      "Retrieving SQL statements being executed on the database",
+      "Creating backdoors using SQL injection",
+      "Enumerating the databases in the DBMS for the URL",
+      "Searching database statements at the IP address given"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 13,
+    "note": "SKIP - Question has image"
+  },
+  {
+    "id": 271,
+    "pdf_number": 275,
+    "question": "This type of injection attack does not show any error message. It is difficult to exploit as it returns information when the application is given SQL payloads that elicit a true or false response from the server. By observing the response, an attacker can extract sensitive information. What type of attack is this?",
+    "options": [
+      "Union SQL injection",
+      "Error-based SQL injection",
+      "Time-based SQL injection",
+      "Blind SQL injection"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 13
+  },
+  {
+    "id": 274,
+    "pdf_number": 278,
+    "question": "Which of the following types of SQL injection attacks extends the results returned by the original query, enabling attackers to run two or more statements if they have the same structure as the original one?",
+    "options": [
+      "Union SQL injection",
+      "Error-based injection",
+      "Blind SQL injection",
+      "Boolean-based blind SQL injection"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 13
+  }
+]

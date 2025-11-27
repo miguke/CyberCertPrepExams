@@ -1,0 +1,306 @@
+[
+  {
+    "id": 20,
+    "pdf_number": 21,
+    "question": "Joe works as an IT administrator in an organization and has recently set up a cloud computing service for the organization. To implement this service, he reached out to a telecom company for providing Internet connectivity and transport services between the organization and the cloud service provider. In the NIST cloud deployment reference architecture, under which category does the telecom company fall in the above scenario?",
+    "options": [
+      "Cloud consumer",
+      "Cloud broker",
+      "Cloud auditor",
+      "Cloud carrier"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 17
+  },
+  {
+    "id": 23,
+    "pdf_number": 24,
+    "question": "Annie, a cloud security engineer, uses the Docker architecture to employ a client/server model in the application she is working on. She utilizes a component that can process API requests and handle various Docker objects, such as containers, volumes, images, and networks. What is the component of the Docker architecture used by Annie in the above scenario?",
+    "options": [
+      "Docker objects",
+      "Docker daemon",
+      "Docker client",
+      "Docker registries"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 17
+  },
+  {
+    "id": 45,
+    "pdf_number": 48,
+    "question": "There are multiple cloud deployment options depending on how isolated a customer's resources are from those of other customers. Shared environments share the costs and allow each customer to enjoy lower operations expenses. One solution is for a customer to join with a group of users or organizations to share a cloud environment. What is this cloud deployment option called?",
+    "options": [
+      "Private",
+      "Community",
+      "Public",
+      "Hybrid"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 17
+  },
+  {
+    "id": 72,
+    "pdf_number": 75,
+    "question": "Alice, a professional hacker, targeted an organization's cloud services. She infiltrated the target's MSP provider by sending spear-phishing emails and distributed custom-made malware to compromise user accounts and gain remote access to the cloud service. Further, she accessed the target customer profiles with her MSP account, compressed the customer data, and stored them in the MSP. Then, she used this information to launch further attacks on the target organization. Which of the following cloud attacks did Alice perform in the above scenario?",
+    "options": [
+      "Cloud cryptojacking",
+      "Man-in-the-cloud (MITC) attack",
+      "Cloud hopper attack",
+      "Cloudborne attack"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 17
+  },
+  {
+    "id": 76,
+    "pdf_number": 80,
+    "question": "Eric, a cloud security engineer, implements a technique for securing the cloud resources used by his organization. This technique assumes by default that a user attempting to access the network is not an authentic entity and verifies every incoming connection before allowing access to the network. Using this technique, he also imposed conditions such that employees can access only the resources required for their role. What is the technique employed by Eric to secure cloud resources?",
+    "options": [
+      "Demilitarized zone",
+      "Zero trust network",
+      "Serverless computing",
+      "Container technology"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 17
+  },
+  {
+    "id": 81,
+    "pdf_number": 85,
+    "question": "Abel, a cloud architect, uses container technology to deploy applications/software including all its dependencies, such as libraries and configuration files, binaries, and other resources that run independently from other processes in the cloud environment. For the containerization of applications, he follows the five-tier container technology architecture. Currently, Abel is verifying and validating image contents, signing images, and sending them to the registries. Which of the following tiers of the container technology architecture is Abel currently working in?",
+    "options": [
+      "Tier-1: Developer machines",
+      "Tier-2: Testing and accreditation systems",
+      "Tier-3: Registries",
+      "Tier-4: Orchestrators"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 17
+  },
+  {
+    "id": 112,
+    "pdf_number": 116,
+    "question": "Heather's company has decided to use a new customer relationship management tool. After performing the appropriate research, they decided to purchase a subscription to a cloud-hosted solution. The only administrative task that Heather will need to perform is the management of user accounts. The provider will take care of the hardware, operating system, and software administration including patching and monitoring. Which of the following is this type of solution?",
+    "options": [
+      "IaaS",
+      "SaaS",
+      "PaaS",
+      "CaaS"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 17
+  },
+  {
+    "id": 122,
+    "pdf_number": 126,
+    "question": "You are a cybersecurity specialist at CloudTech Inc., a company providing cloud-based services. You are managing a project for a client who wants to migrate their sensitive data to a public cloud service. To comply with regulatory requirements, the client insists on maintaining full control over the encryption keys even when the data is at rest on the cloud. Which of the following practices should you implement to meet this requirement?",
+    "options": [
+      "Encrypt data client-side before uploading to the cloud and retain control of the encryption keys.",
+      "Use the cloud service provider's encryption services but store keys on-premises.",
+      "Rely on Secure Sockets Layer (SSL) encryption for data at rest.",
+      "Use the cloud service provider's default encryption and key management services."
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 17
+  },
+  {
+    "id": 154,
+    "pdf_number": 158,
+    "question": "You work as a cloud security specialist at SkyNet Solutions. One of your clients is a healthcare organization that plans to migrate its electronic health record (EHR) system to the cloud. This system contains highly sensitive personal and medical data. As part of your job, you need to ensure the security and privacy of this data while it is being transferred and stored in the cloud. You recommend that data should be encrypted during transit and at rest. However, you also need to ensure that even if a cloud service provider (CSP) has access to encrypted data, they should not be able to decrypt it. Which of the following would be the most suitable strategy to meet this requirement?",
+    "options": [
+      "Rely on network-level encryption protocols for data transfer.",
+      "Use SSL/TLS for data transfer and allow the CSP to manage encryption keys.",
+      "Utilize the CSP's built-in data encryption services.",
+      "Use client-side encryption and manage the encryption keys on-premises or use a trusted third-party key management service."
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 17
+  },
+  {
+    "id": 156,
+    "pdf_number": 160,
+    "question": "You are the chief security officer of a financial services company that handles sensitive customer data. The company has a cloud-first strategy and uses a public cloud service provider to host its applications and databases. Recently, the cloud service provider suffered a data breach, and there are concerns that your company's data might have been exposed. Which of the following would be the most effective way to determine whether your company's data was compromised in the breach?",
+    "options": [
+      "Review the company's data encryption policies and confirm if the data at rest and in transit was encrypted.",
+      "Check the access logs provided by the cloud service provider to see if there were any unauthorized accesses to your company's resources.",
+      "Wait for the cloud service provider to complete their investigation and disclose the details of the breach.",
+      "Perform a comprehensive security audit on your company's cloud environment to identify any signs of data exfiltration."
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 17
+  },
+  {
+    "id": 183,
+    "pdf_number": 187,
+    "question": "As an IT Security Manager at a large hospital, you are implementing a new electronic health record (EHR) system that will be accessed by doctors, nurses, and administrative staff. The EHR system is cloud-based, which means data will be stored on servers owned and managed by a third-party provider. Your main concern is ensuring the privacy and security of patient data in accordance with HIPAA regulations. What should be the first step you take to address this concern?",
+    "options": [
+      "Ensure the EHR system uses two-factor authentication for all users.",
+      "Review and negotiate the cloud service provider's data privacy and security policies and ensure they are HIPAA-compliant.",
+      "Encrypt all patient data before it is stored on the cloud servers.",
+      "Train all staff members on the proper use of the EHR system and the importance of protecting patient data."
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 17
+  },
+  {
+    "id": 186,
+    "pdf_number": 190,
+    "question": "You are the chief cybersecurity officer at CloudSecure Inc., and your team is responsible for securing a cloud based application that handles sensitive customer data. To ensure that the data is protected from breaches, you have decided to implement encryption for both data-at-rest and data-in-transit. The development team suggests using SSL/TLS for securing data in transit. However, you want to also implement a mechanism to detect if the data was tampered with during transmission. Which of the following should you propose?",
+    "options": [
+      "Implement IPsec in addition to SSL/TLS.",
+      "Switch to using SSH for data transmission.",
+      "Encrypt data using the AES algorithm before transmission.",
+      "Use the cloud service provider's built-in encryption services."
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 17
+  },
+  {
+    "id": 189,
+    "pdf_number": 193,
+    "question": "As a security analyst for SkySecure Inc., you are working with a client that uses a multi-cloud strategy, utilizing services from several cloud providers. The client wants to implement a system that will provide unified security management across all their cloud platforms. They need a solution that allows them to consistently enforce security policies, identify and respond to threats, and maintain visibility of all their cloud resources. Which of the following should you recommend as the best solution?",
+    "options": [
+      "Use a Cloud Access Security Broker (CASB).",
+      "Use a hardware-based firewall to secure all cloud resources.",
+      "Implement separate security management tools for each cloud platform.",
+      "Rely on the built-in security features of each cloud platform."
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 17
+  },
+  {
+    "id": 201,
+    "pdf_number": 205,
+    "question": "As a cybersecurity consultant, you are working with a client who wants to migrate their data to a Software as a Service (SaaS) cloud environment. They are particularly concerned about maintaining the privacy of their sensitive data, even from the cloud service provider. Which of the following strategies would best ensure the privacy of their data in the SaaS environment?",
+    "options": [
+      "Implement a Virtual Private Network (VPN) for accessing the SaaS applications.",
+      "Rely on the cloud service provider's built-in security features.",
+      "Encrypt the data client-side before uploading to the SaaS environment and manage encryption keys independently.",
+      "Use multi-factor authentication for all user accounts accessing the SaaS applications"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 17
+  },
+  {
+    "id": 211,
+    "pdf_number": 215,
+    "question": "You are a cloud security expert at CloudGuard Inc. working with a client who plans to transition their infrastructure to a public cloud. The client expresses concern about potential data breaches and wants to ensure that only authorized personnel can access certain sensitive resources. You propose implementing a Zero Trust security model. What does this primarily involve?",
+    "options": [
+      "Trusting all internal network traffic and rigorously checking external traffic.",
+      "Not trusting any user or system by default, regardless of whether they are inside or outside the network perimeter.",
+      "Implementing strong perimeter defenses and trusting everything inside the network.",
+      "Only trusting traffic from known IP addresses and blocking all other traffic."
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 17
+  },
+  {
+    "id": 243,
+    "pdf_number": 247,
+    "question": "Alex, a cloud security engineer working in Eyecloud Inc. is tasked with isolating applications from the underlying infrastructure and stimulating communication via well-defined channels. For this purpose, he used an open-source technology that helped him in developing, packaging, and running applications; further, the technology provides PaaS through OS-level virtualization, delivers containerized software packages, and promotes fast software delivery. What is the cloud technology employed by Alex in the above scenario?",
+    "options": [
+      "Virtual machine",
+      "Docker",
+      "Zero trust network",
+      "Serverless computing"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 17
+  },
+  {
+    "id": 262,
+    "pdf_number": 266,
+    "question": "Geena, a cloud architect, uses a master component in the Kubernetes cluster architecture that scans newly generated pods and allocates a node to them. This component can also assign nodes based on factors such as the overall resource requirement, data locality, software/hardware/policy restrictions, and internal workload interventions. Which of the following master components is explained in the above scenario?",
+    "options": [
+      "Kube-apiserver",
+      "Etcd cluster",
+      "Kube-controller-manager",
+      "Kube-scheduler"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 17
+  },
+  {
+    "id": 263,
+    "pdf_number": 267,
+    "question": "According to the NIST cloud deployment reference architecture, which of the following provides connectivity and transport services to consumers?",
+    "options": [
+      "Cloud connector",
+      "Cloud broker",
+      "Cloud provider",
+      "Cloud carrier"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 17
+  },
+  {
+    "id": 304,
+    "pdf_number": 308,
+    "question": "Thomas, a cloud security professional, is performing security assessment on cloud services to identify any loopholes. He detects a vulnerability in a bare-metal cloud server that can enable hackers to implant malicious backdoors in its firmware. He also identified that an installed backdoor can persist even if the server is reallocated to new clients or businesses that use it as an IaaS. What is the type of cloud attack that can be performed by exploiting the vulnerability discussed in the above scenario?",
+    "options": [
+      "Cloudborne attack",
+      "Man-in-the-cloud (MITC) attack",
+      "Metadata spoofing attack",
+      "Cloud cryptojacking"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 17
+  }
+]

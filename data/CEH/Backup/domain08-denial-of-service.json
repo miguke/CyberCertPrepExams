@@ -1,0 +1,162 @@
+[
+  {
+    "id": 53,
+    "pdf_number": 56,
+    "question": "Abel, a security professional, conducts penetration testing in his client organization to check for any security loopholes. He launched an attack on the DHCP servers by broadcasting forged DHCP requests and leased all the DHCP addresses available in the DHCP scope until the server could not issue any more IP addresses. This led to a DoS attack, and as a result, legitimate employees were unable to access the client's network. Which of the following attacks did Abel perform in the above scenario?",
+    "options": [
+      "Rogue DHCP server attack",
+      "VLAN hopping",
+      "STP attack",
+      "DHCP starvation"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 8
+  },
+  {
+    "id": 55,
+    "pdf_number": 58,
+    "question": "Jude, a pen tester working in Keiltech Ltd., performs sophisticated security testing on his company's network infrastructure to identify security loopholes. In this process, he started to circumvent the network protection tools and firewalls used in the company. He employed a technique that can create forged TCP sessions by carrying out multiple SYN, ACK, and RST or FIN packets. Further, this process allowed Jude to execute DDoS attacks that can exhaust the network resources. What is the attack technique used by Jude for finding loopholes in the above scenario?",
+    "options": [
+      "Spoofed session flood attack",
+      "UDP flood attack",
+      "Peer-to-peer attack",
+      "Ping-of-death attack"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 8
+  },
+  {
+    "id": 79,
+    "pdf_number": 83,
+    "question": "A DDoS attack is performed at layer 7 to take down web infrastructure. Partial HTTP requests are sent to the web infrastructure or applications. Upon receiving a partial request, the target servers opens multiple connections and keeps waiting for the requests to complete. Which attack is being described here?",
+    "options": [
+      "Desynchronization",
+      "Slowloris attack",
+      "Session splicing",
+      "Phlashing"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 8
+  },
+  {
+    "id": 88,
+    "pdf_number": 92,
+    "question": "Mike, a security engineer, was recently hired by BigFox Ltd. The company recently experienced disastrous DoS attacks. The management had instructed Mike to build defensive strategies for the company's IT infrastructure to thwart DoS/DDoS attacks. Mike deployed some countermeasures to handle jamming and scrambling attacks. What is the countermeasure Mike applied to defend against jamming and scrambling attacks?",
+    "options": [
+      "Allow the transmission of all types of addressed packets at the ISP level",
+      "Disable TCP SYN cookie protection",
+      "Allow the usage of functions such as gets and strcpy",
+      "Implement cognitive radios in the physical layer"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 8
+  },
+  {
+    "id": 127,
+    "pdf_number": 131,
+    "question": "A large enterprise has been experiencing sporadic system crashes and instability, resulting in limited access to its web services. The security team suspects it could be a result of a Denial of Service (DoS) attack. A significant increase in traffic was noticed in the network logs, with patterns suggesting packet sizes exceeding the prescribed size limit. Which among the following DoS attack techniques best describes this scenario?",
+    "options": [
+      "Smurf attack",
+      "UDP flood attack",
+      "Pulse wave attack",
+      "Ping of Death attack"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 8
+  },
+  {
+    "id": 145,
+    "pdf_number": 149,
+    "question": "An audacious attacker is targeting a web server you oversee. He intends to perform a Slow HTTP POST attack, by manipulating 'a' HTTP connection. Each connection sends a byte of data every 'b' second, effectively holding up the connections for an extended period. Your server is designed to manage 'm' connections per second, but any connections exceeding this number tend to overwhelm the system. Given 'a=100' and variable 'm', along with the attacker's intention of maximizing the attack duration 'D=a*b', consider the following scenarios. Which is most likely to result in the longest duration of server unavailability?",
+    "options": [
+      "m=90, b=15: The server can manage 90 connections per second, but the attacker's 100 connections exceed this, and with each connection held up for 15 seconds, the attack duration could be significant.",
+      "m=105, b=12: The server can manage 105 connections per second, more than the attacker's 100 connections, likely maintaining operation despite a moderate hold-up time.",
+      "m=110, b=20: Despite the attacker sending 100 connections, the server can handle 110 connections per second, therefore likely staying operative, regardless of the hold-up time per connection.",
+      "m=95, b=10: Here, the server can handle 95 connections per second, but it falls short against the attacker's 100 connections, albeit the hold-up time per connection is lower."
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 8
+  },
+  {
+    "id": 165,
+    "pdf_number": 169,
+    "question": "A well-resourced attacker intends to launch a highly disruptive DDoS attack against a major online retailer. The attacker aims to exhaust all the network resources while keeping their identity concealed. Their method should be resistant to simple defensive measures such as IP-based blocking. Based on these objectives, which of the following attack strategies would be most effective?",
+    "options": [
+      "The attacker should instigate a protocol-based SYN flood attack, consuming connection state tables on the retailer's servers",
+      "The attacker should leverage a botnet to launch a Pulse Wave attack, sending high-volume traffic pulses at regular intervals",
+      "The attacker should initiate a volumetric flood attack using a single compromised machine to overwhelm the retailer's network bandwidth",
+      "The attacker should execute a simple ICMP flood attack from a single IP, exploiting the retailer's ICMP processing"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 8
+  },
+  {
+    "id": 200,
+    "pdf_number": 204,
+    "question": "While working as an intern for a small business, you have been tasked with managing the company's web server. The server is being bombarded with requests, and the company's website is intermittently going offline. You suspect that this could be a Distributed Denial of Service (DDoS) attack. As an ethical hacker, which of the following steps would be your first course of action to mitigate the issue?",
+    "options": [
+      "Contact your Internet Service Provider (ISP) for assistance",
+      "Install a newer version of the server software",
+      "Implement IP address whitelisting",
+      "Increase the server's bandwidth"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 8
+  },
+  {
+    "id": 216,
+    "pdf_number": 220,
+    "question": "A sophisticated attacker targets your web server with the intent to execute a Denial of Service (DoS) attack. His strategy involves a unique mixture of TCP SYN, UDP, and ICMP floods, using 'r' packets per second. Your server, reinforced with advanced security measures, can handle 'h' packets per second before it starts showing signs of strain. If 'r' surpasses 'h', it overwhelms the server, causing it to become unresponsive. In a peculiar pattern, the attacker selects 'r' as a composite number and 'h' as a prime number, making the attack detection more challenging. Considering 'r=2010' and different values for 'h', which of the following scenarios would potentially cause the server to falter?",
+    "options": [
+      "h=1987 (prime): The attacker's packet rate exceeds the server's capacity, causing potential unresponsiveness.",
+      "h=1999 (prime): Despite the attacker's packet flood, the server can handle these requests, remaining responsive.",
+      "h=1993 (prime): Despite being less than 'r', the server's prime number capacity keeps it barely operational, but the risk of falling is imminent.",
+      "h=2003 (prime): The server can manage more packets than the attacker is sending, hence it stays operational."
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 8
+  },
+  {
+    "id": 222,
+    "pdf_number": 226,
+    "question": "Your network infrastructure is under a SYN flood attack. The attacker has crafted an automated botnet to simultaneously send 's' SYN packets per second to the server. You have put measures in place to manage 'f' SYN packets per second, and the system is designed to deal with this number without any performance issues. If 's' exceeds 'f', the network infrastructure begins to show signs of overload. The system's response time increases exponentially (2^k), where 'k' represents each additional SYN packet above the 'f' limit. Now, considering 's=500' and different 'f' values, in which scenario is the server most likely to experience overload and significantly increased response times?",
+    "options": [
+      "f=510: The server can handle 510 SYN packets per second, which is greater than what the attacker is sending. The system stays stable, and the response time remains unaffected.",
+      "f=495: The server can handle 495 SYN packets per second. The response time drastically rises (2^5 = 32 times the normal), indicating a probable system overload.",
+      "f=505: The server can handle 505 SYN packets per second. In this case, the response time increases but not as drastically (2^5 = 32 times the normal), and the system might still function, albeit slowly.",
+      "f=490: The server can handle 490 SYN packets per second. With 's' exceeding 'f' by 10, the response time shoots up (2^10 = 1024 times the usual response time), indicating a system overload."
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 8
+  }
+]

@@ -1,0 +1,402 @@
+[
+  {
+    "id": 6,
+    "pdf_number": 7,
+    "question": "Gerard, a disgruntled ex-employee of Sunglass IT Solutions, targets this organization to perform sophisticated attacks and bring down its reputation in the market. To launch the attacks process, he performed DNS footprinting to gather information about DNS servers and to identify the hosts connected in the target network. He used an automated tool that can retrieve information about DNS zone data including DNS domain names, computer names, IP addresses, DNS records, and network Whois records. He further exploited this information to launch other sophisticated attacks. What is the tool employed by Gerard in the above scenario?",
+    "options": [
+      "Towelroot",
+      "Knative",
+      "zANTI",
+      "Bluto"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 2
+  },
+  {
+    "id": 8,
+    "pdf_number": 9,
+    "question": "Which of the following Google advanced search operators helps an attacker in gathering information about websites that are similar to a specified target URL?",
+    "options": [
+      "[inurl:]",
+      "[info:]",
+      "[site:]",
+      "[related:]"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 2
+  },
+  {
+    "id": 14,
+    "pdf_number": 15,
+    "question": "Taylor, a security professional, uses a tool to monitor her company's website, analyze the website's traffic, and track the geographical location of the users visiting the company's website. Which of the following tools did Taylor employ in the above scenario?",
+    "options": [
+      "Webroot",
+      "Web-Stat",
+      "WebSite-Watcher",
+      "WAFW00F"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 2
+  },
+  {
+    "id": 15,
+    "pdf_number": 16,
+    "question": "Becky has been hired by a client from Dubai to perform a penetration test against one of their remote offices. Working from her location in Columbus, Ohio, Becky runs her usual reconnaissance scans to obtain basic information about their network. When analyzing the results of her Whois search, Becky notices that the IP was allocated to a location in Le Havre, France. Which regional Internet registry should Becky go to for detailed information?",
+    "options": [
+      "ARIN",
+      "LACNIC",
+      "APNIC",
+      "RIPE"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 2
+  },
+  {
+    "id": 34,
+    "pdf_number": 35,
+    "question": "Scenario: Joe turns on his home computer to access personal online banking. When he enters the URL www.bank.com, the website is displayed, but it prompts him to re-enter his credentials as if he has never visited the site before. When he examines the website URL closer, he finds that the site is not secure and the web address appears different. What type of attack he is experiencing?",
+    "options": [
+      "DHCP spoofing",
+      "DoS attack",
+      "ARP cache poisoning",
+      "DNS hijacking"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 2
+  },
+  {
+    "id": 49,
+    "pdf_number": 52,
+    "question": "Clark, a professional hacker, was hired by an organization to gather sensitive information about its competitors surreptitiously. Clark gathers the server IP address of the target organization using Whois footprinting. Further, he entered the server IP address as an input to an online tool to retrieve information such as the network range of the target organization and to identify the network topology and operating system used in the network. What is the online tool employed by Clark in the above scenario?",
+    "options": [
+      "DuckDuckGo",
+      "AOL",
+      "ARIN",
+      "Baidu"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 2
+  },
+  {
+    "id": 70,
+    "pdf_number": 73,
+    "question": "Wilson, a professional hacker, targets an organization for financial benefit and plans to compromise its systems by sending malicious emails. For this purpose, he uses a tool to track the emails of the target and extracts information such as sender identities, mail servers, sender IP addresses, and sender locations from different public sources. He also checks if an email address was leaked using the haveibeenpwned.com API. Which of the following tools is used by Wilson in the above scenario?",
+    "options": [
+      "Factiva",
+      "ZoomInfo",
+      "Netcraft",
+      "Infoga"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 2
+  },
+  {
+    "id": 93,
+    "pdf_number": 97,
+    "question": "What would be the fastest way to perform content enumeration on a given web server by using the Gobuster tool?",
+    "options": [
+      "Performing content enumeration using the bruteforce mode and 10 threads",
+      "Performing content enumeration using the bruteforce mode and random file extensions",
+      "Skipping SSL certificate verification",
+      "Performing content enumeration using a wordlist"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 2
+  },
+  {
+    "id": 96,
+    "pdf_number": 100,
+    "question": "Emily, an extrovert obsessed with social media, posts a large amount of private information, photographs, and location tags of recently visited places. Realizing this, James, a professional hacker, targets Emily and her acquaintances, conducts a location search to detect their geolocation by using an automated tool, and gathers information to perform other sophisticated attacks. What is the tool employed by James in the above scenario?",
+    "options": [
+      "ophcrack",
+      "VisualRoute",
+      "Hootsuite",
+      "HULK"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 2
+  },
+  {
+    "id": 104,
+    "pdf_number": 108,
+    "question": "Hackers often raise the trust level of a phishing message by modeling the email to look similar to the internal email used by the target company. This includes using logos, formatting, and names of the target company. The phishing message will often use the name of the company CEO, President, or Managers. The time a hacker spends performing research to locate this information about a company is known as?",
+    "options": [
+      "Exploration",
+      "Investigation",
+      "Reconnaissance",
+      "Enumeration"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 2
+  },
+  {
+    "id": 113,
+    "pdf_number": 117,
+    "question": "Juliet, a security researcher in an organization, was tasked with checking for the authenticity of images to be used in the organization's magazines. She used these images as a search query and tracked the original source and details of the images, which included photographs, profile pictures, and memes. Which of the following footprinting techniques did Rachel use to finish her task?",
+    "options": [
+      "Google advanced search",
+      "Meta search engines",
+      "Reverse image search",
+      "Advanced image search"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 2
+  },
+  {
+    "id": 119,
+    "pdf_number": 123,
+    "question": "Which file is a rich target to discover the structure of a website during web-server footprinting?",
+    "options": [
+      "domain.txt",
+      "Robots.txt",
+      "Document root",
+      "index.html"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 2
+  },
+  {
+    "id": 141,
+    "pdf_number": 145,
+    "question": "As a Certified Ethical Hacker, you are conducting a footprinting and reconnaissance operation against a target organization. You discover a range of IP addresses associated with the target using the SecurityTrails tool. Now, you need to perform a reverse DNS lookup on these IP addresses to find the associated domain names, as well as determine the nameservers and mail exchange (MX) records. Which of the following DNSRecon commands would be most effective for this purpose?",
+    "options": [
+      "dnsrecon -r 192.168.1.0/24 -n nsl.example.com -t axfr",
+      "dnsrecon -r 10.0.0.0/24 -n nsl.example.com -t zonewalk",
+      "dnsrecon -r 162.241.216.0/24 -n nsl.example.com -t std",
+      "dnsrecon -r 162.241.216.0/24 -d example.com -t brt"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 2
+  },
+  {
+    "id": 157,
+    "pdf_number": 161,
+    "question": "An ethical hacker is conducting a controlled test to evaluate the security of a network against web-based attacks. The hacker begins the test by visiting the organization's public website and systematically exploring every page and functionality, collecting information about technologies, server configurations, and potential vulnerabilities. They also leverage browser plug-ins and extensions to capture data like HTTP headers, cookies, and hidden form fields. What is the term for this phase of the attack?",
+    "options": [
+      "Session hijacking",
+      "Cross-site scripting",
+      "Web server footprinting",
+      "SQL injection"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 2
+  },
+  {
+    "id": 163,
+    "pdf_number": 167,
+    "question": "A certified ethical hacker is carrying out an email footprinting exercise on a targeted organization using eMailTrackerPro. They want to map out detailed information about the recipient's activities after receiving the email. Which among the following pieces of information would NOT be directly obtained from eMailTrackerPro during this exercise?",
+    "options": [
+      "Geolocation of the recipient",
+      "Type of device used to open the email",
+      "The email accounts related to the domain of the organization",
+      "The time recipient spent reading the email"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 2
+  },
+  {
+    "id": 176,
+    "pdf_number": 180,
+    "question": "During a reconnaissance mission, an ethical hacker uses Maltego, a popular footprinting tool, to collect information about a target organization. The information includes the target's Internet infrastructure details (domains, DNS names, Netblocks, IP address information). The hacker decides to use social engineering techniques to gain further information. Which of the following would be the least likely method of social engineering to yield beneficial information based on the data collected?",
+    "options": [
+      "Dumpster diving in the target company's trash bins for valuable printouts",
+      "Impersonating an ISP technical support agent to trick the target into providing further network details",
+      "Shoulder surfing to observe sensitive credentials input on the target's computers",
+      "Eavesdropping on internal corporate conversations to understand key topics"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 2
+  },
+  {
+    "id": 180,
+    "pdf_number": 184,
+    "question": "Your company suspects a potential security breach and has hired you as a Certified Ethical Hacker to investigate. You discover evidence of footprinting through search engines and advanced Google hacking techniques. The attacker utilized Google search operators to extract sensitive information. You further notice queries that indicate the use of the Google Hacking Database (GHDB) with an emphasis on VPN footprinting. Which of the following Google advanced search operators would be the LEAST useful in providing the attacker with sensitive VPN-related information?",
+    "options": [
+      "location: This operator finds information for a specific location",
+      "inurl: This operator restricts the results to only the pages containing the specified word in the URL",
+      "link: This operator searches websites or pages that contain links to the specified website or page",
+      "intitle: This operator restricts results to only the pages containing the specified term in the title"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 2
+  },
+  {
+    "id": 182,
+    "pdf_number": 186,
+    "question": "In your capacity as a penetration tester, you are trying to gather information about a target company's email addresses for a social engineering campaign. You decided to employ a footprinting tool that interacts with various search engines, servers, and databases to collect data. Which tool would you most likely use for this task and what information can it provide?",
+    "options": [
+      "theHarvester - Collects emails, subdomains, hosts, employee names, open ports and banners from different public sources",
+      "Maltego - Displays link analysis between various entities on the Internet, including emails and domain names",
+      "Recon-ng - Provides an environment to conduct open source web-based reconnaissance quickly and thoroughly",
+      "Nmap - Discovers hosts and services on a computer network, thus providing a 'map' of the network"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 2
+  },
+  {
+    "id": 219,
+    "pdf_number": 223,
+    "question": "A Certified Ethical Hacker is attempting to gather information about a target organization's network structure through network footprinting. During the operation, they encounter ICMP blocking by the target system's firewall. The hacker wants to ascertain the path that packets take to the host system from a source, using an alternative protocol. Which of the following actions should the hacker consider next?",
+    "options": [
+      "Use UDP Traceroute in the Linux operating system by executing the 'traceroute' command with the destination IP or domain name.",
+      "Use the ICMP Traceroute on the Windows operating system as it is the default utility.",
+      "Use the ARIN Whois database search tool to find the network range of the target network.",
+      "Utilize the Path Analyzer Pro to trace the route from the source to the destination target systems."
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 2
+  },
+  {
+    "id": 221,
+    "pdf_number": 225,
+    "question": "A penetration tester is tasked with gathering information about the subdomains of a target organization's website. The tester needs a versatile and efficient solution for the task. Which of the following options would be the most effective method to accomplish this goal?",
+    "options": [
+      "Analyzing LinkedIn profiles to find employees of the target company and their job titles",
+      "Employing a tool like Sublist3r, which is designed to enumerate the subdomains of websites using OSINT",
+      "Using a people search service, such as Spokeo or Intelius, to gather information about the employees of the target organization",
+      "Utilizing the Harvester tool to extract email addresses related to the target domain using a search engine like Google or Bing"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 2
+  },
+  {
+    "id": 247,
+    "pdf_number": 251,
+    "question": "A penetration tester is performing the footprinting process and is reviewing publicly available information about an organization by using the Google search engine. Which of the following advanced operators would allow the pen tester to restrict the search to the organization's web domain?",
+    "options": [
+      "[allinurl:]",
+      "[location:]",
+      "[site:]",
+      "[link:]"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 2
+  },
+  {
+    "id": 278,
+    "pdf_number": 282,
+    "question": "When considering how an attacker may exploit a web server, what is web server footprinting?",
+    "options": [
+      "When an attacker creates a complete profile of the site's external links and file structures",
+      "When an attacker uses a brute-force attack to crack a web-server password",
+      "When an attacker implements a vulnerability scanner to identity weaknesses",
+      "When an attacker gathers system-level data, including account details and server names"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 2
+  },
+  {
+    "id": 280,
+    "pdf_number": 284,
+    "question": "James is working as an ethical hacker at Technix Solutions. The management ordered James to discover how vulnerable its network is towards footprinting attacks. James took the help of an open-source framework for performing automated reconnaissance activities. This framework helped James in gathering information using free tools and resources. What is the framework used by James to conduct footprinting and reconnaissance activities?",
+    "options": [
+      "OSINT framework",
+      "WebSploit Framework",
+      "Browser Exploitation Framework",
+      "SpeedPhish Framework"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 2
+  },
+  {
+    "id": 286,
+    "pdf_number": 290,
+    "question": "In an attempt to damage the reputation of a competitor organization, Hailey, a professional hacker, gathers a list of employee and client email addresses and other related information by using various search engines, social networking sites, and web spidering tools. In this process, she also uses an automated tool to gather a list of words from the target website to further perform a brute-force attack on the previously gathered email addresses. What is the tool used by Hailey for gathering a list of words from the target website?",
+    "options": [
+      "CeWL",
+      "Orbot",
+      "Shadowsocks",
+      "Psiphon"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 2
+  },
+  {
+    "id": 303,
+    "pdf_number": 307,
+    "question": "Louis, a professional hacker, had used specialized tools or search engines to encrypt all his browsing activity and navigate anonymously to obtain sensitive/hidden information about official government or federal databases. After gathering the information, he successfully performed an attack on the target government organization without being traced. Which of the following techniques is described in the above scenario?",
+    "options": [
+      "Website footprinting",
+      "Dark web footprinting",
+      "VPN footprinting",
+      "VoIP footprinting"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 2
+  }
+]

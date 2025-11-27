@@ -3,42 +3,120 @@ const courseConfig = {
     id: 'ceh',
     title: 'CEH v13 - Certified Ethical Hacker',
     topics: {
-        'Domain 1: Information Security and Ethical Hacking Fundamentals': {
-            weight: 0.175, // 17.5% average (15-20%)
+        'Module 01: Introduction to Ethical Hacking': {
+            weight: 0.073, // 7.3% (22 questions out of 303)
             file: '../data/CEH/domain01-fundamentals.json',
-            description: 'Information security concepts, ethical hacking fundamentals, security controls, and compliance',
+            description: 'Information security concepts, ethical hacking fundamentals, information security controls, and laws',
             domain: 1
         },
-        'Domain 2: Footprinting and Reconnaissance': {
-            weight: 0.175, // 17.5% average (15-20%)
-            file: '../data/CEH/domain02-footprinting.json',
-            description: 'Footprinting methodologies, reconnaissance techniques, and information gathering',
+        'Module 02: Footprinting and Reconnaissance': {
+            weight: 0.129, // 12.9% (39 questions out of 303)
+            file: '../data/CEH/domain02-footprinting-reconnaissance.json',
+            description: 'Footprinting concepts, footprinting through search engines, web services, and social networking sites',
             domain: 2
         },
-        'Domain 3: Scanning, Enumeration, and Vulnerability Analysis': {
-            weight: 0.175, // 17.5% average (15-20%)
-            file: '../data/CEH/domain03-scanning.json',
-            description: 'Network scanning, enumeration techniques, and vulnerability assessment',
+        'Module 03-04: Scanning Networks and Enumeration': {
+            weight: 0.116, // 11.6% (35 questions out of 303)
+            file: '../data/CEH/domain03-scanning-enumeration.json',
+            description: 'Network scanning techniques, enumeration concepts, and vulnerability assessment',
             domain: 3
         },
-        'Domain 4: System Hacking and Post-Exploitation': {
-            weight: 0.225, // 22.5% average (20-25%)
+        'Module 06: System Hacking': {
+            weight: 0.046, // 4.6% (14 questions out of 303)
             file: '../data/CEH/domain04-system-hacking.json',
-            description: 'System hacking techniques, privilege escalation, maintaining access, and covering tracks',
+            description: 'Password cracking, privilege escalation, maintaining access, and clearing logs',
             domain: 4
         },
-        'Domain 5: Web, Cloud, IoT, and Emerging Technologies': {
-            weight: 0.225, // 22.5% average (20-25%)
-            file: '../data/CEH/domain05-emerging-tech.json',
-            description: 'Web application security, cloud security, IoT security, and emerging technologies',
+        'Module 07: Malware Threats': {
+            weight: 0.063, // 6.3% (19 questions out of 303)
+            file: '../data/CEH/domain05-malware-threats.json',
+            description: 'Malware analysis, Trojans, viruses, worms, and APT threats',
             domain: 5
+        },
+        'Module 08: Sniffing': {
+            weight: 0.030, // 3.0% (9 questions out of 303)
+            file: '../data/CEH/domain06-sniffing.json',
+            description: 'Packet sniffing techniques, MAC attacks, DHCP attacks, and ARP poisoning',
+            domain: 6
+        },
+        'Module 09: Social Engineering': {
+            weight: 0.040, // 4.0% (12 questions out of 303)
+            file: '../data/CEH/domain07-social-engineering.json',
+            description: 'Social engineering concepts, phishing, impersonation, and identity theft',
+            domain: 7
+        },
+        'Module 10: Denial-of-Service': {
+            weight: 0.033, // 3.3% (10 questions out of 303)
+            file: '../data/CEH/domain08-denial-of-service.json',
+            description: 'DoS/DDoS attack techniques, botnets, and DoS/DDoS countermeasures',
+            domain: 8
+        },
+        'Module 11: Session Hijacking': {
+            weight: 0.010, // 1.0% (3 questions out of 303)
+            file: '../data/CEH/domain09-session-hijacking.json',
+            description: 'Session hijacking concepts, application-level session hijacking, and countermeasures',
+            domain: 9
+        },
+        'Module 12: Evading IDS, Firewalls, and Honeypots': {
+            weight: 0.030, // 3.0% (9 questions out of 303)
+            file: '../data/CEH/domain10-evading-ids-firewalls.json',
+            description: 'IDS/IPS evasion techniques, firewall evasion, and honeypot detection',
+            domain: 10
+        },
+        'Module 13: Hacking Web Servers': {
+            weight: 0.026, // 2.6% (8 questions out of 303)
+            file: '../data/CEH/domain11-hacking-web-servers.json',
+            description: 'Web server attacks, web server attack methodology, and countermeasures',
+            domain: 11
+        },
+        'Module 14: Hacking Web Applications': {
+            weight: 0.059, // 5.9% (18 questions out of 303)
+            file: '../data/CEH/domain12-hacking-web-applications.json',
+            description: 'Web application vulnerabilities, OWASP Top 10, and web API attacks',
+            domain: 12
+        },
+        'Module 15: SQL Injection': {
+            weight: 0.050, // 5.0% (15 questions out of 303)
+            file: '../data/CEH/domain13-sql-injection.json',
+            description: 'SQL injection attacks, types of SQL injection, and evasion techniques',
+            domain: 13
+        },
+        'Module 16: Hacking Wireless Networks': {
+            weight: 0.076, // 7.6% (23 questions out of 303)
+            file: '../data/CEH/domain14-hacking-wireless-networks.json',
+            description: 'Wireless encryption, wireless threats, Bluetooth attacks, and wireless security tools',
+            domain: 14
+        },
+        'Module 17: Hacking Mobile Platforms': {
+            weight: 0.036, // 3.6% (11 questions out of 303)
+            file: '../data/CEH/domain15-hacking-mobile-platforms.json',
+            description: 'Mobile platform attack vectors, Android and iOS hacking, and mobile security guidelines',
+            domain: 15
+        },
+        'Module 18: IoT and OT Hacking': {
+            weight: 0.059, // 5.9% (18 questions out of 303)
+            file: '../data/CEH/domain16-iot-ot-hacking.json',
+            description: 'IoT hacking methodology, OT attacks, and IoT and OT security tools',
+            domain: 16
+        },
+        'Module 19: Cloud Computing': {
+            weight: 0.063, // 6.3% (19 questions out of 303)
+            file: '../data/CEH/domain17-cloud-computing.json',
+            description: 'Cloud computing concepts, container technologies, and cloud security',
+            domain: 17
+        },
+        'Module 20: Cryptography': {
+            weight: 0.063, // 6.3% (19 questions out of 303)
+            file: '../data/CEH/domain18-cryptography.json',
+            description: 'Encryption algorithms, cryptography tools, public key infrastructure (PKI), and cryptanalysis',
+            domain: 18
         }
     },
     examDuration: 14400, // 240 minutes (4 hours) in seconds
     examQuestionCount: 125, // CEH v13 exam: 125 questions
     passingScore: 70, // 70% passing score (88/125 questions)
     maxScore: 100,
-    description: 'The CEH v13 exam covers ethical hacking and penetration testing across five domains with 125 multiple-choice questions in four hours.'
+    description: 'The CEH v13 exam covers ethical hacking and penetration testing across 20 official modules with 125 multiple-choice questions in four hours.'
 };
 
 async function updateTopicCounts() {

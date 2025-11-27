@@ -1,0 +1,146 @@
+[
+  {
+    "id": 36,
+    "pdf_number": 37,
+    "question": "Kevin, a professional hacker, wants to penetrate CyberTech Inc's network. He employed a technique, using which he encoded packets with Unicode characters. The company's IDS cannot recognize the packets, but the target web server can decode them. What is the technique used by Kevin to evade the IDS system?",
+    "options": [
+      "Session splicing",
+      "Urgency flag",
+      "Obfuscating",
+      "Desynchronization"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 10
+  },
+  {
+    "id": 67,
+    "pdf_number": 70,
+    "question": "What firewall evasion scanning technique make use of a zombie system that has low network activity as well as its fragment identification numbers?",
+    "options": [
+      "Packet fragmentation scanning",
+      "Spoof source address scanning",
+      "Decoy scanning",
+      "Idle scanning"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 10
+  },
+  {
+    "id": 94,
+    "pdf_number": 98,
+    "question": "When analyzing the IDS logs, the system administrator noticed an alert was logged when the external router was accessed from the administrator's Computer to update the router configuration. What type of an alert is this?",
+    "options": [
+      "False negative",
+      "True negative",
+      "True positive",
+      "False positive"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 10
+  },
+  {
+    "id": 120,
+    "pdf_number": 124,
+    "question": "John, a professional hacker, decided to use DNS to perform data exfiltration on a target network. In this process, he embedded malicious data into the DNS protocol packets that even DNSSEC cannot detect. Using this technique, John successfully injected malware to bypass a firewall and maintained communication with the victim machine and C&C server. What is the technique employed by John to bypass the firewall?",
+    "options": [
+      "DNSSEC zone walking",
+      "DNS cache snooping",
+      "DNS enumeration",
+      "DNS tunneling method"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 10
+  },
+  {
+    "id": 124,
+    "pdf_number": 128,
+    "question": "As a part of an ethical hacking exercise, an attacker is probing a target network that is suspected to employ various honeypot systems for security. The attacker needs to detect and bypass these honeypots without alerting the target. The attacker decides to utilize a suite of techniques. Which of the following techniques would NOT assist in detecting a honeypot?",
+    "options": [
+      "Implementing a brute force attack to verify system vulnerability",
+      "Probing system services and observing the three-way handshake",
+      "Using honeypot detection tools like Send-Safe Honeypot Hunter",
+      "Analyzing the MAC address to detect instances running on VMware"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 10
+  },
+  {
+    "id": 128,
+    "pdf_number": 132,
+    "question": "Your company has been receiving regular alerts from its IDS about potential intrusions. On further investigation, you notice that these alerts have been false positives triggered by certain goodware files. In response, you are planning to enhance the IDS with YARA rules, reducing these false positives while improving the detection of real threats. Based on the scenario and the principles of YARA and IDS, which of the following strategies would best serve your purpose?",
+    "options": [
+      "Writing YARA rules specifically to identify the goodware files triggering false positives",
+      "Implementing YARA rules that focus solely on known malware signatures",
+      "Creating YARA rules to examine only the private database for intrusions",
+      "Incorporating YARA rules to detect patterns in all files regardless of their nature"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 10
+  },
+  {
+    "id": 177,
+    "pdf_number": 181,
+    "question": "An organization has been experiencing intrusion attempts despite deploying an Intrusion Detection System (IDS) and Firewalls. As a Certified Ethical Hacker, you are asked to reinforce the intrusion detection process and recommend a better rule-based approach. The IDS uses Snort rules and the new recommended tool should be able to complement it. You suggest using YARA rules with an additional tool for rule generation. Which of the following tools would be the best choice for this purpose and why?",
+    "options": [
+      "yarGen - Because it generates YARA rules from strings identified in malware files while removing strings that also appear in goodware files",
+      "Koodous - Because it combines social networking with antivirus signatures and YARA rules to detect malware",
+      "YaraRET - Because it helps in reverse engineering Trojans to generate YARA rules",
+      "AutoYara - Because it automates the generation of YARA rules from a set of malicious and benign files"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 10
+  },
+  {
+    "id": 288,
+    "pdf_number": 292,
+    "question": "George, an employee of an organization, is attempting to access restricted websites from an official computer. For this purpose, he used an anonymizer that masked his real IP address and ensured complete and continuous anonymity for all his online activities. Which of the following anonymizers helps George hide his activities?",
+    "options": [
+      "https://www.baidu.com",
+      "https://www.guardster.com",
+      "https://www.wolframalpha.com",
+      "https://karmadecay.com"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 10
+  },
+  {
+    "id": 293,
+    "pdf_number": 297,
+    "question": "Dayn, an attacker, wanted to detect if any honeypots are installed in a target network. For this purpose, he used a time-based TCP fingerprinting method to validate the response to a normal computer and the response of a honeypot to a manual SYN request. Which of the following techniques is employed by Dayn to detect honeypots?",
+    "options": [
+      "Detecting honeypots running on VMware",
+      "Detecting the presence of Snort_inline honeypots",
+      "Detecting the presence of Honeyd honeypots",
+      "Detecting the presence of Sebek-based honeypots"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 10
+  }
+]

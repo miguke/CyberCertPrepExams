@@ -1,0 +1,50 @@
+[
+  {
+    "id": 35,
+    "pdf_number": 36,
+    "question": "Boney, a professional hacker, targets an organization for financial benefits. He performs an attack by sending his session ID using an MITM attack technique. Boney first obtains a valid session ID by logging into a service and later feeds the same session ID to the target employee. The session ID links the target employee to Boney's account page without disclosing any information to the victim. When the target employee clicks on the link, all the sensitive payment details entered in a form are linked to Boney's account. What is the attack performed by Boney in the above scenario?",
+    "options": [
+      "Forbidden attack",
+      "CRIME attack",
+      "Session donation attack",
+      "Session fixation attack"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 9
+  },
+  {
+    "id": 129,
+    "pdf_number": 133,
+    "question": "Jake, a network security specialist, is trying to prevent network-level session hijacking attacks in his company. While studying different types of such attacks, he learns about a technique where an attacker inserts their machine into the communication between a client and a server, making it seem like the packets are flowing through the original path. This technique is primarily used to reroute the packets. Which of the following types of network-level session hijacking attacks is Jake studying?",
+    "options": [
+      "TCP/IP Hijacking",
+      "RST Hijacking",
+      "UDP Hijacking",
+      "Man-in-the-middle Attack Using Forged ICMP and ARP Spoofing"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 9
+  },
+  {
+    "id": 205,
+    "pdf_number": 209,
+    "question": "A security analyst is investigating a potential network-level session hijacking incident. During the investigation, the analyst finds that the attacker has been using a technique in which they injected an authentic-looking reset packet using a spoofed source IP address and a guessed acknowledgment number. As a result, the victim's connection was reset. Which of the following hijacking techniques has the attacker most likely used?",
+    "options": [
+      "Blind hijacking",
+      "UDP hijacking",
+      "RST hijacking",
+      "TCP/IP hijacking"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 9
+  }
+]

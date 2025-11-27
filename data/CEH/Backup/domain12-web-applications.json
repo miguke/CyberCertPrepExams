@@ -1,0 +1,290 @@
+[
+  {
+    "id": 12,
+    "pdf_number": 13,
+    "question": "Jane, an ethical hacker, is testing a target organization's web server and website to identify security loopholes. In this process, she copied the entire website and its content on a local drive to view the complete profile of the site's directory structure, file structure, external links, images, web pages, and so on. This information helps Jane map the website's directories and gain valuable information. What is the attack technique employed by Jane in the above scenario?",
+    "options": [
+      "Session hijacking",
+      "Website mirroring",
+      "Website defacement",
+      "Web cache poisoning"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 12
+  },
+  {
+    "id": 26,
+    "pdf_number": 27,
+    "question": "Gilbert, a web developer, uses a centralized web API to reduce complexity and increase the integrity of updating and changing data. For this purpose, he uses a web service that uses HTTP methods such as PUT, POST, GET, and DELETE and can improve the overall performance, visibility, scalability, reliability, and portability of an application. What is the type of web-service API mentioned in the above scenario?",
+    "options": [
+      "RESTful API",
+      "JSON-RPC",
+      "SOAP API",
+      "REST API"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 12
+  },
+  {
+    "id": 31,
+    "pdf_number": 32,
+    "question": "Joel, a professional hacker, targeted a company and identified the types of websites frequently visited by its employees. Using this information, he searched for possible loopholes in these websites and injected a malicious script that can redirect users from the web page and download malware onto a victim's machine. Joel waits for the victim to access the infected web application so as to compromise the victim's machine. Which of the following techniques is used by Joel in the above scenario?",
+    "options": [
+      "Watering hole attack",
+      "DNS rebinding attack",
+      "MarioNet attack",
+      "Clickjacking attack"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 12
+  },
+  {
+    "id": 34,
+    "pdf_number": 35,
+    "question": "Scenario: Joe turns on his home computer to access personal online banking. When he enters the URL www.bank.com, the website is displayed, but it prompts him to re-enter his credentials as if he has never visited the site before. When he examines the website URL closer, he finds that the site is not secure and the web address appears different. What type of attack he is experiencing?",
+    "options": [
+      "DHCP spoofing",
+      "DoS attack",
+      "ARP cache poisoning",
+      "DNS hijacking"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 12
+  },
+  {
+    "id": 57,
+    "pdf_number": 60,
+    "question": "While testing a web application in development, you notice that the web server does not properly ignore the \"dot dot slash\" (../) character string and instead returns the file listing of a folder higher up in the folder structure of the server. What kind of attack is possible in this scenario?",
+    "options": [
+      "Cross-site scripting",
+      "SQL injection",
+      "Denial of service",
+      "Directory traversal"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 12
+  },
+  {
+    "id": 61,
+    "pdf_number": 64,
+    "question": "Susan, a software developer, wants her web API to update other applications with the latest information. For this purpose, she uses a user-defined HTTP callback or push APIs that are raised based on trigger events; when invoked, this feature supplies data to other applications so that users can instantly receive real-time information. Which of the following techniques is employed by Susan?",
+    "options": [
+      "Web shells",
+      "Webhooks",
+      "REST API",
+      "SOAP API"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 12
+  },
+  {
+    "id": 63,
+    "pdf_number": 66,
+    "question": "Stella, a professional hacker, performs an attack on web services by exploiting a vulnerability that provides additional routing information in the SOAP header to support asynchronous communication. This further allows the transmission of web-service requests and response messages using different TCP connections. Which of the following attack techniques is used by Stella to compromise the web services?",
+    "options": [
+      "Web services parsing attacks",
+      "WS-Address spoofing",
+      "SOAPAction spoofing",
+      "XML injection"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 12
+  },
+  {
+    "id": 74,
+    "pdf_number": 78,
+    "question": "Jason, an attacker, targeted an organization to perform an attack on its Internet-facing web server with the intention of gaining access to backend servers, which are protected by a firewall. In this process, he used a URL https://xyz.com/feed.php?url=externalsite.com/feed/to to obtain a remote feed and altered the URL input to the local host to view all the local resources on the target server. What is the type of attack Jason performed in the above scenario?",
+    "options": [
+      "Web server misconfiguration",
+      "Server-side request forgery (SSRF) attack",
+      "Web cache poisoning attack",
+      "Website defacement"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 12
+  },
+  {
+    "id": 108,
+    "pdf_number": 112,
+    "question": "An organization decided to harden its security against web-application and web-server attacks. John, a security personnel in the organization, employed a security scanner to automate web-application security testing and to guard the organization's web infrastructure against web-application threats. Using that tool, he also wants to detect XSS, directory transversal problems, fault injection, SQL injection, attempts to execute commands, and several other attacks. Which of the following security scanners will help John perform the above task?",
+    "options": [
+      "AlienVault® OSSIMTM",
+      "Syhunt Hybrid",
+      "Saleae Logic Analyzer",
+      "Cisco ASA"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 12
+  },
+  {
+    "id": 223,
+    "pdf_number": 227,
+    "question": "A penetration tester is conducting an assessment of a web application for a financial institution. The application uses form-based authentication and does not implement account lockout policies after multiple failed login attempts. Interestingly, the application displays detailed error messages that disclose whether the username or password entered is incorrect. The tester also notices that the application uses HTTP headers to prevent clickjacking attacks but does not implement Content Security Policy (CSP). With these observations, which of the following attack methods would likely be the most effective for the penetration tester to exploit these vulnerabilities and attempt unauthorized access?",
+    "options": [
+      "The tester could exploit a potential SQL Injection vulnerability to manipulate the application's database.",
+      "The tester could execute a Brute Force attack, leveraging the lack of account lockout policy and the verbose error messages to guess the correct credentials.",
+      "The tester could execute a Man-in-the-Middle (MitM) attack to intercept and modify the HTTP headers for a Clickjacking attack.",
+      "The tester could launch a Cross-Site Scripting (XSS) attack to steal authenticated session cookies, potentially bypassing the clickjacking protection."
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 12
+  },
+  {
+    "id": 237,
+    "pdf_number": 241,
+    "question": "During a penetration test, an ethical hacker is exploring the security of a complex web application. The application heavily relies on JavaScript for client-side input sanitization, with an apparent assumption that this alone is adequate to prevent injection attacks. During the investigation, the ethical hacker also notices that the application utilizes cookies to manage user sessions but does not enable the HttpOnly flag. This lack of flag potentially exposes the cookie to client-side scripts. Given these identified vulnerabilities, what would be the most effective strategy for the ethical hacker to exploit this application?",
+    "options": [
+      "Instigate a Distributed Denial of Service (DDoS) attack to overload the server, capitalizing on potential weak server-side security.",
+      "Implement an SQL Injection attack to take advantage of potential unvalidated input and gain unauthorized database access.",
+      "Employ a brute-force attack to decipher user credentials, considering the lack of server-side validation.",
+      "Launch a Cross-Site Scripting (XSS) attack, aiming to bypass the client-side sanitization and exploit the exposure of session cookies."
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 12
+  },
+  {
+    "id": 241,
+    "pdf_number": 245,
+    "question": "An ethical hacker is testing a web application of a financial firm. During the test, a 'Contact Us' form's input field is found to lack proper user input validation, indicating a potential Cross-Site Scripting (XSS) vulnerability. However, the application has a stringent Content Security Policy (CSP) disallowing inline scripts and scripts from external domains but permitting scripts from its own domain. What would be the hacker's next step to confirm the XSS vulnerability?",
+    "options": [
+      "Utilize a script hosted on the application's domain to test the form",
+      "Try to disable the CSP to bypass script restrictions",
+      "Inject a benign script inline to the form to see if it executes",
+      "Load a script from an external domain to test the vulnerability"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 12
+  },
+  {
+    "id": 245,
+    "pdf_number": 249,
+    "question": "Gregory, a professional penetration tester working at Sys Security Ltd., is tasked with performing a security test of web applications used in the company. For this purpose, Gregory uses a tool to test for any security loopholes by hijacking a session between a client and server. This tool has a feature of intercepting proxy that can be used to inspect and modify the traffic between the browser and target application. This tool can also perform customized attacks and can be used to test the randomness of session tokens. Which of the following tools is used by Gregory in the above scenario?",
+    "options": [
+      "Wireshark",
+      "Nmap",
+      "Burp Suite",
+      "CxSAST"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 12
+  },
+  {
+    "id": 265,
+    "pdf_number": 270,
+    "question": "Calvin, a grey-hat hacker, targets a web application that has design flaws in its authentication mechanism. He enumerates usernames from the login form of the web application, which requests users to feed data and specifies the incorrect field in case of invalid credentials. Later, Calvin uses this information to perform social engineering. Which of the following design flaws in the authentication mechanism is exploited by Calvin?",
+    "options": [
+      "User impersonation",
+      "Insecure transmission of credentials",
+      "Password reset mechanism",
+      "Verbose failure messages"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 12
+  },
+  {
+    "id": 266,
+    "pdf_number": 271,
+    "question": "Rebecca, a security professional, wants to authenticate employees who use web services for safe and secure communication. In this process, she employs a component of the Web Service Architecture, which is an extension of SOAP, and it can maintain the integrity and confidentiality of SOAP messages. Which of the following components of the Web Service Architecture is used by Rebecca for securing the communication?",
+    "options": [
+      "WS-Work Processes",
+      "WS-Security",
+      "WS-Policy",
+      "WSDL"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 12
+  },
+  {
+    "id": 281,
+    "pdf_number": 287,
+    "question": "Calvin, a software developer, uses a feature that helps him auto-generate the content of a web page without manual involvement and is integrated with SSI directives. This leads to a vulnerability in the developed web application as this feature accepts remote user inputs and uses them on the page. Hackers can exploit this feature and pass malicious SSI directives as input values to perform malicious activities such as modifying and erasing server files. What is the type of injection attack Calvin's web application is susceptible to?",
+    "options": [
+      "CRLF injection",
+      "Server-side template injection",
+      "Server-side JS injection",
+      "Server-side includes injection"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 12
+  },
+  {
+    "id": 298,
+    "pdf_number": 304,
+    "question": "A 'Server-Side Includes' attack refers to the exploitation of a web application by injecting script in HTML pages or executing arbitrary code remotely. Which web-page file type, if it exists on the web server, is a strong indication that the server is vulnerable to this kind of attack?",
+    "options": [
+      ".stm",
+      ".cms",
+      ".rss",
+      ".html"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 12
+  },
+  {
+    "id": 300,
+    "pdf_number": 306,
+    "question": "Ron, a security professional, was pen testing web applications and SaaS platforms used by his company. While testing, he found a vulnerability that allows hackers to gain unauthorized access to API objects and perform actions such as view, update, and delete sensitive data of the company. What is the API vulnerability revealed in the above scenario?",
+    "options": [
+      "No ABAC validation",
+      "Business logic flaws",
+      "Improper use of CORS",
+      "Code injections"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 12
+  }
+]

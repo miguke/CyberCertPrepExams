@@ -1,0 +1,290 @@
+[
+  {
+    "id": 24,
+    "pdf_number": 25,
+    "question": "Bob, an attacker, has managed to access a target IoT device. He employed an online tool to gather information related to the model of the IoT device and the certifications granted to it. Which of the following tools did Bob employ to gather the above information?",
+    "options": [
+      "FCC ID search",
+      "Google image search",
+      "search.com",
+      "EarthExplorer"
+    ],
+    "correct": [
+      0
+    ],
+    "type": "single",
+    "domain": 16
+  },
+  {
+    "id": 56,
+    "pdf_number": 59,
+    "question": "Jim, a professional hacker, targeted an organization that is operating critical industrial infrastructure. Jim used Nmap to scan open ports and running services on systems connected to the organization's OT network. He used an Nmap command to identify Ethernet/IP devices connected to the Internet and further gathered information such as the vendor name, product code and name, device name, and IP address. Which of the following Nmap commands helped Jim retrieve the required information?",
+    "options": [
+      "nmap -Pn -sT --scan-delay 1s --max-parallelism 1 -p < Port List > < Target IP >",
+      "nmap -Pn -sU -p 44818 --script enip-info < Target IP >",
+      "nmap -Pn -sT -p 46824 < Target IP >",
+      "nmap -Pn -sT -p 102 --script s7-info < Target IP >"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 16
+  },
+  {
+    "id": 58,
+    "pdf_number": 61,
+    "question": "Richard, an attacker, aimed to hack IoT devices connected to a target network. In this process, Richard recorded the frequency required to share information between connected devices. After obtaining the frequency, he captured the original data when commands were initiated by the connected devices. Once the original data were collected, he used free tools such as URH to segregate the command sequence. Subsequently, he started injecting the segregated command sequence on the same frequency into the IoT network, which repeats the captured signals of the devices. What is the type of attack performed by Richard in the above scenario?",
+    "options": [
+      "Cryptanalysis attack",
+      "Reconnaissance attack",
+      "Side-channel attack",
+      "Replay attack"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 16
+  },
+  {
+    "id": 65,
+    "pdf_number": 68,
+    "question": "What is the port to block first in case you are suspicious that an IoT device has been compromised?",
+    "options": [
+      "22",
+      "48101",
+      "80",
+      "443"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 16
+  },
+  {
+    "id": 75,
+    "pdf_number": 79,
+    "question": "George is a security professional working for iTech Solutions. He was tasked with securely transferring sensitive data of the organization between industrial systems. In this process, he used a short-range communication protocol based on the IEEE 203.15.4 standard. This protocol is used in devices that transfer data infrequently at a low rate in a restricted area, within a range of 10-100 m. What is the short-range wireless communication technology George employed in the above scenario?",
+    "options": [
+      "LPWAN",
+      "MQTT",
+      "NB-IoT",
+      "Zigbee"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 16
+  },
+  {
+    "id": 90,
+    "pdf_number": 94,
+    "question": "Lewis, a professional hacker, targeted the IoT cameras and devices used by a target venture-capital firm. He used an information-gathering tool to collect information about the IoT devices connected to a network, open ports and services, and the attack surface area. Using this tool, he also generated statistical reports on broad usage patterns and trends. This tool helped Lewis continually monitor every reachable server and device on the Internet, further allowing him to exploit these devices in the network. Which of the following tools was employed by Lewis in the above scenario?",
+    "options": [
+      "NeuVector",
+      "Lacework",
+      "Censys",
+      "Wapiti"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 16
+  },
+  {
+    "id": 111,
+    "pdf_number": 115,
+    "question": "An organization has automated the operation of critical infrastructure from a remote location. For this purpose, all the industrial control systems are connected to the Internet. To empower the manufacturing process, ensure the reliability of industrial networks, and reduce downtime and service disruption, the organization decided to install an OT security tool that further protects against security incidents such as cyber espionage, zero-day attacks, and malware. Which of the following tools must the organization employ to protect its critical infrastructure?",
+    "options": [
+      "Robotium",
+      "BalenaCloud",
+      "Flowmon",
+      "IntentFuzzer"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 16
+  },
+  {
+    "id": 134,
+    "pdf_number": 138,
+    "question": "You are a cybersecurity consultant for a healthcare organization that utilizes Internet of Medical Things (IoMT) devices, such as connected insulin pumps and heart rate monitors, to provide improved patient care. Recently, the organization has been targeted by ransomware attacks. While the IT infrastructure was unaffected due to robust security measures, they are worried that the IoMT devices could be potential entry points for future attacks. What would be your main recommendation to protect these devices from such threats?",
+    "options": [
+      "Disable all wireless connectivity on IoMT devices.",
+      "Regularly change the IP addresses of all IoMT devices.",
+      "Use network segmentation to isolate IoMT devices from the main network.",
+      "Implement multi-factor authentication for all IoMT devices."
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 16
+  },
+  {
+    "id": 149,
+    "pdf_number": 153,
+    "question": "As a cybersecurity analyst at IoT Defend, you are working with a large utility company that uses Industrial Control Systems (ICS) in its operational technology (OT) environment. The company has recently integrated IoT devices into this environment to enable remote monitoring and control. They want to ensure these devices do not become a weak link in their security posture. To identify potential vulnerabilities in the IoT devices, which of the following actions should you recommend as the first step?",
+    "options": [
+      "Use stronger encryption algorithms for data transmission between IoT devices.",
+      "Implement network segmentation to isolate IoT devices from the rest of the network.",
+      "Conduct a vulnerability assessment specifically for the IoT devices.",
+      "Install the latest antivirus software on each IoT device."
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 16
+  },
+  {
+    "id": 151,
+    "pdf_number": 155,
+    "question": "As a cybersecurity analyst at TechSafe Inc., you are working on a project to improve the security of a smart home system. This IoT-enabled system controls various aspects of the home, from heating and lighting to security cameras and door locks. Your client wants to ensure that even if one device is compromised, the rest of the system remains secure. Which of the following strategies would be most effective for this purpose?",
+    "options": [
+      "Recommend using a strong password for the smart home system's main control panel.",
+      "Suggest implementing two-factor authentication for the smart home system's mobile app.",
+      "Propose frequent system resets to clear any potential malware.",
+      "Advise using a dedicated network for the smart home system, separate from the home's main Wi-Fi network."
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 16
+  },
+  {
+    "id": 171,
+    "pdf_number": 175,
+    "question": "You are a cybersecurity consultant at SecureIoT Inc. A manufacturing company has contracted you to strengthen the security of their Industrial IoT (IIoT) devices used in their operational technology (OT) environment. They are concerned about potential attacks that could disrupt their production lines and compromise safety. They have an advanced firewall system in place, but you know this alone is not enough. Which of the following measures should you suggest to provide comprehensive protection for their IIoT devices?",
+    "options": [
+      "Increase the frequency of changing passwords on all IIoT devices.",
+      "Use the same encryption standards for IIoT devices as for IT devices.",
+      "Rely on the existing firewall and install antivirus software on each IIoT device.",
+      "Implement network segmentation to separate IIoT devices from the rest of the network."
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 16
+  },
+  {
+    "id": 190,
+    "pdf_number": 194,
+    "question": "As a security consultant, you are advising a startup that is developing an IoT device for home security. The device communicates with a mobile app, allowing homeowners to monitor their homes in real time. The CEO is concerned about potential Man-in-the-Middle (MitM) attacks that could allow an attacker to intercept and manipulate the device's communication. Which of the following solutions would best protect against such attacks?",
+    "options": [
+      "Use CAPTCHA on the mobile app's login screen.",
+      "Implement SSL/TLS encryption for data transmission between the IoT device and the mobile app.",
+      "Limit the range of the IoT device's wireless signals.",
+      "Frequently change the IoT device's IP address."
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 16
+  },
+  {
+    "id": 225,
+    "pdf_number": 229,
+    "question": "You are a cybersecurity consultant for a smart city project. The project involves deploying a vast network of IoT devices for public utilities like traffic control, water supply, and power grid management. The city administration is concerned about the possibility of a Distributed Denial of Service (DDoS) attack crippling these critical services. They have asked you for advice on how to prevent such an attack. What would be your primary recommendation?",
+    "options": [
+      "Implement regular firmware updates for all IoT devices.",
+      "Establish strong, unique passwords for each IoT device.",
+      "Deploy network intrusion detection systems (IDS) across the IoT network.",
+      "Implement IP address whitelisting for all IoT devices."
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 16
+  },
+  {
+    "id": 250,
+    "pdf_number": 254,
+    "question": "An attacker decided to crack the passwords used by industrial control systems. In this process, he employed a loop strategy to recover these passwords. He used one character at a time to check whether the first character entered is correct; if so, he continued the loop for consecutive characters. If not, he terminated the loop. Furthermore, the attacker checked how much time the device took to finish one complete password authentication process, through which he deduced how many characters entered are correct. What is the attack technique employed by the attacker to crack the passwords of the industrial control systems?",
+    "options": [
+      "Buffer overflow attack",
+      "Side-channel attack",
+      "Denial-of-service attack",
+      "HMI-based attack"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 16
+  },
+  {
+    "id": 255,
+    "pdf_number": 260,
+    "question": "John, a professional hacker, targeted CyberSol Inc., an MNC. He decided to discover the IoT devices connected in the target network that are using default credentials and are vulnerable to various hijacking attacks. For this purpose, he used an automated tool to scan the target network for specific types of IoT devices and detect whether they are using the default, factory-set credentials. What is the tool employed by John in the above scenario?",
+    "options": [
+      "IoT Inspector",
+      "AT&T IoT Platform",
+      "IoTSeeker",
+      "IoTSeeker"
+    ],
+    "correct": [
+      2
+    ],
+    "type": "single",
+    "domain": 16
+  },
+  {
+    "id": 259,
+    "pdf_number": 264,
+    "question": "Mirai malware targets IoT devices. After infiltration, it uses them to propagate and create botnets that are then used to launch which types of attack?",
+    "options": [
+      "MITM attack",
+      "Password attack",
+      "Birthday attack",
+      "DDoS attack"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 16
+  },
+  {
+    "id": 283,
+    "pdf_number": 289,
+    "question": "Stephen, an attacker, targeted the industrial control systems of an organization. He generated a fraudulent email with a malicious attachment and sent it to employees of the target organization. An employee who manages the sales software of the operational plant opened the fraudulent email and clicked on the malicious attachment. This resulted in the malicious attachment being downloaded and malware being injected into the sales software maintained in the victim's system. Further, the malware propagated itself to other networked systems, finally damaging the industrial automation components. What is the attack technique used by Stephen to damage the industrial systems?",
+    "options": [
+      "HMI-based attack",
+      "SMishing attack",
+      "Reconnaissance attack",
+      "Spear-phishing attack"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 16
+  },
+  {
+    "id": 289,
+    "pdf_number": 295,
+    "question": "Robert, a professional hacker, is attempting to execute a fault injection attack on a target IoT device. In this process, he injects faults into the power supply that can be used for remote execution, also causing the skipping of key instructions. He also injects faults into the clock network used for delivering a synchronized signal across the chip. Which of the following types of fault injection attack is performed by Robert in the above scenario?",
+    "options": [
+      "Frequency/voltage tampering",
+      "Optical, electromagnetic fault injection (EMFI)",
+      "Temperature attack",
+      "Power/clock/reset glitching"
+    ],
+    "correct": [
+      3
+    ],
+    "type": "single",
+    "domain": 16
+  }
+]
