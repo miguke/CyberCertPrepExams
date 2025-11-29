@@ -58,7 +58,7 @@
       "RIPE"
     ],
     "correct": [
-      0
+      3
     ],
     "type": "single",
     "domain": 2
@@ -234,7 +234,7 @@
       "The time recipient spent reading the email"
     ],
     "correct": [
-      1
+      2
     ],
     "type": "single",
     "domain": 2
@@ -266,7 +266,7 @@
       "intitle: This operator restricts results to only the pages containing the specified term in the title"
     ],
     "correct": [
-      3
+      0
     ],
     "type": "single",
     "domain": 2

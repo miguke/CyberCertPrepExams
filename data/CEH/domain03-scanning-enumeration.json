@@ -218,7 +218,7 @@
       "TCP Maimon scan"
     ],
     "correct": [
-      2
+      1
     ],
     "type": "single",
     "domain": 3
@@ -262,11 +262,11 @@
     "options": [
       "Xmas scan",
       "IDLE/IPID header scan",
-      "TCP Maimon scan",
+      "TCP Maimon scan (FIN/ACK)",
       "ACK flag probe scan"
     ],
     "correct": [
-      3
+      2
     ],
     "type": "single",
     "domain": 3
@@ -362,7 +362,7 @@
       "Use the IDLE/IPID header scan technique with the command \"-sI\""
     ],
     "correct": [
-      1
+      3
     ],
     "type": "single",
     "domain": 3
@@ -474,7 +474,7 @@
       "The target network has a stateful firewall present"
     ],
     "correct": [
-      3
+      0
     ],
     "type": "single",
     "domain": 3
@@ -506,7 +506,7 @@
       "Service-based solution offered by an auditing firm"
     ],
     "correct": [
-      0
+      3
     ],
     "type": "single",
     "domain": 3
@@ -778,7 +778,7 @@
       "-oN/-oX/-oG"
     ],
     "correct": [
-      2
+      0
     ],
     "type": "single",
     "domain": 3

@@ -10,7 +10,7 @@
       "netcat"
     ],
     "correct": [
-      1
+      3
     ],
     "type": "single",
     "domain": 4
@@ -74,7 +74,7 @@
       "autoroute"
     ],
     "correct": [
-      3
+      0
     ],
     "type": "single",
     "domain": 4
