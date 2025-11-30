@@ -74,7 +74,7 @@
       "Honey trap"
     ],
     "correct": [
-      0
+      3
     ],
     "type": "single",
     "domain": 7
@@ -90,7 +90,7 @@
       "Phishing"
     ],
     "correct": [
-      2
+      1
     ],
     "type": "single",
     "domain": 7

@@ -74,7 +74,7 @@
       "z=400, u=4: The attacker constructs 4 SQL payloads, each focusing on tables with 400 records, influencing all columns of all tables."
     ],
     "correct": [
-      0
+      3
     ],
     "type": "single",
     "domain": 13

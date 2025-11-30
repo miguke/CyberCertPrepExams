@@ -154,7 +154,7 @@
       "AES key size=512 bits: This configuration provides the highest level of security but at a significant performance cost due to the large AES key size."
     ],
     "correct": [
-      3
+      2
     ],
     "type": "single",
     "domain": 18

@@ -240,38 +240,6 @@
     "domain": 14
   },
   {
-    "id": 236,
-    "pdf_number": 240,
-    "question": "As an IT intern, you have been asked to help set up a secure Wi-Fi network for a local coffee shop. The owners want to provide free Wi-Fi to their customers, but they are concerned about potential security risks. They are looking for a simple yet effective solution that would not require a lot of technical knowledge to manage. Which of the following security measures would be the most suitable in this context?",
-    "options": [
-      "Disable the network's SSID broadcast",
-      "Enable MAC address filtering",
-      "Require customers to use VPN when connected to the Wi-Fi",
-      "Implement WPA2 or WPA3 encryption"
-    ],
-    "correct": [
-      3
-    ],
-    "type": "single",
-    "domain": 14
-  },
-  {
-    "id": 240,
-    "pdf_number": 244,
-    "question": "As a budding cybersecurity enthusiast, you have set up a small lab at home to learn more about wireless network security. While experimenting with your home Wi-Fi network, you decide to use a well-known hacking tool to capture network traffic and attempt to crack the Wi-Fi password. However, despite many attempts, you have been unsuccessful. Your home Wi-Fi network uses WPA2 Personal with AES encryption. Why are you finding it difficult to crack the Wi-Fi password?",
-    "options": [
-      "Your hacking tool is outdated.",
-      "The Wi-Fi password is too complex and long.",
-      "The network is using an uncrackable encryption method.",
-      "The network is using MAC address filtering."
-    ],
-    "correct": [
-      2
-    ],
-    "type": "single",
-    "domain": 14
-  },
-  {
     "id": 248,
     "pdf_number": 252,
     "question": "The security team of Debry Inc. decided to upgrade Wi-Fi security to thwart attacks such as dictionary attacks and key recovery attacks. For this purpose, the security team started implementing cutting-edge technology that uses a modern key establishment protocol called the simultaneous authentication of equals (SAE), also known as dragonfly key exchange, which replaces the PSK concept. What is the Wi-Fi encryption technology implemented by Debry Inc.?",

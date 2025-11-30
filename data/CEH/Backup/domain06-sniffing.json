@@ -42,7 +42,7 @@
       "You cannot identify such an attack and must use a VPN to protect your traffic."
     ],
     "correct": [
-      1
+      0
     ],
     "type": "single",
     "domain": 6

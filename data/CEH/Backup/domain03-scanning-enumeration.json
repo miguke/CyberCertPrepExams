@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": 3,
     "pdf_number": 4,
@@ -13,7 +13,8 @@
       2
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: nmap -sT -O -T0** This question is about choosing the Nmap command that will scan the *common* ports while creating the *least amount of noise* on the network, in order to evade IDS/IPS. Among the options, `nmap -sT -O -T0` is the only command that combines a standard TCP scan with OS detection and the *paranoid* timing template, which dramatically slows down the scan and makes it much harder for intrusion detection systems to correlate the traffic as a scan. **COMMAND BREAKDOWN: nmap -sT -O -T0**\n- `nmap`: launches the Nmap network mapper.\n- `-sT`: TCP connect scan. Nmap performs a full TCP three-way handshake (SYN, SYN/ACK, ACK) with each target port. This scan type does not require raw sockets or privileged access and appears as normal TCP connections in logs.\n- `-O`: OS detection. Nmap sends a set of crafted probes to fingerprint the TCP/IP stack and infer the target operating system.\n- `-T0`: paranoid timing template. This is Nmap's slowest and most stealthy timing mode. It introduces long delays between probes and greatly spreads the traffic over time. **Why this command generates the least noise**\n- With `-T0`, Nmap sends packets extremely slowly (minutes between some probes), which makes the traffic blend into background noise instead of appearing as a burst of rapid, patterned packets.\n- By default, Nmap scans the top 1000 common ports, which matches the question's requirement of scanning *common ports* rather than every single port.\n- IDS/IPS systems typically look for patterns: many ports probed in quick succession from the same source. The paranoid timing template breaks that pattern, making correlation and signature-based detection much more difficult.\n- The command does not enable aggressive features like version detection scripts or traceroute that would generate extra, easily detectable traffic. In CEH terms, this is a classic example of trading **speed** for **stealth**: the scan takes a long time to finish, but produces far less obvious scanning behaviour, which is ideal when the goal is to evade detection. **Why the other options are wrong** - `nmap -A - Pn`\n  - `-A` turns on aggressive scan options: OS detection, version detection, default NSE scripts, and traceroute, all in one command. This significantly increases the volume and diversity of traffic sent to the target and is considered very **noisy** from an IDS/IPS perspective.\n  - `-Pn` (no host discovery) simply tells Nmap to skip pinging and treat the target as up; it does not make the scan stealthier. The combination of `-A` and default timing (`-T3`) produces *more* traffic, not less.\n  - This command does not focus on minimizing noise; instead, it maximizes information gathering in a single, loud run. - `nmap -sP -p-65535 -T5`\n  - `-sP` (in modern Nmap, `-sn`) is a ping scan / host discovery only; it does not perform port scanning at all. Combining `-sP` with a full port range `-p-65535` is logically inconsistent, because a ping scan ignores the port list and just checks whether hosts are up.\n  - `-T5` is the **insane** timing template. It makes the scan as fast as possible, generating a very high rate of packets. This is the *noisiest* option and is trivial for IDS/IPS and firewalls to detect and log.\n  - It also attempts to (theoretically) touch all 65 535 ports, which is the opposite of the question's focus on *common* ports and *low noise*. - `nmap -A --host-timeout 99 -T1`\n  - Again, `-A` enables aggressive scanning (OS detection, version detection, scripts, traceroute), increasing noise significantly.\n  - `-T1` (sneaky timing) is slower than the default `-T3`, but still much faster and noisier than `-T0`. It does not provide the extreme stealth of the paranoid template.\n  - `--host-timeout 99` (99 ms) is unrealistically short for most networks; it can cause Nmap to give up on hosts too quickly, leading to incomplete results. It does **not** make the scan stealthy; it only forces early timeouts.\n  - Overall, this command still produces a noticeable, aggressive scan pattern that an IDS can detect. **Key CEH concepts illustrated by this question**\n- **Timing templates (`-T0` to `-T5`)**: lower numbers are slower and more stealthy; higher numbers are faster and noisier. `-T0` (paranoid) is designed for IDS evasion at the cost of very long scan times.\n- **Common ports vs. full port range**: default Nmap scans focus on the most common ports, which reduces traffic and therefore noise compared to scanning all 65 535 ports.\n- **Noise and IDS/IPS evasion**: attackers slow down scans, randomize targets, and avoid aggressive options to stay under the radar.\n- **Trade-off between information and stealth**: options like `-A` provide rich information but at the price of very noisy traffic. **CEH REFERENCE:** Module 03 – Scanning Networks > Nmap Scanning > Timing Templates and IDS/IPS Evasion Techniques"
   },
   {
     "id": 10,
@@ -29,7 +30,8 @@
       0
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: -sA (ACK scan)** This question is about identifying whether a firewall is **stateful** (tracks connection state) or **stateless** (simple packet filter). In CEH, the classic technique for this is the **ACK flag probe scan**, which in Nmap is invoked with the `-sA` option. **What ACK scan (-sA) actually does**\n- Nmap sends **TCP packets with only the ACK flag set** to the target ports.\n- From the server's point of view, these look like **responses to an existing connection**, but in reality there was no prior SYN.\n- The way the firewall handles these unexpected ACKs reveals whether it tracks connection state or not. **Firewall behavior in an ACK scan**\n- **Stateless firewall / no firewall:**\n  - The firewall does not keep a state table; if the rule allows traffic to that port, the ACK packet passes through.\n  - The target host receives an unsolicited ACK and responds with **RST** (reset) because it has no matching connection.\n  - Nmap interprets **RST = UNFILTERED** (packet reached the host).\n- **Stateful firewall:**\n  - Maintains a **state table** of established TCP connections (SYN → SYN/ACK → ACK).\n  - Sees an ACK that does **not** belong to any tracked connection and often **drops it silently**.\n  - Nmap sees **no response or ICMP unreachable = FILTERED** (packet blocked by firewall). By looking at which ports return RST and which give no response, Paola can tell both:\n- Which ports are **filtered vs unfiltered**, and\n- Whether a firewall is **stateful** (drops unsolicited ACKs) or just a **stateless packet filter** (lets ACKs through according to simple rules). **Why -sA is the BEST choice here**\n- It is **specifically designed** for firewall analysis, not for basic port discovery.\n- It does **not** try to complete a three-way handshake, so it focuses on how the firewall treats the packet rather than whether the service is open.\n- CEH Module 03 explicitly links **ACK Flag Probe Scanning** with the `-sA` option in Nmap. **Why the other options are NOT appropriate** - **-sX (Xmas scan)**\n  - Sends TCP packets with **FIN, PSH, and URG** flags set (\"lit up like a Christmas tree\").\n  - Used mainly as a **stealth port scan** on some Unix-like systems, relying on RFC 793 behavior (open ports ignore, closed ports RST).\n  - It is **unreliable** on many modern stacks (Windows, some firewalls) and is **not aimed at distinguishing stateful vs stateless firewalls**.\n  - Focus: identifying open/closed ports quietly, not firewall state tracking. - **-sT (TCP connect scan)**\n  - Performs a full **three-way handshake** (`SYN → SYN/ACK → ACK`) using the OS connect() call.\n  - Excellent for basic **port scanning** when you do not have raw socket privileges, but **both** stateful and stateless firewalls will often allow legitimate connection attempts according to their rules.\n  - Does **not** give clear information about whether the firewall is tracking state internally; it just shows which ports are reachable.\n  - So it is not the right tool to answer 'stateful or stateless?'. - **-sF (FIN scan)**\n  - Sends TCP packets with **only the FIN flag** set.\n  - Another classic **stealth scan** relying on different responses for open vs closed ports on RFC-compliant TCP/IP stacks.\n  - Like Xmas scans, results are inconsistent on many modern systems and devices, and it is **not designed to fingerprint firewall type**.\n  - Again, it is about open/closed port inference, not firewall statefulness. **Key CEH concepts highlighted by this question**\n- **Stateful firewall:**\n  - Tracks active connections in a **state table** (SYN, ESTABLISHED, FIN).\n  - Makes filtering decisions based on context (is this packet part of an existing flow?).\n- **Stateless firewall:**\n  - Evaluates each packet **individually**, with no memory of previous packets.\n  - Uses simple rules: source/destination IP, port, protocol, flags.\n- **ACK scan (`-sA`)** is specifically used to:\n  - Map **filtered vs unfiltered** ports through a firewall.\n  - Infer whether the firewall is **stateful or stateless** by watching how it handles **unsolicited ACKs**. **CEH REFERENCE:** Module 03 – Scanning Networks > Port Scanning Techniques > ACK Flag Probe Scanning using Nmap (`-sA`)"
   },
   {
     "id": 11,
@@ -45,7 +47,8 @@
       1
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: Host-based assessment** This scenario clearly describes an assessment focused on **one specific system** (the workstation being reassigned to Janet) and its **local configuration and data**. Martin inspects user directories, the Windows Registry, configuration tables, and file permissions on that host. This matches the CEH definition of a **host-based vulnerability assessment**. **What is a host-based assessment?**\n- Targets an **individual host** (workstation, server, laptop) rather than the whole network at once.\n- Often uses an **agent** or local tools on the system, or at least authenticated access, to inspect:\n  - File system and user directories\n  - OS configuration and security policies\n  - Registry (on Windows) and other configuration stores\n  - Local services, startup items, and installed software\n  - Permissions and access control lists (ACLs)\n- Aims to find vulnerabilities such as:\n  - Misconfigured permissions\n  - Insecure registry or configuration values\n  - Outdated or vulnerable software\n  - Leftover data and accounts from previous users In the question, Martin is looking exactly at **user directories, registries, native configuration tables, incorrect registry or file permissions, and software configuration errors**. All of these are **host-level** concerns, so the correct classification is **host-based assessment**. **Why the other options are wrong** - **Database assessment**\n  - Focuses specifically on **database servers** (e.g., Oracle, SQL Server, MySQL) and their security:\n    - Database configuration\n    - User roles and privileges\n    - SQL injection exposure\n    - Weak authentication on database accounts\n  - The scenario does **not** mention a DBMS, SQL, schemas, or database permissions; it talks about **OS-level elements** (registry, user directories, file permissions), so this is **not** a database assessment. - **Credentialed assessment**\n  - Describes **how** the assessment is performed, not **what** is being assessed.\n  - A credentialed assessment is any vulnerability scan performed with **valid credentials** (for example, an authenticated scan using admin/root credentials), regardless of whether it is host-based, network-based, or application-based.\n  - Martin almost certainly uses admin-level access to inspect the registry and system settings, but the question asks for the **type of assessment**, not whether it was authenticated.\n  - Therefore, \"credentialed assessment\" is a method, not the category that best describes this scenario. - **Distributed assessment**\n  - Refers to an assessment **architecture** where multiple scanners or agents are deployed in different locations, coordinated by a central console, typically in large or geographically distributed environments.\n  - The question describes **one administrator** examining **one system** before it is reassigned. There is no indication of multiple scanners or a distributed scanning infrastructure.\n  - So this does not match the distributed assessment model. **Key CEH takeaways from this question**\n- **Host-based assessments** look inside the system: registry, local configuration, file permissions, user profiles, installed applications, and so on.\n- They are ideal when you need to validate that a specific host is **safe to use**, for example before handing it to a new employee.\n- CEH contrasts this with:\n  - **Network-based assessments** (focusing on network services and open ports), and\n  - **Application or database assessments** (focusing on specific application layers).\n- The presence of terms like *user directories*, *registries*, *system parameters*, and *file permissions* is a strong signal for **host-based** assessment in exam questions. **CEH REFERENCE:** Module 03 – Scanning Networks > Vulnerability Assessment > Types of Vulnerability Assessment > Host-based Assessment"
   },
   {
     "id": 13,
@@ -61,7 +64,8 @@
       3
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: Inference-based assessment** This scenario describes a vulnerability assessment solution that first **discovers which services are running** on each host (email server, web server, database server, etc.) and then **selects only the tests that are relevant** to those services. That logic-driven approach matches the CEH definition of an **inference-based assessment solution**. **What is an inference-based assessment solution?**\n- The scanner begins by performing **service and protocol discovery** on each target:\n  - Identifies which ports are open.\n  - Maps those ports to services (HTTP, HTTPS, SMTP, FTP, database services, etc.).\n- Based on this information, it **infers** which vulnerabilities could possibly exist on that host and selects **only the relevant tests**.\n- It does **not** blindly run every plugin or test against every host; instead, it uses an internal rule base or logic engine to decide:\n  - *\"If port 80 is open and HTTP is detected, run web application and web server vulnerability tests.\"*\n  - *\"If port 25 is open and an SMTP banner appears, run SMTP-related tests.\"*\n  - *\"If a specific database service is detected, run database-specific checks.\"*\n- This makes scanning **more efficient**, **faster**, and **less noisy**, and it reduces false positives because irrelevant checks are skipped. In the question, James:\n1. **Builds an inventory of protocols** found on the organization's machines.\n2. Determines which ports are attached to which services (email server, web server, database server).\n3. **Selects vulnerabilities on each machine and executes only the relevant tests**. That is exactly the inference-based workflow: service discovery first, then targeted vulnerability testing based on what was discovered. **Why the other options are wrong** - **Service-based solutions**\n  - This phrase is generic. It can refer to vulnerability assessment solutions that focus on services (ports/protocols), but it does not specifically capture the **logic-driven inference** step described in the question.\n  - CEH makes a specific distinction for **inference-based solutions**, which is the term used when the scanner uses an internal knowledge base or inference engine to choose tests based on discovered services.\n  - Simply saying \"service-based\" does not emphasize intelligent test selection, so it is too vague for this scenario. - **Product-based solutions**\n  - Refers to commercial or vendor-provided vulnerability scanning **products** or services (for example, a specific vendor's scanner).\n  - Describes the **delivery model** (a product or service) rather than the **assessment methodology**.\n  - Any product could internally use inference-based logic, tree-based logic, or brute-force testing, so \"product-based solution\" does not answer what type of assessment logic James used. - **Tree-based assessment**\n  - Uses a **decision tree** of tests where each branch depends on the result of the previous step (for example, if this test is positive, go down this branch; if not, go another way).\n  - More about how the vulnerability tests themselves are organized and sequenced.\n  - The scenario does not mention branching test trees or hierarchical decision paths; it emphasizes **service inventory followed by relevant test selection**, which aligns better with inference-based assessment. **Key CEH concepts reinforced by this question**\n- Modern vulnerability scanners often combine both **service discovery** and **inference-based testing**:\n  - They probe ports and banners to identify services and versions.\n  - Then they load only the plugins or checks that apply to those detected services.\n- **Advantages of inference-based assessment:**\n  - **Efficiency:** avoids running thousands of irrelevant tests.\n  - **Reduced scan time:** fewer checks per host.\n  - **Less noise on the network:** fewer packets, lower chance of triggering alarms.\n  - **Better accuracy:** fewer false positives due to better context.\n- In CEH exams, phrases like *\"builds an inventory of the protocols\"* and *\"executes only the relevant tests\"* are strong hints that the correct answer is **inference-based assessment**. **CEH REFERENCE:** Module 03 – Scanning Networks > Vulnerability Assessment Solutions > Inference-based Assessment Solutions"
   },
   {
     "id": 22,
@@ -77,7 +81,8 @@
       2
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: JXplorer** This question is about **LDAP enumeration**. The target organization uses LDAP to access a distributed directory service. The attacker connects anonymously and retrieves information such as usernames, addresses, departmental details and server names. Among the options, **JXplorer** is the only tool that is a dedicated **LDAP browser and editor**, which fits exactly what the scenario describes. **LDAP in CEH context**\n- **LDAP (Lightweight Directory Access Protocol)** is used to access and maintain distributed directory information services.\n- Common implementations: Microsoft Active Directory, OpenLDAP and other directory servers.\n- Typical data stored: user accounts, email addresses, group memberships, organizational units, server objects and more.\n- Attackers perform **LDAP enumeration** to harvest this structured information and prepare further attacks such as password spraying, phishing and privilege escalation. **Why JXplorer is the correct tool**\n- **JXplorer** is a **cross-platform LDAP browser and editor**.\n- It provides a **graphical interface** to connect to an LDAP server, browse the directory tree and view attributes.\n- It supports **anonymous binds** if the server allows it, which matches the scenario where the attacker connects anonymously.\n- An attacker can use JXplorer to:\n  - List users and organizational units.\n  - Extract attributes such as username, email, phone number, department and location.\n  - Identify server names, DC names and other infrastructure details stored in the directory.\n- This aligns perfectly with the question, which describes an automated tool querying LDAP for usernames, addresses, departmental details and server names. **Why the other options are wrong**\n- **ike-scan**\n  - A tool for discovering and fingerprinting **IPsec VPN** systems by sending IKE (Internet Key Exchange) packets.\n  - Used in CEH for VPN and IPsec enumeration, not for querying LDAP directories.\n  - It does not speak LDAP, cannot browse directory trees, and cannot retrieve user attributes from directory services. - **Zabasearch**\n  - An online **people-search** or public records aggregation site.\n  - Works against public data sources on the internet, not against an internal LDAP directory of a specific organization.\n  - It cannot perform authenticated or anonymous binds to an LDAP server or enumerate internal directory objects. - **EarthExplorer**\n  - A USGS (United States Geological Survey) service for searching and downloading **satellite imagery and geospatial data**.\n  - Completely unrelated to enterprise directories, user accounts or LDAP.\n  - Clearly a distractor and not a security or enumeration tool in the CEH sense. **Attacker workflow using JXplorer (mapped to the scenario)**\n1. The attacker discovers that the organization uses LDAP (for example, by finding port 389 or 636 open on a domain controller).\n2. He launches **JXplorer** and connects to the LDAP server, possibly using an **anonymous bind** if allowed.\n3. He browses the directory tree, starting from the naming context (such as DC=company,DC=com).\n4. He enumerates objects and attributes to extract:\n   - Usernames and display names.\n   - Email addresses and phone numbers.\n   - Department and organizational unit fields.\n   - Server and computer objects registered in the directory.\n5. He uses this information to plan further attacks: targeted phishing, password spraying, lateral movement and privilege escalation. **Key CEH concepts**\n- LDAP enumeration is a core part of **Module 04: Enumeration**.\n- GUI tools like JXplorer make it easy to visually explore directory contents, which is why they appear in exam questions as the representative LDAP enumeration tool.\n- The ability to perform **anonymous or low-privilege binds** and still retrieve rich directory information is a common misconfiguration highlighted in CEH. **CEH REFERENCE:** Module 04 – Enumeration > LDAP Enumeration > LDAP Enumeration Tools (GUI-based LDAP browsers such as JXplorer)"
   },
   {
     "id": 30,
@@ -93,7 +98,8 @@
       0
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: Agent-based scanner** In this scenario, the professional hacker **installs a scanner directly on a victim's machine** and then uses that compromised host to scan other machines on the same network. This is exactly how an **agent-based vulnerability scanner** works: a software agent runs **on the target (or internal) host** and performs scans from inside the network. **What is an agent-based scanner?**\n- An **agent-based scanner** is a small software component (agent) installed on individual hosts.\n- The agent:\n  - Collects local system information (installed software, patches, configuration, open ports).\n  - May also scan nearby hosts from the vantage point of the compromised/managed system.\n  - Reports results back to a central management server or console.\n- In a malicious context, an attacker who controls one internal machine can install his own \"agent\" (malware with scanning capability) and then:\n  - Enumerate vulnerabilities on that host.\n  - Probe other internal systems that may not be directly reachable from the Internet. **Mapping the scenario to agent-based scanning**\n- The attacker first compromises a **victim's machine**.\n- He **installs a scanner on that machine** (this is the agent).\n- The scanner then **scans several machines on the same network** to identify vulnerabilities.\n- The key idea is that the scanner executes **from within the victim's network**, not from an external security appliance.\n- This matches the CEH concept of an agent-based scanner: assessment logic running locally on endpoints instead of just from a central network scanner. **Why this is not a purely network-based scanner**\n- A **network-based scanner** typically runs from a single scanning host (for example, a dedicated scanner appliance or a security admin workstation) and probes targets **over the network**, without needing agents installed on each host.\n- It sends probes (e.g., TCP/UDP packets, HTTP requests) across the network to remote systems and analyzes their responses.\n- In the question, the scanner is **installed on the victim's machine itself**, which is a hallmark of agent-based scanning, not purely network-based scanning from a central location. **Why the other options are wrong** - **Network-based scanner**\n  - Operates from a central vantage point, scanning multiple hosts remotely without installing software on them.\n  - Suitable wording would be: \"a scanner located on a security admin's system scanning the network\" or \"a network appliance probing all hosts\".\n  - The scenario explicitly says the scanner was **installed on a machine belonging to one of the victims**, which goes beyond what a typical network-based scanner description implies.\n  - Therefore, \"network-based scanner\" does not match the exam's emphasis on a scanner deployed on the victim host. - **Cluster scanner**\n  - Not a standard vulnerability assessment category in CEH.\n  - Could imply multiple scanners working together in a cluster, but CEH does not define a distinct \"cluster scanner\" type in the official taxonomy.\n  - The scenario does not mention any distributed or clustered architecture; it only mentions **one** compromised machine with a scanner installed. - **Proxy scanner**\n  - Would imply a scanner that works through a **proxy server**, routing scan traffic via intermediate systems, often to hide the source or segment scans.\n  - While an attacker could technically route traffic through the victim, CEH does not define \"proxy scanner\" as a main vulnerability assessment type.\n  - The focus of the question is on **where the scanner is installed** (on the victim host), not on whether it uses a proxy. **Why agent-based scanners are powerful from an attacker's perspective**\n- **Internal vantage point:**\n  - Scans originate from inside the trusted network, often bypassing perimeter firewalls and external filters.\n  - The scanner can reach hosts and services not exposed to the internet.\n- **Credentialed access:**\n  - If the compromised machine has local admin or domain credentials, the scanner can perform deeper, authenticated checks on neighboring systems.\n- **Evasion of perimeter monitoring:**\n  - Traffic between internal hosts is often less strictly monitored than inbound traffic from the internet.\n  - Scans may blend into normal internal communication patterns. **Key CEH concepts**\n- CEH distinguishes between:\n  - **Network-based vulnerability scanners** (remote, central vantage point).\n  - **Host-based / agent-based scanners** (local agents installed on endpoints).\n- Installing a scanner on a compromised internal host and using it to explore the local network is a typical red-team / attacker technique that leverages **agent-based scanning** logic. **CEH REFERENCE:** Module 03 – Scanning Networks > Vulnerability Scanning > Agent-based vs Network-based Vulnerability Scanners"
   },
   {
     "id": 37,
@@ -109,7 +115,8 @@
       2
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: VRFY** This question is about classic **SMTP enumeration**. Attackers use the `VRFY` command to ask the mail server whether a given user or mailbox exists. **Why VRFY is correct**\n- Syntax: `VRFY username` or `VRFY user@example.com`.\n- If the user exists, many SMTP servers reply with a **2xx success code** and may return the full mailbox information.\n- If the user does not exist, the server returns a **5xx error code**, revealing that the account is invalid.\n- By scripting many `VRFY` requests, an attacker can build a list of **valid accounts** for later brute forcing, password spraying or targeted phishing. **Why the other options are wrong**\n- **RCPT** (`RCPT TO:`)\n  - Used during the **message transaction** to specify the recipient of an email.\n  - Some misconfigured servers can leak information with RCPT TO, but in CEH the primary command associated with explicit user verification is **VRFY** (and EXPN for lists).\n- **CHK**\n  - Not a standard SMTP command defined in the SMTP RFCs.\n  - Therefore it is **not** used in real world SMTP enumeration.\n- **EXPN**\n  - Expands **mailing lists or aliases** and returns all members of that list.\n  - It is dangerous for privacy, but its main purpose is list expansion, not generic single user verification like `VRFY`. **KEY CONCEPTS:**\n- SMTP enumeration using VRFY/EXPN.\n- Building valid user lists before authentication attacks. **CEH REFERENCE:** Module 03 – Scanning Networks > Enumeration Techniques > SMTP Enumeration (VRFY/EXPN)."
   },
   {
     "id": 46,
@@ -125,7 +132,8 @@
       2
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: <03>** This question is about **NetBIOS name suffixes**. Each NetBIOS name can appear multiple times with different two digit hexadecimal suffixes that indicate the **role or service** associated with that name. **Common NetBIOS suffixes (CEH focus)**\n- **<00>** – Workstation or domain name. Identifies the machine name or the Windows domain / workgroup.\n- **<20>** – File server service. Indicates that the host is offering **file and printer sharing**.\n- **<03>** – **Messenger service for the logged in user**. Used by the Windows messenger / message popup service associated with a specific user account.\n- **<1B>** – Domain master browser. Identifies the domain controller that maintains the browse list. The question asks specifically for the suffix used to obtain the **messenger service running for the logged in user**, which is **<03>**. **KEY CONCEPTS:**\n- NetBIOS name service and suffix codes.\n- Enumerating NetBIOS over ports 139/445 to discover hosts, shares and user sessions. **CEH REFERENCE:** Module 03 – Scanning Networks > NetBIOS Enumeration > NetBIOS Name Suffixes."
   },
   {
     "id": 50,
@@ -141,7 +149,8 @@
       3
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: The -D flag (decoy scan)** The requirement says the attacker must scan every port on the server several times using a set of spoofed source IP addresses. In Nmap this behaviour is provided by the decoy scan, enabled with the -D option. Why -D is correct\n- -D lets you specify multiple decoy IP addresses in addition to your real IP.\n- Probes appear to come from all of those IPs, so in the target logs it looks as if many different hosts are scanning.\n- Combined with -p- (all TCP ports), the attacker can both scan every port and use a set of spoofed addresses so the real source is hidden among decoys. Conceptual example command\n- nmap -p- -D 10.0.0.10,10.0.0.20,ME target Why the other options are wrong\n- -g sets the source port of the packets (for example, port 53 to look like DNS) and does not create multiple spoofed IP addresses.\n- -A enables an aggressive scan (OS detection, version detection, scripts, traceroute) but does not spoof IPs.\n- -f fragments IP packets into smaller pieces to try to bypass filters but still uses a single source IP with no decoy IP set. KEY CONCEPTS\n- Nmap decoy scanning (-D).\n- Difference between port range options (-p-) and evasion or obfuscation options. CEH REFERENCE: Module 03 - Scanning Networks - Nmap Scan Types and Options - Decoy Scans."
   },
   {
     "id": 51,
@@ -157,7 +166,8 @@
       1
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: External assessment** In this scenario Jude examines the network from a hacker's perspective, focusing on firewalls, routers and Internet-facing servers, and looking for vulnerabilities that are accessible from the outside world. This matches an external vulnerability assessment. Why external assessment is correct\n- Evaluates what an attacker on the Internet can see and exploit.\n- Focuses on perimeter devices and public IP ranges rather than internal hosts.\n- Uses techniques such as port scanning, service identification and vulnerability checks on externally exposed systems. Why the other options are wrong\n- Application assessment focuses on a specific application and its logic, not the whole perimeter.\n- Passive assessment relies mainly on passive data sources (logs, sniffing) rather than active probing of the perimeter.\n- Host-based assessment looks in depth at the configuration of individual hosts, often with local or authenticated access, not just what is visible from the outside. KEY CONCEPTS\n- Types of vulnerability assessment: external, internal, host-based, application.\n- External assessment simulates an attacker outside the organisation. CEH REFERENCE: Module 03 - Scanning Networks - Types of Vulnerability Assessment."
   },
   {
     "id": 59,
@@ -173,7 +183,8 @@
       2
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: Scanning networks** This question asks which phase allows attackers to draw a map or outline of the target organisation's network infrastructure. In the CEH hacking phases, this is the scanning networks phase. Why scanning networks is correct\n- Comes after footprinting and before detailed enumeration.\n- Identifies live hosts, open ports and running services.\n- Produces a logical map of the network topology and exposed systems, which tells the attacker what environment they are going to hack. Why the other options are wrong\n- Vulnerability analysis focuses on identifying, verifying and prioritising known weaknesses after basic discovery is done; it is about severity and impact, not drawing the first network map.\n- Malware analysis studies malicious code behaviour and indicators of compromise; it is not part of the standard footprinting, scanning and enumeration mapping process.\n- Enumeration usually follows scanning and extracts detailed information such as user accounts, shares and banners; it builds on the map created during scanning rather than creating that map. KEY CONCEPTS\n- Ethical hacking phases: footprinting, scanning, enumeration, gaining access and so on.\n- Scanning as the phase that creates the network map. CEH REFERENCE: Module 03 - Scanning Networks - Phases of Network Scanning."
   },
   {
     "id": 60,
@@ -189,7 +200,8 @@
       1
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: Use a scan tool like Nessus** The goal is to discover vulnerabilities on a Windows-based computer as part of a technical assessment. The best approach is to use a dedicated vulnerability scanner such as Nessus. Why a tool like Nessus is correct\n- Automatically checks the host's installed software, versions, patch levels and configuration against a large database of known vulnerabilities.\n- Identifies missing security patches, insecure settings and vulnerable software mapped to CVE identifiers.\n- Produces risk ratings and remediation guidance suitable for audit, compliance and security hardening. Why the other options are wrong\n- The built-in Windows Update tool focuses on installing Microsoft patches and does not generate a full vulnerability report or cover most third-party software and configuration issues.\n- Reading CVE lists on the MITRE site does not tell you which specific vulnerabilities affect this host without a scanner or manual mapping between CVEs and installed software.\n- Creating a disk image of a clean Windows installation is a backup or deployment activity and does not reveal vulnerabilities on the current, in-use system. KEY CONCEPTS\n- Vulnerability scanners (for example Nessus, OpenVAS, Qualys).\n- CVE-based checks and risk reporting.\n- Difference between vulnerability assessment and simple patch management. CEH REFERENCE: Module 05 - Vulnerability Analysis - Vulnerability Assessment Tools."
   },
   {
     "id": 71,
@@ -205,7 +217,8 @@
       0
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: Remediation** The scenario says David is applying fixes on vulnerable systems to reduce the impact and severity of vulnerabilities. In the vulnerability-management life cycle this is the remediation phase. Typical phases in CEH\n- Vulnerability scan: discover vulnerabilities using automated tools.\n- Risk assessment: analyse impact and likelihood, then prioritise.\n- Remediation: apply patches, configuration changes and compensating controls.\n- Verification: re-scan and test to confirm that vulnerabilities have been fixed. David is clearly in the remediation step because he is actively deploying fixes. Why the other options are wrong\n- Verification happens after remediation and focuses on confirming that vulnerabilities are no longer present.\n- Risk assessment is about analysing and prioritising, not installing fixes.\n- Vulnerability scan is the initial discovery phase that occurs before the work described here. KEY CONCEPTS\n- Vulnerability management life cycle.\n- Difference between finding and fixing vulnerabilities. CEH REFERENCE: Module 05 - Vulnerability Analysis - Vulnerability Management Life Cycle."
   },
   {
     "id": 80,
@@ -218,10 +231,11 @@
       "TCP Maimon scan"
     ],
     "correct": [
-      2
+      1
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: ARP ping scan** Andrew must discover all active devices hidden by a restrictive firewall on an IPv4 network. On a local LAN the most reliable technique in this situation is an ARP ping scan. Why ARP ping scan is correct\n- ARP works at layer 2 (data link) and is required for basic IP communication on the local segment.\n- Even if a host-based or network firewall blocks ICMP or TCP probes, the host normally must still answer ARP requests for its IP address.\n- An ARP sweep over the subnet reveals all live devices directly connected to that network, even when higher-layer probes are filtered. Why the other options are wrong\n- A UDP scan is a port scanning technique and can be heavily filtered, giving poor host discovery.\n- An ACK flag probe scan is mainly used to map firewall rules (filtered versus unfiltered), not to systematically discover every live host.\n- A TCP Maimon scan is a stealth TCP port scan type and is not designed as a primary host discovery method. KEY CONCEPTS\n- Host discovery versus port scanning.\n- ARP behaviour on local IPv4 networks. CEH REFERENCE: Module 03 - Scanning Networks - Host Discovery Techniques - ARP Ping Scan."
   },
   {
     "id": 82,
@@ -237,7 +251,8 @@
       0
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: 128** Henry is using TTL information from Unicornscan to guess the operating system. Different operating systems use different default initial TTL values. Typical defaults in CEH material\n- Windows systems often use an initial TTL of 128.\n- Many Linux and Unix-like systems use 64.\n- Some routers and network devices use 255. If the path between the scanner and the host is short, the observed TTL is usually close to the initial value, so seeing a TTL near 128 strongly suggests Windows. Why the other options are wrong\n- 255 is more typical of routers and some network devices, not standard Windows hosts.\n- 64 is associated with many Linux or Unix-like operating systems.\n- 138 is not a common default value for any major OS family and is more likely a decremented value rather than a fingerprint. KEY CONCEPTS\n- Passive OS fingerprinting using TTL and other header fields.\n- Differences between Windows and Linux or Unix default TTL values. CEH REFERENCE: Module 03 - Scanning Networks - OS Discovery and TCP/IP Stack Fingerprinting."
   },
   {
     "id": 91,
@@ -253,7 +268,8 @@
       1
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: nmap -sn -PS < target IP address >** John wants to perform a TCP SYN ping scan. In Nmap this is implemented with the PS option, usually combined with sn for host discovery only. Breaking down the command\n- -sn tells Nmap to perform host discovery only and skip full port scanning.\n- -PS sends TCP packets with the SYN flag set to one or more ports.\n- A SYN/ACK or RST response indicates that the host is up, so this acts as a TCP SYN ping. Why the other options are wrong\n- -sn -PO performs an IP protocol ping and does not send TCP SYN packets.\n- -sn -PA performs a TCP ACK ping, which is used more for firewall rule testing.\n- -sn -PP performs an ICMP timestamp ping and relies on ICMP, not TCP. KEY CONCEPTS\n- Nmap host discovery modes.\n- Difference between TCP SYN, TCP ACK and ICMP-based pings. CEH REFERENCE: Module 03 - Scanning Networks - Host Discovery with Nmap."
   },
   {
     "id": 110,
@@ -266,10 +282,11 @@
       "ACK flag probe scan"
     ],
     "correct": [
-      3
+      2
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: TCP Maimon scan (FIN/ACK)** Sam sends FIN/ACK probes and interprets an RST response from the target as a closed port. This behaviour matches the TCP Maimon scan, a stealth scanning technique mainly referenced in the context of some BSD-like TCP/IP stacks. What the Maimon scan does\n- Sends TCP packets with FIN and ACK flags set to target ports.\n- Closed ports reply with RST, which is interpreted as closed.\n- Open ports often ignore the packet, so no response suggests open or filtered. Why the other options are wrong\n- An Xmas scan uses FIN, PSH and URG flags, not FIN and ACK together.\n- An IDLE or IPID header scan is a side-channel technique using a third-party zombie host and IP ID behaviour, not simple FIN/ACK probes.\n- An ACK flag probe scan sends packets with only the ACK flag set and is primarily used to map filtering rules, not to identify open ports using FIN/ACK behaviour. KEY CONCEPTS\n- Stealth scan types such as FIN, NULL, Xmas and Maimon.\n- Interpreting RST versus no response in advanced TCP scans. CEH REFERENCE: Module 03 - Scanning Networks - Stealth Scanning Techniques."
   },
   {
     "id": 115,
@@ -285,7 +302,8 @@
       3
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: Passive assessment** Morris performs a vulnerability scan by sniffing traffic on the network to identify active systems, services, applications and vulnerabilities, and he also obtains a list of users currently accessing the network. This is a passive assessment because he relies on observing existing traffic rather than actively probing hosts. Why passive assessment is correct\n- Uses network sniffing to observe real traffic.\n- Identifies systems, services and users based on what is already happening on the network.\n- Does not require sending active probes or scan traffic that could be detected by monitoring. Why the other options are wrong\n- Credentialed assessment describes how access is obtained (using valid credentials) rather than whether the assessment is passive or active.\n- Internal assessment focuses on the location of the tester (inside the network) but can still be active; the question emphasises sniffing rather than active scanning.\n- External assessment is performed from outside the organisation's network, not just by sniffing local traffic. KEY CONCEPTS\n- Passive versus active vulnerability assessment.\n- Using sniffing tools to discover assets and vulnerabilities. CEH REFERENCE: Module 03 - Scanning Networks - Types of Vulnerability Assessment."
   },
   {
     "id": 117,
@@ -301,7 +319,8 @@
       2
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: Server Message Block (SMB)** Lawrence performs banner grabbing on a service running directly on TCP port 445. In Windows networks, port 445 is used by the Server Message Block (SMB) protocol. Why SMB is correct\n- Port 445/tcp is well known as the direct-hosted SMB port.\n- Used for file sharing, printer sharing and other Windows network services.\n- Common target for enumeration and exploitation in Windows environments. Why the other options are wrong\n- Remote procedure call (RPC) uses a range of ports (for example 135 and dynamic ports) and is not bound specifically to 445.\n- Telnet commonly uses port 23, not 445.\n- Network File System (NFS) typically uses ports such as 2049 and is associated with Unix or Linux environments, not Windows SMB on 445. KEY CONCEPTS\n- Common port-to-service mappings in network enumeration.\n- SMB enumeration and its importance in Windows environments. CEH REFERENCE: Module 03 - Scanning Networks - Banner Grabbing and Service Identification."
   },
   {
     "id": 125,
@@ -317,7 +336,8 @@
       2
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: Test 1** This question describes an advanced TCP/IP stack fingerprinting technique where a TCP packet with SYN and ECN-Echo flags enabled is sent to an open TCP port. The correct option is Test 1, which explicitly mentions this flag combination. Why Test 1 is correct\n- OS fingerprinting tools send carefully crafted TCP packets with unusual flag combinations to see how different stacks respond.\n- A packet with SYN and ECN-Echo set is used to test how the target handles Explicit Congestion Notification bits in the TCP header.\n- The resulting response helps the tool build an OS fingerprint that can be matched against a signature database. Why the other options are wrong\n- Test 3 refers to a URG, PSH, SYN and FIN combination which resembles an \"Xmas-style\" packet but does not match the SYN + ECN-Echo description.\n- Test 2 describes a NULL packet with no flags set, which is a different stealth scan technique and not what the scenario describes.\n- Test 6 refers to a simple ACK packet sent to a closed port, which is used for other tests (such as firewall behaviour), not the ECN-Echo fingerprinting described here. KEY CONCEPTS\n- TCP/IP stack fingerprinting using unusual flag combinations.\n- Matching observed responses to OS fingerprints. CEH REFERENCE: Module 03 - Scanning Networks - OS Discovery and TCP/IP Stack Fingerprinting."
   },
   {
     "id": 139,
@@ -333,7 +353,8 @@
       2
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: The secure LDAP connection was not properly initialized due to a lack of 'use_ssl = True' in the server object creation.** The question describes LDAP enumeration over **secure LDAP (LDAPS)**. The CEH installs the LDAP library in Python and connects, but when he tries to fetch domain name and naming context he gets no useful response. In Python-based LDAP clients (as covered in CEH examples), to talk to **secure LDAP** you must explicitly enable SSL/TLS, typically by setting a flag such as `use_ssl = True` when creating the server or connection object. Why this is the most plausible reason\n- If `use_ssl` (or the equivalent flag) is **not enabled**, the client may try a plain LDAP connection on the secure port or fail the handshake.\n- The connection might appear established at a basic socket level, but LDAP operations (such as reading naming contexts) can silently fail or return errors.\n- This exactly matches a misconfigured secure LDAP enumeration script. Why the other options are wrong\n- Incorrect port number: the question explicitly states the connection was successfully established, which implies the port is reachable and correct.\n- IDS blocking the enumeration: an IDS would more likely drop packets or reset the connection entirely; the question focuses on **client configuration** rather than network blocking.\n- Incompatible Python version: if the Python/ldap3 library were incompatible, you would typically see import or runtime errors, not just missing LDAP results for naming context queries. KEY CONCEPTS\n- Difference between LDAP and secure LDAP (LDAPS).\n- Proper initialization of secure connections in enumeration scripts. CEH REFERENCE: Module 04 - Enumeration - LDAP Enumeration and Secure LDAP (LDAPS)."
   },
   {
     "id": 142,
@@ -349,7 +370,8 @@
       0
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: Switch to an enumeration tool that supports IPv6** The scenario involves a **Windows system with NetBIOS enabled, port 139 open and file/printer sharing active**, but the company network uses **IPv6**. Classic Windows NetBIOS tools such as `nbtstat` were designed primarily for **IPv4 NetBIOS over TCP/IP**, not for IPv6-only environments. Why switching tools is correct\n- On an IPv6 network, traditional IPv4 NetBIOS name resolution and enumeration may not be available or may be heavily limited.\n- `nbtstat` does not support NetBIOS enumeration over IPv6 addresses in the same way it does for IPv4.\n- The ethical hacker should move to tools or techniques that are **explicitly IPv6-aware**, such as Nmap NSE scripts and other modern enumeration utilities that handle SMB/NetBIOS over IPv6. Why the other options are wrong\n- `Use nbtstat -a` with an IPv6 address: `nbtstat -a` expects an IPv4 address or NetBIOS name; it is not a generic IPv6 NetBIOS enumerator.\n- `Use nbtstat -c` only displays the **local NetBIOS name cache**; it does not actively enumerate a remote host and does not fix the IPv6 limitation.\n- `Utilize Nmap Scripting Engine (NSE) for NetBIOS enumeration`: NSE can be a good choice, but the specific question emphasises that `nbtstat` is not suitable on IPv6; the **first step** is to recognize the need to switch to a toolset that properly supports IPv6 NetBIOS/SMB, not to rely on an IPv4-focused approach. KEY CONCEPTS\n- Limitations of legacy NetBIOS tools in IPv6 environments.\n- Need for IPv6-capable enumeration tools for SMB/NetBIOS. CEH REFERENCE: Module 04 - Enumeration - NetBIOS and SMB Enumeration (IPv4 vs IPv6 considerations)."
   },
   {
     "id": 143,
@@ -362,10 +384,11 @@
       "Use the IDLE/IPID header scan technique with the command \"-sI\""
     ],
     "correct": [
-      1
+      3
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: Use the IDLE/IPID header scan technique with the command \"-sI\"** The red team must scan the network **without revealing its real IP address** and still discover open ports and services. Among the listed techniques, the **IDLE/IPID header scan** (`-sI`) is specifically designed for this. Why IDLE/IPID scan (-sI) is correct\n- Uses a third-party host (the **zombie**) with predictable IPID values.\n- Nmap spoofs packets to the target as if they came from the zombie, then watches the zombie's IPID changes.\n- The target sees the **zombie's IP** as the source, not the attacker's, effectively hiding the attacker's address.\n- From the responses and IPID deltas, Nmap infers which ports on the target are **open or closed**. Why the other options are wrong\n- SCTP INIT Scan (`-sY`): targets SCTP services, not specifically designed to hide the attacker's IP; the packets still come from the real source IP.\n- UDP Raw ICMP Port Unreachable Scanning (`-sU`): standard UDP port scanning; does not provide IP anonymity.\n- ACK flag probe scanning (`-sA`): mainly used to map firewall rules (filtered vs unfiltered) and detect stateful firewalls; it does not hide the source IP. KEY CONCEPTS\n- IDLE/IPID header scan and the concept of a zombie host.\n- Separating **stealth/anonymity** goals from pure port scanning modes. CEH REFERENCE: Module 03 - Scanning Networks - IDLE Scan (IPID Header Scan)."
   },
   {
     "id": 146,
@@ -378,26 +401,11 @@
       "The CVE ID of the vulnerability and its mapping to the vulnerability's name, XYZ."
     ],
     "correct": [
-      0
+      1
     ],
     "type": "single",
-    "domain": 3
-  },
-  {
-    "id": 150,
-    "pdf_number": 154,
-    "question": "A penetration tester is performing an enumeration on a client's network. The tester has acquired permission to perform enumeration activities. They have identified a remote inter-process communication (IPC) share and are trying to collect more information about it. The tester decides to use a common enumeration technique to collect the desired data. Which of the following techniques would be most appropriate for this scenario?",
-    "options": [
-      "Probe the IPC share by attempting to brute force admin credentials",
-      "Brute force Active Directory",
-      "Extract usernames using email IDs",
-      "Conduct a DNS zone transfer"
-    ],
-    "correct": [
-      0
-    ],
-    "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: The total number of high, medium, and low-risk vulnerabilities detected throughout the network.** In a Nessus-style report, the detailed entry for a single vulnerability (here, XYZ) normally includes PoC information, a list of affected systems, and references such as the CVE ID. The global count of high/medium/low findings is an overall summary metric for the entire assessment, not something that belongs inside the detailed documentation of one specific vulnerability."
   },
   {
     "id": 155,
@@ -413,7 +421,8 @@
       0
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: Use an SNMP scanning tool to identify devices running SNMP services. Once identified, attempt to brute-force the community strings.** The company uses **SNMPv1 and SNMPv2**, which are insecure because they rely on **community strings** (often `public` / `private`) for authentication. The goal is to demonstrate risk by performing an **SNMP enumeration attack**. Why this approach is correct\n- Step 1: Use an **SNMP scanner** to find hosts that have SNMP services listening (usually UDP/161).\\n  - Tools can quickly sweep a network to detect devices that respond to SNMP queries.\\n- Step 2: Attempt to **guess or brute-force community strings**.\\n  - Many devices use default or weak strings.\\n  - Once valid community strings are found, the tester can **enumerate the MIB** and retrieve configuration, interface, routing and system information.\n- This demonstrates exactly why SNMPv1/v2 are risky: with only a guessed string, an attacker gains extensive visibility into the network. Why the other options are wrong\n- SQL injection on the SNMP MIB: SNMP MIBs are not SQL databases; SQL injection is irrelevant here.\n- Man-in-the-middle on SNMP: possible in theory, but does not directly demonstrate the typical **community string weakness** of v1/v2; it is also more complex than necessary for this objective.\n- Denial-of-service on SNMP: DoS shows availability risk but does **not** perform enumeration and does not highlight the authentication weakness of community strings. KEY CONCEPTS\n- SNMPv1/v2 insecurity due to plaintext community strings.\n- SNMP enumeration using scanners and community string guessing. CEH REFERENCE: Module 04 - Enumeration - SNMP Enumeration and Community String Attacks."
   },
   {
     "id": 168,
@@ -429,7 +438,8 @@
       1
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: Checking for hardware and software misconfigurations to identify any possible loopholes** The network and systems are **fully patched** and employees have completed **security awareness training**. Even in this scenario, organisations are still vulnerable due to **misconfigurations**. Why misconfiguration checks are the best initial approach\n- Patching and awareness reduce some risks, but do **not** guarantee secure configurations.\\n  - Firewalls may have overly permissive rules.\\n  - Services may be exposed unnecessarily.\\n  - Default credentials or insecure protocols may still be in use.\\n- Many real-world breaches are caused by **misconfigured hardware and software**, not purely missing patches or untrained users.\n- As an initial vulnerability assessment step, systematically checking for misconfigurations provides the highest value in this context. Why the other options are wrong\n- Social engineering tests: important, but the scenario emphasises that employees already had training; the bigger remaining risk is likely from technical misconfigurations.\n- Evaluating inherent technology weaknesses: useful later, but generic technology weaknesses (e.g. protocol design) are less actionable than concrete misconfigurations in the company's environment.\n- Investigating ex-employees' access: a valid security control check, but it is a **narrow, HR/identity-related** issue, not the best overall initial vulnerability assessment step. KEY CONCEPTS\n- Misconfiguration as a major source of vulnerabilities.\n- Distinguishing between patching, awareness training and configuration hardening. CEH REFERENCE: Module 05 - Vulnerability Analysis - Sources of Vulnerabilities and Misconfigurations."
   },
   {
     "id": 169,
@@ -445,7 +455,8 @@
       1
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: snmp-check (snmp_enum Module) to gather a wide array of information about the target** The ethical hacker suspects that the network uses **default SNMP community strings** and wants to perform **SNMP enumeration** without modifying values in the MIB. Why snmp-check (snmp_enum module) is correct\n- `snmp-check` (or similar snmp_enum modules) is designed specifically for **read-only SNMP enumeration**.\\n  - Enumerates system information, interfaces, routing tables, services, users and more.\\n  - Uses community strings to query, not to modify, MIB values.\\n- Ideal when you want to demonstrate how much information an attacker can obtain by **just reading** SNMP data with default or weak community strings. Why the other options are wrong\n- SnmpWalk with a command to **change an OID**: changing OIDs is a **write** operation; the question explicitly wants enumeration **without directly modifying** MIB parameters.\n- Nmap with SNMP scripts: Nmap can detect SNMP services and gather some information, but `snmp-check/snmp_enum` is more focused and detailed for full SNMP enumeration; also, the option text emphasises \"retrieve all running SNMP processes\", not broad MIB enumeration.\n- OpUtils: mainly a **device/network management** suite, not a focused SNMP enumeration tool used in CEH-style assessments. KEY CONCEPTS\n- SNMP enumeration vs modifying MIB data.\n- Use of specialised SNMP enumeration tools to demonstrate risk from default community strings. CEH REFERENCE: Module 04 - Enumeration - SNMP Enumeration Tools (snmpwalk, snmp-check, snmp_enum)."
   },
   {
     "id": 173,
@@ -461,7 +472,8 @@
       0
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: Vulnerability scanning software cannot define the impact of an identified vulnerability on different business operations**\\n\\nThe scenario lists several technical weaknesses: a legacy unsupported application, outdated browsers, default firewall settings and insecure protocols. A vulnerability scanner can detect these issues, but it does not automatically tell you **how each one affects specific business processes** (payments, customer data, availability, compliance, etc.).\\n\\nWhy this is the key limitation\\n- Vulnerability scanners mainly provide **technical severity** (CVSS, high/medium/low).\\n- They do **not understand business context** such as revenue impact, regulatory fines or operational disruption.\\n- The security analyst must manually map each technical finding to the **business operations** that depend on the affected systems and applications.\\n- In a mixed environment (legacy apps, insecure browsers, default firewall settings, weak protocols), understanding business impact is crucial to prioritise remediation.\\n\\nWhy the other options are less appropriate\\n- Vulnerability scanning software is not immune to software flaws, but this is a generic risk and not the main concern highlighted by the scenario.\\n- Scanners are indeed point-in-time, but here the issue is not timing; it is **understanding which vulnerable assets matter most to the business**.\\n- Limitations in live web‑app testing are more relevant to specialised web application scanners, not to the broad infrastructure mix described.\\n\\nKEY CONCEPTS\\n- Difference between **technical severity** and **business impact**.\\n- Role of risk assessment on top of automated scanning.\\n\\nCEH REFERENCE: Module 05 - Vulnerability Analysis - Limitations of Vulnerability Assessment."
   },
   {
     "id": 191,
@@ -474,10 +486,11 @@
       "The target network has a stateful firewall present"
     ],
     "correct": [
-      3
+      0
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: The ports on the target network are open**\\n\\nIn an IDLE/IPID header scan, the attacker uses a **zombie host** with predictable IPID values to infer whether a port on the target is open or closed, without sending packets directly from their real IP.\\n\\nSimplified IDLE scan logic\\n- Step 1: Probe the zombie to get its current IPID.\\n- Step 2: Send a spoofed SYN to the target, pretending to be the zombie.\\n- Step 3: Probe the zombie again to see how much the IPID increased.\\n\\nInterpreting the IPID increase\\n- If the **port is open**, the target replies to the zombie with a SYN/ACK.\\n  - The zombie sends a RST back, which increments its IPID.\\n  - Together with the attacker’s second probe, the IPID typically increases by **2**.\\n- If the **port is closed**, the target returns a RST (or no packet), and the zombie does not respond, so the IPID only increases by **1** (the attacker’s own probe).\\n\\nIn this question, the IPID increases by **2**, which indicates that the target responded to the zombie, meaning the probed ports are **open**.\\n\\nKEY CONCEPTS\\n- IDLE/IPID header scan.\\n- Using a zombie host and IPID side channel to detect open ports.\\n\\nCEH REFERENCE: Module 03 - Scanning Networks - IDLE Scan (IPID Header Scan)."
   },
   {
     "id": 195,
@@ -493,7 +506,8 @@
       0
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: They are performing an SYN scan to stealthily identify open ports without fully establishing a connection.**\\n\\nThe described behaviour is classic **TCP SYN (half-open) scan**:\\n- The attacker sends **SYN** to a port.\\n- Receives **SYN/ACK** if the port is open.\\n- Instead of sending ACK to complete the handshake, sends **RST** and tears down the connection.\\n\\nWhy this is an SYN scan\\n- SYN scan sends only the **first step** of the three-way handshake.\\n- The SYN/ACK response is enough to identify the port as **open**, but the connection is never fully established.\\n- Sending RST instead of ACK makes the scan **stealthier** and reduces logging compared to a full connect scan.\\n\\nWhy the other options are wrong\\n- Network scan to identify live hosts: that would usually involve ping sweeps (ICMP, ARP, TCP/UDP ping), not this SYN/SYN-ACK/RST pattern per port.\\n- TCP connect scan: completes the three-way handshake (SYN, SYN/ACK, ACK) and then closes the connection; here the ACK is **never** sent.\\n- Vulnerability scan: uses a vulnerability scanner that sends many checks and probes; the question is clearly describing a low-level port scan technique.\\n\\nKEY CONCEPTS\\n- Difference between **TCP connect scan** and **SYN (half-open) scan**.\\n- Using RST instead of ACK to remain stealthier.\\n\\nCEH REFERENCE: Module 03 - Scanning Networks - TCP SYN Scan (Half-Open Scan)."
   },
   {
     "id": 197,
@@ -506,10 +520,11 @@
       "Service-based solution offered by an auditing firm"
     ],
     "correct": [
-      0
+      3
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: Service-based solution offered by an auditing firm**\\n\\nThe company wants a vulnerability assessment solution that:\\n- Imitates the **outside view of attackers**.\\n- Uses **inference-based testing** against updated vulnerability databases.\\n- Supports **multiple networks** and is continuously updated.\\n\\nWhy a service-based solution fits best\\n- A **service-based solution** (outsourced to an auditing or security firm) typically runs from the provider’s infrastructure and scans the client as an **external attacker** would.\\n- These services maintain **continuously updated** vulnerability databases and scanning engines.\\n- They often use **inference-based techniques** to select relevant tests per service and asset.\\n- They can easily scale to **multiple networks and sites** without the client having to deploy and manage many local products.\\n\\nWhy the other options are wrong\\n- Inference-based assessment solution: describes the **testing logic**, not the **deployment model**; you still have to choose product vs service.\\n- Tree-based assessment approach: focuses on how tests are organised logically, not on external attacker view or multi-network scanning.\\n- Product-based solution on a private network: runs inside the client’s environment and does **not** naturally mimic the external attacker’s perspective; also requires more maintenance by the client.\\n\\nKEY CONCEPTS\\n- Product-based vs service-based vulnerability assessment.\\n- External attacker perspective vs internal scanning.\\n\\nCEH REFERENCE: Module 05 - Vulnerability Analysis - Vulnerability Assessment Solutions (Product-based vs Service-based)."
   },
   {
     "id": 198,
@@ -525,7 +540,8 @@
       3
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: Hping3 -S 192.168.1.1 -a 192.168.1.254 -p 22 --flood**\\n\\nThe CEH wants to use **Hping3** and specifically needs to **spoof IP addresses for anonymity** during probing.\\n\\nWhy this command is correct\\n- `-S` sends TCP packets with the **SYN** flag set (useful for SYN-based probing).\\n- `-a 192.168.1.254` sets the **spoofed source IP address**. The target sees traffic as if it came from 192.168.1.254 instead of the attacker.\\n- `-p 22` targets **port 22** (SSH) on the destination 192.168.1.1.\\n- `--flood` sends packets as fast as possible (continuous stream), often used in stress testing or DoS, but here mainly indicates intense probing.\\n\\nWhy the other options are wrong\\n- `Hping3 -1 10.0.0.25 -ICMP` uses ICMP mode (`-1`) and does **not** spoof the source IP (no `-a`).\\n- `Hping3 -2 10.0.0.25-p 80` uses UDP mode (`-2`) and is also missing the `-a` option; it does not provide anonymity via spoofing.\\n- The Nmap command does not use Hping3 at all and does not explicitly spoof the source IP in the same way (`-a` is specific to Hping3).\\n\\nKEY CONCEPTS\\n- IP spoofing with Hping3 using the `-a` option.\\n- Difference between ICMP, UDP and TCP (SYN) modes in Hping3.\\n\\nCEH REFERENCE: Module 03 - Scanning Networks - Hping3 for Advanced Scanning and IP Spoofing."
   },
   {
     "id": 199,
@@ -541,7 +557,8 @@
       0
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: Use Hping3 for an ICMP ping scan on the entire subnet, then use Nmap for a SYN scan on identified active hosts, and finally use Metasploit to exploit identified vulnerabilities.**\\n\\nThe goal is to obtain a **detailed understanding of the network** and then move to exploitation. The best sequence combines tools logically:\\n1) **Hping3 ICMP ping scan** on the subnet to find live hosts.\\n2) **Nmap SYN scan** on those hosts to discover open ports and services.\\n3) **Metasploit** to exploit vulnerabilities on the discovered services.\\n\\nWhy this sequence is comprehensive\\n- Hping3: flexible packet crafter ideal for **custom ping sweeps** and detecting live systems.\\n- Nmap SYN scan: efficient and relatively stealthy way to identify **open ports and service fingerprints**.\\n- Metasploit: provides **exploitation modules** and post-exploitation capabilities once vulnerable services are identified.\\n\\nWhy the other sequences are weaker\\n- Starting with a random UDP scan and then only version detection misses structured host discovery and systematic SYN scans.\\n- Starting with a GUI tool and ending with SYN flooding mixes legitimate assessment with DoS behavior, which is not the goal here.\\n- Using Metasploit first for scanning is inefficient; Nmap is better for discovery and mapping, then Metasploit should follow.\\n\\nKEY CONCEPTS\\n- Tool chaining: discovery -> scanning -> exploitation.\\n- Appropriate use of Hping3, Nmap and Metasploit in a professional assessment.\\n\\nCEH REFERENCE: Module 03 - Scanning Networks and Module 15 - Hacking Web Servers / Exploitation Frameworks."
   },
   {
     "id": 202,
@@ -554,10 +571,11 @@
       "Send a FIN or RST packet to close the connection."
     ],
     "correct": [
-      3
+      1
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: Conduct a vulnerability scan on the open port to identify any potential weaknesses.** In the scenario, the ethical hacker performs a full **TCP three‑way handshake**:\n- Sends **SYN** to a port on the host.\n- Receives **SYN/ACK** from the host.\n- Sends **ACK** back, which **establishes the TCP connection**. At this point, the hacker has confirmed that:\n- The host is **alive**.\n- The specific port is **open** and accepting connections. Because the overall goal is to **evaluate the security of the company's IT infrastructure**, the correct next step is to **use this established connection to assess the service for vulnerabilities** on that open port. Why option B is correct\n- The question explicitly frames the activity as a **network scan to evaluate security**.\n- After confirming that a service is reachable (via SYN/SYN‑ACK/ACK), the logical next step in a vulnerability assessment is to **run vulnerability checks** against that service.\n- This aligns with the typical workflow:\n  1) Host/port discovery\n  2) Service identification\n  3) **Vulnerability scanning of those services** Why the other options are wrong\n- **A. Send a PSH packet to inform the receiving application about the buffered data.**\n  - `PSH` is a data‑transfer flag used in normal application communication.\n  - It is not a standard step in a vulnerability scanning workflow right after confirming a port is open. - **C. Scan another port on the same host using the SYN, ACK, and RST flags.**\n  - This simply repeats the **discovery** phase on a different port.\n  - The question focuses on what to do **next with this already open connection**, not on re‑discovering additional ports. - **D. Send a FIN or RST packet to close the connection.**\n  - Closing the connection with FIN/RST is normal TCP behaviour, but it does **not** advance the security evaluation.\n  - From a CEH exam perspective, the important “next step” after confirming an open port is to **test that service for weaknesses**, not just tear the connection down. KEY CONCEPTS\n- TCP three‑way handshake (SYN → SYN/ACK → ACK) used to confirm an open port.\n- Typical security assessment flow: discovery → confirmation of open ports → **vulnerability scanning**. CEH REFERENCE: Module 03 – Scanning Networks (TCP flags and connection states) and Module 05 – Vulnerability Analysis (vulnerability scanning workflow)."
   },
   {
     "id": 207,
@@ -573,7 +591,8 @@
       1
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: Exploit the NetBIOS Session Service on TCP port 139 to gain unauthorized access to the file system**\\n\\nThe CEH has already:\\n- Obtained a list of usernames (for example from email IDs).\\n- Performed a **DNS zone transfer**.\\n- Discovered that TCP ports **25 (SMTP)** and **139 (NetBIOS Session Service)** are open.\\n\\nWhy NetBIOS on port 139 is the best next target\\n- Port **139/tcp** is used for **NetBIOS Session Service**, which supports Windows file and printer sharing.\\n- Misconfigurations here can expose **shares, file systems and sensitive data**.\\n- After enumerating usernames and DNS, moving to NetBIOS enumeration and share access is a logical next step to escalate information gathering and possibly obtain unauthorized file access.\\n\\nWhy the other options are wrong\\n- Brute forcing Active Directory: possible later, but the question emphasises open ports 25 and 139 and enumeration, not brute forcing AD.\\n- Using SNMP for usernames requires SNMP to be available and community strings known; it is not mentioned in the scenario.\\n- Exploiting NFS on port 2049 is irrelevant, because that port is not indicated as open; the scenario focuses on **25 and 139**.\\n\\nKEY CONCEPTS\\n- NetBIOS/SMB enumeration on ports 139 and 445.\\n- Logical progression of enumeration steps: DNS, usernames, NetBIOS shares.\\n\\nCEH REFERENCE: Module 03 - Scanning Networks and Module 04 - Enumeration - NetBIOS and SMB Enumeration."
   },
   {
     "id": 218,
@@ -586,10 +605,11 @@
       "ntptrace 192.168.1.1"
     ],
     "correct": [
-      1
+      3
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: ntptrace 192.168.1.1** The goal is to use **ntptrace** to:\n- Find out **where the NTP server in the DMZ (192.168.1.1) gets its time from**, and\n- Trace the **chain of NTP servers** that form the synchronization path. Given the syntax `ntptrace [-n] [-m maxhosts] [servername/IP_address]`, the simplest and correctly formed command that does this is: - `ntptrace 192.168.1.1` Why `ntptrace 192.168.1.1` is correct\n- Starts the trace from the **DMZ NTP server** at `192.168.1.1`.\n- By default, `ntptrace` walks the NTP hierarchy until it reaches the primary source (e.g., a stratum‑1 server), listing each NTP server in the chain.\n- This directly answers the objective: show **where that server obtains the time** and the **list of upstream NTP servers**. Why the other options are wrong\n- **`ntptrace -n -m 5192.168.1.1`**\n  - As written, `-m 5192.168.1.1` is **syntactically invalid**: `-m` expects an integer `maxhosts` followed by a separate server name/IP (for example, `-m 5 192.168.1.1`).\n  - Because the maxhosts value and the IP address are concatenated, this command does not follow the documented syntax. - **`ntptrace -m 5192.168.1.1`**\n  - Has the **same syntax issue**: the `-m` option is not followed by a separate integer and then a separate server argument.\n  - Even though it appears to try to use `-m`, the command as written does not correctly implement `-m maxhosts`. - **`ntptrace -n localhost`**\n  - Traces from the **local machine** rather than directly from the DMZ NTP server `192.168.1.1`.\n  - This may or may not show the DMZ server’s own upstream chain, depending on how NTP is configured locally.\n  - It does **not** best match the requirement to trace specifically from the **DMZ NTP server**. KEY CONCEPTS\n- `ntptrace` is used to follow the **NTP synchronization path** from a given server up to the primary time source.\n- The optional `-m maxhosts` flag limits the number of hops, but it must be provided with a **separate integer argument**, not concatenated with the IP address.\n- When asked to investigate a specific NTP server in the DMZ, you should start `ntptrace` **directly from that server’s IP**. CEH REFERENCE: Module 03 - Scanning Networks - NTP Enumeration and ntptrace Usage."
   },
   {
     "id": 220,
@@ -605,7 +625,8 @@
       3
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: ARP Ping Scan** The ethical hacker expects a private LAN with **unused IPs** and **restrictive firewalls** that may hide active devices. In this situation, a **layer 2 ARP ping scan** is the most effective. Why ARP Ping Scan is correct\n- ARP works at **layer 2** and is fundamental to IPv4 LAN communication: a host must answer ARP requests for its IP in order to receive traffic.\n- Even if ICMP Echo, timestamp or TCP SYN probes are blocked by firewalls, hosts usually still respond to ARP on the local segment.\n- An ARP sweep quickly identifies **all live hosts** on the LAN, even if they are “hidden” from higher-layer probes. Why the other options are wrong\n- **ICMP ECHO Ping Sweep**: many modern firewalls and hosts block ICMP Echo, so many live systems will not reply.\n- **ICMP Timestamp Ping**: also relies on ICMP; similarly likely to be filtered and less commonly allowed.\n- **TCP SYN Ping**: more useful for host discovery over routed networks, but port-based probes can be blocked; on a local LAN, ARP is more reliable. KEY CONCEPTS\n- Difference between **layer 2** and **layer 3/4** discovery.\n- ARP scan as the most trustworthy method for finding active hosts on a local IPv4 segment. CEH REFERENCE: Module 03 - Scanning Networks - Host Discovery Techniques (ARP Ping Scan)."
   },
   {
     "id": 226,
@@ -621,7 +642,8 @@
       1
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: Xmas Scan, because it can pass through filters undetected, depending on the security mechanisms installed** The hacker wants a **stealth scan** against a **BSD-derived TCP/IP stack**, and suspects that security devices may detect SYN packets. He therefore wants a method that avoids obvious SYN traffic and can slip past some filters. Why Xmas Scan is correct\n- An **Xmas scan** sends TCP packets with the flags **FIN, PSH and URG** set, making the packet appear “lit up like a Christmas tree”.\n- On many BSD-derived stacks:\n  - Closed ports respond with **RST**.\n  - Open ports **ignore** the packet (no response).\n- Because these packets do not follow normal connection patterns (no SYN), some older or misconfigured firewalls/IDS devices may **not flag them as scans**.\n- This gives the attacker a **stealthy way** to identify port states when SYN-based scans are heavily monitored. Why the other options are wrong\n- **Maimon Scan (FIN/ACK)**: also a stealth technique on BSD stacks, but the question’s official focus in CEH for classic stealth on BSD in this context is the **Xmas scan**; the description emphasises a method that can slip through filters depending on configuration, which aligns with Xmas.\n- **TCP Connect/Full-Open Scan**: completes the full three-way handshake and is **not stealthy**; it is easy for IDS and logs to detect.\n- **ACK Flag Probe Scan**: used mainly to discover **firewall rules** (filtered vs unfiltered) and statefulness, not primarily to identify open ports without SYN. KEY CONCEPTS\n- Stealth scans (NULL, FIN, Xmas) and their behaviour on BSD-like TCP/IP stacks.\n- Avoiding SYN-based detection by using unusual flag combinations. CEH REFERENCE: Module 03 - Scanning Networks - Stealth Scanning (NULL, FIN, Xmas)."
   },
   {
     "id": 228,
@@ -637,7 +659,8 @@
       1
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: Qualys Vulnerability Management** The organisation has a **hybrid IT environment** (on‑premise + cloud assets) and needs:\n- Comprehensive coverage and visibility.\n- **Continuous scanning**.\n- Ability to monitor **unexpected changes** before they become breaches. Why Qualys Vulnerability Management is correct\n- Qualys VM is a **cloud-based** vulnerability management platform.\n- Designed to cover **on‑premises, cloud and hybrid** environments from a central console.\n- Supports **continuous scanning** and asset discovery across multiple networks.\n- Provides change detection and configuration assessment to highlight **unexpected changes** that could introduce vulnerabilities. Why the other options are wrong\n- **GFI LanGuard**: strong for Windows-centric and local networks, but less oriented to large-scale hybrid cloud coverage compared to Qualys.\n- **OpenVAS**: open-source scanner, powerful but requires on‑prem installation and more manual management; not as integrated for large hybrid environments with continuous external service.\n- **Nessus Professional**: excellent vulnerability scanner, but typically licensed and run as a **single scanner instance**; Qualys is more emphasised in CEH as a **cloud-managed, enterprise-grade VM solution** for hybrid infrastructures. KEY CONCEPTS\n- Product-based vs cloud-based vulnerability management.\n- Managing vulnerability scanning across mixed on‑prem and cloud environments. CEH REFERENCE: Module 05 - Vulnerability Analysis - Commercial Vulnerability Management Solutions (Qualys, Nessus, etc.)."
   },
   {
     "id": 244,
@@ -653,7 +676,8 @@
       1
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: DNS cache snooping** Henry queries the DNS server for **specific cached records** to determine which external sites have been recently visited by the organisation’s users. This behaviour matches **DNS cache snooping**. Why DNS cache snooping is correct\n- The attacker queries the DNS resolver for **particular domain names** (e.g., example.com).\n- If the resolver responds quickly and without forwarding, that domain is likely already in the cache, indicating that users have **recently accessed** that domain.\n- By repeating this for many domains, the attacker can infer **browsing habits** and identify interesting targets or partners. Why the other options are wrong\n- **DNS zone walking**: used against DNS servers that expose zone transfers or DNSSEC records, to enumerate all names in a zone; it does not specifically reveal which external sites were recently visited.\n- **DNS cache poisoning**: involves **injecting malicious entries** into a DNS cache to redirect users; here Henry is only reading, not poisoning.\n- **DNSSEC zone walking**: exploits some DNSSEC configurations to enumerate signed zones; again, not related to checking which entries are currently cached. KEY CONCEPTS\n- DNS cache snooping as an information‑gathering technique.\n- Using DNS behaviour to infer user browsing and internal dependencies. CEH REFERENCE: Module 03 - Scanning Networks / Module 02 - Footprinting and Reconnaissance - DNS Cache Snooping."
   },
   {
     "id": 249,
@@ -669,7 +693,8 @@
       2
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: -PP** The analyst wants to use Zenmap/Nmap to perform an **ICMP timestamp ping scan**. In Nmap, the **`-PP`** option is used for **ICMP timestamp request** host discovery. Why `-PP` is correct\n- Sends **ICMP timestamp requests** instead of echo requests.\n- A valid timestamp reply indicates the host is **up** and also returns time-related data.\n- Useful when classic echo requests (`ICMP Echo`) are filtered but timestamp messages may still be allowed. Why the other options are wrong\n- `-Pn`: disables host discovery (treat all targets as up) and does **not** perform an ICMP timestamp ping.\n- `-PU`: performs **UDP ping** to specified ports, not ICMP timestamp.\n- `-PY`: performs **SCTP INIT ping**; used for discovering SCTP endpoints, not ICMP timestamp. KEY CONCEPTS\n- Different Nmap host discovery modes and their flags.\n- ICMP timestamp (`-PP`) vs ICMP echo and other discovery methods. CEH REFERENCE: Module 03 - Scanning Networks - Nmap Host Discovery Options."
   },
   {
     "id": 251,
@@ -685,7 +710,8 @@
       0
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: 2 → 5 → 6 → 1 → 3 → 4** The question asks for the correct sequence of the **vulnerability-management life cycle** steps:\n1) Remediation\n2) Identify assets and create a baseline\n3) Verification\n4) Monitor\n5) Vulnerability scan\n6) Risk assessment The correct CEH order is:\n1. **Identify assets and create a baseline (2)**\n   - Inventory systems, services and data.\n   - Establish a **baseline** of what should exist.\n2. **Vulnerability scan (5)**\n   - Run automated scans to identify known vulnerabilities and misconfigurations.\n3. **Risk assessment (6)**\n   - Analyse likelihood and impact.\n   - Prioritise vulnerabilities based on business risk.\n4. **Remediation (1)**\n   - Apply patches, configuration changes and compensating controls.\n5. **Verification (3)**\n   - Re-scan or test to confirm that vulnerabilities were correctly fixed.\n6. **Monitor (4)**\n   - Continuously monitor for new vulnerabilities and changes in the environment. Thus the correct sequence is **2 → 5 → 6 → 1 → 3 → 4**. KEY CONCEPTS\n- Full vulnerability management life cycle from **asset discovery** to **continuous monitoring**.\n- Separation between **finding** vulnerabilities (scan), **evaluating** them (risk assessment) and **fixing/confirming** (remediation + verification). CEH REFERENCE: Module 05 - Vulnerability Analysis - Vulnerability Management Life Cycle."
   },
   {
     "id": 277,
@@ -701,7 +727,8 @@
       2
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: The two internal commands VRFY and EXPN provide a confirmation of valid users, email addresses, aliases, and mailing lists.** The question is about what useful information is collected during **SMTP enumeration**. Why VRFY and EXPN are important\n- `VRFY` (Verify)\n  - Asks the SMTP server to **verify whether a user or mailbox exists**.\n  - Responses (2xx vs 5xx) reveal **valid vs invalid** accounts.\n- `EXPN` (Expand)\n  - Asks the server to **expand a mailing list or alias**.\n  - Returns the full list of members, which may include internal usernames and email addresses. Together, VRFY and EXPN allow an attacker to:\n- Build a list of **valid users and email addresses**.\n- Discover **aliases and mailing lists** and their members.\n- Prepare targeted attacks such as phishing, password spraying or brute force attempts. Why the other options are wrong\n- A list of all mail proxy addresses: not a standard direct output of VRFY/EXPN.\n- RCPT command listing open ports: `RCPT TO:` is used in the SMTP transaction to specify recipients; it does not enumerate ports.\n- Daily outgoing message limits: not revealed by VRFY or EXPN in standard SMTP implementations. KEY CONCEPTS\n- SMTP enumeration using **VRFY** and **EXPN**.\n- Leveraging mail servers to build a high‑value user list. CEH REFERENCE: Module 04 - Enumeration - SMTP Enumeration (VRFY/EXPN)."
   },
   {
     "id": 281,
@@ -717,7 +744,8 @@
       1
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: Using wget to perform banner grabbing on the webserver** The command `wget 192.168.0.15 -q -S` sends an HTTP request to the web server and:\n- `-q` (quiet) suppresses normal output.\n- `-S` prints the **HTTP response headers**. This behavior is typical of **banner grabbing**:\n- It allows the tester to see the `Server` header, software version, and other header fields.\n- This helps identify the type and version of the web server (Apache, Nginx, IIS, etc.) and sometimes installed modules. Why the other options are wrong\n- **Performing content enumeration on the web server to discover hidden folders**: that would require options such as `--recursive`, `--level`, `--no-parent`, or similar, not just `-S`.\n- **Flooding the web server with requests to perform a DoS attack**: a single `wget` request with `-q -S` is just a normal HTTP request, not a denial‑of‑service attack.\n- **Downloading all the contents of the web page locally for further examination**: this would use options like `-r` (recursive) and possibly others, not only `-q -S`. KEY CONCEPTS\n- HTTP **banner grabbing** for service and version identification.\n- Using generic tools (wget, netcat, telnet) during the scanning and enumeration phases. CEH REFERENCE: Module 03 - Scanning Networks - Banner Grabbing and Service Identification."
   },
   {
     "id": 282,
@@ -733,7 +761,8 @@
       2
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: Linux OS** Harris is performing OS fingerprinting using two classic indicators from the IP and TCP headers:\n- Initial **TTL value = 64**\n- **TCP window size = 5840** According to common CEH/Nmap fingerprinting profiles:\n- Many **Linux** systems (especially Linux 2.4/2.6 and derivatives) use **TTL 64** and **window size 5840** by default.\n- **Windows** systems typically start with **TTL 128**.\n- Other operating systems (such as some network devices and appliances) often use **TTL 255** or different window sizes. Therefore, the combination **TTL 64 + TCP window size 5840** is strongly associated with **Linux OS**. Why the other options are wrong\n- **Windows OS**: usually has an initial TTL of **128**, not 64.\n- **Mac OS**: often uses **TTL 64**, but the typical TCP window sizes differ (commonly 65535 rather than 5840).\n- **Solaris OS**: uses different default TTL/window size signatures and does not match the classic **64 / 5840** Linux fingerprint. KEY CONCEPTS\n- Passive OS fingerprinting using **TTL** and **TCP window size**.\n- Typical fingerprint differences between **Windows** and **Linux** hosts. CEH REFERENCE: Module 03 - Scanning Networks - OS Discovery and TCP/IP Stack Fingerprinting."
   },
   {
     "id": 284,
@@ -749,7 +778,8 @@
       2
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: Netsparker** Jack quer fazer **vulnerability scanning num web server**, incluindo:\n- Encontrar hosts, serviços web e vulnerabilidades de aplicação.\n- Usar uma ferramenta automatizada focada em aplicações web. Por que Netsparker é correto\n- **Netsparker** (hoje Invicti) é um **web application vulnerability scanner**.\n- Deteta falhas como SQL injection, XSS, misconfigurações, ficheiros sensíveis expostos, etc.\n- Automatiza o processo de scanning de web servers e aplicações, que é exatamente o cenário descrito. Por que as outras opções estão erradas\n- **Infoga**: ferramenta de OSINT para recolha de emails, não scanner de vulnerabilidades web.\n- **NCollector Studio**: usado para download de websites (offline browsing, scraping), não para vulnerability scanning.\n- **WebCopier Pro**: também é website copier/offline browser, não um scanner de segurança. KEY CONCEPTS\n- Diferença entre web crawlers/copiadores e scanners de vulnerabilidades.\n- Ferramentas dedicadas a avaliação de segurança de aplicações web. CEH REFERENCE: Module 05 - Vulnerability Analysis - Web Application Vulnerability Scanners (por ex. Netsparker)."
   },
   {
     "id": 298,
@@ -765,7 +795,8 @@
       3
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: Checking if the remote host is alive** Vulnerability scanners seguem, de forma geral, esta ordem:\n1. **Descobrir se o host está vivo** (ping, ARP, TCP/UDP ping).\n2. Fazer **port scanning** em hosts vivos.\n3. Detetar serviços, versões e sistema operativo.\n4. Executar **checks de vulnerabilidades** sobre os serviços detetados. Logo, o **primeiro passo** é verificar se o host remoto **está ativo (alive)**, antes de gastar tempo com port scanning e outros testes mais pesados. Por que as outras opções estão erradas\n- **OS Detection**: ocorre depois de confirmado que o host está ativo.\n- **Firewall detection**: também vem mais tarde, quando já se sabe que o host responde.\n- **TCP/UDP Port scanning**: é o passo seguinte; não faz sentido escanear portas de um host que pode nem estar ativo. KEY CONCEPTS\n- Sequência típica: host discovery → port scan → service/OS detection → vulnerability checks. CEH REFERENCE: Module 03 - Scanning Networks - Scanning Techniques and Workflow; Module 05 - Vulnerability Analysis - Vulnerability Scanning Process."
   },
   {
     "id": 299,
@@ -778,9 +809,44 @@
       "-oN/-oX/-oG"
     ],
     "correct": [
-      2
+      0
     ],
     "type": "single",
-    "domain": 3
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: -D** The question asks which Nmap switch helps an attacker evade IDS or firewalls. In CEH, the classic option for this is the `-D` decoy scan switch. `-D` enables decoy scanning: you can specify multiple decoy IP addresses in addition to your real IP. On the target's logs, the scan appears to come from many different IPs, making it difficult to identify which one is the real attacker. This helps confuse or evade IDS and firewall logs, because the true source of the scan is obscured among decoys. The other options do not provide this type of evasion: `-n` / `-R` only control DNS resolution behavior, `-T` only adjusts the scan timing (speed) and is not an evasion feature by itself, and `-oN` / `-oX` / `-oG` only change the output format of the results. KEY CONCEPTS: Nmap decoy scanning with `-D` as a technique to obfuscate the real source of a scan, and the difference between switches that affect evasion versus those that only affect DNS resolution, timing, or output format. CEH REFERENCE: Module 03 - Scanning Networks"
+  },
+  {
+    "id": 87,
+    "pdf_number": 91,
+    "question": "After an audit, the auditors inform you that there is a critical finding that you must tackle immediately. You read the audit report, and the problem is the service running on port 389. Which service is this and how can you tackle the problem?",
+    "options": [
+      "The service is NTP, and you have to change it from UDP to TCP in order to encrypt it.",
+      "The service is LDAP, and you must change it to 636, which is LDAPS.",
+      "The findings do not require immediate actions and are only suggestions.",
+      "The service is SMTP, and you must change it to SMIME, which is an encrypted way to send emails."
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: The service is LDAP, and you must change it to 636, which is LDAPS.** The audit report flags a critical issue with the service on port 389. TCP/UDP port 389 is used by LDAP (Lightweight Directory Access Protocol). In CEH, the recommended way to secure LDAP traffic is to use LDAPS (LDAP over SSL/TLS) on port 636 so that authentication data and directory queries are encrypted in transit. Moving the service to LDAPS (port 636) helps prevent credential sniffing and unauthorized directory enumeration over clear-text connections. The other options are incorrect: NTP normally uses port 123/UDP, so changing it from UDP to TCP does not address LDAP or encryption; saying no immediate action is required contradicts the \"critical\" severity in the audit; SMTP and S/MIME relate to email services (ports 25/587/465), not to LDAP on port 389. KEY CONCEPTS: well-known ports (389 = LDAP, 636 = LDAPS), hardening directory services by enabling SSL/TLS. CEH REFERENCE: Module 04 - Enumeration (LDAP and LDAP Security); Module 01 - Introduction to Ethical Hacking (Secure Protocols)."
+  },
+  {
+    "id": 116,
+    "pdf_number": 120,
+    "question": "Which of the following protocols can be used to secure an LDAP service against anonymous queries?",
+    "options": [
+      "NTLM",
+      "RADIUS",
+      "WPA",
+      "SSO"
+    ],
+    "correct": [
+      1
+    ],
+    "type": "single",
+    "domain": 3,
+    "explanation": "**CORRECT ANSWER: RADIUS** The question asks which protocol can be used to **secure an LDAP service against anonymous queries**. In enterprise environments, it is common to place an **AAA (Authentication, Authorization, Accounting)** service in front of directory services such as LDAP to tightly control who can query them. Why RADIUS is the best choice\n- **RADIUS (Remote Authentication Dial-In User Service)** is an AAA protocol used to centralize authentication and authorization.\n- It can be used as an intermediate control layer:\n  - Clients authenticate against the **RADIUS server** first.\n  - Only authenticated and authorized users are then allowed to access back-end services such as **LDAP**.\n- This means **anonymous users cannot directly query LDAP**, because all access is mediated by RADIUS policies. Why the other options are wrong\n- **NTLM**:\n  - A Microsoft authentication protocol, not a full AAA framework.\n  - By itself it does not act as a central gatekeeper for LDAP queries; it is just one possible authentication mechanism.\n- **WPA**:\n  - A wireless network security standard for Wi‑Fi.\n  - Secures radio communication on the WLAN, not LDAP query access.\n- **SSO (Single Sign-On)**:\n  - An access convenience concept/architecture, not a specific security protocol.\n  - SSO can even use LDAP as a back-end, but it is not the mechanism that directly prevents anonymous LDAP queries. KEY CONCEPTS\n- Using **AAA protocols (like RADIUS)** to control and log access to sensitive back-end services.\n- Separating **authentication/authorization (RADIUS)** from **directory services (LDAP)** to prevent anonymous enumeration. CEH REFERENCE: Module 01 - Introduction to Ethical Hacking (Authentication and Authorization Protocols); Module 04 - Enumeration (Securing Directory Services such as LDAP)."
   }
 ]

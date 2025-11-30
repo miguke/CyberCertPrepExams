@@ -58,7 +58,7 @@
       "resources.asrc"
     ],
     "correct": [
-      2
+      0
     ],
     "type": "single",
     "domain": 15
@@ -74,7 +74,7 @@
       "Conduct regular cybersecurity awareness training, focusing on phishing attacks."
     ],
     "correct": [
-      2
+      3
     ],
     "type": "single",
     "domain": 15

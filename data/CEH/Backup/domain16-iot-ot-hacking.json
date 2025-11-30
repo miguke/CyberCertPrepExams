@@ -106,7 +106,7 @@
       "IntentFuzzer"
     ],
     "correct": [
-      1
+      2
     ],
     "type": "single",
     "domain": 16

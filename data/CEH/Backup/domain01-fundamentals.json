@@ -10,10 +10,11 @@
       "Red hat"
     ],
     "correct": [
-      1
+      2
     ],
     "type": "single",
-    "domain": 1
+    "domain": 1,
+    "explanation": "**✅ CORRECT ANSWER: Gray hat**\n\nNicolas demonstrates characteristic behavior of a **Gray hat**:\n• Discovered a legitimate zero-day vulnerability\n• Notified the affected system owner and the vendor (Microsoft) so they can create a patch\n• Did NOT exploit the vulnerability for personal gain or malicious purposes\n• Followed a mix of ethical and non-ethical protocol.\n\n**❌ WHY THE OTHERS ARE WRONG:**\n\n• **Black hat**: Malicious hackers who exploit vulnerabilities for personal gain, damage, or illegal activities. Nicolas did NOT exploit the vulnerability; instead, he helped protect systems.\n\n• **White hat**: Ethical hackers who always follow a strict ethical code and obtain permission before testing. Nicolas did not obtain permission before discovering the vulnerability.\n\n• **Red hat**: Less common term, generally refers to hackers who aggressively attack other malicious hackers, or in some contexts, very aggressive pentesters. Nicolas did not attack anyone.\n\n**💡 KEY CONCEPTS:**\n• **Zero-day vulnerability**: Vulnerability unknown to the vendor, with no patch available\n• **Responsible Disclosure**: Ethical practice of reporting vulnerabilities to the vendor before public disclosure\n• **Gray hat ethics**: May discover vulnerabilities without authorization but don't exploit them maliciously.\n\n**📖 CEH REFERENCE:** Module 01 - Information Security Fundamentals > Hacker Classes"
   },
   {
     "id": 40,
@@ -29,7 +30,8 @@
       3
     ],
     "type": "single",
-    "domain": 1
+    "domain": 1,
+    "explanation": "**✅ CORRECT ANSWER: 4.0-6.9**\n\nAccording to **CVSS v3.1 (Common Vulnerability Scoring System version 3.1)**, the official severity rating ranges are:\n\n**CVSS v3.1 Severity Ratings:**\n• None: 0.0\n• Low: 0.1-3.9\n• **Medium: 4.0-6.9** ✅\n• High: 7.0-8.9\n• Critical: 9.0-10.0\n\nThe question specifically asks for the MEDIUM range, which is **4.0-6.9** (inclusive).\n\n**❌ WHY THE OTHERS ARE WRONG:**\n\n• **4.0-6.0**: Incomplete range. Medium goes up to 6.9, not 6.0. This answer excludes vulnerabilities between 6.1 and 6.9 that are classified as Medium.\n\n• **3.9-6.9**: Incorrect because 3.9 still belongs to the LOW category (0.1-3.9). Medium starts at exactly 4.0.\n\n• **3.0-6.9**: Also incorrect because the entire range from 3.0-3.9 is classified as LOW severity, not Medium.\n\n**💡 KEY CONCEPTS:**\n• **CVSS (Common Vulnerability Scoring System)**: Standardized framework for assessing and communicating the severity of security vulnerabilities\n• **CVSS v3.1**: Current most widely used version (released in 2019)\n• **Base Score**: Score from 0.0 to 10.0 that reflects intrinsic severity\n• Important: Version changes (v2 vs v3) have slightly different ranges\n\n**📖 CEH REFERENCE:** Module 01 - Information Security Fundamentals > Vulnerability Assessment > CVSS Scoring"
   },
   {
     "id": 42,
@@ -45,7 +47,8 @@
       3
     ],
     "type": "single",
-    "domain": 1
+    "domain": 1,
+    "explanation": "**✅ CORRECT ANSWER: HIPAA/PHI**\n\n**HIPAA (Health Insurance Portability and Accountability Act)** and **PHI (Protected Health Information)** are the regulations most violated in this scenario:\n\n• **Context**: Medical company + patient medical records exposed publicly\n• **HIPAA** is the U.S. federal law specifically designed to protect sensitive patient health information\n• **PHI** includes any individually identifiable health information (medical records, diagnosis, treatment, etc.)\n• Public exposure of medical records via Google search = severe HIPAA violation\n• HIPAA requires strict safeguards to protect PHI confidentiality, integrity, and availability\n\n**❌ WHY THE OTHERS ARE WRONG:**\n\n• **PCI DSS (Payment Card Industry Data Security Standard)**: Protects credit card and payment data, NOT medical records. This standard applies to organizations that handle credit card transactions.\n\n• **PII (Personally Identifiable Information)**: This is NOT a regulation - it's a data classification term. PII refers to any data that can identify an individual. While medical records contain PII, there's no \"PII regulation.\"\n\n• **ISO 2002**: No such regulation exists. ISO/IEC 27002 is an information security standard, but it's not specific to healthcare and doesn't have legal enforcement power like HIPAA.\n\n**💡 KEY CONCEPTS:**\n• **HIPAA Title II**: Administrative Simplification - sets standards for electronic healthcare transactions and privacy\n• **HIPAA Privacy Rule**: Protects PHI from unauthorized disclosure\n• **HIPAA Security Rule**: Requires administrative, physical, and technical safeguards\n• **HIPAA Breach Notification Rule**: Requires notification when PHI is exposed\n\n**📖 CEH REFERENCE:** Module 01 - Information Security Fundamentals > Information Security Laws and Regulations > HIPAA"
   },
   {
     "id": 43,
@@ -61,7 +64,8 @@
       1
     ],
     "type": "single",
-    "domain": 1
+    "domain": 1,
+    "explanation": "**✅ CORRECT ANSWER: Gaining access**\n\nBoth activities described - **malware infection** and **phishing for credentials** - are characteristic of the **Gaining Access** phase:\n\n• **Gaining Access Phase**: This is where the actual exploitation happens - the attacker attempts to enter the target system\n• **Malware infection**: Direct exploitation method to gain initial foothold in the system\n• **Phishing for credentials**: Social engineering technique to obtain valid authentication credentials for system/application access\n• Both techniques are used to OBTAIN ACCESS to the target environment\n\n**CEH Ethical Hacking Methodology (5 Phases):**\n1. Reconnaissance (passive/active info gathering)\n2. Scanning (identify live systems, ports, services)\n3. **Gaining Access** ← (exploitation, malware, phishing) ✅\n4. Maintaining Access (backdoors, rootkits, trojans)\n5. Clearing Tracks (log deletion, covering evidence)\n\n**❌ WHY THE OTHERS ARE WRONG:**\n\n• **Scanning**: This phase identifies live systems, open ports, and services. No exploitation occurs during scanning - it's purely reconnaissance to map the attack surface.\n\n• **Maintaining Access**: This phase comes AFTER gaining access. Involves installing backdoors, rootkits, or trojans to retain access for future exploitation. Phishing and malware infection are used to GET IN, not to stay in.\n\n• **Reconnaissance**: Information gathering phase before any active attacks. No system compromise occurs. Phishing involves active interaction with victims - beyond passive reconnaissance.\n\n**💡 KEY CONCEPTS:**\n• **Exploitation**: Taking advantage of vulnerabilities to gain access\n• **Social Engineering**: Manipulating humans to divulge credentials or perform actions\n• **Initial Access**: First entry point into target systems\n\n**📖 CEH REFERENCE:** Module 01 - Information Security Fundamentals > Ethical Hacking Methodology > Gaining Access"
   },
   {
     "id": 52,
@@ -77,7 +81,8 @@
       0
     ],
     "type": "single",
-    "domain": 1
+    "domain": 1,
+    "explanation": "**✅ CORRECT ANSWER: SOX**\n\n**SOX (Sarbanes-Oxley Act of 2002)** was created directly in response to the corporate fraud scandals:\n\n• **Historical Context**: Enron (2001), WorldCom (2002), and Tyco scandals exposed massive corporate accounting fraud\n• **Purpose**: Improve accuracy and reliability of corporate financial disclosures\n• **Scope**: Applies to publicly traded companies, accounting firms, and third-party financial service providers\n• **Effective Date**: Signed into law July 30, 2002\n• **Key Requirements**: Internal controls, financial reporting accuracy, executive accountability, independent audits\n• **IT Impact**: Requires documentation of IT controls affecting financial data\n\n**❌ WHY THE OTHERS ARE WRONG:**\n\n• **FedRAMP (Federal Risk and Authorization Management Program)**: Cloud security assessment program for U.S. government agencies, created in 2011. Not related to corporate financial fraud or accounting.\n\n• **HIPAA (Health Insurance Portability and Accountability Act)**: 1996 law protecting patient health information. Not related to corporate financial disclosures or accounting fraud.\n\n• **PCI DSS (Payment Card Industry Data Security Standard)**: Industry standard for protecting credit card data, created 2004. Not a law, and not related to corporate financial fraud.\n\n**💡 KEY CONCEPTS:**\n• **SOX Section 302**: CEO/CFO must certify financial reports\n• **SOX Section 404**: Management must assess internal controls\n• **SOX Section 802**: Criminal penalties for document destruction\n• **IT Compliance**: Change management, access controls, audit trails\n\n**📖 CEH REFERENCE:** Module 01 - Information Security Fundamentals > Information Security Laws and Regulations > SOX"
   },
   {
     "id": 78,
@@ -90,26 +95,11 @@
       "Vulnerability hunting program"
     ],
     "correct": [
-      2
-    ],
-    "type": "single",
-    "domain": 1
-  },
-  {
-    "id": 87,
-    "pdf_number": 91,
-    "question": "After an audit, the auditors inform you that there is a critical finding that you must tackle immediately. You read the audit report, and the problem is the service running on port 389. Which service is this and how can you tackle the problem?",
-    "options": [
-      "The service is NTP, and you have to change it from UDP to TCP in order to encrypt it.",
-      "The service is LDAP, and you must change it to 636, which is LDAPS.",
-      "The findings do not require immediate actions and are only suggestions.",
-      "The service is SMTP, and you must change it to SMIME, which is an encrypted way to send emails."
-    ],
-    "correct": [
       1
     ],
     "type": "single",
-    "domain": 1
+    "domain": 1,
+    "explanation": "**✅ CORRECT ANSWER: Bug bounty program**\n\n**Bug bounty programs** are the industry-standard term for vulnerability disclosure programs on platforms like HackerOne:\n\n• **Definition**: Programs where companies offer monetary rewards (bounties) to ethical hackers who discover and report security vulnerabilities\n• **Platforms**: HackerOne, Bugcrowd, Synack, YesWeHack, Intigriti\n• **How it works**: Researchers find bugs → submit reports → company validates → researcher gets paid\n• **Benefits**: Crowdsourced security testing, cost-effective, continuous testing\n• **Scope**: Companies define what assets are in-scope and reward amounts based on severity\n\n**❌ WHY THE OTHERS ARE WRONG:**\n\n• **White-hat hacking program**: While bug bounty hunters are white-hat hackers, this is not the specific industry term for these programs. Too generic and not the recognized name.\n\n• **Ethical hacking program**: Also too generic. This could refer to internal security teams, training programs, or consulting services. Not the specific term used for bounty platforms.\n\n• **Vulnerability hunting program**: Not standard terminology. While accurate description of the activity, \"bug bounty\" is the universally recognized term in the industry.\n\n**💡 KEY CONCEPTS:**\n• **Coordinated Vulnerability Disclosure**: Structured process for reporting and fixing vulnerabilities\n• **Bounty Tiers**: Critical ($$$), High ($$), Medium ($), Low ($)\n• **Scope**: In-scope vs out-of-scope assets\n• **Hall of Fame**: Public recognition for researchers\n\n**📖 CEH REFERENCE:** Module 01 - Information Security Fundamentals > Bug Bounty Programs"
   },
   {
     "id": 105,
@@ -125,23 +115,8 @@
       0
     ],
     "type": "single",
-    "domain": 1
-  },
-  {
-    "id": 116,
-    "pdf_number": 120,
-    "question": "Which of the following protocols can be used to secure an LDAP service against anonymous queries?",
-    "options": [
-      "NTLM",
-      "RADIUS",
-      "WPA",
-      "SSO"
-    ],
-    "correct": [
-      2
-    ],
-    "type": "single",
-    "domain": 1
+    "domain": 1,
+    "explanation": "**✅ CORRECT ANSWER: Incident triage**\n\n**Incident triage** is the IH&R phase where Robert analyzed and determined the incident details:\n\n• **What Robert did**: Analyzed compromised device, determined attack type, severity, target, impact, propagation method, and vulnerabilities exploited\n• **Incident Triage Definition**: Initial assessment and prioritization phase where incidents are analyzed to understand scope, severity, and nature\n• **Key Activities**: Classify incident, assess severity, identify affected systems, determine attack vectors, prioritize response\n• **Goal**: Quickly understand WHAT happened, HOW severe it is, and WHAT needs immediate attention\n\n**IH&R Process Phases:**\n1. **Incident Triage** ← (analyze, classify, prioritize) ✅\n2. Incident Recording and Assignment (document, assign to team)\n3. Incident Analysis (deep investigation)\n4. Containment (limit damage spread)\n5. Eradication (remove threat)\n6. Recovery (restore systems)\n7. Post-Incident Activities (lessons learned)\n\n**❌ WHY THE OTHERS ARE WRONG:**\n\n• **Preparation**: This is the FIRST phase that occurs BEFORE any incident happens. Includes creating incident response plans, training teams, setting up tools/processes. Robert is responding to an ACTIVE incident, not preparing.\n\n• **Incident recording and assignment**: This phase comes AFTER triage. It involves formally documenting the incident details and assigning it to the appropriate response team. Robert is still in the analysis/assessment phase.\n\n• **Eradication**: This phase occurs much later in the process, AFTER containment. It involves removing the threat. Robert is analyzing the incident, not removing threats yet.\n\n**💡 KEY CONCEPTS:**\n• Triage Priority Levels: Critical, High, Medium, Low\n• Initial Analysis: Type of attack, entry point, affected systems\n• Time-Critical: Triage must happen quickly\n\n**📖 CEH REFERENCE:** Module 01 - Information Security Fundamentals > Incident Management > Incident Handling and Response Process"
   },
   {
     "id": 130,
@@ -157,7 +132,8 @@
       0
     ],
     "type": "single",
-    "domain": 1
+    "domain": 1,
+    "explanation": "**✅ CORRECT ANSWER: Develop an in-depth Risk Management process**\n\nAfter a major data breach from an unidentified vulnerability, **comprehensive Risk Management** is the most strategic and effective approach:\n\n• **Why Risk Management**: Addresses ROOT CAUSE (unidentified vulnerability) through systematic, ongoing process\n• **5 Risk Management Phases**:\n  1. **Identification**: Discover all potential risks and vulnerabilities\n  2. **Assessment**: Analyze likelihood and impact of each risk\n  3. **Treatment**: Decide how to handle each risk (avoid, transfer, mitigate, accept)\n  4. **Tracking**: Monitor risks continuously\n  5. **Review**: Regular reassessment and updates\n• **Holistic Approach**: Covers people, processes, technology - not just single technical solution\n• **Proactive**: Prevents future breaches by identifying threats before exploitation\n• **Continuous**: Ongoing process that adapts to new threats\n\n**❌ WHY THE OTHERS ARE WRONG:**\n\n• **High-end firewall system**: Single point solution that only addresses network perimeter. The breach was from an \"unidentified vulnerability\" - firewalls don't protect against unknown vulnerabilities, zero-days, or application-layer attacks. Too narrow and reactive.\n\n• **Complete network redesign**: Extremely expensive, disruptive, time-consuming, and impractical. Redesign doesn't guarantee vulnerability elimination - new vulnerabilities will emerge. Not sustainable.\n\n• **Intrusion Detection System (IDS)**: Detective control that identifies threats AFTER they occur, not preventive. IDS helps with detection but doesn't address the fundamental issue of identifying and fixing vulnerabilities before exploitation.\n\n**💡 KEY CONCEPTS:**\n• Defense in Depth: Risk Management enables layered security\n• Vulnerability Management: Part of risk identification\n• Risk = Threat × Vulnerability × Impact\n\n**📖 CEH REFERENCE:** Module 01 - Information Security Fundamentals > Risk Management"
   },
   {
     "id": 137,
@@ -170,10 +146,11 @@
       "The organization is not at fault because they used their resources as per their understanding."
     ],
     "correct": [
-      1
+      0
     ],
     "type": "single",
-    "domain": 1
+    "domain": 1,
+    "explanation": "**✅ CORRECT ANSWER: The organization is at fault because it did not fix all identified vulnerabilities.**\n\nIn this scenario, the **organization is the risk owner** and ultimately responsible for deciding which vulnerabilities to remediate:\n\n• John, the ethical hacker, **fulfilled his role** by identifying several vulnerabilities and advising on preventive measures.\n• The organization **chose to fix only the most severe vulnerability**, knowingly leaving other attack paths open.\n• When a breach exploits an identified but unpatched vulnerability, this reflects **poor risk management and prioritization by the organization**.\n\n**❌ WHY THE OTHERS ARE WRONG:**\n\n• **Both the organization and John share responsibility (B)**: The scenario states that John identified the vulnerabilities and advised on preventive measures. There is no indication that he withheld information or told them to remediate only one vulnerability.\n\n• **John is at fault (C)**: John does not control budget or business decisions. His duty is to provide technical findings and recommendations; management decides which risks to accept.\n\n• **The organization is not at fault (D)**: Limited resources do not remove accountability. The organization is still responsible for managing risk and ensuring that critical vulnerabilities are handled appropriately.\n\n**💡 KEY CONCEPTS:**\n• **Risk owner**: Senior management that decides whether to accept, transfer, or mitigate risks.\n• **Residual risk**: Risk that remains after mitigation — here, the unpatched but known vulnerabilities.\n• **Due care / due diligence**: The organization must take reasonable steps to address known vulnerabilities.\n\n**📖 CEH REFERENCE:** Module 01 - Information Security Fundamentals > Information Security Responsibilities"
   },
   {
     "id": 170,
@@ -189,7 +166,8 @@
       1
     ],
     "type": "single",
-    "domain": 1
+    "domain": 1,
+    "explanation": "**✅ CORRECT ANSWER: Base metric represents the inherent qualities of a vulnerability**\n\n**CVSS Base Metric** represents the fundamental, intrinsic characteristics of a vulnerability that are constant over time and across environments:\n\n• **Inherent Qualities**: Attack vector, attack complexity, privileges required, user interaction, scope, confidentiality impact, integrity impact, availability impact\n• **Time-independent**: Base metrics don't change - a SQL injection vulnerability always requires similar attack conditions\n• **Environment-independent**: Same regardless of where the vulnerability exists\n\n**CVSS v3.1 Three Metric Groups:**\n1. **Base** → Inherent vulnerability characteristics (never change) ✅\n2. **Temporal** → Characteristics that change OVER TIME\n3. **Environmental** → Characteristics specific to USER'S ENVIRONMENT\n\n**❌ WHY THE OTHERS ARE WRONG:**\n\n• **Temporal metric represents the inherent qualities**: WRONG - Temporal metrics are time-dependent factors.\n\n• **Environmental metric represents the inherent qualities**: WRONG - Environmental metrics are organization-specific.\n\n• **Base metric represents characteristics that change over time**: WRONG - This describes TEMPORAL metrics, not Base.\n\n**💡 KEY CONCEPTS:**\n• Base Score Range: 0.0-10.0\n• Exploitability + Impact Metrics\n\n**📖 CEH REFERENCE:** Module 01 - Information Security Fundamentals > CVSS Scoring System"
   },
   {
     "id": 179,
@@ -205,7 +183,8 @@
       0
     ],
     "type": "single",
-    "domain": 1
+    "domain": 1,
+    "explanation": "**✅ CORRECT ANSWER: Script Kiddies**\n\n**Script Kiddies** match the scenario - unskilled hackers using automated pre-made scripts:\n\n• **Key Indicators**: \"Automated scripts\", \"unskilled hackers\", \"orchestrated attack\"\n• **Definition**: Unskilled individuals using pre-written tools without understanding how they work\n• **Tools**: Automated scanners, exploit frameworks, DDoS tools\n\n**❌ WHY THE OTHERS ARE WRONG:**\n\n• **Gray Hats**: Have technical skills. Don't use automated scripts mindlessly.\n\n• **White Hats**: Authorized testers. The scenario describes an ATTACK, not authorized testing.\n\n• **Black Hats**: SKILLED malicious hackers. Question states \"unskilled hackers\" using automated scripts.\n\n**💡 KEY CONCEPTS:**\n• Skill Levels: Script Kiddies (unskilled) vs Hats (skilled)\n• Automated Attack Tools\n\n**📖 CEH REFERENCE:** Module 01 - Information Security Fundamentals > Hacker Classes"
   },
   {
     "id": 181,
@@ -221,7 +200,8 @@
       1
     ],
     "type": "single",
-    "domain": 1
+    "domain": 1,
+    "explanation": "**✅ CORRECT ANSWER: Understanding the vulnerabilities exploited and the system weaknesses**\n\n**Understanding vulnerabilities** is THE most crucial initial analysis step:\n\n• **Root Cause**: Zero-day vulns were exploited - must understand WHAT weaknesses allowed this\n• **Prevention**: Cannot prevent what you don't understand\n• **Question Context**: \"Propose preventive measures\" requires vulnerability knowledge\n\n**❌ WHY THE OTHERS ARE WRONG:**\n\n• **Identifying tools**: Tools change. The vulnerability is what enabled the attack.\n\n• **Mapping topology**: Should have been done BEFORE breach. Understanding HOW attack succeeded takes priority.\n\n• **Analyzing logs**: Shows WHAT happened, not WHY it was possible.\n\n**💡 KEY CONCEPTS:**\n• Zero-Day Vulnerabilities\n• Root Cause vs Symptoms\n\n**📖 CEH REFERENCE:** Module 01 - Information Security Fundamentals > Vulnerability Assessment"
   },
   {
     "id": 188,
@@ -234,10 +214,11 @@
       "Active attack and the organization could have used network traffic analysis."
     ],
     "correct": [
-      2
+      0
     ],
     "type": "single",
-    "domain": 1
+    "domain": 1,
+    "explanation": "**✅ CORRECT ANSWER: Insider attacks + robust access control and monitoring**\n\n**Insider attacks** match the scenario:\n\n• **Key Indicator**: \"High degree of understanding of organization's internal processes and systems\"\n• **Definition**: Attacks by insiders with authorized access and inside knowledge\n• **Countermeasure**: Least Privilege, Separation of Duties, Access Monitoring, Audit Logs, PAM\n\n**❌ WHY THE OTHERS ARE WRONG:**\n\n• **Distribution attack**: Supply chain attack. Scenario describes someone with EXISTING internal knowledge.\n\n• **Passive attack**: Eavesdropping without modifying data. Attacker \"corrupt valuable resources\" - ACTIVE.\n\n• **Active attack**: Too generic. Doesn't identify SPECIFIC type.\n\n**💡 KEY CONCEPTS:**\n• Insider Threat Types\n• Access Controls\n\n**📖 CEH REFERENCE:** Module 01 - Information Security Fundamentals > Insider Attacks"
   },
   {
     "id": 232,
@@ -253,7 +234,8 @@
       1
     ],
     "type": "single",
-    "domain": 1
+    "domain": 1,
+    "explanation": "**✅ CORRECT ANSWER: Ensuring atomicity of operations between checking and using data resources**\n\n**Atomicity** is the ONLY effective mitigation for TOC/TOU race condition vulnerabilities:\n\n• **TOC/TOU**: Race condition where system state changes between checking and using\n• **Atomicity Solution**: Make check-and-use a SINGLE atomic operation that cannot be interrupted\n• **Implementation**: Locks, semaphores, transactions\n\n**❌ WHY THE OTHERS ARE WRONG:**\n\n• **Regular patching**: Addresses known vulns, not race condition design flaws.\n\n• **Firewall updates**: Controls network traffic, not application-level race conditions.\n\n• **Stronger encryption**: Encrypts data, doesn't prevent race conditions.\n\n**💡 KEY CONCEPTS:**\n• Race Conditions\n• Critical Sections\n• TOCTOU Window\n\n**📖 CEH REFERENCE:** Module 01 - Information Security Fundamentals > TOC/TOU Errors"
   },
   {
     "id": 246,
@@ -269,7 +251,8 @@
       1
     ],
     "type": "single",
-    "domain": 1
+    "domain": 1,
+    "explanation": "**✅ CORRECT ANSWER: Determine the impact of enabling the audit feature**\n\n**Determining impact FIRST** is critical before enabling auditing:\n\n• **Why Impact Assessment**: Auditing consumes resources (CPU, memory, storage) - may affect performance\n• **Production Risk**: Bank processes sensitive financial data - cannot risk slowdown\n• **Impact Factors**: Storage requirements, performance overhead, network bandwidth\n\n**❌ WHY THE OTHERS ARE WRONG:**\n\n• **Vulnerability scan**: Unrelated to audit planning.\n\n• **Cost/benefit analysis**: Comes AFTER understanding impact.\n\n• **Allocate funds**: Premature - cannot allocate without knowing requirements.\n\n**💡 KEY CONCEPTS:**\n• Audit Logging\n• Performance Overhead\n• Capacity Planning\n\n**📖 CEH REFERENCE:** Module 01 - Information Security Fundamentals > Audit and Logging"
   },
   {
     "id": 261,
@@ -285,7 +268,8 @@
       3
     ],
     "type": "single",
-    "domain": 1
+    "domain": 1,
+    "explanation": "**✅ CORRECT ANSWER: PCI-DSS**\n\n**PCI-DSS (Payment Card Industry Data Security Standard)** is the most applicable standard for a credit card company:\n\n• **Context**: Major credit card company - processes, stores, transmits cardholder data\n• **PCI-DSS Purpose**: Protect credit card data from theft, fraud, and breaches\n• **Requirements**: 12 requirements across 6 goals (secure network, protect cardholder data, vulnerability management, access control, monitoring, security policy)\n• **Penetration Testing**: Required annually and after significant changes (PCI-DSS Requirement 11.3)\n• **Auditing**: Validates compliance with PCI-DSS controls\n\n**❌ WHY THE OTHERS ARE WRONG:**\n\n• **FISMA (Federal Information Security Management Act)**: U.S. federal government agencies and contractors - NOT private credit card companies.\n\n• **Sarbanes-Oxley Act (SOX)**: Financial reporting and accounting for publicly traded companies - NOT specifically about credit card data.\n\n• **HITECH (Health Information Technology for Economic and Clinical Health)**: Healthcare data and electronic health records - NOT credit card data.\n\n**💡 KEY CONCEPTS:**\n• PCI-DSS Compliance Levels (1-4 based on transaction volume)\n• Cardholder Data Environment (CDE)\n• Annual Penetration Testing requirement\n\n**📖 CEH REFERENCE:** Module 01 - Information Security Fundamentals > Information Security Laws and Standards > PCI-DSS"
   },
   {
     "id": 270,
@@ -301,7 +285,8 @@
       3
     ],
     "type": "single",
-    "domain": 1
+    "domain": 1,
+    "explanation": "**✅ CORRECT ANSWER: Technical threat intelligence**\n\n**Technical threat intelligence** is the type Roma used - machine-readable indicators fed into security devices:\n\n• **Key Indicators**: \"Fed threat intelligence into security devices in digital format\", \"block and identify malicious traffic\"\n• **Technical TI Definition**: Machine-readable indicators of compromise (IOCs) consumed by security tools\n• **Format**: IP addresses, domain names, URLs, file hashes, signatures\n• **Usage**: Automated ingestion into firewalls, IDS/IPS, SIEM, EDR\n• **Purpose**: Real-time blocking and detection\n\n**❌ WHY THE OTHERS ARE WRONG:**\n\n• **Operational threat intelligence**: Details about specific attacks, TTPs, campaigns - for security teams, NOT automated device consumption.\n\n• **Strategic threat intelligence**: High-level trends, threat landscape for executives - NOT machine-readable IOCs.\n\n• **Tactical threat intelligence**: Attacker TTPs and procedures for defenders - NOT automated device feeds.\n\n**💡 KEY CONCEPTS:**\n• IOC (Indicators of Compromise)\n• Threat Feeds\n• STIX/TAXII formats\n\n**📖 CEH REFERENCE:** Module 01 - Information Security Fundamentals > Threat Intelligence > Technical Threat Intelligence"
   },
   {
     "id": 273,
@@ -317,7 +302,8 @@
       1
     ],
     "type": "single",
-    "domain": 1
+    "domain": 1,
+    "explanation": "**✅ CORRECT ANSWER: Operational threat intelligence**\n\n**Operational threat intelligence** matches Arnold's activities - contextual information about threats, attacker methodologies, and actionable recommendations:\n\n• **Key Indicators**: \"Contextual information about security events\", \"insight into attacker methodologies\", \"recommended courses of action\", \"warnings for emerging attacks\"\n• **Operational TI Definition**: Details about specific attacks, campaigns, and adversary TTPs\n• **Sources**: Human intelligence (HUMINT), social media, dark web, incident data\n• **Audience**: Security operations teams (SOC analysts, incident responders)\n• **Output**: Reports with malicious activities, recommended actions, threat warnings\n\n**❌ WHY THE OTHERS ARE WRONG:**\n\n• **Strategic threat intelligence**: High-level trends for executives/board - NOT detailed attacker methodologies and recommended actions.\n\n• **Technical threat intelligence**: Machine-readable IOCs (IPs, hashes) - NOT contextual reports with recommendations.\n\n• **Tactical threat intelligence**: TTPs mapped to frameworks (MITRE ATT&CK) - Similar but operational is more actionable and campaign-specific.\n\n**💡 KEY CONCEPTS:**\n• Threat Actor Profiling\n• Campaign Analysis\n• Actionable Intelligence\n\n**📖 CEH REFERENCE:** Module 01 - Information Security Fundamentals > Threat Intelligence > Operational Threat Intelligence"
   },
   {
     "id": 275,
@@ -333,7 +319,8 @@
       2
     ],
     "type": "single",
-    "domain": 1
+    "domain": 1,
+    "explanation": "**✅ CORRECT ANSWER: SOX**\n\n**SOX (Sarbanes-Oxley Act)** aims at protecting stakeholders from accounting errors and fraud:\n\n• **Purpose**: Protect investors and general public from corporate accounting fraud\n• **Created**: 2002 after Enron, WorldCom, Tyco scandals\n• **Key Provisions**: Financial reporting accuracy, internal controls, executive accountability\n• **Stakeholder Protection**: Ensures transparent, accurate financial disclosures\n\n**❌ WHY THE OTHERS ARE WRONG:**\n\n• **FISMA**: U.S. federal government information security - NOT accounting fraud prevention.\n\n• **PCI-DSS**: Credit card data protection - NOT accounting/financial reporting.\n\n• **ISO/IEC 27001:2013**: Information security management - NOT specific to accounting fraud.\n\n**💡 KEY CONCEPTS:**\n• Corporate Governance\n• Financial Controls\n• Stakeholder Protection\n\n**📖 CEH REFERENCE:** Module 01 - Information Security Fundamentals > Information Security Laws > SOX"
   },
   {
     "id": 296,
@@ -349,6 +336,7 @@
       3
     ],
     "type": "single",
-    "domain": 1
+    "domain": 1,
+    "explanation": "**✅ CORRECT ANSWER: Patch management**\n\n**Patch management failure** is the root cause of the Equifax breach:\n\n• **Context**: Known vulnerability in Apache Struts, patch available for MONTHS, organization failed to apply it\n• **Patch Management Definition**: Process of identifying, acquiring, testing, and installing patches/updates\n• **Impact**: 143 million customers affected - one of largest data breaches in history\n• **Critical Failure**: Having available fix but not deploying it = patch management breakdown\n\n**❌ WHY THE OTHERS ARE WRONG:**\n\n• **Secure development lifecycle**: Vulnerability was in third-party software (Apache Struts), not Equifax's own code. SDLC doesn't prevent third-party vulnerabilities.\n\n• **Security awareness training**: Human awareness doesn't fix software vulnerabilities. Training won't patch systems.\n\n• **Vendor risk management**: Apache Foundation is open-source, not a vendor. The patch was available - issue was internal deployment failure.\n\n**💡 KEY CONCEPTS:**\n• Vulnerability Management Lifecycle\n• Patch Deployment SLAs\n• Critical vs Non-Critical patches\n\n**📖 CEH REFERENCE:** Module 01 - Information Security Fundamentals > Vulnerability Management > Patch Management"
   }
 ]
