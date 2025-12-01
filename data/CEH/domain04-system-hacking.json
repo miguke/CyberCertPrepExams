@@ -13,7 +13,8 @@
       3
     ],
     "type": "single",
-    "domain": 4
+    "domain": 4,
+    "explanation": "**CORRECT ANSWER: netcat** Scenario recap: Tony has obtained a list of hashed passwords on a compromised system and needs tools that actually crack those hashes. Why this answer is correct: Hashcat and John the Ripper are classic offline password-cracking tools that take hash dumps and perform dictionary, brute-force, rule-based or hybrid attacks, and THC-Hydra is an online password-guessing tool used to brute-force credentials against remote services such as SSH, FTP or HTTP; all three are directly used for password attacks. Netcat, however, is a general-purpose networking utility for creating TCP or UDP connections, port redirection and simple data transfer, and it does not provide functionality to crack password hashes, so it is the only option that is not useful for cracking the hashed passwords. Why the other options are wrong: Hashcat is widely used to crack many hash types at high speed; John the Ripper is a well-known password cracker for offline hashes; THC-Hydra is used for online brute-force attacks against services and can leverage password lists. KEY CONCEPTS: offline vs online password cracking, role of generic network tools vs dedicated cracking tools. CEH REFERENCE: Module 06 - System Hacking (Password Cracking Concepts and Tools)."
   },
   {
     "id": 68,
@@ -29,7 +30,8 @@
       3
     ],
     "type": "single",
-    "domain": 4
+    "domain": 4,
+    "explanation": "**CORRECT ANSWER: .bash_history** Scenario recap: During a penetration test, you used a shell under a user account, connected over SMB, and typed your login and password in clear text. Why this answer is correct: On Unix and Linux systems the Bash shell records the interactive history of commands entered by the user in the hidden file `.bash_history` in the user’s home directory, so any commands that contain usernames or passwords in clear text will be stored there and can later be recovered by an attacker or investigator; cleaning or editing `.bash_history` is therefore necessary to remove that evidence. Why the other options are wrong: `.xsession-log` is typically a graphical session log, not the shell command history; `.profile` and `.bashrc` are shell initialization and configuration files that define environment variables, aliases and functions but do not store the list of commands that were run during the session. KEY CONCEPTS: Bash history as a forensic artifact, local traces of credentials, clearing tracks on Unix/Linux. CEH REFERENCE: Module 06 - System Hacking (Covering Tracks and Log Cleaning)."
   },
   {
     "id": 92,
@@ -45,7 +47,8 @@
       2
     ],
     "type": "single",
-    "domain": 4
+    "domain": 4,
+    "explanation": "**CORRECT ANSWER: Dictionary** Scenario recap: Ricardo has a valid username and a list of common passwords from the Internet, which he feeds into a password-cracking tool. Why this answer is correct: In a dictionary attack the attacker prepares or downloads a wordlist of likely passwords and has the cracking tool systematically test each word from that list against the target account, which is exactly what Ricardo is doing by compiling common passwords into a file and using the file as input to his cracker. Why the other options are wrong: A brute-force attack does not rely on a predefined wordlist but instead tries every possible combination of characters within a given character set and length range; a known-plaintext attack uses pairs of known plaintext and ciphertext to derive encryption keys and is not about login passwords; password spraying takes a small set of common passwords and tries them across many different accounts to avoid account lockout, rather than focusing many guesses on a single account. KEY CONCEPTS: dictionary vs brute-force vs password spraying, use of wordlists in offline password cracking. CEH REFERENCE: Module 06 - System Hacking (Password Attack Types)."
   },
   {
     "id": 102,
@@ -61,7 +64,8 @@
       3
     ],
     "type": "single",
-    "domain": 4
+    "domain": 4,
+    "explanation": "**CORRECT ANSWER: Internal monologue attack** Scenario recap: Simon weakens NetNTLMv1 security by modifying LMCompatibilityLevel, NTLMMinClientSec and RestrictSendingNTLMTraffic and then extracts non-network logon tokens to impersonate users. Why this answer is correct: The internal monologue attack abuses design weaknesses in Windows NTLM authentication so that the attacker can coerce the system to generate NTLM responses locally without performing standard network-based challenges, often by manipulating registry keys and security settings and then harvesting generated credentials from memory; this matches the description of disabling NetNTLMv1 protections and extracting tokens from active processes. Why the other options are wrong: A combinator attack combines words from two dictionaries to create new password candidates, a dictionary attack simply runs through a wordlist, and a rainbow table attack uses precomputed hash chains to reverse hashes; none of these involve changing Windows NTLM configuration or extracting logon tokens directly from memory. KEY CONCEPTS: NetNTLMv1 weaknesses, internal monologue methodology, difference between credential generation attacks and pure cracking techniques. CEH REFERENCE: Module 06 - System Hacking (Advanced NTLM and Credential Theft Attacks)."
   },
   {
     "id": 109,
@@ -77,7 +81,8 @@
       0
     ],
     "type": "single",
-    "domain": 4
+    "domain": 4,
+    "explanation": "**CORRECT ANSWER: getsystem** Scenario recap: The tester already has a Meterpreter session on a Windows machine and wants to escalate privileges. Why this answer is correct: In Metasploit, the `getsystem` post-exploitation module is specifically designed to attempt multiple built-in privilege escalation techniques, such as token impersonation, named pipe impersonation and exploitation of service misconfigurations, with the goal of obtaining Local System level privileges in one automated step; this is exactly the capability requested in the question. Why the other options are wrong: `getuid` only displays the current user context and does not escalate privileges; `keylogrecorder` is used to capture keystrokes, which is useful for credential theft but not for directly gaining higher privileges; `autoroute` is used to add routes for pivoting through a compromised host and does not change the privilege level of the session. KEY CONCEPTS: post-exploitation workflow, privilege escalation to SYSTEM, common Meterpreter commands. CEH REFERENCE: Module 06 - System Hacking (Metasploit Post-Exploitation Features)."
   },
   {
     "id": 114,
@@ -93,7 +98,8 @@
       0
     ],
     "type": "single",
-    "domain": 4
+    "domain": 4,
+    "explanation": "**CORRECT ANSWER: Pass the hash** Mary has collected password hashes on a compromised system and needs to continue the assessment quickly without investing time in cracking each hash to plaintext. A pass the hash attack does exactly this: the attacker uses captured NTLM hashes directly in supported authentication protocols to authenticate to remote systems without ever recovering the cleartext password. Internal monologue and LLMNR or NBT-NS poisoning are techniques primarily used to capture hashes, and pass the ticket abuses Kerberos tickets rather than NTLM hashes. KEY CONCEPTS: using NTLM hashes directly for authentication, difference between pass the hash and pass the ticket. CEH REFERENCE: Module 06 - System Hacking (Pass-the-Hash Attacks)."
   },
   {
     "id": 133,
@@ -109,7 +115,8 @@
       3
     ],
     "type": "single",
-    "domain": 4
+    "domain": 4,
+    "explanation": "**CORRECT ANSWER: Invalidate the TGS the attacker acquired** Scenario recap: An attacker has already obtained a Ticket Granting Service ticket in a Kerberoasting attack and the administrator must respond. Why this answer is correct: In Kerberoasting, TGS tickets for service accounts are encrypted with the service account password hash and can be extracted and cracked offline; the fastest and most appropriate response is to invalidate the attacker’s tickets by resetting the credentials of the affected service account so that all previously issued TGS tickets become invalid and can no longer be used to access the service, effectively cutting off the attacker even if they later crack the old hash. Why the other options are wrong: Simply rebooting the system does not revoke Kerberos tickets or change the service account key; deleting the compromised user account might remove one principal but does not address the exposed service account or its tickets; changing some generic NTLM password hash without targeting the specific service account and its Kerberos keys does not directly invalidate the TGS tickets that were already issued. KEY CONCEPTS: Kerberoasting workflow, importance of resetting service account credentials, ticket invalidation as an incident response measure. CEH REFERENCE: Module 06 - System Hacking (Kerberos Attacks and Defenses)."
   },
   {
     "id": 136,
@@ -125,7 +132,8 @@
       2
     ],
     "type": "single",
-    "domain": 4
+    "domain": 4,
+    "explanation": "**CORRECT ANSWER: Unauthorized users may perform privilege escalation using unnecessarily created accounts** Scenario recap: A company has misconfigured servers with debugging enabled and unknown users granted administrative permissions. Why this answer is correct: From a vulnerability and system hacking perspective, the most serious and immediate risk of enabling debugging functions and granting admin-level privileges to unknown or unnecessary users is that attackers or malicious insiders can leverage those accounts and misconfigurations to escalate their privileges and gain full control of the servers, potentially bypassing other security controls. Why the other options are wrong: Injecting a malicious DLL into a running process is a different exploitation path (DLL hijacking) and is not directly implied by enabling debugging; weak encryption enabling man-in-the-middle attacks relates more to data-in-transit protection than to local server misconfiguration; a denial-of-service assault would impact availability but does not exploit the described overly permissive administrative permissions in the same direct way as privilege escalation. KEY CONCEPTS: misconfiguration as a vulnerability source, least privilege and account hardening, privilege escalation through unnecessary admin accounts. CEH REFERENCE: Module 05 - Vulnerability Analysis (Sources of Vulnerabilities) and Module 06 - System Hacking (Privilege Escalation)."
   },
   {
     "id": 138,
@@ -141,7 +149,8 @@
       2
     ],
     "type": "single",
-    "domain": 4
+    "domain": 4,
+    "explanation": "**CORRECT ANSWER: The Windows system is Vista or a later version, where LM hashes are disabled by default** Starting with Windows Vista, the operating system by default no longer stores LAN Manager hashes for user passwords because the LM algorithm is weak. Instead, the LM hash field in the Security Accounts Manager database is filled with a constant dummy value and effectively appears blank for all accounts, while only NTLM hashes are preserved. This exactly matches the observation that all LM hashes in the dumped SAM file are blank. Encryption of the SAM with SYSKEY, very long passwords, or the use of Kerberos as the default authentication protocol do not by themselves guarantee that every LM hash is blank for every account in the database. KEY CONCEPTS: LM vs NTLM hashes, password storage changes in modern Windows versions. CEH REFERENCE: Module 06 - System Hacking (Windows Password Storage and Hash Types)."
   },
   {
     "id": 148,
@@ -157,7 +166,8 @@
       3
     ],
     "type": "single",
-    "domain": 4
+    "domain": 4,
+    "explanation": "**CORRECT ANSWER: Request a service ticket for the service principal name of the target service account** Scenario recap: The analyst is performing a Kerberoasting attack to target a service account using Kerberos authentication. Why this answer is correct: The Kerberoasting methodology described in CEH states that, after obtaining a valid Ticket Granting Ticket as a normal domain user, the attacker should use that TGT to request Ticket Granting Service tickets for specific service principal names corresponding to service accounts; those TGS tickets are encrypted with the service account password hash and can later be extracted and cracked offline to recover the service account credentials. Why the other options are wrong: Passive wire sniffing is a generic network monitoring technique and is not the next step in Kerberoasting once the TGT is obtained; a PRINCE attack is a particular password-cracking strategy, not a Kerberos-specific step; dumping plaintext passwords and Kerberos tickets with tools like Mimikatz is powerful, but in classic Kerberoasting the attacker first requests TGS tickets for SPNs and then targets those tickets for offline cracking. KEY CONCEPTS: Kerberos TGT vs TGS, service principal names (SPNs), Kerberoasting sequence. CEH REFERENCE: Module 06 - System Hacking (Kerberos Password Cracking Techniques)."
   },
   {
     "id": 172,
@@ -173,7 +183,8 @@
       2
     ],
     "type": "single",
-    "domain": 4
+    "domain": 4,
+    "explanation": "**CORRECT ANSWER: Side-Channel Attack** Scenario recap: A multinational enterprise is targeted by attacks that abuse speculative execution and branch misprediction to leak in-flight data via observable side effects in shared microarchitectural state. Why this answer is correct: The description matches the behavior of speculative execution side-channel attacks such as Spectre and Meltdown, where the CPU executes instructions along mispredicted branches, touches sensitive data that should not be directly accessible, and then leaves measurable traces in caches or other shared resources that an attacker can use to infer that data; these are by definition side-channel attacks because they infer secrets from indirect timing or cache behavior rather than from direct logical access. Why the other options are wrong: A Rowhammer attack induces bit flips in DRAM cells by rapidly activating rows, which is a fault-injection rather than speculative execution side channel; a watering hole attack compromises websites frequented by the victim and is a social-engineering delivery vector, not a hardware exploitation method; privilege escalation can be a consequence of successfully exploiting the side channel but is not the specific class of attack being described. KEY CONCEPTS: speculative execution, microarchitectural side channels, distinction between side-channel, fault-injection and social engineering attacks. CEH REFERENCE: Module 06 - System Hacking (Hardware and Side-Channel Attack Techniques)."
   },
   {
     "id": 204,
@@ -186,10 +197,11 @@
       "Rule-based Attack"
     ],
     "correct": [
-      3
+      2
     ],
     "type": "single",
-    "domain": 4
+    "domain": 4,
+    "explanation": "**CORRECT ANSWER: Hybrid Attack** Scenario recap: The company’s passwords are based on known words, and one employee consistently changes passwords by only appending numbers to the old word. Why this answer is correct: CEH defines a hybrid attack as a combination of a dictionary attack and a rule-based modification process in which the cracking tool takes each base word from a wordlist and systematically adds prefixes or suffixes such as digits or symbols, which is exactly suited to cases where users start from a common word and then simply append numbers (for example turning `system` into `system1` or `system2024`); this makes hybrid attacks highly efficient when such patterns are known. Why the other options are wrong: A pure brute-force attack tries every possible character combination without leveraging the known structure of the password and will be slower when a pattern exists; a password spraying attack uses a small set of common passwords against many accounts to avoid lockouts, which does not match the scenario of evolving one user’s password over time; a rule-based attack is a broader term, but the CEH material explicitly gives the “word plus appended numbers” pattern as a textbook example of a hybrid attack built on top of a dictionary. KEY CONCEPTS: hybrid vs brute-force vs password spraying, using knowledge of user behavior to optimize password cracking. CEH REFERENCE: Module 06 - System Hacking (Rule-Based and Hybrid Password Attacks)."
   },
   {
     "id": 242,
@@ -205,7 +217,8 @@
       0
     ],
     "type": "single",
-    "domain": 4
+    "domain": 4,
+    "explanation": "**CORRECT ANSWER: DLL Hijacking** Scenario recap: An attacker with a non-admin foothold causes a new Dynamic Link Library, located in the application directory and lacking a fully qualified path, to be loaded by the server process. Why this answer is correct: DLL hijacking, also known as DLL search order hijacking, exploits the way Windows searches for DLLs when an application calls `LoadLibrary` or similar APIs without specifying a full path; by placing a malicious DLL with the same name as a legitimate one in a directory that is searched first (often the application directory), an attacker can have their DLL loaded instead and execute arbitrary code in the context of the vulnerable application, which can lead to privilege escalation if that process runs with higher privileges. Why the other options are wrong: Named pipe impersonation is a different privilege escalation technique that abuses insecure pipe permissions or server impersonation semantics; Spectre and Meltdown are speculative execution side-channel attacks against CPU microarchitecture, not DLL search order issues; exploiting misconfigured services is a broad description and does not specifically involve the DLL loading path or the absence of a fully qualified DLL path. KEY CONCEPTS: Windows DLL search order, DLL hijacking for privilege escalation, importance of specifying absolute DLL paths and secure deployment directories. CEH REFERENCE: Module 06 - System Hacking (Windows Privilege Escalation via DLL Hijacking)."
   },
   {
     "id": 257,
@@ -221,6 +234,7 @@
       2
     ],
     "type": "single",
-    "domain": 4
+    "domain": 4,
+    "explanation": "**CORRECT ANSWER: Period (.)** Scenario recap: The tester wants to hide a file on a Linux system by choosing an appropriate leading character for the filename. Why this answer is correct: On Unix and Linux systems any file or directory whose name begins with a leading period is treated as hidden by default by standard tools such as `ls` and most file managers, and will not appear in normal directory listings unless the user explicitly requests hidden files using options such as `ls -a`; therefore starting the filename with a dot is the correct way to make the file hidden. Why the other options are wrong: A leading tilde is typically interpreted as a shortcut to a user’s home directory, not as a hide flag; an underscore and an exclamation mark have no special semantics in Unix filenames and do not cause the file to be hidden by default. KEY CONCEPTS: Unix/Linux hidden file convention, effect of a leading period on visibility. CEH REFERENCE: Module 06 - System Hacking (Covering Tracks and Hiding Files on Unix/Linux)."
   }
 ]
