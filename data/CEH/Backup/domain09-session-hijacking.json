@@ -13,7 +13,8 @@
       2
     ],
     "type": "single",
-    "domain": 9
+    "domain": 9,
+    "explanation": "**CORRECT ANSWER: Session donation attack** Scenario recap: A professional hacker logs into a service to obtain a valid session ID for his own account and then, via a man-in-the-middle technique, sends this session ID to a target employee; when the victim clicks the link and enters sensitive payment data, that activity is transparently associated with the attacker’s account. Why this answer is correct: CEH defines a session donation attack as an application-level session hijacking technique where the attacker first authenticates and then 'donates' their own active session ID to the victim, so that the victim’s actions occur within the attacker’s session context; this exactly matches the described behavior of linking the victim’s form data to the attacker’s account. Why the other options are wrong: A forbidden attack abuses HTTP 403 behavior and cookies but is not about donating the attacker’s own session; a CRIME attack exploits compression side channels on encrypted connections, not direct sharing of a session ID; session fixation forces a victim to use a chosen session ID that will later be bound to the victim’s account, whereas here the session is already bound to the attacker and the victim is tricked into using it. KEY CONCEPTS: application-level session hijacking, session donation, attacker-owned session IDs, man-in-the-middle link injection. CEH REFERENCE: Module 11 - Session Hijacking (Application-Level Techniques: Session Fixation, Forbidden Attack, Session Donation, CRIME, etc.)."
   },
   {
     "id": 129,
@@ -29,7 +30,8 @@
       3
     ],
     "type": "single",
-    "domain": 9
+    "domain": 9,
+    "explanation": "**CORRECT ANSWER: Man-in-the-middle Attack Using Forged ICMP and ARP Spoofing** Scenario recap: A network security specialist studies a network-level hijacking technique where the attacker inserts their machine into the communication path between client and server so that packets appear to follow the original route but are actually being rerouted through the attacker. Why this answer is correct: CEH describes network-level MITM hijacking using forged ICMP redirect messages and ARP spoofing to poison routing or ARP tables, causing traffic to be transparently forwarded through the attacker’s host while still appearing to follow the normal path; this is precisely the scenario of rerouting packets without changing the apparent endpoints. Why the other options are wrong: Generic TCP/IP hijacking focuses on predicting sequence numbers and taking over a TCP session rather than explicitly rerouting packets via forged ICMP/ARP; RST hijacking injects a forged TCP reset to tear down a connection, not to place the attacker in the middle; UDP hijacking relates to taking over or spoofing stateless UDP flows and does not rely on ICMP/ARP-based rerouting. KEY CONCEPTS: network-level session hijacking, man-in-the-middle, ICMP redirect, ARP spoofing, transparent packet rerouting. CEH REFERENCE: Module 11 - Session Hijacking (Network-Level Hijacking and Man-in-the-Middle Using ICMP and ARP Spoofing)."
   },
   {
     "id": 205,
@@ -45,6 +47,7 @@
       2
     ],
     "type": "single",
-    "domain": 9
+    "domain": 9,
+    "explanation": "**CORRECT ANSWER: RST hijacking** Scenario recap: During a suspected network-level session hijacking incident, an attacker injects an authentic-looking TCP reset (RST) packet with a spoofed source IP address and a guessed acknowledgment number, causing the victim’s connection to be reset. Why this answer is correct: CEH defines RST hijacking as a technique where the attacker forges TCP RST packets with spoofed source information and appropriate sequence/acknowledgment numbers to forcibly terminate an active connection; the key characteristics in the scenario—spoofed source IP, guessed ACK number, and connection reset—match RST hijacking exactly. Why the other options are wrong: Blind hijacking involves predicting sequence numbers to inject data into a session without seeing responses, not specifically sending RST packets to kill the connection; UDP hijacking relates to hijacking stateless UDP traffic and does not use TCP flags; generic TCP/IP hijacking usually refers to taking over a session and continuing it as the victim, not simply resetting it via forged RST packets. KEY CONCEPTS: RST hijacking, forged TCP reset, spoofed IP, sequence/ACK guessing, forced connection termination. CEH REFERENCE: Module 11 - Session Hijacking (Network-Level Techniques: RST Hijacking and TCP Reset Injection)."
   }
 ]

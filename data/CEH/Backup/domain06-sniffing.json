@@ -13,7 +13,8 @@
       1
     ],
     "type": "single",
-    "domain": 6
+    "domain": 6,
+    "explanation": "**CORRECT ANSWER: STP attack** Scenario recap: A rogue switch is plugged into an unused LAN port and configured with a lower STP priority than all other switches so it becomes the root bridge and is then used to sniff all network traffic. Why this answer is correct: CEH explains that in an STP attack the attacker introduces a rogue switch and manipulates Spanning Tree Protocol parameters (especially bridge priority) so that the rogue device becomes the root bridge; once it is the root, most traffic converges through it and can be sniffed. Why the other options are wrong: ARP spoofing uses forged ARP replies to redirect traffic at Layer 2 but does not involve STP or manipulating bridge priority; DNS poisoning tampers with DNS responses and name resolution, not switch root election; VLAN hopping abuses VLAN tagging or trunk misconfiguration to move between VLANs, not to become the STP root and sniff traffic. KEY CONCEPTS: Spanning Tree Protocol (STP), bridge priority, rogue switch, root bridge, switched Ethernet sniffing. CEH REFERENCE: Module 08 - Sniffing (STP Attack and How Attackers Use STP to Sniff All Network Traffic)."
   },
   {
     "id": 41,
@@ -29,7 +30,8 @@
       1
     ],
     "type": "single",
-    "domain": 6
+    "domain": 6,
+    "explanation": "**CORRECT ANSWER: SNMP and he should change it to SNMP V3.** Scenario recap: A network administrator uses a SPAN port and discovers unencrypted traffic on UDP port 161 and wants to eliminate unencrypted traffic in the internal network. Why this answer is correct: CEH states that UDP port 161 is used by SNMP and that SNMPv1 and SNMPv2c send community strings and management data in clear text, making them vulnerable to sniffing; migrating to SNMPv3 adds authentication and privacy (encryption), which directly addresses the requirement to remove unencrypted management traffic. Why the other options are wrong: RPC uses different ports and is not specifically tied to UDP 161; SNMPv2 is not an encrypted version and still sends data and community strings in clear text; claiming that SNMP does not carry important information ignores that SNMP often exposes device configuration, topology, and sometimes credentials, all of which CEH marks as high-value sniffing targets. KEY CONCEPTS: SNMP versions (v1, v2c, v3), UDP 161, clear-text management protocols, encryption as a sniffing countermeasure. CEH REFERENCE: Module 08 - Sniffing (Protocols Vulnerable to Sniffing, Protection of Management Traffic such as SNMP)."
   },
   {
     "id": 89,
@@ -45,7 +47,8 @@
       0
     ],
     "type": "single",
-    "domain": 6
+    "domain": 6,
+    "explanation": "**CORRECT ANSWER: You should check your ARP table and see if there is one IP address with two different MAC addresses.** Scenario recap: A user on public Wi-Fi wants to know how to detect an ARP spoofing attack on their laptop when no VPN is available. Why this answer is correct: CEH describes ARP spoofing as an attack where a malicious host sends forged ARP replies so that the victim repeatedly updates its ARP cache with incorrect IP-to-MAC mappings; inspecting the ARP table (for example with arp -a) and seeing that a single IP appears to be associated with different MAC addresses over time or that entries are inconsistent is a classic local indicator of ARP spoofing. Why the other options are wrong: Scanning the entire network with Nmap to look for duplicate MAC addresses is indirect, noisy, and not the standard CEH technique for detecting ARP poisoning; netstat reports active TCP and UDP connections, not ARP cache anomalies, so it is not the right tool to detect forged ARP mappings; saying that ARP spoofing cannot be identified without a VPN is incorrect because CEH explicitly teaches ARP cache inspection as a local detection method. KEY CONCEPTS: ARP cache, ARP spoofing or poisoning, forged ARP replies, local detection of man-in-the-middle attempts. CEH REFERENCE: Module 08 - Sniffing (ARP Spoofing Attack, ARP Cache and ARP Spoofing Detection Examples)."
   },
   {
     "id": 95,
@@ -61,7 +64,8 @@
       0
     ],
     "type": "single",
-    "domain": 6
+    "domain": 6,
+    "explanation": "**CORRECT ANSWER: LNMIB2.MIB** Scenario recap: An administrator uses SNMP and MIBs to manage devices and is retrieving information from a MIB that contains object types for workstations and server services. Why this answer is correct: In CEH materials, LNMIB2.MIB is associated with Microsoft LAN Manager MIB objects that specifically describe workstation and server service information, which matches the scenario of querying workstations and server services via SNMP. Why the other options are wrong: DHCP.MIB contains objects related to DHCP service and address management, not generic workstation and server service objects; MIB_II.MIB corresponds to the standard MIB-II (RFC 1213) that covers general TCP/IP stack information (interfaces, IP, TCP, UDP, etc.) rather than LAN Manager workstation or server services; WINS.MIB is specific to Windows Internet Name Service and name resolution, not the broader set of workstation and server service objects described in the scenario. KEY CONCEPTS: SNMP management information base (MIB), vendor or service-specific MIBs, Microsoft LAN Manager MIB (LNMIB2.MIB). CEH REFERENCE: Module 08 - Sniffing (SNMP and MIB Concepts as Management Targets Vulnerable to Sniffing)."
   },
   {
     "id": 208,
@@ -77,7 +81,8 @@
       1
     ],
     "type": "single",
-    "domain": 6
+    "domain": 6,
+    "explanation": "**CORRECT ANSWER: Implement network scanning and monitoring tools** Scenario recap: A corporate network has already applied several technical countermeasures against sniffing (static ARP entries, IPv6, encrypted protocols such as SSH and SFTP) but still faces the risk of sniffing attacks and needs an additional step to enhance network security. Why this answer is correct: CEH emphasizes that, beyond hardening individual protocols, organizations must deploy network scanning and monitoring tools (such as protocol analyzers, IDS or SIEM solutions) to continuously observe traffic, detect anomalies, and identify ongoing sniffing or man-in-the-middle activity; monitoring closes the gap between preventive controls and real-time attack detection. Why the other options are wrong: Using HTTP instead of HTTPS weakens security by sending credentials and sensitive data in clear text and is the opposite of a recommended countermeasure; enabling network identification broadcasts increases information leakage about the network and can help attackers, not defenders; retrieving MAC addresses from the operating system is a basic inventory step, not a comprehensive countermeasure against advanced sniffing attacks. KEY CONCEPTS: sniffing countermeasures, network monitoring and scanning, intrusion detection, visibility in addition to encryption. CEH REFERENCE: Module 08 - Sniffing (Sniffing Countermeasures and Recommendations to Use Network Monitoring and Analysis Tools)."
   },
   {
     "id": 224,
@@ -93,7 +98,8 @@
       1
     ],
     "type": "single",
-    "domain": 6
+    "domain": 6,
+    "explanation": "**CORRECT ANSWER: The attacker might be implementing MAC flooding to overwhelm the switch's memory.** Scenario recap: In a switched Ethernet environment, suspicious packet captures suggest that an attacker may be successfully sniffing traffic, even though switches normally prevent simple passive sniffing. Why this answer is correct: CEH explains that in a MAC flooding attack the adversary floods the switch's CAM table with bogus MAC addresses; once the CAM table overflows, the switch can revert to broadcasting frames out multiple ports similar to a hub, which allows the attacker to capture traffic that would normally be forwarded only to specific ports. Why the other options are wrong: Compromising physical security and simply plugging into the network does not by itself bypass switch forwarding behavior; a Trojan horse with built-in sniffing capability captures data on the infected host but does not explain how an attacker sees traffic for many other hosts in a switched environment; passive sniffing is described in CEH as a technique that works on hub-based shared Ethernet, not on properly functioning switches. KEY CONCEPTS: switched vs shared Ethernet, CAM table, MAC flooding, active sniffing. CEH REFERENCE: Module 08 - Sniffing (MAC Flooding, What Happens When a CAM Table Is Full, and Sniffing Techniques in Switched Networks)."
   },
   {
     "id": 229,
@@ -109,7 +115,8 @@
       0
     ],
     "type": "single",
-    "domain": 6
+    "domain": 6,
+    "explanation": "**CORRECT ANSWER: Raw Sniffing** Scenario recap: A CEH performing a penetration test suspects that sensitive information is leaking and wants to use sniffing to obtain a comprehensive view of the data flowing across the network. Why this answer is correct: CEH presents raw sniffing as the basic technique of capturing packets directly from the network (for example, using a protocol analyzer in promiscuous mode) so that the tester can inspect headers and payloads for credentials, clear-text protocols, and other sensitive data; it is the most straightforward way to see the full content and patterns of traffic. Why the other options are wrong: MAC flooding is an active attack used to overflow a switch's CAM table and enable sniffing but is not itself the primary method of inspecting traffic contents; ARP poisoning is a man-in-the-middle enabling technique that redirects traffic through the attacker but again is a means to an end rather than the comprehensive capture and analysis of packets implied by the question; DNS poisoning alters name resolution to redirect users, not to provide a general view of all network data flows. KEY CONCEPTS: raw packet capture, promiscuous mode, protocol analyzers, distinction between enabling attacks and the act of sniffing itself. CEH REFERENCE: Module 08 - Sniffing (Sniffing Concepts, Use of Protocol Analyzers to Capture and Inspect Network Traffic)."
   },
   {
     "id": 252,
@@ -125,7 +132,8 @@
       3
     ],
     "type": "single",
-    "domain": 6
+    "domain": 6,
+    "explanation": "**CORRECT ANSWER: MAC flooding** Scenario recap: The question asks which attack attempts to overflow the content-addressable memory (CAM) table in an Ethernet switch. Why this answer is correct: CEH defines MAC flooding as an attack in which the adversary sends a large number of frames with fake source MAC addresses to fill up the switch's CAM table; when the table is full, the switch may start broadcasting frames out multiple ports like a hub, allowing the attacker to sniff traffic that should be unicast. Why the other options are wrong: A DDoS attack focuses on exhausting service or bandwidth resources and is not specifically about CAM tables; an evil twin attack is a wireless attack that sets up a rogue access point, unrelated to switch CAM behavior; DNS cache flooding targets DNS resolvers and name caches at the application layer, not Layer 2 MAC address tables. KEY CONCEPTS: CAM table, MAC flooding, turning a switch into hub-like behavior, Layer 2 sniffing attacks. CEH REFERENCE: Module 08 - Sniffing (MAC Flooding, CAM Table Overflow and Their Impact on Switch Behavior)."
   },
   {
     "id": 287,
@@ -141,6 +149,7 @@
       1
     ],
     "type": "single",
-    "domain": 6
+    "domain": 6,
+    "explanation": "**CORRECT ANSWER: BetterCAP** Scenario recap: An attacker sends fake ARP messages linking their MAC address to the target system's IP address, then intercepts, steals, modifies, and blocks sensitive communications to that system. Why this answer is correct: CEH describes ARP spoofing or poisoning as sending forged ARP replies so that victims associate the attacker’s MAC address with a legitimate IP address, allowing full man-in-the-middle control over packets; BetterCAP is a modern, widely used framework that automates ARP poisoning and man-in-the-middle attacks, making it a correct match for the described behavior. Why the other options are wrong: Wireshark is a passive packet analyzer that captures and analyzes traffic but does not generate forged ARP messages or perform ARP poisoning by itself; DerpNSpoof is associated mainly with DNS spoofing attacks rather than generic ARP-based man-in-the-middle; Gobbler is not the canonical CEH tool for ARP poisoning and does not match the detailed ARP spoofing and traffic manipulation behavior in the scenario as precisely as BetterCAP does. KEY CONCEPTS: ARP spoofing or poisoning, man-in-the-middle attacks, ARP poisoning toolsets, interception and modification of traffic. CEH REFERENCE: Module 08 - Sniffing (ARP Spoofing Attack, ARP Poisoning Tools and Man-in-the-Middle Techniques)."
   }
 ]

@@ -13,7 +13,8 @@
       0
     ],
     "type": "single",
-    "domain": 7
+    "domain": 7,
+    "explanation": "**CORRECT ANSWER: Evilginx** Scenario recap: An attacker observes Sophia’s online shopping habits and sends her a fake email with a deceptive link to a spoofed login page, where she submits valid credentials. Why this answer is correct: In CEH terminology this is a classic computer-based social engineering attack using a phishing email that leads to a cloned or spoofed authentication page to steal credentials; Evilginx is a credential-harvesting framework designed specifically to create such fake login portals and man-in-the-middle phishing links, making it the only option that matches the described behavior. Why the other options are wrong: Slowloris and PyLoris are application-layer denial-of-service tools used to exhaust web server resources, not to build spoofed emails or phishing pages; PLCinject relates to attacks on industrial control systems and PLCs, not end-user credential harvesting through fake shopping or social media pages. KEY CONCEPTS: computer-based social engineering, phishing emails, spoofed login pages, credential harvesting frameworks. CEH REFERENCE: Module 09 - Social Engineering (Computer-based Social Engineering Techniques: Phishing, Clone Website / Fake Login Pages)."
   },
   {
     "id": 64,
@@ -29,7 +30,8 @@
       0
     ],
     "type": "single",
-    "domain": 7
+    "domain": 7,
+    "explanation": "**CORRECT ANSWER: Pharming** Scenario recap: An attacker performs DNS cache poisoning against an organization’s DNS infrastructure so that users who browse to the legitimate company site are transparently redirected to a fake website for identity theft. Why this answer is correct: CEH defines pharming as redirecting traffic from a legitimate site to a malicious one, often by manipulating DNS or hosts file entries, with the goal of harvesting credentials and personal data; the scenario explicitly mentions DNS cache poisoning and redirection to a fake site, which is exactly pharming. Why the other options are wrong: Skimming refers to capturing card data from ATMs or POS devices, not DNS manipulation; pretexting involves a fabricated story or role in direct interaction with the victim, not silent DNS redirection; wardriving is discovering wireless networks from a moving vehicle, not redirecting web traffic via DNS. KEY CONCEPTS: DNS cache poisoning, pharming, transparent redirection, credential and identity theft. CEH REFERENCE: Module 09 - Social Engineering (Computer-based Social Engineering: Pharming and DNS Manipulation)."
   },
   {
     "id": 69,
@@ -45,7 +47,8 @@
       3
     ],
     "type": "single",
-    "domain": 7
+    "domain": 7,
+    "explanation": "**CORRECT ANSWER: Phishing** Scenario recap: A disgruntled ex-employee sends fraudulent emails from current employees’ addresses with links to a fake website that automatically loads Flash and triggers a fileless exploit when victims click. Why this answer is correct: CEH describes phishing as sending deceptive emails or messages that contain malicious links or attachments to lure users to malicious sites; in this scenario the key technique is the social engineering delivery method (fraudulent emails and convincing links), even though the payload is fileless malware that runs via a drive-by exploit, so from the social engineering perspective this is phishing. Why the other options are wrong: In-memory exploits, legitimate applications, and script-based injection are technical categories of fileless malware execution and persistence, but they do not describe the human-facing technique used to trick users into clicking the link; the question asks for the technique the attacker used to launch the attack through users’ interaction, which is phishing. KEY CONCEPTS: phishing emails, malicious links, drive-by download, fileless malware delivery via social engineering. CEH REFERENCE: Module 09 - Social Engineering (Computer-based Social Engineering: Phishing and Malicious Links) and Module 07 - Malware Threats (Fileless Malware Delivered via Phishing/Drive-by Exploits)."
   },
   {
     "id": 101,
@@ -61,7 +64,8 @@
       0
     ],
     "type": "single",
-    "domain": 7
+    "domain": 7,
+    "explanation": "**CORRECT ANSWER: Matt inadvertently provided the answers to his security questions when responding to the post.** Scenario recap: Matt answers a Facebook post full of personal questions that his friend legitimately shared; later, his bank account is accessed and the password is changed. Why this answer is correct: CEH highlights that many online quizzes and social media posts ask for favorite places, pet names, important dates, and other details that are routinely used as password-reset security questions by banks and other services; by honestly answering these public questions, Matt effectively handed an attacker the likely answers to his security questions, enabling a password reset and account takeover. Why the other options are wrong: The post does not explicitly ask for his password, so it is unlikely he revealed it directly; there is no evidence of a keylogger on Matt’s device in the scenario; brute forcing a bank account with no lockout or detection would be far less probable than simply abusing security-question flows that match the information Matt willingly revealed. KEY CONCEPTS: social networking risks, security questions, oversharing personal data, account takeover. CEH REFERENCE: Module 09 - Social Engineering (Social Networking Threats and How Attackers Leverage Personal Information and Security Questions)."
   },
   {
     "id": 103,
@@ -77,7 +81,8 @@
       3
     ],
     "type": "single",
-    "domain": 7
+    "domain": 7,
+    "explanation": "**CORRECT ANSWER: Honey trap** Scenario recap: An attacker creates an attractive fake social media profile, befriends Stella, builds a relationship over time, and then gradually asks about her company until obtaining sensitive organizational information. Why this answer is correct: CEH describes a honey trap as a human-based social engineering technique in which an attacker uses an appealing or romantic persona to establish trust and emotional engagement so that the victim voluntarily reveals personal or corporate information; this exactly matches the attacker’s use of an enticing profile and flirtatious interaction to extract company details from Stella. Why the other options are wrong: Baiting usually involves offering something desirable (such as free media or software) to trick users into executing malware, not a prolonged romantic-style relationship; piggybacking and diversion theft are physical-world techniques related to unauthorized entry and redirecting goods or deliveries, not online relationship-building via social media. KEY CONCEPTS: honey trap, human-based social engineering, trust and emotional manipulation, online social media exploitation. CEH REFERENCE: Module 09 - Social Engineering (Human-based Techniques: Honey Trap, Baiting, Piggybacking, Diversion Theft)."
   },
   {
     "id": 107,
@@ -93,7 +98,8 @@
       1
     ],
     "type": "single",
-    "domain": 7
+    "domain": 7,
+    "explanation": "**CORRECT ANSWER: Quid pro quo** Scenario recap: An attacker phones a cybersecurity firm, impersonates vendor technical support, warns about an imminent compromise, and persuades staff to run unusual commands and install malicious files in exchange for supposed help. Why this answer is correct: CEH defines quid pro quo as a social engineering technique where an attacker offers some service or benefit (often technical support or problem resolution) in return for access, actions, or information from the victim; in this scenario the attacker provides fake support and troubleshooting guidance while getting the victim to execute commands and install malware. Why the other options are wrong: Diversion theft focuses on misdirecting deliveries or physical goods; elicitation is about drawing out information through casual conversation rather than guiding the victim to install malware; phishing typically uses emails or messages with malicious links, whereas here the core method is a live voice interaction offering support in exchange for cooperation. KEY CONCEPTS: quid pro quo, impersonation of support staff, phone-based social engineering, malicious “technical assistance.” CEH REFERENCE: Module 09 - Social Engineering (Human-based Techniques: Quid Pro Quo and Impersonation of Support Personnel)."
   },
   {
     "id": 144,
@@ -109,7 +115,8 @@
       3
     ],
     "type": "single",
-    "domain": 7
+    "domain": 7,
+    "explanation": "**CORRECT ANSWER: Organize regular employee awareness training regarding social engineering techniques and preventive measures** Scenario recap: A large corporation already uses a signature-based IDS and network flow analysis to detect known payloads and anomalous traffic and is deciding the next step to counter a broad range of social engineering techniques. Why this answer is correct: CEH repeatedly states that no technical control alone can stop social engineering and that the primary and most effective countermeasure is continuous security awareness and training so that employees recognize and resist phishing, pretexting, baiting, and other social engineering tactics; after deploying technical monitoring, the logical next step is structured, recurring user education. Why the other options are wrong: Endpoint detection and response tools help with malware and endpoint behavior but do not directly address the human decision to trust or disclose information; honeypots are useful for studying attackers and misdirecting them but do not prevent employees from being tricked; more physical security personnel help against tailgating or physical intrusions but not against phone, email, or online social engineering campaigns. KEY CONCEPTS: security awareness training, human factor, limitations of purely technical controls, social engineering countermeasures. CEH REFERENCE: Module 09 - Social Engineering (Why Social Engineering Is Effective and Social Engineering Countermeasures: User Education and Awareness)."
   },
   {
     "id": 161,
@@ -125,7 +132,8 @@
       0
     ],
     "type": "single",
-    "domain": 7
+    "domain": 7,
+    "explanation": "**CORRECT ANSWER: Whaling and Targeted Attacks** Scenario recap: An attacker creates a convincing fake LinkedIn profile impersonating a high-ranking executive, connects with employees, gains invitations to exclusive events, and accesses proprietary project details shared in that trusted network. Why this answer is correct: CEH describes whaling as a highly targeted form of phishing or social engineering that focuses on high-profile individuals such as executives and senior managers; here the attacker leverages the executive persona and associated trust to infiltrate the organization’s professional network and access sensitive information, which directly enables further targeted attacks such as tailored spear-phishing, business email compromise, or strategic data theft. Why the other options are wrong: Pretexting is involved in many attacks but the option given pairs it with generic network vulnerability rather than emphasizing high-value executive impersonation and targeted campaigns; spear phishing and spam focuses on email-based attacks, while this scenario centers on social networking and executive-level persona abuse; baiting and involuntary data leakage usually involve offering something desirable (files, media, or offers) rather than long-term impersonation of a senior leader. KEY CONCEPTS: whaling, executive impersonation, LinkedIn and social media social engineering, targeted attacks on internal staff. CEH REFERENCE: Module 09 - Social Engineering (Computer-based Techniques: Spear Phishing and Whaling; Social Networking-based Attacks)."
   },
   {
     "id": 166,
@@ -141,7 +149,8 @@
       3
     ],
     "type": "single",
-    "domain": 7
+    "domain": 7,
+    "explanation": "**CORRECT ANSWER: Synthetic Identity Theft** Scenario recap: An attacker combines multiple pieces of information from different victims to construct a new identity, opens a bank account, and obtains government benefits using that fabricated persona. Why this answer is correct: CEH defines synthetic identity theft as creating a new, fictitious identity by blending real data (such as a valid social security number or other identifiers) with invented details, and then using that synthetic identity to open accounts, apply for credit, or receive benefits; this exactly matches the scenario of assembling multiple victims’ information into a new identity. Why the other options are wrong: Identity cloning and concealment involve directly impersonating a real person to hide from law enforcement or creditors; child identity theft involves using a minor’s clean credit profile; social identity theft focuses on hijacking or abusing online social media identities rather than constructing a new financial identity. KEY CONCEPTS: synthetic identity theft, mixing real and fake attributes, financial and benefits fraud using composite identities. CEH REFERENCE: Module 09 - Social Engineering (Identity Theft Types: Identity Cloning, Child Identity Theft, Social Identity Theft, and Synthetic Identity Theft)."
   },
   {
     "id": 167,
@@ -157,7 +166,8 @@
       0
     ],
     "type": "single",
-    "domain": 7
+    "domain": 7,
+    "explanation": "**CORRECT ANSWER: Conduct comprehensive training sessions for employees on various social engineering methodologies and the risks associated with revealing confidential data.** Scenario recap: A company suffers a serious social engineering attack and identity theft after an employee casually discloses critical information over the phone, despite having high-level technical controls. Why this answer is correct: CEH stresses that users are often the weakest link and that structured, ongoing training about social engineering methods (pretexting, vishing, phishing, baiting, etc.) and the dangers of sharing information is the single most important control to prevent employees from being manipulated into revealing sensitive data during seemingly harmless conversations. Why the other options are wrong: A change management process is valuable for tracking system modifications but does not address how employees handle unsolicited information requests; a strict software policy focuses on unauthorized applications, not on what staff say over the phone; stronger physical security helps against tailgating and on-site impostors but would not have stopped a remote phone-based social engineering incident. KEY CONCEPTS: user awareness training, human-based social engineering, vishing and pretexting prevention, limitations of technical-only defenses. CEH REFERENCE: Module 09 - Social Engineering (Social Engineering Countermeasures: Employee Education, Policies, and Awareness)."
   },
   {
     "id": 272,
@@ -173,7 +183,8 @@
       2
     ],
     "type": "single",
-    "domain": 7
+    "domain": 7,
+    "explanation": "**CORRECT ANSWER: A pop-up appears to a user stating, 'Your computer may have been infected with spyware. Click here to install an anti-spyware tool to resolve this issue.'** Scenario recap: The question asks for the best example of scareware as a social engineering method. Why this answer is correct: CEH defines scareware as a type of computer-based social engineering that frightens users with fake security alerts, claiming their system is infected or at risk and pressuring them to install bogus security software that may itself be malware; a pop-up warning about supposed spyware and offering an immediate ‘fix’ is a textbook scareware pattern. Why the other options are wrong: A message about winning a free cruise is more aligned with general phishing or baiting, not fear-based security fraud; a banner saying an account is locked and urging a password reset is typical credential-harvesting phishing; a notification about a delayed Amazon order is also ordinary phishing or impersonation of a vendor, not specifically a fake security alert designed to scare the user into installing software. KEY CONCEPTS: scareware, fake antivirus or antispyware, fear and urgency as psychological levers, computer-based social engineering. CEH REFERENCE: Module 09 - Social Engineering (Computer-based Techniques: Pop-up Windows, Scareware, and Fake Security Alerts)."
   },
   {
     "id": 305,
@@ -189,6 +200,7 @@
       3
     ],
     "type": "single",
-    "domain": 7
+    "domain": 7,
+    "explanation": "**CORRECT ANSWER: Pharming** Scenario recap: The question asks which tactic uses malicious code to redirect users’ web traffic. Why this answer is correct: CEH defines pharming as using malicious code or configuration changes (for example in DNS or hosts files) to transparently redirect users from legitimate websites to malicious ones, allowing attackers to capture credentials and other sensitive data without the victim realizing the redirection; this directly matches the description of using code to redirect traffic. Why the other options are wrong: Spear-phishing and generic phishing are about sending targeted or broad fraudulent messages with links or attachments but they do not, by themselves, modify the underlying resolution or routing of web traffic; spimming refers to spam sent over instant messaging systems and does not describe low-level redirection via DNS or other code-based mechanisms. KEY CONCEPTS: pharming, DNS or hosts file manipulation, transparent redirection, credential harvesting. CEH REFERENCE: Module 09 - Social Engineering (Computer-based Social Engineering: Phishing, Spear Phishing, and Pharming)."
   }
 ]

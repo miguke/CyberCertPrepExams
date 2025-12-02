@@ -13,7 +13,8 @@
       3
     ],
     "type": "single",
-    "domain": 8
+    "domain": 8,
+    "explanation": "**CORRECT ANSWER: DHCP starvation** Scenario recap: A security professional floods the DHCP server with forged DHCP requests until all leases in the scope are exhausted, preventing legitimate clients from obtaining IP addresses and causing a DoS. Why this answer is correct: CEH describes a DHCP starvation attack as broadcasting a large number of bogus DHCPDISCOVER or DHCPREQUEST messages to consume all available leases, which exactly matches the behavior in the scenario and directly results in denial of network access. Why the other options are wrong: A rogue DHCP server attack involves standing up an unauthorized DHCP server that gives out malicious configuration, not exhausting the scope of a legitimate server; VLAN hopping abuses switch or trunk misconfiguration to move between VLANs, not DHCP leasing; an STP attack manipulates Spanning Tree Protocol and root bridge election to redirect traffic for sniffing, not to deplete DHCP addresses. KEY CONCEPTS: DHCP starvation, DHCP scope exhaustion, denial of service, network access disruption. CEH REFERENCE: Module 10 - Denial-of-Service (DoS via Infrastructure Protocol Abuse, including DHCP Starvation)."
   },
   {
     "id": 55,
@@ -29,7 +30,8 @@
       0
     ],
     "type": "single",
-    "domain": 8
+    "domain": 8,
+    "explanation": "**CORRECT ANSWER: Spoofed session flood attack** Scenario recap: A penetration tester forges multiple TCP sessions by sending large numbers of SYN, ACK, and RST/FIN packets to circumvent firewalls and exhaust network resources, enabling DDoS conditions. Why this answer is correct: CEH explains that spoofed session flood attacks generate huge volumes of forged TCP session traffic with spoofed or invalid addresses to fill connection state tables and overwhelm inspection devices, which matches the description of creating many fake TCP sessions using SYN, ACK, and RST/FIN packets. Why the other options are wrong: A UDP flood attack simply sends high volumes of UDP packets to consume bandwidth or processing but does not focus on forging TCP sessions; a peer-to-peer attack abuses P2P clients or reflection via P2P networks to direct traffic to a victim rather than forging TCP session state; ping-of-death relies on oversized or malformed ICMP packets, not on complex sequences of spoofed TCP flags. KEY CONCEPTS: spoofed TCP session floods, SYN/ACK/RST/FIN abuse, state table exhaustion, DDoS evasion of simple filters. CEH REFERENCE: Module 10 - Denial-of-Service (Protocol-based DoS/DDoS Techniques: TCP Session Floods and Spoofing)."
   },
   {
     "id": 79,
@@ -45,7 +47,8 @@
       1
     ],
     "type": "single",
-    "domain": 8
+    "domain": 8,
+    "explanation": "**CORRECT ANSWER: Slowloris attack** Scenario recap: A layer 7 DDoS attack sends partial HTTP requests that open many connections on the web server and then slowly dribble data so that the server keeps them open, waiting for completion, until resources are exhausted. Why this answer is correct: CEH describes Slowloris as a slow HTTP attack in which an attacker sends incomplete HTTP headers or requests and periodically sends small chunks to keep connections alive, tying up threads or sockets and preventing the server from serving legitimate clients; this is exactly the pattern of partial HTTP requests described. Why the other options are wrong: Desynchronization and session splicing are related to IDS evasion by splitting or misaligning streams, not to holding hundreds of partial HTTP connections open; phlashing (permanent DoS) targets firmware or hardware with destructive updates rather than application-layer slow request floods. KEY CONCEPTS: application-layer DoS, Slowloris, slow HTTP requests, connection exhaustion at layer 7. CEH REFERENCE: Module 10 - Denial-of-Service (Application-layer DoS: Slow HTTP Attacks such as Slowloris and Slow HTTP POST)."
   },
   {
     "id": 88,
@@ -61,7 +64,8 @@
       3
     ],
     "type": "single",
-    "domain": 8
+    "domain": 8,
+    "explanation": "**CORRECT ANSWER: Implement cognitive radios in the physical layer** Scenario recap: After suffering jamming and scrambling attacks, a security engineer deploys countermeasures specifically aimed at handling interference at the radio/physical layer. Why this answer is correct: CEH notes that jamming and scrambling are physical-layer DoS techniques against wireless communications, and that advanced countermeasures include using cognitive radios and intelligent spectrum management that can sense interference and dynamically adjust frequency, power, or modulation to maintain availability under jamming conditions. Why the other options are wrong: Allowing all addressed packets at the ISP level would weaken filtering and make volumetric DoS easier, not harder; disabling TCP SYN cookies removes a server-side protection against SYN floods; allowing unsafe functions such as gets and strcpy increases buffer overflow risk rather than mitigating radio jamming. KEY CONCEPTS: jamming and scrambling, physical-layer DoS, cognitive radios, adaptive spectrum and interference mitigation. CEH REFERENCE: Module 10 - Denial-of-Service (Wireless and Physical-layer DoS, Jamming Countermeasures)."
   },
   {
     "id": 127,
@@ -77,7 +81,8 @@
       3
     ],
     "type": "single",
-    "domain": 8
+    "domain": 8,
+    "explanation": "**CORRECT ANSWER: Ping of Death attack** Scenario recap: A large enterprise observes sporadic system crashes and instability alongside a spike in network traffic with packet sizes exceeding prescribed limits, leading to limited web service availability. Why this answer is correct: CEH describes the Ping of Death as an attack that sends oversized or malformed ICMP echo packets (or fragments that reassemble to exceed the maximum IP packet size), which can crash or destabilize vulnerable systems; the mention of packets exceeding size limits and resulting crashes is characteristic of a Ping of Death scenario. Why the other options are wrong: A Smurf attack uses ICMP echo requests to a broadcast address with spoofed source to amplify traffic but focuses on volume, not oversize packets; a UDP flood overwhelms bandwidth or CPU with high-rate UDP traffic but does not depend on exceeding packet-size limits; a pulse wave attack uses pulsed high-volume traffic from a botnet, again about traffic patterns, not malformed or oversized packets. KEY CONCEPTS: Ping of Death, oversized ICMP, malformed packets causing crashes, classic DoS technique. CEH REFERENCE: Module 10 - Denial-of-Service (Legacy DoS Techniques: Ping of Death and Malformed Packet Attacks)."
   },
   {
     "id": 145,
@@ -93,7 +98,8 @@
       0
     ],
     "type": "single",
-    "domain": 8
+    "domain": 8,
+    "explanation": "**CORRECT ANSWER: m=90, b=15: The server can manage 90 connections per second, but the attacker's 100 connections exceed this, and with each connection held up for 15 seconds, the attack duration could be significant.** Scenario recap: An attacker performs a Slow HTTP POST–style attack by holding 100 connections open and sending a byte every b seconds; the server can handle only m concurrent connections per second before becoming overloaded, and the effective attack duration D = a*b. Why this answer is correct: In option m=90, b=15 the attacker exceeds the server’s maximum handled connections (100 > 90) and also maintains each connection for a relatively long time (15 seconds), maximizing D and therefore the period of unavailability; among the overloaded scenarios, this combination of overload and longer per-connection hold time produces the longest sustained impact. Why the other options are wrong: When m=105 or m=110 the server’s capacity exceeds the attacker’s 100 connections, so even with longer b the server should remain operational; when m=95, b=10 the server is overloaded (100 > 95) but each connection is held for a shorter time, so overall impact and duration are lower than in the m=90, b=15 case. KEY CONCEPTS: Slow HTTP POST / Slowloris-style DoS, connection concurrency limits, time-based resource exhaustion, relationship between concurrency and duration in application-layer DoS. CEH REFERENCE: Module 10 - Denial-of-Service (Application-layer DoS: Slow HTTP Attacks and Resource Consumption)."
   },
   {
     "id": 165,
@@ -109,7 +115,8 @@
       1
     ],
     "type": "single",
-    "domain": 8
+    "domain": 8,
+    "explanation": "**CORRECT ANSWER: The attacker should leverage a botnet to launch a Pulse Wave attack, sending high-volume traffic pulses at regular intervals** Scenario recap: A well-resourced attacker wants a highly disruptive DDoS attack that exhausts network resources, hides their identity, and resists simple IP-based blocking against a major online retailer. Why this answer is correct: CEH describes pulse wave DDoS as a botnet-driven technique where coordinated bots send large bursts of traffic in pulses, repeatedly saturating links and knocking services offline while quickly changing sources and patterns; using a distributed botnet makes the attack resilient to IP blocking and conceals the true controller behind many compromised systems. Why the other options are wrong: A protocol-based SYN flood may be effective but if launched from limited sources is more susceptible to IP-based mitigation and is less explicitly tied to the “pulse” pattern described in CEH; a volumetric flood or simple ICMP flood from a single compromised machine makes it easy to trace and block by source IP or upstream filtering, which contradicts the requirement to keep the attacker’s identity concealed and resist simple blocking. KEY CONCEPTS: botnets, DDoS, pulse wave attack, distributed traffic sources, resistance to simple IP blocking. CEH REFERENCE: Module 10 - Denial-of-Service (Modern DDoS Trends: Botnets and Pulse Wave Attacks)."
   },
   {
     "id": 200,
@@ -125,7 +132,8 @@
       0
     ],
     "type": "single",
-    "domain": 8
+    "domain": 8,
+    "explanation": "**CORRECT ANSWER: Contact your Internet Service Provider (ISP) for assistance** Scenario recap: A small business web server is intermittently going offline under a suspected DDoS flood, and an intern is looking for the first practical step to mitigate the attack. Why this answer is correct: CEH emphasizes that effective DDoS mitigation often requires upstream cooperation because the victim’s own link or edge devices can be saturated; contacting the ISP or upstream provider allows traffic filtering, rate limiting, or blackholing closer to the source, reducing the attack volume that ever reaches the small business link and providing expert support. Why the other options are wrong: Installing a newer server version does not immediately address a live volumetric attack; IP whitelisting can be impractical and dangerous during a DDoS, potentially locking out legitimate users and still not stopping spoofed or distributed traffic at the edge; simply increasing bandwidth may provide a slightly larger target but does not solve the underlying problem and is rarely sufficient against a determined DDoS. KEY CONCEPTS: DDoS mitigation, upstream filtering, ISP coordination, limits of local-only defenses. CEH REFERENCE: Module 10 - Denial-of-Service (Best Practices and DDoS Mitigation Strategies, Including ISP Involvement)."
   },
   {
     "id": 216,
@@ -141,7 +149,8 @@
       0
     ],
     "type": "single",
-    "domain": 8
+    "domain": 8,
+    "explanation": "**CORRECT ANSWER: h=1987 (prime): The attacker's packet rate exceeds the server's capacity, causing potential unresponsiveness.** Scenario recap: A multi-vector DoS attack uses a mixture of TCP SYN, UDP, and ICMP floods at a rate r=2010 packets per second, while the server can safely handle only h packets per second; if r exceeds h, the server becomes unresponsive. Why this answer is correct: In CEH-style reasoning, the key condition for overload is simply r > h; in the scenario where h=1987, the attacker’s rate 2010 clearly exceeds the server’s safe capacity, and the option text explicitly states that this will cause potential unresponsiveness, matching the described overloading condition. Why the other options are wrong: In the answers with h=1999, h=1993, and h=2003 the narrative claims the server remains responsive or only barely affected, despite h still being less than r in the raw numbers; the exam key focuses on the option that both numerically and verbally recognizes that r surpasses h and will cause the server to falter, which is the h=1987 case. KEY CONCEPTS: volumetric and multi-vector DoS, packet-per-second capacity, overload thresholds, simple r > h overload condition. CEH REFERENCE: Module 10 - Denial-of-Service (Volumetric and Multi-Vector Flood Attacks and Capacity Exhaustion)."
   },
   {
     "id": 222,
@@ -157,6 +166,7 @@
       3
     ],
     "type": "single",
-    "domain": 8
+    "domain": 8,
+    "explanation": "**CORRECT ANSWER: f=490: The server can handle 490 SYN packets per second. With 's' exceeding 'f' by 10, the response time shoots up (2^10 = 1024 times the usual response time), indicating a system overload.** Scenario recap: A SYN flood sends s=500 SYN packets per second while the server can safely handle only f SYN packets per second; if s exceeds f, each additional packet above f increases response time exponentially by a factor of 2^k, where k = s − f. Why this answer is correct: In the scenario with f=490, s exceeds f by 10, so k=10 and the theoretical response time increase is 2^10 = 1024 times normal, representing the most extreme overload and the clearest case where the system will be effectively unusable under the flood. Why the other options are wrong: With f=510, the server’s capacity exceeds the flood rate, so no overload condition is met; with f=495 or f=505, s exceeds or roughly matches capacity only slightly, leading to k=5 or less and a far smaller performance degradation than the 2^10 explosion in the f=490 case, making them less likely to cause total collapse compared to the worst-case overload scenario. KEY CONCEPTS: SYN flood, half-open connection queues, capacity thresholds, exponential performance degradation as overload increases. CEH REFERENCE: Module 10 - Denial-of-Service (SYN Flood Attacks and Impact on Server Responsiveness)."
   }
 ]
