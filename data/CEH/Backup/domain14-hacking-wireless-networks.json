@@ -13,7 +13,8 @@
       1
     ],
     "type": "single",
-    "domain": 14
+    "domain": 14,
+    "explanation": "**CORRECT ANSWER: WPA3-Enterprise** Scenario recap: The question describes a wireless security protocol that mandates a 192-bit minimum security level and supports suites like GCMP-256, HMAC-SHA384, and ECDSA with a 384-bit elliptic curve. Why this answer is correct: CEH explains that WPA3-Enterprise introduces a 192-bit security suite for high-security environments (government, finance, etc.), using stronger ciphers and hash functions such as GCMP-256 and HMAC-SHA384 and supporting ECDSA with a 384-bit curve; this matches the description exactly. Why the other options are wrong: WPA3-Personal uses SAE and strong encryption but does not specifically mandate the 192-bit security suite described; WPA2-Enterprise and WPA2-Personal are older standards and typically use CCMP/AES and HMAC-SHA1, not the 192-bit suite with GCMP-256 and HMAC-SHA384. KEY CONCEPTS: WPA3-Enterprise, 192-bit security mode, GCMP-256, HMAC-SHA384, ECDSA P-384. CEH REFERENCE: Module 16 – Hacking Wireless Networks (Wireless Encryption Algorithms and WPA3 Security Suites)."
   },
   {
     "id": 18,
@@ -29,7 +30,8 @@
       3
     ],
     "type": "single",
-    "domain": 14
+    "domain": 14,
+    "explanation": "**CORRECT ANSWER: Evil-twin attack** Scenario recap: An attacker uses a Wi-Fi Pineapple to set up a rogue access point with a legitimate-looking SSID for a nearby business in order to capture the wireless password. Why this answer is correct: CEH defines an evil-twin attack as creating a malicious access point that mimics the SSID and appearance of a legitimate AP so that users connect to it and reveal credentials or traffic; the Wi-Fi Pineapple is a classic tool for this type of rogue AP / evil-twin scenario. Why the other options are wrong: MAC spoofing attack focuses on changing the MAC address of a client or AP, not necessarily cloning an SSID and capturing passwords; wardriving is passively searching for wireless networks while driving around, not setting up a fake AP; phishing is social engineering via messages/websites rather than specifically deploying a rogue wireless AP that impersonates a legitimate one. KEY CONCEPTS: evil-twin access point, rogue AP, Wi-Fi Pineapple, credential capture. CEH REFERENCE: Module 16 – Hacking Wireless Networks (Wireless Threats and Evil Twin/Rogue AP Attacks)."
   },
   {
     "id": 77,
@@ -45,7 +47,8 @@
       1
     ],
     "type": "single",
-    "domain": 14
+    "domain": 14,
+    "explanation": "**CORRECT ANSWER: Dragonblood** Scenario recap: A penetration tester targets a network using WPA3 encryption and looks for a promising vulnerability specific to WPA3. Why this answer is correct: CEH materials discuss Dragonblood as a set of vulnerabilities in the WPA3 and SAE (Simultaneous Authentication of Equals) design and implementations, including side-channel and downgrade issues; it is specifically associated with WPA3 networks, making it the correct target in this scenario. Why the other options are wrong: Cross-site request forgery is a web application issue, not a Wi-Fi protocol vulnerability; key reinstallation attacks (KRACK) affect WPA2’s four-way handshake, not WPA3’s SAE; AP misconfiguration is a generic issue and not a named vulnerability family for WPA3 in CEH. KEY CONCEPTS: WPA3, SAE, Dragonblood vulnerabilities, WPA3-specific attacks. CEH REFERENCE: Module 16 – Hacking Wireless Networks (Modern WPA3 and SAE Vulnerabilities such as Dragonblood)."
   },
   {
     "id": 85,
@@ -61,7 +64,8 @@
       0
     ],
     "type": "single",
-    "domain": 14
+    "domain": 14,
+    "explanation": "**CORRECT ANSWER: Wireless network assessment** Scenario recap: After detecting abnormal internal traffic and a rogue access point, a security auditor shuts down the targeted network segment and tests for weak and outdated security mechanisms in the wireless environment. Why this answer is correct: CEH describes wireless network assessments as focused evaluations of wireless configurations, encryption, authentication, and rogue APs to identify weaknesses such as old protocols or poor settings; Johnson’s actions (investigating rogue AP activity and testing wireless security posture) align with a wireless network assessment. Why the other options are wrong: Application assessment focuses on web or software apps, not the RF and wireless layer; host-based assessment centers on individual hosts/servers; distributed assessment describes multi-location or distributed testing rather than the specific focus on wireless vulnerabilities. KEY CONCEPTS: wireless vulnerability assessment, rogue access points, outdated encryption or authentication, wireless hardening. CEH REFERENCE: Module 16 – Hacking Wireless Networks (Wireless Threats and Wireless Security Assessment Methodology)."
   },
   {
     "id": 86,
@@ -77,7 +81,8 @@
       3
     ],
     "type": "single",
-    "domain": 14
+    "domain": 14,
+    "explanation": "**CORRECT ANSWER: KRACK** Scenario recap: An adversary manipulates and replays cryptographic handshake messages to trick a victim into reinstalling an already-in-use key, resetting transmit and receive packet counters (nonces) to initial values. Why this answer is correct: CEH describes the KRACK (Key Reinstallation Attack) as a vulnerability in the WPA2 four-way handshake where an attacker forces a client to reinstall an existing key by replaying handshake messages, resetting associated counters and enabling replay/decryption of traffic; this matches the scenario exactly. Why the other options are wrong: An evil twin is a rogue AP impersonating a legitimate SSID, not a cryptographic key reinstallation flaw; the chop-chop attack is a WEP-based attack that modifies and decrypts packets byte by byte; wardriving is simply locating wireless networks by moving around, not manipulating handshakes. KEY CONCEPTS: KRACK, WPA2 four-way handshake, key reinstallation, nonce resetting, replay vulnerabilities. CEH REFERENCE: Module 16 – Hacking Wireless Networks (WPA2 Vulnerabilities and Key Reinstallation Attacks)."
   },
   {
     "id": 100,
@@ -93,7 +98,8 @@
       1
     ],
     "type": "single",
-    "domain": 14
+    "domain": 14,
+    "explanation": "**CORRECT ANSWER: Bluesnarfing** Scenario recap: The question asks for the Bluetooth hacking technique that specifically involves theft of information from a wireless device. Why this answer is correct: CEH explains that bluesnarfing is the unauthorized access and theft of data (such as contacts, messages, files) from a Bluetooth-enabled device, typically by exploiting misconfigured or vulnerable Bluetooth services; this directly matches the description of stealing information over Bluetooth. Why the other options are wrong: Bluesmacking is a Bluetooth DoS attack (often via oversized L2CAP packets), not data theft; bluejacking involves sending unsolicited messages or business cards to nearby Bluetooth devices; bluebugging exploits vulnerabilities to gain remote control of a device and its functions, which is more than just data theft. KEY CONCEPTS: Bluetooth attacks, bluesnarfing, unauthorized data access, wireless device information theft. CEH REFERENCE: Module 16 – Hacking Wireless Networks (Bluetooth Threats and Attacks: Bluejacking, Bluesnarfing, Bluebugging, Bluesmacking)."
   },
   {
     "id": 118,
@@ -109,7 +115,8 @@
       2
     ],
     "type": "single",
-    "domain": 14
+    "domain": 14,
+    "explanation": "**CORRECT ANSWER: Evil twin** Scenario recap: Jane has a strong, complex password configured on her router, yet guests are able to connect to what they believe is her wireless network without entering any password. Why this answer is correct: CEH describes evil-twin attacks where an attacker sets up a rogue access point broadcasting the same SSID as a legitimate network but configured as open or with weaker security, so victims connect without a password even though the real AP requires one; that perfectly explains how Alice and John join a network under Jane’s SSID without needing the complex key. Why the other options are wrong: Wardriving is driving around searching for wireless networks, not setting up a deceptive AP; wireless sniffing passively captures traffic rather than luring users to connect; piggybacking is using someone else’s existing open or weakly protected Wi-Fi, not creating a fake AP that mimics a secured one. KEY CONCEPTS: evil-twin access point, rogue AP, SSID impersonation, bypassing normal password requirements. CEH REFERENCE: Module 16 – Hacking Wireless Networks (Evil Twin and Rogue AP Attacks against Secured WLANs)."
   },
   {
     "id": 121,
@@ -125,7 +132,8 @@
       2
     ],
     "type": "single",
-    "domain": 14
+    "domain": 14,
+    "explanation": "**CORRECT ANSWER: WEP** Scenario recap: A wireless vulnerability scan reveals that the network is using an old encryption protocol originally designed to provide privacy equivalent to wired networks. Why this answer is correct: CEH explains that WEP (Wired Equivalent Privacy) was the original 802.11 security mechanism intended to mimic wired security, but it suffers from severe weaknesses in RC4 key scheduling and IV reuse, making it obsolete and easily cracked. Why the other options are wrong: RADIUS is an authentication protocol/server, not an 802.11 encryption protocol; WPA is a successor to WEP that introduces TKIP and improved security; WPA3 is the modern standard with SAE and stronger suites, not the legacy protocol described. KEY CONCEPTS: WEP, wired equivalent privacy, legacy 802.11 encryption, weaknesses and deprecation. CEH REFERENCE: Module 16 – Hacking Wireless Networks (Wireless Encryption Algorithms: WEP, WPA, WPA2, WPA3)."
   },
   {
     "id": 140,
@@ -141,7 +149,8 @@
       3
     ],
     "type": "single",
-    "domain": 14
+    "domain": 14,
+    "explanation": "**CORRECT ANSWER: Display a captive portal page that warns users about the possibility of Evil Twin attacks** Scenario recap: A large airport offers free Wi-Fi and is worried about evil-twin attacks but wants a solution that does not degrade user experience or require travelers to install software. Why this answer is correct: CEH stresses that in open or public Wi-Fi environments where strong mutual authentication is difficult to impose on transient users, user awareness is a critical control; a captive portal that automatically appears when users connect and warns them to verify the SSID, avoid entering credentials on suspicious networks, and be cautious of duplicates can significantly reduce successful evil-twin attacks without adding client-side complexity. Why the other options are wrong: Regularly changing the SSID does not prevent an attacker from cloning the current SSID; MAC address filtering is ineffective in large public environments and easily bypassed via spoofing; WPA3 encryption improves confidentiality but does not inherently stop an attacker from cloning the SSID and establishing a bogus AP in parallel. KEY CONCEPTS: evil-twin mitigation in public Wi-Fi, captive portal warnings, user awareness in high-turnover environments. CEH REFERENCE: Module 16 – Hacking Wireless Networks (Wireless Threats, Evil Twin Risks, and Practical Countermeasures in Public Hotspots)."
   },
   {
     "id": 159,
@@ -157,7 +166,8 @@
       1
     ],
     "type": "single",
-    "domain": 14
+    "domain": 14,
+    "explanation": "**CORRECT ANSWER: WPA2-PSK with AES encryption** Scenario recap: An ethical hacker audits a company and discovers that its wireless network still relies on WEP and needs a stronger replacement. Why this answer is correct: CEH recommends replacing WEP with modern standards such as WPA2 (or WPA3) using AES-based CCMP for robust encryption; WPA2-PSK with AES is the common, secure choice for small or medium environments and is a clear upgrade over WEP’s flawed RC4 implementation. Why the other options are wrong: Open System authentication provides no encryption; disabling SSID broadcast only hides the network name and does not protect against sniffing or active discovery; MAC filtering is easily bypassed by spoofing MAC addresses and should not be relied on as a primary encryption control. KEY CONCEPTS: WEP weaknesses, WPA2-PSK, AES/CCMP, upgrading wireless encryption. CEH REFERENCE: Module 16 – Hacking Wireless Networks (Comparing WEP, WPA, WPA2 and Recommended Secure Configurations)."
   },
   {
     "id": 164,
@@ -173,7 +183,8 @@
       1
     ],
     "type": "single",
-    "domain": 14
+    "domain": 14,
+    "explanation": "**CORRECT ANSWER: Enable encryption on the wireless network** Scenario recap: A cybersecurity trainee is securing a simple home network against Wi-Fi eavesdropping, where unauthorized individuals might intercept wireless traffic. Why this answer is correct: CEH identifies enabling strong wireless encryption (WPA2 or WPA3) as the primary and most effective countermeasure against eavesdropping, because it ensures data transmitted over the air is encrypted and unreadable to passive attackers. Why the other options are wrong: Disabling SSID broadcast does not stop sniffers from detecting the network; MAC address filtering can be trivially bypassed via spoofing; reducing signal strength may slightly limit range but will not prevent a nearby attacker from capturing unencrypted traffic. KEY CONCEPTS: wireless eavesdropping, WPA2/WPA3 encryption, first-line residential Wi-Fi defenses. CEH REFERENCE: Module 16 – Hacking Wireless Networks (Wireless Threats and Encryption-based Countermeasures)."
   },
   {
     "id": 175,
@@ -189,7 +200,8 @@
       1
     ],
     "type": "single",
-    "domain": 14
+    "domain": 14,
+    "explanation": "**CORRECT ANSWER: Enable WPA2 or WPA3 encryption on the wireless router** Scenario recap: A junior security analyst is setting up a small business’s first wireless network and must prioritize measures to protect it from common attacks, with a small workforce and need for simplicity. Why this answer is correct: CEH emphasizes that enabling modern encryption (WPA2/WPA3) with a strong passphrase is foundational for any Wi-Fi deployment; it protects against casual eavesdropping and unauthorized access and is straightforward to manage in small environments. Why the other options are wrong: Hiding the SSID only obscures the network name and does not stop attackers using sniffers; MAC whitelisting is hard to maintain and easily bypassed by MAC spoofing; regularly changing the password can help but is less effective than ensuring the underlying encryption protocol is robust. KEY CONCEPTS: WPA2/WPA3 configuration, baseline wireless security, small-business Wi-Fi hardening. CEH REFERENCE: Module 16 – Hacking Wireless Networks (Recommended Best Practices for Secure WLAN Deployment)."
   },
   {
     "id": 194,
@@ -205,7 +217,8 @@
       3
     ],
     "type": "single",
-    "domain": 14
+    "domain": 14,
+    "explanation": "**CORRECT ANSWER: Implement 802.1X authentication** Scenario recap: A university’s campus-wide Wi-Fi network serves thousands of users and is experiencing unauthorized access due to credential sharing; the CISO wants an additional layer of security to address this. Why this answer is correct: CEH describes 802.1X (with RADIUS) as an enterprise-grade authentication framework that provides per-user credentials, dynamic session keys, and the ability to tie network access control to individual identities; it helps mitigate credential sharing by enabling per-account policy enforcement, centralized logging, and, where used with certificates, stronger identity binding. Why the other options are wrong: Network segmentation is useful but does not directly prevent users from sharing credentials; deploying a VPN for the entire campus adds complexity and does not inherently solve the problem of shared Wi-Fi logins; regularly changing Wi-Fi passwords only addresses shared PSKs in simple deployments, whereas 802.1X scales better and provides stronger, identity-based control. KEY CONCEPTS: 802.1X, RADIUS, enterprise Wi-Fi authentication, mitigating credential sharing. CEH REFERENCE: Module 16 – Hacking Wireless Networks (WPA/WPA2-Enterprise, 802.1X, and RADIUS-based WLAN Security)."
   },
   {
     "id": 206,
@@ -221,7 +234,8 @@
       1
     ],
     "type": "single",
-    "domain": 14
+    "domain": 14,
+    "explanation": "**CORRECT ANSWER: bettercap** Scenario recap: During a red team engagement against a WPA-PSK–protected wireless network, an ethical hacker must choose a tool capable of performing session hijacking and subsequent security analysis. Why this answer is correct: CEH highlights bettercap as a powerful, modern framework for man-in-the-middle attacks on wired and wireless networks, supporting traffic interception, credential harvesting, and session hijacking over WPA/WPA2 once the key is known or traffic is re-routed; it is the most appropriate professional tool among the options for this scenario. Why the other options are wrong: Hetty is a web security tool focused on HTTP testing, not specifically wireless session hijacking; DroidSheep and FaceNiff are Android-based apps intended for session sniffing/hijacking on rooted devices, less suitable as primary red-team tools in a professional WPA-PSK engagement. KEY CONCEPTS: wireless MITM, session hijacking, bettercap capabilities on WPA/WPA2 networks. CEH REFERENCE: Module 16 – Hacking Wireless Networks (Wireless Hacking Tools, including bettercap for MITM and Session Attacks)."
   },
   {
     "id": 213,
@@ -237,7 +251,8 @@
       1
     ],
     "type": "single",
-    "domain": 14
+    "domain": 14,
+    "explanation": "**CORRECT ANSWER: Perform a deauthentication attack to capture the four-way handshake.** Scenario recap: An ethical hacker must crack a WPA2-PSK for a known SSID but has not been given the PSK and needs to choose the first step. Why this answer is correct: CEH’s wireless hacking methodology states that to attack WPA/WPA2-PSK, the attacker first captures the four-way handshake between a client and AP (often by forcing re-authentication via a deauthentication attack), then performs offline dictionary or brute-force attacks against the captured handshake; therefore, triggering a deauth to capture the handshake is the correct initial step. Why the other options are wrong: Attempting a rainbow table attack or brute force directly on the AP is ineffective without handshake data; exploiting a router firmware vulnerability may be possible but is not the standard or necessary first step for a WPA2-PSK cracking engagement focused on key recovery. KEY CONCEPTS: WPA2-PSK attack workflow, four-way handshake capture, deauthentication attacks, offline PSK cracking. CEH REFERENCE: Module 16 – Hacking Wireless Networks (Wireless Hacking Methodology for WPA/WPA2-PSK)."
   },
   {
     "id": 248,
@@ -253,7 +268,8 @@
       2
     ],
     "type": "single",
-    "domain": 14
+    "domain": 14,
+    "explanation": "**CORRECT ANSWER: WPA3** Scenario recap: A company upgrades Wi-Fi security to defend against dictionary and key recovery attacks by deploying a technology that uses Simultaneous Authentication of Equals (SAE), also called the dragonfly key exchange, and replaces the traditional PSK concept. Why this answer is correct: CEH describes WPA3, particularly WPA3-Personal, as replacing WPA2-PSK with SAE (dragonfly) for mutual authentication, making offline dictionary attacks significantly harder; this aligns exactly with the scenario’s description. Why the other options are wrong: WPA and WPA2 are earlier generations that still rely on PSK-based handshakes in personal mode; WEP is obsolete and highly vulnerable to key recovery attacks. KEY CONCEPTS: WPA3, SAE, dragonfly key exchange, resistance to offline dictionary attacks. CEH REFERENCE: Module 16 – Hacking Wireless Networks (New Features of WPA3 and SAE-based Authentication)."
   },
   {
     "id": 255,
@@ -269,7 +285,8 @@
       0
     ],
     "type": "single",
-    "domain": 14
+    "domain": 14,
+    "explanation": "**CORRECT ANSWER: btlejack -f 0x9c68fd30 -t -m 0x1ffffffffff** Scenario recap: An attacker uses BtleJack and micro:bit hardware to perform Btlejacking against Bluetooth Low Energy connections, specifically to hijack, read, and export sensitive data. Why this answer is correct: CEH’s coverage of BtleJack notes that the tool uses commands with the `-f` option to follow a connection with a specified access address and options such as `-t` (track/hijack) and `-m` to control parameters; the command `btlejack -f 0x9c68fd30 -t -m 0x1ffffffffff` is consistent with the documented syntax for hijacking existing BLE connections. Why the other options are wrong: `btlejack -c any` is used to sniff any nearby connections but not specifically to hijack an identified one; `btlejack -d /dev/ttyACM0 -d /dev/ttyACM2 -s` configures devices and scanning; `btlejack -f 0x129f3244 -j` is not the canonical hijack command pattern described in the scenario. KEY CONCEPTS: Btlejacking, BtleJack tool usage, hijacking BLE connections using follow (`-f`) and track options. CEH REFERENCE: Module 16 – Hacking Wireless Networks (Bluetooth Low Energy Attacks and BtleJack Usage)."
   },
   {
     "id": 264,
@@ -285,7 +302,8 @@
       0
     ],
     "type": "single",
-    "domain": 14
+    "domain": 14,
+    "explanation": "**CORRECT ANSWER: Wardriving** Scenario recap: A group of hackers drives around a bank office building in a car using tools on a laptop to locate free-access wireless networks. Why this answer is correct: CEH defines wardriving as the practice of moving around (usually in a vehicle) with a Wi-Fi-capable device and software to discover, map, and sometimes log wireless access points, particularly open or poorly secured ones; this precisely describes the scenario. Why the other options are wrong: Spectrum analysis focuses on measuring RF characteristics and interference, not specifically hunting for free-access networks; wireless sniffing captures traffic within range but does not inherently involve driving around to discover networks; GPS mapping may be used as part of wardriving but is not the attack technique itself. KEY CONCEPTS: wardriving, wireless network discovery, mapping open Wi-Fi. CEH REFERENCE: Module 16 – Hacking Wireless Networks (Wireless Reconnaissance Techniques Including Wardriving)."
   },
   {
     "id": 268,
@@ -301,7 +319,8 @@
       2
     ],
     "type": "single",
-    "domain": 14
+    "domain": 14,
+    "explanation": "**CORRECT ANSWER: WPA3-Personal** Scenario recap: The question asks which wireless security protocol replaces personal pre-shared key authentication with Simultaneous Authentication of Equals (SAE) and is resistant to offline dictionary attacks. Why this answer is correct: CEH notes that WPA3-Personal uses SAE (dragonfly) instead of a simple PSK-based four-way handshake, providing mutual authentication and making offline dictionary attacks much more difficult; this is exactly the protocol described. Why the other options are wrong: Bluetooth and ZigBee are entirely different wireless technologies with their own security models; WPA2-Enterprise uses 802.1X/EAP with RADIUS, not SAE, and is not the personal mode successor specifically designed around SAE. KEY CONCEPTS: WPA3-Personal, SAE, dragonfly, offline dictionary attack resistance. CEH REFERENCE: Module 16 – Hacking Wireless Networks (WPA3 Modes and Their Authentication Methods)."
   },
   {
     "id": 279,
@@ -317,7 +336,8 @@
       2
     ],
     "type": "single",
-    "domain": 14
+    "domain": 14,
+    "explanation": "**CORRECT ANSWER: Downgrade security attack** Scenario recap: An attacker notices that a user and AP both support WPA2 and WPA3, sets up a rogue AP that only supports WPA2, forces the victim to connect using the WPA2 four-way handshake, and then cracks WPA2-encrypted messages. Why this answer is correct: CEH describes downgrade security attacks where an attacker coerces clients and APs to use a weaker protocol or cipher suite (for example WPA2 instead of WPA3) to exploit known weaknesses; here, by forcing a WPA3-capable client to perform a WPA2 handshake, the attacker enables traditional WPA2 key cracking, which is a textbook downgrade scenario. Why the other options are wrong: Cache-based and timing-based attacks are side-channel techniques and not primarily about forcing protocol version downgrade; side-channel attack is a generic class and does not specifically describe the forced fallback from WPA3 to WPA2 as in the question. KEY CONCEPTS: downgrade attacks, WPA2 vs WPA3, forcing weaker security modes, exploiting backwards compatibility. CEH REFERENCE: Module 16 – Hacking Wireless Networks (Wireless Protocol Downgrade and Backwards-Compatibility Attacks)."
   },
   {
     "id": 294,
@@ -333,6 +353,7 @@
       0
     ],
     "type": "single",
-    "domain": 14
+    "domain": 14,
+    "explanation": "**CORRECT ANSWER: wash** Scenario recap: An attacker wants to know whether target access points have WPS enabled or are locked and uses a special command-line utility to discover WPS-enabled APs. Why this answer is correct: CEH mentions the `wash` utility (part of the Reaver suite) as a command-line tool used to scan for WPS-enabled access points and list their status, including whether WPS is locked; this matches the need to identify WPS-enabled APs for further attacks. Why the other options are wrong: `net view` is a Windows command for enumerating network shares and computers, not WPS scanning; `macof` is a tool to flood switches with MAC addresses for CAM table attacks, unrelated to WPS; `ntptrace` is used for tracing NTP servers and has nothing to do with wireless or WPS discovery. KEY CONCEPTS: WPS vulnerabilities, `wash` tool, discovering WPS-enabled access points before brute-forcing PINs. CEH REFERENCE: Module 16 – Hacking Wireless Networks (WPS Attacks and Tools such as Reaver and wash)."
   }
 ]

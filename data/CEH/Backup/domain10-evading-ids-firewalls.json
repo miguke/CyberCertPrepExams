@@ -13,7 +13,8 @@
       2
     ],
     "type": "single",
-    "domain": 10
+    "domain": 10,
+    "explanation": "**CORRECT ANSWER: Obfuscating** Scenario recap: A professional hacker encodes packets using Unicode characters so that the company’s IDS cannot correctly interpret them, but the target web server can still decode and process them. Why this answer is correct: CEH explains that one common IDS evasion method is obfuscation, where attackers encode or transform payloads (for example, using Unicode, URL-encoding, or other encodings) so that signature-based IDS cannot recognize known attack patterns while the destination application or server still decodes them normally; this matches Kevin’s use of Unicode-encoded packets to slip past the IDS. Why the other options are wrong: Session splicing breaks payloads into many small segments to bypass pattern matching, not specifically Unicode encoding; using the urgency (URG) flag plays with TCP flag behavior and is not about content encoding; desynchronization is a session hijacking/IDS‑evasion tactic that alters sequence numbers to confuse state tracking, not to hide payloads via Unicode encoding. KEY CONCEPTS: IDS evasion, obfuscation, Unicode or encoded payloads, application‑level decoding. CEH REFERENCE: Module 12 – Evading IDS, Firewalls, and Honeypots (Techniques to Bypass IDS Using Encoded or Obfuscated Payloads)."
   },
   {
     "id": 67,
@@ -29,7 +30,8 @@
       3
     ],
     "type": "single",
-    "domain": 10
+    "domain": 10,
+    "explanation": "**CORRECT ANSWER: Idle scanning** Scenario recap: The question asks which firewall‑evasion scanning technique uses a quiet zombie system with low network activity and relies on its fragment/identification (IPID) numbers. Why this answer is correct: CEH describes idle scan as an advanced stealth technique in which an attacker uses a third‑party 'zombie' host with predictable IPID values to perform port scans; by observing changes in the zombie’s IPID, the attacker infers the target’s port states while hiding their own IP. This technique is useful for evading firewalls and logging systems because the traffic appears to originate from the zombie, and it explicitly relies on the zombie’s IPID behavior. Why the other options are wrong: Packet fragmentation scanning splits packets into small fragments to bypass simple filters but does not use a zombie’s IPID; spoofed source address scanning forges the source IP directly without relying on IPID‑based inference; decoy scanning sends additional spoofed packets to mask the real scanner but, again, does not depend on a low‑activity zombie and its IPID sequence. KEY CONCEPTS: idle scan, zombie host, IPID‑based inference, stealth and firewall evasion. CEH REFERENCE: Module 12 – Evading IDS, Firewalls, and Honeypots (Stealth and Idle Scanning Techniques)."
   },
   {
     "id": 94,
@@ -45,7 +47,8 @@
       3
     ],
     "type": "single",
-    "domain": 10
+    "domain": 10,
+    "explanation": "**CORRECT ANSWER: False positive** Scenario recap: While reviewing IDS logs, an administrator sees an alert when they legitimately access an external router from their own workstation to perform configuration updates. Why this answer is correct: CEH defines a false positive as a condition where an IDS raises an alarm even though no attack is actually occurring (no attack – alert); here the traffic is authorized administrative access, but the IDS still triggers an intrusion alert, which fits the false positive definition. Why the other options are wrong: A true positive would mean the alert corresponds to a real attack, which it does not; a false negative would mean an attack happens with no alert; a true negative would be the absence of both attack and alert. KEY CONCEPTS: IDS alert types, true/false positive and negative, tuning IDS signatures and policies. CEH REFERENCE: Module 12 – Evading IDS, Firewalls, and Honeypots (Types of IDS Alerts: True Positive, False Positive, False Negative, True Negative)."
   },
   {
     "id": 120,
@@ -61,7 +64,8 @@
       3
     ],
     "type": "single",
-    "domain": 10
+    "domain": 10,
+    "explanation": "**CORRECT ANSWER: DNS tunneling method** Scenario recap: An attacker embeds malicious data and C2 communications inside DNS protocol packets so that even DNSSEC cannot detect the activity, successfully bypassing the firewall and maintaining communication between victim and C&C server. Why this answer is correct: CEH describes DNS tunneling as encapsulating arbitrary or malicious data inside DNS queries and responses (for example in subdomains or TXT records) to create a covert channel that traverses DNS infrastructure and often bypasses traditional firewalls and content filters; this is exactly what John is doing by using DNS as a data exfiltration and malware communication channel. Why the other options are wrong: DNSSEC zone walking is about enumerating signed zones, not tunneling data; DNS cache snooping checks which domains are cached on a resolver; DNS enumeration is an information‑gathering step to discover hosts and records, not a covert exfiltration technique. KEY CONCEPTS: DNS tunneling, covert channels, firewall evasion via allowed protocols, C2 communication over DNS. CEH REFERENCE: Module 12 – Evading IDS, Firewalls, and Honeypots (Protocol Tunneling and DNS-based Evasion)."
   },
   {
     "id": 124,
@@ -77,7 +81,8 @@
       0
     ],
     "type": "single",
-    "domain": 10
+    "domain": 10,
+    "explanation": "**CORRECT ANSWER: Implementing a brute force attack to verify system vulnerability** Scenario recap: An attacker is trying to detect and bypass honeypots in a target network using various techniques and needs to know which technique would *not* help identify a honeypot. Why this answer is correct: CEH explains that honeypot detection typically relies on behavioral and fingerprinting clues (timing, service responses, virtualization artifacts, special tools, etc.); simply running a brute‑force attack to 'verify vulnerability' does not reliably distinguish a real system from a honeypot and is more about exploitation level than detection. Why the other options are wrong: Probing system services and observing the three‑way handshake, response patterns, and banner behavior is a classic way to detect emulated or unnatural honeypot TCP/IP stacks; using honeypot detection tools like Send‑Safe Honeypot Hunter is directly intended to identify honeypots; analyzing MAC addresses to spot VMware or virtualized environments is also a known detection technique because many low‑interaction honeypots run in virtualized setups. KEY CONCEPTS: honeypot detection vs exploitation, fingerprinting responses, specialized detection tools, virtualization artifacts. CEH REFERENCE: Module 12 – Evading IDS, Firewalls, and Honeypots (Honeypot Concepts and Techniques to Detect Honeypots)."
   },
   {
     "id": 128,
@@ -93,7 +98,8 @@
       0
     ],
     "type": "single",
-    "domain": 10
+    "domain": 10,
+    "explanation": "**CORRECT ANSWER: Writing YARA rules specifically to identify the goodware files triggering false positives** Scenario recap: An organization’s IDS is generating false positives on known benign (goodware) files; the security team wants to enhance detection using YARA while reducing these false alerts. Why this answer is correct: CEH notes that YARA rules can be used not only to detect malware but also to characterize and whitelist goodware; by writing YARA rules that reliably match the specific benign files currently causing alerts, the IDS can treat those files as known‑good and suppress or reclassify the corresponding alerts, reducing false positives while leaving room for additional YARA rules targeting real threats. Why the other options are wrong: Focusing YARA rules only on known malware signatures improves detection but does not address existing false positives from benign files; restricting YARA inspection to a private database ignores files and traffic outside that repository; applying broad YARA rules to all files regardless of nature, without distinguishing goodware, risks *increasing* false positives, not reducing them. KEY CONCEPTS: YARA rules, false positive reduction, whitelisting goodware, tuning IDS signatures. CEH REFERENCE: Module 12 – Evading IDS, Firewalls, and Honeypots (Using YARA and Rule Tuning to Improve IDS Accuracy)."
   },
   {
     "id": 177,
@@ -109,7 +115,8 @@
       0
     ],
     "type": "single",
-    "domain": 10
+    "domain": 10,
+    "explanation": "**CORRECT ANSWER: yarGen - Because it generates YARA rules from strings identified in malware files while removing strings that also appear in goodware files** Scenario recap: An organization using Snort wants to reinforce intrusion detection with YARA and needs an additional tool that can generate high‑quality YARA rules from malware samples while minimizing false positives. Why this answer is correct: CEH describes yarGen as a tool that analyzes malware samples, extracts characteristic strings, and automatically generates YARA rules while filtering out common or 'goodware' strings; this capability directly supports building effective, low‑noise YARA rules that complement existing IDS signatures. Why the other options are wrong: Koodous is an online community platform combining AV signatures and YARA rules but is not primarily a rule generation engine; YaraRET focuses on reverse‑engineering Trojans and does not specialize in automated rule generation from many samples; AutoYara can help automate rule creation but in the exam context yarGen is emphasized as the tool that specifically removes strings found in goodware to reduce false positives. KEY CONCEPTS: yarGen, automated YARA rule generation, malware vs goodware string filtering, complementing Snort/IDS rules. CEH REFERENCE: Module 12 – Evading IDS, Firewalls, and Honeypots (YARA and Supporting Tools such as yarGen)."
   },
   {
     "id": 288,
@@ -125,7 +132,8 @@
       1
     ],
     "type": "single",
-    "domain": 10
+    "domain": 10,
+    "explanation": "**CORRECT ANSWER: https://www.guardster.com** Scenario recap: An employee wants to access restricted websites from a corporate machine and uses an anonymizer that masks their real IP and promises continuous anonymity for online activities. Why this answer is correct: In CEH materials, Guardster is presented as a web‑based anonymizer/proxy service offering anonymous browsing by relaying requests through its own servers and hiding the user’s real IP address from destination sites, which is exactly what George is trying to achieve. Why the other options are wrong: https://www.baidu.com is a search engine, not an anonymizer; https://www.wolframalpha.com is a computational knowledge engine; https://karmadecay.com is an image search engine (e.g., for reverse‑image lookups on Reddit) and does not provide network anonymity. KEY CONCEPTS: web anonymizers, proxy services, hiding source IP, bypassing local restrictions. CEH REFERENCE: Module 12 – Evading IDS, Firewalls, and Honeypots (Using Anonymous Proxies and Anonymizers to Bypass Monitoring and Filtering)."
   },
   {
     "id": 293,
@@ -141,6 +149,7 @@
       2
     ],
     "type": "single",
-    "domain": 10
+    "domain": 10,
+    "explanation": "**CORRECT ANSWER: Detecting the presence of Honeyd honeypots** Scenario recap: An attacker uses a time‑based TCP fingerprinting method, comparing the response time of a normal host and a target to manual SYN requests in order to determine whether the target is a honeypot. Why this answer is correct: CEH notes that Honeyd is a low‑interaction honeypot that emulates many services and IPs, and that one way to detect it is through active TCP fingerprinting and subtle timing analysis; Honeyd responses often show characteristic timing or TCP stack behaviors different from real OS implementations, so time‑based SYN probing is specifically described as a technique to detect Honeyd installations. Why the other options are wrong: Detecting honeypots running on VMware typically involves checking virtualization artifacts such as MAC prefixes or device characteristics, not time‑based SYN fingerprinting; detecting Snort_inline honeypots relies on analyzing packet modification behavior (for example, how packets are altered or dropped); Sebek‑based honeypots are usually detected by looking for Sebek kernel artifacts, unusual read/write behavior, or other low‑level traces rather than pure TCP timing differences. KEY CONCEPTS: honeypot detection, TCP fingerprinting, Honeyd characteristics, timing analysis. CEH REFERENCE: Module 12 – Evading IDS, Firewalls, and Honeypots (Techniques to Detect Honeyd and Other Honeypots via TCP Fingerprinting and Timing)."
   }
 ]

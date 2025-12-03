@@ -13,7 +13,8 @@
       2
     ],
     "type": "single",
-    "domain": 11
+    "domain": 11,
+    "explanation": "**CORRECT ANSWER: php.ini** Scenario recap: The question asks which common web server file, if misconfigured, can leak verbose error messages that help attackers. Why this answer is correct: In CEH, `php.ini` is highlighted as the PHP configuration file that controls options such as `display_errors` and `error_reporting`; if left in a development-style configuration, it can expose detailed error messages and stack traces (including SQL queries, file paths, and internal logic) to end users, giving attackers valuable information for exploitation. Why the other options are wrong: `httpd.conf` is the main Apache configuration file but it is not specifically responsible for PHP’s verbose runtime error behavior; `administration.config` is not a standard, well-known web server configuration file in this context; `idq.dll` is an old IIS indexing DLL and not the typical file referenced in CEH for misconfigured verbose error handling. KEY CONCEPTS: web server hardening, PHP configuration, verbose error messages, information disclosure. CEH REFERENCE: Module 13 – Hacking Web Servers (Dangerous Security Flaws such as Providing Complete Error Messages and Misconfigured Server/Script Settings)."
   },
   {
     "id": 44,
@@ -29,7 +30,8 @@
       1
     ],
     "type": "single",
-    "domain": 11
+    "domain": 11,
+    "explanation": "**CORRECT ANSWER: Limit the administrator or root-level access to the minimum number of users.** Scenario recap: A security professional observes abnormalities in web server user accounts and wants to harden account security. Why this answer is correct: CEH stresses the principle of least privilege and recommends that administrator or root‑level access on web servers be restricted to as few trusted accounts as possible to reduce the risk of compromise, misuse, or privilege escalation; minimizing high‑privilege accounts significantly shrinks the impact of a single account being hacked. Why the other options are wrong: Retaining all unused modules and application extensions increases attack surface instead of reducing it; enabling all non‑interactive accounts or unused default user accounts contradicts hardening best practices and creates more potential entry points for attackers. KEY CONCEPTS: least privilege, web server account hardening, removal/limitation of privileged and default accounts. CEH REFERENCE: Module 13 – Hacking Web Servers (Dangerous Security Flaws and Best Practices for Web Server Hardening)."
   },
   {
     "id": 152,
@@ -45,7 +47,8 @@
       1
     ],
     "type": "single",
-    "domain": 11
+    "domain": 11,
+    "explanation": "**CORRECT ANSWER: Suppress detailed error messages, as they can expose sensitive information.** Scenario recap: A beginner reviewing web server security notices that the server sends detailed error messages to users, including database errors and internal server details. Why this answer is correct: CEH explains that verbose error messages can reveal internal information such as database queries, table names, file paths, stack traces, and software versions, which attackers can use for recon, SQL injection tuning, or path traversal; therefore, best practice is to log detailed errors on the server side while only returning generic messages to clients. Why the other options are wrong: Retaining the setting for troubleshooting exposes sensitive internals to everyone, including attackers; encrypting error messages does not solve the core issue of overexposure and is not how web error handling works; increasing backup frequency is good hygiene but unrelated to preventing information disclosure through errors. KEY CONCEPTS: information disclosure, verbose error handling, secure error pages, separation of user‑facing and logged diagnostic information. CEH REFERENCE: Module 13 – Hacking Web Servers (Dangerous Security Flaws: Providing Complete Error Messages with Server-Version and Internal Information)."
   },
   {
     "id": 174,
@@ -61,7 +64,8 @@
       1
     ],
     "type": "single",
-    "domain": 11
+    "domain": 11,
+    "explanation": "**CORRECT ANSWER: The error messages could reveal sensitive server information; configure the server to use custom error pages.** Scenario recap: A consultant finds that a client’s web server uses default HTTP error messages that include server version and other technical details. Why this answer is correct: CEH notes that default error pages often disclose software versions, module information, and sometimes directory or script names; an attacker can use this information to identify specific exploits or misconfigurations. The recommended countermeasure is to configure custom error pages that hide internal details while still providing user‑friendly messages. Why the other options are wrong: While XSS can occur in error contexts, the main risk here is information disclosure, not script injection; performance issues from error page templates are negligible compared to the exposure of server fingerprints; user confusion is secondary to the security problem of leaking environment details. KEY CONCEPTS: banner information, fingerprinting web servers, custom error pages, minimizing information disclosure. CEH REFERENCE: Module 13 – Hacking Web Servers (Dangerous Security Flaws: Providing Complete Error Messages with Server-Version Information)."
   },
   {
     "id": 184,
@@ -77,7 +81,8 @@
       2
     ],
     "type": "single",
-    "domain": 11
+    "domain": 11,
+    "explanation": "**CORRECT ANSWER: The error messages could reveal sensitive server information; configure the server to use custom error pages.** Scenario recap: A consultant finds that a client’s web server uses default HTTP error messages that include server version and other technical details. Why this answer is correct: CEH notes that default error pages often disclose software versions, module information, and sometimes directory or script names; an attacker can use this information to identify specific exploits or misconfigurations. The recommended countermeasure is to configure custom error pages that hide internal details while still providing user‑friendly messages. Why the other options are wrong: While XSS can occur in error contexts, the main risk here is information disclosure, not script injection; performance issues from error page templates are negligible compared to the exposure of server fingerprints; user confusion is secondary to the security problem of leaking environment details. KEY CONCEPTS: banner information, fingerprinting web servers, custom error pages, minimizing information disclosure. CEH REFERENCE: Module 13 – Hacking Web Servers (Dangerous Security Flaws: Providing Complete Error Messages with Server-Version Information)."
   },
   {
     "id": 185,
@@ -93,7 +98,8 @@
       3
     ],
     "type": "single",
-    "domain": 11
+    "domain": 11,
+    "explanation": "**CORRECT ANSWER: Performing regular server configuration audits** Scenario recap: As part of a college project, a student administers a web server and wants to defend it specifically against misconfiguration‑based attacks. Why this answer is correct: CEH emphasizes that many web server compromises stem from weak or incorrect configuration (default accounts, unnecessary modules, debug features, unsafe permissions); performing regular configuration audits—comparing the running configuration against secure baselines and best practices—is the direct way to identify and correct such issues before attackers exploit them. Why the other options are wrong: Regular backups protect data but do not prevent misconfiguration exploitation; multi‑factor authentication is valuable but focuses on user authentication, not web server configuration itself; a firewall filters traffic but cannot fix vulnerable or overly permissive web server settings. KEY CONCEPTS: configuration auditing, secure baselines, web server hardening, misconfiguration as a major attack vector. CEH REFERENCE: Module 13 – Hacking Web Servers (Dangerous Security Flaws and Recommended Hardening/Review Practices)."
   },
   {
     "id": 192,
@@ -109,7 +115,8 @@
       1
     ],
     "type": "single",
-    "domain": 11
+    "domain": 11,
+    "explanation": "**CORRECT ANSWER: Unnecessary services could contain vulnerabilities; minimize the attack surface.** Scenario recap: A student plans to restrict unnecessary services on a school web server as part of securing it. Why this answer is correct: CEH teaches that every enabled service (FTP, Telnet, unused admin interfaces, sample apps, etc.) is a potential entry point with its own vulnerabilities; disabling or removing services that are not required for the web server’s function directly reduces the attack surface and the number of potential exploits an attacker can try. Why the other options are wrong: While unnecessary services may consume some memory or slightly affect performance, the primary security rationale is vulnerability reduction, not resource optimization; hiding software details is achieved through configuration and custom error pages, not merely stopping services; performance benefits are secondary to security when discussing this hardening step. KEY CONCEPTS: attack surface reduction, service minimization, principle of least functionality, web server hardening. CEH REFERENCE: Module 13 – Hacking Web Servers (Web Server Security Issues and the Need to Disable Unnecessary Services and Features)."
   },
   {
     "id": 215,
@@ -125,6 +132,7 @@
       2
     ],
     "type": "single",
-    "domain": 11
+    "domain": 11,
+    "explanation": "**CORRECT ANSWER: Regularly updating and patching the server software** Scenario recap: An intern is helping set up a basic web server for a startup and is asked which action should be prioritized to secure it against common threats. Why this answer is correct: CEH repeatedly stresses that many web server compromises exploit known vulnerabilities in server software, operating systems, and components; keeping the web server and underlying OS fully patched and up to date is a foundational control that closes publicly documented holes and significantly reduces exposure to automated exploits and worms. Why the other options are wrong: Limiting concurrent connections can help with DoS resilience but does not address code vulnerabilities; installing a web application firewall is valuable but should complement, not replace, basic patching hygiene; encrypting the website with SSL/TLS protects data in transit but does not fix underlying server vulnerabilities or misconfigurations. KEY CONCEPTS: patch management, vulnerability remediation, secure baseline for web servers, prioritizing updates. CEH REFERENCE: Module 13 – Hacking Web Servers (Dangerous Security Flaws such as Failing to Update the Web Server with the Latest Patches and Recommended Countermeasures)."
   }
 ]
