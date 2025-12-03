@@ -13,7 +13,8 @@
       1
     ],
     "type": "single",
-    "domain": 12
+    "domain": 12,
+    "explanation": "**CORRECT ANSWER: Website mirroring** Scenario recap: Jane, an ethical hacker, copies the entire target website and all its content to a local drive to analyze directory structure, files, links, and pages in detail. Why this answer is correct: In CEH, website mirroring is a footprinting technique where an attacker uses tools like `wget` or HTTrack to clone a site locally so they can map directories, locate hidden resources, and study the application offline; this matches exactly what Jane is doing. Why the other options are wrong: Session hijacking is about taking over active user sessions, not cloning websites; website defacement is modifying visible site content on the live server; web cache poisoning targets intermediary caches, not copying a full site locally. KEY CONCEPTS: web application footprinting, website mirroring, directory and file structure mapping. CEH REFERENCE: Module 14 – Hacking Web Applications (Website Footprinting and Mirroring Techniques)."
   },
   {
     "id": 26,
@@ -29,7 +30,8 @@
       0
     ],
     "type": "single",
-    "domain": 12
+    "domain": 12,
+    "explanation": "**CORRECT ANSWER: RESTful API** Scenario recap: Gilbert uses a centralized web API that relies on HTTP methods such as PUT, POST, GET, and DELETE to update and change data while improving performance, visibility, scalability, reliability, and portability. Why this answer is correct: CEH describes RESTful APIs as web services based on REST principles that expose resources over HTTP using standard verbs like GET, POST, PUT, and DELETE, providing stateless interactions and good scalability and interoperability; this aligns exactly with the scenario. Why the other options are wrong: JSON-RPC is a remote procedure call protocol using JSON, not centered on RESTful resource operations; SOAP APIs use XML envelopes and WSDL and are generally heavier; \"REST API\" is a generic phrase, whereas CEH usually refers to these interfaces specifically as RESTful APIs. KEY CONCEPTS: RESTful architecture, HTTP verbs, stateless web services, scalable APIs. CEH REFERENCE: Module 14 – Hacking Web Applications (Web API and RESTful Service Concepts)."
   },
   {
     "id": 31,
@@ -45,7 +47,8 @@
       0
     ],
     "type": "single",
-    "domain": 12
+    "domain": 12,
+    "explanation": "**CORRECT ANSWER: Watering hole attack** Scenario recap: Joel profiles the websites frequently visited by employees of a target company, exploits those third‑party sites, injects malicious scripts, and waits for victims to visit them so malware is downloaded to their machines. Why this answer is correct: CEH defines a watering hole attack as compromising a legitimate website that is popular with the intended victims and using it as an infection point, rather than attacking the organization directly; this is exactly what Joel is doing. Why the other options are wrong: A DNS rebinding attack abuses DNS resolution to bypass same‑origin policies and is not about compromising high‑traffic sites used by a target group; a MarioNet attack refers to turning browsers into a distributed botnet, which is not explicitly described here; clickjacking manipulates UI elements in transparent frames, not infecting trusted third‑party sites with malware. KEY CONCEPTS: watering hole, third‑party website compromise, indirect targeting of organizations. CEH REFERENCE: Module 14 – Hacking Web Applications (Web Application Threats – Watering Hole Attacks)."
   },
   {
     "id": 57,
@@ -61,7 +64,8 @@
       3
     ],
     "type": "single",
-    "domain": 12
+    "domain": 12,
+    "explanation": "**CORRECT ANSWER: Directory traversal** Scenario recap: During testing, the web server fails to correctly handle `../` sequences and instead returns file listings from higher‑level directories above the web root. Why this answer is correct: CEH describes directory traversal (path traversal) attacks as using patterns like `../` or `..\\` to break out of the web root and access files and directories elsewhere in the filesystem, which is exactly the behavior observed. Why the other options are wrong: Cross‑site scripting injects client‑side scriptsinto pages, not file paths; SQL injection manipulates database queries; denial of service focuses on exhausting resources or causing unavailability, not exposing directory listings. KEY CONCEPTS: directory traversal, path traversal, `../` sequences, insecure file system access. CEH REFERENCE: Module 14 – Hacking Web Applications (File and Directory Traversal Vulnerabilities)."
   },
   {
     "id": 61,
@@ -77,7 +81,8 @@
       1
     ],
     "type": "single",
-    "domain": 12
+    "domain": 12,
+    "explanation": "**CORRECT ANSWER: Webhooks** Scenario recap: Susan wants her web API to automatically push real‑time updates to other applications when certain events occur, using user‑defined HTTP callbacks that fire on triggers. Why this answer is correct: CEH explains that webhooks are HTTP callbacks or push APIs invoked when specific events happen in an application, sending data to pre‑registered URLs so that other systems receive real‑time updates; this matches the description in the question. Why the other options are wrong: Web shells are malicious server‑side scripts used as backdoors; REST APIs define general resource‑based HTTP interfaces but are not necessarily event‑driven; SOAP APIs use XML and SOAP envelopes, not typically simple event‑based HTTP callbacks. KEY CONCEPTS: webhooks, HTTP callbacks, event‑driven push APIs, real‑time integration. CEH REFERENCE: Module 14 – Hacking Web Applications (Web API and Webhook Concepts)."
   },
   {
     "id": 63,
@@ -93,7 +98,8 @@
       1
     ],
     "type": "single",
-    "domain": 12
+    "domain": 12,
+    "explanation": "**CORRECT ANSWER: WS-Address spoofing** Scenario recap: Stella attacks web services by exploiting a feature that carries additional routing information in the SOAP header to support asynchronous communication, allowing requests and responses to traverse different TCP connections. Why this answer is correct: CEH covers WS‑Addressing as a SOAP extension that uses special headers to specify message destinations and routing; by spoofing (forging) these WS‑Address headers, an attacker can redirect or reroute messages, which is exactly the WS‑Address spoofing attack described. Why the other options are wrong: Web services parsing attacks usually target XML parsing, entity expansion, and related issues rather than addressing headers; SOAPAction spoofing manipulates the `SOAPAction` header to invoke unintended operations, not routing; XML injection alters XML payloads with malicious tags or values but does not specifically target WS‑Addressing. KEY CONCEPTS: SOAP, WS‑Addressing, header spoofing, message routing manipulation. CEH REFERENCE: Module 14 – Hacking Web Applications (Web Services Attacks – WS‑Address Spoofing)."
   },
   {
     "id": 74,
@@ -109,7 +115,8 @@
       1
     ],
     "type": "single",
-    "domain": 12
+    "domain": 12,
+    "explanation": "**CORRECT ANSWER: Server-side request forgery (SSRF) attack** Scenario recap: Jason abuses a URL parameter `feed.php?url=...` that fetches external feeds, and he changes the target to `localhost` to make the web server itself request internal resources behind the firewall. Why this answer is correct: CEH describes SSRF as exploiting server‑side functionality that makes HTTP/URL requests, forcing the server to send requests to internal or otherwise restricted endpoints on behalf of the attacker; turning a remote feed parameter into a `localhost` request is a classic SSRF example. Why the other options are wrong: Web server misconfiguration is a broad category and does not capture the specific \"server as proxy\" behavior; web cache poisoning alters entries in intermediate caches; website defacement is changing visible content on the site, not abusing server‑side HTTP fetches. KEY CONCEPTS: SSRF, server‑side URL fetch, pivoting through the web server, internal resource access. CEH REFERENCE: Module 14 – Hacking Web Applications (Server‑Side Request Forgery and Related Web Threats)."
   },
   {
     "id": 108,
@@ -125,7 +132,8 @@
       1
     ],
     "type": "single",
-    "domain": 12
+    "domain": 12,
+    "explanation": "**CORRECT ANSWER: Syhunt Hybrid** Scenario recap: The organization wants an automated scanner to protect web applications and web servers against threats like XSS, directory traversal, fault injection, SQL injection, command execution, and similar attacks. Why this answer is correct: CEH identifies Syhunt Hybrid as a web application security scanner designed to automatically test web apps and web servers for a wide range of vulnerabilities including XSS, SQL injection, directory traversal, and command execution, exactly as listed in the scenario. Why the other options are wrong: AlienVault OSSIM is primarily a SIEM and correlation platform, not a focused web‑app scanner; Saleae Logic Analyzer is a hardware protocol analyzer for digital signals, not for HTTP applications; Cisco ASA is a firewall/VPN appliance, not a web application scanner. KEY CONCEPTS: web application vulnerability scanning, Syhunt Hybrid, automated detection of common web attacks. CEH REFERENCE: Module 14 – Hacking Web Applications (Web Application Security Testing Tools – Syhunt Hybrid)."
   },
   {
     "id": 223,
@@ -141,7 +149,8 @@
       1
     ],
     "type": "single",
-    "domain": 12
+    "domain": 12,
+    "explanation": "**CORRECT ANSWER: The tester could execute a Brute Force attack, leveraging the lack of account lockout policy and the verbose error messages to guess the correct credentials.** Scenario recap: The web application uses form‑based authentication, has no account lockout after multiple failures, and returns detailed error messages that reveal whether the username or the password is incorrect. Why this answer is correct: CEH highlights that when verbose error messages reveal which field is wrong and no lockout is enforced, an attacker can first enumerate valid usernames and then run high‑volume password guessing without being blocked, making brute force or credential‑stuffing attacks highly effective. Why the other options are wrong: A SQL injection attack is not indicated by the symptoms described, which are purely about authentication logic and error handling; a man‑in‑the‑middle attack to modify headers for clickjacking does not leverage these particular weaknesses; XSS could exist elsewhere but does not directly benefit from username/password error granularity and lack of lockout. KEY CONCEPTS: brute force, credential enumeration, verbose error messages, missing account lockout. CEH REFERENCE: Module 14 – Hacking Web Applications (Authentication Weaknesses and Brute‑Force Attacks)."
   },
   {
     "id": 237,
@@ -157,7 +166,8 @@
       3
     ],
     "type": "single",
-    "domain": 12
+    "domain": 12,
+    "explanation": "**CORRECT ANSWER: Launch a Cross-Site Scripting (XSS) attack, aiming to bypass the client-side sanitization and exploit the exposure of session cookies.** Scenario recap: The web application relies heavily on JavaScript for client‑side input sanitization and uses cookies for session management without setting the HttpOnly flag, leaving cookies accessible to scripts. Why this answer is correct: CEH explains that client‑side validation can always be bypassed or disabled, and that cookies lacking the HttpOnly attribute can be read by JavaScript; therefore, an XSS attack that injects malicious script to steal or manipulate session cookies is the most direct way to exploit both vulnerabilities simultaneously. Why the other options are wrong: A DDoS attack targets availability and does not use the described flaws; SQL injection exploits unsanitized inputs at the database layer, not missing HttpOnly flags; brute‑forcing credentials is unrelated to client‑side sanitization and cookie exposure. KEY CONCEPTS: XSS, client‑side validation bypass, HttpOnly flag, session cookie theft. CEH REFERENCE: Module 14 – Hacking Web Applications (Cross‑Site Scripting and Cookie Protection Mechanisms)."
   },
   {
     "id": 238,
@@ -173,7 +183,8 @@
       3
     ],
     "type": "single",
-    "domain": 12
+    "domain": 12,
+    "explanation": "**CORRECT ANSWER: User-directed spidering with tools like Burp Suite and WebScarab** Scenario recap: Standard spiders are blocked by a file in the site’s root, but the hacker still discovers all files and pages by manually browsing while monitoring incoming and outgoing traffic with tooling. Why this answer is correct: CEH describes user‑directed spidering as a technique where the attacker uses an intercepting proxy (such as Burp Suite or WebScarab) while manually clicking through the site; the proxy records and analyzes every request and response, effectively building a complete map of the application even when automated spiders are restricted, which matches the scenario. Why the other options are wrong: Netcraft is used for high‑level website profiling (hosting, technologies, etc.), not interactive crawling; simply examining HTML source and cookies is helpful but does not equal systematic spidering of all pages; using Photon and archive.org focuses on archived URLs, not live traffic observed during manual browsing. KEY CONCEPTS: user‑directed spidering, intercepting proxies, Burp Suite, WebScarab, application mapping. CEH REFERENCE: Module 14 – Hacking Web Applications (Web Application Footprinting with Proxies and Manual Crawling)."
   },
   {
     "id": 241,
@@ -189,7 +200,8 @@
       0
     ],
     "type": "single",
-    "domain": 12
+    "domain": 12,
+    "explanation": "**CORRECT ANSWER: Utilize a script hosted on the application's domain to test the form** Scenario recap: A \"Contact Us\" form appears vulnerable to XSS, but the site has a strict Content Security Policy that forbids inline scripts and scripts from external domains while allowing scripts only from its own domain. Why this answer is correct: CEH and OWASP note that under such a CSP, an attacker must execute scripts that are loaded from the same trusted origin; using a script hosted on the application’s own domain (or abusing existing trusted scripts) is the realistic way to confirm and exploit XSS while remaining compliant with CSP rules. Why the other options are wrong: Attempting to disable CSP is not a practical next step for simple confirmation of XSS; injecting inline script will be blocked by the policy; loading a script from an external domain is also blocked by the configured CSP. KEY CONCEPTS: Content Security Policy, XSS under CSP, same‑origin script restrictions, hosted payloads. CEH REFERENCE: Module 14 – Hacking Web Applications (XSS and CSP Interaction)."
   },
   {
     "id": 245,
@@ -205,7 +217,8 @@
       2
     ],
     "type": "single",
-    "domain": 12
+    "domain": 12,
+    "explanation": "**CORRECT ANSWER: Burp Suite** Scenario recap: Gregory needs a tool to test web applications by hijacking sessions between client and server, intercepting and modifying traffic via an intercepting proxy, performing customized attacks, and testing the randomness of session tokens. Why this answer is correct: CEH presents Burp Suite as an integrated platform for web application testing that includes an intercepting proxy, repeater and intruder modules for custom attacks, and the sequencer component for analyzing the randomness of session tokens, exactly matching the features described. Why the other options are wrong: Wireshark is a general packet sniffer and protocol analyzer, not a full web‑app attack framework; Nmap is a network scanner for ports and services, not a session‑level web proxy; CxSAST is a static application security testing tool, not an intercepting proxy for live HTTP traffic. KEY CONCEPTS: Burp Suite, intercepting proxy, session analysis, token randomness testing. CEH REFERENCE: Module 14 – Hacking Web Applications (Web Application Testing Tools – Burp Suite)."
   },
   {
     "id": 266,
@@ -221,7 +234,8 @@
       3
     ],
     "type": "single",
-    "domain": 12
+    "domain": 12,
+    "explanation": "**CORRECT ANSWER: Verbose failure messages** Scenario recap: Calvin targets a login form whose error messages explicitly state whether the username or the password is incorrect, and he uses this to enumerate valid usernames for later social engineering. Why this answer is correct: CEH describes verbose failure messages as an authentication design flaw because they reveal internal state, such as which usernames exist; this enables attackers to build valid username lists and then conduct password guessing or social engineering, which is exactly what Calvin does. Why the other options are wrong: User impersonation is an attack outcome, not a specific design flaw; insecure transmission of credentials refers to sending them in clear text or without TLS, which is not mentioned; password reset mechanism flaws relate to account recovery flows, not to how login error messages are displayed. KEY CONCEPTS: verbose error messages, username enumeration, authentication design weaknesses. CEH REFERENCE: Module 14 – Hacking Web Applications (Authentication Weaknesses and Error Handling)."
   },
   {
     "id": 267,
@@ -237,24 +251,8 @@
       1
     ],
     "type": "single",
-    "domain": 12
-  },
-  {
-    "id": 276,
-    "pdf_number": 280,
-    "question": "Which of the following web vulnerabilities would an attacker be attempting to exploit if they delivered the following input?",
-    "options": [
-      "SQLi",
-      "XXE",
-      "XXS",
-      "IDOR"
-    ],
-    "correct": [
-      1
-    ],
-    "type": "single",
     "domain": 12,
-    "note": "SKIP - Question has image"
+    "explanation": "**CORRECT ANSWER: WS-Security** Scenario recap: Rebecca wants to authenticate employees using web services and chooses a component of the Web Service Architecture that extends SOAP and provides integrity and confidentiality for SOAP messages. Why this answer is correct: CEH explains that WS‑Security is a SOAP extension framework that adds security features such as digital signatures, encryption, and security tokens to SOAP messages, ensuring integrity and confidentiality for web service communication; this matches the scenario description. Why the other options are wrong: WS‑Work Processes and WS‑Policy deal with workflows and policy descriptions rather than directly securing message contents; WSDL is a service description language for operations and bindings, not a security mechanism. KEY CONCEPTS: WS‑Security, SOAP message protection, web service authentication and confidentiality. CEH REFERENCE: Module 14 – Hacking Web Applications (Web Service Architecture and WS‑Security)."
   },
   {
     "id": 283,
@@ -270,7 +268,8 @@
       3
     ],
     "type": "single",
-    "domain": 12
+    "domain": 12,
+    "explanation": "**CORRECT ANSWER: Server-side includes injection** Scenario recap: Calvin uses a feature that auto‑generates web page content using Server‑Side Includes (SSI) directives and accepts remote user input which is then used on the page, allowing attackers to pass malicious SSI directives to modify or erase server files. Why this answer is correct: CEH describes SSI injection as an attack where untrusted input is embedded in SSI directives such as `#exec` or `#include`, and when the server processes these directives it executes arbitrary commands or accesses sensitive files; this is exactly the vulnerability described. Why the other options are wrong: CRLF injection targets HTTP headers and line breaks, not SSI directives; server‑side template injection involves template engines (for example Jinja, Twig) rather than SSI; server‑side JS injection targets server‑side JavaScript runtimes such as Node.js. KEY CONCEPTS: Server‑Side Includes, SSI injection, `#exec` and `#include`, arbitrary command/file execution. CEH REFERENCE: Module 14 – Hacking Web Applications (Injection Attacks – SSI Injection)."
   },
   {
     "id": 300,
@@ -286,7 +285,8 @@
       0
     ],
     "type": "single",
-    "domain": 12
+    "domain": 12,
+    "explanation": "**CORRECT ANSWER: .stm** Scenario recap: The question asks which web page file extension on a server is a strong indicator that the server may be vulnerable to Server‑Side Includes (SSI) attacks. Why this answer is correct: CEH notes that file extensions like `.stm`, `.shtm`, and `.shtml` are commonly associated with pages processed for Server‑Side Includes; if `.stm` files are present and SSI is enabled, attackers may be able to exploit SSI injection or related vulnerabilities. Why the other options are wrong: `.cms`, `.rss`, and `.html` do not, by themselves, imply SSI processing and are not the classic indicators of SSI‑specific attack surface given in CEH materials. KEY CONCEPTS: SSI, `.stm` pages, server‑side includes processing, SSI attack surface. CEH REFERENCE: Module 14 – Hacking Web Applications (Server‑Side Includes and Vulnerable File Types)."
   },
   {
     "id": 302,
@@ -302,6 +302,7 @@
       0
     ],
     "type": "single",
-    "domain": 12
+    "domain": 12,
+    "explanation": "**CORRECT ANSWER: No ABAC validation** Scenario recap: Ron discovers an API vulnerability that allows attackers to gain unauthorized access to API objects and perform actions such as viewing, updating, and deleting sensitive company data. Why this answer is correct: CEH, aligned with OWASP API Security, explains that missing or weak Attribute‑Based Access Control (ABAC) or object‑level authorization allows clients to access or manipulate resources they should not, leading to unauthorized operations on API objects; this matches the description in the scenario. Why the other options are wrong: Business logic flaws relate to incorrect workflows and process rules, not specifically to missing attribute‑based access checks; improper use of CORS concerns cross‑origin browser access, not core authorization of API objects; code injections (like SQLi or command injection) are different classes of vulnerabilities and do not directly describe broken object‑level access control. KEY CONCEPTS: ABAC, object‑level authorization, API access control weaknesses, OWASP API security risks. CEH REFERENCE: Module 14 – Hacking Web Applications (API Security and Broken Object‑Level Authorization / ABAC Failures)."
   }
 ]

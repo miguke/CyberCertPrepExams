@@ -13,7 +13,8 @@
       0
     ],
     "type": "single",
-    "domain": 13
+    "domain": 13,
+    "explanation": "**CORRECT ANSWER: Whitelist validation** Scenario recap: CyberTech Inc. suffered SQL injection attacks and Bob implemented a defensive practice where only predefined, approved attributes like data type, range, size, and value are accepted. Why this answer is correct: In the CEH SQL Injection module, whitelist (allow‑list) input validation is the recommended defense—developers define exactly which values and formats are permitted and reject everything else; this is described explicitly as validating type, length, range, and allowed values instead of trying to block bad patterns. That matches Bob’s approach precisely. Why the other options are wrong: Output encoding focuses on encoding data before rendering in the browser (mainly XSS defense), not on restricting allowed input values; blacklist validation attempts to block known bad strings or patterns and is weaker than whitelisting, especially against variants; enforcing least privileges is an important database hardening step but is about permission levels, not about validating type/range/size/value at the input layer. KEY CONCEPTS: whitelist input validation, positive security model, SQL injection prevention, secure coding. CEH REFERENCE: Module 15 – SQL Injection (Countermeasures: Input Validation Using Whitelists)."
   },
   {
     "id": 73,
@@ -29,7 +30,8 @@
       3
     ],
     "type": "single",
-    "domain": 13
+    "domain": 13,
+    "explanation": "**CORRECT ANSWER: Time-based and boolean-based** Scenario recap: Jane wants to perform SQL injection by first testing response times for true/false conditions and then using another command to determine whether the database returns true or false for specific user IDs. Why this answer is correct: CEH classifies blind/inferential SQL injection into time-based and boolean-based attacks—time-based blind SQLi uses functions like SLEEP or WAITFOR DELAY to introduce measurable response delays when a condition is true, while boolean-based blind SQLi relies on changes in the application’s behavior (different page, content, or status code) when the condition is true vs. false; together, these two methods are exactly about observing response time and true/false outcomes to infer data. Why the other options are wrong: Out-of-band SQLi uses alternate channels (e.g., DNS or HTTP callbacks) rather than timing or boolean responses; union-based and error-based are in-band attacks that directly return data or error messages, not just timing or boolean behavior; pairing time-based with union-based mixes blind and in-band categories in a way that does not match the scenario. KEY CONCEPTS: blind/inferential SQL injection, time-based blind SQLi, boolean-based blind SQLi, side-channel inference via timing and responses. CEH REFERENCE: Module 15 – SQL Injection (Types of SQL Injection – Blind/Inferential, Time Delay, Boolean Exploitation)."
   },
   {
     "id": 83,
@@ -45,7 +47,8 @@
       2
     ],
     "type": "single",
-    "domain": 13
+    "domain": 13,
+    "explanation": "**CORRECT ANSWER: Variation** Scenario recap: Daniel faces an IDS that detects SQL injection based on predefined signatures, so instead of classic patterns like `OR 1=1` he injects slightly altered strings such as `' or '1'='1'` to evade comparison. Why this answer is correct: CEH describes the “variation” evasion technique where attackers alter common SQL injection patterns (for example changing spacing, adding extra quotes or harmless conditions) so that the payload no longer matches the IDS’s exact signature while preserving the same logic (conditions like `1=1` still evaluate to true); Daniel is doing precisely this by rewriting the tautology in a different textual form. Why the other options are wrong: Char encoding refers to using functions or encodings (CHAR(), hex, etc.) to hide payload characters, not just rephrasing the condition; IP fragmentation is a network‑layer evasion technique, not about SQL syntax changes; a null byte (`%00`) is a specific character used to terminate strings in some languages and is not what Daniel is inserting. KEY CONCEPTS: signature evasion, variation of classic payloads, tautology reformulation, IDS/IPS evasion. CEH REFERENCE: Module 15 – SQL Injection (Evasion Techniques – Using Variations of Known Signatures)."
   },
   {
     "id": 84,
@@ -61,7 +64,8 @@
       2
     ],
     "type": "single",
-    "domain": 13
+    "domain": 13,
+    "explanation": "**CORRECT ANSWER: Out-of-band SQLi** Scenario recap: The question asks which SQL injection type leverages the database server’s ability to perform DNS requests to pass data to an attacker. Why this answer is correct: CEH explains that out-of-band SQL injection uses alternative communication channels such as DNS lookups or HTTP requests initiated by the database server (for example, via xp_dirtree or CLR/UTL_INADDR calls) to exfiltrate data when direct results or error messages are not available; using DNS queries to send data out is the textbook example of out-of-band SQLi. Why the other options are wrong: In-band SQLi uses the same channel to send the injection and receive results (error-based and union-based); union-based SQLi appends `UNION SELECT` to combine result sets but still returns data directly in the web response; time-based blind SQLi relies on response delays, not external channels like DNS. KEY CONCEPTS: out-of-band SQL injection, DNS exfiltration, alternate communication channels, blind environments. CEH REFERENCE: Module 15 – SQL Injection (Types of SQL Injection – Out-of-Band SQL Injection)."
   },
   {
     "id": 126,
@@ -77,7 +81,8 @@
       3
     ],
     "type": "single",
-    "domain": 13
+    "domain": 13,
+    "explanation": "**CORRECT ANSWER: z=400, u=4: The attacker constructs 4 SQL payloads, each focusing on tables with 400 records, influencing all columns of all tables.** Scenario recap: An Oracle database has x=4 tables, each with y=2 columns and z records; the attacker crafts u payloads using `UNION SELECT` and `DBMS_XSLPROCESSOR.READ2CLOB` to read files, aiming to maximize extracted data `E = x*y*z*u`. Why this answer is correct: Since x and y are fixed (4 tables, 2 columns), the total extracted volume E is proportional to `z*u`; among the options, we calculate: (600*2=1200), (550*2=1100), (500*3=1500), (400*4=1600); the combination `z=400, u=4` yields the largest product and therefore the highest data volume according to E. Why the other options are wrong: `z=600,u=2` and `z=550,u=2` both give smaller products even though individual tables are large; `z=500,u=3` is closer but still lower (1500 vs. 1600); the math of the formula E=xyz*u clearly shows the chosen option maximizes extraction. KEY CONCEPTS: union-based SQLi, Oracle file-reading functions, maximizing data exfiltration, understanding how attack volume scales with queries and records. CEH REFERENCE: Module 15 – SQL Injection (UNION SQL Injection and Use of Database Functions to Read Files)."
   },
   {
     "id": 131,
@@ -93,7 +98,8 @@
       1
     ],
     "type": "single",
-    "domain": 13
+    "domain": 13,
+    "explanation": "**CORRECT ANSWER: The hacker switches tactics and resorts to a 'time-based blind' SQL Injection attack, which would force the application to delay its response, thereby revealing information based on the duration of the delay.** Scenario recap: An application uses a filter that strips quotes, semicolons, and comment indicators from user input, making it resistant to traditional, error‑driven SQL injection, yet the hacker still wants to exploit the vulnerability. Why this answer is correct: CEH explains that time-based blind SQLi does not rely on error messages or visible query text; instead, it uses conditional statements that trigger time delays (for example `IF(condition) WAITFOR DELAY '0:0:5'`) to infer whether a condition is true based solely on how long the application takes to respond; this can often be done even when many special characters are filtered, as long as some conditional and timing functions are still available. Why the other options are wrong: Triggering UNION‑based errors (option A) still depends on visible database error messages or at least union syntax surviving the filter, which is not guaranteed; simply “encoding malicious input” (option C) is already mitigated by the filter pattern and may not be sufficient without an inferential technique; injecting a DROP TABLE statement (option D) is unlikely to succeed under the described defensive filters and is not a subtle or information‑gathering strategy. KEY CONCEPTS: blind SQL injection, time-based inference, bypassing input filters by using timing side channels. CEH REFERENCE: Module 15 – SQL Injection (Blind/Inferential SQL Injection – Time Delay Attacks)."
   },
   {
     "id": 132,
@@ -109,7 +115,8 @@
       3
     ],
     "type": "single",
-    "domain": 13
+    "domain": 13,
+    "explanation": "**CORRECT ANSWER: ' OR 'a'='a; DROP TABLE members; --: This payload combines the manipulation of the WHERE clause with a destructive action, causing data loss** Scenario recap: A security manager evaluates which possible injected payload would have the most significant impact if a SQL injection attack succeeds against a customer‑data database. Why this answer is correct: CEH emphasizes that piggybacked (stacked) SQL injection can be extremely destructive when attackers append additional statements such as `DROP TABLE` after a benign‑looking condition; the payload `' OR 'a'='a; DROP TABLE members; --` both bypasses the WHERE clause (a tautology) and then executes a `DROP TABLE` command, potentially wiping the `members` table entirely—this is clearly more impactful than simply reading extra data. Why the other options are wrong: The UNION SELECT payload (option A) extends results to read data but does not directly destroy it; the LIKE‑based payload (option B) focuses on pattern matching with limited impact; the simple `' OR '1'='1` style tautology (option C) may bypass authentication or show more rows but again does not delete data. KEY CONCEPTS: piggybacked queries, stacked SQL injection, destructive operations (DROP TABLE), data loss risk. CEH REFERENCE: Module 15 – SQL Injection (Piggybacked/Stacked Queries and Their Impact)."
   },
   {
     "id": 158,
@@ -125,7 +132,8 @@
       0
     ],
     "type": "single",
-    "domain": 13
+    "domain": 13,
+    "explanation": "**CORRECT ANSWER: q=17, T=220: Even though the attacker increases 'q', the total delay ('q*d' = 221 seconds) just surpasses the threshold, possibly activating an alert.** Scenario recap: A tester performs time-based blind SQL injection, using a delay `d=13` seconds per successful condition (13 is a Fibonacci number). For each query, if the injected condition is true, the response is delayed; with `q` queries, the total worst‑case delay is `q*d`. The security system triggers an alert if total time exceeds threshold `T`. Why this answer is correct: For time-based blind SQLi, CEH notes that repeated use of long delays will stand out in logs and monitoring; among the scenarios: ** Option A: `q=17`, `T=220` → `q*d = 17*13 = 221 > 220` → exceeds threshold, likely triggers alert.  ** Option B: `q=13`, `T=180` → `13*13 = 169 < 180` → below threshold.  ** Option C: `q=11`, `T=150` → `11*13 = 143 < 150` → below threshold. ** Option D: `q=19`, `T=260` → `19*13 = 247 < 260` → still under threshold. Only the first case clearly pushes the cumulative delay beyond the allowed time `T`, making it the most likely to raise an alert. Why the other options are wrong: Although they involve many queries or long delays, their calculated totals remain within the threshold limits, so by the problem’s own definition they are less likely to trigger the monitoring system. KEY CONCEPTS: time-based blind SQLi, response delay as side channel, detection thresholds for anomalous latency. CEH REFERENCE: Module 15 – SQL Injection (Blind Time-Delay Attacks and Detection Considerations)."
   },
   {
     "id": 178,
@@ -141,7 +149,8 @@
       0
     ],
     "type": "single",
-    "domain": 13
+    "domain": 13,
+    "explanation": "**CORRECT ANSWER: Utilize a blind injection technique that uses time delays or error signatures to extract information** Scenario recap: A certified ethical hacker tries to identify the database engine by generating an ODBC error but the application returns only generic error messages with no specific DB details. Why this answer is correct: CEH states that when detailed error messages are suppressed, attackers fall back to blind/inferential SQL injection techniques—using boolean conditions or time delays to infer properties of the database, such as engine type, version, or schema, without seeing explicit error text; time-based delays or subtle differences in responses can still reveal information even when errors are generic. Why the other options are wrong: Simply inserting a string where a number is expected (option B) is another way to provoke type errors, but the scenario already confirms that errors are generic and unhelpful; attempting OS-level command execution (option C) is a later‑stage escalation and presupposes a more powerful injection vector; using UNION (option D) depends on visible query results or error output, which the generic error handling does not provide. KEY CONCEPTS: blind SQL injection, inferential techniques, time-based and boolean probing when error messages are suppressed. CEH REFERENCE: Module 15 – SQL Injection (Blind/Inferential SQL Injection When Error Messages Are Not Available)."
   },
   {
     "id": 193,
@@ -157,7 +166,8 @@
       0
     ],
     "type": "single",
-    "domain": 13
+    "domain": 13,
+    "explanation": "**CORRECT ANSWER: Utilizing the char encoding function to convert hexadecimal and decimal values into characters that pass-through SQL engine parsing** Scenario recap: An ethical hacker attacks a database protected by a signature‑based IDS and manages to retrieve usernames without triggering alarms by using an advanced evasion technique. Why this answer is correct: CEH describes char/encoding‑based evasion where attackers build strings using functions like `CHAR()`, hexadecimal, or decimal representations, so the final malicious keyword (for example `UNION`, `SELECT`, or `' OR '1'='1`) is assembled at runtime and does not appear literally in the input—this often bypasses simplistic signature rules that look for fixed patterns; that matches the description of converting hex/decimal to characters to slip past parsing and detection. Why the other options are wrong: Rewriting matches as `OR john'='john` (option B) is just a variation of the classic tautology and is more easily signatured; manipulating whitespace (option C) can help but is typically weaker than full encoding and is not what the question highlights; URL encoding (option D) may work in some cases but is commonly normalized by applications or WAFs, and the question explicitly mentions char/encoding function behavior. KEY CONCEPTS: SQL injection evasion, CHAR() and hex/decimal encoding, bypassing signature-based IDS/WAF rules. CEH REFERENCE: Module 15 – SQL Injection (Evasion Techniques – Using CHAR() and Encoded Payloads)."
   },
   {
     "id": 214,
@@ -173,7 +183,8 @@
       3
     ],
     "type": "single",
-    "domain": 13
+    "domain": 13,
+    "explanation": "**CORRECT ANSWER: Use Hex encoding to represent the SQL query string** Scenario recap: While testing a web application that blocks known SQL injection patterns through input validation, the ethical hacker decides to encode the attack string in hexadecimal format to bypass these filters. Why this answer is correct: CEH documents hex encoding as a common SQL injection evasion method where the attacker encodes payloads (or parts of them) as hexadecimal, which are then interpreted by the database as characters after decoding; this can defeat simple pattern‑matching filters that look for plain-text keywords like `SELECT` or `UNION`. The description of encoding the attack string in hex exactly matches this technique. Why the other options are wrong: Using the CHAR function (option A) is another encoding style but is not what the scenario states; in-line comments (option B) are used to break up keywords and confuse pattern matching, not to hex‑encode the entire string; inserting spaces between keywords (option C) is a whitespace manipulation technique, not hexadecimal representation. KEY CONCEPTS: hex encoding, payload obfuscation, bypassing input validation and pattern-based filters. CEH REFERENCE: Module 15 – SQL Injection (Evasion Techniques – Hex/Encoding-Based Obfuscation)."
   },
   {
     "id": 227,
@@ -189,7 +200,8 @@
       1
     ],
     "type": "single",
-    "domain": 13
+    "domain": 13,
+    "explanation": "**CORRECT ANSWER: Error-based SQL Injection** Scenario recap: During a security audit, an ethical hacker finds that logically incorrect queries cause the application to return detailed error messages spilling information about the database structure. Why this answer is correct: CEH describes error-based SQL injection as intentionally provoking database errors (for example by sending illegal or logically incorrect queries) and then using the information in those error messages—such as table names, column types, and engine details—to map and further exploit the database; this is exactly what is being exploited here. Why the other options are wrong: UNION SQL injection focuses on combining result sets with `UNION SELECT`, though it can also generate errors, but the key characteristic in the scenario is extraction via error messages; “in-band SQL injection” is a broad category that includes error-based and union-based, but the question asks for the **specific** type; blind/inferential SQL injection is used when detailed error messages are not available, the opposite of this situation. KEY CONCEPTS: error-based SQL injection, using detailed database errors, illegal/logically incorrect query exploitation. CEH REFERENCE: Module 15 – SQL Injection (In-band Attacks – Error-Based SQL Injection and Illegal/Logically Incorrect Queries)."
   },
   {
     "id": 234,
@@ -205,24 +217,8 @@
       0
     ],
     "type": "single",
-    "domain": 13
-  },
-  {
-    "id": 253,
-    "pdf_number": 257,
-    "question": "What is the following command used for?",
-    "options": [
-      "Retrieving SQL statements being executed on the database",
-      "Creating backdoors using SQL injection",
-      "Enumerating the databases in the DBMS for the URL",
-      "Searching database statements at the IP address given"
-    ],
-    "correct": [
-      2
-    ],
-    "type": "single",
     "domain": 13,
-    "note": "SKIP - Question has image"
+    "explanation": "**CORRECT ANSWER: The hacker might employ a 'blind' SQL Injection attack, taking advantage of the application's true or false responses to extract data bit by bit** Scenario recap: An e-commerce site already uses input validation to block obvious injections and suspicious patterns, but the attacker is a skilled SQL injection specialist known for advanced techniques. Why this answer is correct: CEH highlights blind/inferential SQL injection (boolean‑based or time‑based) as the natural next step when straightforward patterns are blocked and errors or direct results are limited; by crafting conditions that cause different responses (layout/content changes or time delays), an attacker can slowly infer data—even through strong input validation. This is the most realistic \"advanced\" strategy to bypass rule‑based filters. Why the other options are wrong: Resorting to DDoS (option B) changes the attack goal to availability, not data extraction; using obscure SQL commands (option C) does not inherently bypass validation if patterns are still matched or normalized; out-of-band SQLi (option D) is also advanced, but the question stresses leveraging the application’s own responses rather than separate channels like DNS/HTTP callbacks—and CEH typically introduces blind SQLi before out‑of‑band as the primary advanced option. KEY CONCEPTS: blind/inferential SQL injection, extracting data via true/false responses, bypassing pattern-based input validation. CEH REFERENCE: Module 15 – SQL Injection (Blind SQL Injection as an Advanced Technique)."
   },
   {
     "id": 271,
@@ -238,7 +234,8 @@
       3
     ],
     "type": "single",
-    "domain": 13
+    "domain": 13,
+    "explanation": "**CORRECT ANSWER: Blind SQL injection** Scenario recap: The injection attack described does not produce error messages and is difficult to exploit; it returns information only when the application is given payloads that elicit a true or false response, allowing the attacker to infer sensitive data by observing the behavior. Why this answer is correct: CEH defines blind/inferential SQL injection as exactly this situation—no useful error messages or direct results are returned, so the attacker must rely on boolean conditions or timing differences to infer data bit by bit; the description of no errors plus true/false‑driven behavior aligns perfectly. Why the other options are wrong: UNION SQL injection extends or combines result sets and typically returns data directly; error-based injection depends on visible database errors; time-based SQL injection is a subtype of blind SQL injection that uses time delays, but the question describes the broader class using generic true/false responses rather than specifically emphasizing timing. KEY CONCEPTS: blind/inferential SQL injection, lack of error messages, true/false‑based information extraction. CEH REFERENCE: Module 15 – SQL Injection (Blind/Inferential SQL Injection – Boolean and Time-Based Variants)."
   },
   {
     "id": 274,
@@ -254,6 +251,7 @@
       0
     ],
     "type": "single",
-    "domain": 13
+    "domain": 13,
+    "explanation": "**CORRECT ANSWER: Union SQL injection** Scenario recap: The question asks which SQL injection type extends the results returned by the original query so that attackers can run two or more SELECT statements with the same structure and see the combined results. Why this answer is correct: CEH explains UNION SQL injection as using the `UNION SELECT` operator to append an additional query (or queries) to the original one, causing the database to merge their result sets and return them together; this is precisely \"extending the results\" from the original query with more statements of compatible structure. Why the other options are wrong: Error-based injection focuses on triggering and exploiting database error messages; blind SQL injection and boolean-based blind SQL injection are inferential techniques that do not directly extend the visible result set, but instead rely on yes/no conditions or timing to leak data. KEY CONCEPTS: UNION SQL injection, combined result sets, extending original query output. CEH REFERENCE: Module 15 – SQL Injection (In-band SQL Injection – UNION SQL Injection)."
   }
 ]

@@ -13,7 +13,8 @@
       0
     ],
     "type": "single",
-    "domain": 15
+    "domain": 15,
+    "explanation": "**CORRECT ANSWER: aLTEr attack** Scenario recap: Bobby sets up a fake communication tower between a user and the real cellular tower, intercepts wireless communications, hijacks the active session, and redirects the victim to a malicious site. Why this answer is correct: The CEH Mobile module describes the aLTEr attack as an LTE/4G attack that abuses weaknesses in the protocol to build a rogue base station (fake eNodeB) acting as a man-in-the-middle between user equipment and the real network, allowing interception and manipulation of traffic, including redirection to malicious websites; this is exactly what Bobby is doing. Why the other options are wrong: A jamming signal attack is a denial-of-service against the radio channel, not an interception/hijacking attack; wardriving is just driving around to discover wireless networks; KRACK is a key reinstallation attack against WPA2 Wi‑Fi handshakes, not a cellular fake-tower MitM. KEY CONCEPTS: LTE/4G aLTEr attack, rogue base station, man-in-the-middle, traffic redirection. CEH REFERENCE: Module 17 – Hacking Mobile Platforms (LTE Network Attacks such as aLTEr)."
   },
   {
     "id": 47,
@@ -29,7 +30,8 @@
       3
     ],
     "type": "single",
-    "domain": 15
+    "domain": 15,
+    "explanation": "**CORRECT ANSWER: Agent Smith attack** Scenario recap: Don installs a game from a third‑party app store; afterwards, legitimate apps on his smartphone are silently replaced by deceptive versions that look normal but show many ads and can perform malicious actions. Why this answer is correct: CEH discusses the Agent Smith Android malware family, which spreads via third‑party app stores and exploits vulnerabilities (such as Janus) to replace legitimate apps with malicious clones that retain the same icons and names while injecting adware and potentially more dangerous payloads; this precisely matches Don’s experience. Why the other options are wrong: A SIM card attack targets the SIM (e.g., SIM cloning or SIMjacker), not wholesale app replacement; clickjacking manipulates UI overlays to trick users into clicking hidden elements but does not mass‑replace apps; SMS phishing (smishing) delivers malicious links or payloads via SMS but is not characterized by replacing many installed apps. KEY CONCEPTS: Android malware, Agent Smith, third‑party app store risk, app repackaging/replacement. CEH REFERENCE: Module 17 – Hacking Mobile Platforms (Mobile Malware and the Agent Smith Campaign)."
   },
   {
     "id": 62,
@@ -45,7 +47,8 @@
       3
     ],
     "type": "single",
-    "domain": 15
+    "domain": 15,
+    "explanation": "**CORRECT ANSWER: Untethered jailbreaking** Scenario recap: The question asks for the iOS jailbreaking technique that patches the kernel during device boot so the device remains jailbroken after each reboot without needing additional user actions or tools. Why this answer is correct: In CEH’s mobile section, untethered jailbreaks are defined as jailbreaks that modify the boot process so the kernel is patched automatically on every startup, meaning the device stays jailbroken across reboots; that is exactly what the question describes. Why the other options are wrong: Tethered jailbreaking requires a computer and jailbreak tool to be run at every reboot or the device cannot boot into a usable jailbroken state; semi‑tethered jailbreaking allows the device to boot normally but not in a jailbroken state until a tool is run from a computer; semi‑untethered jailbreaking similarly requires running an app on the device after each reboot to re‑enable the jailbreak but does not automatically patch the kernel at boot. KEY CONCEPTS: iOS jailbreak types, untethered persistence, kernel patching during boot. CEH REFERENCE: Module 17 – Hacking Mobile Platforms (iOS Jailbreaking Types: Tethered, Semi‑tethered, Semi‑untethered, Untethered)."
   },
   {
     "id": 98,
@@ -61,7 +64,8 @@
       0
     ],
     "type": "single",
-    "domain": 15
+    "domain": 15,
+    "explanation": "**CORRECT ANSWER: AndroidManifest.xml** Scenario recap: The question asks which file determines the basic configuration of an Android application—its activities, services, broadcast receivers, permissions, and other core metadata. Why this answer is correct: CEH describes `AndroidManifest.xml` as the central configuration file in every Android APK, declaring components (activities, services, broadcast receivers, content providers), required permissions, app name, icons, and intent filters; it is exactly the file that defines the app’s basic structure and capabilities. Why the other options are wrong: `classes.dex` contains the compiled Dalvik/ART bytecode, not the component configuration; `APK.info` is not a standard Android app configuration file; `resources.asrc` appears to be a misspelling of `resources.arsc`, which stores compiled resources (strings, layouts) but not the high‑level component declarations. KEY CONCEPTS: AndroidManifest.xml, Android app structure, component and permission declarations. CEH REFERENCE: Module 17 – Hacking Mobile Platforms (Android Application Structure and Manifest File)."
   },
   {
     "id": 135,
@@ -77,7 +81,8 @@
       3
     ],
     "type": "single",
-    "domain": 15
+    "domain": 15,
+    "explanation": "**CORRECT ANSWER: Conduct regular cybersecurity awareness training, focusing on phishing attacks.** Scenario recap: Under a BYOD policy, an employee’s personal device is compromised via a phishing email delivered through a third‑party email app; the organization needs to reduce similar incidents **without overly restricting** personal device use. Why this answer is correct: CEH emphasizes that in BYOD environments, user behavior is a major attack vector, especially for phishing and malicious apps; regular, targeted security awareness training on mobile phishing, malicious apps, and safe use of third‑party services significantly reduces risk while preserving user autonomy, and it does not require locking down which apps can be installed on personally owned devices. Why the other options are wrong: Issuing corporate‑owned devices (option A) effectively ends true BYOD and heavily restricts autonomy, contradicting the scenario’s constraint; forcing all devices through a corporate VPN (option B) improves traffic protection but does not prevent a user from installing a malicious email client or clicking phishing links; implementing strict MDM app‑installation restrictions (option C) is possible, but for genuine BYOD it is often seen as overly intrusive and restrictive, which the question explicitly wants to avoid. KEY CONCEPTS: BYOD risk management, mobile phishing awareness, balancing security with user autonomy. CEH REFERENCE: Module 17 – Hacking Mobile Platforms (Mobile Security Policies, BYOD, and Security Awareness)."
   },
   {
     "id": 162,
@@ -93,7 +98,8 @@
       3
     ],
     "type": "single",
-    "domain": 15
+    "domain": 15,
+    "explanation": "**CORRECT ANSWER: Enforce a policy that only allows app installations from approved corporate app stores.** Scenario recap: You are auditing MDM policy for company‑owned smartphones and are concerned about data leakage via malicious apps installed by employees. Why this answer is correct: CEH discusses using MDM and enterprise app stores to **whitelist** approved applications and block installations from untrusted sources; restricting installations to a vetted corporate app store is one of the strongest ways to prevent users from installing potentially malicious apps that could access or exfiltrate sensitive corporate data. Why the other options are wrong: Biometric authentication (option A) protects device unlock and sometimes app access but does not stop a malicious app from accessing data once installed; changing Wi‑Fi passwords (option B) is a network control and does not directly mitigate malicious apps; mandating VPN use (option C) protects data in transit but does not stop a local app on the device from reading and leaking stored data. KEY CONCEPTS: MDM, app‑store whitelisting, enterprise app catalogs, prevention of malicious app installation. CEH REFERENCE: Module 17 – Hacking Mobile Platforms (Mobile Device Management and Application Control)."
   },
   {
     "id": 209,
@@ -109,7 +115,8 @@
       1
     ],
     "type": "single",
-    "domain": 15
+    "domain": 15,
+    "explanation": "**CORRECT ANSWER: It should prevent the app from communicating over a network if it detects a rogue access point.** Scenario recap: A mobile banking app is being designed, and the CSO is specifically concerned about MitM attacks over rogue Wi‑Fi hotspots that intercept communication between the app and the bank’s servers. Why this answer is correct: CEH stresses that mobile apps dealing with sensitive financial data must verify the security of their network environment and connection endpoints; a defensive feature that detects indicators of a rogue or untrusted access point (for example, through certificate pinning, network validation, or hotspot risk signals) and then blocks communication on that network directly mitigates the described MitM vector. Why the other options are wrong: Two‑factor authentication (option A) is important but does not in itself prevent traffic interception over a rogue AP once the user is authenticated; blocking all unencrypted Wi‑Fi (option C) is helpful but incomplete, because attackers can create encrypted rogue hotspots and still perform MitM with forged certificates or captive portals; forcing password changes every 30 days (option D) is a general hygiene measure and unrelated to interception over rogue hotspots. KEY CONCEPTS: mobile MitM defenses, rogue AP detection, secure transport, banking app threat model. CEH REFERENCE: Module 17 – Hacking Mobile Platforms (Mobile Banking Threats and Network-Based MitM Protections)."
   },
   {
     "id": 231,
@@ -125,7 +132,8 @@
       2
     ],
     "type": "single",
-    "domain": 15
+    "domain": 15,
+    "explanation": "**CORRECT ANSWER: Encrypt all sensitive data stored on the device.** Scenario recap: A mobile payment app stores highly sensitive data (credit card details, PINs) locally on devices, and you must choose the best measure to ensure that data remains secure at rest. Why this answer is correct: CEH recommends strong encryption for sensitive data stored on mobile devices, ideally using OS‑provided, hardware‑backed keystores (Android Keystore, iOS Keychain) so that even if the device is lost, stolen, or partially compromised, the attacker cannot easily read the stored payment data; encrypting all sensitive data at rest directly addresses this risk. Why the other options are wrong: GPS tracking (option A) can help locate devices but does not protect the confidentiality of stored data; regularly updating the app (option B) is good practice but not a specific control ensuring stored data security; biometric authentication (option D) helps control access to the app but, without proper encryption, data may still be recoverable from the device storage by an attacker with physical or low‑level access. KEY CONCEPTS: data-at-rest encryption, secure mobile storage, hardware‑backed keystores in mobile OSs. CEH REFERENCE: Module 17 – Hacking Mobile Platforms (Mobile Data Protection and Secure Storage)."
   },
   {
     "id": 259,
@@ -141,7 +149,8 @@
       0
     ],
     "type": "single",
-    "domain": 15
+    "domain": 15,
+    "explanation": "**CORRECT ANSWER: Reverse engineering** Scenario recap: Jacob, a system administrator, extracts the source code of a mobile application and disassembles it to analyze design flaws, find bugs and vulnerabilities, and improve defensive measures. Why this answer is correct: CEH defines reverse engineering of mobile apps as decompiling/disassembling APKs or IPA bundles to inspect code, understand logic, and identify security weaknesses; Jacob’s process of extracting code and analyzing it for bugs and vulnerabilities is the textbook definition of reverse engineering in the mobile context. Why the other options are wrong: App sandboxing is about isolating app processes and data from the rest of the system; jailbreaking is removing OS restrictions on the device, not analyzing app binaries; social engineering targets human behavior and deception, not code analysis. KEY CONCEPTS: mobile app reverse engineering, decompilation/disassembly, static analysis for vulnerabilities. CEH REFERENCE: Module 17 – Hacking Mobile Platforms (Reverse Engineering Mobile Applications)."
   },
   {
     "id": 290,
@@ -157,7 +166,8 @@
       2
     ],
     "type": "single",
-    "domain": 15
+    "domain": 15,
+    "explanation": "**CORRECT ANSWER: Trident** Scenario recap: Jake installs spyware on a target iPhone that remotely jailbreaks the device, then fully controls it—recording audio, capturing screenshots, monitoring calls and SMS, effectively turning it into a spying platform. Why this answer is correct: CEH refers to the Trident exploit chain (three iOS zero‑days) used by advanced spyware such as Pegasus, which allows remote jailbreak of iOS devices and grants attackers full control, including recording audio, intercepting messages, and exfiltrating data; the description of remote jailbreak and total surveillance on an iPhone matches this class of spyware. Why the other options are wrong: DroidSheep is an Android session‑hijacking tool, not iOS spyware; Androrat is an Android RAT; Zscaler is a legitimate security company/platform, not spyware. KEY CONCEPTS: Trident exploit chain, Pegasus‑class iOS spyware, remote jailbreak, full device surveillance. CEH REFERENCE: Module 17 – Hacking Mobile Platforms (iOS Exploits and Spyware such as Trident/Pegasus)."
   },
   {
     "id": 292,
@@ -173,6 +183,7 @@
       2
     ],
     "type": "single",
-    "domain": 15
+    "domain": 15,
+    "explanation": "**CORRECT ANSWER: Spearphone attack** Scenario recap: Kate’s phone internal speaker is damaged so she uses loudspeaker; Bob deploys a malicious app that exploits the phone’s hardware to monitor loudspeaker output from sources like voice assistants, multimedia messages, and audio files, breaching her speech privacy. Why this answer is correct: The CEH Mobile module describes the Spearphone attack as a mobile side‑channel in which attackers exploit smartphone hardware (microphone, sensors, loudspeaker behavior) to eavesdrop on audio from the loudspeaker, including notifications, assistant responses, and media, using a malicious app to capture and analyze that output; this lines up exactly with Bob’s actions. Why the other options are wrong: SIM card attacks target SIM functionality (e.g., SIMjacker), not loudspeaker audio; aLTEr is an LTE network attack on the radio link; man‑in‑the‑disk abuses insecure external storage on Android, not the loudspeaker audio channel. KEY CONCEPTS: Spearphone side‑channel attack, loudspeaker eavesdropping, speech privacy on mobile devices. CEH REFERENCE: Module 17 – Hacking Mobile Platforms (Mobile Side-Channel Attacks, including Spearphone)."
   }
 ]
