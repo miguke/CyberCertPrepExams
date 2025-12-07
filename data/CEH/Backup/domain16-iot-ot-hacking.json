@@ -13,7 +13,8 @@
       0
     ],
     "type": "single",
-    "domain": 16
+    "domain": 16,
+    "explanation": "**CORRECT ANSWER: FCC ID search** Scenario recap: An attacker has access to a target IoT device and uses an online tool to gather information about the model and the certifications granted to that device. Why this answer is correct: CEH explains that FCC ID search services allow you to look up an IoT device using its FCC identifier and retrieve detailed regulatory information, including model details, frequency bands, test reports, and certification data, which is exactly what is described in the scenario. Why the other options are wrong: Google image search focuses on pictures and visual matches, not regulatory or certification records; search.com is just a generic web search engine with no specific IoT device certification database; EarthExplorer is a remote sensing and satellite imagery platform and is unrelated to IoT device regulatory information. KEY CONCEPTS: FCC ID, IoT device reconnaissance, hardware and certification intelligence. CEH REFERENCE: Module 18 – IoT and OT Hacking (Reconnaissance on IoT Devices and Use of FCC ID Databases)."
   },
   {
     "id": 56,
@@ -29,7 +30,8 @@
       1
     ],
     "type": "single",
-    "domain": 16
+    "domain": 16,
+    "explanation": "**CORRECT ANSWER: nmap -Pn -sU -p 44818 --script enip-info < Target IP >** Scenario recap: A professional hacker scans an OT network to identify Ethernet/IP devices and gather vendor name, product code, device name, and IP address using Nmap. Why this answer is correct: CEH describes that Ethernet/IP (CIP) devices typically listen on UDP port 44818 and that the Nmap script enip-info can be used with a UDP scan to enumerate detailed information such as vendor, product code, and device identity, which matches the behavior in the scenario. Why the other options are wrong: A plain TCP scan with -sT and a generic port list will not specifically enumerate Ethernet/IP information; scanning TCP port 46824 is not associated with standard Ethernet/IP enumeration in CEH; the s7-info script on port 102 is used to identify Siemens S7 PLCs, not generic Ethernet/IP devices. KEY CONCEPTS: Ethernet/IP, CIP, Nmap NSE scripts, enip-info, OT device discovery. CEH REFERENCE: Module 18 – IoT and OT Hacking (Scanning OT Networks and Identifying Industrial Protocols)."
   },
   {
     "id": 58,
@@ -45,7 +47,8 @@
       3
     ],
     "type": "single",
-    "domain": 16
+    "domain": 16,
+    "explanation": "**CORRECT ANSWER: Replay attack** Scenario recap: An attacker records the radio frequency used between IoT devices, captures original data when commands are sent, uses tools like URH to separate the command sequence, and then reinjects the same sequence on the same frequency to repeat the captured signals. Why this answer is correct: CEH describes replay attacks as capturing valid traffic or command sequences and then retransmitting them to reproduce the original action without needing to understand or break the cryptography, exactly what is happening when the attacker re-injects the captured IoT command stream. Why the other options are wrong: Cryptanalysis attacks focus on breaking encryption or ciphers mathematically, not simply replaying captured data; reconnaissance attacks focus on gathering information rather than actively reusing captured commands to trigger actions; side-channel attacks exploit physical leakage like power, timing, or EM emissions rather than replaying RF command captures. KEY CONCEPTS: replay attack, RF capture, Universal Radio Hacker (URH), IoT command re-injection. CEH REFERENCE: Module 18 – IoT and OT Hacking (Wireless and RF Attacks against IoT Devices)."
   },
   {
     "id": 65,
@@ -61,7 +64,8 @@
       1
     ],
     "type": "single",
-    "domain": 16
+    "domain": 16,
+    "explanation": "**CORRECT ANSWER: 48101** Scenario recap: You suspect that an IoT device has been compromised and need to decide which port should be blocked first to limit malicious access. Why this answer is correct: CEH highlights that certain IoT and camera vendors use nonstandard management or service ports such as 48101, which often become targets for exploitation and remote access; blocking this vendor-specific IoT service port is a priority to cut off backdoor or management traffic related to compromised devices. Why the other options are wrong: Port 22 is SSH, commonly used for secure administration, and may be legitimately required; ports 80 and 443 are standard HTTP and HTTPS ports that serve many normal services and cannot typically be blocked globally without major disruption, and they are not uniquely associated with IoT management abuse in the way the specialized 48101 port is. KEY CONCEPTS: IoT-specific service ports, hardening exposed management ports, incident response prioritization. CEH REFERENCE: Module 18 – IoT and OT Hacking (Common IoT Ports and Attack Surface)."
   },
   {
     "id": 75,
@@ -77,7 +81,8 @@
       3
     ],
     "type": "single",
-    "domain": 16
+    "domain": 16,
+    "explanation": "**CORRECT ANSWER: Zigbee** Scenario recap: A security professional uses a short-range wireless communication protocol based on the IEEE 802.15.4 standard for devices that send low-rate data infrequently over 10–100 meters. Why this answer is correct: CEH states that Zigbee is a low-power, short-range wireless technology built on IEEE 802.15.4, designed for low data rate, low duty cycle traffic in constrained environments such as industrial and home automation, which matches the scenario exactly. Why the other options are wrong: LPWAN technologies are optimized for long-range, low-bandwidth communication over kilometers, not 10–100 meters; MQTT is an application-layer messaging protocol that runs on top of TCP/IP, not a physical wireless standard; NB-IoT is a cellular 3GPP technology that uses mobile carrier infrastructure, not IEEE 802.15.4. KEY CONCEPTS: Zigbee, IEEE 802.15.4, short-range IoT communication, low data rate protocols. CEH REFERENCE: Module 18 – IoT and OT Hacking (IoT Communication Protocols such as Zigbee and 802.15.4)."
   },
   {
     "id": 90,
@@ -93,7 +98,8 @@
       2
     ],
     "type": "single",
-    "domain": 16
+    "domain": 16,
+    "explanation": "**CORRECT ANSWER: Censys** Scenario recap: A hacker targets IoT cameras and devices and uses an information-gathering tool that discovers Internet-connected devices, open ports and services, provides attack surface data, and generates statistical reports about overall usage trends. Why this answer is correct: CEH describes Censys as an Internet-wide search and data platform that continuously scans reachable hosts, indexes open ports and banners, and allows analysis of exposed devices and services, including IoT devices, which matches the behavior in the scenario. Why the other options are wrong: NeuVector and Lacework are container and cloud security platforms focused on runtime protection and compliance, not global Internet scanning of arbitrary IoT devices; Wapiti is a web application vulnerability scanner, not a large-scale IoT and Internet-exposed services search engine. KEY CONCEPTS: Censys, Internet-wide scanning, exposure analysis of IoT devices, attack surface mapping. CEH REFERENCE: Module 18 – IoT and OT Hacking (Internet-wide IoT Discovery Tools such as Censys and Shodan)."
   },
   {
     "id": 111,
@@ -109,7 +115,8 @@
       2
     ],
     "type": "single",
-    "domain": 16
+    "domain": 16,
+    "explanation": "**CORRECT ANSWER: Flowmon** Scenario recap: An organization running critical infrastructure connects its industrial control systems to the Internet and wants an OT security tool that reduces downtime and service disruption and protects against cyber espionage, zero-day attacks, and malware. Why this answer is correct: CEH notes that Flowmon provides advanced network monitoring, anomaly detection, and security analytics that are suitable for protecting ICS and OT environments, helping detect zero-day style behavior and malicious traffic patterns affecting critical infrastructure. Why the other options are wrong: Robotium is an Android UI testing framework and is unrelated to OT security; BalenaCloud is a device management and deployment platform for IoT fleets but does not itself provide deep OT threat detection for ICS networks; IntentFuzzer is an Android testing/fuzzing tool for intents, not a security monitoring solution for industrial control systems. KEY CONCEPTS: OT security monitoring, ICS traffic analysis, anomaly detection, Flowmon. CEH REFERENCE: Module 18 – IoT and OT Hacking (Security Tools for ICS and OT Networks)."
   },
   {
     "id": 134,
@@ -125,7 +132,8 @@
       2
     ],
     "type": "single",
-    "domain": 16
+    "domain": 16,
+    "explanation": "**CORRECT ANSWER: Use network segmentation to isolate IoMT devices from the main network** Scenario recap: A healthcare organization uses Internet of Medical Things devices such as insulin pumps and heart rate monitors and fears they may become entry points for future ransomware attacks, even though the IT infrastructure is currently well protected. Why this answer is correct: CEH emphasizes network segmentation and isolation as a key control to protect IoT and IoMT devices, ensuring that even if a device is compromised it cannot easily pivot into the main enterprise network, thereby reducing ransomware spread and impact. Why the other options are wrong: Disabling all wireless connectivity would break the intended medical functionality and is impractical; frequently changing IP addresses does not fundamentally reduce exploitability and can complicate management; multi-factor authentication may help with user access to management interfaces but does not address the underlying network exposure or lateral movement risk of compromised IoMT devices. KEY CONCEPTS: network segmentation, IoMT security, limiting lateral movement, ransomware containment. CEH REFERENCE: Module 18 – IoT and OT Hacking (Segmentation and Isolation of IoT and Medical Devices)."
   },
   {
     "id": 149,
@@ -141,7 +149,8 @@
       2
     ],
     "type": "single",
-    "domain": 16
+    "domain": 16,
+    "explanation": "**CORRECT ANSWER: Conduct a vulnerability assessment specifically for the IoT devices** Scenario recap: A utility company integrates IoT devices into its ICS/OT environment and wants to ensure these devices do not become the weak link; you must recommend the first step to identify potential vulnerabilities. Why this answer is correct: CEH emphasizes that a focused vulnerability assessment against IoT devices is the correct initial step to discover misconfigurations, outdated firmware, default credentials, and exposed services before selecting and applying specific hardening measures. Why the other options are wrong: Using stronger encryption for data in transit is important but should be chosen based on identified risks, not before you know the actual weaknesses; network segmentation is a powerful control, but the question asks for the first step in identifying vulnerabilities, which is formal assessment; installing antivirus on each IoT device is often infeasible or unsupported and does not comprehensively address typical IoT weaknesses. KEY CONCEPTS: vulnerability assessment, IoT risk discovery, ICS/OT security posture, assessment before mitigation. CEH REFERENCE: Module 18 – IoT and OT Hacking (IoT Vulnerability Assessment and Hardening Workflow)."
   },
   {
     "id": 151,
@@ -157,7 +166,8 @@
       3
     ],
     "type": "single",
-    "domain": 16
+    "domain": 16,
+    "explanation": "**CORRECT ANSWER: Advise using a dedicated network for the smart home system, separate from the home's main Wi-Fi network** Scenario recap: A cybersecurity analyst is improving the security of a smart home system controlling locks, cameras, heating, and lighting, and the client wants to ensure that compromise of one device does not endanger the rest. Why this answer is correct: CEH highlights that placing IoT and smart home devices on a dedicated, segmented network limits lateral movement so that if one device or the IoT network is compromised, an attacker cannot easily access other home systems or user devices on the primary Wi-Fi. Why the other options are wrong: A strong password on the main control panel and two-factor authentication for the mobile app increase authentication security but do not prevent a compromised device from pivoting laterally; frequent system resets are operationally disruptive and do not reliably stop exploits or persistent attackers. KEY CONCEPTS: network segmentation, smart home security, lateral movement prevention, defense in depth. CEH REFERENCE: Module 18 – IoT and OT Hacking (Best Practices for Securing Smart Home and Consumer IoT)."
   },
   {
     "id": 171,
@@ -173,7 +183,8 @@
       3
     ],
     "type": "single",
-    "domain": 16
+    "domain": 16,
+    "explanation": "**CORRECT ANSWER: Implement network segmentation to separate IIoT devices from the rest of the network** Scenario recap: A manufacturing company uses Industrial IoT devices in an OT environment, has an advanced firewall, but is worried about attacks that might disrupt production and safety; you must suggest an additional comprehensive protection measure. Why this answer is correct: CEH stresses that network segmentation of IIoT and OT networks from the general IT network is crucial to limit the blast radius of attacks, preventing threats from easily spreading across the environment and reducing the impact of compromises on critical systems. Why the other options are wrong: More frequent password changes are good hygiene but do not address architectural exposure or lateral movement; using the same encryption standards as IT does not automatically solve OT-specific risks and may not fit resource-constrained devices; relying on the existing firewall plus antivirus on each IIoT device still leaves a flat network where a successful compromise can propagate. KEY CONCEPTS: network segmentation, IIoT and OT isolation, minimizing impact of attacks, layered defense. CEH REFERENCE: Module 18 – IoT and OT Hacking (Network Design and Segmentation for IIoT/OT Security)."
   },
   {
     "id": 190,
@@ -189,7 +200,8 @@
       1
     ],
     "type": "single",
-    "domain": 16
+    "domain": 16,
+    "explanation": "**CORRECT ANSWER: Implement SSL/TLS encryption for data transmission between the IoT device and the mobile app** Scenario recap: A startup develops an IoT home security device that communicates with a mobile app, and the CEO fears Man-in-the-Middle attacks on the communication channel. Why this answer is correct: CEH explains that using SSL/TLS to encrypt and authenticate communications prevents attackers from easily intercepting, reading, or modifying traffic between the device and app, providing strong protection against classic MitM attacks. Why the other options are wrong: CAPTCHA on the mobile app login might deter automated login attempts but does nothing to protect the communication channel from interception; limiting wireless range or frequently changing IP addresses may marginally affect exposure but does not cryptographically prevent interception and tampering of in-transit data. KEY CONCEPTS: SSL/TLS, encryption in transit, MitM protection, secure IoT communication. CEH REFERENCE: Module 18 – IoT and OT Hacking (Securing IoT Communications with TLS and Strong Cryptography)."
   },
   {
     "id": 225,
@@ -205,7 +217,8 @@
       2
     ],
     "type": "single",
-    "domain": 16
+    "domain": 16,
+    "explanation": "**CORRECT ANSWER: Deploy network intrusion detection systems (IDS) across the IoT network** Scenario recap: A smart city project deploys a large number of IoT devices for critical public utilities, and the administration fears that a Distributed Denial of Service (DDoS) attack could cripple these services. Why this answer is correct: CEH emphasizes that deploying IDS (and similar monitoring solutions) in IoT and OT environments is a primary measure to detect abnormal traffic patterns, volumetric floods, and coordinated botnet activity early, so defenders can respond, rate-limit, and coordinate with upstream providers before a DDoS fully impacts critical services. Why the other options are wrong: Regular firmware updates are important for patching vulnerabilities but do not directly detect or stop DDoS traffic; strong, unique passwords reduce the risk of devices being hijacked into botnets but do not prevent external DDoS floods against city services; strict IP whitelisting can be very hard to maintain at smart city scale and is not presented by CEH as the primary countermeasure for large-scale DDoS threats. KEY CONCEPTS: IoT DDoS threats, IDS deployment, traffic anomaly detection, early-warning defenses. CEH REFERENCE: Module 18 – IoT and OT Hacking (DDoS Attacks against IoT and the Role of Network Monitoring/IDS)."
   },
   {
     "id": 250,
@@ -221,7 +234,8 @@
       1
     ],
     "type": "single",
-    "domain": 16
+    "domain": 16,
+    "explanation": "**CORRECT ANSWER: Side-channel attack** Scenario recap: An attacker tries to crack industrial control system passwords using a loop that checks one character at a time and measures how long the device takes to complete authentication, inferring how many characters are correct from timing differences. Why this answer is correct: CEH classifies attacks that exploit physical or behavioral leakages, such as timing differences, power consumption, or EM emissions, as side-channel attacks; using response time to deduce correct password characters is a classic timing side-channel. Why the other options are wrong: Buffer overflow attacks involve sending excessively long or malformed input to overwrite memory and gain control, not measuring timing; denial-of-service attacks aim to make services unavailable, not to infer secrets from timing; HMI-based attacks target the human-machine interface layer, not password verification timing in authentication loops. KEY CONCEPTS: side-channel timing attacks, password guessing via response time, ICS/OT authentication weaknesses. CEH REFERENCE: Module 18 – IoT and OT Hacking (Side-channel and Timing-based Attacks on Embedded and Industrial Systems)."
   },
   {
     "id": 256,
@@ -237,7 +251,8 @@
       2
     ],
     "type": "single",
-    "domain": 16
+    "domain": 16,
+    "explanation": "**CORRECT ANSWER: IoTSeeker** Scenario recap: A professional hacker scans an organization’s network to find IoT devices that are still using default, factory-set credentials and are thus vulnerable to hijacking. Why this answer is correct: CEH describes IoTSeeker as an automated tool that specifically scans networks for IoT devices and checks for the presence of default credentials, making it ideal for identifying weakly secured devices as in the scenario. Why the other options are wrong: IoT Inspector focuses more on analyzing device firmware and behavior rather than specifically scanning a network for default passwords; the AT&T IoT Platform is a commercial IoT management platform, not a dedicated security scanner for default credentials; the duplicated IoTSeeker option still refers to the same tool, and the correct choice in the exam context is the named tool that matches the described behavior. KEY CONCEPTS: IoTSeeker, default credentials discovery, IoT hijacking risk, automated network scanning. CEH REFERENCE: Module 18 – IoT and OT Hacking (Tools for Discovering Insecure IoT Devices and Default Passwords)."
   },
   {
     "id": 260,
@@ -253,7 +268,8 @@
       3
     ],
     "type": "single",
-    "domain": 16
+    "domain": 16,
+    "explanation": "**CORRECT ANSWER: DDoS attack** Scenario recap: Mirai malware infects IoT devices, uses them to form large botnets, and then leverages those botnets to launch attacks. Why this answer is correct: CEH explains that Mirai is a well-known IoT malware family that compromises devices with weak/default credentials and then uses the resulting botnet primarily to perform large-scale Distributed Denial of Service attacks against online targets. Why the other options are wrong: While Mirai exploits weak passwords to spread, its main purpose is not generic password attacks but creating a DDoS-capable botnet; birthday attacks are cryptographic collision attacks and are unrelated to how Mirai operates; classic MitM attacks focus on intercepting communication rather than overwhelming targets with traffic. KEY CONCEPTS: Mirai, IoT botnets, DDoS attacks, default credential exploitation. CEH REFERENCE: Module 18 – IoT and OT Hacking (IoT Botnets such as Mirai and Their Use in DDoS Campaigns)."
   },
   {
     "id": 285,
@@ -269,7 +285,8 @@
       3
     ],
     "type": "single",
-    "domain": 16
+    "domain": 16,
+    "explanation": "**CORRECT ANSWER: Spear-phishing attack** Scenario recap: An attacker targets an organization's industrial control systems by sending fraudulent emails with a malicious attachment to selected employees; one employee opens the email, the attachment installs malware on the sales software system, and the malware then propagates to other networked systems and damages industrial automation components. Why this answer is correct: CEH describes spear-phishing as a highly targeted phishing attack that uses crafted emails and malicious attachments to compromise specific users and deliver malware into internal networks, which is exactly how the ICS environment is breached in this scenario. Why the other options are wrong: An HMI-based attack focuses on directly compromising or abusing the human–machine interface of industrial systems, not on initial compromise by email; SMishing is phishing via SMS/text messages, not email; a reconnaissance attack is about information gathering, not delivering and executing malware that damages automation components. KEY CONCEPTS: spear-phishing, targeted email with malicious attachment, ICS/OT malware propagation, social engineering entry vector. CEH REFERENCE: Module 18 – IoT and OT Hacking (ICS Attack Vectors and Spear-phishing into OT Environments)."
   },
   {
     "id": 291,
@@ -285,6 +302,7 @@
       3
     ],
     "type": "single",
-    "domain": 16
+    "domain": 16,
+    "explanation": "**CORRECT ANSWER: Power/clock/reset glitching** Scenario recap: An attacker performs a fault injection attack on an IoT device by briefly disturbing the power supply so that instructions can be skipped or misexecuted, and by injecting faults into the clock network that distributes a synchronized signal across the chip. Why this answer is correct: CEH describes power/clock/reset glitching as a class of fault injection in which very short, precisely timed glitches are introduced on power or clock lines so that the processor behaves unpredictably—skipping security checks, executing corrupted instructions, or enabling unintended code paths; this matches the scenario’s focus on manipulating both power and clock to achieve remote execution and control. Why the other options are wrong: Frequency or voltage tampering typically refers to more sustained overclocking or undervolting rather than short, carefully timed pulses designed to skip single instructions; optical or electromagnetic fault injection (EMFI) attacks inject faults using lasers or EM pulses directed at the chip, not by directly glitching the power or clock distribution; temperature attacks rely on exposing the device to extreme heat or cold to induce failures or timing drift, not on intentional, momentary glitches on power/clock/reset lines. KEY CONCEPTS: fault injection, power and clock glitching, instruction skipping, bypassing security checks in embedded/IoT devices. CEH REFERENCE: Module 18 – IoT and OT Hacking (Hardware and Fault Injection Attacks on Embedded Systems)."
   }
 ]

@@ -13,7 +13,8 @@
       3
     ],
     "type": "single",
-    "domain": 17
+    "domain": 17,
+    "explanation": "**CORRECT ANSWER: Cloud carrier** Scenario recap: An organization deploys a cloud computing service and contracts a telecom company to provide Internet connectivity and transport services between the company and the cloud service provider. Why this answer is correct: In the NIST cloud reference architecture, a cloud carrier is the intermediary that provides connectivity and transport of cloud services between providers and consumers, exactly matching the telecom role in the scenario. Why the other options are wrong: A cloud consumer is the organization using the cloud service, not the telecom; a cloud broker intermediates service selection, aggregation, or integration, not raw connectivity; a cloud auditor performs independent security, privacy, or performance assessments, not network transport. KEY CONCEPTS: NIST cloud roles, cloud carrier, connectivity and transport services. CEH REFERENCE: Module 19 – Cloud Computing (NIST Cloud Computing Reference Architecture)."
   },
   {
     "id": 23,
@@ -29,7 +30,8 @@
       1
     ],
     "type": "single",
-    "domain": 17
+    "domain": 17,
+    "explanation": "**CORRECT ANSWER: Docker daemon** Scenario recap: A cloud security engineer uses Docker’s client/server model and relies on a component that processes API requests and manages Docker objects such as containers, images, volumes, and networks. Why this answer is correct: CEH describes the Docker daemon (dockerd) as the background service that listens for Docker API requests and performs actions such as creating and managing containers, images, volumes, and networks, which is exactly what is described. Why the other options are wrong: Docker objects are the entities being managed, not the managing component; the Docker client is the CLI or API front end that sends requests but does not process them internally; Docker registries store and distribute images but do not directly handle API requests for object lifecycle operations. KEY CONCEPTS: Docker daemon, Docker client/server architecture, container lifecycle management. CEH REFERENCE: Module 19 – Cloud Computing (Containerization and Docker Architecture)."
   },
   {
     "id": 45,
@@ -45,7 +47,8 @@
       1
     ],
     "type": "single",
-    "domain": 17
+    "domain": 17,
+    "explanation": "**CORRECT ANSWER: Community** Scenario recap: A customer wants to use a shared cloud environment with a group of other organizations to lower costs while still having more isolation than a generic public cloud. Why this answer is correct: CEH explains that a community cloud is a multi-tenant infrastructure shared by organizations with common requirements or interests, allowing them to share costs and resources within a more controlled group, which matches the description. Why the other options are wrong: A private cloud is dedicated to a single organization, not a group; a public cloud is available to the general public or a large industry group, not just a specific community; a hybrid cloud combines different deployment models (such as private and public), not specifically a shared community environment. KEY CONCEPTS: community cloud, multi-tenant shared infrastructure, cost sharing among similar organizations. CEH REFERENCE: Module 19 – Cloud Computing (Cloud Deployment Models: Public, Private, Community, Hybrid)."
   },
   {
     "id": 72,
@@ -61,7 +64,8 @@
       2
     ],
     "type": "single",
-    "domain": 17
+    "domain": 17,
+    "explanation": "**CORRECT ANSWER: Cloud hopper attack** Scenario recap: An attacker spear-phishes and compromises a managed service provider (MSP), uses the MSP to access customers’ cloud profiles, compresses and stores stolen customer data at the MSP, and then uses it for further attacks. Why this answer is correct: CEH describes Cloud Hopper as a campaign in which attackers compromise MSPs and then pivot through MSP accounts and interfaces to access cloud customers’ data and resources; the scenario of infiltrating an MSP and abusing it to access client cloud environments matches this pattern exactly. Why the other options are wrong: Cloud cryptojacking focuses on hijacking cloud resources to mine cryptocurrency, not pivoting through MSPs; a Man-in-the-Cloud (MITC) attack abuses cloud sync tokens on the endpoint, not MSP infrastructure; Cloudborne refers to firmware/backdoor issues in bare-metal cloud servers rather than MSP-based supply chain compromise. KEY CONCEPTS: Cloud Hopper, MSP compromise, supply-chain style cloud attacks. CEH REFERENCE: Module 19 – Cloud Computing (Cloud Attacks: Cloud Hopper)."
   },
   {
     "id": 76,
@@ -77,7 +81,8 @@
       1
     ],
     "type": "single",
-    "domain": 17
+    "domain": 17,
+    "explanation": "**CORRECT ANSWER: Zero trust network** Scenario recap: A cloud security engineer implements a technique that assumes no user is trusted by default, verifies every connection, and restricts access so employees can only reach resources needed for their role. Why this answer is correct: CEH describes zero trust as a model where no user or system is inherently trusted, inside or outside the perimeter; every request is strongly authenticated, authorized, and continuously validated with least-privilege access, matching the scenario. Why the other options are wrong: A demilitarized zone (DMZ) is a traditional perimeter design, not a full trust model; serverless computing is an execution model for code, not a security philosophy; container technology isolates applications but does not itself implement the “never trust, always verify” principle. KEY CONCEPTS: zero trust, least privilege, continuous verification, identity-centric security. CEH REFERENCE: Module 19 – Cloud Computing (Zero Trust Security Model in Cloud Environments)."
   },
   {
     "id": 81,
@@ -93,7 +98,8 @@
       1
     ],
     "type": "single",
-    "domain": 17
+    "domain": 17,
+    "explanation": "**CORRECT ANSWER: Tier-2: Testing and accreditation systems** Scenario recap: A cloud architect uses a five-tier container technology architecture and is currently verifying and validating image contents, signing images, and then sending them to registries. Why this answer is correct: CEH explains that Tier-2 (testing and accreditation systems) in the container architecture is responsible for validating images, performing security checks, and signing them before they are pushed to registries, which matches the described activities. Why the other options are wrong: Tier-1 (developer machines) is where images are built, not formally validated and signed; Tier-3 (registries) is where signed images are stored and distributed, not the place where they are validated; Tier-4 (orchestrators) focuses on deploying and managing containers at run time, not image accreditation. KEY CONCEPTS: container tiers, testing and accreditation, image validation and signing, registries. CEH REFERENCE: Module 19 – Cloud Computing (Five-Tier Container Technology Architecture)."
   },
   {
     "id": 112,
@@ -109,7 +115,8 @@
       1
     ],
     "type": "single",
-    "domain": 17
+    "domain": 17,
+    "explanation": "**CORRECT ANSWER: SaaS** Scenario recap: A company subscribes to a cloud-hosted CRM solution where the provider manages hardware, OS, application, patching, and monitoring; the internal administrator only manages user accounts. Why this answer is correct: CEH defines Software as a Service (SaaS) as a model where the provider delivers a complete application over the Internet and manages the full stack, while the customer mainly manages users and configuration, which is exactly the case here. Why the other options are wrong: IaaS exposes virtualized infrastructure where the customer still manages OS and applications; PaaS provides a platform/runtime where the customer deploys their own applications, not a turnkey CRM; CaaS focuses on container orchestration rather than fully managed application software. KEY CONCEPTS: SaaS, CRM as a service, provider-managed stack, minimal customer administration. CEH REFERENCE: Module 19 – Cloud Computing (Service Models: IaaS, PaaS, SaaS)."
   },
   {
     "id": 122,
@@ -125,7 +132,8 @@
       0
     ],
     "type": "single",
-    "domain": 17
+    "domain": 17,
+    "explanation": "**CORRECT ANSWER: Encrypt data client-side before uploading to the cloud and retain control of the encryption keys** Scenario recap: A client migrating sensitive data to a public cloud must meet regulatory requirements that demand full customer control over encryption keys for data at rest. Why this answer is correct: CEH highlights client-side encryption with customer-managed keys as the strongest way to ensure that even if data resides in the provider’s environment, only the customer can decrypt it, since the provider never has the keys. Why the other options are wrong: Using the provider’s encryption services while keeping keys on-premises may still leave key management or key recovery paths under provider control depending on the service; SSL only protects data in transit, not at rest; using default provider-managed encryption and keys means the CSP can theoretically access or be compelled to access the data. KEY CONCEPTS: client-side encryption, customer-managed keys, regulatory compliance, data at rest security. CEH REFERENCE: Module 19 – Cloud Computing (Encryption and Key Management Strategies in the Cloud)."
   },
   {
     "id": 154,
@@ -141,7 +149,8 @@
       3
     ],
     "type": "single",
-    "domain": 17
+    "domain": 17,
+    "explanation": "**CORRECT ANSWER: Use client-side encryption and manage the encryption keys on-premises or use a trusted third-party key management service** Scenario recap: A healthcare organization moves an EHR system with highly sensitive data to the cloud and wants data encrypted in transit and at rest, while ensuring that the CSP cannot decrypt the data. Why this answer is correct: CEH explains that performing client-side encryption and managing keys independently (on-premises or via a trusted third-party KMS) keeps decryption capability out of the CSP’s hands, satisfying strict privacy requirements for medical data. Why the other options are wrong: Network-level encryption alone does not protect data at rest in the cloud; relying on SSL/TLS and allowing the CSP to manage keys still gives the provider potential access; using only built-in encryption services usually means CSP-controlled or co-controlled keys, which does not fully prevent provider decryption. KEY CONCEPTS: client-side encryption, independent key management, healthcare data privacy, CSP key separation. CEH REFERENCE: Module 19 – Cloud Computing (Client-side Encryption and External Key Management)."
   },
   {
     "id": 156,
@@ -157,7 +166,8 @@
       3
     ],
     "type": "single",
-    "domain": 17
+    "domain": 17,
+    "explanation": "**CORRECT ANSWER: Perform a comprehensive security audit on your company's cloud environment to identify any signs of data exfiltration** Scenario recap: A financial services company using a public cloud learns that the CSP suffered a data breach and wants to know whether its own data was compromised. Why this answer is correct: CEH stresses that organizations must assess their own cloud environment, reviewing logs, configurations, and telemetry for indicators of compromise or data exfiltration, which is what a comprehensive security audit achieves. Why the other options are wrong: Merely reviewing encryption policies does not show whether data was actually accessed or exfiltrated; checking CSP access logs is useful but may be incomplete on its own and does not replace a full audit of your own environment; passively waiting for the CSP’s final report delays your response and may not provide customer-specific impact details. KEY CONCEPTS: cloud security audit, data exfiltration detection, incident response in cloud environments. CEH REFERENCE: Module 19 – Cloud Computing (Incident Response and Forensics in Cloud)."
   },
   {
     "id": 183,
@@ -173,7 +183,8 @@
       1
     ],
     "type": "single",
-    "domain": 17
+    "domain": 17,
+    "explanation": "**CORRECT ANSWER: Review and negotiate the cloud service provider's data privacy and security policies and ensure they are HIPAA-compliant** Scenario recap: A hospital deploys a cloud-based EHR system hosted by a third party and must ensure patient data privacy and security in line with HIPAA. Why this answer is correct: CEH notes that for regulated industries, the first step is to review and formalize contractual and policy assurances with the CSP, including compliance requirements, security controls, and responsibilities; ensuring the provider’s policies and agreements are HIPAA-compliant is foundational before implementing technical controls. Why the other options are wrong: Two-factor authentication, data encryption, and staff training are all important, but they come after establishing that the provider’s legal, contractual, and policy framework meets HIPAA and clearly defines shared responsibility. KEY CONCEPTS: HIPAA compliance, cloud service agreements, data privacy and security policies, shared responsibility. CEH REFERENCE: Module 19 – Cloud Computing (Compliance and Legal Considerations for Cloud Services)."
   },
   {
     "id": 186,
@@ -189,7 +200,8 @@
       0
     ],
     "type": "single",
-    "domain": 17
+    "domain": 17,
+    "explanation": "**CORRECT ANSWER: Implement IPsec in addition to SSL/TLS** Scenario recap: A cloud-based application already uses SSL/TLS to secure data in transit, and you want an additional mechanism that can detect whether data was tampered with during transmission. Why this answer is correct: CEH explains that IPsec provides authentication, integrity, and confidentiality at the network layer; when combined with SSL/TLS, it adds an extra layer of integrity checking and authentication, helping detect tampering or replay at the IP level. Why the other options are wrong: Switching to SSH changes the protocol but does not inherently provide broader network-layer integrity for generic applications; simply encrypting data with AES before transmission does not on its own guarantee message integrity or anti-replay at the transport/network layers; relying solely on the CSP’s built-in encryption services does not specifically add an independent integrity-verification mechanism to the existing TLS setup. KEY CONCEPTS: IPsec, integrity and authentication in transit, layered encryption, tamper detection. CEH REFERENCE: Module 19 – Cloud Computing (Securing Data in Transit with TLS and IPsec)."
   },
   {
     "id": 189,
@@ -205,7 +217,8 @@
       0
     ],
     "type": "single",
-    "domain": 17
+    "domain": 17,
+    "explanation": "**CORRECT ANSWER: Use a Cloud Access Security Broker (CASB)** Scenario recap: A client uses multiple cloud providers (multi-cloud) and needs unified security management to consistently enforce policies, detect and respond to threats, and maintain visibility across all cloud resources. Why this answer is correct: CEH describes CASBs as security policy enforcement points placed between cloud consumers and providers to provide visibility, policy enforcement, threat protection, and data security across multiple cloud services, which exactly matches the requirement. Why the other options are wrong: A hardware firewall alone cannot provide deep visibility and unified policy control across diverse cloud platforms and APIs; using separate tools per cloud platform creates silos and inconsistent policy enforcement; relying only on each cloud’s built-in security features lacks centralized control and cross-cloud correlation. KEY CONCEPTS: CASB, multi-cloud security management, unified policy enforcement, visibility and threat detection. CEH REFERENCE: Module 19 – Cloud Computing (Cloud Access Security Brokers and Multi-Cloud Security)."
   },
   {
     "id": 201,
@@ -221,7 +234,8 @@
       2
     ],
     "type": "single",
-    "domain": 17
+    "domain": 17,
+    "explanation": "**CORRECT ANSWER: Encrypt the data client-side before uploading to the SaaS environment and manage encryption keys independently** Scenario recap: A client migrates to a SaaS environment and wants to ensure the privacy of sensitive data even from the cloud service provider. Why this answer is correct: CEH highlights that in SaaS, the best way to prevent the provider from viewing data is to encrypt it before upload and maintain exclusive control of the keys, so the SaaS vendor only ever sees ciphertext. Why the other options are wrong: A VPN protects data in transit but not data visibility at rest to the provider; relying on built-in provider security does not prevent the provider from decrypting data under their control; multi-factor authentication secures user access but does not stop the provider’s backend from reading stored data. KEY CONCEPTS: SaaS security, client-side encryption, customer-controlled keys, data confidentiality from CSP. CEH REFERENCE: Module 19 – Cloud Computing (Data Privacy in SaaS and Client-side Encryption)."
   },
   {
     "id": 211,
@@ -237,7 +251,8 @@
       1
     ],
     "type": "single",
-    "domain": 17
+    "domain": 17,
+    "explanation": "**CORRECT ANSWER: Not trusting any user or system by default, regardless of whether they are inside or outside the network perimeter** Scenario recap: A client moving to a public cloud wants a Zero Trust security model to ensure that only authorized personnel can access sensitive resources. Why this answer is correct: CEH defines Zero Trust as a model where no implicit trust is granted based solely on network location; every user and system must be authenticated, authorized, and continuously validated whether internal or external. Why the other options are wrong: Trusting all internal traffic or relying only on perimeter defenses contradicts the Zero Trust principle; only trusting known IPs is an IP-based allowlist, not a comprehensive identity- and context-driven Zero Trust architecture. KEY CONCEPTS: Zero Trust, never trust always verify, identity-centric access control, cloud security. CEH REFERENCE: Module 19 – Cloud Computing (Zero Trust in Cloud and Hybrid Environments)."
   },
   {
     "id": 243,
@@ -253,7 +268,8 @@
       1
     ],
     "type": "single",
-    "domain": 17
+    "domain": 17,
+    "explanation": "**CORRECT ANSWER: Docker** Scenario recap: A cloud security engineer uses an open-source technology that isolates applications from the underlying infrastructure, uses OS-level virtualization to deliver containerized software packages, supports PaaS-like delivery, and enables fast software deployment. Why this answer is correct: CEH describes Docker as an open-source container platform that packages applications and dependencies into containers using OS-level virtualization, enabling fast, portable deployment and forming the basis of many PaaS offerings, which matches the scenario. Why the other options are wrong: Virtual machines provide full hardware virtualization with heavier overhead and do not match the container-focused description; a zero trust network is a security model, not a packaging/runtime technology; serverless computing is a cloud execution model, not directly the container engine described. KEY CONCEPTS: Docker, containers, OS-level virtualization, PaaS-style container platforms. CEH REFERENCE: Module 19 – Cloud Computing (Containerization and Docker in Cloud Environments)."
   },
   {
     "id": 262,
@@ -269,7 +285,8 @@
       3
     ],
     "type": "single",
-    "domain": 17
+    "domain": 17,
+    "explanation": "**CORRECT ANSWER: Kube-scheduler** Scenario recap: In a Kubernetes cluster, a master component scans newly created pods and assigns them to nodes based on resource requirements, data locality, policy constraints, and workload considerations. Why this answer is correct: CEH explains that the Kubernetes scheduler (kube-scheduler) is responsible for watching for newly created pods without assigned nodes and selecting appropriate nodes based on resource usage, affinity, and constraints, exactly as described. Why the other options are wrong: Kube-apiserver exposes the Kubernetes API but does not schedule pods; the etcd cluster stores configuration and state data, not perform scheduling; kube-controller-manager runs controllers that handle replication and node management but does not select nodes for new pods. KEY CONCEPTS: Kubernetes master components, kube-scheduler, pod placement based on resources and policies. CEH REFERENCE: Module 19 – Cloud Computing (Kubernetes Architecture and Components)."
   },
   {
     "id": 263,
@@ -285,7 +302,8 @@
       3
     ],
     "type": "single",
-    "domain": 17
+    "domain": 17,
+    "explanation": "**CORRECT ANSWER: Cloud carrier** Scenario recap: The question asks which NIST cloud role provides connectivity and transport services to consumers. Why this answer is correct: According to NIST, a cloud carrier is the intermediary that provides network connectivity and transport of cloud services from providers to consumers, acting as the communication link, which matches the wording exactly. Why the other options are wrong: A cloud connector is not a defined NIST role; a cloud broker focuses on service aggregation, integration, and negotiation; a cloud provider delivers the actual services but does not itself describe the connectivity/transport intermediary role. KEY CONCEPTS: NIST roles, cloud carrier, network transport in cloud reference architecture. CEH REFERENCE: Module 19 – Cloud Computing (NIST Cloud Computing Reference Architecture)."
   },
   {
     "id": 304,
@@ -301,6 +319,7 @@
       0
     ],
     "type": "single",
-    "domain": 17
+    "domain": 17,
+    "explanation": "**CORRECT ANSWER: Cloudborne attack** Scenario recap: A security professional finds a vulnerability in a bare-metal cloud server that allows attackers to implant malicious firmware backdoors that persist even when the server is reallocated to new IaaS customers. Why this answer is correct: CEH describes Cloudborne attacks as targeting vulnerabilities in bare-metal cloud infrastructure where attackers can install persistent firmware backdoors that survive tenant changes, enabling compromise of future customers, which aligns exactly with the scenario. Why the other options are wrong: A Man-in-the-Cloud (MITC) attack abuses sync tokens and cloud storage accounts on endpoints; metadata spoofing attacks target cloud instance metadata services rather than firmware; cloud cryptojacking involves hijacking cloud resources for cryptocurrency mining, not persistent firmware backdoors. KEY CONCEPTS: Cloudborne, firmware backdoors in cloud servers, persistence across tenants, IaaS infrastructure attacks. CEH REFERENCE: Module 19 – Cloud Computing (Cloud Attacks: Cloudborne and Bare-metal Server Risks)."
   }
 ]

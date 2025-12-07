@@ -13,7 +13,8 @@
       1
     ],
     "type": "single",
-    "domain": 18
+    "domain": 18,
+    "explanation": "**CORRECT ANSWER: Triple Data Encryption Standard** Scenario recap: The question describes an encryption algorithm where each block is 64 bits and three keys are used, each of 56 bits. Why this answer is correct: CEH explains that Triple DES (3DES) is a symmetric block cipher that operates on 64-bit blocks and applies the DES algorithm three times, typically with three 56-bit keys (K1, K2, K3), matching exactly the 64-bit block size and three 56-bit keys in the scenario. Why the other options are wrong: IDEA is a 64-bit block cipher but uses a 128-bit key rather than three 56-bit keys; AES uses a 128-bit block size with key sizes of 128, 192 or 256 bits; MD5 is a hashing algorithm and not an encryption algorithm at all. KEY CONCEPTS: Triple DES, 64-bit block cipher, three 56-bit keys, symmetric encryption. CEH REFERENCE: Module 2 – Cryptography (Symmetric Algorithms: DES and Triple DES)."
   },
   {
     "id": 25,
@@ -29,7 +30,8 @@
       3
     ],
     "type": "single",
-    "domain": 18
+    "domain": 18,
+    "explanation": "**CORRECT ANSWER: TPM** Scenario recap: The question asks which motherboard hardware component generates encryption keys and only releases part of the key so that a disk encrypted on one machine cannot easily be decrypted on a different piece of hardware. Why this answer is correct: CEH describes the Trusted Platform Module (TPM) as a dedicated hardware chip that securely generates, stores and uses cryptographic keys tied to the platform, only exposing limited key material and binding disk-encryption keys to that specific hardware, making decryption on other devices difficult. Why the other options are wrong: The CPU and GPU are general-purpose processors that do not by themselves provide this kind of bound key storage and release; UEFI is firmware that initializes hardware and can interact with TPM but is not itself the cryptographic hardware module described. KEY CONCEPTS: TPM, hardware root of trust, key generation and storage, disk encryption binding. CEH REFERENCE: Module 2 – Cryptography (Trusted Platform Module and Hardware-based Key Protection)."
   },
   {
     "id": 33,
@@ -45,7 +47,8 @@
       2
     ],
     "type": "single",
-    "domain": 18
+    "domain": 18,
+    "explanation": "**CORRECT ANSWER: Dorian is signing the message with his private key, and Poly will verify that the message came from Dorian by using Dorian's public key** Scenario recap: Dorian sends a digitally signed email to Poly and we must determine which keys are used for signing and verification. Why this answer is correct: CEH explains that in public key cryptography, a digital signature is created with the sender's private key and verified with the matching public key; if Poly can validate the signature using Dorian's public key, she knows the message originated from Dorian and was not altered. Why the other options are wrong: The sender never signs with a public key or with the recipient's keys; using Poly's private or public key for signing would not provide non-repudiation for Dorian. KEY CONCEPTS: digital signatures, private key for signing, public key for verification, non-repudiation. CEH REFERENCE: Module 2 – Cryptography (Public Key Cryptography and Digital Signatures)."
   },
   {
     "id": 38,
@@ -61,7 +64,8 @@
       0
     ],
     "type": "single",
-    "domain": 18
+    "domain": 18,
+"explanation": "**CORRECT ANSWER: FTPS** Scenario recap: A security professional discovers that important files, including usernames and passwords, are being transferred in clear text and then implements a protocol that uses encryption and digital certificates to protect file transfers. Why this answer is correct: CEH describes FTPS as FTP secured with SSL or TLS, which uses digital certificates and encryption to protect credentials and file contents in transit, directly addressing the problem in the scenario. Why the other options are wrong: Standard FTP transmits data and credentials in clear text and is exactly what should be replaced; HTTPS secures web traffic over HTTP, not specifically FTP-style file transfer sessions; IP is the underlying network protocol and does not by itself provide encryption or certificate-based security. KEY CONCEPTS: FTPS, SSL/TLS-secured file transfer, encryption and certificates, protecting credentials. CEH REFERENCE: Module 2 – Cryptography (Secure Protocols: FTPS, SFTP and HTTPS)."
   },
   {
     "id": 39,
@@ -77,7 +81,8 @@
       3
     ],
     "type": "single",
-    "domain": 18
+    "domain": 18,
+    "explanation": "**CORRECT ANSWER: Use Marie's public key to encrypt the message** Scenario recap: John wants to send Marie a confidential email using PGP on an untrusted network. Why this answer is correct: CEH notes that in PGP/OpenPGP, to ensure confidentiality the sender encrypts the message with the recipient's public key so that only the recipient, who holds the corresponding private key, can decrypt it; here John must use Marie's public key. Why the other options are wrong: Encrypting with John's own keys would not prevent others from decrypting the message; using Marie's private key is impossible for John and would violate the secrecy of her private key. KEY CONCEPTS: PGP, public key encryption for confidentiality, recipient's public key, private key decryption. CEH REFERENCE: Module 2 – Cryptography (PGP and Email Encryption)."
   },
   {
     "id": 48,
@@ -93,7 +98,8 @@
       1
     ],
     "type": "single",
-    "domain": 18
+    "domain": 18,
+    "explanation": "**CORRECT ANSWER: DROWN attack** Scenario recap: A web server allows SSLv2 connections, and the same private key certificate is used on another server that also supports SSLv2, which can leak key material. Why this answer is correct: CEH describes DROWN (Decrypting RSA with Obsolete and Weakened eNcryption) as an attack that exploits SSLv2 support on any server sharing the same certificate to decrypt TLS sessions, because the weak SSLv2 protocol can leak information about the RSA key; this matches the scenario exactly. Why the other options are wrong: Padding oracle attacks exploit certain padding validation behaviors but are not specifically tied to SSLv2 key reuse; DUHK targets weak random number generators in certain VPNs and ciphersuites; side-channel attacks exploit timing, power or EM emissions rather than SSLv2 protocol weaknesses and shared certificates. KEY CONCEPTS: DROWN, SSLv2 downgrade, key reuse across servers, TLS decryption via obsolete protocols. CEH REFERENCE: Module 2 – Cryptography (SSL/TLS Attacks such as DROWN)."
   },
   {
     "id": 54,
@@ -109,7 +115,8 @@
       1
     ],
     "type": "single",
-    "domain": 18
+    "domain": 18,
+"explanation": "**CORRECT ANSWER: Twofish encryption algorithm** Scenario recap: The question describes a symmetric block cipher with a 128-bit block size and key sizes up to 256 bits. Why this answer is correct: CEH notes that Twofish is a symmetric block cipher with a 128-bit block size and support for key sizes up to 256 bits, making it a good candidate for strong encryption and fitting the description precisely. Why the other options are wrong: HMAC is a message authentication code construction, not a block cipher; IDEA uses a 64-bit block size and a 128-bit key; Blowfish operates on 64-bit blocks and supports variable key sizes up to 448 bits, not a 128-bit block with up to 256-bit keys. KEY CONCEPTS: Twofish, 128-bit block cipher, up to 256-bit keys, symmetric encryption. CEH REFERENCE: Module 2 – Cryptography (Modern Symmetric Algorithms: Twofish)."
   },
   {
     "id": 97,
@@ -125,7 +132,8 @@
       3
     ],
     "type": "single",
-    "domain": 18
+    "domain": 18,
+    "explanation": "**CORRECT ANSWER: Bryan's public key; Alice's public key** Scenario recap: Alice encrypts and digitally signs a confidential document for Bryan in an environment with PKI and we must identify which keys are used for encryption and for verifying the signature. Why this answer is correct: In hybrid public key systems, CEH explains that the sender encrypts data with the recipient's public key (here Bryan's public key) so only the recipient can decrypt it, and uses the sender's private key to sign; the recipient then verifies the signature with the sender's public key (Alice's public key) to confirm authenticity and integrity. Why the other options are wrong: Using only one party's public key for both encryption and signature verification would not reflect the correct combination of confidentiality and non-repudiation; using Bryan's private key for encryption is incorrect, and using only Alice's keys would not correctly protect the message for Bryan. KEY CONCEPTS: hybrid encryption, public key for encryption, private key for signing, public key for signature verification. CEH REFERENCE: Module 2 – Cryptography (PKI Usage for Encryption and Digital Signatures)."
   },
   {
     "id": 153,
@@ -141,7 +149,8 @@
       3
     ],
     "type": "single",
-    "domain": 18
+    "domain": 18,
+    "explanation": "**CORRECT ANSWER: Implement the Diffie-Hellman protocol for secure key exchange** Scenario recap: A cloud storage company wants to use symmetric encryption for data at rest but is unsure how to securely manage and distribute the symmetric keys to users. Why this answer is correct: CEH describes Diffie-Hellman as a key exchange protocol that allows two parties to securely establish a shared secret (symmetric key) over an insecure channel without transmitting the key itself, making it ideal for distributing symmetric keys in such scenarios. Why the other options are wrong: Hash functions provide integrity and derivation but are not a key distribution mechanism by themselves; HTTPS secures transport but does not inherently solve the key management problem across all clients; digital signatures provide authenticity and non-repudiation, not secure exchange of shared symmetric keys. KEY CONCEPTS: Diffie-Hellman, key exchange, symmetric key establishment over insecure networks. CEH REFERENCE: Module 2 – Cryptography (Key Exchange Protocols: Diffie-Hellman)."
   },
   {
     "id": 160,
@@ -157,7 +166,8 @@
       2
     ],
     "type": "single",
-    "domain": 18
+    "domain": 18,
+    "explanation": "**CORRECT ANSWER: AES key size=192 bits: This configuration is a balance between options A and B, providing moderate security and performance** Scenario recap: A hybrid system uses RSA for key exchange and AES for data encryption, with RSA key size n=4000 bits and an attacker having a quantum algorithm that speeds up breaking RSA; you must choose an AES key size that balances security and performance. Why this answer is correct: CEH notes that AES supports 128, 192 and 256-bit keys and that increasing key size increases security but also computational cost; a 192-bit AES key offers stronger security than 128-bit with less overhead than 256-bit, giving a practical middle ground, which is why the exam frames it as the balanced option. Why the other options are wrong: A 128-bit AES key provides the least security and is less aligned with the scenario's emphasis on higher security needs; 256-bit AES offers very strong security but at higher performance cost, and the stem implies this may be too slow; 512-bit AES is not a standard AES key size and would be unnecessarily heavy with questionable interoperability. KEY CONCEPTS: AES key sizes (128, 192, 256), security vs performance trade-off, hybrid encryption systems. CEH REFERENCE: Module 2 – Cryptography (AES Key Lengths and Trade-offs)."
   },
   {
     "id": 212,
@@ -173,7 +183,8 @@
       2
     ],
     "type": "single",
-    "domain": 18
+    "domain": 18,
+    "explanation": "**CORRECT ANSWER: bcrypt** Scenario recap: A company uses a weak encryption algorithm to store user passwords in a web application database and asks for a stronger hashing algorithm to secure passwords. Why this answer is correct: CEH recommends bcrypt as a password hashing function specifically designed to be slow and include salting and configurable work factors, making brute-force and rainbow table attacks far more difficult and appropriate for password storage. Why the other options are wrong: MD5 and SHA-1 are fast, general-purpose hash functions that are now considered weak for password storage due to collision and preimage vulnerabilities and their speed; DES is a symmetric block cipher, not a password hashing scheme. KEY CONCEPTS: password hashing, bcrypt, salting and work factor, secure password storage. CEH REFERENCE: Module 2 – Cryptography (Password Hashing Algorithms and Best Practices)."
   },
   {
     "id": 230,
@@ -189,7 +200,8 @@
       0
     ],
     "type": "single",
-    "domain": 18
+    "domain": 18,
+"explanation": "**CORRECT ANSWER: Apply asymmetric encryption with RSA and use the private key for signing** Scenario recap: A company needs secure email communication that ensures both confidentiality and non-repudiation and plans to use a combination of symmetric and asymmetric cryptography. Why this answer is correct: CEH explains that hybrid secure email systems typically use symmetric encryption (for message confidentiality) combined with RSA for key exchange and digital signatures; the sender uses their RSA private key to sign messages, providing non-repudiation, while encryption of the actual content uses a symmetric key that has been protected with RSA. Why the other options are wrong: Using Diffie-Hellman alone only provides key exchange, not signing and non-repudiation; encrypting solely with a recipient's RSA public key provides confidentiality but does not by itself give a clear signing step; pure symmetric AES encryption secures confidentiality but cannot provide non-repudiation since the same key is shared. KEY CONCEPTS: hybrid cryptosystems, RSA digital signatures, confidentiality vs non-repudiation, secure email. CEH REFERENCE: Module 2 – Cryptography (Hybrid Encryption and Secure Email Design)."
   },
   {
     "id": 235,
@@ -205,7 +217,8 @@
       3
     ],
     "type": "single",
-    "domain": 18
+    "domain": 18,
+    "explanation": "**CORRECT ANSWER: Applying the Diffie-Hellman protocol to exchange the symmetric key** Scenario recap: A company wants to use symmetric encryption over an unsecured channel and must also ensure the secure exchange of the symmetric key. Why this answer is correct: CEH highlights Diffie-Hellman as a standard protocol for securely establishing a shared secret (symmetric key) over an insecure network without directly transmitting the key, which solves the problem posed. Why the other options are wrong: Simply switching to HTTPS or implementing SSL certificates helps protect web traffic but does not by itself define a generic application-level key exchange strategy; SSH secures remote logins and tunnels but is not itself a key exchange protocol for arbitrary data encryption between peers; the question is specifically about cryptographic key exchange, which is what Diffie-Hellman provides. KEY CONCEPTS: symmetric-key protection, Diffie-Hellman key exchange, insecure channel key establishment. CEH REFERENCE: Module 2 – Cryptography (Secure Key Exchange Mechanisms)."
   },
   {
     "id": 254,
@@ -221,7 +234,8 @@
       3
     ],
     "type": "single",
-    "domain": 18
+    "domain": 18,
+    "explanation": "**CORRECT ANSWER: Web of trust (WOT)** Scenario recap: A security professional implements a model where every user maintains a ring of public keys, and messages are encrypted with the receiver's public key so that only the receiver can decrypt with their private key. Why this answer is correct: CEH describes the Web of Trust model, used for example in PGP, in which users distribute and manage each other's public keys in a decentralized fashion rather than relying solely on a central certificate authority; maintaining a personal ring of public keys is a hallmark of this model. Why the other options are wrong: Zero trust network is a broader access-control philosophy, not a public-key distribution model; SSL and TLS are transport security protocols that typically use X.509 certificates and a hierarchical PKI, not a user-maintained web of public keys. KEY CONCEPTS: Web of Trust, PGP-style key management, public key rings, decentralized trust relationships. CEH REFERENCE: Module 2 – Cryptography (PGP and Web of Trust vs PKI)."
   },
   {
     "id": 258,
@@ -237,7 +251,8 @@
       3
     ],
     "type": "single",
-    "domain": 18
+    "domain": 18,
+    "explanation": "**CORRECT ANSWER: Serpent** Scenario recap: Tony needs a 128-bit symmetric block cipher with key sizes of 128, 192 or 256 bits, using 32 rounds of substitution and permutation operations on four 32-bit word blocks and 8-variable S-boxes with 4-bit input and 4-bit output. Why this answer is correct: CEH notes that Serpent is a 128-bit block cipher that supports 128, 192 and 256-bit keys and uses 32 rounds with S-box-based substitution and linear transformation operations over 128-bit blocks, matching the description of rounds, block size and S-box structure. Why the other options are wrong: CAST-128 uses a 64-bit block size and up to 128-bit keys; RC5 is a parameterised cipher with variable block size and round count, not fixed 32 rounds and S-boxes as described; TEA is a simple Feistel cipher with 64-bit blocks and 64 rounds of operations without the 8-by-32 S-box structure. KEY CONCEPTS: Serpent, 128-bit block cipher, 32 rounds, S-box based SP network, AES finalists. CEH REFERENCE: Module 2 – Cryptography (Modern Block Ciphers: Serpent and Others)."
   },
   {
     "id": 269,
@@ -253,7 +268,8 @@
       2
     ],
     "type": "single",
-    "domain": 18
+    "domain": 18,
+    "explanation": "**CORRECT ANSWER: GPG** Scenario recap: A web developer integrates a hybrid encryption software program into a web application to secure email messages, using a free implementation of the OpenPGP standard that combines symmetric-key and asymmetric-key cryptography. Why this answer is correct: CEH identifies GPG (GNU Privacy Guard) as a free, open-source implementation of the OpenPGP standard that uses hybrid encryption (symmetric algorithms for data and public key cryptography for key exchange), which matches the description precisely. Why the other options are wrong: PGP is the original, historically commercial implementation and the question explicitly refers to a free OpenPGP implementation; SMTP is a mail transport protocol, not encryption software; S/MIME is another email security standard but is based on X.509 and PKI rather than being described as a free OpenPGP implementation. KEY CONCEPTS: GPG, OpenPGP, hybrid encryption for email, symmetric plus asymmetric cryptography. CEH REFERENCE: Module 2 – Cryptography (OpenPGP, PGP and GPG)."
   },
   {
     "id": 289,
@@ -269,7 +285,8 @@
       0
     ],
     "type": "single",
-    "domain": 18
+    "domain": 18,
+    "explanation": "**CORRECT ANSWER: Key stretching** Scenario recap: An encryption specialist inputs an initial key into an algorithm that produces an enhanced key that is more resistant to brute-force attacks. Why this answer is correct: CEH defines key stretching as the process of taking a relatively weak or low-entropy key or password and processing it through an algorithm (often with repeated hashing or use of KDFs like PBKDF2, bcrypt or scrypt) to produce a stronger, longer key that is harder to brute-force. Why the other options are wrong: Public key infrastructure is a framework for managing certificates and public keys, not a technique for strengthening individual keys; key derivation functions are a broader category of functions used to derive keys, but the scenario emphasises strengthening against brute force, which is specifically the role of key stretching; key reinstallation is associated with Wi-Fi KRACK attacks, not key strengthening. KEY CONCEPTS: key stretching, brute-force resistance, repeated hashing, password-based key strengthening. CEH REFERENCE: Module 2 – Cryptography (Key Stretching and Password Hardening Techniques)."
   },
   {
     "id": 295,
@@ -285,7 +302,8 @@
       2
     ],
     "type": "single",
-    "domain": 18
+    "domain": 18,
+    "explanation": "**CORRECT ANSWER: Key escrow** Scenario recap: BitLocker encryption is enabled on Windows systems and a mechanism is implemented to recover cryptographic keys from Active Directory in case keys are lost. Why this answer is correct: CEH describes key escrow as an arrangement where a trusted third party (such as an organization or directory service) securely holds copies of encryption keys so that they can be recovered under defined conditions; storing BitLocker recovery keys in Active Directory is a classic example of key escrow. Why the other options are wrong: Key archival refers more generally to storing old or expired keys for historical or compliance reasons, not specifically for recovery of live disk encryption keys; certificate rollover and key renewal concern replacing keys or certificates with new ones, not storing copies for recovery. KEY CONCEPTS: key escrow, BitLocker recovery keys in AD, key recovery mechanisms, enterprise key management. CEH REFERENCE: Module 2 – Cryptography (Key Management: Escrow, Archival and Recovery)."
   },
   {
     "id": 301,
@@ -301,6 +319,7 @@
       0
     ],
     "type": "single",
-    "domain": 18
+    "domain": 18,
+    "explanation": "**CORRECT ANSWER: CAST-128** Scenario recap: A software engineer uses a symmetric-key block cipher based on a 12- or 16-round Feistel network with a 64-bit block size, large 8 × 32-bit S-boxes, modular addition and subtraction, key-dependent rotation, XOR operations, and specific masking (Km1) and rotation (Kr1) keys. Why this answer is correct: CEH notes that CAST-128 (CAST5) is a 64-bit Feistel block cipher with 12 or 16 rounds depending on key length and uses large S-boxes, key-dependent rotations, and separate masking and rotation subkeys, aligning with the description in the scenario. Why the other options are wrong: AES is a 128-bit block cipher with a substitution-permutation network structure, not a classic Feistel with 64-bit blocks; GOST uses 64-bit blocks but has different S-box and round structures; DES uses 16 rounds and 56-bit keys with different S-box configuration, not the CAST-128 design with Km and Kr subkeys. KEY CONCEPTS: CAST-128, Feistel network, 64-bit block cipher, S-boxes and key-dependent rotations. CEH REFERENCE: Module 2 – Cryptography (Block Ciphers: CAST-128 and Related Algorithms)."
   }
 ]
